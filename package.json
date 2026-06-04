@@ -1,0 +1,23 @@
+{
+  "name": "studyhub-desktop",
+  "main": "index.html",
+  "version": "1.0.0",
+  "description": "StudyHub - Class 8 Study Portal (iPad, Mac, and Windows)",
+  "node-remote": "<all_urls>",
+  "window": {
+    "title": "StudyHub - Class 8 Study Portal",
+    "width": 1280,
+    "height": 800,
+    "toolbar": false,
+    "icon": "icons/icon.svg"
+  },
+  "scripts": {
+    "start": "nw .",
+    "start:web": "serve . -l 3000",
+    "start:ipad": "serve . -l 3000"
+  },
+  "devDependencies": {
+    "nw": "^0.112.0",
+    "serve": "^14.2.6"
+  }
+}

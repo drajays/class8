@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyHub · Class 8 Study Portal</title>
+<meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div style="display:flex;align-items:center;gap:12px">
+    <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <div class="logo">
+      <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <rect width="36" height="36" rx="9" fill="currentColor" opacity="0.1"/>
+        <path d="M7 11.5 18 7l11 4.5L18 16 7 11.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M11 14v7c0 1.4 3.1 2.8 7 2.8s7-1.4 7-2.8v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M29 11.5v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>Study<span class="accent">Hub</span></span>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
+    <button onclick="exportData()" id="btn-export" title="Download backup">📥 <span class="label">Export</span></button>
+    <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 <span class="label">Import</span></button>
+    <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
+    <button onclick="openContentManager()" id="btn-manage">✏️ <span class="label">Manage</span></button>
+    <button onclick="openAddContent()" id="btn-add">➕ <span class="label">Add New</span></button>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" id="breadcrumb">
+  <span onclick="navigateTo('home')">🏠 Home</span>
+</nav>
+
+<!-- APP -->
+<div class="app-container">
+  <aside class="sidebar" id="sidebar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search topics…" oninput="searchTopics(this.value)">
+    </div>
+    <div class="sidebar-section">
+      <h3>Class</h3>
+      <div id="class-nav"></div>
+    </div>
+    <div class="sidebar-section" id="subject-nav-section" style="display:none">
+      <h3>Subjects</h3>
+      <div id="subject-nav"></div>
+    </div>
+    <div class="sidebar-section" id="topic-nav-section" style="display:none">
+      <h3>Chapters</h3>
+      <div id="topic-nav"></div>
+    </div>
+  </aside>
+
+  <main class="main-content" id="main-content"></main>
+</div>
+
+<!-- MODAL: Add/Edit Content -->
+<div class="modal-overlay" id="modal-add">
+  <div class="modal">
+    <button class="close-btn" onclick="closeModal('modal-add')">✕</button>
+    <h2 id="modal-title">Add New Content</h2>
+    <form id="content-form" onsubmit="saveContent(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Class</label>
+          <select id="f-class" onchange="onFormClassChange()"><option value="">Select Class</option></select>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="f-subject" onchange="onFormSubjectChange()"><option value="">Select Subject</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Topic (Chapter)</label>
+          <select id="f-topic"><option value="">Select or type new</option></select>
+        </div>
+        <div class="form-group">
+          <label>Or Add New Topic</label>
+          <input id="f-new-topic" placeholder="e.g. Chapter 2 - Force">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subtopic Title</label>
+        <input id="f-subtopic" required placeholder="e.g. Inter-molecular Forces">
+      </div>
+      <div class="form-group">
+        <label>Content Type</label>
+        <select id="f-type" onchange="toggleQuestionFields()">
+          <option value="note">📝 Note / Concept</option>
+          <option value="true_false">✅ True/False Question</option>
+          <option value="fill_blank">✍️ Fill in the Blank</option>
+          <option value="mcq">🔘 Multiple Choice (MCQ)</option>
+          <option value="match">🔗 Match the Following</option>
+          <option value="short_answer">📋 Short/Long Answer</option>
+        </select>
+      </div>
+
+      <!-- NOTE FIELDS -->
+      <div id="note-fields">
+        <div class="form-group">
+          <label>Note Content</label>
+          <textarea id="f-note-content" placeholder="Write the concept / note here…"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Explanation (simple language)</label>
+          <textarea id="f-note-explanation" placeholder="Explain in simple words…"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Teacher's Tip (optional)</label><input id="f-teacher-tip" placeholder="Memory trick or tip…"></div>
+          <div class="form-group"><label>Exam Tip (optional)</label><input id="f-exam-tip" placeholder="Important for exams…"></div>
+        </div>
+      </div>
+
+      <!-- QUESTION FIELDS -->
+      <div id="question-fields" style="display:none">
+        <div class="form-group">
+          <label>Question Text</label>
+          <textarea id="f-q-text" placeholder="Enter the question…"></textarea>
+        </div>
+        <div id="mcq-options" style="display:none">
+          <div class="form-group"><label>Option A</label><input id="f-opt-a" placeholder="Option A"></div>
+          <div class="form-group"><label>Option B</label><input id="f-opt-b" placeholder="Option B"></div>
+          <div class="form-group"><label>Option C</label><input id="f-opt-c" placeholder="Option C"></div>
+          <div class="form-group"><label>Option D</label><input id="f-opt-d" placeholder="Option D"></div>
+          <div class="form-group"><label>Correct Option (a/b/c/d)</label><input id="f-correct-opt" placeholder="e.g. a"></div>
+        </div>
+        <div id="tf-answer" style="display:none">
+          <div class="form-group">
+            <label>Correct Answer</label>
+            <select id="f-tf-answer"><option value="true">True</option><option value="false">False</option></select>
+          </div>
+        </div>
+        <div id="blank-answer" style="display:none">
+          <div class="form-group"><label>Correct Answer (the blank)</label><input id="f-blank-answer" placeholder="e.g. molecule"></div>
+        </div>
+        <div id="match-fields" style="display:none">
+          <p style="color:var(--ink-3);font-size:.85rem;margin-bottom:10px">Enter pairs separated by commas. Format: Left1=Right1, Left2=Right2</p>
+          <div class="form-group"><label>Match Pairs</label><textarea id="f-match-pairs" placeholder="Molecules=matter, 100°C=water boils, 0°C=water freezes"></textarea></div>
+        </div>
+        <div class="form-group">
+          <label>Answer / Explanation</label>
+          <textarea id="f-q-answer" placeholder="Detailed answer…"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Teacher's Tip (optional)</label><input id="f-q-teacher-tip" placeholder="Tip…"></div>
+          <div class="form-group"><label>Exam Tip (optional)</label><input id="f-q-exam-tip" placeholder="Tip…"></div>
+        </div>
+      </div>
+
+      <input type="hidden" id="f-edit-id" value="">
+      <div class="btn-group" style="margin-top:22px">
+        <button type="submit" class="btn btn-primary">💾 Save Content</button>
+        <button type="button" class="btn btn-outline" onclick="closeModal('modal-add')">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL: Content Manager -->
+<div class="modal-overlay" id="modal-manage">
+  <div class="modal" style="max-width:920px">
+    <button class="close-btn" onclick="closeModal('modal-manage')">✕</button>
+    <h2>📂 Content Manager</h2>
+    <div class="mgr-filters">
+      <select id="mgr-class" onchange="filterManager()"></select>
+      <select id="mgr-subject" onchange="filterManager()"><option value="">All Subjects</option></select>
+      <select id="mgr-type" onchange="filterManager()">
+        <option value="">All Types</option><option value="note">Notes</option><option value="mcq">MCQ</option><option value="true_false">True/False</option><option value="fill_blank">Fill Blanks</option><option value="match">Match</option><option value="short_answer">Short/Long Answer</option>
+      </select>
+    </div>
+    <div id="manager-list" style="max-height:54vh;overflow-y:auto"></div>
+  </div>
+</div>
+
+<!-- MODAL: Import Confirmation -->
+<div class="modal-overlay" id="modal-import">
+  <div class="modal" style="max-width:620px">
+    <button class="close-btn" onclick="closeModal('modal-import')">✕</button>
+    <h2>📤 Import Data</h2>
+    <p style="color:var(--ink-2);margin-bottom:6px;font-size:.9rem" id="import-filename"></p>
+    <div class="import-preview" id="import-preview"></div>
+    <div class="import-strategy">
+      <label><input type="radio" name="import-mode" value="replace" checked>
+        <div><strong>🔄 Replace All</strong><div class="strat-desc">Wipe current data and load the imported file completely.</div></div>
+      </label>
+      <label><input type="radio" name="import-mode" value="merge">
+        <div><strong>🔀 Merge (Smart)</strong><div class="strat-desc">Keep existing items and add only new ones from the file. No duplicates.</div></div>
+      </label>
+    </div>
+    <div class="btn-group" style="margin-top:16px">
+      <button class="btn btn-primary" onclick="confirmImport()">✅ Apply Import</button>
+      <button class="btn btn-outline" onclick="closeModal('modal-import')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- DATA (load order matters) -->
+<script src="data-core.js"></script>
+<script src="chapters3to8.js"></script>
+<script src="physics-qbank.js"></script>
+<script src="biology.js"></script>
+<script src="chemistry.js"></script>
+<script src="geography.js"></script>
+<script src="history-civics.js"></script>
+<!-- APP LOGIC -->
+<script src="app.js"></script>
+</body>
+</html>
