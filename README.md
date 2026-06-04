@@ -55,4 +55,3 @@ study-app/
 
 > Note: your own added content and progress are stored in the browser's local
 > storage. Use **Export** regularly to keep a backup file.
-# class8

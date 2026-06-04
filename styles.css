@@ -448,15 +448,23 @@ body{
   .section-header h1{font-size:1.85rem}
 }
 @media(max-width:768px){
-  .header{padding-top:max(12px,env(safe-area-inset-top));padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
-  .breadcrumb{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+  .header{
+    padding-top:max(12px,env(safe-area-inset-top));
+    padding-right:max(16px,env(safe-area-inset-right));
+    padding-bottom:12px;
+    padding-left:max(16px,env(safe-area-inset-left));
+  }
+  .breadcrumb{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:max(16px,env(safe-area-inset-left));
+    padding-right:max(16px,env(safe-area-inset-right));
+  }
   .mobile-menu-btn{display:inline-flex !important;align-items:center}
   .sidebar{display:none;position:fixed;left:0;top:0;bottom:0;z-index:160;width:min(280px,88vw);box-shadow:var(--shadow);background:var(--surface);padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
   .sidebar.show{display:block;animation:fadeIn .3s var(--ease)}
   .card-grid{grid-template-columns:1fr}
   .form-row,.match-grid,.import-preview{grid-template-columns:1fr}
-  .header{padding:12px 16px}
   .header-actions button span.label{display:none}
-  .breadcrumb{padding:10px 16px}
   .content-tabs{max-width:none}
 }
