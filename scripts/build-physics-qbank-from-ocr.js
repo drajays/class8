@@ -50,11 +50,30 @@ function extractOcrText(data) {
   return parts.join('\n');
 }
 
+function resolveQbankPath() {
+  if (fs.existsSync(QBANK_BASE)) return QBANK_BASE;
+  if (fs.existsSync(QBANK_OUT)) return QBANK_OUT;
+  return null;
+}
+
 function loadQbank(file) {
   const code = fs.readFileSync(file, 'utf8');
   const ctx = vm.createContext({});
   vm.runInContext(code + '\nthis.QB = PHYSICS_QBANK;', ctx);
-  return ctx.QB;
+  const qb = ctx.QB;
+  if (!Array.isArray(qb)) {
+    throw new Error(`PHYSICS_QBANK is not an array in ${file}`);
+  }
+  return qb;
+}
+
+function loadExistingQbank() {
+  const file = resolveQbankPath();
+  if (!file) {
+    console.warn('[StudyHub] No physics-qbank.js found; starting from an empty question bank.');
+    return [];
+  }
+  return loadQbank(file);
 }
 
 function normKey(s) {
@@ -63,12 +82,18 @@ function normKey(s) {
 
 function isDuplicateQuestion(q, existing) {
   const k = normKey(q);
-  if (k.length < 12) return true;
+  if (!k.length) return true; // empty / unusable fragment
+  const minFuzzyLen = 12;
   for (const item of existing) {
     const ek = normKey(item.question);
     if (!ek) continue;
     if (k === ek) return true;
-    if (k.includes(ek.slice(0, 35)) || ek.includes(k.slice(0, 35))) return true;
+    // Substring match only when both keys are long enough to be reliable
+    if (k.length >= minFuzzyLen && ek.length >= minFuzzyLen) {
+      const prefixLen = Math.min(35, k.length, ek.length);
+      const prefix = ek.slice(0, prefixLen);
+      if (k.includes(prefix) || ek.includes(k.slice(0, prefixLen))) return true;
+    }
   }
   return false;
 }
@@ -206,9 +231,7 @@ function main() {
   const data = JSON.parse(fs.readFileSync(OCR_JSON, 'utf8'));
   const full = extractOcrText(data);
   const parsed = parseQuestionsFromOcr(full);
-  const existing = loadQbank(
-    fs.existsSync(QBANK_BASE) ? QBANK_BASE : QBANK_OUT
-  );
+  const existing = loadExistingQbank();
 
   const toAdd = [];
   for (const p of parsed) {
