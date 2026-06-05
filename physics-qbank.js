@@ -1,7 +1,7 @@
 // ============================================================
 // ICSE CLASS 8 PHYSICS — QUESTION BANK
 // Source: Class-8 Physics Question Bank (Ravinder Kaur), parsed verbatim.
-// Verified vs Latest-Copy-of-Class-8-Physics-Question-Bank-1.pdf_by_PaddleOCR-VL-1.6.json
+// Verified vs data/physics-qbank-ocr.json
 // 182 short/long-answer questions with solutions across all 8 physics chapters.
 // Variable: PHYSICS_QBANK  (merged in app.js)
 // Re-check: node scripts/build-physics-qbank-from-ocr.js

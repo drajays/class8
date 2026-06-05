@@ -7,11 +7,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const OCR_JSON = path.join(
-  ROOT,
-  'Latest-Copy-of-Class-8-Physics-Question-Bank-1.pdf_by_PaddleOCR-VL-1.6.json'
-);
-const QBANK_BASE = path.join(ROOT, 'physics-qbank copy.js');
+const OCR_JSON = path.join(ROOT, 'data', 'physics-qbank-ocr.json');
 const QBANK_OUT = path.join(ROOT, 'physics-qbank.js');
 
 const CHAPTER_TOPIC = {
@@ -50,12 +46,6 @@ function extractOcrText(data) {
   return parts.join('\n');
 }
 
-function resolveQbankPath() {
-  if (fs.existsSync(QBANK_BASE)) return QBANK_BASE;
-  if (fs.existsSync(QBANK_OUT)) return QBANK_OUT;
-  return null;
-}
-
 function loadQbank(file) {
   const code = fs.readFileSync(file, 'utf8');
   const ctx = vm.createContext({});
@@ -68,12 +58,11 @@ function loadQbank(file) {
 }
 
 function loadExistingQbank() {
-  const file = resolveQbankPath();
-  if (!file) {
+  if (!fs.existsSync(QBANK_OUT)) {
     console.warn('[StudyHub] No physics-qbank.js found; starting from an empty question bank.');
     return [];
   }
-  return loadQbank(file);
+  return loadQbank(QBANK_OUT);
 }
 
 function normKey(s) {

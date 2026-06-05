@@ -27,7 +27,8 @@ study-app/
 ├── chemistry.js        ← Chemistry (9 chapters)
 ├── biology.js          ← Biology (9 chapters)
 ├── geography.js        ← Geography (8 chapters) — NEW
-└── history-civics.js   ← History (10 ch) + Civics (4 ch) content
+├── history-civics.js   ← History (10 ch) + Civics (4 ch) content
+└── data/               ← OCR sources (physics-qbank-ocr.json, bio1-ocr.json)
 ```
 
 ## What changed from the original
@@ -48,7 +49,7 @@ study-app/
 - Practice: True/False, Fill-in-the-blank, MCQ, Match, Short/Long answer.
 - **182 Physics Question-Bank questions** (with solutions) from the Class-8 Physics
   Question Bank — cross-checked against
-  `Latest-Copy-of-Class-8-Physics-Question-Bank-1.pdf_by_PaddleOCR-VL-1.6.json`.
+  `data/physics-qbank-ocr.json`.
   Shown under each chapter’s *Practice Questions → Short/Long Answer* tab.
 - **Add New / Manage** your own content (saved in the browser).
 - **Export** a JSON backup and **Import** it back (replace or smart-merge).
