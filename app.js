@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 15;
+const DATA_VERSION = 21;
 
 function isNwDesktop() {
   try {
@@ -103,66 +103,49 @@ function _mergeDefaultsIntoAppData() {
   });
 }
 
-function loadData() {
-  // Merge chapters 3-8 data into DEFAULT_DATA
-  if (typeof CHAPTERS_3_TO_8 !== 'undefined') {
-    const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
-    CHAPTERS_3_TO_8.forEach(item => {
+function _mergeModuleArraysIntoDefault() {
+  const modules = [
+    typeof CHAPTERS_3_TO_8 !== 'undefined' ? CHAPTERS_3_TO_8 : null,
+    typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
+    typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
+    typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
+    typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
+    typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null
+  ];
+  const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
+  modules.forEach(arr => {
+    if (!arr) return;
+    arr.forEach(item => {
       if (!existingIds.has(item.id)) {
         DEFAULT_DATA.content.push(item);
         existingIds.add(item.id);
       }
     });
-  }
-  // Merge Biology data
-  if (typeof BIOLOGY_DATA !== 'undefined') {
-    const existingIds2 = new Set(DEFAULT_DATA.content.map(c => c.id));
-    BIOLOGY_DATA.forEach(item => {
-      if (!existingIds2.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds2.add(item.id);
-      }
-    });
-  }
-  // Merge Chemistry data
-  if (typeof CHEMISTRY_DATA !== 'undefined') {
-    const existingIds3 = new Set(DEFAULT_DATA.content.map(c => c.id));
-    CHEMISTRY_DATA.forEach(item => {
-      if (!existingIds3.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds3.add(item.id);
-      }
-    });
-  }
-  // Merge History & Civics data
-  if (typeof HISTORY_CIVICS_DATA !== 'undefined') {
-    const existingIds4 = new Set(DEFAULT_DATA.content.map(c => c.id));
-    HISTORY_CIVICS_DATA.forEach(item => {
-      if (!existingIds4.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds4.add(item.id);
-      }
-    });
-  }
-  // Merge Geography data
-  if (typeof GEOGRAPHY_DATA !== 'undefined') {
-    const existingIds5 = new Set(DEFAULT_DATA.content.map(c => c.id));
-    GEOGRAPHY_DATA.forEach(item => {
-      if (!existingIds5.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds5.add(item.id);
-      }
-    });
-  }
-  // Merge Physics Question Bank
-  if (typeof PHYSICS_QBANK !== 'undefined') {
-    const existingIds6 = new Set(DEFAULT_DATA.content.map(c => c.id));
-    PHYSICS_QBANK.forEach(item => {
-      if (!existingIds6.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds6.add(item.id);
-      }
-    });
+  });
+}
+
+function _upsertBundledContent() {
+  const deleted = new Set(appData.deletedContentIds || []);
+  const indexById = new Map(appData.content.map((c, i) => [c.id, i]));
+  DEFAULT_DATA.content.forEach(item => {
+    if (isUserCreatedContentId(item.id)) return;
+    const copy = JSON.parse(JSON.stringify(item));
+    const idx = indexById.get(item.id);
+    if (idx !== undefined) {
+      appData.content[idx] = copy;
+    } else if (!deleted.has(item.id)) {
+      appData.content.push(copy);
+      indexById.set(item.id, appData.content.length - 1);
+    }
+  });
+}
+
+let _defaultDataModulesMerged = false;
+
+function loadData() {
+  if (!_defaultDataModulesMerged) {
+    _mergeModuleArraysIntoDefault();
+    _defaultDataModulesMerged = true;
   }
   const savedRaw = _readSavedJson();
   const savedVersion = parseInt(localStorage.getItem('studyhub_version') || '0');
@@ -179,6 +162,7 @@ function loadData() {
       };
       _mergeDefaultsIntoAppData();
       if (savedVersion < DATA_VERSION) {
+        _upsertBundledContent();
         localStorage.setItem('studyhub_version', String(DATA_VERSION));
         saveData();
       }
