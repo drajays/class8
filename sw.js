@@ -1,9 +1,10 @@
-const CACHE = 'studyhub-v20';
+const CACHE = 'studyhub-v24';
 const ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
+  './github-sync.js',
   './data-core.js',
   './chapters3to8.js',
   './physics-qbank.js',

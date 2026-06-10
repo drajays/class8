@@ -310,14 +310,23 @@ body{
 .q-option.wrong .opt-letter{background:var(--danger);color:#fff}
 
 /* True/False */
-.tf-options{display:flex;gap:10px;margin:12px 0}
+.tf-options{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap}
 .tf-btn{
   padding:9px 26px;border-radius:24px;font-family:var(--font-ui);font-weight:600;font-size:.88rem;cursor:pointer;transition:var(--t);
-  background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2);
+  background:var(--surface-2);border:2px solid var(--line);color:var(--ink-2);
 }
-.tf-btn:hover{border-color:var(--accent);color:var(--ink)}
-.tf-btn.selected-true{background:var(--success-soft);border-color:var(--success);color:var(--success)}
-.tf-btn.selected-false{background:var(--danger-soft);border-color:var(--danger);color:var(--danger)}
+.tf-btn:hover:not(:disabled){border-color:var(--accent);color:var(--ink)}
+.tf-btn:disabled{cursor:default;opacity:1}
+.tf-btn.selected-true{background:var(--success-soft);border-color:var(--success);color:var(--success);box-shadow:0 0 0 3px color-mix(in srgb,var(--success) 22%, transparent)}
+.tf-btn.selected-false{background:var(--danger-soft);border-color:var(--danger);color:var(--danger);box-shadow:0 0 0 3px color-mix(in srgb,var(--danger) 22%, transparent)}
+.tf-btn.tf-muted{opacity:.45;border-color:var(--line)}
+.tf-verdict{
+  margin:4px 0 10px;padding:10px 14px;border-radius:10px;font-size:.9rem;line-height:1.45;
+}
+.tf-verdict-ok{background:var(--success-soft);border:1px solid color-mix(in srgb,var(--success) 35%, transparent);color:var(--success)}
+.tf-verdict-bad{background:var(--danger-soft);border:1px solid color-mix(in srgb,var(--danger) 35%, transparent);color:var(--danger)}
+.question-card.tf-card-ok{border-color:color-mix(in srgb,var(--success) 40%, var(--line))}
+.question-card.tf-card-bad{border-color:color-mix(in srgb,var(--danger) 40%, var(--line))}
 
 /* Fill in the blank */
 .blank-input{
@@ -408,6 +417,23 @@ body{
 .mgr-row .mgr-meta{font-size:.72rem;color:var(--ink-3);font-weight:600}
 .mgr-row .mgr-title{font-size:.9rem;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 
+.header-actions button.sync-attention{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 25%, transparent)}
+.sync-dot{
+  position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 2px var(--surface);
+}
+#btn-sync{position:relative}
+.sync-intro{color:var(--ink-2);font-size:.9rem;margin:-8px 0 10px;line-height:1.45}
+.sync-status-line{font-size:.82rem;font-weight:700;color:var(--accent);margin-bottom:14px}
+.sync-meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.sync-meta-grid div{background:var(--surface-2);border:1px solid var(--line);border-radius:11px;padding:10px 12px}
+.sync-meta-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3);margin-bottom:4px}
+.sync-help{font-size:.78rem;color:var(--ink-3);margin-top:6px;line-height:1.45}
+.sync-help-foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--line-soft)}
+.sync-auto-pull{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--ink-2);margin:12px 0 18px;cursor:pointer}
+.sync-auto-pull input{margin-top:3px;accent-color:var(--accent)}
+.sync-actions{flex-wrap:wrap}
+
 /* ---------- IMPORT PREVIEW ---------- */
 .import-preview{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:18px 0}
 .import-col{background:var(--surface-2);border:1px solid var(--line);border-radius:13px;padding:17px}
@@ -468,7 +494,7 @@ body{
   .sidebar{display:none;position:fixed;left:0;top:0;bottom:0;z-index:160;width:min(280px,88vw);box-shadow:var(--shadow);background:var(--surface);padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
   .sidebar.show{display:block;animation:fadeIn .3s var(--ease)}
   .card-grid{grid-template-columns:1fr}
-  .form-row,.match-grid,.import-preview{grid-template-columns:1fr}
+  .form-row,.match-grid,.import-preview,.sync-meta-grid{grid-template-columns:1fr}
   .header-actions button span.label{display:none}
   .content-tabs{max-width:none}
 }

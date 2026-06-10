@@ -35,6 +35,7 @@
     <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
     <button onclick="exportData()" id="btn-export" title="Download backup">📥 <span class="label">Export</span></button>
     <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 <span class="label">Import</span></button>
+    <button onclick="openSyncModal()" id="btn-sync" title="Cloud sync via GitHub">☁️ <span class="label">Sync</span><span class="sync-dot" id="sync-dot" hidden aria-hidden="true"></span></button>
     <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
     <button onclick="openContentManager()" id="btn-manage">✏️ <span class="label">Manage</span></button>
     <button onclick="openAddContent()" id="btn-add">➕ <span class="label">Add New</span></button>
@@ -230,6 +231,41 @@
   </div>
 </div>
 
+<!-- MODAL: Cloud Sync (GitHub) -->
+<div class="modal-overlay" id="modal-sync">
+  <div class="modal" style="max-width:640px">
+    <button class="close-btn" onclick="closeModal('modal-sync')">✕</button>
+    <h2>☁️ Cloud Sync</h2>
+    <p class="sync-intro">Push edits from this device to GitHub so other phones, tablets, and computers stay up to date. Pull before you start on a new device; push when you finish editing.</p>
+    <p class="sync-status-line" id="sync-status-line">Checking…</p>
+    <div class="sync-meta-grid">
+      <div><span class="sync-meta-label">Last push</span><strong id="sync-last-push">Never</strong></div>
+      <div><span class="sync-meta-label">Last pull</span><strong id="sync-last-pull">Never</strong></div>
+      <div><span class="sync-meta-label">GitHub file</span><strong id="sync-last-remote">Never</strong></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>GitHub owner</label><input id="sync-owner" placeholder="drajays"></div>
+      <div class="form-group"><label>Repository</label><input id="sync-repo" placeholder="class8"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Branch</label><input id="sync-branch" placeholder="main"></div>
+      <div class="form-group"><label>Sync file path</label><input id="sync-path" placeholder="data/studyhub_sync.json"></div>
+    </div>
+    <div class="form-group">
+      <label>GitHub Personal Access Token</label>
+      <input id="sync-token" type="password" autocomplete="off" placeholder="ghp_… or github_pat_…">
+      <p class="sync-help">Create a fine-grained token with <strong>Contents: Read and write</strong> on this repo only. Stored locally in this browser — never uploaded except to GitHub API calls.</p>
+    </div>
+    <label class="sync-auto-pull"><input type="checkbox" id="sync-auto-pull"> Auto-pull when GitHub has newer data (only if this device has no unsaved edits)</label>
+    <div class="btn-group sync-actions">
+      <button class="btn btn-primary" id="sync-btn-push" onclick="pushToGithub()">⬆️ Push to GitHub</button>
+      <button class="btn btn-outline" id="sync-btn-pull" onclick="pullFromGithub()">⬇️ Pull from GitHub</button>
+      <button class="btn btn-outline" onclick="saveSyncSettings()">💾 Save settings</button>
+    </div>
+    <p class="sync-help sync-help-foot">Sync includes notes, questions, progress, bookmarks, and deletions. Bundled textbook content is re-merged on each device; your edits and custom items travel via GitHub.</p>
+  </div>
+</div>
+
 <!-- MODAL: Import Confirmation -->
 <div class="modal-overlay" id="modal-import">
   <div class="modal" style="max-width:620px">
@@ -271,5 +307,6 @@
 <script src="history-civics.js"></script>
 <!-- APP LOGIC -->
 <script src="app.js"></script>
+<script src="github-sync.js"></script>
 </body>
 </html>

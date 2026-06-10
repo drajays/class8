@@ -49,9 +49,61 @@ let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 39;
+const DATA_VERSION = 43;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
+
+const PHYSICS_TOPIC_IDS = new Set([
+  'ch1-matter', 'ch2-measurement', 'ch3-force', 'ch4-energy',
+  'ch5-light', 'ch6-heat', 'ch7-sound', 'ch8-electricity'
+]);
+
+function isPhysicsTopic(topicId) {
+  return PHYSICS_TOPIC_IDS.has(topicId);
+}
+
+function isPhysicsPipelineItem(c) {
+  return !!(c && c.id && String(c.id).startsWith('phy-s'));
+}
+
+/** Notes for a chapter — physics uses Srijan pipeline (phy-s*) only. */
+function topicNotes(topicId) {
+  const all = appData.content.filter(c =>
+    (!topicId || c.topicId === topicId) && c.type === 'note'
+  );
+  if (!topicId) {
+    return all.filter(c => !isPhysicsTopic(c.topicId) || isPhysicsPipelineItem(c));
+  }
+  if (!isPhysicsTopic(topicId)) return all;
+  const pipeline = all.filter(isPhysicsPipelineItem);
+  return pipeline.length ? pipeline : all;
+}
+
+/** Text questions for a chapter — physics uses pipeline bank only. */
+function topicTextQuestions(topicId) {
+  const all = appData.content.filter(c =>
+    (!topicId || c.topicId === topicId) && c.type !== 'note' && !isDiagramMcq(c)
+  );
+  if (!topicId) {
+    return all.filter(c => !isPhysicsTopic(c.topicId) || isPhysicsPipelineItem(c));
+  }
+  if (!isPhysicsTopic(topicId)) return all;
+  const pipeline = all.filter(isPhysicsPipelineItem);
+  return pipeline.length ? pipeline : all;
+}
+
+function physicsContentStats(topicId) {
+  const qs = topicTextQuestions(topicId);
+  return {
+    notes: topicNotes(topicId).length,
+    total: qs.length,
+    mcq: qs.filter(q => q.type === 'mcq').length,
+    true_false: qs.filter(q => q.type === 'true_false').length,
+    fill_blank: qs.filter(q => q.type === 'fill_blank').length,
+    match: qs.filter(q => q.type === 'match').length,
+    short_answer: qs.filter(q => q.type === 'short_answer').length
+  };
+}
 
 function isNwDesktop() {
   try {
@@ -197,7 +249,7 @@ function loadData() {
         _upsertBundledContent();
         _reconcileTaxonomy();
         localStorage.setItem('studyhub_version', String(DATA_VERSION));
-        saveData();
+        saveData({ skipSync: true });
       }
       return;
     }
@@ -205,11 +257,36 @@ function loadData() {
   appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
   appData.deletedContentIds = [];
   localStorage.setItem('studyhub_version', String(DATA_VERSION));
-  saveData();
+  saveData({ skipSync: true });
 }
 
-function saveData() {
+function markSyncDirty() {
+  if (window._suppressSyncDirty) return;
+  if (typeof updateSyncStatusUI === 'function') updateSyncStatusUI();
+  try {
+    const meta = JSON.parse(localStorage.getItem('studyhub_sync_meta') || '{}');
+    meta.dirty = true;
+    meta.lastLocalSave = new Date().toISOString();
+    localStorage.setItem('studyhub_sync_meta', JSON.stringify(meta));
+  } catch (e) { /* non-fatal */ }
+}
+
+function clearSyncDirty(remoteMeta) {
+  try {
+    const meta = JSON.parse(localStorage.getItem('studyhub_sync_meta') || '{}');
+    meta.dirty = false;
+    if (remoteMeta) {
+      if (remoteMeta.sha) meta.remoteSha = remoteMeta.sha;
+      if (remoteMeta.exportedAt) meta.lastRemoteAt = remoteMeta.exportedAt;
+    }
+    localStorage.setItem('studyhub_sync_meta', JSON.stringify(meta));
+  } catch (e) { /* non-fatal */ }
+  if (typeof updateSyncStatusUI === 'function') updateSyncStatusUI();
+}
+
+function saveData(opts) {
   if (!appData) return false;
+  const skipSync = opts && opts.skipSync;
   const json = JSON.stringify(appData);
   if (isNwDesktop()) {
     try {
@@ -236,6 +313,7 @@ function saveData() {
   try {
     localStorage.setItem('studyhub_data', json);
     localStorage.setItem('studyhub_version', String(DATA_VERSION));
+    if (!skipSync) markSyncDirty();
     return true;
   } catch (err) {
     console.error('[StudyHub] Could not save to localStorage:', err.message);
@@ -267,6 +345,7 @@ let revisionTab = 'mistakes'; // mistakes | bookmarks | due
 let quizSession = null;
 
 function loadProgress() {
+  window._suppressSyncDirty = true;
   try {
     const raw = localStorage.getItem('studyhub_progress');
     studyProgress = raw ? JSON.parse(raw) : {};
@@ -280,21 +359,25 @@ function loadProgress() {
     const act = localStorage.getItem('studyhub_activity');
     studyActivity = act ? JSON.parse(act) : {};
   } catch (e) { studyActivity = {}; }
+  window._suppressSyncDirty = false;
 }
 
 function saveProgress() {
   try { localStorage.setItem('studyhub_progress', JSON.stringify(studyProgress)); }
   catch (e) { /* storage full — non-fatal */ }
+  markSyncDirty();
 }
 
 function saveBookmarks() {
   try { localStorage.setItem('studyhub_bookmarks', JSON.stringify([...studyBookmarks])); }
   catch (e) { /* non-fatal */ }
+  markSyncDirty();
 }
 
 function saveActivity() {
   try { localStorage.setItem('studyhub_activity', JSON.stringify(studyActivity)); }
   catch (e) { /* non-fatal */ }
+  markSyncDirty();
 }
 
 function _progressDefaults() {
@@ -347,10 +430,8 @@ function getStreak() {
 }
 
 function gradableQuestions(topicId) {
-  return appData.content.filter(c =>
-    (!topicId || c.topicId === topicId) &&
-    c.type !== 'note' && c.type !== 'short_answer' && c.type !== 'match'
-  );
+  const qs = topicTextQuestions(topicId);
+  return qs.filter(c => c.type !== 'short_answer' && c.type !== 'match');
 }
 
 function isQuizType(q) {
@@ -426,8 +507,9 @@ function recordAttempt(qId, isCorrect, meta) {
 // Mastery summary for a chapter (topicId): attempted vs total gradable
 // questions, and accuracy across attempted ones.
 function chapterMastery(topicId) {
-  const qs = appData.content.filter(c => c.topicId === topicId && c.type !== 'note');
-  const gradable = qs.filter(q => q.type !== 'short_answer');
+  const gradable = isPhysicsTopic(topicId)
+    ? gradableQuestions(topicId)
+    : appData.content.filter(c => c.topicId === topicId && c.type !== 'note' && c.type !== 'short_answer');
   let attempted = 0, correct = 0;
   gradable.forEach(q => {
     const p = studyProgress[q.id];
@@ -447,8 +529,11 @@ function chapterMastery(topicId) {
 
 // Aggregate mastery across every gradable question in a subject.
 function subjectMastery(subjectId) {
-  const topicIds = new Set(appData.topics.filter(t => t.subjectId === subjectId).map(t => t.id));
-  const gradable = appData.content.filter(c => topicIds.has(c.topicId) && c.type !== 'note' && c.type !== 'short_answer');
+  const topics = appData.topics.filter(t => t.subjectId === subjectId);
+  const topicIds = new Set(topics.map(t => t.id));
+  const gradable = subjectId === 'physics'
+    ? topics.flatMap(t => gradableQuestions(t.id))
+    : appData.content.filter(c => topicIds.has(c.topicId) && c.type !== 'note' && c.type !== 'short_answer');
   let attempted = 0, correct = 0;
   gradable.forEach(q => { const p = studyProgress[q.id]; if (p && p.attempts > 0) { attempted++; if (p.lastResult === 'correct') correct++; } });
   const total = gradable.length || 1;
@@ -494,7 +579,7 @@ function updateMasteryBadge() {
 }
 
 function sectionHeatmap(topicId) {
-  const notes = appData.content.filter(c => c.topicId === topicId && c.type === 'note');
+  const notes = topicNotes(topicId);
   return notes.map(n => {
     const qs = appData.content.filter(c => c.linksTo === n.id && isQuizType(c));
     if (!qs.length) return null;
@@ -531,7 +616,7 @@ function pickQuizPool(source, topicId) {
   else if (source === 'due') pool = getDueForReview(topicId || null);
   else if (source === 'bookmarks') pool = getBookmarkedQuestions().filter(isQuizType);
   else if (source === 'linked' && topicId) {
-    const noteIds = new Set(appData.content.filter(c => c.topicId === topicId && c.type === 'note').map(n => n.id));
+    const noteIds = new Set(topicNotes(topicId).map(n => n.id));
     pool = appData.content.filter(c => c.linksTo && noteIds.has(c.linksTo) && isQuizType(c) && !isDiagramMcq(c));
   } else if (source === 'diagrams') {
     pool = topicId
@@ -691,8 +776,7 @@ function resetAllProgress() {
 function resetChapterProgress() {
   if (!selectedTopic) return;
   if (!confirm('Reset your progress for this chapter? This clears recorded attempts and scores for these questions.')) return;
-  appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note')
-    .forEach(q => { delete studyProgress[q.id]; });
+  topicTextQuestions(selectedTopic).forEach(q => { delete studyProgress[q.id]; });
   saveProgress();
   showToast('success', '↺ Chapter progress reset.');
   renderContent(document.getElementById('main-content'));
@@ -702,8 +786,68 @@ function resetChapterProgress() {
 // TEXT FORMATTING — escape HTML, then render **bold** markdown.
 // Used for notes/answers so key terms render in bold safely.
 // ============================================================
+function cleanMathMarkup(str) {
+  if (!str) return '';
+  let s = String(str);
+  // Block then inline math
+  s = s.replace(/\$\$([^$]+)\$\$/g, (_, m) => cleanMathMarkup(m));
+  s = s.replace(/\$([^$]+)\$/g, (_, m) => cleanMathMarkup(m));
+  s = s.replace(/\\uwave\{([^}]*)\}/g, '**$1**');
+  s = s.replace(/\\underline\{\\text\{([^}]*)\}\}/g, '**$1**');
+  s = s.replace(/\\underline\{([^}]*)\}/g, '**$1**');
+  s = s.replace(/\\text\{([^}]*)\}/g, '$1');
+  s = s.replace(/\\mathrm\{([^}]*)\}/g, '$1');
+  s = s.replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '$1/$2');
+  s = s.replace(/\\times/g, '×').replace(/\\,/g, ' ').replace(/\\;/g, ' ');
+  s = s.replace(/\^\{([^}]*)\}/g, '^$1').replace(/_\{([^}]*)\}/g, '_$1');
+  s = s.replace(/[{}\\]/g, '');
+  s = s.replace(/uwave([a-z][a-z]*)/gi, '**$1**');
+  s = s.replace(/underlinehspace\d+cm/gi, '____');
+  // OCR spaced letters: "k i l o w a t t" → "kilowatt"
+  s = s.replace(/(?:\b[a-zA-Z]\s+){2,}[a-zA-Z]\b/g, m => m.replace(/\s+/g, ''));
+  return s.replace(/\s+/g, ' ').trim();
+}
+
 function fmtText(str) {
-  return escHtml(str).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  return escHtml(cleanMathMarkup(str)).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+}
+
+function tfBtnClass(q, val, answered) {
+  if (answered === undefined) return '';
+  const correct = q.correctAnswer;
+  if (val === correct) return 'selected-true';
+  if (val === answered) return 'selected-false';
+  return 'tf-muted';
+}
+
+function renderTfOptions(q, answered, onClick) {
+  const disabled = answered !== undefined ? 'disabled' : '';
+  const trueClick = answered === undefined ? onClick('true') : '';
+  const falseClick = answered === undefined ? onClick('false') : '';
+  let html = `<div class="tf-options" role="group" aria-label="True or False">`;
+  html += `<button type="button" class="tf-btn ${tfBtnClass(q, 'true', answered)}" ${disabled} ${trueClick}>✅ True</button>`;
+  html += `<button type="button" class="tf-btn ${tfBtnClass(q, 'false', answered)}" ${disabled} ${falseClick}>❌ False</button>`;
+  html += `</div>`;
+  if (answered !== undefined) {
+    const ok = answered === q.correctAnswer;
+    const correctLabel = q.correctAnswer === 'true' ? 'True' : 'False';
+    html += `<div class="tf-verdict ${ok ? 'tf-verdict-ok' : 'tf-verdict-bad'}" role="status">`;
+    html += ok
+      ? '✅ <strong>Correct!</strong> Well done.'
+      : `❌ <strong>Incorrect.</strong> The correct answer is <strong>${correctLabel}</strong>.`;
+    html += `</div>`;
+  }
+  return html;
+}
+
+function tfAnswerDisplay(q) {
+  let ans = (q.answer || '').trim();
+  const prefix = q.correctAnswer === 'true' ? 'True' : 'False';
+  if (!/^(true|false)\b/i.test(ans)) ans = `${prefix}. ${ans}`;
+  else if (!/^true\.|^false\./i.test(ans)) {
+    ans = ans.replace(/^(true|false)\b/i, m => m.charAt(0).toUpperCase() + m.slice(1).toLowerCase() + '.');
+  }
+  return ans;
 }
 
 // ============================================================
@@ -791,9 +935,7 @@ function diagramQuestions(topicId) {
 }
 
 function textQuestions(topicId) {
-  return appData.content.filter(c =>
-    c.topicId === topicId && c.type !== 'note' && !isDiagramMcq(c)
-  );
+  return topicTextQuestions(topicId);
 }
 
 function mcqImageHtml(q) {
@@ -824,7 +966,7 @@ function toggleNote(id) {
 }
 
 function toggleAllNotes() {
-  const notes = appData.content.filter(c => c.topicId === selectedTopic && c.type === 'note');
+  const notes = topicNotes(selectedTopic);
   const allFolded = notes.every(n => notesCollapsed[n.id]);
   if (allFolded) notesCollapsed = {};
   else notes.forEach(n => { notesCollapsed[n.id] = true; });
@@ -1045,10 +1187,8 @@ function renderQuizView(el) {
       return `<div class="q-option ${cls}" ${click}><span class="opt-letter">${letters[oi]}</span> ${escHtml(opt)}</div>`;
     }).join('')}</div>`;
   } else if (q.type === 'true_false') {
-    body = `<div class="tf-options">
-      <button class="tf-btn" ${answered ? 'disabled' : ''} onclick="quizSubmitAnswer('true')">✅ True</button>
-      <button class="tf-btn" ${answered ? 'disabled' : ''} onclick="quizSubmitAnswer('false')">❌ False</button>
-    </div>`;
+    const tfAns = answered ? answered.value : undefined;
+    body = renderTfOptions(q, tfAns, v => `onclick="quizSubmitAnswer('${v}')"`);
   } else if (q.type === 'fill_blank') {
     body = `<div class="quiz-blank">
       <input class="blank-input" id="quiz-blank-input" placeholder="Type your answer…" ${answered ? 'disabled' : ''} value="${answered ? escHtml(String(answered.value)) : ''}">
@@ -1060,7 +1200,7 @@ function renderQuizView(el) {
     const ok = answered.isCorrect;
     feedback = `<div class="quiz-feedback ${ok ? 'ok' : 'bad'}">
       <strong>${ok ? '✅ Correct!' : '❌ Not quite'}</strong>
-      <p>${fmtText(q.answer || '')}</p>
+      <p>${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</p>
       ${q.teacherTip ? `<div class="tip-box"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>` : ''}
       ${q.examTip ? `<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>` : ''}
       ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button>` : ''}
@@ -1192,14 +1332,26 @@ function renderSubjects(el) {
       <div class="card-grid">
         ${subs.map(s => {
           const tops = appData.topics.filter(t=>t.subjectId===s.id);
-          const contentCount = appData.content.filter(c=>tops.some(t=>t.id===c.topicId)).length;
+          let metaLine;
+          if (s.id === 'physics') {
+            let notes = 0, qs = 0;
+            tops.forEach(t => {
+              const st = physicsContentStats(t.id);
+              notes += st.notes;
+              qs += st.total;
+            });
+            metaLine = `${tops.length} chapters · ${notes} notes · ${qs} questions`;
+          } else {
+            const contentCount = appData.content.filter(c=>tops.some(t=>t.id===c.topicId)).length;
+            metaLine = `${tops.length} chapters · ${contentCount} items`;
+          }
           const m = subjectMastery(s.id);
           const cls = _accClass(m.accuracy, m.attempted);
           return `
             <div class="card" onclick="navigateTo('topics','${s.id}')">
               <div class="card-icon">${s.icon}</div>
               <h3>${s.name}</h3>
-              <p>${tops.length} chapters · ${contentCount} items</p>
+              <p>${metaLine}</p>
               <div class="card-progress">
                 <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
                 <div class="progress-bar"><div class="progress-fill cov-${cls}" style="width:${Math.max(m.coverage,2)}%"></div></div>
@@ -1225,23 +1377,29 @@ function renderTopics(el) {
       </div>
       <div class="card-grid">
         ${tops.map(t => {
-          const contents = appData.content.filter(c=>c.topicId===t.id);
-          const notes = contents.filter(c=>c.type==='note').length;
-          const mcqs = contents.filter(c=>c.type==='mcq' && !isDiagramMcq(c)).length;
-          const diagrams = diagramQuestions(t.id).length;
-          const qs = contents.length - notes - diagrams;
+          let notes, mcqs, qs, diagrams, cardMeta;
+          if (selectedSubject === 'physics' && isPhysicsTopic(t.id)) {
+            const st = physicsContentStats(t.id);
+            notes = st.notes;
+            mcqs = st.mcq;
+            qs = st.total;
+            diagrams = 0;
+            cardMeta = `<span>📝 ${st.notes} notes</span><span>❓ ${st.total} questions</span><span>🔘 ${st.mcq} MCQ</span><span>✅ ${st.true_false} T/F</span><span>✍️ ${st.fill_blank} Fill</span><span>🔗 ${st.match} Match</span><span>📋 ${st.short_answer} Q&A</span>`;
+          } else {
+            const contents = appData.content.filter(c=>c.topicId===t.id);
+            notes = contents.filter(c=>c.type==='note').length;
+            mcqs = contents.filter(c=>c.type==='mcq' && !isDiagramMcq(c)).length;
+            diagrams = diagramQuestions(t.id).length;
+            qs = contents.filter(c=>c.type!=='note' && !isDiagramMcq(c)).length;
+            cardMeta = `<span>📝 ${notes} notes</span><span>🔘 ${mcqs} MCQs</span>${diagrams ? `<span>🖼️ ${diagrams} diagram</span>` : ''}<span>❓ ${qs} questions</span>`;
+          }
           const m = chapterMastery(t.id);
           const cls = _accClass(m.accuracy, m.attempted);
           return `
             <div class="card" onclick="navigateTo('content','${t.id}')">
               <div class="card-icon">${t.icon}</div>
               <h3>${t.name}</h3>
-              <div class="card-meta">
-                <span>📝 ${notes} notes</span>
-                <span>🔘 ${mcqs} MCQs</span>
-                ${diagrams ? `<span>🖼️ ${diagrams} diagram</span>` : ''}
-                <span>❓ ${qs} questions</span>
-              </div>
+              <div class="card-meta">${cardMeta}</div>
               <div class="card-progress">
                 <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
                 <div class="progress-bar"><div class="progress-fill cov-${cls}" style="width:${Math.max(m.coverage,2)}%"></div></div>
@@ -1259,9 +1417,9 @@ function renderTopics(el) {
 // ===== CONTENT =====
 function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
-  const contents = appData.content.filter(c=>c.topicId===selectedTopic);
-  const notes = contents.filter(c=>c.type==='note');
-  const questions = textQuestions(selectedTopic);
+  const notes = topicNotes(selectedTopic);
+  const questions = topicTextQuestions(selectedTopic);
+  const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic) : null;
   const diagrams = diagramQuestions(selectedTopic);
   const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
   const mmData = chapterMindmap(selectedTopic);
@@ -1293,10 +1451,13 @@ function renderContent(el) {
         <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
         <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
       </div>
-      ${(csData || mmData) ? `<p class="chapter-tabs-hint">Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''} — tap a tab above</p>` : ''}
+      ${qStats ? `<p class="chapter-tabs-hint physics-bank-banner">📚 ICSE Physics bank — <strong>${qStats.notes} linked notes</strong> · <strong>${qStats.total} questions</strong> (${qStats.mcq} MCQ · ${qStats.true_false} T/F · ${qStats.fill_blank} Fill · ${qStats.match} Match · ${qStats.short_answer} Q&A)</p>` : ''}
+      ${(csData || mmData) && !qStats ? `<p class="chapter-tabs-hint">Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''} — tap a tab above</p>` : ''}
+      ${(csData || mmData) && qStats ? `<p class="chapter-tabs-hint">Revision: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''}</p>` : ''}
       <div class="stats-row">
         <div class="stat-card"><div class="stat-num">${notes.length}</div><div class="stat-label">Notes</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">Text MCQs</div></div>
+        <div class="stat-card"><div class="stat-num">${questions.length}</div><div class="stat-label">${qStats ? 'Questions' : 'Text Qs'}</div></div>
+        ${qStats ? `<div class="stat-card" title="MCQ · T/F · Fill · Match · Q&A breakdown"><div class="stat-num">${qStats.mcq}</div><div class="stat-label">MCQs</div></div>` : `<div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">Text MCQs</div></div>`}
         <div class="stat-card" onclick="switchContentTab('diagrams')" style="cursor:pointer" title="Open diagram-based NEET MCQs">
           <div class="stat-num">${diagrams.length}</div>
           <div class="stat-label">Diagram MCQs</div>
@@ -1608,7 +1769,7 @@ function renderNotes(notes) {
     const ka = noteSortKey(a), kb = noteSortKey(b);
     return ka[0] - kb[0] || ka[1] - kb[1] || ka[2].localeCompare(kb[2]);
   });
-  const allQuestions = appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note');
+  const allQuestions = topicTextQuestions(selectedTopic);
   // Pool of questions by type so every note can offer a compact "Test yourself"
   // row — one jump per type (→ MCQ, → T/F, → Fill, → Q&A) — even when no
   // question explicitly links back to it.
@@ -1617,9 +1778,9 @@ function renderNotes(notes) {
   XREF_TYPES.forEach(([type]) => { qByType[type] = allQuestions.filter(q => q.type === type); });
   const cards = notes.map((n, i) => {
     const linked = allQuestions.filter(q => q.linksTo === n.id);
-    const linkedMcqs = linked.filter(q => q.type === 'mcq');
-    const practiceBtn = linkedMcqs.length
-      ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to MCQs for this section">▶ Practice ${linkedMcqs.length} linked MCQ${linkedMcqs.length > 1 ? 's' : ''}</button>`
+    const linkedGradable = linked.filter(q => isQuizType(q));
+    const practiceBtn = linkedGradable.length
+      ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to linked questions for this section">▶ Practice ${linkedGradable.length} linked Q${linkedGradable.length > 1 ? 's' : ''}</button>`
       : '';
     const xrefBtns = XREF_TYPES.map(([type, label]) => {
       // Prefer a question of this type that links to this note; otherwise pick a
@@ -1637,7 +1798,7 @@ function renderNotes(notes) {
     <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
       <div class="note-head" onclick="toggleNote('${n.id}')">
         <div class="note-number">${i+1}</div>
-        <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="MCQs linked to this section">${n.linkedMcqCount} MCQs</span>` : ''}</h3>
+        <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
         <span class="note-chevron" aria-hidden="true">▾</span>
       </div>
       <div class="note-body">
@@ -1745,7 +1906,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   // Cap the stagger so long lists never wait seconds to appear; a targeted
   // single-card re-render skips the fade entirely (updates in place).
   const delay = Math.min(idx, 10) * 0.025;
-  let html = `<div class="question-card${targeted ? '' : ' fade-in'}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
+  let html = `<div class="question-card${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
@@ -1755,13 +1916,10 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
-  html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question)}</div>`;
+  html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question).replace(/\n/g, '<br>')}</div>`;
 
   if (q.type === 'true_false') {
-    html += `<div class="tf-options">
-      <button class="tf-btn ${answered==='true'?(q.correctAnswer==='true'?'selected-true':'selected-false'):''}" onclick="answerTF('${q.id}','true')">✅ True</button>
-      <button class="tf-btn ${answered==='false'?(q.correctAnswer==='false'?'selected-true':'selected-false'):''}" onclick="answerTF('${q.id}','false')">❌ False</button>
-    </div>`;
+    html += renderTfOptions(q, answered, v => `onclick="answerTF('${q.id}','${v}')"`);
   }
 
   if (q.type === 'mcq' && q.options) {
@@ -1798,9 +1956,9 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   }
 
   // Toggle answer
-  html += `<div class="toggle-answer" onclick="toggleAnswer('ans-${q.id}')">👁️ Show Answer & Explanation</div>`;
-  html += `<div class="answer-reveal ${answered!==undefined?'show':''}" id="ans-${q.id}">
-    <p><strong>✅ Answer:</strong> ${fmtText(q.answer||'')}</p>
+  html += `<div class="toggle-answer" onclick="toggleAnswer('ans-${q.id}')">${answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation'}</div>`;
+  html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}" id="ans-${q.id}">
+    <p><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</p>
     ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>`:''}
     ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>`:''}
     ${linkedNote?`<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>`:''}
@@ -2153,11 +2311,18 @@ function toggleSidebar() {
 // ============================================================
 // EXPORT / IMPORT
 // ============================================================
-function exportData() {
-  const exportObj = {
+function buildSyncPayload() {
+  let deviceId = '';
+  try { deviceId = localStorage.getItem('studyhub_device_id') || ''; } catch (e) {}
+  if (!deviceId) {
+    deviceId = 'dev-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+    try { localStorage.setItem('studyhub_device_id', deviceId); } catch (e) {}
+  }
+  return {
     _studyhub: true,
     _version: DATA_VERSION,
     _exportedAt: new Date().toISOString(),
+    _deviceId: deviceId,
     _stats: {
       classes: appData.classes.length,
       subjects: appData.subjects.length,
@@ -2173,6 +2338,10 @@ function exportData() {
     bookmarks: [...studyBookmarks],
     activity: studyActivity
   };
+}
+
+function exportData() {
+  const exportObj = buildSyncPayload();
   const json = JSON.stringify(exportObj, null, 2);
   const blob = new Blob([json], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -2249,11 +2418,10 @@ function showImportPreview(filename, data) {
   `;
 }
 
-function confirmImport() {
-  if (!pendingImport) return;
-  const mode = document.querySelector('input[name="import-mode"]:checked').value;
-  const imp = pendingImport;
-
+function applyImportedData(imp, mode, options) {
+  options = options || {};
+  window._suppressSyncDirty = true;
+  let result;
   if (mode === 'replace') {
     appData.classes = imp.classes;
     appData.subjects = imp.subjects;
@@ -2263,47 +2431,69 @@ function confirmImport() {
     if (imp.progress && typeof imp.progress === 'object') { studyProgress = imp.progress; saveProgress(); }
     if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
-    saveData();
-    showToast('success', '🔄 Data replaced! ' + appData.content.length + ' items loaded.');
+    saveData({ skipSync: true });
+    if (!options.silent) showToast('success', '🔄 Data replaced! ' + appData.content.length + ' items loaded.');
+    result = { added: imp.content.length, mode: 'replace' };
   } else {
-    // Merge mode
-    const existingClassIds = new Set(appData.classes.map(c=>c.id));
-    imp.classes.forEach(c => { if (!existingClassIds.has(c.id)) appData.classes.push(c); });
+  const existingClassIds = new Set(appData.classes.map(c => c.id));
+  imp.classes.forEach(c => { if (!existingClassIds.has(c.id)) appData.classes.push(c); });
 
-    const existingSubIds = new Set(appData.subjects.map(s=>s.id));
-    imp.subjects.forEach(s => { if (!existingSubIds.has(s.id)) appData.subjects.push(s); });
+  const existingSubIds = new Set(appData.subjects.map(s => s.id));
+  imp.subjects.forEach(s => { if (!existingSubIds.has(s.id)) appData.subjects.push(s); });
 
-    const existingTopicIds = new Set(appData.topics.map(t=>t.id));
-    imp.topics.forEach(t => { if (!existingTopicIds.has(t.id)) appData.topics.push(t); });
+  const existingTopicIds = new Set(appData.topics.map(t => t.id));
+  imp.topics.forEach(t => { if (!existingTopicIds.has(t.id)) appData.topics.push(t); });
 
-    const existingContentIds = new Set(appData.content.map(c=>c.id));
-    let added = 0;
-    imp.content.forEach(c => {
-      if (!existingContentIds.has(c.id)) {
-        appData.content.push(c);
-        existingContentIds.add(c.id);
-        added++;
+  const existingContentIds = new Set(appData.content.map(c => c.id));
+  let added = 0;
+  let updated = 0;
+  imp.content.forEach(c => {
+    if (!existingContentIds.has(c.id)) {
+      appData.content.push(c);
+      existingContentIds.add(c.id);
+      added++;
+      return;
+    }
+    if (options.mergeUpdates) {
+      const idx = appData.content.findIndex(x => x.id === c.id);
+      if (idx >= 0) {
+        appData.content[idx] = JSON.parse(JSON.stringify(c));
+        updated++;
       }
-    });
-    const del = new Set(appData.deletedContentIds || []);
-    (imp.deletedContentIds || []).forEach(function (id) { del.add(id); });
-    appData.deletedContentIds = Array.from(del);
-    if (imp.progress && typeof imp.progress === 'object') {
-      studyProgress = Object.assign({}, imp.progress, studyProgress);
-      saveProgress();
     }
-    if (Array.isArray(imp.bookmarks)) {
-      imp.bookmarks.forEach(id => studyBookmarks.add(id));
-      saveBookmarks();
-    }
-    if (imp.activity && typeof imp.activity === 'object') {
-      studyActivity = Object.assign({}, imp.activity, studyActivity);
-      saveActivity();
-    }
-    saveData();
-    showToast('success', '🔀 Merged! ' + added + ' new items added. Total: ' + appData.content.length);
+  });
+  const del = new Set(appData.deletedContentIds || []);
+  (imp.deletedContentIds || []).forEach(function (id) { del.add(id); });
+  appData.deletedContentIds = Array.from(del);
+  if (imp.progress && typeof imp.progress === 'object') {
+    studyProgress = Object.assign({}, imp.progress, studyProgress);
+    saveProgress();
   }
+  if (Array.isArray(imp.bookmarks)) {
+    imp.bookmarks.forEach(id => studyBookmarks.add(id));
+    saveBookmarks();
+  }
+  if (imp.activity && typeof imp.activity === 'object') {
+    studyActivity = Object.assign({}, imp.activity, studyActivity);
+    saveActivity();
+  }
+  saveData({ skipSync: true });
+  if (!options.silent) {
+    const msg = updated
+      ? '🔀 Merged! ' + added + ' new, ' + updated + ' updated. Total: ' + appData.content.length
+      : '🔀 Merged! ' + added + ' new items added. Total: ' + appData.content.length;
+    showToast('success', msg);
+  }
+  result = { added, updated, mode: 'merge' };
+  }
+  window._suppressSyncDirty = false;
+  return result;
+}
 
+function confirmImport() {
+  if (!pendingImport) return;
+  const mode = document.querySelector('input[name="import-mode"]:checked').value;
+  applyImportedData(pendingImport, mode);
   pendingImport = null;
   closeModal('modal-import');
   render();
@@ -2346,6 +2536,5 @@ function initApp() {
   render();
   setupPersistenceGuards();
   registerServiceWorker();
+  if (typeof setupGithubSync === 'function') setupGithubSync();
 }
-
-initApp();
