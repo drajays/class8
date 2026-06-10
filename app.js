@@ -49,7 +49,7 @@ let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 37;
+const DATA_VERSION = 38;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -1272,6 +1272,15 @@ function renderContent(el) {
         <h1>${topic?.icon} ${topic?.name}</h1>
         <button class="btn btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
       </div>
+      <div class="content-tabs chapter-tabs" role="tablist" aria-label="Chapter study modes">
+        <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
+        ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
+        ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
+        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
+        <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+        <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
+      </div>
+      ${(csData || mmData) ? `<p class="chapter-tabs-hint">Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''} — tap a tab above</p>` : ''}
       <div class="stats-row">
         <div class="stat-card"><div class="stat-num">${notes.length}</div><div class="stat-label">Notes</div></div>
         <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">Text MCQs</div></div>
@@ -1279,6 +1288,14 @@ function renderContent(el) {
           <div class="stat-num">${diagrams.length}</div>
           <div class="stat-label">Diagram MCQs</div>
         </div>
+        ${csData ? `<div class="stat-card stat-revision" onclick="switchContentTab('cheatsheet')" style="cursor:pointer" title="High-yield last-minute revision">
+          <div class="stat-num">${csData.topTen ? csData.topTen.length : '—'}</div>
+          <div class="stat-label">⚡ Cheat Sheet</div>
+        </div>` : ''}
+        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="stat-card stat-revision" onclick="switchContentTab('oneword')" style="cursor:pointer" title="Tap words to reveal definitions">
+          <div class="stat-num">${csData.wordCards.length}</div>
+          <div class="stat-label">🔤 One Word</div>
+        </div>` : ''}
         <div class="stat-card stat-coverage" title="Share of questions you've tried">
           <div class="stat-num" id="coverage-num">${cm.coverage}%</div>
           <div class="stat-label">Coverage</div>
@@ -1295,14 +1312,6 @@ function renderContent(el) {
         </div>
       </div>
       ${heatHtml}
-      <div class="content-tabs">
-        <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes & Concepts</div>
-        ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map${mmData.maps.length > 1 ? ` (${mmData.maps.length})` : ''}</div>` : ''}
-        ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
-        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word (${csData.wordCards.length})</div>` : ''}
-        <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice Questions</div>
-        <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagram MCQs${diagrams.length ? ` (${diagramFigCount})` : ''}</div>
-      </div>
       <div id="content-body"></div>
     </div>
   `;
