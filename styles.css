@@ -526,3 +526,67 @@ body{
 @media(max-width:600px){
   .notes-grid,.questions-grid{grid-template-columns:1fr}
 }
+
+/* ============================================================
+   SOURCE CHIP (NEET exam-bank tag) + PROGRESS TRACKING UI
+   ============================================================ */
+.src-chip{display:inline-block;vertical-align:middle;margin-left:8px;padding:1px 7px;border-radius:20px;
+  font-size:.6rem;font-weight:800;letter-spacing:.08em;background:var(--accent-soft);
+  color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 30%, transparent)}
+[data-theme="dark"] .src-chip{color:var(--accent)}
+.note-head h3 .src-chip{font-size:.55rem}
+
+/* Per-card progress block (chapter & subject cards) */
+.card-progress{margin-top:16px}
+.card-progress .cp-row{display:flex;justify-content:space-between;align-items:center;
+  font-size:.74rem;font-weight:600;color:var(--ink-3);margin:8px 0 0}
+.acc-pill{padding:2px 9px;border-radius:20px;font-weight:800;font-size:.72rem;
+  background:var(--surface-3);color:var(--ink-3)}
+.acc-pill.good{background:color-mix(in srgb,var(--success) 16%, transparent);color:var(--success)}
+.acc-pill.mid{background:color-mix(in srgb,var(--warning) 18%, transparent);color:var(--warning)}
+.acc-pill.low{background:color-mix(in srgb,var(--danger) 15%, transparent);color:var(--danger)}
+.progress-fill.cov-good{background:linear-gradient(90deg,var(--success),color-mix(in srgb,var(--success) 55%,#fff))}
+.progress-fill.cov-mid{background:linear-gradient(90deg,var(--warning),color-mix(in srgb,var(--warning) 55%,#fff))}
+.progress-fill.cov-low{background:linear-gradient(90deg,var(--danger),color-mix(in srgb,var(--danger) 55%,#fff))}
+.progress-fill.cov-none{background:var(--surface-3)}
+
+/* Continue-where-you-left-off banner */
+.continue-card{display:flex;align-items:center;gap:16px;cursor:pointer;margin:6px 0 22px;
+  padding:16px 20px;border-radius:var(--radius);background:var(--accent-soft);
+  border:1px solid color-mix(in srgb,var(--accent) 28%, transparent);transition:var(--t)}
+.continue-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.continue-card .cc-icon{font-size:2rem;line-height:1}
+.continue-card .cc-body{flex:1}
+.continue-card .cc-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-ink)}
+[data-theme="dark"] .continue-card .cc-label{color:var(--accent)}
+.continue-card .cc-title{font-size:1.05rem;font-weight:700;color:var(--ink);margin-top:2px}
+.continue-card .cc-go{font-weight:800;color:var(--accent-ink);white-space:nowrap}
+[data-theme="dark"] .continue-card .cc-go{color:var(--accent)}
+
+/* Progress dashboard */
+.dash{margin:6px 0 26px;padding:20px;border-radius:var(--radius);background:var(--surface-2);
+  border:1px solid var(--line)}
+.dash-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.dash-head h2{margin:0;font-size:1.15rem}
+.dash-grid{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:6px}
+.dash-ring{width:104px;height:104px;border-radius:50%;display:grid;place-items:center;flex:none}
+.dash-ring .ring-inner{width:78px;height:78px;border-radius:50%;background:var(--surface-2);
+  display:grid;place-items:center;text-align:center}
+.dash-ring .ring-num{font-size:1.4rem;font-weight:800;color:var(--ink);line-height:1}
+.dash-ring .ring-lbl{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-top:3px}
+.dash-stat{flex:1;min-width:120px}
+.dash-stat .ds-num{font-size:1.7rem;font-weight:800;color:var(--accent-ink)}
+[data-theme="dark"] .dash-stat .ds-num{color:var(--accent)}
+.dash-stat .ds-lbl{font-size:.76rem;font-weight:600;color:var(--ink-3);margin-top:2px}
+.dash-subjects{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:20px}
+.dsub{cursor:pointer;padding:12px 14px;border-radius:var(--radius-sm);background:var(--surface);
+  border:1px solid var(--line);transition:var(--t)}
+.dsub:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.dsub-top{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;font-weight:700;color:var(--ink)}
+.dsub .progress-bar{margin-top:10px}
+.dsub-sub{font-size:.7rem;font-weight:600;color:var(--ink-3);margin-top:7px}
+@media(max-width:600px){
+  .dash-grid{gap:14px}
+  .dash-stat{min-width:90px}
+  .dash-stat .ds-num{font-size:1.3rem}
+}

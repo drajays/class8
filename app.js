@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 24;
+const DATA_VERSION = 25;
 
 function isNwDesktop() {
   try {
@@ -100,6 +100,22 @@ function _mergeDefaultsIntoAppData() {
       appData.content.push(JSON.parse(JSON.stringify(item)));
       contentIds.add(item.id);
     }
+  });
+}
+
+// Drop bundled chapters that no longer exist in DEFAULT_DATA (e.g. the
+// short-lived NEET chapters bio-ch10..ch16 that were folded into bio-ch1..ch9).
+// Only prunes topics that hold no user-created (c-…) content, so manual work
+// is never lost.
+function _pruneRetiredTopics() {
+  const defTopicIds = new Set(DEFAULT_DATA.topics.map(t => t.id));
+  appData.topics = appData.topics.filter(t => {
+    if (defTopicIds.has(t.id)) return true;
+    const hasUserContent = appData.content.some(c => c.topicId === t.id && isUserCreatedContentId(c.id));
+    if (hasUserContent) return true; // keep user-built chapters
+    // retire: drop the topic and any leftover bundled content pointing at it
+    appData.content = appData.content.filter(c => c.topicId !== t.id);
+    return false;
   });
 }
 
@@ -164,6 +180,7 @@ function loadData() {
       _mergeDefaultsIntoAppData();
       if (savedVersion < DATA_VERSION) {
         _upsertBundledContent();
+        _pruneRetiredTopics();
         localStorage.setItem('studyhub_version', String(DATA_VERSION));
         saveData();
       }
@@ -270,8 +287,44 @@ function chapterMastery(topicId) {
     total: gradable.length,
     correct,
     pct: Math.round((correct / total) * 100),
-    coverage: Math.round((attempted / total) * 100)
+    coverage: Math.round((attempted / total) * 100),
+    accuracy: attempted ? Math.round((correct / attempted) * 100) : 0
   };
+}
+
+// Aggregate mastery across every gradable question in a subject.
+function subjectMastery(subjectId) {
+  const topicIds = new Set(appData.topics.filter(t => t.subjectId === subjectId).map(t => t.id));
+  const gradable = appData.content.filter(c => topicIds.has(c.topicId) && c.type !== 'note' && c.type !== 'short_answer');
+  let attempted = 0, correct = 0;
+  gradable.forEach(q => { const p = studyProgress[q.id]; if (p && p.attempts > 0) { attempted++; if (p.lastResult === 'correct') correct++; } });
+  const total = gradable.length || 1;
+  return {
+    total: gradable.length, attempted, correct,
+    coverage: Math.round((attempted / total) * 100),
+    accuracy: attempted ? Math.round((correct / attempted) * 100) : 0
+  };
+}
+
+// App-wide progress snapshot for the home dashboard.
+function overallProgress() {
+  const gradable = appData.content.filter(c => c.type !== 'note' && c.type !== 'short_answer');
+  let attempted = 0, correct = 0;
+  gradable.forEach(q => { const p = studyProgress[q.id]; if (p && p.attempts > 0) { attempted++; if (p.lastResult === 'correct') correct++; } });
+  const total = gradable.length || 1;
+  return {
+    total: gradable.length, attempted, correct,
+    coverage: Math.round((attempted / total) * 100),
+    accuracy: attempted ? Math.round((correct / attempted) * 100) : 0
+  };
+}
+
+// Colour band for an accuracy %: drives the pill/ring colour in cards.
+function _accClass(acc, attempted) {
+  if (!attempted) return 'none';
+  if (acc >= 75) return 'good';
+  if (acc >= 50) return 'mid';
+  return 'low';
 }
 
 function updateMasteryBadge() {
@@ -281,6 +334,14 @@ function updateMasteryBadge() {
   const barEl = document.getElementById('mastery-bar');
   if (numEl) numEl.textContent = m.pct + '%';
   if (barEl) barEl.style.width = Math.max(m.pct, 2) + '%';
+}
+
+function resetAllProgress() {
+  if (!confirm('Reset ALL progress across every subject? This clears every recorded attempt and score. This cannot be undone.')) return;
+  studyProgress = {};
+  saveProgress();
+  showToast('success', '↺ All progress reset.');
+  render();
 }
 
 function resetChapterProgress() {
@@ -362,7 +423,10 @@ function navigateTo(view, id) {
   if (view === 'home') { selectedClass = null; selectedSubject = null; selectedTopic = null; }
   if (view === 'subjects') { selectedClass = id; selectedSubject = null; selectedTopic = null; }
   if (view === 'topics') { selectedSubject = id; selectedTopic = null; }
-  if (view === 'content') { selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; }
+  if (view === 'content') {
+    selectedTopic = id; contentTab = 'notes'; questionFilter = 'all';
+    try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
+  }
   render();
 }
 
@@ -442,14 +506,49 @@ function renderHome(el) {
   const totalContent = appData.content.length;
   const totalNotes = appData.content.filter(c=>c.type==='note').length;
   const totalQ = totalContent - totalNotes;
+  const op = overallProgress();
+  const opCls = _accClass(op.accuracy, op.attempted);
+  let lastId = null; try { lastId = localStorage.getItem('studyhub_last_topic'); } catch (e) {}
+  const lastTopic = lastId ? appData.topics.find(t=>t.id===lastId) : null;
+  const lastSub = lastTopic ? appData.subjects.find(s=>s.id===lastTopic.subjectId) : null;
+  const continueHtml = (lastTopic && lastSub) ? `
+    <div class="continue-card" onclick="selectedClass='${lastSub.classId}';selectedSubject='${lastTopic.subjectId}';navigateTo('content','${lastTopic.id}')">
+      <div class="cc-icon">${lastTopic.icon}</div>
+      <div class="cc-body"><div class="cc-label">Continue where you left off</div><div class="cc-title">${lastTopic.name}</div></div>
+      <div class="cc-go">Resume →</div>
+    </div>` : '';
+  const subjectBars = appData.subjects.map(s => {
+    const sm = subjectMastery(s.id);
+    const c = _accClass(sm.accuracy, sm.attempted);
+    return `
+      <div class="dsub" onclick="selectedClass='${s.classId}';navigateTo('topics','${s.id}')">
+        <div class="dsub-top"><span>${s.icon} ${s.name}</span><span class="acc-pill ${c}">${sm.attempted ? sm.accuracy + '%' : '—'}</span></div>
+        <div class="progress-bar"><div class="progress-fill cov-${c}" style="width:${Math.max(sm.coverage,2)}%"></div></div>
+        <div class="dsub-sub">${sm.attempted}/${sm.total} practiced</div>
+      </div>`;
+  }).join('');
+  const dashHtml = `
+    ${continueHtml}
+    <div class="dash">
+      <div class="dash-head"><h2>📊 Your Progress</h2>${op.attempted ? `<button class="btn btn-sm btn-outline" onclick="resetAllProgress()">↺ Reset all</button>` : ''}</div>
+      <div class="dash-grid">
+        <div class="dash-ring acc-${opCls}" style="background:conic-gradient(var(--accent) ${op.attempted ? op.accuracy : 0}%, var(--line) 0)">
+          <div class="ring-inner"><div class="ring-num">${op.attempted ? op.accuracy + '%' : '—'}</div><div class="ring-lbl">Accuracy</div></div>
+        </div>
+        <div class="dash-stat"><div class="ds-num">${op.attempted}</div><div class="ds-lbl">Questions practiced</div></div>
+        <div class="dash-stat"><div class="ds-num">${op.coverage}%</div><div class="ds-lbl">of ${op.total} covered</div></div>
+        <div class="dash-stat"><div class="ds-num">${op.correct}</div><div class="ds-lbl">Correct answers</div></div>
+      </div>
+      <div class="dash-subjects">${subjectBars}</div>
+    </div>`;
   el.innerHTML = `
     <div class="fade-in">
       <div class="section-header">
         <h1>Welcome to StudyHub</h1>
       </div>
-      <p class="lead">Your complete companion for ICSE Class 8 — clear notes, teacher's tips and exam-style practice across Physics, Chemistry, Biology, Geography, History and Civics. Pick a class to begin.</p>
+      <p class="lead">Your complete companion for ICSE Class 8 — clear notes, teacher's tips and exam-style practice across Physics, Chemistry, Biology, Geography, History and Civics.</p>
+      ${dashHtml}
       <div class="stats-row">
-        <div class="stat-card"><div class="stat-num">${appData.classes.length}</div><div class="stat-label">Classes</div></div>
         <div class="stat-card"><div class="stat-num">${appData.subjects.length}</div><div class="stat-label">Subjects</div></div>
         <div class="stat-card"><div class="stat-num">${appData.topics.length}</div><div class="stat-label">Chapters</div></div>
         <div class="stat-card"><div class="stat-num">${totalNotes}</div><div class="stat-label">Notes</div></div>
@@ -486,16 +585,18 @@ function renderSubjects(el) {
         ${subs.map(s => {
           const tops = appData.topics.filter(t=>t.subjectId===s.id);
           const contentCount = appData.content.filter(c=>tops.some(t=>t.id===c.topicId)).length;
+          const m = subjectMastery(s.id);
+          const cls = _accClass(m.accuracy, m.attempted);
           return `
             <div class="card" onclick="navigateTo('topics','${s.id}')">
               <div class="card-icon">${s.icon}</div>
               <h3>${s.name}</h3>
-              <p>${tops.length} chapters available</p>
-              <div class="card-meta">
-                <span>📝 ${contentCount} items</span>
-                <span class="tag ${s.color}">${s.name}</span>
+              <p>${tops.length} chapters · ${contentCount} items</p>
+              <div class="card-progress">
+                <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
+                <div class="progress-bar"><div class="progress-fill cov-${cls}" style="width:${Math.max(m.coverage,2)}%"></div></div>
+                <div class="cp-row"><span>Accuracy</span><span class="acc-pill ${cls}">${m.attempted ? m.accuracy + '%' : 'not started'}</span></div>
               </div>
-              <div class="progress-bar" style="margin-top:12px"><div class="progress-fill" style="width:${Math.min(100,contentCount*5)}%"></div></div>
             </div>
           `;
         }).join('')}
@@ -518,17 +619,24 @@ function renderTopics(el) {
         ${tops.map(t => {
           const contents = appData.content.filter(c=>c.topicId===t.id);
           const notes = contents.filter(c=>c.type==='note').length;
+          const mcqs = contents.filter(c=>c.type==='mcq').length;
           const qs = contents.length - notes;
+          const m = chapterMastery(t.id);
+          const cls = _accClass(m.accuracy, m.attempted);
           return `
             <div class="card" onclick="navigateTo('content','${t.id}')">
               <div class="card-icon">${t.icon}</div>
               <h3>${t.name}</h3>
-              <p>${contents.length} items loaded</p>
               <div class="card-meta">
                 <span>📝 ${notes} notes</span>
+                <span>🔘 ${mcqs} MCQs</span>
                 <span>❓ ${qs} questions</span>
               </div>
-              <div class="progress-bar" style="margin-top:12px"><div class="progress-fill" style="width:${Math.min(100,contents.length*3)}%"></div></div>
+              <div class="card-progress">
+                <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
+                <div class="progress-bar"><div class="progress-fill cov-${cls}" style="width:${Math.max(m.coverage,2)}%"></div></div>
+                <div class="cp-row"><span>Accuracy</span><span class="acc-pill ${cls}">${m.attempted ? m.accuracy + '%' : 'not started'}</span></div>
+              </div>
             </div>
           `;
         }).join('')}
@@ -597,7 +705,7 @@ function renderNotes(notes) {
     <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
       <div class="note-head" onclick="toggleNote('${n.id}')">
         <div class="note-number">${i+1}</div>
-        <h3>${escHtml(n.subtopic)}</h3>
+        <h3>${escHtml(n.subtopic)}${n.source === 'neet' ? ' <span class="src-chip" title="From the NEET exam-practice bank">NEET</span>' : ''}</h3>
         <span class="note-chevron" aria-hidden="true">▾</span>
       </div>
       <div class="note-body">
@@ -665,6 +773,8 @@ function renderSingleQuestion(q, idx, targeted) {
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   html += `<div class="q-label">${typeLabels[q.type]||q.type}${
+    q.source === 'neet' ? `<span class="src-chip" title="From the NEET exam-practice bank">NEET</span>` : ''
+  }${
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
   html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question)}</div>`;
