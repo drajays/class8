@@ -49,7 +49,7 @@ let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 38;
+const DATA_VERSION = 39;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -141,7 +141,8 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
-    typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null
+    typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
+    typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
   ];
   const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
   modules.forEach(arr => {
@@ -758,13 +759,25 @@ function sourceChipHtml(source) {
 }
 
 function chapterMindmap(topicId) {
-  if (typeof BIOLOGY_MINDMAP_DATA === 'undefined' || !topicId) return null;
-  return BIOLOGY_MINDMAP_DATA[topicId] || null;
+  if (!topicId) return null;
+  if (typeof PHYSICS_MINDMAP_DATA !== 'undefined' && PHYSICS_MINDMAP_DATA[topicId]) {
+    return PHYSICS_MINDMAP_DATA[topicId];
+  }
+  if (typeof BIOLOGY_MINDMAP_DATA !== 'undefined') {
+    return BIOLOGY_MINDMAP_DATA[topicId] || null;
+  }
+  return null;
 }
 
 function chapterCheatsheet(topicId) {
-  if (typeof BIOLOGY_CHEATSHEET_DATA === 'undefined' || !topicId) return null;
-  return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
+  if (!topicId) return null;
+  if (typeof PHYSICS_CHEATSHEET_DATA !== 'undefined' && PHYSICS_CHEATSHEET_DATA[topicId]) {
+    return PHYSICS_CHEATSHEET_DATA[topicId];
+  }
+  if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
+    return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
+  }
+  return null;
 }
 
 function isDiagramMcq(q) {
