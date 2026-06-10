@@ -528,13 +528,18 @@ body{
 }
 
 /* ============================================================
-   SOURCE CHIP (NEET exam-bank tag) + PROGRESS TRACKING UI
+   SOURCE CHIP (ICSE textbook bank) + LINKED MCQ UI
    ============================================================ */
 .src-chip{display:inline-block;vertical-align:middle;margin-left:8px;padding:1px 7px;border-radius:20px;
   font-size:.6rem;font-weight:800;letter-spacing:.08em;background:var(--accent-soft);
   color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 30%, transparent)}
 [data-theme="dark"] .src-chip{color:var(--accent)}
 .note-head h3 .src-chip{font-size:.55rem}
+.link-count{display:inline-block;vertical-align:middle;margin-left:6px;padding:1px 8px;border-radius:20px;
+  font-size:.58rem;font-weight:700;background:var(--surface-3);color:var(--ink-3)}
+.xref-practice{font-weight:800;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 35%, transparent)}
+.xref-practice:hover{background:color-mix(in srgb,var(--accent) 18%, transparent)}
+[data-theme="dark"] .xref-practice{color:var(--accent)}
 
 /* Per-card progress block (chapter & subject cards) */
 .card-progress{margin-top:16px}

@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 26;
+const DATA_VERSION = 29;
 
 function isNwDesktop() {
   try {
@@ -400,6 +400,30 @@ function jumpToQuestion(qId) {
   setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 60);
 }
 
+function practiceLinkedMcqs(noteId) {
+  const linked = appData.content.filter(c => c.linksTo === noteId && c.type === 'mcq');
+  if (!linked.length) return;
+  contentTab = 'questions';
+  questionFilter = 'mcq';
+  userAnswers = {};
+  renderContent(document.getElementById('main-content'));
+  setTimeout(() => _flashEl(document.getElementById('qcard-' + linked[0].id)), 60);
+}
+
+function sourceChipHtml(source) {
+  if (source === 'icse' || source === 'neet') {
+    return ' <span class="src-chip" title="ICSE textbook section — linked to practice MCQs">ICSE</span>';
+  }
+  return '';
+}
+
+function noteSortKey(n) {
+  const textbook = n.source === 'icse' || n.source === 'neet';
+  const m = /^(\d+)\./.exec(n.subtopic || '');
+  const num = m ? parseInt(m[1], 10) : 999;
+  return [textbook ? 0 : 1, num, n.subtopic || ''];
+}
+
 const Q_TYPE_SHORT = { mcq:'MCQ', true_false:'T/F', fill_blank:'Fill', short_answer:'Q&A', match:'Match' };
 
 // ============================================================
@@ -694,6 +718,10 @@ function renderNotes(notes) {
     body.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><h3>No notes yet</h3><p>Click "Add New" to create notes</p></div>';
     return;
   }
+  notes = [...notes].sort((a, b) => {
+    const ka = noteSortKey(a), kb = noteSortKey(b);
+    return ka[0] - kb[0] || ka[1] - kb[1] || ka[2].localeCompare(kb[2]);
+  });
   const allQuestions = appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note');
   // Pool of questions by type so every note can offer a compact "Test yourself"
   // row — one jump per type (→ MCQ, → T/F, → Fill, → Q&A) — even when no
@@ -703,6 +731,10 @@ function renderNotes(notes) {
   XREF_TYPES.forEach(([type]) => { qByType[type] = allQuestions.filter(q => q.type === type); });
   const cards = notes.map((n, i) => {
     const linked = allQuestions.filter(q => q.linksTo === n.id);
+    const linkedMcqs = linked.filter(q => q.type === 'mcq');
+    const practiceBtn = linkedMcqs.length
+      ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to MCQs for this section">▶ Practice ${linkedMcqs.length} linked MCQ${linkedMcqs.length > 1 ? 's' : ''}</button>`
+      : '';
     const xrefBtns = XREF_TYPES.map(([type, label]) => {
       // Prefer a question of this type that links to this note; otherwise pick a
       // representative one, spread across notes so different notes lead elsewhere.
@@ -711,13 +743,15 @@ function renderNotes(notes) {
       const q = linked.find(l => l.type === type) || pool[i % pool.length];
       return `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${label}</button>`;
     }).filter(Boolean).join('');
-    const linkBar = xrefBtns ? `<div class="xref-bar"><span class="xref-label">Test yourself:</span>${xrefBtns}</div>` : '';
+    const linkBar = (practiceBtn || xrefBtns)
+      ? `<div class="xref-bar">${practiceBtn}${xrefBtns ? `<span class="xref-label">More practice:</span>${xrefBtns}` : ''}</div>`
+      : '';
     const collapsed = notesCollapsed[n.id] ? ' collapsed' : '';
     return `
     <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
       <div class="note-head" onclick="toggleNote('${n.id}')">
         <div class="note-number">${i+1}</div>
-        <h3>${escHtml(n.subtopic)}${n.source === 'neet' ? ' <span class="src-chip" title="From the NEET exam-practice bank">NEET</span>' : ''}</h3>
+        <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="MCQs linked to this section">${n.linkedMcqCount} MCQs</span>` : ''}</h3>
         <span class="note-chevron" aria-hidden="true">▾</span>
       </div>
       <div class="note-body">
@@ -785,7 +819,7 @@ function renderSingleQuestion(q, idx, targeted) {
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   html += `<div class="q-label">${typeLabels[q.type]||q.type}${
-    q.source === 'neet' ? `<span class="src-chip" title="From the NEET exam-practice bank">NEET</span>` : ''
+    sourceChipHtml(q.source)
   }${
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
