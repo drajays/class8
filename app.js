@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 25;
+const DATA_VERSION = 26;
 
 function isNwDesktop() {
   try {
@@ -103,20 +103,29 @@ function _mergeDefaultsIntoAppData() {
   });
 }
 
-// Drop bundled chapters that no longer exist in DEFAULT_DATA (e.g. the
-// short-lived NEET chapters bio-ch10..ch16 that were folded into bio-ch1..ch9).
-// Only prunes topics that hold no user-created (c-…) content, so manual work
-// is never lost.
-function _pruneRetiredTopics() {
-  const defTopicIds = new Set(DEFAULT_DATA.topics.map(t => t.id));
+// Reconcile a returning user's saved taxonomy with the canonical DEFAULT_DATA:
+//  1. refresh subject/topic names + icons (e.g. an old "History & Civics"),
+//  2. drop bundled subjects/topics that no longer exist in DEFAULT_DATA
+//     (e.g. a phantom "Mathematics" subject or the folded-away NEET chapters
+//      bio-ch10..ch16) — but only when they hold no user-created (c-…) content,
+//     so manual work is never lost.
+function _reconcileTaxonomy() {
+  const defSub = new Map(DEFAULT_DATA.subjects.map(s => [s.id, s]));
+  const defTop = new Map(DEFAULT_DATA.topics.map(t => [t.id, t]));
+  // 1. canonicalise labels for anything still bundled
+  appData.subjects.forEach(s => { const d = defSub.get(s.id); if (d) Object.assign(s, { name: d.name, icon: d.icon, color: d.color, classId: d.classId }); });
+  appData.topics.forEach(t => { const d = defTop.get(t.id); if (d) Object.assign(t, { name: d.name, icon: d.icon, subjectId: d.subjectId, classId: d.classId }); });
+
+  const hasUserContent = id => appData.content.some(c => c.topicId === id && isUserCreatedContentId(c.id));
+  // 2a. prune retired topics (+ their leftover bundled content)
   appData.topics = appData.topics.filter(t => {
-    if (defTopicIds.has(t.id)) return true;
-    const hasUserContent = appData.content.some(c => c.topicId === t.id && isUserCreatedContentId(c.id));
-    if (hasUserContent) return true; // keep user-built chapters
-    // retire: drop the topic and any leftover bundled content pointing at it
+    if (defTop.has(t.id) || hasUserContent(t.id)) return true;
     appData.content = appData.content.filter(c => c.topicId !== t.id);
     return false;
   });
+  // 2b. prune retired subjects that no longer have any topics
+  const liveSubjects = new Set(appData.topics.map(t => t.subjectId));
+  appData.subjects = appData.subjects.filter(s => defSub.has(s.id) || liveSubjects.has(s.id));
 }
 
 function _mergeModuleArraysIntoDefault() {
@@ -180,7 +189,7 @@ function loadData() {
       _mergeDefaultsIntoAppData();
       if (savedVersion < DATA_VERSION) {
         _upsertBundledContent();
-        _pruneRetiredTopics();
+        _reconcileTaxonomy();
         localStorage.setItem('studyhub_version', String(DATA_VERSION));
         saveData();
       }
@@ -503,9 +512,6 @@ function renderMain() {
 
 // ===== HOME =====
 function renderHome(el) {
-  const totalContent = appData.content.length;
-  const totalNotes = appData.content.filter(c=>c.type==='note').length;
-  const totalQ = totalContent - totalNotes;
   const op = overallProgress();
   const opCls = _accClass(op.accuracy, op.attempted);
   let lastId = null; try { lastId = localStorage.getItem('studyhub_last_topic'); } catch (e) {}
@@ -548,12 +554,6 @@ function renderHome(el) {
       </div>
       <p class="lead">Your complete companion for ICSE Class 8 — clear notes, teacher's tips and exam-style practice across Physics, Chemistry, Biology, Geography, History and Civics.</p>
       ${dashHtml}
-      <div class="stats-row">
-        <div class="stat-card"><div class="stat-num">${appData.subjects.length}</div><div class="stat-label">Subjects</div></div>
-        <div class="stat-card"><div class="stat-num">${appData.topics.length}</div><div class="stat-label">Chapters</div></div>
-        <div class="stat-card"><div class="stat-num">${totalNotes}</div><div class="stat-label">Notes</div></div>
-        <div class="stat-card"><div class="stat-num">${totalQ}</div><div class="stat-label">Questions</div></div>
-      </div>
       <h2 style="margin-bottom:18px">🎓 Select Your Class</h2>
       <div class="card-grid">
         ${appData.classes.map(c => `
@@ -1339,27 +1339,13 @@ function registerServiceWorker() {
 // ============================================================
 // INIT
 // ============================================================
-async function initApp() {
-  if (!_readSavedJson() && !isNwDesktop() && location.protocol !== 'file:') {
-    try {
-      const res = await fetch('data/studyhub_db.json', { cache: 'no-cache' });
-      if (res.ok) {
-        const seed = await res.json();
-        if (seed && seed.content) {
-          localStorage.setItem('studyhub_data', JSON.stringify({
-            classes: seed.classes,
-            subjects: seed.subjects,
-            topics: seed.topics,
-            content: seed.content,
-            deletedContentIds: seed.deletedContentIds || []
-          }));
-          localStorage.setItem('studyhub_version', String(DATA_VERSION));
-        }
-      }
-    } catch (err) {
-      console.warn('[StudyHub] Could not load bundled DB:', err.message);
-    }
-  }
+function initApp() {
+  // The canonical dataset lives in the bundled JS modules (data-core.js +
+  // the per-subject arrays), merged into DEFAULT_DATA by loadData(). We do
+  // NOT seed from data/studyhub_db.json on the web any more: that file is a
+  // local/desktop save artifact and a stale copy used to pin the version and
+  // inject phantom subjects. Building straight from DEFAULT_DATA is correct
+  // and always current.
   loadData();
   loadProgress();
   render();

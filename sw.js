@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v7';
+const CACHE = 'studyhub-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -13,8 +13,7 @@ const ASSETS = [
   './geography.js',
   './history-civics.js',
   './manifest.webmanifest',
-  './icons/icon.svg',
-  './data/studyhub_db.json'
+  './icons/icon.svg'
 ];
 
 self.addEventListener('install', function (event) {
