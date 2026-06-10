@@ -42,12 +42,14 @@ let currentView = 'home'; // home, subjects, topics, content
 let selectedClass = null;
 let selectedSubject = null;
 let selectedTopic = null;
-let contentTab = 'notes'; // notes, mindmap, questions, diagrams
+let contentTab = 'notes'; // notes, mindmap, cheatsheet, oneword, questions, diagrams
 let mindMapIndex = 0;
+let activeWordId = null;
+let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 34;
+const DATA_VERSION = 37;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -760,6 +762,11 @@ function chapterMindmap(topicId) {
   return BIOLOGY_MINDMAP_DATA[topicId] || null;
 }
 
+function chapterCheatsheet(topicId) {
+  if (typeof BIOLOGY_CHEATSHEET_DATA === 'undefined' || !topicId) return null;
+  return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
+}
+
 function isDiagramMcq(q) {
   return !!(q && q.image);
 }
@@ -826,7 +833,7 @@ function navigateTo(view, id) {
   if (view === 'subjects') { selectedClass = id; selectedSubject = null; selectedTopic = null; }
   if (view === 'topics') { selectedSubject = id; selectedTopic = null; }
   if (view === 'content') {
-    selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; mindMapIndex = 0;
+    selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; mindMapIndex = 0; activeWordId = null; wordCardOrder = [];
     try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
   }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
@@ -1245,6 +1252,7 @@ function renderContent(el) {
   const diagrams = diagramQuestions(selectedTopic);
   const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
   const mmData = chapterMindmap(selectedTopic);
+  const csData = chapterCheatsheet(selectedTopic);
 
   const cm = chapterMastery(selectedTopic);
   const heat = sectionHeatmap(selectedTopic);
@@ -1290,6 +1298,8 @@ function renderContent(el) {
       <div class="content-tabs">
         <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes & Concepts</div>
         ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map${mmData.maps.length > 1 ? ` (${mmData.maps.length})` : ''}</div>` : ''}
+        ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
+        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word (${csData.wordCards.length})</div>` : ''}
         <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice Questions</div>
         <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagram MCQs${diagrams.length ? ` (${diagramFigCount})` : ''}</div>
       </div>
@@ -1299,6 +1309,8 @@ function renderContent(el) {
 
   if (contentTab === 'notes') renderNotes(notes);
   else if (contentTab === 'mindmap') renderMindMap(mmData);
+  else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
+  else if (contentTab === 'oneword') renderOneWordCards(csData);
   else if (contentTab === 'diagrams') renderDiagramQuestions(diagrams);
   else renderQuestions(questions);
 }
@@ -1307,6 +1319,7 @@ function switchContentTab(tab) {
   contentTab = tab;
   userAnswers = {};
   if (tab === 'mindmap') mindMapIndex = 0;
+  if (tab === 'oneword') { activeWordId = null; wordCardOrder = []; }
   renderContent(document.getElementById('main-content'));
 }
 
@@ -1318,6 +1331,13 @@ function switchMindMapPart(idx) {
 function jumpToNoteFromMindmap(noteId) {
   if (!noteId) return;
   jumpToNote(noteId);
+}
+
+function mindmapNoteLabel(noteId) {
+  const note = appData.content.find(c => c.id === noteId && c.type === 'note');
+  if (!note) return 'Notes';
+  const t = (note.subtopic || '').replace(/^\d+\.\s*/, '').trim();
+  return t.length > 32 ? t.slice(0, 30) + '…' : t || 'Notes';
 }
 
 function renderMindMap(mmData) {
@@ -1333,27 +1353,49 @@ function renderMindMap(mmData) {
         `<div class="q-tab ${mindMapIndex === i ? 'active' : ''}" onclick="switchMindMapPart(${i})">${escHtml(m.title)}</div>`
       ).join('')}</div>`
     : '';
+  const flowHtml = (map.flow && map.flow.length > 1)
+    ? `<div class="mm-flow" aria-label="How ideas connect in sequence">
+        <span class="mm-flow-label">Idea flow</span>
+        <div class="mm-flow-track">${map.flow.map((f, i) => {
+          const hasBranch = map.branches.some(b => b.id === f.id);
+          const step = hasBranch
+            ? `<button type="button" class="mm-flow-step" onclick="highlightMindBranch('${f.id}')">${escHtml(f.label)}</button>`
+            : `<span class="mm-flow-step mm-flow-muted">${escHtml(f.label)}</span>`;
+          return (i ? '<span class="mm-flow-arrow" aria-hidden="true">→</span>' : '') + step;
+        }).join('')}</div>
+      </div>`
+    : '';
   const branchHtml = map.branches.map((b, bi) => {
     const concepts = (b.concepts || []).slice(0, 5).map(c =>
       `<li>${escHtml(c)}</li>`
     ).join('');
-    const linkChips = (b.links || []).map(lid => {
+    const linkChips = (b.links || []).map(link => {
+      const lid = typeof link === 'string' ? link : link.id;
+      const rel = (typeof link === 'object' && link.rel) ? link.rel : 'links to';
       const linked = map.branches.find(x => x.id === lid);
       if (!linked) return '';
-      return `<button type="button" class="mm-link-chip" onclick="event.stopPropagation();highlightMindBranch('${lid}')" title="Related concept">↔ ${escHtml(linked.label)}</button>`;
+      return `<button type="button" class="mm-link-chip" onclick="event.stopPropagation();highlightMindBranch('${lid}')" title="How this idea connects">
+        <span class="mm-rel">${escHtml(rel)}</span><span class="mm-rel-target">${escHtml(linked.label)}</span>
+      </button>`;
     }).join('');
-    return `<article class="mm-branch ${b.color}" id="mm-branch-${b.id}" onclick="jumpToNoteFromMindmap('${b.noteId}')" title="Open full notes for this section">
+    const noteIds = b.noteIds || (b.noteId ? [b.noteId] : []);
+    const noteChips = noteIds.slice(0, 4).map(nid =>
+      `<button type="button" class="mm-note-chip" onclick="event.stopPropagation();jumpToNoteFromMindmap('${nid}')" title="Supporting section notes">📄 ${escHtml(mindmapNoteLabel(nid))}</button>`
+    ).join('');
+    const moreNotes = noteIds.length > 4 ? `<span class="mm-more-notes">+${noteIds.length - 4} more</span>` : '';
+    return `<article class="mm-branch ${b.color}" id="mm-branch-${b.id}" onclick="highlightMindBranch('${b.id}')" title="Idea hub — see how concepts connect">
       <div class="mm-branch-num">${bi + 1}</div>
       <h4 class="mm-branch-title">${escHtml(b.label)}</h4>
       <ul class="mm-concepts">${concepts}</ul>
       ${linkChips ? `<div class="mm-links">${linkChips}</div>` : ''}
-      <div class="mm-open">Open notes →</div>
+      ${noteChips ? `<div class="mm-note-links">${noteChips}${moreNotes}</div>` : ''}
     </article>`;
   }).join('');
   body.innerHTML = `
     <div class="mindmap-wrap fade-in">
-      <p class="lead mm-lead">Big-picture map of <strong>${escHtml(mmData.chapterTitle)}</strong>. Tap any branch to read the full note and practice linked MCQs.</p>
+      <p class="lead mm-lead">How ideas connect in <strong>${escHtml(mmData.chapterTitle)}</strong> — not just section titles. Follow the flow, then tap labeled links between idea hubs. Open section notes when you want detail.</p>
       ${mapTabs}
+      ${flowHtml}
       <div class="mindmap-hub">
         <div class="mm-center-node">
           <span class="mm-center-icon">🧠</span>
@@ -1362,7 +1404,7 @@ function renderMindMap(mmData) {
         <div class="mm-spoke-line" aria-hidden="true"></div>
       </div>
       <div class="mm-branch-grid">${branchHtml}</div>
-      <p class="mm-hint">💡 Connected chips (↔) show related topics — follow them to see how concepts link together.</p>
+      <p class="mm-hint">💡 Arrows show the story order. Chips show how one idea leads to another. Section notes are supporting evidence — tap 📄 when you need the full text.</p>
     </div>`;
 }
 
@@ -1374,6 +1416,164 @@ function highlightMindBranch(branchId) {
   void el.offsetWidth;
   el.classList.add('mm-flash');
   setTimeout(() => el.classList.remove('mm-flash'), 1800);
+}
+
+function cheatSheetPlainText(csData) {
+  if (!csData) return '';
+  const lines = [csData.chapterTitle, '—'.repeat(40)];
+  if (csData.topTen && csData.topTen.length) {
+    lines.push('', 'TOP 12 — LAST MINUTE');
+    csData.topTen.forEach((t, i) => lines.push(`${i + 1}. ${t}`));
+  }
+  (csData.groups || []).forEach(g => {
+    lines.push('', g.title);
+    (g.items || []).forEach(item => {
+      lines.push(item.term ? `• ${item.term} → ${item.text}` : `• ${item.text}`);
+    });
+  });
+  return lines.join('\n');
+}
+
+function copyCheatSheet() {
+  const cs = chapterCheatsheet(selectedTopic);
+  if (!cs) return;
+  const text = cheatSheetPlainText(cs);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => showToast('success', 'Cheat sheet copied')).catch(() => showToast('error', 'Copy failed'));
+  } else {
+    showToast('error', 'Copy not supported');
+  }
+}
+
+function printCheatSheet() {
+  const el = document.getElementById('cheatsheet-print');
+  if (!el) return;
+  const w = window.open('', '_blank');
+  if (!w) { showToast('error', 'Allow pop-ups to print'); return; }
+  w.document.write(`<!DOCTYPE html><html><head><title>Cheat Sheet</title>
+    <style>body{font-family:system-ui,sans-serif;padding:24px;max-width:800px;margin:0 auto;font-size:12px;line-height:1.45}
+    h1{font-size:18px;margin:0 0 8px}h2{font-size:13px;margin:20px 0 8px;border-bottom:1px solid #ccc}
+    ol,ul{margin:0;padding-left:20px}li{margin-bottom:4px}strong{color:#111}
+    .top{background:#fff8e6;border:1px solid #e8c96a;padding:12px;border-radius:8px;margin-bottom:16px}</style></head><body>`);
+  w.document.write(el.innerHTML);
+  w.document.write('</body></html>');
+  w.document.close();
+  w.focus();
+  setTimeout(() => { w.print(); w.close(); }, 300);
+}
+
+function shuffleWordCards() {
+  const cs = chapterCheatsheet(selectedTopic);
+  if (!cs || !cs.wordCards) return;
+  wordCardOrder = _shuffle(cs.wordCards.map(c => c.id));
+  activeWordId = null;
+  renderOneWordCards(cs);
+}
+
+function toggleWordCard(cardId) {
+  activeWordId = activeWordId === cardId ? null : cardId;
+  const cs = chapterCheatsheet(selectedTopic);
+  if (cs) renderOneWordCards(cs);
+}
+
+function revealAllWordCards() {
+  const panel = document.getElementById('ow-meaning-panel');
+  if (!panel) return;
+  const cs = chapterCheatsheet(selectedTopic);
+  if (!cs || !cs.wordCards) return;
+  panel.innerHTML = `<div class="ow-all-revealed">
+    <h3>All ${cs.wordCards.length} definitions</h3>
+    <dl class="ow-all-list">${cs.wordCards.map(c =>
+      `<div class="ow-all-row"><dt>${escHtml(c.word)}</dt><dd>${escHtml(c.meaning)}</dd></div>`
+    ).join('')}</dl>
+  </div>`;
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function renderOneWordCards(csData) {
+  const body = document.getElementById('content-body');
+  const cards = csData && csData.wordCards ? csData.wordCards : [];
+  if (!cards.length) {
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">🔤</div><h3>No one-word cards for this chapter</h3></div>';
+    return;
+  }
+  if (!wordCardOrder.length) wordCardOrder = cards.map(c => c.id);
+  const byId = Object.fromEntries(cards.map(c => [c.id, c]));
+  const ordered = wordCardOrder.map(id => byId[id]).filter(Boolean);
+  const active = activeWordId ? byId[activeWordId] : null;
+  const activeHtml = active ? `
+    <div class="ow-reveal-box fade-in" id="ow-meaning-panel">
+      <div class="ow-reveal-head">
+        <span class="ow-reveal-word">${escHtml(active.word)}</span>
+        ${active.noteId ? `<button type="button" class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${active.noteId}')">📄 Full notes</button>` : ''}
+      </div>
+      <p class="ow-reveal-meaning">${escHtml(active.meaning)}</p>
+    </div>` : `<div class="ow-reveal-box ow-reveal-empty" id="ow-meaning-panel">
+      <p>Tap any word below to reveal its definition</p>
+    </div>`;
+  const gridHtml = ordered.map(c => {
+    const isActive = c.id === activeWordId;
+    return `<button type="button" class="ow-card ${isActive ? 'active' : ''}" onclick="toggleWordCard('${c.id}')" aria-pressed="${isActive}">
+      <span class="ow-card-word">${escHtml(c.word)}</span>
+      ${isActive ? '<span class="ow-card-hint">tap to hide</span>' : '<span class="ow-card-hint">tap for meaning</span>'}
+    </button>`;
+  }).join('');
+  const revealed = activeWordId ? 1 : 0;
+  body.innerHTML = `
+    <div class="oneword-wrap fade-in">
+      <div class="ow-toolbar">
+        <p class="lead ow-lead"><strong>${cards.length} one-word questions</strong> for ${escHtml(csData.chapterTitle)} — tap a word to generate its definition. Great for last-minute vocab drill.</p>
+        <div class="ow-actions">
+          <button type="button" class="btn btn-sm btn-outline" onclick="shuffleWordCards()">🔀 Shuffle</button>
+          <button type="button" class="btn btn-sm btn-outline" onclick="revealAllWordCards()">📋 Show all</button>
+        </div>
+      </div>
+      ${activeHtml}
+      <div class="ow-grid">${gridHtml}</div>
+      <p class="ow-hint">💡 ${revealed ? 'Definition shown above' : 'Pick any term'} — use Shuffle to test yourself in random order.</p>
+    </div>`;
+}
+
+function renderCheatSheet(csData) {
+  const body = document.getElementById('content-body');
+  if (!csData || !csData.groups || !csData.groups.length) {
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">⚡</div><h3>No cheat sheet for this chapter</h3></div>';
+    return;
+  }
+  const topHtml = (csData.topTen && csData.topTen.length)
+    ? `<div class="cs-top-box" id="cheatsheet-print-top">
+        <h3>🔥 Top ${csData.topTen.length} — cram these first</h3>
+        <ol class="cs-top-list">${csData.topTen.map(t => `<li>${escHtml(t)}</li>`).join('')}</ol>
+      </div>`
+    : '';
+  const groupsHtml = csData.groups.map(g => {
+    const items = (g.items || []).map(item => {
+      const line = item.term
+        ? `<strong>${escHtml(item.term)}</strong> <span class="cs-arrow">→</span> ${escHtml(item.text)}`
+        : escHtml(item.text);
+      if (item.noteId) {
+        return `<li class="cs-item cs-clickable" onclick="jumpToNoteFromMindmap('${item.noteId}')" title="Open full notes">${line}</li>`;
+      }
+      return `<li class="cs-item">${line}</li>`;
+    }).join('');
+    return `<section class="cs-group cs-${g.id}">
+      <h3>${escHtml(g.title)}</h3>
+      <ul class="cs-list">${items}</ul>
+    </section>`;
+  }).join('');
+  body.innerHTML = `
+    <div class="cheatsheet-wrap fade-in" id="cheatsheet-print">
+      <div class="cs-toolbar">
+        <p class="lead cs-lead">High-yield points for <strong>${escHtml(csData.chapterTitle)}</strong> — definitions, comparisons &amp; exam traps. Tap any linked line to open notes.</p>
+        <div class="cs-actions">
+          <button type="button" class="btn btn-sm btn-outline" onclick="copyCheatSheet()">📋 Copy all</button>
+          <button type="button" class="btn btn-sm btn-outline" onclick="printCheatSheet()">🖨️ Print</button>
+          <button type="button" class="btn btn-sm btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:15})">▶ Quick quiz</button>
+        </div>
+      </div>
+      ${topHtml}
+      <div class="cs-grid">${groupsHtml}</div>
+    </div>`;
 }
 
 function renderNotes(notes) {

@@ -1,245 +1,192 @@
 // ============================================================
-// StudyHub — Biology chapter mind maps (auto-generated)
+// StudyHub — Biology idea-connecting mind maps (auto-generated)
 // Regenerate: python3 biology8/generate_mindmaps.py
 // ============================================================
 const BIOLOGY_MINDMAP_DATA = {
   "bio-ch1": {
     "topicId": "bio-ch1",
     "chapterTitle": "Transport of Food and Minerals in Plants",
+    "center": "How water, minerals & food move…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Transport of Food and Minerals…",
-        "branches": [
+        "title": "Transport pathways",
+        "center": "From soil to leaf — and food back…",
+        "flow": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s1-sec_01",
-            "label": "Introduction",
-            "color": "mm-c1",
-            "concepts": [
-              "Transport in plants",
-              "Diffusion",
-              "Living organisms need food, water, and…",
-              "Green plants require carbon dioxide, water…",
-              "Transport in plants refers to carrying…"
-            ],
-            "links": [
-              "sec_02",
-              "sec_05",
-              "sec_06"
-            ]
+            "id": "need",
+            "label": "Why plants need a…"
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s1-sec_02",
-            "label": "Transport In Higher Plants (Conduction)",
-            "color": "mm-c2",
-            "concepts": [
-              "Diffusion",
-              "Xylem and phloem",
-              "The main function of xylem",
-              "In tall plants, diffusion occurs slowly…",
-              "Conducting tissues have developed in tall…"
-            ],
-            "links": [
-              "sec_01",
-              "sec_03",
-              "sec_06"
-            ]
+            "id": "vascular",
+            "label": "Xylem ↑ vs Phloem ↓"
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s1-sec_03",
-            "label": "Structure And Functions Of Xylem And…",
-            "color": "mm-c3",
-            "concepts": [
-              "Xylem and phloem",
-              "A tracheid",
-              "Tracheid walls",
-              "A vessel",
-              "Tracheids and vessels"
-            ],
-            "links": [
-              "sec_02",
-              "sec_06"
-            ]
+            "id": "roots",
+            "label": "Root absorption"
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s1-sec_04",
-            "label": "Investigation 1.1",
-            "color": "mm-c4",
-            "concepts": [
-              "To show upward movement of water in a…"
-            ],
-            "links": [
-              "sec_05",
-              "sec_07"
-            ]
+            "id": "osmosis",
+            "label": "Osmosis & cell water…"
           },
           {
-            "id": "sec_05",
-            "noteId": "neet-s1-sec_05",
-            "label": "Investigation 1.2",
-            "color": "mm-c5",
-            "concepts": [
-              "Girdling",
-              "To show transport of food material in a…",
-              "Girdling is the process of removal of…",
-              "Girdling blocks downward movement of food…",
-              "Gently remove the soft part"
-            ],
-            "links": [
-              "sec_01",
-              "sec_04"
-            ]
+            "id": "transpiration",
+            "label": "Transpiration pull"
           },
           {
-            "id": "sec_06",
-            "noteId": "neet-s1-sec_06",
-            "label": "Absorption of Water by roots",
-            "color": "mm-c6",
-            "concepts": [
-              "Xylem and phloem",
-              "Roots anchor the plant to the soil and…",
-              "Root is a cylindrical non-green…",
-              "Unicellular microscopic hairs behind the…",
-              "Water and mineral salts are absorbed…"
-            ],
-            "links": [
-              "sec_01",
-              "sec_02",
-              "sec_03"
-            ]
-          },
-          {
-            "id": "sec_07",
-            "noteId": "neet-s1-sec_07",
-            "label": "Osmosis",
-            "color": "mm-c7",
-            "concepts": [
-              "Diffusion",
-              "Diffusion is the net movement of molecules…",
-              "Osmosis is movement of water molecules…",
-              "Osmosis is a special kind of diffusion…",
-              "Osmosis occurs when two solutions are…"
-            ],
-            "links": [
-              "sec_01",
-              "sec_02",
-              "sec_04"
-            ]
+            "id": "active",
+            "label": "Active transport"
           }
-        ]
-      },
-      {
-        "id": "map-2",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
+        ],
         "branches": [
           {
-            "id": "sec_08",
-            "noteId": "neet-s1-sec_08",
-            "label": "Partially permeable membrane or…",
+            "id": "need",
+            "label": "Why plants need a transport system",
             "color": "mm-c1",
             "concepts": [
-              "Diffusion",
-              "A partially permeable membrane allows…",
-              "Partially permeable membranes generally…",
-              "Plasma membrane, egg membrane and…",
-              "Cell sap inside the vacuole is a strong…"
+              "Leaves make food but roots absorb water —…",
+              "Diffusion works in tiny plants but is too slow…",
+              "Transport in plants → carrying substances like…",
+              "Diffusion → the major process of transport…",
+              "Xylem → a complex tissue consisting of…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s1-sec_01",
+              "neet-s1-sec_09"
+            ],
+            "noteId": "neet-s1-sec_01",
+            "links": [
+              {
+                "id": "vascular",
+                "rel": "tall plants need"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_09",
-            "noteId": "neet-s1-sec_09",
-            "label": "Investigation 1.3",
+            "id": "vascular",
+            "label": "Xylem ↑ vs Phloem ↓",
             "color": "mm-c2",
             "concepts": [
-              "Diffusion",
-              "Experiment to demonstrate osmosis",
-              "Plants absorb much more water through…",
-              "Excess water is lost as vapour by…",
-              "A small amount of absorbed water is used…"
+              "Xylem: water + minerals upward",
+              "Phloem: dissolved food downward",
+              "Vascular tissues replace slow diffusion in…",
+              "Diffusion → the major process of transport…",
+              "Xylem and phloem → complex vascular tissues in…"
             ],
+            "noteIds": [
+              "neet-s1-sec_02",
+              "neet-s1-sec_03"
+            ],
+            "noteId": "neet-s1-sec_02",
             "links": [
-              "sec_11",
-              "sec_12",
-              "sec_13"
-            ]
+              {
+                "id": "roots",
+                "rel": "water enters via"
+              },
+              {
+                "id": "transpiration",
+                "rel": "pulled up by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_10",
-            "noteId": "neet-s1-sec_10",
-            "label": "Importance of Transpiration",
+            "id": "roots",
+            "label": "Root absorption",
             "color": "mm-c3",
             "concepts": [
-              "Evaporation of water from leaves produces…",
-              "Transpiration transports water and…",
-              "Water in leaves serves as raw material for…",
-              "Transpiration produces cooling effect…",
-              "Transpiration also cools down the…"
+              "Root hairs increase surface area for uptake",
+              "Water + mineral salts enter at roots, enter xylem",
+              "Xylem and phloem → complex vascular tissues in…",
+              "Xylem → a complex tissue consisting of…",
+              "Phloem → a complex tissue consisting of…"
             ],
+            "noteIds": [
+              "neet-s1-sec_06",
+              "neet-s1-sec_10"
+            ],
+            "noteId": "neet-s1-sec_06",
             "links": [
-              "sec_11",
-              "sec_12"
-            ]
+              {
+                "id": "osmosis",
+                "rel": "driven by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_11",
-            "noteId": "neet-s1-sec_11",
-            "label": "Investigation 1.4",
+            "id": "osmosis",
+            "label": "Osmosis & cell water balance",
             "color": "mm-c4",
             "concepts": [
-              "To demonstrate transpiration in plants",
-              "Transpiration is loss of water as water…",
-              "Stomatal opening increases water loss from…",
-              "Mark clearly the level of water in each…",
-              "Pour small amount of oil on the surface of…"
+              "Water moves through partially permeable membranes",
+              "Explains how root cells take up water from soil",
+              "Diffusion → the major process of transport…",
+              "Xylem → a complex tissue consisting of…",
+              "Diffusion is the net movement of molecules…"
             ],
+            "noteIds": [
+              "neet-s1-sec_07",
+              "neet-s1-sec_08"
+            ],
+            "noteId": "neet-s1-sec_07",
             "links": [
-              "sec_09",
-              "sec_10",
-              "sec_12"
-            ]
+              {
+                "id": "active",
+                "rel": "when gradient…"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_12",
-            "noteId": "neet-s1-sec_12",
-            "label": "Investigation 1.5",
+            "id": "transpiration",
+            "label": "Transpiration pull",
             "color": "mm-c5",
             "concepts": [
-              "To demonstrate that water is given off…",
-              "Light affects transpiration by influencing…",
-              "During day stomata are open and during…",
-              "Higher temperature increases the rate of…",
-              "Transpiration increases with velocity of…"
+              "Leaf evaporation creates suction in xylem",
+              "Links water loss at leaves to uptake at roots",
+              "Xylem → a complex tissue consisting of…",
+              "Transpiration is loss of water as water vapour…",
+              "Stomatal opening increases water loss from the…"
             ],
+            "noteIds": [
+              "neet-s1-sec_11",
+              "neet-s1-sec_12"
+            ],
+            "noteId": "neet-s1-sec_11",
             "links": [
-              "sec_09",
-              "sec_10",
-              "sec_11"
-            ]
+              {
+                "id": "vascular",
+                "rel": "powers"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_13",
-            "noteId": "neet-s1-sec_13",
-            "label": "Active Transport",
+            "id": "active",
+            "label": "Active transport",
             "color": "mm-c6",
             "concepts": [
-              "Active transport is movement across…",
-              "Root hair cells contain higher mineral…",
-              "In passive transport of water roots act as…",
-              "Minerals absorbed by plants are returned…",
-              "In all 16 elements are found to be…"
+              "Uses energy to move minerals against…",
+              "Complements passive osmosis for selective uptake",
+              "Phloem → a complex tissue consisting of…",
+              "Girdling → the process of removal of…",
+              "Minerals absorbed by plants are returned to…"
             ],
+            "noteIds": [
+              "neet-s1-sec_13",
+              "neet-s1-sec_04",
+              "neet-s1-sec_05"
+            ],
+            "noteId": "neet-s1-sec_13",
             "links": [
-              "sec_09",
-              "sec_11",
-              "sec_12"
-            ]
+              {
+                "id": "roots",
+                "rel": "enriches"
+              }
+            ],
+            "idea": true
           }
         ]
       }
@@ -248,262 +195,180 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch2": {
     "topicId": "bio-ch2",
     "chapterTitle": "Reproduction in Plants and Animals",
+    "center": "How life continues — modes of…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Reproduction in Plants and…",
-        "branches": [
+        "title": "Reproduction strategies",
+        "center": "From one parent to two — and back…",
+        "flow": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s2-sec_01",
-            "label": "Introduction",
-            "color": "mm-c1",
-            "concepts": [
-              "Self Pollination",
-              "Reproduction",
-              "Sexual reproduction",
-              "Self Pollination is associated with Cross…",
-              "There are two ways by which living…"
-            ],
-            "links": [
-              "sec_02",
-              "sec_03"
-            ]
+            "id": "why",
+            "label": "Why organisms reproduce"
           },
           {
-            "id": "sec_02",
+            "id": "asexual",
+            "label": "Asexual modes"
+          },
+          {
+            "id": "vegetative",
+            "label": "Vegetative propagation"
+          },
+          {
+            "id": "sexual",
+            "label": "Sexual reproduction in…"
+          },
+          {
+            "id": "pollination",
+            "label": "Pollination agents"
+          },
+          {
+            "id": "fertilisation",
+            "label": "Fertilisation → fruit…"
+          }
+        ],
+        "branches": [
+          {
+            "id": "why",
+            "label": "Why organisms reproduce",
+            "color": "mm-c1",
+            "concepts": [
+              "Ensures species survival and genetic continuity",
+              "Reproduction → one of the most important…",
+              "Reproduction is, thus, the → of perpetuation or…"
+            ],
+            "noteIds": [
+              "neet-s2-sec_02"
+            ],
             "noteId": "neet-s2-sec_02",
-            "label": "Why Living Organisms Need To Reproduce?",
-            "color": "mm-c2",
-            "concepts": [
-              "Reproduction",
-              "Reproduction is, thus, the",
-              "Reproduction is one of the most important…",
-              "All living organisms have a fixed life span.",
-              "During their life span, organisms perform…"
-            ],
             "links": [
-              "sec_01"
-            ]
+              {
+                "id": "asexual",
+                "rel": "two main routes →"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
+            "id": "asexual",
+            "label": "Asexual modes",
+            "color": "mm-c2",
+            "concepts": [
+              "Single parent — fast, identical offspring",
+              "Spore formation, budding, fragmentation",
+              "Reproduction → one of the most important…",
+              "Sexual reproduction → characterised by the…",
+              "Asexual reproduction, on the other… → the type…"
+            ],
+            "noteIds": [
+              "neet-s2-sec_03",
+              "neet-s2-sec_04",
+              "neet-s2-sec_16"
+            ],
             "noteId": "neet-s2-sec_03",
-            "label": "Modes Of Reproduction",
+            "links": [
+              {
+                "id": "vegetative",
+                "rel": "plants also use"
+              }
+            ],
+            "idea": true
+          },
+          {
+            "id": "vegetative",
+            "label": "Vegetative propagation",
             "color": "mm-c3",
             "concepts": [
-              "Reproduction",
-              "Sexual reproduction",
-              "Asexual reproduction, on the other hand,",
-              "New individual",
-              "A bulb-like projection called the bud"
+              "New plants from stems, roots, leaves — no seeds",
+              "Grafting joins rootstock + scion for desired…",
+              "Reproduction → one of the most important…",
+              "There → two ways by which living…",
+              "Reproductive organs do not take part in this…"
             ],
-            "links": [
-              "sec_01"
-            ]
-          },
-          {
-            "id": "sec_04",
-            "noteId": "neet-s2-sec_04",
-            "label": "Spore Formation",
-            "color": "mm-c4",
-            "concepts": [
-              "Spores are very small in size and they…",
-              "Conidia are asexual reproductive spores in…",
-              "Under favourable conditions, the buds on…"
+            "noteIds": [
+              "neet-s2-sec_05",
+              "neet-s2-sec_06"
             ],
-            "links": []
-          },
-          {
-            "id": "sec_05",
             "noteId": "neet-s2-sec_05",
-            "label": "Vegetative Propagation",
-            "color": "mm-c5",
-            "concepts": [
-              "Reproduction",
-              "Reproductive organs do not take part in…",
-              "Vegetative Propagation by Roots — In sweet…",
-              "New plants arise from the swollen roots…",
-              "Vegetative Propagation by Underground…"
-            ],
             "links": [
-              "sec_06"
-            ]
+              {
+                "id": "sexual",
+                "rel": "contrasts with"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_06",
-            "noteId": "neet-s2-sec_06",
-            "label": "Advantages of Vegetative Propagation",
-            "color": "mm-c6",
+            "id": "sexual",
+            "label": "Sexual reproduction in plants",
+            "color": "mm-c4",
             "concepts": [
-              "Plants produced by this method are…",
-              "Plants like banana, sugarcane, sweet…",
-              "Such plants can be easily grown by this…",
-              "Overcrowding often takes place near the…",
-              "Because of the advantages offered by…"
+              "Male + female gametes fuse → variation in…",
+              "Flowers are reproductive structures",
+              "Reproduction → one of the most important…",
+              "Sexual reproduction → characterised by the…",
+              "Self Pollination → associated with Cross…"
             ],
-            "links": [
-              "sec_05"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "map-2",
-        "title": "Part 2",
-        "center": "Part 2",
-        "branches": [
-          {
-            "id": "sec_07",
+            "noteIds": [
+              "neet-s2-sec_07",
+              "neet-s2-sec_08",
+              "neet-s2-sec_09",
+              "neet-s2-sec_10"
+            ],
             "noteId": "neet-s2-sec_07",
-            "label": "Grafting",
-            "color": "mm-c1",
-            "concepts": [
-              "Scion is the plant which one wants to…",
-              "Small parts of this tissue are kept in…",
-              "Male parent produces the male gamete and…"
-            ],
-            "links": []
-          },
-          {
-            "id": "sec_08",
-            "noteId": "neet-s2-sec_08",
-            "label": "Importance of sexual reproduction",
-            "color": "mm-c2",
-            "concepts": [
-              "Reproduction",
-              "Sexual reproduction",
-              "Sexual reproduction brings about the…"
-            ],
             "links": [
-              "sec_09"
-            ]
-          },
-          {
-            "id": "sec_09",
-            "noteId": "neet-s2-sec_09",
-            "label": "Sexual Reproduction In Plants",
-            "color": "mm-c3",
-            "concepts": [
-              "Reproduction",
-              "Sexual reproduction",
-              "A flower has four parts arranged in rings…",
-              "Of these four parts, stamens and carpel…",
-              "Sepals form the outermost whorl"
+              {
+                "id": "pollination",
+                "rel": "starts with"
+              }
             ],
-            "links": [
-              "sec_08"
-            ]
+            "idea": true
           },
           {
-            "id": "sec_10",
-            "noteId": "neet-s2-sec_10",
-            "label": "Investigation 2.1",
-            "color": "mm-c4",
-            "concepts": [
-              "Self Pollination",
-              "4. No wastage of pollen grains occurs and…",
-              "To dissect a bisexual flower to study…",
-              "1. It occurs within a flower or between…",
-              "2. Flowers do not depend on other agencies…"
-            ],
-            "links": [
-              "sec_12"
-            ]
-          },
-          {
-            "id": "sec_11",
-            "noteId": "neet-s2-sec_11",
-            "label": "Characteristics of Insect-Pollinated…",
+            "id": "pollination",
+            "label": "Pollination agents",
             "color": "mm-c5",
             "concepts": [
-              "5. Flowers",
-              "Insect pollinated flowers",
-              "2. Flowers produce scent and nectar.",
-              "5. Flowers are not attractive and they do…",
-              "Insect pollinated flowers is associated…"
+              "Pollen must reach stigma — insects, wind, or water",
+              "Flower shape matches its pollinator",
+              "Self Pollination → associated with Cross…",
+              "Reproduction → one of the most important…",
+              "There → two ways by which living…"
             ],
+            "noteIds": [
+              "neet-s2-sec_01",
+              "neet-s2-sec_11",
+              "neet-s2-sec_12",
+              "neet-s2-sec_13",
+              "neet-s2-sec_14",
+              "neet-s2-sec_15"
+            ],
+            "noteId": "neet-s2-sec_01",
             "links": [
-              "sec_12"
-            ]
+              {
+                "id": "fertilisation",
+                "rel": "leads to"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_12",
-            "noteId": "neet-s2-sec_12",
-            "label": "Characteristics of Wind-pollinated…",
+            "id": "fertilisation",
+            "label": "Fertilisation → fruit & seed",
             "color": "mm-c6",
             "concepts": [
-              "3. Pollen grains",
-              "4. Pollen grains",
-              "6. Stigmas",
-              "3. Pollen grains are produced in small…",
-              "3. Pollen grains are rough and sticky. is…"
+              "Gametes fuse → zygote → embryo inside seed",
+              "Ovary ripens into fruit protecting seeds"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_10",
-              "sec_11"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "map-3",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
-        "branches": [
-          {
-            "id": "sec_13",
-            "noteId": "neet-s2-sec_13",
-            "label": "Characteristics of water-pollinated…",
-            "color": "mm-c1",
-            "concepts": [
-              "1. Flowers have large and brightly…",
-              "5. Filaments",
-              "7. Essential whorls",
-              "5. Filaments are short. is associated with…",
-              "7. Essential whorls are not much exposed.…"
+              {
+                "id": "why",
+                "rel": "completes cycle of"
+              }
             ],
-            "links": []
-          },
-          {
-            "id": "sec_14",
-            "noteId": "neet-s2-sec_14",
-            "label": "Aims of Artificial Pollination",
-            "color": "mm-c2",
-            "concepts": [
-              "Potato plants produce flowers, fruits and…"
-            ],
-            "links": [
-              "sec_15"
-            ]
-          },
-          {
-            "id": "sec_15",
-            "noteId": "neet-s2-sec_15",
-            "label": "Procedure of Artificial Pollination",
-            "color": "mm-c3",
-            "concepts": [
-              "Anthers from the mature flower of a plant…",
-              "After pollination, fruits containing…"
-            ],
-            "links": [
-              "sec_14"
-            ]
-          },
-          {
-            "id": "sec_16",
-            "noteId": "neet-s2-sec_16",
-            "label": "Fertilisation : Formation of Fruit and…",
-            "color": "mm-c4",
-            "concepts": [
-              "Male parent produces the male gamete and…",
-              "Fertilisation : Formation of Fruit and Seed.",
-              "Fertilisation is defined as Formation of…",
-              "Pollen grains germinate on the stigma and…",
-              "Seeds are thus, present, inside the fruit."
-            ],
-            "links": []
+            "idea": true
           }
         ]
       }
@@ -512,88 +377,142 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch3": {
     "topicId": "bio-ch3",
     "chapterTitle": "Reproduction in Humans",
+    "center": "Human sexual reproduction & development",
     "maps": [
       {
         "id": "map-1",
-        "title": "Chapter overview",
-        "center": "Reproduction in Humans",
+        "title": "From puberty to birth",
+        "center": "Hormones, gametes & pregnancy",
+        "flow": [
+          {
+            "id": "puberty",
+            "label": "Puberty & sexual…"
+          },
+          {
+            "id": "systems",
+            "label": "Male & female…"
+          },
+          {
+            "id": "gametes",
+            "label": "Gametes &…"
+          },
+          {
+            "id": "fertilisation",
+            "label": "Fertilisation &…"
+          },
+          {
+            "id": "pregnancy",
+            "label": "Placenta & umbilical…"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s32-sec_01",
-            "label": "Introduction",
+            "id": "puberty",
+            "label": "Puberty & sexual maturity",
             "color": "mm-c1",
             "concepts": [
-              "Fertilisation",
-              "Internal fertilisation in humans",
-              "Compare internal fertilisation in humans…",
-              "Humans reproduce sexually by the fusion of…",
-              "Sexual reproduction in humans requires two…"
+              "Body becomes capable of reproduction",
+              "Hormones trigger physical changes",
+              "Puberty → the phase when physical…"
             ],
+            "noteIds": [
+              "neet-s32-sec_02"
+            ],
+            "noteId": "neet-s32-sec_02",
             "links": [
-              "sec_03",
-              "sec_04"
-            ]
+              {
+                "id": "systems",
+                "rel": "prepares"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s32-sec_02",
-            "label": "Puberty and Sexual Maturity",
+            "id": "systems",
+            "label": "Male & female reproductive systems",
             "color": "mm-c2",
             "concepts": [
-              "Reproductive organs become functional only…",
-              "Puberty is the phase when physical changes…",
-              "Male changes at puberty include a deeper…",
-              "Female changes include development of…",
-              "During the age of 14 and 16, following…"
+              "Testes produce sperm; ovaries produce eggs",
+              "Structures deliver gametes and support development",
+              "Fertilisation → internal and occurs in the…",
+              "Vas deferens → also called sperm duct through…",
+              "Oviducts or Fallopian tubes → the tubes through…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s32-sec_04"
+            ],
+            "noteId": "neet-s32-sec_04",
+            "links": [
+              {
+                "id": "gametes",
+                "rel": "produce"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s32-sec_03",
-            "label": "The Placenta and Umbilical Cord",
+            "id": "gametes",
+            "label": "Gametes & fertilisation site",
             "color": "mm-c3",
             "concepts": [
-              "Fertilisation",
-              "Internal fertilisation in humans",
-              "Fertilisation is internal and occurs in…",
-              "Internal fertilisation in humans means…",
-              "Fertilisation takes place inside the…"
-            ],
-            "links": [
-              "sec_01",
-              "sec_04"
-            ]
-          },
-          {
-            "id": "sec_04",
-            "noteId": "neet-s32-sec_04",
-            "label": "Sexual Reproduction In Humans",
-            "color": "mm-c4",
-            "concepts": [
-              "Fertilisation",
-              "Vas deferens (plural, vasa deferentia)",
-              "Oviducts or Fallopian tubes",
-              "Uterus (also known as the womb)",
-              "Vagina : Cervix"
-            ],
-            "links": [
-              "sec_01",
-              "sec_03"
-            ]
-          },
-          {
-            "id": "sec_05",
-            "noteId": "neet-s32-sec_05",
-            "label": "Fertilisation and Implantation",
-            "color": "mm-c5",
-            "concepts": [
-              "Fertilisation",
-              "Many sperms reach the egg, but only one…",
+              "Sperm travels to egg — usually in oviduct",
+              "Fertilisation → internal and occurs in the…",
+              "Internal fertilisation in humans → fertilisation…",
+              "After fertilisation, the zygote divides to…",
               "After fertilisation, the fertilised egg…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s32-sec_01",
+              "neet-s32-sec_05"
+            ],
+            "noteId": "neet-s32-sec_01",
+            "links": [
+              {
+                "id": "fertilisation",
+                "rel": "fuse in"
+              }
+            ],
+            "idea": true
+          },
+          {
+            "id": "fertilisation",
+            "label": "Fertilisation & implantation",
+            "color": "mm-c4",
+            "concepts": [
+              "Sperm + egg → zygote → embryo",
+              "Embryo implants in uterus wall"
+            ],
+            "noteIds": [],
+            "noteId": "",
+            "links": [
+              {
+                "id": "pregnancy",
+                "rel": "begins"
+              }
+            ],
+            "idea": true
+          },
+          {
+            "id": "pregnancy",
+            "label": "Placenta & umbilical cord",
+            "color": "mm-c5",
+            "concepts": [
+              "Placenta exchanges nutrients, oxygen & wastes",
+              "Umbilical cord links embryo to mother",
+              "Fertilisation → internal and occurs in the…",
+              "Internal fertilisation in humans → fertilisation…"
+            ],
+            "noteIds": [
+              "neet-s32-sec_03"
+            ],
+            "noteId": "neet-s32-sec_03",
+            "links": [
+              {
+                "id": "puberty",
+                "rel": "cycle restarts after"
+              }
+            ],
+            "idea": true
           }
         ]
       }
@@ -602,314 +521,310 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch4": {
     "topicId": "bio-ch4",
     "chapterTitle": "Ecosystems",
+    "center": "How living things interact in nature",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Ecosystems",
+        "title": "Ecosystem building blocks",
+        "center": "Who lives where — and on what",
+        "flow": [
+          {
+            "id": "ecosystem",
+            "label": "What is an ecosystem?"
+          },
+          {
+            "id": "components",
+            "label": "Biotic ↔ abiotic factors"
+          },
+          {
+            "id": "producers",
+            "label": "Producers (autotrophs)"
+          },
+          {
+            "id": "consumers",
+            "label": "Consumers (heterotrophs)"
+          },
+          {
+            "id": "decomposers",
+            "label": "Decomposers"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s3-sec_01",
-            "label": "Ecosystems",
+            "id": "ecosystem",
+            "label": "What is an ecosystem?",
             "color": "mm-c1",
             "concepts": [
-              "Abiotic factor",
-              "Sunlight",
-              "Temperature",
-              "Climatic factors, these",
-              "Consumers"
+              "Living + non-living parts interacting in an area",
+              "Terrestrial, aquatic, artificial types",
+              "All living things need food to live.",
+              "Plants like mosses, lichens and epiphytes…",
+              "Some parts of the Earth are too hot and others…"
             ],
+            "noteIds": [
+              "neet-s3-sec_03",
+              "neet-s3-sec_15"
+            ],
+            "noteId": "neet-s3-sec_03",
             "links": [
-              "sec_02",
-              "sec_03",
-              "sec_04"
-            ]
+              {
+                "id": "components",
+                "rel": "made of"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s3-sec_02",
-            "label": "Introduction",
+            "id": "components",
+            "label": "Biotic ↔ abiotic factors",
             "color": "mm-c2",
             "concepts": [
-              "Temperature",
-              "Without a source of energy, ecosystems",
-              "Land, air and water",
-              "All organisms such as plants, animals,…",
-              "All the interacting organisms in an area…"
+              "Biotic = living; abiotic = physical environment",
+              "Each affects the other (e.g. light → plant growth)",
+              "Abiotic factor → associated with Characteristics",
+              "Sunlight → associated with Required for…",
+              "Temperature → associated with Influences the…"
             ],
+            "noteIds": [
+              "neet-s3-sec_01",
+              "neet-s3-sec_02",
+              "neet-s3-sec_04",
+              "neet-s3-sec_05",
+              "neet-s3-sec_09",
+              "neet-s3-sec_13",
+              "neet-s3-sec_14",
+              "neet-s3-sec_16",
+              "neet-s3-sec_17"
+            ],
+            "noteId": "neet-s3-sec_01",
             "links": [
-              "sec_01",
-              "sec_03",
-              "sec_06"
-            ]
+              {
+                "id": "producers",
+                "rel": "energy enters via"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s3-sec_03",
-            "label": "Types Of Ecosystems",
+            "id": "producers",
+            "label": "Producers (autotrophs)",
             "color": "mm-c3",
             "concepts": [
-              "Ecosystems occur in a variety of habitats.",
-              "(a) Plants $ \\rightarrow $ Human beings.",
-              "Are not found in cold places."
+              "Plants capture sun energy → food for all",
+              "Sunlight → associated with Required for…",
+              "Ecosystems depend on sun's energy… → captured by…",
+              "Water → associated with Helps the…",
+              "food chain → a diagram or a chain showing…"
             ],
+            "noteIds": [
+              "neet-s3-sec_06",
+              "neet-s3-sec_10"
+            ],
+            "noteId": "neet-s3-sec_06",
             "links": [
-              "sec_02",
-              "sec_06"
-            ]
+              {
+                "id": "consumers",
+                "rel": "fed by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s3-sec_04",
-            "label": "Components Of Ecosystems",
+            "id": "consumers",
+            "label": "Consumers (heterotrophs)",
             "color": "mm-c4",
             "concepts": [
-              "Abiotic factor",
-              "Consumers",
-              "Abiotic factor is associated with…",
-              "There is a close interaction between the…",
-              "Understanding ecosystems: definition,…"
+              "Eat plants or other animals — cannot make own food",
+              "Consumers → further classified as primary…",
+              "Primary consumers or herbivores:… → all the…",
+              "Secondary consumers or carnivores… → all…",
+              "Scavengers : Animals that feed on… → called…"
             ],
+            "noteIds": [
+              "neet-s3-sec_07",
+              "neet-s3-sec_08",
+              "neet-s3-sec_11",
+              "neet-s3-sec_12"
+            ],
+            "noteId": "neet-s3-sec_07",
             "links": [
-              "sec_01",
-              "sec_05",
-              "sec_06"
-            ]
+              {
+                "id": "decomposers",
+                "rel": "waste recycled by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_05",
-            "noteId": "neet-s3-sec_05",
-            "label": "Components Of Ecosystem",
+            "id": "decomposers",
+            "label": "Decomposers",
             "color": "mm-c5",
             "concepts": [
-              "Temperature",
-              "Climatic factors, these",
-              "Cockroach and ox",
-              "Temperature is associated with Influences…",
-              "Air is associated with Provides oxygen to…"
+              "Break down dead matter → nutrients back to soil"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_01",
-              "sec_04",
-              "sec_06"
-            ]
-          },
-          {
-            "id": "sec_06",
-            "noteId": "neet-s3-sec_06",
-            "label": "Autotrophs or producers",
-            "color": "mm-c6",
-            "concepts": [
-              "Sunlight",
-              "Ecosystems depend on sun's energy which",
-              "Sunlight is associated with Required for…",
-              "Ecosystems depend on sun's energy which is…",
-              "A food relationship exists between plants…"
+              {
+                "id": "producers",
+                "rel": "nutrients return to"
+              }
             ],
-            "links": [
-              "sec_01",
-              "sec_02",
-              "sec_03"
-            ]
+            "idea": true
           }
         ]
       },
       {
         "id": "map-2",
-        "title": "Part 2",
-        "center": "Part 2",
-        "branches": [
+        "title": "Energy, balance & threats",
+        "center": "Food chains to global change",
+        "flow": [
           {
-            "id": "sec_07",
-            "noteId": "neet-s3-sec_07",
-            "label": "Heterotrophs or consumers",
-            "color": "mm-c1",
-            "concepts": [
-              "Consumers",
-              "Primary consumers or herbivores: These",
-              "Secondary consumers or carnivores : These",
-              "Scavengers : Animals that feed on dead…",
-              "Though in the general sense, we prepare…"
-            ],
-            "links": [
-              "sec_08",
-              "sec_12"
-            ]
+            "id": "foodchain",
+            "label": "Food chains & energy…"
           },
           {
-            "id": "sec_08",
-            "noteId": "neet-s3-sec_08",
-            "label": "Decomposers or saprophytes",
-            "color": "mm-c2",
-            "concepts": [
-              "Decomposers replenish the nutrients in the…",
-              "Scavengers : Animals that feed on dead…",
-              "Paper, garbage and cotton cloth",
-              "By their activity, the decomposers also…",
-              "Imagine, what would happen if there were…"
-            ],
-            "links": [
-              "sec_07"
-            ]
+            "id": "trophic",
+            "label": "Trophic levels"
           },
           {
-            "id": "sec_09",
-            "noteId": "neet-s3-sec_09",
-            "label": "Interaction between Biotic and Abiotic…",
-            "color": "mm-c3",
-            "concepts": [
-              "A food chain",
-              "A lake supports the presence of water…",
-              "All living things need food to live.",
-              "A food chain is a diagram or a chain…",
-              "Each arrow in a food chain represents “is…"
-            ],
-            "links": [
-              "sec_10",
-              "sec_11",
-              "sec_12"
-            ]
+            "id": "symbiosis",
+            "label": "Species interactions"
           },
           {
-            "id": "sec_10",
-            "noteId": "neet-s3-sec_10",
-            "label": "Investigation 3.2",
-            "color": "mm-c4",
-            "concepts": [
-              "A food chain",
-              "Food web : In nature, a number of food…",
-              "Prepare simple food chains on land and in…",
-              "Each arrow in a food chain represents “is…",
-              "Algae, grass, small fish, crabs, small…"
-            ],
-            "links": [
-              "sec_09",
-              "sec_11",
-              "sec_12"
-            ]
+            "id": "balance",
+            "label": "Balance in ecosystems"
           },
           {
-            "id": "sec_11",
-            "noteId": "neet-s3-sec_11",
-            "label": "Energy Pathway in food chain",
-            "color": "mm-c5",
-            "concepts": [
-              "A food chain",
-              "Energy from the Sun is used by plants to…",
-              "Eventually, the food stored in plants and…",
-              "Plants again use these simple substances…",
-              "Such a food chain has only two trophic…"
-            ],
-            "links": [
-              "sec_09",
-              "sec_10",
-              "sec_12"
-            ]
-          },
-          {
-            "id": "sec_12",
-            "noteId": "neet-s3-sec_12",
-            "label": "Trophic Levels",
-            "color": "mm-c6",
-            "concepts": [
-              "Consumers",
-              "A food chain",
-              "Food chain : The transfer of energy from…",
-              "Carnivores or secondary consumers…",
-              "Top carnivores or tertiary consumers which…"
-            ],
-            "links": [
-              "sec_07",
-              "sec_09",
-              "sec_10"
-            ]
+            "id": "warming",
+            "label": "Global warming"
           }
-        ]
-      },
-      {
-        "id": "map-3",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
+        ],
         "branches": [
           {
-            "id": "sec_13",
-            "noteId": "neet-s3-sec_13",
-            "label": "Abiotic Components Of Ecosystem",
+            "id": "foodchain",
+            "label": "Food chains & energy flow",
             "color": "mm-c1",
             "concepts": [
-              "Abiotic factor",
-              "5. Exosphere",
-              "Region relates to Range of Distance,…",
-              "1. Troposphere relates to About 12 km,…",
-              "2. Stratosphere relates to 10-50 km, Less…"
+              "Energy passes producer → herbivore → carnivore",
+              "Energy lost at each step — chains are short",
+              "Abiotic factor → associated with Characteristics",
+              "Sunlight → associated with Required for…",
+              "Temperature → associated with Influences the…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s3-sec_01",
+              "neet-s3-sec_06",
+              "neet-s3-sec_07",
+              "neet-s3-sec_08",
+              "neet-s3-sec_09",
+              "neet-s3-sec_11",
+              "neet-s3-sec_12"
+            ],
+            "noteId": "neet-s3-sec_01",
+            "links": [
+              {
+                "id": "trophic",
+                "rel": "organised as"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_14",
-            "noteId": "neet-s3-sec_14",
-            "label": "Global Warming",
+            "id": "trophic",
+            "label": "Trophic levels",
             "color": "mm-c2",
             "concepts": [
-              "Temperature",
-              "Carbon dioxide concentration in the…",
-              "Wind affects the plants in various ways,…",
-              "Plants growing along the sea coast and on…",
-              "Violent winds also result in the breakage…"
+              "Each feeding level = trophic level",
+              "Temperature → associated with Influences the…",
+              "Water → associated with Helps the…",
+              "There → a close interaction between…",
+              "Without a source of energy,… → not able to…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s3-sec_02"
+            ],
+            "noteId": "neet-s3-sec_02",
+            "links": [
+              {
+                "id": "symbiosis",
+                "rel": "species also"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_15",
-            "noteId": "neet-s3-sec_15",
-            "label": "Interdependence Amongst Living Organisms",
+            "id": "symbiosis",
+            "label": "Species interactions",
             "color": "mm-c3",
             "concepts": [
+              "Parasitism, mutualism, commensalism",
+              "Organisms depend on each other",
               "All living things need food to live.",
               "Plants like mosses, lichens and epiphytes…",
-              "Some parts of the Earth are too hot and…",
-              "All living things depend on other living…",
-              "A lion needs deer to live."
+              "Some parts of the Earth are too hot and others…"
             ],
+            "noteIds": [
+              "neet-s3-sec_15",
+              "neet-s3-sec_16"
+            ],
+            "noteId": "neet-s3-sec_15",
             "links": [
-              "sec_16",
-              "sec_17"
-            ]
+              {
+                "id": "balance",
+                "rel": "must stay in"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_16",
-            "noteId": "neet-s3-sec_16",
-            "label": "Parasitism (Para = other)",
+            "id": "balance",
+            "label": "Balance in ecosystems",
             "color": "mm-c4",
             "concepts": [
-              "During summer, you may have observed a…",
-              "A lion needs deer to live.",
-              "Plants are parasitised by bacteria ,…",
-              "Predation refers to an interaction between…",
-              "Insects and their larvae"
+              "Removal of one species ripples through the web",
+              "Abiotic factor → associated with Characteristics",
+              "Water → associated with Helps the…",
+              "5. Exosphere → associated with 700-10,000 km…",
+              "There → a close interaction between…"
             ],
+            "noteIds": [
+              "neet-s3-sec_13",
+              "neet-s3-sec_17"
+            ],
+            "noteId": "neet-s3-sec_13",
             "links": [
-              "sec_15",
-              "sec_17"
-            ]
+              {
+                "id": "warming",
+                "rel": "threatened by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_17",
-            "noteId": "neet-s3-sec_17",
-            "label": "Importance of Balance in Ecosystems",
+            "id": "warming",
+            "label": "Global warming",
             "color": "mm-c5",
             "concepts": [
-              "Organic compounds, such as proteins,…",
-              "Of the total water available on earth,…",
-              "Plants like water lily, Lemna and…",
-              "Allows decomposition of dead plants and…",
-              "There is a delicate balance between living…"
+              "Greenhouse gases trap heat — alters habitats",
+              "Temperature → associated with Influences the…",
+              "Water → associated with Helps the…",
+              "Climatic factors, these → of two types—",
+              "Humans → omnivores since they consume…"
             ],
+            "noteIds": [
+              "neet-s3-sec_05",
+              "neet-s3-sec_14",
+              "neet-s3-sec_10"
+            ],
+            "noteId": "neet-s3-sec_05",
             "links": [
-              "sec_15",
-              "sec_16"
-            ]
+              {
+                "id": "balance",
+                "rel": "disrupts"
+              }
+            ],
+            "idea": true
           }
         ]
       }
@@ -918,192 +833,176 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch5": {
     "topicId": "bio-ch5",
     "chapterTitle": "Endocrine System",
+    "center": "Chemical messengers that coordinate…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Endocrine System",
+        "title": "Hormones & adolescence",
+        "center": "Glands, hormones & growing up",
+        "flow": [
+          {
+            "id": "glands",
+            "label": "Endocrine vs exocrine…"
+          },
+          {
+            "id": "endocrine",
+            "label": "Major endocrine glands"
+          },
+          {
+            "id": "thyroid",
+            "label": "Thyroid & metabolism"
+          },
+          {
+            "id": "diabetes",
+            "label": "Diabetes mellitus"
+          },
+          {
+            "id": "adolescence",
+            "label": "Adolescence changes"
+          },
+          {
+            "id": "hygiene",
+            "label": "Hygiene & stress…"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s4-sec_01",
-            "label": "Two Types Of Glands",
+            "id": "glands",
+            "label": "Endocrine vs exocrine glands",
             "color": "mm-c1",
             "concepts": [
-              "Hormones",
-              "Through the blood, secretions of endocrine…",
-              "Of endocrine glands",
-              "Increase or decrease in the hormone…",
-              "Hormones acts as messengers and coordinate…"
+              "Endocrine: ductless — hormones into blood",
+              "Exocrine: ducts carry secretions out",
+              "Hormones → chemical substances secreted…",
+              "There → two types of glands in our…",
+              "Through the blood, secretions of… → carried to…"
             ],
+            "noteIds": [
+              "neet-s4-sec_01"
+            ],
+            "noteId": "neet-s4-sec_01",
             "links": [
-              "sec_02",
-              "sec_03",
-              "sec_04"
-            ]
+              {
+                "id": "endocrine",
+                "rel": "examples in"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s4-sec_02",
-            "label": "Endocrine System In Humans",
+            "id": "endocrine",
+            "label": "Major endocrine glands",
             "color": "mm-c2",
             "concepts": [
-              "Hormones",
-              "Of endocrine glands",
-              "Pituitary relates to At the base of the…",
-              "Thyroid relates to Neck, Thyroxine $ T_3 $…",
-              "Of endocrine glands are called hormones."
+              "Pituitary, thyroid, pancreas, adrenals — each…",
+              "Hormones → chemical substances secreted…",
+              "Of endocrine glands → called hormones",
+              "Chemical coordination in living… → brought about…",
+              "So adrenaline → also called flight and flight…"
             ],
+            "noteIds": [
+              "neet-s4-sec_02",
+              "neet-s4-sec_10",
+              "neet-s4-sec_11"
+            ],
+            "noteId": "neet-s4-sec_02",
             "links": [
-              "sec_01",
-              "sec_03"
-            ]
+              {
+                "id": "thyroid",
+                "rel": "includes"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s4-sec_03",
-            "label": "Thyroid Gland",
+            "id": "thyroid",
+            "label": "Thyroid & metabolism",
             "color": "mm-c3",
             "concepts": [
-              "Hormones",
-              "Thyroxine hormone",
-              "Such glands",
-              "Its oversecretion results in increased…",
-              "Its undersecretion makes the person…"
+              "Thyroxine controls growth & metabolism"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_01",
-              "sec_02",
-              "sec_04"
-            ]
+              {
+                "id": "diabetes",
+                "rel": "related disorder →"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s4-sec_04",
-            "label": "Know about Diabetes",
+            "id": "diabetes",
+            "label": "Diabetes mellitus",
             "color": "mm-c4",
             "concepts": [
-              "Hormones",
-              "Diabetes",
-              "Its symptoms",
-              "Adrenaline hormone",
-              "So adrenaline"
+              "Insulin from pancreas lowers blood glucose",
+              "Type linked to insulin production or response",
+              "Hormones → chemical substances secreted…",
+              "Thyroxine hormone → synthesized by iodine",
+              "Such glands → called mixed glands"
             ],
+            "noteIds": [
+              "neet-s4-sec_03",
+              "neet-s4-sec_04"
+            ],
+            "noteId": "neet-s4-sec_03",
             "links": [
-              "sec_01",
-              "sec_03"
-            ]
+              {
+                "id": "adolescence",
+                "rel": "body changes during"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_05",
-            "noteId": "neet-s4-sec_05",
-            "label": "Adolescence",
+            "id": "adolescence",
+            "label": "Adolescence changes",
             "color": "mm-c5",
             "concepts": [
-              "Adolescence",
-              "Adolescent age",
-              "Rate of growth in humans differ with age.",
-              "High rate of growth also occurs during…",
-              "Adolescence is the period of growth when…"
+              "Hormones drive physical & emotional changes",
+              "Growth spurts, voice change, reproductive maturity",
+              "Adolescence → the transitional phase between…",
+              "Adolescent age → accompanied by several changes…",
+              "GirlsBody becomes curvier. → associated with Boys"
             ],
+            "noteIds": [
+              "neet-s4-sec_05",
+              "neet-s4-sec_06",
+              "neet-s4-sec_07"
+            ],
+            "noteId": "neet-s4-sec_05",
             "links": [
-              "sec_06"
-            ]
+              {
+                "id": "hygiene",
+                "rel": "needs"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_06",
-            "noteId": "neet-s4-sec_06",
-            "label": "Physical Changes in Adolescents",
+            "id": "hygiene",
+            "label": "Hygiene & stress management",
             "color": "mm-c6",
             "concepts": [
-              "GirlsBody becomes curvier.",
-              "Enlargement of breasts and onset of…",
-              "Hormones",
-              "Adolescence",
-              "GirlsBody becomes curvier. is associated…"
+              "Personal hygiene prevents infection in teens",
+              "Healthy habits reduce stress",
+              "Adolescent age → accompanied by several changes…",
+              "So it → more important for them to…",
+              "Stress → the feeling of being under too…"
             ],
-            "links": []
-          }
-        ]
-      },
-      {
-        "id": "map-2",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
-        "branches": [
-          {
-            "id": "sec_07",
-            "noteId": "neet-s4-sec_07",
-            "label": "Emotional Changes in Adolescents",
-            "color": "mm-c1",
-            "concepts": [
-              "Hormones",
-              "Adolescence",
-              "Hormones are responsible for the changes…",
-              "Adolescence is associated with emotional…",
-              "Hormones can bring changes in mood,…"
+            "noteIds": [
+              "neet-s4-sec_08",
+              "neet-s4-sec_09"
             ],
-            "links": [
-              "sec_10"
-            ]
-          },
-          {
-            "id": "sec_08",
             "noteId": "neet-s4-sec_08",
-            "label": "Importance Of Personal Hygiene",
-            "color": "mm-c2",
-            "concepts": [
-              "Adolescent age",
-              "Adolescent age is accompanied by several…",
-              "Their body produce more oil and sweat.",
-              "So it is more important for them to keep…",
-              "Maintaining personal hygiene help us in…"
-            ],
-            "links": []
-          },
-          {
-            "id": "sec_09",
-            "noteId": "neet-s4-sec_09",
-            "label": "Stress Management",
-            "color": "mm-c3",
-            "concepts": [
-              "Stress is the feeling of being under too…",
-              "An emotional or mental pressure becomes a…",
-              "Stress management refers to the wide…"
-            ],
-            "links": []
-          },
-          {
-            "id": "sec_10",
-            "noteId": "neet-s4-sec_10",
-            "label": "Tips to manage and reduce stress levels",
-            "color": "mm-c4",
-            "concepts": [
-              "Hormones",
-              "Chemical coordination in living beings",
-              "So adrenaline",
-              "Adolescence",
-              "Chemical coordination in living beings is…"
-            ],
             "links": [
-              "sec_07",
-              "sec_11"
-            ]
-          },
-          {
-            "id": "sec_11",
-            "noteId": "neet-s4-sec_11",
-            "label": "I. Tick (✓) the correct choice",
-            "color": "mm-c5",
-            "concepts": [
-              "Hormones",
-              "Chemical coordination in living beings",
-              "Hormones are chemical substances secreted…",
-              "Chemical coordination in living beings is…"
+              {
+                "id": "glands",
+                "rel": "hormones affect mood…"
+              }
             ],
-            "links": [
-              "sec_10"
-            ]
+            "idea": true
           }
         ]
       }
@@ -1112,113 +1011,141 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch6": {
     "topicId": "bio-ch6",
     "chapterTitle": "The Circulatory System",
+    "center": "Blood, heart & the double circulation…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Chapter overview",
-        "center": "The Circulatory System",
+        "title": "Heart & circulation",
+        "center": "Pump, pipes & pathways",
+        "flow": [
+          {
+            "id": "need",
+            "label": "Why circulation matters"
+          },
+          {
+            "id": "heart",
+            "label": "Heart structure &…"
+          },
+          {
+            "id": "vessels",
+            "label": "Blood vessels"
+          },
+          {
+            "id": "circulation",
+            "label": "Double circulation"
+          },
+          {
+            "id": "lymph",
+            "label": "Lymphatic system"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s7-sec_01",
-            "label": "Introduction",
+            "id": "need",
+            "label": "Why circulation matters",
             "color": "mm-c1",
             "concepts": [
-              "Contains blood plasma only",
-              "Capillaries",
-              "Contains blood plasma only is associated…",
-              "Contains blood plasma only — Antigen on…",
-              "Blood is a fluid connective tissue that…"
+              "Delivers O₂, food, hormones; removes CO₂ & wastes",
+              "Contains blood plasma only → associated with…",
+              "Blood → a fluid connective tissue that…",
+              "Capillaries → the finest blood vessels that…",
+              "Oxygen → absorbed into the blood for…"
             ],
+            "noteIds": [
+              "neet-s7-sec_01"
+            ],
+            "noteId": "neet-s7-sec_01",
             "links": [
-              "sec_02",
-              "sec_04",
-              "sec_05"
-            ]
+              {
+                "id": "heart",
+                "rel": "powered by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s7-sec_02",
-            "label": "Structure of the Human Heart",
+            "id": "heart",
+            "label": "Heart structure & heartbeat",
             "color": "mm-c2",
             "concepts": [
-              "Capillaries",
-              "Aortic semilunar valve",
-              "Pulmonary semilunar valve",
-              "Pulmonary artery",
-              "Oxygenated blood"
+              "Four chambers — atria receive, ventricles pump",
+              "SAN (pacemaker) sets heartbeat rhythm",
+              "Blood → a fluid connective tissue that…",
+              "Capillaries → the finest blood vessels that…",
+              "Aortic semilunar valve → located at the point of…"
             ],
+            "noteIds": [
+              "neet-s7-sec_02",
+              "neet-s7-sec_03",
+              "neet-s7-sec_06"
+            ],
+            "noteId": "neet-s7-sec_02",
             "links": [
-              "sec_01",
-              "sec_04"
-            ]
+              {
+                "id": "vessels",
+                "rel": "connected to"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s7-sec_03",
-            "label": "Pacemaker",
+            "id": "vessels",
+            "label": "Blood vessels",
             "color": "mm-c3",
             "concepts": [
-              "Sino-atrial node",
-              "Pacemaker",
-              "Contraction and relaxation occur as a…",
-              "Sino-atrial node is situated in the upper…",
-              "Sometimes the pacemaker becomes faulty…"
+              "Arteries carry blood away; veins return it",
+              "Capillaries exchange with tissues",
+              "Blood → a fluid connective tissue that…",
+              "Aorta → defined as Main artery which…",
+              "Pulmonary artery → defined as Right ventricle…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s7-sec_04",
+              "neet-s7-sec_05"
+            ],
+            "noteId": "neet-s7-sec_04",
+            "links": [
+              {
+                "id": "circulation",
+                "rel": "form routes of"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s7-sec_04",
-            "label": "Major Blood Vessels Associated With…",
+            "id": "circulation",
+            "label": "Double circulation",
             "color": "mm-c4",
             "concepts": [
-              "Pulmonary artery",
-              "Pulmonary vein",
-              "Coronary artery",
-              "Coronary vein",
-              "Pulmonary trunk"
+              "Pulmonary: heart → lungs → heart",
+              "Systemic: heart → body → heart"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_01",
-              "sec_02",
-              "sec_06"
-            ]
+              {
+                "id": "lymph",
+                "rel": "parallel system →"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_05",
-            "noteId": "neet-s7-sec_05",
-            "label": "Blood Circulation",
+            "id": "lymph",
+            "label": "Lymphatic system",
             "color": "mm-c5",
             "concepts": [
-              "Antigens",
-              "None — Antigen on RBCs: anti-A and anti-B.",
-              "Oxygen is absorbed into the blood",
-              "Antigens are foreign substances in the…",
-              "Antibodies are chemical substances…"
+              "Returns excess tissue fluid to blood; carries…"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_01",
-              "sec_06"
-            ]
-          },
-          {
-            "id": "sec_06",
-            "noteId": "neet-s7-sec_06",
-            "label": "Composition of lymph",
-            "color": "mm-c6",
-            "concepts": [
-              "Yellow in colour",
-              "Yellow in colour is associated with Red in…",
-              "Yellow in colour — Antigen on RBCs: Red in…",
-              "Contains WBCs especially lymphocytes which…",
-              "There are two transport systems in the…"
+              {
+                "id": "vessels",
+                "rel": "drains into"
+              }
             ],
-            "links": [
-              "sec_01",
-              "sec_04",
-              "sec_05"
-            ]
+            "idea": true
           }
         ]
       }
@@ -1227,81 +1154,134 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch7": {
     "topicId": "bio-ch7",
     "chapterTitle": "Nervous System",
+    "center": "How the body senses, decides & responds",
     "maps": [
       {
         "id": "map-1",
-        "title": "Chapter overview",
-        "center": "Nervous System",
+        "title": "Nervous coordination",
+        "center": "From stimulus to response",
+        "flow": [
+          {
+            "id": "role",
+            "label": "Role of the nervous…"
+          },
+          {
+            "id": "cns",
+            "label": "Central nervous system"
+          },
+          {
+            "id": "pns",
+            "label": "Peripheral nerves"
+          },
+          {
+            "id": "reflex",
+            "label": "Reflex actions"
+          },
+          {
+            "id": "terms",
+            "label": "Key terminology"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s5-sec_01",
-            "label": "Introduction",
+            "id": "role",
+            "label": "Role of the nervous system",
             "color": "mm-c1",
             "concepts": [
-              "Nervous System",
-              "Part involved",
-              "Nerve cells",
-              "A number of nerve fibres (axon part)",
-              "Based on the type of nerve impulse, there"
+              "Detects stimuli → processes → triggers response",
+              "Faster than hormones for quick actions"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_02",
-              "sec_03",
-              "sec_04"
-            ]
+              {
+                "id": "cns",
+                "rel": "centred in"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s5-sec_02",
-            "label": "Nervous System of Humans",
+            "id": "cns",
+            "label": "Central nervous system",
             "color": "mm-c2",
             "concepts": [
-              "Nervous System",
-              "Some basic terms related to nervous system",
-              "Motor neurons",
-              "Nervous System is associated with…",
-              "Some basic terms related to nervous system…"
+              "Brain + spinal cord — command centre",
+              "Messages → sent through nerve fibres. is…",
+              "No hormones → secreted. Messages are sent as…",
+              "Transmission of impulse → quick. is associated…",
+              "Nature of action → associated with Voluntary"
             ],
+            "noteIds": [
+              "neet-s5-sec_03",
+              "neet-s5-sec_04"
+            ],
+            "noteId": "neet-s5-sec_03",
             "links": [
-              "sec_01",
-              "sec_03"
-            ]
+              {
+                "id": "pns",
+                "rel": "linked via"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s5-sec_03",
-            "label": "Central Nervous System (Cns)",
+            "id": "pns",
+            "label": "Peripheral nerves",
             "color": "mm-c3",
             "concepts": [
-              "Messages",
-              "No hormones",
-              "Transmission of impulse",
-              "Nature of action",
-              "Part involved"
+              "Nerves carry messages to and from CNS",
+              "Nervous System → associated with Endocrine System",
+              "Part involved → associated with Brain",
+              "Nerve cells → joined end to end to form long…",
+              "number of nerve fibres"
             ],
+            "noteIds": [
+              "neet-s5-sec_01",
+              "neet-s5-sec_02"
+            ],
+            "noteId": "neet-s5-sec_01",
             "links": [
-              "sec_01",
-              "sec_02",
-              "sec_04"
-            ]
+              {
+                "id": "reflex",
+                "rel": "enables"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s5-sec_04",
-            "label": "General Terminology",
+            "id": "reflex",
+            "label": "Reflex actions",
             "color": "mm-c4",
             "concepts": [
-              "Nature of action",
-              "Part involved",
-              "Speed of response",
-              "Spinal cord",
-              "A reflex"
+              "Automatic, fast — often bypasses brain"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_01",
-              "sec_03"
-            ]
+              {
+                "id": "terms",
+                "rel": "uses"
+              }
+            ],
+            "idea": true
+          },
+          {
+            "id": "terms",
+            "label": "Key terminology",
+            "color": "mm-c5",
+            "concepts": [
+              "Neuron, synapse, impulse — vocabulary ties ideas…"
+            ],
+            "noteIds": [],
+            "noteId": "",
+            "links": [
+              {
+                "id": "role",
+                "rel": "describes"
+              }
+            ],
+            "idea": true
           }
         ]
       }
@@ -1310,212 +1290,180 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch8": {
     "topicId": "bio-ch8",
     "chapterTitle": "Health and Hygiene",
+    "center": "Staying healthy — prevention, habits &…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Health and Hygiene",
+        "title": "Disease & prevention",
+        "center": "From germs to immunity",
+        "flow": [
+          {
+            "id": "communicable",
+            "label": "Communicable diseases"
+          },
+          {
+            "id": "vectors",
+            "label": "Vectors & vector-borne…"
+          },
+          {
+            "id": "prevention",
+            "label": "Prevention & control"
+          },
+          {
+            "id": "vaccines",
+            "label": "Vaccination"
+          },
+          {
+            "id": "lifestyle",
+            "label": "Healthy vs harmful…"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s6-sec_01",
-            "label": "Introduction",
+            "id": "communicable",
+            "label": "Communicable diseases",
             "color": "mm-c1",
             "concepts": [
-              "Personal hygiene",
-              "Types of diseases namely communicable…",
-              "Aspects of personal hygiene and community…",
-              "Certain precautions which could be adopted…",
-              "Lowering of blood sugar level which has…"
+              "Spread person-to-person or via fluids",
+              "Disease → an abnormal condition of a…",
+              "All communicable diseases → infections diseases",
+              "Malaria → transmitted by mosquitoes…",
+              "Vaccination → a method of making the body…"
             ],
+            "noteIds": [
+              "neet-s6-sec_02"
+            ],
+            "noteId": "neet-s6-sec_02",
             "links": [
-              "sec_02",
-              "sec_04",
-              "sec_06"
-            ]
+              {
+                "id": "vectors",
+                "rel": "some spread by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s6-sec_02",
-            "label": "Communicable Diseases",
+            "id": "vectors",
+            "label": "Vectors & vector-borne disease",
             "color": "mm-c2",
             "concepts": [
-              "All communicable diseases",
-              "Vaccination",
-              "Chikungunya",
-              "Anopheles mosquito",
-              "Aedes mosquito — Fever, Chill, cold,…"
+              "Insects carry pathogens between hosts",
+              "Disease → an abnormal condition of a…",
+              "Vectors → organisms, typically insects…",
+              "Vector-borne diseases → illnesses caused by the…",
+              "Malaria → transmitted by mosquitoes…"
             ],
+            "noteIds": [
+              "neet-s6-sec_03"
+            ],
+            "noteId": "neet-s6-sec_03",
             "links": [
-              "sec_01",
-              "sec_03"
-            ]
+              {
+                "id": "prevention",
+                "rel": "controlled by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s6-sec_03",
-            "label": "Vectors And Vector-Borne Diseases",
+            "id": "prevention",
+            "label": "Prevention & control",
             "color": "mm-c3",
             "concepts": [
-              "Vector-borne diseases",
-              "Pathogens",
-              "Vector relates to Pathogen, Disease, and…",
-              "Anopheles mosquito",
-              "Aedes mosquito relates to Yellow fever…"
+              "Clean water, waste disposal, personal hygiene"
             ],
+            "noteIds": [],
+            "noteId": "",
             "links": [
-              "sec_02"
-            ]
+              {
+                "id": "vaccines",
+                "rel": "boosted by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s6-sec_04",
-            "label": "Prevention and Control of Diseases",
+            "id": "vaccines",
+            "label": "Vaccination",
             "color": "mm-c4",
             "concepts": [
-              "Personal hygiene",
-              "Epidemics",
-              "Enough sleep and regular exercises",
-              "Diseases can be controlled by maintaining…",
-              "Personal hygiene refers to the practice of…"
+              "Trains immune system without full disease",
+              "Killed germs → associated with TAB vaccine,…",
+              "Living, weakened",
+              "Toxins or poison secreted by… → associated with…",
+              "2. It → the process of administering a…"
             ],
+            "noteIds": [
+              "neet-s6-sec_07",
+              "neet-s6-sec_12"
+            ],
+            "noteId": "neet-s6-sec_07",
             "links": [
-              "sec_01",
-              "sec_06"
-            ]
+              {
+                "id": "lifestyle",
+                "rel": "plus"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_05",
-            "noteId": "neet-s6-sec_05",
-            "label": "Harmful lifestyle habits include :",
+            "id": "lifestyle",
+            "label": "Healthy vs harmful habits",
             "color": "mm-c5",
             "concepts": [
-              "Reading in dim or very bright light."
+              "Tobacco harms lungs & heart",
+              "Exercise, sleep & balanced diet protect health",
+              "Disease → an abnormal condition of a…",
+              "Personal hygiene → the practice of caring for…",
+              "Health → defined as a state of complete…"
             ],
-            "links": [
-              "sec_06"
-            ]
-          },
-          {
-            "id": "sec_06",
-            "noteId": "neet-s6-sec_06",
-            "label": "Some of the good lifestyle habits…",
-            "color": "mm-c6",
-            "concepts": [
-              "Personal hygiene",
-              "A vaccine",
-              "Antibodies",
-              "Vaccination",
-              "Vaccines"
+            "noteIds": [
+              "neet-s6-sec_01",
+              "neet-s6-sec_04",
+              "neet-s6-sec_05",
+              "neet-s6-sec_06",
+              "neet-s6-sec_08"
             ],
-            "links": [
-              "sec_01",
-              "sec_04",
-              "sec_05"
-            ]
+            "noteId": "neet-s6-sec_01",
+            "links": [],
+            "idea": true
           }
         ]
       },
       {
         "id": "map-2",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
+        "title": "First aid",
+        "center": "Immediate care before a doctor",
+        "flow": [
+          {
+            "id": "firstaid",
+            "label": "First aid basics"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_07",
-            "noteId": "neet-s6-sec_07",
-            "label": "Types of vaccines",
+            "id": "firstaid",
+            "label": "First aid basics",
             "color": "mm-c1",
             "concepts": [
-              "Killed germs",
-              "Living, weakened (attenuated) germs",
-              "Toxins or poison secreted by patho-gens",
-              "A vaccine",
-              "Vaccination"
+              "Burns: cool, cover, no ointment on deep burns",
+              "Bleeding: pressure, elevate, seek help if severe",
+              "Disease → an abnormal condition of a…",
+              "Personal hygiene → the practice of caring for…",
+              "All communicable diseases → infections diseases"
             ],
-            "links": [
-              "sec_12"
-            ]
-          },
-          {
-            "id": "sec_08",
-            "noteId": "neet-s6-sec_08",
-            "label": "Harmful Effects Of Consuming Tobacco",
-            "color": "mm-c2",
-            "concepts": [
-              "Smoking, chewing tobacco or tobacco…",
-              "Increased risk of lung and oral",
-              "Even non-smokers in vicinity to active…",
-              "Alcohol is considered as a slow poison.",
-              "Lowering of blood sugar level which has…"
+            "noteIds": [
+              "neet-s6-sec_01",
+              "neet-s6-sec_02",
+              "neet-s6-sec_06",
+              "neet-s6-sec_08",
+              "neet-s6-sec_09",
+              "neet-s6-sec_10",
+              "neet-s6-sec_11"
             ],
-            "links": []
-          },
-          {
-            "id": "sec_09",
-            "noteId": "neet-s6-sec_09",
-            "label": "First aid in case of first or…",
-            "color": "mm-c3",
-            "concepts": [
-              "Clean the cut area thoroughly with warm…",
-              "A second-degree burn is more severe and is…",
-              "Leave the burnt area uncovered, unless it…",
-              "A third-degree burn is the most severe.",
-              "Again run water over the bite area for 5…"
-            ],
-            "links": [
-              "sec_10",
-              "sec_11"
-            ]
-          },
-          {
-            "id": "sec_10",
-            "noteId": "neet-s6-sec_10",
-            "label": "First aid in case of third-degree burns",
-            "color": "mm-c4",
-            "concepts": [
-              "First aid in case of first or…",
-              "A third-degree burn is the most severe.",
-              "First aid in case of third-degree burns.",
-              "Cover the burn with a dry, sterile dressing.",
-              "Again run water over the bite area for 5…"
-            ],
-            "links": [
-              "sec_09",
-              "sec_11"
-            ]
-          },
-          {
-            "id": "sec_11",
-            "noteId": "neet-s6-sec_11",
-            "label": "Bleeding",
-            "color": "mm-c5",
-            "concepts": [
-              "Disease is an abnormal condition of a…",
-              "Raise the affected bleeding part, so as to…",
-              "Press the area with clean cotton pad and…",
-              "Loosen or remove the clothes from the…",
-              "Application of ice packs reduces swelling…"
-            ],
-            "links": [
-              "sec_09",
-              "sec_10"
-            ]
-          },
-          {
-            "id": "sec_12",
-            "noteId": "neet-s6-sec_12",
-            "label": "I. Tick (✓) the correct choice",
-            "color": "mm-c6",
-            "concepts": [
-              "Health is defined as a state of complete…",
-              "A living organism such as the human body…",
-              "DPT vaccine for protection against…",
-              "Drinking of alcohol affects the mental and…"
-            ],
-            "links": [
-              "sec_07"
-            ]
+            "noteId": "neet-s6-sec_01",
+            "links": [],
+            "idea": true
           }
         ]
       }
@@ -1524,392 +1472,384 @@ const BIOLOGY_MINDMAP_DATA = {
   "bio-ch9": {
     "topicId": "bio-ch9",
     "chapterTitle": "Food Production",
+    "center": "Microbes, crops & livestock feeding…",
     "maps": [
       {
         "id": "map-1",
-        "title": "Part 1 — Foundations",
-        "center": "Food Production",
+        "title": "Microbes in food & medicine",
+        "center": "Tiny helpers in industry",
+        "flow": [
+          {
+            "id": "microbes",
+            "label": "Bacteria in food…"
+          },
+          {
+            "id": "fungi",
+            "label": "Fungi in food"
+          },
+          {
+            "id": "antibiotics",
+            "label": "Antibiotics from…"
+          },
+          {
+            "id": "environment",
+            "label": "Cleaning the environment"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_01",
-            "noteId": "neet-s8-sec_01",
-            "label": "Introduction",
+            "id": "microbes",
+            "label": "Bacteria in food industry",
             "color": "mm-c1",
             "concepts": [
-              "Vegetables",
-              "Plants and animals provide a number of…",
-              "Plants are useful to us in many ways — as…",
-              "Likewise, animals provide us milk, flesh,…",
-              "Micro-organisms like bacteria are also…"
+              "Lactic acid bacteria ferment milk → curd & cheese",
+              "Breed → associated with 15 to 20…",
+              "Otherwise, the bacteria would make the curd…",
+              "Bacteria require ambient temperature to grow…",
+              "Commercially yogurt is made from milk, from…"
             ],
+            "noteIds": [
+              "neet-s8-sec_03",
+              "neet-s8-sec_04",
+              "neet-s8-sec_06",
+              "neet-s8-sec_08",
+              "neet-s8-sec_16"
+            ],
+            "noteId": "neet-s8-sec_03",
             "links": [
-              "sec_02",
-              "sec_03",
-              "sec_04"
-            ]
+              {
+                "id": "fungi",
+                "rel": "alongside"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_02",
-            "noteId": "neet-s8-sec_02",
-            "label": "■ identify and provide examples…",
+            "id": "fungi",
+            "label": "Fungi in food",
             "color": "mm-c2",
             "concepts": [
-              "Tuber crops",
-              "Sugar crops",
-              "Vegetables",
-              "Tuber crops is associated with Potato,…",
-              "Sugar crops is associated with Sugarcane,…"
+              "Yeast ferments dough; fungi as food",
+              "Timber → associated with Teak, shisham,…",
+              "Vegetables → associated with Potato,…",
+              "Fruits → associated with Apple, banana,…",
+              "Flowers → associated with Rose, jasmine,…"
             ],
+            "noteIds": [
+              "neet-s8-sec_01",
+              "neet-s8-sec_05",
+              "neet-s8-sec_09"
+            ],
+            "noteId": "neet-s8-sec_01",
             "links": [
-              "sec_01"
-            ]
+              {
+                "id": "antibiotics",
+                "rel": "source of"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_03",
-            "noteId": "neet-s8-sec_03",
-            "label": "Uses Of Bacteria In Food Industry",
+            "id": "antibiotics",
+            "label": "Antibiotics from microbes",
             "color": "mm-c3",
             "concepts": [
-              "Human beings employ the characteristics of…",
-              "Cleaning the environment: Saprophytic…",
-              "Cleaning the environment is defined as…",
-              "Useful products obtained with the help of…",
-              "Making of curd is a process in which the…"
+              "Penicillium → penicillin fights bacteria",
+              "Antibiotics are used to cure a variety of…",
+              "Streptomycin, penicillin erythromycin and…"
             ],
+            "noteIds": [
+              "neet-s8-sec_07"
+            ],
+            "noteId": "neet-s8-sec_07",
             "links": [
-              "sec_01",
-              "sec_04",
-              "sec_06"
-            ]
+              {
+                "id": "environment",
+                "rel": "microbes also"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_04",
-            "noteId": "neet-s8-sec_04",
-            "label": "Investigation 8.1",
+            "id": "environment",
+            "label": "Cleaning the environment",
             "color": "mm-c4",
             "concepts": [
-              "Bacteria require ambient temperature to…",
-              "Commercially yogurt is made from milk,…",
-              "Streptococcus is primarily used for acid…",
-              "Salting helps to prevent the growth of…",
-              "Curing is the process of removing…"
+              "Decomposers recycle waste in soil & water",
+              "Breed → associated with 15 to 20…",
+              "Fish relates to 19.1, 2.5, and Traces."
             ],
-            "links": [
-              "sec_01",
-              "sec_03",
-              "sec_06"
-            ]
-          },
-          {
-            "id": "sec_05",
-            "noteId": "neet-s8-sec_05",
-            "label": "Commercial Uses Of Fungi",
-            "color": "mm-c5",
-            "concepts": [
-              "Fungi – Importance of mushrooms and yeast…",
-              "Fungi are unicellular or multicellular…",
-              "Fungi are used for various commercial…",
-              "Yeast and mushrooms are used widely in…",
-              "Yeast is rich in amino acids and proteins."
+            "noteIds": [
+              "neet-s8-sec_23"
             ],
-            "links": [
-              "sec_06"
-            ]
-          },
-          {
-            "id": "sec_06",
-            "noteId": "neet-s8-sec_06",
-            "label": "Investigation 8.2",
-            "color": "mm-c6",
-            "concepts": [
-              "Fig 8.4 (a) : Maida with yeast powder",
-              "Aerobic bacteria, like Acetobacter are…",
-              "Yeast is used for the large scale…",
-              "Yeast brings about the conversion of…",
-              "Different beverages like wine, whisky and…"
-            ],
-            "links": [
-              "sec_01",
-              "sec_03",
-              "sec_04"
-            ]
+            "noteId": "neet-s8-sec_23",
+            "links": [],
+            "idea": true
           }
         ]
       },
       {
         "id": "map-2",
-        "title": "Part 2",
-        "center": "Part 2",
+        "title": "Agriculture",
+        "center": "Growing food sustainably",
+        "flow": [
+          {
+            "id": "crops",
+            "label": "Food vs cash crops"
+          },
+          {
+            "id": "organic",
+            "label": "Organic farming"
+          },
+          {
+            "id": "husbandry",
+            "label": "Animal husbandry"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_07",
-            "noteId": "neet-s8-sec_07",
-            "label": "Production of Antibiotics",
+            "id": "crops",
+            "label": "Food vs cash crops",
             "color": "mm-c1",
             "concepts": [
-              "All plants and animals need nitrogen gas…",
-              "Antibiotics are chemicals that kill or…",
-              "Antibiotics are used to cure a variety of…",
-              "Streptomycin, penicillin erythromycin and…"
+              "Food crops feed people; cash crops sold for income",
+              "Cereals → associated with Wheat, rice,…",
+              "Tuber crops → associated with Potato, tapioca",
+              "Sugar crops → associated with Sugarcane,…",
+              "Vegetables → associated with Potato,…"
             ],
+            "noteIds": [
+              "neet-s8-sec_02",
+              "neet-s8-sec_03",
+              "neet-s8-sec_05",
+              "neet-s8-sec_08",
+              "neet-s8-sec_09",
+              "neet-s8-sec_10",
+              "neet-s8-sec_19"
+            ],
+            "noteId": "neet-s8-sec_02",
             "links": [
-              "sec_08"
-            ]
+              {
+                "id": "organic",
+                "rel": "can be grown by"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_08",
-            "noteId": "neet-s8-sec_08",
-            "label": "Cleaning the Environment",
+            "id": "organic",
+            "label": "Organic farming",
             "color": "mm-c2",
             "concepts": [
-              "Animals obtain nitrogen from food but…",
-              "Some bacteria and blue-green algae are the…",
-              "Other nitrogen fixing bacteria are…",
-              "Fungi, along with bacteria bring about the…",
-              "Without microbes, the earth would soon be…"
+              "No synthetic chemicals — compost & manure",
+              "Better soil health; lower yield possible",
+              "Products obtained by organic farming are free…",
+              "Grain production was achieved due to the…",
+              "Green revolution was the period when a large…"
             ],
+            "noteIds": [
+              "neet-s8-sec_11",
+              "neet-s8-sec_12",
+              "neet-s8-sec_13",
+              "neet-s8-sec_15"
+            ],
+            "noteId": "neet-s8-sec_11",
             "links": [
-              "sec_07",
-              "sec_10"
-            ]
+              {
+                "id": "husbandry",
+                "rel": "paired with"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_09",
-            "noteId": "neet-s8-sec_09",
-            "label": "In agriculture",
+            "id": "husbandry",
+            "label": "Animal husbandry",
             "color": "mm-c3",
             "concepts": [
-              "Oil seeds",
-              "Tuber crops",
-              "Sugar crops",
-              "Plantation crops",
-              "Fibre crops"
+              "Scientific care of farm animals for milk, meat,…",
+              "Timber → associated with Teak, shisham,…",
+              "Vegetables → associated with Potato,…",
+              "Fruits → associated with Apple, banana,…",
+              "Flowers → associated with Rose, jasmine,…"
             ],
-            "links": [
-              "sec_10"
-            ]
-          },
-          {
-            "id": "sec_10",
-            "noteId": "neet-s8-sec_10",
-            "label": "Cash Crops And Food Crops",
-            "color": "mm-c4",
-            "concepts": [
-              "Plantation crops",
-              "Vegetables",
-              "Ornamental plants",
-              "Ornamental trees",
-              "Cereals is associated with Wheat, rice,…"
+            "noteIds": [
+              "neet-s8-sec_01",
+              "neet-s8-sec_07",
+              "neet-s8-sec_14",
+              "neet-s8-sec_16",
+              "neet-s8-sec_17",
+              "neet-s8-sec_18",
+              "neet-s8-sec_22",
+              "neet-s8-sec_23"
             ],
-            "links": [
-              "sec_08",
-              "sec_09"
-            ]
-          },
-          {
-            "id": "sec_11",
-            "noteId": "neet-s8-sec_11",
-            "label": "Organic Farming",
-            "color": "mm-c5",
-            "concepts": [
-              "Organic farming is a practice of not using…",
-              "Instead of artificial chemical fertilisers…",
-              "Swaminathan is known as the Father of…"
-            ],
-            "links": [
-              "sec_12"
-            ]
-          },
-          {
-            "id": "sec_12",
-            "noteId": "neet-s8-sec_12",
-            "label": "Advantages of Organic Farming",
-            "color": "mm-c6",
-            "concepts": [
-              "Products obtained by organic farming are…",
-              "Pollution of land and water bodies is not…"
-            ],
-            "links": [
-              "sec_11"
-            ]
+            "noteId": "neet-s8-sec_01",
+            "links": [],
+            "idea": true
           }
         ]
       },
       {
         "id": "map-3",
-        "title": "Part 3",
-        "center": "Part 3",
+        "title": "Animal products",
+        "center": "Milk, meat & more",
+        "flow": [
+          {
+            "id": "milch",
+            "label": "Milch animals & breeds"
+          },
+          {
+            "id": "meat",
+            "label": "Meat livestock"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_13",
-            "noteId": "neet-s8-sec_13",
-            "label": "Disadvantages of Organic Farming",
+            "id": "milch",
+            "label": "Milch animals & breeds",
             "color": "mm-c1",
             "concepts": [
-              "Shelf-life of organic foods is much…",
-              "Green revolution was the period when a…",
-              "Grain production was achieved due to the…",
-              "Development of dwarf varieties which do…"
+              "High-yield dairy breeds selected by traits",
+              "Cereals → associated with Wheat, rice,…",
+              "Pulses → associated with Pea, gram,…",
+              "Oil seeds → associated with Mustard,…",
+              "Tuber crops → associated with Potato, tapioca"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s8-sec_03",
+              "neet-s8-sec_09",
+              "neet-s8-sec_14",
+              "neet-s8-sec_15",
+              "neet-s8-sec_16",
+              "neet-s8-sec_17",
+              "neet-s8-sec_23"
+            ],
+            "noteId": "neet-s8-sec_03",
+            "links": [
+              {
+                "id": "meat",
+                "rel": "vs"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_14",
-            "noteId": "neet-s8-sec_14",
-            "label": "Animal Husbandry",
+            "id": "meat",
+            "label": "Meat livestock",
             "color": "mm-c2",
             "concepts": [
-              "product relates to Protein, Fat, and…",
-              "Egg relates to 13.0, 12.0, and Traces.",
-              "Meat relates to 21.1, 3.6, and Traces.",
-              "Systematic raising or rearing of animals…",
-              "Knowledge of animal husbandry is needed to…"
+              "Broilers for meat; layers for eggs",
+              "Timber → associated with Teak, shisham,…",
+              "Vegetables → associated with Potato,…",
+              "Fruits → associated with Apple, banana,…",
+              "Flowers → associated with Rose, jasmine,…"
             ],
-            "links": [
-              "sec_16"
-            ]
-          },
-          {
-            "id": "sec_15",
-            "noteId": "neet-s8-sec_15",
-            "label": "Other Uses of Animals",
-            "color": "mm-c3",
-            "concepts": [
-              "Animals like dogs provide security to…",
-              "A number of moths, butterflies and bees…",
-              "Excretory wastes of animals",
-              "Gobar gas is used for cooking and lighting.",
-              "A number of animals are used to perform…"
+            "noteIds": [
+              "neet-s8-sec_01",
+              "neet-s8-sec_18",
+              "neet-s8-sec_19",
+              "neet-s8-sec_04"
             ],
-            "links": [
-              "sec_18"
-            ]
-          },
-          {
-            "id": "sec_16",
-            "noteId": "neet-s8-sec_16",
-            "label": "Milk-yielding (Milch) Animals",
-            "color": "mm-c4",
-            "concepts": [
-              "Cheese is highly nutritious milk product…",
-              "Cattle, buffaloes, sheep, pigs and camel…",
-              "Milk-yielding animals or milch animals",
-              "Flesh-yielding animals — Goat, sheep, pig…",
-              "Fibre-yielding animals — Sheep, goat and…"
-            ],
-            "links": [
-              "sec_14",
-              "sec_17",
-              "sec_18"
-            ]
-          },
-          {
-            "id": "sec_17",
-            "noteId": "neet-s8-sec_17",
-            "label": "Milk yielding or milch breeds of cow",
-            "color": "mm-c5",
-            "concepts": [
-              "High milk-yield",
-              "Jaffarabadi",
-              "High milk-yield is associated with State…",
-              "Breed is associated with 15 to 20 litres…",
-              "Jaffarabadi is associated with Gujarat and…"
-            ],
-            "links": [
-              "sec_16",
-              "sec_18"
-            ]
-          },
-          {
-            "id": "sec_18",
-            "noteId": "neet-s8-sec_18",
-            "label": "Meat Providing Livestock",
-            "color": "mm-c6",
-            "concepts": [
-              "Sheep provide us milk, wool, fur and hide.",
-              "Wool, a type of fibre is obtained from…",
-              "Common breeds of sheep — Nalli, Deccani etc.",
-              "Like sheep, goats provide us milk, meat,…",
-              "Common breeds of goat — Jamnapari, Barbari,"
-            ],
-            "links": [
-              "sec_15",
-              "sec_16",
-              "sec_17"
-            ]
+            "noteId": "neet-s8-sec_01",
+            "links": [],
+            "idea": true
           }
         ]
       },
       {
         "id": "map-4",
-        "title": "Part 2 — Advanced & applications",
-        "center": "Part 2 — Advanced &…",
+        "title": "Specialised farming",
+        "center": "Fish, silk & honey",
+        "flow": [
+          {
+            "id": "fisheries",
+            "label": "Pisciculture"
+          },
+          {
+            "id": "sericulture",
+            "label": "Sericulture (silkworms)"
+          },
+          {
+            "id": "apiculture",
+            "label": "Apiculture (beekeeping)"
+          }
+        ],
         "branches": [
           {
-            "id": "sec_19",
-            "noteId": "neet-s8-sec_19",
-            "label": "Fish Farming — Pisciculture",
+            "id": "fisheries",
+            "label": "Pisciculture (fish farming)",
             "color": "mm-c1",
             "concepts": [
-              "Poultry housing: Proper housing for the…",
-              "Fish proteins have high digestibility and…",
-              "Rearing and management of fish on large…",
-              "Fresh Water Fishes : Rohu, Singhara,…",
-              "Fresh Water Fishes is defined as Rohu,…"
+              "Raising fish in ponds for food & income",
+              "Cereals → associated with Wheat, rice,…",
+              "Plantation crops → associated with Coffee, tea,…",
+              "Vegetables → associated with Potato,…",
+              "Fruits → associated with Apple, banana,…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s8-sec_10",
+              "neet-s8-sec_19"
+            ],
+            "noteId": "neet-s8-sec_10",
+            "links": [
+              {
+                "id": "sericulture",
+                "rel": "alongside"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_20",
-            "noteId": "neet-s8-sec_20",
-            "label": "Silkworm — Sericulture",
+            "id": "sericulture",
+            "label": "Sericulture (silkworms)",
             "color": "mm-c2",
             "concepts": [
-              "Silkworm or silkmoth is another useful…",
-              "Silk threads are extracted from the cocoon…"
+              "Silkworms fed mulberry → silk threads",
+              "Breed → associated with 15 to 20…",
+              "High milk-yield → associated with State and…",
+              "Jaffarabadi → associated with Gujarat and up…",
+              "Mehsana → associated with Baroda,…"
             ],
-            "links": []
+            "noteIds": [
+              "neet-s8-sec_16",
+              "neet-s8-sec_17",
+              "neet-s8-sec_20"
+            ],
+            "noteId": "neet-s8-sec_16",
+            "links": [
+              {
+                "id": "apiculture",
+                "rel": "and"
+              }
+            ],
+            "idea": true
           },
           {
-            "id": "sec_21",
-            "noteId": "neet-s8-sec_21",
-            "label": "Honeybees — Apiculture",
+            "id": "apiculture",
+            "label": "Apiculture (beekeeping)",
             "color": "mm-c3",
             "concepts": [
-              "A beehive has small compartments — combs.",
-              "All activities such as laying of eggs,…",
-              "Three types of adults are present in the…",
-              "There is only one queen in the whole of…",
-              "Drones are smaller in size than the queen…"
+              "Bees give honey & pollinate crops",
+              "Timber → associated with Teak, shisham,…",
+              "Vegetables → associated with Potato,…",
+              "Fruits → associated with Apple, banana,…",
+              "Flowers → associated with Rose, jasmine,…"
             ],
-            "links": []
-          },
-          {
-            "id": "sec_22",
-            "noteId": "neet-s8-sec_22",
-            "label": "Investigation 8.3",
-            "color": "mm-c4",
-            "concepts": [
-              "Fibre crops",
-              "Honey, being expensive, is often mixed…",
-              "Fibre crops is associated with Cotton,…",
-              "Purity of honey can be checked by a simple…",
-              "Pure honey will make a continuous thread…"
+            "noteIds": [
+              "neet-s8-sec_01",
+              "neet-s8-sec_02",
+              "neet-s8-sec_08",
+              "neet-s8-sec_09",
+              "neet-s8-sec_15",
+              "neet-s8-sec_21",
+              "neet-s8-sec_04",
+              "neet-s8-sec_06",
+              "neet-s8-sec_22",
+              "neet-s8-sec_23"
             ],
-            "links": []
-          },
-          {
-            "id": "sec_23",
-            "noteId": "neet-s8-sec_23",
-            "label": "1. Tick (✓) the correct choice",
-            "color": "mm-c5",
-            "concepts": [
-              "Fish relates to 19.1, 2.5, and Traces.",
-              "Bacteria – uses of bacteria in food…",
-              "Besides food industry bacteria is also…",
-              "Aseeel is a popular indigenous Indian breed."
-            ],
-            "links": []
+            "noteId": "neet-s8-sec_01",
+            "links": [],
+            "idea": true
           }
         ]
       }
