@@ -42,11 +42,12 @@ let currentView = 'home'; // home, subjects, topics, content
 let selectedClass = null;
 let selectedSubject = null;
 let selectedTopic = null;
-let contentTab = 'notes'; // notes, questions
+let contentTab = 'notes'; // notes, mindmap, questions, diagrams
+let mindMapIndex = 0;
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 32;
+const DATA_VERSION = 34;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -528,8 +529,14 @@ function pickQuizPool(source, topicId) {
   else if (source === 'bookmarks') pool = getBookmarkedQuestions().filter(isQuizType);
   else if (source === 'linked' && topicId) {
     const noteIds = new Set(appData.content.filter(c => c.topicId === topicId && c.type === 'note').map(n => n.id));
-    pool = appData.content.filter(c => c.linksTo && noteIds.has(c.linksTo) && isQuizType(c));
-  } else pool = gradableQuestions(topicId).filter(isQuizType);
+    pool = appData.content.filter(c => c.linksTo && noteIds.has(c.linksTo) && isQuizType(c) && !isDiagramMcq(c));
+  } else if (source === 'diagrams') {
+    pool = topicId
+      ? diagramQuestions(topicId)
+      : appData.content.filter(c => c.type !== 'note' && isDiagramMcq(c));
+  } else {
+    pool = gradableQuestions(topicId).filter(q => isQuizType(q) && !isDiagramMcq(q));
+  }
   return pool;
 }
 
@@ -718,8 +725,9 @@ function jumpToNote(noteId) {
 }
 
 function jumpToQuestion(qId) {
-  contentTab = 'questions';
-  questionFilter = 'all'; // show all so the target is never filtered out
+  const q = appData.content.find(c => c.id === qId);
+  contentTab = isDiagramMcq(q) ? 'diagrams' : 'questions';
+  questionFilter = 'all';
   userAnswers = {};
   renderContent(document.getElementById('main-content'));
   setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 60);
@@ -745,6 +753,27 @@ function sourceChipHtml(source) {
     return ' <span class="src-chip" title="ICSE textbook section — linked to practice MCQs">ICSE</span>';
   }
   return '';
+}
+
+function chapterMindmap(topicId) {
+  if (typeof BIOLOGY_MINDMAP_DATA === 'undefined' || !topicId) return null;
+  return BIOLOGY_MINDMAP_DATA[topicId] || null;
+}
+
+function isDiagramMcq(q) {
+  return !!(q && q.image);
+}
+
+function diagramQuestions(topicId) {
+  return appData.content.filter(c =>
+    c.topicId === topicId && c.type !== 'note' && isDiagramMcq(c)
+  );
+}
+
+function textQuestions(topicId) {
+  return appData.content.filter(c =>
+    c.topicId === topicId && c.type !== 'note' && !isDiagramMcq(c)
+  );
 }
 
 function mcqImageHtml(q) {
@@ -797,7 +826,7 @@ function navigateTo(view, id) {
   if (view === 'subjects') { selectedClass = id; selectedSubject = null; selectedTopic = null; }
   if (view === 'topics') { selectedSubject = id; selectedTopic = null; }
   if (view === 'content') {
-    selectedTopic = id; contentTab = 'notes'; questionFilter = 'all';
+    selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; mindMapIndex = 0;
     try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
   }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
@@ -1178,8 +1207,9 @@ function renderTopics(el) {
         ${tops.map(t => {
           const contents = appData.content.filter(c=>c.topicId===t.id);
           const notes = contents.filter(c=>c.type==='note').length;
-          const mcqs = contents.filter(c=>c.type==='mcq').length;
-          const qs = contents.length - notes;
+          const mcqs = contents.filter(c=>c.type==='mcq' && !isDiagramMcq(c)).length;
+          const diagrams = diagramQuestions(t.id).length;
+          const qs = contents.length - notes - diagrams;
           const m = chapterMastery(t.id);
           const cls = _accClass(m.accuracy, m.attempted);
           return `
@@ -1189,6 +1219,7 @@ function renderTopics(el) {
               <div class="card-meta">
                 <span>📝 ${notes} notes</span>
                 <span>🔘 ${mcqs} MCQs</span>
+                ${diagrams ? `<span>🖼️ ${diagrams} diagram</span>` : ''}
                 <span>❓ ${qs} questions</span>
               </div>
               <div class="card-progress">
@@ -1210,7 +1241,10 @@ function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
   const contents = appData.content.filter(c=>c.topicId===selectedTopic);
   const notes = contents.filter(c=>c.type==='note');
-  const questions = contents.filter(c=>c.type!=='note');
+  const questions = textQuestions(selectedTopic);
+  const diagrams = diagramQuestions(selectedTopic);
+  const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
+  const mmData = chapterMindmap(selectedTopic);
 
   const cm = chapterMastery(selectedTopic);
   const heat = sectionHeatmap(selectedTopic);
@@ -1232,7 +1266,11 @@ function renderContent(el) {
       </div>
       <div class="stats-row">
         <div class="stat-card"><div class="stat-num">${notes.length}</div><div class="stat-label">Notes</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">MCQs</div></div>
+        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">Text MCQs</div></div>
+        <div class="stat-card" onclick="switchContentTab('diagrams')" style="cursor:pointer" title="Open diagram-based NEET MCQs">
+          <div class="stat-num">${diagrams.length}</div>
+          <div class="stat-label">Diagram MCQs</div>
+        </div>
         <div class="stat-card stat-coverage" title="Share of questions you've tried">
           <div class="stat-num" id="coverage-num">${cm.coverage}%</div>
           <div class="stat-label">Coverage</div>
@@ -1251,20 +1289,91 @@ function renderContent(el) {
       ${heatHtml}
       <div class="content-tabs">
         <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes & Concepts</div>
+        ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map${mmData.maps.length > 1 ? ` (${mmData.maps.length})` : ''}</div>` : ''}
         <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice Questions</div>
+        <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagram MCQs${diagrams.length ? ` (${diagramFigCount})` : ''}</div>
       </div>
       <div id="content-body"></div>
     </div>
   `;
 
   if (contentTab === 'notes') renderNotes(notes);
+  else if (contentTab === 'mindmap') renderMindMap(mmData);
+  else if (contentTab === 'diagrams') renderDiagramQuestions(diagrams);
   else renderQuestions(questions);
 }
 
 function switchContentTab(tab) {
   contentTab = tab;
   userAnswers = {};
+  if (tab === 'mindmap') mindMapIndex = 0;
   renderContent(document.getElementById('main-content'));
+}
+
+function switchMindMapPart(idx) {
+  mindMapIndex = idx;
+  renderMindMap(chapterMindmap(selectedTopic));
+}
+
+function jumpToNoteFromMindmap(noteId) {
+  if (!noteId) return;
+  jumpToNote(noteId);
+}
+
+function renderMindMap(mmData) {
+  const body = document.getElementById('content-body');
+  if (!mmData || !mmData.maps || !mmData.maps.length) {
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">🧠</div><h3>No mind map for this chapter</h3></div>';
+    return;
+  }
+  const maps = mmData.maps;
+  const map = maps[Math.min(mindMapIndex, maps.length - 1)];
+  const mapTabs = maps.length > 1
+    ? `<div class="mindmap-part-tabs">${maps.map((m, i) =>
+        `<div class="q-tab ${mindMapIndex === i ? 'active' : ''}" onclick="switchMindMapPart(${i})">${escHtml(m.title)}</div>`
+      ).join('')}</div>`
+    : '';
+  const branchHtml = map.branches.map((b, bi) => {
+    const concepts = (b.concepts || []).slice(0, 5).map(c =>
+      `<li>${escHtml(c)}</li>`
+    ).join('');
+    const linkChips = (b.links || []).map(lid => {
+      const linked = map.branches.find(x => x.id === lid);
+      if (!linked) return '';
+      return `<button type="button" class="mm-link-chip" onclick="event.stopPropagation();highlightMindBranch('${lid}')" title="Related concept">↔ ${escHtml(linked.label)}</button>`;
+    }).join('');
+    return `<article class="mm-branch ${b.color}" id="mm-branch-${b.id}" onclick="jumpToNoteFromMindmap('${b.noteId}')" title="Open full notes for this section">
+      <div class="mm-branch-num">${bi + 1}</div>
+      <h4 class="mm-branch-title">${escHtml(b.label)}</h4>
+      <ul class="mm-concepts">${concepts}</ul>
+      ${linkChips ? `<div class="mm-links">${linkChips}</div>` : ''}
+      <div class="mm-open">Open notes →</div>
+    </article>`;
+  }).join('');
+  body.innerHTML = `
+    <div class="mindmap-wrap fade-in">
+      <p class="lead mm-lead">Big-picture map of <strong>${escHtml(mmData.chapterTitle)}</strong>. Tap any branch to read the full note and practice linked MCQs.</p>
+      ${mapTabs}
+      <div class="mindmap-hub">
+        <div class="mm-center-node">
+          <span class="mm-center-icon">🧠</span>
+          <span class="mm-center-text">${escHtml(map.center)}</span>
+        </div>
+        <div class="mm-spoke-line" aria-hidden="true"></div>
+      </div>
+      <div class="mm-branch-grid">${branchHtml}</div>
+      <p class="mm-hint">💡 Connected chips (↔) show related topics — follow them to see how concepts link together.</p>
+    </div>`;
+}
+
+function highlightMindBranch(branchId) {
+  const el = document.getElementById('mm-branch-' + branchId);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.remove('mm-flash');
+  void el.offsetWidth;
+  el.classList.add('mm-flash');
+  setTimeout(() => el.classList.remove('mm-flash'), 1800);
 }
 
 function renderNotes(notes) {
@@ -1336,20 +1445,14 @@ function renderQuestions(questions) {
     {key:'true_false',label:'True/False',icon:'✅'},
     {key:'fill_blank',label:'Fill Blanks',icon:'✍️'},
     {key:'mcq',label:'MCQ',icon:'🔘'},
-    {key:'diagram',label:'Diagrams',icon:'🖼️'},
     {key:'match',label:'Match',icon:'🔗'},
     {key:'short_answer',label:'Short/Long Answer',icon:'📋'}
   ];
 
-  const diagramN = questions.filter(q => q.image).length;
-  const filtered = questionFilter === 'all' ? questions
-    : questionFilter === 'diagram' ? questions.filter(q => q.image)
-    : questions.filter(q => q.type === questionFilter);
+  const filtered = questionFilter === 'all' ? questions : questions.filter(q => q.type === questionFilter);
 
   let tabsHtml = `<div class="question-type-tabs">${types.map(t => {
-    const n = t.key === 'all' ? questions.length
-      : t.key === 'diagram' ? diagramN
-      : questions.filter(q => q.type === t.key).length;
+    const n = t.key === 'all' ? questions.length : questions.filter(q => q.type === t.key).length;
     return `<div class="q-tab ${questionFilter===t.key?'active':''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</div>`;
   }).join('')}</div>`;
 
@@ -1368,11 +1471,54 @@ function renderQuestions(questions) {
 function setQuestionFilter(f) {
   questionFilter = f;
   userAnswers = {};
-  const contents = appData.content.filter(c=>c.topicId===selectedTopic);
-  renderQuestions(contents.filter(c=>c.type!=='note'));
+  renderQuestions(textQuestions(selectedTopic));
 }
 
-function renderSingleQuestion(q, idx, targeted) {
+function renderDiagramQuestions(diagrams) {
+  const body = document.getElementById('content-body');
+  if (!diagrams.length) {
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">🖼️</div><h3>No diagram MCQs in this chapter</h3><p>Diagram-based NEET questions appear here when available for this topic.</p></div>';
+    return;
+  }
+  const byImage = new Map();
+  diagrams.forEach(q => {
+    if (!byImage.has(q.image)) byImage.set(q.image, { caption: q.caption || '', items: [] });
+    byImage.get(q.image).items.push(q);
+  });
+  let idx = 0;
+  const sections = [...byImage.entries()].map(([img, group], si) => {
+    const cap = group.caption || `Figure ${si + 1}`;
+    const cards = group.items.map(q => renderSingleQuestion(q, idx++, false, true)).join('');
+    return `<section class="diagram-section fade-in" style="animation-delay:${Math.min(si, 8) * 0.04}s">
+      <div class="diagram-section-head">
+        <h3>${escHtml(cap)}</h3>
+        <button class="btn btn-sm btn-primary" onclick="startDiagramQuiz('${img.replace(/'/g, "\\'")}')">▶ Quiz this figure (${group.items.length})</button>
+      </div>
+      <div class="mcq-image-wrap diagram-hero"><img class="mcq-image" src="${escHtml(img)}" alt="${escHtml(cap)}" loading="lazy"></div>
+      <div class="questions-grid diagram-q-grid">${cards}</div>
+    </section>`;
+  }).join('');
+  body.innerHTML = `
+    <div class="diagram-toolbar">
+      <p class="lead" style="margin:0">NEET-style questions based on textbook figures — 3 MCQs per diagram.</p>
+      <button class="btn btn-outline" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'diagrams',count:15})">▶ Mixed diagram quiz</button>
+    </div>
+    ${sections}`;
+}
+
+function startDiagramQuiz(imagePath) {
+  const ids = diagramQuestions(selectedTopic).filter(q => q.image === imagePath).map(q => q.id);
+  if (!ids.length) return;
+  quizSession = {
+    source: 'diagrams', topicId: selectedTopic,
+    ids: _shuffle(ids), index: 0, answers: {}, guessed: {},
+    startedAt: Date.now(), qStartedAt: Date.now(), finished: false
+  };
+  currentView = 'quiz';
+  render();
+}
+
+function renderSingleQuestion(q, idx, targeted, hideImage) {
   const answered = userAnswers[q.id];
   // Cap the stagger so long lists never wait seconds to appear; a targeted
   // single-card re-render skips the fade entirely (updates in place).
@@ -1380,12 +1526,13 @@ function renderSingleQuestion(q, idx, targeted) {
   let html = `<div class="question-card${targeted ? '' : ' fade-in'}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
-  html += `<div class="q-label">${typeLabels[q.type]||q.type}${
+  const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
+  html += `<div class="q-label">${q.subtopic || typeLabels[q.type] || q.type}${
     sourceChipHtml(q.source)
-  }${
+  }${diagramBadge}${
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
-  html += mcqImageHtml(q);
+  if (!hideImage) html += mcqImageHtml(q);
   html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question)}</div>`;
 
   if (q.type === 'true_false') {
