@@ -43,7 +43,7 @@ const PHYSICS_NEET_DATA = [
 "explanation": "Definitions:\n• **Liquid** — associated with Boiling point (°C)\n• **Evaporation** — associated with : Transition of a liquid into vapour form at all temperatures below its boiling point\n\nAlso revise:\n• During the evaporation of sweat, heat is taken from our body.\n• During summer, one should wear cotton clothes: During summer, we perspire a lot and the sweat comes out through the pores in our skin.\n• Cotton is a good absorber of moisture.\n• Antipyrine, a medicine used to reduce fever, helps to lower a patient's body temperature by increasing the rate at which sweat evaporates.",
 "source": "icse",
 "examTip": "Read in order, then tap Practice linked questions — notes cover what exam questions ask.",
-"linkedMcqCount": 26
+"linkedMcqCount": 31
 },
 {
 "id": "phy-s1-sec_05",
@@ -5039,6 +5039,96 @@ const PHYSICS_NEET_DATA = [
 "source": "icse",
 "examTip": "Sublimation at room pressure: solid → gas directly (e.g. iodine, NH₄Cl, naphthalene, dry ice).",
 "linksTo": "phy-s1-sec_08"
+},
+{
+"id": "phy-s1-up04",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Upgrade MCQ — Latent Heat & Melting (Q1)",
+"question": "A solid substance is heated at a uniform rate. During the melting process, thermal energy is continuously supplied, yet a thermometer immersed in the substance shows a constant temperature reading until the phase change is complete. Which of the following statements provides the most scientifically accurate explanation for this observation?",
+"options": [
+"The supplied thermal energy is utilized exclusively to increase the average kinetic energy of the molecules, which remains hidden from the thermometer.",
+"The thermal energy is spent doing work against intermolecular forces of attraction, increasing the average potential energy of the molecules while their average kinetic energy remains constant.",
+"The substance undergoes an exothermic transition where it releases latent heat at the exact same rate it absorbs external thermal energy.",
+"The molecules of the substance completely lose their intermolecular bonds, allowing individual atoms to move freely at velocities independent of temperature."
+],
+"correctOption": 1,
+"answer": "Temperature measures average kinetic energy (K.E. ∝ absolute temperature). During melting, supplied heat is latent heat of fusion — used to overcome intermolecular forces and break the crystal lattice, raising potential energy while kinetic energy stays constant, so the thermometer reading stays flat until melting finishes. A is wrong: rising K.E. would raise temperature. C is wrong: melting is endothermic. D is wrong: liquids still have intermolecular forces; particle speeds depend on temperature.",
+"source": "icse",
+"examTip": "During melting: potential energy increases, kinetic energy and temperature stay constant until the phase change is complete.",
+"linksTo": "phy-s1-sec_04"
+},
+{
+"id": "phy-s1-up05",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Upgrade MCQ — Evaporation Rate & Cooling (Q1)",
+"question": "Two identical wet cotton strips are wrapped around the bulbs of two sensitive thermometers, T_A and T_B. Thermometer T_A is kept folded in a static, humid chamber, while Thermometer T_B is fully spread out and exposed to a continuous stream of dry, unsaturated air at the same ambient temperature. Which of the following options accurately predicts the behavior of the system and correctly explains the underlying molecular thermodynamics?",
+"options": [
+"Both thermometers will register an identical drop in temperature because the latent heat of vaporization depends strictly on the chemical identity of the liquid, not external environmental factors.",
+"Thermometer T_B will register a significantly lower temperature than T_A because increasing the surface area and decreasing ambient vapor pressure accelerates the rate of evaporation, leading to a greater depletion of the average kinetic energy of the remaining liquid molecules.",
+"Thermometer T_A will register a lower temperature because folding the strip traps the evaporated water vapor, concentrating the latent heat of vaporization within the bulb matrix.",
+"During the steady-state evaporation phase on both strips, the heat absorbed by the water molecules increases their average kinetic energy while keeping their average potential energy constant, preventing any net temperature change of the bulb."
+],
+"correctOption": 1,
+"answer": "Evaporation is a surface phenomenon: high-kinetic-energy surface molecules escape and carry latent heat away, lowering the average kinetic energy (and temperature) of the remaining liquid. T_B cools more because a spread strip has greater surface area and dry moving air keeps vapor pressure low, preventing saturation. T_A in a humid static chamber soon reaches equilibrium (evaporation ≈ condensation), so cooling slows. A is wrong: latent heat is a material property, but cooling rate depends on evaporation rate. C is wrong: trapped vapor causes saturation and stops net cooling. D is wrong: absorbed heat during evaporation raises potential energy as bonds break; kinetic energy of the liquid falls, causing cooling.",
+"source": "icse",
+"examTip": "Evaporation cools faster with larger surface area, dry air, and air currents — humidity and folding slow it down.",
+"linksTo": "phy-s1-sec_04"
+},
+{
+"id": "phy-s1-up06",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Upgrade MCQ — Boiling Point & Pressure (Q2)",
+"question": "A volatile liquid is heated inside a sealed chamber equipped with an adjustable piston. If the piston is pressed downward to compress the air space above the liquid surface, how will the boiling point of the liquid be affected, and what is the thermodynamic reason behind this phenomenon?",
+"options": [
+"The boiling point will decrease because the increased pressure compresses the liquid molecules, reducing their intermolecular spacing and lowering the latent heat of vaporization.",
+"The boiling point will remain entirely unchanged because boiling point is an intrinsic, intensive physical property dependent solely on the chemical identity of the substance.",
+"The boiling point will increase because a higher external pressure requires the liquid molecules to achieve a higher temperature so that their vapor pressure can rise to match the elevated ambient pressure.",
+"The boiling point will decrease because the mechanical pressure forces vapor molecules to condense rapidly, driving an exothermic phase shift back into the bulk liquid."
+],
+"correctOption": 2,
+"answer": "Boiling occurs when the liquid's saturated vapor pressure equals the external pressure on its surface. Compressing the gas above the liquid raises external pressure, so the liquid must reach a higher temperature for its vapor pressure to match — the boiling point increases (as in a pressure cooker). Lower pressure lowers boiling point (high altitudes). A is wrong: liquids are nearly incompressible; pressure affects vapor above the surface, not bulk spacing. B is wrong: normal boiling point is at 1 atm, but actual boiling point changes with pressure. D is wrong: higher pressure raises, not lowers, the temperature needed to boil.",
+"source": "icse",
+"examTip": "Higher pressure → higher boiling point. Lower pressure → lower boiling point (e.g. mountains, vacuum).",
+"linksTo": "phy-s1-sec_04"
+},
+{
+"id": "phy-s1-up07",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Upgrade MCQ — Boiling Point & Intermolecular Forces (Q)",
+"question": "The \"normal boiling point\" of a pure liquid is a characteristic intensive physical property. Two unlabelled beakers, one containing pure water (H₂O) and the other containing pure ethanol (C₂H₅OH), are placed inside a hyperbaric chamber where the ambient pressure is artificially maintained at 2.0 atm. Which of the following statements accurately predicts and scientifically explains the behavior of these liquids as they are heated?",
+"options": [
+"Both liquids will continue to boil at their standard sea-level temperatures (100°C and 78.3°C respectively) because boiling point is an intrinsic, intensive property independent of external atmospheric constraints.",
+"The boiling points of both liquids will decrease because the elevated external pressure compresses the liquid phases, increasing their molecular density and lowering the thermal energy required for a phase transition.",
+"The boiling points of both liquids will increase, with water maintaining a higher boiling point than ethanol because water molecules possess a more extensive network of intermolecular hydrogen bonding, requiring greater kinetic energy to match the elevated external pressure.",
+"Ethanol will now boil at a higher temperature than water because its lower molecular weight allows it to absorb the extra atmospheric pressure work more rapidly than water."
+],
+"correctOption": 2,
+"answer": "Boiling occurs when saturated vapor pressure equals external pressure. At 2.0 atm both liquids need higher temperatures to reach that vapor pressure, so both boiling points rise above their 1 atm values. Water still boils higher than ethanol because its extensive hydrogen-bond network gives stronger cohesive forces and lower vapor pressure at any temperature. A is wrong: normal boiling point is at 1 atm; actual boiling point changes with pressure. B is wrong: higher pressure raises boiling point, not lowers it. D is wrong: intermolecular forces dominate — water's hydrogen bonding keeps its boiling point above ethanol's.",
+"source": "icse",
+"examTip": "Normal boiling point = at 1 atm. Higher pressure raises both boiling points; stronger H-bonding keeps water above ethanol.",
+"linksTo": "phy-s1-sec_04"
+},
+{
+"id": "phy-s1-up08",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Upgrade MCQ — Boiling vs Evaporation",
+"question": "Compare the phenomena of Boiling and Evaporation. Which of the following statements is scientifically accurate?",
+"options": [
+"Both boiling and evaporation are surface phenomena that can occur at any temperature below the boiling point.",
+"Boiling is a bulk phenomenon occurring at a fixed temperature, whereas evaporation is a surface phenomenon occurring at all temperatures below the boiling point.",
+"Evaporation takes place throughout the mass of the liquid, while boiling is restricted only to the surface molecules.",
+"The rate of both boiling and evaporation is entirely independent of the surface area of the liquid exposed."
+],
+"correctOption": 1,
+"answer": "Boiling occurs throughout the bulk of the liquid when vapor pressure equals external pressure at a definite boiling point — bubbles form inside the liquid. Evaporation is a slow surface phenomenon where high-energy molecules escape from the surface at any temperature below the boiling point. A is wrong: boiling is not a surface-only process. C reverses the definitions. D is wrong: evaporation rate increases with greater exposed surface area.",
+"source": "icse",
+"examTip": "Boiling = bulk, fixed temperature. Evaporation = surface only, any temp below boiling point.",
+"linksTo": "phy-s1-sec_04"
 },
 {
 "id": "phy-s2-sec_01",
