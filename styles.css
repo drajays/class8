@@ -287,7 +287,7 @@ body{
 }
 .question-card:hover{border-color:color-mix(in srgb,var(--accent) 28%, var(--line))}
 .q-label{font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--accent);margin-bottom:9px}
-.q-text{font-size:1rem;font-weight:600;line-height:1.5;margin-bottom:15px;color:var(--ink)}
+.q-text{font-size:1rem;font-weight:600;line-height:1.5;margin-bottom:15px;color:var(--ink);white-space:pre-line}
 .q-options{display:flex;flex-direction:column;gap:9px;margin-bottom:13px}
 .q-option{
   display:flex;align-items:center;gap:12px;cursor:pointer;transition:var(--t);
@@ -521,7 +521,7 @@ body{
 .note-block.collapsed{padding-bottom:18px}
 
 /* Slightly cap reading width of dense prose for legibility on huge screens */
-.note-body p{max-width:72ch}
+.note-body p{max-width:72ch;white-space:pre-line}
 
 @media(max-width:600px){
   .notes-grid,.questions-grid{grid-template-columns:1fr}

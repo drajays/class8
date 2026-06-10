@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 23;
+const DATA_VERSION = 24;
 
 function isNwDesktop() {
   try {
@@ -107,6 +107,7 @@ function _mergeModuleArraysIntoDefault() {
   const modules = [
     typeof CHAPTERS_3_TO_8 !== 'undefined' ? CHAPTERS_3_TO_8 : null,
     typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
+    typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
