@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 21;
+const DATA_VERSION = 22;
 
 function isNwDesktop() {
   try {
@@ -219,6 +219,116 @@ function setupPersistenceGuards() {
     if (document.visibilityState === 'hidden' && appData) saveData();
   });
 }
+
+// ============================================================
+// PROGRESS TRACKING (student journey) — persisted per question
+//   studyProgress[qId] = { attempts, correct, lastResult, lastAt }
+//   Stored in localStorage 'studyhub_progress' and included in backups.
+// ============================================================
+let studyProgress = {};
+
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem('studyhub_progress');
+    studyProgress = raw ? JSON.parse(raw) : {};
+  } catch (e) { studyProgress = {}; }
+  if (!studyProgress || typeof studyProgress !== 'object') studyProgress = {};
+}
+
+function saveProgress() {
+  try { localStorage.setItem('studyhub_progress', JSON.stringify(studyProgress)); }
+  catch (e) { /* storage full — non-fatal */ }
+}
+
+// Record an answer attempt. isCorrect may be true/false, or null for
+// "seen only" items (e.g. short/long answers that are self-checked).
+function recordAttempt(qId, isCorrect) {
+  const p = studyProgress[qId] || { attempts: 0, correct: 0, lastResult: null, lastAt: null };
+  p.attempts += 1;
+  if (isCorrect === true) p.correct += 1;
+  p.lastResult = isCorrect === true ? 'correct' : (isCorrect === false ? 'wrong' : 'seen');
+  p.lastAt = new Date().toISOString();
+  studyProgress[qId] = p;
+  saveProgress();
+  updateMasteryBadge();
+}
+
+// Mastery summary for a chapter (topicId): attempted vs total gradable
+// questions, and accuracy across attempted ones.
+function chapterMastery(topicId) {
+  const qs = appData.content.filter(c => c.topicId === topicId && c.type !== 'note');
+  const gradable = qs.filter(q => q.type !== 'short_answer');
+  let attempted = 0, correct = 0;
+  gradable.forEach(q => {
+    const p = studyProgress[q.id];
+    if (p && p.attempts > 0) { attempted++; if (p.lastResult === 'correct') correct++; }
+  });
+  const total = gradable.length || 1;
+  return {
+    attempted,
+    total: gradable.length,
+    correct,
+    pct: Math.round((correct / total) * 100),
+    coverage: Math.round((attempted / total) * 100)
+  };
+}
+
+function updateMasteryBadge() {
+  if (!selectedTopic) return;
+  const m = chapterMastery(selectedTopic);
+  const numEl = document.getElementById('mastery-num');
+  const barEl = document.getElementById('mastery-bar');
+  if (numEl) numEl.textContent = m.pct + '%';
+  if (barEl) barEl.style.width = Math.max(m.pct, 2) + '%';
+}
+
+function resetChapterProgress() {
+  if (!selectedTopic) return;
+  if (!confirm('Reset your progress for this chapter? This clears recorded attempts and scores for these questions.')) return;
+  appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note')
+    .forEach(q => { delete studyProgress[q.id]; });
+  saveProgress();
+  showToast('success', '↺ Chapter progress reset.');
+  renderContent(document.getElementById('main-content'));
+}
+
+// ============================================================
+// TEXT FORMATTING — escape HTML, then render **bold** markdown.
+// Used for notes/answers so key terms render in bold safely.
+// ============================================================
+function fmtText(str) {
+  return escHtml(str).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+}
+
+// ============================================================
+// BIDIRECTIONAL JUMP LINKS (notes <-> questions)
+// ============================================================
+function _flashEl(el) {
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.remove('jump-flash');
+  // force reflow so the animation can replay
+  void el.offsetWidth;
+  el.classList.add('jump-flash');
+  setTimeout(() => el.classList.remove('jump-flash'), 1600);
+}
+
+function jumpToNote(noteId) {
+  contentTab = 'notes';
+  userAnswers = {};
+  renderContent(document.getElementById('main-content'));
+  setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 60);
+}
+
+function jumpToQuestion(qId) {
+  contentTab = 'questions';
+  questionFilter = 'all'; // show all so the target is never filtered out
+  userAnswers = {};
+  renderContent(document.getElementById('main-content'));
+  setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 60);
+}
+
+const Q_TYPE_SHORT = { mcq:'MCQ', true_false:'T/F', fill_blank:'Fill', short_answer:'Q&A', match:'Match' };
 
 // ============================================================
 // NAVIGATION
@@ -424,6 +534,11 @@ function renderContent(el) {
         <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='true_false').length}</div><div class="stat-label">True/False</div></div>
         <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='fill_blank').length}</div><div class="stat-label">Fill Blanks</div></div>
         <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='short_answer').length}</div><div class="stat-label">Short/Long</div></div>
+        <div class="stat-card stat-mastery" title="Your accuracy on auto-checked questions in this chapter. Click to reset." onclick="resetChapterProgress()">
+          <div class="stat-num" id="mastery-num">${chapterMastery(selectedTopic).pct}%</div>
+          <div class="stat-label">Mastery ↺</div>
+          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="mastery-bar" style="width:${Math.max(chapterMastery(selectedTopic).pct,2)}%"></div></div>
+        </div>
       </div>
       <div class="content-tabs">
         <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes & Concepts</div>
@@ -449,20 +564,27 @@ function renderNotes(notes) {
     body.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><h3>No notes yet</h3><p>Click "Add New" to create notes</p></div>';
     return;
   }
-  body.innerHTML = notes.map((n, i) => `
-    <div class="note-block fade-in" style="animation-delay:${i*0.05}s">
+  const allQuestions = appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note');
+  body.innerHTML = notes.map((n, i) => {
+    const linked = allQuestions.filter(q => q.linksTo === n.id);
+    const linkBar = linked.length ? `<div class="xref-bar"><span class="xref-label">Test yourself:</span>${
+      linked.map(q => `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${Q_TYPE_SHORT[q.type]||'Q'}</button>`).join('')
+    }</div>` : '';
+    return `
+    <div class="note-block fade-in" id="note-${n.id}" style="animation-delay:${i*0.05}s">
       <div class="note-number">${i+1}</div>
       <h3>${escHtml(n.subtopic)}</h3>
-      <p style="font-weight:600;margin-bottom:8px">${escHtml(n.content)}</p>
-      <p>${escHtml(n.explanation||'')}</p>
-      ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong>${escHtml(n.teacherTip)}</div>`:''}
-      ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong>${escHtml(n.examTip)}</div>`:''}
+      <p style="font-weight:600;margin-bottom:8px">${fmtText(n.content)}</p>
+      <p>${fmtText(n.explanation||'')}</p>
+      ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong>${fmtText(n.teacherTip)}</div>`:''}
+      ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong>${fmtText(n.examTip)}</div>`:''}
+      ${linkBar}
       <div style="margin-top:10px;display:flex;gap:6px">
         <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
         <button class="btn btn-sm btn-danger" onclick="deleteContent('${n.id}')">🗑️</button>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function renderQuestions(questions) {
@@ -504,9 +626,12 @@ function setQuestionFilter(f) {
 
 function renderSingleQuestion(q, idx) {
   const answered = userAnswers[q.id];
-  let html = `<div class="question-card fade-in" style="animation-delay:${idx*0.04}s">`;
+  let html = `<div class="question-card fade-in" id="qcard-${q.id}" style="animation-delay:${idx*0.04}s">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
-  html += `<div class="q-label">${typeLabels[q.type]||q.type}</div>`;
+  const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
+  html += `<div class="q-label">${typeLabels[q.type]||q.type}${
+    linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
+  }</div>`;
   html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question)}</div>`;
 
   if (q.type === 'true_false') {
@@ -552,9 +677,10 @@ function renderSingleQuestion(q, idx) {
   // Toggle answer
   html += `<div class="toggle-answer" onclick="toggleAnswer('ans-${q.id}')">👁️ Show Answer & Explanation</div>`;
   html += `<div class="answer-reveal ${answered!==undefined?'show':''}" id="ans-${q.id}">
-    <p><strong>✅ Answer:</strong> ${escHtml(q.answer||'')}</p>
-    ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> ${escHtml(q.teacherTip)}</div>`:''}
-    ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> ${escHtml(q.examTip)}</div>`:''}
+    <p><strong>✅ Answer:</strong> ${fmtText(q.answer||'')}</p>
+    ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>`:''}
+    ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>`:''}
+    ${linkedNote?`<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>`:''}
   </div>`;
 
   html += `<div style="margin-top:10px;display:flex;gap:6px">
@@ -567,6 +693,8 @@ function renderSingleQuestion(q, idx) {
 
 function answerTF(id, val) {
   userAnswers[id] = val;
+  const q = appData.content.find(c => c.id === id);
+  if (q) recordAttempt(id, val === q.correctAnswer);
   const contents = appData.content.filter(c=>c.topicId===selectedTopic);
   renderQuestions(contents.filter(c=>c.type!=='note'));
   document.getElementById('ans-'+id).classList.add('show');
@@ -574,6 +702,8 @@ function answerTF(id, val) {
 
 function answerMCQ(id, val) {
   userAnswers[id] = val;
+  const q = appData.content.find(c => c.id === id);
+  if (q) recordAttempt(id, val === q.correctOption);
   const contents = appData.content.filter(c=>c.topicId===selectedTopic);
   renderQuestions(contents.filter(c=>c.type!=='note'));
   document.getElementById('ans-'+id).classList.add('show');
@@ -582,13 +712,24 @@ function answerMCQ(id, val) {
 function checkBlank(id) {
   const input = document.getElementById('blank-'+id);
   userAnswers[id] = input.value;
+  const q = appData.content.find(c => c.id === id);
+  if (q) recordAttempt(id, input.value.toLowerCase().trim() === (q.blankAnswer||'').toLowerCase().trim());
   const contents = appData.content.filter(c=>c.topicId===selectedTopic);
   renderQuestions(contents.filter(c=>c.type!=='note'));
   document.getElementById('ans-'+id).classList.add('show');
 }
 
 function toggleAnswer(elId) {
-  document.getElementById(elId).classList.toggle('show');
+  const box = document.getElementById(elId);
+  box.classList.toggle('show');
+  // Revealing a self-checked answer (short/long, match) counts as "seen".
+  if (box.classList.contains('show')) {
+    const qId = elId.replace(/^ans-/, '');
+    const q = appData.content.find(c => c.id === qId);
+    if (q && (q.type === 'short_answer' || q.type === 'match') && !studyProgress[qId]) {
+      recordAttempt(qId, null);
+    }
+  }
 }
 
 // ============================================================
@@ -886,7 +1027,8 @@ function exportData() {
     subjects: appData.subjects,
     topics: appData.topics,
     content: appData.content,
-    deletedContentIds: appData.deletedContentIds || []
+    deletedContentIds: appData.deletedContentIds || [],
+    progress: studyProgress
   };
   const json = JSON.stringify(exportObj, null, 2);
   const blob = new Blob([json], { type: 'application/json' });
@@ -975,6 +1117,7 @@ function confirmImport() {
     appData.topics = imp.topics;
     appData.content = imp.content;
     appData.deletedContentIds = imp.deletedContentIds || [];
+    if (imp.progress && typeof imp.progress === 'object') { studyProgress = imp.progress; saveProgress(); }
     saveData();
     showToast('success', '🔄 Data replaced! ' + appData.content.length + ' items loaded.');
   } else {
@@ -1000,6 +1143,11 @@ function confirmImport() {
     const del = new Set(appData.deletedContentIds || []);
     (imp.deletedContentIds || []).forEach(function (id) { del.add(id); });
     appData.deletedContentIds = Array.from(del);
+    if (imp.progress && typeof imp.progress === 'object') {
+      // keep local progress, fill in any questions only the imported file has
+      studyProgress = Object.assign({}, imp.progress, studyProgress);
+      saveProgress();
+    }
     saveData();
     showToast('success', '🔀 Merged! ' + added + ' new items added. Total: ' + appData.content.length);
   }
@@ -1056,6 +1204,7 @@ async function initApp() {
     }
   }
   loadData();
+  loadProgress();
   render();
   setupPersistenceGuards();
   registerServiceWorker();

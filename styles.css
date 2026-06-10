@@ -468,3 +468,28 @@ body{
   .header-actions button span.label{display:none}
   .content-tabs{max-width:none}
 }
+
+/* ===== Bidirectional cross-links (notes <-> questions) ===== */
+.xref-bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;
+  padding-top:10px;border-top:1px dashed var(--line)}
+.xref-label{font-size:.78rem;font-weight:600;color:var(--ink-3);margin-right:2px}
+.xref-btn{display:inline-flex;align-items:center;gap:4px;font-family:inherit;
+  font-size:.76rem;font-weight:600;cursor:pointer;
+  padding:3px 10px;border-radius:20px;
+  background:var(--accent-soft);color:var(--accent-ink);
+  border:1px solid color-mix(in srgb,var(--accent) 26%, transparent);
+  transition:background var(--t),transform var(--t),color var(--t)}
+.xref-btn:hover{background:var(--accent);color:#fff;transform:translateY(-1px)}
+.xref-back{margin-left:10px;font-size:.72rem;padding:2px 9px;vertical-align:middle}
+
+/* Flash highlight when jumping to a linked note/question */
+.jump-flash{animation:jumpFlash 1.6s ease-out}
+@keyframes jumpFlash{
+  0%{box-shadow:0 0 0 3px var(--accent);background:var(--accent-soft)}
+  100%{box-shadow:0 0 0 0 transparent;background:transparent}
+}
+
+/* Mastery / progress card in the chapter stats row */
+.stat-mastery{cursor:pointer;position:relative}
+.stat-mastery:hover{border-color:color-mix(in srgb,var(--accent) 40%, transparent)}
+.stat-mastery .stat-label{color:var(--accent-ink)}
