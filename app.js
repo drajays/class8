@@ -46,7 +46,9 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 30;
+const DATA_VERSION = 31;
+const DAILY_MCQ_GOAL = 15;
+const SRS_DAYS = [1, 3, 7, 14];
 
 function isNwDesktop() {
   try {
@@ -248,11 +250,17 @@ function setupPersistenceGuards() {
 }
 
 // ============================================================
-// PROGRESS TRACKING (student journey) — persisted per question
-//   studyProgress[qId] = { attempts, correct, lastResult, lastAt }
-//   Stored in localStorage 'studyhub_progress' and included in backups.
+// PROGRESS & LEARNING JOURNEY — persisted locally
+//   studyProgress[qId] = { attempts, correct, lastResult, lastAt,
+//     guessed, streak, srsNextAt, srsLevel }
+//   studyBookmarks = Set of qIds
+//   studyActivity = { 'YYYY-MM-DD': { mcqs } }
 // ============================================================
 let studyProgress = {};
+let studyBookmarks = new Set();
+let studyActivity = {};
+let revisionTab = 'mistakes'; // mistakes | bookmarks | due
+let quizSession = null;
 
 function loadProgress() {
   try {
@@ -260,6 +268,14 @@ function loadProgress() {
     studyProgress = raw ? JSON.parse(raw) : {};
   } catch (e) { studyProgress = {}; }
   if (!studyProgress || typeof studyProgress !== 'object') studyProgress = {};
+  try {
+    const bm = localStorage.getItem('studyhub_bookmarks');
+    studyBookmarks = new Set(bm ? JSON.parse(bm) : []);
+  } catch (e) { studyBookmarks = new Set(); }
+  try {
+    const act = localStorage.getItem('studyhub_activity');
+    studyActivity = act ? JSON.parse(act) : {};
+  } catch (e) { studyActivity = {}; }
 }
 
 function saveProgress() {
@@ -267,16 +283,139 @@ function saveProgress() {
   catch (e) { /* storage full — non-fatal */ }
 }
 
+function saveBookmarks() {
+  try { localStorage.setItem('studyhub_bookmarks', JSON.stringify([...studyBookmarks])); }
+  catch (e) { /* non-fatal */ }
+}
+
+function saveActivity() {
+  try { localStorage.setItem('studyhub_activity', JSON.stringify(studyActivity)); }
+  catch (e) { /* non-fatal */ }
+}
+
+function _progressDefaults() {
+  return { attempts: 0, correct: 0, lastResult: null, lastAt: null, guessed: false, streak: 0, srsNextAt: null, srsLevel: 0 };
+}
+
+function _scheduleSrs(p, wasWrong) {
+  if (wasWrong) {
+    p.streak = 0;
+    p.srsLevel = 0;
+    p.srsNextAt = _daysFromNow(SRS_DAYS[0]);
+  } else if (p.streak >= 2) {
+    p.srsNextAt = null;
+  } else {
+    const lvl = Math.min(p.srsLevel + 1, SRS_DAYS.length - 1);
+    p.srsLevel = lvl;
+    p.srsNextAt = _daysFromNow(SRS_DAYS[lvl]);
+  }
+}
+
+function _daysFromNow(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  return d.toISOString();
+}
+
+function recordDailyMcq() {
+  const key = new Date().toISOString().slice(0, 10);
+  if (!studyActivity[key]) studyActivity[key] = { mcqs: 0 };
+  studyActivity[key].mcqs += 1;
+  saveActivity();
+}
+
+function getDailyMcqCount() {
+  const key = new Date().toISOString().slice(0, 10);
+  return (studyActivity[key] && studyActivity[key].mcqs) || 0;
+}
+
+function getStreak() {
+  let streak = 0;
+  const d = new Date();
+  for (;;) {
+    const key = d.toISOString().slice(0, 10);
+    if (studyActivity[key] && studyActivity[key].mcqs > 0) {
+      streak++;
+      d.setDate(d.getDate() - 1);
+    } else break;
+  }
+  return streak;
+}
+
+function gradableQuestions(topicId) {
+  return appData.content.filter(c =>
+    (!topicId || c.topicId === topicId) &&
+    c.type !== 'note' && c.type !== 'short_answer' && c.type !== 'match'
+  );
+}
+
+function isQuizType(q) {
+  return q.type === 'mcq' || q.type === 'true_false' || q.type === 'fill_blank';
+}
+
+function isMistake(qId) {
+  const p = studyProgress[qId];
+  if (!p || !p.attempts) return false;
+  if (p.lastResult === 'wrong') return true;
+  if (p.guessed && p.lastResult === 'correct') return true;
+  return false;
+}
+
+function isMastered(qId) {
+  const p = studyProgress[qId];
+  return !!(p && p.streak >= 2 && p.lastResult === 'correct');
+}
+
+function getMistakeQuestions(topicId) {
+  return gradableQuestions(topicId).filter(q => isMistake(q.id));
+}
+
+function getDueForReview(topicId) {
+  const now = Date.now();
+  return gradableQuestions(topicId).filter(q => {
+    const p = studyProgress[q.id];
+    if (!p || !p.srsNextAt || isMastered(q.id)) return false;
+    return new Date(p.srsNextAt).getTime() <= now;
+  });
+}
+
+function getBookmarkedQuestions() {
+  return [...studyBookmarks].map(id => appData.content.find(c => c.id === id)).filter(Boolean);
+}
+
+function toggleBookmark(qId) {
+  if (studyBookmarks.has(qId)) studyBookmarks.delete(qId);
+  else studyBookmarks.add(qId);
+  saveBookmarks();
+}
+
+function isBookmarked(qId) {
+  return studyBookmarks.has(qId);
+}
+
 // Record an answer attempt. isCorrect may be true/false, or null for
-// "seen only" items (e.g. short/long answers that are self-checked).
-function recordAttempt(qId, isCorrect) {
-  const p = studyProgress[qId] || { attempts: 0, correct: 0, lastResult: null, lastAt: null };
+// "seen only" items. meta: { guessed, timeMs, inQuiz }
+function recordAttempt(qId, isCorrect, meta) {
+  meta = meta || {};
+  const p = Object.assign(_progressDefaults(), studyProgress[qId] || {});
   p.attempts += 1;
-  if (isCorrect === true) p.correct += 1;
+  if (isCorrect === true) {
+    p.correct += 1;
+    p.streak = (p.lastResult === 'correct' ? p.streak : 0) + 1;
+  } else if (isCorrect === false) {
+    p.streak = 0;
+  }
   p.lastResult = isCorrect === true ? 'correct' : (isCorrect === false ? 'wrong' : 'seen');
   p.lastAt = new Date().toISOString();
+  if (meta.guessed !== undefined) p.guessed = !!meta.guessed;
+  if (isCorrect === false || (meta.guessed && isCorrect === true)) {
+    _scheduleSrs(p, true);
+  } else if (isCorrect === true && p.srsNextAt) {
+    _scheduleSrs(p, false);
+  }
   studyProgress[qId] = p;
   saveProgress();
+  if (meta.inQuiz && isCorrect !== null) recordDailyMcq();
   updateMasteryBadge();
 }
 
@@ -291,13 +430,14 @@ function chapterMastery(topicId) {
     if (p && p.attempts > 0) { attempted++; if (p.lastResult === 'correct') correct++; }
   });
   const total = gradable.length || 1;
+  const accuracy = attempted ? Math.round((correct / attempted) * 100) : 0;
   return {
     attempted,
     total: gradable.length,
     correct,
-    pct: Math.round((correct / total) * 100),
+    pct: accuracy,
     coverage: Math.round((attempted / total) * 100),
-    accuracy: attempted ? Math.round((correct / attempted) * 100) : 0
+    accuracy
   };
 }
 
@@ -340,9 +480,194 @@ function updateMasteryBadge() {
   if (!selectedTopic) return;
   const m = chapterMastery(selectedTopic);
   const numEl = document.getElementById('mastery-num');
+  const covEl = document.getElementById('coverage-num');
   const barEl = document.getElementById('mastery-bar');
-  if (numEl) numEl.textContent = m.pct + '%';
-  if (barEl) barEl.style.width = Math.max(m.pct, 2) + '%';
+  const covBarEl = document.getElementById('coverage-bar');
+  if (numEl) numEl.textContent = m.attempted ? m.accuracy + '%' : '—';
+  if (covEl) covEl.textContent = m.coverage + '%';
+  if (barEl) barEl.style.width = Math.max(m.attempted ? m.accuracy : 0, 2) + '%';
+  if (covBarEl) covBarEl.style.width = Math.max(m.coverage, 2) + '%';
+}
+
+function sectionHeatmap(topicId) {
+  const notes = appData.content.filter(c => c.topicId === topicId && c.type === 'note');
+  return notes.map(n => {
+    const qs = appData.content.filter(c => c.linksTo === n.id && isQuizType(c));
+    if (!qs.length) return null;
+    let attempted = 0, correct = 0;
+    qs.forEach(q => {
+      const p = studyProgress[q.id];
+      if (p && p.attempts > 0) {
+        attempted++;
+        if (p.lastResult === 'correct') correct++;
+      }
+    });
+    return {
+      id: n.id,
+      name: n.subtopic,
+      attempted,
+      total: qs.length,
+      accuracy: attempted ? Math.round((correct / attempted) * 100) : null
+    };
+  }).filter(Boolean);
+}
+
+function _shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function pickQuizPool(source, topicId) {
+  let pool = [];
+  if (source === 'mistakes') pool = getMistakeQuestions(topicId || null);
+  else if (source === 'due') pool = getDueForReview(topicId || null);
+  else if (source === 'bookmarks') pool = getBookmarkedQuestions().filter(isQuizType);
+  else if (source === 'linked' && topicId) {
+    const noteIds = new Set(appData.content.filter(c => c.topicId === topicId && c.type === 'note').map(n => n.id));
+    pool = appData.content.filter(c => c.linksTo && noteIds.has(c.linksTo) && isQuizType(c));
+  } else pool = gradableQuestions(topicId).filter(isQuizType);
+  return pool;
+}
+
+function startQuizSession(source, topicId, count) {
+  const pool = pickQuizPool(source, topicId);
+  if (!pool.length) {
+    showToast('error', 'No questions available for this quiz.');
+    return;
+  }
+  const ids = _shuffle(pool).slice(0, Math.min(count, pool.length)).map(q => q.id);
+  quizSession = {
+    source, topicId: topicId || null,
+    ids, index: 0,
+    answers: {},
+    guessed: {},
+    startedAt: Date.now(),
+    qStartedAt: Date.now(),
+    finished: false
+  };
+  currentView = 'quiz';
+  render();
+}
+
+function quitQuizSession() {
+  if (quizSession && !quizSession.finished && !confirm('Leave this quiz? Your answers so far are saved.')) return;
+  quizSession = null;
+  currentView = selectedTopic ? 'content' : 'home';
+  render();
+}
+
+function currentQuizQuestion() {
+  if (!quizSession || quizSession.finished) return null;
+  const id = quizSession.ids[quizSession.index];
+  return appData.content.find(c => c.id === id);
+}
+
+function quizMarkGuessed() {
+  if (!quizSession) return;
+  const q = currentQuizQuestion();
+  if (!q || quizSession.answers[q.id] !== undefined) return;
+  quizSession.guessed[q.id] = true;
+  renderMain();
+}
+
+function quizToggleBookmark() {
+  const q = currentQuizQuestion();
+  if (!q) return;
+  toggleBookmark(q.id);
+  renderMain();
+}
+
+function quizSubmitAnswer(value) {
+  const q = currentQuizQuestion();
+  if (!q || quizSession.answers[q.id] !== undefined) return;
+  const timeMs = Date.now() - quizSession.qStartedAt;
+  let isCorrect = false;
+  if (q.type === 'mcq') isCorrect = value === q.correctOption;
+  else if (q.type === 'true_false') isCorrect = value === q.correctAnswer;
+  else if (q.type === 'fill_blank') isCorrect = String(value).toLowerCase().trim() === String(q.blankAnswer || '').toLowerCase().trim();
+  quizSession.answers[q.id] = { value, isCorrect, timeMs, guessed: !!quizSession.guessed[q.id] };
+  recordAttempt(q.id, isCorrect, { guessed: !!quizSession.guessed[q.id], timeMs, inQuiz: true });
+  renderMain();
+}
+
+function quizNext() {
+  if (!quizSession) return;
+  if (quizSession.index < quizSession.ids.length - 1) {
+    quizSession.index++;
+    quizSession.qStartedAt = Date.now();
+    renderMain();
+  } else {
+    quizSession.finished = true;
+    renderMain();
+  }
+}
+
+function openQuizBuilder(prefill) {
+  prefill = prefill || {};
+  populateQuizBuilder(prefill);
+  openModal('modal-quiz');
+}
+
+function populateQuizBuilder(prefill) {
+  const topicSel = document.getElementById('quiz-topic');
+  const sourceSel = document.getElementById('quiz-source');
+  const countSel = document.getElementById('quiz-count');
+  if (!topicSel) return;
+  topicSel.innerHTML = '<option value="">All chapters</option>' +
+    appData.topics.map(t => {
+      const sub = appData.subjects.find(s => s.id === t.subjectId);
+      return `<option value="${t.id}">${sub ? sub.icon + ' ' : ''}${escHtml(t.name)}</option>`;
+    }).join('');
+  if (prefill.topicId) topicSel.value = prefill.topicId;
+  if (prefill.source) sourceSel.value = prefill.source;
+  if (prefill.count) countSel.value = String(prefill.count);
+  updateQuizBuilderHint();
+}
+
+function updateQuizBuilderHint() {
+  const hint = document.getElementById('quiz-pool-hint');
+  if (!hint) return;
+  const source = document.getElementById('quiz-source').value;
+  const topicId = document.getElementById('quiz-topic').value || null;
+  const pool = pickQuizPool(source, topicId);
+  hint.textContent = pool.length
+    ? `${pool.length} question${pool.length > 1 ? 's' : ''} available in this pool`
+    : 'No questions in this pool — try another source or chapter';
+}
+
+function retrySingleQuestion(qId) {
+  const q = appData.content.find(c => c.id === qId);
+  if (!q) return;
+  selectedTopic = q.topicId;
+  const t = appData.topics.find(x => x.id === q.topicId);
+  if (t) { selectedSubject = t.subjectId; selectedClass = t.classId; }
+  quizSession = {
+    source: 'single', topicId: q.topicId,
+    ids: [qId], index: 0, answers: {}, guessed: {},
+    startedAt: Date.now(), qStartedAt: Date.now(), finished: false
+  };
+  currentView = 'quiz';
+  render();
+}
+
+function launchQuizFromBuilder() {
+  const source = document.getElementById('quiz-source').value;
+  const topicId = document.getElementById('quiz-topic').value || null;
+  const count = parseInt(document.getElementById('quiz-count').value, 10) || 10;
+  closeModal('modal-quiz');
+  if (topicId) {
+    const t = appData.topics.find(x => x.id === topicId);
+    if (t) {
+      selectedClass = t.classId;
+      selectedSubject = t.subjectId;
+      selectedTopic = topicId;
+    }
+  }
+  startQuizSession(source, topicId, count);
 }
 
 function resetAllProgress() {
@@ -401,13 +726,18 @@ function jumpToQuestion(qId) {
 }
 
 function practiceLinkedMcqs(noteId) {
-  const linked = appData.content.filter(c => c.linksTo === noteId && c.type === 'mcq');
+  const linked = appData.content.filter(c => c.linksTo === noteId && isQuizType(c));
   if (!linked.length) return;
-  contentTab = 'questions';
-  questionFilter = 'mcq';
-  userAnswers = {};
-  renderContent(document.getElementById('main-content'));
-  setTimeout(() => _flashEl(document.getElementById('qcard-' + linked[0].id)), 60);
+  const note = appData.content.find(c => c.id === noteId);
+  if (note) selectedTopic = note.topicId;
+  quizSession = {
+    source: 'linked', topicId: selectedTopic,
+    ids: _shuffle(linked).map(q => q.id),
+    index: 0, answers: {}, guessed: {},
+    startedAt: Date.now(), qStartedAt: Date.now(), finished: false
+  };
+  currentView = 'quiz';
+  render();
 }
 
 function sourceChipHtml(source) {
@@ -451,6 +781,10 @@ function toggleAllNotes() {
 // ============================================================
 function navigateTo(view, id) {
   closeSidebar();
+  if (currentView === 'quiz' && quizSession && !quizSession.finished) {
+    if (!confirm('Leave this quiz? Your answers so far are saved.')) return;
+    quizSession = null;
+  }
   currentView = view;
   userAnswers = {};
   if (view === 'home') { selectedClass = null; selectedSubject = null; selectedTopic = null; }
@@ -460,6 +794,7 @@ function navigateTo(view, id) {
     selectedTopic = id; contentTab = 'notes'; questionFilter = 'all';
     try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
   }
+  if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
   render();
 }
 
@@ -481,14 +816,29 @@ function renderBreadcrumb() {
     const sub = appData.subjects.find(s=>s.id===selectedSubject);
     html += `<span class="sep">›</span><span onclick="navigateTo('topics','${selectedSubject}')">${sub?.icon||''} ${sub?.name||selectedSubject}</span>`;
   }
-  if (selectedTopic) {
+  if (selectedTopic && currentView !== 'revision' && currentView !== 'quiz') {
     const t = appData.topics.find(t=>t.id===selectedTopic);
     html += `<span class="sep">›</span><span class="active">${t?.icon||''} ${t?.name||selectedTopic}</span>`;
+  }
+  if (currentView === 'revision') {
+    html += `<span class="sep">›</span><span class="active">📕 Revision</span>`;
+  }
+  if (currentView === 'quiz') {
+    html += `<span class="sep">›</span><span class="active">▶ Practice Quiz</span>`;
   }
   bc.innerHTML = html;
 }
 
 function renderSidebar() {
+  const mistakeN = getMistakeQuestions().length;
+  const revisionNav = document.querySelector('.sidebar-revision');
+  if (revisionNav) {
+    revisionNav.innerHTML = `
+      <div class="nav-item ${currentView === 'revision' ? 'active' : ''}" onclick="navigateTo('revision','mistakes')">
+        <span class="icon">📕</span> Revision
+        ${mistakeN ? `<span class="badge">${mistakeN}</span>` : ''}
+      </div>`;
+  }
   // Classes
   const classNav = document.getElementById('class-nav');
   classNav.innerHTML = appData.classes.map(c => `
@@ -532,6 +882,154 @@ function renderMain() {
   else if (currentView === 'subjects') renderSubjects(main);
   else if (currentView === 'topics') renderTopics(main);
   else if (currentView === 'content') renderContent(main);
+  else if (currentView === 'revision') renderRevisionHub(main);
+  else if (currentView === 'quiz') renderQuizView(main);
+}
+
+// ===== REVISION HUB =====
+function renderRevisionHub(el) {
+  const mistakes = getMistakeQuestions();
+  const due = getDueForReview();
+  const bookmarks = getBookmarkedQuestions();
+  const tabs = [
+    { key: 'mistakes', label: 'Mistakes', icon: '📕', count: mistakes.length },
+    { key: 'due', label: 'Due Today', icon: '🔁', count: due.length },
+    { key: 'bookmarks', label: 'Saved', icon: '🔖', count: bookmarks.length }
+  ];
+  let list = mistakes;
+  if (revisionTab === 'due') list = due;
+  if (revisionTab === 'bookmarks') list = bookmarks;
+  const tabHtml = tabs.map(t =>
+    `<div class="content-tab ${revisionTab === t.key ? 'active' : ''}" onclick="revisionTab='${t.key}';renderMain()">${t.icon} ${t.label} (${t.count})</div>`
+  ).join('');
+  let bodyHtml = '';
+  if (!list.length) {
+    const empty = {
+      mistakes: ['No mistakes logged yet', 'Answer questions in Practice Quiz — wrong answers and lucky guesses land here automatically.'],
+      due: ['Nothing due today', 'Complete the Mistake Book and questions will return on a spaced schedule.'],
+      bookmarks: ['No saved questions', 'Tap 🔖 while practicing to save tricky questions for last-minute revision.']
+    }[revisionTab];
+    bodyHtml = `<div class="empty-state"><div class="empty-icon">${tabs.find(t => t.key === revisionTab).icon}</div><h3>${empty[0]}</h3><p>${empty[1]}</p></div>`;
+  } else {
+    bodyHtml = `<div class="revision-actions">
+      <button class="btn btn-primary" onclick="startQuizSession('${revisionTab === 'bookmarks' ? 'bookmarks' : revisionTab}', null, ${Math.min(20, list.length)})">▶ Practice ${Math.min(20, list.length)} now</button>
+      <button class="btn btn-outline" onclick="openQuizBuilder({source:'${revisionTab === 'bookmarks' ? 'bookmarks' : revisionTab}'})">⚙️ Custom quiz</button>
+    </div>
+    <div class="revision-list">${list.map(q => renderRevisionItem(q)).join('')}</div>`;
+  }
+  el.innerHTML = `
+    <div class="fade-in">
+      <div class="section-header"><h1>📕 Revision Hub</h1></div>
+      <p class="lead">Revisit mistakes, scheduled reviews, and saved questions — with instant explanations and links back to notes.</p>
+      <div class="content-tabs">${tabHtml}</div>
+      ${bodyHtml}
+    </div>`;
+}
+
+function renderRevisionItem(q) {
+  const topic = appData.topics.find(t => t.id === q.topicId);
+  const p = studyProgress[q.id] || {};
+  const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
+  const badge = p.guessed && p.lastResult === 'correct' ? '<span class="rev-badge guessed">Guessed</span>'
+    : p.lastResult === 'wrong' ? '<span class="rev-badge wrong">Wrong</span>'
+    : '<span class="rev-badge due">Review</span>';
+  return `<div class="revision-item">
+    <div class="rev-meta">${topic ? topic.icon + ' ' + escHtml(topic.name) : ''} ${badge}</div>
+    <div class="rev-q">${escHtml((q.question || '').slice(0, 160))}${(q.question || '').length > 160 ? '…' : ''}</div>
+    <div class="rev-actions">
+      ${linkedNote ? `<button class="xref-btn xref-back" onclick="selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ ${escHtml(linkedNote.subtopic)}</button>` : ''}
+      <button class="btn btn-sm btn-outline" onclick="retrySingleQuestion('${q.id}')">Retry</button>
+      ${revisionTab === 'bookmarks' ? `<button class="btn btn-sm btn-danger" onclick="toggleBookmark('${q.id}');renderMain()">Remove</button>` : ''}
+    </div>
+  </div>`;
+}
+
+// ===== QUIZ SESSION =====
+function renderQuizView(el) {
+  if (!quizSession) { currentView = 'home'; renderHome(el); return; }
+  if (quizSession.finished) {
+    const results = quizSession.ids.map(id => {
+      const a = quizSession.answers[id];
+      return { id, ...(a || { isCorrect: false }) };
+    });
+    const correct = results.filter(r => r.isCorrect).length;
+    const total = quizSession.ids.length;
+    el.innerHTML = `
+      <div class="fade-in quiz-results">
+        <div class="section-header"><h1>✅ Quiz Complete</h1></div>
+        <div class="quiz-score-ring acc-${_accClass(Math.round(correct / total * 100), total)}">
+          <div class="ring-num">${correct}/${total}</div>
+          <div class="ring-lbl">Correct</div>
+        </div>
+        <p class="lead">${correct === total ? 'Perfect! Keep this streak going.' : correct >= total * 0.7 ? 'Good work — review mistakes below.' : 'Focus on the explanations, then retry from the Mistake Book.'}</p>
+        <div class="quiz-result-actions">
+          <button class="btn btn-primary" onclick="startQuizSession('mistakes', quizSession.topicId, ${Math.min(15, getMistakeQuestions(quizSession.topicId).length)})">📕 Revise mistakes</button>
+          <button class="btn btn-outline" onclick="quizSession=null;navigateTo('revision','mistakes')">Open Revision Hub</button>
+          <button class="btn btn-outline" onclick="quizSession=null;currentView='${quizSession.topicId ? 'content' : 'home'}';render()">${quizSession.topicId ? 'Back to chapter' : 'Home'}</button>
+        </div>
+      </div>`;
+    return;
+  }
+  const q = currentQuizQuestion();
+  if (!q) { quizSession.finished = true; renderQuizView(el); return; }
+  const idx = quizSession.index;
+  const total = quizSession.ids.length;
+  const answered = quizSession.answers[q.id];
+  const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
+  const typeLabels = { mcq: 'MCQ', true_false: 'True / False', fill_blank: 'Fill in the Blank' };
+  let body = '';
+  if (q.type === 'mcq' && q.options) {
+    const letters = ['A', 'B', 'C', 'D'];
+    body = `<div class="q-options quiz-options">${q.options.map((opt, oi) => {
+      let cls = '';
+      if (answered) {
+        if (oi === q.correctOption) cls = 'correct';
+        else if (answered.value === oi) cls = 'wrong';
+      }
+      const click = answered ? '' : `onclick="quizSubmitAnswer(${oi})"`;
+      return `<div class="q-option ${cls}" ${click}><span class="opt-letter">${letters[oi]}</span> ${escHtml(opt)}</div>`;
+    }).join('')}</div>`;
+  } else if (q.type === 'true_false') {
+    body = `<div class="tf-options">
+      <button class="tf-btn" ${answered ? 'disabled' : ''} onclick="quizSubmitAnswer('true')">✅ True</button>
+      <button class="tf-btn" ${answered ? 'disabled' : ''} onclick="quizSubmitAnswer('false')">❌ False</button>
+    </div>`;
+  } else if (q.type === 'fill_blank') {
+    body = `<div class="quiz-blank">
+      <input class="blank-input" id="quiz-blank-input" placeholder="Type your answer…" ${answered ? 'disabled' : ''} value="${answered ? escHtml(String(answered.value)) : ''}">
+      ${answered ? '' : `<button class="btn btn-primary" onclick="quizSubmitAnswer(document.getElementById('quiz-blank-input').value)">Check</button>`}
+    </div>`;
+  }
+  let feedback = '';
+  if (answered) {
+    const ok = answered.isCorrect;
+    feedback = `<div class="quiz-feedback ${ok ? 'ok' : 'bad'}">
+      <strong>${ok ? '✅ Correct!' : '❌ Not quite'}</strong>
+      <p>${fmtText(q.answer || '')}</p>
+      ${q.teacherTip ? `<div class="tip-box"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>` : ''}
+      ${q.examTip ? `<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>` : ''}
+      ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button>` : ''}
+    </div>`;
+  }
+  el.innerHTML = `
+    <div class="fade-in quiz-session">
+      <div class="quiz-top">
+        <button class="btn btn-sm btn-outline" onclick="quitQuizSession()">✕ Exit</button>
+        <div class="quiz-progress-text">Question ${idx + 1} of ${total}</div>
+        <div class="quiz-tools">
+          <button class="btn btn-sm ${quizSession.guessed[q.id] ? 'btn-primary' : 'btn-outline'}" ${answered ? 'disabled' : ''} onclick="quizMarkGuessed()" title="Mark if you're guessing">🎲 Guessed</button>
+          <button class="btn btn-sm ${isBookmarked(q.id) ? 'btn-primary' : 'btn-outline'}" onclick="quizToggleBookmark()">${isBookmarked(q.id) ? '🔖 Saved' : '🔖 Save'}</button>
+        </div>
+      </div>
+      <div class="progress-bar quiz-bar"><div class="progress-fill" style="width:${((idx + (answered ? 1 : 0)) / total) * 100}%"></div></div>
+      <div class="question-card quiz-card">
+        <div class="q-label">${typeLabels[q.type] || q.type}${sourceChipHtml(q.source)}</div>
+        <div class="q-text">${escHtml(q.question)}</div>
+        ${body}
+        ${feedback}
+        ${answered ? `<div class="quiz-nav"><button class="btn btn-primary" onclick="quizNext()">${idx < total - 1 ? 'Next →' : 'See results'}</button></div>` : ''}
+      </div>
+    </div>`;
 }
 
 // ===== HOME =====
@@ -557,17 +1055,47 @@ function renderHome(el) {
         <div class="dsub-sub">${sm.attempted}/${sm.total} practiced</div>
       </div>`;
   }).join('');
+  const mistakes = getMistakeQuestions();
+  const due = getDueForReview();
+  const bookmarks = getBookmarkedQuestions();
+  const daily = getDailyMcqCount();
+  const streak = getStreak();
+  const goalPct = Math.min(100, Math.round((daily / DAILY_MCQ_GOAL) * 100));
+  const journeyHtml = `
+    <div class="journey-row">
+      <div class="journey-card" onclick="navigateTo('revision','mistakes')">
+        <div class="jc-icon">📕</div>
+        <div class="jc-body"><div class="jc-title">Mistake Book</div><div class="jc-sub">${mistakes.length} to revise</div></div>
+      </div>
+      <div class="journey-card ${due.length ? 'journey-highlight' : ''}" onclick="${due.length ? `startQuizSession('due', null, ${Math.min(20, due.length)})` : `navigateTo('revision','due')`}">
+        <div class="jc-icon">🔁</div>
+        <div class="jc-body"><div class="jc-title">Due Today</div><div class="jc-sub">${due.length ? due.length + ' scheduled' : 'All caught up'}</div></div>
+      </div>
+      <div class="journey-card" onclick="openQuizBuilder({})">
+        <div class="jc-icon">▶</div>
+        <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
+      </div>
+      <div class="journey-card" onclick="navigateTo('revision','bookmarks')">
+        <div class="jc-icon">🔖</div>
+        <div class="jc-body"><div class="jc-title">Saved</div><div class="jc-sub">${bookmarks.length} bookmarked</div></div>
+      </div>
+    </div>
+    <div class="goal-strip">
+      <div class="goal-top"><span>🎯 Today: ${daily}/${DAILY_MCQ_GOAL} MCQs</span><span>${streak ? '🔥 ' + streak + ' day streak' : 'Start your streak'}</span></div>
+      <div class="progress-bar"><div class="progress-fill cov-good" style="width:${Math.max(goalPct, 2)}%"></div></div>
+    </div>`;
   const dashHtml = `
     ${continueHtml}
+    ${journeyHtml}
     <div class="dash">
       <div class="dash-head"><h2>📊 Your Progress</h2>${op.attempted ? `<button class="btn btn-sm btn-outline" onclick="resetAllProgress()">↺ Reset all</button>` : ''}</div>
       <div class="dash-grid">
         <div class="dash-ring acc-${opCls}" style="background:conic-gradient(var(--accent) ${op.attempted ? op.accuracy : 0}%, var(--line) 0)">
           <div class="ring-inner"><div class="ring-num">${op.attempted ? op.accuracy + '%' : '—'}</div><div class="ring-lbl">Accuracy</div></div>
         </div>
-        <div class="dash-stat"><div class="ds-num">${op.attempted}</div><div class="ds-lbl">Questions practiced</div></div>
-        <div class="dash-stat"><div class="ds-num">${op.coverage}%</div><div class="ds-lbl">of ${op.total} covered</div></div>
-        <div class="dash-stat"><div class="ds-num">${op.correct}</div><div class="ds-lbl">Correct answers</div></div>
+        <div class="dash-stat"><div class="ds-num">${op.coverage}%</div><div class="ds-lbl">Syllabus covered</div></div>
+        <div class="dash-stat"><div class="ds-num">${op.attempted}</div><div class="ds-lbl">Questions tried</div></div>
+        <div class="dash-stat"><div class="ds-num">${op.correct}</div><div class="ds-lbl">Correct</div></div>
       </div>
       <div class="dash-subjects">${subjectBars}</div>
     </div>`;
@@ -677,23 +1205,43 @@ function renderContent(el) {
   const notes = contents.filter(c=>c.type==='note');
   const questions = contents.filter(c=>c.type!=='note');
 
+  const cm = chapterMastery(selectedTopic);
+  const heat = sectionHeatmap(selectedTopic);
+  const heatHtml = heat.length ? `
+    <div class="section-heatmap">
+      <h3>Section strength</h3>
+      <div class="heat-row">${heat.map(s => {
+        const cls = s.accuracy === null ? 'heat-none' : s.accuracy >= 80 ? 'heat-good' : s.accuracy >= 50 ? 'heat-mid' : 'heat-low';
+        const lbl = s.accuracy === null ? '—' : s.accuracy + '%';
+        const short = (s.name || '').replace(/^\d+\.\s*/, '').slice(0, 28);
+        return `<div class="heat-pill ${cls}" title="${escHtml(s.name)} — ${s.attempted}/${s.total} tried"><span class="heat-lbl">${escHtml(short)}${short.length < (s.name||'').length ? '…' : ''}</span><span class="heat-acc">${lbl}</span></div>`;
+      }).join('')}</div>
+    </div>` : '';
   el.innerHTML = `
     <div class="fade-in">
       <div class="section-header">
         <h1>${topic?.icon} ${topic?.name}</h1>
+        <button class="btn btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
       </div>
       <div class="stats-row">
         <div class="stat-card"><div class="stat-num">${notes.length}</div><div class="stat-label">Notes</div></div>
         <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">MCQs</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='true_false').length}</div><div class="stat-label">True/False</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='fill_blank').length}</div><div class="stat-label">Fill Blanks</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='short_answer').length}</div><div class="stat-label">Short/Long</div></div>
-        <div class="stat-card stat-mastery" title="Your accuracy on auto-checked questions in this chapter. Click to reset." onclick="resetChapterProgress()">
-          <div class="stat-num" id="mastery-num">${chapterMastery(selectedTopic).pct}%</div>
-          <div class="stat-label">Mastery ↺</div>
-          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="mastery-bar" style="width:${Math.max(chapterMastery(selectedTopic).pct,2)}%"></div></div>
+        <div class="stat-card stat-coverage" title="Share of questions you've tried">
+          <div class="stat-num" id="coverage-num">${cm.coverage}%</div>
+          <div class="stat-label">Coverage</div>
+          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill cov-mid" id="coverage-bar" style="width:${Math.max(cm.coverage,2)}%"></div></div>
+        </div>
+        <div class="stat-card stat-mastery" title="Accuracy on questions you've tried. Click to reset chapter progress." onclick="resetChapterProgress()">
+          <div class="stat-num" id="mastery-num">${cm.attempted ? cm.accuracy + '%' : '—'}</div>
+          <div class="stat-label">Accuracy ↺</div>
+          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="mastery-bar" style="width:${Math.max(cm.attempted ? cm.accuracy : 0,2)}%"></div></div>
+        </div>
+        <div class="stat-card" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'mistakes'})" style="cursor:pointer" title="Quiz from your mistakes in this chapter">
+          <div class="stat-num">${getMistakeQuestions(selectedTopic).length}</div>
+          <div class="stat-label">Mistakes</div>
         </div>
       </div>
+      ${heatHtml}
       <div class="content-tabs">
         <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes & Concepts</div>
         <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice Questions</div>
@@ -874,7 +1422,10 @@ function renderSingleQuestion(q, idx, targeted) {
     ${linkedNote?`<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>`:''}
   </div>`;
 
-  html += `<div style="margin-top:10px;display:flex;gap:6px">
+  const bm = isBookmarked(q.id);
+  html += `<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
+    <button class="btn btn-sm ${bm ? 'btn-primary' : 'btn-outline'}" onclick="toggleBookmark('${q.id}');updateQuestionCard('${q.id}')">${bm ? '🔖 Saved' : '🔖 Save'}</button>
+    <button class="btn btn-sm btn-outline" onclick="retrySingleQuestion('${q.id}')">▶ Practice</button>
     <button class="btn btn-sm btn-outline" onclick="editContent('${q.id}')">✏️ Edit</button>
     <button class="btn btn-sm btn-danger" onclick="deleteContent('${q.id}')">🗑️</button>
   </div>`;
@@ -895,14 +1446,14 @@ function updateQuestionCard(id) {
 function answerTF(id, val) {
   userAnswers[id] = val;
   const q = appData.content.find(c => c.id === id);
-  if (q) recordAttempt(id, val === q.correctAnswer);
+  if (q) { recordAttempt(id, val === q.correctAnswer); recordDailyMcq(); }
   updateQuestionCard(id);
 }
 
 function answerMCQ(id, val) {
   userAnswers[id] = val;
   const q = appData.content.find(c => c.id === id);
-  if (q) recordAttempt(id, val === q.correctOption);
+  if (q) { recordAttempt(id, val === q.correctOption); recordDailyMcq(); }
   updateQuestionCard(id);
 }
 
@@ -910,7 +1461,10 @@ function checkBlank(id) {
   const input = document.getElementById('blank-'+id);
   userAnswers[id] = input.value;
   const q = appData.content.find(c => c.id === id);
-  if (q) recordAttempt(id, input.value.toLowerCase().trim() === (q.blankAnswer||'').toLowerCase().trim());
+  if (q) {
+    recordAttempt(id, input.value.toLowerCase().trim() === (q.blankAnswer || '').toLowerCase().trim());
+    recordDailyMcq();
+  }
   updateQuestionCard(id);
 }
 
@@ -1231,7 +1785,9 @@ function exportData() {
     topics: appData.topics,
     content: appData.content,
     deletedContentIds: appData.deletedContentIds || [],
-    progress: studyProgress
+    progress: studyProgress,
+    bookmarks: [...studyBookmarks],
+    activity: studyActivity
   };
   const json = JSON.stringify(exportObj, null, 2);
   const blob = new Blob([json], { type: 'application/json' });
@@ -1321,6 +1877,8 @@ function confirmImport() {
     appData.content = imp.content;
     appData.deletedContentIds = imp.deletedContentIds || [];
     if (imp.progress && typeof imp.progress === 'object') { studyProgress = imp.progress; saveProgress(); }
+    if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
+    if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
     saveData();
     showToast('success', '🔄 Data replaced! ' + appData.content.length + ' items loaded.');
   } else {
@@ -1347,9 +1905,16 @@ function confirmImport() {
     (imp.deletedContentIds || []).forEach(function (id) { del.add(id); });
     appData.deletedContentIds = Array.from(del);
     if (imp.progress && typeof imp.progress === 'object') {
-      // keep local progress, fill in any questions only the imported file has
       studyProgress = Object.assign({}, imp.progress, studyProgress);
       saveProgress();
+    }
+    if (Array.isArray(imp.bookmarks)) {
+      imp.bookmarks.forEach(id => studyBookmarks.add(id));
+      saveBookmarks();
+    }
+    if (imp.activity && typeof imp.activity === 'object') {
+      studyActivity = Object.assign({}, imp.activity, studyActivity);
+      saveActivity();
     }
     saveData();
     showToast('success', '🔀 Merged! ' + added + ' new items added. Total: ' + appData.content.length);

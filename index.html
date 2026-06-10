@@ -54,6 +54,9 @@
       <span class="search-icon">🔍</span>
       <input type="text" placeholder="Search topics…" oninput="searchTopics(this.value)">
     </div>
+    <div class="sidebar-section sidebar-revision-wrap">
+      <div class="sidebar-revision"></div>
+    </div>
     <div class="sidebar-section">
       <h3>Class</h3>
       <div id="class-nav"></div>
@@ -187,6 +190,42 @@
       </select>
     </div>
     <div id="manager-list" style="max-height:54vh;overflow-y:auto"></div>
+  </div>
+</div>
+
+<!-- MODAL: Quiz Builder -->
+<div class="modal-overlay" id="modal-quiz">
+  <div class="modal" style="max-width:520px">
+    <button class="close-btn" onclick="closeModal('modal-quiz')">✕</button>
+    <h2>▶ Start Practice Quiz</h2>
+    <p style="color:var(--ink-2);font-size:.9rem;margin-bottom:16px">Focused practice with instant feedback, explanations, and links back to notes.</p>
+    <div class="form-group">
+      <label>Question pool</label>
+      <select id="quiz-source" onchange="updateQuizBuilderHint()">
+        <option value="chapter">Chapter — all MCQs &amp; objective questions</option>
+        <option value="mistakes">Mistake Book — wrong &amp; guessed answers</option>
+        <option value="due">Due Today — spaced revision queue</option>
+        <option value="bookmarks">Saved — bookmarked questions</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Chapter (optional)</label>
+      <select id="quiz-topic" onchange="updateQuizBuilderHint()"><option value="">All chapters</option></select>
+    </div>
+    <div class="form-group">
+      <label>Number of questions</label>
+      <select id="quiz-count">
+        <option value="10">10 questions</option>
+        <option value="20" selected>20 questions</option>
+        <option value="30">30 questions</option>
+        <option value="50">50 questions</option>
+      </select>
+    </div>
+    <p id="quiz-pool-hint" class="quiz-pool-hint">Loading…</p>
+    <div class="btn-group" style="margin-top:16px">
+      <button class="btn btn-primary" onclick="launchQuizFromBuilder()">▶ Start</button>
+      <button class="btn btn-outline" onclick="closeModal('modal-quiz')">Cancel</button>
+    </div>
   </div>
 </div>
 
