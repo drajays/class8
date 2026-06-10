@@ -46,7 +46,7 @@ let contentTab = 'notes'; // notes, questions
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 31;
+const DATA_VERSION = 32;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -747,6 +747,12 @@ function sourceChipHtml(source) {
   return '';
 }
 
+function mcqImageHtml(q) {
+  if (!q.image) return '';
+  const cap = q.caption ? `<div class="mcq-img-caption">${escHtml(q.caption)}</div>` : '';
+  return `<div class="mcq-image-wrap"><img class="mcq-image" src="${escHtml(q.image)}" alt="Textbook diagram" loading="lazy">${cap}</div>`;
+}
+
 function noteSortKey(n) {
   const textbook = n.source === 'icse' || n.source === 'neet';
   const m = /^(\d+)\./.exec(n.subtopic || '');
@@ -1024,6 +1030,7 @@ function renderQuizView(el) {
       <div class="progress-bar quiz-bar"><div class="progress-fill" style="width:${((idx + (answered ? 1 : 0)) / total) * 100}%"></div></div>
       <div class="question-card quiz-card">
         <div class="q-label">${typeLabels[q.type] || q.type}${sourceChipHtml(q.source)}</div>
+        ${mcqImageHtml(q)}
         <div class="q-text">${escHtml(q.question)}</div>
         ${body}
         ${feedback}
@@ -1329,15 +1336,22 @@ function renderQuestions(questions) {
     {key:'true_false',label:'True/False',icon:'✅'},
     {key:'fill_blank',label:'Fill Blanks',icon:'✍️'},
     {key:'mcq',label:'MCQ',icon:'🔘'},
+    {key:'diagram',label:'Diagrams',icon:'🖼️'},
     {key:'match',label:'Match',icon:'🔗'},
     {key:'short_answer',label:'Short/Long Answer',icon:'📋'}
   ];
 
-  const filtered = questionFilter === 'all' ? questions : questions.filter(q=>q.type===questionFilter);
+  const diagramN = questions.filter(q => q.image).length;
+  const filtered = questionFilter === 'all' ? questions
+    : questionFilter === 'diagram' ? questions.filter(q => q.image)
+    : questions.filter(q => q.type === questionFilter);
 
-  let tabsHtml = `<div class="question-type-tabs">${types.map(t =>
-    `<div class="q-tab ${questionFilter===t.key?'active':''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${t.key==='all'?questions.length:questions.filter(q=>q.type===t.key).length})</div>`
-  ).join('')}</div>`;
+  let tabsHtml = `<div class="question-type-tabs">${types.map(t => {
+    const n = t.key === 'all' ? questions.length
+      : t.key === 'diagram' ? diagramN
+      : questions.filter(q => q.type === t.key).length;
+    return `<div class="q-tab ${questionFilter===t.key?'active':''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</div>`;
+  }).join('')}</div>`;
 
   let qHtml = '';
   if (filtered.length === 0) {
@@ -1371,6 +1385,7 @@ function renderSingleQuestion(q, idx, targeted) {
   }${
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
+  html += mcqImageHtml(q);
   html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question)}</div>`;
 
   if (q.type === 'true_false') {

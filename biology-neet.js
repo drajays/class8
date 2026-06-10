@@ -1,6 +1,6 @@
 // ============================================================
 // StudyHub — ICSE Class 8 Biology practice bank (auto-generated)
-// Source: biology8/chapters — concise section notes + 1400 MCQs
+// Source: biology8/chapters — section notes + text MCQs + diagram MCQs
 // Folded into bio-ch1..ch9. Each MCQ linksTo its section note.
 // Regenerate: python3 biology8/chapters/build_studyhub_neet.py
 // ============================================================
@@ -31778,5 +31778,5621 @@ const BIOLOGY_NEET_DATA = [
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
 "linksTo": "neet-s8-sec_21"
+},
+{
+"id": "neet-img-chart_box_41_5141_2655_7479-q11",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Different trophic levels in a food chain. Choose the accurate statement.",
+"options": [
+"Different trophic levels in a food chain ### TROPHIC LEVELS The position of an organism in the food chain is called trophic level.",
+"Each arrow in a food chain represents “is eaten by”.",
+"Pyramid of numbers : It is a graphic, stepwise representation of the number of individuals present at each trophic levels with producers kept at the base.",
+"Define the terms ecosystem, consumer, consumer, decomposer, food chain, food web and pyramid of numbers, with examples (technical terms);."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Different trophic levels in a food chain ### TROPHIC LEVELS The position of an organism in the food chain is called trophic level.",
+"source": "icse",
+"image": "images/img_in_chart_box_41_5141_2655_7479.jpg",
+"caption": "Different trophic levels in a food chain"
+},
+{
+"id": "neet-img-chart_box_41_5141_2655_7479-q12",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Meaning of food chain, Food web, and pyramid of numbers.\nII. Food chain : The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem.\nIII. Depict a food chain showing human as the last organism in the chain.\nIV. Living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_chart_box_41_5141_2655_7479.jpg",
+"caption": "Different trophic levels in a food chain"
+},
+{
+"id": "neet-img-chart_box_41_5141_2655_7479-q13",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Different trophic levels in a food chain). Which statement is INCORRECT?",
+"options": [
+"Humans (consumers) $ ^{1} $nd trophic level.",
+"Rather, a number of food chains are interconnected.",
+"Food chain is defined as The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem.",
+"Prepare simple food chains on land and in water from the following non-living organisms ."
+],
+"correctOption": 0,
+"answer": "Incorrect: Humans (consumers) $ ^{1} $nd trophic level. Correct: Different trophic levels in a food chain ### TROPHIC LEVELS The position of an organism in the food chain is called trophic level.",
+"source": "icse",
+"image": "images/img_in_chart_box_41_5141_2655_7479.jpg",
+"caption": "Different trophic levels in a food chain"
+},
+{
+"id": "neet-img-image_box_101_4757_2646_7068-q21",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Pollination in Salvia?",
+"options": [
+"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"Flower (China rose or mustard), Scissors, marker, paper.",
+"After pollination, fruits containing desired seeds are produced.",
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Flower (China rose or mustard), Scissors, marker, paper.",
+"source": "icse",
+"image": "images/img_in_image_box_101_4757_2646_7068.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_101_4757_2646_7068-q22",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.\nII. Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nIII. Observe the mechanism of pollination in wheat (maize) .\nIV. Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_101_4757_2646_7068.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_101_4757_2646_7068-q23",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Pollination in Salvia).\nAssertion (A): Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nReason (R): Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_101_4757_2646_7068.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_105_4713_1831_6830-q31",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Xylem elements. Choose the accurate statement.",
+"options": [
+"phloem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.",
+"Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;.",
+"phloem is popularly known as wood in mature plants.",
+"(A) Tracheid (B) Vessels Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: (A) Tracheid (B) Vessels Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"source": "icse",
+"image": "images/img_in_image_box_105_4713_1831_6830.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_105_4713_1831_6830-q32",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. phloem is a complex tissue, as it consists of both parenchymatous (living thin wall cells) and sclerenchymatous (dead thick walled) cells.\nII. Xylem is popularly known as wood in mature plants.\nIII. Movement of sap occurs through xylem and phloem elements.\nIV. Tracheids and vessels are the main conducting elements in the xylem.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_105_4713_1831_6830.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_105_4713_1831_6830-q33",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Xylem elements).\nAssertion (A): A vessel is also a non-living cell with lignified walls.\nReason (R): Xylem is composed of four elements as follows .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_105_4713_1831_6830.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_1118_560_1839_1792-q41",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Transport system in plants. Choose the accurate statement.",
+"options": [
+"Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.",
+"Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE Xylem is popularly known as wood in mature plants.",
+"Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.",
+"Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE Xylem is popularly known as wood in mature plants.",
+"source": "icse",
+"image": "images/img_in_image_box_1118_560_1839_1792.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_1118_560_1839_1792-q42",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nII. Xylem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.\nIII. Xylem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.\nIV. Diffusion is the net movement of molecules (of gas, liquid and solid) from the region of their higher concentration to the region of their lower concentration until they are spread out evenly.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1118_560_1839_1792.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_1118_560_1839_1792-q43",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transport system in plants).\nAssertion (A): Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nReason (R): Transport of Food and Minerals in Plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_1118_560_1839_1792.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_112_4780_1668_5740-q51",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Pollination in Salvia?",
+"options": [
+"Self Pollination is associated with Cross Pollination.",
+"Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.",
+"Pollination in Salvia Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.",
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Pollination in Salvia Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.",
+"source": "icse",
+"image": "images/img_in_image_box_112_4780_1668_5740.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_112_4780_1668_5740-q52",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Cross pollination often involves various external agents to carry pollen grains from one flower to another.\nII. Humans carry out artificial pollination in some cereal crops and garden plants.\nIII. #### Pollination by Wind Have you noticed.\nIV. cross Pollination is associated with Cross Pollination.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_112_4780_1668_5740.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_112_4780_1668_5740-q53",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Pollination in Salvia). Which statement is INCORRECT?",
+"options": [
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"cross Pollination is associated with Cross Pollination.",
+"Examples includes - China-rose, pea, and Salvia.",
+"Flowers have large and brightly coloured petals to attract insects."
+],
+"correctOption": 3,
+"answer": "Incorrect: Flowers have large and brightly coloured petals to attract insects. Correct: Pollination in Salvia Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.",
+"source": "icse",
+"image": "images/img_in_image_box_112_4780_1668_5740.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_122_6058_1309_7263-q61",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Water lily?",
+"options": [
+"Apart from the requirement of water for all living organisms, water is required for.",
+"Only 2.7 per cent of water is fresh water that is found in rivers, lakes, streams, glaciers and clouds.",
+"Water lily The air in motion (in the form of air currents) is called wind.",
+"Prepare simple food chains on land and in water from the following non-living organisms ."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Water lily The air in motion (in the form of air currents) is called wind.",
+"source": "icse",
+"image": "images/img_in_image_box_122_6058_1309_7263.jpg",
+"caption": "Water lily"
+},
+{
+"id": "neet-img-image_box_122_6058_1309_7263-q62",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Apart from the requirement of water for all living organisms, water is required for.\nII. Land, air and water is called biosphere.\nIII. Water has been used by all living organisms ever since life began on earth.\nIV. Land, air and water is called biosphere.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_122_6058_1309_7263.jpg",
+"caption": "Water lily"
+},
+{
+"id": "neet-img-image_box_122_6058_1309_7263-q63",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Water lily).\nAssertion (A): Wind affects the plants in various ways, particularly their rate of transpiration.\nReason (R): Similarly, some organisms have developed mechanisms to exist only in water.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_122_6058_1309_7263.jpg",
+"caption": "Water lily"
+},
+{
+"id": "neet-img-image_box_129_2483_2948_4354-q71",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts A simple food chain in a grassland. Choose the accurate statement.",
+"options": [
+"#### FOOD CHAINS G6K4AVQMJ7 All living things need food to live.",
+"Interpret the relationship between different biotic components in terms of food chain, food web and pyramid of numbers;.",
+"#### FOOD CHAINS G6K4AVQMJ7 All non-living things need food to live.",
+"Prepare simple food chains on land and in water from the following living organisms ."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: #### FOOD CHAINS G6K4AVQMJ7 All living things need food to live.",
+"source": "icse",
+"image": "images/img_in_image_box_129_2483_2948_4354.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_129_2483_2948_4354-q72",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Prepare simple food chains on land and in water from the following living organisms .\nII. Food chain : The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem.\nIII. Eventually, the food stored in plants and animals is broken down to simple substances by decomposers.\nIV. Interpret the relationship between different biotic components in terms of food chain, food web and pyramid of numbers;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_129_2483_2948_4354.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_129_2483_2948_4354-q73",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (A simple food chain in a grassland). Which statement is INCORRECT?",
+"options": [
+"#### FOOD CHAINS G6K4AVQMJ7 All living things need food to live.",
+"Living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.",
+"#### FOOD CHAINS G6K4AVQMJ7 All non-living things need food to live.",
+"Each arrow in a food chain represents “is eaten by”."
+],
+"correctOption": 2,
+"answer": "Incorrect: #### FOOD CHAINS G6K4AVQMJ7 All non-living things need food to live. Correct: #### FOOD CHAINS G6K4AVQMJ7 All living things need food to live.",
+"source": "icse",
+"image": "images/img_in_image_box_129_2483_2948_4354.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_129_3091_2812_4243-q81",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Female gamete inside the ovule?",
+"options": [
+"Sexual reproduction brings about the fusion of gametes from both the parents.",
+"Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.",
+"A stamen consists of an anther and a filament ."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"source": "icse",
+"image": "images/img_in_image_box_129_3091_2812_4243.jpg",
+"caption": "Female gamete inside the ovule"
+},
+{
+"id": "neet-img-image_box_129_3091_2812_4243-q82",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nII. Sexual reproduction brings about the fusion of gametes from both the parents.\nIII. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nIV. An anther is a swollen structure present on the tip of the filament.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_129_3091_2812_4243.jpg",
+"caption": "Female gamete inside the ovule"
+},
+{
+"id": "neet-img-image_box_129_3091_2812_4243-q83",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Female gamete inside the ovule). Which statement is INCORRECT?",
+"options": [
+"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
+"Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind.."
+],
+"correctOption": 1,
+"answer": "Incorrect: Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents. Correct: Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"source": "icse",
+"image": "images/img_in_image_box_129_3091_2812_4243.jpg",
+"caption": "Female gamete inside the ovule"
+},
+{
+"id": "neet-img-image_box_13_4841_2304_6490-q91",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Components of biosphere?",
+"options": [
+"THEME 3 ## Ecosystems A community of organisms (plants and animals) in a given area, lives in harmony with the environment.",
+"Biotic components: consisting of producers, consumers, decomposers.",
+"Explain and analyse the biotic and abiotic components of an ecosystem;.",
+"Ecosystems exhibit two important functional attributes: (a) a bidirectional flow of energy from the Sun t."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: THEME 3 ## Ecosystems A community of organisms (plants and animals) in a given area, lives in harmony with the environment.",
+"source": "icse",
+"image": "images/img_in_image_box_13_4841_2304_6490.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_13_4841_2304_6490-q92",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Organisms develop adaptations suited to live in a particular environment.\nII. Biotic components of forest ecosystem are represented by living organisms which consist of producers, consumers and decomposers.\nIII. Brief account of abiotic or non-non-living components is defined as such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind.\nIV. Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_13_4841_2304_6490.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_13_4841_2304_6490-q93",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Components of biosphere).\nAssertion (A): Organisms develop adaptations suited to live in a particular environment.\nReason (R): Explain and analyse the biotic and abiotic components of an ecosystem;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_13_4841_2304_6490.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_140_362_2509_4427-q101",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Cycling of minerals by decomposers. Choose the accurate statement.",
+"options": [
+"Biodegradable items can be recycled by nature whereas non-biodegradable materials cannot be recycled by nature with the help of decomposers.",
+"## INTRODUCTION All organisms such as plants, animals, microorganisms and human beings interact with each other as well as with their physical surroundings (air, water, soil, etc.) and maintain a balance in nature.",
+"By their activity, the decomposers also maintain soil fertility .",
+"Ecosystems depend on sun's energy which is captured by the green plants to produce food."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: ## INTRODUCTION All organisms such as plants, animals, microorganisms and human beings interact with each other as well as with their physical surroundings (air, water, soil, etc.) and maintain a balance in nature.",
+"source": "icse",
+"image": "images/img_in_image_box_140_362_2509_4427.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_140_362_2509_4427-q102",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Depending upon their mode of nutrition, the biotic component of an ecosystem is primarily made up of three kinds of organisms - autotrophs, heterotrophs and decomposers.\nII. Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.\nIII. Ecosystems exhibit two important functional attributes: (a) a unidirectional flow of energy from the Sun to producers, consumers, and finally decomposers, and (b) cyclic flow of nutrients.\nIV. Ecosystems exhibit two important functional attributes: (a) a unidirectional flow of energy from the Sun to producers, consumers, and finally decomposers, and (b) cyclic flow of nutrients.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_140_362_2509_4427.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_140_362_2509_4427-q103",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Cycling of minerals by decomposers, identify the false statement.",
+"options": [
+"Without a source of energy, ecosystems are not able to function.",
+"Decomposers replenish the nutrients in the soil, which are then absorbed by the plants.",
+"Biodegradable items can be recycled by nature whereas non-biodegradable materials cannot be recycled by nature with the help of decomposers.",
+"Biotic components: consisting of producers, consumers, decomposers."
+],
+"correctOption": 3,
+"answer": "Incorrect: Biotic components: consisting of producers, consumers, decomposers. Correct: ## INTRODUCTION All organisms such as plants, animals, microorganisms and human beings interact with each other as well as with their physical surroundings (air, water, soil, etc.) and maintain a balance in nature.",
+"source": "icse",
+"image": "images/img_in_image_box_140_362_2509_4427.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_1428_6274_2222_6917-q111",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Process of Osmosis?",
+"options": [
+"Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs.",
+"Define and discuss diffusion, osmosis, transpiration, root pressure;.",
+"A small amount of water is used in the process of photosynthesis, and some of it is also used to keep the plant erect and prevent its wilting (drooping).",
+"Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs.",
+"source": "icse",
+"image": "images/img_in_image_box_1428_6274_2222_6917.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_1428_6274_2222_6917-q112",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Perform experiments and demonstrate the process of osmosis;.\nII. A small amount of water is used in the process of photosynthesis, and some of it is also used to keep the plant erect and prevent its wilting (drooping).\nIII. Water moves into plant cells by osmosis in following manner .\nIV. Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1428_6274_2222_6917.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_1428_6274_2222_6917-q113",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Process of Osmosis).\nAssertion (A): Osmosis is a special kind of diffusion involving the movement of water molecules.\nReason (R): Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_1428_6274_2222_6917.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_143_4225_1819_5779-q121",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Artificial pollination?",
+"options": [
+"Self Pollination is associated with Cross Pollination.",
+"##### Artificial pollination Artificial pollination Humans carry out artificial pollination in some cereal crops and garden plants.",
+"self pollination often involves various external agents to carry pollen grains from one flower to another.",
+"Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: ##### Artificial pollination Artificial pollination Humans carry out artificial pollination in some cereal crops and garden plants.",
+"source": "icse",
+"image": "images/img_in_image_box_143_4225_1819_5779.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_143_4225_1819_5779-q122",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nII. Cross pollination often involves various external agents to carry pollen grains from one flower to another.\nIII. ##### Artificial pollination Artificial pollination Humans carry out artificial pollination in some cereal crops and garden plants.\nIV. cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_143_4225_1819_5779.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_143_4225_1819_5779-q123",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Artificial pollination).\nAssertion (A): ### Procedure of Artificial Pollination Flowers with desired features are selected • Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.\nReason (R): Humans carry out artificial pollination in some cereal crops and garden plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_143_4225_1819_5779.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_145_5992_1573_7338-q131",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Bryophyllum leaf. Choose the accurate statement.",
+"options": [
+"Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"Conidia are asexual reproductive spores in fungi.",
+"Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.",
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_145_5992_1573_7338.jpg",
+"caption": "Bryophyllum leaf"
+},
+{
+"id": "neet-img-image_box_145_5992_1573_7338-q132",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\nII. ### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants.\nIII. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nIV. Bryophyllum leaf Spores are very small in size and they have thick walls.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_145_5992_1573_7338.jpg",
+"caption": "Bryophyllum leaf"
+},
+{
+"id": "neet-img-image_box_145_5992_1573_7338-q133",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Bryophyllum leaf, identify the false statement.",
+"options": [
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Conidia are asexual reproductive spores in fungi.",
+"### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants."
+],
+"correctOption": 3,
+"answer": "Incorrect: ### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants. Correct: Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_145_5992_1573_7338.jpg",
+"caption": "Bryophyllum leaf"
+},
+{
+"id": "neet-img-image_box_1569_5536_2929_6565-q141",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Phloem tissue. Choose the accurate statement.",
+"options": [
+"Tracheids and vessels are the main conducting elements in the phloem.",
+"phloem and phloem are the complex, vascular tissues in plant body.",
+"Girdling is the process of removal of xylem tissue (bark) from the wood .",
+"Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"source": "icse",
+"image": "images/img_in_image_box_1569_5536_2929_6565.jpg",
+"caption": "Phloem tissue"
+},
+{
+"id": "neet-img-image_box_1569_5536_2929_6565-q142",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Now, check whether the entire stem tissue is red or only some part of the section is red.\nII. Phloem also consists of both living and non-living cells.\nIII. ##### (c) Functions The main function o.\nIV. Now, check whether the entire stem tissue is red or only some part of the section is red.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1569_5536_2929_6565.jpg",
+"caption": "Phloem tissue"
+},
+{
+"id": "neet-img-image_box_1569_5536_2929_6565-q143",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Phloem tissue, identify the false statement.",
+"options": [
+"phloem is a complex tissue, as it consists of both parenchymatous (living thin wall cells) and sclerenchymatous (dead thick walled) cells.",
+"xylem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"xylem is present in all the parts of plant.",
+"xylem also consists of both living and non-living cells."
+],
+"correctOption": 1,
+"answer": "Incorrect: xylem tissue (i) A tracheid is a non-living, elongated cell with tapering ends. Correct: Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"source": "icse",
+"image": "images/img_in_image_box_1569_5536_2929_6565.jpg",
+"caption": "Phloem tissue"
+},
+{
+"id": "neet-img-image_box_161_2835_1773_3952-q151",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts A sprouted potato. Choose the accurate statement.",
+"options": [
+"A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy ro."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_161_2835_1773_3952.jpg",
+"caption": "A sprouted potato"
+},
+{
+"id": "neet-img-image_box_161_2835_1773_3952-q152",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.\nII. Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.\nIII. ### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants.\nIV. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_161_2835_1773_3952.jpg",
+"caption": "A sprouted potato"
+},
+{
+"id": "neet-img-image_box_161_2835_1773_3952-q153",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for A sprouted potato, identify the false statement.",
+"options": [
+"A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy ro.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants."
+],
+"correctOption": 1,
+"answer": "Incorrect: Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy ro. Correct: A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_161_2835_1773_3952.jpg",
+"caption": "A sprouted potato"
+},
+{
+"id": "neet-img-image_box_1634_1182_2557_1827-q161",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Structure of Yeast?",
+"options": [
+"Other nitrogen fixing virus are Nitrobacter and Nitrosomonas.",
+"Fungi – Importance of mushrooms and yeast in food industry.",
+"Structure of Yeast Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"Fungi are used for various commercial purposes as discussed below."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Structure of Yeast Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"source": "icse",
+"image": "images/img_in_image_box_1634_1182_2557_1827.jpg",
+"caption": "Structure of Yeast"
+},
+{
+"id": "neet-img-image_box_1634_1182_2557_1827-q162",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Fungi – Importance of mushrooms and yeast in food industry.\nII. Fungi – Importance of mushrooms and yeast in food industry.\nIII. Yeast brings about the conversion of sugars into ethyl alcohol and carbon dioxide.\nIV. ##### In food industry Yeast and mushrooms are used widely in foo.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1634_1182_2557_1827.jpg",
+"caption": "Structure of Yeast"
+},
+{
+"id": "neet-img-image_box_1634_1182_2557_1827-q163",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Structure of Yeast, identify the false statement.",
+"options": [
+"Yeast and mushrooms are used widely in food industry.",
+"##### In food industry Yeast and mushrooms are used widely in foo.",
+"List importance of mushroom and yeast in the food industry;.",
+"Yeast brings about the conversion of sugars into ethyl alcohol and carbon dioxide."
+],
+"correctOption": 3,
+"answer": "Incorrect: Yeast brings about the conversion of sugars into ethyl alcohol and carbon dioxide. Correct: Structure of Yeast Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"source": "icse",
+"image": "images/img_in_image_box_1634_1182_2557_1827.jpg",
+"caption": "Structure of Yeast"
+},
+{
+"id": "neet-img-image_box_164_3937_2635_5385-q171",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Root hair in a seedling?",
+"options": [
+"Movement of sap occurs through xylem and phloem elements.",
+"Anchor (fix) the plant to the soil.",
+"Water and mineral salts are absorbed through these root hairs from the soil.",
+"Just behind the tip of the root, certain unicellular microscopic hairs are present."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Anchor (fix) the plant to the soil.",
+"source": "icse",
+"image": "images/img_in_image_box_164_3937_2635_5385.jpg",
+"caption": "Root hair in a seedling"
+},
+{
+"id": "neet-img-image_box_164_3937_2635_5385-q172",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Just behind the tip of the root, certain unicellular microscopic hairs are present.\nII. ### OSMOSIS Osmosis is the process by which water molecules move through a semipermeable membrane from an area of its high.\nIII. #### KEY IDEAS A plant does not have blood or a heart.\nIV. Water moves from the soil into the root hair by a process called osmosis.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_164_3937_2635_5385.jpg",
+"caption": "Root hair in a seedling"
+},
+{
+"id": "neet-img-image_box_164_3937_2635_5385-q173",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Root hair in a seedling). Which statement is INCORRECT?",
+"options": [
+"Movement of sap occurs through xylem and phloem elements.",
+"Just behind the tip of the root, certain unicellular microscopic hairs are present.",
+"Movement of sap occurs through phloem and phloem elements.",
+"### OSMOSIS Osmosis is the process by which water molecules move through a semipermeable membrane from an area of its high."
+],
+"correctOption": 3,
+"answer": "Incorrect: ### OSMOSIS Osmosis is the process by which water molecules move through a semipermeable membrane from an area of its high. Correct: Anchor (fix) the plant to the soil.",
+"source": "icse",
+"image": "images/img_in_image_box_164_3937_2635_5385.jpg",
+"caption": "Root hair in a seedling"
+},
+{
+"id": "neet-img-image_box_165_3993_2088_5372-q181",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Cycling of minerals by decomposers?",
+"options": [
+"##### Biotic Components These components include of various non-living organisms, such as.",
+"Biodegradable items can be recycled by nature whereas non-biodegradable materials cannot be recycled by nature with the help of decomposers.",
+"Biotic components: consisting of producers, consumers, decomposers.",
+"### SCI-BITS Humans are omnivores since they consume both plant material as well as animals."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: ### SCI-BITS Humans are omnivores since they consume both plant material as well as animals.",
+"source": "icse",
+"image": "images/img_in_image_box_165_3993_2088_5372.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_165_3993_2088_5372-q182",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.\nII. Air Provides oxygen to animals and carbon dioxide to plants; acts as a medium of pollen and seed dispersal.\nIII. Living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.\nIV. Depending upon their mode of nutrition, the biotic component of an ecosystem is primarily made up of three kinds of organisms - autotrophs, heterotrophs and decomposers.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_165_3993_2088_5372.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_165_3993_2088_5372-q183",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Cycling of minerals by decomposers).\nAssertion (A): ##### Biotic Components These components include of various living organisms, such as.\nReason (R): Biodegradable items can be recycled by nature whereas non-biodegradable materials cannot be recycled by nature with the help of decomposers.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_165_3993_2088_5372.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_1700_6191_5627_7254-q191",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Human brain. Choose the accurate statement.",
+"options": [
+"Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.",
+"Cranium is divided into neurocranium (that houses the spinal cord) and viscerocranium (that forms the face).",
+"Part involved — Voluntary Action: spinal cord (cerebrum involved).",
+"Motor nerves, which carry impulses from the brain or the spinal cord to the muscles or glands."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Motor nerves, which carry impulses from the brain or the spinal cord to the muscles or glands.",
+"source": "icse",
+"image": "images/img_in_image_box_1700_6191_5627_7254.jpg",
+"caption": "Human brain"
+},
+{
+"id": "neet-img-image_box_1700_6191_5627_7254-q192",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.\nII. Effector: Any muscle or organ which, after receiving the impulse from the brain or the spinal cord, responds to the stimulus.\nIII. There are 12 pairs of spinal nerves in human.\nIV. #### Nervous System of Humans Central Nervous System (CNS) Peripheral Nervous System (PNS) Brain Spinal cord Cranial nerves Cereb.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1700_6191_5627_7254.jpg",
+"caption": "Human brain"
+},
+{
+"id": "neet-img-image_box_1700_6191_5627_7254-q193",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Human brain).\nAssertion (A): Spinal cord extends from the medulla oblongata of the brain and runs down through the whole length of the vertebral column.\nReason (R): Mixed nerves, which carry both sensory and motor fibres.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_1700_6191_5627_7254.jpg",
+"caption": "Human brain"
+},
+{
+"id": "neet-img-image_box_170_2234_2583_3598-q201",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Girdling experiment?",
+"options": [
+"Girdling is the process of removal of phloem tissue (bark) from the wood .",
+"Gently remove the soft part (bark) of the stem, in a small area of about 1 to 1.5 inch with the help of a razor blade, as it will observe that the portion above the girdled area.",
+"Girdling is the process of removal of xylem tissue (bark) from the wood .",
+"Girdling experiment To show transport of food material in a plant."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Girdling experiment To show transport of food material in a plant.",
+"source": "icse",
+"image": "images/img_in_image_box_170_2234_2583_3598.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_170_2234_2583_3598-q202",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Girdling is the process of removal of xylem tissue (bark) from the wood .\nII. Gently remove the soft part (bark) of the stem, in a small area of about 1 to 1.5 inch with the help of a razor blade, as it will observe that the portion above the girdled area.\nIII. Perform experiments and demonstrate the process of osmosis;.\nIV. Gently remove the soft part (bark) of the stem, in a small area of about 1 to 1.5 inch with the help of a razor blade, as it will observe that the portion above the girdled area.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_170_2234_2583_3598.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_170_2234_2583_3598-q203",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Girdling experiment, identify the false statement.",
+"options": [
+"Perform experiments and demonstrate the process of osmosis;.",
+"Gently remove the soft part (bark) of the stem, in a small area of about 1 to 1.5 inch with the help of a razor blade, as it will observe that the portion above the girdled area.",
+"Girdling experiment To show transport of food material in a plant.",
+"Girdling is the process of removal of xylem tissue (bark) from the wood ."
+],
+"correctOption": 0,
+"answer": "Incorrect: Perform experiments and demonstrate the process of osmosis;. Correct: Girdling experiment To show transport of food material in a plant.",
+"source": "icse",
+"image": "images/img_in_image_box_170_2234_2583_3598.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_1727_2715_2962_4095-q211",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Mushroom?",
+"options": [
+"### KEY IDEAS Useful virus Lactic acid bacteria (Lactobacillus) Streptococcus Rhizobium #### SCI-BITS Curd is produced by the fermentation of whole milk.",
+"31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans.",
+"### KEY IDEAS Useful bacteria Lactic acid bacteria (Lactobacillus) Streptococcus Rhizobium #### SCI-BITS Curd is produced by the fermentation of whole milk.",
+"Fungi – Importance of mushrooms and yeast in food industry."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: 31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans.",
+"source": "icse",
+"image": "images/img_in_image_box_1727_2715_2962_4095.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_1727_2715_2962_4095-q212",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium.\nII. Besides food industry bacteria is also used in the following fields: In agriculture : To increase soil fertility.\nIII. ### KEY IDEAS Useful virus Lactic acid bacteria (Lactobacillus) Streptococcus Rhizobium #### SCI-BITS Curd is produced by the fermentation of whole milk.\nIV. List importance of mushroom and yeast in the food industry;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1727_2715_2962_4095.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_1727_2715_2962_4095-q213",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Mushroom, identify the false statement.",
+"options": [
+"31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all non-living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans.",
+"Fungi – Importance of mushrooms and yeast in food industry.",
+"## USES OF virus IN FOOD INDUSTRY Human beings employ the characteristics of bacteria in the preparation of several food products like curd, cheese, butter and yogurt.",
+"31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans."
+],
+"correctOption": 0,
+"answer": "Incorrect: 31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all non-living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans. Correct: 31DN8BRP5 ## INTRODUCTION In earlier classes, you have learnt that all living organisms like plants, animals and micro-organisms are dependent on each other, and they also provide products useful to humans.",
+"source": "icse",
+"image": "images/img_in_image_box_1727_2715_2962_4095.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_1735_2010_5593_3627-q221",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Components of biosphere?",
+"options": [
+"THEME 3 ## Ecosystems A community of organisms (plants and animals) in a given area, lives in harmony with the environment.",
+"An ecosystem consists of two main components.",
+"There is a close interaction between the non-living (called biotic) and non-living (called abiotic) components of the environment.",
+"non-living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: THEME 3 ## Ecosystems A community of organisms (plants and animals) in a given area, lives in harmony with the environment.",
+"source": "icse",
+"image": "images/img_in_image_box_1735_2010_5593_3627.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_1735_2010_5593_3627-q222",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Ecosystems exhibit two important functional attributes: (a) a bidirectional flow of energy from the Sun t.\nII. Food (trophic) relationships and energy transfer through the biotic components of ecosystems may be quantified and shown diagramatically as ecological ecological pyramids.\nIII. A forest ecosystem, like any other ecosystem, consists of biotic and abiotic components.\nIV. Brief account of abiotic or non-living components: such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1735_2010_5593_3627.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_1735_2010_5593_3627-q223",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Components of biosphere).\nAssertion (A): Abiotic or non-living components of forest ecosystem include .\nReason (R): Interpret the relationship between different biotic components in terms of food chain, food web and pyramid of numbers;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_1735_2010_5593_3627.jpg",
+"caption": "Components of biosphere"
+},
+{
+"id": "neet-img-image_box_1748_642_2603_1266-q231",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Transpiration. Choose the accurate statement.",
+"options": [
+"Availability of soil water is defined as When the soil gets dry, the amount of available water also increases. This leads to reduction in the rate of transpiration.",
+"Grapes in sugar solution Experiment to demonstrate osmosis.",
+"Intensity of light: Light affects transpiration by influencing the opening and closing of stomata.",
+"Similarly, as the grapes were kept in a stronger (sugar) solution, water moved out from the grapes through the partially permeable membrane of the grapes."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Grapes in sugar solution Experiment to demonstrate osmosis.",
+"source": "icse",
+"image": "images/img_in_image_box_1748_642_2603_1266.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_1748_642_2603_1266-q232",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Grapes have shrunk What do you observe?.\nII. Intensity of light: Light affects transpiration by influencing the opening and closing of stomata.\nIII. Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nIV. Wind : Transpiration increases with the velocity of wind.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_1748_642_2603_1266.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_1748_642_2603_1266-q233",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transpiration).\nAssertion (A): Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nReason (R): Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leav.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_1748_642_2603_1266.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_174_516_2671_1735-q241",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Reproductive organs — Male. Choose the accurate statement.",
+"options": [
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"## INTRODUCTION Sexual reproduction in humans requires two parents.",
+"Reproductive organs become functional only after sexual maturity.",
+"#### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"image": "images/img_in_image_box_174_516_2671_1735.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_174_516_2671_1735-q242",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Fertilisation is internal and occurs in the oviduct (fallopian tube).\nII. #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.\nIII. ## INTRODUCTION Sexual reproduction in humans requires two parents.\nIV. Reproductive organs become functional only after sexual maturity.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_174_516_2671_1735.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_174_516_2671_1735-q243",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Reproductive organs — Male). Which statement is INCORRECT?",
+"options": [
+"Organs of the Male Reproductive system .",
+"Describe the male and female reproductive systems in humans;.",
+"Organs of the Female Reproductive system .",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 1,
+"answer": "Incorrect: Describe the male and female reproductive systems in humans;. Correct: #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"image": "images/img_in_image_box_174_516_2671_1735.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_189_5799_1496_7062-q251",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Wind pollination in a flower of grass family plant?",
+"options": [
+"Self Pollination is associated with Cross Pollination.",
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
+"Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.",
+"Insect pollinated flowers is associated with Wind pollinated flowers."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.",
+"source": "icse",
+"image": "images/img_in_image_box_189_5799_1496_7062.jpg",
+"caption": "Wind pollination in a flower of grass family plant"
+},
+{
+"id": "neet-img-image_box_189_5799_1496_7062-q252",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Wind pollination in a flower of grass family plant #### Pollination by Insects When you visit a garden during the flowering season, you may observe many butterflies, bees and moths.\nII. 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..\nIII. Examples includes - China-rose, pea, and Salvia.\nIV. Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_189_5799_1496_7062.jpg",
+"caption": "Wind pollination in a flower of grass family plant"
+},
+{
+"id": "neet-img-image_box_189_5799_1496_7062-q253",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Wind pollination in a flower of grass family plant).\nAssertion (A): Flowers have large and brightly coloured petals to attract insects.\nReason (R): Understand how grass plants which are planted at some distance from each other.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_189_5799_1496_7062.jpg",
+"caption": "Wind pollination in a flower of grass family plant"
+},
+{
+"id": "neet-img-image_box_19_5843_1871_6870-q261",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Blood circulation around the body?",
+"options": [
+"List blood groups and their significance in blood transfusion;.",
+"Blood vessels include arteries (carry blood away from the heart), veins (carry blood towards the heart) and capillaries (fine vessels where exchange of materials occurs).",
+"Blood is a fluid connective tissue that flows in a closed system of blood vessels.",
+"#### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"source": "icse",
+"image": "images/img_in_image_box_19_5843_1871_6870.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_19_5843_1871_6870-q262",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Aorta : Main artery which carries the oxygenated blood from the left ventricle to the whole body.\nII. White blood cells (WBCs) — fight infection and provide immunity.\nIII. List blood groups and their significance in blood transfusion;.\nIV. Aorta : Main artery which carries the oxygenated blood from the left ventricle to the whole body.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_19_5843_1871_6870.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_19_5843_1871_6870-q263",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Blood circulation around the body, identify the false statement.",
+"options": [
+"#### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"## INTRODUCTION Blood is a fluid connective tissue that flows in a closed system of blood vessels.",
+"Plasma — the liquid part (about 55% of blood); carries nutrients, hormones, waste and proteins.",
+"**Ventricles** — the lower distributing chambers; their walls are thick, elastic and muscular to pump blood to the lungs and the whole body."
+],
+"correctOption": 2,
+"answer": "Incorrect: Plasma — the liquid part (about 55% of blood); carries nutrients, hormones, waste and proteins. Correct: #### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"source": "icse",
+"image": "images/img_in_image_box_19_5843_1871_6870.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_200_4551_1634_5761-q271",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding (a) Nerve cell (b) Nerve fibres grouped into a nerve?",
+"options": [
+"There are 31 pairs of cranial nerves in human.",
+"Receptor : Sense organs (like eyes, skin, tongue, ears, nose) which detect a stimulus and transmit the information through the nerves to CNS.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: (a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"source": "icse",
+"image": "images/img_in_image_box_200_4551_1634_5761.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_200_4551_1634_5761-q272",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. A number of nerve fibres (axon part) are bundled together in a tubular sheath to form a nerve ((b)).\nII. Spinal nerves: These nerves arise from the brain and reach various parts of the body.\nIII. Motor nerves, which carry impulses from the brain or the spinal cord to the muscles or glands.\nIV. Nerve cells are joined end to end to form long nerve fibres.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_200_4551_1634_5761.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_200_4551_1634_5761-q273",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for (a) Nerve cell (b) Nerve fibres grouped into a nerve, identify the false statement.",
+"options": [
+"Mixed nerves, which carry both motor and motor fibres.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"A number of nerve fibres (axon part) are bundled together in a tubular sheath to form a nerve ((b))."
+],
+"correctOption": 1,
+"answer": "Incorrect: (a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord. Correct: (a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"source": "icse",
+"image": "images/img_in_image_box_200_4551_1634_5761.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_2023_4120_5975_7797-q281",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Artificial pollination?",
+"options": [
+"##### Artificial pollination Artificial pollination Humans carry out artificial pollination in some cereal crops and garden plants.",
+"Observe the mechanism of pollination in wheat (maize) .",
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination.",
+"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: ##### Artificial pollination Artificial pollination Humans carry out artificial pollination in some cereal crops and garden plants.",
+"source": "icse",
+"image": "images/img_in_image_box_2023_4120_5975_7797.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_2023_4120_5975_7797-q282",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Humans carry out artificial pollination in some cereal crops and garden plants.\nII. Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nIII. Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.\nIV. Observe the mechanism of pollination in wheat (maize) .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_2023_4120_5975_7797.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_2023_4120_5975_7797-q283",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Artificial pollination).\nAssertion (A): Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.\nReason (R): Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_2023_4120_5975_7797.jpg",
+"caption": "Artificial pollination"
+},
+{
+"id": "neet-img-image_box_202_2407_1393_3378-q291",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Vaccination?",
+"options": [
+"Vaccination #### SCI-BITS Antibodies are substances (proteins) which attack the foreign bodies and protect the host from diseases.",
+"Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Periodic fever with chills, red blood cell count drops.",
+"Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.",
+"##### immunisation and Immunisation ##### Vaccination Vaccination is a method of making the body immune to a particular disease."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Vaccination #### SCI-BITS Antibodies are substances (proteins) which attack the foreign bodies and protect the host from diseases.",
+"source": "icse",
+"image": "images/img_in_image_box_202_2407_1393_3378.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_202_2407_1393_3378-q292",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.\nII. Clothes, especially undergarments, should be changed daily and wearing of very tight clothes must be avoided.\nIII. ##### Vaccination and Immunisation ##### Vaccination Vaccination is a method of making the body immune to a particular disease.\nIV. - Garbage should be kept in covered bins to prevent the breeding of flies and mosquitoes.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_202_2407_1393_3378.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_202_2407_1393_3378-q293",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Vaccination).\nAssertion (A): Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.\nReason (R): Aedes mosquito — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Fever, jaundice, vomiting.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_202_2407_1393_3378.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_207_3289_2032_4510-q301",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Reproductive organs — Male. Choose the accurate statement.",
+"options": [
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"## INTRODUCTION Sexual reproduction in humans requires two parents.",
+"#### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"image": "images/img_in_image_box_207_3289_2032_4510.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_207_3289_2032_4510-q302",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Reproductive organs become functional only after sexual maturity.\nII. #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.\nIII. Describe the male and female reproductive systems in humans;.\nIV. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_207_3289_2032_4510.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_207_3289_2032_4510-q303",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Reproductive organs — Male, identify the false statement.",
+"options": [
+"Organs of the Female Reproductive system .",
+"Describe the male and female reproductive systems in humans;.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 0,
+"answer": "Incorrect: Organs of the Female Reproductive system . Correct: #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"image": "images/img_in_image_box_207_3289_2032_4510.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_214_4320_1643_5658-q311",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Runner in strawberry. Choose the accurate statement.",
+"options": [
+"Vegetative Propagation by Aerial Stems is defined as In strawberry, long stems grow over the soil surface and are called runners . Axillary buds which are present on the nodes of stem grow into new plants.",
+"Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_214_4320_1643_5658.jpg",
+"caption": "Runner in strawberry"
+},
+{
+"id": "neet-img-image_box_214_4320_1643_5658-q312",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.\nII. Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .\nIII. Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.\nIV. Vegetative Propagation by Aerial Stems is defined as In strawberry, long stems grow over the soil surface and are called runners . Axillary buds which are present on the nodes of stem grow into new plants.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_214_4320_1643_5658.jpg",
+"caption": "Runner in strawberry"
+},
+{
+"id": "neet-img-image_box_214_4320_1643_5658-q313",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Runner in strawberry).\nAssertion (A): Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.\nReason (R): Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_214_4320_1643_5658.jpg",
+"caption": "Runner in strawberry"
+},
+{
+"id": "neet-img-image_box_216_4204_1634_5768-q321",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Layering in jasmine?",
+"options": [
+"##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"Layering in jasmine Grafting Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"Such plants can be easily grown by this method."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Layering in jasmine Grafting Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"source": "icse",
+"image": "images/img_in_image_box_216_4204_1634_5768.jpg",
+"caption": "Layering in jasmine"
+},
+{
+"id": "neet-img-image_box_216_4204_1634_5768-q322",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Overcrowding often takes place near the parent plant.\nII. ##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nIII. Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.\nIV. ##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_216_4204_1634_5768.jpg",
+"caption": "Layering in jasmine"
+},
+{
+"id": "neet-img-image_box_216_4204_1634_5768-q323",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Layering in jasmine).\nAssertion (A): Overcrowding often takes place near the parent plant.\nReason (R): ##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_216_4204_1634_5768.jpg",
+"caption": "Layering in jasmine"
+},
+{
+"id": "neet-img-image_box_220_388_2274_2059-q331",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts A food web. Choose the accurate statement.",
+"options": [
+"Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.",
+"There are many types of ecosystems, namely aquatic (fresh water/ marine), terrestrial (forest/ grassland/ desert), etc.",
+"Interdependence between organisms : symbiosis, parasitism and predation.",
+"Rather, a number of food chains are interconnected."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Rather, a number of food chains are interconnected.",
+"source": "icse",
+"image": "images/img_in_image_box_220_388_2274_2059.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_220_388_2274_2059-q332",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. There are many types of ecosystems, namely aquatic (fresh water/ marine), terrestrial (forest/ grassland/ desert), etc.\nII. 2. Stratosphere relates to 10-50 km, Less than troposphere, and Contains ozone layer that traps most of the UV rays and protects life. UV rays cause cataract, inflammatory diseases, cancer, etc..\nIII. Rather, a number of food chains are interconnected.\nIV. Temperature is associated with Influences the external appearance and body functions of plants and animals..\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_220_388_2274_2059.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_220_388_2274_2059-q333",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for A food web, identify the false statement.",
+"options": [
+"Sunlight is associated with Required for manufacturing food by green plants during photosynthesis..",
+"5. Exosphere is associated with 700-10,000 km and Contain gases like hydrogen and helium, there is no air to breathe..",
+"Ecosystems exhibit two important functional attributes: (a) a bidirectional flow of energy from the Sun to producers, consumers, and finally decomposers, and (b) cyclic flow of nutrients.",
+"Meaning of food chain, Food web, and pyramid of numbers."
+],
+"correctOption": 3,
+"answer": "Incorrect: Meaning of food chain, Food web, and pyramid of numbers. Correct: Rather, a number of food chains are interconnected.",
+"source": "icse",
+"image": "images/img_in_image_box_220_388_2274_2059.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_2228_390_5143_1607-q341",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Blood circulation around the body. Choose the accurate statement.",
+"options": [
+"#### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"Blood is a fluid connective tissue that flows in a closed system of blood vessels.",
+"Contains blood plasma only — Antigen on RBCs: Contains blood plasma with blood platelets and proteins.",
+"White blood cells (WBCs) — fight infection and provide immunity."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"source": "icse",
+"image": "images/img_in_image_box_2228_390_5143_1607.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_2228_390_5143_1607-q342",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. **Septum** — a membrane separating the right and left sides so oxygenated and deoxygenated blood do not mix.\nII. Aorta is defined as Main artery which carries the oxygenated blood from the left ventricle to the whole body.\nIII. Red blood cells (RBCs) — contain haemoglobin and transport oxygen.\nIV. Arteries carry blood away from the heart; veins carry blood towards the heart.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_2228_390_5143_1607.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_2228_390_5143_1607-q343",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Blood circulation around the body).\nAssertion (A): ## INTRODUCTION Blood is a fluid connective tissue that flows in a closed system of blood vessels.\nReason (R): #### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_2228_390_5143_1607.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_224_3883_1514_4808-q351",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Burn?",
+"options": [
+"Alcohol affects judgement and reduces self control and coordination.",
+"Damage to the liver as alcohol gets stored in it in the form of fat.",
+"##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.",
+"Alcohol affects judgement and reduces cross control and coordination."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: ##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.",
+"source": "icse",
+"image": "images/img_in_image_box_224_3883_1514_4808.jpg",
+"caption": "Burn"
+},
+{
+"id": "neet-img-image_box_224_3883_1514_4808-q352",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Consumption of alcohol leads to: lowering of blood sugar level which has harmful effects on the brain.\nII. Alcohol affects vision and alertness which could result in accid.\nIII. Damage to the liver as alcohol gets stored in it in the form of fat.\nIV. ##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_224_3883_1514_4808.jpg",
+"caption": "Burn"
+},
+{
+"id": "neet-img-image_box_224_3883_1514_4808-q353",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Burn).\nAssertion (A): Alcohol affects judgement and reduces self control and coordination.\nReason (R): Consumption of alcohol leads to: lowering of blood sugar level which has harmful effects on the brain.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_224_3883_1514_4808.jpg",
+"caption": "Burn"
+},
+{
+"id": "neet-img-image_box_225_5176_1637_6047-q361",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Vaccination. Choose the accurate statement.",
+"options": [
+"Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.",
+"Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.",
+"Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Periodic fever with chills, red blood cell count drops.",
+"9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: 9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases.",
+"source": "icse",
+"image": "images/img_in_image_box_225_5176_1637_6047.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_225_5176_1637_6047-q362",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Edward Jenner first developed the technique of immunisation in 1798 as a result of a twenty-six year study of two diseases, cowpox and smallpox.\nII. Disease is an abnormal condition of a part, organ, or system of the body which affects the normal functioning of the body.\nIII. Aedes mosquito — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Fever, jaundice, vomiting.\nIV. immunisation is a method of making the body immune to a particular disease.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_225_5176_1637_6047.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_225_5176_1637_6047-q363",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Vaccination).\nAssertion (A): ## INTRODUCTION In previous classes you have learnt about health, disease, factors responsible for causing diseases, and types of diseases namely communicable d.\nReason (R): Disease is an abnormal condition of a part, organ, or system of the body which affects the normal functioning of the body.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_225_5176_1637_6047.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_236_2687_1421_4335-q371",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Root nodules in a leguminous plant?",
+"options": [
+"##### In food industry Yeast and mushrooms are used widely in food industry.",
+"Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"Animals obtain nitrogen from food but plants obtain nitrogen from the atmosphere with the help of some nitrogen fixing virus.",
+"Many non-green plants are also grown under horticulture crops."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"source": "icse",
+"image": "images/img_in_image_box_236_2687_1421_4335.jpg",
+"caption": "Root nodules in a leguminous plant"
+},
+{
+"id": "neet-img-image_box_236_2687_1421_4335-q372",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Plantation crops is associated with Coffee, tea, rubber, coconut.\nII. Plants grown and cared for in a field are known as crop plants or simply crops.\nIII. Animals obtain nitrogen from food but plants obtain nitrogen from the atmosphere with the help of some nitrogen fixing virus.\nIV. Plants grown and cared for in a field are known as crop plants or simply crops.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_236_2687_1421_4335.jpg",
+"caption": "Root nodules in a leguminous plant"
+},
+{
+"id": "neet-img-image_box_236_2687_1421_4335-q373",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Root nodules in a leguminous plant, identify the false statement.",
+"options": [
+"Fungi, along with virus bring about the decay of dead plants and animals, both on land and in water.",
+"Other nitrogen fixing bacteria are Nitrobacter and Nitrosomonas.",
+"Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"Vegetables, fruits and flowers are grouped under horticultural plants."
+],
+"correctOption": 3,
+"answer": "Incorrect: Vegetables, fruits and flowers are grouped under horticultural plants. Correct: Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"source": "icse",
+"image": "images/img_in_image_box_236_2687_1421_4335.jpg",
+"caption": "Root nodules in a leguminous plant"
+},
+{
+"id": "neet-img-image_box_23_5720_2187_7265-q381",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Cycling of minerals by decomposers?",
+"options": [
+"Allows decomposition of dead plants and animals and recycling of nutrients.",
+"Living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.",
+"Cycling of minerals by decomposers Tertiary consumers or consumers of the third order: These feed on secondary consumers.",
+"Scavengers : Animals that feed on dead animals are called scavengers."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Cycling of minerals by decomposers Tertiary consumers or consumers of the third order: These feed on secondary consumers.",
+"source": "icse",
+"image": "images/img_in_image_box_23_5720_2187_7265.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_23_5720_2187_7265-q382",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Lion, leopard and tiger belong to this category.\nII. Provides water and minerals to the plants.\nIII. Ecosystems exhibit two important functional attributes: (a) a bidirectional flow of energy from the Sun to producers, consumers, and finally decomposers, and (b) cyclic flow of nutrients.\nIV. Biotic components: consisting of producers, consumers, decomposers.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_23_5720_2187_7265.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_23_5720_2187_7265-q383",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Cycling of minerals by decomposers).\nAssertion (A): Scavengers : Animals that feed on dead animals are called scavengers.\nReason (R): Allows decomposition of dead plants and animals and recycling of nutrients.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_23_5720_2187_7265.jpg",
+"caption": "Cycling of minerals by decomposers"
+},
+{
+"id": "neet-img-image_box_243_1472_1625_2683-q391",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Vallisneria — an aquatic plant A. Female plant B. Male plant?",
+"options": [
+"#### Pollination by Water In aquatic and submerged plants such as Hydrilla and Vallisneria, pollination is facilitated by water .",
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
+"Main organs of male and female reproductive system.",
+"Three characteristics of plants pollinated by insects, water and wind (with examples)."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: #### Pollination by Water In aquatic and submerged plants such as Hydrilla and Vallisneria, pollination is facilitated by water .",
+"source": "icse",
+"image": "images/img_in_image_box_243_1472_1625_2683.jpg",
+"caption": "Vallisneria — an aquatic plant A. Female plant B. Male plant"
+},
+{
+"id": "neet-img-image_box_243_1472_1625_2683-q392",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. New plants arise from the swollen roots buried in the soil .\nII. #### Pollination by Water In aquatic and submerged plants such as Hydrilla and Vallisneria, pollination is facilitated by water .\nIII. Understand how grass plants which are planted at some distance from each other.\nIV. Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_243_1472_1625_2683.jpg",
+"caption": "Vallisneria — an aquatic plant A. Female plant B. Male plant"
+},
+{
+"id": "neet-img-image_box_243_1472_1625_2683-q393",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Vallisneria — an aquatic plant A. Female plant B. Male plant).\nAssertion (A): Flowers are small and inconspicuous, so, they can easily float on water.\nReason (R): Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_243_1472_1625_2683.jpg",
+"caption": "Vallisneria — an aquatic plant A. Female plant B. Male plant"
+},
+{
+"id": "neet-img-image_box_251_4741_2715_6586-q401",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Endocrine Glands. Choose the accurate statement.",
+"options": [
+"Adrenal glands secrete the hormones: adrenaline and cortisol.",
+"Other endocrine glands in the body include thymus and pineal glands.",
+"### Thyroid Gland The thyroid gland is a bilobed, butterfly-shaped gland.",
+"Endocrine Glands It is known as the 'master gland' as it regulates the activity of other endocrine glands."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Other endocrine glands in the body include thymus and pineal glands.",
+"source": "icse",
+"image": "images/img_in_image_box_251_4741_2715_6586.jpg",
+"caption": "Endocrine Glands"
+},
+{
+"id": "neet-img-image_box_251_4741_2715_6586-q402",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Define the terms – endocrine system, hormones, endocrine and exocrine glands; describe.\nII. Endocrine Glands It is known as the 'master gland' as it regulates the activity of other endocrine glands.\nIII. pituitary relates to Neck, Thyroxine $ T_3 $ and $ T_4 $, and Controls the activity of other endocrine glands (thus, called master gland).\nIV. Hormones are chemical substances secreted by endocrine glands.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_251_4741_2715_6586.jpg",
+"caption": "Endocrine Glands"
+},
+{
+"id": "neet-img-image_box_251_4741_2715_6586-q403",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Endocrine Glands).\nAssertion (A): Adrenal glands secrete the hormones: adrenaline and cortisol.\nReason (R): Define the terms – endocrine system, hormones, endocrine and exocrine glands; describe.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_251_4741_2715_6586.jpg",
+"caption": "Endocrine Glands"
+},
+{
+"id": "neet-img-image_box_252_3659_1502_4946-q411",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Binary fission in bacteria?",
+"options": [
+"3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..",
+"cross Pollination is associated with Cross Pollination.",
+"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
+"THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of living organisms."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of living organisms.",
+"source": "icse",
+"image": "images/img_in_image_box_252_3659_1502_4946.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_252_3659_1502_4946-q412",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Main organs of male and female reproductive system.\nII. Reproduction is one of the most important functions of non-living organisms.\nIII. Self Pollination is associated with Cross Pollination.\nIV. Reproduction is one of the most important functions of living organisms.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_252_3659_1502_4946.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_252_3659_1502_4946-q413",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Binary fission in bacteria). Which statement is INCORRECT?",
+"options": [
+"Fertilisation process in brief by flow chart.",
+"Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).",
+"There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
+"THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of non-living organisms."
+],
+"correctOption": 3,
+"answer": "Incorrect: THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of non-living organisms. Correct: THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of living organisms.",
+"source": "icse",
+"image": "images/img_in_image_box_252_3659_1502_4946.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_260_1155_1561_3150-q421",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Binary fission in bacteria?",
+"options": [
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
+"Reproduction is one of the most important functions of non-living organisms.",
+"7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
+"THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of living organisms."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: THEME 2 # Reproduction in Plants and Animals Reproduction is one of the most important functions of living organisms.",
+"source": "icse",
+"image": "images/img_in_image_box_260_1155_1561_3150.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_260_1155_1561_3150-q422",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..\nII. 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..\nIII. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nIV. Review of the parts of a typical flower.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_260_1155_1561_3150.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_260_1155_1561_3150-q423",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Binary fission in bacteria).\nAssertion (A): Self Pollination is associated with Cross Pollination.\nReason (R): 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_260_1155_1561_3150.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_263_4805_1450_5698-q431",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Mushroom?",
+"options": [
+"Micro-organisms like bacteria are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.",
+"Likewise, animals provide us milk, flesh, eggs, fibre, honey, silk, lac, and many more items.",
+"#### KEY CONCEPTS Bacteria – uses of bacteria in food industry.",
+"THEME 6 # Food Production Plants and animals provide a number of useful products to mankind."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: THEME 6 # Food Production Plants and animals provide a number of useful products to mankind.",
+"source": "icse",
+"image": "images/img_in_image_box_263_4805_1450_5698.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_263_4805_1450_5698-q432",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium.\nII. Horticulture — vegetables, fruits, decorative plants and flowers.\nIII. Micro-organisms like virus are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.\nIV. Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_263_4805_1450_5698.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_263_4805_1450_5698-q433",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Mushroom).\nAssertion (A): Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium.\nReason (R): List importance of mushroom and yeast in the food industry;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_263_4805_1450_5698.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_266_3645_1955_6100-q441",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts shows the different endocrine glands found in male and female. Major endocrine glands are:. Choose the accurate statement.",
+"options": [
+"There are two types of glands in our body - exocrine glands and endocrine glands.",
+"#### KEY IDEAS ##### Hormones Hormones are chemical substances secreted by endocrine glands.",
+"During adolescence, different parts of the body grow at different rates.",
+"##### HORMONES XPFMTQNG9Z Chemical coordination in non-living beings is brought about by chemical substances called hormones."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: #### KEY IDEAS ##### Hormones Hormones are chemical substances secreted by endocrine glands.",
+"source": "icse",
+"image": "images/img_in_image_box_266_3645_1955_6100.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_266_3645_1955_6100-q442",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### KEY IDEAS ##### Hormones Hormones are chemical substances secreted by endocrine glands.\nII. Hormones acts as messengers and coordinate different functions in our body.\nIII. During adolescence, different parts of the body grow at different rates.\nIV. Adrenal glands secrete the hormones: adrenaline and cortisol.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_266_3645_1955_6100.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_266_3645_1955_6100-q443",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (shows the different endocrine glands found in male and female. Major endocrine glands are:).\nAssertion (A): Through the blood, secretions of endocrine glands are carried to the target organs.\nReason (R): Thyroid relates to Neck, Thyroxine $ T_3 $ and $ T_4 $, and Controls the activity of other endocrine glands (thus, called master gland).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_266_3645_1955_6100.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_26_2037_1668_3708-q451",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transport system in plants?",
+"options": [
+"phloem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.",
+"Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE Xylem is popularly known as wood in mature plants.",
+"phloem is popularly known as wood in mature plants.",
+"Though a large number of elements are present in the plant body, only some are important for the healthy growth of plants."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE Xylem is popularly known as wood in mature plants.",
+"source": "icse",
+"image": "images/img_in_image_box_26_2037_1668_3708.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_26_2037_1668_3708-q452",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;.\nII. So, conducting tissues in plants have developed.\nIII. Explain that transport in unicellular and simple multicellular plants takes place by diffusion;.\nIV. #### TRANSPORT IN HIGHER PLANTS (CONDUCTION) The mechanism of transport is much more elaborate in multicellular higher plants.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_26_2037_1668_3708.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_26_2037_1668_3708-q453",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Transport system in plants). Which statement is INCORRECT?",
+"options": [
+"Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.",
+"#### TRANSPORT IN HIGHER PLANTS (CONDUCTION) The mechanism of transport is much more elaborate in multicellular higher plants.",
+"Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;.",
+"Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE phloem is popularly known as wood in mature plants."
+],
+"correctOption": 3,
+"answer": "Incorrect: Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE phloem is popularly known as wood in mature plants. Correct: Transport system in plants ##### SCI-BITS ##### TRANSPORT IN UNICELLULAR AND SIMPLE Xylem is popularly known as wood in mature plants.",
+"source": "icse",
+"image": "images/img_in_image_box_26_2037_1668_3708.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_274_3213_1781_5032-q461",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Girdling experiment?",
+"options": [
+"Examine the sections under the low power of a microscope.",
+"Cross section of stem To show downward movement of water in a plant shoot.",
+"Girdling is the process of removal of phloem tissue (bark) from the wood .",
+"Cross section of stem To show upward movement of water in a plant shoot."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Cross section of stem To show upward movement of water in a plant shoot.",
+"source": "icse",
+"image": "images/img_in_image_box_274_3213_1781_5032.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_274_3213_1781_5032-q462",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Then, take sections from different parts of the stem.\nII. Examine the sections under the low power of a microscope.\nIII. Cross section of stem To show downward movement of water in a plant shoot.\nIV. Perform experiments and demonstrate the process of osmosis;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_274_3213_1781_5032.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_274_3213_1781_5032-q463",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Girdling experiment).\nAssertion (A): ## INVESTIGATION 1.2 Girdling experiment To show transport of food material in a plant.\nReason (R): Girdling is the process of removal of phloem tissue (bark) from the wood .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_274_3213_1781_5032.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_281_4674_1595_5684-q471",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Bacteria?",
+"options": [
+"Water is associated with Helps the plants to carry out photosynthesis; constitutes a major part in a non-living organism&#x27;s body..",
+"non-living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.",
+"1. Troposphere relates to About 31 km, Highest, and Most of the atmospheric air is present in this region..",
+"All living things depend on other living things, directly or indirectly."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: All living things depend on other living things, directly or indirectly.",
+"source": "icse",
+"image": "images/img_in_image_box_281_4674_1595_5684.jpg",
+"caption": "Bacteria"
+},
+{
+"id": "neet-img-image_box_281_4674_1595_5684-q472",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. 1. Troposphere relates to About 31 km, Highest, and Most of the atmospheric air is present in this region..\nII. Brief account of abiotic or non-living components: such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind.\nIII. Plants are parasitised by bacteria , fungi, viruses, nematodes and insects.\nIV. non-living organisms, which may be producers (plants), consumers (animals) or decomposers (micro-organisms), are linked to each other through food chains.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_281_4674_1595_5684.jpg",
+"caption": "Bacteria"
+},
+{
+"id": "neet-img-image_box_281_4674_1595_5684-q473",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Bacteria).\nAssertion (A): Plants are parasitised by bacteria , fungi, viruses, nematodes and insects.\nReason (R): Interdependence between organisms : symbiosis, parasitism and predation.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_281_4674_1595_5684.jpg",
+"caption": "Bacteria"
+},
+{
+"id": "neet-img-image_box_288_2137_1655_3334-q481",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Cranial and spinal nerves. Choose the accurate statement.",
+"options": [
+"BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"There are 12 pairs of spinal nerves in human.",
+"Mixed nerves, which carry both motor and motor fibres.",
+"brain is protected by the vertebral column."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"source": "icse",
+"image": "images/img_in_image_box_288_2137_1655_3334.jpg",
+"caption": "Cranial and spinal nerves"
+},
+{
+"id": "neet-img-image_box_288_2137_1655_3334-q482",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Part involved — Reflex Action: brain.\nII. Spinal cord is protected by the vertebral column.\nIII. Nerve cells are joined end to end to form long nerve fibres.\nIV. Spinal nerves: These nerves arise from the spinal cord and reach various parts of the body.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_288_2137_1655_3334.jpg",
+"caption": "Cranial and spinal nerves"
+},
+{
+"id": "neet-img-image_box_288_2137_1655_3334-q483",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Cranial and spinal nerves, identify the false statement.",
+"options": [
+"A section through the brain is shown in.",
+"BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.",
+"There are 31 pairs of cranial nerves in human.",
+"BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord."
+],
+"correctOption": 1,
+"answer": "Incorrect: BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord. Correct: BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.",
+"source": "icse",
+"image": "images/img_in_image_box_288_2137_1655_3334.jpg",
+"caption": "Cranial and spinal nerves"
+},
+{
+"id": "neet-img-image_box_309_5365_1458_6915-q491",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Binary fission in bacteria?",
+"options": [
+"Eventually organisms die, leaving behind offsprings of Binary fission in virus Budding in yeast Fragmentation in Spirogyra their own k.",
+"All non-living organisms have a fixed life span.",
+"Reproduction is one of the most important properties of non-living organisms.",
+"Similarly in plants, seeds grow into young seedlings."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Similarly in plants, seeds grow into young seedlings.",
+"source": "icse",
+"image": "images/img_in_image_box_309_5365_1458_6915.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_309_5365_1458_6915-q492",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nII. Reproduction is one of the most important properties of non-living organisms.\nIII. During their life span, organisms perform various life functions, including reproduction.\nIV. Similarly in plants, seeds grow into young seedlings.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_309_5365_1458_6915.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_309_5365_1458_6915-q493",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Binary fission in bacteria).\nAssertion (A): ## WHY LIVING ORGANISMS NEED TO REPRODUCE?.\nReason (R): All living organisms have a fixed life span.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_309_5365_1458_6915.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_310_5946_1606_6697-q501",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Roots of Dahlia?",
+"options": [
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_310_5946_1606_6697.jpg",
+"caption": "Roots of Dahlia"
+},
+{
+"id": "neet-img-image_box_310_5946_1606_6697-q502",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. After sometime, roots grow from the stem part buried in the soil.\nII. Conidia are asexual reproductive spores in fungi.\nIII. Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.\nIV. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swoll.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_310_5946_1606_6697.jpg",
+"caption": "Roots of Dahlia"
+},
+{
+"id": "neet-img-image_box_310_5946_1606_6697-q503",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Roots of Dahlia).\nAssertion (A): Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swoll.\nReason (R): After sometime, roots grow from the stem part buried in the soil.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_310_5946_1606_6697.jpg",
+"caption": "Roots of Dahlia"
+},
+{
+"id": "neet-img-image_box_316_567_1879_2538-q511",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes (a) Nerve cell (b) Nerve fibres grouped into a nerve?",
+"options": [
+"Motor nerves, which carry impulses from the brain or the spinal cord to the muscles or glands.",
+"Motor nerves, which carry impulses from the spinal cord or the spinal cord to the muscles or glands.",
+"#### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"source": "icse",
+"image": "images/img_in_image_box_316_567_1879_2538.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_316_567_1879_2538-q512",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Spinal nerves: These nerves arise from the brain and reach various parts of the body.\nII. Cranial nerves: These nerves arise from the brain and reach the organs in the head region.\nIII. Mixed nerves, which carry both sensory and motor fibres.\nIV. Sensory nerves, which bring impulses from the sense organs to the brain or the spinal cord.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_316_567_1879_2538.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_316_567_1879_2538-q513",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for (a) Nerve cell (b) Nerve fibres grouped into a nerve, identify the false statement.",
+"options": [
+"#### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"Cranial nerves: These nerves arise from the spinal cord and reach the organs in the head region.",
+"Based on the origin of nerves, the nerves are of two types .",
+"Mixed nerves, which carry both sensory and motor fibres."
+],
+"correctOption": 2,
+"answer": "Incorrect: Based on the origin of nerves, the nerves are of two types . Correct: #### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"source": "icse",
+"image": "images/img_in_image_box_316_567_1879_2538.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_321_3752_1475_4607-q521",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Draught animals?",
+"options": [
+"Animals obtain nitrogen from food but plants obtain nitrogen from the atmosphere with the help of some nitrogen fixing bacteria.",
+"Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"Common breeds of goat — Jamnapari, Barbari, (Bari) Pashmina.",
+"Kurien, born on November 26, 1921, launched the largest dairy development programme called the operation flood."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Kurien, born on November 26, 1921, launched the largest dairy development programme called the operation flood.",
+"source": "icse",
+"image": "images/img_in_image_box_321_3752_1475_4607.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_321_3752_1475_4607-q522",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry.\nII. Milk-yielding animals or milch animals (dairy animals) — Cow, buffalo, goat and sheep.\nIII. ### KEY IDEA Goat, sheep and pig are the major meat providing livestock in India.\nIV. Kurien, born on November 26, 1921, launched the largest dairy development programme called the operation flood.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_321_3752_1475_4607.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_321_3752_1475_4607-q523",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Draught animals). Which statement is INCORRECT?",
+"options": [
+"Animal husbandry – milk yielding (milch) animals; white revolution; meat providing livestock; draught animals (heavy work); poultry; fish farming (pisciculture); sericulture and apiculture (awareness level).",
+"Agriculture includes the cultivation of land, breeding and management of crops and animals.",
+"Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry.",
+"Wool, a type of fibre is obtained from animal hair."
+],
+"correctOption": 1,
+"answer": "Incorrect: Agriculture includes the cultivation of land, breeding and management of crops and animals. Correct: Kurien, born on November 26, 1921, launched the largest dairy development programme called the operation flood.",
+"source": "icse",
+"image": "images/img_in_image_box_321_3752_1475_4607.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_324_5099_2579_7266-q531",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Sense organs?",
+"options": [
+"Cranial nerves: These nerves arise from the spinal cord and reach the organs in the head region.",
+"ZUL5467BVW As mentioned earlier in this chapter, non-living things respond to stimuli.",
+"ZUL5467BVW As mentioned earlier in this chapter, living things respond to stimuli.",
+"Sensory nerves, which bring impulses from the sense organs to the spinal cord or the spinal cord."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: ZUL5467BVW As mentioned earlier in this chapter, living things respond to stimuli.",
+"source": "icse",
+"image": "images/img_in_image_box_324_5099_2579_7266.jpg",
+"caption": "Sense organs"
+},
+{
+"id": "neet-img-image_box_324_5099_2579_7266-q532",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. ZUL5467BVW As mentioned earlier in this chapter, living things respond to stimuli.\nII. Receptor : Sense organs (like eyes, skin, tongue, ears, nose) which detect a stimulus and transmit the information through the nerves to CNS.\nIII. Sensory nerves, which bring impulses from the sense organs to the brain or the spinal cord.\nIV. Cranial nerves: These nerves arise from the spinal cord and reach the organs in the head region.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_324_5099_2579_7266.jpg",
+"caption": "Sense organs"
+},
+{
+"id": "neet-img-image_box_324_5099_2579_7266-q533",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Sense organs).\nAssertion (A): Receptor : Sense organs (like eyes, skin, tongue, ears, nose) which detect a stimulus and transmit the information through the nerves to CNS.\nReason (R): ZUL5467BVW As mentioned earlier in this chapter, living things respond to stimuli.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_324_5099_2579_7266.jpg",
+"caption": "Sense organs"
+},
+{
+"id": "neet-img-image_box_324_6312_1105_6942-q541",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Process of Osmosis?",
+"options": [
+"Movement of sap occurs through xylem and phloem elements.",
+"Just behind the tip of the root, certain unicellular microscopic hairs are present.",
+"#### KEY IDEAS A plant does not have blood or a heart.",
+"Osmosis is the process by which water molecules move through a semipermeable membrane from an area of its higher concentration to an area of its lower concentration."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Just behind the tip of the root, certain unicellular microscopic hairs are present.",
+"source": "icse",
+"image": "images/img_in_image_box_324_6312_1105_6942.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_324_6312_1105_6942-q542",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Water moves from the soil into the root hair by a process called osmosis.\nII. Water moves into plant cells by osmosis in following manner .\nIII. Girdling is the process of removal of phloem tissue (bark) from the wood .\nIV. Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_324_6312_1105_6942.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_324_6312_1105_6942-q543",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Process of Osmosis). Which statement is INCORRECT?",
+"options": [
+"### OSMOSIS Osmosis is the process by which water molecules move through a semipermeable membrane from an area of its higher concentration to an area of its lower concentration.",
+"Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra.",
+"Water moves from the soil into the root hair by a process called osmosis.",
+"A small amount of water is used in the process of photosynthesis, and some of it is also used to keep the plant erect and prevent its wilting (drooping)."
+],
+"correctOption": 1,
+"answer": "Incorrect: Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra. Correct: Just behind the tip of the root, certain unicellular microscopic hairs are present.",
+"source": "icse",
+"image": "images/img_in_image_box_324_6312_1105_6942.jpg",
+"caption": "Process of Osmosis"
+},
+{
+"id": "neet-img-image_box_339_361_1411_1505-q551",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Different regions of atmosphere?",
+"options": [
+"Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.",
+"5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.",
+"Symbiosis thus, shows close association between organisms of two different species.",
+"Food chain is defined as The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: 5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.",
+"source": "icse",
+"image": "images/img_in_image_box_339_361_1411_1505.jpg",
+"caption": "Different regions of atmosphere"
+},
+{
+"id": "neet-img-image_box_339_361_1411_1505-q552",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. 5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.\nII. A normal human being requires about 13 - 16 kg (~ 11,000 litres) of air everyday for performing various activities.\nIII. Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.\nIV. Food chain : The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_339_361_1411_1505.jpg",
+"caption": "Different regions of atmosphere"
+},
+{
+"id": "neet-img-image_box_339_361_1411_1505-q553",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Different regions of atmosphere, identify the false statement.",
+"options": [
+"Food chain is defined as The transfer of energy from plants to a number of consumers (herbivores and carnivores) at different levels in an ecosystem.",
+"Humidity, i.e., moisture content of the atmosphere is an important abiotic factor.",
+"Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.",
+"A normal human being requires about 13 - 10 kg (~ 11,000 litres) of air everyday for performing various activities."
+],
+"correctOption": 1,
+"answer": "Incorrect: Humidity, i.e., moisture content of the atmosphere is an important abiotic factor. Correct: 5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.",
+"source": "icse",
+"image": "images/img_in_image_box_339_361_1411_1505.jpg",
+"caption": "Different regions of atmosphere"
+},
+{
+"id": "neet-img-image_box_340_5568_1876_7173-q561",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Life cycle of a silkworm. Choose the accurate statement.",
+"options": [
+"#### Silkworm — Sericulture Silkworm or silkmoth is another useful insect which gives us silk.",
+"Sea Water Fishes : Hilsa, cat fish, sardines, ribbon fish, red mullet, pomfret, Bombay duck.",
+"#### Honeybees — Apiculture The insects which provide us.",
+"Life cycle of a silkworm Artificial beehive (Apiary) Honeybees Some edible fish are as follows: Fresh Water Fishes : Rohu, Singhara, Catla, Labeo, Cirrhinus, Barbus, Mystus, Clarius."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Life cycle of a silkworm Artificial beehive (Apiary) Honeybees Some edible fish are as follows: Fresh Water Fishes : Rohu, Singhara, Catla, Labeo, Cirrhinus, Barbus, Mystus, Clarius.",
+"source": "icse",
+"image": "images/img_in_image_box_340_5568_1876_7173.jpg",
+"caption": "Life cycle of a silkworm"
+},
+{
+"id": "neet-img-image_box_340_5568_1876_7173-q562",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Silkworm or silkmoth is another useful insect which gives us.\nII. Life cycle of a silkworm Artificial beehive (Apiary) Honeybees Some edible fish are as follows: Fresh Water Fishes : Rohu, Singhara, Catla, Labeo, Cirrhinus, Barbus, Mystus, Clarius.\nIII. Sea Water Fishes : Hilsa, cat fish, sardines, ribbon fish, red mullet, pomfret, Bombay duck.\nIV. Silkworm or silkmoth is another useful insect which gives us.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_340_5568_1876_7173.jpg",
+"caption": "Life cycle of a silkworm"
+},
+{
+"id": "neet-img-image_box_340_5568_1876_7173-q563",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Life cycle of a silkworm, identify the false statement.",
+"options": [
+"Life cycle of a silkworm Artificial beehive (Apiary) Honeybees Some edible fish are as follows: Fresh Water Fishes : Rohu, Singhara, Catla, Labeo, Cirrhinus, Barbus, Mystus, Clarius.",
+"Sea Water Fishes : Hilsa, cat fish, sardines, ribbon fish, red mullet, pomfret, Bombay duck.",
+"During recent years, export of marine fish has increased considerably.",
+"#### Silkworm — Sericulture Silkworm or silkmoth is another useful insect which gives us silk."
+],
+"correctOption": 3,
+"answer": "Incorrect: #### Silkworm — Sericulture Silkworm or silkmoth is another useful insect which gives us silk. Correct: Life cycle of a silkworm Artificial beehive (Apiary) Honeybees Some edible fish are as follows: Fresh Water Fishes : Rohu, Singhara, Catla, Labeo, Cirrhinus, Barbus, Mystus, Clarius.",
+"source": "icse",
+"image": "images/img_in_image_box_340_5568_1876_7173.jpg",
+"caption": "Life cycle of a silkworm"
+},
+{
+"id": "neet-img-image_box_343_3158_1634_4291-q571",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding A stamen?",
+"options": [
+"Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"Male parent produces the male gamete and the female parent produces the female gamete.",
+"CODE-Nogh In nature, sexual reproduction occurs in plants as well as in animals."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: CODE-Nogh In nature, sexual reproduction occurs in plants as well as in animals.",
+"source": "icse",
+"image": "images/img_in_image_box_343_3158_1634_4291.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_343_3158_1634_4291-q572",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nII. Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.\nIII. Stamens are next to corolla and they form the male parts of a flower.\nIV. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_343_3158_1634_4291.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_343_3158_1634_4291-q573",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (A stamen).\nAssertion (A): CODE-Nogh In nature, sexual reproduction occurs in plants as well as in animals.\nReason (R): A stamen consists of an anther and a filament .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_343_3158_1634_4291.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_355_2932_1485_3696-q581",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Holstein-Friesian Cow?",
+"options": [
+"Legumes such as alfa-alfa and clover are fed to meet the protein requirement of.",
+"Anthrax – bacterial disease Indian or indigenous breeds: Red sindhi, Sahiwal and Gir Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Anthrax – bacterial disease Indian or indigenous breeds: Red sindhi, Sahiwal and Gir Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"source": "icse",
+"image": "images/img_in_image_box_355_2932_1485_3696.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_355_2932_1485_3696-q582",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Legumes such as alfa-alfa and clover are fed to meet the protein requirement of.\nII. Legumes such as alfa-alfa and clover are fed to meet the protein requirement of.\nIII. Crossbreeds: These are produced by the mating of Indian and foreign breeds, e.g.: Karan fries, Frieswal.\nIV. Crossbreeds: These are produced by the mating of Indian and foreign breeds, e.g.: Karan fries, Frieswal.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_355_2932_1485_3696.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_355_2932_1485_3696-q583",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Holstein-Friesian Cow, identify the false statement.",
+"options": [
+"Anthrax – bacterial disease Indian or indigenous breeds: Red sindhi, Sahiwal and Gir Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"None of the above statements is correct.",
+"Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.",
+"Legumes such as alfa-alfa and clover are fed to meet the protein requirement of."
+],
+"correctOption": 3,
+"answer": "Incorrect: Legumes such as alfa-alfa and clover are fed to meet the protein requirement of. Correct: Anthrax – bacterial disease Indian or indigenous breeds: Red sindhi, Sahiwal and Gir Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"source": "icse",
+"image": "images/img_in_image_box_355_2932_1485_3696.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_364_4960_1723_5678-q591",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Spore formation in Mucor (a fungus)?",
+"options": [
+"Conidia are asexual reproductive spores in fungi.",
+"Small parts of this tissue are kept in another medium which induces the formation of plantlets.",
+"Vegetative Propagation by Roots — In sweet pot.",
+"Spore formation in Mucor (a fungus) Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Spore formation in Mucor (a fungus) Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_364_4960_1723_5678.jpg",
+"caption": "Spore formation in Mucor (a fungus)"
+},
+{
+"id": "neet-img-image_box_364_4960_1723_5678-q592",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nII. Fertilisation : Formation of Fruit and Seed.\nIII. Conidia are asexual reproductive spores in fungi.\nIV. ### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_364_4960_1723_5678.jpg",
+"caption": "Spore formation in Mucor (a fungus)"
+},
+{
+"id": "neet-img-image_box_364_4960_1723_5678-q593",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Spore formation in Mucor (a fungus)). Which statement is INCORRECT?",
+"options": [
+"Spore formation in Mucor (a fungus) Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"Fertilisation is defined as Formation of Fruit and Seed.",
+"### Vegetative Propagation It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants."
+],
+"correctOption": 1,
+"answer": "Incorrect: Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced. Correct: Spore formation in Mucor (a fungus) Roots of Dahlia A sprouted potato Runner in strawberry Bryophyllum leaf Spores are very small in size and they have thick walls.",
+"source": "icse",
+"image": "images/img_in_image_box_364_4960_1723_5678.jpg",
+"caption": "Spore formation in Mucor (a fungus)"
+},
+{
+"id": "neet-img-image_box_366_463_1588_1376-q601",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Mouth cancer?",
+"options": [
+"Mouth cancer ### HARMFUL EFFECTS OF CONSUMING TOBACCO Smoking, chewing tobacco or tobacco products have many harmful effects on the human body.",
+"##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.",
+"Consumption of alcohol leads to: lowering of blood sugar level which has harmful effects on the brain.",
+"Increased risk of lung and oral (mouth) cancer,."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Mouth cancer ### HARMFUL EFFECTS OF CONSUMING TOBACCO Smoking, chewing tobacco or tobacco products have many harmful effects on the human body.",
+"source": "icse",
+"image": "images/img_in_image_box_366_463_1588_1376.jpg",
+"caption": "Mouth cancer"
+},
+{
+"id": "neet-img-image_box_366_463_1588_1376-q602",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Consumption of alcohol leads to: lowering of blood sugar level which has harmful effects on the brain.\nII. ##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.\nIII. ##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.\nIV. Mouth cancer ### HARMFUL EFFECTS OF CONSUMING TOBACCO Smoking, chewing tobacco or tobacco products have many harmful effects on the human body.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_366_463_1588_1376.jpg",
+"caption": "Mouth cancer"
+},
+{
+"id": "neet-img-image_box_366_463_1588_1376-q603",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Mouth cancer).\nAssertion (A): Drinking of alcohol affects the mental and physical activities of the body.\nReason (R): ##### HARMFUL EFFECTS OF DRINKING ALCOHOL Alcohol is considered as a slow poison.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_366_463_1588_1376.jpg",
+"caption": "Mouth cancer"
+},
+{
+"id": "neet-img-image_box_375_1225_1317_1923-q611",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Mushroom?",
+"options": [
+"Other nitrogen fixing virus are Nitrobacter and Nitrosomonas.",
+"Fungi are used for various commercial purposes as discussed below.",
+"Mushroom Structure of Yeast Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Mushroom Structure of Yeast Root nodules in a leguminous plant Nitrogen Fixation – The process of converting atmospheric nitrogen into compounds of nitrogen is called nitrogen fixation.",
+"source": "icse",
+"image": "images/img_in_image_box_375_1225_1317_1923.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_375_1225_1317_1923-q612",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Fungi are used for various commercial purposes as discussed below.\nII. Yeast and mushrooms are used widely in food industry.\nIII. Other nitrogen fixing bacteria are Nitrobacter and Nitrosomonas.\nIV. Mushrooms are rich in protein, vitamin B, vitamin D and minerals such as copper and potassium.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_375_1225_1317_1923.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_375_1225_1317_1923-q613",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Mushroom).\nAssertion (A): Other nitrogen fixing bacteria are Nitrobacter and Nitrosomonas.\nReason (R): Yeast and mushrooms are used widely in food industry.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_375_1225_1317_1923.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_376_3502_1682_5069-q621",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transpiration?",
+"options": [
+"Grapes have shrunk What do you observe?.",
+"Wind : Transpiration decreases with the velocity of wind.",
+"Availability of soil water is defined as When the soil gets dry, the amount of available water also increases. This leads to reduction in the rate of transpiration.",
+"Similarly, as the grapes were kept in a stronger (sugar) solution, water moved out from the grapes through the partially permeable membrane of the grapes."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Grapes have shrunk What do you observe?.",
+"source": "icse",
+"image": "images/img_in_image_box_376_3502_1682_5069.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_376_3502_1682_5069-q622",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Wind : Transpiration increases with the velocity of wind.\nII. Availability of soil water is defined as When the soil gets dry, the amount of available water also decreases. This leads to reduction in the rate of transpiration.\nIII. Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nIV. Temperature: Higher the temperature, more is the rate of transpiration.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_376_3502_1682_5069.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_376_3502_1682_5069-q623",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transpiration).\nAssertion (A): Availability of soil water is defined as When the soil gets dry, the amount of available water also decreases. This leads to reduction in the rate of transpiration.\nReason (R): Temperature: Higher the temperature, more is the rate of transpiration.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_376_3502_1682_5069.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_3881_1008_5852_3353-q631",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Mushroom?",
+"options": [
+"Micro-organisms like bacteria are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.",
+"THEME 6 # Food Production Plants and animals provide a number of useful products to mankind.",
+"Yeast and mushrooms are used widely in food industry.",
+"Micro-organisms like virus are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: THEME 6 # Food Production Plants and animals provide a number of useful products to mankind.",
+"source": "icse",
+"image": "images/img_in_image_box_3881_1008_5852_3353.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_3881_1008_5852_3353-q632",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### KEY CONCEPTS Bacteria – uses of bacteria in food industry.\nII. List importance of mushroom and yeast in the food industry;.\nIII. Micro-organisms like bacteria are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.\nIV. List importance of mushroom and yeast in the food industry;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_3881_1008_5852_3353.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_3881_1008_5852_3353-q633",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Mushroom). Which statement is INCORRECT?",
+"options": [
+"Micro-organisms like virus are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.",
+"THEME 6 # Food Production Plants and animals provide a number of useful products to mankind.",
+"Agriculture – cultivated crops (food-crops and cash crops), crops grown in India.",
+"List importance of mushroom and yeast in the food industry;."
+],
+"correctOption": 3,
+"answer": "Incorrect: List importance of mushroom and yeast in the food industry;. Correct: THEME 6 # Food Production Plants and animals provide a number of useful products to mankind.",
+"source": "icse",
+"image": "images/img_in_image_box_3881_1008_5852_3353.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_398_342_1648_3351-q641",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Blood circulation around the body?",
+"options": [
+"## INTRODUCTION Blood is a fluid connective tissue that flows in a closed system of blood vessels.",
+"Aorta : Main artery which carries the oxygenated blood from the left ventricle to the whole body.",
+"Tricuspid valve prevents the backflow of blood from the right ventricle to the right atrium.",
+"#### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Circulatory System The circulatory system comprises the heart, blood and blood vessels.",
+"source": "icse",
+"image": "images/img_in_image_box_398_342_1648_3351.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_398_342_1648_3351-q642",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Capillaries are the finest blood vessels that interconnect arteries and veins; exchange of water, nutrients, wastes and respiratory gases occurs through capillaries.\nII. Contains blood plasma only — Antigen on RBCs: Contains blood plasma with blood platelets and proteins.\nIII. Capillaries are the finest blood vessels that interconnect arteries and veins; exchange of water, nutrients, wastes and respiratory gases occurs through capillaries.\nIV. Red blood cells (RBCs) — contain haemoglobin and transport oxygen.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_398_342_1648_3351.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_398_342_1648_3351-q643",
+"topicId": "bio-ch6",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Blood circulation around the body).\nAssertion (A): Tricuspid valve prevents the backflow of blood from the right ventricle to the right atrium.\nReason (R): Aorta : Main artery which carries the oxygenated blood from the left ventricle to the whole body.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_398_342_1648_3351.jpg",
+"caption": "Blood circulation around the body"
+},
+{
+"id": "neet-img-image_box_3_3723_1928_5355-q651",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes A carpel?",
+"options": [
+"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"A carpel consists of a basal swollen portion called the ovary."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"source": "icse",
+"image": "images/img_in_image_box_3_3723_1928_5355.jpg",
+"caption": "A carpel"
+},
+{
+"id": "neet-img-image_box_3_3723_1928_5355-q652",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. A flower has four parts arranged in rings or whorls.\nII. A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.\nIII. Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\nIV. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_3_3723_1928_5355.jpg",
+"caption": "A carpel"
+},
+{
+"id": "neet-img-image_box_3_3723_1928_5355-q653",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (A carpel).\nAssertion (A): A flower has four parts arranged in rings or whorls.\nReason (R): A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_3_3723_1928_5355.jpg",
+"caption": "A carpel"
+},
+{
+"id": "neet-img-image_box_404_3407_1600_4881-q661",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts High yielding breeds. Choose the accurate statement.",
+"options": [
+"Indian or indigenous breeds: Red sindhi, Sahiwal and Gir.",
+"Flesh-yielding animals — Goat, sheep, pig and poultry.",
+"Fibre-yielding animals — Sheep, goat and silkworm.",
+"(b) White Leghorn High yielding breeds ##### KEY IDEA Silver revolution refers to the period of time in which tremendous increase in egg production occurred."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: (b) White Leghorn High yielding breeds ##### KEY IDEA Silver revolution refers to the period of time in which tremendous increase in egg production occurred.",
+"source": "icse",
+"image": "images/img_in_image_box_404_3407_1600_4881.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_404_3407_1600_4881-q662",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Fibre-yielding animals — Sheep, goat and silkworm.\nII. Indian or indigenous breeds: Red sindhi, Sahiwal and Gir.\nIII. Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.\nIV. (b) White Leghorn High yielding breeds ##### KEY IDEA Silver revolution refers to the period of time in which tremendous increase in egg production occurred.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_404_3407_1600_4881.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_404_3407_1600_4881-q663",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (High yielding breeds).\nAssertion (A): Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.\nReason (R): Birds of different ages should be kept separately.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_404_3407_1600_4881.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_405_3065_1593_4256-q671",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Lichen. Choose the accurate statement.",
+"options": [
+"Serves as a habitat for a number of soil organisms.",
+"All non-living things depend on other living things, directly or indirectly.",
+"Weathering is brought about by many agents — physical (temperature, rain, wind, frost) and biological (by living organisms — plants, animals and microbes).",
+"Lichens (association between algae and fungi) — In this association, the algal partner provides food material to the fungal partner and the fungal partner provides protection to the algal partner."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Serves as a habitat for a number of soil organisms.",
+"source": "icse",
+"image": "images/img_in_image_box_405_3065_1593_4256.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_405_3065_1593_4256-q672",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### INTERDEPENDENCE AMONGST LIVING ORGANISMS NWKUP4TOJ3 You have already learnt that no living organism can live by itself.\nII. Lichen ##### Soil Formation Soil is formed from parent rock material over millions of years by a process called weathering (breaking of rocks into smaller particles).\nIII. All non-living things depend on other living things, directly or indirectly.\nIV. Weathering is brought about by many agents — physical (temperature, rain, wind, frost) and biological (by non-living organisms — plants, animals and microbes).\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_405_3065_1593_4256.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_405_3065_1593_4256-q673",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Lichen).\nAssertion (A): Lichen ##### Soil Formation Soil is formed from parent rock material over millions of years by a process called weathering (breaking of rocks into smaller particles).\nReason (R): Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_405_3065_1593_4256.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_410_2127_1478_2902-q681",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Holstein-Friesian Cow?",
+"options": [
+"#### SCI-BITS Other Animal Products: Ivory from elephant teeth.",
+"Cattle, buffaloes, sheep, pigs and camel constitute the livestock wealth of our country.",
+"PWM6JXY52C The branch of science which deals with the feeding, shelter, health and breeding of domestic animals is called animal husbandry.",
+"Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: PWM6JXY52C The branch of science which deals with the feeding, shelter, health and breeding of domestic animals is called animal husbandry.",
+"source": "icse",
+"image": "images/img_in_image_box_410_2127_1478_2902.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_410_2127_1478_2902-q682",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Cattle, buffaloes, sheep, pigs and camel constitute the livestock wealth of our country.\nII. Animal Nutrients (%) product Protein Fat Carbohydrates Minerals Wate.\nIII. Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.\nIV. PWM6JXY52C The branch of science which deals with the feeding, shelter, health and breeding of domestic animals is called animal husbandry.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_410_2127_1478_2902.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_410_2127_1478_2902-q683",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Holstein-Friesian Cow).\nAssertion (A): PWM6JXY52C The branch of science which deals with the feeding, shelter, health and breeding of domestic animals is called animal husbandry.\nReason (R): Animal Nutrients (%) product Protein Fat Carbohydrates Minerals Wate.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_410_2127_1478_2902.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_414_2723_2135_4602-q691",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Transport system in plants. Choose the accurate statement.",
+"options": [
+"##### KEY IDEAS Transport System Diffusion is the method of transport of mat.",
+"Minerals absorbed by plants are returned to the soil by the death and decay of plants and animals.",
+"So, conducting tissues in plants have developed.",
+"Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: ##### KEY IDEAS Transport System Diffusion is the method of transport of mat.",
+"source": "icse",
+"image": "images/img_in_image_box_414_2723_2135_4602.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_414_2723_2135_4602-q692",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Upward movement of water and minerals occurs through channels, called phloem elements, which are present in roots, stem and leaves of plants.\nII. Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nIII. Minerals absorbed by plants are returned to the soil by the death and decay of plants and animals.\nIV. Depending upon the quantity of these elements required by the plants, the elements are grouped into two categories.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_414_2723_2135_4602.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_414_2723_2135_4602-q693",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Transport system in plants, identify the false statement.",
+"options": [
+"Explain that transport in unicellular and simple multicellular plants takes place by diffusion;.",
+"Upward movement of water and minerals occurs through channels, called xylem elements, which are present in roots, stem and leaves of plants.",
+"Transport of Food and Minerals in Plants.",
+"Though a large number of elements are present in the plant body, only some are important for the healthy growth of plants."
+],
+"correctOption": 1,
+"answer": "Incorrect: Upward movement of water and minerals occurs through channels, called xylem elements, which are present in roots, stem and leaves of plants. Correct: ##### KEY IDEAS Transport System Diffusion is the method of transport of mat.",
+"source": "icse",
+"image": "images/img_in_image_box_414_2723_2135_4602.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_421_5789_1187_6568-q701",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Xylem elements?",
+"options": [
+"phloem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.",
+"Tracheids and phloem fibres provide mechanical support.",
+"(i) Sieve tubes are the main conducting elements in the xylem.",
+"Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"source": "icse",
+"image": "images/img_in_image_box_421_5789_1187_6568.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_421_5789_1187_6568-q702",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nII. Upward movement of water and minerals occurs through channels, called phloem elements, which are present in roots, stem and leaves of plants.\nIII. (i) Sieve tubes are the main conducting elements in the phloem.\nIV. Xylem is a complex tissue, as it consists of both parenchymatous (living thin wall cells) and sclerenchymatous (dead thick walled) cells.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_421_5789_1187_6568.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_421_5789_1187_6568-q703",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Xylem elements).\nAssertion (A): Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nReason (R): Xylem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_421_5789_1187_6568.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_426_1705_1992_2987-q711",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding High yielding breeds?",
+"options": [
+"Crossbreeds: These are produced by the mating of Indian and foreign breeds, e.g.: Karan fries, Frieswal.",
+"##### KEY IDEAS The art of rearing and management of silk moths for the production of silk is known as sericulture.",
+"(a) Aseeel (b) White Leghorn High yielding breeds ##### KEY IDEA Silver revolution refers to the period of time in which tremendous increase in egg production occurred.",
+"Animal husbandry – milk yielding (milch) animals; white revolution; meat providing livestock; draught animals (heavy work); poultry; fish farming (pisciculture); sericulture and apiculture (awareness level)."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: (a) Aseeel (b) White Leghorn High yielding breeds ##### KEY IDEA Silver revolution refers to the period of time in which tremendous increase in egg production occurred.",
+"source": "icse",
+"image": "images/img_in_image_box_426_1705_1992_2987.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_426_1705_1992_2987-q712",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Good drainage system is necessary to keep the poultry clean.\nII. Poultry housing: Proper housing for the birds is necessary in poultry farming.\nIII. Animal husbandry – milk yielding (milch) animals; white revolution; meat providing livestock; draught animals (heavy work); poultry; fish farming (pisciculture); sericulture and apiculture (awareness level).\nIV. Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_426_1705_1992_2987.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_426_1705_1992_2987-q713",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (High yielding breeds).\nAssertion (A): Hide-yielding animals — Sheep, goat, buffalo and camel.\nReason (R): Fibre-yielding animals — Sheep, goat and silkworm.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_426_1705_1992_2987.jpg",
+"caption": "High yielding breeds"
+},
+{
+"id": "neet-img-image_box_427_1615_1485_3050-q721",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Parts of a flower?",
+"options": [
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
+"Parts of a flower two different individuals.",
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar.."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Parts of a flower two different individuals.",
+"source": "icse",
+"image": "images/img_in_image_box_427_1615_1485_3050.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_427_1615_1485_3050-q722",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\nII. 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..\nIII. Small parts of this tissue are kept in another medium which induc.\nIV. 1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals..\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_427_1615_1485_3050.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_427_1615_1485_3050-q723",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Parts of a flower, identify the false statement.",
+"options": [
+"Insect pollinated flowers is associated with Wind pollinated flowers.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"Small parts of this tissue are kept in another medium which induces the formation of plantlets.",
+"Small parts of this tissue are kept in another medium which induc."
+],
+"correctOption": 2,
+"answer": "Incorrect: Small parts of this tissue are kept in another medium which induces the formation of plantlets. Correct: Parts of a flower two different individuals.",
+"source": "icse",
+"image": "images/img_in_image_box_427_1615_1485_3050.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_429_1592_1710_3067-q731",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Stem cutting in rose. Choose the accurate statement.",
+"options": [
+"Stem cutting in rose Layering in jasmine Grafting Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"Such plants can be easily grown by this method.",
+"Overcrowding often takes place near the parent plant."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Stem cutting in rose Layering in jasmine Grafting Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"source": "icse",
+"image": "images/img_in_image_box_429_1592_1710_3067.jpg",
+"caption": "Stem cutting in rose"
+},
+{
+"id": "neet-img-image_box_429_1592_1710_3067-q732",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nII. ##### Artificial Methods of Vegetative Propagation Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nIII. Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.\nIV. Cuttings are short lengths of the plant.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_429_1592_1710_3067.jpg",
+"caption": "Stem cutting in rose"
+},
+{
+"id": "neet-img-image_box_429_1592_1710_3067-q733",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Stem cutting in rose).\nAssertion (A): Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.\nReason (R): (b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_429_1592_1710_3067.jpg",
+"caption": "Stem cutting in rose"
+},
+{
+"id": "neet-img-image_box_443_2060_1714_2768-q741",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Lichen?",
+"options": [
+"##### Soil Soil is a necessary natural resource for life on earth.",
+"Lichens (association between algae and fungi) — In this association, the algal partner provides food material to the fungal partner and the fungal partner provides protection to the algal partner.",
+"Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.",
+"TF4QH3PSCV Green plants need light to make food and to grow."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: TF4QH3PSCV Green plants need light to make food and to grow.",
+"source": "icse",
+"image": "images/img_in_image_box_443_2060_1714_2768.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_443_2060_1714_2768-q742",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.\nII. Plants like mosses, lichens and epiphytes absorb moisture directly from the atmosphere.\nIII. ##### Soil Soil is a necessary natural resource for life on earth.\nIV. Similarly, in Bauhinia (kachnar) leaves open during daytime and close or fold during night.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_443_2060_1714_2768.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_443_2060_1714_2768-q743",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Lichen, identify the false statement.",
+"options": [
+"During summer, you may have observed a common ornamental plant called Portulaca (dhoop khirri).",
+"Animals such as earthworms, centipedes, millipedes do not like light and hence, they move away from light.",
+"TF4QH3PSCV Green plants need light to make food and to grow.",
+"Lichens (association between algae and fungi) — In this association, the algal partner provides food material to the fungal partner and the fungal partner provides protection to the algal partner."
+],
+"correctOption": 1,
+"answer": "Incorrect: Animals such as earthworms, centipedes, millipedes do not like light and hence, they move away from light. Correct: TF4QH3PSCV Green plants need light to make food and to grow.",
+"source": "icse",
+"image": "images/img_in_image_box_443_2060_1714_2768.jpg",
+"caption": "Lichen"
+},
+{
+"id": "neet-img-image_box_444_518_2323_2389-q751",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Spinal cord in sectional view. Choose the accurate statement.",
+"options": [
+"Spinal cord in sectional view #### Cerebellum It is the second largest part of spinal cord, located at the back of the head.",
+"Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.",
+"A section through the brain is shown in.",
+"Spinal cord in sectional view #### Cerebellum It is the second largest part of brain, located at the back of the head."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Spinal cord in sectional view #### Cerebellum It is the second largest part of brain, located at the back of the head.",
+"source": "icse",
+"image": "images/img_in_image_box_444_518_2323_2389.jpg",
+"caption": "Spinal cord in sectional view"
+},
+{
+"id": "neet-img-image_box_444_518_2323_2389-q752",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Spinal cord extends from the medulla oblongata of the spinal cord and runs down through the whole length of the vertebral column.\nII. Part involved is associated with spinal cord (cerebrum involved) and Spinal cord.\nIII. Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord.\nIV. A section through the spinal cord is shown in.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_444_518_2323_2389.jpg",
+"caption": "Spinal cord in sectional view"
+},
+{
+"id": "neet-img-image_box_444_518_2323_2389-q753",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Spinal cord in sectional view).\nAssertion (A): A section through the spinal cord is shown in.\nReason (R): ##### Functions It controls the vital activity of internal organs like heartbeat, breathing blood pressure, etc.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_444_518_2323_2389.jpg",
+"caption": "Spinal cord in sectional view"
+},
+{
+"id": "neet-img-image_box_446_244_1470_1420-q761",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Parts of a flower. Choose the accurate statement.",
+"options": [
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
+"Parts of a flower two different individuals.",
+"1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species..",
+"Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Parts of a flower two different individuals.",
+"source": "icse",
+"image": "images/img_in_image_box_446_244_1470_1420.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_446_244_1470_1420-q762",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Parts of a flower two different individuals.\nII. Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nIII. Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nIV. Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_446_244_1470_1420.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_446_244_1470_1420-q763",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Parts of a flower). Which statement is INCORRECT?",
+"options": [
+"Stamens are next to corolla and they form the male parts of a flower.",
+"Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.",
+"Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
+"#### Tissue Culture In this method, a tissue is taken from the tip of a plant as it is composed of undifferentiated and immature rapidly dividing cells such tissue is called explant."
+],
+"correctOption": 2,
+"answer": "Incorrect: Scion is the plant which one wants to propagate and so it is grafted on to the stock. Correct: Parts of a flower two different individuals.",
+"source": "icse",
+"image": "images/img_in_image_box_446_244_1470_1420.jpg",
+"caption": "Parts of a flower"
+},
+{
+"id": "neet-img-image_box_451_491_2618_2449-q771",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transpiration?",
+"options": [
+"Availability of soil water is defined as When the soil gets dry, the amount of available water also increases. This leads to reduction in the rate of transpiration.",
+"Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;.",
+"Grapes have shrunk What do you observe?.",
+"Wind : Transpiration increases with the velocity of wind."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Grapes have shrunk What do you observe?.",
+"source": "icse",
+"image": "images/img_in_image_box_451_491_2618_2449.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_451_491_2618_2449-q772",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nII. Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nIII. Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nIV. Availability of soil water is defined as When the soil gets dry, the amount of available water also decreases. This leads to reduction in the rate of transpiration.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_451_491_2618_2449.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_451_491_2618_2449-q773",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Transpiration). Which statement is INCORRECT?",
+"options": [
+"Wind : Transpiration increases with the velocity of wind.",
+"Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;.",
+"Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.",
+"Humidity is defined as Transpiration is reduced if the atmosphere around the plant or leaf is more humid."
+],
+"correctOption": 2,
+"answer": "Incorrect: Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;. Correct: Grapes have shrunk What do you observe?.",
+"source": "icse",
+"image": "images/img_in_image_box_451_491_2618_2449.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_453_1793_1634_2664-q781",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts shows the different endocrine glands found in male and female. Major endocrine glands are:. Choose the accurate statement.",
+"options": [
+"Hormones acts as messengers and coordinate different functions in our body.",
+"pituitary relates to Neck, Thyroxine $ T_3 $ and $ T_4 $, and Controls the activity of other endocrine glands (thus, called master gland).",
+"Hormones are chemical substances secreted by endocrine glands.",
+"#### KEY IDEAS ##### Hormones Hormones are chemical substances secreted by endocrine glands."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: #### KEY IDEAS ##### Hormones Hormones are chemical substances secreted by endocrine glands.",
+"source": "icse",
+"image": "images/img_in_image_box_453_1793_1634_2664.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_453_1793_1634_2664-q782",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. ##### HORMONES XPFMTQNG9Z Chemical coordination in living beings is brought about by chemical substances called hormones.\nII. Through the blood, secretions of endocrine glands are carried to the target organs.\nIII. Thyroid relates to Neck, Thyroxine $ T_3 $ and $ T_4 $, and Controls the activity of other endocrine glands (thus, called master gland).\nIV. During adolescence, different parts of the body grow at different rates.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_453_1793_1634_2664.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_453_1793_1634_2664-q783",
+"topicId": "bio-ch5",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (shows the different endocrine glands found in male and female. Major endocrine glands are:).\nAssertion (A): Hormones are chemical substances secreted by endocrine glands.\nReason (R): Through the blood, secretions of endocrine glands are carried to the target organs.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_453_1793_1634_2664.jpg",
+"caption": "shows the different endocrine glands found in male and female. Major endocrine glands are:"
+},
+{
+"id": "neet-img-image_box_463_6024_1502_6872-q791",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Holstein-Friesian Cow?",
+"options": [
+"Shelf-life of organic foods is much shorter than non-organic foods.",
+"##### GREEN REVOLUTION Green revolution was the period when a large increase in crop and food grain production was achieved due to the following major.",
+"Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.",
+"##### SCI-BITS The explosion of human population has, greatly reduced the impact of green revolution."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: ##### SCI-BITS The explosion of human population has, greatly reduced the impact of green revolution.",
+"source": "icse",
+"image": "images/img_in_image_box_463_6024_1502_6872.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_463_6024_1502_6872-q792",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Pollution of land and water bodies is not caused.\nII. Shelf-life of organic foods is much shorter than non-organic foods.\nIII. ##### SCI-BITS The explosion of human population has, greatly reduced the impact of green revolution.\nIV. ##### GREEN REVOLUTION Green revolution was the period when a large increase in crop and food grain production was achieved due to the following major.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_463_6024_1502_6872.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_463_6024_1502_6872-q793",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Holstein-Friesian Cow).\nAssertion (A): ##### GREEN REVOLUTION Green revolution was the period when a large increase in crop and food grain production was achieved due to the following major.\nReason (R): Pollution of land and water bodies is not caused.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_463_6024_1502_6872.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_479_2575_1734_3315-q801",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Budding in yeast. Choose the accurate statement.",
+"options": [
+"Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION non-living organisms exhibit several modes of reproduction.",
+"Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION Living organisms exhibit several modes of reproduction.",
+"New individual is produced from a single parent only.",
+"Budding in yeast Fragmentation in Spirogyra their own kind."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Budding in yeast Fragmentation in Spirogyra their own kind.",
+"source": "icse",
+"image": "images/img_in_image_box_479_2575_1734_3315.jpg",
+"caption": "Budding in yeast"
+},
+{
+"id": "neet-img-image_box_479_2575_1734_3315-q802",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. New individual is produced from a single parent only.\nII. ##### Asexual Reproduction Living organisms reproduce asexually, by several means such as : Binary fission Budd.\nIII. ##### Asexual Reproduction Living organisms reproduce asexually, by several means such as : Binary fission Budd.\nIV. Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION non-living organisms exhibit several modes of reproduction.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_479_2575_1734_3315.jpg",
+"caption": "Budding in yeast"
+},
+{
+"id": "neet-img-image_box_479_2575_1734_3315-q803",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Budding in yeast).\nAssertion (A): New individual is produced from a single parent only.\nReason (R): ##### Asexual Reproduction Living organisms reproduce asexually, by several means such as : Binary fission Budd.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_479_2575_1734_3315.jpg",
+"caption": "Budding in yeast"
+},
+{
+"id": "neet-img-image_box_486_6046_1309_6894-q811",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Mushroom. Choose the accurate statement.",
+"options": [
+"#### KEY CONCEPTS Bacteria – uses of bacteria in food industry.",
+"Yeast and mushrooms are used widely in food industry.",
+"Plants and animals provide a number of useful products to mankind.",
+"#### KEY CONCEPTS virus – uses of bacteria in food industry."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Plants and animals provide a number of useful products to mankind.",
+"source": "icse",
+"image": "images/img_in_image_box_486_6046_1309_6894.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_486_6046_1309_6894-q812",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### KEY CONCEPTS Bacteria – uses of bacteria in food industry.\nII. Agriculture – cultivated crops (food-crops and cash crops), crops grown in India.\nIII. Yeast and mushrooms are used widely in food industry.\nIV. Micro-organisms like bacteria are also useful to us — in the production of cheese, bread, alcohol, vinegar and vaccines.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_486_6046_1309_6894.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_486_6046_1309_6894-q813",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Mushroom).\nAssertion (A): Fungi – Importance of mushrooms and yeast in food industry.\nReason (R): Likewise, animals provide us milk, flesh, eggs, fibre, honey, silk, lac, and many more items.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_486_6046_1309_6894.jpg",
+"caption": "Mushroom"
+},
+{
+"id": "neet-img-image_box_493_2157_2029_2663-q821",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transport system in plants?",
+"options": [
+"Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra.",
+"Depending upon the quantity of these elements required by the plants, the elements are grouped into two categories.",
+"##### KEY IDEAS Transport System Diffusion is the method of transport of mat.",
+"Upward movement of water and minerals occurs through channels, called xylem elements, which are present in roots, stem and leaves of plants."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: ##### KEY IDEAS Transport System Diffusion is the method of transport of mat.",
+"source": "icse",
+"image": "images/img_in_image_box_493_2157_2029_2663.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_493_2157_2029_2663-q822",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Transport of Food and Minerals in Plants.\nII. Upward movement of water and minerals occurs through channels, called xylem elements, which are present in roots, stem and leaves of plants.\nIII. Plants obtain minerals from three sources — atmosphere, water, and soil.\nIV. Circulation in plants is carried out by a liquid called sap.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_493_2157_2029_2663.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_493_2157_2029_2663-q823",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transport system in plants).\nAssertion (A): Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nReason (R): Xylem and phloem usually occur together in the roots, stems and leaves of higher plants and form vascular bundles.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_493_2157_2029_2663.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_4_369_887_1839-q831",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Transport system in plants?",
+"options": [
+"UP1LE9BNAG Living organisms need food, water, and oxygen for their survival.",
+"Before proceeding further, let us understand, what does the word 'transport' mean?.",
+"UP1LE9BNAG non-living organisms need food, water, and oxygen for their survival.",
+"Explain that transport in unicellular and simple multicellular plants takes place by diffusion;."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: UP1LE9BNAG Living organisms need food, water, and oxygen for their survival.",
+"source": "icse",
+"image": "images/img_in_image_box_4_369_887_1839.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_4_369_887_1839-q832",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nII. Diffusion is the method of transport of materials in single celled and simple multicellular plants.\nIII. Xylem is popularly known as wood in mature plants.\nIV. Minerals absorbed by plants are returned to the soil by the death and decay of plants and animals.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_4_369_887_1839.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_4_369_887_1839-q833",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transport system in plants).\nAssertion (A): UP1LE9BNAG Living organisms need food, water, and oxygen for their survival.\nReason (R): So, conducting tissues in plants have developed.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_4_369_887_1839.jpg",
+"caption": "Transport system in plants"
+},
+{
+"id": "neet-img-image_box_4_4486_3034_7415-q841",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding A simple food chain in a grassland?",
+"options": [
+"Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.",
+"Eventually, the food stored in plants and animals is broken down to simple substances by decomposers.",
+"Define the terms ecosystem, producer, consumer, decomposer, food chain, food web and pyramid of numbers, with examples (technical terms);.",
+"A simple food chain in a grassland A food chain in a grassland Each arrow in a food chain represents “is eaten by”."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A simple food chain in a grassland A food chain in a grassland Each arrow in a food chain represents “is eaten by”.",
+"source": "icse",
+"image": "images/img_in_image_box_4_4486_3034_7415.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_4_4486_3034_7415-q842",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Prepare simple food chains on land and in water from the following living organisms .\nII. Rather, a number of food chains are interconnected.\nIII. Plants again use these simple substances to synthesise food.\nIV. Depict a food chain showing human as the last organism in the chain.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_4_4486_3034_7415.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_4_4486_3034_7415-q843",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (A simple food chain in a grassland).\nAssertion (A): There are many types of ecosystems, namely aquatic (fresh water/ marine), terrestrial (forest/ grassland/ desert), etc.\nReason (R): An ecological pyramid is a graphic representation of an ecological parameter, like number of individuals, biomass, or energy present at various trophic levels of a food chain.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_4_4486_3034_7415.jpg",
+"caption": "A simple food chain in a grassland"
+},
+{
+"id": "neet-img-image_box_505_3634_1550_4566-q851",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Fragmentation in Spirogyra?",
+"options": [
+"Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION Living organisms exhibit several modes of reproduction.",
+"Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION non-living organisms exhibit several modes of reproduction.",
+"##### Asexual Reproduction non-living organisms reproduce asexually, by several means such as : Binary fission Budding Fragmentation.",
+"New individual is produced from a single parent only."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION Living organisms exhibit several modes of reproduction.",
+"source": "icse",
+"image": "images/img_in_image_box_505_3634_1550_4566.jpg",
+"caption": "Fragmentation in Spirogyra"
+},
+{
+"id": "neet-img-image_box_505_3634_1550_4566-q852",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION Living organisms exhibit several modes of reproduction.\nII. Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nIII. New individual is produced from a single parent only.\nIV. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_505_3634_1550_4566.jpg",
+"caption": "Fragmentation in Spirogyra"
+},
+{
+"id": "neet-img-image_box_505_3634_1550_4566-q853",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fragmentation in Spirogyra).\nAssertion (A): Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nReason (R): New individual is produced from a single parent only.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_505_3634_1550_4566.jpg",
+"caption": "Fragmentation in Spirogyra"
+},
+{
+"id": "neet-img-image_box_519_770_2948_2255-q861",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Girdling experiment?",
+"options": [
+"Examine the sections under the low power of a microscope.",
+"Longitudinal section of stem ##### What do you observe?.",
+"Cross section of stem To show upward movement of water in a plant shoot.",
+"Now, check whether the entire stem tissue is red or only some part of the section is red."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Cross section of stem To show upward movement of water in a plant shoot.",
+"source": "icse",
+"image": "images/img_in_image_box_519_770_2948_2255.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_519_770_2948_2255-q862",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Then, take sections from different parts of the stem.\nII. Cross section of stem To show downward movement of water in a plant shoot.\nIII. Girdling is the process of removal of xylem tissue (bark) from the wood .\nIV. ## INVESTIGATION 1.2 Girdling experiment To show transport of food material in a plant.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_519_770_2948_2255.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_519_770_2948_2255-q863",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Girdling experiment).\nAssertion (A): ## INVESTIGATION 1.2 Girdling experiment To show transport of food material in a plant.\nReason (R): Then, take sections from different parts of the stem.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_519_770_2948_2255.jpg",
+"caption": "Girdling experiment"
+},
+{
+"id": "neet-img-image_box_52_3183_1911_5101-q871",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transpiration?",
+"options": [
+"Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .",
+"Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.",
+"Grapes in sugar solution Experiment to demonstrate osmosis.",
+"Wind : Transpiration decreases with the velocity of wind."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Grapes in sugar solution Experiment to demonstrate osmosis.",
+"source": "icse",
+"image": "images/img_in_image_box_52_3183_1911_5101.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_52_3183_1911_5101-q872",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nII. Temperature is defined as Higher the temperature, more is the rate of transpiration.\nIII. Wind : Transpiration increases with the velocity of wind.\nIV. Similarly, as the grapes were kept in a stronger (sugar) solution, water moved out from the grapes through the partially permeable membrane of the grapes.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_52_3183_1911_5101.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_52_3183_1911_5101-q873",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transpiration).\nAssertion (A): Humidity: Transpiration is reduced if the atmosphere around the plant or leaf is more humid.\nReason (R): Humidity is defined as Transpiration is reduced if the atmosphere around the plant or leaf is more humid.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_52_3183_1911_5101.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_544_527_1761_2155-q881",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts Binary fission in bacteria. Choose the accurate statement.",
+"options": [
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
+"Reproduction is, thus, the means of perpetuation or continuation of species #### MODES OF REPRODUCTION Living organisms exhibit several modes of reproduction.",
+"##### Asexual Reproduction Living organisms reproduce asexually, by several means su.",
+"Binary fission in bacteria Budding in yeast Fragmentation in Spirogyra their own kind."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Binary fission in bacteria Budding in yeast Fragmentation in Spirogyra their own kind.",
+"source": "icse",
+"image": "images/img_in_image_box_544_527_1761_2155.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_544_527_1761_2155-q882",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Binary fission in bacteria Budding in yeast Fragmentation in Spirogyra their own kind.\nII. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nIII. New individual is produced from a single parent only.\nIV. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_544_527_1761_2155.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_544_527_1761_2155-q883",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Binary fission in bacteria). Which statement is INCORRECT?",
+"options": [
+"##### Asexual Reproduction non-living organisms reproduce asexually, by several means su.",
+"Binary fission in virus Budding in yeast Fragmentation in Spirogyra their own kind.",
+"##### Asexual Reproduction Living organisms reproduce asexually, by several means su.",
+"Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes."
+],
+"correctOption": 1,
+"answer": "Incorrect: Binary fission in virus Budding in yeast Fragmentation in Spirogyra their own kind. Correct: Binary fission in bacteria Budding in yeast Fragmentation in Spirogyra their own kind.",
+"source": "icse",
+"image": "images/img_in_image_box_544_527_1761_2155.jpg",
+"caption": "Binary fission in bacteria"
+},
+{
+"id": "neet-img-image_box_551_2705_1808_3626-q891",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Transpiration?",
+"options": [
+"Wind : Transpiration decreases with the velocity of wind.",
+"Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .",
+"Wind : Transpiration increases with the velocity of wind.",
+"Define transpiration, interpret its role in phloem transport and know about the factors affecting rate of transpiration;."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .",
+"source": "icse",
+"image": "images/img_in_image_box_551_2705_1808_3626.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_551_2705_1808_3626-q892",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Temperature is defined as Higher the temperature, more is the rate of transpiration.\nII. Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nIII. Wind : Transpiration increases with the velocity of wind.\nIV. Define and discuss diffusion, osmosis, transpiration, root pressure;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_551_2705_1808_3626.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_551_2705_1808_3626-q893",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Transpiration).\nAssertion (A): Transpiration #### TRANSPIRATION Transpiration is the loss of water in the form of water vapour from the leaves to the atmosphere .\nReason (R): Temperature: Higher the temperature, more is the rate of transpiration.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_551_2705_1808_3626.jpg",
+"caption": "Transpiration"
+},
+{
+"id": "neet-img-image_box_56_273_5900_3349-q901",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes A stamen?",
+"options": [
+"Stamens are next to corolla and they form the male parts of a flower.",
+"A stamen A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"A stamen consists of an anther and a filament .",
+"An anther is a swollen structure present on the tip of the filament."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A stamen A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"source": "icse",
+"image": "images/img_in_image_box_56_273_5900_3349.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_56_273_5900_3349-q902",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nII. Petals form the next inner whorl (corolla) and are brightly coloured structures.\nIII. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nIV. A stamen A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_56_273_5900_3349.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_56_273_5900_3349-q903",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (A stamen). Which statement is INCORRECT?",
+"options": [
+"An anther is a swollen structure present on the tip of the filament.",
+"A stamen A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction."
+],
+"correctOption": 0,
+"answer": "Incorrect: An anther is a swollen structure present on the tip of the filament. Correct: A stamen A carpel Female gamete inside the ovule ### SEXUAL REPRODUCTION IN PLANTS In previous class, you have learnt about the structure of a flower.",
+"source": "icse",
+"image": "images/img_in_image_box_56_273_5900_3349.jpg",
+"caption": "A stamen"
+},
+{
+"id": "neet-img-image_box_578_3450_1204_4379-q911",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Holstein-Friesian Cow?",
+"options": [
+"Based on the season of cultivation, crops are of two types— Kharif crops: Grown during the winter season and harvested in spring.",
+"Based on the season of cultivation, crops are of two types— Rabi crops: Grown during the winter season and harvested in spring.",
+"#### Cash Crops And Food Crops Based on the purpose for which they are grown, crops are classified into two groups.",
+"Cash crops : Crops produced for sale to earn money, rather than for use by the grower."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: #### Cash Crops And Food Crops Based on the purpose for which they are grown, crops are classified into two groups.",
+"source": "icse",
+"image": "images/img_in_image_box_578_3450_1204_4379.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_578_3450_1204_4379-q912",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Based on the season of cultivation, crops are of two types— Rabi crops: Grown during the winter season and harvested in spring.\nII. Kharif crops: Grown during monsoon and harvested during autumn.\nIII. Based on the season of cultivation, crops are of two types— Rabi crops: Grown during the winter season and harvested in spring.\nIV. Kharif crops: Grown during monsoon and harvested during autumn.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_578_3450_1204_4379.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_578_3450_1204_4379-q913",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Holstein-Friesian Cow). Which statement is INCORRECT?",
+"options": [
+"Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.",
+"Food crops : Crops grown for the production of food.",
+"Based on the season of cultivation, crops are of two types— Kharif crops: Grown during the winter season and harvested in spring.",
+"Rabi crops: Grown during monsoon and harvested during autumn."
+],
+"correctOption": 1,
+"answer": "Incorrect: Food crops : Crops grown for the production of food. Correct: #### Cash Crops And Food Crops Based on the purpose for which they are grown, crops are classified into two groups.",
+"source": "icse",
+"image": "images/img_in_image_box_578_3450_1204_4379.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_597_654_1451_1283-q921",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts The pathway of water across a root and higher up the plant. Choose the accurate statement.",
+"options": [
+"phloem is popularly known as wood in mature plants.",
+"Upward movement of water and minerals occurs through channels, called phloem elements, which are present in roots, stem and leaves of plants.",
+"Diffusion is the major process by which transport of materials occurs in single-celled (unicellular) organisms like Chlamydomonas and simple multicellular plants like Spirogyra.",
+"Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs.",
+"source": "icse",
+"image": "images/img_in_image_box_597_654_1451_1283.jpg",
+"caption": "The pathway of water across a root and higher up the plant"
+},
+{
+"id": "neet-img-image_box_597_654_1451_1283-q922",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. So, conducting tissues in plants have developed.\nII. xylem fibres provide mechanical support to plant.\nIII. Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.\nIV. Phloem is present in all the parts of plant.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_597_654_1451_1283.jpg",
+"caption": "The pathway of water across a root and higher up the plant"
+},
+{
+"id": "neet-img-image_box_597_654_1451_1283-q923",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for The pathway of water across a root and higher up the plant, identify the false statement.",
+"options": [
+"Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;.",
+"phloem and phloem are the complex, vascular tissues in plant body.",
+"Upward movement of water and minerals occurs through channels, called phloem elements, which are present in roots, stem and leaves of plants.",
+"Learn about the existence of a transport system inside the body of complex multicellular higher plants;."
+],
+"correctOption": 0,
+"answer": "Incorrect: Infer that the minerals required are either micronutrients or macronutrients depending upon the quantity required by the plants;. Correct: Water passes into the root hair cell by osmosis because soil contains high concentration of water as compared to root hairs.",
+"source": "icse",
+"image": "images/img_in_image_box_597_654_1451_1283.jpg",
+"caption": "The pathway of water across a root and higher up the plant"
+},
+{
+"id": "neet-img-image_box_607_3456_1230_4382-q931",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts (b): Raised maida. Choose the accurate statement.",
+"options": [
+"Take about 500 g of atta or maida and some sugar in a bowl.",
+"Aerobic virus, like Acetobacter are used for the production of vinegar (acetic acid) from alcohol.",
+"(b): Raised maida To show that yeast is used to make the dough rise for bread making.",
+"Aerobic bacteria, like Acetobacter are used for the production of vinegar (acetic acid) from alcohol."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: (b): Raised maida To show that yeast is used to make the dough rise for bread making.",
+"source": "icse",
+"image": "images/img_in_image_box_607_3456_1230_4382.jpg",
+"caption": "(b): Raised maida"
+},
+{
+"id": "neet-img-image_box_607_3456_1230_4382-q932",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. ##### Production of Alcohol, Wine, Vinegar Yeast is used for the large scale production of alcohol, wine and beer.\nII. Take about 500 g of atta or maida and some sugar in a bowl.\nIII. Aerobic bacteria, like Acetobacter are used for the production of vinegar (acetic acid) from alcohol.\nIV. Aerobic bacteria, like Acetobacter are used for the production of vinegar (acetic acid) from alcohol.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_607_3456_1230_4382.jpg",
+"caption": "(b): Raised maida"
+},
+{
+"id": "neet-img-image_box_607_3456_1230_4382-q933",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram ((b): Raised maida).\nAssertion (A): Take about 500 g of atta or maida and some sugar in a bowl.\nReason (R): (b): Raised maida To show that yeast is used to make the dough rise for bread making.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_607_3456_1230_4382.jpg",
+"caption": "(b): Raised maida"
+},
+{
+"id": "neet-img-image_box_609_456_1960_2008-q941",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Pollination in Salvia?",
+"options": [
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.",
+"Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"##### Pollination Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: ##### Pollination Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.",
+"source": "icse",
+"image": "images/img_in_image_box_609_456_1960_2008.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_609_456_1960_2008-q942",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. cross Pollination is associated with Cross Pollination.\nII. ##### Pollination Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nIII. Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.\nIV. cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_609_456_1960_2008.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_609_456_1960_2008-q943",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Pollination in Salvia, identify the false statement.",
+"options": [
+"Self Pollination is associated with Cross Pollination.",
+"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
+"Observe the mechanism of pollination in wheat (maize) .",
+"cross Pollination is associated with Cross Pollination."
+],
+"correctOption": 1,
+"answer": "Incorrect: 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.. Correct: ##### Pollination Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.",
+"source": "icse",
+"image": "images/img_in_image_box_609_456_1960_2008.jpg",
+"caption": "Pollination in Salvia"
+},
+{
+"id": "neet-img-image_box_638_3816_2520_5308-q951",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Xylem elements?",
+"options": [
+"phloem is composed of four elements as follows .",
+"A vessel is also a non-non-living cell with lignified walls.",
+"phloem parenchyma helps in the storage of starch and other materials.",
+"(B) Vessels Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: (B) Vessels Xylem elements Phloem tissue (i) A tracheid is a non-living, elongated cell with tapering ends.",
+"source": "icse",
+"image": "images/img_in_image_box_638_3816_2520_5308.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_638_3816_2520_5308-q952",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Define transpiration, interpret its role in xylem transport and know about the factors affecting rate of transpiration;.\nII. Movement of sap occurs through xylem and phloem elements.\nIII. phloem is popularly known as wood in mature plants.\nIV. Depending upon the quantity of these elements required by the plants, the elements are grouped into two categories.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_638_3816_2520_5308.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_638_3816_2520_5308-q953",
+"topicId": "bio-ch1",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Xylem elements).\nAssertion (A): Xylem and phloem are the complex, vascular tissues in plant body.\nReason (R): Xylem is composed of four elements as follows .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_638_3816_2520_5308.jpg",
+"caption": "Xylem elements"
+},
+{
+"id": "neet-img-image_box_670_1841_2453_2992-q961",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Reproductive organs — Male?",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"Organs of the Female Reproductive system .",
+"Here, sperm and ovum fuse together and fertilisation t.",
+"Reproductive organs — Male Voice becomes high pitched."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Reproductive organs — Male Voice becomes high pitched.",
+"source": "icse",
+"image": "images/img_in_image_box_670_1841_2453_2992.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_670_1841_2453_2992-q962",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Organs of the Female Reproductive system : A pair of ovaries (singular ovary) is found on either side of uterus and they produce eggs (ova).\nII. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nIII. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nIV. Reproductive organs — Male Voice becomes high pitched.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_670_1841_2453_2992.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_670_1841_2453_2992-q963",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Reproductive organs — Male).\nAssertion (A): Reproductive organs — Male Voice becomes high pitched.\nReason (R): Organs of the Female Reproductive system : A pair of ovaries (singular ovary) is found on either side of uterus and they produce eggs (ova).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_670_1841_2453_2992.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_761_668_1925_1559-q971",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Holstein-Friesian Cow?",
+"options": [
+"##### SCI-BITS The explosion of human population has, greatly reduced the impact of green revolution.",
+"Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry.",
+"Knowledge of animal husbandry is needed to increase the production of milk, egg, meat, and other products."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry.",
+"source": "icse",
+"image": "images/img_in_image_box_761_668_1925_1559.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_761_668_1925_1559-q972",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### KEY IDEA Biological control Control of diseases or pests by the use of biological agents.\nII. #### KEY IDEA Biological control Control of diseases or pests by the use of biological agents.\nIII. Knowledge of animal husbandry is needed to increase the production of milk, egg, meat, and other products.\nIV. Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_761_668_1925_1559.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_761_668_1925_1559-q973",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Holstein-Friesian Cow).\nAssertion (A): Foreign or exotic breeds is defined as Brown Swiss, Jersey and Holstein-Friesian.\nReason (R): Foreign or exotic breeds: Brown Swiss, Jersey and Holstein-Friesian.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_761_668_1925_1559.jpg",
+"caption": "Holstein-Friesian Cow"
+},
+{
+"id": "neet-img-image_box_812_5629_2100_6892-q981",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Vaccination?",
+"options": [
+"Aedes mosquito — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Fever, jaundice, vomiting.",
+"immunisation is a method of making the body immune to a particular disease.",
+"9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases.",
+"Aedes mosquito — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Fever, jaundice, vomiting."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: 9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases.",
+"source": "icse",
+"image": "images/img_in_image_box_812_5629_2100_6892.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_812_5629_2100_6892-q982",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Disease is an abnormal condition of a part, organ, or system of the body which affects the normal functioning of the body.\nII. ## INTRODUCTION In previous classes you have learnt about health, disease, factors responsible for causing diseases, and types of diseases namely communicable d.\nIII. Housefly — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Abdominal pain, severe diarrhoea, blood and mucus in faeces.\nIV. Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Periodic fever with chills, red blood cell count drops.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_812_5629_2100_6892.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_812_5629_2100_6892-q983",
+"topicId": "bio-ch8",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Vaccination). Which statement is INCORRECT?",
+"options": [
+"Edward Jenner first developed the technique of vaccination in 1798 as a result of a twenty-six year study of two diseases, cowpox and smallpox.",
+"Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-31 days.: Periodic fever with chills, red blood cell count drops.",
+"9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases.",
+"Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Periodic fever with chills, red blood cell count drops."
+],
+"correctOption": 3,
+"answer": "Incorrect: Anopheles mosquito (Female) — Keep away from influenza patientsWear maskVaccinationMMR Vaccination is effective.Isolation of patient for 10-12 days.: Periodic fever with chills, red blood cell count drops. Correct: 9WPBOHT1SG ##### KEY IDEAS Health is defined as a state of complete physical, mental and social well-being and not merely an absence of diseases.",
+"source": "icse",
+"image": "images/img_in_image_box_812_5629_2100_6892.jpg",
+"caption": "Vaccination"
+},
+{
+"id": "neet-img-image_box_823_756_1715_2923-q991",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "The illustration depicts A food web. Choose the accurate statement.",
+"options": [
+"Each arrow in a food chain represents “is eaten by”.",
+"There is a close interaction between the non-living (called biotic) and non-living (called abiotic) components of the environment.",
+"Water is associated with Helps the plants to carry out photosynthesis; constitutes a major part in a living organism&#x27;s body..",
+"5. Exosphere is associated with 700-10,000 km and Contain gases like hydrogen and helium, there is no air to breathe.."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Each arrow in a food chain represents “is eaten by”.",
+"source": "icse",
+"image": "images/img_in_image_box_823_756_1715_2923.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_823_756_1715_2923-q992",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. 3. Mesosphere relates to 50-80 km, Low, and Protects the earth from the celestial rocky masses..\nII. Sunlight is associated with Required for manufacturing food by green plants during photosynthesis..\nIII. Water is associated with Helps the plants to carry out photosynthesis; constitutes a major part in a non-living organism&#x27;s body..\nIV. Brief account of abiotic or non-living components: such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_823_756_1715_2923.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_823_756_1715_2923-q993",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for A food web, identify the false statement.",
+"options": [
+"Understanding ecosystems is defined as definition, interaction between biotic and abiotic factors.",
+"Organisms develop adaptations suited to live in a particular environment.",
+"Brief account of abiotic or non-living components: such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind.",
+"Each arrow in a food chain represents “is eaten by”."
+],
+"correctOption": 2,
+"answer": "Incorrect: Brief account of abiotic or non-living components: such as air, soil, water and climatic factors such as sunlight, temperature, humidity and wind. Correct: Each arrow in a food chain represents “is eaten by”.",
+"source": "icse",
+"image": "images/img_in_image_box_823_756_1715_2923.jpg",
+"caption": "A food web"
+},
+{
+"id": "neet-img-image_box_849_2102_1991_3114-q1001",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Draught animals?",
+"options": [
+"Likewise, animals provide us milk, flesh, eggs, fibre, honey, silk, lac, and many more items.",
+"Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"Milk-yielding animals or milch animals (dairy animals) — Cow, buffalo, goat and sheep.",
+"Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"source": "icse",
+"image": "images/img_in_image_box_849_2102_1991_3114.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_849_2102_1991_3114-q1002",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Likewise, animals provide us milk, flesh, eggs, fibre, honey, silk, lac, and many more items.\nII. Plants and animals provide a number of useful products to mankind.\nIII. Flesh-yielding animals — Goat, sheep, pig and poultry.\nIV. ##### Poultry Animals like chicken, domestic fowl, duck and turkey, etc., produce eggs and meat.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_849_2102_1991_3114.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_849_2102_1991_3114-q1003",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Draught animals, identify the false statement.",
+"options": [
+"Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"Animals obtain nitrogen from food but plants obtain nitrogen from the atmosphere with the help of some nitrogen fixing virus.",
+"##### Goat Like sheep, goats provide us milk, meat, hair and hide.",
+"Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry."
+],
+"correctOption": 3,
+"answer": "Incorrect: Systematic raising or rearing of animals for food and other products forms the basis of animal husbandry. Correct: Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"source": "icse",
+"image": "images/img_in_image_box_849_2102_1991_3114.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_92_4987_1690_6740-q1011",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Reproductive organs — Male?",
+"options": [
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Describe the male and female reproductive systems in humans;.",
+"#### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"Organs of the Female Reproductive system ."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"image": "images/img_in_image_box_92_4987_1690_6740.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_92_4987_1690_6740-q1012",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. #### KEY IDEA ##### Reproduction in Humans Humans reproduce sexually by the fusion of male and female gametes.\nII. Reproductive organs become functional only after sexual maturity.\nIII. Organs of the Female Reproductive system .\nIV. Organs of the Male Reproductive system .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_92_4987_1690_6740.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_92_4987_1690_6740-q1013",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Reproductive organs — Male).\nAssertion (A): Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nReason (R): Organs of the Male Reproductive system .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_92_4987_1690_6740.jpg",
+"caption": "Reproductive organs — Male"
+},
+{
+"id": "neet-img-image_box_952_574_2060_1723-q1021",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Draught animals?",
+"options": [
+"Wool, a type of fibre is obtained from animal hair.",
+"Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"Plants and animals provide a number of useful products to mankind.",
+"Milk-yielding animals or milch animals (dairy animals) — Cow, buffalo, goat and sheep."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"source": "icse",
+"image": "images/img_in_image_box_952_574_2060_1723.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_952_574_2060_1723-q1022",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Based on their use and the products provided, animals can be divided into following categories.\nII. Fungi, along with bacteria bring about the decay of dead plants and animals, both on land and in water.\nIII. All plants and animals need nitrogen gas for proper growth.\nIV. ##### Goat Like sheep, goats provide us milk, meat, hair and hide.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_952_574_2060_1723.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_952_574_2060_1723-q1023",
+"topicId": "bio-ch9",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Regarding the figure shown for Draught animals, identify the false statement.",
+"options": [
+"##### Pigs Pigs are mainly domesticated for their meat and hide.",
+"Fungi, along with bacteria bring about the decay of dead plants and animals, both on land and in water.",
+"Animals obtain nitrogen from food but plants obtain nitrogen from the atmosphere with the help of some nitrogen fixing virus.",
+"Flesh-yielding animals — Goat, sheep, pig and poultry."
+],
+"correctOption": 0,
+"answer": "Incorrect: ##### Pigs Pigs are mainly domesticated for their meat and hide. Correct: Draught animals #### Meat Providing Livestock ##### Sheep Sheep provide us milk, wool, fur and hide.",
+"source": "icse",
+"image": "images/img_in_image_box_952_574_2060_1723.jpg",
+"caption": "Draught animals"
+},
+{
+"id": "neet-img-image_box_99_6120_1389_7249-q1031",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding Pyramid of numbers for a grassland?",
+"options": [
+"Meaning of food chain, Food web, and pyramid of numbers.",
+"Pyramid of numbers for a grassland ### ABIOTIC COMPONENTS OF ECOSYSTEM 5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.",
+"Food (trophic) relationships and energy transfer through the biotic components of ecosystems may be quantified and shown diagramatically as ecological ecological pyramids.",
+"There are many types of ecosystems, namely aquatic (fresh water/ marine), terrestrial (forest/ grassland/ desert), etc."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Pyramid of numbers for a grassland ### ABIOTIC COMPONENTS OF ECOSYSTEM 5ZTOUMXR8L Among the abiotic factors the most important are climatic and edaphic factors.",
+"source": "icse",
+"image": "images/img_in_image_box_99_6120_1389_7249.jpg",
+"caption": "Pyramid of numbers for a grassland"
+},
+{
+"id": "neet-img-image_box_99_6120_1389_7249-q1032",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Biotic components is defined as consisting of producers, consumers, decomposers. Meaning of food chain, Food web, and pyramid of numbers.\nII. Interpret the relationship between different biotic components in terms of food chain, food web and pyramid of numbers;.\nIII. Pyramid of numbers : It is a graphic, stepwise representation of the number of individuals present at each trophic levels with producers kept at the base.\nIV. There are many types of ecosystems, namely aquatic (fresh water/ marine), terrestrial (forest/ grassland/ desert), etc.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_99_6120_1389_7249.jpg",
+"caption": "Pyramid of numbers for a grassland"
+},
+{
+"id": "neet-img-image_box_99_6120_1389_7249-q1033",
+"topicId": "bio-ch4",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Pyramid of numbers for a grassland).\nAssertion (A): Interpret the relationship between different biotic components in terms of food chain, food web and pyramid of numbers;.\nReason (R): Food (trophic) relationships and energy transfer through the biotic components of ecosystems may be quantified and shown diagramatically as ecological ecological pyramids.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_99_6120_1389_7249.jpg",
+"caption": "Pyramid of numbers for a grassland"
+},
+{
+"id": "neet-img-image_box_9_4752_1798_6874-q1041",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure shown, which option is correct regarding (a) Nerve cell (b) Nerve fibres grouped into a nerve?",
+"options": [
+"There are 12 pairs of spinal nerves in human.",
+"Based on the origin of nerves, the nerves are of two types .",
+"#### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"(a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the brain and the spinal cord."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: #### KEY IDEA ##### Nervous System The organ system that brings about co-ordination and integration of different body activities is called nervous system.",
+"source": "icse",
+"image": "images/img_in_image_box_9_4752_1798_6874.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_9_4752_1798_6874-q1042",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram.\nConsider the following statements:\nI. Motor nerves, which carry impulses from the brain or the spinal cord to the muscles or glands.\nII. (a) Nerve cell (b) Nerve fibres grouped into a nerve ## INTRODUCTION BI1P2D59OL Earlier you have learnt about the two main parts of the nervous system, namely the spinal cord and the spinal cord.\nIII. Nerve cells are joined end to end to form.\nIV. There are 31 pairs of cranial nerves in human.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/img_in_image_box_9_4752_1798_6874.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
+},
+{
+"id": "neet-img-image_box_9_4752_1798_6874-q1043",
+"topicId": "bio-ch7",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram ((a) Nerve cell (b) Nerve fibres grouped into a nerve).\nAssertion (A): Based on the origin of nerves, the nerves are of two types .\nReason (R): Sensory nerves, which bring impulses from the sense organs to the brain or the spinal cord.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/img_in_image_box_9_4752_1798_6874.jpg",
+"caption": "(a) Nerve cell (b) Nerve fibres grouped into a nerve"
 }
 ];
