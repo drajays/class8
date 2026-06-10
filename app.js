@@ -316,6 +316,7 @@ function _flashEl(el) {
 function jumpToNote(noteId) {
   contentTab = 'notes';
   userAnswers = {};
+  delete notesCollapsed[noteId]; // ensure the target note is expanded on arrival
   renderContent(document.getElementById('main-content'));
   setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 60);
 }
@@ -329,6 +330,26 @@ function jumpToQuestion(qId) {
 }
 
 const Q_TYPE_SHORT = { mcq:'MCQ', true_false:'T/F', fill_blank:'Fill', short_answer:'Q&A', match:'Match' };
+
+// ============================================================
+// NOTE FOLDING (collapse / expand concept cards)
+// ============================================================
+let notesCollapsed = {}; // noteId -> true when folded
+
+function toggleNote(id) {
+  const el = document.getElementById('note-' + id);
+  if (!el) return;
+  const collapsed = el.classList.toggle('collapsed'); // CSS-only fold, no re-render
+  if (collapsed) notesCollapsed[id] = true; else delete notesCollapsed[id];
+}
+
+function toggleAllNotes() {
+  const notes = appData.content.filter(c => c.topicId === selectedTopic && c.type === 'note');
+  const allFolded = notes.every(n => notesCollapsed[n.id]);
+  if (allFolded) notesCollapsed = {};
+  else notes.forEach(n => { notesCollapsed[n.id] = true; });
+  renderNotes(notes);
+}
 
 // ============================================================
 // NAVIGATION
@@ -565,26 +586,36 @@ function renderNotes(notes) {
     return;
   }
   const allQuestions = appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note');
-  body.innerHTML = notes.map((n, i) => {
+  const cards = notes.map((n, i) => {
     const linked = allQuestions.filter(q => q.linksTo === n.id);
     const linkBar = linked.length ? `<div class="xref-bar"><span class="xref-label">Test yourself:</span>${
       linked.map(q => `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${Q_TYPE_SHORT[q.type]||'Q'}</button>`).join('')
     }</div>` : '';
+    const collapsed = notesCollapsed[n.id] ? ' collapsed' : '';
     return `
-    <div class="note-block fade-in" id="note-${n.id}" style="animation-delay:${i*0.05}s">
-      <div class="note-number">${i+1}</div>
-      <h3>${escHtml(n.subtopic)}</h3>
-      <p style="font-weight:600;margin-bottom:8px">${fmtText(n.content)}</p>
-      <p>${fmtText(n.explanation||'')}</p>
-      ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong>${fmtText(n.teacherTip)}</div>`:''}
-      ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong>${fmtText(n.examTip)}</div>`:''}
-      ${linkBar}
-      <div style="margin-top:10px;display:flex;gap:6px">
-        <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
-        <button class="btn btn-sm btn-danger" onclick="deleteContent('${n.id}')">🗑️</button>
+    <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
+      <div class="note-head" onclick="toggleNote('${n.id}')">
+        <div class="note-number">${i+1}</div>
+        <h3>${escHtml(n.subtopic)}</h3>
+        <span class="note-chevron" aria-hidden="true">▾</span>
+      </div>
+      <div class="note-body">
+        <p style="font-weight:600;margin-bottom:8px">${fmtText(n.content)}</p>
+        <p>${fmtText(n.explanation||'')}</p>
+        ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong>${fmtText(n.teacherTip)}</div>`:''}
+        ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong>${fmtText(n.examTip)}</div>`:''}
+        ${linkBar}
+        <div style="margin-top:10px;display:flex;gap:6px">
+          <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
+          <button class="btn btn-sm btn-danger" onclick="deleteContent('${n.id}')">🗑️</button>
+        </div>
       </div>
     </div>`;
   }).join('');
+  const allFolded = notes.every(n => notesCollapsed[n.id]);
+  body.innerHTML =
+    `<div class="notes-toolbar"><button class="btn btn-sm btn-outline" onclick="toggleAllNotes()">${allFolded ? '⊞ Expand all' : '⊟ Collapse all'}</button></div>` +
+    `<div class="notes-grid">${cards}</div>`;
 }
 
 function renderQuestions(questions) {
@@ -609,9 +640,9 @@ function renderQuestions(questions) {
   if (filtered.length === 0) {
     qHtml = '<div class="empty-state"><div class="empty-icon">❓</div><h3>No questions of this type</h3></div>';
   } else {
-    filtered.forEach((q, i) => {
-      qHtml += renderSingleQuestion(q, i);
-    });
+    qHtml = '<div class="questions-grid">' +
+      filtered.map((q, i) => renderSingleQuestion(q, i)).join('') +
+      '</div>';
   }
 
   body.innerHTML = tabsHtml + qHtml;
@@ -624,9 +655,12 @@ function setQuestionFilter(f) {
   renderQuestions(contents.filter(c=>c.type!=='note'));
 }
 
-function renderSingleQuestion(q, idx) {
+function renderSingleQuestion(q, idx, targeted) {
   const answered = userAnswers[q.id];
-  let html = `<div class="question-card fade-in" id="qcard-${q.id}" style="animation-delay:${idx*0.04}s">`;
+  // Cap the stagger so long lists never wait seconds to appear; a targeted
+  // single-card re-render skips the fade entirely (updates in place).
+  const delay = Math.min(idx, 10) * 0.025;
+  let html = `<div class="question-card${targeted ? '' : ' fade-in'}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   html += `<div class="q-label">${typeLabels[q.type]||q.type}${
@@ -691,22 +725,28 @@ function renderSingleQuestion(q, idx) {
   return html;
 }
 
+// Re-render ONLY the affected question card instead of the whole list.
+// This keeps answering instant even on chapters with 130+ questions.
+function updateQuestionCard(id) {
+  const card = document.getElementById('qcard-' + id);
+  const q = appData.content.find(c => c.id === id);
+  if (!card || !q) return;
+  const idx = parseInt(card.getAttribute('data-idx'), 10) || 0;
+  card.outerHTML = renderSingleQuestion(q, idx, true);
+}
+
 function answerTF(id, val) {
   userAnswers[id] = val;
   const q = appData.content.find(c => c.id === id);
   if (q) recordAttempt(id, val === q.correctAnswer);
-  const contents = appData.content.filter(c=>c.topicId===selectedTopic);
-  renderQuestions(contents.filter(c=>c.type!=='note'));
-  document.getElementById('ans-'+id).classList.add('show');
+  updateQuestionCard(id);
 }
 
 function answerMCQ(id, val) {
   userAnswers[id] = val;
   const q = appData.content.find(c => c.id === id);
   if (q) recordAttempt(id, val === q.correctOption);
-  const contents = appData.content.filter(c=>c.topicId===selectedTopic);
-  renderQuestions(contents.filter(c=>c.type!=='note'));
-  document.getElementById('ans-'+id).classList.add('show');
+  updateQuestionCard(id);
 }
 
 function checkBlank(id) {
@@ -714,9 +754,7 @@ function checkBlank(id) {
   userAnswers[id] = input.value;
   const q = appData.content.find(c => c.id === id);
   if (q) recordAttempt(id, input.value.toLowerCase().trim() === (q.blankAnswer||'').toLowerCase().trim());
-  const contents = appData.content.filter(c=>c.topicId===selectedTopic);
-  renderQuestions(contents.filter(c=>c.type!=='note'));
-  document.getElementById('ans-'+id).classList.add('show');
+  updateQuestionCard(id);
 }
 
 function toggleAnswer(elId) {
@@ -963,7 +1001,15 @@ function filterManager() {
 // ============================================================
 // SEARCH
 // ============================================================
+let _searchTimer = null;
+// Debounced entry point bound to the input's oninput — avoids scanning all
+// records on every keystroke.
 function searchTopics(query) {
+  clearTimeout(_searchTimer);
+  _searchTimer = setTimeout(() => _runSearch(query), 160);
+}
+
+function _runSearch(query) {
   if (!query.trim()) { render(); return; }
   const q = query.toLowerCase();
   const results = appData.content.filter(c =>
