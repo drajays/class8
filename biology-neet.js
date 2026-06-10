@@ -3554,10 +3554,10 @@ const BIOLOGY_NEET_DATA = [
 "type": "note",
 "subtopic": "1. Introduction",
 "content": "Reproduction is one of the most important functions of living organisms. It is essential for perpetuation of species. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative…\n\n• Self Pollination is associated with Cross Pollination.\n• Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\n• Review of the parts of a typical flower.\n• Fertilisation process in brief by flow chart.\n• Main organs of male and female reproductive system.",
-"explanation": "Definitions:\n• Self Pollination — associated with Cross Pollination\n• Reproduction — one of the most important functions of living organisms\n• There — two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n\nAlso know:\n• Similarly in plants, seeds grow into young seedlings.\n• Organs of the Male Reproductive system.\n• Organs of the Female Reproductive system.",
+"explanation": "Definitions:\n• Self Pollination — associated with Cross Pollination\n• Reproduction — one of the most important functions of living organisms\n• There — two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n\nAlso know:\n• Similarly in plants, seeds grow into young seedlings.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 11
+"linkedMcqCount": 14
 },
 {
 "id": "neet-s2-sec_02",
@@ -3568,18 +3568,18 @@ const BIOLOGY_NEET_DATA = [
 "explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• Reproduction is, thus, the — of perpetuation or continuation of species\n\nAlso know:\n• Living organisms reproduce asexually, by several means such as.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 8
+"linkedMcqCount": 5
 },
 {
 "id": "neet-s2-sec_03",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "3. Modes Of Reproduction",
-"content": "Living organisms exhibit several modes of reproduction. These are broadly grouped into two types — sexual and asexual\n\n• Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\n• Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\n• New individual is produced from a single parent only.\n• Each of the two parts then grows into full sized identical cells called the daughter cells.\n• Budding is commonly observed in yeast.",
-"explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n• Asexual reproduction, on the other hand, — the type of reproduction that does not involve the fusion of gametes\n• New individual — produced from a single parent only\n\nAlso know:\n• A bulb-like projection called the bud is formed on the parent body.\n• Then, one of the two nuclei passes into the bud.\n• Each fragment or piece then grows into a new individual.\n• Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
+"content": "Living organisms exhibit several modes of reproduction. These are broadly grouped into two types — sexual and asexual\n\n• Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\n• Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\n• New individual is produced from a single parent only.\n• A bulb-like projection called the bud is formed on the parent body.\n• Then, one of the two nuclei passes into the bud.",
+"explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n• Asexual reproduction, on the other hand, — the type of reproduction that does not involve the fusion of gametes\n• New individual — produced from a single parent only\n• A bulb-like projection called the bud — formed on the parent body\n\nAlso know:\n• Each fragment or piece then grows into a new individual.\n• Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 14
+"linkedMcqCount": 12
 },
 {
 "id": "neet-s2-sec_04",
@@ -3590,7 +3590,7 @@ const BIOLOGY_NEET_DATA = [
 "explanation": "",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 2
+"linkedMcqCount": 3
 },
 {
 "id": "neet-s2-sec_05",
@@ -3598,51 +3598,51 @@ const BIOLOGY_NEET_DATA = [
 "type": "note",
 "subtopic": "5. Vegetative Propagation",
 "content": "It is an asexual method of reproduction in plants where vegetative parts, namely the root, stem or leaf, give rise to new plants. Reproductive organs do not take part in this method of reproduction and, therefore, seeds…\n\n• Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\n• New plants arise from the swollen roots buried in the soil.\n• Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.\n• Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.\n• Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).",
-"explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• There — two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction\n\nAlso know:\n• Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners.\n• Axillary buds which are present on the nodes of stem grow into new plants.\n• Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\n• New plants develop from their nodes.",
+"explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• There — two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction\n\nAlso know:\n• Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners.\n• Axillary buds which are present on the nodes of stem grow into new plants.\n• Vegetative Propagation by Aerial Stems is defined as In strawberry, long stems grow over the soil surface and are called runners . Axillary buds which are present on the nodes of stem grow into new plants.\n• Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 19
+"linkedMcqCount": 28
 },
 {
 "id": "neet-s2-sec_06",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "6. Advantages of Vegetative Propagation",
-"content": "It is an easier, rapid and less expensive method of propagation\n\n• New plants develop from their nodes.\n• Plants produced by this method are identical copies of the parent plant and do not show variations.\n• Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\n• Such plants can be easily grown by this method.\n• Overcrowding often takes place near the parent plant.\n• Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
-"explanation": "Also know:\n• Cuttings are short lengths of the plant.\n• (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\n• Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.\n• Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.",
+"content": "It is an easier, rapid and less expensive method of propagation\n\n• Plants produced by this method are identical copies of the parent plant and do not show variations.\n• Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\n• Such plants can be easily grown by this method.\n• Overcrowding often takes place near the parent plant.\n• Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\n• Cuttings are short lengths of the plant.",
+"explanation": "Also know:\n• (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\n• Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.\n• Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.\n• (b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 7
+"linkedMcqCount": 18
 },
 {
 "id": "neet-s2-sec_07",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "7. Grafting",
-"content": "In grafting, the desired plant is formed by combining the parts from\n\n• Scion is the plant which one wants to propagate and so it is grafted on to the stock.\n• Then the two ends are tied tightly.\n• Small parts of this tissue are kept in another medium which induces the formation of plantlets.\n• Male parent produces the male gamete and the female parent produces the female gamete.\n• A male gamete is usually small with a nucleus and little cytoplasm.",
+"content": "In grafting, the desired plant is formed by combining the parts from\n\n• Scion is the plant which one wants to propagate and so it is grafted on to the stock.\n• Small parts of this tissue are kept in another medium which induces the formation of plantlets.\n• Male parent produces the male gamete and the female parent produces the female gamete.",
 "explanation": "",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 2
+"linkedMcqCount": 3
 },
 {
 "id": "neet-s2-sec_08",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "8. Importance of sexual reproduction",
-"content": "Sexual reproduction brings about the fusion of gametes from both the parents. The zygote thus formed possesses characters of both parents. This also helps to bring variations among new individuals. You can now…\n\n• Do you find such variations in organisms which reproduce asexually?.",
+"content": "Sexual reproduction brings about the fusion of gametes from both the parents. The zygote thus formed possesses characters of both parents. This also helps to bring variations among new individuals. You can now…",
 "explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 3
+"linkedMcqCount": 2
 },
 {
 "id": "neet-s2-sec_09",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "9. Sexual Reproduction In Plants",
-"content": "In previous class, you have learnt about the structure of a flower. A flower has four parts arranged in rings or whorls. These parts, from the outside to inside are sepals, petals, stamens and carpel . Of these four…\n\n• Name of the individual unit is associated with Function.\n• (4 whorls), and their structure and function.\n• Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\n• Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\n• Petals form the next inner whorl (corolla) and are brightly coloured structures.",
-"explanation": "Definitions:\n• Name of the individual unit — associated with Function\n• Reproduction — one of the most important functions of living organisms\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n\nAlso know:\n• Stamens are next to corolla and they form the male parts of a flower.\n• A stamen consists of an anther and a filament.\n• An anther is a swollen structure present on the tip of the filament.\n• Carpel is the central part of the flower.",
+"content": "In previous class, you have learnt about the structure of a flower. A flower has four parts arranged in rings or whorls. These parts, from the outside to inside are sepals, petals, stamens and carpel . Of these four…\n\n• (4 whorls), and their structure and function.\n• Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\n• Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\n• Petals form the next inner whorl (corolla) and are brightly coloured structures.\n• Stamens are next to corolla and they form the male parts of a flower.",
+"explanation": "Definitions:\n• Reproduction — one of the most important functions of living organisms\n• Sexual reproduction — characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female\n\nAlso know:\n• A stamen consists of an anther and a filament.\n• An anther is a swollen structure present on the tip of the filament.\n• Carpel is the central part of the flower.\n• A carpel consists of a basal swollen portion called the ovary.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
 "linkedMcqCount": 13
@@ -3652,33 +3652,33 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "10. Investigation 2.1",
-"content": "To dissect a bisexual flower to study different whorls\n\n• 1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species.\n• 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.\n• 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical.\n• Flower (China rose or mustard), Scissors, marker, paper.\n• Ake the flower and start the dissection from the outermost whorl to innermost whorl.\n• Firstly cut the sepals using scissors.",
-"explanation": "Definitions:\n• Self Pollination — associated with Cross Pollination\n• 4. No wastage of pollen grains occurs and thus, it — economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical\n\nAlso know:\n• Then cut the bright red coloured petals of China rose.\n• Then take out the stamens using scissors.\n• Tap the anther to collect the pollen grains.\n• Cut the pistil lengthwise in half.",
+"content": "To dissect a bisexual flower to study different whorls\n\n• 1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species.\n• 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.\n• 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical.\n• Flower (China rose or mustard), Scissors, marker, paper.\n• Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\n• Display all these structures on a white paper.",
+"explanation": "Definitions:\n• Self Pollination — associated with Cross Pollination\n• 4. No wastage of pollen grains occurs and thus, it — economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical\n\nAlso know:\n• Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\n• Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.\n• Cross pollination often involves various external agents to carry pollen grains from one flower to another.\n• No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 23
+"linkedMcqCount": 24
 },
 {
 "id": "neet-s2-sec_11",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "11. Characteristics of Insect-Pollinated Flowers :",
-"content": "1. Flowers have large and brightly coloured petals to attract insects\n\n• 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar.\n• Insect pollinated flowers is associated with Wind pollinated flowers.\n• 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar.\n• Three characteristics of plants pollinated by insects, water and wind (with examples).\n• Characteristics of flowers of each kind.\n• Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.",
-"explanation": "Definitions:\n• 5. Flowers — not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar\n• Insect pollinated flowers — associated with Wind pollinated flowers\n• 2. Flowers produce scent and nectar. — associated with Flowers do not produce scent and nectar\n\nAlso know:\n• Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\n• Pollination by insects is called entomophily.\n• Flowers have large and brightly coloured petals to attract insects.\n• Pollen grains are rough and sticky.",
+"content": "1. Flowers have large and brightly coloured petals to attract insects\n\n• 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar.\n• Insect pollinated flowers is associated with Wind pollinated flowers.\n• 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar.\n• Three characteristics of plants pollinated by insects, water and wind (with examples).\n• Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\n• Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.",
+"explanation": "Definitions:\n• 5. Flowers — not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar\n• Insect pollinated flowers — associated with Wind pollinated flowers\n• 2. Flowers produce scent and nectar. — associated with Flowers do not produce scent and nectar\n\nAlso know:\n• Flowers have large and brightly coloured petals to attract insects.\n• Flowers produce scent and nectar to attract insect pollinators.\n• Examples includes - China-rose, pea, and Salvia.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 17
+"linkedMcqCount": 11
 },
 {
 "id": "neet-s2-sec_12",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "12. Characteristics of Wind-pollinated flowers",
-"content": "Flowers are small with long filaments and large, feathery and sticky stigmas\n\n• 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers.\n• 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry.\n• 4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity.\n• 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery.\n• Characteristics of flowers of each kind.\n• Tap the anther to collect the pollen grains.",
-"explanation": "Definitions:\n• 3. Pollen grains — produced in small number. is associated with Pollen grains are produced in large numbers\n• 4. Pollen grains — produced in small quantity. is associated with Pollen grains are produced in large quantity\n• 6. Stigmas — sticky, flat or knob-like. is associated with Stigmas are large and feathery\n\nAlso know:\n• Flowers are small with long filaments and large, feathery and sticky stigmas.\n• Pollen grains are light and dry.\n• Pollen grains are produced in large numbers.\n• Flowers are not showy and do not produce.",
+"content": "Flowers are small with long filaments and large, feathery and sticky stigmas\n\n• 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers.\n• 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry.\n• 4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity.\n• 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery.\n• Pollen grains are produced in large numbers.",
+"explanation": "Definitions:\n• 3. Pollen grains — produced in small number. is associated with Pollen grains are produced in large numbers\n• 4. Pollen grains — produced in small quantity. is associated with Pollen grains are produced in large quantity\n• 6. Stigmas — sticky, flat or knob-like. is associated with Stigmas are large and feathery\n\nAlso know:\n• Flowers are not showy and do not produce.\n• Pollen grains are produced in large quantities.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 11
+"linkedMcqCount": 19
 },
 {
 "id": "neet-s2-sec_13",
@@ -3689,7 +3689,7 @@ const BIOLOGY_NEET_DATA = [
 "explanation": "Definitions:\n• 1. Flowers have large and brightly coloured petals. — associated with Flowers are small and do not have showy petals\n• 5. Filaments — short. is associated with Filaments are long to expose anthers in the air\n• 7. Essential whorls — not much exposed. is associated with Male and female parts are exposed to wind\n\nAlso know:\n• Humans carry out artificial pollination in some cereal crops and garden plants.",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 26
+"linkedMcqCount": 22
 },
 {
 "id": "neet-s2-sec_14",
@@ -3699,7 +3699,8 @@ const BIOLOGY_NEET_DATA = [
 "content": "To produce varieties with high-yielding seeds\n\n• Potato plants produce flowers, fruits and seeds.",
 "explanation": "",
 "source": "icse",
-"examTip": "Read this section, then tap Practice linked MCQs before moving on."
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 2
 },
 {
 "id": "neet-s2-sec_15",
@@ -3710,125 +3711,103 @@ const BIOLOGY_NEET_DATA = [
 "explanation": "",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 13
+"linkedMcqCount": 6
 },
 {
 "id": "neet-s2-sec_16",
 "topicId": "bio-ch2",
 "type": "note",
 "subtopic": "16. Fertilisation : Formation of Fruit and Seed",
-"content": "The process of fertilisation takes place after pollination. Pollen grains germinate on the stigma and form the pollen tube . The pollen tube grows downwards towards the ovary through the style. Ovary contains the ovule.…\n\n• Pollen grains contain the male gamete.\n• Fertilisation : Formation of Fruit and Seed.\n• Seeds are thus, present, inside the fruit.\n• Other parts of the flower like the sepals and petals generally fall off after fertilisation.\n• Fertilisation takes place inside the female's body in the oviduct.",
+"content": "The process of fertilisation takes place after pollination. Pollen grains germinate on the stigma and form the pollen tube . The pollen tube grows downwards towards the ovary through the style. Ovary contains the ovule.…\n\n• Male parent produces the male gamete and the female parent produces the female gamete.\n• Fertilisation : Formation of Fruit and Seed.\n• Fertilisation is defined as Formation of Fruit and Seed.\n• Seeds are thus, present, inside the fruit.\n• Other parts of the flower like the sepals and petals generally fall off after fertilisation.",
 "explanation": "",
 "source": "icse",
 "examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 10
-},
-{
-"id": "neet-s2-sec_17",
-"topicId": "bio-ch3",
-"type": "note",
-"subtopic": "17. Sexual Reproduction In Humans",
-"content": "Just like plants and other animals, human beings also produce offspring of their own kind\n\n• Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\n• During the age of 14 and 16, following changes take place in males.\n• Growth of hair on face and other body parts takes place.\n• Muscles start developing and body becomes masculine.\n• Similarly, in females between 11-13 years of age, following changes occur.",
-"explanation": "Also know:\n• Organs of the Male Reproductive system.\n• A pair of testes (singular testis) produce male gametes or sperms.\n• Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\n• Vas deferens opens into urethra and reaches the penis.",
-"source": "icse",
-"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 9
-},
-{
-"id": "neet-s2-sec_18",
-"topicId": "bio-ch3",
-"type": "note",
-"subtopic": "18. (FertNisation)",
-"content": "In a human testis, millions of sperms are produced each day. In females, one egg is produced every month in ovaries alternatively. One egg cell is released from one of the ovaries approximately every 28 days\n\n• Male parent produces the male gamete and the female parent produces the female gamete.\n• Many sperms reach the egg, but only one fuses with the egg and fertilise it.\n• After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\n• Here it develops over the next nine months into a baby.",
-"explanation": "",
-"source": "icse",
-"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
-"linkedMcqCount": 12
+"linkedMcqCount": 19
 },
 {
 "id": "neet-s2-q1",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is correct?",
 "options": [
-"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
-"7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
-"non-living organisms reproduce asexually, by several means such as .",
-"Conidia are asexual reproductive spores in fungi."
+"self pollination often involves various external agents to carry pollen grains from one flower to another.",
+"Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).",
+"Humans carry out artificial pollination in some cereal crops and garden plants.",
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Conidia are asexual reproductive spores in fungi.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q2",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Identify the true statement from the following options.",
 "options": [
-"A bulb-like projection called the bud is formed on the parent body.",
-"Sexual reproduction brings about the fusion of gametes from both the parents.",
-"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
-"Likewise, ginger is a modified swollen underground stem (rhizome) with stored food."
+"non-living organisms exhibit several modes of reproduction.",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Cover the entire soil after some days due to vegetative propagation;.",
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: A bulb-like projection called the bud is formed on the parent body.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
 "source": "icse",
-"linksTo": "neet-s2-sec_08"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q3",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Epididymis is found on top of the testes and it stores sperms;.",
-"Reproduction is one of the most important properties of non-living organisms.",
-"Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
-"Flowers have large and brightly coloured petals to attract insects."
+"Sexual reproduction brings about the fusion of gametes from both the parents.",
+"Review of the parts of a typical flower.",
+"An anther is a swollen structure present on the tip of the filament.",
+"Cuttings are short lengths of the plant."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Review of the parts of a typical flower.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_08"
 },
 {
 "id": "neet-s2-q4",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Have you noticed the flowers pollinated by wind?.",
-"Eventually organisms die, leaving behind offsprings of.",
-"Such flowers are called bisexual or hermaphrodite flowers.",
-"Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes."
+"There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
+"7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
+"Insect pollinated flowers is associated with Wind pollinated flowers.",
+"6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery.."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Such flowers are called bisexual or hermaphrodite flowers.",
+"correctOption": 1,
+"answer": "Correct as per chapter: 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q5",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is correct?",
 "options": [
-"No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
-"Then cut the bright red coloured petals of China rose.",
-"Spores are very small in size and they have thick walls.",
-"Many sperms reach the egg, but only one fuses with the egg and fertilise it."
+"Reproduction is, thus, the means of perpetuation or continuation of species.",
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"Humans carry out artificial pollination in some cereal crops and garden plants.",
+"Pollen grains are produced in large quantities."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
+"answer": "Correct as per chapter: Reproduction is, thus, the means of perpetuation or continuation of species.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q6",
@@ -3837,15 +3816,15 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
-"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
-"Here, sperm and ovum fuse together and fertilisation takes place.",
-"Male parent produces the male gamete and the female parent produces the female gamete."
+"Such flowers are called bisexual or hermaphrodite flowers.",
+"Overcrowding often takes place near the parent plant.",
+"Flower (China rose or mustard), Scissors, marker, paper.",
+"Pollen grains are produced in large quantities."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Here, sperm and ovum fuse together and fertilisation takes place.",
+"correctOption": 0,
+"answer": "Correct as per chapter: Such flowers are called bisexual or hermaphrodite flowers.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q7",
@@ -3854,168 +3833,168 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Select the correct statement based on the chapter content.",
 "options": [
-"(a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.",
-"Stamens are next to corolla and they form the male parts of a flower.",
-"Ake the flower and start the dissection from the outermost whorl to innermost whorl.",
-"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination."
+"After sometime, roots grow from the stem part buried in the soil.",
+"Living organisms exhibit several modes of reproduction.",
+"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
+"Small parts of this tissue are kept in another medium which induces the formation of plantlets."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.",
+"correctOption": 0,
+"answer": "Correct as per chapter: After sometime, roots grow from the stem part buried in the soil.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q8",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
-"There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
-"non-living organisms reproduce asexually, by several means such as .",
-"Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily)."
+"Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).",
+"Fertilisation is defined as Formation of Fruit and Seed.",
+"Sexual reproduction brings about the fusion of gametes from both the parents.",
+"Pollen grains are produced in large quantities."
 ],
 "correctOption": 3,
-"answer": "Correct as per chapter: Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).",
+"answer": "Correct as per chapter: Pollen grains are produced in large quantities.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q9",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
-"options": [
-"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
-"Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).",
-"One egg cell is released from one of the ovaries approximately every 28 days.",
-"A male gamete is usually small with a nucleus and little cytoplasm."
-],
-"correctOption": 0,
-"answer": "Correct as per chapter: 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
-"source": "icse",
-"linksTo": "neet-s2-sec_18"
-},
-{
-"id": "neet-s2-q10",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
 "question": "Which one of the following is scientifically accurate as per the text?",
 "options": [
-"Fertilisation process in brief by flow chart.",
-"Axillary buds which are present on the nodes of stem grow into new plants.",
-"Just like plants and other animals, human beings also produce offspring of their own kind.",
-"Epididymis is found on top of the testes and it stores sperms;."
+"During their life span, organisms perform various life functions, including reproduction.",
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"Reproduction is, thus, the means of perpetuation or continuation of species.",
+"Overcrowding often takes place near the parent plant."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Fertilisation process in brief by flow chart.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Overcrowding often takes place near the parent plant.",
 "source": "icse",
-"linksTo": "neet-s2-sec_17"
+"linksTo": "neet-s2-sec_02"
+},
+{
+"id": "neet-s2-q10",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
+"Conidia are asexual reproductive spores in fungi."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q11",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"An anther is a swollen structure present on the tip of the filament.",
+"Essential whorls are not much exposed. Male and female parts are exposed to wind.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
 "Living organisms reproduce asexually, by several means such as .",
-"Similarly, in females between 11-13 years of age, following changes occur.",
-"Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications."
+"Understand how grass plants which are planted at some distance from each other."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Living organisms reproduce asexually, by several means such as .",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_03"
 },
 {
 "id": "neet-s2-q12",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species..",
-"Tap the anther to collect the pollen grains.",
-"Pollen grains are rough and sticky.",
-"Potato plants produce flowers, fruits and seeds."
+"A stamen consists of an anther and a filament .",
+"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"non-living organisms reproduce asexually, by several means such as .",
+"Such flowers are called bisexual or hermaphrodite flowers."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Tap the anther to collect the pollen grains.",
+"correctOption": 0,
+"answer": "Correct as per chapter: A stamen consists of an anther and a filament .",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q13",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
-"Epididymis is found on top of the testes and it stores sperms;.",
-"Flower (China rose or mustard), Scissors, marker, paper.",
-"Cuttings are short lengths of the plant."
+"Fertilisation process in brief by flow chart.",
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
+"(b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"Self Pollination is associated with Cross Pollination."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
+"answer": "Correct as per chapter: Fertilisation process in brief by flow chart.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q14",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
-"6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..",
-"Stamens are next to corolla and they form the male parts of a flower.",
-"Reproduction is one of the most important functions of non-living organisms."
+"All non-living organisms have a fixed life span.",
+"Fertilisation is defined as Formation of Fruit and Seed.",
+"Small parts of this tissue are kept in another medium which induces the formation of plantlets.",
+"Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Small parts of this tissue are kept in another medium which induces the formation of plantlets.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_07"
 },
 {
 "id": "neet-s2-q15",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Overcrowding often takes place near the parent plant.",
-"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
-"A pair of testes (singular testis) produce male gametes or sperms.",
-"non-living organisms exhibit several modes of reproduction."
+"Potato plants produce flowers, fruits and seeds.",
+"5. Filaments are short. is associated with Filaments are long to expose anthers in the air..",
+"Each fragment or piece then grows into a new individual .",
+"Eventually organisms die, leaving behind offsprings of."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Overcrowding often takes place near the parent plant.",
+"correctOption": 1,
+"answer": "Correct as per chapter: 5. Filaments are short. is associated with Filaments are long to expose anthers in the air..",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q16",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Budding is commonly observed in yeast.",
-"All living organisms have a fixed life span.",
-"Plants produced by this method are identical copies of the parent plant and do not show variations.",
-"Stamens are next to corolla and they form the male parts of a flower."
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
+"Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).",
+"Three characteristics of plants pollinated by insects, water and wind (with examples).",
+"Each fragment or piece then grows into a new individual ."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Budding is commonly observed in yeast.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Each fragment or piece then grows into a new individual .",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q17",
@@ -4024,66 +4003,66 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Which of the following statements is correct?",
 "options": [
-"Three characteristics of plants pollinated by insects, water and wind (with examples).",
-"Vas deferens opens into urethra and reaches the penis.",
-"non-living organisms reproduce asexually, by several means such as .",
-"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower."
+"Such plants can be easily grown by this method.",
+"After sometime, roots grow from the stem part buried in the soil.",
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
+"Petals form the next inner whorl (corolla) and are brightly coloured structures."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Vas deferens opens into urethra and reaches the penis.",
+"correctOption": 2,
+"answer": "Correct as per chapter: 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q18",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Pollination by insects is called entomophily.",
-"Pollen grains germinate on the stigma and form the pollen tube .",
-"non-living organisms exhibit several modes of reproduction.",
-"Stamens are next to corolla and they form the male parts of a flower."
+"Fertilisation process in brief by flow chart.",
+"Sexual reproduction brings about the fusion of gametes from both the parents.",
+"Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.",
+"Cross pollination often involves various external agents to carry pollen grains from one flower to another."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Pollination by insects is called entomophily.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Sexual reproduction brings about the fusion of gametes from both the parents.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q19",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
-"Other parts of the flower like the sepals and petals generally fall off after fertilisation.",
-"Similarly, in females between 11-13 years of age, following changes occur.",
-"Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting."
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
+"Flowers are small with long filaments and large, feathery and sticky stigmas.",
+"Understand how grass plants which are planted at some distance from each other.",
+"3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry.."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"correctOption": 3,
+"answer": "Correct as per chapter: 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q20",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Three characteristics of plants pollinated by insects, water and wind (with examples).",
-"Pollen grains are produced in large quantities.",
-"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
-"Such flowers are called bisexual or hermaphrodite flowers."
+"New individual is produced from a single parent only.",
+"Similarly in plants, seeds grow into young seedlings.",
+"Potato plants produce flowers, fruits and seeds.",
+"Other parts of the flower like the sepals and petals generally fall off after fertilisation."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Other parts of the flower like the sepals and petals generally fall off after fertilisation.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q21",
@@ -4092,98 +4071,98 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Organs of the Male Reproductive system .",
-"Some of these reach the feathery stigma of another flower, thus, bringing about pollination.",
-"During the age of 14 and 10, following changes take place in males.",
-"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;."
+"New individual is produced from a single parent only.",
+"Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"(a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.",
+"Examples includes - China-rose, pea, and Salvia."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Organs of the Male Reproductive system .",
+"correctOption": 1,
+"answer": "Correct as per chapter: Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q22",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is correct?",
 "options": [
-"Now, this new plant can be cut from the parent plant and planted as a new independent plant.",
-"Here, sperm and ovum fuse together and fertilisation takes place.",
-"Flowers have large and brightly coloured petals to attract insects.",
-"Self Pollination is associated with Cross Pollination."
+"New individual is produced from a single parent only.",
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination.",
+"Overcrowding often takes place near the parent plant.",
+"Describe the process of sexual reproduction in plants, involving different means of pollination;."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Flowers have large and brightly coloured petals to attract insects.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Describe the process of sexual reproduction in plants, involving different means of pollination;.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_15"
 },
 {
 "id": "neet-s2-q23",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.",
-"All non-living organisms have a fixed life span.",
-"Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
-"Flower (China rose or mustard), Scissors, marker, paper."
+"Then, one of the two nuclei passes into the bud.",
+"Insect pollinated flowers is associated with Wind pollinated flowers.",
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Pollen grains are produced in large numbers."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Flower (China rose or mustard), Scissors, marker, paper.",
+"correctOption": 0,
+"answer": "Correct as per chapter: Then, one of the two nuclei passes into the bud.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q24",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is correct?",
 "options": [
-"Review of the parts of a typical flower.",
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
-"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
-"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical.."
+"Living organisms reproduce asexually, by several means such as .",
+"Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.",
+"Fertilisation process in brief by flow chart.",
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Review of the parts of a typical flower.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q25",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
-"New plants develop from their nodes.",
-"cross Pollination is associated with Cross Pollination.",
-"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus."
+"(b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
+"Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
+"Potato plants produce flowers, fruits and seeds."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
 "source": "icse",
-"linksTo": "neet-s2-sec_17"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q26",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
-"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
-"A stamen consists of an anther and a filament .",
-"Fertilisation process in brief by flow chart."
+"Cross pollination often involves various external agents to carry pollen grains from one flower to another.",
+"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
+"Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"Male parent produces the male gamete and the female parent produces the female gamete."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: A stamen consists of an anther and a filament .",
+"correctOption": 1,
+"answer": "Correct as per chapter: 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
 "source": "icse",
 "linksTo": "neet-s2-sec_10"
 },
@@ -4192,102 +4171,102 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
-"Have you noticed the flowers pollinated by wind?.",
-"Pollen grains germinate on the stigma and form the pollen tube .",
-"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.."
+"Eventually organisms die, leaving behind offsprings of.",
+"Self Pollination is associated with Cross Pollination.",
+"Fertilisation is defined as Formation of Fruit and Seed.",
+"Display all these structures on a white paper."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
+"correctOption": 1,
+"answer": "Correct as per chapter: Self Pollination is associated with Cross Pollination.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_02"
 },
 {
 "id": "neet-s2-q28",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is correct?",
 "options": [
-"Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.",
-"Vagina : Cervix is connected to the muscular tube-like vagina.",
-"Fertilisation : Formation of Fruit and Seed.",
-"Seeds are thus, present, inside the fruit."
+"Then, one of the two nuclei passes into the bud.",
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
+"A flower has four parts arranged in rings or whorls.",
+"self pollination often involves various external agents to carry pollen grains from one flower to another."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Seeds are thus, present, inside the fruit.",
+"correctOption": 2,
+"answer": "Correct as per chapter: A flower has four parts arranged in rings or whorls.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_03"
 },
 {
 "id": "neet-s2-q29",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
-"Display all these structures on a white paper.",
-"4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity..",
-"Review of the parts of a typical flower."
+"Under favourable conditions, the buds on the stem give rise to new plants.",
+"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"Seeds are thus, present, inside the fruit.",
+"A stamen consists of an anther and a filament ."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Seeds are thus, present, inside the fruit.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q30",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"One egg cell is released from one of the ovaries approximately every 28 days.",
-"Pollen grains are rough and sticky.",
-"Flowers produce scent and nectar to attract insect pollinators.",
-"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc."
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination.",
+"Insect pollinated flowers is associated with Wind pollinated flowers.",
+"Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.",
+"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.."
 ],
 "correctOption": 1,
-"answer": "Correct as per chapter: Pollen grains are rough and sticky.",
+"answer": "Correct as per chapter: Insect pollinated flowers is associated with Wind pollinated flowers.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q31",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"During the age of 14 and 16, following changes take place in males.",
-"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
-"Such flowers are called bisexual or hermaphrodite flowers.",
-"Carpel is the central part of the flower."
+"Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.",
+"Under favourable conditions, the buds on the stem give rise to new plants.",
+"Flowers have large and brightly coloured petals to attract insects.",
+"New plants arise from the swollen roots buried in the soil ."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Carpel is the central part of the flower.",
+"correctOption": 0,
+"answer": "Correct as per chapter: Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q32",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Some of these reach the feathery stigma of another flower, thus, bringing about pollination.",
-"New plants develop from their nodes.",
-"Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
-"non-living organisms reproduce asexually, by several means such as ."
+"Pollen grains are produced in large numbers.",
+"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
+"Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination."
 ],
 "correctOption": 2,
-"answer": "Correct as per chapter: Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
+"answer": "Correct as per chapter: Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q33",
@@ -4296,15 +4275,15 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Vagina : Cervix is connected to the muscular tube-like vagina.",
-"Vas deferens opens into urethra and reaches the penis.",
-"Do you find such variations in organisms which reproduce asexually?.",
-"A flower has four parts arranged in rings or whorls."
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.",
+"Other parts of the flower like the sepals and petals generally fall off after fertilisation."
 ],
 "correctOption": 2,
-"answer": "Correct as per chapter: Do you find such variations in organisms which reproduce asexually?.",
+"answer": "Correct as per chapter: Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.",
 "source": "icse",
-"linksTo": "neet-s2-sec_08"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q34",
@@ -4313,32 +4292,32 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Which of the following statements is correct?",
 "options": [
-"Axillary buds which are present on the nodes of stem grow into new plants.",
-"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
-"Have you noticed the flowers pollinated by wind?.",
-"Pollen grains contain the male gamete."
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"Humans carry out artificial pollination in some cereal crops and garden plants.",
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"correctOption": 0,
+"answer": "Correct as per chapter: Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_15"
 },
 {
 "id": "neet-s2-q35",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which one of the following is scientifically accurate as per the text?",
 "options": [
-"Pollen grains are light and dry.",
-"Fertilisation takes place inside the female's body in the oviduct.",
-"Examples includes - China-rose, pea, and Salvia.",
-"Pollen grains germinate on the stigma and form the pollen tube ."
+"Living organisms reproduce asexually, by several means such as .",
+"4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity..",
+"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
+"A flower has four parts arranged in rings or whorls."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Pollen grains are light and dry.",
+"correctOption": 1,
+"answer": "Correct as per chapter: 4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity..",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q36",
@@ -4347,47 +4326,47 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.",
-"Cover the entire soil after some days due to vegetative propagation;.",
-"Under favourable conditions, the buds on the stem give rise to new plants.",
-"New individual is produced from a single parent only."
+"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
+"Understand how grass plants which are planted at some distance from each other.",
+"Stamens are next to corolla and they form the male parts of a flower.",
+"Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes."
 ],
 "correctOption": 1,
-"answer": "Correct as per chapter: Cover the entire soil after some days due to vegetative propagation;.",
+"answer": "Correct as per chapter: Understand how grass plants which are planted at some distance from each other.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q37",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Petals form the next inner whorl (corolla) and are brightly coloured structures.",
-"Conidia are asexual reproductive spores in fungi.",
-"During their life span, organisms perform various life functions, including reproduction.",
-"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining."
+"Axillary buds which are present on the nodes of stem grow into new plants.",
+"Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.",
+"Similarly in plants, seeds grow into young seedlings.",
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q38",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Pollen grains are rough and sticky.",
-"6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..",
-"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
-"(b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants."
+"New individual is produced from a single parent only.",
+"New plants arise from the swollen roots buried in the soil .",
+"Living organisms reproduce asexually, by several means such as .",
+"(a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil."
 ],
 "correctOption": 3,
-"answer": "Correct as per chapter: (b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"answer": "Correct as per chapter: (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.",
 "source": "icse",
 "linksTo": "neet-s2-sec_06"
 },
@@ -4398,47 +4377,47 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Which one of the following is scientifically accurate as per the text?",
 "options": [
-"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
-"Review of the parts of a typical flower.",
-"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced."
+"New plants arise from the swollen roots buried in the soil .",
+"Living organisms exhibit several modes of reproduction.",
+"Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.",
+"Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Living organisms exhibit several modes of reproduction.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q40",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Which one of the following is scientifically accurate as per the text?",
 "options": [
-"Such flowers are called unisexual flowers.",
-"New individual is produced from a single parent only.",
-"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
-"1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals.."
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Living organisms reproduce asexually, by several means such as .",
+"Cuttings are short lengths of the plant.",
+"Now, this new plant can be cut from the parent plant and planted as a new independent plant."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Such flowers are called unisexual flowers.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Now, this new plant can be cut from the parent plant and planted as a new independent plant.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q41",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
-"self pollination often involves various external agents to carry pollen grains from one flower to another.",
-"Here, sperm and ovum fuse together and fertilisation takes place.",
-"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar.."
+"Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
+"Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"All living organisms have a fixed life span."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
+"correctOption": 1,
+"answer": "Correct as per chapter: No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
 "source": "icse",
 "linksTo": "neet-s2-sec_10"
 },
@@ -4447,68 +4426,68 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.",
-"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.",
-"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
-"Living organisms exhibit several modes of reproduction."
+"Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
+"Other parts of the flower like the sepals and petals generally fall off after fertilisation.",
+"After pollination, fruits containing desired seeds are produced."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.",
+"answer": "Correct as per chapter: Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q43",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Then the two ends are tied tightly.",
-"Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.",
-"Organs of the Female Reproductive system .",
-"Pollination by insects is called entomophily."
+"Main organs of male and female reproductive system.",
+"Insect pollinated flowers is associated with Wind pollinated flowers.",
+"Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Then the two ends are tied tightly.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q44",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is correct?",
 "options": [
-"Vagina : Cervix is connected to the muscular tube-like vagina.",
-"There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
-"Display all these structures on a white paper.",
-"Organs of the Male Reproductive system ."
+"Male parent produces the male gamete and the female parent produces the female gamete.",
+"Describe the process of sexual reproduction in plants, involving different means of pollination;.",
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"New individual is produced from a single parent only."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
+"correctOption": 3,
+"answer": "Correct as per chapter: New individual is produced from a single parent only.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q45",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Each of the two parts then grows into full sized identical cells called the daughter cells.",
-"Reproduction is, thus, the means of perpetuation or continuation of species.",
-"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
-"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers.."
+"Fertilisation is defined as Formation of Fruit and Seed.",
+"New plants arise from the swollen roots buried in the soil .",
+"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
+"Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Reproduction is, thus, the means of perpetuation or continuation of species.",
+"correctOption": 2,
+"answer": "Correct as per chapter: 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q46",
@@ -4517,32 +4496,32 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Which of the following statements is correct?",
 "options": [
-"Flowers are not showy and do not produce.",
-"New plants develop from their nodes.",
-"Then cut the bright red coloured petals of China rose.",
-"Cuttings are short lengths of the plant."
+"Fertilisation : Formation of Fruit and Seed.",
+"Flowers have large and brightly coloured petals to attract insects.",
+"Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.",
+"Cover the entire soil after some days due to vegetative propagation;."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Cuttings are short lengths of the plant.",
+"correctOption": 0,
+"answer": "Correct as per chapter: Fertilisation : Formation of Fruit and Seed.",
 "source": "icse",
-"linksTo": "neet-s2-sec_06"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q47",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
 "question": "Which of the following statements is correct?",
 "options": [
-"Flowers are small and inconspicuous, so, they can easily float on water.",
-"During the age of 14 and 10, following changes take place in males.",
-"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
-"One egg cell is released from one of the ovaries approximately every 28 days."
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"Axillary buds which are present on the nodes of stem grow into new plants.",
+"Flowers are small with long filaments and large, feathery and sticky stigmas.",
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar.."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: One egg cell is released from one of the ovaries approximately every 28 days.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Axillary buds which are present on the nodes of stem grow into new plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q48",
@@ -4551,49 +4530,49 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Sexual reproduction brings about the fusion of gametes from both the parents.",
-"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
-"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
-"Then, one of the two nuclei passes into the bud."
+"Spores are very small in size and they have thick walls.",
+"Examples includes - China-rose, pea, and Salvia.",
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"New individual is produced from a single parent only."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Then, one of the two nuclei passes into the bud.",
+"correctOption": 2,
+"answer": "Correct as per chapter: Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_04"
 },
 {
 "id": "neet-s2-q49",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"During their life span, organisms perform various life functions, including reproduction.",
-"Organs of the Male Reproductive system .",
-"Organs of the Female Reproductive system .",
-"1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals.."
+"Spores are very small in size and they have thick walls.",
+"Main organs of male and female reproductive system.",
+"Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.",
+"Other parts of the flower like the sepals and petals generally fall off after fertilisation."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Organs of the Female Reproductive system .",
+"correctOption": 1,
+"answer": "Correct as per chapter: Main organs of male and female reproductive system.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q50",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"New plants develop from their nodes.",
-"Humans carry out artificial pollination in some cereal crops and garden plants.",
-"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
-"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination."
+"Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.",
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
+"(4 whorls), and their structure and function.",
+"Flowers produce scent and nectar to attract insect pollinators."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Humans carry out artificial pollination in some cereal crops and garden plants.",
+"correctOption": 2,
+"answer": "Correct as per chapter: (4 whorls), and their structure and function.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q51",
@@ -4602,49 +4581,49 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Which of the following statements is correct?",
 "options": [
-"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
-"Male parent produces the male gamete and the female parent produces the female gamete.",
-"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
-"No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs."
+"Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.",
+"Humans carry out artificial pollination in some cereal crops and garden plants.",
+"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.",
+"Flowers produce scent and nectar to attract insect pollinators."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"correctOption": 1,
+"answer": "Correct as per chapter: Humans carry out artificial pollination in some cereal crops and garden plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q52",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is correct?",
 "options": [
-"Reproduction is one of the most important properties of non-living organisms.",
-"Main organs of male and female reproductive system.",
-"Stamens are next to corolla and they form the male parts of a flower.",
-"Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily)."
+"Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.",
+"Similarly in plants, seeds grow into young seedlings.",
+"Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.",
+"Petals form the next inner whorl (corolla) and are brightly coloured structures."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: Main organs of male and female reproductive system.",
+"correctOption": 3,
+"answer": "Correct as per chapter: Petals form the next inner whorl (corolla) and are brightly coloured structures.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q53",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Here, sperm and ovum fuse together and fertilisation takes place.",
-"Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.",
-"A male gamete is usually small with a nucleus and little cytoplasm.",
-"Such plants can be easily grown by this method."
+"(b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
+"Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.",
+"3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers.."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Such plants can be easily grown by this method.",
+"correctOption": 0,
+"answer": "Correct as per chapter: (b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q54",
@@ -4653,15 +4632,15 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.",
-"Living organisms reproduce asexually, by several means such as .",
-"Such flowers are called bisexual or hermaphrodite flowers.",
-"Flowers with desired features are selected."
+"Display all these structures on a white paper.",
+"Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"(b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"Male parent produces the male gamete and the female parent produces the female gamete."
 ],
 "correctOption": 1,
-"answer": "Correct as per chapter: Living organisms reproduce asexually, by several means such as .",
+"answer": "Correct as per chapter: Plants produced by this method are identical copies of the parent plant and do not show variations.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q55",
@@ -4670,64 +4649,64 @@ const BIOLOGY_NEET_DATA = [
 "subtopic": "Single Correct",
 "question": "Identify the true statement from the following options.",
 "options": [
-"self pollination often involves various external agents to carry pollen grains from one flower to another.",
-"Name of the individual unit is associated with Function.",
-"3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..",
-"Then the two ends are tied tightly."
+"Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.",
+"Three characteristics of plants pollinated by insects, water and wind (with examples).",
+"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc."
 ],
 "correctOption": 1,
-"answer": "Correct as per chapter: Name of the individual unit is associated with Function.",
+"answer": "Correct as per chapter: Three characteristics of plants pollinated by insects, water and wind (with examples).",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q56",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Select the correct statement based on the chapter content.",
 "options": [
-"Eventually organisms die, leaving behind offsprings of.",
-"One egg cell is released from one of the ovaries approximately every 28 days.",
-"There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
-"1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals.."
+"Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.",
+"1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species..",
+"Humans carry out artificial pollination in some cereal crops and garden plants.",
+"Plants produced by this method are identical copies of the parent plant and do not show variations."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: Eventually organisms die, leaving behind offsprings of.",
+"answer": "Correct as per chapter: Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q57",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Three characteristics of plants pollinated by insects, water and wind (with examples).",
-"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
-"Have you noticed the flowers pollinated by wind?.",
-"Understand how grass plants which are planted at some distance from each other."
+"4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
+"Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.",
+"Understand how grass plants which are planted at some distance from each other.",
+"cross Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination."
 ],
 "correctOption": 2,
-"answer": "Correct as per chapter: Have you noticed the flowers pollinated by wind?.",
+"answer": "Incorrect statement: Understand how grass plants which are planted at some distance from each other.. Correct fact: Potato plants produce flowers, fruits and seeds.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q58",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.",
-"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
-"Characteristics of flowers of each kind.",
-"Potato plants produce flowers, fruits and seeds."
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"self pollination often involves various external agents to carry pollen grains from one flower to another.",
+"Flower (China rose or mustard), Scissors, marker, paper.",
+"Similarly in plants, seeds grow into young seedlings."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Characteristics of flowers of each kind.",
+"correctOption": 0,
+"answer": "Incorrect statement: Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.. Correct fact: Main organs of male and female reproductive system.",
 "source": "icse",
 "linksTo": "neet-s2-sec_01"
 },
@@ -4736,211 +4715,211 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Pollen grains are produced in large numbers.",
-"5. Filaments are short. is associated with Filaments are long to expose anthers in the air..",
-"Such plants can be easily grown by this method.",
-"Now, this new plant can be cut from the parent plant and planted as a new independent plant."
+"No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
+"Living organisms reproduce asexually, by several means such as .",
+"Overcrowding often takes place near the parent plant.",
+"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: Pollen grains are produced in large numbers.",
+"answer": "Incorrect statement: No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.. Correct fact: (b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_12"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q60",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following statements is correct?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Sexual reproduction brings about the fusion of gametes from both the parents.",
-"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
-"Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent cross-pollination.",
-"Reproduction is one of the most important functions of living organisms."
+"Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.",
+"Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
+"self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
+"(b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Reproduction is one of the most important functions of living organisms.",
+"correctOption": 0,
+"answer": "Incorrect statement: Understand how cuttings and budding methods of vegetative propagation are used for growing larger number of roses;.. Correct fact: Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q61",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.",
-"Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).",
-"7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
-"1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals.."
+"3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..",
+"During their life span, organisms perform various life functions, including reproduction.",
+"Scion is the plant which one wants to propagate and so it is grafted on to the stock.",
+"2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination.."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
+"correctOption": 0,
+"answer": "Incorrect statement: 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry... Correct fact: Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q62",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Living organisms exhibit several modes of reproduction.",
-"Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.",
-"Eventually organisms die, leaving behind offsprings of.",
-"Axillary buds which are present on the nodes of stem grow into new plants."
+"Flowers produce scent and nectar to attract insect pollinators.",
+"Cuttings are short lengths of the plant.",
+"Such flowers are called bisexual or hermaphrodite flowers.",
+"Self Pollination is associated with Cross Pollination."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Axillary buds which are present on the nodes of stem grow into new plants.",
+"correctOption": 2,
+"answer": "Incorrect statement: Such flowers are called bisexual or hermaphrodite flowers.. Correct fact: A stamen consists of an anther and a filament .",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q63",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Sexual reproduction brings about the fusion of gametes from both the parents.",
-"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
-"Spores are very small in size and they have thick walls.",
-"Self Pollination is associated with Cross Pollination."
+"Pollen grains are produced in large numbers.",
+"Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
+"Living organisms reproduce asexually, by several means such as .",
+"All non-living organisms have a fixed life span."
 ],
-"correctOption": 0,
-"answer": "Correct as per chapter: Sexual reproduction brings about the fusion of gametes from both the parents.",
+"correctOption": 2,
+"answer": "Incorrect statement: Living organisms reproduce asexually, by several means such as .. Correct fact: Pollen grains are produced in large numbers.",
 "source": "icse",
-"linksTo": "neet-s2-sec_08"
+"linksTo": "neet-s2-sec_03"
 },
 {
 "id": "neet-s2-q64",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.",
-"A male gamete is usually small with a nucleus and little cytoplasm.",
-"Main organs of male and female reproductive system.",
-"Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower."
+"Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"Under favourable conditions, the buds on the stem give rise to new plants.",
+"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
+"Fertilisation process in brief by flow chart."
 ],
-"correctOption": 1,
-"answer": "Correct as per chapter: A male gamete is usually small with a nucleus and little cytoplasm.",
+"correctOption": 0,
+"answer": "Incorrect statement: Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.. Correct fact: Humans carry out artificial pollination in some cereal crops and garden plants.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q65",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Each of the two parts then grows into full sized identical cells called the daughter cells.",
-"Then, one of the two nuclei passes into the bud.",
-"Living organisms reproduce asexually, by several means such as .",
-"Epididymis is found on top of the testes and it stores sperms;."
+"Eventually organisms die, leaving behind offsprings of.",
+"Reproduction is one of the most important properties of non-living organisms.",
+"Cuttings are short lengths of the plant.",
+"Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Epididymis is found on top of the testes and it stores sperms;.",
+"correctOption": 2,
+"answer": "Incorrect statement: Cuttings are short lengths of the plant.. Correct fact: Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_02"
 },
 {
 "id": "neet-s2-q66",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Observe the mechanism of pollination in wheat (maize) .",
-"Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
-"An anther is a swollen structure present on the tip of the filament.",
-"Fertilisation takes place inside the female's body in the oviduct."
+"Recall the common names of plants and how they are multiplied;.",
+"Other parts of the flower like the sepals and petals generally fall off after fertilisation.",
+"2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
+"There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction."
 ],
 "correctOption": 1,
-"answer": "Correct as per chapter: Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
+"answer": "Incorrect statement: Other parts of the flower like the sepals and petals generally fall off after fertilisation.. Correct fact: 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q67",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which one of the following is scientifically accurate as per the text?",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Reproduction is one of the most important functions of non-living organisms.",
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
-"Flowers are small with long filaments and large, feathery and sticky stigmas.",
-"Growth of hair on face and other body parts takes place."
+"1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals..",
+"Conidia are asexual reproductive spores in fungi.",
+"Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.",
+"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;."
 ],
-"correctOption": 2,
-"answer": "Correct as per chapter: Flowers are small with long filaments and large, feathery and sticky stigmas.",
+"correctOption": 1,
+"answer": "Incorrect statement: Conidia are asexual reproductive spores in fungi.. Correct fact: Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.",
 "source": "icse",
-"linksTo": "neet-s2-sec_12"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q68",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"A pair of testes (singular testis) produce male gametes or sperms.",
-"Three characteristics of plants pollinated by insects, water and wind (with examples).",
-"Essential whorls are not much exposed. Male and female parts are exposed to wind.",
-"Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;."
+"Such flowers are called bisexual or hermaphrodite flowers.",
+"After sometime, roots grow from the stem part buried in the soil.",
+"Carpel is the central part of the flower.",
+"Pollen grains are produced in large quantities."
 ],
 "correctOption": 2,
-"answer": "Correct as per chapter: Essential whorls are not much exposed. Male and female parts are exposed to wind.",
+"answer": "Incorrect statement: Carpel is the central part of the flower.. Correct fact: Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q69",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Select the correct statement based on the chapter content.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Conidia are asexual reproductive spores in fungi.",
-"Here it develops over the next nine months into a baby.",
-"Plants produced by this method are identical copies of the parent plant and do not show variations.",
-"Uterus (also known as the womb) is the structure in which development of embryo occurs."
+"A flower has four parts arranged in rings or whorls.",
+"Spores are very small in size and they have thick walls.",
+"5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..",
+"New individual is produced from a single parent only."
 ],
-"correctOption": 3,
-"answer": "Correct as per chapter: Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"correctOption": 1,
+"answer": "Incorrect statement: Spores are very small in size and they have thick walls.. Correct fact: A flower has four parts arranged in rings or whorls.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q70",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Identify the true statement from the following options.",
+"question": "Which of the following statements is INCORRECT?",
 "options": [
-"Flowers with desired features are selected.",
-"Living organisms exhibit several modes of reproduction.",
-"Potato plants produce flowers, fruits and seeds.",
-"Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination."
+"Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.",
+"self pollination often involves various external agents to carry pollen grains from one flower to another.",
+"Reproduction is one of the most important functions of living organisms.",
+"An anther is a swollen structure present on the tip of the filament."
 ],
 "correctOption": 0,
-"answer": "Correct as per chapter: Flowers with desired features are selected.",
+"answer": "Incorrect statement: Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.. Correct fact: After pollination, fruits containing desired seeds are produced.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q71",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Some of these reach the feathery stigma of another flower, thus, bringing about pollination.\nII. Under favourable conditions, the buds on the stem give rise to new plants.\nIII. A carpel consists of a basal swollen portion called the ovary.\nIV. Petals form the next inner whorl (corolla) and are brightly coloured structures.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\nII. Understand how grass plants which are planted at some distance from each other.\nIII. Seeds are thus, present, inside the fruit.\nIV. Fertilisation process in brief by flow chart.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -4950,22 +4929,22 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q72",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nII. Flowers with desired features are selected.\nIII. Tap the anther to collect the pollen grains.\nIV. Pollen grains are rough and sticky.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nII. (4 whorls), and their structure and function.\nIII. Reproduction is one of the most important properties of living organisms.\nIV. No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
 "linksTo": "neet-s2-sec_10"
 },
@@ -4974,7 +4953,7 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Stamens are next to corolla and they form the male parts of a flower.\nII. Flowers are small and inconspicuous, so, they can easily float on water.\nIII. Essential whorls are not much exposed. Male and female parts are exposed to wind.\nIV. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Three characteristics of plants pollinated by insects, water and wind (with examples).\nII. All non-living organisms have a fixed life span.\nIII. Potato plants produce flowers, fruits and seeds.\nIV. 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -4984,14 +4963,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q74",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nII. Three characteristics of plants pollinated by insects, water and wind (with examples).\nIII. After sometime, roots grow from the stem part buried in the soil.\nIV. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nII. Flowers produce scent and nectar to attract insect pollinators.\nIII. Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).\nIV. Seeds are thus, present, inside the fruit.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5008,7 +4987,7 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Organs of the Female Reproductive system .\nII. No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.\nIII. Main organs of male and female reproductive system.\nIV. Flower (China rose or mustard), Scissors, marker, paper.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.\nII. Living organisms reproduce asexually, by several means such as .\nIII. A carpel consists of a basal swollen portion called the ovary.\nIV. Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5025,41 +5004,7 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Examples includes - China-rose, pea, and Salvia.\nII. Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nIII. After pollination, fruits containing desired seeds are produced.\nIV. Pollen grains are produced in large numbers.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
-"id": "neet-s2-q77",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Plants produced by this method are identical copies of the parent plant and do not show variations.\nII. Each of the two parts then grows into full sized identical cells called the daughter cells.\nIII. Flowers produce scent and nectar to attract insect pollinators.\nIV. Plants produced by this method are identical copies of the parent plant and do not show variations.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_03"
-},
-{
-"id": "neet-s2-q78",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Then take out the stamens using scissors.\nII. Pollen grains are light and dry.\nIII. Uterus (also known as the womb) is the structure in which development of embryo occurs.\nIV. 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. self pollination often involves various external agents to carry pollen grains from one flower to another.\nII. 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..\nIII. Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .\nIV. Flower (China rose or mustard), Scissors, marker, paper.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5072,11 +5017,45 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_10"
 },
 {
+"id": "neet-s2-q77",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. During their life span, organisms perform various life functions, including reproduction.\nII. Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.\nIII. Examples includes - China-rose, pea, and Salvia.\nIV. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q78",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.\nII. Flowers are not showy and do not produce.\nIII. Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.\nIV. Carpel is the central part of the flower.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_16"
+},
+{
 "id": "neet-s2-q79",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nII. Reproduction is, thus, the means of perpetuation or continuation of species.\nIII. Each of the two parts then grows into full sized identical cells called the daughter cells.\nIV. Here, sperm and ovum fuse together and fertilisation takes place.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Main organs of male and female reproductive system.\nII. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nIII. Living organisms exhibit several modes of reproduction.\nIV. Similarly in plants, seeds grow into young seedlings.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5086,39 +5065,39 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q80",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Flowers have large and brightly coloured petals to attract insects.\nII. Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nIII. Epididymis is found on top of the testes and it stores sperms;.\nIV. Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..\nII. Reproduction is one of the most important properties of living organisms.\nIII. Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.\nIV. Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_06"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q81",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Seeds are thus, present, inside the fruit.\nII. Budding is commonly observed in yeast.\nIII. Potato plants produce flowers, fruits and seeds.\nIV. Flowers are not showy and do not produce.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..\nII. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nIII. Vegetative Propagation by Aerial Stems is defined as In strawberry, long stems grow over the soil surface and are called runners . Axillary buds which are present on the nodes of stem grow into new plants.\nIV. Display all these structures on a white paper.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
 "linksTo": "neet-s2-sec_05"
 },
@@ -5127,7 +5106,24 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Pollen grains germinate on the stigma and form the pollen tube .\nII. (4 whorls), and their structure and function.\nIII. A flower has four parts arranged in rings or whorls.\nIV. Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Flowers are small and inconspicuous, so, they can easily float on water.\nII. Main organs of male and female reproductive system.\nIII. Reproduction is, thus, the means of perpetuation or continuation of species.\nIV. New plants arise from the swollen roots buried in the soil .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_01"
+},
+{
+"id": "neet-s2-q83",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\nII. After pollination, fruits containing desired seeds are produced.\nIII. 4. Pollen grains are produced in small quantity. is associated with Pollen grains are produced in large quantity..\nIV. Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5140,11 +5136,28 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_05"
 },
 {
-"id": "neet-s2-q83",
+"id": "neet-s2-q84",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Flower (China rose or mustard), Scissors, marker, paper.\nII. Flowers produce scent and nectar to attract insect pollinators.\nIII. Flower (China rose or mustard), Scissors, marker, paper.\nIV. cross Pollination is associated with Cross Pollination.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Carpel is the central part of the flower.\nII. Such plants can be easily grown by this method.\nIII. Essential whorls are not much exposed. Male and female parts are exposed to wind.\nIV. Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q85",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.\nII. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nIII. Then, one of the two nuclei passes into the bud.\nIV. 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5155,132 +5168,30 @@ const BIOLOGY_NEET_DATA = [
 "answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
 "linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q84",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Here, sperm and ovum fuse together and fertilisation takes place.\nII. Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nIII. Other parts of the flower like the sepals and petals generally fall off after fertilisation.\nIV. New plants develop from their nodes.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_16"
-},
-{
-"id": "neet-s2-q85",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Fertilisation : Formation of Fruit and Seed.\nII. Fertilisation : Formation of Fruit and Seed.\nIII. Cuttings are short lengths of the plant.\nIV. New individual is produced from a single parent only.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_18"
 },
 {
 "id": "neet-s2-q86",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Axillary buds which are present on the nodes of stem grow into new plants.\nII. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nIII. Eventually organisms die, leaving behind offsprings of.\nIV. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.\nII. Stamens are next to corolla and they form the male parts of a flower.\nIII. Seeds are thus, present, inside the fruit.\nIV. Recall the common names of plants and how they are multiplied;.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q87",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nII. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nIII. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nIV. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_03"
-},
-{
-"id": "neet-s2-q88",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Flowers have large and brightly coloured petals to attract insects.\nII. Humans carry out artificial pollination in some cereal crops and garden plants.\nIII. Fertilisation : Formation of Fruit and Seed.\nIV. 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q89",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. New individual is produced from a single parent only.\nII. New plants develop from their nodes.\nIII. Flowers are small with long filaments and large, feathery and sticky stigmas.\nIV. Vas deferens opens into urethra and reaches the penis.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_12"
-},
-{
-"id": "neet-s2-q90",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.\nII. Muscles start developing and body becomes masculine.\nIII. Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nIV. Pollen grains are produced in large numbers.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q91",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Petals form the next inner whorl (corolla) and are brightly coloured structures.\nII. Recall the common names of plants and how they are multiplied;.\nIII. Have you noticed the flowers pollinated by wind?.\nIV. Firstly cut the sepals using scissors.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Display all these structures on a white paper.\nII. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nIII. Essential whorls are not much exposed. Male and female parts are exposed to wind.\nIV. A stamen consists of an anther and a filament .\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5293,45 +5204,28 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_09"
 },
 {
-"id": "neet-s2-q92",
+"id": "neet-s2-q88",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Eventually organisms die, leaving behind offsprings of.\nII. Then the two ends are tied tightly.\nIII. A male gamete is usually small with a nucleus and little cytoplasm.\nIV. Such plants can be easily grown by this method.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Reproduction is one of the most important functions of living organisms.\nII. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nIII. Other parts of the flower like the sepals and petals generally fall off after fertilisation.\nIV. New individual is produced from a single parent only.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_07"
+"linksTo": "neet-s2-sec_16"
 },
 {
-"id": "neet-s2-q93",
+"id": "neet-s2-q89",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Pollen grains are produced in large numbers.\nII. A bulb-like projection called the bud is formed on the parent body.\nIII. Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.\nIV. Eventually organisms die, leaving behind offsprings of.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q94",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. New plants develop from their nodes.\nII. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nIII. A carpel consists of a basal swollen portion called the ovary.\nIV. 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nII. Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).\nIII. Sexual reproduction brings about the fusion of gametes from both the parents.\nIV. Flowers have large and brightly coloured petals to attract insects.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5344,11 +5238,11 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_05"
 },
 {
-"id": "neet-s2-q95",
+"id": "neet-s2-q90",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. During the age of 14 and 10, following changes take place in males.\nII. Flowers are not showy and do not produce.\nIII. Similarly in plants, seeds grow into young seedlings.\nIV. Humans carry out artificial pollination in some cereal crops and garden plants.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. New individual is produced from a single parent only.\nII. (4 whorls), and their structure and function.\nIII. Fertilisation is defined as Formation of Fruit and Seed.\nIV. Reproduction is one of the most important properties of living organisms.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5358,14 +5252,31 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_01"
 },
 {
-"id": "neet-s2-q96",
+"id": "neet-s2-q91",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Stamens are next to corolla and they form the male parts of a flower.\nII. Do you find such variations in organisms which reproduce asexually?.\nIII. Some of these reach the feathery stigma of another flower, thus, bringing about pollination.\nIV. Just like plants and other animals, human beings also produce offspring of their own kind.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Describe the process of sexual reproduction in plants, involving different means of pollination;.\nII. During their life span, organisms perform various life functions, including reproduction.\nIII. cross Pollination is associated with Cross Pollination.\nIV. Plants produced by this method are identical copies of the parent plant and do not show variations.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_02"
+},
+{
+"id": "neet-s2-q92",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. cross Pollination is associated with Cross Pollination.\nII. Review of the parts of a typical flower.\nIII. Carpel is the central part of the flower.\nIV. Potato plants produce flowers, fruits and seeds.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5378,79 +5289,11 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_01"
 },
 {
-"id": "neet-s2-q97",
+"id": "neet-s2-q93",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. All living organisms have a fixed life span.\nII. Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).\nIII. Growth of hair on face and other body parts takes place.\nIV. Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q98",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..\nII. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nIII. 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nIV. Have you noticed the flowers pollinated by wind?.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q99",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Uterus (also known as the womb) is the structure in which development of embryo occurs.\nII. Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nIII. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nIV. There are two ways by which living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_18"
-},
-{
-"id": "neet-s2-q100",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Name of the individual unit is associated with Function.\nII. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nIII. 1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species..\nIV. Penis helps in inseminating sperms inside the body of the female .\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_09"
-},
-{
-"id": "neet-s2-q101",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.\nII. Such flowers are called unisexual flowers.\nIII. Pollen grains contain the male gamete.\nIV. Under favourable conditions, the buds on the stem give rise to new plants.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Each fragment or piece then grows into a new individual .\nII. Pollen grains are produced in large numbers.\nIII. Similarly in plants, seeds grow into young seedlings.\nIV. New plants arise from the swollen roots buried in the soil .\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5463,11 +5306,62 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_05"
 },
 {
-"id": "neet-s2-q102",
+"id": "neet-s2-q94",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nII. Do you find such variations in organisms which reproduce asexually?.\nIII. 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nIV. Cross pollination often involves various external agents to carry pollen grains from one flower to another.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.\nII. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nIII. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nIV. Essential whorls are not much exposed. Male and female parts are exposed to wind.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_03"
+},
+{
+"id": "neet-s2-q95",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. All living organisms have a fixed life span.\nII. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nIII. 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..\nIV. Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_11"
+},
+{
+"id": "neet-s2-q96",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .\nII. Similarly in plants, seeds grow into young seedlings.\nIII. No wastage of pollen grains occurs and thus, it is economical. Wastage of pollen grains occurs.\nIV. Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q97",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. After pollination, fruits containing desired seeds are produced.\nII. 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..\nIII. Overcrowding often takes place near the parent plant.\nIV. 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5480,11 +5374,11 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_10"
 },
 {
-"id": "neet-s2-q103",
+"id": "neet-s2-q98",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Flowers with desired features are selected.\nII. Name of the individual unit is associated with Function.\nIII. Eventually organisms die, leaving behind offsprings of.\nIV. Cover the entire soil after some days due to vegetative propagation;.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. (4 whorls), and their structure and function.\nII. Cover the entire soil after some days due to vegetative propagation;.\nIII. Because of the advantages offered by vegetative propagation, humans have used this method for artificial multiplication of useful plants.\nIV. Carpel is the central part of the flower.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5494,14 +5388,99 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_06"
+},
+{
+"id": "neet-s2-q99",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Cuttings are short lengths of the plant.\nII. Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\nIII. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nIV. Pollen grains germinate on the stigma and form the pollen tube .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_16"
+},
+{
+"id": "neet-s2-q100",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Then, one of the two nuclei passes into the bud.\nII. 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..\nIII. Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\nIV. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q101",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Observe and correlate butterflies and honeybees moving around flowers to the process of pollination;.\nII. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nIII. Sexual reproduction brings about the fusion of gametes from both the parents.\nIV. New plants arise from the swollen roots buried in the soil .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_01"
+},
+{
+"id": "neet-s2-q102",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Axillary buds which are present on the nodes of stem grow into new plants.\nII. Such plants can be easily grown by this method.\nIII. Small parts of this tissue are kept in another medium which induces the formation of plantlets.\nIV. Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q103",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).\nII. Similarly, vegetative multiplication also takes place in case of saffron and gladiolus (sword lily).\nIII. Such flowers are called bisexual or hermaphrodite flowers.\nIV. New individual is produced from a single parent only.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q104",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Other parts of the flower like the sepals and petals generally fall off after fertilisation.\nII. Each of the two parts then grows into full sized identical cells called the daughter cells.\nIII. Reproduction is one of the most important functions of living organisms.\nIV. Such flowers are called bisexual or hermaphrodite flowers.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Pollen grains germinate on the stigma and form the pollen tube .\nII. An anther is a swollen structure present on the tip of the filament.\nIII. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nIV. Describe the process of sexual reproduction in plants, involving different means of pollination;.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5518,58 +5497,58 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Pollen grains are light and dry.\nII. Overcrowding often takes place near the parent plant.\nIII. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nIV. Humans carry out artificial pollination in some cereal crops and garden plants.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Cover the entire soil after some days due to vegetative propagation;.\nII. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\nIII. Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nIV. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q106",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nII. Recall the common names of plants and how they are multiplied;.\nIII. 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..\nIV. Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Seeds are thus, present, inside the fruit.\nII. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nIII. Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nIV. Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q107",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Cuttings are short lengths of the plant.\nII. Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.\nIII. Penis helps in inseminating sperms inside the body of the female .\nIV. Fertilisation process in brief by flow chart.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nII. A flower has four parts arranged in rings or whorls.\nIII. Small parts of this tissue are kept in another medium which induces the formation of plantlets.\nIV. 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_07"
 },
 {
 "id": "neet-s2-q108",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. All living organisms have a fixed life span.\nII. Flowers with desired features are selected.\nIII. Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.\nIV. After sometime, roots grow from the stem part buried in the soil.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. 1. Flowers have large and brightly coloured petals. is associated with Flowers are small and do not have showy petals..\nII. Essential whorls are not much exposed. Male and female parts are exposed to wind.\nIII. Insect pollinated flowers is associated with Wind pollinated flowers.\nIV. A bulb-like projection called the bud is formed on the parent body.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5579,14 +5558,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q109",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.\nII. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nIII. Do you find such variations in organisms which reproduce asexually?.\nIV. 5. Flowers are not attractive and they do not produce nectar. is associated with Flowers attract insects by various means like coloured petals, scent and nectar..\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Humans carry out artificial pollination in some cereal crops and garden plants.\nII. There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nIII. After pollination, fruits containing desired seeds are produced.\nIV. A carpel consists of a basal swollen portion called the ovary.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5596,14 +5575,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q110",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Cuttings are short lengths of the plant.\nII. Flower (China rose or mustard), Scissors, marker, paper.\nIII. Self Pollination is associated with Cross Pollination.\nIV. Main organs of male and female reproductive system.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Fertilisation process in brief by flow chart.\nII. Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.\nIII. Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nIV. Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5613,65 +5592,48 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q111",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Describe the process of sexual reproduction in plants, involving different means of pollination;.\nII. Petals form the next inner whorl (corolla) and are brightly coloured structures.\nIII. Pollination by insects is called entomophily.\nIV. 1. It occurs within a flower or between two flowers of the same plant. is associated with It occurs between two flowers borne on different plants of the same species..\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).\nII. (b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.\nIII. Overcrowding often takes place near the parent plant.\nIV. 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q112",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. All non-living organisms have a fixed life span.\nII. Pollination by insects is called entomophily.\nIII. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nIV. Male parent produces the male gamete and the female parent produces the female gamete.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..\nII. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nIII. All living organisms have a fixed life span.\nIV. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 1,
-"answer": "Two only statement(s) are correct according to the chapter.",
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q113",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Cover the entire soil after some days due to vegetative propagation;.\nII. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nIII. Such flowers are called bisexual or hermaphrodite flowers.\nIV. Flowers have large and brightly coloured petals to attract insects.\nHow many of the above statements are correct?",
-"options": [
-"One only",
-"Two only",
-"Three only",
-"All four"
-],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q114",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Fertilisation : Formation of Fruit and Seed.\nII. Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nIII. Sexual reproduction brings about the fusion of gametes from both the parents.\nIV. Cover the entire soil after some days due to vegetative propagation;.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Living organisms exhibit several modes of reproduction.\nII. An anther is a swollen structure present on the tip of the filament.\nIII. Living organisms reproduce asexually, by several means such as .\nIV. Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5681,14 +5643,31 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_03"
+},
+{
+"id": "neet-s2-q114",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Flowers are not showy and do not produce.\nII. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nIII. Understand how grass plants which are planted at some distance from each other.\nIV. Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q115",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Name of the individual unit is associated with Function.\nII. Penis helps in inseminating sperms inside the body of the female .\nIII. Have you noticed the flowers pollinated by wind?.\nIV. Reproduction is one of the most important properties of living organisms.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Fertilisation : Formation of Fruit and Seed.\nII. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nIII. (b) Root cutting: In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.\nIV. Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5698,48 +5677,48 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q116",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Display all these structures on a white paper.\nII. (a) Stem cutting: The stem bearing axillary buds is cut and planted in moist soil.\nIII. Axillary buds which are present on the nodes of stem grow into new plants.\nIV. Vas deferens opens into urethra and reaches the penis.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. 5. Filaments are short. is associated with Filaments are long to expose anthers in the air..\nII. 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nIII. Flowers produce scent and nectar to attract insect pollinators.\nIV. There are two ways by which non-living organisms give rise to new organisms – Asexual (vegetative propagation) and sexual reproduction.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_06"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q117",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Growth of hair on face and other body parts takes place.\nII. Then, one of the two nuclei passes into the bud.\nIII. Cross Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.\nIV. (4 whorls), and their structure and function.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Other parts of the flower like the sepals and petals generally fall off after fertilisation.\nII. Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nIII. Vegetative Propagation by Underground Stems — A number of plants like potato, ginger and sugarcane multiply by stems or their modifications.\nIV. Petals form the next inner whorl (corolla) and are brightly coloured structures.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
 "Three only",
 "All four"
 ],
-"correctOption": 2,
-"answer": "Three only statement(s) are correct according to the chapter.",
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q118",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Here, sperm and ovum fuse together and fertilisation takes place.\nII. Understand how grass plants which are planted at some distance from each other.\nIII. Organs of the Female Reproductive system .\nIV. Fertilisation process in brief by flow chart.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nII. Male parent produces the male gamete and the female parent produces the female gamete.\nIII. Insect pollinated flowers is associated with Wind pollinated flowers.\nIV. 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5749,14 +5728,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_13"
 },
 {
 "id": "neet-s2-q119",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nII. A stamen consists of an anther and a filament .\nIII. Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.\nIV. Name of the individual unit is associated with Function.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Flowers are small with long filaments and large, feathery and sticky stigmas.\nII. All living organisms have a fixed life span.\nIII. Flower (China rose or mustard), Scissors, marker, paper.\nIV. 3. Pollen grains are rough and sticky. is associated with Pollen grains are light and dry..\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5766,14 +5745,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q120",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Statement-Based",
-"question": "Consider the following statements:\nI. Then, one of the two nuclei passes into the bud.\nII. New plants develop from their nodes.\nIII. Main organs of male and female reproductive system.\nIV. Overcrowding often takes place near the parent plant.\nHow many of the above statements are correct?",
+"question": "Consider the following statements:\nI. Examples includes - China-rose, pea, and Salvia.\nII. Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.\nIII. Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.\nIV. Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nHow many of the above statements are correct?",
 "options": [
 "One only",
 "Two only",
@@ -5783,14 +5762,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Three only statement(s) are correct according to the chapter.",
 "source": "icse",
-"linksTo": "neet-s2-sec_01"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q121",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Ake the flower and start the dissection from the outermost whorl to innermost whorl.\nReason (R): Fertilisation process in brief by flow chart.",
+"question": "Assertion (A): Cover the entire soil after some days due to vegetative propagation;.\nReason (R): Rose, Coleus, Bougainvillea, sugarcane and cactus are easily propagated by stem cuttings.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -5800,14 +5779,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_10"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q122",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Pollination is the transfer of pollen grains from the mature anther to the stigma of the flower.\nReason (R): Fertilisation process in brief by flow chart.",
+"question": "Assertion (A): Vegetative Propagation by Leaves — Some plants like Bryophyllum, Begonia can be propagated by leaves.\nReason (R): Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -5817,14 +5796,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q123",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Each of the two parts then grows into full sized identical cells called the daughter cells.\nReason (R): Name of the individual unit is associated with Function.",
+"question": "Assertion (A): Vegetative Propagation by Aerial Stems is defined as In strawberry, long stems grow over the soil surface and are called runners . Axillary buds which are present on the nodes of stem grow into new plants.\nReason (R): Axillary buds which are present on the nodes of stem grow into new plants.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -5834,14 +5813,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q124",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): A flower has four parts arranged in rings or whorls.\nReason (R): Now, this new plant can be cut from the parent plant and planted as a new independent plant.",
+"question": "Assertion (A): Of these four parts, stamens and carpel are the reproductive parts, as these take part in sexual reproduction.\nReason (R): Small parts of this tissue are kept in another medium which induces the formation of plantlets.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -5851,14 +5830,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_06"
+"linksTo": "neet-s2-sec_07"
 },
 {
 "id": "neet-s2-q125",
-"topicId": "bio-ch3",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Then, one of the two nuclei passes into the bud.\nReason (R): Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"question": "Assertion (A): Reproduction is, thus, the means of perpetuation or continuation of species.\nReason (R): Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -5868,184 +5847,65 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_17"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q126",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Petals form the next inner whorl (corolla) and are brightly coloured structures.\nReason (R): Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.",
+"question": "Assertion (A): Flowers are not attractive and they do not produce nectar. Flowers attract insects by various means like coloured petals, scent and nectar.\nReason (R): Sepals form the outermost whorl (calyx) and are green, leaf-like protective structures in a flower.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
 "A is true but R is false",
 "A is false but R is true"
 ],
-"correctOption": 2,
+"correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_09"
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q127",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): After pollination, fruits containing desired seeds are produced.\nReason (R): Pollen grains are produced in large quantities.",
+"question": "Assertion (A): Sometimes the stem cutting has to be dipped into a rooting hormone to stimulate rooting.\nReason (R): Recall the common names of plants and how they are multiplied;.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
 "A is true but R is false",
 "A is false but R is true"
 ],
-"correctOption": 3,
+"correctOption": 2,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_12"
+"linksTo": "neet-s2-sec_06"
 },
 {
 "id": "neet-s2-q128",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Main organs of male and female reproductive system.\nReason (R): Similarly in plants, seeds grow into young seedlings.",
+"question": "Assertion (A): (4 whorls), and their structure and function.\nReason (R): Fertilisation : Formation of Fruit and Seed.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
 "A is true but R is false",
 "A is false but R is true"
 ],
-"correctOption": 0,
+"correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
 "linksTo": "neet-s2-sec_01"
 },
 {
 "id": "neet-s2-q129",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Display all these structures on a white paper.\nReason (R): Similarly, in females between 11-13 years of age, following changes occur.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 1,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_17"
-},
-{
-"id": "neet-s2-q130",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Main organs of male and female reproductive system.\nReason (R): Ake the flower and start the dissection from the outermost whorl to innermost whorl.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 2,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q131",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): A stamen consists of an anther and a filament .\nReason (R): Organs of the Male Reproductive system .",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 3,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_18"
-},
-{
-"id": "neet-s2-q132",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Main organs of male and female reproductive system.\nReason (R): Vegetative Propagation by Aerial Stems: In strawberry, long stems grow over the soil surface and are called runners .",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 0,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_05"
-},
-{
-"id": "neet-s2-q133",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..\nReason (R): Observe the mechanism of pollination in wheat (maize) .",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 1,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
-"id": "neet-s2-q134",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): 5. Filaments are short. is associated with Filaments are long to expose anthers in the air..\nReason (R): Observe the mechanism of pollination in wheat (maize) .",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 2,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q135",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Some of these reach the feathery stigma of another flower, thus, bringing about pollination.\nReason (R): 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 3,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
-"id": "neet-s2-q136",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Flowers are not showy and do not produce.\nReason (R): Tap the anther to collect the pollen grains.",
+"question": "Assertion (A): 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..\nReason (R): Flowers are not showy and do not produce.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6058,11 +5918,11 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_12"
 },
 {
-"id": "neet-s2-q137",
+"id": "neet-s2-q130",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.\nReason (R): Such plants can be easily grown by this method.",
+"question": "Assertion (A): Two types of reproductive cells, called gametes are produced from the reproductive organs of two parents.\nReason (R): An anther is a swollen structure present on the tip of the filament.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6072,14 +5932,133 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_07"
+"linksTo": "neet-s2-sec_03"
+},
+{
+"id": "neet-s2-q131",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Sexual reproduction brings about the fusion of gametes from both the parents.\nReason (R): Such flowers are called bisexual or hermaphrodite flowers.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_08"
+},
+{
+"id": "neet-s2-q132",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Stamens are next to corolla and they form the male parts of a flower.\nReason (R): (b) Root cutting is defined as In certain plants like lemon and tamarind, when root cuttings are put in the damp soil, they give rise to new roots and shoots and form new plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_06"
+},
+{
+"id": "neet-s2-q133",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.\nReason (R): Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_09"
+},
+{
+"id": "neet-s2-q134",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Describe the process of sexual reproduction in plants, involving different means of pollination;.\nReason (R): Potato plants produce flowers, fruits and seeds.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_14"
+},
+{
+"id": "neet-s2-q135",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.\nReason (R): Similarly in plants, seeds grow into young seedlings.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_01"
+},
+{
+"id": "neet-s2-q136",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): 7. Essential whorls are not much exposed. is associated with Male and female parts are exposed to wind..\nReason (R): A flower has four parts arranged in rings or whorls.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q137",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Then, one of the two nuclei passes into the bud.\nReason (R): Plants produced by this method are identical copies of the parent plant and do not show variations.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_03"
 },
 {
 "id": "neet-s2-q138",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): After sometime, roots grow from the stem part buried in the soil.\nReason (R): Reproduction is one of the most important functions of living organisms.",
+"question": "Assertion (A): Anthers from the mature flower of a plant are carefully removed (emasculation) to prevent self-pollination.\nReason (R): A flower has four parts arranged in rings or whorls.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6089,14 +6068,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 2,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_15"
 },
 {
 "id": "neet-s2-q139",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Fertilisation process in brief by flow chart.\nReason (R): Flowers produce scent and nectar to attract insect pollinators.",
+"question": "Assertion (A): An anther is a swollen structure present on the tip of the filament.\nReason (R): Similarly in plants, seeds grow into young seedlings.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6106,14 +6085,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q140",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Carpel is the central part of the flower.\nReason (R): Eventually organisms die, leaving behind offsprings of.",
+"question": "Assertion (A): Asexual reproduction, on the other hand, is the type of reproduction that does not involve the fusion of gametes.\nReason (R): Binary fission, budding, fragmentation, spore formation, vegetative propagation, artificial propagation by tissue culture (basic process along with a suitable example of each).",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6123,14 +6102,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_03"
 },
 {
 "id": "neet-s2-q141",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Flower stalks are long, allowing pistils to reach the water's surface to capture the pollen grains flowing in water.\nReason (R): Review of the parts of a typical flower.",
+"question": "Assertion (A): Main organs of male and female reproductive system.\nReason (R): 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6140,31 +6119,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q142",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\nReason (R): Discuss with the gardener how he raises or multiplies plants like Jasmine, Rose, Bryophyllum, Chrysanthemum, Dahlia, Potato and Money plant;.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 2,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_17"
-},
-{
-"id": "neet-s2-q143",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Each of the two parts then grows into full sized identical cells called the daughter cells.\nReason (R): Pollen grains are produced in large quantities.",
+"question": "Assertion (A): Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.\nReason (R): 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6174,14 +6136,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_03"
+"linksTo": "neet-s2-sec_12"
 },
 {
-"id": "neet-s2-q144",
+"id": "neet-s2-q143",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Eventually organisms die, leaving behind offsprings of.\nReason (R): Organs of the Male Reproductive system .",
+"question": "Assertion (A): A bulb-like projection called the bud is formed on the parent body.\nReason (R): 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6191,14 +6153,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_02"
+"linksTo": "neet-s2-sec_12"
 },
 {
-"id": "neet-s2-q145",
+"id": "neet-s2-q144",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Axillary buds which are present on the nodes of stem grow into new plants.\nReason (R): Then, one of the two nuclei passes into the bud.",
+"question": "Assertion (A): Fertilisation process in brief by flow chart.\nReason (R): Sexual reproduction is characterised by the fusion of two reproductive cells (gametes) derived from two parents of opposite sex, i.e; male and female.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6208,14 +6170,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_05"
+"linksTo": "neet-s2-sec_03"
 },
 {
-"id": "neet-s2-q146",
+"id": "neet-s2-q145",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Pollen grains are light and dry.\nReason (R): Petals form the next inner whorl (corolla) and are brightly coloured structures.",
+"question": "Assertion (A): Plants produced by this method are identical copies of the parent plant and do not show variations.\nReason (R): non-living organisms exhibit several modes of reproduction.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6223,6 +6185,23 @@ const BIOLOGY_NEET_DATA = [
 "A is false but R is true"
 ],
 "correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_03"
+},
+{
+"id": "neet-s2-q146",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Recall the common names of plants and how they are multiplied;.\nReason (R): Stamens are next to corolla and they form the male parts of a flower.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
 "linksTo": "neet-s2-sec_09"
@@ -6232,24 +6211,7 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Self Pollination: The transfer of pollen grains from the anther to the stigma of the same flower or to the stigma of another flower on the same plant is called self pollination.\nReason (R): Then cut the bright red coloured petals of China rose.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 3,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q148",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Plants like banana, sugarcane, sweet potato, rose and jasmine do not produce viable seeds.\nReason (R): Understand how grass plants which are planted at some distance from each other.",
+"question": "Assertion (A): Stigma is sticky topmost part, style is long hollow tube and ovary is present at the basal part of flower.\nReason (R): Petals form the next inner whorl (corolla) and are brightly coloured structures.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6259,14 +6221,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_06"
+"linksTo": "neet-s2-sec_09"
 },
 {
-"id": "neet-s2-q149",
+"id": "neet-s2-q148",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nReason (R): Some of these reach the feathery stigma of another flower, thus, bringing about pollination.",
+"question": "Assertion (A): Fertilisation : Formation of Fruit and Seed.\nReason (R): Though these insects visit the flowers to collect the nectar, but at the same time, they help in pollination.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6276,14 +6238,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_11"
+"linksTo": "neet-s2-sec_10"
 },
 {
-"id": "neet-s2-q150",
+"id": "neet-s2-q149",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Pollen grains are produced in large numbers.\nReason (R): Cut the pistil lengthwise in half.",
+"question": "Assertion (A): Eventually organisms die, leaving behind offsprings of.\nReason (R): 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6296,28 +6258,11 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_12"
 },
 {
-"id": "neet-s2-q151",
+"id": "neet-s2-q150",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..\nReason (R): Then the two ends are tied tightly.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 3,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q152",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Male parent produces the male gamete and the female parent produces the female gamete.\nReason (R): Cover the entire soil after some days due to vegetative propagation;.",
+"question": "Assertion (A): Scion is the plant which one wants to propagate and so it is grafted on to the stock.\nReason (R): 2. Flowers produce scent and nectar. is associated with Flowers do not produce scent and nectar..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6327,14 +6272,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s2-sec_14"
 },
 {
-"id": "neet-s2-q153",
-"topicId": "bio-ch3",
+"id": "neet-s2-q151",
+"topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Cover the entire soil after some days due to vegetative propagation;.\nReason (R): Growth of hair on face and other body parts takes place.",
+"question": "Assertion (A): 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..\nReason (R): Male parent produces the male gamete and the female parent produces the female gamete.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6344,21 +6289,55 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_17"
+"linksTo": "neet-s2-sec_16"
 },
 {
-"id": "neet-s2-q154",
+"id": "neet-s2-q152",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Understand how grass plants which are planted at some distance from each other.\nReason (R): Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.",
+"question": "Assertion (A): Now, this new plant can be cut from the parent plant and planted as a new independent plant.\nReason (R): Flowers produce scent and nectar to attract insect pollinators.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
 "A is true but R is false",
 "A is false but R is true"
 ],
-"correctOption": 2,
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_11"
+},
+{
+"id": "neet-s2-q153",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Cross pollination often involves various external agents to carry pollen grains from one flower to another.\nReason (R): 4. No wastage of pollen grains occurs and thus, it is economical. is associated with Wastage of pollen grains occurs; hence, it is uneconomical..",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
+},
+{
+"id": "neet-s2-q154",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Living organisms reproduce asexually, by several means such as .\nReason (R): Vegetative Propagation by Roots — In sweet potato, dahlia and Asparagus, the swollen and fleshy roots are present.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
 "linksTo": "neet-s2-sec_05"
@@ -6368,24 +6347,7 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Living organisms exhibit several modes of reproduction.\nReason (R): Flowers are small and inconspicuous, so, they can easily float on water.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 3,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q156",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): New individual is produced from a single parent only.\nReason (R): Flowers with desired features are selected.",
+"question": "Assertion (A): Living organisms exhibit several modes of reproduction.\nReason (R): Then, one of the two nuclei passes into the bud.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6395,14 +6357,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 0,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_03"
 },
 {
-"id": "neet-s2-q157",
+"id": "neet-s2-q156",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): 3. Pollen grains are produced in small number. is associated with Pollen grains are produced in large numbers..\nReason (R): Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced.",
+"question": "Assertion (A): After pollination, fruits containing desired seeds are produced.\nReason (R): 2. Flowers do not depend on other agencies for pollination. is associated with Agents such as insects, water and wind are required for pollination..",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6412,31 +6374,14 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 1,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_12"
+"linksTo": "neet-s2-sec_15"
 },
 {
-"id": "neet-s2-q158",
+"id": "neet-s2-q157",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Assertion-Reason",
-"question": "Assertion (A): Budding is commonly observed in yeast.\nReason (R): A male gamete is usually small with a nucleus and little cytoplasm.",
-"options": [
-"Both A and R are true, and R is the correct explanation of A",
-"Both A and R are true, but R is not the correct explanation of A",
-"A is true but R is false",
-"A is false but R is true"
-],
-"correctOption": 2,
-"answer": "Evaluated strictly from chapter facts.",
-"source": "icse",
-"linksTo": "neet-s2-sec_03"
-},
-{
-"id": "neet-s2-q159",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Assertion-Reason",
-"question": "Assertion (A): Firstly cut the sepals using scissors.\nReason (R): Seeds are thus, present, inside the fruit.",
+"question": "Assertion (A): Reproduction is one of the most important properties of non-living organisms.\nReason (R): Conidia are asexual reproductive spores in fungi.",
 "options": [
 "Both A and R are true, and R is the correct explanation of A",
 "Both A and R are true, but R is not the correct explanation of A",
@@ -6446,19 +6391,87 @@ const BIOLOGY_NEET_DATA = [
 "correctOption": 3,
 "answer": "Evaluated strictly from chapter facts.",
 "source": "icse",
-"linksTo": "neet-s2-sec_16"
+"linksTo": "neet-s2-sec_04"
+},
+{
+"id": "neet-s2-q158",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): A flower has four parts arranged in rings or whorls.\nReason (R): 6. Stigmas are sticky, flat or knob-like. is associated with Stigmas are large and feathery..",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q159",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Observe the mechanism of pollination in wheat (maize) .\nReason (R): Likewise, ginger is a modified swollen underground stem (rhizome) with stored food.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
 },
 {
 "id": "neet-s2-q160",
 "topicId": "bio-ch2",
 "type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) 5. Flowers are not attractive and they do not prod\n(b) Pollen grains\n(c) Flowers with desired features\n(d) Essential whorls\nColumn II\n(i) not much exposed. Male and female parts are exposed to wind\n(ii) produced in large numbers\n(iii) selected\n(iv) Flowers attract insects by various means like coloured petals, sc",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Fertilisation : Formation of Fruit and Seed.\nReason (R): self Pollination: The transfer of pollen grains from the anther of a flower to the stigma of another flower on different plants of the same species is known as cross pollination.",
 "options": [
-"a-ii, b-i, c-iv, d-iii",
-"a-iii, b-ii, c-iv, d-i",
-"a-iv, b-ii, c-iii, d-i",
-"a-ii, b-iii, c-i, d-iv"
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
+},
+{
+"id": "neet-s2-q161",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Cuttings\n(b) Of these four parts, stamens and carpel\n(c) 4. Pollen grains are produced in small quantity.\n(d) Flowers\nColumn II\n(i) associated with Pollen grains are produced in large quantity\n(ii) short lengths of the plant\n(iii) the reproductive parts, as these take part in sexual reproduction\n(iv) not showy and do not produce",
+"options": [
+"a-ii, b-iii, c-i, d-iv",
+"a-i, b-iv, c-iii, d-ii",
+"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-i, c-ii, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_12"
+},
+{
+"id": "neet-s2-q162",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) 2. Flowers do not depend on other agencies for pol\n(b) (a) Stem cutting: The stem bearing axillary buds\n(c) After pollination, fruits containing desired seeds\n(d) 5. Filaments are short.\nColumn II\n(i) associated with Filaments are long to expose anthers in the air\n(ii) produced\n(iii) associated with Agents such as insects, water and wind are requir\n(iv) cut and planted in moist soil",
+"options": [
+"a-i, b-iv, c-ii, d-iii",
+"a-iv, b-i, c-iii, d-ii",
+"a-iii, b-iv, c-ii, d-i",
+"a-ii, b-iv, c-i, d-iii"
 ],
 "correctOption": 2,
 "answer": "Match based on relationships given in the chapter text.",
@@ -6466,50 +6479,16 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_13"
 },
 {
-"id": "neet-s2-q161",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) 7. Essential whorls are not much exposed.\n(b) Anthers from the mature flower of a plant\n(c) Vagina : Cervix\n(d) Budding\nColumn II\n(i) commonly observed in yeast\n(ii) carefully removed (emasculation) to prevent self-pollination\n(iii) associated with Male and female parts are exposed to wind\n(iv) connected to the muscular tube-like vagina",
-"options": [
-"a-ii, b-i, c-iii, d-iv",
-"a-iii, b-iv, c-ii, d-i",
-"a-iii, b-i, c-ii, d-iv",
-"a-iii, b-ii, c-iv, d-i"
-],
-"correctOption": 3,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_15"
-},
-{
-"id": "neet-s2-q162",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) A pair of ovaries (singular ovary)\n(b) Insect pollinated flowers\n(c) 3. Pollen grains are rough and sticky.\n(d) 2. Flowers produce scent and nectar.\nColumn II\n(i) associated with Flowers do not produce scent and nectar\n(ii) found on either side of uterus and they produce eggs (ova)\n(iii) associated with Wind pollinated flowers\n(iv) associated with Pollen grains are light and dry",
-"options": [
-"a-iii, b-ii, c-iv, d-i",
-"a-ii, b-iii, c-i, d-iv",
-"a-ii, b-iii, c-iv, d-i",
-"a-i, b-iv, c-ii, d-iii"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
 "id": "neet-s2-q163",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Sepals form the outermost whorl (calyx) and\n(b) Conidia\n(c) 2. Flowers do not depend on other agencies for pol\n(d) Anthers from the mature flower of a plant\nColumn II\n(i) associated with Agents such as insects, water and wind are requir\n(ii) carefully removed (emasculation) to prevent self-pollination\n(iii) asexual reproductive spores in fungi\n(iv) green, leaf-like protective structures in a flower",
+"question": "Match Column I with Column II:\nColumn I\n(a) Self Pollination\n(b) 4. No wastage of pollen grains occurs and thus, it\n(c) Anthers from the mature flower of a plant\n(d) 3. Pollen grains are rough and sticky.\nColumn II\n(i) carefully removed (emasculation) to prevent self-pollination\n(ii) associated with Cross Pollination\n(iii) associated with Pollen grains are light and dry\n(iv) economical. is associated with Wastage of pollen grains occurs; h",
 "options": [
-"a-iv, b-iii, c-ii, d-i",
-"a-iv, b-iii, c-i, d-ii",
-"a-iii, b-i, c-ii, d-iv",
-"a-iii, b-iv, c-i, d-ii"
+"a-i, b-iii, c-ii, d-iv",
+"a-ii, b-iv, c-i, d-iii",
+"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-i, c-iii, d-ii"
 ],
 "correctOption": 1,
 "answer": "Match based on relationships given in the chapter text.",
@@ -6521,301 +6500,29 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Anthers from the mature flower of a plant\n(b) Cuttings\n(c) (a) Stem cutting: The stem bearing axillary buds\n(d) Carpel\nColumn II\n(i) carefully removed (emasculation) to prevent self-pollination\n(ii) cut and planted in moist soil\n(iii) short lengths of the plant\n(iv) the central part of the flower",
+"question": "Match Column I with Column II:\nColumn I\n(a) Seeds\n(b) Pollination\n(c) 1. Flowers have large and brightly coloured petals\n(d) Reproduction\nColumn II\n(i) one of the most important functions of living organisms\n(ii) associated with Flowers are small and do not have showy petals\n(iii) thus, present, inside the fruit\n(iv) the transfer of pollen grains from the mature anther to the stigm",
 "options": [
-"a-i, b-iii, c-ii, d-iv",
-"a-iv, b-ii, c-iii, d-i",
-"a-iv, b-iii, c-i, d-ii",
-"a-iv, b-i, c-iii, d-ii"
+"a-iii, b-iv, c-i, d-ii",
+"a-ii, b-iii, c-i, d-iv",
+"a-iii, b-iv, c-ii, d-i",
+"a-i, b-iv, c-iii, d-ii"
 ],
-"correctOption": 0,
+"correctOption": 2,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_16"
 },
 {
 "id": "neet-s2-q165",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Pollen grains\n(b) Flowers\n(c) Pollination by insects\n(d) 3. Pollen grains are produced in small number.\nColumn II\n(i) not showy and do not produce\n(ii) associated with Pollen grains are produced in large numbers\n(iii) called entomophily\n(iv) light and dry",
+"question": "Match Column I with Column II:\nColumn I\n(a) Scion\n(b) A bulb-like projection called the bud\n(c) Flowers\n(d) (a) Stem cutting: The stem bearing axillary buds\nColumn II\n(i) small and inconspicuous, so, they can easily float on water\n(ii) formed on the parent body\n(iii) the plant which one wants to propagate and so it is grafted on to\n(iv) cut and planted in moist soil",
 "options": [
-"a-iv, b-i, c-iii, d-ii",
-"a-ii, b-iii, c-iv, d-i",
-"a-iii, b-ii, c-iv, d-i",
-"a-i, b-iv, c-ii, d-iii"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_12"
-},
-{
-"id": "neet-s2-q166",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Sepals form the outermost whorl (calyx) and\n(b) Asexual reproduction, on the other hand,\n(c) Likewise, ginger\n(d) Pollen grains\nColumn II\n(i) green, leaf-like protective structures in a flower\n(ii) the type of reproduction that does not involve the fusion of game\n(iii) a modified swollen underground stem (rhizome) with stored food\n(iv) produced in large numbers",
-"options": [
-"a-ii, b-iv, c-iii, d-i",
-"a-ii, b-iv, c-i, d-iii",
-"a-i, b-ii, c-iii, d-iv",
-"a-ii, b-iii, c-i, d-iv"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_09"
-},
-{
-"id": "neet-s2-q167",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) A pair of ovaries (singular ovary)\n(b) Carpel\n(c) Conidia\n(d) Scion\nColumn II\n(i) the central part of the flower\n(ii) asexual reproductive spores in fungi\n(iii) found on either side of uterus and they produce eggs (ova)\n(iv) the plant which one wants to propagate and so it is grafted on to",
-"options": [
-"a-iii, b-ii, c-i, d-iv",
-"a-iii, b-i, c-ii, d-iv",
-"a-iv, b-ii, c-iii, d-i",
-"a-i, b-ii, c-iii, d-iv"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_17"
-},
-{
-"id": "neet-s2-q168",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) 2. Flowers produce scent and nectar.\n(b) 3. Pollen grains are rough and sticky.\n(c) Examples\n(d) Plants produced by this method\nColumn II\n(i) identical copies of the parent plant and do not show variations\n(ii) associated with Flowers do not produce scent and nectar\n(iii) associated with Pollen grains are light and dry\n(iv) - China-rose, pea, and Salvia",
-"options": [
-"a-i, b-ii, c-iii, d-iv",
-"a-ii, b-i, c-iii, d-iv",
-"a-ii, b-iii, c-i, d-iv",
-"a-ii, b-iii, c-iv, d-i"
-],
-"correctOption": 3,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
-"id": "neet-s2-q169",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Reproduction\n(b) 3. Pollen grains are produced in small number.\n(c) Essential whorls\n(d) Rose, Coleus, Bougainvillea, sugarcane and cactus\nColumn II\n(i) easily propagated by stem cuttings\n(ii) associated with Pollen grains are produced in large numbers\n(iii) , thus, the means of perpetuation or continuation of species\n(iv) not much exposed. Male and female parts are exposed to wind",
-"options": [
-"a-ii, b-iii, c-iv, d-i",
-"a-iii, b-ii, c-iv, d-i",
-"a-ii, b-iii, c-i, d-iv",
-"a-iii, b-i, c-iv, d-ii"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q170",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Pollination\n(b) Pollen grains\n(c) A bulb-like projection called the bud\n(d) Likewise, ginger\nColumn II\n(i) formed on the parent body\n(ii) a modified swollen underground stem (rhizome) with stored food\n(iii) the transfer of pollen grains from the mature anther to the stigm\n(iv) produced in large quantities",
-"options": [
-"a-i, b-ii, c-iii, d-iv",
-"a-iv, b-ii, c-iii, d-i",
-"a-iii, b-iv, c-i, d-ii",
-"a-iv, b-i, c-ii, d-iii"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_05"
-},
-{
-"id": "neet-s2-q171",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Stamens\n(b) Flowers\n(c) Pollen grains\n(d) Epididymis\nColumn II\n(i) next to corolla and they form the male parts of a flower\n(ii) found on top of the testes and it stores sperms;\n(iii) produced in large quantities\n(iv) not showy and do not produce",
-"options": [
-"a-iii, b-iv, c-ii, d-i",
-"a-i, b-iv, c-iii, d-ii",
-"a-iii, b-i, c-ii, d-iv",
-"a-ii, b-iv, c-iii, d-i"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q172",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Anthers from the mature flower of a plant\n(c) Self Pollination\n(d) Seeds\nColumn II\n(i) thus, present, inside the fruit\n(ii) carefully removed (emasculation) to prevent self-pollination\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) associated with Cross Pollination",
-"options": [
-"a-iii, b-ii, c-iv, d-i",
-"a-iv, b-i, c-ii, d-iii",
 "a-ii, b-i, c-iv, d-iii",
-"a-iv, b-iii, c-ii, d-i"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_15"
-},
-{
-"id": "neet-s2-q173",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Likewise, ginger\n(b) Conidia\n(c) A pair of ovaries (singular ovary)\n(d) Budding\nColumn II\n(i) asexual reproductive spores in fungi\n(ii) commonly observed in yeast\n(iii) found on either side of uterus and they produce eggs (ova)\n(iv) a modified swollen underground stem (rhizome) with stored food",
-"options": [
-"a-iv, b-i, c-iii, d-ii",
-"a-iii, b-iv, c-ii, d-i",
 "a-iii, b-ii, c-i, d-iv",
-"a-ii, b-i, c-iv, d-iii"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_05"
-},
-{
-"id": "neet-s2-q174",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) 5. Flowers are not attractive and they do not prod\n(b) No wastage of pollen grains occurs and thus, it\n(c) Flowers\n(d) Two types of reproductive cells, called gametes\nColumn II\n(i) produced from the reproductive organs of two parents\n(ii) economical. Wastage of pollen grains occurs\n(iii) not showy and do not produce\n(iv) Flowers attract insects by various means like coloured petals, sc",
-"options": [
-"a-iv, b-ii, c-iii, d-i",
-"a-iv, b-iii, c-i, d-ii",
-"a-i, b-iv, c-iii, d-ii",
-"a-i, b-ii, c-iii, d-iv"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_10"
-},
-{
-"id": "neet-s2-q175",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Of these four parts, stamens and carpel\n(c) Understand how grass plants which\n(d) Pollination by insects\nColumn II\n(i) the reproductive parts, as these take part in sexual reproduction\n(ii) planted at some distance from each other\n(iii) called entomophily\n(iv) the tubes through which eggs travel from ovary to uterus",
-"options": [
-"a-iv, b-iii, c-i, d-ii",
-"a-iv, b-i, c-ii, d-iii",
-"a-ii, b-iii, c-i, d-iv",
-"a-iii, b-ii, c-i, d-iv"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_17"
-},
-{
-"id": "neet-s2-q176",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Pollination by insects\n(b) Examples\n(c) Pollen grains\n(d) Understand how grass plants which\nColumn II\n(i) planted at some distance from each other\n(ii) called entomophily\n(iii) light and dry\n(iv) - China-rose, pea, and Salvia",
-"options": [
-"a-ii, b-iv, c-iii, d-i",
-"a-i, b-iii, c-iv, d-ii",
-"a-iv, b-iii, c-i, d-ii",
+"a-i, b-iv, c-ii, d-iii",
 "a-iii, b-ii, c-iv, d-i"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_11"
-},
-{
-"id": "neet-s2-q177",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Name of the individual unit\n(b) Small parts of this tissue\n(c) An anther\n(d) Seeds\nColumn II\n(i) associated with Function\n(ii) thus, present, inside the fruit\n(iii) kept in another medium which induces the formation of plantlets\n(iv) a swollen structure present on the tip of the filament",
-"options": [
-"a-ii, b-i, c-iv, d-iii",
-"a-i, b-iii, c-iv, d-ii",
-"a-i, b-iv, c-iii, d-ii",
-"a-ii, b-iv, c-i, d-iii"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_09"
-},
-{
-"id": "neet-s2-q178",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Axillary buds which\n(b) No wastage of pollen grains occurs and thus, it\n(c) 6. Stigmas are sticky, flat or knob-like.\n(d) 4. No wastage of pollen grains occurs and thus, it\nColumn II\n(i) economical. Wastage of pollen grains occurs\n(ii) associated with Stigmas are large and feathery\n(iii) present on the nodes of stem grow into new plants\n(iv) economical. is associated with Wastage of pollen grains occurs; h",
-"options": [
-"a-iv, b-i, c-ii, d-iii",
-"a-iv, b-iii, c-i, d-ii",
-"a-iii, b-iv, c-i, d-ii",
-"a-iii, b-i, c-ii, d-iv"
-],
-"correctOption": 3,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_12"
-},
-{
-"id": "neet-s2-q179",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Stamens\n(b) Pollination by insects\n(c) An anther\n(d) Cuttings\nColumn II\n(i) called entomophily\n(ii) next to corolla and they form the male parts of a flower\n(iii) a swollen structure present on the tip of the filament\n(iv) short lengths of the plant",
-"options": [
-"a-i, b-iv, c-ii, d-iii",
-"a-iii, b-ii, c-i, d-iv",
-"a-ii, b-i, c-iii, d-iv",
-"a-i, b-iii, c-ii, d-iv"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_09"
-},
-{
-"id": "neet-s2-q180",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Budding\n(b) (a) Stem cutting: The stem bearing axillary buds\n(c) Conidia\n(d) Epididymis\nColumn II\n(i) commonly observed in yeast\n(ii) found on top of the testes and it stores sperms;\n(iii) asexual reproductive spores in fungi\n(iv) cut and planted in moist soil",
-"options": [
-"a-ii, b-iii, c-iv, d-i",
-"a-i, b-iii, c-ii, d-iv",
-"a-i, b-iv, c-iii, d-ii",
-"a-ii, b-iv, c-iii, d-i"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_04"
-},
-{
-"id": "neet-s2-q181",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Insect pollinated flowers\n(b) Such flowers\n(c) Reproduction\n(d) (a) Stem cutting: The stem bearing axillary buds\nColumn II\n(i) associated with Wind pollinated flowers\n(ii) called unisexual flowers\n(iii) cut and planted in moist soil\n(iv) one of the most important properties of living organisms",
-"options": [
-"a-i, b-iv, c-ii, d-iii",
-"a-i, b-ii, c-iv, d-iii",
-"a-i, b-iv, c-iii, d-ii",
-"a-i, b-iii, c-iv, d-ii"
 ],
 "correctOption": 1,
 "answer": "Match based on relationships given in the chapter text.",
@@ -6823,16 +6530,288 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_06"
 },
 {
+"id": "neet-s2-q166",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Scion\n(b) 6. Stigmas are sticky, flat or knob-like.\n(c) Reproduction\n(d) New individual\nColumn II\n(i) , thus, the means of perpetuation or continuation of species\n(ii) produced from a single parent only\n(iii) the plant which one wants to propagate and so it is grafted on to\n(iv) associated with Stigmas are large and feathery",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-i, c-iii, d-ii",
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-ii, c-iv, d-i"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_02"
+},
+{
+"id": "neet-s2-q167",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Reproduction\n(b) Essential whorls\n(c) 1. It occurs within a flower or between two flower\n(d) Insect pollinated flowers\nColumn II\n(i) It occurs between two flowers borne on different plants of the sa\n(ii) one of the most important functions of living organisms\n(iii) associated with Wind pollinated flowers\n(iv) not much exposed. Male and female parts are exposed to wind",
+"options": [
+"a-ii, b-iv, c-i, d-iii",
+"a-iv, b-i, c-iii, d-ii",
+"a-iv, b-i, c-ii, d-iii",
+"a-iii, b-iv, c-i, d-ii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_01"
+},
+{
+"id": "neet-s2-q168",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Self Pollination\n(b) 1. It occurs within a flower or between two flower\n(c) Two types of reproductive cells, called gametes\n(d) Flowers\nColumn II\n(i) small and inconspicuous, so, they can easily float on water\n(ii) produced from the reproductive organs of two parents\n(iii) associated with Cross Pollination\n(iv) It occurs between two flowers borne on different plants of the sa",
+"options": [
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-iv, c-ii, d-i",
+"a-i, b-iv, c-ii, d-iii",
+"a-iv, b-i, c-iii, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
+},
+{
+"id": "neet-s2-q169",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Reproduction\n(b) 4. No wastage of pollen grains occurs and thus, it\n(c) Petals form the next inner whorl (corolla) and\n(d) Anthers from the mature flower of a plant\nColumn II\n(i) carefully removed (emasculation) to prevent self-pollination\n(ii) economical. is associated with Wastage of pollen grains occurs; h\n(iii) one of the most important functions of living organisms\n(iv) brightly coloured structures",
+"options": [
+"a-iii, b-ii, c-iv, d-i",
+"a-i, b-ii, c-iv, d-iii",
+"a-iii, b-ii, c-i, d-iv",
+"a-ii, b-i, c-iv, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_15"
+},
+{
+"id": "neet-s2-q170",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Axillary buds which\n(b) After pollination, fruits containing desired seeds\n(c) 3. Pollen grains are produced in small number.\n(d) Scion\nColumn II\n(i) produced\n(ii) present on the nodes of stem grow into new plants\n(iii) associated with Pollen grains are produced in large numbers\n(iv) the plant which one wants to propagate and so it is grafted on to",
+"options": [
+"a-i, b-iii, c-ii, d-iv",
+"a-iii, b-ii, c-iv, d-i",
+"a-ii, b-i, c-iii, d-iv",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_12"
+},
+{
+"id": "neet-s2-q171",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) New individual\n(b) Of these four parts, stamens and carpel\n(c) Asexual reproduction, on the other hand,\n(d) Cuttings\nColumn II\n(i) produced from a single parent only\n(ii) the type of reproduction that does not involve the fusion of game\n(iii) the reproductive parts, as these take part in sexual reproduction\n(iv) short lengths of the plant",
+"options": [
+"a-i, b-iv, c-ii, d-iii",
+"a-iii, b-ii, c-i, d-iv",
+"a-i, b-iii, c-ii, d-iv",
+"a-iii, b-i, c-iv, d-ii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_03"
+},
+{
+"id": "neet-s2-q172",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) 1. It occurs within a flower or between two flower\n(b) Seeds\n(c) Flowers\n(d) Petals form the next inner whorl (corolla) and\nColumn II\n(i) small and inconspicuous, so, they can easily float on water\n(ii) brightly coloured structures\n(iii) It occurs between two flowers borne on different plants of the sa\n(iv) thus, present, inside the fruit",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-i, b-iii, c-ii, d-iv",
+"a-ii, b-i, c-iv, d-iii",
+"a-ii, b-iv, c-i, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_09"
+},
+{
+"id": "neet-s2-q173",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Understand how grass plants which\n(b) Pollen grains\n(c) (a) Stem cutting: The stem bearing axillary buds\n(d) Flowers\nColumn II\n(i) cut and planted in moist soil\n(ii) produced in large numbers\n(iii) not showy and do not produce\n(iv) planted at some distance from each other",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-iv, c-i, d-iii",
+"a-iv, b-ii, c-i, d-iii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_12"
+},
+{
+"id": "neet-s2-q174",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Axillary buds which\n(b) Fertilisation\n(c) Understand how grass plants which\n(d) Scion\nColumn II\n(i) defined as Formation of Fruit and Seed\n(ii) present on the nodes of stem grow into new plants\n(iii) the plant which one wants to propagate and so it is grafted on to\n(iv) planted at some distance from each other",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-i, c-iv, d-iii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q175",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Such flowers\n(b) Cuttings\n(c) Axillary buds which\n(d) New individual\nColumn II\n(i) called bisexual or hermaphrodite flowers\n(ii) produced from a single parent only\n(iii) short lengths of the plant\n(iv) present on the nodes of stem grow into new plants",
+"options": [
+"a-iv, b-ii, c-iii, d-i",
+"a-i, b-iv, c-iii, d-ii",
+"a-ii, b-iv, c-i, d-iii",
+"a-i, b-iii, c-iv, d-ii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q176",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) 5. Flowers are not attractive and they do not prod\n(b) 4. No wastage of pollen grains occurs and thus, it\n(c) 5. Filaments are short.\n(d) Anthers from the mature flower of a plant\nColumn II\n(i) economical. is associated with Wastage of pollen grains occurs; h\n(ii) Flowers attract insects by various means like coloured petals, sc\n(iii) carefully removed (emasculation) to prevent self-pollination\n(iv) associated with Filaments are long to expose anthers in the air",
+"options": [
+"a-iv, b-i, c-iii, d-ii",
+"a-iii, b-i, c-ii, d-iv",
+"a-ii, b-i, c-iv, d-iii",
+"a-i, b-iii, c-iv, d-ii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
+},
+{
+"id": "neet-s2-q177",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Carpel\n(c) Essential whorls\n(d) Examples\nColumn II\n(i) the central part of the flower\n(ii) defined as Formation of Fruit and Seed\n(iii) not much exposed. Male and female parts are exposed to wind\n(iv) - China-rose, pea, and Salvia",
+"options": [
+"a-i, b-ii, c-iv, d-iii",
+"a-ii, b-i, c-iii, d-iv",
+"a-i, b-iv, c-ii, d-iii",
+"a-iii, b-iv, c-i, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q178",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Understand how grass plants which\n(b) Petals form the next inner whorl (corolla) and\n(c) Cuttings\n(d) Insect pollinated flowers\nColumn II\n(i) short lengths of the plant\n(ii) brightly coloured structures\n(iii) associated with Wind pollinated flowers\n(iv) planted at some distance from each other",
+"options": [
+"a-iv, b-ii, c-i, d-iii",
+"a-i, b-ii, c-iii, d-iv",
+"a-iii, b-iv, c-ii, d-i",
+"a-iv, b-iii, c-i, d-ii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q179",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Conidia\n(b) Likewise, ginger\n(c) 4. No wastage of pollen grains occurs and thus, it\n(d) Two types of reproductive cells, called gametes\nColumn II\n(i) economical. is associated with Wastage of pollen grains occurs; h\n(ii) a modified swollen underground stem (rhizome) with stored food\n(iii) produced from the reproductive organs of two parents\n(iv) asexual reproductive spores in fungi",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-ii, c-i, d-iii",
+"a-i, b-ii, c-iii, d-iv",
+"a-i, b-iv, c-iii, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s2-q180",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Insect pollinated flowers\n(b) Spores\n(c) Seeds\n(d) Examples\nColumn II\n(i) - China-rose, pea, and Salvia\n(ii) associated with Wind pollinated flowers\n(iii) very small in size and they have thick walls\n(iv) thus, present, inside the fruit",
+"options": [
+"a-ii, b-iii, c-iv, d-i",
+"a-iv, b-iii, c-ii, d-i",
+"a-iii, b-i, c-iv, d-ii",
+"a-i, b-ii, c-iv, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_11"
+},
+{
+"id": "neet-s2-q181",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Reproduction\n(b) Fertilisation\n(c) Of these four parts, stamens and carpel\n(d) 5. Filaments are short.\nColumn II\n(i) associated with Filaments are long to expose anthers in the air\n(ii) , thus, the means of perpetuation or continuation of species\n(iii) the reproductive parts, as these take part in sexual reproduction\n(iv) defined as Formation of Fruit and Seed",
+"options": [
+"a-iii, b-iv, c-ii, d-i",
+"a-iii, b-i, c-iv, d-ii",
+"a-i, b-ii, c-iii, d-iv",
+"a-ii, b-iv, c-iii, d-i"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_16"
+},
+{
 "id": "neet-s2-q182",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Epididymis\n(b) 7. Essential whorls are not much exposed.\n(c) 4. Pollen grains are produced in small quantity.\n(d) Cuttings\nColumn II\n(i) short lengths of the plant\n(ii) associated with Pollen grains are produced in large quantity\n(iii) associated with Male and female parts are exposed to wind\n(iv) found on top of the testes and it stores sperms;",
+"question": "Match Column I with Column II:\nColumn I\n(a) 6. Stigmas are sticky, flat or knob-like.\n(b) 5. Filaments are short.\n(c) Such flowers\n(d) A bulb-like projection called the bud\nColumn II\n(i) associated with Stigmas are large and feathery\n(ii) called bisexual or hermaphrodite flowers\n(iii) associated with Filaments are long to expose anthers in the air\n(iv) formed on the parent body",
 "options": [
-"a-iii, b-ii, c-i, d-iv",
-"a-iii, b-i, c-iv, d-ii",
 "a-i, b-ii, c-iv, d-iii",
-"a-iv, b-iii, c-ii, d-i"
+"a-iv, b-i, c-iii, d-ii",
+"a-iv, b-iii, c-i, d-ii",
+"a-i, b-iii, c-ii, d-iv"
 ],
 "correctOption": 3,
 "answer": "Match based on relationships given in the chapter text.",
@@ -6844,48 +6823,48 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Anthers from the mature flower of a plant\n(b) Plants produced by this method\n(c) 3. Pollen grains are rough and sticky.\n(d) Pollination\nColumn II\n(i) carefully removed (emasculation) to prevent self-pollination\n(ii) identical copies of the parent plant and do not show variations\n(iii) the transfer of pollen grains from the mature anther to the stigm\n(iv) associated with Pollen grains are light and dry",
+"question": "Match Column I with Column II:\nColumn I\n(a) 1. It occurs within a flower or between two flower\n(b) Sepals form the outermost whorl (calyx) and\n(c) 6. Stigmas are sticky, flat or knob-like.\n(d) Examples\nColumn II\n(i) It occurs between two flowers borne on different plants of the sa\n(ii) green, leaf-like protective structures in a flower\n(iii) - China-rose, pea, and Salvia\n(iv) associated with Stigmas are large and feathery",
 "options": [
+"a-i, b-iv, c-ii, d-iii",
 "a-i, b-ii, c-iv, d-iii",
-"a-iv, b-iii, c-i, d-ii",
-"a-iii, b-i, c-iv, d-ii",
-"a-iv, b-ii, c-i, d-iii"
-],
-"correctOption": 0,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_15"
-},
-{
-"id": "neet-s2-q184",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Insect pollinated flowers\n(b) Such flowers\n(c) Name of the individual unit\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) called bisexual or hermaphrodite flowers\n(iii) associated with Function\n(iv) associated with Wind pollinated flowers",
-"options": [
-"a-iv, b-ii, c-i, d-iii",
-"a-iv, b-ii, c-iii, d-i",
-"a-i, b-iv, c-iii, d-ii",
-"a-ii, b-iv, c-iii, d-i"
+"a-iv, b-i, c-ii, d-iii",
+"a-i, b-iii, c-ii, d-iv"
 ],
 "correctOption": 1,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_17"
+"linksTo": "neet-s2-sec_09"
+},
+{
+"id": "neet-s2-q184",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Plants produced by this method\n(b) 5. Filaments are short.\n(c) 5. Flowers are not attractive and they do not prod\n(d) No wastage of pollen grains occurs and thus, it\nColumn II\n(i) identical copies of the parent plant and do not show variations\n(ii) economical. Wastage of pollen grains occurs\n(iii) associated with Filaments are long to expose anthers in the air\n(iv) Flowers attract insects by various means like coloured petals, sc",
+"options": [
+"a-iv, b-iii, c-ii, d-i",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-iv, c-iii, d-ii",
+"a-i, b-iii, c-iv, d-ii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
 },
 {
 "id": "neet-s2-q185",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) (a) Stem cutting: The stem bearing axillary buds\n(b) Examples\n(c) Two types of reproductive cells, called gametes\n(d) Pollen grains\nColumn II\n(i) produced from the reproductive organs of two parents\n(ii) - China-rose, pea, and Salvia\n(iii) cut and planted in moist soil\n(iv) rough and sticky",
+"question": "Match Column I with Column II:\nColumn I\n(a) Examples\n(b) Spores\n(c) Scion\n(d) Pollen grains\nColumn II\n(i) produced in large quantities\n(ii) - China-rose, pea, and Salvia\n(iii) the plant which one wants to propagate and so it is grafted on to\n(iv) very small in size and they have thick walls",
 "options": [
 "a-ii, b-iv, c-i, d-iii",
-"a-iii, b-ii, c-iv, d-i",
-"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-ii, c-i, d-iii",
+"a-ii, b-iv, c-iii, d-i",
 "a-iii, b-ii, c-i, d-iv"
 ],
-"correctOption": 3,
+"correctOption": 2,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
 "linksTo": "neet-s2-sec_11"
@@ -6895,99 +6874,99 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Such flowers\n(b) Oviducts or Fallopian tubes\n(c) 7. Essential whorls are not much exposed.\n(d) Pollen grains\nColumn II\n(i) called unisexual flowers\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) produced in large numbers\n(iv) associated with Male and female parts are exposed to wind",
+"question": "Match Column I with Column II:\nColumn I\n(a) Small parts of this tissue\n(b) 1. Flowers have large and brightly coloured petals\n(c) Seeds\n(d) Carpel\nColumn II\n(i) kept in another medium which induces the formation of plantlets\n(ii) thus, present, inside the fruit\n(iii) the central part of the flower\n(iv) associated with Flowers are small and do not have showy petals",
 "options": [
-"a-ii, b-iii, c-i, d-iv",
+"a-i, b-iv, c-ii, d-iii",
+"a-iii, b-ii, c-iv, d-i",
 "a-iv, b-ii, c-i, d-iii",
-"a-iv, b-iii, c-i, d-ii",
-"a-i, b-ii, c-iv, d-iii"
+"a-ii, b-i, c-iv, d-iii"
 ],
-"correctOption": 3,
+"correctOption": 0,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q187",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Flowers\n(b) Anthers from the mature flower of a plant\n(c) No wastage of pollen grains occurs and thus, it\n(d) Uterus (also known as the womb)\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) economical. Wastage of pollen grains occurs\n(iii) carefully removed (emasculation) to prevent self-pollination\n(iv) small and inconspicuous, so, they can easily float on water",
+"question": "Match Column I with Column II:\nColumn I\n(a) Spores\n(b) 2. Flowers do not depend on other agencies for pol\n(c) Pollination\n(d) Asexual reproduction, on the other hand,\nColumn II\n(i) very small in size and they have thick walls\n(ii) the type of reproduction that does not involve the fusion of game\n(iii) associated with Agents such as insects, water and wind are requir\n(iv) the transfer of pollen grains from the mature anther to the stigm",
 "options": [
+"a-i, b-iii, c-iv, d-ii",
 "a-iv, b-i, c-ii, d-iii",
 "a-ii, b-iv, c-i, d-iii",
-"a-iv, b-iii, c-ii, d-i",
-"a-i, b-iii, c-ii, d-iv"
+"a-iii, b-i, c-ii, d-iv"
 ],
-"correctOption": 2,
+"correctOption": 0,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_15"
+"linksTo": "neet-s2-sec_04"
 },
 {
 "id": "neet-s2-q188",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Small parts of this tissue\n(b) Insect pollinated flowers\n(c) Axillary buds which\n(d) 3. Pollen grains are rough and sticky.\nColumn II\n(i) associated with Pollen grains are light and dry\n(ii) kept in another medium which induces the formation of plantlets\n(iii) present on the nodes of stem grow into new plants\n(iv) associated with Wind pollinated flowers",
+"question": "Match Column I with Column II:\nColumn I\n(a) 5. Filaments are short.\n(b) Cuttings\n(c) Small parts of this tissue\n(d) 3. Pollen grains are produced in small number.\nColumn II\n(i) associated with Pollen grains are produced in large numbers\n(ii) associated with Filaments are long to expose anthers in the air\n(iii) short lengths of the plant\n(iv) kept in another medium which induces the formation of plantlets",
 "options": [
-"a-iv, b-iii, c-ii, d-i",
-"a-iii, b-i, c-iv, d-ii",
-"a-iv, b-iii, c-i, d-ii",
-"a-ii, b-iv, c-iii, d-i"
+"a-iii, b-ii, c-i, d-iv",
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-i, c-ii, d-iv",
+"a-ii, b-iii, c-i, d-iv"
 ],
-"correctOption": 3,
+"correctOption": 1,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q189",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Understand how grass plants which\n(b) 7. Essential whorls are not much exposed.\n(c) 4. No wastage of pollen grains occurs and thus, it\n(d) Pollination by insects\nColumn II\n(i) economical. is associated with Wastage of pollen grains occurs; h\n(ii) called entomophily\n(iii) associated with Male and female parts are exposed to wind\n(iv) planted at some distance from each other",
+"question": "Match Column I with Column II:\nColumn I\n(a) After pollination, fruits containing desired seeds\n(b) Spores\n(c) Pollen grains\n(d) 1. Flowers have large and brightly coloured petals\nColumn II\n(i) associated with Flowers are small and do not have showy petals\n(ii) produced in large quantities\n(iii) produced\n(iv) very small in size and they have thick walls",
 "options": [
-"a-iv, b-i, c-iii, d-ii",
+"a-ii, b-i, c-iii, d-iv",
 "a-iv, b-i, c-ii, d-iii",
-"a-iv, b-iii, c-i, d-ii",
-"a-iii, b-i, c-iv, d-ii"
+"a-i, b-iv, c-iii, d-ii",
+"a-iii, b-iv, c-ii, d-i"
 ],
-"correctOption": 2,
+"correctOption": 3,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q190",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Self Pollination\n(b) Pollen grains\n(c) An anther\n(d) Axillary buds which\nColumn II\n(i) a swollen structure present on the tip of the filament\n(ii) associated with Cross Pollination\n(iii) present on the nodes of stem grow into new plants\n(iv) produced in large numbers",
+"question": "Match Column I with Column II:\nColumn I\n(a) Examples\n(b) An anther\n(c) Axillary buds which\n(d) 4. No wastage of pollen grains occurs and thus, it\nColumn II\n(i) economical. is associated with Wastage of pollen grains occurs; h\n(ii) a swollen structure present on the tip of the filament\n(iii) present on the nodes of stem grow into new plants\n(iv) - China-rose, pea, and Salvia",
 "options": [
-"a-ii, b-iv, c-i, d-iii",
-"a-iii, b-ii, c-iv, d-i",
-"a-ii, b-i, c-iii, d-iv",
-"a-i, b-iii, c-ii, d-iv"
+"a-iv, b-iii, c-i, d-ii",
+"a-iv, b-ii, c-iii, d-i",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-ii, c-iv, d-iii"
 ],
-"correctOption": 0,
+"correctOption": 1,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_12"
+"linksTo": "neet-s2-sec_11"
 },
 {
 "id": "neet-s2-q191",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) 5. Filaments are short.\n(b) Recall the common names of plants and how they\n(c) 3. Pollen grains are rough and sticky.\n(d) (a) Stem cutting: The stem bearing axillary buds\nColumn II\n(i) multiplied;\n(ii) associated with Pollen grains are light and dry\n(iii) cut and planted in moist soil\n(iv) associated with Filaments are long to expose anthers in the air",
+"question": "Match Column I with Column II:\nColumn I\n(a) 5. Filaments are short.\n(b) Recall the common names of plants and how they\n(c) Insect pollinated flowers\n(d) No wastage of pollen grains occurs and thus, it\nColumn II\n(i) multiplied;\n(ii) economical. Wastage of pollen grains occurs\n(iii) associated with Filaments are long to expose anthers in the air\n(iv) associated with Wind pollinated flowers",
 "options": [
-"a-ii, b-iv, c-i, d-iii",
-"a-iv, b-i, c-ii, d-iii",
-"a-i, b-ii, c-iv, d-iii",
-"a-iii, b-i, c-iv, d-ii"
+"a-ii, b-i, c-iv, d-iii",
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-i, c-iv, d-ii",
+"a-iv, b-iii, c-i, d-ii"
 ],
-"correctOption": 1,
+"correctOption": 2,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
 "linksTo": "neet-s2-sec_13"
@@ -6997,131 +6976,46 @@ const BIOLOGY_NEET_DATA = [
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Recall the common names of plants and how they\n(b) Pollen grains\n(c) 5. Filaments are short.\n(d) Name of the individual unit\nColumn II\n(i) multiplied;\n(ii) light and dry\n(iii) associated with Function\n(iv) associated with Filaments are long to expose anthers in the air",
+"question": "Match Column I with Column II:\nColumn I\n(a) Carpel\n(b) 1. Flowers have large and brightly coloured petals\n(c) Reproduction\n(d) Stamens\nColumn II\n(i) the central part of the flower\n(ii) next to corolla and they form the male parts of a flower\n(iii) one of the most important functions of living organisms\n(iv) associated with Flowers are small and do not have showy petals",
 "options": [
-"a-i, b-ii, c-iv, d-iii",
-"a-i, b-iv, c-ii, d-iii",
-"a-iii, b-ii, c-iv, d-i",
-"a-ii, b-iii, c-iv, d-i"
+"a-iv, b-ii, c-iii, d-i",
+"a-i, b-iii, c-ii, d-iv",
+"a-i, b-iv, c-iii, d-ii",
+"a-ii, b-i, c-iv, d-iii"
 ],
-"correctOption": 0,
+"correctOption": 2,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_13"
+"linksTo": "neet-s2-sec_09"
 },
 {
 "id": "neet-s2-q193",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Asexual reproduction, on the other hand,\n(b) Flowers with desired features\n(c) Conidia\n(d) Such flowers\nColumn II\n(i) selected\n(ii) asexual reproductive spores in fungi\n(iii) the type of reproduction that does not involve the fusion of game\n(iv) called unisexual flowers",
+"question": "Match Column I with Column II:\nColumn I\n(a) After pollination, fruits containing desired seeds\n(b) Cuttings\n(c) 3. Pollen grains are rough and sticky.\n(d) Spores\nColumn II\n(i) very small in size and they have thick walls\n(ii) associated with Pollen grains are light and dry\n(iii) produced\n(iv) short lengths of the plant",
 "options": [
+"a-ii, b-iv, c-iii, d-i",
 "a-iii, b-iv, c-i, d-ii",
-"a-iv, b-ii, c-iii, d-i",
-"a-iii, b-i, c-ii, d-iv",
-"a-i, b-ii, c-iii, d-iv"
+"a-i, b-iv, c-ii, d-iii",
+"a-iii, b-iv, c-ii, d-i"
 ],
-"correctOption": 2,
+"correctOption": 3,
 "answer": "Match based on relationships given in the chapter text.",
 "source": "icse",
-"linksTo": "neet-s2-sec_04"
+"linksTo": "neet-s2-sec_12"
 },
 {
 "id": "neet-s2-q194",
 "topicId": "bio-ch2",
 "type": "mcq",
 "subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Scion\n(b) Understand how grass plants which\n(c) Examples\n(d) Flowers with desired features\nColumn II\n(i) selected\n(ii) the plant which one wants to propagate and so it is grafted on to\n(iii) - China-rose, pea, and Salvia\n(iv) planted at some distance from each other",
+"question": "Match Column I with Column II:\nColumn I\n(a) Recall the common names of plants and how they\n(b) 5. Flowers are not attractive and they do not prod\n(c) Stamens\n(d) 2. Flowers produce scent and nectar.\nColumn II\n(i) associated with Flowers do not produce scent and nectar\n(ii) multiplied;\n(iii) Flowers attract insects by various means like coloured petals, sc\n(iv) next to corolla and they form the male parts of a flower",
 "options": [
-"a-i, b-iv, c-iii, d-ii",
-"a-ii, b-iv, c-iii, d-i",
-"a-ii, b-i, c-iv, d-iii",
-"a-ii, b-i, c-iii, d-iv"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_15"
-},
-{
-"id": "neet-s2-q195",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Such flowers\n(b) Scion\n(c) 7. Essential whorls are not much exposed.\n(d) New individual\nColumn II\n(i) produced from a single parent only\n(ii) associated with Male and female parts are exposed to wind\n(iii) called bisexual or hermaphrodite flowers\n(iv) the plant which one wants to propagate and so it is grafted on to",
-"options": [
-"a-iii, b-i, c-ii, d-iv",
-"a-iv, b-iii, c-ii, d-i",
-"a-iii, b-i, c-iv, d-ii",
-"a-iii, b-iv, c-ii, d-i"
-],
-"correctOption": 3,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_13"
-},
-{
-"id": "neet-s2-q196",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Vas deferens (plural, vasa deferentia)\n(b) 2. Flowers do not depend on other agencies for pol\n(c) Understand how grass plants which\n(d) Pollen grains\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) planted at some distance from each other\n(iii) rough and sticky\n(iv) associated with Agents such as insects, water and wind are requir",
-"options": [
-"a-iv, b-ii, c-iii, d-i",
-"a-ii, b-iv, c-iii, d-i",
-"a-i, b-iv, c-ii, d-iii",
-"a-iii, b-ii, c-iv, d-i"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_12"
-},
-{
-"id": "neet-s2-q197",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Pollen grains\n(b) A pair of ovaries (singular ovary)\n(c) Two types of reproductive cells, called gametes\n(d) Likewise, ginger\nColumn II\n(i) a modified swollen underground stem (rhizome) with stored food\n(ii) produced from the reproductive organs of two parents\n(iii) found on either side of uterus and they produce eggs (ova)\n(iv) produced in large quantities",
-"options": [
-"a-iii, b-iv, c-i, d-ii",
 "a-i, b-iii, c-iv, d-ii",
-"a-iv, b-iii, c-ii, d-i",
-"a-i, b-ii, c-iv, d-iii"
-],
-"correctOption": 2,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_05"
-},
-{
-"id": "neet-s2-q198",
-"topicId": "bio-ch3",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Plants produced by this method\n(b) Pollination\n(c) Vas deferens (plural, vasa deferentia)\n(d) Examples\nColumn II\n(i) identical copies of the parent plant and do not show variations\n(ii) - China-rose, pea, and Salvia\n(iii) the transfer of pollen grains from the mature anther to the stigm\n(iv) also called sperm duct through which sperms leave the testes",
-"options": [
-"a-ii, b-iv, c-i, d-iii",
-"a-i, b-iii, c-iv, d-ii",
-"a-iii, b-iv, c-i, d-ii",
-"a-i, b-iii, c-ii, d-iv"
-],
-"correctOption": 1,
-"answer": "Match based on relationships given in the chapter text.",
-"source": "icse",
-"linksTo": "neet-s2-sec_18"
-},
-{
-"id": "neet-s2-q199",
-"topicId": "bio-ch2",
-"type": "mcq",
-"subtopic": "Match the Following",
-"question": "Match Column I with Column II:\nColumn I\n(a) Examples\n(b) Insect pollinated flowers\n(c) Axillary buds which\n(d) 2. Flowers do not depend on other agencies for pol\nColumn II\n(i) associated with Wind pollinated flowers\n(ii) present on the nodes of stem grow into new plants\n(iii) - China-rose, pea, and Salvia\n(iv) associated with Agents such as insects, water and wind are requir",
-"options": [
-"a-i, b-iv, c-ii, d-iii",
-"a-iii, b-i, c-iv, d-ii",
 "a-i, b-ii, c-iii, d-iv",
-"a-iii, b-i, c-ii, d-iv"
+"a-ii, b-iv, c-i, d-iii",
+"a-ii, b-iii, c-iv, d-i"
 ],
 "correctOption": 3,
 "answer": "Match based on relationships given in the chapter text.",
@@ -7129,21 +7023,3561 @@ const BIOLOGY_NEET_DATA = [
 "linksTo": "neet-s2-sec_11"
 },
 {
+"id": "neet-s2-q195",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Of these four parts, stamens and carpel\n(b) 1. It occurs within a flower or between two flower\n(c) 4. Pollen grains are produced in small quantity.\n(d) 4. No wastage of pollen grains occurs and thus, it\nColumn II\n(i) It occurs between two flowers borne on different plants of the sa\n(ii) associated with Pollen grains are produced in large quantity\n(iii) economical. is associated with Wastage of pollen grains occurs; h\n(iv) the reproductive parts, as these take part in sexual reproduction",
+"options": [
+"a-iii, b-i, c-iv, d-ii",
+"a-iv, b-i, c-ii, d-iii",
+"a-iv, b-i, c-iii, d-ii",
+"a-iv, b-iii, c-i, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_10"
+},
+{
+"id": "neet-s2-q196",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) 1. Flowers have large and brightly coloured petals\n(b) A bulb-like projection called the bud\n(c) New individual\n(d) 6. Stigmas are sticky, flat or knob-like.\nColumn II\n(i) associated with Stigmas are large and feathery\n(ii) produced from a single parent only\n(iii) formed on the parent body\n(iv) associated with Flowers are small and do not have showy petals",
+"options": [
+"a-i, b-iii, c-ii, d-iv",
+"a-ii, b-i, c-iii, d-iv",
+"a-ii, b-iii, c-iv, d-i",
+"a-iv, b-iii, c-ii, d-i"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_13"
+},
+{
+"id": "neet-s2-q197",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Cuttings\n(b) 6. Stigmas are sticky, flat or knob-like.\n(c) Rose, Coleus, Bougainvillea, sugarcane and cactus\n(d) Reproduction\nColumn II\n(i) short lengths of the plant\n(ii) associated with Stigmas are large and feathery\n(iii) easily propagated by stem cuttings\n(iv) one of the most important properties of living organisms",
+"options": [
+"a-i, b-ii, c-iii, d-iv",
+"a-iv, b-iii, c-i, d-ii",
+"a-iii, b-i, c-iv, d-ii",
+"a-iv, b-i, c-iii, d-ii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_06"
+},
+{
+"id": "neet-s2-q198",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Reproduction\n(b) An anther\n(c) Fertilisation\n(d) (a) Stem cutting: The stem bearing axillary buds\nColumn II\n(i) cut and planted in moist soil\n(ii) defined as Formation of Fruit and Seed\n(iii) a swollen structure present on the tip of the filament\n(iv) one of the most important properties of living organisms",
+"options": [
+"a-iii, b-i, c-ii, d-iv",
+"a-iv, b-iii, c-ii, d-i",
+"a-i, b-iii, c-iv, d-ii",
+"a-ii, b-iii, c-i, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_06"
+},
+{
+"id": "neet-s2-q199",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) 3. Pollen grains are rough and sticky.\n(b) Scion\n(c) Likewise, ginger\n(d) Pollen grains\nColumn II\n(i) the plant which one wants to propagate and so it is grafted on to\n(ii) associated with Pollen grains are light and dry\n(iii) a modified swollen underground stem (rhizome) with stored food\n(iv) produced in large quantities",
+"options": [
+"a-iii, b-iv, c-ii, d-i",
+"a-ii, b-iv, c-i, d-iii",
+"a-ii, b-i, c-iii, d-iv",
+"a-i, b-iii, c-ii, d-iv"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_12"
+},
+{
 "id": "neet-s2-q200",
+"topicId": "bio-ch2",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Likewise, ginger\n(b) Seeds\n(c) Conidia\n(d) 7. Essential whorls are not much exposed.\nColumn II\n(i) associated with Male and female parts are exposed to wind\n(ii) a modified swollen underground stem (rhizome) with stored food\n(iii) thus, present, inside the fruit\n(iv) asexual reproductive spores in fungi",
+"options": [
+"a-ii, b-i, c-iii, d-iv",
+"a-ii, b-iii, c-iv, d-i",
+"a-iv, b-iii, c-i, d-ii",
+"a-i, b-iv, c-iii, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s2-sec_05"
+},
+{
+"id": "neet-s32-sec_01",
+"topicId": "bio-ch3",
+"type": "note",
+"subtopic": "1. Introduction",
+"content": "Sexual reproduction in humans requires two parents. The male produces sperm (male gamete) and the female produces ova or eggs (female gamete). After fertilisation, the zygote divides to form an embryo and later a foetus…\n\n• Compare internal fertilisation in humans with reproduction in plants.\n• Humans reproduce sexually by the fusion of male and female gametes.",
+"explanation": "Definitions:\n• Fertilisation — internal and occurs in the oviduct (fallopian tube)\n• Internal fertilisation in humans — fertilisation occurs inside the female body in the oviduct, not in water or outside the body",
+"source": "icse",
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 31
+},
+{
+"id": "neet-s32-sec_02",
+"topicId": "bio-ch3",
+"type": "note",
+"subtopic": "2. Puberty and Sexual Maturity",
+"content": "Reproductive organs become functional only after sexual maturity. Puberty is the phase when physical changes occur and an individual becomes sexually mature. In males, sexual maturity is usually attained at 14 to 16…\n\n• Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\n• Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\n• During the age of 14 and 16, following changes take place in males.\n• Muscles start developing and body becomes masculine.",
+"explanation": "Definitions:\n• Puberty — the phase when physical changes occur and an individual becomes sexually mature\n\nAlso know:\n• Similarly, in females between 11-13 years of age, following changes occur.\n• Organs of the Male Reproductive system.\n• Organs of the Female Reproductive system.",
+"source": "icse",
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 32
+},
+{
+"id": "neet-s32-sec_03",
+"topicId": "bio-ch3",
+"type": "note",
+"subtopic": "3. The Placenta and Umbilical Cord",
+"content": "The placenta is a disc-shaped temporary organ that connects the developing foetus to the uterine wall. It supplies oxygen and nutrients from the mother's blood to the foetus and removes carbon dioxide and waste…\n\n• Fertilisation is internal and occurs in the oviduct (fallopian tube).\n• Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.\n• Fertilisation takes place inside the female's body in the oviduct.",
+"explanation": "Definitions:\n• Fertilisation — internal and occurs in the oviduct (fallopian tube)\n• Internal fertilisation in humans — fertilisation occurs inside the female body in the oviduct, not in water or outside the body",
+"source": "icse",
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 7
+},
+{
+"id": "neet-s32-sec_04",
+"topicId": "bio-ch3",
+"type": "note",
+"subtopic": "4. Sexual Reproduction In Humans",
+"content": "The temperature of the scrotum is 2 to 3 degrees Celsius lower than that of the body, which helps in the production of sperms\n\n• Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\n• During the age of 14 and 16, following changes take place in males.\n• Growth of hair on face and other body parts takes place.\n• Organs of the Male Reproductive system.\n• Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\n• Vas deferens opens into urethra and reaches the penis.",
+"explanation": "Definitions:\n• Fertilisation — internal and occurs in the oviduct (fallopian tube)\n• Vas deferens (plural, vasa deferentia) — also called sperm duct through which sperms leave the testes\n• Oviducts or Fallopian tubes — the tubes through which eggs travel from ovary to uterus\n• Uterus (also known as the womb) — the structure in which development of embryo occurs\n• Vagina : Cervix — connected to the muscular tube-like vagina\n\nAlso know:\n• Penis helps in inseminating sperms inside the body of the female.\n• Organs of the Female Reproductive system.\n• Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.\n• Here, sperm and ovum fuse together and fertilisation takes place.",
+"source": "icse",
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 109
+},
+{
+"id": "neet-s32-sec_05",
+"topicId": "bio-ch3",
+"type": "note",
+"subtopic": "5. Fertilisation and Implantation",
+"content": "In a human testis, millions of sperms are produced each day. In females, one egg is produced every month in ovaries alternatively. One egg cell is released from one of the ovaries approximately every 28 days\n\n• Many sperms reach the egg, but only one fuses with the egg and fertilise it.\n• After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"explanation": "Definitions:\n• Fertilisation — internal and occurs in the oviduct (fallopian tube)",
+"source": "icse",
+"examTip": "Read this section, then tap Practice linked MCQs before moving on.",
+"linkedMcqCount": 21
+},
+{
+"id": "neet-s32-q1",
 "topicId": "bio-ch3",
 "type": "mcq",
 "subtopic": "Single Correct",
-"question": "Which of the following is NOT directly related to reproduction as described in the chapter?",
+"question": "Identify the true statement from the following options.",
 "options": [
-"Explain the process of sexual reproduction in humans, involving different processes like fertilisation, embryo development, etc.",
-"Sexual reproduction brings about the fusion of gametes from both the parents.",
-"Seeds are thus, present, inside the fruit.",
-"Reproductive organs do not take part in this method of reproduction and, therefore, seeds are not produced."
+"Describe the male and female reproductive systems in humans;.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Explain puberty and the role of hormones in sexual maturity;."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Epididymis is found on top of the testes and it stores sperms;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q2",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Fertilisation takes place inside the female's body in the oviduct."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q3",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Vas deferens opens into urethra and reaches the penis.",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Penis helps in inseminating sperms inside the body of the female ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Vas deferens opens into urethra and reaches the penis.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q4",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Penis helps in inseminating sperms inside the body of the female .",
+"During the age of 14 and 16, following changes take place in males.",
+"Epididymis is found on top of the testes and it stores sperms;."
 ],
 "correctOption": 2,
-"answer": "The odd one out is unrelated to reproduction: Seeds are thus, present, inside the fruit.",
+"answer": "Correct as per chapter: During the age of 14 and 16, following changes take place in males.",
 "source": "icse",
-"linksTo": "neet-s2-sec_18"
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q5",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Reproductive organs become functional only after sexual maturity.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Compare internal fertilisation in humans with reproduction in plants.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q6",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Penis helps in inseminating sperms inside the body of the female .",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Penis helps in inseminating sperms inside the body of the female .",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q7",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Explain puberty and the role of hormones in sexual maturity;.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Describe the male and female reproductive systems in humans;.",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. ."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Describe the male and female reproductive systems in humans;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q8",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Sexual reproduction in humans requires two parents.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Humans reproduce sexually by the fusion of male and female gametes.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube)."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q9",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Describe the male and female reproductive systems in humans;.",
+"Explain puberty and the role of hormones in sexual maturity;."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q10",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Similarly, in females between 11-13 years of age, following changes occur.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Similarly, in females between 11-13 years of age, following changes occur.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q11",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Muscles start developing and body becomes masculine.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q12",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Vagina : Cervix is connected to the muscular tube-like vagina."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q13",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"Growth of hair on face and other body parts takes place.",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Fertilisation takes place inside the female's body in the oviduct.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q14",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Here, sperm and ovum fuse together and fertilisation takes place.",
+"Organs of the Male Reproductive system .",
+"Organs of the Female Reproductive system .",
+"Penis helps in inseminating sperms inside the body of the female ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Here, sperm and ovum fuse together and fertilisation takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q15",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Penis helps in inseminating sperms inside the body of the female .",
+"Describe the male and female reproductive systems in humans;.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"During the age of 14 and 16, following changes take place in males."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q16",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Explain puberty and the role of hormones in sexual maturity;.",
+"Organs of the Male Reproductive system ."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Explain puberty and the role of hormones in sexual maturity;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q17",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q18",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"During the age of 14 and 10, following changes take place in males.",
+"Vagina : Cervix is connected to the muscular tube-like vagina.",
+"Muscles start developing and body becomes masculine.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Vagina : Cervix is connected to the muscular tube-like vagina.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q19",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Explain puberty and the role of hormones in sexual maturity;.",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Growth of hair on face and other body parts takes place.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Growth of hair on face and other body parts takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q20",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Growth of hair on face and other body parts takes place.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"Epididymis is found on top of the testes and it stores sperms;."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q21",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Humans reproduce sexually by the fusion of male and female gametes."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q22",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Organs of the Female Reproductive system .",
+"Growth of hair on face and other body parts takes place.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q23",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Muscles start developing and body becomes masculine.",
+"Growth of hair on face and other body parts takes place.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Penis helps in inseminating sperms inside the body of the female ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Muscles start developing and body becomes masculine.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q24",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q25",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Humans reproduce sexually by the fusion of male and female gametes.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Sexual reproduction in humans requires two parents.",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Reproductive organs become functional only after sexual maturity.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q26",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Muscles start developing and body becomes masculine."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q27",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Organs of the Male Reproductive system .",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Reproductive organs become functional only after sexual maturity.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Organs of the Male Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q28",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Penis helps in inseminating sperms inside the body of the female .",
+"Organs of the Female Reproductive system .",
+"Here, sperm and ovum fuse together and fertilisation takes place.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q29",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Sexual reproduction in humans requires two parents.",
+"Explain puberty and the role of hormones in sexual maturity;.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Sexual reproduction in humans requires two parents.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q30",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Similarly, in females between 11-13 years of age, following changes occur.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Organs of the Female Reproductive system ."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Organs of the Female Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q31",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q32",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"During the age of 14 and 10, following changes take place in males.",
+"Understand fertilisation, implantation, embryo development and gestation;."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Understand fertilisation, implantation, embryo development and gestation;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q33",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Similarly, in females between 11-13 years of age, following changes occur.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Organs of the Female Reproductive system .",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining."
+],
+"correctOption": 1,
+"answer": "Incorrect statement: Fertilisation is internal and occurs in the oviduct (fallopian tube).. Correct fact: Organs of the Female Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q34",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus."
+],
+"correctOption": 2,
+"answer": "Incorrect statement: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.. Correct fact: Sexual reproduction in humans requires two parents.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q35",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"During the age of 14 and 16, following changes take place in males.",
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Compare internal fertilisation in humans with reproduction in plants."
+],
+"correctOption": 2,
+"answer": "Incorrect statement: Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.. Correct fact: After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q36",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"During the age of 14 and 10, following changes take place in males.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Growth of hair on face and other body parts takes place."
+],
+"correctOption": 1,
+"answer": "Incorrect statement: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.. Correct fact: Here, sperm and ovum fuse together and fertilisation takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q37",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Muscles start developing and body becomes masculine.",
+"During the age of 14 and 10, following changes take place in males."
+],
+"correctOption": 3,
+"answer": "Incorrect statement: During the age of 14 and 10, following changes take place in males.. Correct fact: During the age of 14 and 16, following changes take place in males.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q38",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"During the age of 14 and 16, following changes take place in males.",
+"Organs of the Male Reproductive system .",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body."
+],
+"correctOption": 2,
+"answer": "Incorrect statement: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.. Correct fact: Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q39",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"During the age of 14 and 16, following changes take place in males.",
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Epididymis is found on top of the testes and it stores sperms;."
+],
+"correctOption": 0,
+"answer": "Incorrect statement: During the age of 14 and 16, following changes take place in males.. Correct fact: Understand fertilisation, implantation, embryo development and gestation;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q40",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Muscles start developing and body becomes masculine.",
+"Reproductive organs become functional only after sexual maturity.",
+"Sexual reproduction in humans requires two parents."
+],
+"correctOption": 3,
+"answer": "Incorrect statement: Sexual reproduction in humans requires two parents.. Correct fact: Describe the male and female reproductive systems in humans;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q41",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Vagina : Cervix is connected to the muscular tube-like vagina.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"Muscles start developing and body becomes masculine."
+],
+"correctOption": 3,
+"answer": "Incorrect statement: Muscles start developing and body becomes masculine.. Correct fact: Reproductive organs become functional only after sexual maturity.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q42",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Vas deferens opens into urethra and reaches the penis.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Organs of the Male Reproductive system ."
+],
+"correctOption": 1,
+"answer": "Incorrect statement: Many sperms reach the egg, but only one fuses with the egg and fertilise it.. Correct fact: Penis helps in inseminating sperms inside the body of the female .",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q43",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"During the age of 14 and 16, following changes take place in males.",
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months."
+],
+"correctOption": 3,
+"answer": "Incorrect statement: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.. Correct fact: Fertilisation takes place inside the female's body in the oviduct.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q44",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 0,
+"answer": "Incorrect statement: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.. Correct fact: Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q45",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Organs of the Male Reproductive system .",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"During the age of 14 and 16, following changes take place in males.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones."
+],
+"correctOption": 3,
+"answer": "Incorrect statement: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.. Correct fact: Compare internal fertilisation in humans with reproduction in plants.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q46",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is INCORRECT?",
+"options": [
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Humans reproduce sexually by the fusion of male and female gametes.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body."
+],
+"correctOption": 2,
+"answer": "Incorrect statement: Understand fertilisation, implantation, embryo development and gestation;.. Correct fact: Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q47",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Humans reproduce sexually by the fusion of male and female gametes.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Sexual reproduction in humans requires two parents.",
+"Epididymis is found on top of the testes and it stores sperms;."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Epididymis is found on top of the testes and it stores sperms;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q48",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"Organs of the Female Reproductive system .",
+"Vagina : Cervix is connected to the muscular tube-like vagina."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Organs of the Female Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q49",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Describe the male and female reproductive systems in humans;."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Describe the male and female reproductive systems in humans;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q50",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Sexual reproduction in humans requires two parents.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Fertilisation takes place inside the female's body in the oviduct.",
+"During the age of 14 and 16, following changes take place in males."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q51",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Vas deferens opens into urethra and reaches the penis.",
+"Describe the male and female reproductive systems in humans;.",
+"During the age of 14 and 16, following changes take place in males.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q52",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Reproductive organs become functional only after sexual maturity.",
+"Explain puberty and the role of hormones in sexual maturity;.",
+"Penis helps in inseminating sperms inside the body of the female .",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q53",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"During the age of 14 and 16, following changes take place in males.",
+"Growth of hair on face and other body parts takes place.",
+"Humans reproduce sexually by the fusion of male and female gametes."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: During the age of 14 and 16, following changes take place in males.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q54",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"Organs of the Male Reproductive system .",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Vagina : Cervix is connected to the muscular tube-like vagina."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Organs of the Male Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q55",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Growth of hair on face and other body parts takes place.",
+"Humans reproduce sexually by the fusion of male and female gametes.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube)."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Humans reproduce sexually by the fusion of male and female gametes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q56",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q57",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"During the age of 14 and 16, following changes take place in males.",
+"Vagina : Cervix is connected to the muscular tube-like vagina.",
+"Vas deferens opens into urethra and reaches the penis.",
+"Growth of hair on face and other body parts takes place."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Vas deferens opens into urethra and reaches the penis.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q58",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Penis helps in inseminating sperms inside the body of the female .",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"Describe the male and female reproductive systems in humans;."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Penis helps in inseminating sperms inside the body of the female .",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q59",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Reproductive organs become functional only after sexual maturity.",
+"Growth of hair on face and other body parts takes place.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube)."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Reproductive organs become functional only after sexual maturity.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q60",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"Growth of hair on face and other body parts takes place.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Growth of hair on face and other body parts takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q61",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Here, sperm and ovum fuse together and fertilisation takes place.",
+"Sexual reproduction in humans requires two parents.",
+"During the age of 14 and 10, following changes take place in males.",
+"Organs of the Male Reproductive system ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Here, sperm and ovum fuse together and fertilisation takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q62",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Organs of the Female Reproductive system ."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q63",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Organs of the Male Reproductive system .",
+"Muscles start developing and body becomes masculine.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. ."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q64",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Sexual reproduction in humans requires two parents.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Muscles start developing and body becomes masculine.",
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Sexual reproduction in humans requires two parents.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q65",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Growth of hair on face and other body parts takes place.",
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Vas deferens opens into urethra and reaches the penis.",
+"Humans reproduce sexually by the fusion of male and female gametes."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q66",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"Here, sperm and ovum fuse together and fertilisation takes place."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Compare internal fertilisation in humans with reproduction in plants.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q67",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Muscles start developing and body becomes masculine.",
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q68",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q69",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"During the age of 14 and 10, following changes take place in males.",
+"During the age of 14 and 16, following changes take place in males."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Understand fertilisation, implantation, embryo development and gestation;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q70",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q71",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Sexual reproduction in humans requires two parents.\nII. Explain puberty and the role of hormones in sexual maturity;.\nIII. During the age of 14 and 16, following changes take place in males.\nIV. Explain puberty and the role of hormones in sexual maturity;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q72",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nII. Here, sperm and ovum fuse together and fertilisation takes place.\nIII. Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nIV. Vagina : Cervix is connected to the muscular tube-like vagina.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q73",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Compare internal fertilisation in humans with reproduction in plants.\nII. Describe the male and female reproductive systems in humans;.\nIII. Organs of the Male Reproductive system .\nIV. Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q74",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nII. Describe the male and female reproductive systems in humans;.\nIII. Here, sperm and ovum fuse together and fertilisation takes place.\nIV. Fertilisation is internal and occurs in the oviduct (fallopian tube).\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q75",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Organs of the Female Reproductive system .\nII. Puberty is the phase when physical changes occur and an individual becomes sexually mature.\nIII. Fertilisation is internal and occurs in the oviduct (fallopian tube).\nIV. Describe the male and female reproductive systems in humans;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q76",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Understand fertilisation, implantation, embryo development and gestation;.\nII. Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\nIII. Similarly, in females between 11-13 years of age, following changes occur.\nIV. Compare internal fertilisation in humans with reproduction in plants.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q77",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vas deferens opens into urethra and reaches the penis.\nII. Reproductive organs become functional only after sexual maturity.\nIII. Vagina : Cervix is connected to the muscular tube-like vagina.\nIV. Reproductive organs become functional only after sexual maturity.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q78",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Fertilisation is internal and occurs in the oviduct (fallopian tube).\nII. Explain puberty and the role of hormones in sexual maturity;.\nIII. Reproductive organs become functional only after sexual maturity.\nIV. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q79",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nII. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nIII. Vas deferens opens into urethra and reaches the penis.\nIV. Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q80",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Reproductive organs become functional only after sexual maturity.\nII. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nIII. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nIV. Penis helps in inseminating sperms inside the body of the female .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q81",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Humans reproduce sexually by the fusion of male and female gametes.\nII. Vas deferens opens into urethra and reaches the penis.\nIII. Muscles start developing and body becomes masculine.\nIV. Epididymis is found on top of the testes and it stores sperms;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q82",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Penis helps in inseminating sperms inside the body of the female .\nII. Explain puberty and the role of hormones in sexual maturity;.\nIII. Epididymis is found on top of the testes and it stores sperms;.\nIV. Understand fertilisation, implantation, embryo development and gestation;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q83",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Muscles start developing and body becomes masculine.\nII. Fertilisation takes place inside the female's body in the oviduct.\nIII. Vagina : Cervix is connected to the muscular tube-like vagina.\nIV. Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q84",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. During the age of 14 and 10, following changes take place in males.\nII. Muscles start developing and body becomes masculine.\nIII. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nIV. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q85",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Puberty is the phase when physical changes occur and an individual becomes sexually mature.\nII. Here, sperm and ovum fuse together and fertilisation takes place.\nIII. Fertilisation takes place inside the female's body in the oviduct.\nIV. Vagina : Cervix is connected to the muscular tube-like vagina.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q86",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Growth of hair on face and other body parts takes place.\nII. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nIII. During the age of 14 and 10, following changes take place in males.\nIV. Growth of hair on face and other body parts takes place.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q87",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nII. Sexual reproduction in humans requires two parents.\nIII. Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nIV. Explain puberty and the role of hormones in sexual maturity;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q88",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Epididymis is found on top of the testes and it stores sperms;.\nII. Vas deferens opens into urethra and reaches the penis.\nIII. Uterus (also known as the womb) is the structure in which development of embryo occurs.\nIV. During the age of 14 and 16, following changes take place in males.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q89",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Explain puberty and the role of hormones in sexual maturity;.\nII. Explain puberty and the role of hormones in sexual maturity;.\nIII. Organs of the Female Reproductive system .\nIV. Organs of the Male Reproductive system .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q90",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Here, sperm and ovum fuse together and fertilisation takes place.\nII. Organs of the Female Reproductive system .\nIII. Vagina : Cervix is connected to the muscular tube-like vagina.\nIV. Reproductive organs become functional only after sexual maturity.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q91",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nII. Epididymis is found on top of the testes and it stores sperms;.\nIII. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nIV. Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q92",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nII. Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.\nIII. Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.\nIV. Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q93",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Uterus (also known as the womb) is the structure in which development of embryo occurs.\nII. Reproductive organs become functional only after sexual maturity.\nIII. Growth of hair on face and other body parts takes place.\nIV. Reproductive organs become functional only after sexual maturity.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q94",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.\nII. Explain puberty and the role of hormones in sexual maturity;.\nIII. Compare internal fertilisation in humans with reproduction in plants.\nIV. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q95",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Describe the male and female reproductive systems in humans;.\nII. After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nIII. Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nIV. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q96",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Organs of the Male Reproductive system .\nII. Fertilisation takes place inside the female's body in the oviduct.\nIII. Understand fertilisation, implantation, embryo development and gestation;.\nIV. After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q97",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vagina : Cervix is connected to the muscular tube-like vagina.\nII. Epididymis is found on top of the testes and it stores sperms;.\nIII. Describe the male and female reproductive systems in humans;.\nIV. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q98",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\nII. Sexual reproduction in humans requires two parents.\nIII. Humans reproduce sexually by the fusion of male and female gametes.\nIV. Penis helps in inseminating sperms inside the body of the female .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q99",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Fertilisation takes place inside the female's body in the oviduct.\nII. Growth of hair on face and other body parts takes place.\nIII. Epididymis is found on top of the testes and it stores sperms;.\nIV. Similarly, in females between 11-13 years of age, following changes occur.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q100",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.\nII. Similarly, in females between 11-13 years of age, following changes occur.\nIII. Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nIV. Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q101",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. During the age of 14 and 16, following changes take place in males.\nII. Humans reproduce sexually by the fusion of male and female gametes.\nIII. Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nIV. Epididymis is found on top of the testes and it stores sperms;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q102",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.\nII. Fertilisation takes place inside the female's body in the oviduct.\nIII. Reproductive organs become functional only after sexual maturity.\nIV. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q103",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Statement-Based",
+"question": "Consider the following statements:\nI. Similarly, in females between 11-13 years of age, following changes occur.\nII. Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nIII. Puberty is the phase when physical changes occur and an individual becomes sexually mature.\nIV. Explain puberty and the role of hormones in sexual maturity;.\nHow many of the above statements are correct?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q104",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Many sperms reach the egg, but only one fuses with the egg and fertilise it.\nReason (R): Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q105",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): During the age of 14 and 16, following changes take place in males.\nReason (R): Describe the male and female reproductive systems in humans;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q106",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Oviducts or Fallopian tubes are the tubes through which eggs travel from ovary to uterus.\nReason (R): During the age of 14 and 16, following changes take place in males.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q107",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Growth of hair on face and other body parts takes place.\nReason (R): Humans reproduce sexually by the fusion of male and female gametes.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q108",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Male Reproductive system .\nReason (R): Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q109",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.\nReason (R): Here, sperm and ovum fuse together and fertilisation takes place.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q110",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.\nReason (R): Organs of the Male Reproductive system .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q111",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.\nReason (R): Humans reproduce sexually by the fusion of male and female gametes.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q112",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Sexual reproduction in humans requires two parents.\nReason (R): Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q113",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Male Reproductive system .\nReason (R): Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q114",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Uterus (also known as the womb) is the structure in which development of embryo occurs.\nReason (R): Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q115",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Describe the male and female reproductive systems in humans;.\nReason (R): Compare internal fertilisation in humans with reproduction in plants.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q116",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Similarly, in females between 11-13 years of age, following changes occur.\nReason (R): Here, sperm and ovum fuse together and fertilisation takes place.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q117",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Epididymis is found on top of the testes and it stores sperms;.\nReason (R): Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q118",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Compare internal fertilisation in humans with reproduction in plants.\nReason (R): Epididymis is found on top of the testes and it stores sperms;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q119",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Female Reproductive system .\nReason (R): Sexual reproduction in humans requires two parents.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q120",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.\nReason (R): Explain puberty and the role of hormones in sexual maturity;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q121",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Explain puberty and the role of hormones in sexual maturity;.\nReason (R): Penis helps in inseminating sperms inside the body of the female .",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q122",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Muscles start developing and body becomes masculine.\nReason (R): Similarly, in females between 11-13 years of age, following changes occur.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q123",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .\nReason (R): Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q124",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Humans reproduce sexually by the fusion of male and female gametes.\nReason (R): After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q125",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Fertilisation is internal and occurs in the oviduct (fallopian tube).\nReason (R): Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q126",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.\nReason (R): Similarly, in females between 11-13 years of age, following changes occur.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q127",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Female Reproductive system .\nReason (R): Muscles start developing and body becomes masculine.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 2,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q128",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.\nReason (R): Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q129",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Male Reproductive system .\nReason (R): Here, sperm and ovum fuse together and fertilisation takes place.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q130",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Vas deferens opens into urethra and reaches the penis.\nReason (R): Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q131",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.\nReason (R): Explain puberty and the role of hormones in sexual maturity;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q132",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Here, sperm and ovum fuse together and fertilisation takes place.\nReason (R): Vagina : Cervix is connected to the muscular tube-like vagina.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q133",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Understand fertilisation, implantation, embryo development and gestation;.\nReason (R): Uterus (also known as the womb) is the structure in which development of embryo occurs.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q134",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Vagina : Cervix is connected to the muscular tube-like vagina.\nReason (R): After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
+},
+{
+"id": "neet-s32-q135",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Reproductive organs become functional only after sexual maturity.\nReason (R): Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q136",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Sexual reproduction in humans requires two parents.\nReason (R): Growth of hair on face and other body parts takes place.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q137",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Fertilisation takes place inside the female's body in the oviduct.\nReason (R): Puberty is the phase when physical changes occur and an individual becomes sexually mature.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q138",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Puberty is the phase when physical changes occur and an individual becomes sexually mature.\nReason (R): Epididymis is found on top of the testes and it stores sperms;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q139",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Sexual reproduction in humans requires two parents.\nReason (R): Epididymis is found on top of the testes and it stores sperms;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 1,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q140",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Female Reproductive system .\nReason (R): Epididymis is found on top of the testes and it stores sperms;.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q141",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Sexual reproduction in humans requires two parents.\nReason (R): Humans reproduce sexually by the fusion of male and female gametes.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q142",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Male Reproductive system .\nReason (R): Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q143",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Assertion-Reason",
+"question": "Assertion (A): Organs of the Female Reproductive system .\nReason (R): Similarly, in females between 11-13 years of age, following changes occur.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 3,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q144",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Oviducts or Fallopian tubes\n(c) Vas deferens (plural, vasa deferentia)\n(d) Vagina : Cervix\nColumn II\n(i) the tubes through which eggs travel from ovary to uterus\n(ii) connected to the muscular tube-like vagina\n(iii) also called sperm duct through which sperms leave the testes\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-i, b-iv, c-iii, d-ii",
+"a-iv, b-i, c-iii, d-ii",
+"a-i, b-ii, c-iv, d-iii",
+"a-i, b-iii, c-ii, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q145",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Vas deferens (plural, vasa deferentia)\n(c) Epididymis\n(d) Puberty\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) also called sperm duct through which sperms leave the testes\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-i, b-iv, c-iii, d-ii",
+"a-i, b-iii, c-iv, d-ii",
+"a-i, b-iii, c-ii, d-iv",
+"a-iii, b-ii, c-iv, d-i"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q146",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Epididymis\n(b) Vas deferens (plural, vasa deferentia)\n(c) Fertilisation\n(d) Vagina : Cervix\nColumn II\n(i) connected to the muscular tube-like vagina\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) also called sperm duct through which sperms leave the testes\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-i, b-iii, c-iv, d-ii",
+"a-iv, b-ii, c-iii, d-i",
+"a-i, b-ii, c-iii, d-iv",
+"a-iv, b-iii, c-ii, d-i"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q147",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Puberty\n(b) Oviducts or Fallopian tubes\n(c) Fertilisation\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) also called sperm duct through which sperms leave the testes",
+"options": [
+"a-iv, b-i, c-iii, d-ii",
+"a-ii, b-iv, c-iii, d-i",
+"a-i, b-iii, c-ii, d-iv",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q148",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Oviducts or Fallopian tubes\n(c) Vas deferens (plural, vasa deferentia)\n(d) Fertilisation\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) also called sperm duct through which sperms leave the testes\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) connected to the muscular tube-like vagina",
+"options": [
+"a-ii, b-iv, c-i, d-iii",
+"a-iv, b-iii, c-ii, d-i",
+"a-ii, b-iv, c-iii, d-i",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q149",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Fertilisation\n(c) Puberty\n(d) Vagina : Cervix\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) connected to the muscular tube-like vagina\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-iv, b-i, c-iii, d-ii",
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-iv, c-i, d-iii",
+"a-ii, b-iii, c-i, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q150",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Uterus (also known as the womb)\n(c) Vagina : Cervix\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) connected to the muscular tube-like vagina\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-ii, b-iv, c-iii, d-i",
+"a-iii, b-i, c-iv, d-ii",
+"a-iv, b-ii, c-i, d-iii",
+"a-iii, b-iv, c-ii, d-i"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q151",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Oviducts or Fallopian tubes\n(c) Fertilisation\n(d) Vagina : Cervix\nColumn II\n(i) connected to the muscular tube-like vagina\n(ii) the structure in which development of embryo occurs\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-ii, b-i, c-iv, d-iii",
+"a-ii, b-i, c-iii, d-iv",
+"a-ii, b-iii, c-iv, d-i",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q152",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Fertilisation\n(c) Vas deferens (plural, vasa deferentia)\n(d) Puberty\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) also called sperm duct through which sperms leave the testes\n(iii) connected to the muscular tube-like vagina\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-i, c-iv, d-ii",
+"a-iv, b-ii, c-iii, d-i",
+"a-iii, b-iv, c-ii, d-i"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q153",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Vas deferens (plural, vasa deferentia)\n(c) Uterus (also known as the womb)\n(d) Epididymis\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) also called sperm duct through which sperms leave the testes\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-iv, b-iii, c-i, d-ii",
+"a-iii, b-ii, c-i, d-iv",
+"a-iii, b-iv, c-i, d-ii",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q154",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Vagina : Cervix\n(c) Uterus (also known as the womb)\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) connected to the muscular tube-like vagina\n(iii) the structure in which development of embryo occurs\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-iv, b-ii, c-iii, d-i",
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-i, c-iv, d-iii",
+"a-i, b-iii, c-ii, d-iv"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q155",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Puberty\n(c) Fertilisation\n(d) Oviducts or Fallopian tubes\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) the structure in which development of embryo occurs\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-ii, b-iv, c-iii, d-i",
+"a-iv, b-i, c-iii, d-ii",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-ii, c-iii, d-iv"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q156",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Vas deferens (plural, vasa deferentia)\n(c) Puberty\n(d) Uterus (also known as the womb)\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) the structure in which development of embryo occurs\n(iii) internal and occurs in the oviduct (fallopian tube)\n(iv) also called sperm duct through which sperms leave the testes",
+"options": [
+"a-i, b-ii, c-iii, d-iv",
+"a-i, b-iv, c-iii, d-ii",
+"a-iii, b-iv, c-i, d-ii",
+"a-i, b-iii, c-iv, d-ii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q157",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Puberty\n(b) Uterus (also known as the womb)\n(c) Fertilisation\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) also called sperm duct through which sperms leave the testes\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-i, b-iv, c-ii, d-iii",
+"a-iv, b-ii, c-i, d-iii",
+"a-iii, b-iv, c-ii, d-i",
+"a-i, b-ii, c-iv, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q158",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Vagina : Cervix\n(c) Fertilisation\n(d) Epididymis\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) connected to the muscular tube-like vagina\n(iii) found on top of the testes and it stores sperms;\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-ii, b-iv, c-iii, d-i",
+"a-ii, b-iv, c-i, d-iii",
+"a-i, b-iii, c-ii, d-iv",
+"a-iv, b-ii, c-i, d-iii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q159",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Puberty\n(b) Uterus (also known as the womb)\n(c) Vagina : Cervix\n(d) Oviducts or Fallopian tubes\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) connected to the muscular tube-like vagina\n(iii) the phase when physical changes occur and an individual becomes s\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-iii, b-i, c-iv, d-ii",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-ii, c-iv, d-iii",
+"a-ii, b-iv, c-i, d-iii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q160",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Uterus (also known as the womb)\n(c) Vagina : Cervix\n(d) Epididymis\nColumn II\n(i) the tubes through which eggs travel from ovary to uterus\n(ii) the structure in which development of embryo occurs\n(iii) found on top of the testes and it stores sperms;\n(iv) connected to the muscular tube-like vagina",
+"options": [
+"a-iii, b-ii, c-i, d-iv",
+"a-iv, b-i, c-ii, d-iii",
+"a-i, b-ii, c-iv, d-iii",
+"a-iv, b-ii, c-iii, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q161",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vas deferens (plural, vasa deferentia)\n(b) Epididymis\n(c) Oviducts or Fallopian tubes\n(d) Puberty\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) also called sperm duct through which sperms leave the testes\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-ii, b-i, c-iii, d-iv",
+"a-i, b-iii, c-ii, d-iv",
+"a-iii, b-ii, c-iv, d-i",
+"a-iii, b-iv, c-ii, d-i"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q162",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Vas deferens (plural, vasa deferentia)\n(c) Oviducts or Fallopian tubes\n(d) Epididymis\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) found on top of the testes and it stores sperms;\n(iii) the tubes through which eggs travel from ovary to uterus\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-ii, b-iii, c-i, d-iv",
+"a-iv, b-i, c-iii, d-ii",
+"a-iii, b-iv, c-i, d-ii",
+"a-iii, b-ii, c-i, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q163",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Epididymis\n(c) Fertilisation\n(d) Oviducts or Fallopian tubes\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) found on top of the testes and it stores sperms;\n(iii) the structure in which development of embryo occurs\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-iii, b-ii, c-i, d-iv",
+"a-iii, b-iv, c-i, d-ii",
+"a-i, b-iv, c-ii, d-iii",
+"a-i, b-iv, c-iii, d-ii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q164",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Puberty\n(c) Vas deferens (plural, vasa deferentia)\n(d) Uterus (also known as the womb)\nColumn II\n(i) the tubes through which eggs travel from ovary to uterus\n(ii) also called sperm duct through which sperms leave the testes\n(iii) the structure in which development of embryo occurs\n(iv) the phase when physical changes occur and an individual becomes s",
+"options": [
+"a-iv, b-i, c-iii, d-ii",
+"a-i, b-ii, c-iv, d-iii",
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-iii, c-iv, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q165",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Vas deferens (plural, vasa deferentia)\n(c) Vagina : Cervix\n(d) Uterus (also known as the womb)\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) also called sperm duct through which sperms leave the testes\n(iii) connected to the muscular tube-like vagina\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-iii, b-ii, c-i, d-iv",
+"a-i, b-iii, c-iv, d-ii",
+"a-i, b-ii, c-iii, d-iv"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q166",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Epididymis\n(c) Vagina : Cervix\n(d) Oviducts or Fallopian tubes\nColumn II\n(i) the tubes through which eggs travel from ovary to uterus\n(ii) connected to the muscular tube-like vagina\n(iii) the structure in which development of embryo occurs\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-iii, b-iv, c-ii, d-i",
+"a-iv, b-iii, c-ii, d-i",
+"a-i, b-ii, c-iii, d-iv",
+"a-iii, b-i, c-iv, d-ii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q167",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Epididymis\n(c) Fertilisation\n(d) Oviducts or Fallopian tubes\nColumn II\n(i) connected to the muscular tube-like vagina\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) found on top of the testes and it stores sperms;\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-i, b-iii, c-iv, d-ii",
+"a-iv, b-iii, c-i, d-ii",
+"a-ii, b-iii, c-iv, d-i",
+"a-ii, b-iv, c-iii, d-i"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q168",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Epididymis\n(b) Uterus (also known as the womb)\n(c) Vas deferens (plural, vasa deferentia)\n(d) Vagina : Cervix\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) found on top of the testes and it stores sperms;\n(iii) connected to the muscular tube-like vagina\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-ii, b-iv, c-i, d-iii",
+"a-i, b-iii, c-ii, d-iv",
+"a-ii, b-iv, c-iii, d-i",
+"a-i, b-iv, c-ii, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q169",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Vagina : Cervix\n(c) Fertilisation\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) the tubes through which eggs travel from ovary to uterus\n(ii) also called sperm duct through which sperms leave the testes\n(iii) connected to the muscular tube-like vagina\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-iii, b-i, c-iv, d-ii",
+"a-i, b-iii, c-iv, d-ii",
+"a-ii, b-iii, c-iv, d-i",
+"a-ii, b-iii, c-i, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q170",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Oviducts or Fallopian tubes\n(c) Uterus (also known as the womb)\n(d) Puberty\nColumn II\n(i) connected to the muscular tube-like vagina\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) the structure in which development of embryo occurs\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-iv, b-ii, c-i, d-iii",
+"a-i, b-iv, c-iii, d-ii",
+"a-ii, b-iv, c-iii, d-i",
+"a-iv, b-iii, c-i, d-ii"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q171",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Puberty\n(c) Vagina : Cervix\n(d) Uterus (also known as the womb)\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) internal and occurs in the oviduct (fallopian tube)\n(iv) connected to the muscular tube-like vagina",
+"options": [
+"a-i, b-iv, c-ii, d-iii",
+"a-iii, b-ii, c-iv, d-i",
+"a-ii, b-iv, c-i, d-iii",
+"a-iii, b-i, c-ii, d-iv"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q172",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Epididymis\n(b) Fertilisation\n(c) Vagina : Cervix\n(d) Puberty\nColumn II\n(i) connected to the muscular tube-like vagina\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) the phase when physical changes occur and an individual becomes s\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-i, b-iv, c-iii, d-ii",
+"a-i, b-ii, c-iii, d-iv",
+"a-iv, b-ii, c-i, d-iii",
+"a-ii, b-i, c-iv, d-iii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q173",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Uterus (also known as the womb)\n(c) Puberty\n(d) Epididymis\nColumn II\n(i) the phase when physical changes occur and an individual becomes s\n(ii) the structure in which development of embryo occurs\n(iii) found on top of the testes and it stores sperms;\n(iv) connected to the muscular tube-like vagina",
+"options": [
+"a-iii, b-ii, c-i, d-iv",
+"a-iv, b-ii, c-i, d-iii",
+"a-iii, b-iv, c-i, d-ii",
+"a-ii, b-iv, c-iii, d-i"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q174",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Vagina : Cervix\n(c) Epididymis\n(d) Fertilisation\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) found on top of the testes and it stores sperms;\n(iii) internal and occurs in the oviduct (fallopian tube)\n(iv) connected to the muscular tube-like vagina",
+"options": [
+"a-ii, b-iii, c-iv, d-i",
+"a-ii, b-i, c-iii, d-iv",
+"a-iv, b-iii, c-ii, d-i",
+"a-i, b-iv, c-ii, d-iii"
+],
+"correctOption": 3,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q175",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Fertilisation\n(c) Vas deferens (plural, vasa deferentia)\n(d) Uterus (also known as the womb)\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) internal and occurs in the oviduct (fallopian tube)\n(iii) connected to the muscular tube-like vagina\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-iii, b-iv, c-i, d-ii",
+"a-iii, b-ii, c-i, d-iv",
+"a-iv, b-ii, c-i, d-iii",
+"a-ii, b-iii, c-iv, d-i"
+],
+"correctOption": 1,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q176",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Puberty\n(b) Uterus (also known as the womb)\n(c) Fertilisation\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) also called sperm duct through which sperms leave the testes\n(iv) internal and occurs in the oviduct (fallopian tube)",
+"options": [
+"a-ii, b-i, c-iv, d-iii",
+"a-iii, b-i, c-ii, d-iv",
+"a-i, b-iii, c-iv, d-ii",
+"a-ii, b-iv, c-i, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q177",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Uterus (also known as the womb)\n(b) Puberty\n(c) Epididymis\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) found on top of the testes and it stores sperms;\n(ii) the structure in which development of embryo occurs\n(iii) also called sperm duct through which sperms leave the testes\n(iv) the phase when physical changes occur and an individual becomes s",
+"options": [
+"a-iv, b-iii, c-ii, d-i",
+"a-iv, b-ii, c-iii, d-i",
+"a-ii, b-iv, c-i, d-iii",
+"a-iv, b-iii, c-i, d-ii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q178",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Epididymis\n(b) Oviducts or Fallopian tubes\n(c) Uterus (also known as the womb)\n(d) Fertilisation\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) found on top of the testes and it stores sperms;\n(iv) the structure in which development of embryo occurs",
+"options": [
+"a-i, b-iii, c-ii, d-iv",
+"a-ii, b-i, c-iii, d-iv",
+"a-iii, b-ii, c-iv, d-i",
+"a-iii, b-i, c-iv, d-ii"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q179",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Fertilisation\n(c) Oviducts or Fallopian tubes\n(d) Puberty\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) connected to the muscular tube-like vagina\n(iv) the phase when physical changes occur and an individual becomes s",
+"options": [
+"a-iv, b-ii, c-i, d-iii",
+"a-i, b-ii, c-iii, d-iv",
+"a-iii, b-i, c-ii, d-iv",
+"a-iii, b-ii, c-iv, d-i"
+],
+"correctOption": 2,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q180",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Fertilisation\n(b) Oviducts or Fallopian tubes\n(c) Puberty\n(d) Uterus (also known as the womb)\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) the phase when physical changes occur and an individual becomes s\n(iii) the structure in which development of embryo occurs\n(iv) the tubes through which eggs travel from ovary to uterus",
+"options": [
+"a-i, b-iv, c-ii, d-iii",
+"a-ii, b-iv, c-iii, d-i",
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-ii, c-iv, d-i"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q181",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Puberty\n(c) Epididymis\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) also called sperm duct through which sperms leave the testes\n(ii) connected to the muscular tube-like vagina\n(iii) the phase when physical changes occur and an individual becomes s\n(iv) found on top of the testes and it stores sperms;",
+"options": [
+"a-ii, b-iii, c-iv, d-i",
+"a-iii, b-ii, c-i, d-iv",
+"a-ii, b-iv, c-i, d-iii",
+"a-ii, b-iv, c-iii, d-i"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q182",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Oviducts or Fallopian tubes\n(b) Puberty\n(c) Uterus (also known as the womb)\n(d) Vas deferens (plural, vasa deferentia)\nColumn II\n(i) the structure in which development of embryo occurs\n(ii) the tubes through which eggs travel from ovary to uterus\n(iii) also called sperm duct through which sperms leave the testes\n(iv) the phase when physical changes occur and an individual becomes s",
+"options": [
+"a-ii, b-iv, c-i, d-iii",
+"a-iii, b-iv, c-ii, d-i",
+"a-i, b-iii, c-ii, d-iv",
+"a-i, b-iv, c-ii, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q183",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Match the Following",
+"question": "Match Column I with Column II:\nColumn I\n(a) Vagina : Cervix\n(b) Epididymis\n(c) Fertilisation\n(d) Puberty\nColumn II\n(i) internal and occurs in the oviduct (fallopian tube)\n(ii) found on top of the testes and it stores sperms;\n(iii) connected to the muscular tube-like vagina\n(iv) the phase when physical changes occur and an individual becomes s",
+"options": [
+"a-iii, b-ii, c-i, d-iv",
+"a-ii, b-iv, c-i, d-iii",
+"a-ii, b-i, c-iii, d-iv",
+"a-ii, b-i, c-iv, d-iii"
+],
+"correctOption": 0,
+"answer": "Match based on relationships given in the chapter text.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q184",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Organs of the Female Reproductive system .",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Organs of the Male Reproductive system .",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q185",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Similarly, in females between 11-13 years of age, following changes occur.",
+"Sexual reproduction in humans requires two parents.",
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Compare internal fertilisation in humans with reproduction in plants."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Sexual reproduction in humans requires two parents.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q186",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Organs of the Male Reproductive system .",
+"Internal fertilisation in humans means fertilisation occurs inside the female body in the oviduct, not in water or outside the body.",
+"Organs of the Female Reproductive system .",
+"Describe the male and female reproductive systems in humans;."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Describe the male and female reproductive systems in humans;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_03"
+},
+{
+"id": "neet-s32-q187",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Male changes at puberty include a deeper voice, growth of facial and body hair, and development of masculine muscles.",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Organs of the Male Reproductive system .",
+"Vas deferens opens into urethra and reaches the penis."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Compare internal fertilisation in humans with reproduction in plants.",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q188",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"Growth of hair on face and other body parts takes place.",
+"Vas deferens opens into urethra and reaches the penis.",
+"During the age of 14 and 10, following changes take place in males."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Growth of hair on face and other body parts takes place.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q189",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Many sperms reach the egg, but only one fuses with the egg and fertilise it.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"During the age of 14 and 10, following changes take place in males.",
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q190",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Vas deferens opens into urethra and reaches the penis.",
+"Here, sperm and ovum fuse together and fertilisation takes place.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Vas deferens opens into urethra and reaches the penis.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q191",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Vas deferens (plural, vasa deferentia) is also called sperm duct through which sperms leave the testes.",
+"Explain puberty and the role of hormones in sexual maturity;.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"Compare internal fertilisation in humans with reproduction in plants."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q192",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which of the following statements is correct?",
+"options": [
+"Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"Penis helps in inseminating sperms inside the body of the female .",
+"Describe the male and female reproductive systems in humans;.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months."
+],
+"correctOption": 0,
+"answer": "Correct as per chapter: Vagina is defined as Cervix is connected to the muscular tube-like vagina. The sperms enter the uterus through the vagina. It also serves as the birth canal through which mature baby is delivered. .",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q193",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Vas deferens opens into urethra and reaches the penis.",
+"Female changes include development of breasts, beginning of the menstrual cycle, and a higher-pitched voice.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Reproductive systems in humans develop and function under the influence of certain chemicals called hormones."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Reproductive systems in humans develop and function under the influence of certain chemicals called hormones.",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q194",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"During the age of 14 and 16, following changes take place in males.",
+"Fertilisation is internal and occurs in the oviduct (fallopian tube).",
+"Penis helps in inseminating sperms inside the body of the female .",
+"Puberty is the phase when physical changes occur and an individual becomes sexually mature."
+],
+"correctOption": 2,
+"answer": "Correct as per chapter: Penis helps in inseminating sperms inside the body of the female .",
+"source": "icse",
+"linksTo": "neet-s32-sec_04"
+},
+{
+"id": "neet-s32-q195",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"After fertilisation, the fertilised egg attaches itself to the womb's (uterus) lining."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Epididymis is found on top of the testes and it stores sperms;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q196",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Fertilisation takes place inside the female's body in the oviduct.",
+"Sexual reproduction in humans requires two parents.",
+"During the age of 14 and 10, following changes take place in males.",
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q197",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Identify the true statement from the following options.",
+"options": [
+"Growth of hair on face and other body parts takes place.",
+"Organs of the Female Reproductive system .",
+"Understand fertilisation, implantation, embryo development and gestation;.",
+"Similarly, in females between 11-13 years of age, following changes occur."
+],
+"correctOption": 1,
+"answer": "Correct as per chapter: Organs of the Female Reproductive system .",
+"source": "icse",
+"linksTo": "neet-s32-sec_02"
+},
+{
+"id": "neet-s32-q198",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"After fertilisation, the zygote divides to form an embryo and later a foetus during the gestation period of about nine months.",
+"Sexual reproduction in humans requires two parents.",
+"Epididymis is found on top of the testes and it stores sperms;.",
+"Understand fertilisation, implantation, embryo development and gestation;."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Understand fertilisation, implantation, embryo development and gestation;.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q199",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Which one of the following is scientifically accurate as per the text?",
+"options": [
+"Sexual reproduction in humans requires two parents.",
+"Describe the male and female reproductive systems in humans;.",
+"Penis helps in inseminating sperms inside the body of the female .",
+"Reproductive organs become functional only after sexual maturity."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Reproductive organs become functional only after sexual maturity.",
+"source": "icse",
+"linksTo": "neet-s32-sec_01"
+},
+{
+"id": "neet-s32-q200",
+"topicId": "bio-ch3",
+"type": "mcq",
+"subtopic": "Single Correct",
+"question": "Select the correct statement based on the chapter content.",
+"options": [
+"Describe the male and female reproductive systems in humans;.",
+"Organs of the Male Reproductive system .",
+"Compare internal fertilisation in humans with reproduction in plants.",
+"Fertilisation takes place inside the female's body in the oviduct."
+],
+"correctOption": 3,
+"answer": "Correct as per chapter: Fertilisation takes place inside the female's body in the oviduct.",
+"source": "icse",
+"linksTo": "neet-s32-sec_05"
 },
 {
 "id": "neet-s3-sec_01",
