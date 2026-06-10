@@ -695,11 +695,23 @@ function renderNotes(notes) {
     return;
   }
   const allQuestions = appData.content.filter(c => c.topicId === selectedTopic && c.type !== 'note');
+  // Pool of questions by type so every note can offer a compact "Test yourself"
+  // row — one jump per type (→ MCQ, → T/F, → Fill, → Q&A) — even when no
+  // question explicitly links back to it.
+  const XREF_TYPES = [['mcq','MCQ'], ['true_false','T/F'], ['fill_blank','Fill'], ['short_answer','Q&A']];
+  const qByType = {};
+  XREF_TYPES.forEach(([type]) => { qByType[type] = allQuestions.filter(q => q.type === type); });
   const cards = notes.map((n, i) => {
     const linked = allQuestions.filter(q => q.linksTo === n.id);
-    const linkBar = linked.length ? `<div class="xref-bar"><span class="xref-label">Test yourself:</span>${
-      linked.map(q => `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${Q_TYPE_SHORT[q.type]||'Q'}</button>`).join('')
-    }</div>` : '';
+    const xrefBtns = XREF_TYPES.map(([type, label]) => {
+      // Prefer a question of this type that links to this note; otherwise pick a
+      // representative one, spread across notes so different notes lead elsewhere.
+      const pool = qByType[type];
+      if (!pool.length) return '';
+      const q = linked.find(l => l.type === type) || pool[i % pool.length];
+      return `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${label}</button>`;
+    }).filter(Boolean).join('');
+    const linkBar = xrefBtns ? `<div class="xref-bar"><span class="xref-label">Test yourself:</span>${xrefBtns}</div>` : '';
     const collapsed = notesCollapsed[n.id] ? ' collapsed' : '';
     return `
     <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
