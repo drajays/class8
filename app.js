@@ -3292,7 +3292,25 @@ function showToast(type, message) {
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
-  navigator.serviceWorker.register('sw.js').catch(function (err) {
+  var reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function () {
+    if (reloaded) return;
+    reloaded = true;
+    location.reload();
+  });
+  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '35')).then(function (reg) {
+    if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+    reg.addEventListener('updatefound', function () {
+      var worker = reg.installing;
+      if (!worker) return;
+      worker.addEventListener('statechange', function () {
+        if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+          worker.postMessage({ type: 'SKIP_WAITING' });
+        }
+      });
+    });
+    reg.update();
+  }).catch(function (err) {
     console.warn('[StudyHub] Service worker registration failed:', err);
   });
 }

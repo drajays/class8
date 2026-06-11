@@ -2,6 +2,47 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
+<script>
+/* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
+(function () {
+  var BUILD = '35';
+  window.__STUDYHUB_BUILD = BUILD;
+  var KEY = 'studyhub_build';
+  var prev = '';
+  try { prev = localStorage.getItem(KEY) || ''; } catch (e) {}
+  if (prev !== BUILD) {
+    try { localStorage.setItem(KEY, BUILD); } catch (e) {}
+    var purged = false;
+    try { purged = sessionStorage.getItem('studyhub_purged') === BUILD; } catch (e) {}
+    if (!purged) {
+      try { sessionStorage.setItem('studyhub_purged', BUILD); } catch (e) {}
+      var reload = function () { location.reload(); };
+      var chain = Promise.resolve();
+      if ('caches' in window) {
+        chain = chain.then(function () {
+          return caches.keys().then(function (keys) {
+            return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+          });
+        });
+      }
+      if ('serviceWorker' in navigator) {
+        chain = chain.then(function () {
+          return navigator.serviceWorker.getRegistrations().then(function (regs) {
+            return Promise.all(regs.map(function (r) { return r.unregister(); }));
+          });
+        });
+      }
+      chain.then(reload).catch(reload);
+      return;
+    }
+  }
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistration().then(function (reg) {
+      if (reg) reg.update();
+    }).catch(function () {});
+  }
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#b46b1f" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
@@ -13,8 +54,8 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="exam-panel.css">
+<link rel="stylesheet" href="styles.css?v=35">
+<link rel="stylesheet" href="exam-panel.css?v=35">
 </head>
 <body>
 
@@ -304,25 +345,49 @@
 <div class="toast" id="toast"></div>
 
 <!-- DATA (load order matters) -->
-<script src="data-core.js"></script>
-<script src="chapters3to8.js"></script>
-<script src="physics-qbank.js"></script>
-<script src="physics-neet.js"></script>
-<script src="physics-mindmaps.js"></script>
-<script src="physics-cheatsheets.js"></script>
-<script src="biology.js"></script>
-<script src="biology-neet.js"></script>
-<script src="biology-mindmaps.js"></script>
-<script src="biology-cheatsheets.js"></script>
-<script src="chemistry.js"></script>
-<script src="chemistry-neet.js"></script>
-<script src="chemistry-mindmaps.js"></script>
-<script src="chemistry-cheatsheets.js"></script>
-<script src="geography.js"></script>
-<script src="history-civics.js"></script>
+<script src="data-core.js?v=35"></script>
+<script src="chapters3to8.js?v=35"></script>
+<script src="physics-qbank.js?v=35"></script>
+<script src="physics-neet.js?v=35"></script>
+<script src="physics-mindmaps.js?v=35"></script>
+<script src="physics-cheatsheets.js?v=35"></script>
+<script src="biology.js?v=35"></script>
+<script src="biology-neet.js?v=35"></script>
+<script src="biology-mindmaps.js?v=35"></script>
+<script src="biology-cheatsheets.js?v=35"></script>
+<script src="chemistry.js?v=35"></script>
+<script src="chemistry-neet.js?v=35"></script>
+<script src="chemistry-mindmaps.js?v=35"></script>
+<script src="chemistry-cheatsheets.js?v=35"></script>
+<script src="geography.js?v=35"></script>
+<script src="history-civics.js?v=35"></script>
 <!-- APP LOGIC -->
-<script src="app.js"></script>
-<script src="exam-panel.js"></script>
-<script src="github-sync.js"></script>
+<script src="app.js?v=35"></script>
+<script src="exam-panel.js?v=35"></script>
+<script src="github-sync.js?v=35"></script>
+<script>
+(function bootStudyHub() {
+  if (typeof initApp === 'function') {
+    initApp();
+    return;
+  }
+  var chain = Promise.resolve();
+  if ('caches' in window) {
+    chain = chain.then(function () {
+      return caches.keys().then(function (keys) {
+        return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+      });
+    });
+  }
+  if ('serviceWorker' in navigator) {
+    chain = chain.then(function () {
+      return navigator.serviceWorker.getRegistrations().then(function (regs) {
+        return Promise.all(regs.map(function (r) { return r.unregister(); }));
+      });
+    });
+  }
+  chain.then(function () { location.reload(); }).catch(function () { location.reload(); });
+})();
+</script>
 </body>
 </html>

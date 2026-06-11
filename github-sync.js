@@ -374,5 +374,3 @@ function setupGithubSync() {
   updateSyncStatusUI();
   setTimeout(checkRemoteSyncStatus, 1200);
 }
-
-initApp();

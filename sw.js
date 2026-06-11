@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v34';
+const CACHE = 'studyhub-v35';
 const ASSETS = [
   './',
   './index.html',
@@ -27,14 +27,20 @@ const ASSETS = [
   './icons/icon.svg'
 ];
 
-function isFreshAsset(url) {
+function isCriticalAsset(url) {
   return /\.(html?|js|css)(\?|$)/i.test(url.pathname);
+}
+
+function cacheAddSafe(cache, url) {
+  return cache.add(url).catch(function () { /* skip missing/offline assets */ });
 }
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      return cache.addAll(ASSETS);
+      return Promise.allSettled(ASSETS.map(function (url) {
+        return cacheAddSafe(cache, url);
+      }));
     }).then(function () {
       return self.skipWaiting();
     })
@@ -55,27 +61,36 @@ self.addEventListener('activate', function (event) {
   );
 });
 
+self.addEventListener('message', function (event) {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
+/** Always prefer network for code & markup so bad cached JS cannot brick the app. */
+function networkFirstFresh(request) {
+  return fetch(request).then(function (response) {
+    if (response && response.status === 200 && response.type === 'basic') {
+      const copy = response.clone();
+      caches.open(CACHE).then(function (cache) {
+        cache.put(request, copy);
+      });
+    }
+    return response;
+  }).catch(function () {
+    return caches.match(request).then(function (cached) {
+      return cached || caches.match('./index.html');
+    });
+  });
+}
+
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  if (isFreshAsset(url)) {
-    event.respondWith(
-      fetch(event.request).then(function (response) {
-        if (response && response.status === 200 && response.type === 'basic') {
-          const copy = response.clone();
-          caches.open(CACHE).then(function (cache) {
-            cache.put(event.request, copy);
-          });
-        }
-        return response;
-      }).catch(function () {
-        return caches.match(event.request).then(function (cached) {
-          return cached || caches.match('./index.html');
-        });
-      })
-    );
+  if (isCriticalAsset(url)) {
+    event.respondWith(networkFirstFresh(event.request));
     return;
   }
 
