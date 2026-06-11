@@ -1095,25 +1095,49 @@ function scrollContentTop() {
 }
 
 function prevNoteCard() {
-  if (noteIndex > 0) { noteIndex--; renderNotes(); scrollContentTop(); }
+  if (noteIndex > 0) {
+    noteIndex--;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 function nextNoteCard() {
   const notes = sortedTopicNotes(selectedTopic);
-  if (noteIndex < notes.length - 1) { noteIndex++; renderNotes(); scrollContentTop(); }
+  if (noteIndex < notes.length - 1) {
+    noteIndex++;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 function prevQuestionCard() {
-  if (questionIndex > 0) { questionIndex--; renderQuestions(textQuestions(selectedTopic)); scrollContentTop(); }
+  if (questionIndex > 0) {
+    questionIndex--;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 function nextQuestionCard() {
   const filtered = getFilteredQuestions(textQuestions(selectedTopic));
-  if (questionIndex < filtered.length - 1) { questionIndex++; renderQuestions(textQuestions(selectedTopic)); scrollContentTop(); }
+  if (questionIndex < filtered.length - 1) {
+    questionIndex++;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 function prevDiagramCard() {
-  if (diagramIndex > 0) { diagramIndex--; renderDiagramQuestions(sortedDiagramQuestions(selectedTopic)); scrollContentTop(); }
+  if (diagramIndex > 0) {
+    diagramIndex--;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 function nextDiagramCard() {
   const diags = sortedDiagramQuestions(selectedTopic);
-  if (diagramIndex < diags.length - 1) { diagramIndex++; renderDiagramQuestions(diags); scrollContentTop(); }
+  if (diagramIndex < diags.length - 1) {
+    diagramIndex++;
+    renderContent(document.getElementById('main-content'));
+    scrollContentTop();
+  }
 }
 
 function handleContentPagerKeys(e) {
@@ -1695,6 +1719,119 @@ function renderTopics(el) {
 }
 
 // ===== CONTENT =====
+function buildChapterRevisionHint(csData, mmData, qStats) {
+  if (qStats) {
+    return `Revision: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (' + csData.wordCards.length + ')' : ''}`;
+  }
+  if (csData || mmData) {
+    return `Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (' + csData.wordCards.length + ')' : ''}`;
+  }
+  return '';
+}
+
+function buildChapterSidebarHtml(opts) {
+  const {
+    notes, questions, qStats, diagrams, csData, cm, heat, questionsForFilter
+  } = opts;
+  const mcqCount = qStats ? qStats.mcq : questions.filter(q => q.type === 'mcq').length;
+
+  const statRows = [
+    { label: 'Notes', num: notes.length, click: "switchContentTab('notes')" },
+    { label: qStats ? 'Questions' : 'Text Qs', num: questions.length, click: "switchContentTab('questions')" },
+    { label: 'MCQs', num: mcqCount, click: "switchContentTab('questions');setQuestionFilter('mcq')" },
+    { label: 'Diagram MCQs', num: diagrams.length, click: "switchContentTab('diagrams')" }
+  ];
+  if (csData) {
+    statRows.push({ label: '⚡ Cheat Sheet', num: csData.topTen ? csData.topTen.length : '—', click: "switchContentTab('cheatsheet')", rev: true });
+  }
+  if (csData && csData.wordCards && csData.wordCards.length) {
+    statRows.push({ label: '🔤 One Word', num: csData.wordCards.length, click: "switchContentTab('oneword')", rev: true });
+  }
+
+  const statsHtml = statRows.map(s => `
+    <button type="button" class="ch-stat-row${s.rev ? ' ch-stat-rev' : ''}" onclick="${s.click}">
+      <span class="ch-stat-num">${s.num}</span>
+      <span class="ch-stat-lbl">${s.label}</span>
+    </button>`).join('');
+
+  const progressHtml = `
+    <div class="ch-sidebar-block">
+      <button type="button" class="ch-stat-row" onclick="switchContentTab('questions')">
+        <span class="ch-stat-num" id="coverage-num">${cm.coverage}%</span>
+        <span class="ch-stat-lbl">Coverage</span>
+      </button>
+      <div class="progress-bar ch-mini-bar"><div class="progress-fill cov-mid" id="coverage-bar" style="width:${Math.max(cm.coverage, 2)}%"></div></div>
+      <button type="button" class="ch-stat-row" onclick="resetChapterProgress()" title="Reset chapter progress">
+        <span class="ch-stat-num" id="mastery-num">${cm.attempted ? cm.accuracy + '%' : '—'}</span>
+        <span class="ch-stat-lbl">Accuracy ↺</span>
+      </button>
+      <div class="progress-bar ch-mini-bar"><div class="progress-fill" id="mastery-bar" style="width:${Math.max(cm.attempted ? cm.accuracy : 0, 2)}%"></div></div>
+      <button type="button" class="ch-stat-row ch-stat-warn" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'mistakes'})">
+        <span class="ch-stat-num">${getMistakeQuestions(selectedTopic).length}</span>
+        <span class="ch-stat-lbl">Mistakes</span>
+      </button>
+    </div>`;
+
+  const heatHtml = heat.length ? `
+    <div class="ch-sidebar-block">
+      <h4 class="ch-sidebar-title">Section strength</h4>
+      <div class="ch-heat-list">${heat.map(s => {
+        const cls = s.accuracy === null ? 'heat-none' : s.accuracy >= 80 ? 'heat-good' : s.accuracy >= 50 ? 'heat-mid' : 'heat-low';
+        const lbl = s.accuracy === null ? '—' : s.accuracy + '%';
+        const short = (s.name || '').replace(/^\d+\.\s*/, '').slice(0, 32);
+        return `<div class="ch-heat-row ${cls}" title="${escHtml(s.name)} — ${s.attempted}/${s.total} tried">
+          <span class="ch-heat-name">${escHtml(short)}${short.length < (s.name || '').length ? '…' : ''}</span>
+          <span class="ch-heat-pct">${lbl}</span>
+        </div>`;
+      }).join('')}</div>
+    </div>` : '';
+
+  let filtersHtml = '';
+  if (contentTab === 'questions' && questionsForFilter) {
+    const types = [
+      { key: 'all', label: 'All', icon: '📋' },
+      { key: 'top', label: 'Top ★★★★', icon: '⭐' },
+      { key: 'true_false', label: 'True/False', icon: '✅' },
+      { key: 'fill_blank', label: 'Fill Blanks', icon: '✍️' },
+      { key: 'mcq', label: 'MCQ', icon: '🔘' },
+      { key: 'match', label: 'Match', icon: '🔗' },
+      { key: 'short_answer', label: 'Short/Long Answer', icon: '📋' }
+    ];
+    filtersHtml = `
+      <div class="ch-sidebar-block">
+        <h4 class="ch-sidebar-title">Question type</h4>
+        <div class="ch-filter-list">${types.map(t => {
+          const n = t.key === 'all'
+            ? questionsForFilter.length
+            : t.key === 'top'
+              ? questionsForFilter.filter(q => getQuestionQuality(q).stars >= 4).length
+              : questionsForFilter.filter(q => q.type === t.key).length;
+          return `<button type="button" class="ch-filter-btn ${questionFilter === t.key ? 'active' : ''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</button>`;
+        }).join('')}</div>
+      </div>`;
+  }
+
+  return `
+    <aside class="chapter-sidebar" id="chapter-sidebar">
+      <div class="ch-sidebar-block">
+        <h4 class="ch-sidebar-title">Chapter stats</h4>
+        ${statsHtml}
+      </div>
+      ${progressHtml}
+      ${heatHtml}
+      ${filtersHtml}
+      <div class="ch-sidebar-block ch-sidebar-actions">
+        <button type="button" class="btn btn-sm btn-primary" style="width:100%" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
+        <button type="button" class="btn btn-sm btn-outline" style="width:100%" onclick="openExamPanel({topicId:'${selectedTopic}',subjectId:'${topicSubjectId(selectedTopic)}'})">📝 Mock Test</button>
+      </div>
+    </aside>`;
+}
+
+function topicSubjectId(topicId) {
+  const t = appData.topics.find(x => x.id === topicId);
+  return t ? t.subjectId : '';
+}
+
 function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
   const notes = topicNotes(selectedTopic);
@@ -1707,68 +1844,30 @@ function renderContent(el) {
 
   const cm = chapterMastery(selectedTopic);
   const heat = sectionHeatmap(selectedTopic);
-  const heatHtml = heat.length ? `
-    <div class="section-heatmap">
-      <h3>Section strength</h3>
-      <div class="heat-row">${heat.map(s => {
-        const cls = s.accuracy === null ? 'heat-none' : s.accuracy >= 80 ? 'heat-good' : s.accuracy >= 50 ? 'heat-mid' : 'heat-low';
-        const lbl = s.accuracy === null ? '—' : s.accuracy + '%';
-        const short = (s.name || '').replace(/^\d+\.\s*/, '').slice(0, 28);
-        return `<div class="heat-pill ${cls}" title="${escHtml(s.name)} — ${s.attempted}/${s.total} tried"><span class="heat-lbl">${escHtml(short)}${short.length < (s.name||'').length ? '…' : ''}</span><span class="heat-acc">${lbl}</span></div>`;
-      }).join('')}</div>
-    </div>` : '';
+  const revHint = buildChapterRevisionHint(csData, mmData, qStats);
+  const sidebarHtml = buildChapterSidebarHtml({
+    notes, questions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
+  });
+
   el.innerHTML = `
-    <div class="fade-in">
-      <div class="section-header chapter-header">
-        <h1>${topic?.icon} ${topic?.name}</h1>
-        <div class="chapter-header-actions">
-          <div class="content-tabs chapter-tabs" role="tablist" aria-label="Chapter study modes">
-            <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
-            ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
-            ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
-            ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
-            <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
-            <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
-          </div>
-          <button class="btn btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
+    <div class="fade-in chapter-page">
+      <div class="chapter-top">
+        <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
+        ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
+        ${qStats ? `<p class="chapter-bank-hint">📚 ICSE Physics — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} questions</strong> · <strong>${diagrams.length} diagram MCQs</strong></p>` : ''}
+        <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
+          <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
+          ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
+          ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
+          ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
+          <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+          <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
         </div>
       </div>
-      ${qStats ? `<p class="chapter-tabs-hint physics-bank-banner">📚 ICSE Physics bank — <strong>${qStats.notes} linked notes</strong> · <strong>${qStats.total} text questions</strong> · <strong>${diagrams.length} diagram MCQs</strong> (${qStats.mcq} MCQ · ${qStats.true_false} T/F · ${qStats.fill_blank} Fill · ${qStats.match} Match · ${qStats.short_answer} Q&A)</p>` : ''}
-      ${(csData || mmData) && !qStats ? `<p class="chapter-tabs-hint">Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''} — tap a tab above</p>` : ''}
-      ${(csData || mmData) && qStats ? `<p class="chapter-tabs-hint">Revision: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''}</p>` : ''}
-      <div class="stats-row">
-        <div class="stat-card"><div class="stat-num">${notes.length}</div><div class="stat-label">Notes</div></div>
-        <div class="stat-card"><div class="stat-num">${questions.length}</div><div class="stat-label">${qStats ? 'Questions' : 'Text Qs'}</div></div>
-        ${qStats ? `<div class="stat-card" title="MCQ · T/F · Fill · Match · Q&A breakdown"><div class="stat-num">${qStats.mcq}</div><div class="stat-label">MCQs</div></div>` : `<div class="stat-card"><div class="stat-num">${questions.filter(q=>q.type==='mcq').length}</div><div class="stat-label">Text MCQs</div></div>`}
-        <div class="stat-card" onclick="switchContentTab('diagrams')" style="cursor:pointer" title="Open diagram-based NEET MCQs">
-          <div class="stat-num">${diagrams.length}</div>
-          <div class="stat-label">Diagram MCQs</div>
-        </div>
-        ${csData ? `<div class="stat-card stat-revision" onclick="switchContentTab('cheatsheet')" style="cursor:pointer" title="High-yield last-minute revision">
-          <div class="stat-num">${csData.topTen ? csData.topTen.length : '—'}</div>
-          <div class="stat-label">⚡ Cheat Sheet</div>
-        </div>` : ''}
-        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="stat-card stat-revision" onclick="switchContentTab('oneword')" style="cursor:pointer" title="Tap words to reveal definitions">
-          <div class="stat-num">${csData.wordCards.length}</div>
-          <div class="stat-label">🔤 One Word</div>
-        </div>` : ''}
-        <div class="stat-card stat-coverage" title="Share of questions you've tried">
-          <div class="stat-num" id="coverage-num">${cm.coverage}%</div>
-          <div class="stat-label">Coverage</div>
-          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill cov-mid" id="coverage-bar" style="width:${Math.max(cm.coverage,2)}%"></div></div>
-        </div>
-        <div class="stat-card stat-mastery" title="Accuracy on questions you've tried. Click to reset chapter progress." onclick="resetChapterProgress()">
-          <div class="stat-num" id="mastery-num">${cm.attempted ? cm.accuracy + '%' : '—'}</div>
-          <div class="stat-label">Accuracy ↺</div>
-          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="mastery-bar" style="width:${Math.max(cm.attempted ? cm.accuracy : 0,2)}%"></div></div>
-        </div>
-        <div class="stat-card" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'mistakes'})" style="cursor:pointer" title="Quiz from your mistakes in this chapter">
-          <div class="stat-num">${getMistakeQuestions(selectedTopic).length}</div>
-          <div class="stat-label">Mistakes</div>
-        </div>
+      <div class="chapter-layout">
+        <div id="content-body" class="chapter-main"></div>
+        ${sidebarHtml}
       </div>
-      ${heatHtml}
-      <div id="content-body"></div>
     </div>
   `;
 
@@ -2099,47 +2198,26 @@ function renderNotes() {
 
 function renderQuestions(questions) {
   const body = document.getElementById('content-body');
-
-  const types = [
-    {key:'all',label:'All',icon:'📋'},
-    {key:'top',label:'Top ★★★★',icon:'⭐'},
-    {key:'true_false',label:'True/False',icon:'✅'},
-    {key:'fill_blank',label:'Fill Blanks',icon:'✍️'},
-    {key:'mcq',label:'MCQ',icon:'🔘'},
-    {key:'match',label:'Match',icon:'🔗'},
-    {key:'short_answer',label:'Short/Long Answer',icon:'📋'}
-  ];
+  if (!body) return;
 
   const filtered = getFilteredQuestions(questions);
   questionIndex = clampCardIndex(questionIndex, filtered.length);
 
-  let tabsHtml = `<div class="question-type-tabs">${types.map(t => {
-    const n = t.key === 'all'
-      ? questions.length
-      : t.key === 'top'
-        ? questions.filter(q => getQuestionQuality(q).stars >= 4).length
-        : questions.filter(q => q.type === t.key).length;
-    return `<div class="q-tab ${questionFilter===t.key?'active':''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</div>`;
-  }).join('')}</div>`;
-
-  let qHtml = '';
   if (filtered.length === 0) {
-    qHtml = '<div class="empty-state"><div class="empty-icon">❓</div><h3>No questions of this type</h3></div>';
-  } else {
-    const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', 'Question');
-    const card = renderSingleQuestion(filtered[questionIndex], questionIndex);
-    qHtml = `${pager}<div class="questions-single">${card}</div>${pager}
-      <p class="card-pager-hint">Use ← → arrow keys to move between questions</p>`;
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">❓</div><h3>No questions of this type</h3><p>Pick another filter in the sidebar →</p></div>';
+    return;
   }
-
-  body.innerHTML = tabsHtml + qHtml;
+  const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', 'Question');
+  const card = renderSingleQuestion(filtered[questionIndex], questionIndex);
+  body.innerHTML = `${pager}<div class="questions-single">${card}</div>${pager}
+    <p class="card-pager-hint">Use ← → arrow keys to move between questions</p>`;
 }
 
 function setQuestionFilter(f) {
   questionFilter = f;
   questionIndex = 0;
   userAnswers = {};
-  renderQuestions(textQuestions(selectedTopic));
+  renderContent(document.getElementById('main-content'));
 }
 
 function renderDiagramQuestions(diagrams) {
