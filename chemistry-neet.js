@@ -634,6 +634,272 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c1-d01",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, 5 ml of blue vitriol solution is transferred from beaker A to B, then B to C, then C to D. The solution in beaker D is still faintly blue. What does this prove?",
+  "options": [
+   "Copper sulphate is a gas",
+   "A small crystal contains a very large number of extremely small particles",
+   "Water turns blue on heating",
+   "Beaker D contains more crystals than beaker A"
+  ],
+  "correctOption": 1,
+  "answer": "Even after repeated dilution every beaker stays coloured — one small crystal must contain countless tiny particles, each showing the substance's properties. This demonstrates how small and numerous the particles of matter are.",
+  "linksTo": "cn-c1-n02",
+  "source": "icse",
+  "image": "images/chem-ch1_img_002.jpg",
+  "caption": "Successive dilution of blue vitriol solution (Activity 1)"
+ },
+ {
+  "id": "cn-c1-d02",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "What is the expected trend in colour intensity from beaker A to beaker D?",
+  "options": [
+   "The colour becomes deeper from A to D",
+   "The colour stays exactly the same",
+   "The colour becomes fainter from A to D due to successive dilution",
+   "Beakers B and C are colourless while D is blue"
+  ],
+  "correctOption": 2,
+  "answer": "Each transfer carries fewer blue-vitriol particles into more water, so the solution grows fainter — though it never becomes fully colourless, proving particles are still present.",
+  "linksTo": "cn-c1-n02",
+  "source": "icse",
+  "image": "images/chem-ch1_img_002.jpg",
+  "caption": "Successive dilution of blue vitriol solution (Activity 1)"
+ },
+ {
+  "id": "cn-c1-d03",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which substance, shown dissolving in the first cylinder, is 'blue vitriol'?",
+  "options": [
+   "Copper sulphate pentahydrate",
+   "Potassium permanganate",
+   "Sodium chloride",
+   "Iron(II) sulphate"
+  ],
+  "correctOption": 0,
+  "answer": "Blue vitriol = copper sulphate pentahydrate (CuSO₄·5H₂O). The same activity can be repeated with potassium permanganate crystals or ink.",
+  "linksTo": "cn-c1-n02",
+  "source": "icse",
+  "image": "images/chem-ch1_img_002.jpg",
+  "caption": "Successive dilution of blue vitriol solution (Activity 1)"
+ },
+ {
+  "id": "cn-c1-d04",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, reddish-brown bromine vapours spread into the upper jar of colourless air. This happens because:",
+  "options": [
+   "bromine is lighter than air and floats up",
+   "particles of both gases are in constant random motion and intermix — diffusion",
+   "the jars are heated from below",
+   "air pushes the bromine down"
+  ],
+  "correctOption": 1,
+  "answer": "Bromine is actually DENSER than air, yet its randomly moving particles intermix with air particles until both jars look uniform — classic gaseous diffusion, even against gravity.",
+  "linksTo": "cn-c1-n05",
+  "source": "icse",
+  "image": "images/chem-ch1_img_005.jpg",
+  "caption": "Diffusion of bromine vapours into air"
+ },
+ {
+  "id": "cn-c1-d05",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This intermixing would be FASTEST if the experiment were done:",
+  "options": [
+   "at a higher temperature",
+   "at a lower temperature",
+   "with the jars in a refrigerator",
+   "with solid bromine"
+  ],
+  "correctOption": 0,
+  "answer": "The rate of diffusion increases with temperature because particles gain kinetic energy and move faster. Diffusion is fastest in gases and slowest in solids.",
+  "linksTo": "cn-c1-n05",
+  "source": "icse",
+  "image": "images/chem-ch1_img_005.jpg",
+  "caption": "Diffusion of bromine vapours into air"
+ },
+ {
+  "id": "cn-c1-d06",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, solid collecting on the cooler upper part of the heated test tube is labelled 'sublimate'. What happened to the ammonium chloride?",
+  "options": [
+   "It melted into liquid and then boiled",
+   "It changed directly from solid to vapour, then re-solidified on the cool part",
+   "It decomposed into nitrogen and chlorine",
+   "It dissolved in the glass"
+  ],
+  "correctOption": 1,
+  "answer": "Ammonium chloride sublimes — solid → vapour directly, skipping the liquid state. The vapours re-solidify (deposition) on the cooler upper wall as the sublimate.",
+  "linksTo": "cn-c1-n08",
+  "source": "icse",
+  "image": "images/chem-ch1_img_012.jpg",
+  "caption": "Sublimation of ammonium chloride in a test tube"
+ },
+ {
+  "id": "cn-c1-d07",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which group of substances would behave like the solid in this figure when heated?",
+  "options": [
+   "Camphor, iodine, naphthalene, dry ice",
+   "Ice, wax, butter",
+   "Salt, sugar, sand",
+   "Iron, copper, zinc"
+  ],
+  "correctOption": 0,
+  "answer": "Camphor, iodine, naphthalene and dry ice (solid CO₂) are sublimable — they have weaker intermolecular forces and pass directly to the vapour phase on heating.",
+  "linksTo": "cn-c1-n08",
+  "source": "icse",
+  "image": "images/chem-ch1_img_012.jpg",
+  "caption": "Sublimation of ammonium chloride in a test tube"
+ },
+ {
+  "id": "cn-c1-d08",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the cycle shown, the DIRECT arrow from Solid to Gas is labelled:",
+  "options": [
+   "evaporation",
+   "condensation",
+   "sublimation",
+   "melting"
+  ],
+  "correctOption": 2,
+  "answer": "Solid → gas directly = sublimation; the reverse (gas → solid) = deposition. The diagram shows both as the central double arrow.",
+  "linksTo": "cn-c1-n09",
+  "source": "icse",
+  "image": "images/chem-ch1_img_013.jpg",
+  "caption": "Interconversion of the three states of matter"
+ },
+ {
+  "id": "cn-c1-d09",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "According to the diagram, gas changes to liquid by ______ and liquid changes to solid by ______.",
+  "options": [
+   "melting; evaporation",
+   "condensation; solidification (freezing)",
+   "sublimation; deposition",
+   "evaporation; melting"
+  ],
+  "correctOption": 1,
+  "answer": "Gas → liquid is condensation; liquid → solid is solidification/freezing. The clockwise loop reads: melting → evaporation → condensation → freezing.",
+  "linksTo": "cn-c1-n09",
+  "source": "icse",
+  "image": "images/chem-ch1_img_013.jpg",
+  "caption": "Interconversion of the three states of matter"
+ },
+ {
+  "id": "cn-c1-d10",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Every change shown in this cycle is a PHYSICAL change because:",
+  "options": [
+   "heat is never involved",
+   "new substances are formed at each step",
+   "only the state changes — the chemical composition stays the same",
+   "the arrows are reversible only for water"
+  ],
+  "correctOption": 2,
+  "answer": "Interconversion of states changes particle spacing and energy, never the substance itself — ice, water and steam are all H₂O. Reversible + no new substance = physical change.",
+  "linksTo": "cn-c1-n09",
+  "source": "icse",
+  "image": "images/chem-ch1_img_013.jpg",
+  "caption": "Interconversion of the three states of matter"
+ },
+ {
+  "id": "cn-c1-d11",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the apparatus shown, the test tube of barium chloride hangs inside a corked conical flask of sodium sulphate. When the flask is tilted so the solutions mix, what is observed?",
+  "options": [
+   "A white precipitate of barium sulphate forms and total mass stays unchanged",
+   "The flask becomes much heavier",
+   "A gas escapes and mass decreases",
+   "Nothing happens until the flask is heated"
+  ],
+  "correctOption": 0,
+  "answer": "BaCl₂ + Na₂SO₄ → BaSO₄↓ (white precipitate) + 2NaCl. Weighing before and after shows identical mass — verifying the law of conservation of mass.",
+  "linksTo": "cn-c1-n10",
+  "source": "icse",
+  "image": "images/chem-ch1_img_015.jpg",
+  "caption": "Verifying the law of conservation of mass (BaCl₂ + Na₂SO₄)"
+ },
+ {
+  "id": "cn-c1-d12",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Why is the flask CORKED in this experiment?",
+  "options": [
+   "To keep dust out",
+   "So that nothing — not even a gaseous product — can escape and alter the measured mass",
+   "To stop the thread from burning",
+   "To increase the pressure for a faster reaction"
+  ],
+  "correctOption": 1,
+  "answer": "The law can only be verified in a CLOSED container; if any product escaped, the final mass would read lower and the law would appear to fail.",
+  "linksTo": "cn-c1-n10",
+  "source": "icse",
+  "image": "images/chem-ch1_img_015.jpg",
+  "caption": "Verifying the law of conservation of mass (BaCl₂ + Na₂SO₄)"
+ },
+ {
+  "id": "cn-c1-d13",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The white cloud of effervescence in the sealed bag is due to the formation of:",
+  "options": [
+   "hydrogen gas",
+   "oxygen gas",
+   "carbon dioxide gas",
+   "steam"
+  ],
+  "correctOption": 2,
+  "answer": "NaHCO₃ + CH₃COOH → CO₂↑ + CH₃COONa + H₂O. The fizz is carbon dioxide; the sealed bag keeps it in so the total mass stays constant.",
+  "linksTo": "cn-c1-n10",
+  "source": "icse",
+  "image": "images/chem-ch1_img_017.jpg",
+  "caption": "Baking soda + vinegar in a zip-locked bag"
+ },
+ {
+  "id": "cn-c1-d14",
+  "topicId": "chem-ch1",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "If the bag is weighed before and after the reaction (kept sealed), the mass will:",
+  "options": [
+   "increase, because gas is heavy",
+   "decrease, because gas is light",
+   "remain approximately the same",
+   "first decrease then increase"
+  ],
+  "correctOption": 2,
+  "answer": "With the zip locked, no matter enters or leaves — total mass of reactants = total mass of products (law of conservation of mass). Opening the bag first would let CO₂ escape and the mass would drop.",
+  "linksTo": "cn-c1-n10",
+  "source": "icse",
+  "image": "images/chem-ch1_img_017.jpg",
+  "caption": "Baking soda + vinegar in a zip-locked bag"
+ },
+ {
   "id": "cn-c2-n01",
   "topicId": "chem-ch2",
   "type": "note",
@@ -1207,6 +1473,196 @@ const CHEMISTRY_NEET_DATA = [
   "answer": "PHYSICAL: heat melts the solid wax near the flame into liquid; drops that fall away cool and re-solidify into the same wax — no new substance. CHEMICAL: the molten wax drawn up the wick burns to form NEW substances — carbon dioxide and water vapour — releasing heat and light (exothermic); these cannot be converted back into wax. Since both occur at once, a burning candle shows simultaneous physical and chemical change. Gases produced: carbon dioxide (CO₂) and water vapour (H₂O).",
   "linksTo": "cn-c2-n04",
   "source": "icse"
+ },
+ {
+  "id": "cn-c2-d01",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The photograph shows shiny new nails beside old reddish-brown ones. The change seen on the old nails is:",
+  "options": [
+   "a fast physical change",
+   "a slow chemical change requiring both air and moisture",
+   "a reversible change",
+   "sublimation"
+  ],
+  "correctOption": 1,
+  "answer": "Rusting is a SLOW CHEMICAL change: iron exposed to air AND water over days forms reddish-brown rust — a new substance that cannot be turned back into iron by physical means.",
+  "linksTo": "cn-c2-n05",
+  "source": "icse",
+  "image": "images/chem-ch2_img_002.jpg",
+  "caption": "Rusting of iron nails"
+ },
+ {
+  "id": "cn-c2-d02",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which classification labels apply to the change shown?",
+  "options": [
+   "Man-made, periodic, physical",
+   "Natural, slow, irreversible, chemical",
+   "Natural, fast, reversible",
+   "Man-made, fast, chemical"
+  ],
+  "correctOption": 1,
+  "answer": "Rusting occurs by itself (natural), takes a long time (slow), forms a new substance (chemical) and cannot be undone (irreversible).",
+  "linksTo": "cn-c2-n05",
+  "source": "icse",
+  "image": "images/chem-ch2_img_002.jpg",
+  "caption": "Rusting of iron nails"
+ },
+ {
+  "id": "cn-c2-d03",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled apparatus, why is a cotton plug placed in the stem of the inverted funnel?",
+  "options": [
+   "To let air in",
+   "To prevent the camphor vapours from escaping into the air",
+   "To absorb the heat",
+   "To hold the funnel upright"
+  ],
+  "correctOption": 1,
+  "answer": "The cotton plug seals the stem so the vapours stay inside, rise, and re-solidify on the funnel's cooler neck as the sublimate.",
+  "linksTo": "cn-c2-n02",
+  "source": "icse",
+  "image": "images/chem-ch2_img_007.jpg",
+  "caption": "Sublimation of camphor under an inverted funnel (Activity 2)"
+ },
+ {
+  "id": "cn-c2-d04",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This experiment proves that sublimation of camphor is a PHYSICAL change because:",
+  "options": [
+   "the camphor vapours burn",
+   "the recovered sublimate is the same substance — no new substance forms and the change is reversible",
+   "camphor reacts with the funnel glass",
+   "the change is permanent"
+  ],
+  "correctOption": 1,
+  "answer": "On cooling, the vapours return as solid camphor unchanged — temporary, reversible, no new substance: the definition of a physical change.",
+  "linksTo": "cn-c2-n02",
+  "source": "icse",
+  "image": "images/chem-ch2_img_007.jpg",
+  "caption": "Sublimation of camphor under an inverted funnel (Activity 2)"
+ },
+ {
+  "id": "cn-c2-d05",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Identify the parts of the setup from bottom to top:",
+  "options": [
+   "Burner → wire gauze → evaporating dish with camphor → inverted funnel with cotton plug",
+   "Funnel → dish → gauze → burner",
+   "Tripod → funnel → camphor → burner",
+   "Burner → camphor → gauze → dish"
+  ],
+  "correctOption": 0,
+  "answer": "The burner heats through wire gauze on a tripod stand; camphor sits in the evaporating dish, covered by the inverted funnel whose stem carries the cotton plug — sublimate collects inside the funnel.",
+  "linksTo": "cn-c2-n02",
+  "source": "icse",
+  "image": "images/chem-ch2_img_007.jpg",
+  "caption": "Sublimation of camphor under an inverted funnel (Activity 2)"
+ },
+ {
+  "id": "cn-c2-d06",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The double arrows (HEAT/COOL) between the three beakers indicate that the changes are:",
+  "options": [
+   "permanent and chemical",
+   "temporary and reversible — characteristics of a physical change",
+   "possible only once",
+   "caused by adding new substances"
+  ],
+  "correctOption": 1,
+  "answer": "Ice, water and vapour interconvert by heating/cooling and all remain H₂O — temporary, reversible, no new substance: a physical change.",
+  "linksTo": "cn-c2-n02",
+  "source": "icse",
+  "image": "images/chem-ch2_img_009.jpg",
+  "caption": "Interconversion: ice ⇌ water ⇌ water vapour"
+ },
+ {
+  "id": "cn-c2-d07",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which statement about the three beakers is CORRECT?",
+  "options": [
+   "The chemical composition differs in each beaker",
+   "All three contain the same compound, H₂O, in different physical states",
+   "Only the liquid beaker contains water",
+   "Steam is a new substance formed chemically"
+  ],
+  "correctOption": 1,
+  "answer": "Solid ice, liquid water and water vapour are one substance in three states — only particle spacing and kinetic energy differ.",
+  "linksTo": "cn-c2-n02",
+  "source": "icse",
+  "image": "images/chem-ch2_img_009.jpg",
+  "caption": "Interconversion: ice ⇌ water ⇌ water vapour"
+ },
+ {
+  "id": "cn-c2-d08",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the first flowchart (Solid camphor --A heating--> White vapours --B cooling--> C), what are A, B and C?",
+  "options": [
+   "A = melting, B = boiling, C = liquid camphor",
+   "A = sublimation, B = deposition, C = solid camphor (sublimate)",
+   "A = evaporation, B = condensation, C = water",
+   "A = burning, B = cooling, C = ash"
+  ],
+  "correctOption": 1,
+  "answer": "Camphor sublimes (A) into vapours which on cooling deposit (B) back as solid camphor — the sublimate (C). Both are physical changes.",
+  "linksTo": "cn-c2-n03",
+  "source": "icse",
+  "image": "images/chem-ch2_img_023.jpg",
+  "caption": "Identify A–E: camphor and magnesium flowcharts"
+ },
+ {
+  "id": "cn-c2-d09",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the second flowchart (Magnesium + D --E--> Magnesium oxide), D and E are:",
+  "options": [
+   "D = hydrogen, E = reduction",
+   "D = oxygen, E = burning/combination (chemical change)",
+   "D = water, E = dissolving",
+   "D = nitrogen, E = sublimation"
+  ],
+  "correctOption": 1,
+  "answer": "2Mg + O₂ → 2MgO: magnesium combines with OXYGEN (D) on burning (E) — a combination reaction and a chemical change.",
+  "linksTo": "cn-c2-n03",
+  "source": "icse",
+  "image": "images/chem-ch2_img_023.jpg",
+  "caption": "Identify A–E: camphor and magnesium flowcharts"
+ },
+ {
+  "id": "cn-c2-d10",
+  "topicId": "chem-ch2",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In which of the two changes shown does a GAIN in mass take place?",
+  "options": [
+   "The camphor change — vapours weigh more",
+   "The magnesium change — oxygen from air combines, so the oxide weighs more than the metal",
+   "Both changes gain mass",
+   "Neither change involves mass"
+  ],
+  "correctOption": 1,
+  "answer": "Burning magnesium gains exactly the mass of the oxygen that combines (2Mg + O₂ → 2MgO). Sublimation is physical — camphor's mass is unchanged.",
+  "linksTo": "cn-c2-n03",
+  "source": "icse",
+  "image": "images/chem-ch2_img_023.jpg",
+  "caption": "Identify A–E: camphor and magnesium flowcharts"
  },
  {
   "id": "cn-c3-n01",
@@ -1890,6 +2346,405 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c3-d01",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "According to the chart, matter is first divided into:",
+  "options": [
+   "metals and non-metals",
+   "pure substances and mixtures (impure substances)",
+   "solids and liquids",
+   "organic and inorganic"
+  ],
+  "correctOption": 1,
+  "answer": "The top split is pure substances (elements + compounds) vs mixtures (impure). Elements then divide into metals, non-metals, metalloids and inert gases.",
+  "linksTo": "cn-c3-n01",
+  "source": "icse",
+  "image": "images/chem-ch3_img_002.jpg",
+  "caption": "Classification of matter — elements, compounds and mixtures"
+ },
+ {
+  "id": "cn-c3-d02",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the chart, tap water and air are placed under:",
+  "options": [
+   "compounds",
+   "heterogeneous mixtures",
+   "homogeneous mixtures",
+   "elements"
+  ],
+  "correctOption": 2,
+  "answer": "Tap water and air are uniform throughout — homogeneous mixtures. Sand-and-water and oil-and-water are the heterogeneous examples.",
+  "linksTo": "cn-c3-n01",
+  "source": "icse",
+  "image": "images/chem-ch3_img_002.jpg",
+  "caption": "Classification of matter — elements, compounds and mixtures"
+ },
+ {
+  "id": "cn-c3-d03",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Boron, silicon, arsenic and antimony appear in the chart under:",
+  "options": [
+   "metals",
+   "non-metals",
+   "metalloids",
+   "inert gases"
+  ],
+  "correctOption": 2,
+  "answer": "Metalloids show properties of both metals and non-metals — B, Si, As, Sb (with Ge and Te). Helium, neon, argon are the inert gases.",
+  "linksTo": "cn-c3-n01",
+  "source": "icse",
+  "image": "images/chem-ch3_img_002.jpg",
+  "caption": "Classification of matter — elements, compounds and mixtures"
+ },
+ {
+  "id": "cn-c3-d04",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the magnet held over the paper picks up only the iron. This separation works because:",
+  "options": [
+   "iron is heavier than sulphur",
+   "iron is magnetic while sulphur is not",
+   "sulphur dissolves into the paper",
+   "the magnet attracts all metals"
+  ],
+  "correctOption": 1,
+  "answer": "Magnetic separation exploits one component's magnetism — iron (also cobalt, nickel) clings to the magnet; sulphur stays behind.",
+  "linksTo": "cn-c3-n07",
+  "source": "icse",
+  "image": "images/chem-ch3_img_008.jpg",
+  "caption": "Magnetic separation of iron from an iron–sulphur mixture"
+ },
+ {
+  "id": "cn-c3-d05",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The fact that iron can still be pulled out by a magnet shows that the iron–sulphur preparation on the paper is:",
+  "options": [
+   "a compound (FeS)",
+   "a mixture — each component retains its own properties",
+   "a new element",
+   "a solution"
+  ],
+  "correctOption": 1,
+  "answer": "In a MIXTURE components keep their properties (iron stays magnetic). Once heated to form the compound FeS, the magnet would no longer attract it.",
+  "linksTo": "cn-c3-n07",
+  "source": "icse",
+  "image": "images/chem-ch3_img_008.jpg",
+  "caption": "Magnetic separation of iron from an iron–sulphur mixture"
+ },
+ {
+  "id": "cn-c3-d06",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The mixture of common salt and ammonium chloride is heated under an inverted funnel. Which component collects as the sublimate on the funnel?",
+  "options": [
+   "Common salt",
+   "Ammonium chloride",
+   "Both together",
+   "Neither — both melt"
+  ],
+  "correctOption": 1,
+  "answer": "NH₄Cl sublimes — its vapours rise and re-solidify on the funnel's cool neck (scraped off as sublimate); the non-sublimable salt stays in the dish.",
+  "linksTo": "cn-c3-n07",
+  "source": "icse",
+  "image": "images/chem-ch3_img_011.jpg",
+  "caption": "Separating NaCl and NH₄Cl by sublimation"
+ },
+ {
+  "id": "cn-c3-d07",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which other solid-solid mixture could be separated by the SAME method shown?",
+  "options": [
+   "Sugar and salt",
+   "Sand and iodine",
+   "Iron and sulphur",
+   "Chalk and sand"
+  ],
+  "correctOption": 1,
+  "answer": "Iodine sublimes like ammonium chloride, so sand + iodine separates by sublimation. Iron-sulphur needs a magnet; the others need solvents.",
+  "linksTo": "cn-c3-n07",
+  "source": "icse",
+  "image": "images/chem-ch3_img_011.jpg",
+  "caption": "Separating NaCl and NH₄Cl by sublimation"
+ },
+ {
+  "id": "cn-c3-d08",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the clear liquid standing above the settled sand is called the:",
+  "options": [
+   "filtrate",
+   "distillate",
+   "supernatant liquid",
+   "sublimate"
+  ],
+  "correctOption": 2,
+  "answer": "After sedimentation the solid at the bottom is the SEDIMENT and the clear liquid above it is the SUPERNATANT liquid, which is then poured off (decantation).",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_015.jpg",
+  "caption": "Sedimentation and decantation of a sand–water mixture"
+ },
+ {
+  "id": "cn-c3-d09",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This method suits a sand–water mixture because sand is:",
+  "options": [
+   "soluble and light",
+   "insoluble and heavier than water, so it settles down",
+   "magnetic",
+   "volatile"
+  ],
+  "correctOption": 1,
+  "answer": "Sedimentation-decantation works when the solid is insoluble and denser than the liquid. For fine particles that settle slowly (clay), alum is added — loading.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_015.jpg",
+  "caption": "Sedimentation and decantation of a sand–water mixture"
+ },
+ {
+  "id": "cn-c3-d10",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled setup, the solid left on the filter paper and the liquid passing through are called, respectively:",
+  "options": [
+   "sediment and supernatant",
+   "residue and filtrate",
+   "sublimate and distillate",
+   "precipitate and solution"
+  ],
+  "correctOption": 1,
+  "answer": "Filtration vocabulary: RESIDUE stays on the filter paper; FILTRATE passes through into the beaker.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_020.jpg",
+  "caption": "Filtration using a filter-paper cone"
+ },
+ {
+  "id": "cn-c3-d11",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Filtration (rather than sedimentation) is chosen for chalk + water because chalk particles:",
+  "options": [
+   "dissolve completely",
+   "are insoluble and so light they may not settle down",
+   "are magnetic",
+   "sublime on standing"
+  ],
+  "correctOption": 1,
+  "answer": "Light insoluble solids (chalk, clay, sawdust) may stay suspended instead of settling — a filter traps them. Nature filters groundwater the same way through sand beds.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_020.jpg",
+  "caption": "Filtration using a filter-paper cone"
+ },
+ {
+  "id": "cn-c3-d12",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In this method, what is recovered and what is lost?",
+  "options": [
+   "Both salt and water are recovered",
+   "Only the dissolved solid (salt) is recovered; the water escapes as vapour",
+   "Only the water is recovered",
+   "Nothing is recovered"
+  ],
+  "correctOption": 1,
+  "answer": "Evaporation recovers ONLY the non-volatile solid; the liquid is lost as vapour. To recover BOTH components you would use distillation instead.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_022.jpg",
+  "caption": "Evaporation of a salt solution over a sand bath"
+ },
+ {
+  "id": "cn-c3-d13",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The evaporating dish sits on a SAND BATH rather than the direct flame so that:",
+  "options": [
+   "the sand reacts with the salt",
+   "heating is gentle and uniform, preventing spurting",
+   "the flame burns brighter",
+   "the dish melts evenly"
+  ],
+  "correctOption": 1,
+  "answer": "The sand bath spreads heat gently and evenly — avoiding violent boiling and loss of the solution by spurting.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_022.jpg",
+  "caption": "Evaporation of a salt solution over a sand bath"
+ },
+ {
+  "id": "cn-c3-d14",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled apparatus, the pure liquid collected in the receiver after condensation is called the:",
+  "options": [
+   "filtrate",
+   "residue",
+   "distillate",
+   "sediment"
+  ],
+  "correctOption": 2,
+  "answer": "Vapour from the boiling solution condenses in the Liebig condenser and collects as the DISTILLATE; the salt remains in the distilling flask — BOTH components are recovered.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_023.jpg",
+  "caption": "Distillation of a salt solution (Liebig condenser)"
+ },
+ {
+  "id": "cn-c3-d15",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Cold water in the Liebig condenser should flow:",
+  "options": [
+   "in the same direction as the vapour",
+   "against the vapour — entering at the lower (receiver) end",
+   "only when distillation finishes",
+   "through the distilling flask"
+  ],
+  "correctOption": 1,
+  "answer": "Counter-current flow (water in at the bottom, out at the top) keeps the condenser coldest where the vapour exits, ensuring complete condensation.",
+  "linksTo": "cn-c3-n08",
+  "source": "icse",
+  "image": "images/chem-ch3_img_023.jpg",
+  "caption": "Distillation of a salt solution (Liebig condenser)"
+ },
+ {
+  "id": "cn-c3-d16",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the LOWER layer being run out through the stopper first is the:",
+  "options": [
+   "lighter liquid",
+   "heavier (denser) liquid",
+   "more volatile liquid",
+   "coloured liquid only"
+  ],
+  "correctOption": 1,
+  "answer": "Immiscible liquids form layers by density — the heavier one (e.g. water under kerosene) sits below and is released first through the tap.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_024.jpg",
+  "caption": "Separating funnel — immiscible liquids"
+ },
+ {
+  "id": "cn-c3-d17",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "A separating funnel canNOT separate alcohol and water because they are:",
+  "options": [
+   "both colourless",
+   "miscible — they dissolve completely in each other",
+   "both lighter than air",
+   "reactive with glass"
+  ],
+  "correctOption": 1,
+  "answer": "Miscible liquids form no layers; they need FRACTIONAL DISTILLATION (alcohol 78°C vs water 100°C) instead of a separating funnel.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_024.jpg",
+  "caption": "Separating funnel — immiscible liquids"
+ },
+ {
+  "id": "cn-c3-d18",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the fractionating column shown, where do the fractions with the LOWEST boiling points emerge?",
+  "options": [
+   "At the bottom, with bitumen",
+   "At the top — petroleum gases below 40°C",
+   "In the middle with kerosene",
+   "They never leave the column"
+  ],
+  "correctOption": 1,
+  "answer": "The column is hottest at the bottom and coolest at the top: small low-boiling molecules (petroleum gases) rise to the top; big high-boiling residues (bitumen) stay at the bottom.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_026.jpg",
+  "caption": "Fractionating column separating crude petroleum"
+ },
+ {
+  "id": "cn-c3-d19",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Reading the column from top to bottom, the correct order of fractions is:",
+  "options": [
+   "bitumen → fuel oil → petrol → gases",
+   "petroleum gases → petrol → kerosene → diesel/gas oil → fuel oil → lubricating oil → bitumen",
+   "petrol → gases → bitumen → kerosene",
+   "kerosene → gases → petrol → diesel"
+  ],
+  "correctOption": 1,
+  "answer": "Boiling ranges rise downwards: gases (<40°C), petrol (40–70°C... up the scale), kerosene (170–260°C), gas oil/diesel (260–360°C), fuel oil, lubricating oil, bitumen at the base.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_026.jpg",
+  "caption": "Fractionating column separating crude petroleum"
+ },
+ {
+  "id": "cn-c3-d20",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the filter paper and the solvent are, respectively, the:",
+  "options": [
+   "mobile phase and stationary phase",
+   "stationary phase and mobile phase",
+   "residue and filtrate",
+   "solute and solution"
+  ],
+  "correctOption": 1,
+  "answer": "Chromatography separates between two phases: the filter paper (or silica gel) stays put — STATIONARY phase; the rising solvent moves — MOBILE phase.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_027.jpg",
+  "caption": "Paper chromatography of an ink spot"
+ },
+ {
+  "id": "cn-c3-d21",
+  "topicId": "chem-ch3",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "On the developed chromatogram, the dye spot that travelled FURTHEST up the paper is the one that is:",
+  "options": [
+   "least soluble in the solvent",
+   "most strongly adsorbed on the paper",
+   "most soluble in the solvent (and least adsorbed)",
+   "heaviest"
+  ],
+  "correctOption": 2,
+  "answer": "More soluble, weakly adsorbed components ride the solvent front furthest — that difference in adsorption/solubility is the very principle of chromatography.",
+  "linksTo": "cn-c3-n09",
+  "source": "icse",
+  "image": "images/chem-ch3_img_027.jpg",
+  "caption": "Paper chromatography of an ink spot"
+ },
+ {
   "id": "cn-c4-n01",
   "topicId": "chem-ch4",
   "type": "note",
@@ -2533,6 +3388,310 @@ const CHEMISTRY_NEET_DATA = [
   "answer": "Isotopes are atoms of the SAME element with the same atomic number but different mass numbers, owing to different numbers of neutrons. Hydrogen's three isotopes: PROTIUM ¹H₁ — 1 proton, 1 electron, 0 neutrons; DEUTERIUM (heavy hydrogen) ²H₁ — 1p, 1e, 1n; TRITIUM ³H₁ — 1p, 1e, 2n. Same chemical properties: chemical behaviour depends on atomic number/electronic configuration, which all isotopes share. Different physical properties (density, melting point, boiling point): these depend on mass, and the mass numbers differ. Isotopes also contradict Dalton's postulate that all atoms of an element are identical.",
   "linksTo": "cn-c4-n11",
   "source": "icse"
+ },
+ {
+  "id": "cn-c4-d01",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the discharge tube shown (gas at 0.01 mm mercury pressure), the glowing rays travel from:",
+  "options": [
+   "anode to cathode",
+   "cathode to anode",
+   "both electrodes simultaneously",
+   "the vacuum pump to the anode"
+  ],
+  "correctOption": 1,
+  "answer": "Cathode rays stream from the negative electrode (cathode) towards the anode — J.J. Thomson showed they are negatively charged electrons.",
+  "linksTo": "cn-c4-n03",
+  "source": "icse",
+  "image": "images/chem-ch4_img_002.jpg",
+  "caption": "Discharge tube experiment — cathode rays"
+ },
+ {
+  "id": "cn-c4-d02",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Why must the tube be almost evacuated (very low gas pressure) for this experiment?",
+  "options": [
+   "To make the tube lighter",
+   "So the rays can travel without colliding with too many gas particles",
+   "To prevent the glass from melting",
+   "Because electrons only exist in vacuum"
+  ],
+  "correctOption": 1,
+  "answer": "At ~0.01 mm Hg the few remaining gas particles allow the electron beam to pass and produce the visible glow; at full pressure collisions would block the discharge.",
+  "linksTo": "cn-c4-n03",
+  "source": "icse",
+  "image": "images/chem-ch4_img_002.jpg",
+  "caption": "Discharge tube experiment — cathode rays"
+ },
+ {
+  "id": "cn-c4-d03",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In Goldstein's experiment shown, the rays passing through the holes of the perforated cathode and travelling opposite to the cathode rays are:",
+  "options": [
+   "electrons",
+   "anode rays (canal rays) — positively charged protons",
+   "neutrons",
+   "X-rays"
+  ],
+  "correctOption": 1,
+  "answer": "The positive rays stream through the cathode's holes ('canals') — hence canal rays or anode rays, made of protons.",
+  "linksTo": "cn-c4-n04",
+  "source": "icse",
+  "image": "images/chem-ch4_img_004.jpg",
+  "caption": "Perforated cathode — discovery of anode (canal) rays"
+ },
+ {
+  "id": "cn-c4-d04",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure shows two sets of arrows in opposite directions. They represent:",
+  "options": [
+   "cathode rays (electrons) one way and positive rays (protons) the other",
+   "sound waves reflecting",
+   "heat flowing both ways",
+   "two kinds of electrons"
+  ],
+  "correctOption": 0,
+  "answer": "Electrons travel cathode→anode while the positive canal rays travel anode→cathode through the perforations — opposite charges, opposite directions.",
+  "linksTo": "cn-c4-n04",
+  "source": "icse",
+  "image": "images/chem-ch4_img_004.jpg",
+  "caption": "Perforated cathode — discovery of anode (canal) rays"
+ },
+ {
+  "id": "cn-c4-d05",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the model shown, the + signs spread through the sphere and the embedded − particles represent:",
+  "options": [
+   "protons orbiting electrons",
+   "a uniformly positive sphere with electrons embedded like plums in a pudding",
+   "neutrons and protons in a nucleus",
+   "ions in a crystal"
+  ],
+  "correctOption": 1,
+  "answer": "Thomson pictured the atom as a positively charged sphere studded with electrons — the Plum Pudding Model, the first atomic model.",
+  "linksTo": "cn-c4-n05",
+  "source": "icse",
+  "image": "images/chem-ch4_img_005.jpg",
+  "caption": "Thomson's Plum Pudding Model"
+ },
+ {
+  "id": "cn-c4-d06",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This model was rejected because it could not explain:",
+  "options": [
+   "why atoms are neutral",
+   "the results of Rutherford's alpha-particle scattering experiment",
+   "the existence of electrons",
+   "why pudding contains plums"
+  ],
+  "correctOption": 1,
+  "answer": "A diffuse positive sphere cannot bounce alpha particles backwards. Rutherford's scattering results demanded a tiny, dense, central nucleus — so the pudding model fell.",
+  "linksTo": "cn-c4-n05",
+  "source": "icse",
+  "image": "images/chem-ch4_img_005.jpg",
+  "caption": "Thomson's Plum Pudding Model"
+ },
+ {
+  "id": "cn-c4-d07",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, MOST alpha particles pass straight through the gold atom undeflected. This proves that:",
+  "options": [
+   "alpha particles are neutral",
+   "most of the atom is empty space",
+   "gold atoms are solid spheres",
+   "the foil was too thin to matter"
+  ],
+  "correctOption": 1,
+  "answer": "Straight-through passage of the majority showed atoms are mostly empty space — the first conclusion of the 1911 experiment.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_006.jpg",
+  "caption": "Rutherford's alpha-particle scattering through gold foil"
+ },
+ {
+  "id": "cn-c4-d08",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The FEW particles shown bouncing back at large angles reveal that the atom's positive mass is:",
+  "options": [
+   "spread evenly everywhere",
+   "very small, very dense and centrally located — the nucleus",
+   "on the atom's surface",
+   "carried by the electrons"
+  ],
+  "correctOption": 1,
+  "answer": "Only a tiny, concentrated, central positive mass could repel an alpha particle straight back — Rutherford named it the nucleus.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_006.jpg",
+  "caption": "Rutherford's alpha-particle scattering through gold foil"
+ },
+ {
+  "id": "cn-c4-d09",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The particles deflected through SMALL angles (shown grazing the nucleus) are explained by:",
+  "options": [
+   "collisions with electrons",
+   "repulsion when a positive alpha particle passes NEAR the positive nucleus",
+   "gravity of the gold atom",
+   "magnetic fields in the foil"
+  ],
+  "correctOption": 1,
+  "answer": "Like charges repel: an alpha particle passing close to (but not at) the nucleus is nudged off course — the small-angle deflections of the middle arrows.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_006.jpg",
+  "caption": "Rutherford's alpha-particle scattering through gold foil"
+ },
+ {
+  "id": "cn-c4-d10",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure compares the atom with the solar system. In this analogy the nucleus and electrons correspond to:",
+  "options": [
+   "planets and moons",
+   "the sun and the planets",
+   "stars and comets",
+   "earth and satellites"
+  ],
+  "correctOption": 1,
+  "answer": "Rutherford's model: the heavy nucleus sits at the centre like the sun, and electrons revolve around it in orbits like planets.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_007.jpg",
+  "caption": "Rutherford's atomic model and the solar system analogy"
+ },
+ {
+  "id": "cn-c4-d11",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The major DRAWBACK of the model illustrated is that it cannot explain:",
+  "options": [
+   "why electrons are negative",
+   "the stability of the atom — revolving electrons should lose energy and spiral into the nucleus",
+   "the mass of the nucleus",
+   "why orbits are circular"
+  ],
+  "correctOption": 1,
+  "answer": "Classical physics says an orbiting charge radiates energy and collapses inward. Bohr later fixed this with fixed-energy shells where electrons neither lose nor gain energy.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_007.jpg",
+  "caption": "Rutherford's atomic model and the solar system analogy"
+ },
+ {
+  "id": "cn-c4-d12",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the shells K, L, M, N are lettered outward from the nucleus. The maximum electrons each can hold (2n² rule) are:",
+  "options": [
+   "2, 8, 18, 32",
+   "8, 8, 8, 8",
+   "2, 4, 6, 8",
+   "1, 2, 3, 4"
+  ],
+  "correctOption": 0,
+  "answer": "Bohr–Bury 2n²: K(n=1)=2, L(n=2)=8, M(n=3)=18, N(n=4)=32 — though the OUTERMOST shell never exceeds 8 (octet rule).",
+  "linksTo": "cn-c4-n09",
+  "source": "icse",
+  "image": "images/chem-ch4_img_013.jpg",
+  "caption": "Shells K, L, M, N around the nucleus"
+ },
+ {
+  "id": "cn-c4-d13",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which shell in the figure has the LOWEST energy?",
+  "options": [
+   "N — the farthest",
+   "K — the shell closest to the nucleus",
+   "M",
+   "All have equal energy"
+  ],
+  "correctOption": 1,
+  "answer": "Energy increases with distance from the nucleus: K is lowest, N highest. That's why shells fill from K outward.",
+  "linksTo": "cn-c4-n09",
+  "source": "icse",
+  "image": "images/chem-ch4_img_013.jpg",
+  "caption": "Shells K, L, M, N around the nucleus"
+ },
+ {
+  "id": "cn-c4-d14",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The atom shown has a nucleus of 12 protons + 12 neutrons and shells holding 2, 8, 2 electrons. The element is:",
+  "options": [
+   "sodium",
+   "magnesium",
+   "aluminium",
+   "calcium"
+  ],
+  "correctOption": 1,
+  "answer": "Z = 12 → magnesium; configuration 2,8,2; mass number A = 12p + 12n = 24, written ²⁴₁₂Mg.",
+  "linksTo": "cn-c4-n08",
+  "source": "icse",
+  "image": "images/chem-ch4_img_014.jpg",
+  "caption": "Atomic diagram of an atom with 12 protons and 12 neutrons"
+ },
+ {
+  "id": "cn-c4-d15",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "From the diagram, the valency of this element is:",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "8"
+  ],
+  "correctOption": 1,
+  "answer": "Two valence electrons in the outermost (M) shell are easily lost → Mg²⁺, so the valency is 2.",
+  "linksTo": "cn-c4-n08",
+  "source": "icse",
+  "image": "images/chem-ch4_img_014.jpg",
+  "caption": "Atomic diagram of an atom with 12 protons and 12 neutrons"
+ },
+ {
+  "id": "cn-c4-d16",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The mass number of the atom in the figure is:",
+  "options": [
+   "12",
+   "24",
+   "36",
+   "2"
+  ],
+  "correctOption": 1,
+  "answer": "A = protons + neutrons = 12 + 12 = 24. (Electrons contribute negligible mass.)",
+  "linksTo": "cn-c4-n08",
+  "source": "icse",
+  "image": "images/chem-ch4_img_014.jpg",
+  "caption": "Atomic diagram of an atom with 12 protons and 12 neutrons"
  },
  {
   "id": "cn-c5-n01",
@@ -3773,6 +4932,348 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c6-d01",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The molecular diagram shows methane and oxygen molecules changing into carbon dioxide and water. What happens at the 'breaking of bonds' stage?",
+  "options": [
+   "Atoms are destroyed",
+   "Old bonds between atoms break so the atoms can rearrange into new molecules",
+   "New atoms are created",
+   "The molecules freeze"
+  ],
+  "correctOption": 1,
+  "answer": "A chemical reaction = breaking of old bonds + rearrangement of atoms + formation of new bonds (CH₄ + 2O₂ → CO₂ + 2H₂O + energy). Atoms themselves are neither created nor destroyed.",
+  "linksTo": "cn-c6-n01",
+  "source": "icse",
+  "image": "images/chem-ch6_img_001.jpg",
+  "caption": "Bond breaking and bond making: methane burning in oxygen"
+ },
+ {
+  "id": "cn-c6-d02",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Count the atoms in the diagram: one CH₄ and two O₂ molecules react. The products shown must contain:",
+  "options": [
+   "1 C, 4 H, 4 O — as one CO₂ and two H₂O",
+   "2 C, 2 H, 2 O",
+   "1 C, 2 H, 1 O",
+   "whatever atoms appear during the reaction"
+  ],
+  "correctOption": 0,
+  "answer": "Atoms are conserved: 1 carbon, 4 hydrogens and 4 oxygens regroup into exactly one CO₂ and two H₂O — the picture is a balanced equation in 3D.",
+  "linksTo": "cn-c6-n01",
+  "source": "icse",
+  "image": "images/chem-ch6_img_001.jpg",
+  "caption": "Bond breaking and bond making: methane burning in oxygen"
+ },
+ {
+  "id": "cn-c6-d03",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, drops of AgNO₃ solution fall into NaCl solution and a white solid settles. The settled solid is:",
+  "options": [
+   "sodium nitrate",
+   "silver chloride (AgCl) — a precipitate",
+   "common salt",
+   "silver metal"
+  ],
+  "correctOption": 1,
+  "answer": "AgNO₃ + NaCl → AgCl↓ + NaNO₃: the white insoluble silver chloride settles as a precipitate; sodium nitrate stays dissolved.",
+  "linksTo": "cn-c6-n07",
+  "source": "icse",
+  "image": "images/chem-ch6_img_003.jpg",
+  "caption": "Silver nitrate solution added to sodium chloride solution"
+ },
+ {
+  "id": "cn-c6-d04",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The type of reaction illustrated is:",
+  "options": [
+   "combination",
+   "decomposition",
+   "displacement",
+   "double displacement (precipitation)"
+  ],
+  "correctOption": 3,
+  "answer": "The two compounds exchange radicals (Ag↔Na), and one product is insoluble — a precipitation reaction, a class of double displacement.",
+  "linksTo": "cn-c6-n07",
+  "source": "icse",
+  "image": "images/chem-ch6_img_003.jpg",
+  "caption": "Silver nitrate solution added to sodium chloride solution"
+ },
+ {
+  "id": "cn-c6-d05",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure shows an iron–sulphur mixture and the same mixture being heated in a test tube. The heating is necessary because:",
+  "options": [
+   "the reaction Fe + S → FeS occurs only when heat energy is supplied",
+   "iron melts at room temperature",
+   "sulphur is magnetic when cold",
+   "mixtures always need fire"
+  ],
+  "correctOption": 0,
+  "answer": "Mixed cold, iron and sulphur stay a mere mixture; HEAT triggers the chemical combination into the new substance iron sulphide (FeS).",
+  "linksTo": "cn-c6-n03",
+  "source": "icse",
+  "image": "images/chem-ch6_img_005.jpg",
+  "caption": "Iron + sulphur → iron sulphide on heating"
+ },
+ {
+  "id": "cn-c6-d06",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Before heating (left bowl) vs after heating (test tube), which test would distinguish the two?",
+  "options": [
+   "A magnet: it pulls iron from the mixture but not from FeS",
+   "Colour: both are white",
+   "Taste",
+   "Weighing only"
+  ],
+  "correctOption": 0,
+  "answer": "The mixture retains iron's magnetism and sulphur's CS₂ solubility; the compound FeS shows neither — proving a new substance formed on heating.",
+  "linksTo": "cn-c6-n03",
+  "source": "icse",
+  "image": "images/chem-ch6_img_005.jpg",
+  "caption": "Iron + sulphur → iron sulphide on heating"
+ },
+ {
+  "id": "cn-c6-d07",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, magnesium burns in the oxygen jar with a ______ and leaves ______.",
+  "options": [
+   "pale blue flame; black soot",
+   "dazzling white flame; white magnesium oxide powder",
+   "yellow flame; no residue",
+   "green flame; green powder"
+  ],
+  "correctOption": 1,
+  "answer": "2Mg + O₂ → 2MgO: a dazzling bright white flame, leaving white MgO powder at the jar's base — never look at the flame directly.",
+  "linksTo": "cn-c6-n04",
+  "source": "icse",
+  "image": "images/chem-ch6_img_011.jpg",
+  "caption": "Magnesium ribbon burning in a jar of oxygen"
+ },
+ {
+  "id": "cn-c6-d08",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The reaction shown is classified as:",
+  "options": [
+   "a combination reaction (element + element → compound)",
+   "a decomposition reaction",
+   "a displacement reaction",
+   "a neutralisation"
+  ],
+  "correctOption": 0,
+  "answer": "Two substances (Mg and O₂) join into a single product (MgO) — combination/synthesis; burning a metal in air is the standard example.",
+  "linksTo": "cn-c6-n04",
+  "source": "icse",
+  "image": "images/chem-ch6_img_011.jpg",
+  "caption": "Magnesium ribbon burning in a jar of oxygen"
+ },
+ {
+  "id": "cn-c6-d09",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Cotton soaked in ammonia is at one end of the tube, hydrochloric acid at the other. The white ring of NH₄Cl forms NEARER the HCl end because:",
+  "options": [
+   "HCl gas travels faster",
+   "ammonia is lighter and diffuses faster, covering more distance before the gases meet",
+   "the tube is tilted",
+   "the ring always forms at the centre"
+  ],
+  "correctOption": 1,
+  "answer": "NH₃ (lighter) outruns HCl, so the meeting point — where NH₃(g) + HCl(g) → NH₄Cl(s) forms the white ring — lies closer to the acid-soaked cotton.",
+  "linksTo": "cn-c6-n04",
+  "source": "icse",
+  "image": "images/chem-ch6_img_013.jpg",
+  "caption": "White ring of ammonium chloride in a glass tube"
+ },
+ {
+  "id": "cn-c6-d10",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The reaction producing the ring is a:",
+  "options": [
+   "combination of two compounds into one solid product",
+   "decomposition of ammonia",
+   "displacement of chlorine",
+   "precipitation in water"
+  ],
+  "correctOption": 0,
+  "answer": "Two gaseous compounds combine into a single solid — NH₄Cl. A combination reaction that also demonstrates gaseous diffusion.",
+  "linksTo": "cn-c6-n04",
+  "source": "icse",
+  "image": "images/chem-ch6_img_013.jpg",
+  "caption": "White ring of ammonium chloride in a glass tube"
+ },
+ {
+  "id": "cn-c6-d11",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, heating white lead nitrate gives reddish-brown fumes that turn moist blue litmus red. The fumes are:",
+  "options": [
+   "oxygen",
+   "nitrogen dioxide (NO₂)",
+   "lead vapour",
+   "chlorine"
+  ],
+  "correctOption": 1,
+  "answer": "2Pb(NO₃)₂ → 2PbO + 4NO₂↑ + O₂↑. The reddish-brown acidic gas is nitrogen dioxide; colourless oxygen also evolves.",
+  "linksTo": "cn-c6-n05",
+  "source": "icse",
+  "image": "images/chem-ch6_img_014.jpg",
+  "caption": "Thermal decomposition of lead nitrate"
+ },
+ {
+  "id": "cn-c6-d12",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The pale-yellow solid left in the test tube is:",
+  "options": [
+   "lead monoxide (PbO)",
+   "lead metal",
+   "lead chloride",
+   "unchanged lead nitrate"
+  ],
+  "correctOption": 0,
+  "answer": "The residue is pale-yellow lead monoxide — one compound breaking into simpler substances on heating = thermal decomposition.",
+  "linksTo": "cn-c6-n05",
+  "source": "icse",
+  "image": "images/chem-ch6_img_014.jpg",
+  "caption": "Thermal decomposition of lead nitrate"
+ },
+ {
+  "id": "cn-c6-d13",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The blue copper sulphate solution turns colourless and a red-brown deposit appears on the zinc. This shows:",
+  "options": [
+   "zinc dissolved without reacting",
+   "zinc displaced copper because zinc is MORE reactive (Zn + CuSO₄ → ZnSO₄ + Cu)",
+   "copper displaced zinc",
+   "the water evaporated"
+  ],
+  "correctOption": 1,
+  "answer": "A more active metal displaces a less active one from its salt: colourless zinc sulphate forms and copper metal deposits — a displacement reaction proving Zn > Cu in the activity series.",
+  "linksTo": "cn-c6-n06",
+  "source": "icse",
+  "image": "images/chem-ch6_img_015.jpg",
+  "caption": "Zinc granules in copper sulphate solution"
+ },
+ {
+  "id": "cn-c6-d14",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "If COPPER pieces were placed in zinc sulphate solution instead, what would happen?",
+  "options": [
+   "The solution would turn blue",
+   "Nothing — copper is below zinc in the activity series and cannot displace it",
+   "Zinc metal would deposit on the copper",
+   "The solution would boil"
+  ],
+  "correctOption": 1,
+  "answer": "Displacement only runs downhill in the activity series; the less reactive copper cannot evict zinc from ZnSO₄.",
+  "linksTo": "cn-c6-n06",
+  "source": "icse",
+  "image": "images/chem-ch6_img_015.jpg",
+  "caption": "Zinc granules in copper sulphate solution"
+ },
+ {
+  "id": "cn-c6-d15",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The flask of dilute NaOH with phenolphthalein is PINK. As dilute HCl is added drop by drop, the solution turns colourless. The colour change marks:",
+  "options": [
+   "the boiling point",
+   "the neutralisation point — the alkali has been completely neutralised by the acid",
+   "the precipitation of salt",
+   "the indicator decomposing"
+  ],
+  "correctOption": 1,
+  "answer": "Phenolphthalein is pink in base, colourless in acid. The pink vanishing signals NaOH + HCl → NaCl + H₂O is complete — neutralisation.",
+  "linksTo": "cn-c6-n07",
+  "source": "icse",
+  "image": "images/chem-ch6_img_018.jpg",
+  "caption": "Neutralisation followed with phenolphthalein"
+ },
+ {
+  "id": "cn-c6-d16",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "If you now dip blue and red litmus papers into the colourless solution at the exact neutral point, you will see:",
+  "options": [
+   "blue turns red",
+   "red turns blue",
+   "no change in either litmus — the solution is neutral",
+   "both papers bleach white"
+  ],
+  "correctOption": 2,
+  "answer": "At neutralisation the solution holds only salt and water — neutral to litmus. Adding MORE acid past this point would then turn blue litmus red.",
+  "linksTo": "cn-c6-n07",
+  "source": "icse",
+  "image": "images/chem-ch6_img_018.jpg",
+  "caption": "Neutralisation followed with phenolphthalein"
+ },
+ {
+  "id": "cn-c6-d17",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the copper wire becomes coated with silver and the colourless solution slowly turns BLUE. The blue colour is due to:",
+  "options": [
+   "dissolved silver",
+   "formation of copper nitrate as copper displaces silver",
+   "the glass jar",
+   "indicator added"
+  ],
+  "correctOption": 1,
+  "answer": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag: copper, more reactive than silver, enters solution as blue copper nitrate while silver metal coats the wire.",
+  "linksTo": "cn-c6-n06",
+  "source": "icse",
+  "image": "images/chem-ch6_img_028.jpg",
+  "caption": "Copper coil in silver nitrate solution"
+ },
+ {
+  "id": "cn-c6-d18",
+  "topicId": "chem-ch6",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This experiment establishes which order of reactivity?",
+  "options": [
+   "Ag > Cu",
+   "Cu > Ag",
+   "Cu = Ag",
+   "Nothing about reactivity"
+  ],
+  "correctOption": 1,
+  "answer": "The metal that does the displacing is the more reactive: copper beats silver — consistent with the activity series (… Cu > Hg > Ag …).",
+  "linksTo": "cn-c6-n06",
+  "source": "icse",
+  "image": "images/chem-ch6_img_028.jpg",
+  "caption": "Copper coil in silver nitrate solution"
+ },
+ {
   "id": "cn-c7-n01",
   "topicId": "chem-ch7",
   "type": "note",
@@ -4390,6 +5891,234 @@ const CHEMISTRY_NEET_DATA = [
   "answer": "A reducing agent removes oxygen from (or adds hydrogen to) another substance. When hydrogen gas is passed over hot black copper(II) oxide: CuO + H₂ → Cu + H₂O. Here hydrogen REMOVES the oxygen from copper oxide, so CuO is REDUCED to reddish-brown copper metal; the hydrogen itself GAINS that oxygen and is OXIDISED to water. Thus copper oxide acts as the OXIDISING agent and hydrogen as the REDUCING agent — both processes occur simultaneously, making this a redox reaction. Hydrogen similarly reduces PbO to Pb and Fe₃O₄ to Fe, though it cannot reduce the oxides of very active metals like Na, K, Ca, Mg or Al.",
   "linksTo": "cn-c7-n09",
   "source": "icse"
+ },
+ {
+  "id": "cn-c7-d01",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the electrolytic cell shown, the two test tubes collect different volumes of gas. The tube with TWICE the volume holds:",
+  "options": [
+   "oxygen, collected at the anode",
+   "hydrogen, collected at the cathode",
+   "water vapour",
+   "air"
+  ],
+  "correctOption": 1,
+  "answer": "2H₂O → 2H₂ + O₂: hydrogen (at the negative cathode) forms twice the volume of oxygen (at the positive anode) — the 2:1 ratio visible in the figure.",
+  "linksTo": "cn-c7-n02",
+  "source": "icse",
+  "image": "images/chem-ch7_img_003.jpg",
+  "caption": "Electrolysis of acidulated water"
+ },
+ {
+  "id": "cn-c7-d02",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The label 'ACIDULATED WATER' indicates acid has been added to the water. Why?",
+  "options": [
+   "To colour the water",
+   "Pure water is a bad conductor — the acid provides ions so current can flow",
+   "To stop the gases from mixing",
+   "To cool the cell"
+  ],
+  "correctOption": 1,
+  "answer": "Pure water barely conducts electricity. A little acid (or alkali/salt) supplies free ions, turning water into an electrolyte that the current can decompose.",
+  "linksTo": "cn-c7-n02",
+  "source": "icse",
+  "image": "images/chem-ch7_img_003.jpg",
+  "caption": "Electrolysis of acidulated water"
+ },
+ {
+  "id": "cn-c7-d03",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The electrodes shown are made of platinum because platinum:",
+  "options": [
+   "is cheap",
+   "is magnetic",
+   "does not react with the electrolyte or the gases produced (inert)",
+   "dissolves slowly to feed the reaction"
+  ],
+  "correctOption": 2,
+  "answer": "Inert platinum electrodes carry the current without being attacked — so only WATER is decomposed, not the electrodes.",
+  "linksTo": "cn-c7-n02",
+  "source": "icse",
+  "image": "images/chem-ch7_img_003.jpg",
+  "caption": "Electrolysis of acidulated water"
+ },
+ {
+  "id": "cn-c7-d04",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled apparatus, hydrogen is collected in the inverted gas jar by:",
+  "options": [
+   "upward displacement of air",
+   "downward displacement of water",
+   "downward displacement of air",
+   "absorption in acid"
+  ],
+  "correctOption": 1,
+  "answer": "Hydrogen is sparingly soluble in water, so it bubbles up through the trough and displaces water downward out of the jar.",
+  "linksTo": "cn-c7-n03",
+  "source": "icse",
+  "image": "images/chem-ch7_img_004.jpg",
+  "caption": "Laboratory preparation of hydrogen (Zn + dilute HCl)"
+ },
+ {
+  "id": "cn-c7-d05",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The thistle funnel in the figure is used to:",
+  "options": [
+   "let the hydrogen escape",
+   "pour dilute hydrochloric acid onto the granulated zinc without opening the flask",
+   "measure temperature",
+   "filter the acid"
+  ],
+  "correctOption": 1,
+  "answer": "Acid is added through the thistle funnel, whose stem dips below the liquid level so gas cannot leak back out through it.",
+  "linksTo": "cn-c7-n03",
+  "source": "icse",
+  "image": "images/chem-ch7_img_004.jpg",
+  "caption": "Laboratory preparation of hydrogen (Zn + dilute HCl)"
+ },
+ {
+  "id": "cn-c7-d06",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Hydrogen is NOT collected by downward displacement of air — even though it is the lightest gas — because:",
+  "options": [
+   "air is too heavy to displace",
+   "a hydrogen–air mixture can explode",
+   "hydrogen dissolves in air",
+   "jars cannot be inverted"
+  ],
+  "correctOption": 1,
+  "answer": "Mixing hydrogen with air creates an explosive mixture; collecting over water keeps air out (the first few bubbles, which contain flask air, are discarded for the same reason).",
+  "linksTo": "cn-c7-n03",
+  "source": "icse",
+  "image": "images/chem-ch7_img_004.jpg",
+  "caption": "Laboratory preparation of hydrogen (Zn + dilute HCl)"
+ },
+ {
+  "id": "cn-c7-d07",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "When the hydrogen-filled jar is brought mouth-down over the burning candle, the figure shows the candle going OUT while the gas burns at the mouth. This proves hydrogen is:",
+  "options": [
+   "a supporter of combustion",
+   "combustible but NOT a supporter of combustion",
+   "neither combustible nor burnable",
+   "an inert gas"
+  ],
+  "correctOption": 1,
+  "answer": "The candle is starved (hydrogen doesn't support burning) yet the gas itself ignites with a pop at the jar's mouth — hydrogen burns but does not help other things burn.",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_008.jpg",
+  "caption": "Burning candle covered with a jar of hydrogen"
+ },
+ {
+  "id": "cn-c7-d08",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The jar must be held MOUTH DOWNWARDS in this experiment because hydrogen:",
+  "options": [
+   "is heavier than air and sinks",
+   "is lighter than air and would escape from an upward-facing mouth",
+   "reacts with the bench",
+   "is coloured"
+  ],
+  "correctOption": 1,
+  "answer": "Being ~14.4 times lighter than air, hydrogen stays trapped in an inverted jar; an upright jar would lose it instantly upward.",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_008.jpg",
+  "caption": "Burning candle covered with a jar of hydrogen"
+ },
+ {
+  "id": "cn-c7-d09",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the apparatus, hydrogen from the zinc–acid bottle passes through calcium chloride before burning under the chilled bell jar. The calcium chloride:",
+  "options": [
+   "adds chlorine to the gas",
+   "dries the hydrogen (absorbs moisture) so any water formed comes only from burning",
+   "cools the gas",
+   "colours the flame"
+  ],
+  "correctOption": 1,
+  "answer": "Anhydrous CaCl₂ is a drying agent: with the incoming gas dried, the droplets condensing on the chilled jar must come from the reaction 2H₂ + O₂ → 2H₂O.",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_009.jpg",
+  "caption": "Burning hydrogen to form water (chilled bell jar)"
+ },
+ {
+  "id": "cn-c7-d10",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The droplets collected in the beaker can be confirmed to be WATER by:",
+  "options": [
+   "their taste",
+   "turning white anhydrous copper sulphate blue",
+   "burning them",
+   "filtering them"
+  ],
+  "correctOption": 1,
+  "answer": "The standard test: water turns white anhydrous CuSO₄ blue (or blue cobalt chloride pink) — confirming hydrogen burns to form water, its namesake ('water producer').",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_009.jpg",
+  "caption": "Burning hydrogen to form water (chilled bell jar)"
+ },
+ {
+  "id": "cn-c7-d11",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, greenish-yellow chlorine sits above hydrogen, and in diffused sunlight white fumes appear. The fumes are:",
+  "options": [
+   "water vapour",
+   "hydrogen chloride gas (H₂ + Cl₂ → 2HCl)",
+   "ammonium chloride",
+   "smoke from the sun"
+  ],
+  "correctOption": 1,
+  "answer": "Equal volumes of H₂ and Cl₂ combine in diffused sunlight to colourless HCl gas — the greenish-yellow colour fades as white fumes form.",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_011.jpg",
+  "caption": "Hydrogen and chlorine combining in diffused sunlight"
+ },
+ {
+  "id": "cn-c7-d12",
+  "topicId": "chem-ch7",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Why must DIRECT sunlight be avoided in this experiment?",
+  "options": [
+   "It bleaches the glass",
+   "In direct sunlight the H₂–Cl₂ reaction becomes explosive",
+   "Chlorine evaporates",
+   "Nothing happens in direct sunlight"
+  ],
+  "correctOption": 1,
+  "answer": "Diffused light lets the combination proceed gently; direct sunlight triggers a violent, explosive reaction.",
+  "linksTo": "cn-c7-n07",
+  "source": "icse",
+  "image": "images/chem-ch7_img_011.jpg",
+  "caption": "Hydrogen and chlorine combining in diffused sunlight"
  },
  {
   "id": "cn-c8-n01",
@@ -5016,6 +6745,329 @@ const CHEMISTRY_NEET_DATA = [
   "answer": "CAUSES: (1) Chemical wastes from industries and agriculture — untreated factory effluents, fertilisers, pesticides and insecticides washed off fields, acidic mine water and acid rain. (2) Thermal wastes — power plants discharging hot (often chemical-laden) water that harms fish and aquatic life. (3) Sewage and garbage discharged into rivers, plus human activities like washing and defecating in or near water bodies. CONTROL: (1) treat domestic sewage and industrial wastes before discharge (sewage solids can yield biogas); (2) use detergents, pesticides and polythene wisely — they are non-biodegradable; (3) avoid washing, bathing and cattle-cleaning at water sources, plant trees along banks, cover wells and clean water bodies periodically. WATER-BORNE DISEASES: typhoid, cholera, hepatitis (also diarrhoea and dysentery) — nearly two-thirds of all diseases in India are water-borne.",
   "linksTo": "cn-c8-n10",
   "source": "icse"
+ },
+ {
+  "id": "cn-c8-d01",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, both watch glasses are heated over steam baths until dry. Rain water leaves NO residue while well water leaves concentric solid rings. Conclusion:",
+  "options": [
+   "well water is purer",
+   "rain water contains no dissolved solids — it is the purest natural water",
+   "both waters are identical",
+   "rain water evaporates faster only"
+  ],
+  "correctOption": 1,
+  "answer": "The residue rings are the dissolved salts in well water; rain water (formed by evaporation + condensation, nature's distillation) leaves nothing — the purest natural form.",
+  "linksTo": "cn-c8-n02",
+  "source": "icse",
+  "image": "images/chem-ch8_img_005.jpg",
+  "caption": "Evaporating rain water vs well water (Activity 1)"
+ },
+ {
+  "id": "cn-c8-d02",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Why are the samples heated on a STEAM bath instead of a direct flame?",
+  "options": [
+   "Steam is hotter than flame",
+   "Gentle, controlled evaporation prevents spurting and loss of the sample",
+   "The flame would dissolve the residue",
+   "Steam adds minerals"
+  ],
+  "correctOption": 1,
+  "answer": "A steam bath evaporates the small samples slowly and safely, so the solid residue (if any) stays on the watch glass to be observed.",
+  "linksTo": "cn-c8-n02",
+  "source": "icse",
+  "image": "images/chem-ch8_img_005.jpg",
+  "caption": "Evaporating rain water vs well water (Activity 1)"
+ },
+ {
+  "id": "cn-c8-d03",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In all three test tubes, droplets appear near the mouth when the 'dry' substances are heated. The droplets are:",
+  "options": [
+   "melted wax",
+   "water vapour released from the substances, condensed on the cooler walls",
+   "oil from the seeds",
+   "liquid glass"
+  ],
+  "correctOption": 1,
+  "answer": "Even apparently dry wood, cloth and seeds contain water; heating drives it out as vapour, which condenses on the cooler upper walls — water is a constituent of all living matter.",
+  "linksTo": "cn-c8-n03",
+  "source": "icse",
+  "image": "images/chem-ch8_img_009.jpg",
+  "caption": "Heating wood, cloth and bean seeds — water in 'dry' substances"
+ },
+ {
+  "id": "cn-c8-d04",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which everyday fact does this experiment best explain?",
+  "options": [
+   "Why wood floats",
+   "Why fresh peas, grains and vegetables have high water content (e.g. leafy vegetables ~90%)",
+   "Why cloth burns",
+   "Why seeds germinate in the dark"
+  ],
+  "correctOption": 1,
+  "answer": "Living tissue is mostly water — humans ~70%, leafy vegetables ~90%, watermelon ~97%. The condensing droplets make that hidden water visible.",
+  "linksTo": "cn-c8-n03",
+  "source": "icse",
+  "image": "images/chem-ch8_img_009.jpg",
+  "caption": "Heating wood, cloth and bean seeds — water in 'dry' substances"
+ },
+ {
+  "id": "cn-c8-d05",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the cycle shown, water vapour enters the atmosphere by evaporation, transpiration, respiration and combustion. It returns to the earth as:",
+  "options": [
+   "only fog",
+   "rain, after vapour condenses into clouds",
+   "groundwater directly",
+   "steam"
+  ],
+  "correctOption": 1,
+  "answer": "Vapour condenses into clouds and precipitates as rain into streams, soil, rivers and seas — completing the continuous circulation called the water cycle.",
+  "linksTo": "cn-c8-n03",
+  "source": "icse",
+  "image": "images/chem-ch8_img_012.jpg",
+  "caption": "The water cycle in nature"
+ },
+ {
+  "id": "cn-c8-d06",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Which arrow source in the figure represents PLANTS adding water vapour to the air?",
+  "options": [
+   "combustion",
+   "respiration",
+   "transpiration",
+   "evaporation from seas"
+  ],
+  "correctOption": 2,
+  "answer": "Transpiration is the release of water vapour by plants; respiration (all living beings) and combustion of fuels also add vapour.",
+  "linksTo": "cn-c8-n03",
+  "source": "icse",
+  "image": "images/chem-ch8_img_012.jpg",
+  "caption": "The water cycle in nature"
+ },
+ {
+  "id": "cn-c8-d07",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure shows ice cubes rising to float when water is poured in. Ice floats because:",
+  "options": [
+   "ice is warmer than water",
+   "water expands on freezing, making ice LESS dense than liquid water",
+   "air bubbles always lift ice",
+   "water pushes everything up"
+  ],
+  "correctOption": 1,
+  "answer": "Anomalous expansion: below 4°C water expands, so ice at 0°C is lighter (less dense) than the water it displaces — solid floating on its own liquid is water's famous anomaly.",
+  "linksTo": "cn-c8-n05",
+  "source": "icse",
+  "image": "images/chem-ch8_img_018.jpg",
+  "caption": "Ice cubes floating in water"
+ },
+ {
+  "id": "cn-c8-d08",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The same property shown here explains which winter problem?",
+  "options": [
+   "Fog on windows",
+   "Water pipes bursting when the water inside freezes and expands",
+   "Snow being white",
+   "Cold winds"
+  ],
+  "correctOption": 1,
+  "answer": "Freezing water expands with great force — enough to crack metal pipes in severe winters.",
+  "linksTo": "cn-c8-n05",
+  "source": "icse",
+  "image": "images/chem-ch8_img_018.jpg",
+  "caption": "Ice cubes floating in water"
+ },
+ {
+  "id": "cn-c8-d09",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the lake reads ice at 0°C on top, then 1°, 2°, 3°C, with 4°C at the BOTTOM. Why is the densest water at the bottom?",
+  "options": [
+   "Cold always sinks",
+   "Water has maximum density at 4°C, so the 4°C layer settles lowest",
+   "Fish warm the bottom",
+   "Pressure heats the depths"
+  ],
+  "correctOption": 1,
+  "answer": "Water is densest at 4°C; cooler layers (3°, 2°, 1°, 0°C) are LIGHTER and stack above, so ice forms at the surface while the bottom stays at 4°C.",
+  "linksTo": "cn-c8-n05",
+  "source": "icse",
+  "image": "images/chem-ch8_img_019.jpg",
+  "caption": "Temperature layers in a frozen lake"
+ },
+ {
+  "id": "cn-c8-d10",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "How does the arrangement shown keep the fish alive through winter?",
+  "options": [
+   "Fish freeze safely in ice",
+   "The floating ice layer, a poor conductor, insulates the liquid water below where life continues",
+   "The ice produces oxygen",
+   "The sun heats the lake bottom"
+  ],
+  "correctOption": 1,
+  "answer": "Ice blankets the lake: a poor heat conductor that stops further freezing below — aquatic plants and animals survive in the liquid 1–4°C layers underneath.",
+  "linksTo": "cn-c8-n05",
+  "source": "icse",
+  "image": "images/chem-ch8_img_019.jpg",
+  "caption": "Temperature layers in a frozen lake"
+ },
+ {
+  "id": "cn-c8-d11",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the third glass, sugar lies undissolved at the bottom despite stirring. The solution at this stage is:",
+  "options": [
+   "unsaturated",
+   "saturated — it cannot dissolve more solute at that temperature",
+   "supersaturated",
+   "a suspension"
+  ],
+  "correctOption": 1,
+  "answer": "When no more solute dissolves at the given temperature and excess settles, the solution is SATURATED.",
+  "linksTo": "cn-c8-n07",
+  "source": "icse",
+  "image": "images/chem-ch8_img_033.jpg",
+  "caption": "Making a saturated, then supersaturated sugar solution"
+ },
+ {
+  "id": "cn-c8-d12",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the last picture, heating makes ALL the sugar dissolve. The hot solution now holding more sugar than room temperature allows is called:",
+  "options": [
+   "dilute",
+   "unsaturated",
+   "supersaturated",
+   "colloidal"
+  ],
+  "correctOption": 2,
+  "answer": "Heating raises solubility; the extra dissolved sugar makes a SUPERSATURATED solution — cooling it slowly would crystallise the excess (crystallisation).",
+  "linksTo": "cn-c8-n07",
+  "source": "icse",
+  "image": "images/chem-ch8_img_033.jpg",
+  "caption": "Making a saturated, then supersaturated sugar solution"
+ },
+ {
+  "id": "cn-c8-d13",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, heated blue vitriol turns white and 'drops of water' collect on the cooler tube wall. This shows that the crystals contained:",
+  "options": [
+   "dissolved air",
+   "water of crystallisation (CuSO₄·5H₂O → CuSO₄ + 5H₂O)",
+   "liquid copper",
+   "blue dye"
+  ],
+  "correctOption": 1,
+  "answer": "The five loosely-bound water molecules are driven off by heat, leaving white anhydrous CuSO₄; the escaping water condenses on the cool upper wall.",
+  "linksTo": "cn-c8-n08",
+  "source": "icse",
+  "image": "images/chem-ch8_img_037.jpg",
+  "caption": "Heating blue vitriol crystals in a test tube"
+ },
+ {
+  "id": "cn-c8-d14",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "If the condensed drops are trickled back onto the white powder after cooling, the powder:",
+  "options": [
+   "dissolves completely",
+   "turns blue again — the change is reversible",
+   "turns black",
+   "explodes"
+  ],
+  "correctOption": 1,
+  "answer": "Adding water re-forms the blue pentahydrate — proof that water of crystallisation gives blue vitriol both its colour and crystal form (and the standard chemical test for water).",
+  "linksTo": "cn-c8-n08",
+  "source": "icse",
+  "image": "images/chem-ch8_img_037.jpg",
+  "caption": "Heating blue vitriol crystals in a test tube"
+ },
+ {
+  "id": "cn-c8-d15",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Why is the test tube held TILTED with its mouth slightly DOWN in this experiment?",
+  "options": [
+   "For better viewing",
+   "So condensed water cannot run back onto the hot end and crack the tube",
+   "To pour out the powder",
+   "To catch more heat"
+  ],
+  "correctOption": 1,
+  "answer": "Water running back onto hot glass would crack it; the tilt lets condensation stay near the cool mouth.",
+  "linksTo": "cn-c8-n08",
+  "source": "icse",
+  "image": "images/chem-ch8_img_037.jpg",
+  "caption": "Heating blue vitriol crystals in a test tube"
+ },
+ {
+  "id": "cn-c8-d16",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, soap added to beaker A gives NO lather while beaker B lathers freely. Beaker A contains:",
+  "options": [
+   "soft water",
+   "hard water — dissolved calcium/magnesium salts react with soap to form scum",
+   "distilled water",
+   "sugar solution"
+  ],
+  "correctOption": 1,
+  "answer": "Hard water's Ca²⁺/Mg²⁺ salts destroy soap as sticky scum before lather can form. Soft water (rain, distilled) lathers at once.",
+  "linksTo": "cn-c8-n10",
+  "source": "icse",
+  "image": "images/chem-ch8_img_044.jpg",
+  "caption": "Lather test — hard water vs soft water"
+ },
+ {
+  "id": "cn-c8-d17",
+  "topicId": "chem-ch8",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "If beaker A's hardness is due to dissolved magnesium chloride, it can be softened by adding:",
+  "options": [
+   "more soap",
+   "washing soda (Na₂CO₃), which precipitates MgCO₃ for filtering",
+   "salt",
+   "vinegar"
+  ],
+  "correctOption": 1,
+  "answer": "Na₂CO₃ + MgCl₂ → MgCO₃↓ + 2NaCl: washing soda removes PERMANENT hardness; the insoluble carbonate is filtered off and the water then lathers.",
+  "linksTo": "cn-c8-n10",
+  "source": "icse",
+  "image": "images/chem-ch8_img_044.jpg",
+  "caption": "Lather test — hard water vs soft water"
  },
  {
   "id": "cn-c9-n01",
@@ -5657,5 +7709,423 @@ const CHEMISTRY_NEET_DATA = [
   "answer": "GREENHOUSE EFFECT: the earth reflects part of the sun's radiation; carbon dioxide in air TRAPS some of this radiated heat, keeping the earth warm — named after glass greenhouses that trap the sun's heat to grow warm-climate plants in cold regions. BLESSING: without it the earth would be too cold for life. HARM: pollution has raised CO₂ levels (with other greenhouse gases — nitrous oxide, ozone, CFCs, methane), thickening the thermal blanket and causing GLOBAL WARMING — about 0.5°C rise in the past 100 years — which can melt polar ice and glaciers (the Gangotri has begun melting), flood coastal regions, disturb rainfall and crop cycles, and drive species extinct. STEPS: (1) grow more trees and prevent deforestation (photosynthesis removes CO₂); (2) reduce fossil-fuel consumption and adopt smokeless energy like solar power and biogas; (3) fit filters on the chimneys of factories and power houses (international effort: the Kyoto Protocol).",
   "linksTo": "cn-c9-n10",
   "source": "icse"
+ },
+ {
+  "id": "cn-c9-d01",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "According to the chart, the three CRYSTALLINE forms of carbon are:",
+  "options": [
+   "coal, coke, charcoal",
+   "graphite, diamond and buckminster fullerene",
+   "lamp black, gas carbon, soot",
+   "peat, lignite, anthracite"
+  ],
+  "correctOption": 1,
+  "answer": "Crystalline allotropes (regular atomic patterns): graphite, diamond, buckminster fullerene. Coal, coke, charcoal, lamp black and gas carbon are the amorphous family.",
+  "linksTo": "cn-c9-n02",
+  "source": "icse",
+  "image": "images/chem-ch9_img_019.jpg",
+  "caption": "Classification chart — allotropes of carbon"
+ },
+ {
+  "id": "cn-c9-d02",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the chart, charcoal branches into three types:",
+  "options": [
+   "hard, soft, activated",
+   "wood charcoal, sugar charcoal and bone charcoal",
+   "black, brown, grey",
+   "peat, coke, soot"
+  ],
+  "correctOption": 1,
+  "answer": "Charcoal is named for its source: wood, sugar (the purest amorphous form) and bone charcoal (mostly calcium phosphate, giving ivory black).",
+  "linksTo": "cn-c9-n02",
+  "source": "icse",
+  "image": "images/chem-ch9_img_019.jpg",
+  "caption": "Classification chart — allotropes of carbon"
+ },
+ {
+  "id": "cn-c9-d03",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure shows flat hexagonal layers of carbon atoms joined by strong forces WITHIN layers but weak forces BETWEEN layers. This explains why graphite:",
+  "options": [
+   "is the hardest substance",
+   "is soft and slippery — the layers slide over one another (lubricant, pencil lead)",
+   "cannot conduct electricity",
+   "is transparent"
+  ],
+  "correctOption": 1,
+  "answer": "Sliding layers make graphite soft, greasy and able to leave marks on paper — the basis of pencil leads and graphite grease.",
+  "linksTo": "cn-c9-n03",
+  "source": "icse",
+  "image": "images/chem-ch9_img_020.jpg",
+  "caption": "Structure of graphite — hexagonal layers"
+ },
+ {
+  "id": "cn-c9-d04",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In each graphite layer every carbon bonds to only THREE neighbours. The fourth valence electron:",
+  "options": [
+   "is destroyed",
+   "remains free, making graphite a good conductor of electricity",
+   "becomes a proton",
+   "joins the next layer permanently"
+  ],
+  "correctOption": 1,
+  "answer": "One free (mobile) electron per atom carries current — graphite is the classic conducting non-metal, used for electrodes and carbon brushes.",
+  "linksTo": "cn-c9-n03",
+  "source": "icse",
+  "image": "images/chem-ch9_img_020.jpg",
+  "caption": "Structure of graphite — hexagonal layers"
+ },
+ {
+  "id": "cn-c9-d05",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The figure shows each carbon atom bonded to FOUR neighbours in a rigid tetrahedral arrangement. This structure makes diamond:",
+  "options": [
+   "soft and flaky",
+   "the hardest naturally occurring substance",
+   "a good conductor",
+   "liquid at room temperature"
+  ],
+  "correctOption": 1,
+  "answer": "The endlessly repeated, strongly bonded tetrahedral network forms one giant rigid molecule — hence diamond's unmatched hardness, used for cutting and drilling.",
+  "linksTo": "cn-c9-n04",
+  "source": "icse",
+  "image": "images/chem-ch9_img_028.jpg",
+  "caption": "Structure of diamond — tetrahedral network"
+ },
+ {
+  "id": "cn-c9-d06",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Unlike graphite, diamond does NOT conduct electricity because:",
+  "options": [
+   "it is too hard for current",
+   "all four valence electrons of every carbon are locked in bonds — no free electrons",
+   "it contains no carbon",
+   "it repels electrons"
+  ],
+  "correctOption": 1,
+  "answer": "Conduction needs mobile electrons; diamond has none since every valence electron is used in the four bonds. Graphite keeps one free electron per atom.",
+  "linksTo": "cn-c9-n04",
+  "source": "icse",
+  "image": "images/chem-ch9_img_028.jpg",
+  "caption": "Structure of diamond — tetrahedral network"
+ },
+ {
+  "id": "cn-c9-d07",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled apparatus, coal powder heated strongly in the test tube leaves a grey porous residue, while vapours pass into the flask. The residue and the gas burning with a yellow flame at the outlet are:",
+  "options": [
+   "ash and oxygen",
+   "coke and coal gas",
+   "charcoal and hydrogen",
+   "coal tar and steam"
+  ],
+  "correctOption": 1,
+  "answer": "Destructive distillation (heating WITHOUT air) of coal gives solid COKE in the tube and combustible COAL GAS at the jet; the flask collects the liquids.",
+  "linksTo": "cn-c9-n07",
+  "source": "icse",
+  "image": "images/chem-ch9_img_038.jpg",
+  "caption": "Destructive distillation of coal"
+ },
+ {
+  "id": "cn-c9-d08",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The two liquid layers shown in the conical flask are:",
+  "options": [
+   "petrol over diesel",
+   "ammoniacal liquor over black coal tar",
+   "water over oil",
+   "acid over alkali"
+  ],
+  "correctOption": 1,
+  "answer": "The condensed vapours separate into a lower black, thick COAL TAR layer and an upper AMMONIACAL LIQUOR layer (used for fertilizers); gas carbon deposits near the tube mouth.",
+  "linksTo": "cn-c9-n07",
+  "source": "icse",
+  "image": "images/chem-ch9_img_038.jpg",
+  "caption": "Destructive distillation of coal"
+ },
+ {
+  "id": "cn-c9-d09",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, sawdust is heated strongly while the delivery tube leads to a cooled test tube. The black residue left behind and the gas burning with a blue flame are:",
+  "options": [
+   "coal and oxygen",
+   "wood charcoal and wood gas",
+   "diamond and CO₂",
+   "coke and hydrogen"
+  ],
+  "correctOption": 1,
+  "answer": "Destructive distillation of wood: residue = wood charcoal; combustible WOOD GAS burns at the outlet; the receiving tube collects wood tar (dark, lower) and pyroligneous acid (upper).",
+  "linksTo": "cn-c9-n08",
+  "source": "icse",
+  "image": "images/chem-ch9_img_041.jpg",
+  "caption": "Laboratory preparation of wood charcoal from sawdust"
+ },
+ {
+  "id": "cn-c9-d10",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This preparation must occur in the ABSENCE of air because, with air present, the wood would:",
+  "options": [
+   "stay unchanged",
+   "simply burn away to ash and gases instead of charring to charcoal",
+   "melt",
+   "become coal"
+  ],
+  "correctOption": 1,
+  "answer": "Destructive distillation means heating without air; free oxygen would combust the wood completely rather than decompose it into charcoal + volatile products.",
+  "linksTo": "cn-c9-n08",
+  "source": "icse",
+  "image": "images/chem-ch9_img_041.jpg",
+  "caption": "Laboratory preparation of wood charcoal from sawdust"
+ },
+ {
+  "id": "cn-c9-d11",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the labelled apparatus, the chemicals in the Woulfe's bottle are:",
+  "options": [
+   "zinc and dilute H₂SO₄",
+   "marble chips (CaCO₃) and dilute hydrochloric acid",
+   "sodium and water",
+   "copper and nitric acid"
+  ],
+  "correctOption": 1,
+  "answer": "CaCO₃ + 2HCl(dil) → CaCl₂ + H₂O + CO₂↑ with brisk effervescence — the standard lab preparation of carbon dioxide.",
+  "linksTo": "cn-c9-n09",
+  "source": "icse",
+  "image": "images/chem-ch9_img_052.jpg",
+  "caption": "Laboratory preparation of carbon dioxide (Woulfe's bottle)"
+ },
+ {
+  "id": "cn-c9-d12",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The gas jar in the figure stands UPRIGHT (mouth up, loosely covered with paper). CO₂ is collected this way because it is:",
+  "options": [
+   "lighter than air",
+   "about 1.5 times heavier than air — upward displacement of air",
+   "insoluble in air",
+   "explosive over water"
+  ],
+  "correctOption": 1,
+  "answer": "Heavier CO₂ sinks and fills the upright jar from the bottom, pushing air out of the top — upward displacement of air. It is not collected over water, being fairly soluble.",
+  "linksTo": "cn-c9-n09",
+  "source": "icse",
+  "image": "images/chem-ch9_img_052.jpg",
+  "caption": "Laboratory preparation of carbon dioxide (Woulfe's bottle)"
+ },
+ {
+  "id": "cn-c9-d13",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Dilute sulphuric acid is NOT used with the marble chips shown because:",
+  "options": [
+   "it is too weak",
+   "insoluble calcium sulphate forms, coats the chips and stops the reaction",
+   "it produces no gas",
+   "it dissolves the bottle"
+  ],
+  "correctOption": 1,
+  "answer": "CaSO₄ is insoluble; it blankets the marble chips and halts the reaction — so dilute HCl is the acid of choice.",
+  "linksTo": "cn-c9-n09",
+  "source": "icse",
+  "image": "images/chem-ch9_img_052.jpg",
+  "caption": "Laboratory preparation of carbon dioxide (Woulfe's bottle)"
+ },
+ {
+  "id": "cn-c9-d14",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the cut-away figure, the metal cylinder holds sodium bicarbonate solution with a sealed glass tube of concentrated sulphuric acid inside. The extinguisher works when:",
+  "options": [
+   "the plunger breaks the acid container, the chemicals mix and CO₂ rushes out of the nozzle",
+   "the cylinder is heated",
+   "water is poured in",
+   "the seal melts"
+  ],
+  "correctOption": 0,
+  "answer": "Striking the plunger/knob breaks the acid bottle: 2NaHCO₃ + H₂SO₄ → Na₂SO₄ + 2H₂O + 2CO₂(g); the pressurised CO₂ jets out and smothers the fire.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_058.jpg",
+  "caption": "Soda-acid fire extinguisher (cut-away view)"
+ },
+ {
+  "id": "cn-c9-d15",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The CO₂ produced extinguishes fire because it:",
+  "options": [
+   "cools the fuel to freezing",
+   "is non-combustible, a non-supporter of combustion, and heavier than air — blanketing the fire and cutting off oxygen",
+   "reacts with the flames",
+   "adds oxygen"
+  ],
+  "correctOption": 1,
+  "answer": "CO₂ neither burns nor supports burning, and being 1.5× heavier than air it settles over the fire, starving it of oxygen.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_058.jpg",
+  "caption": "Soda-acid fire extinguisher (cut-away view)"
+ },
+ {
+  "id": "cn-c9-d16",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "This soda-acid type must NOT be used on an electrical fire because:",
+  "options": [
+   "CO₂ conducts electricity",
+   "the ejected water-based solution conducts electricity, risking shock and short circuits",
+   "it is too heavy to lift",
+   "the acid attracts current"
+  ],
+  "correctOption": 1,
+  "answer": "Its aqueous jet conducts electricity. For electrical (and oil) fires the liquid-CO₂ cylinder type is used instead.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_058.jpg",
+  "caption": "Soda-acid fire extinguisher (cut-away view)"
+ },
+ {
+  "id": "cn-c9-d17",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the cycle shown, which single process REMOVES carbon dioxide from the atmosphere?",
+  "options": [
+   "combustion of fuels",
+   "respiration and decay",
+   "photosynthesis by plants",
+   "volcanic eruptions"
+  ],
+  "correctOption": 2,
+  "answer": "Photosynthesis (and dissolution into sea water) removes CO₂; respiration, decay and fuel combustion all ADD it — the balance keeps air at ~0.03–0.04% CO₂.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_064.jpg",
+  "caption": "The carbon dioxide cycle in nature"
+ },
+ {
+  "id": "cn-c9-d18",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The two-way arrows between 'CO₂ in atmosphere' and 'CO₂ in sea water' indicate that:",
+  "options": [
+   "sea water makes CO₂",
+   "the gas dissolves into or escapes from the sea depending on where its percentage is greater",
+   "fish breathe air",
+   "the sea is acidic"
+  ],
+  "correctOption": 1,
+  "answer": "The ocean buffers the atmosphere: when CO₂ rises in air it dissolves into the sea, and vice versa — one of nature's balancing mechanisms.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_064.jpg",
+  "caption": "The carbon dioxide cycle in nature"
+ },
+ {
+  "id": "cn-c9-d19",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, some solar radiation reflected by the earth is trapped by the orange 'thermal blanket'. The blanket represents:",
+  "options": [
+   "the ozone hole",
+   "greenhouse gases — CO₂, N₂O, O₃, CH₄ and CFCs",
+   "clouds of water",
+   "dust storms"
+  ],
+  "correctOption": 1,
+  "answer": "Greenhouse gases trap part of the earth's radiated heat, keeping the planet warm — the greenhouse effect; in excess they cause global warming.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_067.jpg",
+  "caption": "Greenhouse effect — thermal blanket around the earth"
+ },
+ {
+  "id": "cn-c9-d20",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The trapping process shown is called the greenhouse effect because:",
+  "options": [
+   "plants grow greener under CO₂",
+   "a glass greenhouse similarly lets sunlight in but stops the trapped heat from escaping",
+   "greenhouses produce CO₂",
+   "the gases are green"
+  ],
+  "correctOption": 1,
+  "answer": "In cold regions glass houses trap solar heat to grow warm-climate plants; the gas blanket does the same for the whole earth — hence the name.",
+  "linksTo": "cn-c9-n10",
+  "source": "icse",
+  "image": "images/chem-ch9_img_067.jpg",
+  "caption": "Greenhouse effect — thermal blanket around the earth"
+ },
+ {
+  "id": "cn-c9-d21",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, air entering at the base burns carbon to CO₂ (C + O₂ → CO₂), but in the hot coal layers above the equation reads CO₂ + C → 2CO. The blue flame at the TOP is:",
+  "options": [
+   "hydrogen burning",
+   "carbon monoxide burning to CO₂ (2CO + O₂ → 2CO₂)",
+   "methane escaping",
+   "sulphur burning"
+  ],
+  "correctOption": 1,
+  "answer": "CO₂ rising through red-hot coke is REDUCED to carbon monoxide, which burns at the surface with the characteristic pale-blue flame.",
+  "linksTo": "cn-c9-n11",
+  "source": "icse",
+  "image": "images/chem-ch9_img_074.jpg",
+  "caption": "Coal fire — zones of a burning coal oven (Fig. 9.13)"
+ },
+ {
+  "id": "cn-c9-d22",
+  "topicId": "chem-ch9",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The middle reaction shown (CO₂ + C → 2CO) explains why sleeping in a closed room with a burning coal fire is dangerous:",
+  "options": [
+   "the room gets too hot",
+   "limited air produces poisonous carbon monoxide — the colourless, nearly odourless 'silent killer'",
+   "coal dust causes sneezing",
+   "CO₂ freezes the air"
+  ],
+  "correctOption": 1,
+  "answer": "In limited air the fire generates CO, which binds haemoglobin as carboxyhaemoglobin and blocks oxygen transport — even 0.5% CO in air can kill.",
+  "linksTo": "cn-c9-n11",
+  "source": "icse",
+  "image": "images/chem-ch9_img_074.jpg",
+  "caption": "Coal fire — zones of a burning coal oven (Fig. 9.13)"
  }
 ];

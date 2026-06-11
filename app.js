@@ -48,8 +48,12 @@ let activeWordId = null;
 let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
+let sidebarCollapsed = false;
+let noteIndex = 0;
+let questionIndex = 0;
+let diagramIndex = 0;
 
-const DATA_VERSION = 44;
+const DATA_VERSION = 45;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
