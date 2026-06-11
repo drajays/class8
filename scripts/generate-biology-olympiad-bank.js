@@ -816,18 +816,26 @@ function processQuestion(q) {
   return null;
 }
 
-function buildHeader(retained, generated) {
+function buildHeader(retained, stats) {
   const pct = Math.round((retained / AUDIT_REVIEWED) * 100);
+  const totalEntries = retained + (stats.descriptiveMcq || 0);
   return [
-    '# ICSE Class 8 Biology — Olympiad / NEET Foundation Assessment Bank',
+    '# ICSE Class 8 Biology — Olympiad / NEET Foundation Assessment Bank (FINAL)',
     '',
-    `**Audit Summary:** ${AUDIT_REVIEWED} questions reviewed → ${retained} retained (${pct}% compression target: 50%)`,
+    `**Audit Summary:** ${AUDIT_REVIEWED} questions reviewed → ${retained} retained (${pct}% compression)`,
     '',
-    '**Sources:** biology.js (curated ICSE) + biology-neet.js (foundation practice bank)',
+    '**Sources:** `biology.js` (447 curated ICSE) + `biology-neet.js` (2,112 foundation MCQs)',
     '',
     '**Quality Filter:** Trivial recall, duplicate stems, malformed auto-generated items, and "All/None of the above" options removed.',
     '',
-    `**Generated:** ${generated} assessment blocks organized by chapter (descriptive items include companion MCQs).`,
+    '**Final Bank Composition:**',
+    `- ${stats.mcq} Single Correct Answer MCQs (incl. ${stats.tf} T/F converted)`,
+    `- ${stats.descriptive} Descriptive / Analytical items (high-quality retained)`,
+    `- ${stats.descriptiveMcq} Companion MCQs (100% descriptive coverage for Olympiad/NEET practice)`,
+    `- ${stats.conceptual} short-answer → conceptual MCQ`,
+    `- **${totalEntries} total assessment entries** across 9 chapters (★★★★☆ – ★★★★★)`,
+    '',
+    '**Regenerate:** `node scripts/generate-biology-olympiad-bank.js`',
     '',
     '---',
     '',
@@ -863,7 +871,7 @@ function main() {
     }
   }
 
-  const parts = [buildHeader(raw.length, raw.length - skipped)];
+  const parts = [];
 
   const chapterCounts = {};
   let totalGenerated = 0;
@@ -883,7 +891,7 @@ function main() {
     parts.push(blocks.join('\n'));
   }
 
-  const out = parts.join('\n');
+  const out = [buildHeader(raw.length, stats), ...parts].join('\n');
   fs.writeFileSync(OUTPUT, out, 'utf8');
 
   const fileSize = fs.statSync(OUTPUT).size;

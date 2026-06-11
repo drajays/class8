@@ -1,12 +1,19 @@
-# ICSE Class 8 Biology — Olympiad / NEET Foundation Assessment Bank
+# ICSE Class 8 Biology — Olympiad / NEET Foundation Assessment Bank (FINAL)
 
-**Audit Summary:** 2559 questions reviewed → 1282 retained (50% compression target: 50%)
+**Audit Summary:** 2559 questions reviewed → 1282 retained (50% compression)
 
-**Sources:** biology.js (curated ICSE) + biology-neet.js (foundation practice bank)
+**Sources:** `biology.js` (447 curated ICSE) + `biology-neet.js` (2,112 foundation MCQs)
 
 **Quality Filter:** Trivial recall, duplicate stems, malformed auto-generated items, and "All/None of the above" options removed.
 
-**Generated:** 1282 assessment blocks organized by chapter (descriptive items include companion MCQs).
+**Final Bank Composition:**
+- 1143 Single Correct Answer MCQs (incl. 32 T/F converted)
+- 139 Descriptive / Analytical items (high-quality retained)
+- 139 Companion MCQs (100% descriptive coverage for Olympiad/NEET practice)
+- 2 short-answer → conceptual MCQ
+- **1421 total assessment entries** across 9 chapters (★★★★☆ – ★★★★★)
+
+**Regenerate:** `node scripts/generate-biology-olympiad-bank.js`
 
 ---
 
