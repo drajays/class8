@@ -2,7 +2,7 @@
 // Build physics-neet.js from kept notes + hand-authored question banks.
 //
 // Inputs:
-//   data/physics-notes-extract.json     — 137 chapter notes (kept from OCR build)
+//   data/physics-authored/notes-ch1-4.json, notes-ch5-8.json — hand-written chapter notes
 //   data/physics-authored/ch[1-8].json  — authored questions per chapter
 //   data/physics-authored/diagrams.json — authored diagram MCQs (have an `image` field)
 //
@@ -15,7 +15,20 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 
-const notes = read('data/physics-notes-extract.json');
+const notes = [...read('data/physics-authored/notes-ch1-4.json'), ...read('data/physics-authored/notes-ch5-8.json')];
+
+const noteErrors = [];
+const seenNotes = new Set();
+for (const n of notes) {
+  if (!n.id || seenNotes.has(n.id)) noteErrors.push(`${n.id || '(missing id)'}: missing or duplicate note id`);
+  seenNotes.add(n.id);
+  if (n.type !== 'note') noteErrors.push(`${n.id}: note type must be 'note'`);
+  if (!n.topicId || !n.subtopic || !n.content) noteErrors.push(`${n.id}: note missing topicId/subtopic/content`);
+}
+if (noteErrors.length) {
+  console.error('Note validation failed:\n' + noteErrors.join('\n'));
+  process.exit(1);
+}
 const questionFiles = ['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8', 'diagrams'];
 const questions = questionFiles.flatMap((f) => read(`data/physics-authored/${f}.json`));
 
@@ -68,7 +81,7 @@ for (const topic of topicOrder) {
   out.push(...questions.filter((q) => q.topicId === topic && q.image));
 }
 
-const header = `// StudyHub — ICSE Class 8 Physics (notes from textbook OCR; questions hand-authored)
+const header = `// StudyHub — ICSE Class 8 Physics (notes and questions hand-authored)
 // Regenerate: node scripts/build-physics-neet-authored.js
 // Question sources: data/physics-authored/ch1..ch8.json + diagrams.json
 `;
