@@ -5,7 +5,7 @@
 <script>
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
-  var BUILD = '35';
+  var BUILD = '36';
   window.__STUDYHUB_BUILD = BUILD;
   var KEY = 'studyhub_build';
   var prev = '';
@@ -54,8 +54,8 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=35">
-<link rel="stylesheet" href="exam-panel.css?v=35">
+<link rel="stylesheet" href="styles.css?v=36">
+<link rel="stylesheet" href="exam-panel.css?v=36">
 </head>
 <body>
 
@@ -79,6 +79,7 @@
   </div>
   <div class="header-actions">
     <button onclick="openExamPanel()" id="btn-exam" title="NTA-style mock test">📝 <span class="label">Mock Test</span></button>
+    <button onclick="openUpdateModal()" id="btn-update" title="Update app to latest version">🔄 <span class="label">Update</span><span class="update-dot" id="update-dot" hidden aria-hidden="true"></span></button>
     <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
     <button onclick="exportData()" id="btn-export" title="Download backup">📥 <span class="label">Export</span></button>
     <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 <span class="label">Import</span></button>
@@ -319,6 +320,25 @@
   </div>
 </div>
 
+<!-- MODAL: Update App -->
+<div class="modal-overlay" id="modal-update">
+  <div class="modal" style="max-width:520px">
+    <button class="close-btn" onclick="closeModal('modal-update')">✕</button>
+    <h2>🔄 Update StudyHub</h2>
+    <p class="sync-intro">Get the newest notes, questions and fixes. Your practice progress, bookmarks and star ratings stay saved on this device.</p>
+    <div class="sync-meta-grid update-meta-grid">
+      <div><span class="sync-meta-label">Your version</span><strong id="update-current">—</strong></div>
+      <div><span class="sync-meta-label">Latest online</span><strong id="update-remote">Checking…</strong></div>
+    </div>
+    <p class="sync-status-line" id="update-status-line">Checking for updates…</p>
+    <div class="btn-group sync-actions">
+      <button class="btn btn-primary" id="btn-update-now" onclick="runAppUpdate()">🔄 Update now</button>
+      <button class="btn btn-outline" id="btn-check-update" onclick="checkForAppUpdate(false)">🔍 Check again</button>
+    </div>
+    <p class="sync-help sync-help-foot">Tap <strong>Update now</strong> if the app looks old or something is not loading. The page will refresh once.</p>
+  </div>
+</div>
+
 <!-- MODAL: Import Confirmation -->
 <div class="modal-overlay" id="modal-import">
   <div class="modal" style="max-width:620px">
@@ -345,26 +365,26 @@
 <div class="toast" id="toast"></div>
 
 <!-- DATA (load order matters) -->
-<script src="data-core.js?v=35"></script>
-<script src="chapters3to8.js?v=35"></script>
-<script src="physics-qbank.js?v=35"></script>
-<script src="physics-neet.js?v=35"></script>
-<script src="physics-mindmaps.js?v=35"></script>
-<script src="physics-cheatsheets.js?v=35"></script>
-<script src="biology.js?v=35"></script>
-<script src="biology-neet.js?v=35"></script>
-<script src="biology-mindmaps.js?v=35"></script>
-<script src="biology-cheatsheets.js?v=35"></script>
-<script src="chemistry.js?v=35"></script>
-<script src="chemistry-neet.js?v=35"></script>
-<script src="chemistry-mindmaps.js?v=35"></script>
-<script src="chemistry-cheatsheets.js?v=35"></script>
-<script src="geography.js?v=35"></script>
-<script src="history-civics.js?v=35"></script>
+<script src="data-core.js?v=36"></script>
+<script src="chapters3to8.js?v=36"></script>
+<script src="physics-qbank.js?v=36"></script>
+<script src="physics-neet.js?v=36"></script>
+<script src="physics-mindmaps.js?v=36"></script>
+<script src="physics-cheatsheets.js?v=36"></script>
+<script src="biology.js?v=36"></script>
+<script src="biology-neet.js?v=36"></script>
+<script src="biology-mindmaps.js?v=36"></script>
+<script src="biology-cheatsheets.js?v=36"></script>
+<script src="chemistry.js?v=36"></script>
+<script src="chemistry-neet.js?v=36"></script>
+<script src="chemistry-mindmaps.js?v=36"></script>
+<script src="chemistry-cheatsheets.js?v=36"></script>
+<script src="geography.js?v=36"></script>
+<script src="history-civics.js?v=36"></script>
 <!-- APP LOGIC -->
-<script src="app.js?v=35"></script>
-<script src="exam-panel.js?v=35"></script>
-<script src="github-sync.js?v=35"></script>
+<script src="app.js?v=36"></script>
+<script src="exam-panel.js?v=36"></script>
+<script src="github-sync.js?v=36"></script>
 <script>
 (function bootStudyHub() {
   if (typeof initApp === 'function') {

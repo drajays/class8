@@ -1690,8 +1690,12 @@ function renderHome(el) {
       </div>
       <div class="dash-subjects">${subjectBars}</div>
     </div>`;
+  const updateBanner = isAppUpdateAvailable()
+    ? `<div class="update-banner" onclick="openUpdateModal()" role="button" tabindex="0">🔄 New version available — tap to update</div>`
+    : '';
   el.innerHTML = `
     <div class="fade-in">
+      ${updateBanner}
       <div class="section-header">
         <h1>Welcome to StudyHub</h1>
       </div>
@@ -3289,6 +3293,114 @@ function showToast(type, message) {
 // ============================================================
 // PWA (offline on iPad / served over http)
 // ============================================================
+let _appUpdatePending = false;
+let _appUpdateRemote = null;
+let _appUpdateChecking = false;
+
+function getAppBuild() {
+  return window.__STUDYHUB_BUILD || '?';
+}
+
+function isAppUpdateAvailable() {
+  const current = getAppBuild();
+  if (_appUpdatePending) return true;
+  return !!(_appUpdateRemote && _appUpdateRemote !== current);
+}
+
+function updateAppBadge() {
+  const btn = document.getElementById('btn-update');
+  const dot = document.getElementById('update-dot');
+  const pending = isAppUpdateAvailable();
+  if (dot) dot.hidden = !pending;
+  if (btn) btn.classList.toggle('sync-attention', pending);
+}
+
+function populateUpdateModal() {
+  const current = getAppBuild();
+  const curEl = document.getElementById('update-current');
+  const remoteEl = document.getElementById('update-remote');
+  const statusEl = document.getElementById('update-status-line');
+  const nowBtn = document.getElementById('btn-update-now');
+  if (curEl) curEl.textContent = 'v' + current;
+  if (remoteEl) {
+    remoteEl.textContent = _appUpdateRemote ? ('v' + _appUpdateRemote) : '—';
+  }
+  if (statusEl) {
+    if (_appUpdateChecking) statusEl.textContent = 'Checking for updates…';
+    else if (isAppUpdateAvailable()) statusEl.textContent = '✨ A newer version is ready — tap Update now.';
+    else if (_appUpdateRemote) statusEl.textContent = '✅ You already have the latest version.';
+    else statusEl.textContent = 'Could not check online — you can still tap Update now to refresh.';
+  }
+  if (nowBtn) {
+    nowBtn.disabled = false;
+    nowBtn.textContent = isAppUpdateAvailable() ? '🔄 Update now' : '🔄 Refresh app';
+  }
+}
+
+function openUpdateModal() {
+  populateUpdateModal();
+  openModal('modal-update');
+  checkForAppUpdate(true);
+}
+
+async function fetchRemoteAppBuild() {
+  const res = await fetch('./index.html?_=' + Date.now(), { cache: 'no-store' });
+  if (!res.ok) throw new Error('Could not reach server');
+  const text = await res.text();
+  const m = text.match(/var BUILD = ['"](\d+)['"]/);
+  return m ? m[1] : null;
+}
+
+async function checkForAppUpdate(silent) {
+  if (_appUpdateChecking) return;
+  _appUpdateChecking = true;
+  populateUpdateModal();
+  try {
+    _appUpdateRemote = await fetchRemoteAppBuild();
+    updateAppBadge();
+    populateUpdateModal();
+    if (!silent && isAppUpdateAvailable()) {
+      showToast('info', '🔄 New version available — tap Update now.');
+    } else if (!silent && _appUpdateRemote) {
+      showToast('success', '✅ You have the latest version.');
+    }
+    if (isAppUpdateAvailable() && currentView === 'home') render();
+  } catch (e) {
+    populateUpdateModal();
+    if (!silent) showToast('error', 'Could not check for updates. Try Update now to refresh.');
+  } finally {
+    _appUpdateChecking = false;
+    populateUpdateModal();
+  }
+}
+
+async function runAppUpdate() {
+  const btn = document.getElementById('btn-update-now');
+  if (btn) { btn.disabled = true; btn.textContent = 'Updating…'; }
+  showToast('info', 'Getting the latest StudyHub…');
+  try {
+    if ('serviceWorker' in navigator) {
+      const reg = await navigator.serviceWorker.getRegistration();
+      if (reg && reg.waiting) {
+        reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+        return;
+      }
+    }
+    if ('caches' in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    if ('serviceWorker' in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+    location.reload();
+  } catch (e) {
+    showToast('error', 'Update failed: ' + e.message);
+    if (btn) { btn.disabled = false; btn.textContent = '🔄 Update now'; }
+  }
+}
+
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
@@ -3298,14 +3410,20 @@ function registerServiceWorker() {
     reloaded = true;
     location.reload();
   });
-  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '35')).then(function (reg) {
-    if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '36')).then(function (reg) {
+    if (reg.waiting && navigator.serviceWorker.controller) {
+      _appUpdatePending = true;
+      updateAppBadge();
+    }
     reg.addEventListener('updatefound', function () {
       var worker = reg.installing;
       if (!worker) return;
       worker.addEventListener('statechange', function () {
         if (worker.state === 'installed' && navigator.serviceWorker.controller) {
-          worker.postMessage({ type: 'SKIP_WAITING' });
+          _appUpdatePending = true;
+          updateAppBadge();
+          if (currentView === 'home') render();
+          showToast('info', '🔄 New version ready — tap Update in the header.');
         }
       });
     });
@@ -3335,6 +3453,7 @@ function initApp() {
   applySidebarLayout();
   setupPersistenceGuards();
   registerServiceWorker();
+  setTimeout(function () { checkForAppUpdate(true); }, 2500);
   if (typeof setupGithubSync === 'function') setupGithubSync();
   window.addEventListener('resize', applySidebarLayout);
   document.addEventListener('keydown', e => {

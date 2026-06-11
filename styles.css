@@ -595,11 +595,19 @@ body{
 .mgr-row .mgr-title{font-size:.9rem;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 
 .header-actions button.sync-attention{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 25%, transparent)}
-.sync-dot{
+.sync-dot,.update-dot{
   position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;
   background:var(--accent);box-shadow:0 0 0 2px var(--surface);
 }
-#btn-sync{position:relative}
+#btn-sync,#btn-update{position:relative}
+.update-meta-grid{grid-template-columns:1fr 1fr}
+.update-banner{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 16px;margin-bottom:16px;border-radius:12px;cursor:pointer;
+  background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
+  color:var(--accent);font-size:.88rem;font-weight:700;
+}
+.update-banner:hover{background:color-mix(in srgb,var(--accent-soft) 80%,var(--accent) 20%)}
 .sync-intro{color:var(--ink-2);font-size:.9rem;margin:-8px 0 10px;line-height:1.45}
 .sync-status-line{font-size:.82rem;font-weight:700;color:var(--accent);margin-bottom:14px}
 .sync-meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
