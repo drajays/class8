@@ -49,7 +49,7 @@ let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 
-const DATA_VERSION = 43;
+const DATA_VERSION = 44;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -191,6 +191,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
     typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
+    typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
@@ -907,6 +908,9 @@ function chapterMindmap(topicId) {
   if (typeof PHYSICS_MINDMAP_DATA !== 'undefined' && PHYSICS_MINDMAP_DATA[topicId]) {
     return PHYSICS_MINDMAP_DATA[topicId];
   }
+  if (typeof CHEMISTRY_MINDMAP_DATA !== 'undefined' && CHEMISTRY_MINDMAP_DATA[topicId]) {
+    return CHEMISTRY_MINDMAP_DATA[topicId];
+  }
   if (typeof BIOLOGY_MINDMAP_DATA !== 'undefined') {
     return BIOLOGY_MINDMAP_DATA[topicId] || null;
   }
@@ -917,6 +921,9 @@ function chapterCheatsheet(topicId) {
   if (!topicId) return null;
   if (typeof PHYSICS_CHEATSHEET_DATA !== 'undefined' && PHYSICS_CHEATSHEET_DATA[topicId]) {
     return PHYSICS_CHEATSHEET_DATA[topicId];
+  }
+  if (typeof CHEMISTRY_CHEATSHEET_DATA !== 'undefined' && CHEMISTRY_CHEATSHEET_DATA[topicId]) {
+    return CHEMISTRY_CHEATSHEET_DATA[topicId];
   }
   if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
     return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
