@@ -54,7 +54,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 47;
+const DATA_VERSION = 48;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -191,6 +191,89 @@ function isUserCreatedContentId(id) {
   return /^c-\d+$/.test(id);
 }
 
+function _isDeltaStoragePayload(parsed) {
+  return !!(parsed && parsed._saveMode === 'delta');
+}
+
+/** Save only user edits to localStorage — bundled content lives in JS modules. */
+function buildLocalStoragePayload() {
+  const syncIds = new Set(
+    appData.content.filter(c => isUserCreatedContentId(c.id)).map(c => c.id)
+  );
+  (appData.editedContentIds || []).forEach(id => syncIds.add(id));
+  const deltaContent = appData.content.filter(c => syncIds.has(c.id));
+  return {
+    _studyhub: true,
+    _saveMode: 'delta',
+    _version: DATA_VERSION,
+    _savedAt: new Date().toISOString(),
+    classes: appData.classes,
+    subjects: appData.subjects,
+    topics: appData.topics,
+    content: deltaContent,
+    deletedContentIds: appData.deletedContentIds || [],
+    editedContentIds: appData.editedContentIds || []
+  };
+}
+
+function _rebuildAppDataFromDelta(payload) {
+  const deleted = new Set(payload.deletedContentIds || []);
+  const deltaById = new Map((payload.content || []).map(c => [c.id, c]));
+  appData = {
+    classes: Array.isArray(payload.classes) && payload.classes.length
+      ? payload.classes.slice() : DEFAULT_DATA.classes.slice(),
+    subjects: Array.isArray(payload.subjects) && payload.subjects.length
+      ? payload.subjects.slice() : DEFAULT_DATA.subjects.slice(),
+    topics: Array.isArray(payload.topics) && payload.topics.length
+      ? payload.topics.slice() : DEFAULT_DATA.topics.slice(),
+    content: [],
+    deletedContentIds: Array.isArray(payload.deletedContentIds) ? payload.deletedContentIds.slice() : [],
+    editedContentIds: Array.isArray(payload.editedContentIds) ? payload.editedContentIds.slice() : []
+  };
+  DEFAULT_DATA.content.forEach(item => {
+    if (deleted.has(item.id)) return;
+    const override = deltaById.get(item.id);
+    appData.content.push(JSON.parse(JSON.stringify(override || item)));
+  });
+  (payload.content || []).forEach(c => {
+    if (!isUserCreatedContentId(c.id)) return;
+    if (!appData.content.some(x => x.id === c.id)) {
+      appData.content.push(JSON.parse(JSON.stringify(c)));
+    }
+  });
+  _mergeDefaultsIntoAppData();
+}
+
+function _writeLocalStoragePayload(json, opts) {
+  const skipSync = opts && opts.skipSync;
+  const quiet = opts && opts.quiet;
+  try {
+    localStorage.setItem('studyhub_data', json);
+    localStorage.setItem('studyhub_version', String(DATA_VERSION));
+    if (!skipSync) markSyncDirty();
+    return true;
+  } catch (err) {
+    console.warn('[StudyHub] localStorage full, clearing old data blob…', err.message);
+    try {
+      localStorage.removeItem('studyhub_data');
+      localStorage.removeItem('studyhub_db');
+      localStorage.setItem('studyhub_data', json);
+      localStorage.setItem('studyhub_version', String(DATA_VERSION));
+      if (!skipSync) markSyncDirty();
+      if (!quiet && typeof showToast === 'function') {
+        showToast('success', '✅ Storage optimized — space freed. Your edits & progress are safe.');
+      }
+      return true;
+    } catch (err2) {
+      console.error('[StudyHub] Could not save to localStorage:', err2.message);
+      if (!quiet && typeof showToast === 'function') {
+        showToast('error', '❌ Storage full — tap Export to backup, then reload the app.');
+      }
+      return false;
+    }
+  }
+}
+
 function _mergeNewById(target, defaults) {
   const ids = new Set(target.map(x => x.id));
   defaults.forEach(d => {
@@ -315,6 +398,16 @@ function loadData() {
     const parsed = JSON.parse(savedRaw);
     const payload = parsed._studyhub ? parsed : parsed;
     if (payload.classes && payload.content) {
+      if (_isDeltaStoragePayload(payload)) {
+        _rebuildAppDataFromDelta(payload);
+        if (savedVersion < DATA_VERSION) {
+          _upsertBundledContent();
+          _reconcileTaxonomy();
+          localStorage.setItem('studyhub_version', String(DATA_VERSION));
+          saveData({ skipSync: true });
+        }
+        return;
+      }
       appData = {
         classes: Array.isArray(payload.classes) ? payload.classes.slice() : [],
         subjects: Array.isArray(payload.subjects) ? payload.subjects.slice() : [],
@@ -322,12 +415,16 @@ function loadData() {
         content: Array.isArray(payload.content) ? payload.content.slice() : [],
         deletedContentIds: Array.isArray(payload.deletedContentIds) ? payload.deletedContentIds.slice() : []
       };
+      if (Array.isArray(payload.editedContentIds)) appData.editedContentIds = payload.editedContentIds.slice();
       _mergeDefaultsIntoAppData();
       if (savedVersion < DATA_VERSION) {
         _upsertBundledContent();
         _reconcileTaxonomy();
         localStorage.setItem('studyhub_version', String(DATA_VERSION));
         saveData({ skipSync: true });
+      } else {
+        // Legacy full blob — migrate to compact delta save (frees browser storage)
+        saveData({ skipSync: true, quiet: false });
       }
       return;
     }
@@ -365,7 +462,6 @@ function clearSyncDirty(remoteMeta) {
 function saveData(opts) {
   if (!appData) return false;
   const skipSync = opts && opts.skipSync;
-  const json = JSON.stringify(appData);
   if (isNwDesktop()) {
     try {
       const fs = require('fs');
@@ -381,23 +477,16 @@ function saveData(opts) {
         subjects: appData.subjects,
         topics: appData.topics,
         content: appData.content,
-        deletedContentIds: appData.deletedContentIds || []
+        deletedContentIds: appData.deletedContentIds || [],
+        editedContentIds: appData.editedContentIds || []
       };
       fs.writeFileSync(dbFile, JSON.stringify(payload, null, 2), 'utf-8');
     } catch (err) {
       console.error('[StudyHub] Could not write DB file:', err.message);
     }
   }
-  try {
-    localStorage.setItem('studyhub_data', json);
-    localStorage.setItem('studyhub_version', String(DATA_VERSION));
-    if (!skipSync) markSyncDirty();
-    return true;
-  } catch (err) {
-    console.error('[StudyHub] Could not save to localStorage:', err.message);
-    showToast('error', '❌ Storage full — export a backup and free space.');
-    return false;
-  }
+  const json = JSON.stringify(buildLocalStoragePayload());
+  return _writeLocalStoragePayload(json, opts);
 }
 
 function setupPersistenceGuards() {
