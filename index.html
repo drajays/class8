@@ -14,13 +14,14 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="exam-panel.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
   <div style="display:flex;align-items:center;gap:12px">
-    <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <button class="mobile-menu-btn" id="btn-sidebar" onclick="toggleSidebar()" aria-label="Toggle navigation panel" title="Show / hide navigation">☰</button>
     <div class="logo">
       <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
         <rect width="36" height="36" rx="9" fill="currentColor" opacity="0.1"/>
@@ -31,7 +32,12 @@
       <span>Study<span class="accent">Hub</span></span>
     </div>
   </div>
+  <div class="header-search" title="Search questions (Ctrl+K)">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+    <input type="search" class="search-input" id="header-search" placeholder="Search questions…" autocomplete="off" oninput="searchQuestions(this.value)" enterkeyhint="search">
+  </div>
   <div class="header-actions">
+    <button onclick="openExamPanel()" id="btn-exam" title="NTA-style mock test">📝 <span class="label">Mock Test</span></button>
     <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
     <button onclick="exportData()" id="btn-export" title="Download backup">📥 <span class="label">Export</span></button>
     <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 <span class="label">Import</span></button>
@@ -49,11 +55,15 @@
 
 <!-- APP -->
 <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()" aria-hidden="true"></div>
-<div class="app-container">
+<div class="app-container" id="app-container">
   <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <span class="sidebar-title">Navigation</span>
+      <button type="button" class="sidebar-close" onclick="closeSidebar()" aria-label="Close navigation panel">✕</button>
+    </div>
     <div class="search-box">
       <span class="search-icon">🔍</span>
-      <input type="text" placeholder="Search topics…" oninput="searchTopics(this.value)">
+      <input type="search" class="search-input" id="sidebar-search" placeholder="Search questions…" autocomplete="off" oninput="searchQuestions(this.value)" enterkeyhint="search">
     </div>
     <div class="sidebar-section sidebar-revision-wrap">
       <div class="sidebar-revision"></div>
@@ -310,6 +320,7 @@
 <script src="history-civics.js"></script>
 <!-- APP LOGIC -->
 <script src="app.js"></script>
+<script src="exam-panel.js"></script>
 <script src="github-sync.js"></script>
 </body>
 </html>

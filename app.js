@@ -98,6 +98,7 @@ function topicTextQuestions(topicId) {
 
 function physicsContentStats(topicId) {
   const qs = topicTextQuestions(topicId);
+  const diags = diagramQuestions(topicId);
   return {
     notes: topicNotes(topicId).length,
     total: qs.length,
@@ -105,7 +106,9 @@ function physicsContentStats(topicId) {
     true_false: qs.filter(q => q.type === 'true_false').length,
     fill_blank: qs.filter(q => q.type === 'fill_blank').length,
     match: qs.filter(q => q.type === 'match').length,
-    short_answer: qs.filter(q => q.type === 'short_answer').length
+    short_answer: qs.filter(q => q.type === 'short_answer').length,
+    diagrams: diags.length,
+    diagramFigures: new Set(diags.map(q => q.image)).size
   };
 }
 
@@ -937,20 +940,40 @@ function _flashEl(el) {
 }
 
 function jumpToNote(noteId) {
+  const notes = sortedTopicNotes(selectedTopic);
+  const idx = notes.findIndex(n => n.id === noteId);
+  if (idx >= 0) noteIndex = idx;
   contentTab = 'notes';
   userAnswers = {};
-  delete notesCollapsed[noteId]; // ensure the target note is expanded on arrival
+  delete notesCollapsed[noteId];
   renderContent(document.getElementById('main-content'));
   setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 60);
 }
 
 function jumpToQuestion(qId) {
   const q = appData.content.find(c => c.id === qId);
+  if (!q) return;
+  const topic = appData.topics.find(t => t.id === q.topicId);
+  if (topic) {
+    selectedClass = topic.classId;
+    selectedSubject = topic.subjectId;
+    selectedTopic = q.topicId;
+  }
+  currentView = 'content';
   contentTab = isDiagramMcq(q) ? 'diagrams' : 'questions';
   questionFilter = 'all';
   userAnswers = {};
-  renderContent(document.getElementById('main-content'));
-  setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 60);
+  if (isDiagramMcq(q)) {
+    const diags = sortedDiagramQuestions(q.topicId);
+    const dIdx = diags.findIndex(x => x.id === qId);
+    if (dIdx >= 0) diagramIndex = dIdx;
+  } else {
+    const filtered = getFilteredQuestions(topicTextQuestions(q.topicId));
+    const qIdx = filtered.findIndex(x => x.id === qId);
+    if (qIdx >= 0) questionIndex = qIdx;
+  }
+  render();
+  setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 80);
 }
 
 function practiceLinkedMcqs(noteId) {
@@ -1028,6 +1051,79 @@ function noteSortKey(n) {
   const m = /^(\d+)\./.exec(n.subtopic || '');
   const num = m ? parseInt(m[1], 10) : 999;
   return [textbook ? 0 : 1, num, n.subtopic || ''];
+}
+
+function sortedTopicNotes(topicId) {
+  return [...topicNotes(topicId)].sort((a, b) => {
+    const ka = noteSortKey(a), kb = noteSortKey(b);
+    return ka[0] - kb[0] || ka[1] - kb[1] || ka[2].localeCompare(kb[2]);
+  });
+}
+
+function getFilteredQuestions(questions) {
+  const filteredRaw = questionFilter === 'all'
+    ? questions
+    : questionFilter === 'top'
+      ? questions.filter(q => getQuestionQuality(q).stars >= 4)
+      : questions.filter(q => q.type === questionFilter);
+  return sortQuestionsByQuality(filteredRaw);
+}
+
+function sortedDiagramQuestions(topicId) {
+  return diagramQuestions(topicId).slice().sort((a, b) =>
+    (a.image || '').localeCompare(b.image || '') || (a.id || '').localeCompare(b.id || '')
+  );
+}
+
+function clampCardIndex(idx, total) {
+  if (total <= 0) return 0;
+  return Math.max(0, Math.min(idx, total - 1));
+}
+
+function cardPagerHtml(current, total, prevFn, nextFn, label) {
+  if (total <= 1) return '';
+  return `<div class="card-pager" role="navigation" aria-label="${escHtml(label)} navigation">
+    <button type="button" class="btn btn-sm btn-outline" onclick="${prevFn}()" ${current <= 0 ? 'disabled' : ''}>← Prev</button>
+    <span class="card-pager-meta">${escHtml(label)} <strong>${current + 1}</strong> <span class="card-pager-of">of</span> ${total}</span>
+    <button type="button" class="btn btn-sm btn-outline" onclick="${nextFn}()" ${current >= total - 1 ? 'disabled' : ''}>Next →</button>
+  </div>`;
+}
+
+function scrollContentTop() {
+  const main = document.getElementById('main-content');
+  if (main) main.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function prevNoteCard() {
+  if (noteIndex > 0) { noteIndex--; renderNotes(); scrollContentTop(); }
+}
+function nextNoteCard() {
+  const notes = sortedTopicNotes(selectedTopic);
+  if (noteIndex < notes.length - 1) { noteIndex++; renderNotes(); scrollContentTop(); }
+}
+function prevQuestionCard() {
+  if (questionIndex > 0) { questionIndex--; renderQuestions(textQuestions(selectedTopic)); scrollContentTop(); }
+}
+function nextQuestionCard() {
+  const filtered = getFilteredQuestions(textQuestions(selectedTopic));
+  if (questionIndex < filtered.length - 1) { questionIndex++; renderQuestions(textQuestions(selectedTopic)); scrollContentTop(); }
+}
+function prevDiagramCard() {
+  if (diagramIndex > 0) { diagramIndex--; renderDiagramQuestions(sortedDiagramQuestions(selectedTopic)); scrollContentTop(); }
+}
+function nextDiagramCard() {
+  const diags = sortedDiagramQuestions(selectedTopic);
+  if (diagramIndex < diags.length - 1) { diagramIndex++; renderDiagramQuestions(diags); scrollContentTop(); }
+}
+
+function handleContentPagerKeys(e) {
+  if (e.target.matches('input, textarea, select, [contenteditable="true"]')) return;
+  if (currentView !== 'content' || !selectedTopic) return;
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  const prev = e.key === 'ArrowLeft';
+  if (contentTab === 'notes') { prev ? prevNoteCard() : nextNoteCard(); e.preventDefault(); }
+  else if (contentTab === 'questions') { prev ? prevQuestionCard() : nextQuestionCard(); e.preventDefault(); }
+  else if (contentTab === 'diagrams') { prev ? prevDiagramCard() : nextDiagramCard(); e.preventDefault(); }
 }
 
 const Q_TYPE_SHORT = { mcq:'MCQ', true_false:'T/F', fill_blank:'Fill', short_answer:'Q&A', match:'Match' };
@@ -1128,18 +1224,27 @@ function toggleAllNotes() {
   const allFolded = notes.every(n => notesCollapsed[n.id]);
   if (allFolded) notesCollapsed = {};
   else notes.forEach(n => { notesCollapsed[n.id] = true; });
-  renderNotes(notes);
+  renderNotes();
 }
 
 // ============================================================
 // NAVIGATION
 // ============================================================
 function navigateTo(view, id) {
-  closeSidebar();
+  dismissMobileSidebar();
   if (currentView === 'quiz' && quizSession && !quizSession.finished) {
     if (!confirm('Leave this quiz? Your answers so far are saved.')) return;
     quizSession = null;
   }
+  if (currentView === 'exam' && examSession) {
+    if (examSession.phase === 'active') {
+      if (!confirm('Leave the mock test? Your progress in this session will be lost.')) return;
+    }
+    if (typeof stopExamTimer === 'function') stopExamTimer();
+    examSession = null;
+    if (typeof updateExamModeClass === 'function') updateExamModeClass();
+  }
+  if (view === 'home') clearQuestionSearch();
   currentView = view;
   userAnswers = {};
   if (view === 'home') { selectedClass = null; selectedSubject = null; selectedTopic = null; }
@@ -1147,6 +1252,7 @@ function navigateTo(view, id) {
   if (view === 'topics') { selectedSubject = id; selectedTopic = null; }
   if (view === 'content') {
     selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; mindMapIndex = 0; activeWordId = null; wordCardOrder = [];
+    noteIndex = 0; questionIndex = 0; diagramIndex = 0;
     try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
   }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
@@ -1181,6 +1287,12 @@ function renderBreadcrumb() {
   if (currentView === 'quiz') {
     html += `<span class="sep">›</span><span class="active">▶ Practice Quiz</span>`;
   }
+  if (currentView === 'search') {
+    html += `<span class="sep">›</span><span class="active">🔍 Search</span>`;
+  }
+  if (currentView === 'exam') {
+    html += `<span class="sep">›</span><span class="active">📝 Mock Test</span>`;
+  }
   bc.innerHTML = html;
 }
 
@@ -1189,6 +1301,10 @@ function renderSidebar() {
   const revisionNav = document.querySelector('.sidebar-revision');
   if (revisionNav) {
     revisionNav.innerHTML = `
+      <div class="nav-item ${currentView === 'exam' ? 'active' : ''}" onclick="openExamPanel()">
+        <span class="icon">📝</span> Mock Test
+        <span class="badge">CBT</span>
+      </div>
       <div class="nav-item ${currentView === 'revision' ? 'active' : ''}" onclick="navigateTo('revision','mistakes')">
         <span class="icon">📕</span> Revision
         ${mistakeN ? `<span class="badge">${mistakeN}</span>` : ''}
@@ -1239,6 +1355,8 @@ function renderMain() {
   else if (currentView === 'content') renderContent(main);
   else if (currentView === 'revision') renderRevisionHub(main);
   else if (currentView === 'quiz') renderQuizView(main);
+  else if (currentView === 'search') renderSearchView(main);
+  else if (currentView === 'exam') renderExamView(main);
 }
 
 // ===== REVISION HUB =====
@@ -1425,6 +1543,10 @@ function renderHome(el) {
         <div class="jc-icon">🔁</div>
         <div class="jc-body"><div class="jc-title">Due Today</div><div class="jc-sub">${due.length ? due.length + ' scheduled' : 'All caught up'}</div></div>
       </div>
+      <div class="journey-card" onclick="openExamPanel()">
+        <div class="jc-icon">📝</div>
+        <div class="jc-body"><div class="jc-title">Mock Test</div><div class="jc-sub">NTA-style CBT exam</div></div>
+      </div>
       <div class="journey-card" onclick="openQuizBuilder({})">
         <div class="jc-icon">▶</div>
         <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
@@ -1541,8 +1663,8 @@ function renderTopics(el) {
             notes = st.notes;
             mcqs = st.mcq;
             qs = st.total;
-            diagrams = 0;
-            cardMeta = `<span>📝 ${st.notes} notes</span><span>❓ ${st.total} questions</span><span>🔘 ${st.mcq} MCQ</span><span>✅ ${st.true_false} T/F</span><span>✍️ ${st.fill_blank} Fill</span><span>🔗 ${st.match} Match</span><span>📋 ${st.short_answer} Q&A</span>`;
+            diagrams = st.diagrams;
+            cardMeta = `<span>📝 ${st.notes} notes</span><span>❓ ${st.total} questions</span><span>🔘 ${st.mcq} MCQ</span><span>🖼️ ${st.diagrams} diagram</span><span>✅ ${st.true_false} T/F</span>`;
           } else {
             const contents = appData.content.filter(c=>c.topicId===t.id);
             notes = contents.filter(c=>c.type==='note').length;
@@ -1597,19 +1719,21 @@ function renderContent(el) {
     </div>` : '';
   el.innerHTML = `
     <div class="fade-in">
-      <div class="section-header">
+      <div class="section-header chapter-header">
         <h1>${topic?.icon} ${topic?.name}</h1>
-        <button class="btn btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
+        <div class="chapter-header-actions">
+          <div class="content-tabs chapter-tabs" role="tablist" aria-label="Chapter study modes">
+            <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
+            ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
+            ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
+            ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
+            <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+            <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
+          </div>
+          <button class="btn btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:20})">▶ Practice Quiz</button>
+        </div>
       </div>
-      <div class="content-tabs chapter-tabs" role="tablist" aria-label="Chapter study modes">
-        <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
-        ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
-        ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
-        ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
-        <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
-        <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
-      </div>
-      ${qStats ? `<p class="chapter-tabs-hint physics-bank-banner">📚 ICSE Physics bank — <strong>${qStats.notes} linked notes</strong> · <strong>${qStats.total} questions</strong> (${qStats.mcq} MCQ · ${qStats.true_false} T/F · ${qStats.fill_blank} Fill · ${qStats.match} Match · ${qStats.short_answer} Q&A)</p>` : ''}
+      ${qStats ? `<p class="chapter-tabs-hint physics-bank-banner">📚 ICSE Physics bank — <strong>${qStats.notes} linked notes</strong> · <strong>${qStats.total} text questions</strong> · <strong>${diagrams.length} diagram MCQs</strong> (${qStats.mcq} MCQ · ${qStats.true_false} T/F · ${qStats.fill_blank} Fill · ${qStats.match} Match · ${qStats.short_answer} Q&A)</p>` : ''}
       ${(csData || mmData) && !qStats ? `<p class="chapter-tabs-hint">Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''} — tap a tab above</p>` : ''}
       ${(csData || mmData) && qStats ? `<p class="chapter-tabs-hint">Revision: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (30)' : ''}</p>` : ''}
       <div class="stats-row">
@@ -1648,7 +1772,7 @@ function renderContent(el) {
     </div>
   `;
 
-  if (contentTab === 'notes') renderNotes(notes);
+  if (contentTab === 'notes') renderNotes();
   else if (contentTab === 'mindmap') renderMindMap(mmData);
   else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
   else if (contentTab === 'oneword') renderOneWordCards(csData);
@@ -1661,6 +1785,9 @@ function switchContentTab(tab) {
   userAnswers = {};
   if (tab === 'mindmap') mindMapIndex = 0;
   if (tab === 'oneword') { activeWordId = null; wordCardOrder = []; }
+  if (tab === 'notes') noteIndex = 0;
+  if (tab === 'questions') questionIndex = 0;
+  if (tab === 'diagrams') diagramIndex = 0;
   renderContent(document.getElementById('main-content'));
 }
 
@@ -1917,47 +2044,30 @@ function renderCheatSheet(csData) {
     </div>`;
 }
 
-function renderNotes(notes) {
-  const body = document.getElementById('content-body');
-  if (notes.length === 0) {
-    body.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><h3>No notes yet</h3><p>Click "Add New" to create notes</p></div>';
-    return;
-  }
-  notes = [...notes].sort((a, b) => {
-    const ka = noteSortKey(a), kb = noteSortKey(b);
-    return ka[0] - kb[0] || ka[1] - kb[1] || ka[2].localeCompare(kb[2]);
-  });
+function buildNoteCardHtml(n, displayNum) {
   const allQuestions = topicTextQuestions(selectedTopic);
-  // Pool of questions by type so every note can offer a compact "Test yourself"
-  // row — one jump per type (→ MCQ, → T/F, → Fill, → Q&A) — even when no
-  // question explicitly links back to it.
   const XREF_TYPES = [['mcq','MCQ'], ['true_false','T/F'], ['fill_blank','Fill'], ['short_answer','Q&A']];
   const qByType = {};
   XREF_TYPES.forEach(([type]) => { qByType[type] = allQuestions.filter(q => q.type === type); });
-  const cards = notes.map((n, i) => {
-    const linked = allQuestions.filter(q => q.linksTo === n.id);
-    const linkedGradable = linked.filter(q => isQuizType(q));
-    const practiceBtn = linkedGradable.length
-      ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to linked questions for this section">▶ Practice ${linkedGradable.length} linked Q${linkedGradable.length > 1 ? 's' : ''}</button>`
-      : '';
-    const xrefBtns = XREF_TYPES.map(([type, label]) => {
-      // Prefer a question of this type that links to this note; otherwise pick a
-      // representative one, spread across notes so different notes lead elsewhere.
-      const pool = qByType[type];
-      if (!pool.length) return '';
-      const q = linked.find(l => l.type === type) || pool[i % pool.length];
-      return `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${label}</button>`;
-    }).filter(Boolean).join('');
-    const linkBar = (practiceBtn || xrefBtns)
-      ? `<div class="xref-bar">${practiceBtn}${xrefBtns ? `<span class="xref-label">More practice:</span>${xrefBtns}` : ''}</div>`
-      : '';
-    const collapsed = notesCollapsed[n.id] ? ' collapsed' : '';
-    return `
-    <div class="note-block fade-in${collapsed}" id="note-${n.id}" style="animation-delay:${Math.min(i,10)*0.03}s">
-      <div class="note-head" onclick="toggleNote('${n.id}')">
-        <div class="note-number">${i+1}</div>
+  const linked = allQuestions.filter(q => q.linksTo === n.id);
+  const linkedGradable = linked.filter(q => isQuizType(q));
+  const practiceBtn = linkedGradable.length
+    ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to linked questions for this section">▶ Practice ${linkedGradable.length} linked Q${linkedGradable.length > 1 ? 's' : ''}</button>`
+    : '';
+  const xrefBtns = XREF_TYPES.map(([type, label]) => {
+    const pool = qByType[type];
+    if (!pool.length) return '';
+    const q = linked.find(l => l.type === type) || pool[(displayNum - 1) % pool.length];
+    return `<button class="xref-btn" onclick="jumpToQuestion('${q.id}')" title="${escHtml(q.question)}">→ ${label}</button>`;
+  }).filter(Boolean).join('');
+  const linkBar = (practiceBtn || xrefBtns)
+    ? `<div class="xref-bar">${practiceBtn}${xrefBtns ? `<span class="xref-label">More practice:</span>${xrefBtns}` : ''}</div>`
+    : '';
+  return `
+    <div class="note-block fade-in" id="note-${n.id}">
+      <div class="note-head">
+        <div class="note-number">${displayNum}</div>
         <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
-        <span class="note-chevron" aria-hidden="true">▾</span>
       </div>
       <div class="note-body">
         <p style="font-weight:600;margin-bottom:8px">${fmtText(n.content)}</p>
@@ -1971,11 +2081,20 @@ function renderNotes(notes) {
         </div>
       </div>
     </div>`;
-  }).join('');
-  const allFolded = notes.every(n => notesCollapsed[n.id]);
-  body.innerHTML =
-    `<div class="notes-toolbar"><button class="btn btn-sm btn-outline" onclick="toggleAllNotes()">${allFolded ? '⊞ Expand all' : '⊟ Collapse all'}</button></div>` +
-    `<div class="notes-grid">${cards}</div>`;
+}
+
+function renderNotes() {
+  const body = document.getElementById('content-body');
+  const notes = sortedTopicNotes(selectedTopic);
+  if (notes.length === 0) {
+    body.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><h3>No notes yet</h3><p>Click "Add New" to create notes</p></div>';
+    return;
+  }
+  noteIndex = clampCardIndex(noteIndex, notes.length);
+  const n = notes[noteIndex];
+  const pager = cardPagerHtml(noteIndex, notes.length, 'prevNoteCard', 'nextNoteCard', 'Note');
+  body.innerHTML = `${pager}<div class="notes-single">${buildNoteCardHtml(n, noteIndex + 1)}</div>${pager}
+    <p class="card-pager-hint">Use ← → arrow keys to move between notes</p>`;
 }
 
 function renderQuestions(questions) {
@@ -1991,12 +2110,8 @@ function renderQuestions(questions) {
     {key:'short_answer',label:'Short/Long Answer',icon:'📋'}
   ];
 
-  const filteredRaw = questionFilter === 'all'
-    ? questions
-    : questionFilter === 'top'
-      ? questions.filter(q => getQuestionQuality(q).stars >= 4)
-      : questions.filter(q => q.type === questionFilter);
-  const filtered = sortQuestionsByQuality(filteredRaw);
+  const filtered = getFilteredQuestions(questions);
+  questionIndex = clampCardIndex(questionIndex, filtered.length);
 
   let tabsHtml = `<div class="question-type-tabs">${types.map(t => {
     const n = t.key === 'all'
@@ -2011,9 +2126,10 @@ function renderQuestions(questions) {
   if (filtered.length === 0) {
     qHtml = '<div class="empty-state"><div class="empty-icon">❓</div><h3>No questions of this type</h3></div>';
   } else {
-    qHtml = '<div class="questions-grid">' +
-      filtered.map((q, i) => renderSingleQuestion(q, i)).join('') +
-      '</div>';
+    const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', 'Question');
+    const card = renderSingleQuestion(filtered[questionIndex], questionIndex);
+    qHtml = `${pager}<div class="questions-single">${card}</div>${pager}
+      <p class="card-pager-hint">Use ← → arrow keys to move between questions</p>`;
   }
 
   body.innerHTML = tabsHtml + qHtml;
@@ -2021,40 +2137,40 @@ function renderQuestions(questions) {
 
 function setQuestionFilter(f) {
   questionFilter = f;
+  questionIndex = 0;
   userAnswers = {};
   renderQuestions(textQuestions(selectedTopic));
 }
 
 function renderDiagramQuestions(diagrams) {
   const body = document.getElementById('content-body');
-  if (!diagrams.length) {
+  const list = diagrams && diagrams.length ? diagrams : sortedDiagramQuestions(selectedTopic);
+  if (!list.length) {
     body.innerHTML = '<div class="empty-state"><div class="empty-icon">🖼️</div><h3>No diagram MCQs in this chapter</h3><p>Diagram-based NEET questions appear here when available for this topic.</p></div>';
     return;
   }
-  const byImage = new Map();
-  diagrams.forEach(q => {
-    if (!byImage.has(q.image)) byImage.set(q.image, { caption: q.caption || '', items: [] });
-    byImage.get(q.image).items.push(q);
-  });
-  let idx = 0;
-  const sections = [...byImage.entries()].map(([img, group], si) => {
-    const cap = group.caption || `Figure ${si + 1}`;
-    const cards = group.items.map(q => renderSingleQuestion(q, idx++, false, true)).join('');
-    return `<section class="diagram-section fade-in" style="animation-delay:${Math.min(si, 8) * 0.04}s">
-      <div class="diagram-section-head">
-        <h3>${escHtml(cap)}</h3>
-        <button class="btn btn-sm btn-primary" onclick="startDiagramQuiz('${img.replace(/'/g, "\\'")}')">▶ Quiz this figure (${group.items.length})</button>
-      </div>
-      <div class="mcq-image-wrap diagram-hero"><img class="mcq-image" src="${escHtml(img)}" alt="${escHtml(cap)}" loading="lazy"></div>
-      <div class="questions-grid diagram-q-grid">${cards}</div>
-    </section>`;
-  }).join('');
+  diagramIndex = clampCardIndex(diagramIndex, list.length);
+  const q = list[diagramIndex];
+  const cap = q.caption || 'Diagram figure';
+  const imgEsc = (q.image || '').replace(/'/g, "\\'");
+  const pager = cardPagerHtml(diagramIndex, list.length, 'prevDiagramCard', 'nextDiagramCard', 'Diagram Q');
+  const card = renderSingleQuestion(q, diagramIndex, false, true);
   body.innerHTML = `
     <div class="diagram-toolbar">
-      <p class="lead" style="margin:0">NEET-style questions based on textbook figures — 3 MCQs per diagram.</p>
+      <p class="lead" style="margin:0">NEET-style questions based on textbook figures — one at a time.</p>
       <button class="btn btn-outline" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'diagrams',count:15})">▶ Mixed diagram quiz</button>
     </div>
-    ${sections}`;
+    ${pager}
+    <section class="diagram-section diagram-single fade-in">
+      <div class="diagram-section-head">
+        <h3>${escHtml(cap)}</h3>
+        <button class="btn btn-sm btn-primary" onclick="startDiagramQuiz('${imgEsc}')">▶ Quiz this figure</button>
+      </div>
+      <div class="mcq-image-wrap diagram-hero"><img class="mcq-image" src="${escHtml(q.image)}" alt="${escHtml(cap)}" loading="lazy"></div>
+      <div class="questions-single">${card}</div>
+    </section>
+    ${pager}
+    <p class="card-pager-hint">Use ← → arrow keys to move between diagram questions</p>`;
 }
 
 function startDiagramQuiz(imagePath) {
@@ -2318,6 +2434,7 @@ function saveContent(e) {
   }
 
   saveData();
+  invalidateQuestionSearchIndex();
   closeModal('modal-add');
   render();
 }
@@ -2377,6 +2494,7 @@ function deleteContent(id) {
     if (!appData.deletedContentIds.includes(id)) appData.deletedContentIds.push(id);
   }
   if (!saveData()) return;
+  invalidateQuestionSearchIndex();
   showToast('success', '🗑️ Item deleted.');
   render();
 }
@@ -2425,41 +2543,258 @@ function filterManager() {
 }
 
 // ============================================================
-// SEARCH
+// QUESTION SEARCH (indexed, debounced, paginated)
 // ============================================================
+const SEARCH_DEBOUNCE_MS = 220;
+const SEARCH_CHUNK_SIZE = 500;
+const SEARCH_PAGE_SIZE = 40;
+const SEARCH_MIN_TERM_LEN = 2;
+
 let _searchTimer = null;
-// Debounced entry point bound to the input's oninput — avoids scanning all
-// records on every keystroke.
-function searchTopics(query) {
-  clearTimeout(_searchTimer);
-  _searchTimer = setTimeout(() => _runSearch(query), 160);
+let _searchGen = 0;
+let _questionSearchIndex = null;
+let searchQuery = '';
+let searchResults = null; // null = loading, [] = none
+let searchResultShown = 0;
+let searchActiveTerms = [];
+
+const SEARCH_TYPE_LABELS = {
+  mcq: 'MCQ', true_false: 'True/False', fill_blank: 'Fill blank',
+  match: 'Match', short_answer: 'Short answer'
+};
+
+function invalidateQuestionSearchIndex() {
+  _questionSearchIndex = null;
 }
 
-function _runSearch(query) {
-  if (!query.trim()) { render(); return; }
-  const q = query.toLowerCase();
-  const results = appData.content.filter(c =>
-    (c.subtopic||'').toLowerCase().includes(q) ||
-    (c.content||'').toLowerCase().includes(q) ||
-    (c.question||'').toLowerCase().includes(q) ||
-    (c.answer||'').toLowerCase().includes(q)
-  );
+function allSearchableQuestions() {
+  return appData.content.filter(c => {
+    if (c.type === 'note') return false;
+    if (!isPhysicsTopic(c.topicId)) return true;
+    return isPhysicsPipelineItem(c) || isDiagramMcq(c);
+  });
+}
 
-  const main = document.getElementById('main-content');
-  if (results.length === 0) {
-    main.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><h3>No results found</h3><p>Try a different search term</p></div>';
+function questionSearchText(q) {
+  const parts = [q.question, q.subtopic, q.answer, q.blankAnswer, q.explanation];
+  if (q.options) parts.push(...q.options);
+  if (q.pairs) q.pairs.forEach(p => { parts.push(p.left, p.right); });
+  return parts.filter(Boolean).join(' ').toLowerCase();
+}
+
+function buildQuestionSearchIndex() {
+  if (_questionSearchIndex) return _questionSearchIndex;
+  _questionSearchIndex = allSearchableQuestions().map(q => ({
+    id: q.id,
+    topicId: q.topicId,
+    type: q.type,
+    text: questionSearchText(q),
+    preview: (q.question || q.subtopic || '').replace(/\s+/g, ' ').trim()
+  }));
+  return _questionSearchIndex;
+}
+
+function scheduleQuestionSearchIndexBuild() {
+  if (_questionSearchIndex || !appData) return;
+  const run = () => { if (appData && !_questionSearchIndex) buildQuestionSearchIndex(); };
+  if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 2500 });
+  else setTimeout(run, 120);
+}
+
+function parseSearchTerms(raw) {
+  const trimmed = (raw || '').trim().toLowerCase();
+  if (!trimmed) return [];
+  const terms = [];
+  const re = /"([^"]+)"|(\S+)/g;
+  let m;
+  while ((m = re.exec(trimmed))) {
+    const t = (m[1] || m[2]).trim();
+    if (t.length >= SEARCH_MIN_TERM_LEN) terms.push(t);
+  }
+  return terms;
+}
+
+function syncSearchInputs(value) {
+  document.querySelectorAll('.search-input').forEach(inp => {
+    if (inp.value !== value) inp.value = value;
+  });
+}
+
+function clearQuestionSearch() {
+  _searchGen += 1;
+  searchQuery = '';
+  searchResults = [];
+  searchResultShown = 0;
+  searchActiveTerms = [];
+  syncSearchInputs('');
+}
+
+function focusQuestionSearch() {
+  const wide = window.matchMedia('(min-width:900px)').matches;
+  const el = document.getElementById(wide ? 'header-search' : 'sidebar-search');
+  if (!wide) {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar && !sidebar.classList.contains('show')) toggleSidebar();
+  }
+  if (el) { el.focus(); el.select(); }
+}
+
+function searchQuestions(query) {
+  syncSearchInputs(query);
+  clearTimeout(_searchTimer);
+  _searchTimer = setTimeout(() => _runQuestionSearch(query), SEARCH_DEBOUNCE_MS);
+}
+
+function _searchTermsMatch(text, terms) {
+  for (let i = 0; i < terms.length; i++) {
+    if (!text.includes(terms[i])) return false;
+  }
+  return true;
+}
+
+function _runQuestionSearch(query) {
+  const terms = parseSearchTerms(query);
+  if (!terms.length) {
+    if (currentView === 'search') {
+      currentView = selectedTopic ? 'content' : (selectedSubject ? 'topics' : (selectedClass ? 'subjects' : 'home'));
+    }
+    searchQuery = '';
+    searchResults = [];
+    searchResultShown = 0;
+    searchActiveTerms = [];
+    render();
     return;
   }
 
-  main.innerHTML = `<div class="section-header"><h1>🔍 Search Results (${results.length})</h1></div>` +
-    results.map((item, i) => {
-      const topic = appData.topics.find(t=>t.id===item.topicId);
-      if (item.type === 'note') {
-        return `<div class="note-block fade-in"><h3>${escHtml(item.subtopic)}</h3><p style="font-size:0.8rem;color:var(--ink-3);margin-bottom:6px">${topic?.name||''}</p><p>${escHtml(item.content||'')}</p></div>`;
-      } else {
-        return renderSingleQuestion(item, i);
+  const gen = ++_searchGen;
+  searchQuery = query;
+  searchActiveTerms = terms;
+  searchResults = null;
+  searchResultShown = 0;
+  currentView = 'search';
+  renderMain();
+
+  const run = () => {
+    if (gen !== _searchGen) return;
+    const index = buildQuestionSearchIndex();
+    const matches = [];
+    let i = 0;
+
+    function chunk() {
+      if (gen !== _searchGen) return;
+      const end = Math.min(i + SEARCH_CHUNK_SIZE, index.length);
+      for (; i < end; i++) {
+        if (_searchTermsMatch(index[i].text, terms)) matches.push(index[i].id);
       }
-    }).join('');
+      if (i < index.length) {
+        requestAnimationFrame(chunk);
+      } else if (gen === _searchGen) {
+        searchResults = matches;
+        searchResultShown = Math.min(SEARCH_PAGE_SIZE, matches.length);
+        renderMain();
+      }
+    }
+    requestAnimationFrame(chunk);
+  };
+
+  if (_questionSearchIndex) run();
+  else {
+    setTimeout(run, 0);
+  }
+}
+
+function _highlightSearchTerms(escaped, terms) {
+  let out = escaped;
+  terms.forEach(t => {
+    const et = escHtml(t);
+    if (!et) return;
+    const re = new RegExp(et.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    out = out.replace(re, '<mark>$&</mark>');
+  });
+  return out;
+}
+
+function _searchSnippet(text, terms) {
+  const raw = (text || '').replace(/\s+/g, ' ').trim();
+  if (!raw) return '';
+  const lower = raw.toLowerCase();
+  let pos = -1;
+  for (let i = 0; i < terms.length; i++) {
+    const p = lower.indexOf(terms[i]);
+    if (p !== -1 && (pos === -1 || p < pos)) pos = p;
+  }
+  const start = Math.max(0, pos - 50);
+  const slice = raw.slice(start, start + 170);
+  const tail = start + 170 < raw.length ? '…' : '';
+  if (pos === -1) return escHtml(slice) + tail;
+  return _highlightSearchTerms(escHtml(slice), terms) + tail;
+}
+
+function openSearchResult(qId) {
+  dismissMobileSidebar();
+  jumpToQuestion(qId);
+}
+
+function loadMoreSearchResults() {
+  if (!searchResults || !searchResults.length) return;
+  searchResultShown = Math.min(searchResultShown + SEARCH_PAGE_SIZE, searchResults.length);
+  renderMain();
+}
+
+function renderSearchView(el) {
+  if (searchResults === null) {
+    el.innerHTML = `<div class="fade-in">
+      <div class="section-header"><h1>🔍 Search</h1></div>
+      <p class="search-status"><span class="search-spinner"></span>Searching “${escHtml(searchQuery)}”…</p>
+    </div>`;
+    return;
+  }
+
+  if (!searchResults.length) {
+    el.innerHTML = `<div class="fade-in">
+      <div class="section-header"><h1>🔍 Search</h1></div>
+      <div class="empty-state">
+        <div class="empty-icon">🔍</div>
+        <h3>No questions found</h3>
+        <p>Try fewer words, check spelling, or use quotes for an exact phrase — e.g. <em>latent heat</em> or <em>"boiling point"</em></p>
+      </div>
+    </div>`;
+    return;
+  }
+
+  const indexById = new Map(buildQuestionSearchIndex().map(e => [e.id, e]));
+  const slice = searchResults.slice(0, searchResultShown);
+  const typeIcons = { mcq: '🔘', true_false: '✅', fill_blank: '✍️', match: '🔗', short_answer: '📋' };
+
+  const rows = slice.map(id => {
+    const entry = indexById.get(id);
+    const q = appData.content.find(c => c.id === id);
+    if (!entry || !q) return '';
+    const topic = appData.topics.find(t => t.id === q.topicId);
+    const subject = topic ? appData.subjects.find(s => s.id === topic.subjectId) : null;
+    const diagram = isDiagramMcq(q) ? '<span class="search-type-chip">🖼️ Diagram</span>' : '';
+    return `<button type="button" class="search-result-item" onclick="openSearchResult('${q.id}')">
+      <div class="search-result-meta">
+        <span>${subject ? subject.icon + ' ' + escHtml(subject.name) : 'Question'}</span>
+        <span>·</span>
+        <span>${topic ? escHtml(topic.name) : ''}</span>
+        <span class="search-type-chip">${typeIcons[q.type] || ''} ${SEARCH_TYPE_LABELS[q.type] || q.type}</span>
+        ${diagram}
+      </div>
+      <div class="search-result-text">${_searchSnippet(entry.preview, searchActiveTerms)}</div>
+    </button>`;
+  }).join('');
+
+  const more = searchResultShown < searchResults.length
+    ? `<div class="search-load-more"><button class="btn btn-outline" onclick="loadMoreSearchResults()">Load more (${searchResults.length - searchResultShown} remaining)</button></div>`
+    : '';
+
+  el.innerHTML = `<div class="fade-in">
+    <div class="section-header"><h1>🔍 Search</h1></div>
+    <p class="search-hint">${searchResults.length} question${searchResults.length === 1 ? '' : 's'} · all words must match · tap a result to open in its chapter</p>
+    <div class="search-results">${rows}</div>
+    ${more}
+  </div>`;
 }
 
 // ============================================================
@@ -2468,17 +2803,66 @@ function _runSearch(query) {
 function escHtml(str) { if(!str) return ''; return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\n/g,'<br>'); }
 function openModal(id) { document.getElementById(id).classList.add('show'); }
 function closeModal(id) { document.getElementById(id).classList.remove('show'); }
-function closeSidebar() {
+function isMobileSidebar() {
+  return window.matchMedia('(max-width: 768px)').matches;
+}
+
+function loadSidebarState() {
+  try { sidebarCollapsed = localStorage.getItem('studyhub_sidebar_collapsed') === '1'; } catch (e) {}
+}
+
+function saveSidebarState() {
+  try { localStorage.setItem('studyhub_sidebar_collapsed', sidebarCollapsed ? '1' : '0'); } catch (e) {}
+}
+
+function applySidebarLayout() {
+  const container = document.getElementById('app-container');
+  const sidebar = document.getElementById('sidebar');
+  const bd = document.getElementById('sidebar-backdrop');
+  const btn = document.getElementById('btn-sidebar');
+  if (!container || !sidebar) return;
+
+  if (isMobileSidebar()) {
+    container.classList.remove('sidebar-collapsed');
+    if (!sidebar.classList.contains('show') && bd) bd.classList.remove('show');
+    if (btn) btn.title = sidebar.classList.contains('show') ? 'Close navigation' : 'Open navigation';
+  } else {
+    sidebar.classList.remove('show');
+    if (bd) bd.classList.remove('show');
+    container.classList.toggle('sidebar-collapsed', sidebarCollapsed);
+    if (btn) btn.title = sidebarCollapsed ? 'Show navigation panel' : 'Hide navigation panel';
+  }
+}
+
+function dismissMobileSidebar() {
+  if (!isMobileSidebar()) return;
   document.getElementById('sidebar').classList.remove('show');
   const bd = document.getElementById('sidebar-backdrop');
   if (bd) bd.classList.remove('show');
+  applySidebarLayout();
+}
+
+function closeSidebar() {
+  if (isMobileSidebar()) {
+    dismissMobileSidebar();
+  } else {
+    sidebarCollapsed = true;
+    saveSidebarState();
+    applySidebarLayout();
+  }
 }
 
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
-  const open = sidebar.classList.toggle('show');
   const bd = document.getElementById('sidebar-backdrop');
-  if (bd) bd.classList.toggle('show', open);
+  if (isMobileSidebar()) {
+    const open = sidebar.classList.toggle('show');
+    if (bd) bd.classList.toggle('show', open);
+  } else {
+    sidebarCollapsed = !sidebarCollapsed;
+    saveSidebarState();
+  }
+  applySidebarLayout();
 }
 
 // ============================================================
@@ -2693,6 +3077,8 @@ function applyImportedData(imp, mode, options) {
   }
   result = { added, updated, mode: 'merge' };
   }
+  invalidateQuestionSearchIndex();
+  scheduleQuestionSearchIndexBuild();
   window._suppressSyncDirty = false;
   return result;
 }
@@ -2741,8 +3127,20 @@ function initApp() {
   loadData();
   loadProgress();
   loadQuestionRatings();
+  loadSidebarState();
+  scheduleQuestionSearchIndexBuild();
   render();
+  applySidebarLayout();
   setupPersistenceGuards();
   registerServiceWorker();
   if (typeof setupGithubSync === 'function') setupGithubSync();
+  window.addEventListener('resize', applySidebarLayout);
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      focusQuestionSearch();
+      return;
+    }
+    handleContentPagerKeys(e);
+  });
 }

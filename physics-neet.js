@@ -44878,5 +44878,9545 @@ const PHYSICS_NEET_DATA = [
 "linksTo": "phy-s8-sec_17",
 "qualityStars": 2,
 "qualityLevel": "Practice"
+},
+{
+"id": "phy-img-ch1-fig005-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.1 Three states of water?",
+"options": [
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to solid state.",
+"Solids is associated with Liquids and Gases.",
+"3. During boiling, the temperature of a solid remains constant. is associated with 3. Evaporation leads to fall in liquid…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_005.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig005-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 3. During boiling, the temperature of a solid remains constant. is associated with 3. Evaporation leads to fall in liquid temperature.. II. Condensation is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_005.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig005-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.1 Three states of water). Which statement is INCORRECT?",
+"options": [
+"Freezing is associated with : The process by which a substance changes from liquid state to liquid state at a definite…",
+"solid is associated with Boiling point (°C).",
+"Solids is associated with Liquids and Gases.",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…"
+],
+"correctOption": 3,
+"answer": "Incorrect: 4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the liquid surface. and 4. Molecules are having random translational motion.. Correct: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_005.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig006-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.1 Three states of water?",
+"options": [
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…",
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state.",
+"Liquid is associated with Boiling point (°C).",
+"Solids is associated with Liquids and Gases."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_006.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig006-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Freezing is associated with : The process by which a substance changes from liquid state to liquid state at a definite temperature. II. Evaporation is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_006.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig006-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.1 Three states of water). Which statement is INCORRECT?",
+"options": [
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state.",
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"2. The intermolecular forces are very strong. is associated with 2. The intermolecular forces are weak. and 2. The…",
+"liquid relates to Melting point (°C), Solid, and Melting point (°C)."
+],
+"correctOption": 2,
+"answer": "Incorrect: 2. The intermolecular forces are very strong. is associated with 2. The intermolecular forces are weak. and 2. The intermolecular forces are almost zero.. Correct: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_006.jpg",
+"caption": "Fig. 1.1 Three states of water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig010-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 10?",
+"options": [
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"Boiling is associated with : The process by which a substance changes from solid state to gaseous state at a definite…",
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig010-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Evaporation is associated with : Transition of a liquid into vapour form at all temperatures below its boiling point. II. 1. Boiling takes place at a definite…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig010-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 10). Assertion (A): 2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid surface.. Reason (R): Boiling is associated with…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig013-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.2 Molecular arrangement in solids?",
+"options": [
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…",
+"Solids is associated with Liquids and Gases.",
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state.",
+"5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_013.jpg",
+"caption": "Fig. 1.2 Molecular arrangement in solids",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig013-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.. II. 4. Molecules can have…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_013.jpg",
+"caption": "Fig. 1.2 Molecular arrangement in solids",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig013-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.2 Molecular arrangement in solids). Which statement is INCORRECT?",
+"options": [
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily..",
+"solid is associated with Boiling point (°C).",
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state."
+],
+"correctOption": 1,
+"answer": "Incorrect: 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.. Correct: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_013.jpg",
+"caption": "Fig. 1.2 Molecular arrangement in solids",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig014-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 14?",
+"options": [
+"solid is associated with Boiling point (°C).",
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…",
+"Adhesive force is associated with : Intermolecular attractive force amongst molecules of different substances.",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_014.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig014-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. Boiling takes place at a definite temperature only called the boiling point of the liquid. is associated with 1. Evaporation takes place at any…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_014.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig014-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 14). Which statement is INCORRECT?",
+"options": [
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…",
+"Freezing is associated with : The process by which a substance changes from liquid state to solid state at a definite temperature.",
+"2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid…",
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…"
+],
+"correctOption": 1,
+"answer": "Incorrect: Freezing is associated with : The process by which a substance changes from liquid state to solid state at a definite temperature. Correct: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_014.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig016-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.4 Molecular arrangement in gases?",
+"options": [
+"Molecular arrangement in gases ▶ A solid can be $ \\underline{\\text{compressed easily}} $.",
+"Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to liquid state.",
+"Adhesive force is associated with : Intermolecular attractive force amongst molecules of different substances.",
+"Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_016.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig016-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Evaporation is associated with : Transition of a liquid into vapour form at all temperatures below its boiling point. II. ##### Activity 4 SEL Self-Awareness…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_016.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig016-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.4 Molecular arrangement in gases). Which statement is INCORRECT?",
+"options": [
+"Molecular arrangement in gases ▶ A solid can be $ \\underline{\\text{compressed easily}} $.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state.",
+"Freezing is associated with : The process by which a substance changes from liquid state to liquid state at a definite…",
+"Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $."
+],
+"correctOption": 0,
+"answer": "Incorrect: Molecular arrangement in gases ▶ A solid can be $ \\underline{\\text{compressed easily}} $. Correct: Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_016.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig017-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.4 Molecular arrangement in gases?",
+"options": [
+"Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state.",
+"##### Activity 4 SEL Self-Awareness Aim: To show that solid molecules move freely <img…",
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Molecular arrangement in gases ▶ A gas can be $ \\underline{\\text{compressed easily}} $.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_017.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig017-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Adhesive force is associated with : Intermolecular attractive force amongst molecules of different substances. II. Condensation is associated with : The…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_017.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig017-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 1.4 Molecular arrangement in gases). Assertion (A): Solids is associated with Liquids and Gases. Reason (R): 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_017.jpg",
+"caption": "Fig. 1.4 Molecular arrangement in gases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig019-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.5 Change of state in water?",
+"options": [
+"E physical state of Change of state in water a substance simply by heating or cooling it.",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…",
+"Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to solid state."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: E physical state of Change of state in water a substance simply by heating or cooling it.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_019.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig019-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Solid relates to Melting point (°C), Solid, and Melting point (°C). II. Boiling is associated with : The process by which a substance changes from liquid…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_019.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig019-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.5 Change of state in water). Which statement is INCORRECT?",
+"options": [
+"2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid…",
+"5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily..",
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state.",
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…"
+],
+"correctOption": 1,
+"answer": "Incorrect: 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.. Correct: E physical state of Change of state in water a substance simply by heating or cooling it.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_019.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig020-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.5 Change of state in water?",
+"options": [
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to solid state.",
+"E physical state of Change of state in water a substance simply by heating or cooling it.",
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…",
+"2. The intermolecular forces are very strong. is associated with 2. The intermolecular forces are weak. and 2. The…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: E physical state of Change of state in water a substance simply by heating or cooling it.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_020.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig020-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to liquid state. II. Boiling is associated with…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_020.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig020-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.5 Change of state in water). Which statement is INCORRECT?",
+"options": [
+"Freezing is associated with : The process by which a substance changes from liquid state to solid state at a definite temperature.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state.",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…",
+"E physical state of Change of state in water a substance simply by heating or cooling it."
+],
+"correctOption": 0,
+"answer": "Incorrect: Freezing is associated with : The process by which a substance changes from liquid state to solid state at a definite temperature. Correct: E physical state of Change of state in water a substance simply by heating or cooling it.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_020.jpg",
+"caption": "Fig. 1.5 Change of state in water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig024-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.6 Process of melting and freezing?",
+"options": [
+"solid is associated with Boiling point (°C).",
+"Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to solid state.",
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…",
+"Solids is associated with Liquids and Gases."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_024.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig024-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Deposition is associated with : Reverse of sublimation. II. Freezing point is associated with : The fixed temperature at which a substance changes from liquid…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_024.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig024-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 1.6 Process of melting and freezing). Assertion (A): Solids is associated with Liquids and Gases. Reason (R): Condensation is associated with : The process by which a substance changes from…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_024.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig025-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.6 Process of melting and freezing?",
+"options": [
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…",
+"Solids is associated with Liquids and Gases.",
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_025.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig025-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.. II. 2. The intermolecular…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_025.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig025-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.6 Process of melting and freezing). Which statement is INCORRECT?",
+"options": [
+"Evaporation is associated with : Transition of a solid into vapour form at all temperatures below its boiling point.",
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…",
+"Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to solid state.",
+"5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily.."
+],
+"correctOption": 1,
+"answer": "Incorrect: Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite temperature on heating. Correct: Solids is associated with Liquids and Gases.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_025.jpg",
+"caption": "Fig. 1.6 Process of melting and freezing",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig028-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 28?",
+"options": [
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"2. Boiling takes place throughout the mass of the solid. is associated with 2. Evaporation takes place only at the liquid…",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"solid is associated with Boiling point (°C)."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig028-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc. II. 5. Solids cannot be compressed. is associated with 5. Liquids may be…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig028-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 28). Assertion (A): 2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid surface.. Reason (R): Solids is associated with…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig029-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.7 Process of vaporisation and condensation?",
+"options": [
+"##### Condensation or Liquefaction The process in which a substance in vapour (gaseous) state on cooling changes into liquid…",
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to solid state."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_029.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig029-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Condensation point is associated with : The fixed temperature at which a substance changes from gaseous state to liquid state. II. Adhesive force is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_029.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig029-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.7 Process of vaporisation and condensation). Which statement is INCORRECT?",
+"options": [
+"Boiling point of the Process of vaporisation and condensation solid till whole liquid is transformed into gaseous state.",
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"3. During boiling, the temperature of a solid remains constant. is associated with 3. Evaporation leads to fall in liquid…",
+"Boiling point is associated with : The fixed temperature at which a substance changes from liquid state to gaseous state."
+],
+"correctOption": 0,
+"answer": "Incorrect: Boiling point of the Process of vaporisation and condensation solid till whole liquid is transformed into gaseous state. Correct: Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_029.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig030-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.7 Process of vaporisation and condensation?",
+"options": [
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…",
+"##### Condensation or Liquefaction The process in which a substance in vapour (gaseous) state on cooling changes into solid…",
+"solid is associated with Boiling point (°C).",
+"Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_030.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig030-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid surface.. II. liquid relates to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_030.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig030-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 1.7 Process of vaporisation and condensation). Which statement is INCORRECT?",
+"options": [
+"Boiling point of the Process of vaporisation and condensation solid till whole liquid is transformed into gaseous state.",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state.",
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…",
+"Water boils at $ 100^{\\circ} $C and steam condenses at $ 100^{\\circ} $C."
+],
+"correctOption": 0,
+"answer": "Incorrect: Boiling point of the Process of vaporisation and condensation solid till whole liquid is transformed into gaseous state. Correct: Boiling point of the Process of vaporisation and condensation liquid till whole liquid is transformed into gaseous state.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_030.jpg",
+"caption": "Fig. 1.7 Process of vaporisation and condensation",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig033-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 33?",
+"options": [
+"2. The intermolecular forces are very strong. is associated with 2. The intermolecular forces are weak. and 2. The…",
+"4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids but cannot leave the…",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"Evaporation is associated with : Transition of a solid into vapour form at all temperatures below its boiling point."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig033-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Freezing is associated with : The process by which a substance changes from liquid state to solid state at a definite temperature. II. Solid relates to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig033-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 33). Assertion (A): Boiling point is associated with : The fixed temperature at which a substance changes from liquid state to gaseous state. Reason (R): Solid relates to Melting point (°C),…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig035-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.8 Process of sublimation and deposition?",
+"options": [
+"E following activity: Process of sublimation and deposition Solid carbon dioxide is known as dry ice because it appears like ice.",
+"Evaporation is associated with : Transition of a solid into vapour form at all temperatures below its boiling point.",
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: E following activity: Process of sublimation and deposition Solid carbon dioxide is known as dry ice because it appears like ice.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_035.jpg",
+"caption": "Fig. 1.8 Process of sublimation and deposition",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig035-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. The intermolecular forces are very strong. is associated with 2. The intermolecular forces are weak. and 2. The intermolecular forces are almost zero.. II.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_035.jpg",
+"caption": "Fig. 1.8 Process of sublimation and deposition",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig035-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 1.8 Process of sublimation and deposition). Assertion (A): Liquid is associated with Boiling point (°C). Reason (R): 4. Molecules can have only vibrational motion. is associated with 4.…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_035.jpg",
+"caption": "Fig. 1.8 Process of sublimation and deposition",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig040-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 1.9 Change of states of matter?",
+"options": [
+"Boiling point is associated with : The fixed temperature at which a substance changes from liquid state to gaseous state.",
+"Change of states of matter ##### Melting Process In solids, the intermolecular spaces are small because the molecules are packed…",
+"Cohesive force is associated with : Intermolecular attractive force amongst molecules of same substance.",
+"Freezing is associated with : The process by which a substance changes from liquid state to liquid state at a definite…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Change of states of matter ##### Melting Process In solids, the intermolecular spaces are small because the molecules are packed closely together.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_040.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig040-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Cohesive force is associated with : Intermolecular attractive force amongst molecules of same substance. II. Boiling is associated with : The process by which…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_040.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig040-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 1.9 Change of states of matter). Assertion (A): 2. Boiling takes place throughout the mass of the liquid. is associated with 2. Evaporation takes place only at the liquid surface.. Reason…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_040.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig041-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 1.9 Change of states of matter?",
+"options": [
+"1. Boiling takes place at a definite temperature only called the boiling point of the liquid. is associated with 1. Evaporation…",
+"Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state.",
+"4. Boiling is a rapid and violent process. is associated with 4. Evaporation is a slow and silent process..",
+"Change of states of matter ##### Melting Process In solids, the intermolecular spaces are small because the molecules are packed…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Change of states of matter ##### Melting Process In solids, the intermolecular spaces are small because the molecules are packed closely together.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_041.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig041-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Boiling point is associated with : The fixed temperature at which a substance changes from solid state to gaseous state. II. liquid relates to Melting point…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_041.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig041-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 1.9 Change of states of matter). Assertion (A): Solids is associated with Liquids and Gases. Reason (R): Boiling point is associated with : The fixed temperature at which a substance changes…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_041.jpg",
+"caption": "Fig. 1.9 Change of states of matter",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig048-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 48?",
+"options": [
+"Evaporation is associated with : Transition of a liquid into vapour form at all temperatures below its boiling point.",
+"5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be compressed easily..",
+"liquid relates to Melting point (°C), Solid, and Melting point (°C).",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_048.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig048-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Freezing point is associated with : The fixed temperature at which a substance changes from liquid state to liquid state. II. Deposition is associated with :…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_048.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig048-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 48). Which statement is INCORRECT?",
+"options": [
+"Condensation is associated with : The process by which a substance changes from gaseous state to liquid state at a fixed…",
+"Boiling is associated with : The process by which a substance changes from liquid state to gaseous state at a definite…",
+"Evaporation is associated with : Transition of a liquid into vapour form at all temperatures below its boiling point.",
+"solid is associated with Boiling point (°C)."
+],
+"correctOption": 2,
+"answer": "Incorrect: Evaporation is associated with : Transition of a liquid into vapour form at all temperatures below its boiling point. Correct: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_048.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig051-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 51?",
+"options": [
+"1. Boiling takes place at a definite temperature only called the boiling point of the solid. is associated with 1. Evaporation…",
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"Evaporation is associated with : Transition of a solid into vapour form at all temperatures below its boiling point.",
+"Condensation is associated with : The process by which a substance changes from gaseous state to solid state at a fixed…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig051-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Liquid is associated with Boiling point (°C). II. 4. Molecules can have only vibrational motion. is associated with 4. Molecules can move inside the liquids…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig051-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 51). Assertion (A): 4. Boiling is a rapid and violent process. is associated with 4. Evaporation is a slow and silent process.. Reason (R): Condensation is associated with : The process by…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig056-q1",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 56?",
+"options": [
+"Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"3. During boiling, the temperature of a solid remains constant. is associated with 3. Evaporation leads to fall in liquid…",
+"Solid relates to Melting point (°C), Solid, and Melting point (°C).",
+"Freezing is associated with : The process by which a substance changes from liquid state to liquid state at a definite…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Examples of matter include iron, water, air, plastic, wood, stone, oil, steam, etc.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig056-q2",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Solids is associated with Liquids and Gases. II. 5. Solids cannot be compressed. is associated with 5. Liquids may be slightly compressed. and 5. Gases can be…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch1-fig056-q3",
+"topicId": "ch1-matter",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 56). Assertion (A): Solid relates to Melting point (°C), Solid, and Melting point (°C). Reason (R): Cohesive force is associated with : Intermolecular attractive force amongst molecules of…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_01_matter/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig008-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8?",
+"options": [
+"Copper relates to 8900, 8.9, and 18..",
+"Zinc relates to 4200, 4.2, and 20..",
+"Compare densities of matter in three states, solid, liquid and gas.",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig008-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. O solve simple numerical problems based on formula of density. II. Density of irregular solid which is heavier than water. III. ○ make predictions using…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig008-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8). Assertion (A): Silver relates to 10500, 10.5, and 17.. Reason (R): Substance relates to Relative density, Substance, and Relative density.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig009-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 9?",
+"options": [
+"Silver relates to 10500, 10.5, and 17..",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"O solve simple numerical problems based on formula of density.",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_009.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig009-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Compare densities of matter in three states, solid, liquid and gas. II. Express result of measurement in proper unit with proper symbol. III. O measure…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_009.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig009-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 9). Which statement is INCORRECT?",
+"options": [
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"Express result of measurement in proper unit with proper symbol.",
+"Relation between relative density and density of a substance.",
+"Gold relates to 19300, 19.3, and 15.."
+],
+"correctOption": 1,
+"answer": "Incorrect: Express result of measurement in proper unit with proper symbol. Correct: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_009.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig013-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 13?",
+"options": [
+"Gold relates to 19300, 19.3, and 15..",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid.",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"Density of irregular solids lighter than water."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_013.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig013-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Gold relates to 19300, 19.3, and 15.. II. Density of irregular solid which is heavier than water. III. Gold relates to 19300, 19.3, and 15.. IV. ○ make…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_013.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig013-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 13). Assertion (A): ○ make predictions using scientific knowledge and effectively communicating the same. Reason (R): O solve simple numerical problems based on formula of density.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_013.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig016-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 2.1 A density test?",
+"options": [
+"Compare densities of matter in three states, liquid, liquid and gas.",
+"Gold relates to 19300, 19.3, and 15..",
+"Density of irregular liquid which is heavier than water.",
+"Weigh it accurately along with the stopper using a sensitive boom balance."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Weigh it accurately along with the stopper using a sensitive boom balance.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_016.jpg",
+"caption": "Fig. 2.1 A density test",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig016-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Aluminium relates to 2700, 2.7, and 21.. II. Gold relates to 19300, 19.3, and 15.. III. Density of irregular solid which is heavier than water. IV. O measure…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_016.jpg",
+"caption": "Fig. 2.1 A density test",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig016-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.1 A density test). Assertion (A): Relation between relative density and density of a substance. Reason (R): Silver relates to 10500, 10.5, and 17..",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_016.jpg",
+"caption": "Fig. 2.1 A density test",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig023-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2.2 Iron objects sink in water but cork floats on water?",
+"options": [
+"Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is…",
+"Copper relates to 8900, 8.9, and 18..",
+"Compare densities of matter in three states, liquid, liquid and gas.",
+"Substance relates to Relative density, Substance, and Relative density."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is more than the density of the object, the object floats on the liquid.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_023.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig023-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Silver relates to 10500, 10.5, and 17.. II. Glass relates to 2600, 2.6, and 22.. III. Zinc relates to 4200, 4.2, and 20.. IV. O measure density of an…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_023.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig023-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 2.2 Iron objects sink in water but cork floats on water). Which statement is INCORRECT?",
+"options": [
+"Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a solid whose density is…",
+"Density of irregular solid which is heavier than water.",
+"Marble relates to 2500, 2.5, and Gases.",
+"Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is…"
+],
+"correctOption": 0,
+"answer": "Incorrect: Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a solid whose density is more than the density of the object, the object floats on the liquid. Correct: Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is more than the density of the object, the object floats on the liquid.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_023.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig024-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 2.2 Iron objects sink in water but cork floats on water?",
+"options": [
+"Marble relates to 2500, 2.5, and Gases.",
+"○ discuss the concept of floatation based on relative densities of solid and liquid.",
+"○ make predictions using scientific knowledge and effectively communicating the same.",
+"Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Iron objects sink in water but cork floats on water On the other hand, when an object is placed over a liquid whose density is more than the density of the object, the object floats on the liquid.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_024.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig024-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Aluminium relates to 2700, 2.7, and 21.. II. ○ make predictions using scientific knowledge and effectively communicating the same. III. Substance relates to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_024.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig024-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.2 Iron objects sink in water but cork floats on water). Assertion (A): Substance relates to Relative density, Substance, and Relative density. Reason (R): Gold relates to 19300, 19.3, and…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_024.jpg",
+"caption": "Fig. 2.2 Iron objects sink in water but cork floats on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig029-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2.3 An iceberg floating on water?",
+"options": [
+"Glass relates to 2600, 2.6, and 22..",
+"A submarine can increase or decrease its effective density as compared to the density of sea water.",
+"Relation between relative density and density of a substance.",
+"Marble relates to 2500, 2.5, and Gases."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A submarine can increase or decrease its effective density as compared to the density of sea water.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_029.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig029-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. ○ discuss the concept of floatation based on relative densities of solid and liquid. II. Density of irregular solid which is heavier than water. III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_029.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig029-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 2.3 An iceberg floating on water). Which statement is INCORRECT?",
+"options": [
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"Relation between relative density and density of a substance.",
+"Lactometer is used to check the purity of milk by measuring its density.",
+"Density of irregular liquid which is heavier than water."
+],
+"correctOption": 2,
+"answer": "Incorrect: Lactometer is used to check the purity of milk by measuring its density. Correct: A submarine can increase or decrease its effective density as compared to the density of sea water.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_029.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig030-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 2.3 An iceberg floating on water?",
+"options": [
+"Accordingly, the submarine may sink or may float on sea water.",
+"Relation between relative density and density of a substance.",
+"A submarine can increase or decrease its effective density as compared to the density of sea water.",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A submarine can increase or decrease its effective density as compared to the density of sea water.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_030.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig030-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Express result of measurement in proper unit with proper symbol. II. Hydrometer is based on the principle of floatation. III. Aluminium relates to 2700, 2.7,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_030.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig030-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.3 An iceberg floating on water). Assertion (A): Marble relates to 2500, 2.5, and Gases. Reason (R): A submarine can increase or decrease its effective density as compared to the density of…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_030.jpg",
+"caption": "Fig. 2.3 An iceberg floating on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig031-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2.4 A ship sailing on water?",
+"options": [
+"Substance relates to Relative density, Substance, and Relative density.",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"Density of irregular liquid which is heavier than water.",
+"Relation between relative density and density of a substance."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_031.jpg",
+"caption": "Fig. 2.4 A ship sailing on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig031-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Gold relates to 19300, 19.3, and 15.. II. O solve simple numerical problems based on formula of density. III. Relation between relative density and density of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_031.jpg",
+"caption": "Fig. 2.4 A ship sailing on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig031-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 2.4 A ship sailing on water). Which statement is INCORRECT?",
+"options": [
+"Compare densities of matter in three states, solid, liquid and gas.",
+"Lead relates to 11300, 11.3, and 16..",
+"Express result of measurement in proper unit with proper symbol.",
+"Density of irregular liquid which is heavier than water."
+],
+"correctOption": 1,
+"answer": "Incorrect: Lead relates to 11300, 11.3, and 16.. Correct: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_031.jpg",
+"caption": "Fig. 2.4 A ship sailing on water",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig032-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2.5 A submarine working?",
+"options": [
+"○ make predictions using scientific knowledge and effectively communicating the same.",
+"Glass relates to 2600, 2.6, and 22..",
+"N water A submarine working Hydrogen or helium solid filled balloon has less density than the density of air, that is why the…",
+"N water A submarine working Hydrogen or helium gas filled balloon has less density than the density of air, that is why the…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: N water A submarine working Hydrogen or helium gas filled balloon has less density than the density of air, that is why the balloon floats in air and rises up.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg",
+"caption": "Fig. 2.5 A submarine working",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig032-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $. II. O measure density of an irregular solids. III. Express result of measurement in…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg",
+"caption": "Fig. 2.5 A submarine working",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig032-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.5 A submarine working). Assertion (A): O measure density of an irregular solids. Reason (R): Substance relates to Relative density, Substance, and Relative density.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg",
+"caption": "Fig. 2.5 A submarine working",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig033-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 2.6 A lactometer?",
+"options": [
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"Sinking is a state of rest or movement of a heavier object below the surface of a lighter liquid.",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid.",
+"Sinking is a state of rest or movement of a heavier object below the surface of a lighter solid."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Sinking is a state of rest or movement of a heavier object below the surface of a lighter liquid.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_033.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig033-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Compare densities of matter in three states, solid, liquid and gas. II. Markings are provided around the hull of ships to indicate the level up to which they…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_033.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig033-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.6 A lactometer). Assertion (A): Relation between relative density and density of a substance. Reason (R): O measure density of an irregular solids.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_033.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig034-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2.6 A lactometer?",
+"options": [
+"Zinc relates to 4200, 4.2, and 20..",
+"Lead relates to 11300, 11.3, and 16..",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid.",
+"Sinking is a state of rest or movement of a heavier object below the surface of a lighter liquid."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Sinking is a state of rest or movement of a heavier object below the surface of a lighter liquid.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_034.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig034-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Express result of measurement in proper unit with proper symbol. II. Density of irregular liquid which is heavier than water. III. ○ discuss the concept of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_034.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig034-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2.6 A lactometer). Assertion (A): Zinc relates to 4200, 4.2, and 20.. Reason (R): kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_034.jpg",
+"caption": "Fig. 2.6 A lactometer",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig036-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 36?",
+"options": [
+"Density of irregular liquid which is heavier than water.",
+"Glass relates to 2600, 2.6, and 22..",
+"Compare densities of matter in three states, solid, liquid and gas.",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_036.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig036-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Aluminium relates to 2700, 2.7, and 21.. II. Marble relates to 2500, 2.5, and Gases. III. Marble relates to 2500, 2.5, and Gases. IV. Density of irregular…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_036.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig036-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 36). Assertion (A): Express result of measurement in proper unit with proper symbol. Reason (R): Gold relates to 19300, 19.3, and 15..",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_036.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig038-q1",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 38?",
+"options": [
+"Aluminium relates to 2700, 2.7, and 21..",
+"kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"○ discuss the concept of floatation based on relative densities of liquid and liquid.",
+"Express result of measurement in proper unit with proper symbol."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_038.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig038-q2",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Zinc relates to 4200, 4.2, and 20.. II. kg/m $ ^{3} $ relates to g/cm $ ^{3} $, kg/m $ ^{3} $, and g/cm $ ^{3} $. III. Relation between relative density and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_038.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch2-fig038-q3",
+"topicId": "ch2-measurement",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 38). Assertion (A): Zinc relates to 4200, 4.2, and 20.. Reason (R): Relation between relative density and density of a substance.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_038.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig008-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.1 Turning effect of force?",
+"options": [
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Width=\"17%\" /> Turning effect of force When a girl applies force using her foot on the pedal of a bicycle, the pedal turns about…",
+"Torque is associated with : Turning moment of a force about the pivot point (axis of rotation).",
+"Pressure is associated with : The normal force (thrust) acting per unit surface area."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Width=\"17%\" /> Turning effect of force When a girl applies force using her foot on the pedal of a bicycle, the pedal turns about the pedal axis.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_008.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig008-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 5. Door of a room is associated with (e) Broad and deep foundation. II. Define moment of force; express moment of force in proper units. III. Lateral pressure…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_008.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig008-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.1 Turning effect of force). Assertion (A): 5. Door of a room is associated with (e) Broad and deep foundation. Reason (R): Explain the turning effect of a force, with examples from daily…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_008.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig009-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.1 Turning effect of force?",
+"options": [
+"3. Bridge on a river is associated with (c) Turning moment.",
+"5. Door of a room is associated with (e) Broad and deep foundation.",
+"Width=\"17%\" /> Turning effect of force When a girl applies force using her foot on the pedal of a bicycle, the pedal turns about…",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Width=\"17%\" /> Turning effect of force When a girl applies force using her foot on the pedal of a bicycle, the pedal turns about the pedal axis.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_009.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig009-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 7. Atmospheric pressure is associated with (g) Wide sleepers. II. Explain the turning effect of a force, with examples from daily life. III. 6. Railway track…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_009.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig009-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.1 Turning effect of force). Assertion (A): Atmosphere is associated with : The envelope of air surrounding our earth. Reason (R): ##### Factors Affecting Turning Effect of a Force The…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_009.jpg",
+"caption": "Fig. 3.1 Turning effect of force",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig010-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 10?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Column A is associated with Column B.",
+"Barometer is associated with : A device used to measure atmospheric pressure.",
+"solid pressure is associated with : The pressure exerted by a liquid."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig010-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Pressure is associated with : The normal force (thrust) acting per unit surface area. II. 7. Atmospheric pressure is associated with (g) Wide sleepers. III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig010-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 10). Assertion (A): Explain the turning effect of a force, with examples from daily life. Reason (R): Column A is associated with Column B.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig012-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 12?",
+"options": [
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container.",
+"Atmospheric pressure is associated with : Pressure exerted by the atmospheric air.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Liquid pressure is associated with : The pressure exerted by a liquid."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_012.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig012-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Pressure is associated with : The normal force (thrust) acting per unit surface area. II. Thrust is associated with : The total normal force exerted by an…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_012.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig012-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 12). Which statement is INCORRECT?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"1. Truck is associated with (a) Broad pillars.",
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container."
+],
+"correctOption": 1,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_012.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig022-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.10 Steering of a car?",
+"options": [
+"Atmospheric pressure is associated with : Pressure exerted by the atmospheric air.",
+"Define moment of force; express moment of force in proper units.",
+"6. Railway track is associated with (f) Barometer.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_022.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig022-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Solve simple numerical problems based on moment of force. II. 6. Railway track is associated with (f) Barometer. III. Define moment of force; express moment…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_022.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig022-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.10 Steering of a car). Which statement is INCORRECT?",
+"options": [
+"Atmospheric pressure is associated with : Pressure exerted by the atmospheric air.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Lateral pressure is associated with : Pressure exerted by a liquid on the side walls of the container."
+],
+"correctOption": 2,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_022.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig023-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.10 Steering of a car?",
+"options": [
+"Atmosphere is associated with : The envelope of air surrounding our earth.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"Barometer is associated with : A device used to measure atmospheric pressure."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_023.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig023-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). II. Atmospheric pressure is associated with : Pressure exerted…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_023.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig023-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.10 Steering of a car). Assertion (A): Thrust is associated with : The total normal force exerted by an object on a given surface. Reason (R): Solve simple numerical problems based on moment…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_023.jpg",
+"caption": "Fig. 3.10 Steering of a car",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig024-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.11?",
+"options": [
+"(a) When a body is pivoted at one point, a force applied on it at a point causes ___.",
+"1. Truck is associated with (a) Broad pillars.",
+"solid pressure is associated with : The pressure exerted by a liquid.",
+"Atmosphere is associated with : The envelope of air surrounding our earth."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: (a) When a body is pivoted at one point, a force applied on it at a point causes ___.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_024.jpg",
+"caption": "Fig. 3.11",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig024-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Define moment of force; express moment of force in proper units. II. A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_024.jpg",
+"caption": "Fig. 3.11",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig024-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.11). Which statement is INCORRECT?",
+"options": [
+"5. Door of a room is associated with (e) Broad and deep foundation.",
+"6. Railway track is associated with (f) Barometer.",
+"Lateral pressure is associated with : Pressure exerted by a liquid on the side walls of the container.",
+"Define moment of force; express moment of force in proper units."
+],
+"correctOption": 3,
+"answer": "Incorrect: Define moment of force; express moment of force in proper units. Correct: (a) When a body is pivoted at one point, a force applied on it at a point causes ___.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_024.jpg",
+"caption": "Fig. 3.11",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig031-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 31?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"1. Truck is associated with (a) Broad pillars.",
+"Explain the turning effect of a force, with examples from daily life.",
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_031.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig031-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). II. Atmosphere is associated with : The envelope of air…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_031.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig031-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 31). Which statement is INCORRECT?",
+"options": [
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"Column A is associated with Column B.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_031.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig032-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 32?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"6. Railway track is associated with (f) Barometer.",
+"Solve simple numerical problems based on moment of force."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_032.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig032-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Atmosphere is associated with : The envelope of air surrounding our earth. II. 6. Railway track is associated with (f) Barometer. III. Thrust is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_032.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig032-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 32). Which statement is INCORRECT?",
+"options": [
+"2. Knife is associated with (b) A large number of wheels.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Solve simple numerical problems based on moment of force.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_032.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig034-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.12?",
+"options": [
+"Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to…",
+"solid pressure is associated with : The pressure exerted by a liquid.",
+"Explain the turning effect of a force, with examples from daily life.",
+"Column A is associated with Column B."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to make cutting easier.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_034.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig034-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Liquid pressure is associated with : The pressure exerted by a liquid. II. Define moment of force; express moment of force in proper units. III. 1. Truck is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_034.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig034-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.12). Which statement is INCORRECT?",
+"options": [
+"2. Knife is associated with (b) A large number of wheels.",
+"Torque is associated with : Turning moment of a force about the pivot point (axis of rotation).",
+"Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to…",
+"4. High-rise building is associated with (d) Sharp edge."
+],
+"correctOption": 1,
+"answer": "Incorrect: Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). Correct: Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to make cutting easier.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_034.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig035-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.12?",
+"options": [
+"1. Truck is associated with (a) Broad pillars.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to…",
+"2. Knife is associated with (b) A large number of wheels."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to make cutting easier.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_035.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig035-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). II. Define moment of force; express moment of force in proper…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_035.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig035-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.12). Which statement is INCORRECT?",
+"options": [
+"Thrust is associated with : The total normal force exerted by an object on a given surface.",
+"solid pressure is associated with : The pressure exerted by a liquid.",
+"Lateral pressure is associated with : Pressure exerted by a liquid on the side walls of the container.",
+"7. Atmospheric pressure is associated with (g) Wide sleepers."
+],
+"correctOption": 3,
+"answer": "Incorrect: 7. Atmospheric pressure is associated with (g) Wide sleepers. Correct: Some examples, in this regard, from our daily life are given below: Knives, blades, axes, scissors, etc., have sharp edges to make cutting easier.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_035.jpg",
+"caption": "Fig. 3.12",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig036-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.14 A girl carrying bag with broad straps?",
+"options": [
+"Your school bag and shopping bag have broad straps so as to reduce pressure on your hands or on the shoulders.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Barometer is associated with : A device used to measure atmospheric pressure.",
+"Torque is associated with : Turning moment of a force about the pivot point (axis of rotation)."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Your school bag and shopping bag have broad straps so as to reduce pressure on your hands or on the shoulders.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_036.jpg",
+"caption": "Fig. 3.14 A girl carrying bag with broad straps",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig036-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. II. Explain the turning effect of a force, with examples from daily…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_036.jpg",
+"caption": "Fig. 3.14 A girl carrying bag with broad straps",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig036-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.14 A girl carrying bag with broad straps). Assertion (A): 2. Knife is associated with (b) A large number of wheels. Reason (R): 7. Atmospheric pressure is associated with (g) Wide sleepers.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_036.jpg",
+"caption": "Fig. 3.14 A girl carrying bag with broad straps",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig037-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.13 A woman cutting vegetables with the help of a sharp knife?",
+"options": [
+"Column A is associated with Column B.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"6. Railway track is associated with (f) Barometer.",
+"A high-heeled shoe exerting higher pressure on the ground <img src=\"https://pplines-online.bj.b."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A high-heeled shoe exerting higher pressure on the ground <img src=\"https://pplines-online.bj.b.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_037.jpg",
+"caption": "Fig. 3.13 A woman cutting vegetables with the help of a sharp knife",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig037-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. Knife is associated with (b) A large number of wheels. II. Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_037.jpg",
+"caption": "Fig. 3.13 A woman cutting vegetables with the help of a sharp knife",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig037-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.13 A woman cutting vegetables with the help of a sharp knife). Which statement is INCORRECT?",
+"options": [
+"4. High-rise building is associated with (d) Sharp edge.",
+"3. Bridge on a river is associated with (c) Turning moment.",
+"A high-heeled shoe exerting higher pressure on the ground <img src=\"https://pplines-online.bj.b.",
+"Pressure is associated with : The normal force (thrust) acting per unit surface area."
+],
+"correctOption": 0,
+"answer": "Incorrect: 4. High-rise building is associated with (d) Sharp edge. Correct: A high-heeled shoe exerting higher pressure on the ground <img src=\"https://pplines-online.bj.b.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_037.jpg",
+"caption": "Fig. 3.13 A woman cutting vegetables with the help of a sharp knife",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig038-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.15 A high-heeled shoe exerting higher pressure on the ground?",
+"options": [
+"Similarly, the rear wheels of tractors are made very wide so that the tractor ma.",
+"Pressure is associated with : The normal force (thrust) acting per unit surface area.",
+"Solve simple numerical problems based on moment of force.",
+"7. Atmospheric pressure is associated with (g) Wide sleepers."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Similarly, the rear wheels of tractors are made very wide so that the tractor ma.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_038.jpg",
+"caption": "Fig. 3.15 A high-heeled shoe exerting higher pressure on the ground",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig038-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Solve simple numerical problems based on moment of force. II. Solve simple numerical problems based on moment of force. III. Lateral pressure is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_038.jpg",
+"caption": "Fig. 3.15 A high-heeled shoe exerting higher pressure on the ground",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig038-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.15 A high-heeled shoe exerting higher pressure on the ground). Which statement is INCORRECT?",
+"options": [
+"Solve simple numerical problems based on moment of force.",
+"Similarly, the rear wheels of tractors are made very wide so that the tractor ma.",
+"Thrust is associated with : The total normal force exerted by an object on a given surface.",
+"Torque is associated with : Turning moment of a force about the pivot point (axis of rotation)."
+],
+"correctOption": 3,
+"answer": "Incorrect: Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). Correct: Similarly, the rear wheels of tractors are made very wide so that the tractor ma.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_038.jpg",
+"caption": "Fig. 3.15 A high-heeled shoe exerting higher pressure on the ground",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig039-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.16 A truck with a large number of wheels to reduce pressure 54 ICSE Physics 8?",
+"options": [
+"4. High-rise building is associated with (d) Sharp edge.",
+"Atmospheric pressure is associated with : Pressure exerted by the atmospheric air.",
+"Similarly, the rear wheels of tractors are made very wide so that the tractor may move easily even on soft ground.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Similarly, the rear wheels of tractors are made very wide so that the tractor may move easily even on soft ground.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_039.jpg",
+"caption": "Fig. 3.16 A truck with a large number of wheels to reduce pressure 54 ICSE Physics 8",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig039-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). II. 5. Door of a room is associated with (e) Broad and deep…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_039.jpg",
+"caption": "Fig. 3.16 A truck with a large number of wheels to reduce pressure 54 ICSE Physics 8",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig039-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.16 A truck with a large number of wheels to reduce pressure 54 ICSE Physics 8). Assertion (A): Similarly, the rear wheels of tractors are made very wide so that the tractor may move easily…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_039.jpg",
+"caption": "Fig. 3.16 A truck with a large number of wheels to reduce pressure 54 ICSE Physics 8",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig040-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.19 A skier with long and flat skis?",
+"options": [
+"4. High-rise building is associated with (d) Sharp edge.",
+"5. Door of a room is associated with (e) Broad and deep foundation.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"3. Bridge on a river is associated with (c) Turning moment."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_040.jpg",
+"caption": "Fig. 3.19 A skier with long and flat skis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig040-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Torque is associated with : Turning moment of a force about the pivot point (axis of rotation). II. Solve simple numerical problems based on moment of force.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_040.jpg",
+"caption": "Fig. 3.19 A skier with long and flat skis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig040-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.19 A skier with long and flat skis). Assertion (A): 4. High-rise building is associated with (d) Sharp edge. Reason (R): A pascal is associated with : The SI unit of pressure, where 1 Pa =…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_040.jpg",
+"caption": "Fig. 3.19 A skier with long and flat skis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig041-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 3.17 Heavy army tanks move on steel tracks?",
+"options": [
+"Solve simple numerical problems based on moment of force.",
+"3. Bridge on a river is associated with (c) Turning moment.",
+"2. Knife is associated with (b) A large number of wheels.",
+"So, it does not sink into the snow and can be pushed easily."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: So, it does not sink into the snow and can be pushed easily.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_041.jpg",
+"caption": "Fig. 3.17 Heavy army tanks move on steel tracks",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig041-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container. II. 7. Atmospheric pressure is associated with (g) Wide…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_041.jpg",
+"caption": "Fig. 3.17 Heavy army tanks move on steel tracks",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig041-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.17 Heavy army tanks move on steel tracks). Which statement is INCORRECT?",
+"options": [
+"2. Knife is associated with (b) A large number of wheels.",
+"Column A is associated with Column B.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"3. Bridge on a river is associated with (c) Turning moment."
+],
+"correctOption": 0,
+"answer": "Incorrect: 2. Knife is associated with (b) A large number of wheels. Correct: So, it does not sink into the snow and can be pushed easily.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_041.jpg",
+"caption": "Fig. 3.17 Heavy army tanks move on steel tracks",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig042-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.18 Pillars of bridges have broad bases?",
+"options": [
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"Tracks Pillars of bridges have broad bases In the polar region, sledge vehicles are used which have no wheels.",
+"Steel rails of a railway track are fixed worldwide concrete sleepers.",
+"Barometer is associated with : A device used to measure atmospheric pressure."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Tracks Pillars of bridges have broad bases In the polar region, sledge vehicles are used which have no wheels.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_042.jpg",
+"caption": "Fig. 3.18 Pillars of bridges have broad bases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig042-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 5. Door of a room is associated with (e) Broad and deep foundation. II. Solve simple numerical problems based on moment of force. III. 1. Truck is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_042.jpg",
+"caption": "Fig. 3.18 Pillars of bridges have broad bases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig042-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 3.18 Pillars of bridges have broad bases). Which statement is INCORRECT?",
+"options": [
+"Tracks Pillars of bridges have broad bases In the polar region, sledge vehicles are used which have no wheels.",
+"Barometer is associated with : A device used to measure atmospheric pressure.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container."
+],
+"correctOption": 1,
+"answer": "Incorrect: Barometer is associated with : A device used to measure atmospheric pressure. Correct: Tracks Pillars of bridges have broad bases In the polar region, sledge vehicles are used which have no wheels.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_042.jpg",
+"caption": "Fig. 3.18 Pillars of bridges have broad bases",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig043-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.20 A railway track?",
+"options": [
+"Define moment of force; express moment of force in proper units.",
+"Atmosphere is associated with : The envelope of air surrounding our earth.",
+"(a) 1 newton = ___ N/m $ ^{2} $.",
+"A railway track A coolie wearing a turban on his head Coolies wear turbans on their heads while carrying heavy loads, to…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A railway track A coolie wearing a turban on his head Coolies wear turbans on their heads while carrying heavy loads, to increase the area of contact.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_043.jpg",
+"caption": "Fig. 3.20 A railway track",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig043-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. (a) 1 pascal = ___ N/m $ ^{2} $. II. Solve simple numerical problems based on moment of force. III. 5. Door of a room is associated with (e) Broad and deep…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_043.jpg",
+"caption": "Fig. 3.20 A railway track",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig043-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.20 A railway track). Assertion (A): Explain the turning effect of a force, with examples from daily life. Reason (R): Lateral pressure is associated with : Pressure exerted by a liquid on…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_043.jpg",
+"caption": "Fig. 3.20 A railway track",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig044-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 3.21 A coolie wearing a turban on his head?",
+"options": [
+"Track A coolie wearing a turban on his head Coolies wear turbans on their heads while carrying heavy loads, to increase the area…",
+"(b) What is the SI unit of pressure?.",
+"A solid contained in a vessel exerts thrust at all points below its free surface and thu.",
+"5. Door of a room is associated with (e) Broad and deep foundation."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Track A coolie wearing a turban on his head Coolies wear turbans on their heads while carrying heavy loads, to increase the area of contact.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_044.jpg",
+"caption": "Fig. 3.21 A coolie wearing a turban on his head",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig044-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. A liquid contained in a vessel exerts thrust at all points below its free surface and thu. II. 3. Bridge on a river is associated with (c) Turning moment.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_044.jpg",
+"caption": "Fig. 3.21 A coolie wearing a turban on his head",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig044-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 3.21 A coolie wearing a turban on his head). Assertion (A): (a) 1 pascal = ___ N/m $ ^{2} $. Reason (R): (b) A _____ knife has a better cutting action than a _____ knife.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_044.jpg",
+"caption": "Fig. 3.21 A coolie wearing a turban on his head",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig051-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 51?",
+"options": [
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Atmosphere is associated with : The envelope of air surrounding our earth.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Explain the turning effect of a force, with examples from daily life."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig051-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 6. Railway track is associated with (f) Barometer. II. 5. Door of a room is associated with (e) Broad and deep foundation. III. Define moment of force;…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig051-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 51). Which statement is INCORRECT?",
+"options": [
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Column A is associated with Column B.",
+"4. High-rise building is associated with (d) Sharp edge.",
+"solid pressure is associated with : The pressure exerted by a liquid."
+],
+"correctOption": 0,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_051.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig054-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 54?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"6. Railway track is associated with (f) Barometer.",
+"Liquid pressure is associated with : The pressure exerted by a liquid.",
+"7. Atmospheric pressure is associated with (g) Wide sleepers."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_054.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig054-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Atmosphere is associated with : The envelope of air surrounding our earth. II. 4. High-rise building is associated with (d) Sharp edge. III. Atmospheric…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_054.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig054-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 54). Which statement is INCORRECT?",
+"options": [
+"Define moment of force; express moment of force in proper units.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Thrust is associated with : The total normal force exerted by an object on a given surface.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 1,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_054.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig055-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 55?",
+"options": [
+"Torque is associated with : Turning moment of a force about the pivot point (axis of rotation).",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_055.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig055-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 5. Door of a room is associated with (e) Broad and deep foundation. II. 4. High-rise building is associated with (d) Sharp edge. III. Barometer is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_055.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig055-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 55). Which statement is INCORRECT?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Column A is associated with Column B.",
+"6. Railway track is associated with (f) Barometer."
+],
+"correctOption": 1,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_055.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig059-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 59?",
+"options": [
+"5. Door of a room is associated with (e) Broad and deep foundation.",
+"Atmosphere is associated with : The envelope of air surrounding our earth.",
+"7. Atmospheric pressure is associated with (g) Wide sleepers.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_059.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig059-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Lateral pressure is associated with : Pressure exerted by a liquid on the side walls of the container. II. 5. Door of a room is associated with (e) Broad and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_059.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig059-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 59). Assertion (A): 4. High-rise building is associated with (d) Sharp edge. Reason (R): Solve simple numerical problems based on moment of force.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_059.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig063-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 63?",
+"options": [
+"Atmospheric pressure is associated with : Pressure exerted by the atmospheric air.",
+"6. Railway track is associated with (f) Barometer.",
+"2. Knife is associated with (b) A large number of wheels.",
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig063-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Pressure is associated with : The normal force (thrust) acting per unit surface area. II. 2. Knife is associated with (b) A large number of wheels. III. solid…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig063-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 63). Assertion (A): 4. High-rise building is associated with (d) Sharp edge. Reason (R): A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig066-q1",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 66?",
+"options": [
+"A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"Lateral pressure is associated with : Pressure exerted by a solid on the side walls of the container.",
+"Explain the turning effect of a force, with examples from daily life.",
+"Solve simple numerical problems based on moment of force."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_066.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig066-q2",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. Truck is associated with (a) Broad pillars. II. Define moment of force; express moment of force in proper units. III. Solve simple numerical problems based…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_066.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch3-fig066-q3",
+"topicId": "ch3-force",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 66). Which statement is INCORRECT?",
+"options": [
+"6. Railway track is associated with (f) Barometer.",
+"Column A is associated with Column B.",
+"Barometer is associated with : A device used to measure atmospheric pressure.",
+"A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $."
+],
+"correctOption": 3,
+"answer": "Incorrect: A newton is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $. Correct: A pascal is associated with : The SI unit of pressure, where 1 Pa = 1 N/m $ ^{{2}} $.",
+"source": "icse",
+"image": "images/physics/chapter_03_force_and_pressure/fig_066.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig006-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 6?",
+"options": [
+"2. potential energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $..",
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"Kinetic energy is associated with Gravitational potential energy.",
+"A watt is associated with : The SI unit of work as well as energy."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig006-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Kinetic energy is associated with : Energy possessed by an object due to its state of motion. II. 2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig006-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 6). Which statement is INCORRECT?",
+"options": [
+"potential energy is associated with Gravitational potential energy.",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground.",
+"Interconversion of energy is associated with : Conversion of energy from one form to another from.",
+"1. potential energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to…"
+],
+"correctOption": 0,
+"answer": "Incorrect: potential energy is associated with Gravitational potential energy. Correct: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig007-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 7?",
+"options": [
+"A joule is associated with : The SI unit of work as well as energy.",
+"1. Kinetic energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to the…",
+"Kinetic energy is associated with Gravitational potential energy.",
+"6. 2500 J — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3.…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_007.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig007-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Kinetic energy is associated with Gravitational potential energy. II. Potential energy is associated with : Energy possessed by an object at rest due to its…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_007.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig007-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7). Assertion (A): 3. Kinetic energy is always positive. is associated with 3. Gravitational potential energy can either be positive or negative.. Reason (R): Gravitational potential energy…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_007.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig009-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.2 Activities in which work is being done?",
+"options": [
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"A joule is associated with : The SI unit of work as well as energy.",
+"A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw…",
+"potential energy is associated with Gravitational potential energy."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw is being pulled in horizontal direction.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_009.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig009-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 11. 1440 J relates to 7. 192 J, 8. 1600 J, and 9. 800 J. II. 6. 2500 J — 1. Power is the rate of supply of energy (or capability of doing work) per unit time.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_009.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig009-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 4.2 Activities in which work is being done). Assertion (A): Mechanical energy is associated with : Energy possessed by an object either due to its state of motion or its characteristic…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_009.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig010-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.2 Activities in which work is being done?",
+"options": [
+"A watt — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"A joule is associated with : The SI unit of work as well as energy.",
+"A rickshawpuller does not do any work against the mass of passengers because weight is in vertical direction and the rickshaw is…",
+"A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw is being pulled in horizontal direction.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_010.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig010-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Interconversion of energy is associated with : Conversion of energy from one form to another from. II. Kinetic energy is associated with Gravitational…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_010.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig010-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.2 Activities in which work is being done). Which statement is INCORRECT?",
+"options": [
+"A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw…",
+"Kinetic energy is associated with Gravitational potential energy.",
+"Elastic kinetic energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape…",
+"A rickshawpuller does not do any work against the mass of passengers because weight is in vertical direction and the rickshaw is…"
+],
+"correctOption": 3,
+"answer": "Incorrect: A rickshawpuller does not do any work against the mass of passengers because weight is in vertical direction and the rickshaw is being pulled in horizontal direction. Correct: A rickshawpuller does not do any work against the weight of passengers because weight is in vertical direction and the rickshaw is being pulled in horizontal direction.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_010.jpg",
+"caption": "Fig. 4.2 Activities in which work is being done",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig013-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.3 Same load being displaced through different distances?",
+"options": [
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"1. potential energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to…",
+"Kinetic energy is associated with Gravitational potential energy.",
+"potential energy is associated with : Energy possessed by an object due to its state of motion."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_013.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig013-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. Work done is independent of time. is associated with 2. Power depends on time.. II. Elastic potential energy is associated with : Energy possessed by an…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_013.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig013-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.3 Same load being displaced through different distances). Which statement is INCORRECT?",
+"options": [
+"potential energy is associated with Gravitational potential energy.",
+"A joule — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"Kinetic energy is associated with Gravitational potential energy.",
+"2. Work done is independent of time. is associated with 2. Power depends on time.."
+],
+"correctOption": 0,
+"answer": "Incorrect: potential energy is associated with Gravitational potential energy. Correct: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_013.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig014-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.3 Same load being displaced through different distances?",
+"options": [
+"potential energy is associated with : Energy possessed by an object due to its state of motion.",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground.",
+"3. potential energy is always positive. is associated with 3. Gravitational potential energy can either be positive or negative..",
+"Kinetic energy is associated with Gravitational potential energy."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_014.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig014-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Gravitational potential energy is associated with : Energy possessed by an object at rest due to its position above the ground. II. 1. potential energy is due…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_014.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig014-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.3 Same load being displaced through different distances). Which statement is INCORRECT?",
+"options": [
+"potential energy is associated with Gravitational potential energy.",
+"6. 2500 J — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3.…",
+"A joule — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground."
+],
+"correctOption": 0,
+"answer": "Incorrect: potential energy is associated with Gravitational potential energy. Correct: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_014.jpg",
+"caption": "Fig. 4.3 Same load being displaced through different distances",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig015-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.4 Different loads?",
+"options": [
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"1. Work done by a force is given as the product of force and displacement of an object in the direction of force. $ W = F \\times…",
+"Tances Different loads being displaced through equal distance ##### Something More Usually, we say that work done is given by…",
+"2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Tances Different loads being displaced through equal distance ##### Something More Usually, we say that work done is given by the product of force and distance moved in the direction of force.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_015.jpg",
+"caption": "Fig. 4.4 Different loads",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig015-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.. II. Interconversion of energy is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_015.jpg",
+"caption": "Fig. 4.4 Different loads",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig015-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.4 Different loads). Which statement is INCORRECT?",
+"options": [
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"Tances Different loads being displaced through equal distance ##### Something More Usually, we say that work done is given by…",
+"Kinetic energy is associated with : Energy possessed by an object due to its state of motion.",
+"3. Kinetic energy is always positive. is associated with 3. Gravitational potential energy can either be positive or negative.."
+],
+"correctOption": 2,
+"answer": "Incorrect: Kinetic energy is associated with : Energy possessed by an object due to its state of motion. Correct: Tances Different loads being displaced through equal distance ##### Something More Usually, we say that work done is given by the product of force and distance moved in the direction of force.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_015.jpg",
+"caption": "Fig. 4.4 Different loads",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig016-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.5 Examples of kinetic energy?",
+"options": [
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"A watt is associated with : The SI unit of work as well as energy.",
+"-align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The kinetic energy of an object depends on its…",
+"2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: -align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The kinetic energy of an object depends on its mass and its speed.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_016.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig016-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. A joule is associated with : The SI unit of work as well as energy. II. -align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_016.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig016-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.5 Examples of kinetic energy). Which statement is INCORRECT?",
+"options": [
+"-align: center;\"> Running cars possess potential energy Examples of kinetic energy The kinetic energy of an object depends on…",
+"2. potential energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $..",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground.",
+"2. Work done is independent of time. is associated with 2. Power depends on time.."
+],
+"correctOption": 0,
+"answer": "Incorrect: -align: center;\"> Running cars possess potential energy Examples of kinetic energy The kinetic energy of an object depends on its mass and its speed. Correct: -align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The kinetic energy of an object depends on its mass and its speed.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_016.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig017-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.5 Examples of kinetic energy?",
+"options": [
+"-align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The kinetic energy of an object depends on its…",
+"1. potential energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to…",
+"Elastic kinetic energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape…",
+"A joule — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: -align: center;\"> Running cars possess kinetic energy Examples of kinetic energy The kinetic energy of an object depends on its mass and its speed.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_017.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig017-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Elastic potential energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape and size). II. A joule is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_017.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig017-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 4.5 Examples of kinetic energy). Assertion (A): 6. 2500 J — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its SI unit is…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_017.jpg",
+"caption": "Fig. 4.5 Examples of kinetic energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig022-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.6 Examples of gravitational potential energy?",
+"options": [
+"6. 2500 J — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3.…",
+"6. 2500 J relates to 2. $ 2.4 \\times 10^{5} $ J, 3. 5400 J, and 4. 15 m.",
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"Kinetic energy is associated with Gravitational potential energy."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_022.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig022-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Kinetic energy is associated with : Energy possessed by an object due to its state of motion. II. A joule — 1. Power is the rate of supply of energy (or…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_022.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig022-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.6 Examples of gravitational potential energy). Which statement is INCORRECT?",
+"options": [
+"potential energy is associated with Gravitational potential energy.",
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"Elastic kinetic energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape…",
+"Power is associated with : Rate of doing work or rate of supply of energy."
+],
+"correctOption": 0,
+"answer": "Incorrect: potential energy is associated with Gravitational potential energy. Correct: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_022.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig023-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 4.6 Examples of gravitational potential energy?",
+"options": [
+"potential energy is associated with : Energy possessed by an object due to its state of motion.",
+"Kinetic energy is associated with Gravitational potential energy.",
+"Elastic kinetic energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape…",
+"3. potential energy is always positive. is associated with 3. Gravitational potential energy can either be positive or negative.."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_023.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig023-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground. II. Interconversion of energy is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_023.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig023-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 4.6 Examples of gravitational potential energy). Assertion (A): Interconversion of energy is associated with : Conversion of energy from one form to another from. Reason (R): 1. Work done by…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_023.jpg",
+"caption": "Fig. 4.6 Examples of gravitational potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig025-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.7 Examples of elastic potential energy?",
+"options": [
+"Place a ball on it, and the ball remains at rest.",
+"1. Kinetic energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to the…",
+"A watt is associated with : The SI unit of work as well as energy.",
+"2. potential energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Place a ball on it, and the ball remains at rest.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_025.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig025-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. A joule — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its SI unit is watt (W), where $…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_025.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig025-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.7 Examples of elastic potential energy). Which statement is INCORRECT?",
+"options": [
+"Place a ball on it, and the ball remains at rest.",
+"11. 1440 J relates to 7. 192 J, 8. 1600 J, and 9. 800 J.",
+"potential energy is associated with : Energy possessed by an object due to its state of motion.",
+"potential energy is associated with Gravitational potential energy."
+],
+"correctOption": 1,
+"answer": "Incorrect: 11. 1440 J relates to 7. 192 J, 8. 1600 J, and 9. 800 J. Correct: Place a ball on it, and the ball remains at rest.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_025.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig026-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.7 Examples of elastic potential energy?",
+"options": [
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"kinetic energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"Place a ball on it, and the ball remains at rest.",
+"Elastic kinetic energy is associated with : Energy possessed by an object at rest due to its characteristic configuration (shape…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Place a ball on it, and the ball remains at rest.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_026.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig026-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 2. Work done is independent of time. is associated with 2. Power depends on time.. II. Gravitational potential energy is associated with : Energy possessed by…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_026.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig026-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 4.7 Examples of elastic potential energy). Which statement is INCORRECT?",
+"options": [
+"A watt is associated with : The SI unit of work as well as energy.",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground.",
+"1. Kinetic energy is due to the state of motion of an object. is associated with 1. Gravitational potential energy is due to the…",
+"2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.."
+],
+"correctOption": 3,
+"answer": "Incorrect: 2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.. Correct: Place a ball on it, and the ball remains at rest.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_026.jpg",
+"caption": "Fig. 4.7 Examples of elastic potential energy",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig028-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 28?",
+"options": [
+"Kinetic energy is associated with Gravitational potential energy.",
+"potential energy is associated with Gravitational potential energy.",
+"1. Work done by a force is given as the product of force and displacement of an object in the direction of force. $ W = F \\times…",
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig028-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. Work done by a force is given as the product of force and displacement of an object in the direction of force. $ W = F \\times s $ is associated with 1.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig028-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 28). Which statement is INCORRECT?",
+"options": [
+"Kinetic energy is associated with Gravitational potential energy.",
+"Interconversion of energy is associated with : Conversion of energy from one form to another from.",
+"A watt — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"potential energy is associated with Gravitational potential energy."
+],
+"correctOption": 3,
+"answer": "Incorrect: potential energy is associated with Gravitational potential energy. Correct: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig030-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.10?",
+"options": [
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"Power is associated with : Rate of doing work or rate of supply of energy.",
+"Gravitational kinetic energy is associated with : Energy possessed by an object at rest due to its position above the ground.",
+"D water gushes out with a high speed."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: D water gushes out with a high speed.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_030.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig030-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Potential energy is transformed into potential energy and as a result, the ball jumps off the spring as shown in (b). II. 6. 2500 J relates to 2. $ 2.4 \\times…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_030.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig030-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 4.10). Assertion (A): Potential energy is associated with : Energy possessed by an object at rest due to its specific position or configuration. Reason (R): 2. Kinetic energy, $ KE =…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_030.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig031-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 4.10?",
+"options": [
+"A watt — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"D water gushes out with a high velocity.",
+"D water gushes out with a high speed.",
+"3. potential energy is always positive. is associated with 3. Gravitational potential energy can either be positive or negative.."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: D water gushes out with a high speed.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_031.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig031-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. A watt — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its SI unit is watt (W), where $…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_031.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig031-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 4.10). Assertion (A): 2. Kinetic energy, $ KE = \\frac{1}{2}mv^{2} $. is associated with 2. Gravitational potential energy, $ GPE = mgh $.. Reason (R): Potential energy is transformed into…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_031.jpg",
+"caption": "Fig. 4.10",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig033-q1",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 33?",
+"options": [
+"potential energy is associated with Gravitational potential energy.",
+"Energy — 1. Power is the rate of supply of energy (or capability of doing work) per unit time. 2. Power depends on time. 3. Its…",
+"Potential energy is associated with : Energy possessed by an object at rest due to its specific position or configuration.",
+"Kinetic energy is associated with Gravitational potential energy."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Kinetic energy is associated with Gravitational potential energy.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig033-q2",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Gravitational potential energy is associated with : Energy possessed by an object at rest due to its position above the ground. II. Power is associated with :…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch4-fig033-q3",
+"topicId": "ch4-energy",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 33). Assertion (A): 11. 1440 J relates to 7. 192 J, 8. 1600 J, and 9. 800 J. Reason (R): Kinetic energy is associated with Gravitational potential energy.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_04_energy/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig001-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.1 Rainbow?",
+"options": [
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and refraction takes place from the inner…",
+"Between C and F relates to Beyond C, Enlarged, and Real and inverted.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"virtual image is associated with Virtual image."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_001.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig001-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another. II. Beyond C relates to Between…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_001.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig001-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.1 Rainbow). Assertion (A): Real image is associated with Virtual image. Reason (R): Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_001.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig002-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.1 Rainbow?",
+"options": [
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index…",
+"Material medium relates to Refractive index, Material medium, and Refractive index."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_002.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig002-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Optically denser medium is associated with : Medium in which speed of light is comparatively less or whose refractive index is more. II. Concave mirror is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_002.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig002-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.1 Rainbow). Which statement is INCORRECT?",
+"options": [
+"Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index…",
+"Beyond C relates to Between F and C, Diminished, and Real and inverted.",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that reflection…",
+"Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected."
+],
+"correctOption": 1,
+"answer": "Incorrect: Beyond C relates to Between F and C, Diminished, and Real and inverted. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_002.jpg",
+"caption": "Fig. 5.1 Rainbow",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig008-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.2 Refraction of light?",
+"options": [
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Dispersion is associated with : Splitting of white light into its constituent seven colours on passing through a dispersive…",
+"Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_008.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig008-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Beyond C relates to Between F and C, Diminished, and virtual and inverted. II. define reflection is defined as discuss examples of refraction. III. Convex…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_008.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig008-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.2 Refraction of light). Which statement is INCORRECT?",
+"options": [
+"Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"O describe a concave and a convex mirror.",
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium."
+],
+"correctOption": 2,
+"answer": "Incorrect: O describe a concave and a convex mirror. Correct: Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_008.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig009-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.2 Refraction of light?",
+"options": [
+"Prism is associated with : A transparent material bound by two plane refracting faces inclined at an angle.",
+"Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"define reflection is defined as discuss examples of refraction.",
+"Real image is associated with Virtual image."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_009.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig009-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Angle of incidence: The angle subtended by the incident ray from the normal is called the angle of incidence. II. S. No. relates to Position of the object,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_009.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig009-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.2 Refraction of light). Assertion (A): S. No. relates to Position of the object, Position of the image, and Size of the image. Reason (R): Beyond C relates to Between F and C, Diminished,…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_009.jpg",
+"caption": "Fig. 5.2 Refraction of light",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig012-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.3 A pencil appears bent at water surface?",
+"options": [
+"Between F and P relates to Behind the mirror, Enlarged, and real and erected.",
+"A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides.",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"define reflection is defined as discuss examples of refraction."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_012.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig012-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner surface. II. reflection of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_012.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig012-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.3 A pencil appears bent at water surface). Which statement is INCORRECT?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Real image is associated with : Image formed due to actual meeting of light rays.",
+"define reflection is defined as discuss examples of refraction.",
+"virtual image is associated with Virtual image."
+],
+"correctOption": 1,
+"answer": "Incorrect: Real image is associated with : Image formed due to actual meeting of light rays. Correct: A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_012.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig013-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.3 A pencil appears bent at water surface?",
+"options": [
+"Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index…",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that refraction…",
+"virtual image is associated with Virtual image.",
+"A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_013.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig013-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that refraction takes place from the other…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_013.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig013-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.3 A pencil appears bent at water surface). Which statement is INCORRECT?",
+"options": [
+"O describe a concave and a convex mirror.",
+"Spectrum is associated with : The band of seven colours obtained as a result of dispersion of white light.",
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is…"
+],
+"correctOption": 3,
+"answer": "Incorrect: Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is less. Correct: A lemon kept in water taken in a glass tumbler appears to be bigger than its actual size when viewed from the sides.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_013.jpg",
+"caption": "Fig. 5.3 A pencil appears bent at water surface",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig015-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 15?",
+"options": [
+"virtual image is associated with Virtual image.",
+"S. No. relates to Position of the object, Position of the image, and Size of the image.",
+"define refraction is defined as discuss examples of refraction.",
+"Material medium relates to Refractive index, Material medium, and Refractive index."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_015.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig015-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. real image is associated with : Image formed when light rays do not actually meet but appear to meet. II. Material medium relates to Refractive index,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_015.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig015-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 15). Which statement is INCORRECT?",
+"options": [
+"real image is associated with : Image formed when light rays do not actually meet but appear to meet.",
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and refraction takes place from the inner…",
+"S. No. relates to Position of the object, Position of the image, and Size of the image.",
+"Spectrum is associated with : The band of seven colours obtained as a result of dispersion of white light."
+],
+"correctOption": 2,
+"answer": "Incorrect: S. No. relates to Position of the object, Position of the image, and Size of the image. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_015.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig017-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.7 Spherical mirrors?",
+"options": [
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Between F and P relates to Behind the mirror, Enlarged, and real and erected."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_017.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig017-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Refractive index is associated with : The ratio of speed of light in air (or vacuum) to the speed of light of the given medium. II. Between C and F relates to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_017.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig017-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.7 Spherical mirrors). Which statement is INCORRECT?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"define reflection is defined as discuss examples of refraction.",
+"Spectrum is associated with : The band of seven colours obtained as a result of dispersion of white light.",
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner…"
+],
+"correctOption": 3,
+"answer": "Incorrect: Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner surface. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_017.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig018-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.7 Spherical mirrors?",
+"options": [
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that refraction…",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_018.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig018-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Real image is associated with Virtual image. II. Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected. III. define reflection is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_018.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig018-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.7 Spherical mirrors). Assertion (A): Real image is associated with Virtual image. Reason (R): define refraction is defined as discuss examples of refraction.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_018.jpg",
+"caption": "Fig. 5.7 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig021-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.8 Spherical mirrors?",
+"options": [
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Aperture: The length MM' of the perimeter of the spherical mirror is called its aperture.",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"virtual image is associated with Virtual image."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Aperture: The length MM' of the perimeter of the spherical mirror is called its aperture.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_021.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig021-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer surface. II. Real image is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_021.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig021-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.8 Spherical mirrors). Assertion (A): define refraction is defined as discuss examples of refraction. Reason (R): S. No. relates to Position of the object, Position of the image, and Size of…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_021.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig022-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.8 Spherical mirrors?",
+"options": [
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and refraction takes place from the inner…",
+"reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another.",
+"Aperture: The length MM' of the perimeter of the spherical mirror is called its aperture.",
+"Real image is associated with : Image formed due to actual meeting of light rays."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Aperture: The length MM' of the perimeter of the spherical mirror is called its aperture.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_022.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig022-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Beyond C relates to Between F and C, Diminished, and Real and inverted. II. Concave mirror is associated with : A spherical mirror whose outer surface is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_022.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig022-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.8 Spherical mirrors). Assertion (A): Real image is associated with Virtual image. Reason (R): Optically rarer medium is associated with : Medium in which speed of light is comparatively…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_022.jpg",
+"caption": "Fig. 5.8 Spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig023-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.9 Principal focus of spherical mirrors?",
+"options": [
+"Real image is associated with : Image formed due to actual meeting of light rays.",
+"reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_023.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig023-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is less. II. Material medium…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_023.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig023-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.9 Principal focus of spherical mirrors). Which statement is INCORRECT?",
+"options": [
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that refraction…",
+"Spectrum is associated with : The band of seven colours obtained as a result of dispersion of white light.",
+"Real image is associated with : Image formed due to actual meeting of light rays."
+],
+"correctOption": 3,
+"answer": "Incorrect: Real image is associated with : Image formed due to actual meeting of light rays. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_023.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig024-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.9 Principal focus of spherical mirrors?",
+"options": [
+"Refraction of light is associated with : Bending of light when light passes obliquely from one transparent medium to another.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_024.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig024-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Between C and F relates to Beyond C, Enlarged, and Real and inverted. II. define refraction is defined as discuss examples of refraction. III. Refractive…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_024.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig024-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.9 Principal focus of spherical mirrors). Which statement is INCORRECT?",
+"options": [
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"define refraction is defined as discuss examples of refraction.",
+"O describe a convex and a convex mirror."
+],
+"correctOption": 2,
+"answer": "Incorrect: define refraction is defined as discuss examples of refraction. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_024.jpg",
+"caption": "Fig. 5.9 Principal focus of spherical mirrors",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig027-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.10 Reflection of an incident ray parallel to the principal axis?",
+"options": [
+"Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a…",
+"reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another.",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"refraction of an incident ray which passes or appears to pass through the focu."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a concave mirror gets reflected parallel to its principal axis.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_027.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig027-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium. II. Virtual image is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_027.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig027-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.10 Reflection of an incident ray parallel to the principal axis). Which statement is INCORRECT?",
+"options": [
+"Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a…",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that refraction…",
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner…",
+"Idth=\"32%\" /> Reflection of an incident ray series to the principal axis A ray passing through the principal focus of a concave…"
+],
+"correctOption": 3,
+"answer": "Incorrect: Idth=\"32%\" /> Reflection of an incident ray series to the principal axis A ray passing through the principal focus of a concave mirror gets reflected parallel to its principal axis. Correct: Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a concave mirror gets reflected parallel to its principal axis.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_027.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig028-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.10 Reflection of an incident ray parallel to the principal axis?",
+"options": [
+"Real image is associated with : Image formed due to actual meeting of light rays.",
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a…",
+"O describe a convex and a convex mirror."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Idth=\"32%\" /> Reflection of an incident ray parallel to the principal axis A ray passing through the principal focus of a concave mirror gets reflected parallel to its principal axis.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_028.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig028-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Convex mirror is associated with : A spherical mirror whose inner surface is silvered and reflection takes place from the outer surface. II. Dispersion is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_028.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig028-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.10 Reflection of an incident ray parallel to the principal axis). Assertion (A): Optically denser medium is associated with : Medium in which speed of light is comparatively less or whose…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_028.jpg",
+"caption": "Fig. 5.10 Reflection of an incident ray parallel to the principal axis",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig029-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.11 Reflection of an incident ray which passes or appears to pass through the focus?",
+"options": [
+"O describe a convex and a convex mirror.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_029.jpg",
+"caption": "Fig. 5.11 Reflection of an incident ray which passes or appears to pass through the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig029-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index is more. II. Real image is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_029.jpg",
+"caption": "Fig. 5.11 Reflection of an incident ray which passes or appears to pass through the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig029-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.11 Reflection of an incident ray which passes or appears to pass through the focus). Assertion (A): Material medium relates to Refractive index, Material medium, and Refractive index.…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_029.jpg",
+"caption": "Fig. 5.11 Reflection of an incident ray which passes or appears to pass through the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig030-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature?",
+"options": [
+"##### Something More The line with an arrow pointing towards the mirror represents an incident ray whereas the line with an…",
+"Between F and P relates to Behind the mirror, Enlarged, and real and erected.",
+"Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected.",
+"define reflection is defined as discuss examples of refraction."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: ##### Something More The line with an arrow pointing towards the mirror represents an incident ray whereas the line with an arrow pointing away from the mirror represents the reflected ray.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_030.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig030-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Refraction of light is associated with : Bending of light when light passes obliquely from one transparent medium to another. II. Optically rarer medium is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_030.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig030-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature). Assertion (A): Spherical mirror is associated with : A slice taken out from a hollow glass…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_030.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig031-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature?",
+"options": [
+"##### Something More The line with an arrow pointing towards the mirror represents an incident ray whereas the line with an…",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted.",
+"Prism is associated with : A transparent material bound by two plane refracting faces inclined at an angle.",
+"real image is associated with : Image formed when light rays do not actually meet but appear to meet."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: ##### Something More The line with an arrow pointing towards the mirror represents an incident ray whereas the line with an arrow pointing away from the mirror represents the reflected ray.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_031.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig031-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Beyond C relates to Between F and C, Diminished, and virtual and inverted. II. Concave mirror is associated with : A spherical mirror whose outer surface is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_031.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig031-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature). Which statement is INCORRECT?",
+"options": [
+"define refraction is defined as discuss examples of refraction.",
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium.",
+"Dispersion is associated with : Splitting of white light into its constituent seven colours on passing through a dispersive…",
+"Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected."
+],
+"correctOption": 3,
+"answer": "Incorrect: Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected. Correct: ##### Something More The line with an arrow pointing towards the mirror represents an incident ray whereas the line with an arrow pointing away from the mirror represents the reflected ray.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_031.jpg",
+"caption": "Fig. 5.12 Reflection of an incident ray which passes or appears to pass through the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig032-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.13 Reflection of an incident ray at the pole?",
+"options": [
+"Here, we are discussing following five cases in which the image formed is a real image.",
+"reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted.",
+"Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Here, we are discussing following five cases in which the image formed is a real image.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_032.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig032-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. real image is associated with : Image formed when light rays do not actually meet but appear to meet. II. O describe a concave and a convex mirror. III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_032.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig032-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.13 Reflection of an incident ray at the pole). Assertion (A): Between C and F relates to Beyond C, Enlarged, and Real and inverted. Reason (R): Concave mirror is associated with : A…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_032.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig033-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.13 Reflection of an incident ray at the pole?",
+"options": [
+"define reflection is defined as discuss examples of refraction.",
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium.",
+"Prism is associated with : A transparent material bound by two plane refracting faces inclined at an angle.",
+"Here, we are discussing following five cases in which the image formed is a real image."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Here, we are discussing following five cases in which the image formed is a real image.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_033.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig033-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Beyond C relates to Between F and C, Diminished, and Real and inverted. II. Here, we are discussing following five cases in which the image formed is a real…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_033.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig033-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.13 Reflection of an incident ray at the pole). Assertion (A): O describe a concave and a convex mirror. Reason (R): Spectrum is associated with : The band of seven colours obtained as a…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_033.jpg",
+"caption": "Fig. 5.13 Reflection of an incident ray at the pole",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig036-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.14 An object placed at infinity?",
+"options": [
+"O describe a convex and a convex mirror.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"real image is associated with : Image formed when light rays do not actually meet but appear to meet."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_036.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig036-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Between C and F relates to Beyond C, Enlarged, and Real and inverted. II. Concave mirror is associated with : A spherical mirror whose outer surface is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_036.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig036-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.14 An object placed at infinity). Assertion (A): define refraction is defined as discuss examples of refraction. Reason (R): Real image is associated with Virtual image.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_036.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig037-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.14 An object placed at infinity?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and Real and inverted.",
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Material medium relates to Refractive index, Material medium, and Refractive index."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_037.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig037-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. real image is associated with : Image formed when light rays do not actually meet but appear to meet. II. define refraction is defined as discuss examples of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_037.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig037-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.14 An object placed at infinity). Assertion (A): Between C and F relates to Beyond C, Enlarged, and Real and inverted. Reason (R): Refractive index is associated with : The ratio of speed…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_037.jpg",
+"caption": "Fig. 5.14 An object placed at infinity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig038-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.15 An object placed beyond the centre of curvature?",
+"options": [
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted.",
+"Optically denser medium is associated with : Medium in which speed of light is comparatively less or whose refractive index is…",
+"Real image is associated with Virtual image.",
+"Nfinity An object placed beyond the centre of curvature An object placed at the centre of curvature Case 4: When the object is…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Nfinity An object placed beyond the centre of curvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of curvature The image formed is real and inverted.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_038.jpg",
+"caption": "Fig. 5.15 An object placed beyond the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig038-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Refraction of light is associated with : Bending of light when light passes obliquely from one transparent medium to another. II. Between F and P relates to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_038.jpg",
+"caption": "Fig. 5.15 An object placed beyond the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig038-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.15 An object placed beyond the centre of curvature). Assertion (A): Virtual image is associated with : Image formed when light rays do not actually meet but appear to meet. Reason (R):…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_038.jpg",
+"caption": "Fig. 5.15 An object placed beyond the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig039-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 5.16 An object placed at the centre of curvature?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Rvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of…",
+"S. No. relates to Position of the object, Position of the image, and Size of the image.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Rvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of curvature The image formed is real and inverted.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_039.jpg",
+"caption": "Fig. 5.16 An object placed at the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig039-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Prism is associated with : A transparent material bound by two plane refracting faces inclined at an angle. II. Concave mirror is associated with : A…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_039.jpg",
+"caption": "Fig. 5.16 An object placed at the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig039-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.16 An object placed at the centre of curvature). Which statement is INCORRECT?",
+"options": [
+"Rvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of…",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Real image is associated with Virtual image."
+],
+"correctOption": 0,
+"answer": "Incorrect: Rvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of curvature The image formed is virtual and inverted. Correct: Rvature An object placed at the centre of curvature Case 4: When the object is placed between the focus and the centre of curvature The image formed is real and inverted.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_039.jpg",
+"caption": "Fig. 5.16 An object placed at the centre of curvature",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig040-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.18 An object placed at the focus?",
+"options": [
+"Refractive index is associated with : The ratio of speed of light in air (or vacuum) to the speed of light of the given medium.",
+"A concave mirror forms a virtual, erect and enlarged image of an object placed in front of it between the pole and the focus…",
+"real image is associated with : Image formed when light rays do not actually meet but appear to meet.",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: A concave mirror forms a virtual, erect and enlarged image of an object placed in front of it between the pole and the focus point of concave mirror.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_040.jpg",
+"caption": "Fig. 5.18 An object placed at the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig040-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Real image is associated with : Image formed due to actual meeting of light rays. II. Material medium relates to Refractive index, Material medium, and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_040.jpg",
+"caption": "Fig. 5.18 An object placed at the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig040-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 5.18 An object placed at the focus). Assertion (A): Prism is associated with : A transparent material bound by two plane refracting faces inclined at an angle. Reason (R): Between F and P…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_040.jpg",
+"caption": "Fig. 5.18 An object placed at the focus",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig043-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 5.19 A prism?",
+"options": [
+"Spectrum is associated with : The band of seven colours obtained as a result of dispersion of white light.",
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Place a glass prism on the paper and mark its boundary ABC."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Place a glass prism on the paper and mark its boundary ABC.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_043.jpg",
+"caption": "Fig. 5.19 A prism",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig043-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Real image is associated with : Image formed due to actual meeting of light rays. II. Beyond C relates to Between F and C, Diminished, and Real and inverted.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_043.jpg",
+"caption": "Fig. 5.19 A prism",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig043-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 5.19 A prism). Which statement is INCORRECT?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is…",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner…"
+],
+"correctOption": 1,
+"answer": "Incorrect: Optically rarer medium is associated with : Medium in which speed of light is comparatively more or whose refractive index is less. Correct: Place a glass prism on the paper and mark its boundary ABC.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_043.jpg",
+"caption": "Fig. 5.19 A prism",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig046-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 46?",
+"options": [
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted.",
+"reflection of light is associated with : Bending of light when light passes obliquely from one transparent medium to another."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_046.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig046-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that reflection takes place from the other…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_046.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig046-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 46). Which statement is INCORRECT?",
+"options": [
+"Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner…",
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium.",
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Beyond C relates to Between F and C, Diminished, and Real and inverted."
+],
+"correctOption": 0,
+"answer": "Incorrect: Concave mirror is associated with : A spherical mirror whose outer surface is silvered and reflection takes place from the inner surface. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_046.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig049-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 49?",
+"options": [
+"Between F and P relates to Behind the mirror, Enlarged, and real and erected.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Real image is associated with Virtual image."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_049.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig049-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Real image is associated with Virtual image. II. Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_049.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig049-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 49). Which statement is INCORRECT?",
+"options": [
+"virtual image is associated with : Image formed due to actual meeting of light rays.",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and reflection takes place from the outer…",
+"Convex mirror is associated with : A spherical mirror whose inner surface is silvered and refraction takes place from the outer…",
+"Real image is associated with : Image formed due to actual meeting of light rays."
+],
+"correctOption": 3,
+"answer": "Incorrect: Real image is associated with : Image formed due to actual meeting of light rays. Correct: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_049.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig053-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 53?",
+"options": [
+"Optically rarer medium is associated with : Medium in which velocity of light is comparatively more or whose refractive index is…",
+"Between C and F relates to Beyond C, Enlarged, and virtual and inverted.",
+"Material medium relates to Refractive index, Material medium, and Refractive index.",
+"Optically denser medium is associated with : Medium in which velocity of light is comparatively less or whose refractive index…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_053.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig053-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. virtual image is associated with : Image formed due to actual meeting of light rays. II. Convex mirror is associated with : A spherical mirror whose inner…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_053.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig053-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 53). Assertion (A): Between C and F relates to Beyond C, Enlarged, and Real and inverted. Reason (R): S. No. relates to Position of the object, Position of the image, and Size of the image.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_053.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig056-q1",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 56?",
+"options": [
+"Refractive index is associated with : The ratio of velocity of light in air (or vacuum) to the speed of light of the given medium.",
+"Beyond C relates to Between F and C, Diminished, and virtual and inverted.",
+"Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that reflection…",
+"Material medium relates to Refractive index, Material medium, and Refractive index."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Material medium relates to Refractive index, Material medium, and Refractive index.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig056-q2",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Between F and P relates to Behind the mirror, Enlarged, and Virtual and erected. II. Real image is associated with : Image formed due to actual meeting of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch5-fig056-q3",
+"topicId": "ch5-light",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 56). Assertion (A): Spherical mirror is associated with : A slice taken out from a hollow glass sphere and silvered on one side so that reflection takes place from the other side. Reason (R):…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_05_light_energy/fig_056.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig006-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 6?",
+"options": [
+"Boiling: When a solid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the…",
+"Evaporation is a surface phenomenon only but boiling takes place throughout the solid simultaneously.",
+"Material relates to $ \\alpha $ (in $ 10^{-5}/ $°C), Material, and $ \\alpha $ (in $ 10^{-5}/ $°C).",
+"Evaporation: It is the process where a solid changes into its vapour form at any temperature, but it only happens at the surface…"
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Material relates to $ \\alpha $ (in $ 10^{-5}/ $°C), Material, and $ \\alpha $ (in $ 10^{-5}/ $°C).",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig006-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Evaporation process takes place at all temperatures but boiling process takes place at a fixed temperature, called the boiling point of liquid only. II.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig006-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 6). Which statement is INCORRECT?",
+"options": [
+"Observe and cite multiple physical phenomena from one experiment.",
+"Of course, the rate of evaporation increases with an increase in temperature because then liquid molecules will have greater…",
+"Three kinds of thermal expansion in solids.",
+"4. Glass (ordinary soda glass) is associated with 2.5 and 9. Hard rubber."
+],
+"correctOption": 3,
+"answer": "Incorrect: 4. Glass (ordinary soda glass) is associated with 2.5 and 9. Hard rubber. Correct: Material relates to $ \\alpha $ (in $ 10^{-5}/ $°C), Material, and $ \\alpha $ (in $ 10^{-5}/ $°C).",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_006.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig008-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8?",
+"options": [
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Whenever an object is heated, it expands.",
+"Boiling: When a solid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the…",
+"Compare expansivity in solids, liquids and gases."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig008-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Material relates to $ \\gamma $ (in $ 10^{-5}/ $°C), Material, and $ \\gamma $ (in $ 10^{-5}/ $°C). II. Three kinds of thermal expansion in solids. III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig008-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8). Assertion (A): Compare expansivity in solids, liquids and gases. Reason (R): Liquid relates to $ \\gamma $ (in $ 10^{-4}/ $°C), Liquid, and $ \\gamma $ (in $ 10^{-4}/ $°C).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_008.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig010-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 10?",
+"options": [
+"So, the process of evaporation occurs at the surface of a solid only.",
+"Boiling: When a liquid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the…",
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Material relates to $ \\gamma $ (in $ 10^{-5}/ $°C), Material, and $ \\gamma $ (in $ 10^{-5}/ $°C)."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig010-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Although in both evaporation and boiling processes, a substance changes from liquid state to the vapour (or gaseous) state, the two processes differ in the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig010-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 10). Which statement is INCORRECT?",
+"options": [
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Evaporation process takes place at all temperatures but boiling process takes place at a fixed temperature, called the boiling…",
+"Conversely, when heat is taken from an object, its temperature increases.",
+"Explanation of thermal expansion of solids on the basis of molecular motion."
+],
+"correctOption": 3,
+"answer": "Incorrect: Explanation of thermal expansion of solids on the basis of molecular motion. Correct: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_010.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig018-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 18?",
+"options": [
+"Explanation of thermal expansion of solids on the basis of molecular motion.",
+"So, the process of evaporation occurs at the surface of a solid only.",
+"Vaporisation takes place due to the following two phenomena.",
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_018.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig018-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. solid relates to $ \\gamma $ (in $ 10^{-4}/ $°C), Liquid, and $ \\gamma $ (in $ 10^{-4}/ $°C). II. Evaporation process takes place at all temperatures but…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_018.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig018-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 18). Which statement is INCORRECT?",
+"options": [
+"Explanation of thermal expansion of solids on the basis of molecular motion.",
+"0 describe, linear, area (superficial) and volume expansion.",
+"Although in both evaporation and boiling processes, a substance changes from solid state to the vapour (or gaseous) state, the…",
+"Vaporisation takes place due to the following two phenomena."
+],
+"correctOption": 3,
+"answer": "Incorrect: Vaporisation takes place due to the following two phenomena. Correct: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_018.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig020-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 20?",
+"options": [
+"Evaporation process takes place at all temperatures but boiling process takes place at a fixed temperature, called the boiling…",
+"Boiling: When a solid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the…",
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Conversely, when heat is taken from an object, its temperature increases."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_020.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig020-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Boiling: When a solid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the intermolecular forces present…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_020.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig020-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 20). Assertion (A): Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere. Reason (R): Three kinds of…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_020.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig023-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 6.4 Gap left between two successive rails?",
+"options": [
+"Evaporation: It is the process where a liquid changes into its vapour form at any temperature, but it only happens at the…",
+"Before fitting, the rims are heated so that they expand and fly over the wheels.",
+"Observe and cite multiple physical phenomena from one experiment.",
+"Liquid relates to $ \\gamma $ (in $ 10^{-4}/ $°C), Liquid, and $ \\gamma $ (in $ 10^{-4}/ $°C)."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Before fitting, the rims are heated so that they expand and fly over the wheels.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_023.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig023-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Of course, the rate of evaporation increases with an increase in temperature because then liquid molecules will have greater energy. II. 0 describe, linear,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_023.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig023-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 6.4 Gap left between two successive rails). Which statement is INCORRECT?",
+"options": [
+"Bimetallic strips are used in thermostats to automatically control the temperature in electric irons, electric ovens, geysers,…",
+"Although in both evaporation and boiling processes, a substance changes from solid state to the vapour (or gaseous) state, the…",
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"0 describe, linear, area (superficial) and volume expansion."
+],
+"correctOption": 2,
+"answer": "Incorrect: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere. Correct: Before fitting, the rims are heated so that they expand and fly over the wheels.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_023.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig024-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 6.4 Gap left between two successive rails?",
+"options": [
+"Before fitting, the rims are heated so that they expand and fly over the wheels.",
+"Vaporisation takes place due to the following two phenomena.",
+"Compare expansivity in solids, liquids and gases.",
+"Evaporation is a surface phenomenon only but boiling takes place throughout the liquid simultaneously."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Before fitting, the rims are heated so that they expand and fly over the wheels.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_024.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig024-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Whenever an object is heated, it expands. II. So, the process of evaporation occurs at the surface of a solid only. III. Although in both evaporation and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_024.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig024-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 6.4 Gap left between two successive rails). Assertion (A): After fitting, cold water is poured on them, so that, they contract and grip the wheel tightly. Reason (R): Explanation of thermal…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_024.jpg",
+"caption": "Fig. 6.4 Gap left between two successive rails",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig028-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 28?",
+"options": [
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"So, the process of evaporation occurs at the surface of a solid only.",
+"Observe and cite multiple physical phenomena from one experiment.",
+"Boiling: When a solid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig028-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Of course, the rate of evaporation increases with an increase in temperature because then liquid molecules will have greater energy. II. Explanation of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig028-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 28). Assertion (A): Although in both evaporation and boiling processes, a substance changes from liquid state to the vapour (or gaseous) state, the two processes differ in the following…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig033-q1",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 33?",
+"options": [
+"Whenever an object is heated, it expands.",
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Although in both evaporation and boiling processes, a substance changes from liquid state to the vapour (or gaseous) state, the…",
+"Evaporation: It is the process where a solid changes into its vapour form at any temperature, but it only happens at the surface…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig033-q2",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Boiling: When a liquid is heated at a particular temperature, liquid molecules gain sufficient energy so as to overcome the intermolecular forces present…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch6-fig033-q3",
+"topicId": "ch6-heat",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 33). Which statement is INCORRECT?",
+"options": [
+"Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same…",
+"Material relates to $ \\gamma $ (in $ 10^{-5}/ $°C), Material, and $ \\gamma $ (in $ 10^{-5}/ $°C).",
+"4. Glass (ordinary soda glass) is associated with 2.5 and 9. Hard rubber.",
+"Of course, the rate of evaporation increases with an increase in temperature because then solid molecules will have greater…"
+],
+"correctOption": 2,
+"answer": "Incorrect: 4. Glass (ordinary soda glass) is associated with 2.5 and 9. Hard rubber. Correct: Heat energy always flows from higher temperature to lower temperature and the flow continuous till the temperature becomes same everywhere.",
+"source": "icse",
+"image": "images/physics/chapter_06_heat_transfer/fig_033.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig002-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 2?",
+"options": [
+"》 In humans, sound is produced by the voice box (larynx) located.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Rock concert is associated with 110 – 120 and Painfully loud.",
+"Relation between wave velocity, frequency and wavelength."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_002.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig002-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 》 In humans, sound is produced by the voice box (larynx) located. II. Sound travels with a finite speed in the given material medium. III. Rocket at take off…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_002.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig002-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 2). Assertion (A): Relation between wave speed, frequency and wavelength. Reason (R): Jet plane is associated with 130 – 140 and Very painfully loud.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_002.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig007-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.3 Flute?",
+"options": [
+"》 In humans, sound is produced by the voice box (larynx) located.",
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Rocket at take off is associated with 200 and Dangerously loud."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_007.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig007-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Ordinary conversation is associated with 40 – 60 and Normal loudness. II. Rustling of tree leaves is associated with Very very faint sound. III. Adjustment of…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_007.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig007-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.3 Flute). Assertion (A): Jet plane is associated with 130 – 140 and Very painfully loud. Reason (R): Rocket at take off is associated with 200 and Dangerously loud.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_007.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig008-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.3 Flute?",
+"options": [
+"Adjustment of pitch and wavelength in musical instrument.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Sound travels with a finite velocity in the given material medium.",
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_008.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig008-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Sound travels with a finite speed in the given material medium. II. Factory noise is associated with 100 – 110 and Painfully loud. III. Source of sound is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_008.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig008-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.3 Flute). Assertion (A): Jet plane is associated with 130 – 140 and Very painfully loud. Reason (R): Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_008.jpg",
+"caption": "Fig. 7.3 Flute",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig013-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 7.4 Examples of string instruments?",
+"options": [
+"Frequency is more for a thin wire and less for thick wire.",
+"Sound travels with a finite velocity in the given material medium.",
+"Loudness also depends on the sensitivity of the listener.",
+"Again, wavelength increases on increasing the tension and on reducing the vibrating length."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Frequency is more for a thin wire and less for thick wire.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_013.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig013-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Again, wavelength increases on increasing the tension and on reducing the vibrating length. II. Adjustment of pitch and frequency in musical instrument. III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_013.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig013-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.4 Examples of string instruments). Assertion (A): Ordinary conversation is associated with 40 – 60 and Normal loudness. Reason (R): Rock concert is associated with 110 – 120 and Painfully…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_013.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig014-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.4 Examples of string instruments?",
+"options": [
+"Relation between wave velocity, frequency and wavelength.",
+"Loudness also depends on the sensitivity of the listener.",
+"Frequency is more for a thin wire and less for thick wire.",
+"Again, frequency increases on increasing the tension and on reducing the vibrating length."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Frequency is more for a thin wire and less for thick wire.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_014.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig014-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Adjustment of pitch and frequency in musical instrument. II. Relation between wave speed, frequency and wavelength. III. Moreover, if the player plucks the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_014.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig014-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 7.4 Examples of string instruments). Which statement is INCORRECT?",
+"options": [
+"Frequency is more for a thin wire and less for thick wire.",
+"Adjustment of pitch and frequency in musical instrument.",
+"wavelength is more for a thin wire and less for thick wire.",
+"Sound travels with a finite velocity in the given material medium."
+],
+"correctOption": 2,
+"answer": "Incorrect: wavelength is more for a thin wire and less for thick wire. Correct: Frequency is more for a thin wire and less for thick wire.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_014.jpg",
+"caption": "Fig. 7.4 Examples of string instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig021-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 21?",
+"options": [
+"Jet plane is associated with 130 – 140 and Very painfully loud.",
+"Loudness also depends on the sensitivity of the listener.",
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"Sound is a form of energy which causes sensation of hearing in our ears."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_021.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig021-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Relation between wave speed, frequency and wavelength. II. Jet plane is associated with 130 – 140 and Very painfully loud. III. Whisper is associated with 20…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_021.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig021-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 21). Which statement is INCORRECT?",
+"options": [
+"Relation between wave velocity, frequency and wavelength.",
+"Sound needs a medium for its propagation.",
+"Sound is produced by the vibration of objects.",
+"》 In humans, sound is produced by the voice box (larynx) located."
+],
+"correctOption": 3,
+"answer": "Incorrect: 》 In humans, sound is produced by the voice box (larynx) located. Correct: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_021.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig023-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 7.5 Examples of membrane instruments?",
+"options": [
+"Relation between wave velocity, frequency and wavelength.",
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"Ringing of a telephone bell is associated with Loud.",
+"\">Bongo Examples of membrane instruments Tabla In dholak as well as mridangam, the string is tightened by the use of metal rings."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: \">Bongo Examples of membrane instruments Tabla In dholak as well as mridangam, the string is tightened by the use of metal rings.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_023.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig023-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Sound travels with a finite speed in the given material medium. II. Jet plane is associated with 130 – 140 and Very painfully loud. III. Factory noise is…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_023.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig023-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.5 Examples of membrane instruments). Assertion (A): Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud. Reason (R): Sound needs a medium for its propagation.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_023.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig024-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 7.5 Examples of membrane instruments?",
+"options": [
+"\">Bongo Examples of membrane instruments Tabla In dholak as well as mridangam, the string is tightened by the use of metal rings.",
+"Relation between wave velocity, frequency and wavelength.",
+"Ordinary conversation is associated with 40 – 60 and Normal loudness.",
+"Rock concert is associated with 110 – 120 and Painfully loud."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: \">Bongo Examples of membrane instruments Tabla In dholak as well as mridangam, the string is tightened by the use of metal rings.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_024.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig024-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Rocket at take off is associated with 200 and Dangerously loud. II. Rock concert is associated with 110 – 120 and Painfully loud. III. Ringing of a telephone…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_024.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig024-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.5 Examples of membrane instruments). Assertion (A): Ordinary conversation is associated with 40 – 60 and Normal loudness. Reason (R): Sound is a form of energy which causes sensation of…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_024.jpg",
+"caption": "Fig. 7.5 Examples of membrane instruments",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig026-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.6 Tuning fork?",
+"options": [
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"Rustling of tree leaves is associated with Very very faint sound.",
+"Rocket at take off is associated with 200 and Dangerously loud.",
+"Sound is produced by the vibration of objects."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_026.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig026-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Adjustment of pitch and frequency in musical instrument. II. Sound needs a medium for its propagation. III. Factory noise is associated with 100 – 110 and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_026.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig026-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 7.6 Tuning fork). Which statement is INCORRECT?",
+"options": [
+"Sound travels with a finite velocity in the given material medium.",
+"Factory noise is associated with 100 – 110 and Painfully loud.",
+"》 In humans, sound is produced by the voice box (larynx) located.",
+"Adjustment of pitch and wavelength in musical instrument."
+],
+"correctOption": 2,
+"answer": "Incorrect: 》 In humans, sound is produced by the voice box (larynx) located. Correct: Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_026.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig027-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.6 Tuning fork?",
+"options": [
+"Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"Sound travels with a finite speed in the given material medium.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Sound travels with a finite velocity in the given material medium."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_027.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig027-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 》 In humans, sound is produced by the voice box (larynx) located. II. Sound travels with a finite speed in the given material medium. III. Sound needs a…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_027.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig027-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.6 Tuning fork). Assertion (A): Energy level of sound (in W/m^{2}) relates to 10^{-12}, 10^{-11}, and 10^{-10}. Reason (R): Different types of instruments and devices are used to produce…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_027.jpg",
+"caption": "Fig. 7.6 Tuning fork",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig030-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 30?",
+"options": [
+"Relation between wave velocity, frequency and wavelength.",
+"Relation between wave speed, frequency and wavelength.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig030-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Adjustment of pitch and wavelength in musical instrument. II. Source of sound is associated with Loudness level (in dB) and Sensation of sound. III. Relation…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig030-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 30). Which statement is INCORRECT?",
+"options": [
+"Relation between wave velocity, frequency and wavelength.",
+"Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud.",
+"Sound is produced by the vibration of objects.",
+"Sound travels with a finite speed in the given material medium."
+],
+"correctOption": 1,
+"answer": "Incorrect: Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud. Correct: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig031-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 7.7 Sound waves?",
+"options": [
+"Ringing of a telephone bell is associated with Loud.",
+"Sound is produced by the vibration of objects.",
+"T sound Sound waves #### Loudness also depends on the Sensitivity of the Listener The loudness of a sound produced by a…",
+"Loudness also depends on the sensitivity of the listener."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: T sound Sound waves #### Loudness also depends on the Sensitivity of the Listener The loudness of a sound produced by a particular source also depends on the sensitivity of the listener's ear.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_031.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig031-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Sound travels with a finite speed in the given material medium. II. A particular sound may appear to be quite loud to one person but not so loud to another…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_031.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig031-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 7.7 Sound waves). Which statement is INCORRECT?",
+"options": [
+"Generally, sensitivity of a listener's ear increases with advancing age.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud.",
+"Relation between wave velocity, frequency and wavelength."
+],
+"correctOption": 1,
+"answer": "Incorrect: Sound is a form of energy which causes sensation of hearing in our ears. Correct: T sound Sound waves #### Loudness also depends on the Sensitivity of the Listener The loudness of a sound produced by a particular source also depends on the sensitivity of the listener's ear.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_031.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig032-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 7.7 Sound waves?",
+"options": [
+"Generally, sensitivity of a listener's ear decreases with advancing age.",
+"Loudness also depends on the sensitivity of the listener.",
+"Sound travels with a finite speed in the given material medium.",
+"T sound Sound waves #### Loudness also depends on the Sensitivity of the Listener The loudness of a sound produced by a…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: T sound Sound waves #### Loudness also depends on the Sensitivity of the Listener The loudness of a sound produced by a particular source also depends on the sensitivity of the listener's ear.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_032.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig032-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Sound is produced by the vibration of objects. II. Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud. III. Generally, sensitivity…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_032.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig032-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 7.7 Sound waves). Assertion (A): Whisper is associated with 20 – 25 and Very faint sound. Reason (R): Rustling of tree leaves is associated with Very very faint sound.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_032.jpg",
+"caption": "Fig. 7.7 Sound waves",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig035-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 35?",
+"options": [
+"Relation between wave speed, frequency and wavelength.",
+"Adjustment of pitch and frequency in musical instrument.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Sound travels with a finite speed in the given material medium."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_035.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig035-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Rock concert is associated with 110 – 120 and Painfully loud. II. Source of sound is associated with Loudness level (in dB) and Sensation of sound. III. Sound…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_035.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig035-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 35). Which statement is INCORRECT?",
+"options": [
+"Loudness also depends on the sensitivity of the listener.",
+"Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud.",
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Sound is produced by the vibration of objects."
+],
+"correctOption": 3,
+"answer": "Incorrect: Sound is produced by the vibration of objects. Correct: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_035.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig037-q1",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 37?",
+"options": [
+"Sound is a form of energy which causes sensation of hearing in our ears.",
+"Adjustment of pitch and wavelength in musical instrument.",
+"Sound needs a medium for its propagation.",
+"Sound is produced by the vibration of objects."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Sound is a form of energy which causes sensation of hearing in our ears.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig037-q2",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Sound needs a medium for its propagation. II. 》 In humans, sound is produced by the voice box (larynx) located. III. Sound travels with a finite speed in the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch7-fig037-q3",
+"topicId": "ch7-sound",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 37). Assertion (A): Ordinary conversation is associated with 40 – 60 and Normal loudness. Reason (R): Heavy traffic in a metropolitan city is associated with 80 – 90 and Very loud.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_07_sound/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig003-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.1 Current flow through a resistor?",
+"options": [
+"O describe construction and working of an electroscope.",
+"1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is…",
+"Electrical energy, E = Voltage, V $ \\times $ current, I $ \\times $ time, t The SI unit of electrical energy is joule (J).",
+"Electrical energy, E = Voltage, V $ \\times $ current, I $ \\times $ time, t The SI unit of electrical energy is watt (J)."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Electrical energy, E = Voltage, V $ \\times $ current, I $ \\times $ time, t The SI unit of electrical energy is joule (J).",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_003.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig003-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L). II. Charging by conduction is associated with Charging by induction. III. 1.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_003.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig003-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.1 Current flow through a resistor). Assertion (A): ☐ describe safety components (fuses, circuit breakers). Reason (R): Neutral relates to 0 V, Black, and Light-blue.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_003.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig004-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.1 Current flow through a resistor?",
+"options": [
+"Electrical energy, E = Voltage, V $ \\times $ current, I $ \\times $ time, t The SI unit of electrical energy is joule (J).",
+"O describe conduction and induction of charges.",
+"Live relates to 220 V, Red, and Brown.",
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour)."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Electrical energy, E = Voltage, V $ \\times $ current, I $ \\times $ time, t The SI unit of electrical energy is joule (J).",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_004.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig004-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is brought close to the conductor to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_004.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig004-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.1 Current flow through a resistor). Assertion (A): Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L). Reason (R): Wire relates to Voltage, Colour of insulation,…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_004.jpg",
+"caption": "Fig. 8.1 Current flow through a resistor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig015-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.3 Electric meters?",
+"options": [
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"##### Switch A switch is an 'on-off' device used to control the circuit of an appliance.",
+"O describe convection and induction of charges."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: ##### Switch A switch is an 'on-off' device used to control the circuit of an appliance.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_015.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig015-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Earth relates to 0 V, Green, and Yellow. II. Electric iron relates to 450 – 1200, 220, and 14. Electric oven. III. ☐ describe safety components (fuses,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_015.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig015-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.3 Electric meters). Assertion (A): ☐ describe safety components (fuses, circuit breakers). Reason (R): Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_015.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig016-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.3 Electric meters?",
+"options": [
+"##### Switch A switch is an 'on-off' device used to control the circuit of an appliance.",
+"O describe convection and induction of charges.",
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…",
+"3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: ##### Switch A switch is an 'on-off' device used to control the circuit of an appliance.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_016.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig016-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. ☐ describe safety components (fuses, circuit breakers). II. Live relates to 220 V, Red, and Brown. III. Wire relates to Voltage, Colour of insulation, and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_016.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig016-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.3 Electric meters). Assertion (A): CFL relates to 5 – 18, 220, and 10. Desert cooler. Reason (R): Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_016.jpg",
+"caption": "Fig. 8.3 Electric meters",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig017-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.4 A switch board?",
+"options": [
+"Conduct scientific experiments keeping in mind all the parameters.",
+"1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is…",
+"A switch board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an…",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: A switch board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an electric circuit.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_017.jpg",
+"caption": "Fig. 8.4 A switch board",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig017-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced on the conductor is opposite to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_017.jpg",
+"caption": "Fig. 8.4 A switch board",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig017-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.4 A switch board). Which statement is INCORRECT?",
+"options": [
+"3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"O describe construction and working of an electroscope.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…"
+],
+"correctOption": 0,
+"answer": "Incorrect: 3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced on the conductor is opposite to the nature of charge on the charged body.. Correct: A switch board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an electric circuit.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_017.jpg",
+"caption": "Fig. 8.4 A switch board",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig018-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.5 A three-pin plug and a socket Electricity?",
+"options": [
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Wire relates to Voltage, Colour of insulation, and Purpose of wire.",
+"Board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an electric…"
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an electric circuit.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_018.jpg",
+"caption": "Fig. 8.5 A three-pin plug and a socket Electricity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig018-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced on the conductor is opposite to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_018.jpg",
+"caption": "Fig. 8.5 A three-pin plug and a socket Electricity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig018-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.5 A three-pin plug and a socket Electricity). Which statement is INCORRECT?",
+"options": [
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…",
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour).",
+"O describe convection and induction of charges.",
+"Conduct scientific experiments keeping in mind all the parameters."
+],
+"correctOption": 1,
+"answer": "Incorrect: Electric bulb relates to 15 – 500, 220, and 8. TV set (colour). Correct: Board A three-pin plug and a socket Electricity ##### Fuse A fuse is a safety device which limits the current in an electric circuit.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_018.jpg",
+"caption": "Fig. 8.5 A three-pin plug and a socket Electricity",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig019-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.6 An electric fuse?",
+"options": [
+"Charging by convection is associated with Charging by induction.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"An electric fuse The fuse wire is made up of an alloy of lead and tin, whose melting point is only about $ 200^{\\circ} $C.",
+"○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: An electric fuse The fuse wire is made up of an alloy of lead and tin, whose melting point is only about $ 200^{\\circ} $C.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_019.jpg",
+"caption": "Fig. 8.6 An electric fuse",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig019-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Earth relates to 0 V, Green, and Yellow. II. CFL relates to 5 – 18, 220, and 10. Desert cooler. III. 1. The charged body is brought in actual contact of the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_019.jpg",
+"caption": "Fig. 8.6 An electric fuse",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig019-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.6 An electric fuse). Assertion (A): ☐ describe safety components (fuses, circuit breakers). Reason (R): Earth relates to 0 V, Green, and Yellow.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_019.jpg",
+"caption": "Fig. 8.6 An electric fuse",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig020-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.7 A?",
+"options": [
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"##### HAZARDS OF ELECTRICITY The electricity is the most important and convenient form of energy and is widely used in our…",
+"○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel.",
+"O describe convection and induction of charges."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: ##### HAZARDS OF ELECTRICITY The electricity is the most important and convenient form of energy and is widely used in our houses, offices, business establishments and factories.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_020.jpg",
+"caption": "Fig. 8.7 A",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig020-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is brought close to the conductor to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_020.jpg",
+"caption": "Fig. 8.7 A",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig020-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.7 A). Assertion (A): ○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches. Reason (R): ○ identify live wire, neutral wire and earth…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_020.jpg",
+"caption": "Fig. 8.7 A",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig028-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 28?",
+"options": [
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"O describe construction and working of an electroscope.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig028-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. O describe construction and working of an electroscope. II. Electric mixer relates to 400 – 1200, 220, and 13. Air conditioner (1.5 tonnes). III.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig028-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 28). Assertion (A): Charging by conduction is associated with Charging by induction. Reason (R): ○ study the impact of energy consumption and draw conclusions from the same and suggest…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_028.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig030-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 30?",
+"options": [
+"Electric mixer relates to 400 – 1200, 220, and 13. Air conditioner (1.5 tonnes).",
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour).",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig030-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Earth relates to 0 V, Green, and Yellow. II. O describe conduction and induction of charges. III. O describe construction and working of an electroscope. IV.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig030-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 30). Assertion (A): Electric mixer relates to 400 – 1200, 220, and 13. Air conditioner (1.5 tonnes). Reason (R): Electric bulb relates to 15 – 500, 220, and 8. TV set (colour).",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_030.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig034-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 34?",
+"options": [
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"Live relates to 220 V, Red, and Brown.",
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour)."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_034.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig034-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Neutral relates to 0 V, Black, and Light-blue. II. O describe convection and induction of charges. III. Wire relates to Voltage, Colour of insulation, and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_034.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig034-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 34). Assertion (A): Wire relates to Voltage, Colour of insulation, and Purpose of wire. Reason (R): 3. Charge produced on the conductor is of same nature as the charge on the charged body. is…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_034.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig037-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 37?",
+"options": [
+"Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L).",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig037-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Neutral relates to 0 V, Black, and Light-blue. II. 3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig037-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 37). Which statement is INCORRECT?",
+"options": [
+"Charging by conduction is associated with Charging by induction.",
+"Live relates to 220 V, Red, and Brown.",
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"O describe convection and induction of charges."
+],
+"correctOption": 0,
+"answer": "Incorrect: Charging by conduction is associated with Charging by induction. Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_037.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig039-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 39?",
+"options": [
+"Wire relates to Voltage, Colour of insulation, and Purpose of wire.",
+"O describe conduction and induction of charges.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_039.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig039-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Live relates to 220 V, Red, and Brown. II. Conduct scientific experiments keeping in mind all the parameters. III. Charging by conduction is associated with…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_039.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig039-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 39). Assertion (A): O describe construction and working of an electroscope. Reason (R): Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_039.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig041-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 41?",
+"options": [
+"Charging by convection is associated with Charging by induction.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"Neutral relates to 0 V, Black, and Light-blue.",
+"O describe convection and induction of charges."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_041.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig041-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. O describe construction and working of an electroscope. II. Appliance/device relates to Power (W), Voltage (V), and Appliance/device. III. CFL relates to 5 –…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_041.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig041-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 41). Which statement is INCORRECT?",
+"options": [
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…",
+"O describe convection and induction of charges.",
+"Neutral relates to 0 V, Black, and Light-blue.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…"
+],
+"correctOption": 0,
+"answer": "Incorrect: 1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is brought close to the conductor to be charged but never brought in contact with it.. Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_041.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig044-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 44?",
+"options": [
+"Electric iron relates to 450 – 1200, 220, and 14. Electric oven.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"☐ describe safety components (fuses, circuit breakers).",
+"Charging by convection is associated with Charging by induction."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_044.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig044-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Live relates to 220 V, Red, and Brown. II. ○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel. III. 1. The…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_044.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig044-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 44). Which statement is INCORRECT?",
+"options": [
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"☐ describe safety components (fuses, circuit breakers).",
+"O describe convection and induction of charges.",
+"Charging by convection is associated with Charging by induction."
+],
+"correctOption": 1,
+"answer": "Incorrect: ☐ describe safety components (fuses, circuit breakers). Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_044.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig047-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.8 Gold leaf electroscope?",
+"options": [
+"Bring it in contact with brass cap of a gold leaf.",
+"Electric iron relates to 450 – 1200, 220, and 14. Electric oven.",
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"Electric fan relates to 60 – 100, 220, and 12. Geyser."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Bring it in contact with brass cap of a gold leaf.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_047.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig047-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated with 3. Charge produced on the conductor is opposite to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_047.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig047-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.8 Gold leaf electroscope). Which statement is INCORRECT?",
+"options": [
+"Conduct scientific experiments keeping in mind all the parameters.",
+"Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L).",
+"Charging by convection is associated with Charging by induction.",
+"Charging by conduction is associated with Charging by induction."
+],
+"correctOption": 3,
+"answer": "Incorrect: Charging by conduction is associated with Charging by induction. Correct: Bring it in contact with brass cap of a gold leaf.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_047.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig048-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.8 Gold leaf electroscope?",
+"options": [
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"Bring it in contact with brass cap of a gold leaf.",
+"Charging by convection is associated with Charging by induction.",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches."
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Bring it in contact with brass cap of a gold leaf.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_048.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig048-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Appliance/device relates to Power (W), Voltage (V), and Appliance/device. II. 1. The charged body is brought in actual contact of the conductor to be charged.…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_048.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig048-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.8 Gold leaf electroscope). Which statement is INCORRECT?",
+"options": [
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour).",
+"Electric mixer relates to 400 – 1200, 220, and 13. Air conditioner (1.5 tonnes).",
+"Electric fan relates to 60 – 100, 220, and 12. Geyser.",
+"Conduct scientific experiments keeping in mind all the parameters."
+],
+"correctOption": 0,
+"answer": "Incorrect: Electric bulb relates to 15 – 500, 220, and 8. TV set (colour). Correct: Bring it in contact with brass cap of a gold leaf.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_048.jpg",
+"caption": "Fig. 8.8 Gold leaf electroscope",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig050-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 50?",
+"options": [
+"○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches.",
+"1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is…"
+],
+"correctOption": 1,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_050.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig050-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Electric mixer relates to 400 – 1200, 220, and 13. Air conditioner (1.5 tonnes). II. Electric bulb relates to 15 – 500, 220, and 8. TV set (colour). III. CFL…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_050.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig050-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 50). Assertion (A): Electric bulb relates to 15 – 500, 220, and 8. TV set (colour). Reason (R): O describe construction and working of an electroscope.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_050.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig057-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.9 Benjamin Franklin's kite and key experiment?",
+"options": [
+"1. The charged body is brought in actual contact of the insulator to be charged. is associated with 1. The charged body is…",
+"Electric iron relates to 450 – 1200, 220, and 14. Electric oven.",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_057.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig057-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. ○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches. II. Electric iron relates to 450 – 1200, 220,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_057.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig057-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.9 Benjamin Franklin's kite and key experiment). Assertion (A): O describe conduction and induction of charges. Reason (R): CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_057.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig058-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.9 Benjamin Franklin's kite and key experiment?",
+"options": [
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches.",
+"Electric iron relates to 450 – 1200, 220, and 14. Electric oven.",
+"☐ describe safety components (fuses, circuit breakers).",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_058.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig058-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. CFL relates to 5 – 18, 220, and 10. Desert cooler. II. 3. Charge produced on the conductor is of same nature as the charge on the charged body. is associated…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_058.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig058-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.9 Benjamin Franklin's kite and key experiment). Which statement is INCORRECT?",
+"options": [
+"Charging by conduction is associated with Charging by induction.",
+"Neutral relates to 0 V, Black, and Light-blue.",
+"Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L).",
+"O describe convection and induction of charges."
+],
+"correctOption": 0,
+"answer": "Incorrect: Charging by conduction is associated with Charging by induction. Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_058.jpg",
+"caption": "Fig. 8.9 Benjamin Franklin's kite and key experiment",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig059-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 8.10 Lightning in clouds?",
+"options": [
+"☐ describe safety components (fuses, circuit breakers).",
+"O describe conduction and induction of charges.",
+"Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L).",
+"Lightning in clouds of electricity through it and lightning takes place."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Lightning in clouds of electricity through it and lightning takes place.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_059.jpg",
+"caption": "Fig. 8.10 Lightning in clouds",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig059-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Appliance/device relates to Power (W), Voltage (V), and Appliance/device. II. ○ identify live wire, neutral wire and earth wire in terms of their energy and…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_059.jpg",
+"caption": "Fig. 8.10 Lightning in clouds",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig059-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 8.10 Lightning in clouds). Assertion (A): Neutral relates to 0 V, Black, and Light-blue. Reason (R): Lightning lasts only for a fraction of a second but energy involved in lightning is…?",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_059.jpg",
+"caption": "Fig. 8.10 Lightning in clouds",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig060-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 8.11 Lightning conductor?",
+"options": [
+"Wire relates to Voltage, Colour of insulation, and Purpose of wire.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Thunderstorm and lightning occurring all over the globe, on an average, pump about 1800 coulombs of electric charge per second…",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches."
+],
+"correctOption": 2,
+"answer": "As per the textbook figure: Thunderstorm and lightning occurring all over the globe, on an average, pump about 1800 coulombs of electric charge per second into the earth as a whole.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_060.jpg",
+"caption": "Fig. 8.11 Lightning conductor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig060-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. 1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is brought close to the conductor to…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_060.jpg",
+"caption": "Fig. 8.11 Lightning conductor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig060-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 8.11 Lightning conductor). Which statement is INCORRECT?",
+"options": [
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…",
+"O describe construction and working of an electroscope.",
+"Electric bulb relates to 15 – 500, 220, and 8. TV set (colour).",
+"Charging by convection is associated with Charging by induction."
+],
+"correctOption": 1,
+"answer": "Incorrect: O describe construction and working of an electroscope. Correct: Thunderstorm and lightning occurring all over the globe, on an average, pump about 1800 coulombs of electric charge per second into the earth as a whole.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_060.jpg",
+"caption": "Fig. 8.11 Lightning conductor",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig063-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 63?",
+"options": [
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…",
+"Charging by convection is associated with Charging by induction.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig063-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L). II. ○ study the impact of energy consumption and draw conclusions from the…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig063-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 63). Assertion (A): Electric fan relates to 60 – 100, 220, and 12. Geyser. Reason (R): CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_063.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig069-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 69?",
+"options": [
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"O describe convection and induction of charges.",
+"Charging by convection is associated with Charging by induction.",
+"O describe construction and working of an electroscope."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_069.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig069-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Neutral relates to 0 V, Black, and Light-blue. II. 1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_069.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig069-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 69). Assertion (A): O describe conduction and induction of charges. Reason (R): Live relates to 220 V, Red, and Brown.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_069.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig070-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram. Which statement best describes Fig. 70?",
+"options": [
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"Conduct scientific experiments keeping in mind all the parameters.",
+"Live relates to 220 V, Red, and Brown.",
+"O describe construction and working of an electroscope."
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_070.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig070-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. Neutral relates to 0 V, Black, and Light-blue. II. Electric iron relates to 450 – 1200, 220, and 14. Electric oven. III. ☐ describe safety components (fuses,…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_070.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig070-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 70). Which statement is INCORRECT?",
+"options": [
+"O describe construction and working of an electroscope.",
+"CFL relates to 5 – 18, 220, and 10. Desert cooler.",
+"O describe conduction and induction of charges.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 0,
+"answer": "Incorrect: O describe construction and working of an electroscope. Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_070.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig071-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 71?",
+"options": [
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"O describe convection and induction of charges.",
+"○ study the impact of energy consumption and draw conclusions from the same and suggest alternate approaches.",
+"1. The charged body is brought in actual contact of the conductor to be charged. is associated with 1. The charged body is…"
+],
+"correctOption": 0,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_071.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig071-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. CFL relates to 5 – 18, 220, and 10. Desert cooler. II. Electric bulb relates to 15 – 500, 220, and 8. TV set (colour). III. Appliance/device relates to Power…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 2,
+"answer": "Three only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_071.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig071-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Assertion-Reason",
+"question": "Refer to the diagram (Fig. 71). Assertion (A): Fluorescent tube (4 feet) relates to 36 – 40, 220, and 9. Refrigerator (165 L). Reason (R): Earth relates to 0 V, Green, and Yellow.",
+"options": [
+"Both A and R are true, and R is the correct explanation of A",
+"Both A and R are true, but R is not the correct explanation of A",
+"A is true but R is false",
+"A is false but R is true"
+],
+"correctOption": 0,
+"answer": "Evaluated strictly from chapter facts.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_071.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig073-q1",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Based on the figure, which option is correct for Fig. 73?",
+"options": [
+"Charging by conduction is associated with Charging by induction.",
+"O describe construction and working of an electroscope.",
+"Wire relates to Voltage, Colour of insulation, and Purpose of wire.",
+"Appliance/device relates to Power (W), Voltage (V), and Appliance/device."
+],
+"correctOption": 3,
+"answer": "As per the textbook figure: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_073.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig073-q2",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Statement-Based",
+"question": "Refer to the diagram. Consider the following statements: I. ○ identify live wire, neutral wire and earth wire in terms of their energy and path they travel. II. ○ study the impact of energy consumption and draw…?",
+"options": [
+"One only",
+"Two only",
+"Three only",
+"All four"
+],
+"correctOption": 1,
+"answer": "Two only statement(s) are correct according to the chapter.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_073.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
+},
+{
+"id": "phy-img-ch8-fig073-q3",
+"topicId": "ch8-electricity",
+"type": "mcq",
+"subtopic": "Diagram — Single Correct",
+"question": "Refer to the diagram (Fig. 73). Which statement is INCORRECT?",
+"options": [
+"O describe conduction and induction of charges.",
+"☐ describe safety components (fuses, circuit breakers).",
+"Earth relates to 0 V, Green, and Yellow.",
+"3. Charge produced on the insulator is of same nature as the charge on the charged body. is associated with 3. Charge produced…"
+],
+"correctOption": 1,
+"answer": "Incorrect: ☐ describe safety components (fuses, circuit breakers). Correct: Appliance/device relates to Power (W), Voltage (V), and Appliance/device.",
+"source": "icse",
+"image": "images/physics/chapter_08_electricity/fig_073.jpg",
+"caption": "",
+"qualityStars": 5,
+"qualityLevel": "NEET UG"
 }
 ];
