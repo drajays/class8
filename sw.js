@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v37';
+const CACHE = 'studyhub-v38';
 const ASSETS = [
   './',
   './index.html',
@@ -15,6 +15,7 @@ const ASSETS = [
   './physics-cheatsheets.js',
   './biology.js',
   './biology-neet.js',
+  './biology-olympiad.js',
   './biology-mindmaps.js',
   './biology-cheatsheets.js',
   './chemistry.js',

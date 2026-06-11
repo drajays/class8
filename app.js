@@ -54,7 +54,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 45;
+const DATA_VERSION = 46;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -67,6 +67,32 @@ function isPhysicsTopic(topicId) {
   return PHYSICS_TOPIC_IDS.has(topicId);
 }
 
+const BIOLOGY_TOPIC_IDS = new Set([
+  'bio-ch1', 'bio-ch2', 'bio-ch3', 'bio-ch4', 'bio-ch5',
+  'bio-ch6', 'bio-ch7', 'bio-ch8', 'bio-ch9'
+]);
+
+function isBiologyTopic(topicId) {
+  return BIOLOGY_TOPIC_IDS.has(topicId);
+}
+
+let _biologyOlympiadIdSet = null;
+
+function getBiologyOlympiadIds() {
+  if (_biologyOlympiadIdSet) return _biologyOlympiadIdSet;
+  if (typeof BIOLOGY_OLYMPIAD_IDS !== 'undefined' && Array.isArray(BIOLOGY_OLYMPIAD_IDS)) {
+    _biologyOlympiadIdSet = new Set(BIOLOGY_OLYMPIAD_IDS);
+  }
+  return _biologyOlympiadIdSet;
+}
+
+function isBiologyOlympiadQuiz(c) {
+  if (!c || c.type === 'note') return false;
+  if (String(c.id).startsWith('bio-ol-')) return true;
+  const ids = getBiologyOlympiadIds();
+  return ids ? ids.has(c.id) : false;
+}
+
 function isPhysicsPipelineItem(c) {
   return !!(c && c.id && String(c.id).startsWith('phy-s'));
 }
@@ -77,24 +103,56 @@ function topicNotes(topicId) {
     (!topicId || c.topicId === topicId) && c.type === 'note'
   );
   if (!topicId) {
-    return all.filter(c => !isPhysicsTopic(c.topicId) || isPhysicsPipelineItem(c));
+    return all.filter(c => {
+      if (isPhysicsTopic(c.topicId)) return isPhysicsPipelineItem(c);
+      return true;
+    });
   }
-  if (!isPhysicsTopic(topicId)) return all;
-  const pipeline = all.filter(isPhysicsPipelineItem);
-  return pipeline.length ? pipeline : all;
+  if (isPhysicsTopic(topicId)) {
+    const pipeline = all.filter(isPhysicsPipelineItem);
+    return pipeline.length ? pipeline : all;
+  }
+  return all;
 }
 
-/** Text questions for a chapter — physics uses pipeline bank only. */
+/** Text questions for a chapter — physics/biology use curated Olympiad banks. */
 function topicTextQuestions(topicId) {
   const all = appData.content.filter(c =>
     (!topicId || c.topicId === topicId) && c.type !== 'note' && !isDiagramMcq(c)
   );
   if (!topicId) {
-    return all.filter(c => !isPhysicsTopic(c.topicId) || isPhysicsPipelineItem(c));
+    return all.filter(c => {
+      if (isPhysicsTopic(c.topicId)) return isPhysicsPipelineItem(c);
+      if (isBiologyTopic(c.topicId)) return isBiologyOlympiadQuiz(c);
+      return true;
+    });
   }
-  if (!isPhysicsTopic(topicId)) return all;
-  const pipeline = all.filter(isPhysicsPipelineItem);
-  return pipeline.length ? pipeline : all;
+  if (isPhysicsTopic(topicId)) {
+    const pipeline = all.filter(isPhysicsPipelineItem);
+    return pipeline.length ? pipeline : all;
+  }
+  if (isBiologyTopic(topicId)) {
+    const pipeline = all.filter(isBiologyOlympiadQuiz);
+    return pipeline.length ? pipeline : all;
+  }
+  return all;
+}
+
+function biologyContentStats(topicId) {
+  const qs = topicTextQuestions(topicId);
+  const diags = diagramQuestions(topicId);
+  return {
+    notes: topicNotes(topicId).length,
+    total: qs.length,
+    mcq: qs.filter(q => q.type === 'mcq').length,
+    true_false: qs.filter(q => q.type === 'true_false').length,
+    fill_blank: qs.filter(q => q.type === 'fill_blank').length,
+    match: qs.filter(q => q.type === 'match').length,
+    short_answer: qs.filter(q => q.type === 'short_answer').length,
+    diagrams: diags.length,
+    diagramFigures: new Set(diags.map(q => q.image)).size,
+    companion: qs.filter(q => String(q.id).startsWith('bio-ol-')).length
+  };
 }
 
 function physicsContentStats(topicId) {
@@ -198,6 +256,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHAPTERS_3_TO_8 !== 'undefined' ? CHAPTERS_3_TO_8 : null,
     typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
     typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
+    typeof BIOLOGY_OLYMPIAD_COMPANION !== 'undefined' ? BIOLOGY_OLYMPIAD_COMPANION : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
@@ -584,7 +643,7 @@ function recordAttempt(qId, isCorrect, meta) {
 // Mastery summary for a chapter (topicId): attempted vs total gradable
 // questions, and accuracy across attempted ones.
 function chapterMastery(topicId) {
-  const gradable = isPhysicsTopic(topicId)
+  const gradable = (isPhysicsTopic(topicId) || isBiologyTopic(topicId))
     ? gradableQuestions(topicId)
     : appData.content.filter(c => c.topicId === topicId && c.type !== 'note' && c.type !== 'short_answer');
   let attempted = 0, correct = 0;
@@ -608,7 +667,7 @@ function chapterMastery(topicId) {
 function subjectMastery(subjectId) {
   const topics = appData.topics.filter(t => t.subjectId === subjectId);
   const topicIds = new Set(topics.map(t => t.id));
-  const gradable = subjectId === 'physics'
+  const gradable = subjectId === 'physics' || subjectId === 'biology'
     ? topics.flatMap(t => gradableQuestions(t.id))
     : appData.content.filter(c => topicIds.has(c.topicId) && c.type !== 'note' && c.type !== 'short_answer');
   let attempted = 0, correct = 0;
@@ -1099,9 +1158,14 @@ function isDiagramMcq(q) {
 }
 
 function diagramQuestions(topicId) {
-  return appData.content.filter(c =>
+  const all = appData.content.filter(c =>
     c.topicId === topicId && c.type !== 'note' && isDiagramMcq(c)
   );
+  if (isBiologyTopic(topicId)) {
+    const pipeline = all.filter(isBiologyOlympiadQuiz);
+    return pipeline.length ? pipeline : all;
+  }
+  return all;
 }
 
 function textQuestions(topicId) {
@@ -1784,6 +1848,13 @@ function renderTopics(el) {
             qs = st.total;
             diagrams = st.diagrams;
             cardMeta = `<span>📝 ${st.notes} notes</span><span>❓ ${st.total} questions</span><span>🔘 ${st.mcq} MCQ</span><span>🖼️ ${st.diagrams} diagram</span><span>✅ ${st.true_false} T/F</span>`;
+          } else if (selectedSubject === 'biology' && isBiologyTopic(t.id)) {
+            const st = biologyContentStats(t.id);
+            notes = st.notes;
+            mcqs = st.mcq;
+            qs = st.total;
+            diagrams = st.diagrams;
+            cardMeta = `<span>📝 ${st.notes} notes</span><span>❓ ${st.total} questions</span><span>🔘 ${st.mcq} MCQ</span>${st.diagrams ? `<span>🖼️ ${st.diagrams} diagram</span>` : ''}<span>🏆 Olympiad bank</span>`;
           } else {
             const contents = appData.content.filter(c=>c.topicId===t.id);
             notes = contents.filter(c=>c.type==='note').length;
@@ -1931,7 +2002,8 @@ function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
   const notes = topicNotes(selectedTopic);
   const questions = topicTextQuestions(selectedTopic);
-  const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic) : null;
+  const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic)
+    : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic) : null);
   const diagrams = diagramQuestions(selectedTopic);
   const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
   const mmData = chapterMindmap(selectedTopic);
@@ -1949,7 +2021,7 @@ function renderContent(el) {
       <div class="chapter-top">
         <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
         ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
-        ${qStats ? `<p class="chapter-bank-hint">📚 ICSE Physics — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} questions</strong> · <strong>${diagrams.length} diagram MCQs</strong></p>` : ''}
+        ${qStats ? `<p class="chapter-bank-hint">📚 ${isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation' : 'ICSE Physics'} — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} questions</strong> · <strong>${diagrams.length} diagram MCQs</strong>${qStats.companion ? ` · <strong>${qStats.companion} companion MCQs</strong>` : ''}</p>` : ''}
         <div class="chapter-tabs-row">
           <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
             <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
@@ -2756,6 +2828,7 @@ function invalidateQuestionSearchIndex() {
 function allSearchableQuestions() {
   return appData.content.filter(c => {
     if (c.type === 'note') return false;
+    if (isBiologyTopic(c.topicId)) return isBiologyOlympiadQuiz(c);
     if (!isPhysicsTopic(c.topicId)) return true;
     return isPhysicsPipelineItem(c) || isDiagramMcq(c);
   });
