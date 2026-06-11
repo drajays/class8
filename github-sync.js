@@ -13,6 +13,7 @@ const SYNC_DEFAULTS = {
 
 const SYNC_META_KEY = 'studyhub_sync_meta';
 const SYNC_CFG_KEY = 'studyhub_sync_config';
+const GITHUB_CONTENT_MAX_BYTES = 950000;
 
 function loadSyncConfig() {
   try {
@@ -55,6 +56,31 @@ function base64ToUtf8(b64) {
   const bin = atob(b64);
   const bytes = Uint8Array.from(bin, function (c) { return c.charCodeAt(0); });
   return new TextDecoder().decode(bytes);
+}
+
+function parseSyncJson(jsonText, sourceLabel) {
+  const trimmed = (jsonText || '').trim();
+  if (!trimmed) {
+    throw new Error('GitHub sync file is empty. Push from a device first, or reset the file in the repo.');
+  }
+  try {
+    const data = JSON.parse(trimmed);
+    if (!data || typeof data !== 'object') {
+      throw new Error('Sync file is not a valid JSON object.');
+    }
+    if (data._syncMode === 'delta') {
+      if (!Array.isArray(data.content)) data.content = [];
+      if (!Array.isArray(data.classes)) data.classes = [];
+      if (!Array.isArray(data.subjects)) data.subjects = [];
+      if (!Array.isArray(data.topics)) data.topics = [];
+    } else if (!Array.isArray(data.content)) {
+      throw new Error('Sync file missing "content" array.');
+    }
+    return data;
+  } catch (err) {
+    if (err.message && err.message.indexOf('Sync file') === 0) throw err;
+    throw new Error((sourceLabel || 'Sync file') + ' is not valid JSON. It may be truncated — try Push again with the new compact sync format.');
+  }
 }
 
 function formatSyncTime(iso) {
@@ -101,6 +127,24 @@ function githubHeaders(token) {
   };
 }
 
+async function fetchSyncFileText(cfg, body) {
+  if (body.content && body.encoding === 'base64') {
+    return base64ToUtf8(body.content.replace(/\n/g, ''));
+  }
+  const downloadUrl = body.download_url;
+  if (!downloadUrl) {
+    throw new Error('GitHub returned no file content. The sync file may be missing or inaccessible.');
+  }
+  const raw = await fetch(downloadUrl, {
+    headers: githubHeaders(cfg.token),
+    cache: 'no-store'
+  });
+  if (!raw.ok) {
+    throw new Error('Could not download sync file (' + raw.status + '). Check token permissions.');
+  }
+  return raw.text();
+}
+
 async function githubFetchRemote() {
   const cfg = loadSyncConfig();
   if (!cfg.token) throw new Error('Add a GitHub token in Cloud Sync settings first.');
@@ -116,13 +160,14 @@ async function githubFetchRemote() {
     throw new Error(err.message || ('GitHub error ' + res.status));
   }
   const body = await res.json();
-  const jsonText = base64ToUtf8(body.content.replace(/\n/g, ''));
-  const data = JSON.parse(jsonText);
+  const jsonText = await fetchSyncFileText(cfg, body);
+  const data = parseSyncJson(jsonText, 'GitHub sync file');
   return {
     exists: true,
     data: data,
     sha: body.sha,
-    exportedAt: data._exportedAt || null
+    exportedAt: data._exportedAt || null,
+    syncMode: data._syncMode || 'full'
   };
 }
 
@@ -132,7 +177,10 @@ async function githubPushRemote(payload, sha) {
   const path = encodeURIComponent(cfg.path).replace(/%2F/g, '/');
   const url = 'https://api.github.com/repos/' + cfg.owner + '/' + cfg.repo +
     '/contents/' + path;
-  const json = JSON.stringify(payload, null, 2);
+  const json = JSON.stringify(payload);
+  if (json.length > GITHUB_CONTENT_MAX_BYTES) {
+    throw new Error('Sync payload still too large (' + Math.round(json.length / 1024) + ' KB). Remove old full backup from GitHub and push again.');
+  }
   const body = {
     message: 'StudyHub sync: update ' + cfg.path,
     content: utf8ToBase64(json),
@@ -241,7 +289,7 @@ async function pullFromGithub(opts) {
       showToast('info', '☁️ No sync file on GitHub yet — push from this device first.');
       return;
     }
-    const mode = opts.mode || 'merge';
+    const mode = remote.syncMode === 'delta' || remote.data._syncMode === 'delta' ? 'merge' : (opts.mode || 'merge');
     applyImportedData(remote.data, mode, {
       silent: !!opts.silent,
       mergeUpdates: opts.mergeUpdates !== false
@@ -253,7 +301,11 @@ async function pullFromGithub(opts) {
       remoteNewer: false
     });
     clearSyncDirty({ sha: remote.sha, exportedAt: remote.exportedAt });
-    if (!opts.silent) showToast('success', '⬇️ Pulled from GitHub (' + remote.data.content.length + ' items).');
+    const ratingCount = remote.data.questionRatings ? Object.keys(remote.data.questionRatings).length : 0;
+    const itemCount = remote.data.content ? remote.data.content.length : 0;
+    if (!opts.silent) {
+      showToast('success', '⬇️ Pulled from GitHub (' + itemCount + ' edits, ' + ratingCount + ' rated questions).');
+    }
     render();
     populateSyncModal();
   } catch (err) {
@@ -292,9 +344,11 @@ async function pushToGithub() {
         }
       }
     } catch (e) {
-      /* file may not exist yet */
+      /* file may not exist yet, or old oversized file — next push replaces it */
     }
-    const payload = buildSyncPayload();
+    const payload = typeof buildCloudSyncPayload === 'function'
+      ? buildCloudSyncPayload()
+      : buildSyncPayload();
     const result = await githubPushRemote(payload, remoteSha);
     const now = new Date().toISOString();
     saveSyncMeta({
@@ -306,7 +360,7 @@ async function pushToGithub() {
       lastLocalSave: now
     });
     clearSyncDirty({ sha: result.sha, exportedAt: payload._exportedAt });
-    showToast('success', '⬆️ Pushed to GitHub — edits will sync to other devices.');
+    showToast('success', '⬆️ Pushed to GitHub — ratings & edits will sync to other devices.');
     populateSyncModal();
   } catch (err) {
     showToast('error', '❌ Push failed: ' + err.message);

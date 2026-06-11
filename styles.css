@@ -434,6 +434,31 @@ body{
 .sync-auto-pull input{margin-top:3px;accent-color:var(--accent)}
 .sync-actions{flex-wrap:wrap}
 
+.quality-badge{
+  display:inline-flex;align-items:center;gap:5px;margin-left:6px;
+  font-size:.72rem;font-weight:700;letter-spacing:.02em;
+  padding:2px 8px;border-radius:999px;vertical-align:middle;
+  background:var(--surface-2);border:1px solid var(--line);color:var(--accent);
+}
+.quality-badge .quality-level{font-size:.62rem;text-transform:uppercase;color:var(--ink-3);letter-spacing:.04em}
+.q-quality-5{color:#b8860b;border-color:color-mix(in srgb,#b8860b 35%,transparent)}
+.q-quality-4{color:var(--success);border-color:color-mix(in srgb,var(--success) 35%,transparent)}
+.q-quality-3{color:var(--ink-2)}
+.q-quality-2,.q-quality-1{color:var(--ink-3);opacity:.85}
+
+.user-rate-row{
+  display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;
+  margin-top:12px;padding:10px 12px;border-radius:10px;
+  background:var(--surface-2);border:1px solid var(--line);
+}
+.user-rate-label{font-size:.78rem;font-weight:700;color:var(--ink-2)}
+.user-star{
+  border:none;background:transparent;cursor:pointer;font-size:1rem;line-height:1;
+  color:var(--ink-3);padding:2px 3px;border-radius:6px;
+}
+.user-star:hover,.user-star-active{color:#b8860b;background:color-mix(in srgb,#b8860b 12%, transparent)}
+.user-rate-meta{font-size:.72rem;color:var(--ink-3);margin-left:auto}
+
 /* ---------- IMPORT PREVIEW ---------- */
 .import-preview{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:18px 0}
 .import-col{background:var(--surface-2);border:1px solid var(--line);border-radius:13px;padding:17px}

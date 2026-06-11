@@ -342,6 +342,7 @@ function setupPersistenceGuards() {
 let studyProgress = {};
 let studyBookmarks = new Set();
 let studyActivity = {};
+let questionRatings = {}; // qId -> { votes: { deviceId: 1-5 } }
 let revisionTab = 'mistakes'; // mistakes | bookmarks | due
 let quizSession = null;
 
@@ -379,6 +380,73 @@ function saveActivity() {
   try { localStorage.setItem('studyhub_activity', JSON.stringify(studyActivity)); }
   catch (e) { /* non-fatal */ }
   markSyncDirty();
+}
+
+function getDeviceId() {
+  try {
+    let id = localStorage.getItem('studyhub_device_id');
+    if (!id) {
+      id = 'dev-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+      localStorage.setItem('studyhub_device_id', id);
+    }
+    return id;
+  } catch (e) {
+    return 'dev-anon';
+  }
+}
+
+function loadQuestionRatings() {
+  try {
+    const raw = localStorage.getItem('studyhub_question_ratings');
+    questionRatings = raw ? JSON.parse(raw) : {};
+  } catch (e) { questionRatings = {}; }
+  if (!questionRatings || typeof questionRatings !== 'object') questionRatings = {};
+}
+
+function saveQuestionRatings() {
+  try { localStorage.setItem('studyhub_question_ratings', JSON.stringify(questionRatings)); }
+  catch (e) { /* non-fatal */ }
+  markSyncDirty();
+}
+
+function getQuestionRatingStats(qId) {
+  const rec = questionRatings[qId];
+  if (!rec || !rec.votes || typeof rec.votes !== 'object') return null;
+  const vals = Object.values(rec.votes).map(Number).filter(v => v >= 1 && v <= 5);
+  if (!vals.length) return null;
+  const sum = vals.reduce((a, b) => a + b, 0);
+  const deviceId = getDeviceId();
+  return {
+    avg: Math.round((sum / vals.length) * 10) / 10,
+    count: vals.length,
+    yours: rec.votes[deviceId] ? Number(rec.votes[deviceId]) : null
+  };
+}
+
+function rateQuestion(qId, stars) {
+  stars = Math.max(1, Math.min(5, parseInt(stars, 10)));
+  if (!questionRatings[qId]) questionRatings[qId] = { votes: {} };
+  questionRatings[qId].votes[getDeviceId()] = stars;
+  saveQuestionRatings();
+  updateQuestionCard(qId);
+  showToast('success', '⭐ Rated ' + stars + '/5 — saved locally and will sync via GitHub.');
+}
+
+function mergeQuestionRatings(imported) {
+  if (!imported || typeof imported !== 'object') return;
+  window._suppressSyncDirty = true;
+  Object.keys(imported).forEach(function (qId) {
+    const imp = imported[qId];
+    if (!imp || typeof imp !== 'object') return;
+    if (!questionRatings[qId]) questionRatings[qId] = { votes: {} };
+    const votes = imp.votes && typeof imp.votes === 'object' ? imp.votes : {};
+    Object.keys(votes).forEach(function (dev) {
+      const v = Number(votes[dev]);
+      if (v >= 1 && v <= 5) questionRatings[qId].votes[dev] = v;
+    });
+  });
+  saveQuestionRatings();
+  window._suppressSyncDirty = false;
 }
 
 function _progressDefaults() {
@@ -960,6 +1028,85 @@ function noteSortKey(n) {
 
 const Q_TYPE_SHORT = { mcq:'MCQ', true_false:'T/F', fill_blank:'Fill', short_answer:'Q&A', match:'Match' };
 
+const QUALITY_LEVELS = { 5: 'Olympiad', 4: 'NEET UG', 3: 'ICSE Class 8', 2: 'Practice', 1: 'Draft' };
+
+function getAutoQuestionQuality(q) {
+  if (q && q.qualityStars >= 1 && q.qualityStars <= 5) {
+    return {
+      stars: q.qualityStars,
+      level: q.qualityLevel || QUALITY_LEVELS[q.qualityStars] || 'ICSE Class 8',
+      source: 'auto'
+    };
+  }
+  const stem = (q && q.question) || '';
+  const sub = ((q && q.subtopic) || '').toLowerCase();
+  const id = (q && q.id) || '';
+  let stars = 3;
+  if ((id.startsWith('phy-s') && (id.includes('-ar') || id.includes('-up') || id.includes('-tf'))) ||
+      sub.includes('upgrade mcq') || sub.includes('assertion-reason')) {
+    stars = 5;
+  } else if (sub.includes('single correct') || sub.includes('statement')) {
+    stars = 4;
+  }
+  if (/Consider the following statements|How many of the above|State two important|Why is .+ important in this chapter/i.test(stem)) {
+    stars = Math.min(stars, 2);
+  }
+  if (stem.length > 280) stars -= 2;
+  else if (stem.length > 220) stars -= 1;
+  if (!(q && q.answer) || String(q.answer).length < 20) stars = Math.min(stars, 2);
+  stars = Math.max(1, Math.min(5, stars));
+  return { stars, level: QUALITY_LEVELS[stars], source: 'auto' };
+}
+
+function getQuestionQuality(q) {
+  const stats = q && q.id ? getQuestionRatingStats(q.id) : null;
+  if (stats && stats.count > 0) {
+    const stars = Math.max(1, Math.min(5, Math.round(stats.avg)));
+    return {
+      stars,
+      level: 'Community avg',
+      avg: stats.avg,
+      count: stats.count,
+      yours: stats.yours,
+      source: 'community'
+    };
+  }
+  return getAutoQuestionQuality(q);
+}
+
+function qualityBadgeHtml(q) {
+  const qm = getQuestionQuality(q);
+  const filled = Math.round(qm.source === 'community' ? qm.avg : qm.stars);
+  const stars = '★'.repeat(filled) + '☆'.repeat(5 - filled);
+  const title = qm.source === 'community'
+    ? ('Community average ' + qm.avg + '/5 (' + qm.count + ' rating' + (qm.count === 1 ? '' : 's') + ')')
+    : (qm.level + ' quality (auto)');
+  const meta = qm.source === 'community' ? `<span class="quality-level">${qm.avg} (${qm.count})</span>` : `<span class="quality-level">${escHtml(qm.level)}</span>`;
+  return `<span class="quality-badge q-quality-${filled}" title="${escHtml(title)}">${stars}${meta}</span>`;
+}
+
+function userRateRowHtml(q) {
+  const stats = getQuestionRatingStats(q.id);
+  const yours = stats && stats.yours ? stats.yours : 0;
+  let btns = '';
+  for (let s = 1; s <= 5; s++) {
+    const active = yours >= s ? ' user-star-active' : '';
+    btns += `<button type="button" class="user-star${active}" title="Rate ${s}/5" onclick="rateQuestion('${q.id}',${s})">★</button>`;
+  }
+  const avgTxt = stats
+    ? `Avg ${stats.avg}/5 · ${stats.count} rating${stats.count === 1 ? '' : 's'}${stats.yours ? ' · yours: ' + stats.yours : ''}`
+    : 'Tap to rate this question (syncs via GitHub)';
+  return `<div class="user-rate-row"><span class="user-rate-label">Your rating:</span>${btns}<span class="user-rate-meta">${avgTxt}</span></div>`;
+}
+
+function sortQuestionsByQuality(list) {
+  return list.slice().sort((a, b) => {
+    const diff = getQuestionQuality(b).stars - getQuestionQuality(a).stars;
+    if (diff !== 0) return diff;
+    return (a.subtopic || '').localeCompare(b.subtopic || '');
+  });
+}
+
 // ============================================================
 // NOTE FOLDING (collapse / expand concept cards)
 // ============================================================
@@ -1225,7 +1372,7 @@ function renderQuizView(el) {
       </div>
       <div class="progress-bar quiz-bar"><div class="progress-fill" style="width:${((idx + (answered ? 1 : 0)) / total) * 100}%"></div></div>
       <div class="question-card quiz-card">
-        <div class="q-label">${typeLabels[q.type] || q.type}${sourceChipHtml(q.source)}</div>
+        <div class="q-label">${typeLabels[q.type] || q.type}${sourceChipHtml(q.source)}${qualityBadgeHtml(q)}</div>
         ${mcqImageHtml(q)}
         <div class="q-text">${escHtml(q.question)}</div>
         ${body}
@@ -1832,6 +1979,7 @@ function renderQuestions(questions) {
 
   const types = [
     {key:'all',label:'All',icon:'📋'},
+    {key:'top',label:'Top ★★★★',icon:'⭐'},
     {key:'true_false',label:'True/False',icon:'✅'},
     {key:'fill_blank',label:'Fill Blanks',icon:'✍️'},
     {key:'mcq',label:'MCQ',icon:'🔘'},
@@ -1839,10 +1987,19 @@ function renderQuestions(questions) {
     {key:'short_answer',label:'Short/Long Answer',icon:'📋'}
   ];
 
-  const filtered = questionFilter === 'all' ? questions : questions.filter(q => q.type === questionFilter);
+  const filteredRaw = questionFilter === 'all'
+    ? questions
+    : questionFilter === 'top'
+      ? questions.filter(q => getQuestionQuality(q).stars >= 4)
+      : questions.filter(q => q.type === questionFilter);
+  const filtered = sortQuestionsByQuality(filteredRaw);
 
   let tabsHtml = `<div class="question-type-tabs">${types.map(t => {
-    const n = t.key === 'all' ? questions.length : questions.filter(q => q.type === t.key).length;
+    const n = t.key === 'all'
+      ? questions.length
+      : t.key === 'top'
+        ? questions.filter(q => getQuestionQuality(q).stars >= 4).length
+        : questions.filter(q => q.type === t.key).length;
     return `<div class="q-tab ${questionFilter===t.key?'active':''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</div>`;
   }).join('')}</div>`;
 
@@ -1919,7 +2076,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
   html += `<div class="q-label">${q.subtopic || typeLabels[q.type] || q.type}${
     sourceChipHtml(q.source)
-  }${diagramBadge}${
+  }${qualityBadgeHtml(q)}${diagramBadge}${
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
@@ -1972,6 +2129,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   </div>`;
 
   const bm = isBookmarked(q.id);
+  html += userRateRowHtml(q);
   html += `<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
     <button class="btn btn-sm ${bm ? 'btn-primary' : 'btn-outline'}" onclick="toggleBookmark('${q.id}');updateQuestionCard('${q.id}')">${bm ? '🔖 Saved' : '🔖 Save'}</button>
     <button class="btn btn-sm btn-outline" onclick="retrySingleQuestion('${q.id}')">▶ Practice</button>
@@ -2147,6 +2305,10 @@ function saveContent(e) {
   if (editId) {
     const idx = appData.content.findIndex(c=>c.id===editId);
     if (idx>=0) appData.content[idx] = item;
+    if (!isUserCreatedContentId(editId)) {
+      if (!appData.editedContentIds) appData.editedContentIds = [];
+      if (!appData.editedContentIds.includes(editId)) appData.editedContentIds.push(editId);
+    }
   } else {
     appData.content.push(item);
   }
@@ -2319,17 +2481,11 @@ function toggleSidebar() {
 // EXPORT / IMPORT
 // ============================================================
 function buildSyncPayload() {
-  let deviceId = '';
-  try { deviceId = localStorage.getItem('studyhub_device_id') || ''; } catch (e) {}
-  if (!deviceId) {
-    deviceId = 'dev-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
-    try { localStorage.setItem('studyhub_device_id', deviceId); } catch (e) {}
-  }
   return {
     _studyhub: true,
     _version: DATA_VERSION,
     _exportedAt: new Date().toISOString(),
-    _deviceId: deviceId,
+    _deviceId: getDeviceId(),
     _stats: {
       classes: appData.classes.length,
       subjects: appData.subjects.length,
@@ -2341,9 +2497,41 @@ function buildSyncPayload() {
     topics: appData.topics,
     content: appData.content,
     deletedContentIds: appData.deletedContentIds || [],
+    editedContentIds: appData.editedContentIds || [],
     progress: studyProgress,
     bookmarks: [...studyBookmarks],
-    activity: studyActivity
+    activity: studyActivity,
+    questionRatings: questionRatings
+  };
+}
+
+/** Lightweight payload for GitHub sync (avoids 1 MB API limit). */
+function buildCloudSyncPayload() {
+  const syncIds = new Set(
+    appData.content.filter(c => isUserCreatedContentId(c.id)).map(c => c.id)
+  );
+  (appData.editedContentIds || []).forEach(id => syncIds.add(id));
+  const deltaContent = appData.content.filter(c => syncIds.has(c.id));
+  return {
+    _studyhub: true,
+    _syncMode: 'delta',
+    _version: DATA_VERSION,
+    _exportedAt: new Date().toISOString(),
+    _deviceId: getDeviceId(),
+    _stats: {
+      contentDelta: deltaContent.length,
+      ratingCount: Object.keys(questionRatings).length
+    },
+    classes: appData.classes,
+    subjects: appData.subjects,
+    topics: appData.topics,
+    content: deltaContent,
+    deletedContentIds: appData.deletedContentIds || [],
+    editedContentIds: appData.editedContentIds || [],
+    progress: studyProgress,
+    bookmarks: [...studyBookmarks],
+    activity: studyActivity,
+    questionRatings: questionRatings
   };
 }
 
@@ -2438,6 +2626,8 @@ function applyImportedData(imp, mode, options) {
     if (imp.progress && typeof imp.progress === 'object') { studyProgress = imp.progress; saveProgress(); }
     if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
+    mergeQuestionRatings(imp.questionRatings);
+    if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
     saveData({ skipSync: true });
     if (!options.silent) showToast('success', '🔄 Data replaced! ' + appData.content.length + ' items loaded.');
     result = { added: imp.content.length, mode: 'replace' };
@@ -2483,6 +2673,12 @@ function applyImportedData(imp, mode, options) {
   if (imp.activity && typeof imp.activity === 'object') {
     studyActivity = Object.assign({}, imp.activity, studyActivity);
     saveActivity();
+  }
+  mergeQuestionRatings(imp.questionRatings);
+  if (Array.isArray(imp.editedContentIds)) {
+    const eds = new Set(appData.editedContentIds || []);
+    imp.editedContentIds.forEach(id => eds.add(id));
+    appData.editedContentIds = Array.from(eds);
   }
   saveData({ skipSync: true });
   if (!options.silent) {
@@ -2540,6 +2736,7 @@ function initApp() {
   // and always current.
   loadData();
   loadProgress();
+  loadQuestionRatings();
   render();
   setupPersistenceGuards();
   registerServiceWorker();
