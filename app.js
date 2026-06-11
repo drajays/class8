@@ -54,7 +54,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 46;
+const DATA_VERSION = 47;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -97,7 +97,11 @@ function isPhysicsPipelineItem(c) {
   return !!(c && c.id && String(c.id).startsWith('phy-s'));
 }
 
-/** Notes for a chapter — physics uses Srijan pipeline (phy-s*) only. */
+function isBiologyRevisionNote(c) {
+  return !!(c && c.id && String(c.id).startsWith('bio-rev-'));
+}
+
+/** Notes for a chapter — physics uses Srijan pipeline (phy-s*); biology uses expert revision (bio-rev-*). */
 function topicNotes(topicId) {
   const all = appData.content.filter(c =>
     (!topicId || c.topicId === topicId) && c.type === 'note'
@@ -105,11 +109,16 @@ function topicNotes(topicId) {
   if (!topicId) {
     return all.filter(c => {
       if (isPhysicsTopic(c.topicId)) return isPhysicsPipelineItem(c);
+      if (isBiologyTopic(c.topicId)) return isBiologyRevisionNote(c);
       return true;
     });
   }
   if (isPhysicsTopic(topicId)) {
     const pipeline = all.filter(isPhysicsPipelineItem);
+    return pipeline.length ? pipeline : all;
+  }
+  if (isBiologyTopic(topicId)) {
+    const pipeline = all.filter(isBiologyRevisionNote);
     return pipeline.length ? pipeline : all;
   }
   return all;
@@ -257,6 +266,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
     typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
     typeof BIOLOGY_OLYMPIAD_COMPANION !== 'undefined' ? BIOLOGY_OLYMPIAD_COMPANION : null,
+    typeof BIOLOGY_REVISION_NOTES !== 'undefined' ? BIOLOGY_REVISION_NOTES : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,

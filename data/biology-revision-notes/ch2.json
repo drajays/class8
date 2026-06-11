@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bio-rev-ch2-01",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "1. Asexual Reproduction — Fission & Budding",
+    "content": "**Reproduction** — biological process by which living organisms produce **offspring** of their own kind, ensuring **species continuity**.\n\n**Asexual reproduction** — new individuals from **one parent** only; **no fusion of gametes**; offspring are **genetically identical** (clones); rapid, no need to find a mate.\n\n**Binary fission** (unicellular):\n• Parent cell divides into **two equal daughter cells** (e.g. **Amoeba**, bacteria).\n• Nucleus divides first (mitosis), then cytoplasm splits.\n\n**Multiple fission** — nucleus divides repeatedly, then many daughter cells released (e.g. **Plasmodium**).\n\n**Budding** — small **outgrowth (bud)** on parent body develops into new individual, may detach or remain colonial (e.g. **Hydra**, **yeast**).\n• Bud receives nucleus, grows, eventually separates when mature.\n\n**Must know**\n• Asexual = one parent, no gamete fusion, identical offspring.\n• Fission in Amoeba = binary; yeast/Hydra = budding.\n• Asexual is fast and preserves well-adapted genotypes but no variation.",
+    "explanation": "**Definitions:**\n• Clone — genetically identical copy of parent.\n• Bud — undeveloped outgrowth that can form a new organism.\n\n**Compare / Exam traps:**\n• Asexual vs sexual: one parent vs two; no variation vs variation; faster vs slower.\n• 'Budding involves meiosis' is FALSE — mitotic divisions only.\n• Yeast budding leaves a **bud scar** on parent cell.",
+    "teacherTip": "Budding = Baby outgrowth; Fission = split into two — picture Hydra with bump, Amoeba pinching in half.",
+    "examTip": "Name the organism with the method: Amoeba–fission, Hydra–budding, yeast–budding — match-column staple.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-02",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "2. Fragmentation, Spores & Vegetative Propagation",
+    "content": "**Fragmentation** — parent body breaks into pieces; each fragment grows into a complete new organism (e.g. **Spirogyra** alga filaments, **Planaria** flatworm).\n\n**Spore formation** — specialised **reproductive cells (spores)** produced in large numbers inside **sporangia**; light, walled, dispersed by wind/water; germinate in suitable conditions (e.g. **Rhizopus** bread mould, **ferns**, mosses).\n• Spores are **not seeds** — unicellular, no stored food reserve like endosperm.\n\n**Vegetative propagation** — new plants from **vegetative parts** (root, stem, leaf) without seeds or flowers — still asexual.\n• **Stem**: runners (strawberry), stolons, tubers (potato — eyes are buds), bulbs (onion), rhizomes (ginger).\n• **Root**: sweet potato (adventitious buds on roots), dahlias.\n• **Leaf**: **Bryophyllum** — buds (plantlets) on leaf margins.\n\n**Must know**\n• Fragmentation needs no special reproductive organ — just breakage + regeneration.\n• Spores = asexual in fungi/ferns; produced in millions for dispersal.\n• Vegetative propagation = artificial or natural cloning of crop plants.",
+    "explanation": "**Definitions:**\n• Sporangium — structure producing spores.\n• Vegetative propagation — asexual reproduction using non-reproductive plant parts.\n\n**Compare / Exam traps:**\n• Spore (single cell, no embryo) ≠ seed (embryo + food + coat).\n• Potato tuber is modified stem, not root — 'eyes' are axillary buds.\n• Bryophyllum plantlets are vegetative, not from flowers.",
+    "teacherTip": "Bryophyllum = Babies on leaf margin; Potato eyes = buds on stem tuber — don't call tuber a root.",
+    "examTip": "Give two examples each of natural vegetative propagation from stem and leaf — strawberry runner + potato tuber; Bryophyllum + Begonia leaf.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-03",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "3. Grafting, Layering & Tissue Culture",
+    "content": "**Artificial vegetative propagation** — horticultural methods to grow desirable plants quickly with known traits.\n\n**Grafting:**\n• Join **scion** (shoot of desired variety) to **stock/rootstock** (root system of hardy variety).\n• Vascular cambium of both must align and fuse; tied + sealed until union forms.\n• Examples: mango, rose, citrus, apple.\n• Stock provides roots/disease resistance; scion provides fruit/flower quality.\n\n**Layering** — stem still attached to parent while roots form at bent buried portion (e.g. jasmine, grape, bougainvillea).\n\n**Cutting** — stem/twig planted in moist soil develops adventitious roots (e.g. rose, sugarcane, money plant).\n\n**Tissue culture (micropropagation):**\n• Small **explant** (meristem/cell) grown on sterile nutrient medium → **callus** → many plantlets (clones) in weeks.\n• Disease-free, rapid mass production (orchids, banana, potato).\n\n**Must know**\n• Grafting combines two plants; cutting/layering uses one plant.\n• Scion = upper/desired; Stock = lower/root part.\n• Tissue culture needs sterile lab conditions and plant hormones (auxin, cytokinin).",
+    "explanation": "**Definitions:**\n• Scion — grafted shoot bearing desired traits.\n• Stock — rooted base providing support and nutrients.\n• Explant — small plant tissue used to initiate culture.\n\n**Compare / Exam traps:**\n• Grafted plant is genetically chimeric — fruit from scion tissue, roots from stock.\n• 'Grafting works between any two species' is FALSE — close relatives needed for vascular union.\n• Tissue culture is asexual — all plantlets identical.",
+    "teacherTip": "Scion on top = Superior fruit; Stock below = Strong roots — S-S mnemonic.",
+    "examTip": "Label scion and stock in graft diagram; state why cambium contact is essential — one mark each.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-04",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "4. Flower Structure — Four Whorls",
+    "content": "A **flower** is the **reproductive organ** of angiosperms (flowering plants). Typical parts arranged as **four whorls** on **thalamus/receptacle**:\n\n**Calyx (outermost)** — sepals; usually green; protect flower bud.\n\n**Corolla** — petals; often coloured/scented; attract pollinators.\n\n**Androecium (male whorl)** — stamens; each stamen = **filament** + **anther**; anther produces **pollen grains** (male gametophytes / contain male gametes).\n\n**Gynoecium / pistil (female whorl)** — usually one or more carpels; each carpel has **stigma** (sticky landing platform) + **style** (stalk) + **ovary** (base, contains **ovules** with egg cell / female gamete).\n\n**Complete flower** — all four whorls present (e.g. mustard, china rose).\n**Incomplete flower** — one or more whorls missing (e.g. corn — no petals).\n**Bisexual (hermaphrodite)** — both androecium and gynoecium (e.g. hibiscus).\n**Unisexual** — staminate (male) or pistillate (female) only (e.g. papaya, watermelon).\n\n**Must know**\n• Stamen = male; carpel/pistil = female.\n• Ovule inside ovary → after fertilisation becomes seed; ovary wall → fruit.\n• Pollen lands on stigma, not ovary directly.",
+    "explanation": "**Definitions:**\n• Pollen grain — male reproductive unit produced in anther.\n• Ovule — structure in ovary containing female gamete (egg).\n\n**Compare / Exam traps:**\n• Petal attracts; sepal protects — don't swap functions.\n• 'Ovary becomes seed' is FALSE — ovule → seed, ovary → fruit.\n• Essential whorls = androecium + gynoecium (for reproduction); calyx + corolla = non-essential (accessory).",
+    "teacherTip": "From outside in: Calyx, Corolla, Androecium, Gynoecium — CCAG or 'Can Cats Attack Gerbils' for whorl order.",
+    "examTip": "Draw longitudinal section of bisexual flower labelling all parts — ICSE diagram question almost every cycle.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-05",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "5. Pollination — Self, Cross & Agents",
+    "content": "**Pollination** — transfer of **pollen grains** from **anther** to **stigma** of a flower. Essential BEFORE fertilisation can occur.\n\n**Self-pollination** — pollen from anther lands on stigma of the **same flower** or **another flower on same plant** (e.g. pea, wheat, rice).\n• Economical (little pollen wasted); no pollinator needed; less genetic variation.\n\n**Cross-pollination** — pollen transferred to stigma of a flower on a **different plant of same species** (e.g. mustard, sunflower, apple).\n• More genetic variation; needs agents; pollen produced in large quantities.\n\n**Pollinating agents:**\n• **Insects** (entomophily) — bright petals, scent, nectar; sticky/rough pollen; sticky stigma (e.g. rose, jasmine).\n• **Wind** (anemophily) — small dull flowers, no nectar; pollen light, smooth, abundant; long hanging anthers; feathery stigma (e.g. grass, maize, pine).\n• **Water** (hydrophily) — rare (e.g. Vallisneria).\n\n**Must know**\n• Pollination ≠ fertilisation — pollination is pollen transfer; fertilisation is fusion of gametes inside ovule.\n• Insect-pollinated: large colourful flowers; wind-pollinated: inconspicuous, pollen wastage high.\n• Cross-pollination increases adaptability of species.",
+    "explanation": "**Definitions:**\n• Entomophily — insect pollination.\n• Anemophily — wind pollination.\n\n**Compare / Exam traps:**\n• Self-pollination: small pollen number, short filaments; Cross/wind: huge pollen, long exposed anthers.\n• 'Pollen reaches ovule directly' is FALSE — must germinate on stigma, grow pollen tube through style.\n• Maize tassels (male) and silks (female stigma) — classic wind pollination example.",
+    "teacherTip": "Wind = Wasteful pollen, feathery stigma; Insect = Inviting colours, nectar, sticky pollen.",
+    "examTip": "Tabular compare self vs cross pollination — examiners love 4 differences (agents, pollen number, variation, flower type).",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-06",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "6. Fertilisation & Post-Fertilisation Changes",
+    "content": "**Fertilisation (double fertilisation in angiosperms — foundation level):**\n• Pollen grain germinates on stigma → **pollen tube** grows down style into ovary.\n• Male gamete fuses with **egg cell** in ovule → **zygote** (diploid) → develops into **embryo**.\n• (In advanced texts: second male gamete fuses with polar nuclei → endosperm — triploid food tissue.)\n\n**Post-fertilisation changes:**\n• **Ovule** → **seed** (contains embryo + stored food + seed coat/testa).\n• **Ovary wall** → **fruit** (pericarp); protects seeds, aids dispersal.\n• Other floral parts (petals, stamens, style, stigma) usually **wither and fall**.\n• **Ovary** alone ripens into fruit; other whorls do not become fruit.\n\n**Fruit** — ripened ovary; may be fleshy (mango, tomato) or dry (mustard, pea pod).\n**True fruit** — develops only from ovary (apple flesh is thalamus — false fruit accessory).\n\n**Must know**\n• Fertilisation occurs inside ovule, not on stigma.\n• Zygote → embryo; ovule → seed; ovary → fruit.\n• Seed dispersal follows fruit/seed maturation.",
+    "explanation": "**Definitions:**\n• Zygote — diploid cell formed by fusion of male and female gametes.\n• Embryo — young plant in seed with radicle, plumule, cotyledons.\n\n**Compare / Exam traps:**\n• Pollination (external transfer) happens before fertilisation (internal fusion).\n• 'Petal becomes fruit' is FALSE.\n• Tomato is a fruit botanically (develops from ovary) though used as vegetable in cooking.",
+    "teacherTip": "O-S-F chain: Ovule → Seed, Ovary → Fruit — write this chain first in every post-fertilisation answer.",
+    "examTip": "Label pollen tube path: stigma → style → ovary → micropyle → synergids/egg — diagram-based MCQs common in Olympiads.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-07",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "7. Seed Structure & Germination",
+    "content": "A **seed** is a mature **ovule** containing an **embryo** ready for dispersal and germination.\n\n**Parts of a typical dicot seed (e.g. bean):**\n• **Seed coat (testa)** — protective outer layer; **micropyle** — small pore for water entry and oxygen.\n• **Cotyledons** — seed leaves; store food (thick in bean) or absorb endosperm (wheat has one cotyledon).\n• **Embryo** — **radicle** (future root), **plumule** (future shoot), **hypocotyl**.\n\n**Monocot seed (e.g. maize/corn):**\n• Single cotyledon (scutellum); food stored in **endosperm**; embryo small.\n\n**Germination conditions:** water (activates enzymes), oxygen (respiration), suitable temperature; light needed only for some seeds.\n\n**Types:**\n• **Epigeal** — cotyledons pushed above ground (bean).\n• **Hypogeal** — cotyledons remain underground (pea, maize).\n\n**Must know**\n• Seed = ovule after fertilisation; dispersal avoids competition with parent.\n• Micropyle allows water uptake for imbibition.\n• Cotyledons provide food until seedling can photosynthesise.",
+    "explanation": "**Definitions:**\n• Germination — resumption of growth of embryo into seedling.\n• Imbibition — absorption of water causing seed to swell.\n\n**Compare / Exam traps:**\n• Dicot = two cotyledons; Monocot = one cotyledon.\n• 'Seed and fruit develop simultaneously' — fruit often encloses seed.\n• Dormancy — seed waits for favourable season before germinating.",
+    "teacherTip": "Radicle Roots first, Plumule Pushes shoot — R-before-P in germination order.",
+    "examTip": "Identify parts in soaked bean seed dissection — radicle, plumule, cotyledon, testa, micropyle labels expected.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-08",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "8. Seed Dispersal — Agents & Adaptations",
+    "content": "**Seed dispersal** — scattering of seeds away from parent plant to reduce competition for light, water, minerals and space; colonise new habitats.\n\n**By wind (anemochory):**\n• Light seeds, winged (maple, drumstick/Moringa), hairy parachutes (dandelion, cotton, calotropis).\n\n**By water (hydrochory):**\n• Fibrous husk, air spaces — coconut floats on sea currents for long distances.\n\n**By animals (zoochory):**\n• Hooks/spines stick to fur (Xanthium, burdock); edible fruits — seeds pass through gut unharmed (tomato, guava) or dropped after eating.\n\n**By explosive mechanism (autochory):**\n• Sudden drying causes pod to split/shatter flinging seeds (balsam 'touch-me-not', pea, castor).\n\n**By humans/agencies:**\n• Agriculture, trade, accidental transport.\n\n**Must know**\n• Each adaptation matches dispersal agent (wing → wind, hook → animal fur).\n• Dispersal increases survival and species spread.\n• Fruit aids animal dispersal by being colourful, tasty, nutritious.",
+    "explanation": "**Definitions:**\n• Dispersal — transport of seeds/ fruits away from parent plant.\n• Autochory — self-dispersal by explosive fruits.\n\n**Compare / Exam traps:**\n• Coconut = water dispersal, not wind (heavy with fibrous coat for floating).\n• Cotton fibres aid wind dispersal of seeds.\n• 'All fruits are dispersed by animals' is FALSE.",
+    "teacherTip": "W-W-A-E: Wind (wings), Water (coconut), Animals (hooks/fruit), Explosion (balsam).",
+    "examTip": "Match seed/fruit to agent: maple–wind, coconut–water, Xanthium–animal, balsam–explosion — pure recall MCQs.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-09",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "9. Sexual vs Asexual Reproduction in Plants",
+    "content": "**Sexual reproduction in plants** — involves **formation of gametes**, **pollination**, **fertilisation**; offspring show **genetic variation**; slower but enables evolution and adaptation.\n\n**Asexual reproduction** — no gametes, no fertilisation; **one parent**; **identical** offspring; rapid, used for stable crop varieties.\n\n| Feature | Asexual | Sexual |\n| Mode | Vegetative parts, spores, fission, budding | Flowers, gametes, seeds |\n| Parents | One | Two (male + female gametes) |\n| Variation | None (clones) | Present |\n| Speed | Fast | Slower (needs pollination + seed) |\n| Examples | Potato, rose cutting, fern spores | Mustard, mango (from seed), pea |\n\n**When each is advantageous:**\n• Asexual — preserve hybrid quality, rapid orchard expansion, no pollinator needed.\n• Sexual — new combinations of genes, seed dormancy survives harsh seasons, long-distance dispersal.\n\n**Must know**\n• Higher plants reproduce both ways; farmers use asexual for clones, sexual for new varieties.\n• Variation from sexual reproduction is raw material for natural selection.\n• Hybrid seeds (sexual) may not breed true in next generation.",
+    "explanation": "**Definitions:**\n• Gamete — haploid reproductive cell (pollen/egg in plants).\n• Hybrid — offspring from parents of different varieties/species with mixed traits.\n\n**Compare / Exam traps:**\n• 'Asexual reproduction involves mitosis only' — TRUE for cell division aspect.\n• 'Sexual reproduction always needs flowers' — TRUE for angiosperms; ferns use spores + fertilisation (alternation of generations).\n• Seed formation requires fertilisation; tuber sprouting does not.",
+    "teacherTip": "Sexual = Shuffle genes (variation); Asexual = Xerox copy (identical).",
+    "examTip": "Give two advantages of each type — standard 4-mark question; mention variation for sexual, speed and clone fidelity for asexual.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch2-10",
+    "topicId": "bio-ch2",
+    "type": "note",
+    "subtopic": "10. Complete Reproductive Cycle — Flower to New Plant",
+    "content": "**Life cycle summary (angiosperm):**\n\n1. **Flower develops** on mature plant.\n2. **Pollen** forms in anther; **ovule** with egg forms in ovary.\n3. **Pollination** — pollen to stigma (self or cross).\n4. **Pollen tube** carries male gamete to ovule.\n5. **Fertilisation** — zygote forms → **embryo**; ovule → **seed**; ovary → **fruit**.\n6. **Seed dispersal** by wind/water/animals/explosion.\n7. **Germination** under suitable conditions — radicle → root, plumule → shoot.\n8. Seedling grows into mature flowering plant → cycle repeats.\n\n**Alternation in farmers' practice:**\n• Mango grafting (asexual) for known sweet variety.\n• Mustard/wheat from seed (sexual) each season.\n• Banana — sterile seeds, propagated vegetatively (suckers).\n\n**Must know**\n• Correct sequence: pollination BEFORE fertilisation; fertilisation BEFORE seed/fruit formation.\n• Fruit protects and helps disperse seeds.\n• Full cycle links reproduction to species survival and spread.",
+    "explanation": "**Definitions:**\n• Life cycle — series of stages from one generation to the next.\n• Seedling — young plant after germination.\n\n**Compare / Exam traps:**\n• Order trap: fertilisation cannot occur before pollination.\n• 'Fruit formation without fertilisation' — parthenocarpic fruits (banana, some oranges) possible but no true seeds.\n• Dispersal is NOT the same as germination.",
+    "teacherTip": "Write the 7-step chain on flashcard: Flower → Pollen/Ovule → Pollination → Pollen tube → Fertilisation → Seed/Fruit → Dispersal → Germination.",
+    "examTip": "Arrange jumbled stages questions — number pollination as step before fertilisation; seed formation after fertilisation only.",
+    "source": "revision"
+  }
+]

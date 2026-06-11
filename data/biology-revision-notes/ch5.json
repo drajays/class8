@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bio-rev-ch5-01",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "1. Endocrine vs Exocrine Glands",
+    "content": "The body has two main types of glands:\n\n**Endocrine glands:**\n• **Ductless** — secrete **hormones** directly into the **bloodstream**.\n• Hormones are carried by blood to **target organs** (often far from the gland).\n• Act in **very small quantities** but have powerful, widespread effects.\n• Examples: pituitary, thyroid, pancreas (islets), adrenal, testes, ovaries.\n\n**Exocrine glands:**\n• Have **ducts (tubes)** that carry secretions to a body surface or cavity.\n• Secretions usually act **locally** on surfaces.\n• Examples: **sweat** glands (skin), **salivary** glands (mouth), **gastric** glands (stomach), **mammary** glands (milk).\n\n**Hormones** — chemical **messengers** produced by endocrine glands; regulate growth, metabolism, reproduction, blood sugar, stress response, etc.\n\n**Must know**\n• Endocrine = ductless + into blood.\n• Exocrine = with ducts + onto surface/cavity.\n• Hormones needed in tiny amounts — 'poured in large quantities' is FALSE.",
+    "explanation": "**Definitions:**\n• Hormone — regulatory chemical substance produced by an endocrine gland, transported in blood to stimulate specific target cells.\n• Endocrine gland — ductless gland secreting hormones into blood.\n• Exocrine gland — gland secreting through a duct onto a surface or into a cavity.\n\n**Exam traps:**\n• Pancreas is **mixed** — islets of Langerhans (endocrine: insulin/glucagon) + pancreatic juice ducts (exocrine: digestive enzymes).\n• 'Endocrine secretions act on surfaces' describes exocrine, not endocrine.\n• Sweat and saliva are NOT hormones.",
+    "teacherTip": "Endocrine = ENters blood (no Exit duct). Exocrine = EXits through a duct.",
+    "examTip": "Distinguish exocrine vs endocrine on basis of secretion — mention ducts vs ductless and blood vs surface.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-02",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "2. Pituitary Gland — The Master Gland",
+    "content": "The **pituitary gland** is a **pea-sized** gland at the **base of the brain**, below the hypothalamus. It is called the **'master gland'** because it secretes hormones that **control the activity of other endocrine glands**.\n\n**Key hormones & functions:**\n• **Growth Hormone (GH / STH)** — stimulates growth of bones and tissues; promotes overall body growth.\n• **TSH** (Thyroid-Stimulating Hormone) — stimulates thyroid to secrete thyroxine.\n• **ACTH** — stimulates adrenal cortex.\n• **FSH / LH** — regulate reproductive organs (ovaries/testes).\n\n**Disorders linked to GH:**\n• **Deficiency in childhood** → dwarfism (stunted growth).\n• **Excess in childhood** → gigantism (abnormal height).\n• **Excess in adulthood** → acromegaly (enlarged hands, feet, face).\n\n**Must know**\n• Called master gland because it **regulates other glands**, not because it is largest or strongest.\n• Pituitary also triggers **puberty** by signalling testes/ovaries to produce sex hormones.\n• Being pea-sized is true but irrelevant to why it is 'master'.",
+    "explanation": "**Definitions:**\n• Master gland — pituitary; controls other endocrine glands via its tropic hormones.\n• Growth hormone — pituitary hormone accelerating growth of body cells and tissues.\n\n**Exam traps:**\n• 'Pituitary is the largest gland' is FALSE.\n• 'Master gland because it is pea-sized' is FALSE — size is not the reason.\n• Growth hormone from pituitary, NOT thyroid.",
+    "teacherTip": "Master = Manager — pituitary manages (controls) the other endocrine glands.",
+    "examTip": "Give reason: 'Pituitary is master gland' → secretes hormones that regulate activity of other endocrine glands.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-03",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "3. Thyroid Gland & Parathormone",
+    "content": "**Thyroid gland:**\n• **Butterfly-shaped**, bilobed gland on either side of the **windpipe (trachea)**, just below the **larynx**; two lobes joined by the **isthmus**.\n• Secretes **thyroxine** (needs **iodine** for its synthesis).\n• **Function:** controls **basal metabolic rate** (BMR) — speed of most body chemical reactions; influences growth and development.\n\n**Thyroxine disorders:**\n• **Deficiency (hypothyroidism):**\n  - In infants → **cretinism** (physical + mental retardation, stunted growth).\n  - In adults → **myxoedema** (sluggishness, swelling of face and hands).\n  - Iodine deficiency → **simple goitre** (enlarged thyroid).\n• **Excess (hyperthyroidism):** increased metabolic rate, weight loss, restlessness, rapid heartbeat — also harmful.\n\n**Parathyroid glands & Parathormone:**\n• **Four tiny glands** embedded on the **posterior (back) surface** of thyroid — two on each lobe.\n• Secrete **parathormone (PTH)** — regulates **calcium and phosphorus** metabolism in blood and bones.\n• Works with thyroid to maintain mineral balance.\n\n**Must know**\n• Thyroxine needs **iodine** — 'iodised salt' prevents goitre.\n• Oversecretion of thyroxine is harmful, NOT beneficial.\n• Parathyroids are ON the thyroid (back), not inside the pituitary.",
+    "explanation": "**Definitions:**\n• Thyroxine — thyroid hormone controlling metabolic rate.\n• Goitre — enlargement of thyroid due to iodine deficiency.\n• Parathormone — hormone from parathyroid glands regulating blood calcium levels.\n\n**Exam traps:**\n• Cretinism = infant thyroxine deficiency; Myxoedema = adult thyroxine deficiency.\n• 'Oversecretion of thyroxine is very important' is FALSE — it is harmful.\n• Parathyroid embedded in **thyroid**, NOT pituitary.",
+    "teacherTip": "Front view: butterfly + isthmus. Back view: four parathyroids — draw both views for diagram marks.",
+    "examTip": "Match: Simple goitre→iodine deficiency; Cretinism→infant; Myxoedema→adult; Increased metabolic rate→oversecretion of thyroxine.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-04",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "4. Pancreas — Insulin & Glucagon",
+    "content": "The **pancreas** lies **behind the stomach** in the abdomen. It is a **mixed gland** — exocrine (digestive juice via duct) + endocrine (**islets of Langerhans**).\n\n**Insulin** (from beta cells of islets):\n• **Lowers blood glucose** — helps cells absorb glucose; converts excess glucose into **glycogen** stored in liver and muscles.\n• Deficiency → **diabetes mellitus** (high blood sugar, glucose in urine, thirst, frequent urination).\n\n**Glucagon** (from alpha cells of islets):\n• **Raises blood glucose** — stimulates breakdown of **glycogen → glucose** in liver (glycogenolysis).\n• Acts when blood sugar is **too low** (e.g. between meals, during fasting).\n\n**Insulin vs Glucagon — antagonistic pair:**\n• Insulin ↓ blood sugar; Glucagon ↑ blood sugar.\n• Together maintain **blood glucose homeostasis**.\n\n**Must know**\n• Insulin from pancreas, NOT thyroid.\n• **Insufficient** insulin causes diabetes — NOT oversecretion.\n• Insulin converts glucose → glycogen (stores sugar); glucagon does the reverse.",
+    "explanation": "**Definitions:**\n• Insulin — pancreatic hormone lowering blood glucose by promoting uptake and glycogen storage.\n• Glucagon — pancreatic hormone raising blood glucose by breaking down glycogen.\n• Diabetes mellitus — disease caused by insufficient insulin, leading to high blood glucose.\n\n**Exam traps:**\n• 'Oversecretion of insulin causes diabetes' is FALSE — deficiency causes it.\n• 'Insulin converts glycogen to glucose' is FALSE — that is glucagon's role.\n• Glucose → glycogen = insulin; Glycogen → glucose = glucagon.",
+    "teacherTip": "In-sulin puts sugar IN storage (glycogen). Gluca-gon lets glucose GO out of storage.",
+    "examTip": "Distinguish insulin vs glucagon on function — opposite effects on blood glucose; give one line each.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-05",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "5. Adrenal Gland & Adrenaline",
+    "content": "Two **adrenal glands**, one on top of each **kidney** (like a cap). Each has two regions:\n\n**Adrenal medulla (inner):**\n• Secretes **adrenaline (epinephrine)** — the **'emergency hormone'** / **'fight-or-flight hormone'**.\n• Released in large amounts during **stress, fear, anger or excitement**.\n• **Effects:** increases heart rate, blood pressure, breathing rate; dilates pupils; redistributes blood to muscles; converts glycogen to glucose for quick energy; reduces digestion.\n• Prepares body to **face danger or flee**.\n\n**Adrenal cortex (outer):**\n• Secretes **cortisone** (corticosteroid) — influences carbohydrate, fat and protein metabolism; regulates salt and water balance; reduces inflammation.\n\n**Must know**\n• Adrenaline from **medulla**, NOT cortex.\n• Also called epinephrine — same hormone, two names.\n• Secreted in response to emotional/physical stress — 'emergency hormone'.\n• Adrenal glands sit above kidneys, NOT in the abdomen near stomach (that's pancreas).",
+    "explanation": "**Definitions:**\n• Adrenaline (epinephrine) — hormone from adrenal medulla preparing the body for emergency response.\n• Fight-or-flight response — physiological reaction to perceived threat: increased alertness and energy.\n\n**Exam traps:**\n• 'Epinephrine secreted by adrenal cortex' is FALSE — medulla secretes it.\n• 'Adrenaline lowers blood glucose' is FALSE — it raises glucose (glycogen breakdown).\n• Cortisone = cortex; Adrenaline = medulla — don't swap them.",
+    "teacherTip": "Medulla = Emergency (adrenaline). Cortex = Cortisone — both C's help remember the cortex hormone.",
+    "examTip": "Give reason: 'Adrenaline is emergency hormone' → released during stress, prepares body to fight or flee.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-06",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "6. Adolescence & Puberty",
+    "content": "**Adolescence:**\n• Transitional period between **childhood and adulthood** (roughly **11–19 years**).\n• Body undergoes changes leading to **reproductive maturity**.\n• Marked by rapid **growth spurt**, emotional changes, and increased self-awareness.\n\n**Puberty:**\n• The stage when the **reproductive system matures** and becomes capable of reproduction.\n• Triggered by hormones — pituitary signals **testes** (boys) and **ovaries** (girls) to produce sex hormones.\n\n**Changes in boys (testosterone):**\n• Facial and body hair growth; **Adam's apple** enlarges; voice **deepens**.\n• Penis and testes enlarge; shoulders broaden; muscle development.\n\n**Changes in girls (estrogen):**\n• **Breast development**; widening of hips.\n• Onset of **menstruation** (monthly cycle); growth of pubic hair.\n\n**Common to both:**\n• Growth spurt; acne/pimples; increased sweating; mood swings; development of secondary sexual characters.\n\n**Must know**\n• Adolescence is broader than puberty — puberty is part of adolescence.\n• Testosterone = male sex hormone; Estrogen = female sex hormone.\n• Hormones are responsible for puberty changes — not just growth in general.",
+    "explanation": "**Definitions:**\n• Adolescence — period of life between childhood and adulthood with physical and emotional changes toward reproductive maturity.\n• Puberty — period when reproductive organs mature and reproduction becomes possible.\n• Secondary sexual characters — features distinguishing males and females (not directly involved in reproduction).\n\n**Exam traps:**\n• 'Adolescence and puberty are identical' is FALSE — puberty is one phase within adolescence.\n• Adam's apple = protruding part of throat due to larynx growth in boys.\n• Menstruation begins at puberty in girls — link to estrogen.",
+    "teacherTip": "Pituitary starts the puberty clock → testes/ovaries release sex hormones → body changes follow.",
+    "examTip": "List changes separately for boys AND girls PLUS common changes — examiners check all three groups.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-07",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "7. Physical Hygiene During Adolescence",
+    "content": "Adolescence brings rapid body changes — **physical hygiene** is essential for health, confidence and disease prevention.\n\n**1. Proper & safe food:**\n• Balanced diet — proteins, carbohydrates, fats, vitamins, minerals.\n• Include milk, fruits, fresh vegetables.\n• Avoid stale food, excess fast food/junk food.\n• Store perishables in refrigerator.\n\n**2. Proper lifestyle:**\n• Avoid long continuous desk work and excessive TV/computer games.\n• **Never** smoke, drink alcohol or use drugs — especially harmful during growth years.\n• Adequate sleep for growth and hormone balance.\n\n**3. Cleanliness:**\n• Wash hands before and after meals.\n• Brush teeth twice daily; bathe regularly.\n• Change clothes daily — especially **undergarments**.\n• Avoid very tight clothing; wear clean, comfortable clothes.\n• Wash eyes with clean cold water.\n• **Girls:** special care during **menstruation** — use clean sanitary products, change regularly, maintain personal hygiene.\n\n**4. Physical exercise:**\n• Walk, exercise, play outdoor games regularly.\n• Combats stress and strain of adolescence; builds fitness.\n\n**Must know**\n• Hygiene covers diet + lifestyle + cleanliness + exercise — not just bathing.\n• Public hygiene (sewage disposal, clean water) is equally important as personal hygiene.",
+    "explanation": "**Definitions:**\n• Personal hygiene — practices maintaining cleanliness and health of one's own body.\n• Balanced diet — diet containing all nutrients in correct proportions for growth.\n\n**Exam traps:**\n• 'Only cleanliness matters in adolescence' is FALSE — all four areas matter.\n• Menstrual hygiene is specifically tested for girls — mention sanitary care.\n• Junk food excess leads to obesity and nutritional deficiencies during critical growth period.",
+    "teacherTip": "Four H's: Healthy food, Healthy habits, Hygiene, Exercise (sports).",
+    "examTip": "Long answer: group points under four headings (food, lifestyle, cleanliness, exercise) — mirrors textbook marking scheme.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch5-08",
+    "topicId": "bio-ch5",
+    "type": "note",
+    "subtopic": "8. Stress Management",
+    "content": "**Stress** — feeling of being under too much **mental or emotional pressure**; common during adolescence due to exams, peer pressure, bodily changes and expectations.\n\n**Symptoms of stress:**\n• Anxiety, irritability, difficulty concentrating.\n• Headaches, disturbed sleep, fatigue.\n• Physical effects: increased heart rate (palpitations), sweating.\n\n**Healthy ways to manage stress:**\n• **Yoga** — combines physical poses, controlled breathing and meditation; reduces stress, improves flexibility and energy.\n• **Exercise** — 30–45 minutes at least 3 times/week (running, swimming, cricket, football); releases feel-good chemicals.\n• **Deep breathing & meditation** — calms the mind, lowers heart rate.\n• **Proper sleep schedule** — timely, adequate sleep restores body and mind.\n• **Reading** — relaxes mind and builds knowledge.\n• Talking to trusted adults, friends or counsellors.\n\n**Unhealthy (avoid):**\n• Uncontrolled eating, excessive TV, substance abuse — these **worsen** stress.\n\n**Must know**\n• Adrenaline is released during stress — links endocrine system to stress response.\n• Yoga + exercise + meditation = correct stress management (not uncontrolled eating + TV).",
+    "explanation": "**Definitions:**\n• Stress — body's response to physical, mental or emotional pressure or challenge.\n• Stress management — techniques to reduce harmful effects of stress on body and mind.\n\n**Exam traps:**\n• 'Watching excessive TV manages stress' is FALSE.\n• 'Uncontrolled eating helps stress' is FALSE.\n• Palpitations (feeling heart beat hard/fast) are often caused by stress/anxiety — link to ch6 heart conditions.",
+    "teacherTip": "Good stress relief: Yoga, Exercise, Sleep, Reading. Bad: Junk food binges and screen addiction.",
+    "examTip": "Name any four stress-busting activities — yoga, exercise, sleep schedule, reading, meditation, deep breathing all score.",
+    "source": "revision"
+  }
+]

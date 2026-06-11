@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bio-rev-ch6-01",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "1. Heart Structure — Four Chambers",
+    "content": "The **heart** is a hollow, **muscular organ** that pumps blood throughout the body. It lies in the chest cavity, tilted slightly to the left, enclosed in the **pericardium** (pericardial fluid cushions against shocks).\n\n**Four chambers:**\n• **Right atrium (RA)** — receives **deoxygenated** blood from body via **vena cava**.\n• **Right ventricle (RV)** — pumps deoxygenated blood to **lungs** via **pulmonary artery**.\n• **Left atrium (LA)** — receives **oxygenated** blood from **lungs** via **pulmonary veins**.\n• **Left ventricle (LV)** — pumps oxygenated blood to **entire body** via **aorta**; has the **thickest wall** (pumps farthest, highest pressure).\n\n**Other structures:**\n• **Septum** — muscular wall dividing heart into right and left halves; prevents mixing of oxygenated and deoxygenated blood.\n• **Tricuspid valve** — between RA and RV (right side).\n• **Bicuspid (mitral) valve** — between LA and LV (left side).\n• Valves ensure **one-way flow** — prevent backflow of blood.\n\n**Must know**\n• Atria = upper, thin-walled **receiving** chambers.\n• Ventricles = lower, thick-walled **pumping** chambers.\n• Left side = oxygenated blood; Right side = deoxygenated blood.",
+    "explanation": "**Definitions:**\n• Atrium — upper chamber of heart receiving blood from veins.\n• Ventricle — lower chamber of heart pumping blood into arteries.\n• Septum — partition separating right and left sides of heart.\n\n**Exam traps:**\n• 'Atria have thicker walls than ventricles' is FALSE — ventricles are thicker (they pump harder).\n• Left ventricle wall is thickest — pumps blood to whole body.\n• Tricuspid = right side; Bicuspid/Mitral = left side.",
+    "teacherTip": "Right-Lung, Left-Body: Right side sends blood to lungs; Left side sends blood to body.",
+    "examTip": "Label all four chambers + septum + two valves in diagram questions — incomplete labels lose 1–2 marks.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-02",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "2. Double Circulation",
+    "content": "Humans have **double circulation** — blood passes through the heart **twice** during one complete circuit of the body.\n\n**Why double circulation?**\n• Blood going to lungs (for oxygen) returns to heart before going to body.\n• Allows **oxygenated blood** to be pumped to body at **high pressure** — efficient delivery to all tissues.\n• Keeps oxygenated and deoxygenated blood **separate** for maximum efficiency.\n\n**Two phases:**\n• **Pulmonary circulation** — heart → lungs → heart (oxygenation).\n• **Systemic circulation** — heart → body organs → heart (delivery of O₂ and collection of CO₂).\n\n**Complete cycle summary:**\nBody (deoxygenated) → Vena cava → RA → RV → Pulmonary artery → Lungs → Pulmonary veins → LA → LV → Aorta → Body (oxygenated).\n\n**Must know**\n• Double circulation = two circuits through heart in one complete journey.\n• Advantage: high-pressure systemic circulation for efficient oxygen delivery.\n• Open circulation (blood in body cavities) occurs in some invertebrates — humans have **closed** circulation (blood in vessels).",
+    "explanation": "**Definitions:**\n• Double circulation — blood flows through the heart twice in one complete body circuit.\n• Closed circulatory system — blood flows entirely within blood vessels.\n\n**Exam traps:**\n• 'Blood passes through heart once per circuit' is FALSE for humans.\n• Open vs closed: humans = blood in vessels (closed); insects = blood in sinuses (open).\n• Double circulation is found in birds and mammals, not all animals.",
+    "teacherTip": "Double = two trips through the heart: once to lungs, once to body.",
+    "examTip": "Define double circulation + name both phases (pulmonary + systemic) + state one advantage — standard 3-mark answer.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-03",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "3. Arteries, Veins & Capillaries",
+    "content": "**Three types of blood vessels:**\n\n**Arteries:**\n• Carry blood **away from the heart** to organs.\n• Generally carry **oxygenated** blood (exception: **pulmonary artery** carries deoxygenated blood to lungs).\n• **Thick, elastic, muscular walls** — withstand high pressure from heart pumping.\n• No valves (except near heart).\n• **Aorta** — largest artery; branches to supply whole body.\n\n**Veins:**\n• Carry blood **towards the heart** from organs.\n• Generally carry **deoxygenated** blood (exception: **pulmonary veins** carry oxygenated blood from lungs).\n• **Thinner walls**, larger lumen, **valves** prevent backflow of blood.\n• Lower pressure than arteries.\n\n**Capillaries:**\n• **Finest, thinnest** vessels — connect arteries to veins.\n• Walls are **one cell thick** (endothelium only).\n• Site of **exchange** — O₂, CO₂, nutrients, wastes, water pass between blood and tissue cells.\n\n**Must know**\n• Arteries = Away from heart. Veins = towards heart.\n• Pulmonary artery = deoxygenated; Pulmonary vein = oxygenated — **two key exceptions**.\n• Exchange happens ONLY in capillaries, not in arteries/veins.",
+    "explanation": "**Definitions:**\n• Artery — thick-walled vessel carrying blood away from heart under high pressure.\n• Vein — thinner-walled vessel carrying blood toward heart; has valves.\n• Capillary — microscopic vessel where exchange of materials occurs between blood and tissues.\n\n**Exam traps:**\n• 'All arteries carry oxygenated blood' is FALSE — pulmonary artery is deoxygenated.\n• 'Veins carry blood away from heart' is FALSE — arteries do.\n• 'None of the arteries carry deoxygenated blood' is FALSE.",
+    "teacherTip": "A-way = Arteries. Veins come back. Capillaries Connect and exchange.",
+    "examTip": "Always mention pulmonary artery/vein exceptions when writing the general artery/vein rule — examiners reward this.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-04",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "4. Blood Components",
+    "content": "**Blood** is a fluid connective tissue. About **55% plasma + 45% formed elements**.\n\n**1. Plasma (liquid part):**\n• Straw-coloured fluid; ~90% water.\n• Dissolved nutrients, hormones, proteins (fibrinogen, albumin), waste (urea, CO₂), antibodies.\n• Transports all dissolved substances.\n\n**2. Red Blood Cells (RBCs / Erythrocytes):**\n• Biconcave, **no nucleus** in mature human RBC.\n• Contain **haemoglobin** — iron-containing pigment that binds **oxygen**.\n• Transport O₂ from lungs to tissues; carry some CO₂ back.\n• Made in bone marrow.\n\n**3. White Blood Cells (WBCs / Leucocytes):**\n• Have nucleus; fewer in number than RBCs.\n• **Fight infection** — phagocytosis, antibody production; provide **immunity**.\n• Types: lymphocytes, neutrophils, monocytes, etc.\n\n**4. Platelets (Thrombocytes):**\n• Small cell fragments (no nucleus).\n• Help in **blood clotting** at wound sites — prevent excessive blood loss.\n• Form fibrin mesh to seal injury.\n\n**Must know**\n• RBCs carry O₂ (haemoglobin); WBCs fight germs — do NOT swap.\n• Blood transports O₂, CO₂, nutrients, hormones AND wastes.\n• Lymph lacks RBCs — cannot transport respiratory gases.",
+    "explanation": "**Definitions:**\n• Haemoglobin — red pigment in RBCs that combines with oxygen to form oxyhaemoglobin.\n• Phagocytosis — process by which WBCs engulf and destroy pathogens.\n• Blood clotting — cascade forming fibrin mesh to seal a wound (initiated by platelets).\n\n**Exam traps:**\n• 'WBCs carry oxygen' is FALSE.\n• 'RBCs fight infection' is FALSE.\n• 'Blood does not carry CO₂' is FALSE — blood carries both respiratory gases.",
+    "teacherTip": "RBC = Red = oxygen Road. WBC = Warriors. Platelets = Patches (plug wounds).",
+    "examTip": "Name all four components with one function each — a guaranteed 4-mark question every cycle.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-05",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "5. Lymph & Tissue Fluid",
+    "content": "**Lymph** — clear, yellowish fluid in **lymph vessels** and lymphatic organs (lymph nodes, spleen, tonsils). Part of the **immune system**.\n\n**Formation:**\n• Blood plasma filters out through capillary walls into tissue spaces → **tissue fluid**.\n• Most tissue fluid re-enters capillaries; remainder enters **lymph vessels** → becomes lymph → eventually returns to blood via large lymph ducts (thoracic duct).\n\n**Composition:**\n• Similar to plasma but **no RBCs** (and fewer proteins).\n• Contains **lymphocytes** and **monocytes** (WBC types).\n\n**Functions of lymph:**\n• **Drainage** — collects excess tissue fluid, metabolites and proteins; returns them to blood.\n• **Absorption** — fats from digested food absorbed through **lacteals** (lymph vessels in intestinal villi).\n• **Defence** — lymphocytes destroy germs; lymph nodes filter bacteria and foreign particles.\n\n**Three principal body fluids:** Blood, Lymph, Tissue fluid.\n\n**Must know**\n• Lymph cannot carry O₂/CO₂ — no haemoglobin (no RBCs).\n• Lymph is part of immune defence, not primary gas transport.\n• Fat absorption in intestine is through lymph (lacteals), not blood capillaries.",
+    "explanation": "**Definitions:**\n• Lymph — tissue fluid collected in lymph vessels; contains WBCs, no RBCs.\n• Lacteals — lymph capillaries in villi of small intestine absorbing digested fats.\n• Lymph node — small gland filtering lymph and trapping pathogens.\n\n**Exam traps:**\n• 'Oxygen is transported by lymph' is FALSE.\n• 'Lymph = blood' is FALSE — different composition and function.\n• Fatty food absorption → lymphatic system, not directly into blood.",
+    "teacherTip": "Lymph = Leaks from capillaries + Lacks RBCs + Lymphocytes for defence.",
+    "examTip": "Give three functions of lymph: drainage, fat absorption, defence — textbook exact answer for long questions.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-06",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "6. Blood Groups",
+    "content": "Human blood groups are determined by **antigens** (proteins) present on the surface of **RBCs**. Discovered by **Karl Landsteiner**.\n\n**Four blood groups:**\n• **Group A** — has **A antigen** on RBCs; plasma has **anti-B** antibody.\n• **Group B** — has **B antigen**; plasma has **anti-A** antibody.\n• **Group AB** — has **both A and B antigens**; **no antibodies** in plasma → **universal recipient** (can receive from A, B, AB, O).\n• **Group O** — **no antigens** on RBCs; plasma has **both anti-A and anti-B** antibodies → **universal donor** (can donate to A, B, AB, O).\n\n**Transfusion rule:**\n• Donor RBC antigens must NOT be attacked by recipient's antibodies → **matching** is essential.\n• Group O RBCs have no antigens → safe to give to any group (universal donor).\n• Group AB has no antibodies → can receive any group (universal recipient).\n\n**Must know**\n• Universal donor = **O** (not AB).\n• Universal recipient = **AB** (not O).\n• Antigens are ON RBCs; antibodies are IN plasma.",
+    "explanation": "**Definitions:**\n• Antigen — substance on RBC surface that triggers immune response (A or B antigen).\n• Antibody — protein in plasma that reacts with foreign antigens (anti-A or anti-B).\n• Universal donor — Group O (no A or B antigens on RBCs).\n\n**Exam traps:**\n• 'AB is universal donor' is FALSE — AB is universal recipient.\n• 'O is universal recipient' is FALSE — O is universal donor.\n• Mixing incompatible blood causes **agglutination** (clumping) — dangerous.",
+    "teacherTip": "O gives to All (donor). AB receives from All (recipient).",
+    "examTip": "Statement-based MCQs swap donor/recipient for AB and O — read carefully before ticking.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-07",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "7. Pacemaker — SA Node",
+    "content": "The heart beats rhythmically due to its own **electrical conduction system** — specialised cardiac muscle fibres generate and conduct impulses.\n\n**SA node (Sino-Atrial node):**\n• Located in the wall of the **right atrium**.\n• Called the **'pacemaker'** of the heart — initiates each heartbeat.\n• Generates electrical impulses that spread through atria → AV node → bundle of His → Purkinje fibres → ventricles contract.\n• Sets normal resting heart rate (~72 beats/min).\n\n**Sequence of contraction:**\n• **Atria contract first** (atrial systole) → push blood into ventricles.\n• **Ventricles contract next** (ventricular systole) → push blood into arteries.\n• Brief pause (diastole) → heart relaxes and refills.\n\n**Artificial pacemaker:**\n• Electronic device surgically implanted when **SA node is damaged** or conduction system fails.\n• Sends regular electrical signals to keep heart beating normally.\n\n**Must know**\n• SA node = natural pacemaker.\n• Impulse starts in RA (SA node), not in ventricles.\n• Heart is myogenic — beats on its own without brain signal (though nerves can speed/slow it).",
+    "explanation": "**Definitions:**\n• Pacemaker (SA node) — specialised tissue in right atrium initiating heartbeat electrical impulse.\n• Artificial pacemaker — mechanical device replacing faulty SA node to maintain regular heartbeat.\n• Systole — phase of heart contraction; Diastole — phase of relaxation.\n\n**Exam traps:**\n• SA node is in right atrium, NOT left ventricle.\n• 'Brain directly makes heart beat' is oversimplified — SA node initiates; autonomic nerves modulate rate.\n• Artificial pacemaker used when SA node fails, not for high blood pressure alone.",
+    "teacherTip": "SA = Starts the Action. Right Atrium = Right place for the pacemaker.",
+    "examTip": "Match: SA node → Pacemaker. Name (b) structure starting electrical impulses → SA node / sino-atrial node.",
+    "source": "revision"
+  },
+  {
+    "id": "bio-rev-ch6-08",
+    "topicId": "bio-ch6",
+    "type": "note",
+    "subtopic": "8. Pulmonary & Systemic Circulation",
+    "content": "**PULMONARY CIRCULATION** (lungs circuit — right side of heart):\n• Path: **RA → RV → Pulmonary artery → Lungs** (gas exchange: CO₂ out, O₂ in) **→ Pulmonary veins → LA**.\n• Blood becomes **oxygenated** in lungs (alveoli).\n• Short, low-resistance circuit.\n• Only circuit where artery carries deoxygenated blood and vein carries oxygenated blood.\n\n**SYSTEMIC CIRCULATION** (body circuit — left side of heart):\n• Path: **LA → LV → Aorta → Arteries → Capillaries** (O₂ delivered, CO₂ collected in tissues) **→ Veins → Vena cava → RA**.\n• **Aorta** — largest artery; branches to head, limbs, organs.\n• **Vena cava** (superior + inferior) — returns deoxygenated blood to RA.\n• Long, high-pressure circuit.\n\n**Gas exchange:**\n• Lungs: blood O₂ increases, CO₂ decreases.\n• Body tissues: blood O₂ decreases, CO₂ increases.\n\n**Must know**\n• Blood is oxygenated in **lungs** (not in heart).\n• Left side of heart always has **oxygenated** blood.\n• Right side of heart always has **deoxygenated** blood.\n• Pulmonary circulation = to lungs; Systemic = to body.",
+    "explanation": "**Definitions:**\n• Pulmonary circulation — circulation of blood between heart and lungs for oxygenation.\n• Systemic circulation — circulation of blood between heart and rest of body for nutrient/gas exchange.\n• Aorta — main artery carrying oxygenated blood from left ventricle to body.\n\n**Exam traps:**\n• Pulmonary artery path: RV → lungs (NOT LA → lungs).\n• 'Oxygenation occurs in heart' is FALSE — occurs in lung alveoli.\n• Match path MCQ: RA→RV→Pulmonary arteries→Lungs→Pulmonary veins→LA is correct pulmonary route.",
+    "teacherTip": "Pulmonary = Puff fresh air (lungs). Systemic = Supply the body.",
+    "examTip": "Draw/trace: Body→Right heart→Lungs→Left heart→Body — this loop diagram alone can earn 3–4 diagram marks.",
+    "source": "revision"
+  }
+]

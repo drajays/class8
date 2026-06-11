@@ -16,6 +16,7 @@ const ASSETS = [
   './biology.js',
   './biology-neet.js',
   './biology-olympiad.js',
+  './biology-revision-notes.js',
   './biology-mindmaps.js',
   './biology-cheatsheets.js',
   './chemistry.js',
