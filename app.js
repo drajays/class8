@@ -52,6 +52,7 @@ let sidebarCollapsed = false;
 let noteIndex = 0;
 let questionIndex = 0;
 let diagramIndex = 0;
+let chapterViewMode = 'pager'; // pager | scroll
 
 const DATA_VERSION = 45;
 const DAILY_MCQ_GOAL = 15;
@@ -859,9 +860,57 @@ function resetChapterProgress() {
 }
 
 // ============================================================
-// TEXT FORMATTING — escape HTML, then render **bold** markdown.
-// Used for notes/answers so key terms render in bold safely.
+// TEXT FORMATTING — plain text, **markdown**, or safe HTML from editor
 // ============================================================
+const HTML_ALLOWED_TAGS = new Set([
+  'P', 'BR', 'STRONG', 'B', 'EM', 'I', 'U', 'UL', 'OL', 'LI',
+  'H3', 'H4', 'H5', 'BLOCKQUOTE', 'SUP', 'SUB', 'CODE', 'PRE',
+  'SPAN', 'DIV', 'TABLE', 'THEAD', 'TBODY', 'TR', 'TH', 'TD', 'A', 'HR'
+]);
+
+function hasHtmlMarkup(str) {
+  if (!str) return false;
+  return /<(?:\/)?[a-z][a-z0-9]*\b[^>]*>/i.test(String(str));
+}
+
+function stripHtmlForSearch(str) {
+  if (!str) return '';
+  return String(str).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function sanitizeHtml(raw) {
+  if (!raw) return '';
+  const tpl = document.createElement('template');
+  tpl.innerHTML = String(raw)
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/\son\w+\s*=\s*(['"])[^'"]*\1/gi, '')
+    .replace(/javascript:/gi, '');
+
+  function clean(node) {
+    [...node.childNodes].forEach(child => {
+      if (child.nodeType !== 1) return;
+      if (!HTML_ALLOWED_TAGS.has(child.tagName)) {
+        while (child.firstChild) child.parentNode.insertBefore(child.firstChild, child);
+        child.remove();
+        return;
+      }
+      [...child.attributes].forEach(attr => {
+        const n = attr.name.toLowerCase();
+        if (child.tagName === 'A' && n === 'href') {
+          const href = attr.value.trim();
+          if (!/^https?:\/\//i.test(href) && !/^mailto:/i.test(href)) child.removeAttribute('href');
+        } else if (n !== 'href') {
+          child.removeAttribute(attr.name);
+        }
+      });
+      clean(child);
+    });
+  }
+  clean(tpl.content);
+  return tpl.innerHTML;
+}
+
 function cleanMathMarkup(str) {
   if (!str) return '';
   let s = String(str);
@@ -884,8 +933,23 @@ function cleanMathMarkup(str) {
   return s.replace(/\s+/g, ' ').trim();
 }
 
+function fmtTextPlain(str) {
+  if (!str) return '';
+  return escHtml(cleanMathMarkup(str))
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>');
+}
+
+/** Render note/question fields: supports HTML from frontend editor or **markdown** fallback. */
+function renderContentHtml(str) {
+  if (!str) return '';
+  const raw = String(str);
+  if (hasHtmlMarkup(raw)) return sanitizeHtml(raw);
+  return fmtTextPlain(cleanMathMarkup(raw));
+}
+
 function fmtText(str) {
-  return escHtml(cleanMathMarkup(str)).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  return renderContentHtml(str);
 }
 
 function tfBtnClass(q, val, answered) {
@@ -947,7 +1011,11 @@ function jumpToNote(noteId) {
   userAnswers = {};
   delete notesCollapsed[noteId];
   renderContent(document.getElementById('main-content'));
-  setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 60);
+  if (chapterViewMode === 'scroll') {
+    setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 80);
+  } else {
+    setTimeout(() => _flashEl(document.getElementById('note-' + noteId)), 60);
+  }
 }
 
 function jumpToQuestion(qId) {
@@ -973,7 +1041,7 @@ function jumpToQuestion(qId) {
     if (qIdx >= 0) questionIndex = qIdx;
   }
   render();
-  setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), 80);
+  setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), chapterViewMode === 'scroll' ? 120 : 80);
 }
 
 function practiceLinkedMcqs(noteId) {
@@ -1080,7 +1148,36 @@ function clampCardIndex(idx, total) {
   return Math.max(0, Math.min(idx, total - 1));
 }
 
+function loadChapterViewMode() {
+  try {
+    const m = localStorage.getItem('studyhub_chapter_view');
+    if (m === 'scroll' || m === 'pager') chapterViewMode = m;
+  } catch (e) {}
+}
+
+function setChapterViewMode(mode) {
+  if (mode !== 'pager' && mode !== 'scroll') return;
+  chapterViewMode = mode;
+  try { localStorage.setItem('studyhub_chapter_view', mode); } catch (e) {}
+  renderContent(document.getElementById('main-content'));
+}
+
+function chapterViewModeHtml() {
+  if (contentTab !== 'notes' && contentTab !== 'questions') return '';
+  return `<div class="chapter-view-toggle" role="group" aria-label="View mode">
+    <button type="button" class="view-mode-btn ${chapterViewMode === 'pager' ? 'active' : ''}" onclick="setChapterViewMode('pager')" title="Show one note or question at a time">📄 One at a time</button>
+    <button type="button" class="view-mode-btn ${chapterViewMode === 'scroll' ? 'active' : ''}" onclick="setChapterViewMode('scroll')" title="Scroll through all items continuously">📜 Continuous scroll</button>
+  </div>`;
+}
+
 function cardPagerHtml(current, total, prevFn, nextFn, label) {
+  if (total <= 1) return '';
+  return `<div class="card-pager" role="navigation" aria-label="${escHtml(label)} navigation">
+    <button type="button" class="btn btn-sm btn-outline" onclick="${prevFn}()" ${current <= 0 ? 'disabled' : ''}>← Prev</button>
+    <span class="card-pager-meta">${escHtml(label)} <strong>${current + 1}</strong> <span class="card-pager-of">of</span> ${total}</span>
+    <button type="button" class="btn btn-sm btn-outline" onclick="${nextFn}()" ${current >= total - 1 ? 'disabled' : ''}>Next →</button>
+  </div>`;
+}
   if (total <= 1) return '';
   return `<div class="card-pager" role="navigation" aria-label="${escHtml(label)} navigation">
     <button type="button" class="btn btn-sm btn-outline" onclick="${prevFn}()" ${current <= 0 ? 'disabled' : ''}>← Prev</button>
@@ -1141,6 +1238,7 @@ function nextDiagramCard() {
 }
 
 function handleContentPagerKeys(e) {
+  if (chapterViewMode === 'scroll') return;
   if (e.target.matches('input, textarea, select, [contenteditable="true"]')) return;
   if (currentView !== 'content' || !selectedTopic) return;
   if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
@@ -1484,7 +1582,7 @@ function renderQuizView(el) {
         else if (answered.value === oi) cls = 'wrong';
       }
       const click = answered ? '' : `onclick="quizSubmitAnswer(${oi})"`;
-      return `<div class="q-option ${cls}" ${click}><span class="opt-letter">${letters[oi]}</span> ${escHtml(opt)}</div>`;
+      return `<div class="q-option ${cls}" ${click}><span class="opt-letter">${letters[oi]}</span> <span class="rich-html inline-rich">${renderContentHtml(opt)}</span></div>`;
     }).join('')}</div>`;
   } else if (q.type === 'true_false') {
     const tfAns = answered ? answered.value : undefined;
@@ -1520,7 +1618,7 @@ function renderQuizView(el) {
       <div class="question-card quiz-card">
         <div class="q-label">${typeLabels[q.type] || q.type}${sourceChipHtml(q.source)}${qualityBadgeHtml(q)}</div>
         ${mcqImageHtml(q)}
-        <div class="q-text">${escHtml(q.question)}</div>
+        <div class="q-text rich-html">${renderContentHtml(q.question)}</div>
         ${body}
         ${feedback}
         ${answered ? `<div class="quiz-nav"><button class="btn btn-primary" onclick="quizNext()">${idx < total - 1 ? 'Next →' : 'See results'}</button></div>` : ''}
@@ -1855,13 +1953,16 @@ function renderContent(el) {
         <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
         ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
         ${qStats ? `<p class="chapter-bank-hint">📚 ICSE Physics — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} questions</strong> · <strong>${diagrams.length} diagram MCQs</strong></p>` : ''}
-        <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
-          <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
-          ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
-          ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
-          ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
-          <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
-          <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
+        <div class="chapter-tabs-row">
+          <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
+            <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
+            ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
+            ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
+            ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
+            <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+            <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
+          </div>
+          ${chapterViewModeHtml()}
         </div>
       </div>
       <div class="chapter-layout">
@@ -2169,10 +2270,10 @@ function buildNoteCardHtml(n, displayNum) {
         <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
       </div>
       <div class="note-body">
-        <p style="font-weight:600;margin-bottom:8px">${fmtText(n.content)}</p>
-        <p>${fmtText(n.explanation||'')}</p>
-        ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong>${fmtText(n.teacherTip)}</div>`:''}
-        ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong>${fmtText(n.examTip)}</div>`:''}
+        <div class="rich-html note-content-lead">${renderContentHtml(n.content)}</div>
+        <div class="rich-html note-content-body">${renderContentHtml(n.explanation || '')}</div>
+        ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.teacherTip)}</span></div>`:''}
+        ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.examTip)}</span></div>`:''}
         ${linkBar}
         <div style="margin-top:10px;display:flex;gap:6px">
           <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
@@ -2189,6 +2290,10 @@ function renderNotes() {
     body.innerHTML = '<div class="empty-state"><div class="empty-icon">📝</div><h3>No notes yet</h3><p>Click "Add New" to create notes</p></div>';
     return;
   }
+  if (chapterViewMode === 'scroll') {
+    body.innerHTML = `<div class="notes-scroll-list">${notes.map((n, i) => buildNoteCardHtml(n, i + 1)).join('')}</div>`;
+    return;
+  }
   noteIndex = clampCardIndex(noteIndex, notes.length);
   const n = notes[noteIndex];
   const pager = cardPagerHtml(noteIndex, notes.length, 'prevNoteCard', 'nextNoteCard', 'Note');
@@ -2201,12 +2306,18 @@ function renderQuestions(questions) {
   if (!body) return;
 
   const filtered = getFilteredQuestions(questions);
-  questionIndex = clampCardIndex(questionIndex, filtered.length);
 
   if (filtered.length === 0) {
     body.innerHTML = '<div class="empty-state"><div class="empty-icon">❓</div><h3>No questions of this type</h3><p>Pick another filter in the sidebar →</p></div>';
     return;
   }
+
+  if (chapterViewMode === 'scroll') {
+    body.innerHTML = `<div class="questions-scroll-list">${filtered.map((q, i) => renderSingleQuestion(q, i)).join('')}</div>`;
+    return;
+  }
+
+  questionIndex = clampCardIndex(questionIndex, filtered.length);
   const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', 'Question');
   const card = renderSingleQuestion(filtered[questionIndex], questionIndex);
   body.innerHTML = `${pager}<div class="questions-single">${card}</div>${pager}
@@ -2278,7 +2389,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
-  html += `<div class="q-text">Q${idx+1}. ${escHtml(q.question).replace(/\n/g, '<br>')}</div>`;
+  html += `<div class="q-text rich-html">Q${idx + 1}. ${renderContentHtml(q.question)}</div>`;
 
   if (q.type === 'true_false') {
     html += renderTfOptions(q, answered, v => `onclick="answerTF('${q.id}','${v}')"`);
@@ -2294,7 +2405,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
         else if (answered === oi) cls = 'wrong';
       }
       html += `<div class="q-option ${cls} ${answered===oi&&oi!==q.correctOption?'selected':''}" onclick="answerMCQ('${q.id}',${oi})">
-        <span class="opt-letter">${letters[oi]}</span> ${escHtml(opt)}
+        <span class="opt-letter">${letters[oi]}</span> <span class="rich-html inline-rich">${renderContentHtml(opt)}</span>
       </div>`;
     });
     html += `</div>`;
@@ -2320,9 +2431,9 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   // Toggle answer
   html += `<div class="toggle-answer" onclick="toggleAnswer('ans-${q.id}')">${answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation'}</div>`;
   html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}" id="ans-${q.id}">
-    <p><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</p>
-    ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>`:''}
-    ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>`:''}
+    <div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>
+    ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>`:''}
+    ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.examTip)}</span></div>`:''}
     ${linkedNote?`<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>`:''}
   </div>`;
 
@@ -2655,9 +2766,10 @@ function allSearchableQuestions() {
 
 function questionSearchText(q) {
   const parts = [q.question, q.subtopic, q.answer, q.blankAnswer, q.explanation];
+  if (q.content) parts.push(q.content);
   if (q.options) parts.push(...q.options);
   if (q.pairs) q.pairs.forEach(p => { parts.push(p.left, p.right); });
-  return parts.filter(Boolean).join(' ').toLowerCase();
+  return parts.filter(Boolean).map(stripHtmlForSearch).join(' ').toLowerCase();
 }
 
 function buildQuestionSearchIndex() {
@@ -2667,7 +2779,7 @@ function buildQuestionSearchIndex() {
     topicId: q.topicId,
     type: q.type,
     text: questionSearchText(q),
-    preview: (q.question || q.subtopic || '').replace(/\s+/g, ' ').trim()
+    preview: stripHtmlForSearch(q.question || q.subtopic || '').replace(/\s+/g, ' ').trim()
   }));
   return _questionSearchIndex;
 }
@@ -3206,6 +3318,7 @@ function initApp() {
   loadProgress();
   loadQuestionRatings();
   loadSidebarState();
+  loadChapterViewMode();
   scheduleQuestionSearchIndexBuild();
   render();
   applySidebarLayout();

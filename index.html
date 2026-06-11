@@ -129,31 +129,33 @@
 
       <!-- NOTE FIELDS -->
       <div id="note-fields">
+        <p class="html-editor-hint">Use HTML tags for formatting: <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;ul&gt;&lt;li&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code>, <code>&lt;br&gt;</code>. Plain text and **bold** still work.</p>
         <div class="form-group">
-          <label>Note Content</label>
-          <textarea id="f-note-content" placeholder="Write the concept / note here…"></textarea>
+          <label>Note Content (HTML)</label>
+          <textarea id="f-note-content" class="html-editor" rows="8" placeholder="<p>Key concept here…</p>&#10;<ul><li>Point one</li><li>Point two</li></ul>"></textarea>
         </div>
         <div class="form-group">
-          <label>Explanation (simple language)</label>
-          <textarea id="f-note-explanation" placeholder="Explain in simple words…"></textarea>
+          <label>Explanation (HTML)</label>
+          <textarea id="f-note-explanation" class="html-editor" rows="5" placeholder="<p>Explain in simple words…</p>"></textarea>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Teacher's Tip (optional)</label><input id="f-teacher-tip" placeholder="Memory trick or tip…"></div>
-          <div class="form-group"><label>Exam Tip (optional)</label><input id="f-exam-tip" placeholder="Important for exams…"></div>
+          <div class="form-group"><label>Teacher's Tip (optional)</label><textarea id="f-teacher-tip" class="html-editor html-editor-sm" rows="2" placeholder="Memory trick…"></textarea></div>
+          <div class="form-group"><label>Exam Tip (optional)</label><textarea id="f-exam-tip" class="html-editor html-editor-sm" rows="2" placeholder="Important for exams…"></textarea></div>
         </div>
       </div>
 
       <!-- QUESTION FIELDS -->
       <div id="question-fields" style="display:none">
+        <p class="html-editor-hint">Question and answer fields support HTML formatting.</p>
         <div class="form-group">
-          <label>Question Text</label>
-          <textarea id="f-q-text" placeholder="Enter the question…"></textarea>
+          <label>Question Text (HTML)</label>
+          <textarea id="f-q-text" class="html-editor" rows="5" placeholder="<p>Enter the question…</p>"></textarea>
         </div>
         <div id="mcq-options" style="display:none">
-          <div class="form-group"><label>Option A</label><input id="f-opt-a" placeholder="Option A"></div>
-          <div class="form-group"><label>Option B</label><input id="f-opt-b" placeholder="Option B"></div>
-          <div class="form-group"><label>Option C</label><input id="f-opt-c" placeholder="Option C"></div>
-          <div class="form-group"><label>Option D</label><input id="f-opt-d" placeholder="Option D"></div>
+          <div class="form-group"><label>Option A (HTML ok)</label><textarea id="f-opt-a" class="html-editor html-editor-sm" rows="2" placeholder="Option A"></textarea></div>
+          <div class="form-group"><label>Option B (HTML ok)</label><textarea id="f-opt-b" class="html-editor html-editor-sm" rows="2" placeholder="Option B"></textarea></div>
+          <div class="form-group"><label>Option C (HTML ok)</label><textarea id="f-opt-c" class="html-editor html-editor-sm" rows="2" placeholder="Option C"></textarea></div>
+          <div class="form-group"><label>Option D (HTML ok)</label><textarea id="f-opt-d" class="html-editor html-editor-sm" rows="2" placeholder="Option D"></textarea></div>
           <div class="form-group"><label>Correct Option (a/b/c/d)</label><input id="f-correct-opt" placeholder="e.g. a"></div>
         </div>
         <div id="tf-answer" style="display:none">
@@ -170,12 +172,12 @@
           <div class="form-group"><label>Match Pairs</label><textarea id="f-match-pairs" placeholder="Molecules=matter, 100°C=water boils, 0°C=water freezes"></textarea></div>
         </div>
         <div class="form-group">
-          <label>Answer / Explanation</label>
-          <textarea id="f-q-answer" placeholder="Detailed answer…"></textarea>
+          <label>Answer / Explanation (HTML)</label>
+          <textarea id="f-q-answer" class="html-editor" rows="5" placeholder="<p>Detailed answer…</p>"></textarea>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Teacher's Tip (optional)</label><input id="f-q-teacher-tip" placeholder="Tip…"></div>
-          <div class="form-group"><label>Exam Tip (optional)</label><input id="f-q-exam-tip" placeholder="Tip…"></div>
+          <div class="form-group"><label>Teacher's Tip (optional)</label><textarea id="f-q-teacher-tip" class="html-editor html-editor-sm" rows="2" placeholder="Tip…"></textarea></div>
+          <div class="form-group"><label>Exam Tip (optional)</label><textarea id="f-q-exam-tip" class="html-editor html-editor-sm" rows="2" placeholder="Tip…"></textarea></div>
         </div>
       </div>
 

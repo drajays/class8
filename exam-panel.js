@@ -663,7 +663,7 @@ function renderExamActive(el) {
       const checked = draft === oi ? 'checked' : '';
       return `<label class="nta-opt${sel}" onclick="examToggleMcqDraft(${oi})">
         <input type="radio" name="nta-opt" ${checked} tabindex="-1">
-        <span>(${String.fromCharCode(65 + oi)}) ${escHtml(opt)}</span>
+        <span>(${String.fromCharCode(65 + oi)}) <span class="rich-html inline-rich">${typeof renderContentHtml === 'function' ? renderContentHtml(opt) : escHtml(opt)}</span></span>
       </label>`;
     }).join('')}</div>`;
   } else if (q.type === 'true_false') {
@@ -714,7 +714,7 @@ function renderExamActive(el) {
           <div class="nta-q-area">
             <div class="nta-q-scroll" id="nta-q-scroll">
               <div class="nta-q-title">Question ${idx + 1}:</div>
-              <div class="nta-q-text">${escHtml(q.question).replace(/\n/g, '<br>')}</div>
+              <div class="nta-q-text rich-html">${typeof renderContentHtml === 'function' ? renderContentHtml(q.question) : escHtml(q.question).replace(/\n/g, '<br>')}</div>
               ${imgHtml}
               ${optionsHtml}
             </div>
