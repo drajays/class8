@@ -1178,13 +1178,6 @@ function cardPagerHtml(current, total, prevFn, nextFn, label) {
     <button type="button" class="btn btn-sm btn-outline" onclick="${nextFn}()" ${current >= total - 1 ? 'disabled' : ''}>Next →</button>
   </div>`;
 }
-  if (total <= 1) return '';
-  return `<div class="card-pager" role="navigation" aria-label="${escHtml(label)} navigation">
-    <button type="button" class="btn btn-sm btn-outline" onclick="${prevFn}()" ${current <= 0 ? 'disabled' : ''}>← Prev</button>
-    <span class="card-pager-meta">${escHtml(label)} <strong>${current + 1}</strong> <span class="card-pager-of">of</span> ${total}</span>
-    <button type="button" class="btn btn-sm btn-outline" onclick="${nextFn}()" ${current >= total - 1 ? 'disabled' : ''}>Next →</button>
-  </div>`;
-}
 
 function scrollContentTop() {
   const main = document.getElementById('main-content');
