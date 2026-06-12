@@ -29,7 +29,7 @@ if (noteErrors.length) {
   console.error('Note validation failed:\n' + noteErrors.join('\n'));
   process.exit(1);
 }
-const questionFiles = ['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8', 'diagrams'];
+const questionFiles = ['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8', 'diagrams', 'diagrams-ch1-4', 'diagrams-ch5-8'];
 const questions = questionFiles.flatMap((f) => read(`data/physics-authored/${f}.json`));
 
 // ---- validate -------------------------------------------------------------

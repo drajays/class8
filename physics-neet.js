@@ -24,7 +24,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**S**olid = **S**tuck (fixed positions). **L**iquid = **L**ubricated (slides). **G**as = **G**alloping (free motion). Force chain: **S**trongest **L**ess **G**one.",
  "examTip": "Write all three order chains at the top of your answer sheet — force, space, compressibility — before attempting MCQs on states of matter.",
  "source": "revision",
- "linkedMcqCount": 12
+ "linkedMcqCount": 18
 },
 {
  "id": "phy-s1-sec_03",
@@ -48,7 +48,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**E**vaporation = **E**xit from **E**dge (surface only). **B**oiling = **B**ulk bubbles. Latent = **L**ocked heat (no temperature change). HOT-D-W for faster drying: **H**ot, **O**pen surface, **T**emperature up, **D**ry air, **W**ind.",
  "examTip": "For 'give reason' cooling questions (matka, sweating, sanitizer), always name BOTH evaporation AND latent heat drawn from the body/liquid — each earns a mark.",
  "source": "revision",
- "linkedMcqCount": 27
+ "linkedMcqCount": 37
 },
 {
  "id": "phy-c1-m01",
@@ -1064,6 +1064,342 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "ICSE Class 8"
 },
 {
+ "id": "phy-c1-d03",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_013.jpg",
+ "caption": "Molecular arrangement in a solid",
+ "question": "In the arrangement shown, the circles (molecules) touch their neighbours with almost no empty space. Which TWO properties of solids follow directly from this packing?",
+ "options": [
+  "High compressibility and free flow",
+  "Incompressibility and definite shape",
+  "Large expansion and no fixed volume",
+  "Free surface and ability to diffuse quickly"
+ ],
+ "correctOption": 1,
+ "answer": "With negligible intermolecular space there is nothing to squeeze — solids are almost incompressible. And since strong forces hold each molecule at a fixed site (it can only vibrate there), the solid keeps a definite shape. Flow, rapid diffusion and large compressibility belong to liquids and gases.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d04",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_014.jpg",
+ "caption": "Molecular arrangement in a liquid",
+ "question": "In this diagram the molecules touch one another but are arranged irregularly, with slightly more space than in a solid. This arrangement explains why a liquid:",
+ "options": [
+  "Has a definite shape of its own",
+  "Can flow and take the shape of its container while keeping a definite volume",
+  "Can be compressed to half its volume easily",
+  "Has no free surface"
+ ],
+ "correctOption": 1,
+ "answer": "The molecules remain in contact (definite volume, little compressibility) but are not locked in fixed positions — they can slide past one another, so the liquid flows and takes its container's shape. A liquid does have a free surface; it is gases that do not.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d05",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_014.jpg",
+ "caption": "Molecular arrangement in a liquid",
+ "question": "Compare this liquid arrangement with that of a solid. Which statement about intermolecular forces and spaces is correct?",
+ "options": [
+  "Liquid: stronger forces, smaller spaces than solid",
+  "Liquid: weaker forces, slightly larger spaces than solid",
+  "Liquid: zero forces, very large spaces",
+  "Liquid and solid are identical at the molecular level"
+ ],
+ "correctOption": 1,
+ "answer": "Going solid → liquid, the intermolecular spaces increase slightly and the forces weaken — enough for molecules to slide but not to escape. Zero force and very large spaces describe a gas.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d06",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_017.jpg",
+ "caption": "Molecular arrangement in a gas",
+ "question": "In this diagram the molecules are very far apart compared with their size. Which conclusion does NOT follow from this arrangement?",
+ "options": [
+  "Gases can be compressed easily",
+  "Gases fill any closed vessel completely",
+  "Intermolecular forces are negligible",
+  "Gas molecules are at rest in their positions"
+ ],
+ "correctOption": 3,
+ "answer": "Large empty spaces explain easy compression, complete filling of the vessel, and negligible attraction between distant molecules. But gas molecules are NEVER at rest — they fly about at high speed in random directions; that motion is exactly why the gas spreads everywhere.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d07",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_017.jpg",
+ "caption": "Molecular arrangement in a gas",
+ "question": "If the gas shown is sealed in a cylinder and the piston is pushed in, the picture would change to show:",
+ "options": [
+  "The same molecules drawn smaller",
+  "The same number of molecules with smaller spaces between them",
+  "Fewer molecules",
+  "Molecules arranged in a regular pattern like a solid"
+ ],
+ "correctOption": 1,
+ "answer": "Compression only reduces the intermolecular SPACES — the molecules themselves do not shrink, disappear or crystallise. The same number of molecules now occupy a smaller volume, which is why gas pressure rises on compression.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d08",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_006.jpg",
+ "caption": "Steam escaping from a kettle",
+ "question": "In the photograph, a white cloud is visible a little ABOVE the kettle's spout, but the region just at the spout looks clear. The visible white cloud is actually:",
+ "options": [
+  "Pure steam (water in gaseous state)",
+  "Tiny liquid water droplets formed when the invisible steam condenses in cooler air",
+  "Smoke from the heater",
+  "Dissolved air escaping from the water"
+ ],
+ "correctOption": 1,
+ "answer": "Steam itself is an invisible gas — that is why the region right at the spout looks clear. A short distance away the steam meets cooler air, loses energy and condenses into millions of tiny liquid droplets, which scatter light and appear as the white 'cloud'. What we casually call 'steam' is really condensed droplets.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c1-d09",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_006.jpg",
+ "caption": "Steam escaping from a kettle",
+ "question": "The water inside this kettle is boiling. While it boils, the temperature of the water:",
+ "options": [
+  "Keeps rising steadily",
+  "Stays constant at the boiling point, as the heat supplied becomes latent heat of vaporisation",
+  "Falls because steam carries heat away",
+  "Rises and falls alternately"
+ ],
+ "correctOption": 1,
+ "answer": "During boiling, all the heat supplied is used to free molecules from the liquid (latent heat of vaporisation); the temperature stays fixed at 100 °C until all the water has boiled away.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d10",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_020.jpg",
+ "caption": "Ice ⇌ water ⇌ steam with heating and cooling arrows",
+ "question": "In the diagram, arrows marked 'Heating' point from ice to water and from water to boiling water/steam, while 'Cooling' arrows point the opposite way. The processes represented by the FORWARD (heating) arrows are:",
+ "options": [
+  "Freezing, then condensation",
+  "Melting (fusion), then vaporisation (boiling)",
+  "Sublimation, then deposition",
+  "Condensation, then evaporation"
+ ],
+ "correctOption": 1,
+ "answer": "Heating ice converts it to water — melting/fusion at 0 °C. Further heating converts water to steam — vaporisation (boiling) at 100 °C. The reverse (cooling) arrows are condensation (steam→water) and freezing (water→ice).",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d11",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_020.jpg",
+ "caption": "Ice ⇌ water ⇌ steam with heating and cooling arrows",
+ "question": "All three beakers in the diagram contain the SAME substance (H₂O). What changes as we move from the ice beaker to the steam beaker?",
+ "options": [
+  "The chemical nature of the molecules",
+  "The mass of each molecule",
+  "The energy of the molecules and the spacing between them",
+  "The number of atoms in each molecule"
+ ],
+ "correctOption": 2,
+ "answer": "Change of state is a physical change: the H₂O molecules remain identical throughout. Only their energy (lowest in ice, highest in steam) and their separation/arrangement change. This is why the changes are completely reversible by heating and cooling.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d12",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_024.jpg",
+ "caption": "Thermometer reading 100 °C in boiling water",
+ "question": "In the experiment shown, the thermometer reads 100 °C while the water boils vigorously, with steam rising. If the burner flame is made twice as strong, the thermometer will read:",
+ "options": [
+  "About 200 °C",
+  "About 110 °C",
+  "Still 100 °C — the water just boils faster",
+  "50 °C"
+ ],
+ "correctOption": 2,
+ "answer": "The boiling point of water is fixed at 100 °C (at normal pressure). A stronger flame supplies heat faster, so the water boils away faster — but the extra heat all goes into latent heat of vaporisation, not into raising the temperature.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c1-d13",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_024.jpg",
+ "caption": "Thermometer reading 100 °C in boiling water",
+ "question": "In the same setup, bubbles are seen rising from the BOTTOM of the beaker through the whole liquid. This observation distinguishes boiling from evaporation because boiling:",
+ "options": [
+  "Happens only at the surface",
+  "Happens throughout the bulk of the liquid",
+  "Happens only in glass containers",
+  "Needs no heat supply"
+ ],
+ "correctOption": 1,
+ "answer": "The rising bubbles are pockets of vapour forming everywhere inside the liquid — boiling is a bulk phenomenon at a fixed temperature. Evaporation, in contrast, happens silently and only at the surface, at any temperature.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d14",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_035.jpg",
+ "caption": "Sublimation and deposition cycle between solid and vapour",
+ "question": "In the cycle shown, the arrow from SOLID directly to VAPOUR is labelled 'sublimation' with 'heat is absorbed'. The reverse arrow, VAPOUR directly to SOLID, is called:",
+ "options": [
+  "Condensation",
+  "Freezing",
+  "Deposition, and heat is released during it",
+  "Evaporation"
+ ],
+ "correctOption": 2,
+ "answer": "Vapour changing directly into solid (without becoming liquid) is deposition — the reverse of sublimation — and the latent heat absorbed during sublimation is given back. Condensation and freezing both involve the liquid state, which this cycle skips entirely.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d15",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_035.jpg",
+ "caption": "Sublimation and deposition cycle between solid and vapour",
+ "question": "Which household observation is explained by the LEFT-to-RIGHT (solid → vapour) arrow of this diagram?",
+ "options": [
+  "Dew forming on grass",
+  "Naphthalene balls in a cupboard shrinking over weeks without leaving any liquid",
+  "Water freezing in an ice tray",
+  "A wet towel drying on a line"
+ ],
+ "correctOption": 1,
+ "answer": "Naphthalene sublimes: solid balls turn directly into vapour, so they shrink and eventually vanish leaving no liquid behind. Dew is condensation, the ice tray is freezing, and the towel is evaporation of liquid water.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d16",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_040.jpg",
+ "caption": "Sublimation of ammonium chloride: china dish, inverted funnel, cotton plug",
+ "question": "In the experiment shown, solid ammonium chloride is heated in a china dish covered by an inverted funnel. White vapours rise and a solid deposit collects on the funnel's cool inner wall. This demonstrates:",
+ "options": [
+  "Melting followed by boiling",
+  "Sublimation (solid → vapour) followed by deposition (vapour → solid) on the cool funnel",
+  "Evaporation followed by condensation into liquid",
+  "A chemical change producing a new substance"
+ ],
+ "correctOption": 1,
+ "answer": "Ammonium chloride sublimes on heating — it changes directly to vapour without melting. On touching the cooler funnel wall the vapour deposits straight back as solid. No liquid appears at any stage, and the deposit is the same substance — a physical change.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c1-d17",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_040.jpg",
+ "caption": "Sublimation of ammonium chloride: china dish, inverted funnel, cotton plug",
+ "question": "In this setup, what is the purpose of the cotton plug placed in the neck (top opening) of the inverted funnel?",
+ "options": [
+  "To soak up melted ammonium chloride",
+  "To prevent the vapours from escaping out of the funnel",
+  "To supply oxygen for burning",
+  "To keep the funnel warm"
+ ],
+ "correctOption": 1,
+ "answer": "The cotton plug blocks the funnel's narrow opening so the ammonium chloride vapours cannot escape into the room; trapped inside, they meet the cool funnel wall and deposit there as solid. Nothing melts and nothing burns in this experiment.",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_04",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c1-d18",
+ "topicId": "ch1-matter",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_01_matter/fig_005.jpg",
+ "caption": "Water flowing from a tap",
+ "question": "The flowing water in this photograph keeps a constant total volume but constantly changes its shape as it falls. The kinetic-theory reason is that in a liquid:",
+ "options": [
+  "Molecules are bound in fixed positions",
+  "Cohesive forces hold the molecules together while still allowing them to slide over one another",
+  "There are no forces between molecules",
+  "Molecules repel each other strongly"
+ ],
+ "correctOption": 1,
+ "answer": "Cohesion in a liquid is strong enough to keep the molecules together (definite volume — the stream does not disperse like a gas) yet weak enough for them to slide past each other (no fixed shape — the stream narrows and bends as it falls).",
+ "source": "icse",
+ "linksTo": "phy-s1-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
  "id": "phy-s2-sec_01",
  "topicId": "ch2-measurement",
  "type": "note",
@@ -1085,7 +1421,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**S**inker for **S**wimmers (floaters). **D**isplacement for **D**ivers (sinkers). Mass first, volume second, divide last — **MVD**.",
  "examTip": "For 'describe an experiment' answers, write steps in order: mass → volume by displacement → formula. The sinker twist is the favourite examiner surprise.",
  "source": "revision",
- "linkedMcqCount": 5
+ "linkedMcqCount": 6
 },
 {
  "id": "phy-s2-sec_03",
@@ -1097,7 +1433,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**F**loat = **F**eather-light compared to liquid (density ≤ liquid). Ship = **S**hell of air inside steel. Hydrometer: **D**eeper = **D**ilute (less dense).",
  "examTip": "'Floats in A, sinks in B' ⇒ density of A ≥ body > density of B. One line — practise until automatic.",
  "source": "revision",
- "linkedMcqCount": 28
+ "linkedMcqCount": 36
 },
 {
  "id": "phy-s2-sec_09",
@@ -1109,7 +1445,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**G**rams with **C**ubic centimetres; **K**ilograms with **C**ubic metres. Never cross the streams! R.D. × 1000 = SI density.",
  "examTip": "Show formula → substitution → answer with unit in three separate lines. Write the formula first even in MCQ rough work.",
  "source": "revision",
- "linkedMcqCount": 4
+ "linkedMcqCount": 5
 },
 {
  "id": "phy-c2-m01",
@@ -2068,6 +2404,216 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "ICSE Class 8"
 },
 {
+ "id": "phy-c2-d03",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_029.jpg",
+ "caption": "Iron sinks; wood and cork float at different levels",
+ "question": "In the figure, the wooden block floats with much of its body submerged while the cork floats higher, with only a small part under water. This difference is because:",
+ "options": [
+  "Cork is smoother than wood",
+  "The cork's density is much lower, so it needs to displace less water to balance its weight",
+  "Wood absorbs water instantly",
+  "Cork is smaller in size"
+ ],
+ "correctOption": 1,
+ "answer": "A floating body sinks until the displaced water's weight equals its own weight. Cork (R.D. ≈ 0.25) needs only ~a quarter of its volume under water; wood (R.D. ≈ 0.6–0.8) must submerge more of itself. The fraction submerged equals the body's relative density.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c2-d04",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_016.jpg",
+ "caption": "A density (relative density) bottle",
+ "question": "The glass bottle shown, with its specially ground stopper, is used to find the density of liquids. Its key feature is that it:",
+ "options": [
+  "Changes colour with density",
+  "Always holds exactly the same volume of any liquid filled up to the stopper",
+  "Weighs nothing when empty",
+  "Floats on the liquid being tested"
+ ],
+ "correctOption": 1,
+ "answer": "A density bottle holds a FIXED volume (commonly 50 mL) when filled and stoppered — the extra liquid escapes through the fine hole in the stopper. Weighing the bottle empty, with water, and with the test liquid gives equal-volume masses, from which density and relative density follow.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c2-d05",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_016.jpg",
+ "caption": "A density (relative density) bottle",
+ "question": "Using this bottle, a student finds: empty bottle 20 g; bottle full of water 70 g; bottle full of oil 60 g. The relative density of the oil is:",
+ "options": [
+  "0.8",
+  "0.86",
+  "1.25",
+  "40"
+ ],
+ "correctOption": 0,
+ "answer": "Mass of water = 70 − 20 = 50 g; mass of equal volume of oil = 60 − 20 = 40 g. Relative density = mass of liquid ÷ mass of equal volume of water = 40/50 = 0.8. The bottle works precisely because both liquids occupy the same volume.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_09",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c2-d06",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_030.jpg",
+ "caption": "An iceberg floating in the sea",
+ "question": "In the photograph, a huge iceberg floats with a large mass visible above the sea. What does physics say about the part we CANNOT see?",
+ "options": [
+  "It is about the same size as the visible part",
+  "It is about nine times the volume of the visible part",
+  "It is negligible — icebergs float almost fully exposed",
+  "It is exactly half the iceberg"
+ ],
+ "correctOption": 1,
+ "answer": "Ice has a relative density of about 0.9, so a floating iceberg keeps ~9/10 of its volume submerged (it must displace water equal to its whole weight). The photo shows only the ~1/10 tip — the hidden bulk is what makes icebergs deadly to ships, as with the Titanic.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c2-d07",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_030.jpg",
+ "caption": "An iceberg floating in the sea",
+ "question": "If this entire iceberg melted into the sea, the melt water would occupy:",
+ "options": [
+  "More volume than the ice did",
+  "About 1/11 LESS volume than the ice — water contracts when ice melts",
+  "Exactly the same volume as the ice",
+  "Twice the volume of the ice"
+ ],
+ "correctOption": 1,
+ "answer": "Water expands by about 1/11 of its volume on freezing; melting reverses this, so the water formed occupies less volume than the ice. (That lost volume is almost exactly the volume the iceberg pushed above the surface — which is why a melting floating iceberg barely changes the water level.)",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c2-d08",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_031.jpg",
+ "caption": "A large ship sailing on the sea",
+ "question": "The huge steel ship in the photograph floats, yet a small steel nail sinks. The ship floats because:",
+ "options": [
+  "Its powerful engines hold it up",
+  "Its hollow shape encloses so much air that its average density is below that of sea water",
+  "Sea water is denser than steel",
+  "Paint makes steel waterproof and light"
+ ],
+ "correctOption": 1,
+ "answer": "Floating depends on AVERAGE density. The hull encloses enormous air-filled spaces, so total mass ÷ total volume is less than the density of water. A solid nail has the full density of steel (7.8 g/cm³) and sinks. Engines push the ship forward, not upward.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c2-d09",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_031.jpg",
+ "caption": "A large ship sailing on the sea",
+ "question": "When this ship sails from the sea into a freshwater river, it will:",
+ "options": [
+  "Rise higher in the water",
+  "Sink slightly deeper, because fresh water is less dense and more of it must be displaced",
+  "Float at exactly the same level",
+  "Capsize immediately"
+ ],
+ "correctOption": 1,
+ "answer": "Fresh water (1.000 g/cm³) is less dense than sea water (≈1.025 g/cm³). To displace its own weight, the ship must push aside a LARGER volume of the lighter water — so it settles deeper. Ships carry load-line (Plimsoll) markings for exactly this reason.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c2-d10",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg",
+ "caption": "Cut-away of a submarine: ballast tanks and compressed-air cylinders",
+ "question": "The diagram labels the submarine's ballast tanks and compressed-air cylinders. To DIVE, the submarine:",
+ "options": [
+  "Fills the ballast tanks with sea water, raising its average density above that of sea water",
+  "Empties the ballast tanks",
+  "Releases compressed air into the sea",
+  "Speeds up its propeller"
+ ],
+ "correctOption": 0,
+ "answer": "Flooding the ballast tanks with sea water adds mass without adding volume — the average density rises above that of sea water and the submarine sinks. The propeller drives it forward; depth control is purely a density game.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c2-d11",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg",
+ "caption": "Cut-away of a submarine: ballast tanks and compressed-air cylinders",
+ "question": "What is the role of the compressed-air cylinders shown in the diagram when the submarine wants to SURFACE?",
+ "options": [
+  "They power the engines",
+  "Their air is forced into the ballast tanks, pushing the sea water out and lowering the average density",
+  "They supply air conditioning only",
+  "They inflate an external balloon"
+ ],
+ "correctOption": 1,
+ "answer": "To rise, compressed air is blown into the ballast tanks, expelling the water. With water replaced by light air, the submarine's average density falls below that of sea water and the upthrust lifts it to the surface.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c2-d12",
+ "topicId": "ch2-measurement",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_02_physical_quantities_and_measurement/fig_033.jpg",
+ "caption": "A hydrometer (lactometer)",
+ "question": "Two beakers contain milk: sample A is pure, sample B is diluted with water. When this instrument is floated in each, it will:",
+ "options": [
+  "Float at the same level in both",
+  "Sink deeper in B (the diluted sample), because added water lowers the milk's density",
+  "Sink deeper in A (the pure sample)",
+  "Sink to the bottom in both"
+ ],
+ "correctOption": 1,
+ "answer": "Pure milk (R.D. ≈ 1.03) is denser than water. Dilution lowers the density, and in a less dense liquid the floating instrument must displace a larger volume — it sinks deeper. This is exactly how a lactometer exposes watered-down milk.",
+ "source": "icse",
+ "linksTo": "phy-s2-sec_03",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
  "id": "phy-s3-sec_01",
  "topicId": "ch3-force",
  "type": "note",
@@ -2088,7 +2634,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**M**oment = **M**ultiply force by **d**istance (perpendicular). Longer lever = **L**arger turn. Couple = **C**ancel forces, **C**reate rotation.",
  "examTip": "Always convert distance to metres before computing moment (40 cm = 0.4 m) — the classic numerical trap.",
  "source": "revision",
- "linkedMcqCount": 13
+ "linkedMcqCount": 15
 },
 {
  "id": "phy-s3-sec_03",
@@ -2100,7 +2646,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**P**ressure = **P**ush per **P**atch (area). Sharp = **S**mall area. Broad = **B**ig area, small pressure. hρg: **h**eight, **ρ** density, **g** gravity.",
  "examTip": "'Liquid pressure depends on vessel shape' is FALSE — the most repeated assertion-reason trick in this chapter.",
  "source": "revision",
- "linkedMcqCount": 35
+ "linkedMcqCount": 46
 },
 {
  "id": "phy-s3-sec_04",
@@ -2124,7 +2670,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**M**etres for moment distance. **M**etres squared for pressure area. **h** from the **t**op (free surface). 10-5-1: **10** m water = **10⁵** Pa = **1** atm.",
  "examTip": "Memorise '10 m of water ≈ 1 atm ≈ 10⁵ Pa' — it lets you sanity-check every hρg answer instantly.",
  "source": "revision",
- "linkedMcqCount": 3
+ "linkedMcqCount": 6
 },
 {
  "id": "phy-c3-m01",
@@ -3083,6 +3629,342 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "ICSE Class 8"
 },
 {
+ "id": "phy-c3-d03",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_024.jpg",
+ "caption": "See-saw: weights W₁ and W₂ about the fulcrum O",
+ "question": "In the see-saw diagram, girl A's weight W₁ produces a clockwise moment and girl B's weight W₂ an anticlockwise moment about the fulcrum O. The see-saw balances when:",
+ "options": [
+  "W₁ = W₂ always",
+  "W₁ × (distance of A from O) = W₂ × (distance of B from O)",
+  "Both girls sit at the centre",
+  "The heavier girl sits farther from O"
+ ],
+ "correctOption": 1,
+ "answer": "Balance requires the clockwise moment to equal the anticlockwise moment: W₁d₁ = W₂d₂ (the principle of moments). Equal weights are NOT required — a lighter child can balance a heavier one by sitting farther from the fulcrum (and the heavier one must sit NEARER, not farther).",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c3-d04",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_024.jpg",
+ "caption": "See-saw: weights W₁ and W₂ about the fulcrum O",
+ "question": "In the figure, suppose W₁ = 300 N sits 2 m from O. For the see-saw to balance, a 400 N friend must sit on the other side at:",
+ "options": [
+  "2 m from O",
+  "1.5 m from O, so that 400 × 1.5 = 300 × 2",
+  "2.5 m from O",
+  "0.5 m from O"
+ ],
+ "correctOption": 1,
+ "answer": "Set clockwise moment = anticlockwise moment: 300 N × 2 m = 600 N m, so the friend needs 600 ÷ 400 = 1.5 m from the fulcrum. Heavier riders balance closer to the pivot.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_14",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c3-d05",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_037.jpg",
+ "caption": "Cutting vegetables with a sharp knife",
+ "question": "The woman in the picture cuts vegetables easily because the knife's sharpened edge:",
+ "options": [
+  "Increases the force her hand applies",
+  "Concentrates her force on a tiny area, producing a very large pressure",
+  "Is heavier than a blunt edge",
+  "Reduces friction with the vegetable"
+ ],
+ "correctOption": 1,
+ "answer": "Pressure = force ÷ area. Sharpening reduces the edge's contact area enormously, so even a modest hand force produces a huge pressure that slices through. The force itself is unchanged — only its concentration changes.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d06",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_037.jpg",
+ "caption": "Cutting vegetables with a sharp knife",
+ "question": "If the same knife becomes blunt (its edge gets wider), cutting the same vegetable with the same force becomes harder because:",
+ "options": [
+  "The pressure decreases as the contact area increases",
+  "The knife becomes lighter",
+  "The vegetable becomes stronger",
+  "Friction disappears"
+ ],
+ "correctOption": 0,
+ "answer": "A blunt edge spreads the same force over a larger area, so the pressure (force/area) drops below what is needed to break through the vegetable's skin. Sharpening a knife is purely an exercise in increasing pressure.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d07",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_038.jpg",
+ "caption": "High-heeled shoes",
+ "question": "The thin, pointed heel of the shoe shown will sink into soft ground far more easily than a flat sole of the same person, because:",
+ "options": [
+  "The heel weighs more",
+  "The person's weight acts on a tiny heel area, creating very high pressure",
+  "High heels push downward with extra force",
+  "Soft ground attracts pointed objects"
+ ],
+ "correctOption": 1,
+ "answer": "The same body weight concentrated on a heel tip of a few square centimetres produces enormous pressure — often more than an elephant's foot exerts! A flat sole spreads the weight over a much larger area, so the pressure is small and the shoe doesn't sink.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d08",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_038.jpg",
+ "caption": "High-heeled shoes",
+ "question": "A 500 N girl stands on one heel of area 1 cm² (0.0001 m²). The pressure under the heel is:",
+ "options": [
+  "5 × 10⁴ Pa",
+  "5 × 10⁵ Pa",
+  "5 × 10⁶ Pa",
+  "500 Pa"
+ ],
+ "correctOption": 2,
+ "answer": "P = F/A = 500 N ÷ 0.0001 m² = 5,000,000 Pa = 5 × 10⁶ Pa — about fifty times atmospheric pressure, which is why stiletto heels dent wooden floors. Note the unit conversion: 1 cm² = 10⁻⁴ m².",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_14",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c3-d09",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_039.jpg",
+ "caption": "A heavily loaded truck with many wheels",
+ "question": "The loaded truck in the photograph has many wheels (several rear axles). The physics purpose of the extra wheels is to:",
+ "options": [
+  "Make the truck faster",
+  "Spread the load's weight over a larger total contact area, reducing the pressure on the road",
+  "Improve the brakes",
+  "Carry spare tyres"
+ ],
+ "correctOption": 1,
+ "answer": "More wheels = more total tyre–road contact area. The heavy load divided over this larger area exerts less pressure, protecting both the road surface from damage and the tyres from bursting. Same idea as broad foundations and tank tracks.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d10",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_039.jpg",
+ "caption": "A heavily loaded truck with many wheels",
+ "question": "If this truck doubles its load but also doubles the number of identical wheels in contact with the road, the pressure each tyre exerts on the road:",
+ "options": [
+  "Doubles",
+  "Becomes four times",
+  "Remains roughly the same",
+  "Becomes half"
+ ],
+ "correctOption": 2,
+ "answer": "Pressure = total weight ÷ total contact area. Doubling both the weight (numerator) and the contact area (denominator) leaves the ratio unchanged — which is precisely why heavier trucks are built with more axles.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c3-d11",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_041.jpg",
+ "caption": "An army tank on caterpillar tracks",
+ "question": "The army tank in the photograph weighs many tonnes, yet it can cross soft, muddy ground where an ordinary car would get stuck. This is because its caterpillar tracks:",
+ "options": [
+  "Dig into the mud for grip",
+  "Spread its enormous weight over a very large area of ground, keeping the pressure low",
+  "Make the tank lighter",
+  "Heat the ground and dry it"
+ ],
+ "correctOption": 1,
+ "answer": "The continuous steel tracks lay down a huge contact area. Pressure = weight ÷ area, so despite its massive weight, the tank's ground pressure stays low — low enough not to sink. A car's four small tyre patches exert higher pressure than a tank's tracks!",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d12",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_041.jpg",
+ "caption": "An army tank on caterpillar tracks",
+ "question": "Which of the following uses the SAME principle as the tank's tracks in the photograph?",
+ "options": [
+  "A sharp arrow piercing a target",
+  "Skis that let a skier glide over soft snow without sinking",
+  "A nail being hammered into wood",
+  "A syringe drawing up medicine"
+ ],
+ "correctOption": 1,
+ "answer": "Skis, like tank tracks, ENLARGE the contact area to REDUCE pressure on a soft surface. Arrows and nails do the opposite (small area, large pressure), and the syringe works on atmospheric pressure, not contact area.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c3-d13",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_042.jpg",
+ "caption": "Bridge towers standing on broad bases",
+ "question": "The towers of the bridge in the photograph stand on very broad masonry bases in the river. The broad base is needed to:",
+ "options": [
+  "Make the bridge look grand",
+  "Reduce the pressure on the riverbed so the towers do not sink",
+  "Block the river's flow",
+  "Store construction materials"
+ ],
+ "correctOption": 1,
+ "answer": "The enormous weight of each tower, spread over a broad base, exerts a small enough pressure that the ground beneath can support it without yielding. All heavy structures — dams, buildings, electricity pylons — use wide foundations for the same reason.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d14",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_042.jpg",
+ "caption": "Bridge towers standing on broad bases",
+ "question": "A bridge tower weighs 2 × 10⁷ N and rests on a base of area 400 m². The pressure on the riverbed is:",
+ "options": [
+  "5 × 10⁴ Pa",
+  "8 × 10⁹ Pa",
+  "5 × 10⁵ Pa",
+  "2 × 10⁵ Pa"
+ ],
+ "correctOption": 0,
+ "answer": "P = F/A = (2 × 10⁷ N) ÷ (400 m²) = 5 × 10⁴ Pa — only about half of atmospheric pressure, comfortably within what compacted ground can bear. The broad base is what keeps this number small.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_14",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c3-d15",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_043.jpg",
+ "caption": "A railway track laid on broad sleepers",
+ "question": "In the photograph, the steel rails rest on broad sleepers laid over crushed stone ballast. The sleepers serve to:",
+ "options": [
+  "Decorate the track",
+  "Spread the train's weight over a large area of ground, reducing the pressure",
+  "Stop the rails from rusting",
+  "Make the ride bumpy so drivers stay alert"
+ ],
+ "correctOption": 1,
+ "answer": "A train's weight on the narrow rails alone would press into the earth. The sleepers (and the ballast beneath) spread this weight over a much larger area, lowering the pressure so the track stays firm and level.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c3-d16",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_043.jpg",
+ "caption": "A railway track laid on broad sleepers",
+ "question": "In this picture, TWO different pressure ideas are at work: the sleepers spread the load, while the wheels of a train press on the rails over tiny contact patches. The wheel–rail contact involves:",
+ "options": [
+  "Small area → very high pressure (which is why both wheel and rail are made of hard steel)",
+  "Large area → low pressure",
+  "No pressure at all",
+  "Liquid pressure"
+ ],
+ "correctOption": 0,
+ "answer": "Each wheel touches the rail over a patch about the size of a coin, so the contact pressure is enormous — hence hardened steel for both. The system then deliberately spreads that load downward: rail → sleepers → ballast → ground, reducing pressure at each stage.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c3-d17",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_008.jpg",
+ "caption": "Hands turning a steering wheel",
+ "question": "In the photograph, the driver's two hands push on opposite sides of the wheel rim, not at its centre. Applying the forces at the RIM rather than near the centre is better because:",
+ "options": [
+  "The rim is softer to hold",
+  "A larger distance from the axis of rotation gives each force a larger turning moment",
+  "The centre of the wheel is too hot",
+  "Forces at the centre would break the wheel"
+ ],
+ "correctOption": 1,
+ "answer": "Moment = force × perpendicular distance from the axis. The rim is the farthest point from the steering column's axis, so forces applied there produce the maximum turning effect for the least effort. A force applied AT the axis would have zero moment.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c3-d18",
+ "topicId": "ch3-force",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_03_force_and_pressure/fig_036.jpg",
+ "caption": "A girl carrying a school bag with broad straps",
+ "question": "If the broad straps of the bag in the photograph were replaced by thin cords carrying the SAME bag, the girl would feel pain because the thin cords would:",
+ "options": [
+  "Increase the bag's weight",
+  "Concentrate the same weight on a much smaller shoulder area, increasing the pressure greatly",
+  "Slip off more easily",
+  "Stretch and break"
+ ],
+ "correctOption": 1,
+ "answer": "The bag's weight (force) is unchanged, but pressure = force ÷ area. Thin cords shrink the contact area drastically, multiplying the pressure until it digs painfully into the shoulder — the exact reverse of why broad straps are comfortable.",
+ "source": "icse",
+ "linksTo": "phy-s3-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
  "id": "phy-s4-sec_01",
  "topicId": "ch4-energy",
  "type": "note",
@@ -3092,7 +3974,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**W**ork needs **W**alk (displacement). No move = no work. Carrying horizontally: force ↑, path →, work = 0. Tired ≠ work done.",
  "examTip": "Before answering 'how much work?', ask: Is there a force? Did the point of application move along the force? If either is no, W = 0.",
  "source": "revision",
- "linkedMcqCount": 15
+ "linkedMcqCount": 16
 },
 {
  "id": "phy-s4-sec_03",
@@ -3104,7 +3986,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**K**inetic = **K**icking (moving). **P**otential = **P**osition/ **P**ulled shape. v² means speed matters MORE than height — square vs linear.",
  "examTip": "For 'trace energy changes' questions, write the chain with arrows and name every intermediate form — each named form carries a mark.",
  "source": "revision",
- "linkedMcqCount": 24
+ "linkedMcqCount": 30
 },
 {
  "id": "phy-s4-sec_04",
@@ -3128,7 +4010,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "**S**quare speed **S**econd in KE. **H**eight = **H**ow high vertically (not slant). Formula first, numbers second, unit last — **FNU**.",
  "examTip": "Write the formula line first even in MCQ rough work — substituting into a written formula almost eliminates careless errors.",
  "source": "revision",
- "linkedMcqCount": 5
+ "linkedMcqCount": 6
 },
 {
  "id": "phy-c4-m01",
@@ -4087,6 +4969,174 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "NEET UG"
 },
 {
+ "id": "phy-c4-d03",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_009.jpg",
+ "caption": "A mountaineer climbing a steep snow slope",
+ "question": "The climber in the photograph moves slowly up the slope. In the scientific sense, he is doing work against:",
+ "options": [
+  "Friction only",
+  "Gravity (gaining potential energy) and partly against friction",
+  "Air pressure only",
+  "No force — climbing is not work"
+ ],
+ "correctOption": 1,
+ "answer": "He applies force and his body moves — both conditions for work are met. Most of his work goes against gravity, stored as gravitational potential energy (mgh) as he gains height; some is spent against friction. Work done against gravity depends only on the vertical height gained, not the path's length.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_01",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c4-d04",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_009.jpg",
+ "caption": "A mountaineer climbing a steep snow slope",
+ "question": "A 60 kg climber rises 100 m up the slope shown (g = 10 m/s²). The potential energy he gains is:",
+ "options": [
+  "6,000 J",
+  "60,000 J",
+  "600 J",
+  "60 J"
+ ],
+ "correctOption": 1,
+ "answer": "PE gained = mgh = 60 × 10 × 100 = 60,000 J = 60 kJ. Only the VERTICAL height (100 m) matters — the longer zig-zag path he actually walks changes the effort against friction, not the energy stored against gravity.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_13",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c4-d05",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_025.jpg",
+ "caption": "A stretched catapult (slingshot) about to launch",
+ "question": "In the photograph, the rubber of the catapult is pulled back fully, ready to launch. At this stretched moment, the energy stored in the rubber is:",
+ "options": [
+  "Kinetic energy",
+  "Elastic potential energy, due to its changed shape",
+  "Gravitational potential energy",
+  "Sound energy"
+ ],
+ "correctOption": 1,
+ "answer": "Stretching changes the rubber's shape; the work done by the hand is stored as ELASTIC potential energy. Gravitational PE needs height, kinetic needs motion — the stretched, stationary rubber has neither.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c4-d06",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_025.jpg",
+ "caption": "A stretched catapult (slingshot) about to launch",
+ "question": "The moment the stretched catapult in the picture is released, the energy transformation is:",
+ "options": [
+  "Kinetic → elastic",
+  "Elastic potential energy of the rubber → kinetic energy of the projectile",
+  "Gravitational → chemical",
+  "Elastic → gravitational only"
+ ],
+ "correctOption": 1,
+ "answer": "On release, the rubber snaps back to its natural shape, and its stored elastic PE is transferred to the stone as kinetic energy — the stone flies off fast. A bow and arrow works identically. (If the stone then rises, some KE further converts to gravitational PE.)",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c4-d07",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_030.jpg",
+ "caption": "Pendulum: C and B marked 'Only PE', A (lowest point) marked 'Only KE'",
+ "question": "In the pendulum diagram, the extreme positions B and C are marked 'Only PE' and the lowest point A is marked 'Only KE'. Why is the kinetic energy zero at B and C?",
+ "options": [
+  "The bob is heaviest there",
+  "The bob is momentarily at REST at the extremes before reversing direction",
+  "Gravity stops acting there",
+  "The string becomes slack"
+ ],
+ "correctOption": 1,
+ "answer": "At each extreme the bob stops for an instant as it changes direction — speed zero means KE (½mv²) is zero, while its raised position gives maximum PE. Swinging down, PE converts to KE, peaking at A, the lowest and fastest point.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c4-d08",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_030.jpg",
+ "caption": "Pendulum: C and B marked 'Only PE', A (lowest point) marked 'Only KE'",
+ "question": "In the same diagram, at a point midway between C and A (neither extreme nor lowest), the bob has:",
+ "options": [
+  "Only PE",
+  "Only KE",
+  "Both PE and KE, with their sum equal to the total energy at any other point",
+  "Neither PE nor KE"
+ ],
+ "correctOption": 2,
+ "answer": "Between the extreme and the mean position, part of the PE has already become KE — the bob is both raised AND moving. Conservation of mechanical energy guarantees PE + KE = constant throughout the swing (ignoring air resistance and friction).",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c4-d09",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_016.jpg",
+ "caption": "A wind farm — turbines turned by moving air",
+ "question": "Wind farms like the one shown are described as sources of 'renewable' energy because:",
+ "options": [
+  "The turbines never wear out",
+  "The kinetic energy of moving air is continuously replenished by nature and is not used up like fuel",
+  "They create energy from nothing",
+  "Wind is free of cost only at night"
+ ],
+ "correctOption": 1,
+ "answer": "The sun keeps heating the earth unevenly, which keeps air moving — so wind's kinetic energy renews itself naturally. The turbines only CONVERT this energy to electricity (no energy is created); unlike coal or petrol, the source never runs out and produces no smoke.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c4-d10",
+ "topicId": "ch4-energy",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_04_energy/fig_022.jpg",
+ "caption": "A raised hammer about to strike a nail",
+ "question": "In the photograph, the hammer head is raised and momentarily still. At this instant the hammer possesses:",
+ "options": [
+  "Maximum kinetic energy",
+  "Gravitational potential energy due to its raised position",
+  "No energy at all",
+  "Elastic potential energy"
+ ],
+ "correctOption": 1,
+ "answer": "Raised and stationary, the hammer stores gravitational PE (mgh) given to it by the arm's work. The instant it swings down, this PE turns into KE — which then does the work of driving the nail.",
+ "source": "icse",
+ "linksTo": "phy-s4-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
  "id": "phy-s5-sec_01",
  "topicId": "ch5-light",
  "type": "note",
@@ -4107,7 +5157,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Draw one ray diagram for a coin in water: one diagram explains pencil, pool, fish and raised coin.",
  "examTip": "Always measure angles from the **normal**, never from the surface — mislabelled angles lose marks even if bending direction is correct.",
  "source": "revision",
- "linkedMcqCount": 15
+ "linkedMcqCount": 17
 },
 {
  "id": "phy-s5-sec_03",
@@ -4119,7 +5169,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Insist students label i and r with arcs touching the normal before anything else — examiners check arc position first.",
  "examTip": "State 'angles measured from the normal' in every refraction answer; it signals you know the convention.",
  "source": "revision",
- "linkedMcqCount": 1
+ "linkedMcqCount": 2
 },
 {
  "id": "phy-s5-sec_05",
@@ -4131,7 +5181,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Use a spoon: concave = inside, convex = outside. Let students measure f with sunlight — the charred paper spot makes the focus unforgettable.",
  "examTip": "On every mirror diagram label **P, C, F** and write **f = R/2** before drawing rays.",
  "source": "revision",
- "linkedMcqCount": 7
+ "linkedMcqCount": 8
 },
 {
  "id": "phy-s5-sec_06",
@@ -4143,7 +5193,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "One-line logic: convex always diverges → always small virtual erect; concave converges → can do everything depending on object position.",
  "examTip": "Match-the-columns on mirror uses is near-certain — drill the five pairs until automatic.",
  "source": "revision",
- "linkedMcqCount": 8
+ "linkedMcqCount": 10
 },
 {
  "id": "phy-s5-sec_07",
@@ -4167,7 +5217,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Tell the 'walking story': object approaches from infinity — watch the image grow and move out until it jumps behind the mirror at F.",
  "examTip": "For sunny-day focal length: parallel sun rays → converge at F; distance to brightest spot = f.",
  "source": "revision",
- "linkedMcqCount": 5
+ "linkedMcqCount": 9
 },
 {
  "id": "phy-s5-sec_09",
@@ -4179,7 +5229,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Use a CD in sunlight for dispersion, then prism — students see the prism does not 'paint' new colours, only sorts them.",
  "examTip": "Two giveaway facts: red deviates least / violet most; prism does not create colours.",
  "source": "revision",
- "linkedMcqCount": 11
+ "linkedMcqCount": 12
 },
 {
  "id": "phy-s5-sec_10",
@@ -4191,7 +5241,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Pair the two demos in one lesson: disperse with prism 1, recombine with prism 2 — then spin the disc for the 'eye version'.",
  "examTip": "Exam answer template: Experiment 1 (inverted prism, glass) + Experiment 2 (colour disc, persistence of vision).",
  "source": "revision",
- "linkedMcqCount": 2
+ "linkedMcqCount": 3
 },
 {
  "id": "phy-c5-m01",
@@ -5150,6 +6200,258 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "NEET UG"
 },
 {
+ "id": "phy-c5-d03",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_008.jpg",
+ "caption": "Refraction of light from air into water",
+ "question": "In the diagram, if the incident ray AO were made to fall along the normal N₁ itself (angle of incidence = 0°), the ray entering the water would:",
+ "options": [
+  "Bend sharply toward the surface",
+  "Pass straight on without bending, though it slows down",
+  "Reflect completely back",
+  "Split into seven colours"
+ ],
+ "correctOption": 1,
+ "answer": "Refraction (bending) occurs only at OBLIQUE incidence. Along the normal, the ray's direction is unchanged — only its speed drops as it enters the denser water. This special case is a favourite exam follow-up to the standard diagram.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c5-d04",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_017.jpg",
+ "caption": "Refraction through a rectangular glass slab",
+ "question": "In the glass-slab diagram, the ray bends towards the normal at the top surface (B), travels through the glass, and bends away from the normal at the bottom surface (C). The emergent ray CD is:",
+ "options": [
+  "Perpendicular to the incident ray",
+  "Parallel to the incident ray AB, but shifted sideways (laterally displaced)",
+  "Along the same straight line as AB",
+  "Bent towards the slab's base"
+ ],
+ "correctOption": 1,
+ "answer": "The two refractions at the parallel faces are equal and opposite: bending toward the normal on entry is exactly undone by bending away on exit. The emergent ray is parallel to the incident ray, displaced sideways — the dotted line in the figure shows this LATERAL DISPLACEMENT.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c5-d05",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_017.jpg",
+ "caption": "Refraction through a rectangular glass slab",
+ "question": "Inside the slab in the diagram (between B and C), the angle of refraction r is SMALLER than the angle of incidence i. This tells us that within the glass, light:",
+ "options": [
+  "Travels faster than in air",
+  "Travels slower than in air — glass is optically denser",
+  "Travels at the same speed as in air",
+  "Stops moving"
+ ],
+ "correctOption": 1,
+ "answer": "Bending TOWARDS the normal (r < i) happens when light enters a medium where it travels slower — an optically denser medium. The change of speed is the root cause of refraction; the slab diagram displays it twice, once at each face.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_03",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c5-d06",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_021.jpg",
+ "caption": "Reflections in the two sides of a steel spoon",
+ "question": "In the photograph, the INNER (bowl) side of one spoon shows an upside-down image of the surroundings, while the OUTER (back) side of the other spoon shows an erect image. This is because the two sides act as:",
+ "options": [
+  "Plane mirror and magnifying glass",
+  "Concave mirror (inner side — inverted image of distant objects) and convex mirror (outer side — erect diminished image)",
+  "Two identical convex mirrors",
+  "Two plane mirrors of different sizes"
+ ],
+ "correctOption": 1,
+ "answer": "A spoon is the household demonstration of spherical mirrors: its inner curve is a concave mirror — distant objects form REAL, INVERTED images — and its outer bulge is a convex mirror, which always gives a virtual, ERECT, diminished image.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_06",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c5-d07",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_021.jpg",
+ "caption": "Reflections in the two sides of a steel spoon",
+ "question": "If you bring the spoon's INNER (concave) side very close to your eye — closer than its focal length — your reflected face will appear:",
+ "options": [
+  "Inverted and tiny",
+  "Erect and magnified",
+  "Inverted and magnified",
+  "Exactly the same size"
+ ],
+ "correctOption": 1,
+ "answer": "An object inside the focal length of a concave mirror forms a VIRTUAL, ERECT, MAGNIFIED image — the shaving-mirror arrangement. The inverted view in the photo is for FAR objects (beyond the centre of curvature); move inside F and the image flips erect and grows.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_06",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c5-d08",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_023.jpg",
+ "caption": "Parallel rays converge at F after reflection from a concave mirror",
+ "question": "Run this diagram in reverse: place a small bright bulb exactly at the point F shown. After reflection, the rays will:",
+ "options": [
+  "Converge back at F",
+  "Emerge parallel to the principal axis — forming a strong straight beam",
+  "Scatter randomly",
+  "Focus at the centre of curvature C"
+ ],
+ "correctOption": 1,
+ "answer": "Light paths are reversible. Rays leaving the focus, after reflection, travel parallel to the principal axis — this is exactly how torches, headlights and searchlights produce their beams: bulb at the focus of a concave reflector.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_08",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c5-d09",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_038.jpg",
+ "caption": "Concave mirror: object placed beyond the centre of curvature",
+ "question": "In the ray diagram, the object (upright arrow) stands BEYOND C, and the image forms between C and F. The image is:",
+ "options": [
+  "Virtual, erect and magnified",
+  "Real, inverted and smaller than the object",
+  "Real, erect and larger",
+  "Virtual, inverted and the same size"
+ ],
+ "correctOption": 1,
+ "answer": "For an object beyond C, a concave mirror forms the image between C and F: REAL (rays actually meet — drawn below the axis), INVERTED, and DIMINISHED. As the object moves closer to C, the image grows and moves toward C.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_08",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c5-d10",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_038.jpg",
+ "caption": "Concave mirror: object placed beyond the centre of curvature",
+ "question": "In this diagram, one drawn ray travels parallel to the principal axis and reflects through F; another passes through C and returns along itself. Why does the ray through C retrace its own path?",
+ "options": [
+  "It is the brightest ray",
+  "It strikes the mirror along the normal (every line through C is perpendicular to the mirror surface)",
+  "It misses the mirror",
+  "C is a hole in the mirror"
+ ],
+ "correctOption": 1,
+ "answer": "The mirror is part of a sphere centred at C, so any ray through C hits the surface at 90° (along the radius/normal). With angle of incidence zero, it reflects straight back along itself — which is why this ray is one of the two standard construction rays.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_05",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c5-d11",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_039.jpg",
+ "caption": "Concave mirror: object placed at the centre of curvature",
+ "question": "In the diagram, the object stands exactly AT C, and the image also forms at C. Compared with the object, the image is:",
+ "options": [
+  "Real, inverted and exactly the SAME SIZE",
+  "Virtual, erect and magnified",
+  "Real, erect and diminished",
+  "Formed at infinity"
+ ],
+ "correctOption": 0,
+ "answer": "Object at C is the special 'same size' position: the image is real, inverted, equal in size, and located at C itself (just below the axis in the figure). This symmetric case is the dividing line between diminished (beyond C) and magnified (between C and F) images.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_08",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c5-d12",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_039.jpg",
+ "caption": "Concave mirror: object placed at the centre of curvature",
+ "question": "Starting from the position in this diagram, the object is slowly moved TOWARD the mirror, from C to F. The image will:",
+ "options": [
+  "Shrink and move toward the mirror",
+  "Move beyond C and grow LARGER, remaining real and inverted",
+  "Immediately become virtual",
+  "Stay at C unchanged"
+ ],
+ "correctOption": 1,
+ "answer": "Between C and F the object gives a real, inverted, MAGNIFIED image beyond C — image and object effectively swap places compared with the 'beyond C' case. Only when the object crosses INSIDE F does the image become virtual, erect and magnified behind the mirror.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_08",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c5-d13",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_043.jpg",
+ "caption": "A triangular glass prism",
+ "question": "The glass block in the photograph has two plane refracting surfaces INCLINED to each other (triangular cross-section). When a narrow beam of white light passes through it, the prism will:",
+ "options": [
+  "Only reflect the light back",
+  "Disperse the white light into the seven colours of the spectrum (VIBGYOR)",
+  "Make the light brighter",
+  "Convert the light into heat"
+ ],
+ "correctOption": 1,
+ "answer": "Because its faces are inclined (unlike a slab's parallel faces), the prism bends different colours by different amounts — violet most, red least — separating white light into the spectrum. The inclined geometry visible in the photo is the key to dispersion.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_09",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c5-d14",
+ "topicId": "ch5-light",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_05_light_energy/fig_043.jpg",
+ "caption": "A triangular glass prism",
+ "question": "A second identical prism is placed inverted (upside-down) just after this prism in the path of the dispersed colours. The light emerging from the second prism will be:",
+ "options": [
+  "A wider spectrum",
+  "White light — the inverted prism recombines the colours",
+  "Only violet light",
+  "No light at all"
+ ],
+ "correctOption": 1,
+ "answer": "The inverted prism applies equal and opposite deviations to each colour, bringing them back together into white light — Newton's classic proof that a prism separates, but does not create, the colours of white light.",
+ "source": "icse",
+ "linksTo": "phy-s5-sec_10",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
  "id": "phy-s6-sec_01",
  "topicId": "ch6-heat",
  "type": "note",
@@ -5159,7 +6461,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Three moves cover almost every application: leave room, exploit contraction, exploit unequal expansion — teach the taxonomy, not isolated examples.",
  "examTip": "Ball-and-ring demo is the visual anchor; follow with bimetallic strip bending in a candle flame.",
  "source": "revision",
- "linkedMcqCount": 28
+ "linkedMcqCount": 35
 },
 {
  "id": "phy-s6-sec_05",
@@ -5171,7 +6473,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Flask-and-tube demo is subtle but powerful — predict the dip before showing it; students remember the 'glass wins first' surprise.",
  "examTip": "Almost every anomaly question answers with **4 °C** — maximum density, minimum volume.",
  "source": "revision",
- "linkedMcqCount": 16
+ "linkedMcqCount": 20
 },
 {
  "id": "phy-s6-sec_07",
@@ -5183,7 +6485,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Hold a balloon on a flask in hot water — instant gas expansion demo. Contrast with a sealed tyre on a sunny day for confined gas.",
  "examTip": "Order chain: solid < liquid << gas — write it at the top of every expansion comparison answer.",
  "source": "revision",
- "linkedMcqCount": 10
+ "linkedMcqCount": 11
 },
 {
  "id": "phy-c6-m01",
@@ -6142,6 +7444,258 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "ICSE Class 8"
 },
 {
+ "id": "phy-c6-d03",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_008.jpg",
+ "caption": "Ball-and-ring: cold ball passes, heated ball does not",
+ "question": "In the apparatus shown, the metal ball at normal temperature just slips through the ring (stand A), but after strong heating it no longer passes (stand B). This is because heating:",
+ "options": [
+  "Made the ball softer",
+  "Increased the ball's volume by thermal (cubical) expansion",
+  "Made the ring smaller",
+  "Magnetised the ball"
+ ],
+ "correctOption": 1,
+ "answer": "Heating makes the ball's molecules vibrate with larger amplitude, pushing them slightly apart — the ball expands in volume and no longer fits the ring. After cooling it contracts and passes again. The ring, unheated, is unchanged.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c6-d04",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_008.jpg",
+ "caption": "Ball-and-ring: cold ball passes, heated ball does not",
+ "question": "In the same experiment, suppose instead the BALL stays cold but the RING is strongly heated. The cold ball would then:",
+ "options": [
+  "Not pass — the ring's hole shrinks",
+  "Pass even more easily — the heated ring expands and its hole becomes LARGER",
+  "Stick halfway",
+  "Melt the ring"
+ ],
+ "correctOption": 1,
+ "answer": "When a ring (or any object with a hole) is heated, the hole expands along with the metal — as if the hole were made of the same material. The gap widens and the cold ball passes easily. The same principle lets a heated iron rim slip onto a cart wheel.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c6-d05",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_010.jpg",
+ "caption": "Bimetallic strip (brass over iron) bending over a flame",
+ "question": "In the figure, the brass–iron strip bends into a curve when heated over the burner, with brass on the OUTER (longer) side of the curve. This shows that:",
+ "options": [
+  "Brass expands MORE than iron for the same heating",
+  "Iron expands more than brass",
+  "Both metals expand equally",
+  "Brass contracts on heating"
+ ],
+ "correctOption": 0,
+ "answer": "The strip bends because the two metals expand UNEQUALLY: brass lengthens more, so it must lie along the outside of the curve, forcing the strip to arc toward the lesser-expanding iron side. Equal expansion would leave the strip straight.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c6-d06",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_010.jpg",
+ "caption": "Bimetallic strip (brass over iron) bending over a flame",
+ "question": "The bending shown in this figure is put to practical use in which device?",
+ "options": [
+  "A mercury thermometer",
+  "The thermostat of an electric iron or geyser, where the bending strip makes and breaks the circuit",
+  "A hydrometer",
+  "A simple pendulum"
+ ],
+ "correctOption": 1,
+ "answer": "In a thermostat, the bimetallic strip carries the current. As the appliance heats, the strip bends and breaks the contact (heating stops); on cooling it straightens and remakes the contact. Fire alarms use the same bend to CLOSE a bell circuit.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c6-d07",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_018.jpg",
+ "caption": "Flask of coloured water with capillary tube in a hot water tub",
+ "question": "In the experiment shown, the flask of coloured water stands in a tub of hot water, and the level in the capillary tube rises from the initial mark to the final mark. The rise demonstrates that:",
+ "options": [
+  "Water is pushed up by steam",
+  "Liquids expand on heating",
+  "Glass contracts on heating",
+  "The capillary sucks water upward"
+ ],
+ "correctOption": 1,
+ "answer": "Heat from the tub warms the coloured water, which expands; since the flask is full, the only way to expand is up the narrow capillary — and the narrow bore makes even a small expansion clearly visible. The same principle drives liquid-in-glass thermometers.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_05",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c6-d08",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_018.jpg",
+ "caption": "Flask of coloured water with capillary tube in a hot water tub",
+ "question": "Watching this experiment very carefully from the first second, a sharp observer notices the liquid level FALLS slightly before it starts rising. The brief fall happens because:",
+ "options": [
+  "Some water evaporates instantly",
+  "The glass flask receives the heat first and expands, enlarging its capacity before the water itself warms and expands",
+  "Air pressure pushes the liquid down",
+  "The coloured dye sinks"
+ ],
+ "correctOption": 1,
+ "answer": "Heat reaches the glass wall before the water inside. The expanding flask briefly holds MORE, so the level dips; once the water warms, its much larger expansion overtakes the glass and the level climbs well above the start. A classic subtle observation distinguishing the container's expansion from the liquid's.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_05",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c6-d09",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_020.jpg",
+ "caption": "Three flasks (water, alcohol, ether) heated equally — different final levels",
+ "question": "In the figure, three identical flasks containing equal volumes of water, alcohol and ether are warmed through the SAME temperature rise, yet the final levels in their tubes are different (ether highest, water lowest). Conclusion:",
+ "options": [
+  "The flasks are of different sizes",
+  "Different liquids expand by different amounts for the same heating",
+  "Ether is heavier than water",
+  "The thermometers are faulty"
+ ],
+ "correctOption": 1,
+ "answer": "With identical flasks, equal volumes and equal heating, the only variable is the liquid itself. The different rises show each liquid has its own expansivity: ether > alcohol > water. (Gases, in contrast, would all expand almost equally.)",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_05",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c6-d10",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_020.jpg",
+ "caption": "Three flasks (water, alcohol, ether) heated equally — different final levels",
+ "question": "Based on this experiment, why is mercury (or coloured alcohol) chosen for thermometers rather than water?",
+ "options": [
+  "Water is too cheap",
+  "Water's expansion is small, irregular near 4 °C (anomalous), and water wets glass — mercury expands uniformly, is visible, and does not stick to glass",
+  "Mercury is lighter than water",
+  "Water would freeze the glass"
+ ],
+ "correctOption": 1,
+ "answer": "A thermometric liquid must expand REGULARLY and visibly. Water expands little, behaves anomalously between 0–4 °C (it would read backwards there!), wets glass and is transparent. Mercury expands uniformly, is opaque and shiny, doesn't wet glass, and stays liquid over a wide range.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_05",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c6-d11",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_006.jpg",
+ "caption": "Bar and gauge apparatus",
+ "question": "In the bar-and-gauge apparatus shown, the cold metal bar fits exactly into the gauge. After the bar is strongly heated, it will:",
+ "options": [
+  "Still fit exactly",
+  "No longer fit into the gauge, because it has expanded in length and thickness",
+  "Fit more loosely",
+  "Become shorter"
+ ],
+ "correctOption": 1,
+ "answer": "Heating expands the bar in every dimension (length, area, volume), so it can no longer fit the gauge that matched it when cold. After cooling, it contracts and fits again — the linear-expansion counterpart of the ball-and-ring experiment.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c6-d12",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_006.jpg",
+ "caption": "Bar and gauge apparatus",
+ "question": "The bar-and-gauge experiment models a real engineering problem. Which one?",
+ "options": [
+  "Why dams are thick at the base",
+  "Why railway rails need expansion gaps — a rail that 'fits' in winter becomes too long in summer heat",
+  "Why ships float",
+  "Why fuses melt"
+ ],
+ "correctOption": 1,
+ "answer": "Just as the heated bar no longer fits its gauge, a rail that exactly fits its space in winter lengthens in summer; without gaps the rails would push against each other and buckle the track. The experiment is the laboratory version of the expansion-gap problem.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c6-d13",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_024.jpg",
+ "caption": "Gap left between two successive rails",
+ "question": "A welder 'fixes' the gap shown in this photograph by joining the rails into one continuous piece on a cold winter day. Next summer, the most likely result is:",
+ "options": [
+  "Nothing — welded rails never change",
+  "The track buckles sideways, because the expanding steel has nowhere to go",
+  "The rails become shorter",
+  "The trains run faster"
+ ],
+ "correctOption": 1,
+ "answer": "Steel rails lengthen in summer heat. With the gaps welded shut, the expansion produces enormous compressive forces that bow the track sideways (sun-kink/buckling) — a derailment hazard. The humble gap exists precisely to absorb this expansion.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_01",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c6-d14",
+ "topicId": "ch6-heat",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_06_heat_transfer/fig_023.jpg",
+ "caption": "Balloon on a flask placed in a water bath",
+ "question": "In the experiment shown, after the balloon has inflated in hot water, the flask is moved into a tub of ICE-COLD water. The balloon will:",
+ "options": [
+  "Inflate even more",
+  "Shrivel and collapse as the trapped air contracts on cooling",
+  "Burst",
+  "Stay exactly as it is"
+ ],
+ "correctOption": 1,
+ "answer": "Cooling slows the air molecules; the air contracts, its pressure falls, and the balloon deflates. Together with the hot-water half of the experiment, this shows gases expand on heating AND contract on cooling — both far more than solids or liquids.",
+ "source": "icse",
+ "linksTo": "phy-s6-sec_07",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
  "id": "phy-s7-sec_01",
  "topicId": "ch7-sound",
  "type": "note",
@@ -6151,7 +7705,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Bell-jar demo is the chapter opener — let students predict what happens to sound vs sight as air is removed.",
  "examTip": "Lightning–thunder delay: multiply seconds by 340 m (or ÷3 for km) — quick mental math for exams.",
  "source": "revision",
- "linkedMcqCount": 10
+ "linkedMcqCount": 11
 },
 {
  "id": "phy-s7-sec_02",
@@ -6163,7 +7717,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Pluck a rubber band gently then hard — same pitch, different loudness. Then tighten it — pitch rises. Two demos, one lesson.",
  "examTip": "Memorise trio: pitch↔frequency, loudness↔amplitude, T = 1/f — decides most chapter MCQs.",
  "source": "revision",
- "linkedMcqCount": 25
+ "linkedMcqCount": 28
 },
 {
  "id": "phy-s7-sec_03",
@@ -6175,7 +7729,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Use slinky for λ; count oscillations with stopwatch for f; then calculate v — one hands-on block covers the whole equation.",
  "examTip": "Write formula → rearrange → substitute → unit — four lines, four method marks in ICSE numericals.",
  "source": "revision",
- "linkedMcqCount": 5
+ "linkedMcqCount": 6
 },
 {
  "id": "phy-s7-sec_05",
@@ -6187,7 +7741,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Tuning fork on table vs in hand — the single best loudness demo. Pair with wave diagrams showing small vs large amplitude.",
  "examTip": "Drum harder = louder not shriller — classic assertion–reason; amplitude up, frequency unchanged.",
  "source": "revision",
- "linkedMcqCount": 14
+ "linkedMcqCount": 17
 },
 {
  "id": "phy-c7-m01",
@@ -7146,6 +8700,174 @@ const PHYSICS_NEET_DATA = [
  "qualityLevel": "Olympiad"
 },
 {
+ "id": "phy-c7-d03",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_007.jpg",
+ "caption": "Wave graph: many waves per second — high-pitched sound",
+ "question": "This graph shows many complete waves packed into the same time interval (high frequency), labelled 'high-pitched sound'. Compared with a low-frequency wave of the SAME amplitude, this sound is:",
+ "options": [
+  "Louder",
+  "Shriller (higher pitch) but equally loud",
+  "Quieter and deeper",
+  "Faster-travelling"
+ ],
+ "correctOption": 1,
+ "answer": "More vibrations per second = higher frequency = higher PITCH. Since the amplitude (wave height) is unchanged, the loudness is the same. Frequency does not change the wave's speed in a given medium — speed depends on the medium alone.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c7-d04",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_007.jpg",
+ "caption": "Wave graph: many waves per second — high-pitched sound",
+ "question": "In this graph, 8 complete waves occupy 0.02 seconds. The frequency of the sound is:",
+ "options": [
+  "8 Hz",
+  "160 Hz",
+  "400 Hz",
+  "0.0025 Hz"
+ ],
+ "correctOption": 2,
+ "answer": "Frequency = number of waves ÷ time = 8 ÷ 0.02 = 400 Hz. (Equivalently, the time period of one wave is 0.02/8 = 0.0025 s, and f = 1/T = 400 Hz.) Reading frequency off a disturbance–time graph is a standard skill.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_03",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c7-d05",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_013.jpg",
+ "caption": "A violin — a string instrument",
+ "question": "The violin in the photograph produces sound when its strings are bowed. The four strings differ in thickness so that:",
+ "options": [
+  "The violin looks symmetrical",
+  "Thicker strings vibrate more slowly, giving lower-pitched (deeper) notes; thinner strings give higher notes",
+  "Thicker strings are louder only",
+  "They wear out at the same rate"
+ ],
+ "correctOption": 1,
+ "answer": "For the same length and tension, a thicker (heavier) string vibrates at a lower frequency → deeper note. The thin E-string gives the highest notes. Pitch is further adjusted by tension (tuning pegs) and by fingering, which shortens the vibrating length.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_02",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c7-d06",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_013.jpg",
+ "caption": "A violin — a string instrument",
+ "question": "The violin's hollow wooden body (with the f-shaped holes visible in the photo) makes the sound much louder than a bare vibrating string because the body:",
+ "options": [
+  "Reflects sunlight into sound",
+  "Is set vibrating by the strings and, with its large surface area, sets a much greater mass of air vibrating",
+  "Amplifies electricity",
+  "Stores compressed air"
+ ],
+ "correctOption": 1,
+ "answer": "A bare string slices the air and moves very little of it. The string's vibrations pass through the bridge into the hollow body, whose large vibrating surface (a sounding board) pushes far more air — greatly increasing the loudness. The tuning-fork-on-table effect, built into the instrument.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_05",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c7-d07",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_027.jpg",
+ "caption": "A tuning fork with rubber hammer; prongs and stem labelled",
+ "question": "The tuning fork shown is struck on its prong with the rubber hammer. Sound is produced because the prongs:",
+ "options": [
+  "Heat up",
+  "Vibrate rapidly to and fro, setting the surrounding air vibrating",
+  "Rotate about the stem",
+  "Emit sparks"
+ ],
+ "correctOption": 1,
+ "answer": "Every sound source vibrates. The struck prongs swing in and out hundreds of times per second, alternately compressing and rarefying the air, which carries the sound to our ears. Touch the prongs and the sound stops — the vibration test.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_01",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c7-d08",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_027.jpg",
+ "caption": "A tuning fork with rubber hammer; prongs and stem labelled",
+ "question": "A vibrating tuning fork emits a single fixed frequency. Such a sound is called a ________, which is why tuning forks are used to:",
+ "options": [
+  "noise; scare birds",
+  "monotone; provide a standard reference note for tuning musical instruments",
+  "beat; measure time",
+  "echo; test walls"
+ ],
+ "correctOption": 1,
+ "answer": "A tuning fork's note contains one fixed frequency — a MONOTONE (e.g., 440 Hz for the note A). Because the frequency never drifts, musicians use it as a reference to tune instruments, and doctors use forks to test hearing and vibration sense.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_02",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c7-d09",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_031.jpg",
+ "caption": "Wave graph: small amplitude — soft sound",
+ "question": "Comparing this small-amplitude graph with the high-frequency graph from the same series: which pairing of wave property → sound characteristic is correct?",
+ "options": [
+  "Amplitude → pitch; frequency → loudness",
+  "Amplitude → loudness; frequency → pitch",
+  "Both control loudness only",
+  "Both control pitch only"
+ ],
+ "correctOption": 1,
+ "answer": "The two graphs isolate the two independent properties: wave HEIGHT (amplitude) governs loudness — soft vs loud; wave COUNT per second (frequency) governs pitch — deep vs shrill. Keeping one fixed while changing the other, as these figures do, is the cleanest way to see it.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_05",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c7-d10",
+ "topicId": "ch7-sound",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_07_sound/fig_032.jpg",
+ "caption": "Wave graph: large amplitude — loud sound",
+ "question": "If the sound in this large-amplitude graph is produced by a drum, which action by the drummer produced the difference from the soft-sound graph?",
+ "options": [
+  "Tightening the drum skin",
+  "Striking the drum HARDER, increasing the amplitude of the skin's vibration",
+  "Using a smaller drum",
+  "Moving the drum farther away"
+ ],
+ "correctOption": 1,
+ "answer": "A harder strike gives the skin a larger swing — larger amplitude — and hence a louder sound at the SAME pitch. Tightening the skin or changing drum size would alter the frequency (pitch) instead, changing the number of waves per second on the graph.",
+ "source": "icse",
+ "linksTo": "phy-s7-sec_05",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
  "id": "phy-s8-sec_02",
  "topicId": "ch8-electricity",
  "type": "note",
@@ -7179,7 +8901,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Show a real three-pin plug — students remember earth pin is thick, long, on top when they have held one.",
  "examTip": "Quote BOTH colour conventions in every three-wire answer — always safe in ICSE.",
  "source": "revision",
- "linkedMcqCount": 4
+ "linkedMcqCount": 7
 },
 {
  "id": "phy-s8-sec_06",
@@ -7191,7 +8913,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Burn a fuse wire with excess current demo (safely) vs show thick wire that won't melt — students grasp why copper substitute kills.",
  "examTip": "Fuse rating: slightly above normal working current, well below wiring's safe maximum.",
  "source": "revision",
- "linkedMcqCount": 6
+ "linkedMcqCount": 10
 },
 {
  "id": "phy-s8-sec_07",
@@ -7203,7 +8925,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "For every rule, ask 'what physics?' — students who know the reason never forget the rule.",
  "examTip": "Two-mark template: Rule + Reason (conduction / potential / earthing / melting point).",
  "source": "revision",
- "linkedMcqCount": 9
+ "linkedMcqCount": 10
 },
 {
  "id": "phy-s8-sec_09",
@@ -7227,7 +8949,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Two balloons rubbed on same hair repel; each still attracts neutral hair — one demo for repulsion vs attraction logic.",
  "examTip": "Repulsion answer must include induction clause — that single phrase carries the mark.",
  "source": "revision",
- "linkedMcqCount": 11
+ "linkedMcqCount": 15
 },
 {
  "id": "phy-s8-sec_12",
@@ -7251,7 +8973,7 @@ const PHYSICS_NEET_DATA = [
  "teacherTip": "Charge electroscope positively, then bring glass rod (+) vs ebonite rod (−) near cap — leaves tell the story.",
  "examTip": "Stepwise short answer: charge known → bring near → observe increase/decrease → state conclusive rule.",
  "source": "revision",
- "linkedMcqCount": 5
+ "linkedMcqCount": 9
 },
 {
  "id": "phy-s8-sec_23",
@@ -8216,6 +9938,342 @@ const PHYSICS_NEET_DATA = [
  ],
  "correctOption": 1,
  "answer": "The charged cloud induces opposite charge on the spikes. If lightning strikes, the discharge follows the easy, low-resistance copper path — spikes → strip → buried plate → earth — bypassing the building's structure entirely. This is the lightning conductor devised by Benjamin Franklin.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_10",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d03",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_015.jpg",
+ "caption": "Household wiring: pole → meter → main switch → distribution box → circuits",
+ "question": "In the household wiring diagram, three wires enter from the electric pole: live, neutral and earth. Follow the LIVE wire — which components does it pass through before reaching the room circuits?",
+ "options": [
+  "Nothing — it goes straight to the sockets",
+  "The electricity board's fuse, the meter, the main switch and main fuse, then the distribution box with each circuit's switch/fuse",
+  "Only the earth plate",
+  "The bulb first, then the meter"
+ ],
+ "correctOption": 1,
+ "answer": "The diagram shows the standard chain: company fuse → energy meter → main switch (with main fuse) → distribution box, from which each room circuit branches with its own fuse/MCB. Every protective device sits in the LIVE wire so that disconnection isolates the high potential.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_05",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d04",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_015.jpg",
+ "caption": "Household wiring: pole → meter → main switch → distribution box → circuits",
+ "question": "In the same diagram, the earth wire is shown running (dashed) to a plate buried 'deep inside the earth', and the bulb, fan and socket are each connected with their OWN switch in parallel branches. Why are appliances connected in PARALLEL rather than one after another (series)?",
+ "options": [
+  "Parallel wiring uses less copper",
+  "Each appliance gets the full 220 V and can be switched on/off independently — in series, switching one off would kill them all",
+  "Series wiring is illegal",
+  "Parallel wiring makes electricity cheaper per unit"
+ ],
+ "correctOption": 1,
+ "answer": "In parallel, every branch sits directly across the 220 V supply: each appliance works at its rated voltage, has its own switch (S₁, S₂, S₃ in the figure), and a fault in one branch doesn't stop the others. In series, appliances would share the voltage and all die together when one is switched off — like old fairy lights.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_05",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c8-d05",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_018.jpg",
+ "caption": "A three-pin plug and its socket",
+ "question": "In the photograph of the three-pin plug, the TOP pin is visibly thicker and longer than the two lower pins. That top pin is the:",
+ "options": [
+  "Live pin — thick to carry more current",
+  "Earth pin — longer so it connects FIRST, and thicker so it offers an easy path for any leakage current",
+  "Neutral pin — thick for decoration",
+  "Fuse pin"
+ ],
+ "correctOption": 1,
+ "answer": "The top pin is the EARTH connection. It is longer so the appliance's body is earthed BEFORE the live and neutral make contact (and disconnects last when unplugging), and thicker so its low resistance carries any fault current safely to the ground.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_05",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d06",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_018.jpg",
+ "caption": "A three-pin plug and its socket",
+ "question": "Which appliances MUST use a three-pin plug like the one shown, rather than a two-pin plug?",
+ "options": [
+  "Only table lamps",
+  "Appliances with exposed METAL bodies — iron, geyser, refrigerator, toaster — so the body stays earthed",
+  "Only battery-powered devices",
+  "All plastic-bodied chargers"
+ ],
+ "correctOption": 1,
+ "answer": "The third (earth) pin protects users of metal-bodied appliances: if the live wire ever touches the body, the earth pin conducts the leakage to the ground and blows the fuse instead of shocking the user. Double-insulated plastic devices may legitimately use two-pin plugs.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_07",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c8-d07",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_020.jpg",
+ "caption": "A miniature circuit breaker (MCB)",
+ "question": "The device photographed — an MCB marked 'B6' — is fitted in modern homes in place of the traditional fuse. Its advantage over a fuse wire is that an MCB:",
+ "options": [
+  "Never disconnects the circuit",
+  "Trips automatically on excess current and can simply be reset by flipping the lever — no wire to replace",
+  "Makes electricity flow faster",
+  "Stores electricity for power cuts"
+ ],
+ "correctOption": 1,
+ "answer": "Both fuse and MCB protect against overload/short circuit, but a blown fuse must be rewired by hand, while a tripped MCB is reset with one flick after the fault is removed. The 'B6' marking means it trips above about 6 amperes.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_06",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c8-d08",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_020.jpg",
+ "caption": "A miniature circuit breaker (MCB)",
+ "question": "During a short circuit in the kitchen, this MCB trips within a fraction of a second. What happened electrically to make it trip?",
+ "options": [
+  "The voltage dropped to zero",
+  "The live and neutral touched, the resistance collapsed, and the resulting huge current activated the MCB's switch mechanism",
+  "The earth wire melted",
+  "The meter ran backwards"
+ ],
+ "correctOption": 1,
+ "answer": "A short circuit bypasses the appliance, leaving almost zero resistance in the path — the current shoots up to many times its normal value. The MCB senses this surge (electromagnetically/thermally) and snaps the circuit open before the wiring can overheat and start a fire.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_06",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d09",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_019.jpg",
+ "caption": "An electric fuse in a porcelain holder",
+ "question": "In the photograph, the thin fuse wire is mounted in a PORCELAIN socket and holder. Porcelain is chosen for the body because it:",
+ "options": [
+  "Conducts electricity well",
+  "Is an excellent insulator and withstands the heat when the fuse wire melts",
+  "Is magnetic",
+  "Is transparent"
+ ],
+ "correctOption": 1,
+ "answer": "The casing must NOT conduct (so the user can handle it safely) and must survive the brief flash of heat when the fuse element melts. Porcelain is a heat-resistant insulator — ideal on both counts. The fuse WIRE inside, by contrast, is chosen for its LOW melting point.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_06",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d10",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_048.jpg",
+ "caption": "Gold-leaf electroscope: metal disc, brass rod, gold leaves, glass case",
+ "question": "In the labelled electroscope diagram, charge given to the metal disc travels down the brass rod to the two gold leaves, which then diverge. The GLASS case around the leaves serves to:",
+ "options": [
+  "Magnify the leaves",
+  "Protect the delicate leaves from air draughts and prevent charge leakage, while letting us observe them",
+  "Generate charge",
+  "Cool the leaves"
+ ],
+ "correctOption": 1,
+ "answer": "The featherlight gold leaves would flutter in any breeze; the glass case shields them so divergence reflects charge alone (and being an insulator, glass also limits charge leakage). The insulator plug where the rod enters stops charge escaping to the case.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_15",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c8-d11",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_048.jpg",
+ "caption": "Gold-leaf electroscope: metal disc, brass rod, gold leaves, glass case",
+ "question": "Why does this instrument use two leaves of GOLD foil, rather than two strips of ordinary thick metal?",
+ "options": [
+  "Gold looks expensive",
+  "Gold can be beaten extremely thin and light, so even a tiny charge produces a visible divergence — and gold conducts excellently without corroding",
+  "Gold is magnetic",
+  "Gold glows when charged"
+ ],
+ "correctOption": 1,
+ "answer": "Sensitivity demands featherweight leaves: gold is the most malleable metal (beaten to wafer-thin foil), a fine conductor, and corrosion-free. The tiny repulsive force between like charges can then visibly lift the nearly weightless leaves.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_15",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c8-d12",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_057.jpg",
+ "caption": "Testing charge: leaves spread wider = same charge; come closer = opposite",
+ "question": "The diagram shows a POSITIVELY charged electroscope. When rod X is brought near the cap, the leaves spread WIDER; when rod Y is brought near, they come CLOSER. The charges on X and Y are:",
+ "options": [
+  "X negative, Y positive",
+  "X positive, Y (probably) negative",
+  "Both positive",
+  "Both uncharged"
+ ],
+ "correctOption": 1,
+ "answer": "A like-charged (positive) rod near the cap repels more positive charge down into the leaves — divergence INCREASES, a conclusive sign that X is positive. Y reduces the divergence, indicating opposite (negative) charge — though a decrease alone should be confirmed, since other causes can also reduce divergence.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_15",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d13",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_057.jpg",
+ "caption": "Testing charge: leaves spread wider = same charge; come closer = opposite",
+ "question": "Based on this diagram's logic, which observation is the CONCLUSIVE test for identifying an unknown charge with a charged electroscope?",
+ "options": [
+  "Any movement of the leaves",
+  "An INCREASE in divergence — it can only be caused by a rod carrying the same charge as the electroscope",
+  "A decrease in divergence",
+  "The leaves turning toward the rod"
+ ],
+ "correctOption": 1,
+ "answer": "Only a like charge pushes additional like charge into the leaves and widens the gap — nothing else mimics that. A DECREASE is ambiguous: an opposite charge, an uncharged conductor, or even a hand can cause it. So 'increase = conclusive' is the golden rule of electroscope testing.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_15",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c8-d14",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_059.jpg",
+ "caption": "Lightning striking over a city",
+ "question": "The giant spark in the photograph is lightning striking near tall city buildings. The lightning is essentially:",
+ "options": [
+  "Burning air",
+  "A massive electric discharge between a charged cloud and the earth (or another cloud)",
+  "Reflected moonlight",
+  "A meteor entering the atmosphere"
+ ],
+ "correctOption": 1,
+ "answer": "Friction between moving air and water particles builds enormous static charge in storm clouds. When the electric force exceeds what the air can insulate, charge tears through as a colossal spark — lightning. The heated air's explosive expansion is heard as thunder.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_10",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c8-d15",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_059.jpg",
+ "caption": "Lightning striking over a city",
+ "question": "Notice that the lightning in the photograph strikes near the TALLEST structures. For this reason, the tall buildings of a city are protected by:",
+ "options": [
+  "Rubber roofs",
+  "Lightning conductors — pointed copper spikes connected by a thick strip to a plate buried in the earth",
+  "Plastic water tanks",
+  "Loud sirens"
+ ],
+ "correctOption": 1,
+ "answer": "Lightning prefers the shortest, easiest path — usually the tallest conducting object. A lightning conductor offers exactly that: spikes above the roof and a continuous low-resistance copper path to buried earth, guiding the discharge harmlessly around the building's structure.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_10",
+ "qualityStars": 3,
+ "qualityLevel": "ICSE Class 8"
+},
+{
+ "id": "phy-c8-d17",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_019.jpg",
+ "caption": "An electric fuse in a porcelain holder",
+ "question": "A 5 A fuse like the one shown protects a circuit. A fault makes the current jump to 20 A. The sequence of events in the fuse wire is:",
+ "options": [
+  "It glows forever without breaking",
+  "The excess current heats the thin low-melting-point wire past its melting point; it melts and the circuit breaks",
+  "It becomes a stronger conductor",
+  "It transfers the current to the earth wire"
+ ],
+ "correctOption": 1,
+ "answer": "The fuse element is deliberately thin and made of a low-melting alloy. At 20 A — four times its rating — the wire heats rapidly, melts within moments, and opens the circuit, cutting the appliance off from the supply before the house wiring can overheat. A new fuse wire (of the correct rating) must then be fitted.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_06",
+ "qualityStars": 4,
+ "qualityLevel": "NEET UG"
+},
+{
+ "id": "phy-c8-d18",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_060.jpg",
+ "caption": "Lightning conductor on a building",
+ "question": "In the lightning-conductor diagram, the cloud's base shows NEGATIVE charges, and the copper spikes on the roof show induced POSITIVE charges. The spikes acquire this charge because:",
+ "options": [
+  "They were painted with positive paint",
+  "The negative cloud above attracts positive charge into the nearest grounded points — electrostatic induction",
+  "Rainwater deposits charge on them",
+  "The building's wiring leaks into them"
+ ],
+ "correctOption": 1,
+ "answer": "The negatively charged cloud base induces opposite (positive) charge on the nearest earthed conductors — the pointed spikes. Pointed tips concentrate this charge most densely, which both encourages quiet leakage of charge to/from the air and makes the spikes the preferred target if a strike occurs, guiding it safely down the copper strip to earth.",
+ "source": "icse",
+ "linksTo": "phy-s8-sec_10",
+ "qualityStars": 5,
+ "qualityLevel": "Olympiad"
+},
+{
+ "id": "phy-c8-d16",
+ "topicId": "ch8-electricity",
+ "type": "mcq",
+ "subtopic": "Diagram — Single Correct",
+ "image": "images/physics/chapter_08_electricity/fig_047.jpg",
+ "caption": "Charged rod near a suspended charged ball: attraction and repulsion",
+ "question": "In the repulsion half of this figure, the suspended ball swings AWAY from the rod. If the experiment is repeated with an UNCHARGED ball, the rod would:",
+ "options": [
+  "Repel it even more strongly",
+  "Attract it — by inducing an opposite charge on the ball's near side",
+  "Have no effect at all",
+  "Make the ball spin"
+ ],
+ "correctOption": 1,
+ "answer": "A charged rod near a neutral ball redistributes the ball's charges: the near side becomes oppositely charged and is attracted more strongly than the like-charged far side is repelled. Net effect: attraction. This is why only REPULSION (needing like charge on both) proves the ball was charged.",
  "source": "icse",
  "linksTo": "phy-s8-sec_10",
  "qualityStars": 4,
