@@ -54,7 +54,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 51;
+const DATA_VERSION = 52;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -1088,7 +1088,120 @@ function cleanMathMarkup(str) {
   s = s.replace(/underlinehspace\d+cm/gi, '____');
   // OCR spaced letters: "k i l o w a t t" → "kilowatt"
   s = s.replace(/(?:\b[a-zA-Z]\s+){2,}[a-zA-Z]\b/g, m => m.replace(/\s+/g, ''));
-  return s.replace(/\s+/g, ' ').trim();
+  // Preserve line breaks — collapsing all whitespace made notes one unreadable wall of text.
+  return s.split('\n').map(line => line.replace(/[ \t]+/g, ' ').trimEnd()).join('\n').trim();
+}
+
+function inlineBoldHtml(str) {
+  if (!str) return '';
+  return String(str).split(/(\*\*[^*]+\*\*)/g).map(part => {
+    const m = part.match(/^\*\*([^*]+)\*\*$/);
+    return m ? '<strong>' + escHtml(m[1]) + '</strong>' : escHtml(part);
+  }).join('');
+}
+
+function _isTableSeparatorRow(cells) {
+  return cells.every(c => /^:?-{2,}:?$/.test(String(c).replace(/\*\*/g, '').trim()));
+}
+
+function renderMarkdownTableBlock(block) {
+  const lines = block.split('\n').map(l => l.trim()).filter(l => l.includes('|'));
+  if (lines.length < 2) return null;
+  const rows = lines.map(line =>
+    line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => inlineBoldHtml(c.trim()))
+  );
+  let header = rows[0];
+  let body = rows.slice(1);
+  if (body.length && _isTableSeparatorRow(body[0].map(c => c.replace(/<[^>]+>/g, '')))) {
+    body = body.slice(1);
+  }
+  let html = '<div class="note-table-wrap"><table class="note-table"><thead><tr>';
+  html += header.map(c => '<th>' + c + '</th>').join('') + '</tr></thead><tbody>';
+  for (const row of body) {
+    html += '<tr>' + row.map(c => '<td>' + c + '</td>').join('') + '</tr>';
+  }
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function noteSectionClass(title) {
+  const t = String(title).toLowerCase();
+  if (t.includes('executive') || t.includes('summary')) return 'note-section-summary';
+  if (t.includes('must know')) return 'note-section-mustknow';
+  if (t.includes('chart') || t.includes('table')) return 'note-section-chart';
+  if (t.includes('cornell') || t.includes('cue')) return 'note-section-cues';
+  if (t.includes('definition') || t.includes('exam trap')) return 'note-section-traps';
+  if (t.includes('linked question')) return 'note-section-mcq';
+  if (t.includes('link')) return 'note-section-links';
+  return 'note-section-default';
+}
+
+function renderNoteMarkdown(str) {
+  if (!str) return '';
+  const raw = String(str);
+  if (hasHtmlMarkup(raw)) return sanitizeHtml(raw);
+  const text = cleanMathMarkup(raw);
+  const blocks = text.split(/\n\n+/);
+  const out = [];
+
+  for (const block of blocks) {
+    const b = block.trim();
+    if (!b) continue;
+
+    const nonEmptyLines = b.split('\n').filter(l => l.trim());
+    if (nonEmptyLines.length >= 2 && nonEmptyLines.every(l => l.includes('|'))) {
+      const table = renderMarkdownTableBlock(b);
+      if (table) { out.push(table); continue; }
+    }
+
+    const nl = b.indexOf('\n');
+    const firstLine = nl >= 0 ? b.slice(0, nl).trim() : b;
+    const rest = nl >= 0 ? b.slice(nl + 1).trim() : '';
+    const sec = firstLine.match(/^\*\*([^*]+):\*\*\s*(.*)$/);
+
+    if (sec) {
+      const title = sec[1].trim();
+      const inline = sec[2].trim();
+      let inner = '';
+      if (inline) inner += '<p class="note-section-lead">' + inlineBoldHtml(inline) + '</p>';
+      if (rest) inner += renderNoteMarkdown(rest);
+      out.push(
+        '<section class="note-section ' + noteSectionClass(title) + '">' +
+        '<h4 class="note-section-title">' + inlineBoldHtml(title) + '</h4>' +
+        (inner ? '<div class="note-section-body">' + inner + '</div>' : '') +
+        '</section>'
+      );
+      continue;
+    }
+
+    const bareSec = firstLine.match(/^\*\*([^*]+)\*\*$/);
+    if (bareSec && rest) {
+      const title = bareSec[1].trim();
+      const kind = noteSectionClass(title);
+      if (kind !== 'note-section-default') {
+        out.push(
+          '<section class="note-section ' + kind + '">' +
+          '<h4 class="note-section-title">' + inlineBoldHtml(title) + '</h4>' +
+          '<div class="note-section-body">' + renderNoteMarkdown(rest) + '</div>' +
+          '</section>'
+        );
+        continue;
+      }
+      out.push('<h4 class="note-subheading">' + inlineBoldHtml(title) + '</h4>');
+      out.push(renderNoteMarkdown(rest));
+      continue;
+    }
+
+    if (nonEmptyLines.length && nonEmptyLines.every(l => /^[•\-]\s/.test(l.trim()))) {
+      out.push('<ul class="note-list">' + nonEmptyLines.map(l =>
+        '<li>' + inlineBoldHtml(l.trim().replace(/^[•\-]\s+/, '')) + '</li>'
+      ).join('') + '</ul>');
+      continue;
+    }
+
+    out.push('<p>' + b.split('\n').map(l => inlineBoldHtml(l)).join('<br>') + '</p>');
+  }
+  return out.join('');
 }
 
 function fmtTextPlain(str) {
@@ -1103,7 +1216,11 @@ function renderContentHtml(str) {
   if (!str) return '';
   const raw = String(str);
   if (hasHtmlMarkup(raw)) return sanitizeHtml(raw);
-  return fmtTextPlain(cleanMathMarkup(raw));
+  return fmtTextPlain(raw);
+}
+
+function renderNoteHtml(str) {
+  return renderNoteMarkdown(str);
 }
 
 function fmtText(str) {
@@ -2438,8 +2555,8 @@ function buildNoteCardHtml(n, displayNum) {
         <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
       </div>
       <div class="note-body">
-        <div class="rich-html note-content-lead">${renderContentHtml(n.content)}</div>
-        <div class="rich-html note-content-body">${renderContentHtml(n.explanation || '')}</div>
+        <div class="rich-html note-content-lead">${renderNoteHtml(n.content)}</div>
+        <div class="rich-html note-content-body">${renderNoteHtml(n.explanation || '')}</div>
         ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.teacherTip)}</span></div>`:''}
         ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.examTip)}</span></div>`:''}
         ${linkBar}
@@ -3582,7 +3699,7 @@ function registerServiceWorker() {
     reloaded = true;
     location.reload();
   });
-  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '36')).then(function (reg) {
+  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '44')).then(function (reg) {
     if (reg.waiting && navigator.serviceWorker.controller) {
       _appUpdatePending = true;
       updateAppBadge();

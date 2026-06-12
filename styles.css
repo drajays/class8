@@ -420,8 +420,56 @@ body{
 .rich-html table{width:100%;border-collapse:collapse;margin:.5em 0;font-size:.88rem}
 .rich-html th,.rich-html td{border:1px solid var(--line);padding:6px 8px;text-align:left}
 .rich-html.inline-rich{display:inline}
-.note-content-lead{font-weight:600;color:var(--ink);margin-bottom:10px}
-.note-content-body{margin-bottom:4px}
+.note-content-lead{margin-bottom:4px}
+.note-content-lead .note-section-summary{margin-top:0}
+.note-content-body{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);margin-bottom:4px}
+.note-section{
+  margin:12px 0;padding:12px 14px;border-radius:10px;
+  border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 92%, var(--accent) 8%);
+}
+.note-section:first-child{margin-top:0}
+.note-section:last-child{margin-bottom:0}
+.note-section-summary{
+  border-left:4px solid var(--accent);
+  background:color-mix(in srgb,var(--accent) 8%, var(--surface));
+}
+.note-section-mustknow{
+  border-left:4px solid color-mix(in srgb,var(--accent) 70%, #2d6a4f);
+  background:color-mix(in srgb,#2d6a4f 6%, var(--surface));
+}
+.note-section-chart{padding:0;overflow:hidden;background:var(--surface)}
+.note-section-chart .note-section-title{
+  padding:10px 14px;margin:0;border-bottom:1px solid var(--line);background:var(--surface-2);
+}
+.note-section-chart .note-section-body{padding:0}
+.note-section-chart .note-table-wrap{margin:0}
+.note-section-cues{border-left:4px solid #5b7c99;background:color-mix(in srgb,#5b7c99 7%, var(--surface))}
+.note-section-traps{border-left:4px solid #b85c5c;background:color-mix(in srgb,#b85c5c 6%, var(--surface))}
+.note-section-mcq{border-left:4px solid #6b8f5e;background:color-mix(in srgb,#6b8f5e 6%, var(--surface));font-size:.9rem}
+.note-section-links{border-left:4px solid #8a7a5c;background:color-mix(in srgb,#8a7a5c 6%, var(--surface));font-size:.9rem}
+.note-section-title{
+  font-family:var(--font-display);font-size:.78rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.05em;color:var(--accent-ink);margin:0 0 8px;
+}
+[data-theme="dark"] .note-section-title{color:var(--ink)}
+.note-section-lead{margin:0 0 8px;font-size:.94rem;line-height:1.65;color:var(--ink)}
+.note-section-body{font-size:.93rem;line-height:1.65;color:var(--ink-2)}
+.note-section-body > .note-section{margin:10px 0}
+.note-section-body > .note-section:first-child{margin-top:0}
+.note-list{margin:4px 0 2px;padding-left:1.15em;list-style:disc}
+.note-list li{margin-bottom:7px;line-height:1.58}
+.note-subheading{
+  font-family:var(--font-display);font-size:.98rem;font-weight:600;
+  color:var(--ink);margin:14px 0 8px;padding-bottom:4px;
+  border-bottom:1px solid var(--line-soft);
+}
+.note-table-wrap{overflow-x:auto;margin:.5em 0;-webkit-overflow-scrolling:touch}
+.note-table{width:100%;margin:0;font-size:.84rem;border-collapse:collapse}
+.note-table th,.note-table td{
+  border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;line-height:1.45;
+}
+.note-table th{background:var(--surface-2);font-weight:700;color:var(--ink);font-size:.8rem}
+.note-table tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 50%, transparent)}
 .q-text.rich-html{font-size:1rem;font-weight:600;line-height:1.5;margin-bottom:15px;color:var(--ink)}
 .answer-body{margin-top:4px}
 .html-editor{

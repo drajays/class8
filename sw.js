@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v43';
+const CACHE = 'studyhub-v44';
 const ASSETS = [
   './',
   './index.html',
