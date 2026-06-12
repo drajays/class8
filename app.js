@@ -54,7 +54,10 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 52;
+const DATA_VERSION = 54;
+const ADMIN_SESSION_MS = 30 * 60 * 1000;
+let advanceReadingEditNoteId = null;
+const advanceReadingOpen = new Set();
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
@@ -1319,10 +1322,34 @@ function jumpToQuestion(qId) {
   setTimeout(() => _flashEl(document.getElementById('qcard-' + qId)), chapterViewMode === 'scroll' ? 120 : 80);
 }
 
+function getQuestionsLinkedToNote(note) {
+  if (!note) return [];
+  const ids = new Set();
+  const out = [];
+  const pool = topicTextQuestions(note.topicId);
+  for (const q of pool) {
+    if (q.linksTo === note.id && isQuizType(q) && !ids.has(q.id)) {
+      ids.add(q.id);
+      out.push(q);
+    }
+  }
+  if (Array.isArray(note.linkedQuestionIds)) {
+    for (const qid of note.linkedQuestionIds) {
+      if (ids.has(qid)) continue;
+      const q = appData.content.find(c => c.id === qid && isQuizType(c));
+      if (q) {
+        ids.add(qid);
+        out.push(q);
+      }
+    }
+  }
+  return out;
+}
+
 function practiceLinkedMcqs(noteId) {
-  const linked = appData.content.filter(c => c.linksTo === noteId && isQuizType(c));
-  if (!linked.length) return;
   const note = appData.content.find(c => c.id === noteId);
+  const linked = note ? getQuestionsLinkedToNote(note) : appData.content.filter(c => c.linksTo === noteId && isQuizType(c));
+  if (!linked.length) return;
   if (note) selectedTopic = note.topicId;
   quizSession = {
     source: 'linked', topicId: selectedTopic,
@@ -1335,6 +1362,9 @@ function practiceLinkedMcqs(noteId) {
 }
 
 function sourceChipHtml(source) {
+  if (source === 'revision') {
+    return ' <span class="src-chip" title="Expert revision note">Revision</span>';
+  }
   if (source === 'icse' || source === 'neet') {
     return ' <span class="src-chip" title="ICSE textbook section — linked to practice MCQs">ICSE</span>';
   }
@@ -2529,12 +2559,151 @@ function renderCheatSheet(csData) {
     </div>`;
 }
 
+function isAdminSessionActive() {
+  try {
+    return Date.now() < parseInt(sessionStorage.getItem('studyhub_admin_until') || '0', 10);
+  } catch (e) {
+    return false;
+  }
+}
+
+function grantAdminSession() {
+  try {
+    sessionStorage.setItem('studyhub_admin_until', String(Date.now() + ADMIN_SESSION_MS));
+  } catch (e) {}
+}
+
+function verifyAdminPassword(pw) {
+  const expected = (typeof window.__STUDYHUB_ADMIN_PW === 'string' && window.__STUDYHUB_ADMIN_PW)
+    ? window.__STUDYHUB_ADMIN_PW
+    : '1234';
+  return pw === expected;
+}
+
+function requireAdminAccess(onSuccess) {
+  if (isAdminSessionActive()) {
+    onSuccess();
+    return;
+  }
+  window._adminPwCallback = onSuccess;
+  const input = document.getElementById('admin-pw-input');
+  if (input) input.value = '';
+  openModal('modal-admin-pw');
+  setTimeout(() => input && input.focus(), 80);
+}
+
+function submitAdminPassword(e) {
+  if (e) e.preventDefault();
+  const input = document.getElementById('admin-pw-input');
+  const pw = input ? input.value : '';
+  if (!verifyAdminPassword(pw)) {
+    showToast('error', '❌ Incorrect admin password.');
+    return;
+  }
+  grantAdminSession();
+  closeModal('modal-admin-pw');
+  if (window._adminPwCallback) {
+    window._adminPwCallback();
+    window._adminPwCallback = null;
+  }
+}
+
+function markNoteEdited(noteId) {
+  if (isUserCreatedContentId(noteId)) return;
+  if (!appData.editedContentIds) appData.editedContentIds = [];
+  if (!appData.editedContentIds.includes(noteId)) appData.editedContentIds.push(noteId);
+}
+
+function toggleAdvanceReading(noteId) {
+  const panel = document.getElementById('adv-panel-' + noteId);
+  const btn = document.getElementById('adv-toggle-' + noteId);
+  if (!panel) return;
+  const open = panel.hidden;
+  panel.hidden = !open;
+  if (open) advanceReadingOpen.add(noteId);
+  else advanceReadingOpen.delete(noteId);
+  if (btn) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.classList.toggle('open', open);
+  }
+}
+
+function buildAdvanceReadingHtml(n) {
+  const hasContent = !!(n.advanceReading && String(n.advanceReading).trim());
+  const isOpen = advanceReadingOpen.has(n.id);
+  const meta = n.advanceReadingAt
+    ? `<span class="adv-read-meta">Updated ${new Date(n.advanceReadingAt).toLocaleDateString()}</span>`
+    : '';
+  const body = hasContent
+    ? `<div class="rich-html advance-reading-body">${renderNoteHtml(n.advanceReading)}</div>`
+    : `<p class="adv-read-empty">No advance reading yet. Teachers or students with the admin password can add deeper material, extra examples, or Olympiad extensions here.</p>`;
+  return `
+    <div class="advance-reading-block" id="adv-read-${n.id}">
+      <button type="button" class="advance-reading-toggle${isOpen ? ' open' : ''}" id="adv-toggle-${n.id}"
+        aria-expanded="${isOpen ? 'true' : 'false'}" onclick="toggleAdvanceReading('${n.id}')">
+        <span class="adv-read-label">📚 Advance Reading</span>
+        ${hasContent ? '<span class="adv-read-badge">Available</span>' : '<span class="adv-read-badge empty">None yet</span>'}
+        ${meta}
+        <span class="note-chevron adv-chevron">▼</span>
+      </button>
+      <div class="advance-reading-panel" id="adv-panel-${n.id}" ${isOpen ? '' : 'hidden'}>
+        ${body}
+        <div class="adv-read-actions">
+          <button type="button" class="btn btn-sm btn-outline" onclick="openAdvanceReadingEditor('${n.id}')">✏️ ${hasContent ? 'Edit' : 'Add'} advance reading</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function openAdvanceReadingEditor(noteId) {
+  requireAdminAccess(() => {
+    const note = appData.content.find(c => c.id === noteId);
+    if (!note || note.type !== 'note') return;
+    advanceReadingEditNoteId = noteId;
+    const sub = document.getElementById('adv-read-subtitle');
+    if (sub) sub.textContent = note.subtopic || 'Note';
+    const ta = document.getElementById('adv-read-text');
+    if (ta) ta.value = note.advanceReading || '';
+    openModal('modal-advance-reading');
+    setTimeout(() => ta && ta.focus(), 80);
+  });
+}
+
+function saveAdvanceReadingContent(e) {
+  e.preventDefault();
+  if (!advanceReadingEditNoteId) return;
+  const idx = appData.content.findIndex(c => c.id === advanceReadingEditNoteId);
+  if (idx < 0) return;
+  const text = (document.getElementById('adv-read-text').value || '').trim();
+  const item = Object.assign({}, appData.content[idx]);
+  if (text) {
+    item.advanceReading = text;
+    item.advanceReadingAt = new Date().toISOString();
+  } else {
+    delete item.advanceReading;
+    delete item.advanceReadingAt;
+  }
+  appData.content[idx] = item;
+  markNoteEdited(advanceReadingEditNoteId);
+  if (!saveData()) return;
+  advanceReadingOpen.add(advanceReadingEditNoteId);
+  closeModal('modal-advance-reading');
+  advanceReadingEditNoteId = null;
+  showToast('success', text ? '✅ Advance reading saved.' : '🗑️ Advance reading cleared.');
+  render();
+}
+
+function clearAdvanceReading() {
+  const ta = document.getElementById('adv-read-text');
+  if (ta) ta.value = '';
+}
+
 function buildNoteCardHtml(n, displayNum) {
   const allQuestions = topicTextQuestions(selectedTopic);
   const XREF_TYPES = [['mcq','MCQ'], ['true_false','T/F'], ['fill_blank','Fill'], ['short_answer','Q&A']];
   const qByType = {};
   XREF_TYPES.forEach(([type]) => { qByType[type] = allQuestions.filter(q => q.type === type); });
-  const linked = allQuestions.filter(q => q.linksTo === n.id);
+  const linked = getQuestionsLinkedToNote(n);
   const linkedGradable = linked.filter(q => isQuizType(q));
   const practiceBtn = linkedGradable.length
     ? `<button class="xref-btn xref-practice" onclick="practiceLinkedMcqs('${n.id}')" title="Jump to linked questions for this section">▶ Practice ${linkedGradable.length} linked Q${linkedGradable.length > 1 ? 's' : ''}</button>`
@@ -2559,6 +2728,7 @@ function buildNoteCardHtml(n, displayNum) {
         <div class="rich-html note-content-body">${renderNoteHtml(n.explanation || '')}</div>
         ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.teacherTip)}</span></div>`:''}
         ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.examTip)}</span></div>`:''}
+        ${buildAdvanceReadingHtml(n)}
         ${linkBar}
         <div style="margin-top:10px;display:flex;gap:6px">
           <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
@@ -2866,6 +3036,14 @@ function saveContent(e) {
     item.explanation = document.getElementById('f-note-explanation').value;
     item.teacherTip = document.getElementById('f-teacher-tip').value;
     item.examTip = document.getElementById('f-exam-tip').value;
+    const advRead = (document.getElementById('f-advance-reading').value || '').trim();
+    if (advRead) {
+      item.advanceReading = advRead;
+      item.advanceReadingAt = new Date().toISOString();
+    } else {
+      delete item.advanceReading;
+      delete item.advanceReadingAt;
+    }
   } else {
     item.question = document.getElementById('f-q-text').value;
     item.answer = document.getElementById('f-q-answer').value;
@@ -2939,6 +3117,7 @@ function editContent(id) {
     document.getElementById('f-note-explanation').value = item.explanation || '';
     document.getElementById('f-teacher-tip').value = item.teacherTip || '';
     document.getElementById('f-exam-tip').value = item.examTip || '';
+    document.getElementById('f-advance-reading').value = item.advanceReading || '';
   } else {
     document.getElementById('f-q-text').value = item.question || '';
     document.getElementById('f-q-answer').value = item.answer || '';
@@ -3590,10 +3769,16 @@ function getAppBuild() {
   return window.__STUDYHUB_BUILD || '?';
 }
 
+function parseBuildNum(v) {
+  const n = parseInt(String(v || '').replace(/\D/g, ''), 10);
+  return isNaN(n) ? 0 : n;
+}
+
 function isAppUpdateAvailable() {
   const current = getAppBuild();
   if (_appUpdatePending) return true;
-  return !!(_appUpdateRemote && _appUpdateRemote !== current);
+  if (!_appUpdateRemote) return false;
+  return parseBuildNum(_appUpdateRemote) > parseBuildNum(current);
 }
 
 function updateAppBadge() {
@@ -3616,9 +3801,15 @@ function populateUpdateModal() {
   }
   if (statusEl) {
     if (_appUpdateChecking) statusEl.textContent = 'Checking for updates…';
-    else if (isAppUpdateAvailable()) statusEl.textContent = '✨ A newer version is ready — tap Update now.';
-    else if (_appUpdateRemote) statusEl.textContent = '✅ You already have the latest version.';
-    else statusEl.textContent = 'Could not check online — you can still tap Update now to refresh.';
+    else if (isAppUpdateAvailable()) {
+      statusEl.textContent = '✨ v' + _appUpdateRemote + ' is online — you have v' + current + '. Tap Update now.';
+    } else if (_appUpdateRemote && _appUpdateRemote === current) {
+      statusEl.textContent = '✅ You already have the latest version (v' + current + ').';
+    } else if (_appUpdateRemote) {
+      statusEl.textContent = '✅ Your version (v' + current + ') is newer than online (v' + _appUpdateRemote + ').';
+    } else {
+      statusEl.textContent = 'Could not check online — tap Refresh app to clear cache and reload.';
+    }
   }
   if (nowBtn) {
     nowBtn.disabled = false;
@@ -3633,7 +3824,15 @@ function openUpdateModal() {
 }
 
 async function fetchRemoteAppBuild() {
-  const res = await fetch('./index.html?_=' + Date.now(), { cache: 'no-store' });
+  const bust = '?_=' + Date.now();
+  try {
+    const vRes = await fetch('./version.json' + bust, { cache: 'no-store' });
+    if (vRes.ok) {
+      const data = await vRes.json();
+      if (data && data.build) return String(data.build);
+    }
+  } catch (e) { /* fall through to index.html */ }
+  const res = await fetch('./index.html' + bust, { cache: 'no-store' });
   if (!res.ok) throw new Error('Could not reach server');
   const text = await res.text();
   const m = text.match(/var BUILD = ['"](\d+)['"]/);
@@ -3699,7 +3898,7 @@ function registerServiceWorker() {
     reloaded = true;
     location.reload();
   });
-  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '44')).then(function (reg) {
+  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '47')).then(function (reg) {
     if (reg.waiting && navigator.serviceWorker.controller) {
       _appUpdatePending = true;
       updateAppBadge();

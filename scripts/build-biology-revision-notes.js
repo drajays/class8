@@ -35,6 +35,11 @@ function main() {
     if (ids.has(n.id)) throw new Error(`Duplicate id: ${n.id}`);
     ids.add(n.id);
     if (n.type !== 'note') throw new Error(`${n.id}: type must be "note"`);
+    if (Array.isArray(n.linkedQuestionIds) && n.linkedQuestionIds.length) {
+      n.linkedMcqCount = n.linkedQuestionIds.length;
+    } else {
+      delete n.linkedMcqCount;
+    }
   }
 
   const byChapter = {};

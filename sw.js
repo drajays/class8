@@ -1,6 +1,7 @@
-const CACHE = 'studyhub-v44';
+const CACHE = 'studyhub-v47';
 const ASSETS = [
   './',
+  './version.json',
   './index.html',
   './styles.css',
   './exam-panel.css',
@@ -30,7 +31,7 @@ const ASSETS = [
 ];
 
 function isCriticalAsset(url) {
-  return /\.(html?|js|css)(\?|$)/i.test(url.pathname);
+  return /\.(html?|js|css|json)(\?|$)/i.test(url.pathname);
 }
 
 function cacheAddSafe(cache, url) {

@@ -5,8 +5,9 @@
 <script>
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
-  var BUILD = '44';
+  var BUILD = '47';
   window.__STUDYHUB_BUILD = BUILD;
+  window.__STUDYHUB_ADMIN_PW = '1234';
   var KEY = 'studyhub_build';
   var prev = '';
   try { prev = localStorage.getItem(KEY) || ''; } catch (e) {}
@@ -36,6 +37,44 @@
       return;
     }
   }
+  function purgeCachesAndReload() {
+    var reload = function () { location.reload(); };
+    var chain = Promise.resolve();
+    if ('caches' in window) {
+      chain = chain.then(function () {
+        return caches.keys().then(function (keys) {
+          return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+        });
+      });
+    }
+    if ('serviceWorker' in navigator) {
+      chain = chain.then(function () {
+        return navigator.serviceWorker.getRegistrations().then(function (regs) {
+          return Promise.all(regs.map(function (r) { return r.unregister(); }));
+        });
+      });
+    }
+    chain.then(reload).catch(reload);
+  }
+  if ('fetch' in window && location.protocol !== 'file:') {
+    fetch('./version.json?_=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || !data.build) return;
+        var remote = String(data.build);
+        var remoteN = parseInt(remote, 10);
+        var localN = parseInt(BUILD, 10);
+        if (!isNaN(remoteN) && !isNaN(localN) && remoteN > localN) {
+          try { localStorage.setItem(KEY, remote); } catch (e) {}
+          var flag = 'studyhub_purged';
+          try {
+            if (sessionStorage.getItem(flag) === remote) return;
+            sessionStorage.setItem(flag, remote);
+          } catch (e) {}
+          purgeCachesAndReload();
+        }
+      }).catch(function () {});
+  }
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistration().then(function (reg) {
       if (reg) reg.update();
@@ -54,8 +93,8 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=44">
-<link rel="stylesheet" href="exam-panel.css?v=44">
+<link rel="stylesheet" href="styles.css?v=47">
+<link rel="stylesheet" href="exam-panel.css?v=47">
 </head>
 <body>
 
@@ -184,6 +223,11 @@
           <div class="form-group"><label>Teacher's Tip (optional)</label><textarea id="f-teacher-tip" class="html-editor html-editor-sm" rows="2" placeholder="Memory trick…"></textarea></div>
           <div class="form-group"><label>Exam Tip (optional)</label><textarea id="f-exam-tip" class="html-editor html-editor-sm" rows="2" placeholder="Important for exams…"></textarea></div>
         </div>
+        <div class="form-group">
+          <label>Advance Reading (optional)</label>
+          <textarea id="f-advance-reading" class="html-editor" rows="4" placeholder="Deeper material, extra examples, NEET-level extensions…"></textarea>
+          <p class="html-editor-hint" style="margin-top:6px">Shown in the collapsible <strong>Advance Reading</strong> panel on each note. Supports **bold**, bullets, and tables like other notes.</p>
+        </div>
       </div>
 
       <!-- QUESTION FIELDS -->
@@ -227,6 +271,46 @@
       <div class="btn-group" style="margin-top:22px">
         <button type="submit" class="btn btn-primary">💾 Save Content</button>
         <button type="button" class="btn btn-outline" onclick="closeModal('modal-add')">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL: Admin password -->
+<div class="modal-overlay" id="modal-admin-pw">
+  <div class="modal" style="max-width:400px">
+    <button class="close-btn" onclick="closeModal('modal-admin-pw')">✕</button>
+    <h2>🔐 Admin password</h2>
+    <p style="color:var(--ink-2);font-size:.9rem;margin-bottom:14px">Teachers and students with the admin password can add or edit advance reading on notes.</p>
+    <form onsubmit="submitAdminPassword(event)">
+      <div class="form-group">
+        <label>Password</label>
+        <input id="admin-pw-input" type="password" autocomplete="off" placeholder="Enter admin password" required>
+      </div>
+      <div class="btn-group" style="margin-top:14px">
+        <button type="submit" class="btn btn-primary">Unlock</button>
+        <button type="button" class="btn btn-outline" onclick="closeModal('modal-admin-pw')">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL: Advance Reading editor -->
+<div class="modal-overlay" id="modal-advance-reading">
+  <div class="modal" style="max-width:640px">
+    <button class="close-btn" onclick="closeModal('modal-advance-reading')">✕</button>
+    <h2>📚 Advance Reading</h2>
+    <p id="adv-read-subtitle" style="color:var(--ink-2);font-size:.9rem;margin-bottom:12px"></p>
+    <form onsubmit="saveAdvanceReadingContent(event)">
+      <p class="html-editor-hint">Go deeper than the main note — extra context, examples, Olympiad facts, or textbook extensions. Use **bold**, bullets (•), and markdown tables.</p>
+      <div class="form-group">
+        <label>Content</label>
+        <textarea id="adv-read-text" class="html-editor" rows="12" placeholder="**Why this matters beyond the textbook**&#10;• Extra fact one&#10;• Extra fact two&#10;&#10;**Think deeper:** …"></textarea>
+      </div>
+      <div class="btn-group" style="margin-top:14px">
+        <button type="submit" class="btn btn-primary">💾 Save</button>
+        <button type="button" class="btn btn-outline" onclick="clearAdvanceReading()">Clear</button>
+        <button type="button" class="btn btn-outline" onclick="closeModal('modal-advance-reading')">Cancel</button>
       </div>
     </form>
   </div>
@@ -365,28 +449,28 @@
 <div class="toast" id="toast"></div>
 
 <!-- DATA (load order matters) -->
-<script src="data-core.js?v=44"></script>
-<script src="chapters3to8.js?v=44"></script>
-<script src="physics-qbank.js?v=44"></script>
-<script src="physics-neet.js?v=44"></script>
-<script src="physics-mindmaps.js?v=44"></script>
-<script src="physics-cheatsheets.js?v=44"></script>
-<script src="biology.js?v=44"></script>
-<script src="biology-neet.js?v=44"></script>
-<script src="biology-olympiad.js?v=44"></script>
-<script src="biology-revision-notes.js?v=44"></script>
-<script src="biology-mindmaps.js?v=44"></script>
-<script src="biology-cheatsheets.js?v=44"></script>
-<script src="chemistry.js?v=44"></script>
-<script src="chemistry-neet.js?v=44"></script>
-<script src="chemistry-mindmaps.js?v=44"></script>
-<script src="chemistry-cheatsheets.js?v=44"></script>
-<script src="geography.js?v=44"></script>
-<script src="history-civics.js?v=44"></script>
+<script src="data-core.js?v=47"></script>
+<script src="chapters3to8.js?v=47"></script>
+<script src="physics-qbank.js?v=47"></script>
+<script src="physics-neet.js?v=47"></script>
+<script src="physics-mindmaps.js?v=47"></script>
+<script src="physics-cheatsheets.js?v=47"></script>
+<script src="biology.js?v=47"></script>
+<script src="biology-neet.js?v=47"></script>
+<script src="biology-olympiad.js?v=47"></script>
+<script src="biology-revision-notes.js?v=47"></script>
+<script src="biology-mindmaps.js?v=47"></script>
+<script src="biology-cheatsheets.js?v=47"></script>
+<script src="chemistry.js?v=47"></script>
+<script src="chemistry-neet.js?v=47"></script>
+<script src="chemistry-mindmaps.js?v=47"></script>
+<script src="chemistry-cheatsheets.js?v=47"></script>
+<script src="geography.js?v=47"></script>
+<script src="history-civics.js?v=47"></script>
 <!-- APP LOGIC -->
-<script src="app.js?v=44"></script>
-<script src="exam-panel.js?v=44"></script>
-<script src="github-sync.js?v=44"></script>
+<script src="app.js?v=47"></script>
+<script src="exam-panel.js?v=47"></script>
+<script src="github-sync.js?v=47"></script>
 <script>
 (function bootStudyHub() {
   if (typeof initApp === 'function') {
