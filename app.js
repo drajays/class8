@@ -42,7 +42,7 @@ let currentView = 'home'; // home, subjects, topics, content
 let selectedClass = null;
 let selectedSubject = null;
 let selectedTopic = null;
-let contentTab = 'notes'; // notes, mindmap, cheatsheet, oneword, questions, diagrams
+let contentTab = 'notes'; // notes, mindmap, cheatsheet, oneword, questions, qa, diagrams
 let mindMapIndex = 0;
 let activeWordId = null;
 let wordCardOrder = [];
@@ -150,6 +150,20 @@ function topicTextQuestions(topicId) {
     return pipeline.length ? pipeline : all;
   }
   return all;
+}
+
+/** Short/long answer Q&A bank — shown in the dedicated Q&A tab (all subjects). */
+function topicShortAnswerQuestions(topicId) {
+  return appData.content.filter(c =>
+    (!topicId || c.topicId === topicId) && c.type === 'short_answer'
+  );
+}
+
+/** Interactive practice items — excludes Q&A and match (self-study types). */
+function topicPracticeQuestions(topicId) {
+  return topicTextQuestions(topicId).filter(q =>
+    q.type !== 'short_answer' && q.type !== 'match'
+  );
 }
 
 function biologyContentStats(topicId) {
@@ -355,6 +369,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
     typeof BIOLOGY_OLYMPIAD_COMPANION !== 'undefined' ? BIOLOGY_OLYMPIAD_COMPANION : null,
     typeof BIOLOGY_REVISION_NOTES !== 'undefined' ? BIOLOGY_REVISION_NOTES : null,
+    typeof BIOLOGY_PRACTICE !== 'undefined' ? BIOLOGY_PRACTICE : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
@@ -1310,15 +1325,19 @@ function jumpToQuestion(qId) {
     selectedTopic = q.topicId;
   }
   currentView = 'content';
-  contentTab = isDiagramMcq(q) ? 'diagrams' : 'questions';
+  contentTab = isDiagramMcq(q) ? 'diagrams' : (q.type === 'short_answer' ? 'qa' : 'questions');
   questionFilter = 'all';
   userAnswers = {};
   if (isDiagramMcq(q)) {
     const diags = sortedDiagramQuestions(q.topicId);
     const dIdx = diags.findIndex(x => x.id === qId);
     if (dIdx >= 0) diagramIndex = dIdx;
+  } else if (q.type === 'short_answer') {
+    const qaList = sortQuestionsByQuality(topicShortAnswerQuestions(q.topicId));
+    const qIdx = qaList.findIndex(x => x.id === qId);
+    if (qIdx >= 0) questionIndex = qIdx;
   } else {
-    const filtered = getFilteredQuestions(topicTextQuestions(q.topicId));
+    const filtered = getFilteredQuestions(topicPracticeQuestions(q.topicId));
     const qIdx = filtered.findIndex(x => x.id === qId);
     if (qIdx >= 0) questionIndex = qIdx;
   }
@@ -1371,6 +1390,12 @@ function sourceChipHtml(source) {
   }
   if (source === 'icse' || source === 'neet') {
     return ' <span class="src-chip" title="ICSE textbook section — linked to practice MCQs">ICSE</span>';
+  }
+  if (source === 'bio_neet_olympiad') {
+    return ' <span class="src-chip src-chip-bio" title="NEET/Olympiad-style keyword-rich Q&A">NEET/Oly</span>';
+  }
+  if (source === 'icse_300_practice') {
+    return ' <span class="src-chip" title="ICSE practice Q&A bank">Practice</span>';
   }
   return '';
 }
@@ -1495,7 +1520,7 @@ function setChapterViewMode(mode) {
 }
 
 function chapterViewModeHtml() {
-  if (contentTab !== 'notes' && contentTab !== 'questions') return '';
+  if (contentTab !== 'notes' && contentTab !== 'questions' && contentTab !== 'qa') return '';
   return `<div class="chapter-view-toggle" role="group" aria-label="View mode">
     <button type="button" class="view-mode-btn ${chapterViewMode === 'pager' ? 'active' : ''}" onclick="setChapterViewMode('pager')" title="Show one note or question at a time">📄 One at a time</button>
     <button type="button" class="view-mode-btn ${chapterViewMode === 'scroll' ? 'active' : ''}" onclick="setChapterViewMode('scroll')" title="Scroll through all items continuously">📜 Continuous scroll</button>
@@ -1538,8 +1563,15 @@ function prevQuestionCard() {
     scrollContentTop();
   }
 }
+function activeQuestionList() {
+  if (contentTab === 'qa') {
+    return sortQuestionsByQuality(topicShortAnswerQuestions(selectedTopic));
+  }
+  return getFilteredQuestions(topicPracticeQuestions(selectedTopic));
+}
+
 function nextQuestionCard() {
-  const filtered = getFilteredQuestions(textQuestions(selectedTopic));
+  const filtered = activeQuestionList();
   if (questionIndex < filtered.length - 1) {
     questionIndex++;
     renderContent(document.getElementById('main-content'));
@@ -1569,7 +1601,7 @@ function handleContentPagerKeys(e) {
   if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
   const prev = e.key === 'ArrowLeft';
   if (contentTab === 'notes') { prev ? prevNoteCard() : nextNoteCard(); e.preventDefault(); }
-  else if (contentTab === 'questions') { prev ? prevQuestionCard() : nextQuestionCard(); e.preventDefault(); }
+  else if (contentTab === 'questions' || contentTab === 'qa') { prev ? prevQuestionCard() : nextQuestionCard(); e.preventDefault(); }
   else if (contentTab === 'diagrams') { prev ? prevDiagramCard() : nextDiagramCard(); e.preventDefault(); }
 }
 
@@ -2182,14 +2214,16 @@ function buildChapterRevisionHint(csData, mmData, qStats) {
 
 function buildChapterSidebarHtml(opts) {
   const {
-    notes, questions, qStats, diagrams, csData, cm, heat, questionsForFilter
+    notes, questions, qaQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter
   } = opts;
   const mcqCount = qStats ? qStats.mcq : questions.filter(q => q.type === 'mcq').length;
+  const qaCount = qaQuestions ? qaQuestions.length : 0;
 
   const statRows = [
     { label: 'Notes', num: notes.length, click: "switchContentTab('notes')" },
     { label: qStats ? 'Questions' : 'Text Qs', num: questions.length, click: "switchContentTab('questions')" },
     { label: 'MCQs', num: mcqCount, click: "switchContentTab('questions');setQuestionFilter('mcq')" },
+    { label: '📋 Short/Long Answer', num: qaCount, click: "switchContentTab('qa')", qa: true },
     { label: 'Diagram MCQs', num: diagrams.length, click: "switchContentTab('diagrams')" }
   ];
   if (csData) {
@@ -2200,7 +2234,7 @@ function buildChapterSidebarHtml(opts) {
   }
 
   const statsHtml = statRows.map(s => `
-    <button type="button" class="ch-stat-row${s.rev ? ' ch-stat-rev' : ''}" onclick="${s.click}">
+    <button type="button" class="ch-stat-row${s.rev ? ' ch-stat-rev' : ''}${s.qa ? ' ch-stat-qa' : ''}" onclick="${s.click}">
       <span class="ch-stat-num">${s.num}</span>
       <span class="ch-stat-lbl">${s.label}</span>
     </button>`).join('');
@@ -2244,9 +2278,7 @@ function buildChapterSidebarHtml(opts) {
       { key: 'top', label: 'Top ★★★★', icon: '⭐' },
       { key: 'true_false', label: 'True/False', icon: '✅' },
       { key: 'fill_blank', label: 'Fill Blanks', icon: '✍️' },
-      { key: 'mcq', label: 'MCQ', icon: '🔘' },
-      { key: 'match', label: 'Match', icon: '🔗' },
-      { key: 'short_answer', label: 'Short/Long Answer', icon: '📋' }
+      { key: 'mcq', label: 'MCQ', icon: '🔘' }
     ];
     filtersHtml = `
       <div class="ch-sidebar-block">
@@ -2286,7 +2318,8 @@ function topicSubjectId(topicId) {
 function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
   const notes = topicNotes(selectedTopic);
-  const questions = topicTextQuestions(selectedTopic);
+  const qaQuestions = topicShortAnswerQuestions(selectedTopic);
+  const questions = topicPracticeQuestions(selectedTopic);
   const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic)
     : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic) : null);
   const diagrams = diagramQuestions(selectedTopic);
@@ -2298,8 +2331,11 @@ function renderContent(el) {
   const heat = sectionHeatmap(selectedTopic);
   const revHint = buildChapterRevisionHint(csData, mmData, qStats);
   const sidebarHtml = buildChapterSidebarHtml({
-    notes, questions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
+    notes, questions, qaQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
   });
+  const qaTabLabel = qaQuestions.length
+    ? `📋 Short/Long Answer (${qaQuestions.length})`
+    : '📋 Short/Long Answer';
 
   el.innerHTML = `
     <div class="fade-in chapter-page">
@@ -2314,6 +2350,7 @@ function renderContent(el) {
             ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
             ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
             <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+            <div class="content-tab content-tab-qa ${contentTab==='qa'?'active':''}${qaQuestions.length ? ' has-content' : ''}" onclick="switchContentTab('qa')" title="Short and long answer questions with model answers">${qaTabLabel}</div>
             <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
           </div>
           ${chapterViewModeHtml()}
@@ -2331,6 +2368,7 @@ function renderContent(el) {
   else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
   else if (contentTab === 'oneword') renderOneWordCards(csData);
   else if (contentTab === 'diagrams') renderDiagramQuestions(diagrams);
+  else if (contentTab === 'qa') renderShortAnswerQuestions(qaQuestions);
   else renderQuestions(questions);
 }
 
@@ -2340,7 +2378,7 @@ function switchContentTab(tab) {
   if (tab === 'mindmap') mindMapIndex = 0;
   if (tab === 'oneword') { activeWordId = null; wordCardOrder = []; }
   if (tab === 'notes') noteIndex = 0;
-  if (tab === 'questions') questionIndex = 0;
+  if (tab === 'questions' || tab === 'qa') { questionIndex = 0; questionFilter = tab === 'questions' ? questionFilter : 'all'; }
   if (tab === 'diagrams') diagramIndex = 0;
   renderContent(document.getElementById('main-content'));
 }
@@ -2806,16 +2844,78 @@ function renderQuestions(questions) {
     return;
   }
 
+  renderQuestionList(body, filtered, 'Question');
+}
+
+function renderShortAnswerQuestions(questions) {
+  const body = document.getElementById('content-body');
+  if (!body) return;
+
+  const list = sortQuestionsByQuality(questions || []);
+
+  if (!list.length) {
+    body.innerHTML = `<div class="empty-state">
+      <div class="empty-icon">📋</div>
+      <h3>No short/long answer questions yet</h3>
+      <p>This chapter has no written Q&amp;A bank. Try <strong>Practice</strong> for MCQs and other types.</p>
+    </div>`;
+    return;
+  }
+
+  renderQuestionList(body, list, 'Q&A');
+}
+
+function isRichShortAnswer(q) {
+  return !!(q && q.type === 'short_answer' && (
+    q.source === 'bio_neet_olympiad' ||
+    (Array.isArray(q.keywords) && q.keywords.length) ||
+    q.topperTip
+  ));
+}
+
+function renderKeywordRow(keywords) {
+  if (!keywords || !keywords.length) return '';
+  const chips = keywords.map(k => `<span class="qa-kw-chip">${escHtml(k)}</span>`).join('');
+  return `<div class="qa-keywords"><span class="qa-kw-title">Keywords</span><div class="qa-kw-row">${chips}</div></div>`;
+}
+
+function renderShortAnswerAnswerContent(q) {
+  if (!isRichShortAnswer(q)) {
+    return `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.answer || '')}</div>`;
+  }
+  return `
+    <div class="qa-answer-box">
+      <div class="qa-answer-label">Advanced answer</div>
+      <div class="rich-html qa-answer-text">${fmtText(q.answer || '')}</div>
+    </div>
+    ${q.topperTip ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html inline-rich">${fmtText(q.topperTip)}</div></div>` : ''}
+  `;
+}
+
+function shortAnswerBannerHtml(list) {
+  const bioCount = (list || []).filter(q => q.source === 'bio_neet_olympiad').length;
+  if (!bioCount) return '';
+  return `<div class="qa-chapter-banner bio-qa-banner">
+    <div class="qa-banner-icon" aria-hidden="true">🧬</div>
+    <div class="qa-banner-body">
+      <strong>NEET / Olympiad Q&amp;A bank</strong>
+      <p>${bioCount} keyword-rich model answers in this chapter — use the chips for quick revision, then reveal the advanced answer and topper tip.</p>
+    </div>
+  </div>`;
+}
+
+function renderQuestionList(body, filtered, pagerLabel) {
+  const banner = pagerLabel === 'Q&A' ? shortAnswerBannerHtml(filtered) : '';
   if (chapterViewMode === 'scroll') {
-    body.innerHTML = `<div class="questions-scroll-list">${filtered.map((q, i) => renderSingleQuestion(q, i)).join('')}</div>`;
+    body.innerHTML = `${banner}<div class="questions-scroll-list">${filtered.map((q, i) => renderSingleQuestion(q, i)).join('')}</div>`;
     return;
   }
 
   questionIndex = clampCardIndex(questionIndex, filtered.length);
-  const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', 'Question');
+  const pager = cardPagerHtml(questionIndex, filtered.length, 'prevQuestionCard', 'nextQuestionCard', pagerLabel);
   const card = renderSingleQuestion(filtered[questionIndex], questionIndex);
-  body.innerHTML = `${pager}<div class="questions-single">${card}</div>${pager}
-    <p class="card-pager-hint">Use ← → arrow keys to move between questions</p>`;
+  body.innerHTML = `${banner}${pager}<div class="questions-single">${card}</div>${pager}
+    <p class="card-pager-hint">Use ← → arrow keys to move between ${pagerLabel === 'Q&A' ? 'answers' : 'questions'}</p>`;
 }
 
 function setQuestionFilter(f) {
@@ -2873,7 +2973,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   // Cap the stagger so long lists never wait seconds to appear; a targeted
   // single-card re-render skips the fade entirely (updates in place).
   const delay = Math.min(idx, 10) * 0.025;
-  let html = `<div class="question-card${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
+  let html = `<div class="question-card${isRichShortAnswer(q) ? ' qa-rich-card' : ''}${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
@@ -2884,6 +2984,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
   html += `<div class="q-text rich-html">Q${idx + 1}. ${renderContentHtml(q.question)}</div>`;
+  if (isRichShortAnswer(q)) html += renderKeywordRow(q.keywords);
 
   if (q.type === 'true_false') {
     html += renderTfOptions(q, answered, v => `onclick="answerTF('${q.id}','${v}')"`);
@@ -2923,12 +3024,15 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   }
 
   // Toggle answer
-  html += `<div class="toggle-answer" onclick="toggleAnswer('ans-${q.id}')">${answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation'}</div>`;
-  html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}" id="ans-${q.id}">
-    <div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>
-    ${q.teacherTip?`<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>`:''}
-    ${q.examTip?`<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.examTip)}</span></div>`:''}
-    ${linkedNote?`<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>`:''}
+  const toggleLabel = isRichShortAnswer(q)
+    ? (answered !== undefined ? '👁️ Hide model answer' : '👁️ Show model answer & topper tip')
+    : (answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation');
+  html += `<div class="toggle-answer${isRichShortAnswer(q) ? ' toggle-answer-rich' : ''}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;
+  html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}${isRichShortAnswer(q) ? ' answer-reveal-rich' : ''}" id="ans-${q.id}">
+    ${q.type === 'short_answer' ? renderShortAnswerAnswerContent(q) : `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>`}
+    ${!isRichShortAnswer(q) && q.teacherTip ? `<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>` : ''}
+    ${!isRichShortAnswer(q) && q.examTip ? `<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.examTip)}</span></div>` : ''}
+    ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>` : ''}
   </div>`;
 
   const bm = isBookmarked(q.id);

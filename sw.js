@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v52';
+const CACHE = 'studyhub-v54';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [
@@ -20,6 +20,7 @@ const ASSETS = [
   './biology-neet.js',
   './biology-olympiad.js',
   './biology-revision-notes.js',
+  './biology-practice.js',
   './biology-mindmaps.js',
   './biology-cheatsheets.js',
   './chemistry.js',

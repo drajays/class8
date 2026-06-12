@@ -384,6 +384,20 @@ body{
 .content-tab{flex:0 0 auto;text-align:center;padding:11px 16px;border-radius:10px;font-size:.84rem;font-weight:600;color:var(--ink-2);cursor:pointer;transition:var(--t);white-space:nowrap}
 .content-tab:hover{color:var(--ink)}
 .content-tab.active{background:var(--surface);color:var(--accent-ink);box-shadow:var(--shadow-sm)}
+.content-tab-qa{
+  font-weight:700;
+  border:1.5px solid color-mix(in srgb,var(--accent) 40%,transparent);
+  background:color-mix(in srgb,var(--accent) 6%,var(--surface-2));
+}
+.content-tab-qa.has-content{border-color:color-mix(in srgb,var(--accent) 65%,transparent)}
+.content-tab-qa.active{
+  background:color-mix(in srgb,var(--accent) 14%,var(--surface));
+  border-color:var(--accent);
+  color:var(--accent-ink);
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 18%,transparent);
+}
+.ch-stat-qa{border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--surface-2))}
+.ch-stat-qa .ch-stat-num{color:var(--accent-ink)}
 [data-theme="dark"] .content-tab.active{color:var(--ink)}
 
 /* ---------- NOTES ---------- */
@@ -878,6 +892,8 @@ html.studyhub-booting body{visibility:hidden}
   font-size:.6rem;font-weight:800;letter-spacing:.08em;background:var(--accent-soft);
   color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 30%, transparent)}
 [data-theme="dark"] .src-chip{color:var(--accent)}
+.src-chip-bio{background:#ecfdf5;border-color:#6ee7b7;color:#047857}
+[data-theme="dark"] .src-chip-bio{background:#052e1a;border-color:#065f46;color:#6ee7b7}
 .note-head h3 .src-chip{font-size:.55rem}
 .link-count{display:inline-block;vertical-align:middle;margin-left:6px;padding:1px 8px;border-radius:20px;
   font-size:.58rem;font-weight:700;background:var(--surface-3);color:var(--ink-3)}
@@ -1120,3 +1136,55 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .nav-item .badge.badge-online{background:var(--success-soft);color:var(--success)}
 .nav-item .badge.badge-offline{background:var(--danger-soft);color:var(--danger)}
 @media(max-width:760px){.offline-status-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Rich short/long answer — NEET/Olympiad biology Q&A */
+.qa-chapter-banner{
+  display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;padding:16px 18px;
+  border-radius:16px;border:1px solid #bfdbfe;background:linear-gradient(135deg,#eff6ff,#ecfdf5)
+}
+.bio-qa-banner{border-color:#99f6e4}
+.qa-banner-icon{font-size:1.8rem;line-height:1;flex:0 0 auto}
+.qa-banner-body strong{display:block;font-size:.95rem;color:#0f766e;margin-bottom:4px}
+.qa-banner-body p{margin:0;font-size:.84rem;color:var(--ink-2);line-height:1.5}
+.question-card.qa-rich-card{
+  border:1px solid #dbeafe;
+  background:linear-gradient(180deg,color-mix(in srgb,#eff6ff 55%,var(--surface)),var(--surface));
+  box-shadow:0 10px 28px rgba(29,78,216,.07)
+}
+.qa-keywords{margin:12px 0 4px}
+.qa-kw-title{
+  display:block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  color:#1d4ed8;margin-bottom:8px
+}
+.qa-kw-row{display:flex;flex-wrap:wrap;gap:7px}
+.qa-kw-chip{
+  display:inline-block;padding:5px 11px;border-radius:999px;font-size:.78rem;font-weight:600;
+  background:#eef4ff;color:#1d4ed8;border:1px solid #cfe0ff
+}
+.qa-answer-box{
+  margin-top:4px;padding:14px 16px;border-radius:14px;
+  background:#f8fbff;border-left:4px solid #7aa2ff
+}
+.qa-answer-label{
+  font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  color:#1d4ed8;margin-bottom:6px
+}
+.qa-answer-text{color:var(--ink);line-height:1.65}
+.qa-topper-note{
+  margin-top:12px;padding:12px 14px;border-radius:12px;
+  background:#ecfeff;border-left:4px solid #14b8a6;color:#164e63;line-height:1.55
+}
+.qa-topper-note strong{display:block;margin-bottom:4px;color:#0f766e}
+.toggle-answer-rich{
+  background:linear-gradient(90deg,#1d4ed8,#0f766e);color:#fff;border:none;font-weight:700
+}
+.toggle-answer-rich:hover{filter:brightness(1.05)}
+.answer-reveal-rich{padding-top:4px}
+[data-theme="dark"] .question-card.qa-rich-card{
+  background:linear-gradient(180deg,#0f172a,var(--surface));
+  border-color:#1e3a5f
+}
+[data-theme="dark"] .qa-kw-chip{background:#172554;color:#93c5fd;border-color:#1e3a8a}
+[data-theme="dark"] .qa-answer-box{background:#0f172a;border-left-color:#3b82f6}
+[data-theme="dark"] .qa-topper-note{background:#042f2e;color:#99f6e4}
+[data-theme="dark"] .qa-chapter-banner{background:linear-gradient(135deg,#0f172a,#042f2e);border-color:#134e4a}
