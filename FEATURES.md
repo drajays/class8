@@ -33,6 +33,7 @@
 22. [Cross-linking between notes and questions](#22-cross-linking-between-notes-and-questions)
 23. [Data architecture and regeneration](#23-data-architecture-and-regeneration)
 24. [Biology content scale](#24-biology-content-scale)
+25. [AI guide: adding a new subject](#25-ai-guide-adding-a-new-subject) — **read this before extending the app**
 
 ---
 
@@ -83,7 +84,7 @@ StudyHub is a single-page application that stores user progress locally in the b
 | `bio-ch8` | Diseases and First Aid |
 | `bio-ch9` | Food Production |
 
-Mind maps, cheat sheets, and one-word cards are available **only for Biology chapters** (`bio-ch1` … `bio-ch9`).
+Mind maps, cheat sheets, and one-word cards are **fully built for Biology** (`bio-ch1` … `bio-ch9`). Physics and Chemistry have optional mind map / cheat sheet bundles; other subjects use Notes + Practice only unless you add Tier B assets (see [§25](#25-ai-guide-adding-a-new-subject)).
 
 ---
 
@@ -163,11 +164,11 @@ When you open a chapter, **study mode tabs** appear at the **top** (below the ch
 | Tab | Label | Available for |
 |-----|-------|---------------|
 | Notes | 📝 Notes | All chapters |
-| Mind Map | 🧠 Mind Map | Biology only |
-| Cheat Sheet | ⚡ Cheat Sheet | Biology only |
-| One Word | 🔤 One Word | Biology only (30 cards) |
+| Mind Map | 🧠 Mind Map | Chapters with `*_MINDMAP_DATA[topicId]` (Biology, Physics, Chemistry when built) |
+| Cheat Sheet | ⚡ Cheat Sheet | Chapters with `*_CHEATSHEET_DATA[topicId]` |
+| One Word | 🔤 One Word | Chapters with `wordCards` in cheat sheet data (Biology: 30 cards) |
 | Practice | ❓ Practice | All chapters (text questions) |
-| Diagrams | 🖼️ Diagrams | Biology chapters with figure MCQs |
+| Diagrams | 🖼️ Diagrams | Chapters with diagram MCQs (`image` field on questions) |
 
 A hint line under the tabs lists available revision tools for Biology chapters.
 
@@ -219,8 +220,9 @@ Each note includes:
 
 - **Collapse / expand** — click note header; chevron indicates state
 - **Expand all / Collapse all** — toolbar above note list
+- **📚 Advance Reading** — collapsible deeper material; add/edit with admin password (`1234`, set in `index.html` as `window.__STUDYHUB_ADMIN_PW`)
 - **Test yourself bar** on every note:
-  - **▶ Practice N linked MCQs** — if MCQs explicitly link to this note
+  - **▶ Practice N linked MCQs** — via `linksTo` or `linkedQuestionIds` on the note
   - **→ MCQ / T/F / Fill / Q&A** — jump to a question of that type
 - **Edit / Delete** — for user-created or all content (bundled items can be deleted locally)
 
@@ -228,13 +230,25 @@ Each note includes:
 
 Notes are sorted by section number extracted from subtopic titles (e.g. "1.2 …" before "3. …").
 
-### Biology NEET notes
+### Expert revision note format (Physics & Biology)
 
-Textbook sections from the ICSE Biology pipeline appear with:
+Physics (`phy-s*`) and Biology (`bio-rev-*`) use a **uniform expert layout** rendered by `renderNoteMarkdown()` in `app.js`:
 
-- `source: "icse"` chip
-- `linkedMcqCount` badge showing how many MCQs link to that section
-- `linksTo` on MCQs pointing back to the note
+| Block | Purpose |
+|-------|---------|
+| **Executive summary** | 1–2 sentence overview |
+| **Must know** | Exam-critical bullets |
+| Body sections | Definitions, pathways, examples |
+| **📊 Chart** | Comparison tables (markdown) |
+| **Cornell cues** | Self-test prompts |
+| **Definitions / Exam traps** | High-yield traps |
+| **From linked questions** | Facts pulled from matched MCQs |
+| **🔗 Links** | Prev/next note in chapter |
+
+Biology revision notes live in `data/biology-revision-notes/ch*.json` → built to `biology-revision-notes.js`.  
+Physics authored notes live in `data/physics-authored/` → built to `physics-neet.js`.
+
+Legacy ICSE textbook sections (`source: "icse"`) may still exist in older banks but are **hidden** when a pipeline note set exists for that chapter.
 
 ---
 
@@ -613,9 +627,20 @@ Works in browser (localStorage) and NW.js desktop mode (reads/writes `data/study
 
 - `manifest.webmanifest` for install to home screen
 - Service worker (`sw.js`) caches app shell
-- **Network-first** for `.js`, `.html`, `.css` (updates propagate quickly)
-- **Cache-first** for other assets
-- Cache version: `studyhub-v19` (bumps on releases)
+- **Network-first** for `.js`, `.html`, `.css`, `.json` (updates propagate quickly)
+- **Cache-first** for other assets (images, etc.)
+- **Version detection:** `version.json` + `BUILD` in `index.html` head (currently **v49**)
+- Bump `BUILD`, all `?v=` query strings, `sw.js` `CACHE`, and `version.json` on every release
+
+### Offline Mode tab (v49)
+
+- **📡 Offline** entry in the sidebar (next to Mock Test / Revision) → `navigateTo('offline')` → `renderOfflineView()` in `app.js`
+- Status dashboard: connection (live `online`/`offline` events), app-shell cache state, diagram images saved (X / 220), storage used (`navigator.storage.estimate()`)
+- **Download all diagrams**: collects every `images/…` reference from `appData.content` (`collectOfflineImageUrls()`), fetches with 5 parallel workers into the `studyhub-media-v1` cache, with progress bar, stop/resume, retry of failures, and remove-downloads action
+- Requests persistent storage (`navigator.storage.persist()`) on download so the browser won't evict it
+- `studyhub-media-v1` cache **survives version bumps**: excluded from purges in `sw.js` activate, `index.html` boot recovery, and `runAppUpdate()` — diagrams are not re-downloaded after app updates
+- Service worker routes runtime-fetched images into `studyhub-media-v1` (other assets stay in the versioned cache)
+- Everything else (notes, questions, mind maps, cheat sheets, quizzes, mock tests, progress) already works offline because content ships inside the precached JS bundles
 
 ### Desktop (NW.js)
 
@@ -642,45 +667,80 @@ StudyHub is built around **note ↔ question** links:
 
 ## 23. Data architecture and regeneration
 
-### Client-side data modules (load order)
+### Runtime data model
+
+StudyHub is a **static PWA**. All syllabus content ships as JavaScript arrays merged at load time into `appData`. User progress and edits are stored separately in **localStorage** (delta format — only user changes, not the full bank).
 
 ```
-data-core.js          → DEFAULT_DATA (taxonomy + Physics Ch1–2)
-chapters3to8.js       → Physics Ch3–8 + more
-physics-qbank.js      → Physics question bank
-biology.js            → Biology notes + legacy questions
-biology-neet.js       → ICSE Biology textbook sections + 200+ MCQs/chapter + diagram MCQs
-biology-mindmaps.js   → Idea-connecting mind maps
-biology-cheatsheets.js → Cheat sheets + 30 word cards/chapter
-chemistry.js
-geography.js
-history-civics.js
-app.js                → Application logic
+┌─────────────────────────────────────────────────────────────┐
+│  DEFAULT_DATA (data-core.js)                                │
+│    classes[] · subjects[] · topics[] · content[] (seed)     │
+└──────────────────────────┬──────────────────────────────────┘
+                           │ _mergeModuleArraysIntoDefault()
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  + subject bundles (PHYSICS_NEET_DATA, BIOLOGY_REVISION_…,  │
+│    CHEMISTRY_DATA, GEOGRAPHY_DATA, …)                       │
+└──────────────────────────┬──────────────────────────────────┘
+                           │ loadData() + localStorage delta
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  appData — what the UI reads (notes, questions, taxonomy)   │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-### Merge on load
+### Client-side script load order (`index.html`)
 
-- New bundled content is merged without overwriting user edits
-- Taxonomy labels refresh from defaults
-- `DATA_VERSION` (currently **38**) triggers progress schema migration when bumped
+Scripts must load **before** `app.js`. Order matters only for merge side-effects; each bundle exports one global array or object.
 
-### Content pipeline (separate repo: `biology8`)
+| Script | Global exported | Role |
+|--------|-----------------|------|
+| `data-core.js` | `DEFAULT_DATA` | Taxonomy + legacy Physics Ch1–2 seed |
+| `chapters3to8.js` | `CHAPTERS_3_TO_8` | Physics Ch3–8 legacy content |
+| `physics-qbank.js` | `PHYSICS_QBANK` | Extra physics questions |
+| `physics-neet.js` | `PHYSICS_NEET_DATA` | **Physics expert notes + MCQs** (`phy-s*`) |
+| `physics-mindmaps.js` | `PHYSICS_MINDMAP_DATA` | Optional mind maps |
+| `physics-cheatsheets.js` | `PHYSICS_CHEATSHEET_DATA` | Optional cheat sheets |
+| `biology.js` | `BIOLOGY_DATA` | Legacy biology content |
+| `biology-neet.js` | `BIOLOGY_NEET_DATA` | Legacy ICSE sections + diagram MCQs |
+| `biology-olympiad.js` | `BIOLOGY_OLYMPIAD_IDS`, `BIOLOGY_OLYMPIAD_COMPANION` | **Curated Olympiad question bank** |
+| `biology-revision-notes.js` | `BIOLOGY_REVISION_NOTES` | **Biology expert notes** (`bio-rev-*`) |
+| `biology-mindmaps.js` | `BIOLOGY_MINDMAP_DATA` | Mind maps |
+| `biology-cheatsheets.js` | `BIOLOGY_CHEATSHEET_DATA` | Cheat sheets + one-word cards |
+| `chemistry.js` | `CHEMISTRY_DATA` | Chemistry notes + questions |
+| `chemistry-neet.js` | `CHEMISTRY_NEET_DATA` | Extra chemistry bank |
+| `chemistry-mindmaps.js` | `CHEMISTRY_MINDMAP_DATA` | Optional mind maps |
+| `chemistry-cheatsheets.js` | `CHEMISTRY_CHEATSHEET_DATA` | Optional cheat sheets |
+| `geography.js` | `GEOGRAPHY_DATA` | Geography content |
+| `history-civics.js` | `HISTORY_CIVICS_DATA` | History + Civics content |
+| `app.js` | — | Merge, UI, filters, progress |
+| `exam-panel.js` | — | Mock test CBT UI |
+| `github-sync.js` | — | Cloud sync for user edits |
 
-| Script | Output |
-|--------|--------|
-| `chapters/build_studyhub_neet.py` | `biology-neet.js` |
-| `generate_mindmaps.py` | `biology-mindmaps.js` |
-| `generate_cheatsheets.py` | `biology-cheatsheets.js` |
-| `generate_image_mcqs.py` | Diagram MCQs merged into NEET build |
+Registration of a new bundle requires **three places**: `index.html` `<script>` tag, `sw.js` `ASSETS` array, and `app.js` → `_mergeModuleArraysIntoDefault()`.
 
-Regenerate all Biology data:
+### Merge rules (`loadData` in `app.js`)
 
-```bash
-python3 biology8/generate_image_mcqs.py
-python3 biology8/generate_mindmaps.py
-python3 biology8/generate_cheatsheets.py
-python3 biology8/chapters/build_studyhub_neet.py
-```
+| Rule | Behaviour |
+|------|-----------|
+| Bundled content | Merged by **unique `id`** into `DEFAULT_DATA.content` |
+| User edits | Stored in localStorage delta; overrides bundled item with same `id` |
+| `editedContentIds` | Tracks bundled IDs the user edited (synced to GitHub) |
+| `deletedContentIds` | Bundled IDs hidden locally |
+| `DATA_VERSION` | Currently **54** — bump when storage schema changes |
+| Taxonomy | `_reconcileTaxonomy()` refreshes labels from `DEFAULT_DATA`; won't delete topics that have user `c-*` content |
+
+### Build scripts (repo root `scripts/`)
+
+| Script | Input | Output |
+|--------|-------|--------|
+| `build-physics-neet-authored.js` | `data/physics-authored/*.json` | `physics-neet.js` |
+| `enrich-physics-notes-from-mcqs.js` | physics-authored + question JSON | Updates note `explanation` blocks |
+| `build-biology-revision-notes.js` | `data/biology-revision-notes/ch*.json` | `biology-revision-notes.js` |
+| `upgrade-biology-revision-notes.js` | same | Normalises notes to expert format |
+| `build-biology-olympiad-app.js` | `data/biology-audit-selected-v2.json` | `biology-olympiad.js` |
+
+External Python pipelines (optional, `biology8/` repo) still generate mind maps, cheat sheets, and diagram MCQs.
 
 ---
 
@@ -711,4 +771,368 @@ python3 biology8/chapters/build_studyhub_neet.py
 
 ---
 
-*Last updated: June 2026 — matches commit with idea mind maps, cheat sheets, one-word cards, and tab visibility improvements.*
+---
+
+## 25. AI guide: adding a new subject
+
+> **Purpose:** This section is written for AI coding agents. Follow it end-to-end when adding a subject (e.g. Mathematics, Computer Science) so the subject appears in navigation, loads content correctly, and optional premium features (mind maps, pipeline filters) work.
+
+### 25.1 Architecture in one diagram
+
+```mermaid
+flowchart TB
+  subgraph taxonomy [Taxonomy — data-core.js]
+    C[classes]
+    S[subjects]
+    T[topics / chapters]
+  end
+  subgraph bundles [Subject bundles — separate .js files]
+    B1[SUBJECT_DATA content array]
+    B2[Optional: MINDMAP_DATA object]
+    B3[Optional: CHEATSHEET_DATA object]
+    B4[Optional: pipeline ID list / companion array]
+  end
+  subgraph merge [app.js loadData]
+    M[_mergeModuleArraysIntoDefault]
+    A[appData.content]
+  end
+  subgraph ui [Chapter UI]
+    N[topicNotes filter]
+    Q[topicTextQuestions filter]
+    TAB[content tabs: notes / mindmap / practice / diagrams]
+  end
+  C --> S --> T
+  B1 --> M --> A
+  T --> A
+  A --> N
+  A --> Q
+  N --> TAB
+  Q --> TAB
+  B2 --> TAB
+  B3 --> TAB
+```
+
+### 25.2 Subject integration tiers
+
+Pick the tier that matches how much content you are shipping.
+
+| Tier | When to use | What you add |
+|------|-------------|--------------|
+| **A — Simple** | Starter subject, notes + mixed questions only (like Geography, History) | Taxonomy + one `SUBJECT_DATA` array + 3-file registration |
+| **B — Standard+** | Rich subject with mind maps / cheat sheets (like Chemistry) | Tier A + `SUBJECT_MINDMAP_DATA` + `SUBJECT_CHEATSHEET_DATA` objects |
+| **C — Pipeline** | Curated expert notes + separate question bank (like Physics, Biology) | Tier A + `app.js` topic ID set + `isSubjectTopic()` + note/question filter functions + build scripts |
+
+**Default for a new subject:** start at **Tier A**. Upgrade to B/C only when you have structured assets ready.
+
+### 25.3 Taxonomy — `data-core.js`
+
+Every subject needs entries in `DEFAULT_DATA`:
+
+```javascript
+// 1. Subject (id must be lowercase slug, used everywhere)
+{ id: "mathematics", classId: "class8", name: "Mathematics", icon: "📐", color: "mathematics" }
+
+// 2. One topic per chapter (topicId referenced by all content items)
+{ id: "math-ch1", subjectId: "mathematics", classId: "class8", name: "Chapter 1: Rational Numbers", icon: "🔢" }
+```
+
+**ID conventions (follow existing patterns):**
+
+| Entity | Pattern | Examples |
+|--------|---------|----------|
+| Class | `class8`, `class9` | `class8` |
+| Subject | short slug | `physics`, `biology`, `mathematics` |
+| Topic / chapter | `{subject-prefix}-ch{n}` | `bio-ch1`, `chem-ch3`, `math-ch1` |
+| Note (simple) | `{prefix}-c{n}n{m}` | `geo-c1n1` |
+| Note (pipeline) | `{subject}-rev-ch{n}-{nn}` or `phy-s{n}-sec_{nn}` | `bio-rev-ch1-01`, `phy-s1-sec_01` |
+| Question | `{prefix}-mcq{n}`, `-tf`, `-fb`, `-sa` | `ch1mcq1`, `b1kb-ar3` |
+| User-created | `c-{timestamp}` | `c-1718123456789` |
+
+**Rules:**
+
+- Every content item **must** have `topicId` matching a topic in `DEFAULT_DATA.topics`.
+- Content `id` values must be **globally unique** across all bundles.
+- `subject.color` must match a CSS block in `styles.css` (see §25.8).
+
+### 25.4 Content item schema
+
+All items live in flat arrays. The `type` field drives rendering.
+
+#### Note (`type: "note"`)
+
+```javascript
+{
+  id: "math-ch1n01",
+  topicId: "math-ch1",
+  type: "note",
+  subtopic: "1. Introduction to Rational Numbers",
+  content: "**Executive summary:** …\n\n**Must know**\n• …",
+  explanation: "**📊 Chart — …**\n| A | B |\n…",
+  teacherTip: "Optional mnemonic",
+  examTip: "Optional exam advice",
+  source: "revision",           // optional: "revision" | "icse" | omit
+  linkedQuestionIds: ["math-ch1-mcq1"],  // optional — powers ▶ Practice linked Qs
+  linkedMcqCount: 1,            // optional — set by build script
+  advanceReading: "Optional deeper text",  // optional — admin-editable in UI
+}
+```
+
+#### MCQ (`type: "mcq"`)
+
+```javascript
+{
+  id: "math-ch1-mcq1",
+  topicId: "math-ch1",
+  type: "mcq",
+  subtopic: "Objective Questions",
+  question: "Which of the following is a rational number?",
+  options: ["√2", "π", "3/4", "√5"],
+  correctOption: 2,               // 0-based index
+  answer: "3/4 is rational because it can be written as p/q where q≠0.",
+  linksTo: "math-ch1n01",         // optional — back-link to note
+  teacherTip: "…",
+  examTip: "…"
+}
+```
+
+#### Other question types
+
+| type | Required fields |
+|------|-----------------|
+| `true_false` | `question`, `correctAnswer` (`"true"`/`"false"`), `answer` |
+| `fill_blank` | `question`, `blankAnswer`, `answer` |
+| `match` | `question`, `pairs: [{left, right}, …]`, `answer` |
+| `short_answer` | `question`, `answer` |
+
+#### Diagram MCQ (Biology-style)
+
+Any question with an `image` field (path under `/images/`) is treated as a diagram MCQ and routed to the **Diagrams** tab, not Practice.
+
+```javascript
+{ …, type: "mcq", image: "images/bio_ch6_heart.jpg", caption: "Fig 6.1 …" }
+```
+
+### 25.5 Tier A checklist — simple subject (copy for AI agents)
+
+Use subject slug `mathematics` / prefix `math` as example. Replace with your subject.
+
+- [ ] **1. Taxonomy** — Edit `data-core.js`:
+  - Add subject to `DEFAULT_DATA.subjects`
+  - Add all chapters to `DEFAULT_DATA.topics`
+- [ ] **2. Content bundle** — Create `mathematics.js`:
+  ```javascript
+  const MATHEMATICS_DATA = [
+    { id: "math-ch1n01", topicId: "math-ch1", type: "note", subtopic: "…", content: "…", explanation: "…" },
+    { id: "math-ch1-mcq1", topicId: "math-ch1", type: "mcq", … },
+    // …
+  ];
+  ```
+- [ ] **3. Register merge** — Edit `app.js` → `_mergeModuleArraysIntoDefault()`:
+  ```javascript
+  typeof MATHEMATICS_DATA !== 'undefined' ? MATHEMATICS_DATA : null,
+  ```
+- [ ] **4. Register script** — Edit `index.html` (before `app.js`):
+  ```html
+  <script src="mathematics.js?v=48"></script>
+  ```
+  Bump `?v=` on **all** scripts when releasing.
+- [ ] **5. Service worker** — Edit `sw.js` → add `'./mathematics.js'` to `ASSETS`; bump `CACHE` name.
+- [ ] **6. Accent colour** — Edit `styles.css`:
+  ```css
+  [data-subject="mathematics"]{ --accent:#…; --accent-ink:#…; --accent-soft:rgba(…,.13); }
+  [data-theme="dark"][data-subject="mathematics"]{ --accent:#…; }
+  ```
+- [ ] **7. Verify** — Open app → Class 8 → new subject → each chapter shows Notes + Practice tabs with content.
+- [ ] **8. Release** — Bump `BUILD` in `index.html` head, `version.json`, `sw.js` cache, all `?v=` tags.
+
+**No `app.js` filter changes needed for Tier A.** `topicNotes()` and `topicTextQuestions()` return all non-pipeline content for unknown subjects.
+
+### 25.6 Tier B — mind maps and cheat sheets
+
+Optional tabs appear automatically when data exists for the chapter `topicId`.
+
+#### Mind map object (`SUBJECT_MINDMAP_DATA`)
+
+```javascript
+const MATHEMATICS_MINDMAP_DATA = {
+  "math-ch1": {
+    topicId: "math-ch1",
+    chapterTitle: "Rational Numbers",
+    center: "Short hub label",
+    maps: [{
+      id: "map-1",
+      title: "Part title",
+      center: "Map centre label",
+      flow: [{ id: "step1", label: "Step label" }],
+      branches: [{
+        id: "branch1",
+        title: "Branch title",
+        bullets: ["Concept one", "Concept two"],
+        links: [{ label: "relates to →", targetId: "branch2" }],
+        noteRefs: [{ noteId: "math-ch1n01", label: "📄 Section 1" }]
+      }]
+    }]
+  }
+};
+```
+
+Copy structure from `biology-mindmaps.js`. Register file + global in merge (mind maps are **not** merged into `content[]` — they are read via `chapterMindmap()` in `app.js`).
+
+#### Cheat sheet object (`SUBJECT_CHEATSHEET_DATA`)
+
+```javascript
+const MATHEMATICS_CHEATSHEET_DATA = {
+  "math-ch1": {
+    topicId: "math-ch1",
+    title: "Rational Numbers — Cheat Sheet",
+    topCram: ["One-liner 1", "One-liner 2"],
+    sections: [
+      { title: "Must-know definitions", items: [{ text: "…", noteId: "math-ch1n01" }] }
+    ],
+    wordCards: [{ term: "Rational", definition: "…", noteId: "math-ch1n01" }]
+    // wordCards with length > 0 enables 🔤 One Word tab
+  }
+};
+```
+
+Extend `chapterMindmap()` / `chapterCheatSheet()` in `app.js` if you use a new global name (copy the Chemistry pattern).
+
+### 25.7 Tier C — pipeline subject (Physics / Biology pattern)
+
+Use when the subject has **two content layers** (legacy bank + curated expert bank) and you only want the curated set visible.
+
+#### Step C1 — Topic ID registry (`app.js`)
+
+```javascript
+const MATHEMATICS_TOPIC_IDS = new Set(['math-ch1', 'math-ch2', …]);
+function isMathematicsTopic(topicId) { return MATHEMATICS_TOPIC_IDS.has(topicId); }
+```
+
+#### Step C2 — Pipeline ID prefixes
+
+```javascript
+function isMathematicsPipelineNote(c) {
+  return !!(c && c.id && String(c.id).startsWith('math-rev-'));
+}
+function isMathematicsPipelineQuiz(c) {
+  if (!c || c.type === 'note') return false;
+  if (String(c.id).startsWith('math-ol-')) return true;
+  const ids = getMathematicsOlympiadIds(); // from MATHEMATICS_OLYMPIAD_IDS array
+  return ids ? ids.has(c.id) : false;
+}
+```
+
+#### Step C3 — Wire filters (mirror Biology)
+
+Update these functions in `app.js`:
+
+| Function | Add branch for new subject |
+|----------|---------------------------|
+| `topicNotes()` | Return only `isMathematicsPipelineNote(c)` when `isMathematicsTopic(topicId)` |
+| `topicTextQuestions()` | Return only `isMathematicsPipelineQuiz(c)` |
+| `diagramQuestions()` | If diagram MCQs use pipeline filter |
+| `subjectMastery()` / `gradableQuestions()` | Include subject in physics/biology-style branches if using Olympiad bank |
+| `chapterContentStats()` | Optional stats helper like `biologyContentStats()` |
+
+#### Step C4 — Source JSON + build script
+
+```
+data/mathematics-revision-notes/ch1.json   ← array of notes
+data/mathematics-audit-selected.json       ← curated questions (optional)
+scripts/build-mathematics-revision-notes.js → mathematics-revision-notes.js
+scripts/build-mathematics-olympiad-app.js   → mathematics-olympiad.js
+```
+
+Follow `scripts/build-biology-revision-notes.js` and `scripts/build-biology-olympiad-app.js` as templates.
+
+#### Step C5 — Expert note format
+
+Run content through the same sections as Physics/Biology (Executive summary, Must know, Chart, Cornell cues, traps, linked MCQs). Use `scripts/upgrade-biology-revision-notes.js` as a transformation reference.
+
+### 25.8 UI integration points
+
+| Concern | File | What to do |
+|---------|------|------------|
+| Sidebar subject list | auto | Appears when subject is in `appData.subjects` |
+| Subject accent tint | `styles.css` | `[data-subject="your-id"]` CSS variables |
+| Chapter tabs | `renderContent()` | Mind map / cheat sheet / one-word tabs appear if `chapterMindmap()` / `chapterCheatSheet()` return data |
+| Practice linked Qs | `getQuestionsLinkedToNote()` | Works with `linksTo` on questions OR `linkedQuestionIds` on notes |
+| Search index | auto | All `appData.content` is indexed |
+| Mock test | `exam-panel.js` | Works with any gradable questions in `appData` |
+| Cloud sync | `github-sync.js` | Syncs user edits only (delta), not full bank |
+
+### 25.9 Files you must touch (summary table)
+
+| File | Required for Tier A | Also for B | Also for C |
+|------|---------------------|------------|------------|
+| `data-core.js` | ✅ subjects + topics | | |
+| `{subject}.js` | ✅ content array | | |
+| `index.html` | ✅ script tag + BUILD bump | ✅ extra script tags | ✅ extra script tags |
+| `sw.js` | ✅ ASSETS + CACHE bump | ✅ | ✅ |
+| `app.js` `_mergeModuleArraysIntoDefault` | ✅ | ✅ mindmap/cheatsheet globals | ✅ filters + topic set |
+| `styles.css` | ✅ accent colours | | |
+| `version.json` | ✅ on release | ✅ | ✅ |
+| `data/{subject}-…/*.json` | | optional | ✅ source of truth |
+| `scripts/build-*.js` | | optional | ✅ |
+
+### 25.10 What NOT to do
+
+- **Do not** put the full question bank in localStorage — use bundled JS + delta edits only.
+- **Do not** reuse content `id` values across subjects or chapters.
+- **Do not** add a subject only to `index.html` without `_mergeModuleArraysIntoDefault()` — it will not appear in content.
+- **Do not** forget to bump `BUILD` / `version.json` / `sw.js` CACHE — users will stay on stale cached bundles.
+- **Do not** add pipeline filters unless you have pipeline-prefixed notes/questions — otherwise the chapter will look empty.
+- **Do not** change `topicId` on existing content without updating every reference (`linksTo`, mind map `noteRefs`, etc.).
+
+### 25.11 Verification script (manual)
+
+After adding a subject, confirm:
+
+1. Home → Class 8 → subject card shows correct chapter + item counts.
+2. Each chapter → **Notes** tab lists notes sorted by section number.
+3. Each chapter → **Practice** tab shows questions; filters work.
+4. If Tier B: mind map / cheat sheet / one-word tabs render.
+5. If Tier C: only pipeline notes/questions visible (legacy hidden).
+6. ▶ Practice linked Qs works on at least one note.
+7. Hard refresh / Update tab shows latest `BUILD`.
+
+### 25.12 Example: minimal new subject skeleton
+
+**`data-core.js`** (excerpt):
+
+```javascript
+{ id: "mathematics", classId: "class8", name: "Mathematics", icon: "📐", color: "mathematics" },
+{ id: "math-ch1", subjectId: "mathematics", classId: "class8", name: "Chapter 1: Rational Numbers", icon: "🔢" },
+```
+
+**`mathematics.js`**:
+
+```javascript
+const MATHEMATICS_DATA = [
+  {
+    id: "math-ch1n01", topicId: "math-ch1", type: "note",
+    subtopic: "1. Rational Numbers",
+    content: "A **rational number** is any number that can be written as p/q …",
+    explanation: "Think of fractions and integers on the number line.",
+    teacherTip: "R = Q in short.", examTip: "0 is rational; write as 0/1."
+  },
+  {
+    id: "math-ch1-mcq1", topicId: "math-ch1", type: "mcq",
+    subtopic: "Objective Questions",
+    question: "Which is rational?", options: ["√2", "π", "7/9", "√3"],
+    correctOption: 2, answer: "7/9 = p/q.", linksTo: "math-ch1n01"
+  }
+];
+```
+
+**`app.js`** (`_mergeModuleArraysIntoDefault`):
+
+```javascript
+typeof MATHEMATICS_DATA !== 'undefined' ? MATHEMATICS_DATA : null,
+```
+
+Then register script + sw + CSS as in §25.5.
+
+---
+
+*Last updated: June 2026 — includes expert revision notes, advance reading, version.json updates (v48), and AI subject integration guide.*

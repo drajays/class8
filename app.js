@@ -49,6 +49,8 @@ let wordCardOrder = [];
 let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
 let userAnswers = {};
 let sidebarCollapsed = false;
+let appReady = false;
+let pendingNavigation = null;
 let noteIndex = 0;
 let questionIndex = 0;
 let diagramIndex = 0;
@@ -1656,6 +1658,10 @@ function toggleAllNotes() {
 // NAVIGATION
 // ============================================================
 function navigateTo(view, id) {
+  if (!appReady || !appData) {
+    pendingNavigation = { view, id };
+    return;
+  }
   dismissMobileSidebar();
   if (currentView === 'quiz' && quizSession && !quizSession.finished) {
     if (!confirm('Leave this quiz? Your answers so far are saved.')) return;
@@ -1702,7 +1708,7 @@ function renderBreadcrumb() {
     const sub = appData.subjects.find(s=>s.id===selectedSubject);
     html += `<span class="sep">›</span><span onclick="navigateTo('topics','${selectedSubject}')">${sub?.icon||''} ${sub?.name||selectedSubject}</span>`;
   }
-  if (selectedTopic && currentView !== 'revision' && currentView !== 'quiz') {
+  if (selectedTopic && currentView !== 'revision' && currentView !== 'quiz' && currentView !== 'offline') {
     const t = appData.topics.find(t=>t.id===selectedTopic);
     html += `<span class="sep">›</span><span class="active">${t?.icon||''} ${t?.name||selectedTopic}</span>`;
   }
@@ -1717,6 +1723,9 @@ function renderBreadcrumb() {
   }
   if (currentView === 'exam') {
     html += `<span class="sep">›</span><span class="active">📝 Mock Test</span>`;
+  }
+  if (currentView === 'offline') {
+    html += `<span class="sep">›</span><span class="active">📡 Offline</span>`;
   }
   bc.innerHTML = html;
 }
@@ -1733,6 +1742,10 @@ function renderSidebar() {
       <div class="nav-item ${currentView === 'revision' ? 'active' : ''}" onclick="navigateTo('revision','mistakes')">
         <span class="icon">📕</span> Revision
         ${mistakeN ? `<span class="badge">${mistakeN}</span>` : ''}
+      </div>
+      <div class="nav-item ${currentView === 'offline' ? 'active' : ''}" onclick="navigateTo('offline')">
+        <span class="icon">📡</span> Offline
+        <span class="badge ${navigator.onLine ? 'badge-online' : 'badge-offline'}">${navigator.onLine ? 'Online' : 'Offline'}</span>
       </div>`;
   }
   // Classes
@@ -1774,6 +1787,7 @@ function renderSidebar() {
 
 function renderMain() {
   const main = document.getElementById('main-content');
+  if (!main) return;
   if (currentView === 'home') renderHome(main);
   else if (currentView === 'subjects') renderSubjects(main);
   else if (currentView === 'topics') renderTopics(main);
@@ -1782,6 +1796,15 @@ function renderMain() {
   else if (currentView === 'quiz') renderQuizView(main);
   else if (currentView === 'search') renderSearchView(main);
   else if (currentView === 'exam') renderExamView(main);
+  else if (currentView === 'offline') renderOfflineView(main);
+  requestAnimationFrame(function () {
+    main.scrollTop = 0;
+    const fade = main.querySelector('.fade-in');
+    if (!fade) return;
+    fade.style.animation = 'none';
+    void fade.offsetHeight;
+    fade.style.animation = '';
+  });
 }
 
 // ===== REVISION HUB =====
@@ -2000,12 +2023,8 @@ function renderHome(el) {
       </div>
       <div class="dash-subjects">${subjectBars}</div>
     </div>`;
-  const updateBanner = isAppUpdateAvailable()
-    ? `<div class="update-banner" onclick="openUpdateModal()" role="button" tabindex="0">🔄 New version available — tap to update</div>`
-    : '';
   el.innerHTML = `
     <div class="fade-in">
-      ${updateBanner}
       <div class="section-header">
         <h1>Welcome to StudyHub</h1>
       </div>
@@ -3764,6 +3783,7 @@ function showToast(type, message) {
 let _appUpdatePending = false;
 let _appUpdateRemote = null;
 let _appUpdateChecking = false;
+let _appUpdateNotified = false;
 
 function getAppBuild() {
   return window.__STUDYHUB_BUILD || '?';
@@ -3781,12 +3801,31 @@ function isAppUpdateAvailable() {
   return parseBuildNum(_appUpdateRemote) > parseBuildNum(current);
 }
 
+function getUpdateNoticeText() {
+  const current = getAppBuild();
+  if (_appUpdateRemote && parseBuildNum(_appUpdateRemote) > parseBuildNum(current)) {
+    return '🔄 v' + _appUpdateRemote + ' is available (you have v' + current + ')';
+  }
+  return '🔄 New version ready — tap to update';
+}
+
+function notifyAppUpdateIfNeeded() {
+  if (!isAppUpdateAvailable() || _appUpdateNotified) return;
+  _appUpdateNotified = true;
+  showToast('info', '🔄 New version available — tap Update in the header.');
+}
+
 function updateAppBadge() {
   const btn = document.getElementById('btn-update');
   const dot = document.getElementById('update-dot');
+  const notice = document.getElementById('update-notice');
+  const noticeText = document.getElementById('update-notice-text');
   const pending = isAppUpdateAvailable();
   if (dot) dot.hidden = !pending;
   if (btn) btn.classList.toggle('sync-attention', pending);
+  if (notice) notice.hidden = !pending;
+  if (noticeText && pending) noticeText.textContent = getUpdateNoticeText();
+  if (pending) notifyAppUpdateIfNeeded();
 }
 
 function populateUpdateModal() {
@@ -3852,7 +3891,6 @@ async function checkForAppUpdate(silent) {
     } else if (!silent && _appUpdateRemote) {
       showToast('success', '✅ You have the latest version.');
     }
-    if (isAppUpdateAvailable() && currentView === 'home') render();
   } catch (e) {
     populateUpdateModal();
     if (!silent) showToast('error', 'Could not check for updates. Try Update now to refresh.');
@@ -3876,7 +3914,8 @@ async function runAppUpdate() {
     }
     if ('caches' in window) {
       const keys = await caches.keys();
-      await Promise.all(keys.map(k => caches.delete(k)));
+      // keep studyhub-media-* so downloaded offline diagrams survive updates
+      await Promise.all(keys.filter(k => k.indexOf('studyhub-media') !== 0).map(k => caches.delete(k)));
     }
     if ('serviceWorker' in navigator) {
       const regs = await navigator.serviceWorker.getRegistrations();
@@ -3889,6 +3928,247 @@ async function runAppUpdate() {
   }
 }
 
+// ============================================================
+// OFFLINE MANAGER
+// ============================================================
+// Notes, questions, mind maps and cheat sheets ship inside the JS bundles,
+// which the service worker pre-caches on install — so the app shell works
+// offline automatically. The only content fetched on demand is the diagram
+// images; this tab lets students download them all up front and verify
+// everything is ready before going offline.
+const OFFLINE_MEDIA_CACHE = 'studyhub-media-v1';
+let _offlineDownloading = false;
+let _offlineCancelRequested = false;
+
+function collectOfflineImageUrls() {
+  let urls = [];
+  try {
+    const blob = JSON.stringify((appData && appData.content) || []);
+    urls = blob.match(/images\/[A-Za-z0-9_.\/-]+\.(?:jpe?g|png|gif|svg|webp)/g) || [];
+  } catch (e) {}
+  return Array.from(new Set(urls));
+}
+
+async function getOfflineMediaStatus() {
+  const all = collectOfflineImageUrls();
+  let cached = 0;
+  if ('caches' in window) {
+    try {
+      const cache = await caches.open(OFFLINE_MEDIA_CACHE);
+      const keys = await cache.keys();
+      const have = new Set(keys.map(r => new URL(r.url).pathname));
+      cached = all.filter(u => have.has(new URL(u, location.href).pathname)).length;
+    } catch (e) {}
+  }
+  return { total: all.length, cached };
+}
+
+async function isAppShellCached() {
+  if (!('caches' in window)) return false;
+  const need = ['./index.html', './app.js', './styles.css', './data-core.js'];
+  for (const u of need) {
+    let hit = null;
+    try { hit = await caches.match(u, { ignoreSearch: true }); } catch (e) {}
+    if (!hit) return false;
+  }
+  return true;
+}
+
+function renderOfflineView(el) {
+  const online = navigator.onLine;
+  el.innerHTML = `
+    <div class="fade-in">
+      <div class="section-header"><h1>📡 Offline Mode</h1></div>
+      <p class="lead">Study without internet — notes, practice questions, mind maps, cheat sheets, quizzes and mock tests all work offline once downloaded. Your progress is always saved on this device.</p>
+
+      <div class="offline-status-grid">
+        <div class="offline-stat">
+          <span class="offline-stat-label">Connection</span>
+          <strong id="off-conn" class="${online ? 'off-ok' : 'off-warn'}">${online ? '🟢 Online' : '🔴 Offline'}</strong>
+        </div>
+        <div class="offline-stat">
+          <span class="offline-stat-label">App &amp; study content</span>
+          <strong id="off-shell">Checking…</strong>
+        </div>
+        <div class="offline-stat">
+          <span class="offline-stat-label">Diagram images</span>
+          <strong id="off-media">Checking…</strong>
+        </div>
+        <div class="offline-stat">
+          <span class="offline-stat-label">Storage used</span>
+          <strong id="off-storage">Checking…</strong>
+        </div>
+      </div>
+
+      <div class="offline-card">
+        <h3>⬇️ Download everything for offline</h3>
+        <p>Notes and questions are already bundled with the app. Tap below to also save all textbook diagrams and figure-based NEET questions to this device.</p>
+        <div class="offline-progress" id="off-progress-wrap" hidden>
+          <div class="offline-progress-bar"><div class="offline-progress-fill" id="off-progress-fill"></div></div>
+          <span class="offline-progress-text" id="off-progress-text"></span>
+        </div>
+        <div class="btn-group" style="margin-top:14px">
+          <button class="btn btn-primary" id="off-btn-download" onclick="downloadOfflineMedia()">⬇️ Download all diagrams</button>
+          <button class="btn btn-outline" id="off-btn-cancel" onclick="_offlineCancelRequested=true" hidden>✋ Stop</button>
+          <button class="btn btn-outline" onclick="refreshOfflineStatus()">🔄 Re-check status</button>
+          <button class="btn btn-outline" id="off-btn-clear" onclick="clearOfflineMedia()">🗑️ Remove downloads</button>
+        </div>
+        <p class="offline-note" id="off-persist-line"></p>
+      </div>
+
+      <div class="offline-card">
+        <h3>✅ What works offline</h3>
+        <ul class="offline-list">
+          <li>📝 All chapter notes, advance reading, teacher &amp; exam tips</li>
+          <li>❓ Practice quizzes, NEET question banks, mistakes &amp; spaced revision</li>
+          <li>🧠 Mind maps, ⚡ cheat sheets and 🔤 one-word cards</li>
+          <li>📝 NTA-style mock tests with timer and result analysis</li>
+          <li>🖼️ Diagram questions — after downloading images above</li>
+          <li>💾 Bookmarks, star ratings and progress (saved on this device)</li>
+        </ul>
+        <p class="offline-note">Needs internet: ☁️ GitHub cloud sync, 🔄 app updates, and the first-time download itself. Tip: install StudyHub from your browser menu (“Add to Home Screen”) for the best offline experience.</p>
+      </div>
+    </div>`;
+  refreshOfflineStatus();
+}
+
+async function refreshOfflineStatus() {
+  const connEl = document.getElementById('off-conn');
+  if (connEl) {
+    connEl.textContent = navigator.onLine ? '🟢 Online' : '🔴 Offline';
+    connEl.className = navigator.onLine ? 'off-ok' : 'off-warn';
+  }
+  const shellEl = document.getElementById('off-shell');
+  if (shellEl) {
+    const swActive = 'serviceWorker' in navigator && !!navigator.serviceWorker.controller;
+    const cached = await isAppShellCached();
+    if (cached) { shellEl.textContent = '✅ Saved for offline'; shellEl.className = 'off-ok'; }
+    else if (swActive) { shellEl.textContent = '⏳ Saving in background…'; shellEl.className = ''; }
+    else { shellEl.textContent = '⚠️ Reload once while online'; shellEl.className = 'off-warn'; }
+  }
+  const mediaEl = document.getElementById('off-media');
+  if (mediaEl) {
+    const s = await getOfflineMediaStatus();
+    if (!s.total) { mediaEl.textContent = '—'; }
+    else if (s.cached >= s.total) { mediaEl.textContent = `✅ All ${s.total} saved`; mediaEl.className = 'off-ok'; }
+    else { mediaEl.textContent = `${s.cached} / ${s.total} saved`; mediaEl.className = s.cached ? '' : 'off-warn'; }
+    const dlBtn = document.getElementById('off-btn-download');
+    if (dlBtn && !_offlineDownloading) {
+      dlBtn.textContent = s.cached >= s.total && s.total ? '✅ All diagrams saved' : (s.cached ? `⬇️ Download remaining ${s.total - s.cached}` : '⬇️ Download all diagrams');
+      dlBtn.disabled = s.total > 0 && s.cached >= s.total;
+    }
+    const clearBtn = document.getElementById('off-btn-clear');
+    if (clearBtn) clearBtn.hidden = !s.cached;
+  }
+  const storEl = document.getElementById('off-storage');
+  if (storEl) {
+    try {
+      const est = await navigator.storage.estimate();
+      const used = est.usage || 0;
+      const mb = used / (1024 * 1024);
+      storEl.textContent = mb >= 1024 ? (mb / 1024).toFixed(1) + ' GB' : mb.toFixed(1) + ' MB';
+    } catch (e) { storEl.textContent = '—'; }
+  }
+  const persistLine = document.getElementById('off-persist-line');
+  if (persistLine && navigator.storage && navigator.storage.persisted) {
+    try {
+      const p = await navigator.storage.persisted();
+      persistLine.textContent = p
+        ? '🔒 Storage is protected — the browser will not auto-delete your downloads.'
+        : 'ℹ️ Downloads are kept by the browser; they are protected automatically when you download.';
+    } catch (e) { persistLine.textContent = ''; }
+  }
+}
+
+async function downloadOfflineMedia() {
+  if (_offlineDownloading) return;
+  if (!('caches' in window)) { showToast('error', 'This browser does not support offline storage.'); return; }
+  if (!navigator.onLine) { showToast('error', 'You are offline — connect to the internet to download.'); return; }
+  _offlineDownloading = true;
+  _offlineCancelRequested = false;
+
+  // Ask the browser to protect our storage from automatic eviction.
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+
+  const dlBtn = document.getElementById('off-btn-download');
+  const cancelBtn = document.getElementById('off-btn-cancel');
+  const wrap = document.getElementById('off-progress-wrap');
+  const fill = document.getElementById('off-progress-fill');
+  const text = document.getElementById('off-progress-text');
+  if (dlBtn) { dlBtn.disabled = true; dlBtn.textContent = 'Downloading…'; }
+  if (cancelBtn) cancelBtn.hidden = false;
+  if (wrap) wrap.hidden = false;
+
+  try {
+    const cache = await caches.open(OFFLINE_MEDIA_CACHE);
+    const keys = await cache.keys();
+    const have = new Set(keys.map(r => new URL(r.url).pathname));
+    const pending = collectOfflineImageUrls().filter(u => !have.has(new URL(u, location.href).pathname));
+    const total = pending.length;
+    let done = 0, failed = 0;
+
+    if (!total) {
+      showToast('success', '✅ All diagrams are already saved for offline.');
+      return;
+    }
+
+    const updateBar = () => {
+      const pct = total ? Math.round(((done + failed) / total) * 100) : 100;
+      if (fill) fill.style.width = pct + '%';
+      if (text) text.textContent = `${done + failed} / ${total} images${failed ? ` (${failed} failed)` : ''}`;
+    };
+    updateBar();
+
+    const queue = pending.slice();
+    async function worker() {
+      while (queue.length && !_offlineCancelRequested) {
+        const u = queue.shift();
+        try {
+          const res = await fetch(u);
+          if (res && res.ok) { await cache.put(u, res); done++; }
+          else failed++;
+        } catch (e) { failed++; }
+        updateBar();
+      }
+    }
+    await Promise.all([worker(), worker(), worker(), worker(), worker()]);
+
+    if (_offlineCancelRequested) {
+      showToast('info', `⏸️ Stopped — ${done} image${done === 1 ? '' : 's'} saved so far. Resume any time.`);
+    } else if (failed) {
+      showToast('error', `Saved ${done} images, ${failed} failed. Tap download again to retry.`);
+    } else {
+      showToast('success', `✅ ${done} diagrams saved — StudyHub is now fully offline-ready!`);
+    }
+  } catch (e) {
+    showToast('error', 'Download failed: ' + e.message);
+  } finally {
+    _offlineDownloading = false;
+    _offlineCancelRequested = false;
+    if (cancelBtn) cancelBtn.hidden = true;
+    if (dlBtn) dlBtn.disabled = false;
+    refreshOfflineStatus();
+  }
+}
+
+async function clearOfflineMedia() {
+  if (!confirm('Remove all downloaded diagram images from this device? Notes and questions stay available; diagrams will need internet again.')) return;
+  try {
+    await caches.delete(OFFLINE_MEDIA_CACHE);
+    showToast('success', 'Downloaded diagrams removed.');
+  } catch (e) {
+    showToast('error', 'Could not remove downloads: ' + e.message);
+  }
+  refreshOfflineStatus();
+}
+
+function handleConnectivityChange() {
+  renderSidebar();
+  if (currentView === 'offline') refreshOfflineStatus();
+  showToast(navigator.onLine ? 'success' : 'info',
+    navigator.onLine ? '🟢 Back online.' : '🔴 You are offline — StudyHub keeps working from saved content.');
+}
+
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
@@ -3898,7 +4178,7 @@ function registerServiceWorker() {
     reloaded = true;
     location.reload();
   });
-  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '47')).then(function (reg) {
+  navigator.serviceWorker.register('sw.js?v=' + (window.__STUDYHUB_BUILD || '49')).then(function (reg) {
     if (reg.waiting && navigator.serviceWorker.controller) {
       _appUpdatePending = true;
       updateAppBadge();
@@ -3910,8 +4190,6 @@ function registerServiceWorker() {
         if (worker.state === 'installed' && navigator.serviceWorker.controller) {
           _appUpdatePending = true;
           updateAppBadge();
-          if (currentView === 'home') render();
-          showToast('info', '🔄 New version ready — tap Update in the header.');
         }
       });
     });
@@ -3937,12 +4215,30 @@ function initApp() {
   loadSidebarState();
   loadChapterViewMode();
   scheduleQuestionSearchIndexBuild();
+  appReady = true;
   render();
   applySidebarLayout();
+  try { document.documentElement.classList.remove('studyhub-booting'); } catch (e) {}
+  if (pendingNavigation) {
+    const pending = pendingNavigation;
+    pendingNavigation = null;
+    navigateTo(pending.view, pending.id);
+  }
   setupPersistenceGuards();
   registerServiceWorker();
   setTimeout(function () { checkForAppUpdate(true); }, 2500);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState !== 'visible') return;
+    checkForAppUpdate(true);
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistration().then(function (reg) {
+        if (reg) reg.update();
+      });
+    }
+  });
   if (typeof setupGithubSync === 'function') setupGithubSync();
+  window.addEventListener('online', handleConnectivityChange);
+  window.addEventListener('offline', handleConnectivityChange);
   window.addEventListener('resize', applySidebarLayout);
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {

@@ -688,6 +688,23 @@ body{
   color:var(--accent);font-size:.88rem;font-weight:700;
 }
 .update-banner:hover{background:color-mix(in srgb,var(--accent-soft) 80%,var(--accent) 20%)}
+.update-notice{
+  padding:0 26px;
+  background:var(--accent-soft);
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
+}
+.update-notice[hidden]{display:none}
+.update-notice-inner{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  width:100%;padding:10px 14px;margin:8px 0;border:none;border-radius:10px;
+  background:transparent;cursor:pointer;font:inherit;text-align:left;
+  color:var(--accent);font-size:.85rem;font-weight:700;
+}
+.update-notice-inner:hover{background:color-mix(in srgb,var(--accent-soft) 70%,var(--accent) 15%)}
+.update-notice-action{
+  flex-shrink:0;font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:8px;
+  background:var(--accent);color:#fff;
+}
 .sync-intro{color:var(--ink-2);font-size:.9rem;margin:-8px 0 10px;line-height:1.45}
 .sync-status-line{font-size:.82rem;font-weight:700;color:var(--accent);margin-bottom:14px}
 .sync-meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
@@ -760,7 +777,8 @@ body{
 /* ---------- ANIMATIONS ---------- */
 @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes popIn{from{opacity:0;transform:scale(.96) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.fade-in{animation:fadeIn .42s var(--ease) both}
+.fade-in{animation:fadeIn .42s var(--ease) forwards}
+html.studyhub-booting body{visibility:hidden}
 
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:860px){
@@ -773,6 +791,10 @@ body{
     padding-right:max(16px,env(safe-area-inset-right));
     padding-bottom:12px;
     padding-left:max(16px,env(safe-area-inset-left));
+  }
+  .update-notice{
+    padding-left:max(16px,env(safe-area-inset-left));
+    padding-right:max(16px,env(safe-area-inset-right));
   }
   .breadcrumb{
     padding-top:10px;
@@ -1077,3 +1099,24 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .ow-all-row dt{font-weight:800;color:var(--accent-ink)}
 .ow-all-row dd{margin:0;color:var(--ink-2)}
 @media(max-width:600px){.ow-grid{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}.ow-all-row{grid-template-columns:1fr}}
+
+/* ============ OFFLINE MODE TAB ============ */
+.offline-status-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 22px}
+.offline-stat{background:var(--surface-2);border:1px solid var(--line);border-radius:13px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.offline-stat-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.offline-stat strong{font-size:.95rem;color:var(--ink)}
+.offline-stat strong.off-ok{color:var(--success)}
+.offline-stat strong.off-warn{color:var(--danger)}
+.offline-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:20px 22px;margin-bottom:18px}
+.offline-card h3{font-size:1.02rem;margin-bottom:8px}
+.offline-card p{color:var(--ink-2);font-size:.88rem;line-height:1.55}
+.offline-list{list-style:none;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+.offline-list li{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+.offline-note{font-size:.8rem;color:var(--ink-2);margin-top:12px;line-height:1.5}
+.offline-progress{margin-top:14px;display:flex;align-items:center;gap:12px}
+.offline-progress-bar{flex:1;height:10px;border-radius:20px;background:var(--surface-3);border:1px solid var(--line);overflow:hidden}
+.offline-progress-fill{height:100%;width:0%;border-radius:20px;background:var(--accent);transition:width .25s ease}
+.offline-progress-text{font-size:.78rem;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.nav-item .badge.badge-online{background:var(--success-soft);color:var(--success)}
+.nav-item .badge.badge-offline{background:var(--danger-soft);color:var(--danger)}
+@media(max-width:760px){.offline-status-grid{grid-template-columns:repeat(2,1fr)}}

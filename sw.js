@@ -1,4 +1,6 @@
-const CACHE = 'studyhub-v47';
+const CACHE = 'studyhub-v49';
+/* Survives version bumps so downloaded diagrams are not re-fetched on update. */
+const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [
   './',
   './version.json',
@@ -34,6 +36,10 @@ function isCriticalAsset(url) {
   return /\.(html?|js|css|json)(\?|$)/i.test(url.pathname);
 }
 
+function isMediaAsset(url) {
+  return /\.(jpe?g|png|gif|svg|webp|avif)(\?|$)/i.test(url.pathname);
+}
+
 function cacheAddSafe(cache, url) {
   return cache.add(url).catch(function () { /* skip missing/offline assets */ });
 }
@@ -54,7 +60,7 @@ self.addEventListener('activate', function (event) {
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(
-        keys.filter(function (k) { return k !== CACHE; }).map(function (k) {
+        keys.filter(function (k) { return k !== CACHE && k !== MEDIA_CACHE; }).map(function (k) {
           return caches.delete(k);
         })
       );
@@ -105,7 +111,8 @@ self.addEventListener('fetch', function (event) {
           return response;
         }
         const copy = response.clone();
-        caches.open(CACHE).then(function (cache) {
+        const bucket = isMediaAsset(url) ? MEDIA_CACHE : CACHE;
+        caches.open(bucket).then(function (cache) {
           cache.put(event.request, copy);
         });
         return response;

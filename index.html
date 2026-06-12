@@ -5,45 +5,28 @@
 <script>
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
-  var BUILD = '47';
+  var BUILD = '49';
   window.__STUDYHUB_BUILD = BUILD;
   window.__STUDYHUB_ADMIN_PW = '1234';
+  window.__STUDYHUB_BLOCK_BOOT = false;
   var KEY = 'studyhub_build';
-  var prev = '';
-  try { prev = localStorage.getItem(KEY) || ''; } catch (e) {}
-  if (prev !== BUILD) {
-    try { localStorage.setItem(KEY, BUILD); } catch (e) {}
-    var purged = false;
-    try { purged = sessionStorage.getItem('studyhub_purged') === BUILD; } catch (e) {}
-    if (!purged) {
-      try { sessionStorage.setItem('studyhub_purged', BUILD); } catch (e) {}
-      var reload = function () { location.reload(); };
-      var chain = Promise.resolve();
-      if ('caches' in window) {
-        chain = chain.then(function () {
-          return caches.keys().then(function (keys) {
-            return Promise.all(keys.map(function (k) { return caches.delete(k); }));
-          });
-        });
-      }
-      if ('serviceWorker' in navigator) {
-        chain = chain.then(function () {
-          return navigator.serviceWorker.getRegistrations().then(function (regs) {
-            return Promise.all(regs.map(function (r) { return r.unregister(); }));
-          });
-        });
-      }
-      chain.then(reload).catch(reload);
-      return;
-    }
+  var PURGE_FLAG = 'studyhub_purged';
+
+  function blockBootAndPurge() {
+    window.__STUDYHUB_BLOCK_BOOT = true;
+    try { document.documentElement.classList.add('studyhub-booting'); } catch (e) {}
+    purgeCachesAndReload();
   }
+
   function purgeCachesAndReload() {
     var reload = function () { location.reload(); };
     var chain = Promise.resolve();
     if ('caches' in window) {
       chain = chain.then(function () {
         return caches.keys().then(function (keys) {
-          return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+          /* keep studyhub-media-* — downloaded offline diagrams can't brick the app */
+          return Promise.all(keys.filter(function (k) { return k.indexOf('studyhub-media') !== 0; })
+            .map(function (k) { return caches.delete(k); }));
         });
       });
     }
@@ -56,25 +39,48 @@
     }
     chain.then(reload).catch(reload);
   }
-  if ('fetch' in window && location.protocol !== 'file:') {
-    fetch('./version.json?_=' + Date.now(), { cache: 'no-store' })
+
+  function checkRemoteBuild() {
+    if (!('fetch' in window) || location.protocol === 'file:') {
+      return Promise.resolve(true);
+    }
+    return fetch('./version.json?_=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
-        if (!data || !data.build) return;
+        if (!data || !data.build) return true;
         var remote = String(data.build);
         var remoteN = parseInt(remote, 10);
         var localN = parseInt(BUILD, 10);
         if (!isNaN(remoteN) && !isNaN(localN) && remoteN > localN) {
           try { localStorage.setItem(KEY, remote); } catch (e) {}
-          var flag = 'studyhub_purged';
           try {
-            if (sessionStorage.getItem(flag) === remote) return;
-            sessionStorage.setItem(flag, remote);
+            if (sessionStorage.getItem(PURGE_FLAG) === remote) return true;
+            sessionStorage.setItem(PURGE_FLAG, remote);
           } catch (e) {}
-          purgeCachesAndReload();
+          blockBootAndPurge();
+          return false;
         }
-      }).catch(function () {});
+        return true;
+      })
+      .catch(function () { return true; });
   }
+
+  var prev = '';
+  try { prev = localStorage.getItem(KEY) || ''; } catch (e) {}
+  if (prev !== BUILD) {
+    try { localStorage.setItem(KEY, BUILD); } catch (e) {}
+    var purged = false;
+    try { purged = sessionStorage.getItem(PURGE_FLAG) === BUILD; } catch (e) {}
+    if (!purged) {
+      try { sessionStorage.setItem(PURGE_FLAG, BUILD); } catch (e) {}
+      blockBootAndPurge();
+      window.__STUDYHUB_BOOT_PROMISE = Promise.resolve(false);
+      return;
+    }
+  }
+
+  window.__STUDYHUB_BOOT_PROMISE = checkRemoteBuild();
+
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistration().then(function (reg) {
       if (reg) reg.update();
@@ -93,8 +99,8 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=47">
-<link rel="stylesheet" href="exam-panel.css?v=47">
+<link rel="stylesheet" href="styles.css?v=49">
+<link rel="stylesheet" href="exam-panel.css?v=49">
 </head>
 <body>
 
@@ -133,6 +139,13 @@
 <nav class="breadcrumb" id="breadcrumb">
   <span onclick="navigateTo('home')">🏠 Home</span>
 </nav>
+
+<div class="update-notice" id="update-notice" hidden role="status" aria-live="polite">
+  <button type="button" class="update-notice-inner" onclick="openUpdateModal()">
+    <span id="update-notice-text">🔄 New version available</span>
+    <span class="update-notice-action">Update →</span>
+  </button>
+</div>
 
 <!-- APP -->
 <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()" aria-hidden="true"></div>
@@ -449,50 +462,60 @@
 <div class="toast" id="toast"></div>
 
 <!-- DATA (load order matters) -->
-<script src="data-core.js?v=47"></script>
-<script src="chapters3to8.js?v=47"></script>
-<script src="physics-qbank.js?v=47"></script>
-<script src="physics-neet.js?v=47"></script>
-<script src="physics-mindmaps.js?v=47"></script>
-<script src="physics-cheatsheets.js?v=47"></script>
-<script src="biology.js?v=47"></script>
-<script src="biology-neet.js?v=47"></script>
-<script src="biology-olympiad.js?v=47"></script>
-<script src="biology-revision-notes.js?v=47"></script>
-<script src="biology-mindmaps.js?v=47"></script>
-<script src="biology-cheatsheets.js?v=47"></script>
-<script src="chemistry.js?v=47"></script>
-<script src="chemistry-neet.js?v=47"></script>
-<script src="chemistry-mindmaps.js?v=47"></script>
-<script src="chemistry-cheatsheets.js?v=47"></script>
-<script src="geography.js?v=47"></script>
-<script src="history-civics.js?v=47"></script>
+<script src="data-core.js?v=49"></script>
+<script src="chapters3to8.js?v=49"></script>
+<script src="physics-qbank.js?v=49"></script>
+<script src="physics-neet.js?v=49"></script>
+<script src="physics-mindmaps.js?v=49"></script>
+<script src="physics-cheatsheets.js?v=49"></script>
+<script src="biology.js?v=49"></script>
+<script src="biology-neet.js?v=49"></script>
+<script src="biology-olympiad.js?v=49"></script>
+<script src="biology-revision-notes.js?v=49"></script>
+<script src="biology-mindmaps.js?v=49"></script>
+<script src="biology-cheatsheets.js?v=49"></script>
+<script src="chemistry.js?v=49"></script>
+<script src="chemistry-neet.js?v=49"></script>
+<script src="chemistry-mindmaps.js?v=49"></script>
+<script src="chemistry-cheatsheets.js?v=49"></script>
+<script src="geography.js?v=49"></script>
+<script src="history-civics.js?v=49"></script>
 <!-- APP LOGIC -->
-<script src="app.js?v=47"></script>
-<script src="exam-panel.js?v=47"></script>
-<script src="github-sync.js?v=47"></script>
+<script src="app.js?v=49"></script>
+<script src="exam-panel.js?v=49"></script>
+<script src="github-sync.js?v=49"></script>
 <script>
 (function bootStudyHub() {
-  if (typeof initApp === 'function') {
-    initApp();
-    return;
-  }
-  var chain = Promise.resolve();
-  if ('caches' in window) {
-    chain = chain.then(function () {
-      return caches.keys().then(function (keys) {
-        return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+  function startApp() {
+    if (window.__STUDYHUB_BLOCK_BOOT) return;
+    if (typeof initApp === 'function') {
+      initApp();
+      return;
+    }
+    var chain = Promise.resolve();
+    if ('caches' in window) {
+      chain = chain.then(function () {
+        return caches.keys().then(function (keys) {
+          return Promise.all(keys.filter(function (k) { return k.indexOf('studyhub-media') !== 0; })
+            .map(function (k) { return caches.delete(k); }));
+        });
       });
-    });
-  }
-  if ('serviceWorker' in navigator) {
-    chain = chain.then(function () {
-      return navigator.serviceWorker.getRegistrations().then(function (regs) {
-        return Promise.all(regs.map(function (r) { return r.unregister(); }));
+    }
+    if ('serviceWorker' in navigator) {
+      chain = chain.then(function () {
+        return navigator.serviceWorker.getRegistrations().then(function (regs) {
+          return Promise.all(regs.map(function (r) { return r.unregister(); }));
+        });
       });
-    });
+    }
+    chain.then(function () { location.reload(); }).catch(function () { location.reload(); });
   }
-  chain.then(function () { location.reload(); }).catch(function () { location.reload(); });
+  var bootPromise = window.__STUDYHUB_BOOT_PROMISE;
+  if (bootPromise && typeof bootPromise.then === 'function') {
+    bootPromise.then(function (ok) { if (ok) startApp(); });
+  } else {
+    startApp();
+  }
 })();
 </script>
 </body>
