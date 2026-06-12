@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 54;
+const DATA_VERSION = 55;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -357,7 +357,8 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_REVISION_NOTES !== 'undefined' ? BIOLOGY_REVISION_NOTES : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
-    typeof HISTORY_CIVICS_DATA !== 'undefined' ? HISTORY_CIVICS_DATA : null,
+    typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
+    typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
     typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
@@ -1384,6 +1385,12 @@ function chapterMindmap(topicId) {
   if (typeof GEOGRAPHY_MINDMAP_DATA !== 'undefined' && GEOGRAPHY_MINDMAP_DATA[topicId]) {
     return GEOGRAPHY_MINDMAP_DATA[topicId];
   }
+  if (typeof HISTORY_MINDMAP_DATA !== 'undefined' && HISTORY_MINDMAP_DATA[topicId]) {
+    return HISTORY_MINDMAP_DATA[topicId];
+  }
+  if (typeof CIVICS_MINDMAP_DATA !== 'undefined' && CIVICS_MINDMAP_DATA[topicId]) {
+    return CIVICS_MINDMAP_DATA[topicId];
+  }
   if (typeof BIOLOGY_MINDMAP_DATA !== 'undefined') {
     return BIOLOGY_MINDMAP_DATA[topicId] || null;
   }
@@ -1400,6 +1407,12 @@ function chapterCheatsheet(topicId) {
   }
   if (typeof GEOGRAPHY_CHEATSHEET_DATA !== 'undefined' && GEOGRAPHY_CHEATSHEET_DATA[topicId]) {
     return GEOGRAPHY_CHEATSHEET_DATA[topicId];
+  }
+  if (typeof HISTORY_CHEATSHEET_DATA !== 'undefined' && HISTORY_CHEATSHEET_DATA[topicId]) {
+    return HISTORY_CHEATSHEET_DATA[topicId];
+  }
+  if (typeof CIVICS_CHEATSHEET_DATA !== 'undefined' && CIVICS_CHEATSHEET_DATA[topicId]) {
+    return CIVICS_CHEATSHEET_DATA[topicId];
   }
   if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
     return BIOLOGY_CHEATSHEET_DATA[topicId] || null;

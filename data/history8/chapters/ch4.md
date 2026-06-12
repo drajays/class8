@@ -14,9 +14,6 @@
 - Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.
 - What was the purpose for building this place?
 - What does it tell you about the outlook of the ruler who built it?
-- Chauth: the cultivators paid one-fourth of their total revenue to the Marathas
-- Chauth: the cultivators paid one-fourth of their total revenue to the marathas
-- Crown lands: the land that belonged to the emperor; the revenue from this land went directly to the royal treasury
 - 1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.
 - 2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give reasons for your answer.
 - 1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.
@@ -25,9 +22,11 @@
 - 1. Into how many groups were the nobles divided in the Mughal court? Name these groups.
 - (2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?
 - 3. Discuss two achievements of Balaji Vishwanath.
-- - initiative and self-direction: research
-- - creativity: imagination
+- initiative and self-direction: research
 - Search for paintings and sketches that show the rulers you have read about in this chapter. You can use the Internet as most of these pictures are in the public domain. Try to find close-up pictures of the faces and print them. Handcraft frames for these pictures, using recyclable and dry-waste materials. Display these in your classroom in the form of a portrait gallery.
+- Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.
+- Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. Mr. Petkar was a boxer earlier. He lost his arm due to a bullet injury, and switched over to swimming.
+- Joginder Singh Bedi won the silver medal at men's shot put L6 in 1984 at Stoke Mandeville and New York. He also won medals in men's javelin throw L6 and men's discus throw L6 in the same year.
 
 ## Notes (Expert Revision)
 ### 1. During Reading
@@ -136,35 +135,7 @@ After the invasion of the Mughal Empire by Nadir Shah and Ahmad Shah Abdali, Mug
 
 In 1809, Ranjit Singh signed the Treaty of Amritsar with the British. It is also referred to as the treaty of ‘perpetual friendship’. According to this treaty, the Sutlej River formed the boundary between the British and the Sikh territories. Ranjit Singh went on to conquer territories in the west and the north, so that when he died in 1839, his territories extended from the Khyber Pass in the north to Sindh in the south. After the death of Ranjit Singh, Punjab was annexed to the British Empire.
 
-### 6. KEYWORDS
-
-**Executive summary:** Chauth: the cultivators paid one-fourth of their total revenue to the Marathas
-
-**Must know**
-• Chauth: the cultivators paid one-fourth of their total revenue to the Marathas
-• Chauth: the cultivators paid one-fourth of their total revenue to the marathas
-• Crown lands: the land that belonged to the emperor; the revenue from this land went directly to the royal treasury
-• Guerrilla warfare: a form of irregular warfare in which a small group of armed nighters use military tactics, including ambushes, raids, the element of surprise and mobility, to dominate a larger and less mobile traditional army
-• Iranis, Turanis, Afghans and Hindustanis: four groups of nobles in the Mughal court who fought for political control
-• Later Mughals: Aurangzeb's successors from 1707 to 1858
-
-Chauth: the cultivators paid one-fourth of their total revenue to the Marathas
-
-Chauth: the cultivators paid one-fourth of their total revenue to the marathas
-
-Crown lands: the land that belonged to the emperor; the revenue from this land went directly to the royal treasury
-
-Guerrilla warfare: a form of irregular warfare in which a small group of armed nighters use military tactics, including ambushes, raids, the element of surprise and mobility, to dominate a larger and less mobile traditional army
-
-Iranis, Turanis, Afghans and Hindustanis: four groups of nobles in the Mughal court who fought for political control
-
-Later Mughals: Aurangzeb's successors from 1707 to 1858
-
-Maratha Confederacy: a loose union of the chiefs of the four houses of the Gaekwaas, the Holkars, the Sindhias and the Bhonsles
-
-Modern Period: period from the mid-18th century, beginning with the decline of the Mughal Empire. Peshwa: the Prime Minister who actually controlled the Maratha kingdoms, while the real ruler was only a figurehead.
-
-### 7. II. Reflective Learning HOTS
+### 6. II. Reflective Learning HOTS
 
 **Executive summary:** 1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Emp
 
@@ -176,7 +147,7 @@ Modern Period: period from the mid-18th century, beginning with the decline of t
 
 2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give reasons for your answer.
 
-### 8. III. Study the given pictures. Answer the questions that follow.
+### 7. III. Study the given pictures. Answer the questions that follow.
 
 **Executive summary:** 1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.
 
@@ -202,7 +173,7 @@ b. What was his father's name?
 
 c. Name the capital of his kingdom.
 
-### 9. IV. Answer the following questions in detail.
+### 8. IV. Answer the following questions in detail.
 
 **Executive summary:** 1. Into how many groups were the nobles divided in the Mughal court? Name these groups.
 
@@ -230,7 +201,7 @@ The decline of the Mughal Empire gave rise to regional kingdoms. In this context
 
 2. Name some of the other regional kingdoms that rose after the decline of the Mughal rule.
 
-### 10. A Portrait Gallery
+### 9. A Portrait Gallery
 
 **Executive summary:** - initiative and self-direction: research
 
@@ -258,6 +229,27 @@ Design an Astronomical Observatory
 
 - creativity: imagination
 
+### 10. Paralympic Games and India
+
+**Executive summary:** Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since i
+
+**Must know**
+• Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.
+• Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. Mr. Petkar was a boxer earlier. He lost his arm due to a bullet injury, and switched over to swimming.
+• Joginder Singh Bedi won the silver medal at men's shot put L6 in 1984 at Stoke Mandeville and New York. He also won medals in men's javelin throw L6 and men's discus throw L6 in the same year.
+• Devendra Jhajharia won the gold medal in men's javelin throw F44/46 at Athens in 2004.
+• Mariyappan Thangavelu won a gold medal in men's high jump T42 at Rio 2016 Paralympics.
+
+Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.
+
+Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. Mr. Petkar was a boxer earlier. He lost his arm due to a bullet injury, and switched over to swimming.
+
+Joginder Singh Bedi won the silver medal at men's shot put L6 in 1984 at Stoke Mandeville and New York. He also won medals in men's javelin throw L6 and men's discus throw L6 in the same year.
+
+Devendra Jhajharia won the gold medal in men's javelin throw F44/46 at Athens in 2004.
+
+Mariyappan Thangavelu won a gold medal in men's high jump T42 at Rio 2016 Paralympics.
+
 
 ## Mind Map
 
@@ -282,10 +274,6 @@ mindmap
       Can you identify the place shown in the 
       What was the purpose for building this p
       What does it tell you about the outlook 
-    KEYWORDS
-      Chauth: the cultivators paid one-fourth 
-      Chauth: the cultivators paid one-fourth 
-      Crown lands: the land that belonged to t
     II. Reflective Learning HOTS
       1. Do you think that Aurangzeb's failure
       2. Internal strife and conflicts led to 
@@ -293,6 +281,10 @@ mindmap
       1. This is a picture of the ruler of the
       a. Identify the ruler shown in the pictu
       b. What was the name of his father?
+    IV. Answer the following questions 
+      1. Into how many groups were the nobles 
+      (2.) Why can Aurangzeb not be solely hel
+      3. Discuss two achievements of Balaji Vi
 ```
 
 ## Cheat Sheet
@@ -310,9 +302,6 @@ mindmap
 - Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.
 - What was the purpose for building this place?
 - What does it tell you about the outlook of the ruler who built it?
-- Chauth: the cultivators paid one-fourth of their total revenue to the Marathas
-- Chauth: the cultivators paid one-fourth of their total revenue to the marathas
-- Crown lands: the land that belonged to the emperor; the revenue from this land went directly to the royal treasury
 - 1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.
 - 2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give reasons for your answer.
 - 1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.
@@ -321,6 +310,9 @@ mindmap
 - 1. Into how many groups were the nobles divided in the Mughal court? Name these groups.
 - (2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?
 - 3. Discuss two achievements of Balaji Vishwanath.
+- initiative and self-direction: research
+- Search for paintings and sketches that show the rulers you have read about in this chapter. You can use the Internet as most of these pictures are in the public domain. Try to find close-up pictures of the faces and print them. Handcraft frames for these pictures, using recyclable and dry-waste materials. Display these in your classroom in the form of a portrait gallery.
+- Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.
 
 ## One Word (30)
 
@@ -340,17 +332,17 @@ mindmap
 - **Which river** — Which river is nearest to Bijapur?
 - **Aurangzeb's successors** — Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, th
 - **1. Into how many groups** — 1. Into how many groups were the nobles divided in the Mughal court? Name these groups.
-- **1. Do you** — 1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential t
-- **2. Internal strife** — 2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule
-- **1. This is** — 1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against th
-- **a. Identify the** — a. Identify the ruler shown in the picture.
+- **Paralympics** — Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian at
 - **b. What was** — b. What was the name of his father?
 - **1. Into how** — 1. Into how many groups were the nobles divided in the Mughal court? Name these groups.
 - **(2.) Why can** — (2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?
 - **3. Discuss two** — 3. Discuss two achievements of Balaji Vishwanath.
-- **- initiative and** — - initiative and self-direction: research
-- **- creativity: imagination** — - creativity: imagination
+- **initiative and self-direction:** — initiative and self-direction: research
 - **Search for paintings** — Search for paintings and sketches that show the rulers you have read about in this chapter. You can 
+- **Paralympics is one** — Paralympics is one of the world's top sporting competition platforms that represents people with dis
+- **Murlikant Petkar, a** — Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 s
+- **Joginder Singh Bedi** — Joginder Singh Bedi won the silver medal at men's shot put L6 in 1984 at Stoke Mandeville and New Yo
 - **Study the map** — Study the map given on this page and answer the following questions:
 - **Name the two** — Name the two places that are nearest to Agra.
 - **Which river is** — Which river is nearest to Bijapur?
+- **Although many historians** — Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continue

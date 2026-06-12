@@ -42,7 +42,7 @@ def _year_from_fact(fact: str) -> str | None:
 
 def build_topics(sections: list[Section], facts: list[str], title: str) -> list[dict[str, Any]]:
     topics: list[dict[str, Any]] = []
-    use = sections[:10] if sections else []
+    use = [s for s in sections if len(s.title) > 4 and not re.match(r"^(results|introduction)$", s.title, re.I)][:10]
     if not use:
         use = [Section(title, 2, "\n".join(facts[:15]))]
     for sec in use:
@@ -63,15 +63,26 @@ def build_topics(sections: list[Section], facts: list[str], title: str) -> list[
     return topics
 
 
+def _clean_fact(f: str) -> str:
+    f = re.sub(r"^\*\*Executive summary:\*\*\s*", "", f)
+    f = re.sub(r"^[•\-\*]+\s*", "", f).strip()
+    return f
+
+
 def build_high_yield_facts(parsed: ParsedChapter, topics: list[dict], limit: int = 30) -> list[str]:
     facts: list[str] = []
+    seen: set[str] = set()
     for t in topics:
         for b in t.get("bullets", [])[:3]:
-            if b not in facts:
-                facts.append(b)
+            c = _clean_fact(b)
+            if c and len(c) > 30 and c[:50].lower() not in seen:
+                seen.add(c[:50].lower())
+                facts.append(c)
     for f in parsed.facts:
-        if f not in facts:
-            facts.append(f)
+        c = _clean_fact(f)
+        if c and len(c) > 30 and c[:50].lower() not in seen:
+            seen.add(c[:50].lower())
+            facts.append(c)
         if len(facts) >= limit:
             break
     return facts[:limit]
@@ -249,7 +260,7 @@ def build_notes(
             "id": note_id,
             "topicId": topic_id,
             "type": "note",
-            "subtopic": f"{i}. {topic['title']}",
+            "subtopic": f"{i}. {re.sub(r'^\\d+\\.\\s*', '', topic['title'])}",
             "content": content,
             "explanation": explanation,
             "teacherTip": topic.get("teacherTip", ""),

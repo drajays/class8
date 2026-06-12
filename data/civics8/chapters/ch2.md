@@ -10,10 +10,8 @@
 - Maintenance of international peace and security
 - Promotion of human rights for people all over the world
 - The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.
-- ##### The General Assembly
 - This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.
 - This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.
-- ##### The Secretariat
 - The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies.
 - The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.
 - The UN strives to protect and preserve human rights all over the world.
@@ -305,10 +303,8 @@ mindmap
 - Maintenance of international peace and security
 - Promotion of human rights for people all over the world
 - The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.
-- ##### The General Assembly
 - This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.
 - This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.
-- ##### The Secretariat
 - The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies.
 - The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.
 - The UN strives to protect and preserve human rights all over the world.
@@ -320,6 +316,8 @@ mindmap
 - Originally called the United Nations International Children's Emergency Fund, the UNICEF was established in 1946.
 - Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the aftermath of World War II.
 - The words ‘international’ and ‘emergency’ were later dropped and it came to be known as the United Nations Children's Fund.
+- WHO was established on 7 April 1948. This day is observed every year as the World Health Day.
+- Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common places where children are
 
 ## One Word (30)
 
@@ -336,8 +334,6 @@ mindmap
 - **The UNESCO’s mission** — The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations throug
 - **Its main function** — Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the
 - **Then Child labour** — Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construct
-- **The Secretariat is** — The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the Gener
-- **The UN has** — The UN has not always been successful in its attempt to prevent wars. However, it has taken effectiv
 - **The UN strives** — The UN strives to protect and preserve human rights all over the world.
 - **It imposed sanctions** — It imposed sanctions against South Africa, which helped in changing the policies of the South Africa
 - **You have read** — You have read earlier that maintaining international peace and security in the world is not the only
@@ -353,3 +349,5 @@ mindmap
 - **The General Assembly** — The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing t
 - **At the end** — At the end of this lesson, learners will be able to:
 - **Came into existence** — Came into existence on 24 October 1945
+- **League of Nations** — League of Nations failed to prevent the outbreak of World War II
+- **Some proposals of** — Some proposals of the Atlantic Charter became the basis for the establishment of the UN

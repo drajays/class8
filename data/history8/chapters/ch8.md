@@ -11,7 +11,6 @@
 - The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.
 - Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British in India.
 - Governor-Governor-Governor-Governor-Governor-G
-- would act as a little
 - This class was also cheap human resources the administration.
 - Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.
 - ##### Transport and Communication
@@ -244,7 +243,6 @@ mindmap
 - The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.
 - Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British in India.
 - Governor-Governor-Governor-Governor-Governor-G
-- would act as a little
 - This class was also cheap human resources the administration.
 - Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.
 - ##### Transport and Communication
@@ -269,7 +267,6 @@ mindmap
 - **This class** — This class was also cheap human resources the administration.
 - **The peasants** — The peasants were forced to pay high taxes, leading to increase in the poverty level and discontent. Therefore, a number
 - **Governor-Governor-Governor-Gov** — Governor-Governor-Governor-Governor-Governor-G
-- **would act as** — would act as a little
 - **This class was** — This class was also cheap human resources the administration.
 - **Indian industries also** — Indian industries also suffered a great setback under the British colonial rule. The British governm
 - **##### Transport and** — ##### Transport and Communication
@@ -289,3 +286,4 @@ mindmap
 - **Creation of a** — Creation of a new social class of landlords who were loyal to the British
 - **The Company was** — The Company was assured a fixed revenue or income without the trouble of collecting it from the peas
 - **The early 10th** — The early 10th century, the British Government passed the Charter Act of 1812, industry the Company 
+- **Lord William Beetwick** — Lord William Beetwick finally put an end to the debate on education by passing a conclusion that def

@@ -5,7 +5,6 @@
 - Ended with the Treaty of Salbai in 1782
 - Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviations in brackets in the correct box.
 - The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment of the British as a major power in India. The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan. The British joined this fight for supremacy, but with the aim of becoming the dominant power in India. This resulted in a number of wars between the British and the Indian rulers of south India, which are discussed in this chapter.
-- ##### ANGLO-MYSORE WARS
 - The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many reforms, which strengthened his kingdom. The rise of Mysore was a threat to the EEIC's policy of territorial expansion. As the Nizam of Hyderabad and the Marathas became rivals of Hyder Ali, the British took advantage of these rivalries to annex Mysore. Four wars were fought to subjugate Mysore.
 - The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevented the merchants of Mysore from trading with Europe. This infuriated Hyder Ali, who declared war against the
 - British. Initially, the Marathas and the Nizam of Hyderabad were allies of Mysore, and together they captured Arcot. However, the British signed the Treaty of Salbai with the Marathas in 1782, whereby the latter withdrew their support to Hyder Ali.
@@ -13,19 +12,19 @@
 - In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British. Lord Wellesley, the Governor-General, introduced the policy of Subsidiary Alliance (discussed later in this chapter) to expand the British territory in India. Tipu refused to join this alliance. As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.
 - Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War
 - Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:
-- Tipu died defending his capital Seringapatam.
-- Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.
-- The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
 - After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters worse for the Marathas, Nana Phadnavis died. This immediately led to an internal strife between the different Maratha families and chiefs. All of them fought to establish their influence at Poona (now Pune).
 - The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 1802, the Maratha faction led by the Holkars defeated the combined forces of the new Eshwa Baji Rao II, who was supported by the Scindias. This led the Peshwa to sign the Subsidiary Alliance with Lord Wellesley to seek British protection in order to retain control of his throne.
 - Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha chiefs as well, since it had been signed by their nominal head. But he was mistaken. In 1803, the Scindias and the Bhonsles declared war against the British. The British, however, successfully defeated the combined forces of the Bhonsles and Scindias, and the latter were forced to accept the Subsidiary Alliance.
-- Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-- The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-- Indian camp scene during the Third Anglo-Maratha War
-- Punjab became a part of the British territory in 1849.
-- Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.
-- The command of the Sikh army was taken over by the British officers.
 - With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.
+- Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that
+- Was Malwa a part of the British territory in 1856?
+- Which regions along the eastern coast of India were part of the British territory in 1856?
+- The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.
+- The ruler could not employ any non-British Europeans in his service or dismiss those who were there.
+- The ruler could not enter into an alliance with any power without the consent of the British.
+- Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.
+- Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be
+- ascribed to the lack of unity among Indian states. The greater military and financial resources of the EEIC also helped in the colonial expansion of the British.
 
 ## Notes (Expert Revision)
 ### 1. During Reading
@@ -115,35 +114,7 @@ Did the territorial extent of the Mysore state decrease between the First and th
 
 Did the Peshwas have control over territories south of Goa during the First Anglo-Mysore War?
 
-### 6. Results
-
-**Executive summary:** Tipu died defending his capital Seringapatam.
-
-**Must know**
-• Tipu died defending his capital Seringapatam.
-• Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.
-• The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
-• Thus, it took the British more than 30 years to completely subjugate Mysore. The British rule over the Deccan proved to be beneficial for them financially, economically and politically. The British territory now stretched from the Malabar to the Coromandel Coast.
-• ##### ANGLO-MARATHA WARS
-• In 1773, the Maratha Peshwa Narayan Rao was murdered. A war of succession broke out between the supporters of the infant son of the deceased Peshwa, Madhav Rao II, and Raghunath Rao.
-
-Tipu died defending his capital Seringapatam.
-
-Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.
-
-The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
-
-Thus, it took the British more than 30 years to completely subjugate Mysore. The British rule over the Deccan proved to be beneficial for them financially, economically and politically. The British territory now stretched from the Malabar to the Coromandel Coast.
-
-##### ANGLO-MARATHA WARS
-
-In 1773, the Maratha Peshwa Narayan Rao was murdered. A war of succession broke out between the supporters of the infant son of the deceased Peshwa, Madhav Rao II, and Raghunath Rao.
-
-##### First Anglo-Maratha War (1775–82)
-
-Raghunath Rao, also known as Raghoba, appealed to the British for help. The British readily agreed on the condition that they would receive the two important states of Salsette and Bassein, which were important ports. When Raghoba agreed, the British sent their troops to support him. The infant Madhav Rao II was under the able governorship of Nana Phadnavis, who was the leader of the Marathas. Under his leadership, the Maratha army defeated the British. The British forces were sent from Bengal and the war dragged on. No decisive result could be reached, and the Treaty of Salbai was signed in 1782.
-
-### 7. Second Anglo-Maratha War (1803–05)
+### 6. Second Anglo-Maratha War (1803–05)
 
 **Executive summary:** After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters worse for the Marathas, Nana Phadnavis d
 
@@ -169,50 +140,7 @@ Debate And Discussion
 
 What were the main reasons for the victory of the EEIC in the Anglo-Mysore and Anglo-Maratha Wars?
 
-### 8. Results
-
-**Executive summary:** Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-
-**Must know**
-• Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-• The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-• Indian camp scene during the Third Anglo-Maratha War
-• The reign of the Peshwas came to an end.
-• All Maratha territories were annexed to the British Empire.
-• The Bhonsles and Holkars signed the Subsidiary Alliance and ceded large parts of their territories to the British.
-
-Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-
-The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-
-Indian camp scene during the Third Anglo-Maratha War
-
-The reign of the Peshwas came to an end.
-
-All Maratha territories were annexed to the British Empire.
-
-The Bhonsles and Holkars signed the Subsidiary Alliance and ceded large parts of their territories to the British.
-
-Satara, a small state, was carved out of the Maratha Empire, and a descendant of Shivaji was placed on the throne.
-
-##### ANGLO-SIKH RELATIONS
-
-### 9. Results
-
-**Executive summary:** Punjab became a part of the British territory in 1849.
-
-**Must know**
-• Punjab became a part of the British territory in 1849.
-• Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.
-• The command of the Sikh army was taken over by the British officers.
-
-Punjab became a part of the British territory in 1849.
-
-Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.
-
-The command of the Sikh army was taken over by the British officers.
-
-### 10. EXPANSION STRATEGIES
+### 7. EXPANSION STRATEGIES
 
 **Executive summary:** With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expan
 
@@ -220,6 +148,77 @@ The command of the Sikh army was taken over by the British officers.
 • With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.
 
 With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.
+
+### 8. Lord Wellesley
+
+**Executive summary:** Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or
+
+**Must know**
+• Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that
+• - Was Malwa a part of the British territory in 1856?
+• - Which regions along the eastern coast of India were part of the British territory in 1856?
+• were put forward by the British. The first to enter into this alliance was the Nizam of Hyderabad. The Indian rulers lost their independence and were now controlled by the British
+• The clauses of the Subsidiary Alliance system were as follows:
+• British troops would be stationed permanently in the Indian ruler's territory.
+
+Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that
+
+- Was Malwa a part of the British territory in 1856?
+
+- Which regions along the eastern coast of India were part of the British territory in 1856?
+
+were put forward by the British. The first to enter into this alliance was the Nizam of Hyderabad. The Indian rulers lost their independence and were now controlled by the British
+
+The clauses of the Subsidiary Alliance system were as follows:
+
+British troops would be stationed permanently in the Indian ruler's territory.
+
+It was compulsory for the ruler to house a British Resident in his court.
+
+The ruler would have to pay for the maintenance of these troops. The payment could be made in cash or kind, or by ceding a part of the territory.
+
+### 9. Did You Know?
+
+**Executive summary:** The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.
+
+**Must know**
+• The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.
+• The ruler could not employ any non-British Europeans in his service or dismiss those who were there.
+• The ruler could not enter into an alliance with any power without the consent of the British.
+• The ruler had to acknowledge the dominion of the British.
+• The policy of Subsidiary Alliance was advantageous for the British, but it adversely affected the Indians. These are outlined in the following table.
+• Advantages for the British Disadvantages for Indian Rulers The British gained dominion over important territories as subsidiary payment. Indian rulers lost their independence and were completely controlled by the British. The Indian rulers maintained large armies for the British. Indian states became poor as the payment of subsidies drained their resources. When the administration collapsed, the British annexed the states. Other European powers had little access to the courts of Indian rulers and could not influence them. With British patronage and protection, the Indian rulers lost interest in the welfare of their own people, who suffered great misery and oppression.
+
+The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.
+
+The ruler could not employ any non-British Europeans in his service or dismiss those who were there.
+
+The ruler could not enter into an alliance with any power without the consent of the British.
+
+The ruler had to acknowledge the dominion of the British.
+
+The policy of Subsidiary Alliance was advantageous for the British, but it adversely affected the Indians. These are outlined in the following table.
+
+Advantages for the British Disadvantages for Indian Rulers The British gained dominion over important territories as subsidiary payment. Indian rulers lost their independence and were completely controlled by the British. The Indian rulers maintained large armies for the British. Indian states became poor as the payment of subsidies drained their resources. When the administration collapsed, the British annexed the states. Other European powers had little access to the courts of Indian rulers and could not influence them. With British patronage and protection, the Indian rulers lost interest in the welfare of their own people, who suffered great misery and oppression.
+
+Lord Dalhousie, who was the Governor-General of India during 1848–56, undertook a two-pronged approach to help the British expansion in India. The measures were as follows:
+
+Annexation on grounds of maladministration
+
+### 10. Annexation of Awadh on Grounds of Maladministration
+
+**Executive summary:** Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely fo
+
+**Must know**
+• Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.
+• Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be
+• ascribed to the lack of unity among Indian states. The greater military and financial resources of the EEIC also helped in the colonial expansion of the British.
+
+Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.
+
+Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be
+
+ascribed to the lack of unity among Indian states. The greater military and financial resources of the EEIC also helped in the colonial expansion of the British.
 
 
 ## Mind Map
@@ -244,18 +243,16 @@ mindmap
       In order to avenge his defeat in the Thi
       Clash between the British soldiers and t
       Geo-Skills: Locating Places cross-curric
-    Results
-      Tipu died defending his capital Seringap
-      Half of the kingdom of Mysore was divide
-      The other half was given to the earlier 
     Second Anglo-Maratha War (1803–05)
       After the death of Peshwa Madhav Rao II 
       The disunity among the Marathas was imme
       Lord Wellesley believed he could impose 
-    Results
-      Baji Rao II was overthrown and exiled to
-      The Marathas as a force were eliminated 
-      Indian camp scene during the Third Anglo
+    EXPANSION STRATEGIES
+      With the annexation of Punjab, the Briti
+    Lord Wellesley
+      Lord Wellesley initiated the system call
+      - Was Malwa a part of the British territ
+      - Which regions along the eastern coast 
 ```
 
 ## Cheat Sheet
@@ -264,7 +261,6 @@ mindmap
 - Ended with the Treaty of Salbai in 1782
 - Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviations in brackets in the correct box.
 - The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment of the British as a major power in India. The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan. The British joined this fight for supremacy, but with the aim of becoming the dominant power in India. This resulted in a number of wars between the British and the Indian rulers of south India, which are discussed in this chapter.
-- ##### ANGLO-MYSORE WARS
 - The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many reforms, which strengthened his kingdom. The rise of Mysore was a threat to the EEIC's policy of territorial expansion. As the Nizam of Hyderabad and the Marathas became rivals of Hyder Ali, the British took advantage of these rivalries to annex Mysore. Four wars were fought to subjugate Mysore.
 - The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevented the merchants of Mysore from trading with Europe. This infuriated Hyder Ali, who declared war against the
 - British. Initially, the Marathas and the Nizam of Hyderabad were allies of Mysore, and together they captured Arcot. However, the British signed the Treaty of Salbai with the Marathas in 1782, whereby the latter withdrew their support to Hyder Ali.
@@ -272,18 +268,19 @@ mindmap
 - In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British. Lord Wellesley, the Governor-General, introduced the policy of Subsidiary Alliance (discussed later in this chapter) to expand the British territory in India. Tipu refused to join this alliance. As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.
 - Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War
 - Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:
-- Tipu died defending his capital Seringapatam.
-- Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.
-- The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
 - After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters worse for the Marathas, Nana Phadnavis died. This immediately led to an internal strife between the different Maratha families and chiefs. All of them fought to establish their influence at Poona (now Pune).
 - The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 1802, the Maratha faction led by the Holkars defeated the combined forces of the new Eshwa Baji Rao II, who was supported by the Scindias. This led the Peshwa to sign the Subsidiary Alliance with Lord Wellesley to seek British protection in order to retain control of his throne.
 - Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha chiefs as well, since it had been signed by their nominal head. But he was mistaken. In 1803, the Scindias and the Bhonsles declared war against the British. The British, however, successfully defeated the combined forces of the Bhonsles and Scindias, and the latter were forced to accept the Subsidiary Alliance.
-- Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-- The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-- Indian camp scene during the Third Anglo-Maratha War
-- Punjab became a part of the British territory in 1849.
-- Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.
-- The command of the Sikh army was taken over by the British officers.
+- With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.
+- Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that
+- Was Malwa a part of the British territory in 1856?
+- Which regions along the eastern coast of India were part of the British territory in 1856?
+- The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.
+- The ruler could not employ any non-British Europeans in his service or dismiss those who were there.
+- The ruler could not enter into an alliance with any power without the consent of the British.
+- Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.
+- Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be
+- ascribed to the lack of unity among Indian states. The greater military and financial resources of the EEIC also helped in the colonial expansion of the British.
 
 ## One Word (30)
 
@@ -295,25 +292,25 @@ mindmap
 - **Treaty of Seringapatam** — a peace treaty signed in 1792 between the British and Tipu Sultan, marking the end of the Third Anglo-Mysore War
 - **The ruler of Mysore, Hyder Ali,** — The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many 
 - **Although Hyder Ali** — Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried 
-- **Half of the kingdom of Mysore** — Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.
-- **The other half** — The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
 - **The disunity among the Marathas** — The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 
-- **Baji Rao II** — Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-- **The Marathas as a force** — The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-- **The command of the Sikh army** — The command of the Sikh army was taken over by the British officers.
-- **The other half** — The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.
+- **Clash between the** — Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War
+- **Geo-Skills: Locating Places** — Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information lite
 - **After the death** — After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak an
 - **The disunity among** — The disunity among the Marathas was immensely favourable for the British to gain control over the Ma
 - **Lord Wellesley believed** — Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha c
-- **Baji Rao II** — Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.
-- **The Marathas as** — The Marathas as a force were eliminated and were no longer seen as a threat to the British.
-- **Indian camp scene** — Indian camp scene during the Third Anglo-Maratha War
-- **Punjab became a** — Punjab became a part of the British territory in 1849.
-- **Maharaja Dalip Singh,** — Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.
-- **The command of** — The command of the Sikh army was taken over by the British officers.
 - **With the annexation** — With the annexation of Punjab, the British conquest of India was complete. Most parts of India were 
+- **Lord Wellesley initiated** — Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in
+- **Was Malwa a** — Was Malwa a part of the British territory in 1856?
+- **Which regions along** — Which regions along the eastern coast of India were part of the British territory in 1856?
+- **The states that** — The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Pesh
+- **The ruler could** — The ruler could not employ any non-British Europeans in his service or dismiss those who were there.
+- **The ruler could** — The ruler could not enter into an alliance with any power without the consent of the British.
+- **Lord Dalhousie undertook** — Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministrat
+- **Lord Dalhousie, therefore,** — Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administra
+- **ascribed to the** — ascribed to the lack of unity among Indian states. The greater military and financial resources of t
 - **Between Madhav Rao** — Between Madhav Rao II and the British in support of Raghunath Rao
 - **Ended with the** — Ended with the Treaty of Salbai in 1782
 - **Study the pictures** — Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviation
 - **The three Carnatic** — The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment of t
-- **##### ANGLO-MYSORE WARS** — ##### ANGLO-MYSORE WARS
+- **The ruler of** — The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general.
+- **The British occupied** — The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevente

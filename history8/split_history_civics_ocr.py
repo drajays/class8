@@ -84,7 +84,9 @@ def write_chapter(ch: dict, md_text: str, json_pages: list[dict]) -> None:
     num = ch["out"]
 
     header = f"# Chapter {num}: {ch['title']}\n\n"
-    (ch_dir / f"ch{num}.md").write_text(header + md_text, encoding="utf-8")
+    raw_md = header + md_text
+    (ch_dir / f"ch{num}.source.md").write_text(raw_md, encoding="utf-8")
+    (ch_dir / f"ch{num}.md").write_text(raw_md, encoding="utf-8")
 
     payload = {
         "topicId": ch["topicId"],

@@ -12,7 +12,6 @@
 - A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab himself left the battlefield after the death of his army commander, Mir Madan. The disheartened army was easily defeated. Later, Siraj-ud-Daulah was captured and put to death, and Mir Jafar was declared the Nawab of Bengal. The English gained control over Bengal by installing Mir Jafar as the puppet ruler.
 - Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the official historian of the EEIC, Roben Orme, as the greatest banker in the known world, Jagat Seth conspired with Mir Jafar and Robert Clive against Siraj-ud-Daulah.
 - Jagat Seth's house in Murshidabad
-- ##### Results of the Battle
 - Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, the Mughal emperor. The combined forces met the British at the famous
 - The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following are some of the other results of this battle:
 - After the battle, the British became the absolute masters of Bengal.
@@ -257,7 +256,6 @@ mindmap
 - A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab himself left the battlefield after the death of his army commander, Mir Madan. The disheartened army was easily defeated. Later, Siraj-ud-Daulah was captured and put to death, and Mir Jafar was declared the Nawab of Bengal. The English gained control over Bengal by installing Mir Jafar as the puppet ruler.
 - Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the official historian of the EEIC, Roben Orme, as the greatest banker in the known world, Jagat Seth conspired with Mir Jafar and Robert Clive against Siraj-ud-Daulah.
 - Jagat Seth's house in Murshidabad
-- ##### Results of the Battle
 - Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, the Mughal emperor. The combined forces met the British at the famous
 - The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following are some of the other results of this battle:
 - After the battle, the British became the absolute masters of Bengal.
@@ -282,7 +280,6 @@ mindmap
 - **The Battle of Plassey** — The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces advanced under the leade
 - **A large part of the Nawab's army** — A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab 
 - **Jagat Seth** — Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the of
-- **##### Results of** — ##### Results of the Battle
 - **Mir Qasim was** — Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah
 - **The Battle of** — The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following
 - **After the battle,** — After the battle, the British became the absolute masters of Bengal.
@@ -301,3 +298,4 @@ mindmap
 - **The French had** — The French had established their settlement in Chandernagore. Anticipating war with the French, the 
 - **In 1756, Nawab** — In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William,
 - **The Battle of** — The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces adva
+- **A large part** — A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in th

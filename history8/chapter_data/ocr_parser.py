@@ -26,7 +26,8 @@ class ParsedChapter:
 SKIP_HEADINGS = re.compile(
     r"^(exercises|student assessment|go local|debate and discussion|do it yourself|"
     r"learning outcomes|history alive|reflective learning|comparative history|"
-    r"method:|a note to the teacher|project-based learning|curriculum connections)",
+    r"method:|a note to the teacher|project-based learning|curriculum connections|"
+    r"keywords|high-yield|exercise|portrait gallery|india @75|worksheet|model test)",
     re.I,
 )
 

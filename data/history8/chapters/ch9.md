@@ -25,7 +25,6 @@
 - Province, central India and Bihar. In many cases, it was the behaviour of the British military and civilian authorities that accelerated discontent among the Indians.
 - In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.
 - Jhansi was a princely state in south-western Pradesh. It Uttar annexed by was British in 1853. the British news of the When reached the revolt queen of Jhansi, Rani Lake, she quickly organised her troops. She was also
-- ► Rani Lakshmibai of Jhansi
 - The following were major causes for the failure of the revolt:
 - The revolt lacked coordination, and the rebels had no common plan of action.
 
@@ -301,9 +300,9 @@ mindmap
 - **Province, central India** — Province, central India and Bihar. In many cases, it was the behaviour of the British military and c
 - **In Arrah (Bihar),** — In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at th
 - **Jhansi was a** — Jhansi was a princely state in south-western Pradesh. It Uttar annexed by was British in 1853. the B
-- **► Rani Lakshmibai** — ► Rani Lakshmibai of Jhansi
 - **The following were** — The following were major causes for the failure of the revolt:
 - **The revolt lacked** — The revolt lacked coordination, and the rebels had no common plan of action.
 - **highlight the names** — highlight the names of the leaders of the revolt.
 - **trace the spread** — trace the spread of the revolt in India.
 - **assess the consequences** — assess the consequences of the Revolt of 1857.
+- **Various causes—political, econ** — Various causes—political, economic, socio-religious, military and immediate—were responsible for the

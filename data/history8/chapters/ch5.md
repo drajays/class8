@@ -2,7 +2,6 @@
 
 ## High-Yield Facts
 - Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.
-- War of Austrian Succession
 - The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to. From traders, they became ‘rulers’.
 - The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I. Trade was profitable, and the Queen received a major share of these profits. In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions. By 1623, factories were set up in Surat, Ahmedabad, Agra, Broach and Masulipatnam.
 - In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.
@@ -11,24 +10,24 @@
 - As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.
 - ##### First Carnatic War (1746-48)
 - The First Carnatic War took place between 1746 and 1748.
-- There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.
-- The war enhanced the prestige of the French.
-- This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.
-- British power and prestige over the Carnatic region was restored.
-- ☑ Dupleix was recalled to France.
-- - visual literacy: analysing pictures
 - The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.
 - The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.
 - The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.
-- The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-- The British became the dominant European power in southern India.
-- critical thinking: cause and effect communication
 - Naval supremacy: The British navy was far superior to its French counterpart.
 - The British succeeded in winning the wars against their rivals for the following reasons:
 - Steady supply of arms and resources:
 - Factory: a trading post where goods are manufactured
 - Sepoys: Indian soldiers recruited into the British army
 - War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI
+- 1. More than one of the following statements are true. Read the statements and choose the correct option.
+- i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.
+- ii. Three presidencies were established in Madras, Bombay and Calcutta.
+- 1. The Carnatic Wars were a result of the hostilities between Britain and France.
+- a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars in India?
+- b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?
+- 1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?
+- 2. Who received the island of Bombay as a wedding gift after marrying the Portuguese princess, Catherine of Braganza?
+- 3. Where did the French East India Company establish its headquarters?
 
 ## Notes (Expert Revision)
 ### 1. During Reading
@@ -104,53 +103,7 @@ Then Fort St George was the first English fortress in India. Founded in 1644 in 
 
 ► An oil painting showing Fort St George
 
-### 5. Results
-
-**Executive summary:** There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.
-
-**Must know**
-• There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.
-• The war enhanced the prestige of the French.
-• This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.
-• ##### Analysing Primary Sources
-• - What differences do you notice between the soldiers belonging to the two parties?
-• What do you gather about the relationship between the French and Muzaffar Jang from this picture?
-
-There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.
-
-The war enhanced the prestige of the French.
-
-This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.
-
-##### Analysing Primary Sources
-
-- What differences do you notice between the soldiers belonging to the two parties?
-
-What do you gather about the relationship between the French and Muzaffar Jang from this picture?
-
-##### Second Carnatic War (1749-1754)
-
-Even after the conclusion of the First Carnatic War, Dupleix had the ambition to gain control over more territories in India.
-
-### 6. Results
-
-**Executive summary:** British power and prestige over the Carnatic region was restored.
-
-**Must know**
-• British power and prestige over the Carnatic region was restored.
-• ☑ Dupleix was recalled to France.
-• - visual literacy: analysing pictures
-• - critical thinking: observation
-
-British power and prestige over the Carnatic region was restored.
-
-☑ Dupleix was recalled to France.
-
-- visual literacy: analysing pictures
-
-- critical thinking: observation
-
-### 7. Third Carnatic War (1756-63)
+### 5. Third Carnatic War (1756-63)
 
 **Executive summary:** The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.
 
@@ -171,25 +124,7 @@ The British control of Bengal gave them access to funds to fight the wars agains
 
 The Third Carnatic War was concluded once the Seven Years' War in Europe came to an end in 1763.
 
-### 8. Results
-
-**Executive summary:** The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-
-**Must know**
-• The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-• The British became the dominant European power in southern India.
-• critical thinking: cause and effect communication
-• What factors contributed to the Anglo-French rivalry?
-
-The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-
-The British became the dominant European power in southern India.
-
-critical thinking: cause and effect communication
-
-What factors contributed to the Anglo-French rivalry?
-
-### 9. REASONS FOR THE BRITISH SUCCESS IN INDIA
+### 6. REASONS FOR THE BRITISH SUCCESS IN INDIA
 
 **Executive summary:** Naval supremacy: The British navy was far superior to its French counterpart.
 
@@ -217,7 +152,7 @@ The British learnt a number of lessons from the wars they fought in India:
 
 Political discord and quarrels among Indian rulers could be used to gain political and military control over India.
 
-### 10. KEY WORDS
+### 7. KEY WORDS
 
 **Executive summary:** Factory: a trading post where goods are manufactured
 
@@ -231,6 +166,81 @@ Factory: a trading post where goods are manufactured
 Sepoys: Indian soldiers recruited into the British army
 
 War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI
+
+### 8. 1. Tick (✓) the correct option.
+
+**Executive summary:** 1. More than one of the following statements are true. Read the statements and choose the correct option.
+
+**Must know**
+• 1. More than one of the following statements are true. Read the statements and choose the correct option.
+• i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.
+• ii. Three presidencies were established in Madras, Bombay and Calcutta.
+• iii. Pondicherry (now Puducherry) was the headquarter of the French East India Company.
+• a. i and ii are true.
+• b. ii and iii are true.
+
+1. More than one of the following statements are true. Read the statements and choose the correct option.
+
+i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.
+
+ii. Three presidencies were established in Madras, Bombay and Calcutta.
+
+iii. Pondicherry (now Puducherry) was the headquarter of the French East India Company.
+
+a. i and ii are true.
+
+b. ii and iii are true.
+
+c. i and iii are true.
+
+2. At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called _____.
+
+### 9. II. Reflective Learning HOTS
+
+**Executive summary:** 1. The Carnatic Wars were a result of the hostilities between Britain and France.
+
+**Must know**
+• 1. The Carnatic Wars were a result of the hostilities between Britain and France.
+• a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars in India?
+• b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?
+• 2. Which of the following reasons might best explain the success of the British in India? You can choose more than one option.
+• a. The supremacy of the British navy.
+• b. Political discord and quarrels among Indian rulers.
+
+1. The Carnatic Wars were a result of the hostilities between Britain and France.
+
+a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars in India?
+
+b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?
+
+2. Which of the following reasons might best explain the success of the British in India? You can choose more than one option.
+
+a. The supremacy of the British navy.
+
+b. Political discord and quarrels among Indian rulers.
+
+c. The French East India Company being controlled by the French government.
+
+### 10. III. Answer the following questions in brief.
+
+**Executive summary:** 1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?
+
+**Must know**
+• 1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?
+• 2. Who received the island of Bombay as a wedding gift after marrying the Portuguese princess, Catherine of Braganza?
+• 3. Where did the French East India Company establish its headquarters?
+• 4. Name the first English fortress in India, which was founded in 1644.
+• 5. What led to the Second Carnatic War?
+
+1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?
+
+2. Who received the island of Bombay as a wedding gift after marrying the Portuguese princess, Catherine of Braganza?
+
+3. Where did the French East India Company establish its headquarters?
+
+4. Name the first English fortress in India, which was founded in 1644.
+
+5. What led to the Second Carnatic War?
 
 
 ## Mind Map
@@ -252,28 +262,27 @@ mindmap
       As the Dutch and Portuguese trading comp
       ##### First Carnatic War (1746-48)
       The First Carnatic War took place betwee
-    Results
-      There were no territorial gains for eith
-      The war enhanced the prestige of the Fre
-      This is a sketch of Dupleix meeting Muza
-    Results
-      British power and prestige over the Carn
-      ☑ Dupleix was recalled to France.
-      - visual literacy: analysing pictures
     Third Carnatic War (1756-63)
       The Third Carnatic War lasted from 1756 
       The Seven Years' War led to an outbreak 
       The Third Carnatic War coincided with th
-    Results
-      The French were completely defeated at t
-      The British became the dominant European
-      critical thinking: cause and effect comm
+    REASONS FOR THE BRITISH SUCCESS IN 
+      Naval supremacy: The British navy was fa
+      The British succeeded in winning the war
+      Steady supply of arms and resources:
+    KEY WORDS
+      Factory: a trading post where goods are 
+      Sepoys: Indian soldiers recruited into t
+      War of Austrian Succession: a war involv
+    1. Tick (✓) the correct option.
+      1. More than one of the following statem
+      i. The Carnatic coast is the region in s
+      ii. Three presidencies were established 
 ```
 
 ## Cheat Sheet
 
 - Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.
-- War of Austrian Succession
 - The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to. From traders, they became ‘rulers’.
 - The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I. Trade was profitable, and the Queen received a major share of these profits. In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions. By 1623, factories were set up in Surat, Ahmedabad, Agra, Broach and Masulipatnam.
 - In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.
@@ -282,50 +291,51 @@ mindmap
 - As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.
 - ##### First Carnatic War (1746-48)
 - The First Carnatic War took place between 1746 and 1748.
-- There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.
-- The war enhanced the prestige of the French.
-- This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.
-- British power and prestige over the Carnatic region was restored.
-- ☑ Dupleix was recalled to France.
-- - visual literacy: analysing pictures
 - The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.
 - The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.
 - The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.
-- The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-- The British became the dominant European power in southern India.
-- critical thinking: cause and effect communication
 - Naval supremacy: The British navy was far superior to its French counterpart.
 - The British succeeded in winning the wars against their rivals for the following reasons:
+- Steady supply of arms and resources:
+- Factory: a trading post where goods are manufactured
+- Sepoys: Indian soldiers recruited into the British army
+- War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI
+- 1. More than one of the following statements are true. Read the statements and choose the correct option.
+- i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.
+- ii. Three presidencies were established in Madras, Bombay and Calcutta.
+- 1. The Carnatic Wars were a result of the hostilities between Britain and France.
+- a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars in India?
+- b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?
 
 ## One Word (30)
 
 - **Tick (√) the European Wars which** — Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.
 - **In 1639, Madras (now Chennai)** — In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fort
 - **The French East India Company** — The French East India Company was formed in 1664. It established its headquarters in Pondicherry (now Puducherry). While
-- **The French** — The French were completely defeated at the Battle of Wandiwash (1760) by the British.
 - **Naval supremacy: The British navy** — Naval supremacy: The British navy was far superior to its French counterpart.
 - **Factory: a trading post where goods** — Factory: a trading post where goods are manufactured
-- **The French East** — The French East India Company was formed in 1664. It established its headquarters in Pondicherry (no
-- **As the Dutch** — As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18t
-- **##### First Carnatic** — ##### First Carnatic War (1746-48)
+- **i. The Carnatic coast** — i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.
+- **ii. Three presidencies** — ii. Three presidencies were established in Madras, Bombay and Calcutta.
+- **1. The Carnatic Wars** — 1. The Carnatic Wars were a result of the hostilities between Britain and France.
 - **The First Carnatic** — The First Carnatic War took place between 1746 and 1748.
-- **There were no** — There were no territorial gains for either the British or the French, and the former territories wer
-- **The war enhanced** — The war enhanced the prestige of the French.
-- **This is a** — This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.
-- **British power and** — British power and prestige over the Carnatic region was restored.
-- **☑ Dupleix was** — ☑ Dupleix was recalled to France.
-- **- visual literacy:** — - visual literacy: analysing pictures
 - **The Third Carnatic** — The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, 
 - **The Seven Years'** — The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, a
 - **The Third Carnatic** — The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.
-- **The French were** — The French were completely defeated at the Battle of Wandiwash (1760) by the British.
-- **The British became** — The British became the dominant European power in southern India.
-- **critical thinking: cause** — critical thinking: cause and effect communication
 - **Naval supremacy: The** — Naval supremacy: The British navy was far superior to its French counterpart.
 - **The British succeeded** — The British succeeded in winning the wars against their rivals for the following reasons:
 - **Steady supply of** — Steady supply of arms and resources:
 - **Factory: a trading** — Factory: a trading post where goods are manufactured
 - **Sepoys: Indian soldiers** — Sepoys: Indian soldiers recruited into the British army
 - **War of Austrian** — War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 174
+- **1. More than** — 1. More than one of the following statements are true. Read the statements and choose the correct op
+- **i. The Carnatic** — i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Corom
+- **ii. Three presidencies** — ii. Three presidencies were established in Madras, Bombay and Calcutta.
+- **1. The Carnatic** — 1. The Carnatic Wars were a result of the hostilities between Britain and France.
+- **a. How did** — a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars 
+- **b. How did** — b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?
+- **1. When did** — 1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?
+- **2. Who received** — 2. Who received the island of Bombay as a wedding gift after marrying the Portuguese princess, Cathe
+- **3. Where did** — 3. Where did the French East India Company establish its headquarters?
 - **Tick (√) the** — Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.
-- **War of Austrian** — War of Austrian Succession
+- **The British gradually** — The British gradually gained political control over India through a number of battles against the ru
+- **The EEIC was** — The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive righ

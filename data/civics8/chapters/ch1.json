@@ -6,20 +6,16 @@
     "Study the given pictures. Can you name these Prime Ministers of India?",
     "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
     "There are three organs of the government of India.",
-    "Must be a citizen of India",
     "Must not be less than 25 years of age",
-    "Must be of sound mind",
     "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
     "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
     "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
     "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
     "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-    "Former Presidents of India",
     "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
     "Must be at least 35 years of age",
     "Should not hold an office of profit under the government—Centre, state or local level",
     "The powers of the President can be grouped under the following heads:",
-    "##### Executive Powers",
     "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
     "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
     "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
@@ -451,9 +447,9 @@
       "question": "Regarding after Independence, the news about the proceedings of the Lok Sabha, which statement is correct?",
       "options": [
         "transmitted through newspapers and radio",
-        "##### Executive Powers",
-        "Now One entire channel on television, known as  Lok Sabha TV, focuses completely on  affairs   Lok Sabha.",
-        "Vice President is elected indirectly by  electoral college consisting only  members from both Houses  Parliament.  term  office  Vice President is 5 years."
+        "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
+        "bill is introduced  either House   Parliament, if it is  ordinary bill.  bill is  draft   proposed law presented   Parliament for discussion. However,  money bill can only be introduced   Lok Sabha.  bill goes through three stages  reading.   first stage,  bill is introduced   House.   second stage, voting on  bill takes place after  debate. Then  bill is sent   other House, where  same procedure is followed.  case   money bill,  Rajya Sabha is given only 14 days  consider  bill.   third stage,  bill is sent   President for his assent.  President can either sign  bill or send it back for reconsideration   House, where  bill was presented. When  President signs  bill,  bill becomes  Act.",
+        "after Independence,  news about  proceedings   Lok Sabha was transmitted through newspapers  radio.  radio typically broadcasted  morning   evening Lok Sabha news."
       ],
       "correctOption": 0,
       "answer": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
@@ -511,9 +507,9 @@
       "question": "Regarding A bill is introduced in either House of the Parliament, if it, which statement is correct?",
       "options": [
         "an ordinary bill",
-        "Study  given pictures. Can you name these Prime Ministers  India?",
-        "Must be  citizen  India",
-        "Should not hold  office  profit under  government—Centre, state or local level"
+        "When no party wins  absolute majority   Lok Sabha,  President can appoint  Prime Minister  her/his choice— person, who she/he thinks, can command  majority   House.",
+        "Should not hold  office  profit under  government—Centre, state or local level",
+        "Must be at least 35 years  age"
       ],
       "correctOption": 0,
       "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
@@ -531,9 +527,9 @@
       "question": "Regarding The Union and State Legislature, which statement is correct?",
       "options": [
         "entrusted with the task of making laws",
-        "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
-        "powers   President can be grouped under  following heads:",
-        "##### Executive Powers"
+        "Vice President, is  ex-officio Chairperson   Rajya Sabha. She/He regulates debates  proceedings   House. She/He decides  admissibility  resolutions  questions   House  case  grave disorder. She/He heads various committees  coordinates their working.",
+        "Now One entire channel on television, known as  Lok Sabha TV, focuses completely on  affairs   Lok Sabha.",
+        "There are three organs   government  India."
       ],
       "correctOption": 0,
       "answer": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
@@ -611,9 +607,9 @@
       "question": "Regarding The President appoints the Prime Minister, who, which statement is correct?",
       "options": [
         "the leader of the single largest party in the Lok Sabha or the leader of the coa",
-        "Now One entire channel on television, known as  Lok Sabha TV, focuses completely on  affairs   Lok Sabha.",
-        "Study  given pictures. Can you name these Prime Ministers  India?",
-        "Must be  citizen  India"
+        "Must not be less than 25 years  age",
+        "powers   President can be grouped under  following heads:",
+        "When no party wins  absolute majority   Lok Sabha,  President can appoint  Prime Minister  her/his choice— person, who she/he thinks, can command  majority   House."
       ],
       "correctOption": 0,
       "answer": "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
@@ -651,9 +647,9 @@
       "question": "Regarding The Vice President, which statement is correct?",
       "options": [
         "elected indirectly by an electoral college consisting only of members from both",
-        "When no party wins  absolute majority   Lok Sabha,  President can appoint  Prime Minister  her/his choice— person, who she/he thinks, can command  majority   House.",
-        "Vice President is elected indirectly by  electoral college consisting only  members from both Houses  Parliament.  term  office  Vice President is 5 years.",
-        "India is  parliamentary democracy, where  supreme power resides with  people   country.  Indian Constitution has declared India  be  Union  States.  India, power is distributed between  central   state governments."
+        "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
+        "Have you seen this channel? How do you think  media helps us  understand government affairs better?",
+        "Must be at least 35 years  age"
       ],
       "correctOption": 0,
       "answer": "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
@@ -691,9 +687,9 @@
       "question": "Regarding The Vice President,, which statement is correct?",
       "options": [
         "the ex-officio Chairperson of the Rajya Sabha",
-        "President appoints  Prime Minister, who is  leader   single largest party   Lok Sabha or  leader   coalition that wins  elections.",
-        "Must be  citizen  India",
-        "Study  given pictures. Can you name these Prime Ministers  India?"
+        "Have you seen this channel? How do you think  media helps us  understand government affairs better?",
+        "India is  parliamentary democracy, where  supreme power resides with  people   country.  Indian Constitution has declared India  be  Union  States.  India, power is distributed between  central   state governments.",
+        "Must be at least 35 years  age"
       ],
       "correctOption": 0,
       "answer": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working.",
@@ -711,9 +707,9 @@
       "question": "Regarding While the President, which statement is correct?",
       "options": [
         "the $ \\underline{\\text{nominal or",
-        "bill is introduced  either House   Parliament, if it is  ordinary bill.  bill is  draft   proposed law presented   Parliament for discussion. However,  money bill can only be introduced   Lok Sabha.  bill goes through three stages  reading.   first stage,  bill is introduced   House.   second stage, voting on  bill takes place after  debate. Then  bill is sent   other House, where  same procedure is followed.  case   money bill,  Rajya Sabha is given only 14 days  consider  bill.   third stage,  bill is sent   President for his assent.  President can either sign  bill or send it back for reconsideration   House, where  bill was presented. When  President signs  bill,  bill becomes  Act.",
-        "Union  State Legislature are entrusted with  task  making laws. Similarly,  Union  State Executives are entrusted with  task  enforcing laws throughout  country.  Executive",
-        "Now One entire channel on television, known as  Lok Sabha TV, focuses completely on  affairs   Lok Sabha."
+        "There are three organs   government  India.",
+        "When no party wins  absolute majority   Lok Sabha,  President can appoint  Prime Minister  her/his choice— person, who she/he thinks, can command  majority   House.",
+        "constitutional head}} \\underline{\\text{government}} $.  Prime Minister is  pivot on which  whole constitutional machinery runs."
       ],
       "correctOption": 0,
       "answer": "While the President is the $ \\underline{\\text{nominal or",
@@ -731,9 +727,9 @@
       "question": "Regarding constitutional head}} \\underline{\\text{government}} $. The Prime Minister, which statement is correct?",
       "options": [
         "the pivot on which the whole constitutional machinery runs",
-        "Must be  citizen  India",
-        "India is  parliamentary democracy, where  supreme power resides with  people   country.  Indian Constitution has declared India  be  Union  States.  India, power is distributed between  central   state governments.",
-        "Former Presidents  India"
+        "bill is introduced  either House   Parliament, if it is  ordinary bill.  bill is  draft   proposed law presented   Parliament for discussion. However,  money bill can only be introduced   Lok Sabha.  bill goes through three stages  reading.   first stage,  bill is introduced   House.   second stage, voting on  bill takes place after  debate. Then  bill is sent   other House, where  same procedure is followed.  case   money bill,  Rajya Sabha is given only 14 days  consider  bill.   third stage,  bill is sent   President for his assent.  President can either sign  bill or send it back for reconsideration   House, where  bill was presented. When  President signs  bill,  bill becomes  Act.",
+        "Must be at least 35 years  age",
+        "Must not be less than 25 years  age"
       ],
       "correctOption": 0,
       "answer": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
@@ -768,7 +764,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. India is a parliamentary democracy, where the supreme power resides with the people of the country. \n2. There are three organs of the government of India.\n3. Must be a citizen of India\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. India is a parliamentary democracy, where the supreme power resides with the people of the country. \n2. There are three organs of the government of India.\n3. Must not be less than 25 years of age\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -788,7 +784,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. There are three organs of the government of India.\n2. Must be a citizen of India\n3. Must not be less than 25 years of age\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. There are three organs of the government of India.\n2. Must not be less than 25 years of age\n3. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -808,7 +804,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Must be a citizen of India\n2. Must not be less than 25 years of age\n3. Must be of sound mind\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Must not be less than 25 years of age\n2. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\n3. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -828,7 +824,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Must not be less than 25 years of age\n2. Must be of sound mind\n3. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\n2. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\n3. Have you seen this channel? How do you think the media helps us to understand government affairs bet\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -848,7 +844,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Must be of sound mind\n2. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\n3. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\n2. Have you seen this channel? How do you think the media helps us to understand government affairs bet\n3. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -868,7 +864,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape\n2. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\n3. Have you seen this channel? How do you think the media helps us to understand government affairs bet\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Have you seen this channel? How do you think the media helps us to understand government affairs bet\n2. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\n3. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -888,7 +884,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o\n2. Have you seen this channel? How do you think the media helps us to understand government affairs bet\n3. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\n2. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\n3. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -908,7 +904,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Have you seen this channel? How do you think the media helps us to understand government affairs bet\n2. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\n3. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\n2. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\n3. Must be at least 35 years of age\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -928,7 +924,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft\n2. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\n3. Former Presidents of India\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\n2. Must be at least 35 years of age\n3. Should not hold an office of profit under the government—Centre, state or local level\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -948,7 +944,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and\n2. Former Presidents of India\n3. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Must be at least 35 years of age\n2. Should not hold an office of profit under the government—Centre, state or local level\n3. The powers of the President can be grouped under the following heads:\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -968,7 +964,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Former Presidents of India\n2. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\n3. Must be at least 35 years of age\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. Should not hold an office of profit under the government—Centre, state or local level\n2. The powers of the President can be grouped under the following heads:\n3. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -988,7 +984,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain\n2. Must be at least 35 years of age\n3. Should not hold an office of profit under the government—Centre, state or local level\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. The powers of the President can be grouped under the following heads:\n2. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \n3. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1008,7 +1004,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Must be at least 35 years of age\n2. Should not hold an office of profit under the government—Centre, state or local level\n3. The powers of the President can be grouped under the following heads:\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \n2. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\n3. The Vice President is elected indirectly by an electoral college consisting only of members from bot\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1028,7 +1024,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. Should not hold an office of profit under the government—Centre, state or local level\n2. The powers of the President can be grouped under the following heads:\n3. ##### Executive Powers\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\n2. The Vice President is elected indirectly by an electoral college consisting only of members from bot\n3. She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1048,7 +1044,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. The powers of the President can be grouped under the following heads:\n2. ##### Executive Powers\n3. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. The Vice President is elected indirectly by an electoral college consisting only of members from bot\n2. She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to\n3. The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1068,7 +1064,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. ##### Executive Powers\n2. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \n3. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to\n2. The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p\n3. While the President is the $ \\underline{\\text{nominal or\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1088,7 +1084,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. The President appoints the Prime Minister, who is the leader of the single largest party in the Lok \n2. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\n3. The Vice President is elected indirectly by an electoral college consisting only of members from bot\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p\n2. While the President is the $ \\underline{\\text{nominal or\n3. constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the \nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1108,7 +1104,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist\n2. The Vice President is elected indirectly by an electoral college consisting only of members from bot\n3. She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. While the President is the $ \\underline{\\text{nominal or\n2. constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the \n3. ##### Former Prime Ministers of India\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1128,7 +1124,7 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Consider the following statements:\n1. The Vice President is elected indirectly by an electoral college consisting only of members from bot\n2. She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to\n3. The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p\nWhich of the above is/are correct?",
+      "question": "Consider the following statements:\n1. constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the \n2. ##### Former Prime Ministers of India\n3. Study the given pictures. Can you name these Prime Ministers of India?\nWhich of the above is/are correct?",
       "options": [
         "1 and 2 only",
         "2 and 3 only",
@@ -1208,26 +1204,6 @@
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\nMust be a citizen of India",
-      "options": [
-        "Must be a citizen of India",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "Must be a citizen of India",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-01",
-      "linked_note_id": "civ-rev-ch1-01"
-    },
-    {
-      "id": "civ-ch1-mcq042",
-      "q_id": "civ-ch1-mcq042",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
       "question": "Which statement best describes the following?\nMust not be less than 25 years of age",
       "options": [
         "Must not be less than 25 years of age",
@@ -1239,32 +1215,12 @@
       "answer": "Must not be less than 25 years of age",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-02",
-      "linked_note_id": "civ-rev-ch1-02"
+      "linksTo": "civ-rev-ch1-01",
+      "linked_note_id": "civ-rev-ch1-01"
     },
     {
-      "id": "civ-ch1-mcq043",
-      "q_id": "civ-ch1-mcq043",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\nMust be of sound mind",
-      "options": [
-        "Must be of sound mind",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "Must be of sound mind",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-03",
-      "linked_note_id": "civ-rev-ch1-03"
-    },
-    {
-      "id": "civ-ch1-mcq044",
-      "q_id": "civ-ch1-mcq044",
+      "id": "civ-ch1-mcq042",
+      "q_id": "civ-ch1-mcq042",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1279,12 +1235,12 @@
       "answer": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-04",
-      "linked_note_id": "civ-rev-ch1-04"
+      "linksTo": "civ-rev-ch1-02",
+      "linked_note_id": "civ-rev-ch1-02"
     },
     {
-      "id": "civ-ch1-mcq045",
-      "q_id": "civ-ch1-mcq045",
+      "id": "civ-ch1-mcq043",
+      "q_id": "civ-ch1-mcq043",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1299,12 +1255,12 @@
       "answer": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-05",
-      "linked_note_id": "civ-rev-ch1-05"
+      "linksTo": "civ-rev-ch1-03",
+      "linked_note_id": "civ-rev-ch1-03"
     },
     {
-      "id": "civ-ch1-mcq046",
-      "q_id": "civ-ch1-mcq046",
+      "id": "civ-ch1-mcq044",
+      "q_id": "civ-ch1-mcq044",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1319,12 +1275,12 @@
       "answer": "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-06",
-      "linked_note_id": "civ-rev-ch1-06"
+      "linksTo": "civ-rev-ch1-04",
+      "linked_note_id": "civ-rev-ch1-04"
     },
     {
-      "id": "civ-ch1-mcq047",
-      "q_id": "civ-ch1-mcq047",
+      "id": "civ-ch1-mcq045",
+      "q_id": "civ-ch1-mcq045",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1339,12 +1295,12 @@
       "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-07",
-      "linked_note_id": "civ-rev-ch1-07"
+      "linksTo": "civ-rev-ch1-05",
+      "linked_note_id": "civ-rev-ch1-05"
     },
     {
-      "id": "civ-ch1-mcq048",
-      "q_id": "civ-ch1-mcq048",
+      "id": "civ-ch1-mcq046",
+      "q_id": "civ-ch1-mcq046",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1359,32 +1315,12 @@
       "answer": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-08",
-      "linked_note_id": "civ-rev-ch1-08"
+      "linksTo": "civ-rev-ch1-06",
+      "linked_note_id": "civ-rev-ch1-06"
     },
     {
-      "id": "civ-ch1-mcq049",
-      "q_id": "civ-ch1-mcq049",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\nFormer Presidents of India",
-      "options": [
-        "Former Presidents of India",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "Former Presidents of India",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-09",
-      "linked_note_id": "civ-rev-ch1-09"
-    },
-    {
-      "id": "civ-ch1-mcq050",
-      "q_id": "civ-ch1-mcq050",
+      "id": "civ-ch1-mcq047",
+      "q_id": "civ-ch1-mcq047",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1399,12 +1335,12 @@
       "answer": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-10",
-      "linked_note_id": "civ-rev-ch1-10"
+      "linksTo": "civ-rev-ch1-07",
+      "linked_note_id": "civ-rev-ch1-07"
     },
     {
-      "id": "civ-ch1-mcq051",
-      "q_id": "civ-ch1-mcq051",
+      "id": "civ-ch1-mcq048",
+      "q_id": "civ-ch1-mcq048",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1419,12 +1355,12 @@
       "answer": "Must be at least 35 years of age",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-01",
-      "linked_note_id": "civ-rev-ch1-01"
+      "linksTo": "civ-rev-ch1-08",
+      "linked_note_id": "civ-rev-ch1-08"
     },
     {
-      "id": "civ-ch1-mcq052",
-      "q_id": "civ-ch1-mcq052",
+      "id": "civ-ch1-mcq049",
+      "q_id": "civ-ch1-mcq049",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1439,12 +1375,12 @@
       "answer": "Should not hold an office of profit under the government—Centre, state or local level",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-02",
-      "linked_note_id": "civ-rev-ch1-02"
+      "linksTo": "civ-rev-ch1-09",
+      "linked_note_id": "civ-rev-ch1-09"
     },
     {
-      "id": "civ-ch1-mcq053",
-      "q_id": "civ-ch1-mcq053",
+      "id": "civ-ch1-mcq050",
+      "q_id": "civ-ch1-mcq050",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1459,32 +1395,12 @@
       "answer": "The powers of the President can be grouped under the following heads:",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-03",
-      "linked_note_id": "civ-rev-ch1-03"
+      "linksTo": "civ-rev-ch1-10",
+      "linked_note_id": "civ-rev-ch1-10"
     },
     {
-      "id": "civ-ch1-mcq054",
-      "q_id": "civ-ch1-mcq054",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\n##### Executive Powers",
-      "options": [
-        "##### Executive Powers",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "##### Executive Powers",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-04",
-      "linked_note_id": "civ-rev-ch1-04"
-    },
-    {
-      "id": "civ-ch1-mcq055",
-      "q_id": "civ-ch1-mcq055",
+      "id": "civ-ch1-mcq051",
+      "q_id": "civ-ch1-mcq051",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1499,12 +1415,12 @@
       "answer": "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-05",
-      "linked_note_id": "civ-rev-ch1-05"
+      "linksTo": "civ-rev-ch1-01",
+      "linked_note_id": "civ-rev-ch1-01"
     },
     {
-      "id": "civ-ch1-mcq056",
-      "q_id": "civ-ch1-mcq056",
+      "id": "civ-ch1-mcq052",
+      "q_id": "civ-ch1-mcq052",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1519,12 +1435,12 @@
       "answer": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-06",
-      "linked_note_id": "civ-rev-ch1-06"
+      "linksTo": "civ-rev-ch1-02",
+      "linked_note_id": "civ-rev-ch1-02"
     },
     {
-      "id": "civ-ch1-mcq057",
-      "q_id": "civ-ch1-mcq057",
+      "id": "civ-ch1-mcq053",
+      "q_id": "civ-ch1-mcq053",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1539,12 +1455,12 @@
       "answer": "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-07",
-      "linked_note_id": "civ-rev-ch1-07"
+      "linksTo": "civ-rev-ch1-03",
+      "linked_note_id": "civ-rev-ch1-03"
     },
     {
-      "id": "civ-ch1-mcq058",
-      "q_id": "civ-ch1-mcq058",
+      "id": "civ-ch1-mcq054",
+      "q_id": "civ-ch1-mcq054",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1559,12 +1475,12 @@
       "answer": "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to be agreed by the Lok Sabha.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-08",
-      "linked_note_id": "civ-rev-ch1-08"
+      "linksTo": "civ-rev-ch1-04",
+      "linked_note_id": "civ-rev-ch1-04"
     },
     {
-      "id": "civ-ch1-mcq059",
-      "q_id": "civ-ch1-mcq059",
+      "id": "civ-ch1-mcq055",
+      "q_id": "civ-ch1-mcq055",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1579,12 +1495,12 @@
       "answer": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-09",
-      "linked_note_id": "civ-rev-ch1-09"
+      "linksTo": "civ-rev-ch1-05",
+      "linked_note_id": "civ-rev-ch1-05"
     },
     {
-      "id": "civ-ch1-mcq060",
-      "q_id": "civ-ch1-mcq060",
+      "id": "civ-ch1-mcq056",
+      "q_id": "civ-ch1-mcq056",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1599,12 +1515,12 @@
       "answer": "While the President is the $ \\underline{\\text{nominal or",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-10",
-      "linked_note_id": "civ-rev-ch1-10"
+      "linksTo": "civ-rev-ch1-06",
+      "linked_note_id": "civ-rev-ch1-06"
     },
     {
-      "id": "civ-ch1-mcq061",
-      "q_id": "civ-ch1-mcq061",
+      "id": "civ-ch1-mcq057",
+      "q_id": "civ-ch1-mcq057",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1619,12 +1535,12 @@
       "answer": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-01",
-      "linked_note_id": "civ-rev-ch1-01"
+      "linksTo": "civ-rev-ch1-07",
+      "linked_note_id": "civ-rev-ch1-07"
     },
     {
-      "id": "civ-ch1-mcq062",
-      "q_id": "civ-ch1-mcq062",
+      "id": "civ-ch1-mcq058",
+      "q_id": "civ-ch1-mcq058",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1639,12 +1555,12 @@
       "answer": "##### Former Prime Ministers of India",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-02",
-      "linked_note_id": "civ-rev-ch1-02"
+      "linksTo": "civ-rev-ch1-08",
+      "linked_note_id": "civ-rev-ch1-08"
     },
     {
-      "id": "civ-ch1-mcq063",
-      "q_id": "civ-ch1-mcq063",
+      "id": "civ-ch1-mcq059",
+      "q_id": "civ-ch1-mcq059",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1659,12 +1575,12 @@
       "answer": "Study the given pictures. Can you name these Prime Ministers of India?",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-03",
-      "linked_note_id": "civ-rev-ch1-03"
+      "linksTo": "civ-rev-ch1-09",
+      "linked_note_id": "civ-rev-ch1-09"
     },
     {
-      "id": "civ-ch1-mcq064",
-      "q_id": "civ-ch1-mcq064",
+      "id": "civ-ch1-mcq060",
+      "q_id": "civ-ch1-mcq060",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1679,12 +1595,12 @@
       "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-04",
-      "linked_note_id": "civ-rev-ch1-04"
+      "linksTo": "civ-rev-ch1-10",
+      "linked_note_id": "civ-rev-ch1-10"
     },
     {
-      "id": "civ-ch1-mcq065",
-      "q_id": "civ-ch1-mcq065",
+      "id": "civ-ch1-mcq061",
+      "q_id": "civ-ch1-mcq061",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1699,32 +1615,12 @@
       "answer": "There are three organs of the government of India.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-05",
-      "linked_note_id": "civ-rev-ch1-05"
+      "linksTo": "civ-rev-ch1-01",
+      "linked_note_id": "civ-rev-ch1-01"
     },
     {
-      "id": "civ-ch1-mcq066",
-      "q_id": "civ-ch1-mcq066",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\nMust be a citizen of India",
-      "options": [
-        "Must be a citizen of India",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "Must be a citizen of India",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-06",
-      "linked_note_id": "civ-rev-ch1-06"
-    },
-    {
-      "id": "civ-ch1-mcq067",
-      "q_id": "civ-ch1-mcq067",
+      "id": "civ-ch1-mcq062",
+      "q_id": "civ-ch1-mcq062",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1739,32 +1635,12 @@
       "answer": "Must not be less than 25 years of age",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-07",
-      "linked_note_id": "civ-rev-ch1-07"
+      "linksTo": "civ-rev-ch1-02",
+      "linked_note_id": "civ-rev-ch1-02"
     },
     {
-      "id": "civ-ch1-mcq068",
-      "q_id": "civ-ch1-mcq068",
-      "topicId": "civ-ch1",
-      "type": "mcq",
-      "subtopic": "Objective Questions",
-      "question": "Which statement best describes the following?\nMust be of sound mind",
-      "options": [
-        "Must be of sound mind",
-        "The opposite is true.",
-        "It belongs to a different period.",
-        "It is not mentioned in this chapter."
-      ],
-      "correctOption": 0,
-      "answer": "Must be of sound mind",
-      "examTip": "Trust textbook facts over guesswork.",
-      "teacherTip": "",
-      "linksTo": "civ-rev-ch1-08",
-      "linked_note_id": "civ-rev-ch1-08"
-    },
-    {
-      "id": "civ-ch1-mcq069",
-      "q_id": "civ-ch1-mcq069",
+      "id": "civ-ch1-mcq063",
+      "q_id": "civ-ch1-mcq063",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1779,12 +1655,12 @@
       "answer": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
-      "linksTo": "civ-rev-ch1-09",
-      "linked_note_id": "civ-rev-ch1-09"
+      "linksTo": "civ-rev-ch1-03",
+      "linked_note_id": "civ-rev-ch1-03"
     },
     {
-      "id": "civ-ch1-mcq070",
-      "q_id": "civ-ch1-mcq070",
+      "id": "civ-ch1-mcq064",
+      "q_id": "civ-ch1-mcq064",
       "topicId": "civ-ch1",
       "type": "mcq",
       "subtopic": "Objective Questions",
@@ -1797,6 +1673,126 @@
       ],
       "correctOption": 0,
       "answer": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-04",
+      "linked_note_id": "civ-rev-ch1-04"
+    },
+    {
+      "id": "civ-ch1-mcq065",
+      "q_id": "civ-ch1-mcq065",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nHave you seen this channel? How do you think the media helps us to understand government affairs better?",
+      "options": [
+        "Have you seen this channel? How do you think the media helps us to understand government affairs bet",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-05",
+      "linked_note_id": "civ-rev-ch1-05"
+    },
+    {
+      "id": "civ-ch1-mcq066",
+      "q_id": "civ-ch1-mcq066",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nA bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl",
+      "options": [
+        "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-06",
+      "linked_note_id": "civ-rev-ch1-06"
+    },
+    {
+      "id": "civ-ch1-mcq067",
+      "q_id": "civ-ch1-mcq067",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nThe Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the",
+      "options": [
+        "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-07",
+      "linked_note_id": "civ-rev-ch1-07"
+    },
+    {
+      "id": "civ-ch1-mcq068",
+      "q_id": "civ-ch1-mcq068",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nDr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
+      "options": [
+        "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-08",
+      "linked_note_id": "civ-rev-ch1-08"
+    },
+    {
+      "id": "civ-ch1-mcq069",
+      "q_id": "civ-ch1-mcq069",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nMust be at least 35 years of age",
+      "options": [
+        "Must be at least 35 years of age",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "Must be at least 35 years of age",
+      "examTip": "Trust textbook facts over guesswork.",
+      "teacherTip": "",
+      "linksTo": "civ-rev-ch1-09",
+      "linked_note_id": "civ-rev-ch1-09"
+    },
+    {
+      "id": "civ-ch1-mcq070",
+      "q_id": "civ-ch1-mcq070",
+      "topicId": "civ-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which statement best describes the following?\nShould not hold an office of profit under the government—Centre, state or local level",
+      "options": [
+        "Should not hold an office of profit under the government—Centre, state or local level",
+        "The opposite is true.",
+        "It belongs to a different period.",
+        "It is not mentioned in this chapter."
+      ],
+      "correctOption": 0,
+      "answer": "Should not hold an office of profit under the government—Centre, state or local level",
       "examTip": "Trust textbook facts over guesswork.",
       "teacherTip": "",
       "linksTo": "civ-rev-ch1-10",
@@ -1844,9 +1840,9 @@
       "topicId": "civ-ch1",
       "type": "true_false",
       "subtopic": "Objective Questions",
-      "question": "Must be a citizen of India",
+      "question": "Must not be less than 25 years of age",
       "correctAnswer": "true",
-      "answer": "True. Must be a citizen of India",
+      "answer": "True. Must not be less than 25 years of age",
       "linksTo": "civ-rev-ch1-04",
       "linked_note_id": "civ-rev-ch1-04"
     },
@@ -1856,9 +1852,9 @@
       "topicId": "civ-ch1",
       "type": "true_false",
       "subtopic": "Objective Questions",
-      "question": "Must not be less than 25 years of age",
+      "question": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
       "correctAnswer": "true",
-      "answer": "True. Must not be less than 25 years of age",
+      "answer": "True. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
       "linksTo": "civ-rev-ch1-05",
       "linked_note_id": "civ-rev-ch1-05"
     },
@@ -1870,7 +1866,7 @@
       "subtopic": "Objective Questions",
       "question": "This chapter does not discuss any historical events or personalities.",
       "correctAnswer": "false",
-      "answer": "False. Must be of sound mind",
+      "answer": "False. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-06",
       "linked_note_id": "civ-rev-ch1-06"
     },
@@ -1882,7 +1878,7 @@
       "subtopic": "Objective Questions",
       "question": "This chapter does not discuss any historical events or personalities.",
       "correctAnswer": "false",
-      "answer": "False. after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
+      "answer": "False. Have you seen this channel? How do you think the media helps us to understand government affairs better?",
       "linksTo": "civ-rev-ch1-07",
       "linked_note_id": "civ-rev-ch1-07"
     },
@@ -1894,7 +1890,7 @@
       "subtopic": "Objective Questions",
       "question": "This chapter does not discuss any historical events or personalities.",
       "correctAnswer": "false",
-      "answer": "False. Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
+      "answer": "False. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
       "linksTo": "civ-rev-ch1-08",
       "linked_note_id": "civ-rev-ch1-08"
     },
@@ -1906,7 +1902,7 @@
       "subtopic": "Objective Questions",
       "question": "This chapter does not discuss any historical events or personalities.",
       "correctAnswer": "false",
-      "answer": "False. Have you seen this channel? How do you think the media helps us to understand government affairs better?",
+      "answer": "False. The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
       "linksTo": "civ-rev-ch1-09",
       "linked_note_id": "civ-rev-ch1-09"
     },
@@ -1918,7 +1914,7 @@
       "subtopic": "Objective Questions",
       "question": "This chapter does not discuss any historical events or personalities.",
       "correctAnswer": "false",
-      "answer": "False. A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+      "answer": "False. Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
       "linksTo": "civ-rev-ch1-10",
       "linked_note_id": "civ-rev-ch1-10"
     },
@@ -1964,9 +1960,9 @@
       "topicId": "civ-ch1",
       "type": "fill_blank",
       "subtopic": "Objective Questions",
-      "question": "Fill in the blank: ______ be a citizen of India",
+      "question": "Fill in the blank: ______ not be less than 25 years of age",
       "blankAnswer": "Must",
-      "answer": "Must be a citizen of India",
+      "answer": "Must not be less than 25 years of age",
       "linksTo": "civ-rev-ch1-04",
       "linked_note_id": "civ-rev-ch1-04"
     },
@@ -1976,9 +1972,9 @@
       "topicId": "civ-ch1",
       "type": "fill_blank",
       "subtopic": "Objective Questions",
-      "question": "Fill in the blank: ______ not be less than 25 years of age",
-      "blankAnswer": "Must",
-      "answer": "Must not be less than 25 years of age",
+      "question": "Fill in the blank: after ______, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
+      "blankAnswer": "Independence",
+      "answer": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
       "linksTo": "civ-rev-ch1-05",
       "linked_note_id": "civ-rev-ch1-05"
     },
@@ -2156,11 +2152,11 @@
           "right": "Significance / context from chapter"
         },
         {
-          "left": "Must be a citizen of India",
+          "left": "Must not be less than 25 years of age",
           "right": "Related cause or effect"
         }
       ],
-      "answer": "There are three organs of the government of I → chapter concept; Must be a citizen of India → related idea.",
+      "answer": "There are three organs of the government of I → chapter concept; Must not be less than 25 years of age → related idea.",
       "linksTo": "civ-rev-ch1-05",
       "linked_note_id": "civ-rev-ch1-05"
     },
@@ -2171,7 +2167,7 @@
       "type": "short_answer",
       "subtopic": "Short/Long Answer",
       "question": "Name three organs of the government of India.",
-      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must be a citizen of India\n• Must not be less than 25 years of age\n• Must be of sound mind",
+      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must not be less than 25 years of age\n• after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.\n• Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-06",
       "linked_note_id": "civ-rev-ch1-06"
     },
@@ -2182,7 +2178,7 @@
       "type": "short_answer",
       "subtopic": "Short/Long Answer",
       "question": "How is the President elected?",
-      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must be a citizen of India\n• Must not be less than 25 years of age\n• Must be of sound mind",
+      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must not be less than 25 years of age\n• after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.\n• Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-07",
       "linked_note_id": "civ-rev-ch1-07"
     },
@@ -2193,7 +2189,7 @@
       "type": "short_answer",
       "subtopic": "Short/Long Answer",
       "question": "State three functions of the Vice President.",
-      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must be a citizen of India\n• Must not be less than 25 years of age\n• Must be of sound mind",
+      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must not be less than 25 years of age\n• after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.\n• Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-08",
       "linked_note_id": "civ-rev-ch1-08"
     },
@@ -2204,7 +2200,7 @@
       "type": "short_answer",
       "subtopic": "Short/Long Answer",
       "question": "What is the role of the Prime Minister and her/his Cabinet?",
-      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must be a citizen of India\n• Must not be less than 25 years of age\n• Must be of sound mind",
+      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must not be less than 25 years of age\n• after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.\n• Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-09",
       "linked_note_id": "civ-rev-ch1-09"
     },
@@ -2215,7 +2211,7 @@
       "type": "short_answer",
       "subtopic": "Short/Long Answer",
       "question": "Give any two qualifications of a judge of the Supreme Court.",
-      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must be a citizen of India\n• Must not be less than 25 years of age\n• Must be of sound mind",
+      "answer": "• Study the given pictures. Can you name these Prime Ministers of India?\n• India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.\n• There are three organs of the government of India.\n• Must not be less than 25 years of age\n• after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.\n• Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
       "linksTo": "civ-rev-ch1-10",
       "linked_note_id": "civ-rev-ch1-10"
     }
@@ -2243,133 +2239,133 @@
     },
     {
       "id": "wc-04",
-      "term": "Must not be",
-      "definition": "Must not be less than 25 years of age"
-    },
-    {
-      "id": "wc-05",
-      "term": "Must be of",
-      "definition": "Must be of sound mind"
-    },
-    {
-      "id": "wc-06",
       "term": "after Independence, the",
       "definition": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape"
     },
     {
-      "id": "wc-07",
+      "id": "wc-05",
       "term": "Now One entire",
       "definition": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o"
     },
     {
-      "id": "wc-08",
+      "id": "wc-06",
       "term": "Have you seen",
       "definition": "Have you seen this channel? How do you think the media helps us to understand government affairs bet"
     },
     {
-      "id": "wc-09",
+      "id": "wc-07",
       "term": "A bill is",
       "definition": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft"
     },
     {
-      "id": "wc-10",
+      "id": "wc-08",
       "term": "The Union and",
       "definition": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and"
     },
     {
-      "id": "wc-11",
-      "term": "Former Presidents of",
-      "definition": "Former Presidents of India"
-    },
-    {
-      "id": "wc-12",
+      "id": "wc-09",
       "term": "Dr Rajendra Prasad",
       "definition": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain"
     },
     {
-      "id": "wc-13",
+      "id": "wc-10",
       "term": "Must be at",
       "definition": "Must be at least 35 years of age"
     },
     {
-      "id": "wc-14",
+      "id": "wc-11",
       "term": "Should not hold",
       "definition": "Should not hold an office of profit under the government—Centre, state or local level"
     },
     {
-      "id": "wc-15",
+      "id": "wc-12",
       "term": "The powers of",
       "definition": "The powers of the President can be grouped under the following heads:"
     },
     {
-      "id": "wc-16",
-      "term": "##### Executive Powers",
-      "definition": "##### Executive Powers"
-    },
-    {
-      "id": "wc-17",
+      "id": "wc-13",
       "term": "The President appoints",
       "definition": "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok "
     },
     {
-      "id": "wc-18",
+      "id": "wc-14",
       "term": "When no party",
       "definition": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist"
     },
     {
-      "id": "wc-19",
+      "id": "wc-15",
       "term": "The Vice President",
       "definition": "The Vice President is elected indirectly by an electoral college consisting only of members from bot"
     },
     {
-      "id": "wc-20",
+      "id": "wc-16",
       "term": "She/He is removed",
       "definition": "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to"
     },
     {
-      "id": "wc-21",
+      "id": "wc-17",
       "term": "The Vice President,",
       "definition": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p"
     },
     {
-      "id": "wc-22",
+      "id": "wc-18",
       "term": "While the President",
       "definition": "While the President is the $ \\underline{\\text{nominal or"
     },
     {
-      "id": "wc-23",
+      "id": "wc-19",
       "term": "constitutional head}} \\underli",
       "definition": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the "
     },
     {
-      "id": "wc-24",
+      "id": "wc-20",
       "term": "##### Former Prime",
       "definition": "##### Former Prime Ministers of India"
     },
     {
-      "id": "wc-25",
+      "id": "wc-21",
       "term": "Study the given",
       "definition": "Study the given pictures. Can you name these Prime Ministers of India?"
     },
     {
-      "id": "wc-26",
+      "id": "wc-22",
       "term": "India is a",
       "definition": "India is a parliamentary democracy, where the supreme power resides with the people of the country. "
     },
     {
-      "id": "wc-27",
+      "id": "wc-23",
       "term": "There are three",
       "definition": "There are three organs of the government of India."
     },
     {
+      "id": "wc-24",
+      "term": "Must not be",
+      "definition": "Must not be less than 25 years of age"
+    },
+    {
+      "id": "wc-25",
+      "term": "after Independence, the",
+      "definition": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape"
+    },
+    {
+      "id": "wc-26",
+      "term": "Now One entire",
+      "definition": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o"
+    },
+    {
+      "id": "wc-27",
+      "term": "Have you seen",
+      "definition": "Have you seen this channel? How do you think the media helps us to understand government affairs bet"
+    },
+    {
       "id": "wc-28",
-      "term": "Must be a",
-      "definition": "Must be a citizen of India"
+      "term": "A bill is",
+      "definition": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft"
     },
     {
       "id": "wc-29",
-      "term": "Must not be",
-      "definition": "Must not be less than 25 years of age"
+      "term": "The Union and",
+      "definition": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and"
     }
   ],
   "mindmap": "mindmap\n  root((Organs of the Indian Government))\n    14 Organs of the Indian Government\n      Study the given pictures. Can you name t\n      India is a parliamentary democracy, wher\n      There are three organs of the government\n    Qualifications for Members of the L\n      Must be a citizen of India\n      Must not be less than 25 years of age\n      Must be of sound mind\n    Connecting Past with Present\n      after Independence, the news about the p\n      Now One entire channel on television, kn\n      Have you seen this channel? How do you t\n    FUNCTIONS OF THE UNION PARLIAMENT\n      A bill is introduced in either House of \n    THE EXECUTIVE STRUCTURE IN INDIA\n      The Union and State Legislature are entr\n      Former Presidents of India\n      Dr Rajendra Prasad Dr S. Radhakrishnan D\n    Qualifications for the Post of Pres\n      Must be a citizen of India\n      Must be at least 35 years of age\n      Should not hold an office of profit unde\n    Powers and Functions of the Preside\n      The powers of the President can be group\n      ##### Executive Powers\n      The President appoints the Prime Ministe\n    Discretionary Powers\n      When no party wins an absolute majority \n      The Vice President is elected indirectly\n      She/He is removed by a resolution of the",
@@ -2377,26 +2373,23 @@
     "Study the given pictures. Can you name these Prime Ministers of India?",
     "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
     "There are three organs of the government of India.",
-    "Must be a citizen of India",
     "Must not be less than 25 years of age",
-    "Must be of sound mind",
     "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
     "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
     "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
     "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
     "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-    "Former Presidents of India",
     "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
     "Must be at least 35 years of age",
     "Should not hold an office of profit under the government—Centre, state or local level",
     "The powers of the President can be grouped under the following heads:",
-    "##### Executive Powers",
     "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
     "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
     "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
     "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to be agreed by the Lok Sabha.",
     "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working.",
     "While the President is the $ \\underline{\\text{nominal or",
-    "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs."
+    "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
+    "##### Former Prime Ministers of India"
   ]
 }

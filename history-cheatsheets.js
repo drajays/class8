@@ -5,53 +5,53 @@ const HISTORY_CHEATSHEET_DATA = {
   "topicId": "hist-ch1",
   "title": "A Period of Transition — Cheat Sheet",
   "topCram": [
-   "- Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
-   "- Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
-   "- Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
-   "**Executive summary:** Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of hist",
-   "• Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
-   "• Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
-   "**Executive summary:** The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosop",
-   "• The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosophy, art, politics, science and religion. It saw revolutions in the intellectual, social and political domains. However, it is also known for its artistic developments.",
-   "• The following were the major causes responsible for the Renaissance:",
-   "**Executive summary:** The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus,",
-   "• The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
-   "• The main motives of these explorers were as follows:"
+   "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+   "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
+   "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
+   "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosophy, art, politics, science and religion. It saw revolutions in the intellectual, social and political domains. However, it is also known for its artistic developments.",
+   "The following were the major causes responsible for the Renaissance:",
+   "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+   "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+   "The main motives of these explorers were as follows:",
+   "The Reformation of the 16th century is one of the greatest events in the history of the world.",
+   "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
+   "The act of changing a religious, political or social institution or system can be called a reformation.",
+   "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world."
   ],
   "sections": [
    {
     "title": "🧭 Core story",
     "items": [
      {
-      "text": "- Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+      "text": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "- Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
+      "text": "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "- Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
+      "text": "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "**Executive summary:** Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of hist",
+      "text": "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosophy, art, politics, science and religion. It saw revolutions in the intellectual, social and political domains. However, it is also known for its artistic developments.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "• Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+      "text": "The following were the major causes responsible for the Renaissance:",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "• Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
+      "text": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "**Executive summary:** The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosop",
+      "text": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
       "noteId": "hist-rev-ch1-01"
      },
      {
-      "text": "• The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influenced literature, philosophy, art, politics, science and religion. It saw revolutions in the intellectual, social and political domains. However, it is also known for its artistic developments.",
+      "text": "The main motives of these explorers were as follows:",
       "noteId": "hist-rev-ch1-01"
      }
     ]
@@ -60,35 +60,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "• The following were the major causes responsible for the Renaissance:",
+      "text": "The Reformation of the 16th century is one of the greatest events in the history of the world.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "**Executive summary:** The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus,",
+      "text": "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "• The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+      "text": "The act of changing a religious, political or social institution or system can be called a reformation.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "• The main motives of these explorers were as follows:",
+      "text": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "**Executive summary:** The Reformation of the 16th century is one of the greatest events in the history of the world.",
+      "text": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic development of Britain from 1760 to 1840. The Industrial Revolution was characterised by the use of steam-powered engines, machines and the spread of factories. The goods were mass-produced and mechanised transport was used.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "• The Reformation of the 16th century is one of the greatest events in the history of the world.",
+      "text": "The Industrial Revolution depended on machines such as the steam engine and cotton mill. It also brought about the rapid shift from villages to towns and cities.",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "• Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
+      "text": "The following reasons led to the beginning of the Industrial Revolution in Britain first:",
       "noteId": "hist-rev-ch1-02"
      },
      {
-      "text": "**Executive summary:** The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, th",
+      "text": "The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in rural areas on which they grew and harvested small crops and raised small herds of livestock. Alongside, there were big landlords who could increase production by introducing machines on land. However, machines could not be introduced on the small strips of land. Thus, the need was to consolidate the holdings. The Acts passed by the British Parliament allowed the landlords to buy the small strips of land and enclose it with a boundary. Machines were introduced on this enclosed land. As a result, the production increased greatly. Hence, it is often said that revolution in agriculture resulted in the Industrial Revolution.",
       "noteId": "hist-rev-ch1-02"
      }
     ]
@@ -97,35 +97,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "• The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+      "text": "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during that period.",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "• The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic development of Britain from 1760 to 1840. The Industrial Revolution was characterised by the use of steam-powered engines, machines and the spread of factories. The goods were mass-produced and mechanised transport was used.",
+      "text": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "**Executive summary:** The following reasons led to the beginning of the Industrial Revolution in Britain first:",
+      "text": "new territories through treaties and military conquests. The different forms of imperialism are as follows:",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "• The following reasons led to the beginning of the Industrial Revolution in Britain first:",
+      "text": "Colony: A territory that an imperial power ruled directly through colonial officials",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "• The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in rural areas on which they grew and harvested small crops and raised small herds of livestock. Alongside, there were big landlords who could increase production by introducing machines on land. However, machines could not be introduced on the small strips of land. Thus, the need was to consolidate the holdings. The Acts passed by the British Parliament allowed the landlords to buy the small strips of land and enclose it with a boundary. Machines were introduced on this enclosed land. As a result, the production increased greatly. Hence, it is often said that revolution in agriculture resulted in the Industrial Revolution.",
+      "text": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for control of the trade in India. The British defeated the French in 1760 and subsequently, expanded their territory in India through wars, diplomacy and commercial activities.",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "**Executive summary:** Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control",
+      "text": "social and cross-cultural interaction: global awareness",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "• Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+      "text": "1. 'The Industrial Revolution gave rise to imperialism, which led to the exploitation of the colonies'. Do you support the statement? Give reasons for your answer.",
       "noteId": "hist-rev-ch1-03"
      },
      {
-      "text": "• new territories through treaties and military conquests. The different forms of imperialism are as follows:",
+      "text": "2. Which of the following statements is not a cause for the rise of imperialism? Give at least one reason for your answer.",
       "noteId": "hist-rev-ch1-03"
      }
     ]
@@ -133,154 +133,154 @@ const HISTORY_CHEATSHEET_DATA = {
   ],
   "wordCards": [
    {
-    "id": "wc-aa52b60d",
-    "term": "- Primary sources",
-    "definition": "- Primary sources are the evidences that historians use to know about events, people and their everyday life in the past"
+    "id": "wc-23d20ddc",
+    "term": "Diet of Worms",
+    "definition": "meeting of the Diet (assembly) of the Holy Roman Empire held at Worms, Germany Excommunicated: to officially say that so"
    },
    {
-    "id": "wc-1722c3a0",
-    "term": "- Secondary sources",
-    "definition": "- Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary s"
+    "id": "wc-07c09483",
+    "term": "Factory system",
+    "definition": "a system of manufacturing using machinery and division of labour, which began in the 18th century in Britain at the begi"
    },
    {
-    "id": "wc-17a97cb2",
-    "term": "**Executive summary:** Primary sources",
-    "definition": "**Executive summary:** Primary sources are the evidences that historians use to know about events, people and their ever"
+    "id": "wc-0c8e1e05",
+    "term": "Grecian",
+    "definition": "related to the style of ancient Greece"
    },
    {
-    "id": "wc-9f5bfb82",
-    "term": "• Primary sources",
-    "definition": "• Primary sources are the evidences that historians use to know about events, people and their everyday life in the past"
+    "id": "wc-c09b35fc",
+    "term": "Humanists",
+    "definition": "people who believe that solving human problems with the help of reason is more important than religious beliefs; they la"
    },
    {
-    "id": "wc-36ed5f2a",
-    "term": "• Secondary sources",
-    "definition": "• Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary s"
+    "id": "wc-4194cd14",
+    "term": "Socialism",
+    "definition": "a political system that aims to create a society in which everyone has equal opportunities, and industries are owned or "
    },
    {
-    "id": "wc-8923b8e8",
-    "term": "**Executive summary:** The Renaissance",
-    "definition": "**Executive summary:** The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, a"
+    "id": "wc-5f145793",
+    "term": "Upheaval",
+    "definition": "a sudden or violent change, especially one that affects people's lives"
    },
    {
-    "id": "wc-34b23695",
-    "term": "• The Renaissance",
-    "definition": "• The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the"
+    "id": "wc-b02fecad",
+    "term": "Urbanisation",
+    "definition": "the process in which towns and cities grow bigger and people shift from rural to urban areas"
    },
    {
-    "id": "wc-31910aba",
-    "term": "• The following",
-    "definition": "• The following were the major causes responsible for the Renaissance:"
+    "id": "wc-189d0430",
+    "term": "Primary sources",
+    "definition": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. "
    },
    {
-    "id": "wc-d019317f",
-    "term": "• The main motives of these explorers",
-    "definition": "• The main motives of these explorers were as follows:"
+    "id": "wc-c94b2ef9",
+    "term": "Secondary sources",
+    "definition": "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary sou"
    },
    {
-    "id": "wc-66a6e140",
-    "term": "• The Reformation of the 16th century",
-    "definition": "• The Reformation of the 16th century is one of the greatest events in the history of the world."
+    "id": "wc-30526994",
+    "term": "The Renaissance",
+    "definition": "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the r"
    },
    {
-    "id": "wc-f7939a19",
-    "term": "• The term ‘Industrial Revolution’",
-    "definition": "• The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explai"
+    "id": "wc-2ef61e27",
+    "term": "The following",
+    "definition": "The following were the major causes responsible for the Renaissance:"
    },
    {
-    "id": "wc-b3e41667",
-    "term": "**Executive summary:** Imperialism",
-    "definition": "**Executive summary:** Imperialism means one country's domination of the political, economic and social spheres of anoth"
+    "id": "wc-5c8ab4c0",
+    "term": "The main motives of these explorers",
+    "definition": "The main motives of these explorers were as follows:"
    },
    {
-    "id": "wc-ef0e9095",
-    "term": "• Imperialism",
-    "definition": "• Imperialism means one country's domination of the political, economic and social spheres of another country. In recent"
+    "id": "wc-b28fd4b1",
+    "term": "The Reformation of the 16th century",
+    "definition": "The Reformation of the 16th century is one of the greatest events in the history of the world."
    },
    {
-    "id": "wc-13",
-    "term": "• The Reformation",
-    "definition": "• The Reformation of the 16th century is one of the greatest events in the history of the world."
+    "id": "wc-01862ca5",
+    "term": "The term ‘Industrial Revolution’",
+    "definition": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explaine"
    },
    {
-    "id": "wc-14",
-    "term": "• Reformation comes",
-    "definition": "• Reformation comes from the word 'reform', which means making changes in something to make it corre"
+    "id": "wc-917e277a",
+    "term": "Imperialism",
+    "definition": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent t"
    },
    {
-    "id": "wc-15",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The Industrial Revolution began in England in the 18th century and later spre"
+    "id": "wc-c675c696",
+    "term": "2. Which of the following statements",
+    "definition": "2. Which of the following statements is not a cause for the rise of imperialism? Give at least one reason for your answe"
    },
    {
     "id": "wc-16",
-    "term": "• The Industrial",
-    "definition": "• The Industrial Revolution began in England in the 18th century and later spread to other parts of "
+    "term": "Availability of coal",
+    "definition": "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to t"
    },
    {
     "id": "wc-17",
-    "term": "• The term",
-    "definition": "• The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic histo"
+    "term": "Imperialism means one",
+    "definition": "Imperialism means one country's domination of the political, economic and social spheres of another "
    },
    {
     "id": "wc-18",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The following reasons led to the beginning of the Industrial Revolution in Br"
+    "term": "new territories through",
+    "definition": "new territories through treaties and military conquests. The different forms of imperialism are as f"
    },
    {
     "id": "wc-19",
-    "term": "• The following",
-    "definition": "• The following reasons led to the beginning of the Industrial Revolution in Britain first:"
+    "term": "Colony: A territory",
+    "definition": "Colony: A territory that an imperial power ruled directly through colonial officials"
    },
    {
     "id": "wc-20",
-    "term": "• The Enclosure",
-    "definition": "• The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 "
+    "term": "The European powers",
+    "definition": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the"
    },
    {
     "id": "wc-21",
-    "term": "**Executive summary:** Imperia",
-    "definition": "**Executive summary:** Imperialism means one country's domination of the political, economic and soc"
+    "term": "social and cross-cultural",
+    "definition": "social and cross-cultural interaction: global awareness"
    },
    {
     "id": "wc-22",
-    "term": "• Imperialism means",
-    "definition": "• Imperialism means one country's domination of the political, economic and social spheres of anothe"
+    "term": "1. 'The Industrial",
+    "definition": "1. 'The Industrial Revolution gave rise to imperialism, which led to the exploitation of the colonie"
    },
    {
     "id": "wc-23",
-    "term": "• new territories",
-    "definition": "• new territories through treaties and military conquests. The different forms of imperialism are as"
+    "term": "2. Which of",
+    "definition": "2. Which of the following statements is not a cause for the rise of imperialism? Give at least one r"
    },
    {
     "id": "wc-24",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The European powers began to explore trading opportunities in Asia in the 150"
+    "term": "a. The outbreak",
+    "definition": "a. The outbreak of the First and Second World Wars resulted in imperialism."
    },
    {
     "id": "wc-25",
-    "term": "• The European",
-    "definition": "• The European powers began to explore trading opportunities in Asia in the 1500s. The British and t"
+    "term": "1. Differentiate between",
+    "definition": "1. Differentiate between primary and secondary sources."
    },
    {
     "id": "wc-26",
-    "term": "• • social",
-    "definition": "• • social and cross-cultural interaction: global awareness"
+    "term": "2. Describe the",
+    "definition": "2. Describe the characteristics of the Renaissance Movement."
    },
    {
     "id": "wc-27",
-    "term": "**Executive summary:** Diet",
-    "definition": "**Executive summary:** Diet of Worms: meeting of the Diet (assembly) of the Holy Roman Empire held a"
+    "term": "3. Why is",
+    "definition": "3. Why is the Reformation of the 16th century regarded as one the greatest events in world history?"
    },
    {
     "id": "wc-28",
-    "term": "• Diet of",
-    "definition": "• Diet of Worms: meeting of the Diet (assembly) of the Holy Roman Empire held at Worms, Germany Exco"
+    "term": "Primary sources are",
+    "definition": "Primary sources are the evidences that historians use to know about events, people and their everyda"
    },
    {
     "id": "wc-29",
-    "term": "• Factory system:",
-    "definition": "• Factory system: a system of manufacturing using machinery and division of labour, which began in t"
+    "term": "Secondary sources are",
+    "definition": "Secondary sources are any account, record or evidence derived from interpreting and analysing an ori"
    }
   ]
  },
@@ -288,53 +288,53 @@ const HISTORY_CHEATSHEET_DATA = {
   "topicId": "hist-ch2",
   "title": "The Age of Revolutions — Cheat Sheet",
   "topCram": [
-   "- This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
-   "- ##### Learning Outcomes",
-   "- At the end of this lesson, learners will be able to:",
-   "**Executive summary:** This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the",
-   "• This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
-   "• ##### Learning Outcomes",
-   "**Executive summary:** Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways we",
-   "• Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
-   "• □ Storming of the Bastille",
-   "**Executive summary:** The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great",
-   "• The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
-   "• ##### Struggle by the Colonies"
+   "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
+   "At the end of this lesson, learners will be able to:",
+   "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+   "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The American Revolution was one of the earliest revolutions to take place in the modern world. During this revolution, the Americans rejected colonial rule and chose the path of democracy. On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+   "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+   "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
+   "The French society before the revolution was arranged in order of rank and was divided into three main classes called Estates. Look at the diagram below to know about the three Estates.",
+   "comprising professionals and traders",
+   "with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class with their ideas of liberty, equality and fraternity, which went on to become the slogan of the French Revolution.",
+   "##### Causes of the French Revolution",
+   "The French soldiers who fought in the American Revolution were inspired by its success. They in turn motivated their own people to fight against the indifferent and unjust government.",
+   "The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political and social systems based on the principles of liberty, equality and fraternity. Democracy became the new form of government. Mass movements all"
   ],
   "sections": [
    {
     "title": "🧭 Core story",
     "items": [
      {
-      "text": "- This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
+      "text": "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "- ##### Learning Outcomes",
+      "text": "At the end of this lesson, learners will be able to:",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "- At the end of this lesson, learners will be able to:",
+      "text": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "**Executive summary:** This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the",
+      "text": "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The American Revolution was one of the earliest revolutions to take place in the modern world. During this revolution, the Americans rejected colonial rule and chose the path of democracy. On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "• This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
+      "text": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "• ##### Learning Outcomes",
+      "text": "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "**Executive summary:** Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways we",
+      "text": "The French society before the revolution was arranged in order of rank and was divided into three main classes called Estates. Look at the diagram below to know about the three Estates.",
       "noteId": "hist-rev-ch2-01"
      },
      {
-      "text": "• Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+      "text": "comprising professionals and traders",
       "noteId": "hist-rev-ch2-01"
      }
     ]
@@ -343,35 +343,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "• □ Storming of the Bastille",
+      "text": "with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class with their ideas of liberty, equality and fraternity, which went on to become the slogan of the French Revolution.",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "**Executive summary:** The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great",
+      "text": "##### Causes of the French Revolution",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "• The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+      "text": "The French soldiers who fought in the American Revolution were inspired by its success. They in turn motivated their own people to fight against the indifferent and unjust government.",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "• ##### Struggle by the Colonies",
+      "text": "The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political and social systems based on the principles of liberty, equality and fraternity. Democracy became the new form of government. Mass movements all",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "**Executive summary:** The French society before the revolution was arranged in order of rank and was divided into three main classes called Estates. Look at the diagram below to know about the three Est",
+      "text": "over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism.",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "• The French society before the revolution was arranged in order of rank and was divided into three main classes called Estates. Look at the diagram below to know about the three Estates.",
+      "text": "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieutenant in the French army. He won the confidence of his people and seniors with his energy and ability to make quick decisions. He rose through the ranks of the French army.",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "• bourgeoisie (middle class)",
+      "text": "Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napoleon I, the Emperor of France.",
       "noteId": "hist-rev-ch2-02"
      },
      {
-      "text": "**Executive summary:** with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class wit",
+      "text": "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleonic Wars, these campaigns targeted every major European power.",
       "noteId": "hist-rev-ch2-02"
      }
     ]
@@ -380,35 +380,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "• with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class with their ideas of liberty, equality and fraternity, which went on to become the slogan of the French Revolution.",
+      "text": "1. Which of the following statements is true for the American Revolution? Give at least one reason for your answer.",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "• ##### Causes of the French Revolution",
+      "text": "a. The American society was divided into three classes before the American War of Independence.",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "**Executive summary:** The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political",
+      "text": "b. The British allowed significant autonomy to the American Colonies to govern themselves.",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "• The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political and social systems based on the principles of liberty, equality and fraternity. Democracy became the new form of government. Mass movements all",
+      "text": "1. What is 'No taxation without representation'?",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "• over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism.",
+      "text": "3. Name two important French philosophers who played a major role in the revolutionary movement.",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "**Executive summary:** Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieutenant in the French army. He won the confidence of his people",
+      "text": "When the king decided to tax the landowners, the nobles refused to support this measure. The entire burden of taxation, therefore, fell on the Third Estate, and they were taxed on everything, including necessities such as salt. They were also denied most privileges. The worst affected were the poor peasants. The bourgeoisie or the middle class had acquired wealth, but were deprived of their political rights. It was the discontented bourgeoisie who took up the leadership to initiate the French Revolution.",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "• Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieutenant in the French army. He won the confidence of his people and seniors with his energy and ability to make quick decisions. He rose through the ranks of the French army.",
+      "text": "1. How did the Third Estate suffer?",
       "noteId": "hist-rev-ch2-03"
      },
      {
-      "text": "• Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napoleon I, the Emperor of France.",
+      "text": "2. Who formed the French society before the revolution?",
       "noteId": "hist-rev-ch2-03"
      }
     ]
@@ -416,154 +416,154 @@ const HISTORY_CHEATSHEET_DATA = {
   ],
   "wordCards": [
    {
-    "id": "wc-c1ea08de",
-    "term": "• The American War of Independence",
-    "definition": "• The American War of Independence was the world's first organised political upheaval in which 13 British colonies in No"
+    "id": "wc-b375e519",
+    "term": "Bill of Rights",
+    "definition": "the first 10 amendments to the US Constitution, adopted in 1791; constitutes a collection of guarantees of individual ri"
    },
    {
-    "id": "wc-b4c21264",
-    "term": "• over the world",
-    "definition": "• over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism."
+    "id": "wc-f030b526",
+    "term": "Colonists",
+    "definition": "settlers who migrated to America and set up permanent colonies there"
    },
    {
-    "id": "wc-15036c4e",
-    "term": "• Napoleon Bonaparte",
-    "definition": "• Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieu"
+    "id": "wc-f9599461",
+    "term": "Declaration of Independence",
+    "definition": "a resolution adopted by American colonists at Philadelphia in 1776; it stated their right to free themselves from the Br"
    },
    {
-    "id": "wc-be565916",
-    "term": "• 1. Which of the following statements",
-    "definition": "• 1. Which of the following statements is true for the American Revolution? Give at least one reason for your answer."
+    "id": "wc-8175978d",
+    "term": "First Estate",
+    "definition": "a class in French society; it consisted of the clergy"
    },
    {
-    "id": "wc-92e299a1",
-    "term": "• a. The American society",
-    "definition": "• a. The American society was divided into three classes before the American War of Independence."
+    "id": "wc-4aeefc69",
+    "term": "Guillotined",
+    "definition": "to behead a person by using a machine with a heavy and sharp blade"
    },
    {
-    "id": "wc-05",
-    "term": "• ##### Learning",
-    "definition": "• ##### Learning Outcomes"
+    "id": "wc-e0169674",
+    "term": "Liberty, Equality, Fraternity",
+    "definition": "popular ideas during the French Revolution; emphasised freedom, equal status and brotherhood among the French"
    },
    {
-    "id": "wc-06",
-    "term": "**Executive summary:** Study",
-    "definition": "**Executive summary:** Study the pictures given below. Write for the picture showing an event from t"
+    "id": "wc-e4a1ba7f",
+    "term": "Militia",
+    "definition": "a group of ordinary people trained as soldiers to fight in an emergency"
    },
    {
-    "id": "wc-07",
-    "term": "• Study the",
-    "definition": "• Study the pictures given below. Write for the picture showing an event from the American Revolutio"
+    "id": "wc-2a91a0e8",
+    "term": "National Assembly",
+    "definition": "formed of members elected from the Third Estate in France"
    },
    {
-    "id": "wc-08",
-    "term": "• □ Storming",
-    "definition": "• □ Storming of the Bastille"
+    "id": "wc-b26ac2b2",
+    "term": "No taxation without representation",
+    "definition": "a slogan of the American colonists that originated during 1750s and 1760s; it demanded the right of self-governance in l"
    },
    {
-    "id": "wc-09",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The American War of Independence was the world's first organised political up"
+    "id": "wc-f7952e3a",
+    "term": "Punitive",
+    "definition": "relating to or causing punishment or great difficulty"
    },
    {
-    "id": "wc-10",
-    "term": "• The American",
-    "definition": "• The American War of Independence was the world's first organised political upheaval in which 13 Br"
+    "id": "wc-16cded96",
+    "term": "Second Estate",
+    "definition": "a class in French society; it consisted of the nobles and their families"
    },
    {
-    "id": "wc-11",
-    "term": "• ##### Struggle",
-    "definition": "• ##### Struggle by the Colonies"
+    "id": "wc-383bcfb4",
+    "term": "Third Estate",
+    "definition": "a class consisting of peasants, artisans, workers, and the middle-class merchants, manufacturers, professionals in the F"
    },
    {
-    "id": "wc-12",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The French society before the revolution was arranged in order of rank and wa"
+    "id": "wc-408653d6",
+    "term": "The American War of Independence",
+    "definition": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in Nort"
    },
    {
-    "id": "wc-13",
-    "term": "• The French",
-    "definition": "• The French society before the revolution was arranged in order of rank and was divided into three "
+    "id": "wc-cd7cfb07",
+    "term": "The French society before the revolution",
+    "definition": "The French society before the revolution was arranged in order of rank and was divided into three main classes called Es"
    },
    {
-    "id": "wc-14",
-    "term": "• bourgeoisie (middle",
-    "definition": "• bourgeoisie (middle class)"
+    "id": "wc-b9add790",
+    "term": "over the world",
+    "definition": "over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism."
    },
    {
-    "id": "wc-15",
-    "term": "**Executive summary:** with",
-    "definition": "**Executive summary:** with the ideas of a revolution. These philosophers, through their writings, d"
+    "id": "wc-0eaa3973",
+    "term": "Napoleon Bonaparte",
+    "definition": "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieute"
    },
    {
-    "id": "wc-16",
-    "term": "• with the",
-    "definition": "• with the ideas of a revolution. These philosophers, through their writings, discussed the injustic"
+    "id": "wc-2113f3d0",
+    "term": "1. Which of the following statements",
+    "definition": "1. Which of the following statements is true for the American Revolution? Give at least one reason for your answer."
    },
    {
-    "id": "wc-17",
-    "term": "• ##### Causes",
-    "definition": "• ##### Causes of the French Revolution"
+    "id": "wc-60131f3f",
+    "term": "a. The American society",
+    "definition": "a. The American society was divided into three classes before the American War of Independence."
    },
    {
     "id": "wc-18",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The success of the French Revolution inspired people in other European countr"
+    "term": "b. The British",
+    "definition": "b. The British allowed significant autonomy to the American Colonies to govern themselves."
    },
    {
     "id": "wc-19",
-    "term": "• The success",
-    "definition": "• The success of the French Revolution inspired people in other European countries. They rose in rev"
+    "term": "1. What is",
+    "definition": "1. What is 'No taxation without representation'?"
    },
    {
     "id": "wc-20",
-    "term": "• over the",
-    "definition": "• over the world were inspired by the French Revolution, and people imbibed the spirit of nationalis"
+    "term": "3. Name two",
+    "definition": "3. Name two important French philosophers who played a major role in the revolutionary movement."
    },
    {
     "id": "wc-21",
-    "term": "**Executive summary:** Napoleo",
-    "definition": "**Executive summary:** Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. I"
+    "term": "When the king",
+    "definition": "When the king decided to tax the landowners, the nobles refused to support this measure. The entire "
    },
    {
     "id": "wc-22",
-    "term": "• Napoleon Bonaparte",
-    "definition": "• Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was "
+    "term": "1. How did",
+    "definition": "1. How did the Third Estate suffer?"
    },
    {
     "id": "wc-23",
-    "term": "• Through his",
-    "definition": "• Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napo"
+    "term": "2. Who formed",
+    "definition": "2. Who formed the French society before the revolution?"
    },
    {
     "id": "wc-24",
-    "term": "**Executive summary:** Bill",
-    "definition": "**Executive summary:** Bill of Rights: the first 10 amendments to the US Constitution, adopted in 17"
+    "term": "This painting by",
+    "definition": "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at th"
    },
    {
     "id": "wc-25",
-    "term": "• Bill of",
-    "definition": "• Bill of Rights: the first 10 amendments to the US Constitution, adopted in 1791; constitutes a col"
+    "term": "At the end",
+    "definition": "At the end of this lesson, learners will be able to:"
    },
    {
     "id": "wc-26",
-    "term": "• Colonists: settlers",
-    "definition": "• Colonists: settlers who migrated to America and set up permanent colonies there"
+    "term": "Study the pictures",
+    "definition": "Study the pictures given below. Write for the picture showing an event from the American Revolution "
    },
    {
     "id": "wc-27",
-    "term": "**Executive summary:** 1.",
-    "definition": "**Executive summary:** 1. Which of the following statements is true for the American Revolution? Giv"
+    "term": "Two revolutions that",
+    "definition": "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and"
    },
    {
     "id": "wc-28",
-    "term": "• 1. Which",
-    "definition": "• 1. Which of the following statements is true for the American Revolution? Give at least one reason"
+    "term": "The American War",
+    "definition": "The American War of Independence was the world's first organised political upheaval in which 13 Brit"
    },
    {
     "id": "wc-29",
-    "term": "• a. The",
-    "definition": "• a. The American society was divided into three classes before the American War of Independence."
+    "term": "After the discovery",
+    "definition": "After the discovery of the American continent in the 16th century, 13 British colonies had been esta"
    }
   ]
  },
@@ -571,53 +571,53 @@ const HISTORY_CHEATSHEET_DATA = {
   "topicId": "hist-ch3",
   "title": "The American Civil War — Cheat Sheet",
   "topCram": [
-   "- The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
-   "- ##### Learning Outcomes",
-   "- At the end of this lesson, learners will be able to:",
-   "**Executive summary:** The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slav",
-   "• The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
-   "• ##### Learning Outcomes",
-   "**Executive summary:** Proclamation of Emancipation",
-   "• Proclamation of Emancipation",
-   "• The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of conflict between the northern and southern states of America.",
-   "**Executive summary:** The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
-   "• The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
-   "The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war."
+   "The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
+   "At the end of this lesson, learners will be able to:",
+   "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of conflict between the northern and southern states of America.",
+   "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
+   "The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
+   "Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the south was mainly agricultural and dependent on the great",
+   "plantation estates. The northern states, however, developed as manufacturing and shipping centres.",
+   "Differences in economic activities between the northern and southern states also led to differences in culture and the world view between the two regions. As a result, the states did not agree on a number of issues, including slavery.",
+   "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
+   "and the war officially ended in April 1865. General Robert Edward Lee's surrender at Appomattox Court House in April 1865 marked the end of the Civil War.",
+   "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+   "Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pennsylvania. Answer the questions that follow."
   ],
   "sections": [
    {
     "title": "🧭 Core story",
     "items": [
      {
-      "text": "- The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
+      "text": "The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "- ##### Learning Outcomes",
+      "text": "At the end of this lesson, learners will be able to:",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "- At the end of this lesson, learners will be able to:",
+      "text": "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of conflict between the northern and southern states of America.",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "**Executive summary:** The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slav",
+      "text": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "• The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fighting with each other over the issue of slavery.",
+      "text": "The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "• ##### Learning Outcomes",
+      "text": "Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the south was mainly agricultural and dependent on the great",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "**Executive summary:** Proclamation of Emancipation",
+      "text": "plantation estates. The northern states, however, developed as manufacturing and shipping centres.",
       "noteId": "hist-rev-ch3-01"
      },
      {
-      "text": "• Proclamation of Emancipation",
+      "text": "Differences in economic activities between the northern and southern states also led to differences in culture and the world view between the two regions. As a result, the states did not agree on a number of issues, including slavery.",
       "noteId": "hist-rev-ch3-01"
      }
     ]
@@ -626,35 +626,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "• The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of conflict between the northern and southern states of America.",
+      "text": "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "**Executive summary:** The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
+      "text": "and the war officially ended in April 1865. General Robert Edward Lee's surrender at Appomattox Court House in April 1865 marked the end of the Civil War.",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "• The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
+      "text": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "The anti-slavery movements played a significant role in the outbreak of the American Civil War. Various other social, political and cultural factors also led to this war.",
+      "text": "Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pennsylvania. Answer the questions that follow.",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "**Executive summary:** Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the",
+      "text": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. It is rather for us to be here dedicated to the great task remaining before us—that ... this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "• Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the south was mainly agricultural and dependent on the great",
+      "text": "What does Lincoln say about slavery in this excerpt?",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "• plantation estates. The northern states, however, developed as manufacturing and shipping centres.",
+      "text": "1. Which one of the following played a significant role in the outbreak of the American Civil War?",
       "noteId": "hist-rev-ch3-02"
      },
      {
-      "text": "**Executive summary:** Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
+      "text": "b. The American War of Independence",
       "noteId": "hist-rev-ch3-02"
      }
     ]
@@ -663,35 +663,27 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "• Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
+      "text": "President Lincoln: the Great Emancipator :: Jefferson Davis: the President of the Confederate States of America :: General Robert Edward Lee: _____",
       "noteId": "hist-rev-ch3-03"
      },
      {
-      "text": "• and the war officially ended in April 1865. General Robert Edward Lee's surrender at Appomattox Court House in April 1865 marked the end of the Civil War.",
+      "text": "1. 'The anti-slavery movements played a significant role in the outbreak of the American Civil War.' Do you agree with the statement? Give reasons for your answer.",
       "noteId": "hist-rev-ch3-03"
      },
      {
-      "text": "**Executive summary:** Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pennsylvania. Answer the questions that follow.",
+      "text": "2. Which of the following is a cause of the American Civil War? You can choose more than one option. Give at least one reason for your answer.",
       "noteId": "hist-rev-ch3-03"
      },
      {
-      "text": "• Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pennsylvania. Answer the questions that follow.",
+      "text": "a. The Civil War was fought to uphold the principles of liberty and equality.",
       "noteId": "hist-rev-ch3-03"
      },
      {
-      "text": "• Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. It is rather for us to be here dedicated to the great task remaining before us—that ... this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.",
+      "text": "1. This is a portrait of the 16th President of the United States of America.",
       "noteId": "hist-rev-ch3-03"
      },
      {
-      "text": "**Executive summary:** Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
-      "noteId": "hist-rev-ch3-03"
-     },
-     {
-      "text": "• Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
-      "noteId": "hist-rev-ch3-03"
-     },
-     {
-      "text": "• Exclusive culture: beliefs, customs and traditions of a particular society, which do not allow those who are not members of the society to integrate with the culture easily",
+      "text": "b. When did he become the President of the United States of America?",
       "noteId": "hist-rev-ch3-03"
      }
     ]
@@ -699,154 +691,154 @@ const HISTORY_CHEATSHEET_DATA = {
   ],
   "wordCards": [
    {
-    "id": "wc-3c5e191d",
-    "term": "• The American Civil War (1861-65)",
-    "definition": "• The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result "
+    "id": "wc-9516a8cd",
+    "term": "Abølitionists",
+    "definition": "people in the northern regions of the United States of America who fought against slavery and demanded its abolition"
    },
    {
-    "id": "wc-01",
-    "term": "- ##### Learning",
-    "definition": "- ##### Learning Outcomes"
+    "id": "wc-4038e6fb",
+    "term": "Exclusive culture",
+    "definition": "beliefs, customs and traditions of a particular society, which do not allow those who are not members of the society to "
    },
    {
-    "id": "wc-02",
-    "term": "- At the",
-    "definition": "- At the end of this lesson, learners will be able to:"
+    "id": "wc-7608df64",
+    "term": "Republican Party",
+    "definition": "a political party in the USA, founded by anti-slavery activists in 1854"
    },
    {
-    "id": "wc-03",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The American Civil War, also called the War Between the States, between 1861 "
+    "id": "wc-0f9bebfc",
+    "term": "The American Civil War (1861-65)",
+    "definition": "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of"
    },
    {
-    "id": "wc-04",
-    "term": "• The American",
-    "definition": "• The American Civil War, also called the War Between the States, between 1861 and 1865. It saw grou"
+    "id": "wc-8b5d78e0",
+    "term": "Robert Edward Lee, an American general,",
+    "definition": "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the Ameri"
    },
    {
-    "id": "wc-05",
-    "term": "• ##### Learning",
-    "definition": "• ##### Learning Outcomes"
+    "id": "wc-38918473",
+    "term": "2. Which of the following",
+    "definition": "2. Which of the following is a cause of the American Civil War? You can choose more than one option. Give at least one r"
    },
    {
-    "id": "wc-06",
-    "term": "**Executive summary:** Proclam",
-    "definition": "**Executive summary:** Proclamation of Emancipation"
+    "id": "wc-69708838",
+    "term": "a. The Civil War",
+    "definition": "a. The Civil War was fought to uphold the principles of liberty and equality."
    },
    {
     "id": "wc-07",
-    "term": "• Proclamation of",
-    "definition": "• Proclamation of Emancipation"
+    "term": "Differences in economic",
+    "definition": "Differences in economic activities between the northern and southern states also led to differences "
    },
    {
     "id": "wc-08",
-    "term": "• The American",
-    "definition": "• The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This"
+    "term": "Robert Edward Lee,",
+    "definition": "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern V"
    },
    {
     "id": "wc-09",
-    "term": "**Executive summary:** The",
-    "definition": "**Executive summary:** The anti-slavery movements played a significant role in the outbreak of the A"
+    "term": "and the war",
+    "definition": "and the war officially ended in April 1865. General Robert Edward Lee's surrender at Appomattox Cour"
    },
    {
     "id": "wc-10",
-    "term": "• The anti-slavery",
-    "definition": "• The anti-slavery movements played a significant role in the outbreak of the American Civil War. Va"
+    "term": "Lincoln abolished slavery",
+    "definition": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that al"
    },
    {
     "id": "wc-11",
+    "term": "Read the excerpt",
+    "definition": "Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pe"
+   },
+   {
+    "id": "wc-12",
+    "term": "Four score and",
+    "definition": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived "
+   },
+   {
+    "id": "wc-13",
+    "term": "What does Lincoln",
+    "definition": "What does Lincoln say about slavery in this excerpt?"
+   },
+   {
+    "id": "wc-14",
+    "term": "1. Which one",
+    "definition": "1. Which one of the following played a significant role in the outbreak of the American Civil War?"
+   },
+   {
+    "id": "wc-15",
+    "term": "b. The American",
+    "definition": "b. The American War of Independence"
+   },
+   {
+    "id": "wc-16",
+    "term": "President Lincoln: the",
+    "definition": "President Lincoln: the Great Emancipator :: Jefferson Davis: the President of the Confederate States"
+   },
+   {
+    "id": "wc-17",
+    "term": "1. 'The anti-slavery",
+    "definition": "1. 'The anti-slavery movements played a significant role in the outbreak of the American Civil War.'"
+   },
+   {
+    "id": "wc-18",
+    "term": "2. Which of",
+    "definition": "2. Which of the following is a cause of the American Civil War? You can choose more than one option."
+   },
+   {
+    "id": "wc-19",
+    "term": "a. The Civil",
+    "definition": "a. The Civil War was fought to uphold the principles of liberty and equality."
+   },
+   {
+    "id": "wc-20",
+    "term": "1. This is",
+    "definition": "1. This is a portrait of the 16th President of the United States of America."
+   },
+   {
+    "id": "wc-21",
+    "term": "b. When did",
+    "definition": "b. When did he become the President of the United States of America?"
+   },
+   {
+    "id": "wc-22",
+    "term": "The American Civil",
+    "definition": "The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups"
+   },
+   {
+    "id": "wc-23",
+    "term": "At the end",
+    "definition": "At the end of this lesson, learners will be able to:"
+   },
+   {
+    "id": "wc-24",
+    "term": "The American Civil",
+    "definition": "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This w"
+   },
+   {
+    "id": "wc-25",
+    "term": "With the advent",
+    "definition": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great dem"
+   },
+   {
+    "id": "wc-26",
     "term": "The anti-slavery movements",
     "definition": "The anti-slavery movements played a significant role in the outbreak of the American Civil War. Vari"
    },
    {
-    "id": "wc-12",
-    "term": "**Executive summary:** Towards",
-    "definition": "**Executive summary:** Towards the end of the 18th century, many changes took place in the United St"
-   },
-   {
-    "id": "wc-13",
-    "term": "• Towards the",
-    "definition": "• Towards the end of the 18th century, many changes took place in the United States of America. Thes"
-   },
-   {
-    "id": "wc-14",
-    "term": "• plantation estates.",
-    "definition": "• plantation estates. The northern states, however, developed as manufacturing and shipping centres."
-   },
-   {
-    "id": "wc-15",
-    "term": "**Executive summary:** Robert",
-    "definition": "**Executive summary:** Robert Edward Lee, an American general, was famous for commanding the Confede"
-   },
-   {
-    "id": "wc-16",
-    "term": "• Robert Edward",
-    "definition": "• Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern"
-   },
-   {
-    "id": "wc-17",
-    "term": "• and the",
-    "definition": "• and the war officially ended in April 1865. General Robert Edward Lee's surrender at Appomattox Co"
-   },
-   {
-    "id": "wc-18",
-    "term": "**Executive summary:** Read",
-    "definition": "**Executive summary:** Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on"
-   },
-   {
-    "id": "wc-19",
-    "term": "• Read the",
-    "definition": "• Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in "
-   },
-   {
-    "id": "wc-20",
-    "term": "• Four score",
-    "definition": "• Four score and seven years ago our fathers brought forth on this continent, a new nation, conceive"
-   },
-   {
-    "id": "wc-21",
-    "term": "**Executive summary:** Abøliti",
-    "definition": "**Executive summary:** Abølitionists: people in the northern regions of the United States of America"
-   },
-   {
-    "id": "wc-22",
-    "term": "• Abølitionists: people",
-    "definition": "• Abølitionists: people in the northern regions of the United States of America who fought against s"
-   },
-   {
-    "id": "wc-23",
-    "term": "• Exclusive culture:",
-    "definition": "• Exclusive culture: beliefs, customs and traditions of a particular society, which do not allow tho"
-   },
-   {
-    "id": "wc-24",
-    "term": "**Executive summary:** 1.",
-    "definition": "**Executive summary:** 1. Which one of the following played a significant role in the outbreak of th"
-   },
-   {
-    "id": "wc-25",
-    "term": "• 1. Which",
-    "definition": "• 1. Which one of the following played a significant role in the outbreak of the American Civil War?"
-   },
-   {
-    "id": "wc-26",
-    "term": "• a. The",
-    "definition": "• a. The anti-slavery movements"
-   },
-   {
     "id": "wc-27",
-    "term": "**Executive summary:** 4.",
-    "definition": "**Executive summary:** 4. Choose the correct"
+    "term": "Towards the end",
+    "definition": "Towards the end of the 18th century, many changes took place in the United States of America. These "
    },
    {
     "id": "wc-28",
-    "term": "• 4. Choose",
-    "definition": "• 4. Choose the correct"
+    "term": "plantation estates. The",
+    "definition": "plantation estates. The northern states, however, developed as manufacturing and shipping centres."
    },
    {
     "id": "wc-29",
-    "term": "• President Lincoln:",
-    "definition": "• President Lincoln: the Great Emancipator :: Jefferson Davis: the President of the Confederate Stat"
+    "term": "Differences in economic",
+    "definition": "Differences in economic activities between the northern and southern states also led to differences "
    }
   ]
  },
@@ -929,15 +921,15 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch4-02"
      },
      {
-      "text": "Chauth: the cultivators paid one-fourth of their total revenue to the Marathas",
+      "text": "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.",
       "noteId": "hist-rev-ch4-02"
      },
      {
-      "text": "Chauth: the cultivators paid one-fourth of their total revenue to the marathas",
+      "text": "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give reasons for your answer.",
       "noteId": "hist-rev-ch4-02"
      },
      {
-      "text": "Crown lands: the land that belonged to the emperor; the revenue from this land went directly to the royal treasury",
+      "text": "1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.",
       "noteId": "hist-rev-ch4-02"
      }
     ]
@@ -945,18 +937,6 @@ const HISTORY_CHEATSHEET_DATA = {
    {
     "title": "🎯 Exam quick hits",
     "items": [
-     {
-      "text": "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.",
-      "noteId": "hist-rev-ch4-03"
-     },
-     {
-      "text": "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give reasons for your answer.",
-      "noteId": "hist-rev-ch4-03"
-     },
-     {
-      "text": "1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.",
-      "noteId": "hist-rev-ch4-03"
-     },
      {
       "text": "a. Identify the ruler shown in the picture.",
       "noteId": "hist-rev-ch4-03"
@@ -975,6 +955,18 @@ const HISTORY_CHEATSHEET_DATA = {
      },
      {
       "text": "3. Discuss two achievements of Balaji Vishwanath.",
+      "noteId": "hist-rev-ch4-03"
+     },
+     {
+      "text": "initiative and self-direction: research",
+      "noteId": "hist-rev-ch4-03"
+     },
+     {
+      "text": "Search for paintings and sketches that show the rulers you have read about in this chapter. You can use the Internet as most of these pictures are in the public domain. Try to find close-up pictures of the faces and print them. Handcraft frames for these pictures, using recyclable and dry-waste materials. Display these in your classroom in the form of a portrait gallery.",
+      "noteId": "hist-rev-ch4-03"
+     },
+     {
+      "text": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
       "noteId": "hist-rev-ch4-03"
      }
     ]
@@ -1062,74 +1054,74 @@ const HISTORY_CHEATSHEET_DATA = {
     "definition": "1. Into how many groups were the nobles divided in the Mughal court? Name these groups."
    },
    {
-    "id": "wc-16",
-    "term": "1. Do you",
-    "definition": "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential t"
+    "id": "wc-bb8502e2",
+    "term": "Paralympics",
+    "definition": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian at"
    },
    {
     "id": "wc-17",
-    "term": "2. Internal strife",
-    "definition": "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule"
-   },
-   {
-    "id": "wc-18",
-    "term": "1. This is",
-    "definition": "1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against th"
-   },
-   {
-    "id": "wc-19",
-    "term": "a. Identify the",
-    "definition": "a. Identify the ruler shown in the picture."
-   },
-   {
-    "id": "wc-20",
     "term": "b. What was",
     "definition": "b. What was the name of his father?"
    },
    {
-    "id": "wc-21",
+    "id": "wc-18",
     "term": "1. Into how",
     "definition": "1. Into how many groups were the nobles divided in the Mughal court? Name these groups."
    },
    {
-    "id": "wc-22",
+    "id": "wc-19",
     "term": "(2.) Why can",
     "definition": "(2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?"
    },
    {
-    "id": "wc-23",
+    "id": "wc-20",
     "term": "3. Discuss two",
     "definition": "3. Discuss two achievements of Balaji Vishwanath."
    },
    {
-    "id": "wc-24",
-    "term": "- initiative and",
-    "definition": "- initiative and self-direction: research"
+    "id": "wc-21",
+    "term": "initiative and self-direction:",
+    "definition": "initiative and self-direction: research"
    },
    {
-    "id": "wc-25",
-    "term": "- creativity: imagination",
-    "definition": "- creativity: imagination"
-   },
-   {
-    "id": "wc-26",
+    "id": "wc-22",
     "term": "Search for paintings",
     "definition": "Search for paintings and sketches that show the rulers you have read about in this chapter. You can "
    },
    {
-    "id": "wc-27",
+    "id": "wc-23",
+    "term": "Paralympics is one",
+    "definition": "Paralympics is one of the world's top sporting competition platforms that represents people with dis"
+   },
+   {
+    "id": "wc-24",
+    "term": "Murlikant Petkar, a",
+    "definition": "Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 s"
+   },
+   {
+    "id": "wc-25",
+    "term": "Joginder Singh Bedi",
+    "definition": "Joginder Singh Bedi won the silver medal at men's shot put L6 in 1984 at Stoke Mandeville and New Yo"
+   },
+   {
+    "id": "wc-26",
     "term": "Study the map",
     "definition": "Study the map given on this page and answer the following questions:"
    },
    {
-    "id": "wc-28",
+    "id": "wc-27",
     "term": "Name the two",
     "definition": "Name the two places that are nearest to Agra."
    },
    {
-    "id": "wc-29",
+    "id": "wc-28",
     "term": "Which river is",
     "definition": "Which river is nearest to Bijapur?"
+   },
+   {
+    "id": "wc-29",
+    "term": "Although many historians",
+    "definition": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continue"
    }
   ]
  },
@@ -1138,7 +1130,6 @@ const HISTORY_CHEATSHEET_DATA = {
   "title": "Advent of the English East India Company — Cheat Sheet",
   "topCram": [
    "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
-   "War of Austrian Succession",
    "The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to. From traders, they became ‘rulers’.",
    "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I. Trade was profitable, and the Queen received a major share of these profits. In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions. By 1623, factories were set up in Surat, Ahmedabad, Agra, Broach and Masulipatnam.",
    "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.",
@@ -1147,8 +1138,9 @@ const HISTORY_CHEATSHEET_DATA = {
    "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
    "##### First Carnatic War (1746-48)",
    "The First Carnatic War took place between 1746 and 1748.",
-   "There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.",
-   "The war enhanced the prestige of the French."
+   "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.",
+   "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
+   "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal."
   ],
   "sections": [
    {
@@ -1156,10 +1148,6 @@ const HISTORY_CHEATSHEET_DATA = {
     "items": [
      {
       "text": "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
-      "noteId": "hist-rev-ch5-01"
-     },
-     {
-      "text": "War of Austrian Succession",
       "noteId": "hist-rev-ch5-01"
      },
      {
@@ -1185,6 +1173,10 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
       "noteId": "hist-rev-ch5-01"
+     },
+     {
+      "text": "##### First Carnatic War (1746-48)",
+      "noteId": "hist-rev-ch5-01"
      }
     ]
    },
@@ -1192,35 +1184,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "##### First Carnatic War (1746-48)",
-      "noteId": "hist-rev-ch5-02"
-     },
-     {
       "text": "The First Carnatic War took place between 1746 and 1748.",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "There were no territorial gains for either the British or the French, and the former territories were restored to these two parties.",
+      "text": "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "The war enhanced the prestige of the French.",
+      "text": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah.",
+      "text": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "British power and prestige over the Carnatic region was restored.",
+      "text": "Naval supremacy: The British navy was far superior to its French counterpart.",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "☑ Dupleix was recalled to France.",
+      "text": "The British succeeded in winning the wars against their rivals for the following reasons:",
       "noteId": "hist-rev-ch5-02"
      },
      {
-      "text": "- visual literacy: analysing pictures",
+      "text": "Steady supply of arms and resources:",
+      "noteId": "hist-rev-ch5-02"
+     },
+     {
+      "text": "Factory: a trading post where goods are manufactured",
       "noteId": "hist-rev-ch5-02"
      }
     ]
@@ -1229,35 +1221,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.",
+      "text": "Sepoys: Indian soldiers recruited into the British army",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
+      "text": "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+      "text": "1. More than one of the following statements are true. Read the statements and choose the correct option.",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "The French were completely defeated at the Battle of Wandiwash (1760) by the British.",
+      "text": "i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast.",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "The British became the dominant European power in southern India.",
+      "text": "ii. Three presidencies were established in Madras, Bombay and Calcutta.",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "critical thinking: cause and effect communication",
+      "text": "1. The Carnatic Wars were a result of the hostilities between Britain and France.",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "Naval supremacy: The British navy was far superior to its French counterpart.",
+      "text": "a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars in India?",
       "noteId": "hist-rev-ch5-03"
      },
      {
-      "text": "The British succeeded in winning the wars against their rivals for the following reasons:",
+      "text": "b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?",
       "noteId": "hist-rev-ch5-03"
      }
     ]
@@ -1280,11 +1272,6 @@ const HISTORY_CHEATSHEET_DATA = {
     "definition": "The French East India Company was formed in 1664. It established its headquarters in Pondicherry (now Puducherry). While"
    },
    {
-    "id": "wc-2aed8143",
-    "term": "The French",
-    "definition": "The French were completely defeated at the Battle of Wandiwash (1760) by the British."
-   },
-   {
     "id": "wc-ef42b6f2",
     "term": "Naval supremacy: The British navy",
     "definition": "Naval supremacy: The British navy was far superior to its French counterpart."
@@ -1295,124 +1282,129 @@ const HISTORY_CHEATSHEET_DATA = {
     "definition": "Factory: a trading post where goods are manufactured"
    },
    {
-    "id": "wc-06",
-    "term": "The French East",
-    "definition": "The French East India Company was formed in 1664. It established its headquarters in Pondicherry (no"
+    "id": "wc-cfa39919",
+    "term": "i. The Carnatic coast",
+    "definition": "i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Coromandel Coast."
    },
    {
-    "id": "wc-07",
-    "term": "As the Dutch",
-    "definition": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18t"
+    "id": "wc-7574d6e1",
+    "term": "ii. Three presidencies",
+    "definition": "ii. Three presidencies were established in Madras, Bombay and Calcutta."
+   },
+   {
+    "id": "wc-f222adf5",
+    "term": "1. The Carnatic Wars",
+    "definition": "1. The Carnatic Wars were a result of the hostilities between Britain and France."
    },
    {
     "id": "wc-08",
-    "term": "##### First Carnatic",
-    "definition": "##### First Carnatic War (1746-48)"
-   },
-   {
-    "id": "wc-09",
     "term": "The First Carnatic",
     "definition": "The First Carnatic War took place between 1746 and 1748."
    },
    {
-    "id": "wc-10",
-    "term": "There were no",
-    "definition": "There were no territorial gains for either the British or the French, and the former territories wer"
-   },
-   {
-    "id": "wc-11",
-    "term": "The war enhanced",
-    "definition": "The war enhanced the prestige of the French."
-   },
-   {
-    "id": "wc-12",
-    "term": "This is a",
-    "definition": "This is a sketch of Dupleix meeting Muzaffar Jang, the grandson of Nizam-ul-Mulk Asaf Jah."
-   },
-   {
-    "id": "wc-13",
-    "term": "British power and",
-    "definition": "British power and prestige over the Carnatic region was restored."
-   },
-   {
-    "id": "wc-14",
-    "term": "☑ Dupleix was",
-    "definition": "☑ Dupleix was recalled to France."
-   },
-   {
-    "id": "wc-15",
-    "term": "- visual literacy:",
-    "definition": "- visual literacy: analysing pictures"
-   },
-   {
-    "id": "wc-16",
+    "id": "wc-09",
     "term": "The Third Carnatic",
     "definition": "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, "
    },
    {
-    "id": "wc-17",
+    "id": "wc-10",
     "term": "The Seven Years'",
     "definition": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, a"
    },
    {
-    "id": "wc-18",
+    "id": "wc-11",
     "term": "The Third Carnatic",
     "definition": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal."
    },
    {
-    "id": "wc-19",
-    "term": "The French were",
-    "definition": "The French were completely defeated at the Battle of Wandiwash (1760) by the British."
-   },
-   {
-    "id": "wc-20",
-    "term": "The British became",
-    "definition": "The British became the dominant European power in southern India."
-   },
-   {
-    "id": "wc-21",
-    "term": "critical thinking: cause",
-    "definition": "critical thinking: cause and effect communication"
-   },
-   {
-    "id": "wc-22",
+    "id": "wc-12",
     "term": "Naval supremacy: The",
     "definition": "Naval supremacy: The British navy was far superior to its French counterpart."
    },
    {
-    "id": "wc-23",
+    "id": "wc-13",
     "term": "The British succeeded",
     "definition": "The British succeeded in winning the wars against their rivals for the following reasons:"
    },
    {
-    "id": "wc-24",
+    "id": "wc-14",
     "term": "Steady supply of",
     "definition": "Steady supply of arms and resources:"
    },
    {
-    "id": "wc-25",
+    "id": "wc-15",
     "term": "Factory: a trading",
     "definition": "Factory: a trading post where goods are manufactured"
    },
    {
-    "id": "wc-26",
+    "id": "wc-16",
     "term": "Sepoys: Indian soldiers",
     "definition": "Sepoys: Indian soldiers recruited into the British army"
    },
    {
-    "id": "wc-27",
+    "id": "wc-17",
     "term": "War of Austrian",
     "definition": "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 174"
    },
    {
-    "id": "wc-28",
+    "id": "wc-18",
+    "term": "1. More than",
+    "definition": "1. More than one of the following statements are true. Read the statements and choose the correct op"
+   },
+   {
+    "id": "wc-19",
+    "term": "i. The Carnatic",
+    "definition": "i. The Carnatic coast is the region in south India that lies between the Western Ghats and the Corom"
+   },
+   {
+    "id": "wc-20",
+    "term": "ii. Three presidencies",
+    "definition": "ii. Three presidencies were established in Madras, Bombay and Calcutta."
+   },
+   {
+    "id": "wc-21",
+    "term": "1. The Carnatic",
+    "definition": "1. The Carnatic Wars were a result of the hostilities between Britain and France."
+   },
+   {
+    "id": "wc-22",
+    "term": "a. How did",
+    "definition": "a. How did the hostility between Britain and France in Europe contribute to the three Carnatic Wars "
+   },
+   {
+    "id": "wc-23",
+    "term": "b. How did",
+    "definition": "b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?"
+   },
+   {
+    "id": "wc-24",
+    "term": "1. When did",
+    "definition": "1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?"
+   },
+   {
+    "id": "wc-25",
+    "term": "2. Who received",
+    "definition": "2. Who received the island of Bombay as a wedding gift after marrying the Portuguese princess, Cathe"
+   },
+   {
+    "id": "wc-26",
+    "term": "3. Where did",
+    "definition": "3. Where did the French East India Company establish its headquarters?"
+   },
+   {
+    "id": "wc-27",
     "term": "Tick (√) the",
     "definition": "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic."
    },
    {
+    "id": "wc-28",
+    "term": "The British gradually",
+    "definition": "The British gradually gained political control over India through a number of battles against the ru"
+   },
+   {
     "id": "wc-29",
-    "term": "War of Austrian",
-    "definition": "War of Austrian Succession"
+    "term": "The EEIC was",
+    "definition": "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive righ"
    }
   ]
  },
@@ -1431,7 +1423,7 @@ const HISTORY_CHEATSHEET_DATA = {
    "A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab himself left the battlefield after the death of his army commander, Mir Madan. The disheartened army was easily defeated. Later, Siraj-ud-Daulah was captured and put to death, and Mir Jafar was declared the Nawab of Bengal. The English gained control over Bengal by installing Mir Jafar as the puppet ruler.",
    "Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the official historian of the EEIC, Roben Orme, as the greatest banker in the known world, Jagat Seth conspired with Mir Jafar and Robert Clive against Siraj-ud-Daulah.",
    "Jagat Seth's house in Murshidabad",
-   "##### Results of the Battle"
+   "Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, the Mughal emperor. The combined forces met the British at the famous"
   ],
   "sections": [
    {
@@ -1487,10 +1479,6 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch6-02"
      },
      {
-      "text": "##### Results of the Battle",
-      "noteId": "hist-rev-ch6-02"
-     },
-     {
       "text": "Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, the Mughal emperor. The combined forces met the British at the famous",
       "noteId": "hist-rev-ch6-02"
      },
@@ -1505,16 +1493,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. A new in 1765. It was known as the in Bengal.",
       "noteId": "hist-rev-ch6-02"
+     },
+     {
+      "text": "According to this system, the English enjoyed all the privileges of being a ruler, but had no responsibility. They had complete military power and the right to collect the revenue in Bengal and use it as they wished.",
+      "noteId": "hist-rev-ch6-02"
      }
     ]
    },
    {
     "title": "🎯 Exam quick hits",
     "items": [
-     {
-      "text": "According to this system, the English enjoyed all the privileges of being a ruler, but had no responsibility. They had complete military power and the right to collect the revenue in Bengal and use it as they wished.",
-      "noteId": "hist-rev-ch6-03"
-     },
      {
       "text": "The Nawab, on the other hand, had to look after the administration, and law and order.",
       "noteId": "hist-rev-ch6-03"
@@ -1596,98 +1584,98 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-11",
-    "term": "##### Results of",
-    "definition": "##### Results of the Battle"
-   },
-   {
-    "id": "wc-12",
     "term": "Mir Qasim was",
     "definition": "Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah"
    },
    {
-    "id": "wc-13",
+    "id": "wc-12",
     "term": "The Battle of",
     "definition": "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following"
    },
    {
-    "id": "wc-14",
+    "id": "wc-13",
     "term": "After the battle,",
     "definition": "After the battle, the British became the absolute masters of Bengal."
    },
    {
-    "id": "wc-15",
+    "id": "wc-14",
     "term": "After the victories",
     "definition": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. A new in 176"
    },
    {
-    "id": "wc-16",
+    "id": "wc-15",
     "term": "According to this",
     "definition": "According to this system, the English enjoyed all the privileges of being a ruler, but had no respon"
    },
    {
-    "id": "wc-17",
+    "id": "wc-16",
     "term": "The Nawab, on",
     "definition": "The Nawab, on the other hand, had to look after the administration, and law and order."
    },
    {
-    "id": "wc-18",
+    "id": "wc-17",
     "term": "According to the",
     "definition": "According to the system of Dual Government, the Nawab of Bengal also had to disband most of his army"
    },
    {
-    "id": "wc-19",
+    "id": "wc-18",
     "term": "The defects of",
     "definition": "The defects of the Dual Government soon became visible to the British Parliament."
    },
    {
-    "id": "wc-20",
+    "id": "wc-19",
     "term": "The system of",
     "definition": "The system of administration and the economy of Bengal collapsed."
    },
    {
-    "id": "wc-21",
+    "id": "wc-20",
     "term": "☐ The Company",
     "definition": "☐ The Company now directly took over the control of Bengal's administration."
    },
    {
-    "id": "wc-22",
+    "id": "wc-21",
     "term": "outline the causes",
     "definition": "outline the causes and results of the Battle of Plassey and Buxar."
    },
    {
-    "id": "wc-23",
+    "id": "wc-22",
     "term": "evaluate the drawbacks",
     "definition": "evaluate the drawbacks of the Dual Government in Bengal."
    },
    {
-    "id": "wc-24",
+    "id": "wc-23",
     "term": "Tick (√) the",
     "definition": "Tick (√) the personalities who participated in the Battle of Plassey. Cross (×) those who did not"
    },
    {
-    "id": "wc-25",
+    "id": "wc-24",
     "term": "In the 18th",
     "definition": "In the 18th century, Bengal was considered the richest of all the Indian provinces. This prosperous "
    },
    {
-    "id": "wc-26",
+    "id": "wc-25",
     "term": "In 1717, the",
     "definition": "In 1717, the Mughal emperor Farrukhsiyar issued a royal order or farman that granted the English Eas"
    },
    {
-    "id": "wc-27",
+    "id": "wc-26",
     "term": "The French had",
     "definition": "The French had established their settlement in Chandernagore. Anticipating war with the French, the "
    },
    {
-    "id": "wc-28",
+    "id": "wc-27",
     "term": "In 1756, Nawab",
     "definition": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William,"
    },
    {
-    "id": "wc-29",
+    "id": "wc-28",
     "term": "The Battle of",
     "definition": "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces adva"
+   },
+   {
+    "id": "wc-29",
+    "term": "A large part",
+    "definition": "A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in th"
    }
   ]
  },
@@ -1699,14 +1687,14 @@ const HISTORY_CHEATSHEET_DATA = {
    "Ended with the Treaty of Salbai in 1782",
    "Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviations in brackets in the correct box.",
    "The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment of the British as a major power in India. The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan. The British joined this fight for supremacy, but with the aim of becoming the dominant power in India. This resulted in a number of wars between the British and the Indian rulers of south India, which are discussed in this chapter.",
-   "##### ANGLO-MYSORE WARS",
    "The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many reforms, which strengthened his kingdom. The rise of Mysore was a threat to the EEIC's policy of territorial expansion. As the Nizam of Hyderabad and the Marathas became rivals of Hyder Ali, the British took advantage of these rivalries to annex Mysore. Four wars were fought to subjugate Mysore.",
    "The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevented the merchants of Mysore from trading with Europe. This infuriated Hyder Ali, who declared war against the",
    "British. Initially, the Marathas and the Nizam of Hyderabad were allies of Mysore, and together they captured Arcot. However, the British signed the Treaty of Salbai with the Marathas in 1782, whereby the latter withdrew their support to Hyder Ali.",
    "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried on by Hyder Ali's son, Tipu Sultan. The war ended with the signing of the Treaty of Mangalore in 1784.",
    "In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British. Lord Wellesley, the Governor-General, introduced the policy of Subsidiary Alliance (discussed later in this chapter) to expand the British territory in India. Tipu refused to join this alliance. As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.",
    "Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War",
-   "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:"
+   "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:",
+   "After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters worse for the Marathas, Nana Phadnavis died. This immediately led to an internal strife between the different Maratha families and chiefs. All of them fought to establish their influence at Poona (now Pune)."
   ],
   "sections": [
    {
@@ -1729,10 +1717,6 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch7-01"
      },
      {
-      "text": "##### ANGLO-MYSORE WARS",
-      "noteId": "hist-rev-ch7-01"
-     },
-     {
       "text": "The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many reforms, which strengthened his kingdom. The rise of Mysore was a threat to the EEIC's policy of territorial expansion. As the Nizam of Hyderabad and the Marathas became rivals of Hyder Ali, the British took advantage of these rivalries to annex Mysore. Four wars were fought to subjugate Mysore.",
       "noteId": "hist-rev-ch7-01"
      },
@@ -1743,16 +1727,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "British. Initially, the Marathas and the Nizam of Hyderabad were allies of Mysore, and together they captured Arcot. However, the British signed the Treaty of Salbai with the Marathas in 1782, whereby the latter withdrew their support to Hyder Ali.",
       "noteId": "hist-rev-ch7-01"
+     },
+     {
+      "text": "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried on by Hyder Ali's son, Tipu Sultan. The war ended with the signing of the Treaty of Mangalore in 1784.",
+      "noteId": "hist-rev-ch7-01"
      }
     ]
    },
    {
     "title": "📌 Must-know definitions",
     "items": [
-     {
-      "text": "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried on by Hyder Ali's son, Tipu Sultan. The war ended with the signing of the Treaty of Mangalore in 1784.",
-      "noteId": "hist-rev-ch7-02"
-     },
      {
       "text": "In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British. Lord Wellesley, the Governor-General, introduced the policy of Subsidiary Alliance (discussed later in this chapter) to expand the British territory in India. Tipu refused to join this alliance. As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.",
       "noteId": "hist-rev-ch7-02"
@@ -1766,19 +1750,23 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch7-02"
      },
      {
-      "text": "Tipu died defending his capital Seringapatam.",
-      "noteId": "hist-rev-ch7-02"
-     },
-     {
-      "text": "Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad.",
-      "noteId": "hist-rev-ch7-02"
-     },
-     {
-      "text": "The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power.",
-      "noteId": "hist-rev-ch7-02"
-     },
-     {
       "text": "After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters worse for the Marathas, Nana Phadnavis died. This immediately led to an internal strife between the different Maratha families and chiefs. All of them fought to establish their influence at Poona (now Pune).",
+      "noteId": "hist-rev-ch7-02"
+     },
+     {
+      "text": "The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 1802, the Maratha faction led by the Holkars defeated the combined forces of the new Eshwa Baji Rao II, who was supported by the Scindias. This led the Peshwa to sign the Subsidiary Alliance with Lord Wellesley to seek British protection in order to retain control of his throne.",
+      "noteId": "hist-rev-ch7-02"
+     },
+     {
+      "text": "Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha chiefs as well, since it had been signed by their nominal head. But he was mistaken. In 1803, the Scindias and the Bhonsles declared war against the British. The British, however, successfully defeated the combined forces of the Bhonsles and Scindias, and the latter were forced to accept the Subsidiary Alliance.",
+      "noteId": "hist-rev-ch7-02"
+     },
+     {
+      "text": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+      "noteId": "hist-rev-ch7-02"
+     },
+     {
+      "text": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that",
       "noteId": "hist-rev-ch7-02"
      }
     ]
@@ -1787,35 +1775,35 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 1802, the Maratha faction led by the Holkars defeated the combined forces of the new Eshwa Baji Rao II, who was supported by the Scindias. This led the Peshwa to sign the Subsidiary Alliance with Lord Wellesley to seek British protection in order to retain control of his throne.",
+      "text": "Was Malwa a part of the British territory in 1856?",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha chiefs as well, since it had been signed by their nominal head. But he was mistaken. In 1803, the Scindias and the Bhonsles declared war against the British. The British, however, successfully defeated the combined forces of the Bhonsles and Scindias, and the latter were forced to accept the Subsidiary Alliance.",
+      "text": "Which regions along the eastern coast of India were part of the British territory in 1856?",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension.",
+      "text": "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "The Marathas as a force were eliminated and were no longer seen as a threat to the British.",
+      "text": "The ruler could not employ any non-British Europeans in his service or dismiss those who were there.",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "Indian camp scene during the Third Anglo-Maratha War",
+      "text": "The ruler could not enter into an alliance with any power without the consent of the British.",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "Punjab became a part of the British territory in 1849.",
+      "text": "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England.",
+      "text": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
       "noteId": "hist-rev-ch7-03"
      },
      {
-      "text": "The command of the Sikh army was taken over by the British officers.",
+      "text": "ascribed to the lack of unity among Indian states. The greater military and financial resources of the EEIC also helped in the colonial expansion of the British.",
       "noteId": "hist-rev-ch7-03"
      }
     ]
@@ -1863,114 +1851,114 @@ const HISTORY_CHEATSHEET_DATA = {
     "definition": "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried "
    },
    {
-    "id": "wc-13670b57",
-    "term": "Half of the kingdom of Mysore",
-    "definition": "Half of the kingdom of Mysore was divided between the British and the Nizam of Hyderabad."
-   },
-   {
-    "id": "wc-ce232749",
-    "term": "The other half",
-    "definition": "The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power."
-   },
-   {
     "id": "wc-c8c08708",
     "term": "The disunity among the Marathas",
     "definition": "The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In "
    },
    {
-    "id": "wc-efbc1a33",
-    "term": "Baji Rao II",
-    "definition": "Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension."
+    "id": "wc-09",
+    "term": "Clash between the",
+    "definition": "Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War"
    },
    {
-    "id": "wc-889cc3c2",
-    "term": "The Marathas as a force",
-    "definition": "The Marathas as a force were eliminated and were no longer seen as a threat to the British."
+    "id": "wc-10",
+    "term": "Geo-Skills: Locating Places",
+    "definition": "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information lite"
    },
    {
-    "id": "wc-6772d52c",
-    "term": "The command of the Sikh army",
-    "definition": "The command of the Sikh army was taken over by the British officers."
-   },
-   {
-    "id": "wc-14",
-    "term": "The other half",
-    "definition": "The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power."
-   },
-   {
-    "id": "wc-15",
+    "id": "wc-11",
     "term": "After the death",
     "definition": "After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak an"
    },
    {
-    "id": "wc-16",
+    "id": "wc-12",
     "term": "The disunity among",
     "definition": "The disunity among the Marathas was immensely favourable for the British to gain control over the Ma"
    },
    {
-    "id": "wc-17",
+    "id": "wc-13",
     "term": "Lord Wellesley believed",
     "definition": "Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha c"
    },
    {
-    "id": "wc-18",
-    "term": "Baji Rao II",
-    "definition": "Baji Rao II was overthrown and exiled to Bithur near Kanpur and was given a pension."
-   },
-   {
-    "id": "wc-19",
-    "term": "The Marathas as",
-    "definition": "The Marathas as a force were eliminated and were no longer seen as a threat to the British."
-   },
-   {
-    "id": "wc-20",
-    "term": "Indian camp scene",
-    "definition": "Indian camp scene during the Third Anglo-Maratha War"
-   },
-   {
-    "id": "wc-21",
-    "term": "Punjab became a",
-    "definition": "Punjab became a part of the British territory in 1849."
-   },
-   {
-    "id": "wc-22",
-    "term": "Maharaja Dalip Singh,",
-    "definition": "Maharaja Dalip Singh, the son of Ranjit Singh, was given a pension and sent to England."
-   },
-   {
-    "id": "wc-23",
-    "term": "The command of",
-    "definition": "The command of the Sikh army was taken over by the British officers."
-   },
-   {
-    "id": "wc-24",
+    "id": "wc-14",
     "term": "With the annexation",
     "definition": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were "
    },
    {
-    "id": "wc-25",
+    "id": "wc-15",
+    "term": "Lord Wellesley initiated",
+    "definition": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in"
+   },
+   {
+    "id": "wc-16",
+    "term": "Was Malwa a",
+    "definition": "Was Malwa a part of the British territory in 1856?"
+   },
+   {
+    "id": "wc-17",
+    "term": "Which regions along",
+    "definition": "Which regions along the eastern coast of India were part of the British territory in 1856?"
+   },
+   {
+    "id": "wc-18",
+    "term": "The states that",
+    "definition": "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Pesh"
+   },
+   {
+    "id": "wc-19",
+    "term": "The ruler could",
+    "definition": "The ruler could not employ any non-British Europeans in his service or dismiss those who were there."
+   },
+   {
+    "id": "wc-20",
+    "term": "The ruler could",
+    "definition": "The ruler could not enter into an alliance with any power without the consent of the British."
+   },
+   {
+    "id": "wc-21",
+    "term": "Lord Dalhousie undertook",
+    "definition": "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministrat"
+   },
+   {
+    "id": "wc-22",
+    "term": "Lord Dalhousie, therefore,",
+    "definition": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administra"
+   },
+   {
+    "id": "wc-23",
+    "term": "ascribed to the",
+    "definition": "ascribed to the lack of unity among Indian states. The greater military and financial resources of t"
+   },
+   {
+    "id": "wc-24",
     "term": "Between Madhav Rao",
     "definition": "Between Madhav Rao II and the British in support of Raghunath Rao"
    },
    {
-    "id": "wc-26",
+    "id": "wc-25",
     "term": "Ended with the",
     "definition": "Ended with the Treaty of Salbai in 1782"
    },
    {
-    "id": "wc-27",
+    "id": "wc-26",
     "term": "Study the pictures",
     "definition": "Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviation"
    },
    {
-    "id": "wc-28",
+    "id": "wc-27",
     "term": "The three Carnatic",
     "definition": "The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment of t"
    },
    {
+    "id": "wc-28",
+    "term": "The ruler of",
+    "definition": "The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general."
+   },
+   {
     "id": "wc-29",
-    "term": "##### ANGLO-MYSORE WARS",
-    "definition": "##### ANGLO-MYSORE WARS"
+    "term": "The British occupied",
+    "definition": "The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevente"
    }
   ]
  },
@@ -1988,8 +1976,8 @@ const HISTORY_CHEATSHEET_DATA = {
    "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
    "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British in India.",
    "Governor-Governor-Governor-Governor-Governor-G",
-   "would act as a little",
-   "This class was also cheap human resources the administration."
+   "This class was also cheap human resources the administration.",
+   "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods."
   ],
   "sections": [
    {
@@ -2041,10 +2029,6 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch8-02"
      },
      {
-      "text": "would act as a little",
-      "noteId": "hist-rev-ch8-02"
-     },
-     {
       "text": "This class was also cheap human resources the administration.",
       "noteId": "hist-rev-ch8-02"
      },
@@ -2063,16 +2047,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "Then In 1853, the first railway line from Bombay to Thane was inaugurated. In the same year, the post and telegraph department was set up. The first telegraph line was opened from Calcutta to Agra.",
       "noteId": "hist-rev-ch8-02"
+     },
+     {
+      "text": "One of the earliest trains in India, travelling from Bombay to Thane in 1855",
+      "noteId": "hist-rev-ch8-02"
      }
     ]
    },
    {
     "title": "🎯 Exam quick hits",
     "items": [
-     {
-      "text": "One of the earliest trains in India, travelling from Bombay to Thane in 1855",
-      "noteId": "hist-rev-ch8-03"
-     },
      {
       "text": "critical thinking: comparative analysis, reasoning information literacy: general awareness",
       "noteId": "hist-rev-ch8-03"
@@ -2149,103 +2133,103 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-10",
-    "term": "would act as",
-    "definition": "would act as a little"
-   },
-   {
-    "id": "wc-11",
     "term": "This class was",
     "definition": "This class was also cheap human resources the administration."
    },
    {
-    "id": "wc-12",
+    "id": "wc-11",
     "term": "Indian industries also",
     "definition": "Indian industries also suffered a great setback under the British colonial rule. The British governm"
    },
    {
-    "id": "wc-13",
+    "id": "wc-12",
     "term": "##### Transport and",
     "definition": "##### Transport and Communication"
    },
    {
-    "id": "wc-14",
+    "id": "wc-13",
     "term": "The British realised",
     "definition": "The British realised that to consolidate their position in India, the development of proper communic"
    },
    {
-    "id": "wc-15",
+    "id": "wc-14",
     "term": "Then In 1853,",
     "definition": "Then In 1853, the first railway line from Bombay to Thane was inaugurated. In the same year, the pos"
    },
    {
-    "id": "wc-16",
+    "id": "wc-15",
     "term": "One of the",
     "definition": "One of the earliest trains in India, travelling from Bombay to Thane in 1855"
    },
    {
-    "id": "wc-17",
+    "id": "wc-16",
     "term": "critical thinking: comparative",
     "definition": "critical thinking: comparative analysis, reasoning information literacy: general awareness"
    },
    {
-    "id": "wc-18",
+    "id": "wc-17",
     "term": "The British government",
     "definition": "The British government drained the Indian economy and exploited it to the maximum. The exploitation "
    },
    {
-    "id": "wc-19",
+    "id": "wc-18",
     "term": "The British bought",
     "definition": "The British bought raw materials at cheap prices and sold their manufactured goods at high prices, f"
    },
    {
-    "id": "wc-20",
+    "id": "wc-19",
     "term": "The peasants were",
     "definition": "The peasants were forced to pay high taxes, leading to increase in the poverty level and discontent."
    },
    {
-    "id": "wc-21",
+    "id": "wc-20",
     "term": "In the early",
     "definition": "In the early 19th century, the British government passed the Charter Act of 1813, whereby the Compan"
    },
    {
-    "id": "wc-22",
+    "id": "wc-21",
     "term": "(a) Lord Cornwallis",
     "definition": "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Mun"
    },
    {
-    "id": "wc-23",
+    "id": "wc-22",
     "term": "Towards the end",
     "definition": "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been tran"
    },
    {
-    "id": "wc-24",
+    "id": "wc-23",
     "term": "Indian agriculture received",
     "definition": "Indian agriculture received special attention from the EEIC. This was primarily because the main sou"
    },
    {
-    "id": "wc-25",
+    "id": "wc-24",
     "term": "■ Lord Cornwallis",
     "definition": "■ Lord Cornwallis introduced the Permanent Settlement as a system of revenue collection in 1793 in B"
    },
    {
-    "id": "wc-26",
+    "id": "wc-25",
     "term": "The land revenue",
     "definition": "The land revenue settlements, regardless of the region of implementation, had certain common feature"
    },
    {
-    "id": "wc-27",
+    "id": "wc-26",
     "term": "Creation of a",
     "definition": "Creation of a new social class of landlords who were loyal to the British"
    },
    {
-    "id": "wc-28",
+    "id": "wc-27",
     "term": "The Company was",
     "definition": "The Company was assured a fixed revenue or income without the trouble of collecting it from the peas"
    },
    {
-    "id": "wc-29",
+    "id": "wc-28",
     "term": "The early 10th",
     "definition": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company "
+   },
+   {
+    "id": "wc-29",
+    "term": "Lord William Beetwick",
+    "definition": "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that def"
    }
   ]
  },
@@ -2502,33 +2486,33 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-24",
-    "term": "► Rani Lakshmibai",
-    "definition": "► Rani Lakshmibai of Jhansi"
-   },
-   {
-    "id": "wc-25",
     "term": "The following were",
     "definition": "The following were major causes for the failure of the revolt:"
    },
    {
-    "id": "wc-26",
+    "id": "wc-25",
     "term": "The revolt lacked",
     "definition": "The revolt lacked coordination, and the rebels had no common plan of action."
    },
    {
-    "id": "wc-27",
+    "id": "wc-26",
     "term": "highlight the names",
     "definition": "highlight the names of the leaders of the revolt."
    },
    {
-    "id": "wc-28",
+    "id": "wc-27",
     "term": "trace the spread",
     "definition": "trace the spread of the revolt in India."
    },
    {
-    "id": "wc-29",
+    "id": "wc-28",
     "term": "assess the consequences",
     "definition": "assess the consequences of the Revolt of 1857."
+   },
+   {
+    "id": "wc-29",
+    "term": "Various causes—political, econ",
+    "definition": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the"
    }
   ]
  },
@@ -2539,7 +2523,6 @@ const HISTORY_CHEATSHEET_DATA = {
    "(a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religious reformers in nineteenth century India.",
    "Tick (√) the pictures of the people who were associated with the 19th-century social reform movements in India.",
    "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
-   "Elphinstone College, Bombay",
    "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
    "and quickly spread to different parts of the country. It was brought on by the following factors:",
    "Realisation of unjust and unacceptable",
@@ -2547,7 +2530,8 @@ const HISTORY_CHEATSHEET_DATA = {
    "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exploited and misled people into practising unfair customs. He fought against many evil practices in Hindu society, such as polygamy, female infanticide, rigid caste system, sati and child marriage.",
    "▶ A painting from the 18th-century showing sati or widow-burning",
    "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. Ramakrishna's teachings were simple and attracted many followers. He preached that all religions",
-   "Ramakrishna Paramahamsa"
+   "have different paths to reach the one true God. He also said that service to mankind was service to God. One of his most famous disciples was Narendra Nath Datta, who later came to be known as Swami Vivekananda.",
+   "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya Samaj are noteworthy among them. Let us read more about these movements and the reformers who initiated them."
   ],
   "sections": [
    {
@@ -2566,10 +2550,6 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch10-01"
      },
      {
-      "text": "Elphinstone College, Bombay",
-      "noteId": "hist-rev-ch10-01"
-     },
-     {
       "text": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
       "noteId": "hist-rev-ch10-01"
      },
@@ -2584,6 +2564,10 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "Bengal was one of the first regions to witness a series of reform movements. Let us read about some of the important reformers of this region.",
       "noteId": "hist-rev-ch10-01"
+     },
+     {
+      "text": "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exploited and misled people into practising unfair customs. He fought against many evil practices in Hindu society, such as polygamy, female infanticide, rigid caste system, sati and child marriage.",
+      "noteId": "hist-rev-ch10-01"
      }
     ]
    },
@@ -2591,19 +2575,11 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exploited and misled people into practising unfair customs. He fought against many evil practices in Hindu society, such as polygamy, female infanticide, rigid caste system, sati and child marriage.",
-      "noteId": "hist-rev-ch10-02"
-     },
-     {
       "text": "▶ A painting from the 18th-century showing sati or widow-burning",
       "noteId": "hist-rev-ch10-02"
      },
      {
       "text": "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. Ramakrishna's teachings were simple and attracted many followers. He preached that all religions",
-      "noteId": "hist-rev-ch10-02"
-     },
-     {
-      "text": "Ramakrishna Paramahamsa",
       "noteId": "hist-rev-ch10-02"
      },
      {
@@ -2615,11 +2591,19 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch10-02"
      },
      {
-      "text": "##### Prarthana Samaj",
+      "text": "The reform movements in western India were led by Mahadev Govind Ranade and R.G. Bhandarkar. In the 1860s, they were instrumental in establishing the Prarthana Samaj in Bombay.",
       "noteId": "hist-rev-ch10-02"
      },
      {
-      "text": "The reform movements in western India were led by Mahadev Govind Ranade and R.G. Bhandarkar. In the 1860s, they were instrumental in establishing the Prarthana Samaj in Bombay.",
+      "text": "Name the rivers close to the centre of the Aligarh Movement.",
+      "noteId": "hist-rev-ch10-02"
+     },
+     {
+      "text": "Locate the city that is associated with the birth of the Prarthana Samaj.",
+      "noteId": "hist-rev-ch10-02"
+     },
+     {
+      "text": "Another dedicated reformer was Jyotirao Govindrao Phule. He worked to improve the condition of women and the members of the untouchable castes. He set up the Satyashodhak Samaj in 1873 to work for the oppressed classes.",
       "noteId": "hist-rev-ch10-02"
      }
     ]
@@ -2628,27 +2612,7 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "Name the rivers close to the centre of the Aligarh Movement.",
-      "noteId": "hist-rev-ch10-03"
-     },
-     {
-      "text": "Locate the city that is associated with the birth of the Prarthana Samaj.",
-      "noteId": "hist-rev-ch10-03"
-     },
-     {
-      "text": "Another dedicated reformer was Jyotirao Govindrao Phule. He worked to improve the condition of women and the members of the untouchable castes. He set up the Satyashodhak Samaj in 1873 to work for the oppressed classes.",
-      "noteId": "hist-rev-ch10-03"
-     },
-     {
       "text": "She was a champion of women's rights and fought against child marriage.",
-      "noteId": "hist-rev-ch10-03"
-     },
-     {
-      "text": "founded the Arya Samaj",
-      "noteId": "hist-rev-ch10-03"
-     },
-     {
-      "text": "in 1875. He attacked the",
       "noteId": "hist-rev-ch10-03"
      },
      {
@@ -2657,6 +2621,18 @@ const HISTORY_CHEATSHEET_DATA = {
      },
      {
       "text": "Read the above excerpt written by Syed Ahmad Khan in the Aligarh Institute Gazette, and answer the following questions:",
+      "noteId": "hist-rev-ch10-03"
+     },
+     {
+      "text": "What was Syed Ahmad Khan's inspiration for building the MAO (Muhammadan Anglo-Oriental) College?",
+      "noteId": "hist-rev-ch10-03"
+     },
+     {
+      "text": "Kandukuri Veeresalingam was a prominent social reformer from South India. He fought for the education and upliftment of women and widow remarriage.",
+      "noteId": "hist-rev-ch10-03"
+     },
+     {
+      "text": "Sree Narayana Guru was another important spiritual and social reformer from south India. He denounced the rigid caste system prevailing in Indian society. He also stressed on the need for spiritual and social upliftment of the oppressed classes.",
       "noteId": "hist-rev-ch10-03"
      }
     ]
@@ -2705,113 +2681,113 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-08",
-    "term": "Raja Ram Mohan",
-    "definition": "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamen"
-   },
-   {
-    "id": "wc-09",
     "term": "▶ A painting",
     "definition": "▶ A painting from the 18th-century showing sati or widow-burning"
    },
    {
-    "id": "wc-10",
+    "id": "wc-09",
     "term": "Swami Vivekananda was",
     "definition": "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. Ramakrishna's teachings were simple and"
    },
    {
-    "id": "wc-11",
-    "term": "Ramakrishna Paramahamsa",
-    "definition": "Ramakrishna Paramahamsa"
-   },
-   {
-    "id": "wc-12",
+    "id": "wc-10",
     "term": "have different paths",
     "definition": "have different paths to reach the one true God. He also said that service to mankind was service to "
    },
    {
-    "id": "wc-13",
+    "id": "wc-11",
     "term": "Western India also",
     "definition": "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya S"
    },
    {
-    "id": "wc-14",
-    "term": "##### Prarthana Samaj",
-    "definition": "##### Prarthana Samaj"
-   },
-   {
-    "id": "wc-15",
+    "id": "wc-12",
     "term": "The reform movements",
     "definition": "The reform movements in western India were led by Mahadev Govind Ranade and R.G. Bhandarkar. In the "
    },
    {
-    "id": "wc-16",
+    "id": "wc-13",
     "term": "Name the rivers",
     "definition": "Name the rivers close to the centre of the Aligarh Movement."
    },
    {
-    "id": "wc-17",
+    "id": "wc-14",
     "term": "Locate the city",
     "definition": "Locate the city that is associated with the birth of the Prarthana Samaj."
    },
    {
-    "id": "wc-18",
+    "id": "wc-15",
     "term": "Another dedicated reformer",
     "definition": "Another dedicated reformer was Jyotirao Govindrao Phule. He worked to improve the condition of women"
    },
    {
-    "id": "wc-19",
+    "id": "wc-16",
     "term": "She was a",
     "definition": "She was a champion of women's rights and fought against child marriage."
    },
    {
-    "id": "wc-20",
-    "term": "founded the Arya",
-    "definition": "founded the Arya Samaj"
-   },
-   {
-    "id": "wc-21",
-    "term": "in 1875. He",
-    "definition": "in 1875. He attacked the"
-   },
-   {
-    "id": "wc-22",
+    "id": "wc-17",
     "term": "We aim to",
     "definition": "We aim to turn this MAO College into a University similar to that of Oxford or Cambridge. Like the c"
    },
    {
-    "id": "wc-23",
+    "id": "wc-18",
     "term": "Read the above",
     "definition": "Read the above excerpt written by Syed Ahmad Khan in the Aligarh Institute Gazette, and answer the f"
    },
    {
-    "id": "wc-24",
+    "id": "wc-19",
     "term": "What was Syed",
     "definition": "What was Syed Ahmad Khan's inspiration for building the MAO (Muhammadan Anglo-Oriental) College?"
    },
    {
-    "id": "wc-25",
+    "id": "wc-20",
     "term": "Kandukuri Veeresalingam was",
     "definition": "Kandukuri Veeresalingam was a prominent social reformer from South India. He fought for the educatio"
    },
    {
-    "id": "wc-26",
+    "id": "wc-21",
     "term": "Sree Narayana Guru",
     "definition": "Sree Narayana Guru was another important spiritual and social reformer from south India. He denounce"
    },
    {
-    "id": "wc-27",
+    "id": "wc-22",
     "term": "(a) Raja Ram",
     "definition": "(a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the ico"
    },
    {
-    "id": "wc-28",
+    "id": "wc-23",
     "term": "Tick (√) the",
     "definition": "Tick (√) the pictures of the people who were associated with the 19th-century social reform movement"
    },
    {
-    "id": "wc-29",
+    "id": "wc-24",
     "term": "With the establishment",
     "definition": "With the establishment of British rule, the demand for using English as the language of administrati"
+   },
+   {
+    "id": "wc-25",
+    "term": "During the 19th",
+    "definition": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the tradi"
+   },
+   {
+    "id": "wc-26",
+    "term": "and quickly spread",
+    "definition": "and quickly spread to different parts of the country. It was brought on by the following factors:"
+   },
+   {
+    "id": "wc-27",
+    "term": "Realisation of unjust",
+    "definition": "Realisation of unjust and unacceptable"
+   },
+   {
+    "id": "wc-28",
+    "term": "Bengal was one",
+    "definition": "Bengal was one of the first regions to witness a series of reform movements. Let us read about some "
+   },
+   {
+    "id": "wc-29",
+    "term": "Raja Ram Mohan",
+    "definition": "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamen"
    }
   ]
  },
@@ -2820,7 +2796,6 @@ const HISTORY_CHEATSHEET_DATA = {
   "title": "The Rise of Indian Nationalism — Cheat Sheet",
   "topCram": [
    "Formation of the Indian National Congress in 1885 to organise public opinion",
-   "An illustration depicting the",
    "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians. These feelings ultimately led to the birth of the Indian national movement.",
    "Let us read about the factors that led to the rise of nationalism.",
    "Even though the revolt failed in its objective of expelling the British from India, it created in Indian minds the idea of unity and sacrifice for the nation.",
@@ -2830,7 +2805,8 @@ const HISTORY_CHEATSHEET_DATA = {
    "While the British succeeded in their objectives, Western education brought to Indian minds the modern ideas of freedom, liberty and fraternity.",
    "The exposure to Western education allowed many Indians to learn the English language. It became the language of communication among educated people across the country.",
    "Though Indians spoke different languages in their own regions, they often used English to express their views and exchange ideas with those belonging to other regions. This developed a sense of unity among different regional groups.",
-   "The press played a very important role in arousing nationalist feelings."
+   "The press played a very important role in arousing nationalist feelings.",
+   "A number of newspapers were published, both in English and in the vernacular languages."
   ],
   "sections": [
    {
@@ -2838,10 +2814,6 @@ const HISTORY_CHEATSHEET_DATA = {
     "items": [
      {
       "text": "Formation of the Indian National Congress in 1885 to organise public opinion",
-      "noteId": "hist-rev-ch11-01"
-     },
-     {
-      "text": "An illustration depicting the",
       "noteId": "hist-rev-ch11-01"
      },
      {
@@ -2867,16 +2839,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "The British had originally imposed Western education in order to create a class of clerks for their administration.",
       "noteId": "hist-rev-ch11-01"
+     },
+     {
+      "text": "While the British succeeded in their objectives, Western education brought to Indian minds the modern ideas of freedom, liberty and fraternity.",
+      "noteId": "hist-rev-ch11-01"
      }
     ]
    },
    {
     "title": "📌 Must-know definitions",
     "items": [
-     {
-      "text": "While the British succeeded in their objectives, Western education brought to Indian minds the modern ideas of freedom, liberty and fraternity.",
-      "noteId": "hist-rev-ch11-02"
-     },
      {
       "text": "The exposure to Western education allowed many Indians to learn the English language. It became the language of communication among educated people across the country.",
       "noteId": "hist-rev-ch11-02"
@@ -2904,6 +2876,10 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed its rich heritage.",
       "noteId": "hist-rev-ch11-02"
+     },
+     {
+      "text": "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta dynasty and the Mughal Empire. These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+      "noteId": "hist-rev-ch11-02"
      }
     ]
    },
@@ -2911,19 +2887,11 @@ const HISTORY_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta dynasty and the Mughal Empire. These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
-      "noteId": "hist-rev-ch11-03"
-     },
-     {
       "text": "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
       "noteId": "hist-rev-ch11-03"
      },
      {
       "text": "The development of roads and railways",
-      "noteId": "hist-rev-ch11-03"
-     },
-     {
-      "text": "narrowed regional barriers.",
       "noteId": "hist-rev-ch11-03"
      },
      {
@@ -2940,6 +2908,14 @@ const HISTORY_CHEATSHEET_DATA = {
      },
      {
       "text": "Lord Ripon, who succeeded Lord Lytton as the Viceroy, tried to address some of the grievances of the Indians.",
+      "noteId": "hist-rev-ch11-03"
+     },
+     {
+      "text": "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. Ilbert, a Law Member of the Government of India.",
+      "noteId": "hist-rev-ch11-03"
+     },
+     {
+      "text": "The bill proposed that senior Indian magistrates could preside over cases involving Europeans accused of crimes in India.",
       "noteId": "hist-rev-ch11-03"
      }
     ]
@@ -2963,138 +2939,138 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-03",
-    "term": "Let us read",
-    "definition": "Let us read about the factors that led to the rise of nationalism."
-   },
-   {
-    "id": "wc-04",
     "term": "Even though the",
     "definition": "Even though the revolt failed in its objective of expelling the British from India, it created in In"
    },
    {
-    "id": "wc-05",
+    "id": "wc-04",
     "term": "The idea of",
     "definition": "The idea of belonging to one nation now gained ground."
    },
    {
-    "id": "wc-06",
+    "id": "wc-05",
     "term": "The spread of",
     "definition": "The spread of Western education helped foster the spirit of nationalism."
    },
    {
-    "id": "wc-07",
+    "id": "wc-06",
     "term": "The British had",
     "definition": "The British had originally imposed Western education in order to create a class of clerks for their "
    },
    {
-    "id": "wc-08",
+    "id": "wc-07",
     "term": "While the British",
     "definition": "While the British succeeded in their objectives, Western education brought to Indian minds the moder"
    },
    {
-    "id": "wc-09",
+    "id": "wc-08",
     "term": "The exposure to",
     "definition": "The exposure to Western education allowed many Indians to learn the English language. It became the "
    },
    {
-    "id": "wc-10",
+    "id": "wc-09",
     "term": "Though Indians spoke",
     "definition": "Though Indians spoke different languages in their own regions, they often used English to express th"
    },
    {
-    "id": "wc-11",
+    "id": "wc-10",
     "term": "The press played",
     "definition": "The press played a very important role in arousing nationalist feelings."
    },
    {
-    "id": "wc-12",
+    "id": "wc-11",
     "term": "A number of",
     "definition": "A number of newspapers were published, both in English and in the vernacular languages."
    },
    {
-    "id": "wc-13",
+    "id": "wc-12",
     "term": "Leaders of the",
     "definition": "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national aw"
    },
    {
-    "id": "wc-14",
+    "id": "wc-13",
     "term": "In 1913, Rabindranath",
     "definition": "In 1913, Rabindranath Tagore became the first non-European to win the Nobel Prize for Literature."
    },
    {
-    "id": "wc-15",
+    "id": "wc-14",
     "term": "Together with Indians,",
     "definition": "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prins"
    },
    {
-    "id": "wc-16",
+    "id": "wc-15",
     "term": "Indians once again",
     "definition": "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandra"
    },
    {
-    "id": "wc-17",
+    "id": "wc-16",
     "term": "Lord Dalhousie and",
     "definition": "Lord Dalhousie and other British administrators took an active interest in establishing an effective"
    },
    {
-    "id": "wc-18",
+    "id": "wc-17",
     "term": "The development of",
     "definition": "The development of roads and railways"
    },
    {
-    "id": "wc-19",
-    "term": "narrowed regional barriers.",
-    "definition": "narrowed regional barriers."
-   },
-   {
-    "id": "wc-20",
+    "id": "wc-18",
     "term": "The British considered",
     "definition": "The British considered the Indians to be an inferior and uncivilised race."
    },
    {
-    "id": "wc-21",
+    "id": "wc-19",
     "term": "Indians were humiliated,",
     "definition": "Indians were humiliated, looked down upon and treated with contempt."
    },
    {
-    "id": "wc-22",
+    "id": "wc-20",
     "term": "Racial discrimination by",
     "definition": "Racial discrimination by the British was greatly resented by Indians. Certain instances of racial di"
    },
    {
-    "id": "wc-23",
+    "id": "wc-21",
     "term": "Lord Ripon, who",
     "definition": "Lord Ripon, who succeeded Lord Lytton as the Viceroy, tried to address some of the grievances of the"
    },
    {
-    "id": "wc-24",
+    "id": "wc-22",
     "term": "A bill, known",
     "definition": "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. Ilbert, a Law Member of the Governm"
    },
    {
-    "id": "wc-25",
+    "id": "wc-23",
     "term": "The bill proposed",
     "definition": "The bill proposed that senior Indian magistrates could preside over cases involving Europeans accuse"
    },
    {
-    "id": "wc-26",
+    "id": "wc-24",
     "term": "Formation of the",
     "definition": "Formation of the Indian National Congress in 1885 to organise public opinion"
    },
    {
-    "id": "wc-27",
-    "term": "An illustration depicting",
-    "definition": "An illustration depicting the"
-   },
-   {
-    "id": "wc-28",
+    "id": "wc-25",
     "term": "The term ‘nationalism’",
     "definition": "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liber"
    },
    {
-    "id": "wc-29",
+    "id": "wc-26",
     "term": "Let us read",
     "definition": "Let us read about the factors that led to the rise of nationalism."
+   },
+   {
+    "id": "wc-27",
+    "term": "Even though the",
+    "definition": "Even though the revolt failed in its objective of expelling the British from India, it created in In"
+   },
+   {
+    "id": "wc-28",
+    "term": "The idea of",
+    "definition": "The idea of belonging to one nation now gained ground."
+   },
+   {
+    "id": "wc-29",
+    "term": "The spread of",
+    "definition": "The spread of Western education helped foster the spirit of nationalism."
    }
   ]
  },
@@ -3103,7 +3079,6 @@ const HISTORY_CHEATSHEET_DATA = {
   "title": "The Indian National Movement: 1885–1916 — Cheat Sheet",
   "topCram": [
    "Tick (√) the pictures of the members of the Indian National Congress.",
-   "Gopal Krishna Gokhale",
    "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
    "The moderates have been criticised by many as they did not achieve many of their objectives. They have also been criticised as a ‘microscopic minority’—leaders who represented only a small section of the population, while the masses at large remained unaffected by their activities. Despite the criticisms levelled at the moderates, they achieved the following:",
    "■ Due to the spread of a national consciousness among a wider section of society, people began to believe that they belonged to one nation.",
@@ -3113,7 +3088,8 @@ const HISTORY_CHEATSHEET_DATA = {
    "The radicals had no faith in the British sense of justice and fair play. They felt that the British had no honest intentions of working for the welfare of the Indian people.",
    "They believed that the British rule had done more harm to India than good.",
    "They demanded complete independence or Swaraj and not self-government within the British Empire.",
-   "The radical method of approach included aggressive and organised political agitation, which involved the masses."
+   "The radical method of approach included aggressive and organised political agitation, which involved the masses.",
+   "They were willing to make sacrifices, even when it involved the use of violence, if necessary."
   ],
   "sections": [
    {
@@ -3121,10 +3097,6 @@ const HISTORY_CHEATSHEET_DATA = {
     "items": [
      {
       "text": "Tick (√) the pictures of the members of the Indian National Congress.",
-      "noteId": "hist-rev-ch12-01"
-     },
-     {
-      "text": "Gopal Krishna Gokhale",
       "noteId": "hist-rev-ch12-01"
      },
      {
@@ -3150,16 +3122,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "The radical leadership consisted of aggressive leaders such as Lala Lajpat Rai, Bal Gangadhar Tilak and Bipin Chandra Pal. This trio was popularly known as Lal-Bal-Pal.",
       "noteId": "hist-rev-ch12-01"
+     },
+     {
+      "text": "The radicals had no faith in the British sense of justice and fair play. They felt that the British had no honest intentions of working for the welfare of the Indian people.",
+      "noteId": "hist-rev-ch12-01"
      }
     ]
    },
    {
     "title": "📌 Must-know definitions",
     "items": [
-     {
-      "text": "The radicals had no faith in the British sense of justice and fair play. They felt that the British had no honest intentions of working for the welfare of the Indian people.",
-      "noteId": "hist-rev-ch12-02"
-     },
      {
       "text": "They believed that the British rule had done more harm to India than good.",
       "noteId": "hist-rev-ch12-02"
@@ -3187,16 +3159,16 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "Following the partition of Bengal, the radical nationalists launched the Swadeshi and Boycott movements against the British.",
       "noteId": "hist-rev-ch12-02"
+     },
+     {
+      "text": "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers.",
+      "noteId": "hist-rev-ch12-02"
      }
     ]
    },
    {
     "title": "🎯 Exam quick hits",
     "items": [
-     {
-      "text": "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers.",
-      "noteId": "hist-rev-ch12-03"
-     },
      {
       "text": "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appealed to Indians to refrain from sending their children to British schools and colleges.",
       "noteId": "hist-rev-ch12-03"
@@ -3224,6 +3196,10 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "The formation of the All India Muslim League was welcomed by the British. The government felt that separate political organisations for the Hindus and Muslims would prevent the two religious communities from coming together and uniting against the British.",
       "noteId": "hist-rev-ch12-03"
+     },
+     {
+      "text": "The aims of the All India Muslim League were to:",
+      "noteId": "hist-rev-ch12-03"
      }
     ]
    }
@@ -3241,143 +3217,143 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-02",
-    "term": "The establishment of",
-    "definition": "The establishment of the Indian National Congress marked the beginning of an organised political mov"
-   },
-   {
-    "id": "wc-03",
     "term": "The moderates have",
     "definition": "The moderates have been criticised by many as they did not achieve many of their objectives. They ha"
    },
    {
-    "id": "wc-04",
+    "id": "wc-03",
     "term": "■ Due to",
     "definition": "■ Due to the spread of a national consciousness among a wider section of society, people began to be"
    },
    {
-    "id": "wc-05",
+    "id": "wc-04",
     "term": "Due to their",
     "definition": "Due to their efforts, more Indians became aware of the concepts of freedom, secularism and democracy"
    },
    {
-    "id": "wc-06",
+    "id": "wc-05",
     "term": "The failure of",
     "definition": "The failure of the moderates to coax the British government into making real policy changes created "
    },
    {
-    "id": "wc-07",
+    "id": "wc-06",
     "term": "The radical leadership",
     "definition": "The radical leadership consisted of aggressive leaders such as Lala Lajpat Rai, Bal Gangadhar Tilak "
    },
    {
-    "id": "wc-08",
+    "id": "wc-07",
     "term": "The radicals had",
     "definition": "The radicals had no faith in the British sense of justice and fair play. They felt that the British "
    },
    {
-    "id": "wc-09",
+    "id": "wc-08",
     "term": "They believed that",
     "definition": "They believed that the British rule had done more harm to India than good."
    },
    {
-    "id": "wc-10",
+    "id": "wc-09",
     "term": "They demanded complete",
     "definition": "They demanded complete independence or Swaraj and not self-government within the British Empire."
    },
    {
-    "id": "wc-11",
+    "id": "wc-10",
     "term": "The radical method",
     "definition": "The radical method of approach included aggressive and organised political agitation, which involved"
    },
    {
-    "id": "wc-12",
+    "id": "wc-11",
     "term": "They were willing",
     "definition": "They were willing to make sacrifices, even when it involved the use of violence, if necessary."
    },
    {
-    "id": "wc-13",
+    "id": "wc-12",
     "term": "The radicals felt",
     "definition": "The radicals felt that the economic interest of the British government to monopolise the Indian mark"
    },
    {
-    "id": "wc-14",
+    "id": "wc-13",
     "term": "The radical nationalists",
     "definition": "The radical nationalists broadened the social base of the movement by involving the masses in their "
    },
    {
-    "id": "wc-15",
+    "id": "wc-14",
     "term": "Following the partition",
     "definition": "Following the partition of Bengal, the radical nationalists launched the Swadeshi and Boycott moveme"
    },
    {
-    "id": "wc-16",
+    "id": "wc-15",
     "term": "The Swadeshi Movement",
     "definition": "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturer"
    },
    {
-    "id": "wc-17",
+    "id": "wc-16",
     "term": "The Boycott Movement",
     "definition": "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appea"
    },
    {
-    "id": "wc-18",
+    "id": "wc-17",
     "term": "Due to the",
     "definition": "Due to the differences in their beliefs and methods, a split occurred between the moderates and the "
    },
    {
-    "id": "wc-19",
+    "id": "wc-18",
     "term": "In 1911, Bengal",
     "definition": "In 1911, Bengal was reunited. However, the capital of the country was shifted from Calcutta to Delhi"
    },
    {
-    "id": "wc-20",
+    "id": "wc-19",
     "term": "Apart from the",
     "definition": "Apart from the Congress, other communities in India also came together to form political organisatio"
    },
    {
-    "id": "wc-21",
+    "id": "wc-20",
     "term": "The British government",
     "definition": "The British government willingly accepted the requests of the deputation, and Lord Minto"
    },
    {
-    "id": "wc-22",
+    "id": "wc-21",
     "term": "Mohammed Ali Jinnah",
     "definition": "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All Ind"
    },
    {
-    "id": "wc-23",
+    "id": "wc-22",
     "term": "The formation of",
     "definition": "The formation of the All India Muslim League was welcomed by the British. The government felt that s"
    },
    {
-    "id": "wc-24",
-    "term": "► Leaders of",
-    "definition": "► Leaders of the Muslim League"
-   },
-   {
-    "id": "wc-25",
+    "id": "wc-23",
     "term": "The aims of",
     "definition": "The aims of the All India Muslim League were to:"
    },
    {
-    "id": "wc-26",
+    "id": "wc-24",
     "term": "Tick (√) the",
     "definition": "Tick (√) the pictures of the members of the Indian National Congress."
    },
    {
-    "id": "wc-27",
-    "term": "Gopal Krishna Gokhale",
-    "definition": "Gopal Krishna Gokhale"
-   },
-   {
-    "id": "wc-28",
+    "id": "wc-25",
     "term": "The establishment of",
     "definition": "The establishment of the Indian National Congress marked the beginning of an organised political mov"
    },
    {
-    "id": "wc-29",
+    "id": "wc-26",
     "term": "The moderates have",
     "definition": "The moderates have been criticised by many as they did not achieve many of their objectives. They ha"
+   },
+   {
+    "id": "wc-27",
+    "term": "■ Due to",
+    "definition": "■ Due to the spread of a national consciousness among a wider section of society, people began to be"
+   },
+   {
+    "id": "wc-28",
+    "term": "Due to their",
+    "definition": "Due to their efforts, more Indians became aware of the concepts of freedom, secularism and democracy"
+   },
+   {
+    "id": "wc-29",
+    "term": "The failure of",
+    "definition": "The failure of the moderates to coax the British government into making real policy changes created "
    }
   ]
  },
@@ -3386,17 +3362,17 @@ const HISTORY_CHEATSHEET_DATA = {
   "title": "Mahatma Gandhi and the Indian National Movement: 1917–1947 — Cheat Sheet",
   "topCram": [
    "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi. His Dandi March marked the beginning of the Civil Disobedience Movement.",
-   "##### Learning Outcomes",
    "At the end of this lesson, learners will be able to:",
-   "Sarojini Naidu during",
-   "Members of the Cabinet",
-   "Mission to India meeting",
    "The Non-cooperation Movement was one of the earliest attempts by Gandhi to bring together all Indians and force the British to grant self-government to India. The causes for the launch of this movement are explained below.",
    "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses of the Act were as follows:",
    "To carry out arrests without a warrant",
    "On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protest against the measures of the Rowlatt Act. The meeting was peaceful and the people were unarmed. However, General Dyer, the British military commander, had issued an order banning all public meetings and hartals. He surrounded the Bagh with his troops, blocking its only exit, and opened fire on the gathering. There was no warning, and the shooting continued till the troops ran out of ammunition. Hundreds were killed and thousands wounded.",
    "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
-   "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920."
+   "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
+   "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this movement are discussed as follows.",
+   "In 1927, a commission headed by Sir John Simon was sent by the British government to review its functioning in India. It came to be known as the Simon Commission.",
+   "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member to represent India. The recommendations of the Simon Commission were also not acceptable to the national leaders.",
+   "This is a photograph of a protest by Indians during the Non-cooperation Movement."
   ],
   "sections": [
    {
@@ -3407,23 +3383,7 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch13-01"
      },
      {
-      "text": "##### Learning Outcomes",
-      "noteId": "hist-rev-ch13-01"
-     },
-     {
       "text": "At the end of this lesson, learners will be able to:",
-      "noteId": "hist-rev-ch13-01"
-     },
-     {
-      "text": "Sarojini Naidu during",
-      "noteId": "hist-rev-ch13-01"
-     },
-     {
-      "text": "Members of the Cabinet",
-      "noteId": "hist-rev-ch13-01"
-     },
-     {
-      "text": "Mission to India meeting",
       "noteId": "hist-rev-ch13-01"
      },
      {
@@ -3433,28 +3393,28 @@ const HISTORY_CHEATSHEET_DATA = {
      {
       "text": "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses of the Act were as follows:",
       "noteId": "hist-rev-ch13-01"
+     },
+     {
+      "text": "To carry out arrests without a warrant",
+      "noteId": "hist-rev-ch13-01"
+     },
+     {
+      "text": "On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protest against the measures of the Rowlatt Act. The meeting was peaceful and the people were unarmed. However, General Dyer, the British military commander, had issued an order banning all public meetings and hartals. He surrounded the Bagh with his troops, blocking its only exit, and opened fire on the gathering. There was no warning, and the shooting continued till the troops ran out of ammunition. Hundreds were killed and thousands wounded.",
+      "noteId": "hist-rev-ch13-01"
+     },
+     {
+      "text": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+      "noteId": "hist-rev-ch13-01"
+     },
+     {
+      "text": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
+      "noteId": "hist-rev-ch13-01"
      }
     ]
    },
    {
     "title": "📌 Must-know definitions",
     "items": [
-     {
-      "text": "To carry out arrests without a warrant",
-      "noteId": "hist-rev-ch13-02"
-     },
-     {
-      "text": "On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protest against the measures of the Rowlatt Act. The meeting was peaceful and the people were unarmed. However, General Dyer, the British military commander, had issued an order banning all public meetings and hartals. He surrounded the Bagh with his troops, blocking its only exit, and opened fire on the gathering. There was no warning, and the shooting continued till the troops ran out of ammunition. Hundreds were killed and thousands wounded.",
-      "noteId": "hist-rev-ch13-02"
-     },
-     {
-      "text": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
-      "noteId": "hist-rev-ch13-02"
-     },
-     {
-      "text": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
-      "noteId": "hist-rev-ch13-02"
-     },
      {
       "text": "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this movement are discussed as follows.",
       "noteId": "hist-rev-ch13-02"
@@ -3468,7 +3428,23 @@ const HISTORY_CHEATSHEET_DATA = {
       "noteId": "hist-rev-ch13-02"
      },
      {
-      "text": "##### Poorna Swaraj Resolution",
+      "text": "This is a photograph of a protest by Indians during the Non-cooperation Movement.",
+      "noteId": "hist-rev-ch13-02"
+     },
+     {
+      "text": "What do you observe in the picture?",
+      "noteId": "hist-rev-ch13-02"
+     },
+     {
+      "text": "Do you think the picture tells you about the method of protest followed by the nationalists?",
+      "noteId": "hist-rev-ch13-02"
+     },
+     {
+      "text": "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress. At the Conference, there was no discussion of granting the rights of self-governance to Indians. Gandhi returned empty-handed and relaunched the Civil Disobedience Movement.",
+      "noteId": "hist-rev-ch13-02"
+     },
+     {
+      "text": "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the Indians. The failure of the Round Table Conferences had further strengthened this idea. As a result, the British passed the Government of India Act in 1935.",
       "noteId": "hist-rev-ch13-02"
      }
     ]
@@ -3476,26 +3452,6 @@ const HISTORY_CHEATSHEET_DATA = {
    {
     "title": "🎯 Exam quick hits",
     "items": [
-     {
-      "text": "This is a photograph of a protest by Indians during the Non-cooperation Movement.",
-      "noteId": "hist-rev-ch13-03"
-     },
-     {
-      "text": "What do you observe in the picture?",
-      "noteId": "hist-rev-ch13-03"
-     },
-     {
-      "text": "Do you think the picture tells you about the method of protest followed by the nationalists?",
-      "noteId": "hist-rev-ch13-03"
-     },
-     {
-      "text": "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress. At the Conference, there was no discussion of granting the rights of self-governance to Indians. Gandhi returned empty-handed and relaunched the Civil Disobedience Movement.",
-      "noteId": "hist-rev-ch13-03"
-     },
-     {
-      "text": "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the Indians. The failure of the Round Table Conferences had further strengthened this idea. As a result, the British passed the Government of India Act in 1935.",
-      "noteId": "hist-rev-ch13-03"
-     },
      {
       "text": "##### Government of India Act, 1935",
       "noteId": "hist-rev-ch13-03"
@@ -3506,6 +3462,10 @@ const HISTORY_CHEATSHEET_DATA = {
      },
      {
       "text": "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age and aggressively fought for Swaraj. He became the Congress President twice—1938 and 1939. When differences arose between him and Gandhi, Bose resigned from the presidentship of the Congress.",
+      "noteId": "hist-rev-ch13-03"
+     },
+     {
+      "text": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity. When the British declared war against the Axis powers on India's behalf, Bose organised a mass protest in Calcutta. He was imprisoned and then kept under house arrest, from where he escaped to Berlin and later to Japan.",
       "noteId": "hist-rev-ch13-03"
      }
     ]
@@ -3544,123 +3504,123 @@ const HISTORY_CHEATSHEET_DATA = {
    },
    {
     "id": "wc-06",
-    "term": "The Non-cooperation Movement",
-    "definition": "The Non-cooperation Movement was one of the earliest attempts by Gandhi to bring together all Indian"
-   },
-   {
-    "id": "wc-07",
-    "term": "The Rowlatt Act",
-    "definition": "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the fre"
-   },
-   {
-    "id": "wc-08",
-    "term": "To carry out",
-    "definition": "To carry out arrests without a warrant"
-   },
-   {
-    "id": "wc-09",
-    "term": "On 13 April",
-    "definition": "On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protest against the"
-   },
-   {
-    "id": "wc-10",
     "term": "This massacre of",
     "definition": "This massacre of innocent people was condemned by all Indians. There were severe protests all over t"
    },
    {
-    "id": "wc-11",
+    "id": "wc-07",
     "term": "After the Jallianwala",
     "definition": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920."
    },
    {
-    "id": "wc-12",
+    "id": "wc-08",
     "term": "The Civil Disobedience",
     "definition": "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method"
    },
    {
-    "id": "wc-13",
+    "id": "wc-09",
     "term": "In 1927, a",
     "definition": "In 1927, a commission headed by Sir John Simon was sent by the British government to review its func"
    },
    {
-    "id": "wc-14",
+    "id": "wc-10",
     "term": "From the outset,",
     "definition": "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-Whi"
    },
    {
-    "id": "wc-15",
-    "term": "##### Poorna Swaraj",
-    "definition": "##### Poorna Swaraj Resolution"
-   },
-   {
-    "id": "wc-16",
+    "id": "wc-11",
     "term": "This is a",
     "definition": "This is a photograph of a protest by Indians during the Non-cooperation Movement."
    },
    {
-    "id": "wc-17",
+    "id": "wc-12",
     "term": "What do you",
     "definition": "What do you observe in the picture?"
    },
    {
-    "id": "wc-18",
+    "id": "wc-13",
     "term": "Do you think",
     "definition": "Do you think the picture tells you about the method of protest followed by the nationalists?"
    },
    {
-    "id": "wc-19",
+    "id": "wc-14",
     "term": "The Second Round",
     "definition": "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as"
    },
    {
-    "id": "wc-20",
+    "id": "wc-15",
     "term": "The Civil Disobedience",
     "definition": "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional re"
    },
    {
-    "id": "wc-21",
+    "id": "wc-16",
     "term": "##### Government of",
     "definition": "##### Government of India Act, 1935"
    },
    {
-    "id": "wc-22",
+    "id": "wc-17",
     "term": "People reacted spontaneously.",
     "definition": "People reacted spontaneously. Even without the leaders, protest marches, demonstrations and strikes "
    },
    {
-    "id": "wc-23",
+    "id": "wc-18",
     "term": "Subhas Chandra Bose,",
     "definition": "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national moveme"
    },
    {
-    "id": "wc-24",
+    "id": "wc-19",
     "term": "Subhas Chandra Bose",
     "definition": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to"
    },
    {
-    "id": "wc-25",
+    "id": "wc-20",
     "term": "In 1930, Mahatma",
     "definition": "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coas"
    },
    {
-    "id": "wc-26",
-    "term": "##### Learning Outcomes",
-    "definition": "##### Learning Outcomes"
-   },
-   {
-    "id": "wc-27",
+    "id": "wc-21",
     "term": "At the end",
     "definition": "At the end of this lesson, learners will be able to:"
    },
    {
+    "id": "wc-22",
+    "term": "The Non-cooperation Movement",
+    "definition": "The Non-cooperation Movement was one of the earliest attempts by Gandhi to bring together all Indian"
+   },
+   {
+    "id": "wc-23",
+    "term": "The Rowlatt Act",
+    "definition": "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the fre"
+   },
+   {
+    "id": "wc-24",
+    "term": "To carry out",
+    "definition": "To carry out arrests without a warrant"
+   },
+   {
+    "id": "wc-25",
+    "term": "On 13 April",
+    "definition": "On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protest against the"
+   },
+   {
+    "id": "wc-26",
+    "term": "This massacre of",
+    "definition": "This massacre of innocent people was condemned by all Indians. There were severe protests all over t"
+   },
+   {
+    "id": "wc-27",
+    "term": "After the Jallianwala",
+    "definition": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920."
+   },
+   {
     "id": "wc-28",
-    "term": "Sarojini Naidu during",
-    "definition": "Sarojini Naidu during"
+    "term": "The Civil Disobedience",
+    "definition": "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method"
    },
    {
     "id": "wc-29",
-    "term": "Members of the",
-    "definition": "Members of the Cabinet"
+    "term": "In 1927, a",
+    "definition": "In 1927, a commission headed by Sir John Simon was sent by the British government to review its func"
    }
   ]
  }

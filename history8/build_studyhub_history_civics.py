@@ -54,10 +54,17 @@ def assets_dir(ch: dict) -> Path:
 
 
 def read_ocr_md(ch: dict) -> str:
+    source = chapter_dir(ch) / f"ch{ch['num']}.source.md"
     path = chapter_dir(ch) / f"ch{ch['num']}.md"
+    if source.exists():
+        return source.read_text(encoding="utf-8")
+    if path.exists() and "## High-Yield Facts" not in path.read_text(encoding="utf-8")[:800]:
+        text = path.read_text(encoding="utf-8")
+        source.write_text(text, encoding="utf-8")
+        return text
     if not path.exists():
-        raise FileNotFoundError(path)
-    return path.read_text(encoding="utf-8")
+        raise FileNotFoundError(f"Missing OCR source for {ch['topicId']}: {source}")
+    raise FileNotFoundError(f"Run split_history_civics_ocr.py first to create {source}")
 
 
 def setup_images(ch: dict, urls: list[str]) -> dict[str, str]:
