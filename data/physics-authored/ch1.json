@@ -1,57 +1,973 @@
 [
-{"id":"phy-c1-m01","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A fixed mass of gas can be compressed into a much smaller volume by applying pressure, but the same cannot be done with a solid. The best explanation is:","options":["Gas molecules are smaller than solid molecules","Gases have large intermolecular spaces which reduce on compression; solids have negligible spaces","Gas molecules are lighter, so they get pushed closer easily","Solids repel the piston with a frictional force"],"correctOption":1,"answer":"Compression works by reducing the empty space between molecules. In gases the intermolecular spaces are very large, so molecules can be pushed closer. In solids the molecules are already closely packed, leaving almost no space to reduce. Molecular size or mass is not the deciding factor.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m02","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A camphor tablet kept in a cupboard becomes smaller over days and finally disappears without leaving any liquid behind. The change of state involved is:","options":["Evaporation","Melting followed by evaporation","Sublimation","Condensation"],"correctOption":2,"answer":"Camphor changes directly from solid to vapour without passing through the liquid state — this is sublimation. Evaporation applies to liquids, and no liquid was ever formed here.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m03","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"While ice is melting, a thermometer placed in the ice–water mixture keeps reading 0 °C even though heat is continuously supplied. This is because the heat supplied is used to:","options":["Increase the speed of the water molecules","Overcome the intermolecular forces holding the molecules in fixed positions","Warm the thermometer bulb","Expand the volume of ice"],"correctOption":1,"answer":"During a change of state, the heat supplied (latent heat) does not raise the temperature. It is used to weaken/overcome intermolecular forces so that molecules can leave their fixed positions in the solid and move past one another as a liquid. Temperature, which measures average kinetic energy, stays constant.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m04","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Wet clothes dry fastest on a:","options":["Cold, humid, still day","Hot, humid, still day","Hot, dry, windy day","Cold, dry, still day"],"correctOption":2,"answer":"Evaporation increases with higher temperature (molecules gain kinetic energy), lower humidity (air can hold more vapour) and wind (moving air carries vapour molecules away from the surface). A hot, dry, windy day combines all three favourable factors.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m05","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Ice, water and steam are three states of the same substance. Which statement about their molecules is correct?","options":["The molecules in the three states are identical; only their arrangement, spacing and energy differ","Steam molecules are lighter than ice molecules","Water molecules change their chemical nature in each state","Ice molecules are larger than steam molecules"],"correctOption":0,"answer":"All three are made of identical H₂O molecules. A change of state is a physical change: only the intermolecular spacing, the strength of intermolecular forces felt, and the energy of the molecules change — never the molecules themselves.","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m06","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A liquid takes the shape of its container but still has a definite volume. This is because in a liquid the intermolecular forces are:","options":["Strong enough to hold molecules together, but weak enough to let them slide past one another","Zero, so molecules move completely freely","Stronger than in solids, fixing the volume","Strong only at the surface of the liquid"],"correctOption":0,"answer":"Liquid molecules remain bound to each other (hence definite volume) but the forces are weaker than in solids, so molecules can slide over one another — letting the liquid flow and take the container's shape.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m07","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A perfume bottle is opened in one corner of a closed room and the smell soon reaches the opposite corner. The kinetic theory explains this by saying that:","options":["Perfume vapour is lighter than air and floats across","Perfume molecules are in continuous random motion and mix into the spaces between air molecules","Air pushes the perfume in one fixed direction","The perfume molecules expand to fill the room"],"correctOption":1,"answer":"Gas molecules move randomly at high speed. Perfume vapour molecules wander through the large intermolecular spaces of air and spread (diffuse) throughout the room. Individual molecules do not expand, and the motion is random, not one-directional.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m08","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Water stored in an earthen pot (matka) stays cooler than water in a steel vessel because:","options":["Clay is naturally cold","Water seeps through the pores and evaporates, absorbing latent heat from the remaining water","The earthen pot reflects sunlight better","Steel generates heat"],"correctOption":1,"answer":"An earthen pot has tiny pores through which water continuously seeps out and evaporates from the outer surface. The latent heat needed for this evaporation is drawn from the water inside, lowering its temperature. A steel vessel has no pores, so no such evaporative cooling occurs.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m09","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Steam at 100 °C causes a much more severe burn than the same mass of boiling water at 100 °C. This is because steam:","options":["Is at a higher temperature than boiling water","Has extra stored energy (latent heat of vaporisation) which it releases on condensing on the skin","Moves faster and hits the skin harder","Contains more molecules than water"],"correctOption":1,"answer":"Both are at 100 °C, so the average kinetic energy of molecules is the same. But steam molecules additionally carry the latent heat absorbed during vaporisation. When steam condenses on skin, it first releases this large latent heat and then cools like hot water — delivering far more total heat.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m10","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"When a solid melts into a liquid, which pair of changes occurs at the molecular level?","options":["Intermolecular spaces decrease; forces become stronger","Intermolecular spaces increase; forces become weaker","Intermolecular spaces increase; forces become stronger","Molecules break into atoms; forces vanish"],"correctOption":1,"answer":"On melting, molecules gain energy, vibrate more violently and break away from fixed positions. The spacing between them increases slightly and the effective intermolecular force weakens — enough for molecules to slide past one another. The molecules themselves remain intact (physical change).","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m11","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Which of the following changes will NOT increase the rate of evaporation of water kept in a dish?","options":["Spreading the same water into a wider tray","Blowing air over the dish","Pouring more water into the dish to make it deeper","Placing the dish in sunlight"],"correctOption":2,"answer":"Evaporation is a surface phenomenon — it depends on the exposed surface area, temperature, wind and humidity, not on the depth or total amount of liquid. Making the water deeper without changing the surface area does not increase the evaporation rate.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m12","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Tiny droplets of water appear on the outer surface of a glass containing ice-cold water. The droplets are formed by:","options":["Water seeping out through the glass","Condensation of water vapour from the air on the cold surface","Evaporation of water from inside the glass","Melting of the glass surface"],"correctOption":1,"answer":"Water vapour present in air loses energy on touching the cold outer surface of the glass; its molecules slow down, come closer, and the vapour condenses into liquid droplets. Glass is non-porous, so nothing seeps through it.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m13","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Solids have a definite shape because their molecules:","options":["Do not move at all","Only vibrate about fixed mean positions due to strong intermolecular forces","Are too heavy to move","Are arranged in straight lines"],"correctOption":1,"answer":"Solid molecules are never completely at rest — they constantly vibrate, but strong intermolecular forces keep each molecule oscillating about a fixed position. Since positions are fixed, the solid keeps a definite shape. Option (a) is a common misconception: molecular motion never stops.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m14","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Arrange the three states of matter in increasing order of intermolecular force of attraction:","options":["Solid < Liquid < Gas","Gas < Liquid < Solid","Liquid < Gas < Solid","Gas < Solid < Liquid"],"correctOption":1,"answer":"Intermolecular forces are almost negligible in gases, moderate in liquids and strongest in solids. (Note: intermolecular spaces follow exactly the reverse order — largest in gases, smallest in solids.)","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m15","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A few drops of hand sanitizer rubbed on your palm make it feel cold. The cooling happens because the sanitizer:","options":["Is stored at a low temperature","Evaporates rapidly, taking the latent heat it needs from your skin","Reacts chemically with the skin to absorb heat","Blocks heat coming from the surroundings"],"correctOption":1,"answer":"Sanitizer (alcohol) is a volatile liquid that evaporates quickly. The energy needed for its molecules to escape as vapour is taken from the skin, lowering the skin's temperature. The same principle explains why sweating cools the body.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m16","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"Which of the following is true for boiling but NOT for evaporation?","options":["It changes a liquid into vapour","It takes place at one fixed temperature and throughout the bulk of the liquid","It can occur at any temperature","It occurs only at the surface"],"correctOption":1,"answer":"Both processes convert liquid to vapour, but boiling occurs at a fixed temperature (the boiling point) and bubbles of vapour form throughout the liquid. Evaporation occurs at all temperatures and only from the surface.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m17","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"According to the kinetic theory, raising the temperature of a substance always increases:","options":["The size of its molecules","The number of its molecules","The average kinetic energy of its molecules","The intermolecular force between its molecules"],"correctOption":2,"answer":"Temperature is a measure of the average kinetic energy of molecules. Heating makes molecules move/vibrate faster. The molecules do not grow, multiply, or attract each other more strongly — in fact effective attraction decreases as they move apart.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m18","topicId":"ch1-matter","type":"mcq","subtopic":"Single Correct","question":"A gas exerts pressure on the walls of its container because its molecules:","options":["Are attracted by the walls","Continuously collide with the walls and rebound","Settle down on the walls due to gravity","Expand on touching the walls"],"correctOption":1,"answer":"Gas molecules move randomly at high speeds and keep striking the container walls. Each collision pushes on the wall; billions of collisions per second produce a steady outward pressure on every wall, in all directions.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m19","topicId":"ch1-matter","type":"mcq","subtopic":"Application","question":"Two small water drops on a glass plate merge into a single bigger drop the moment they touch. The force responsible is:","options":["Force of adhesion between water and glass","Force of cohesion between water molecules","Gravitational pull between the drops","Atmospheric pressure pushing them together"],"correctOption":1,"answer":"Cohesion is the attraction between molecules of the same substance. When the drops touch, water molecules of one drop attract those of the other strongly enough to pull them into a single drop. Adhesion (water–glass attraction) is what makes the drop stick to and wet the plate.","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m20","topicId":"ch1-matter","type":"mcq","subtopic":"Application","question":"Glue can stick two sheets of paper together. The property of glue mainly responsible is:","options":["Strong force of adhesion between glue and paper","Strong force of cohesion within the glue","Low density of glue","High evaporation rate of glue"],"correctOption":0,"answer":"Adhesion is the force of attraction between molecules of different substances. Glue molecules attract paper molecules strongly on both sheets, binding them together. (Good cohesion within the dried glue also helps, but sticking to paper is adhesion.)","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m21","topicId":"ch1-matter","type":"mcq","subtopic":"Application","question":"In deserts, people often sprinkle water on the ground in front of their homes on hot evenings. This cools the surroundings because:","options":["Water is colder than the ground","The sprinkled water evaporates, absorbing a large amount of heat from the ground and air","Water stops the wind","Wet ground reflects heat back to the sky"],"correctOption":1,"answer":"The sprinkled water evaporates quickly from the hot ground. Evaporation needs latent heat, which is drawn from the ground and surrounding air, so their temperature falls. This is evaporative cooling in action.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m22","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): Evaporation of a liquid causes cooling of the remaining liquid.\nReason (R): The most energetic molecules escape from the surface, lowering the average kinetic energy of the molecules left behind.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":0,"answer":"Only molecules with higher-than-average kinetic energy can break free from the liquid surface. Their departure lowers the average kinetic energy — and hence the temperature — of the liquid that remains. R correctly explains A.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m23","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): A gas completely fills any closed vessel in which it is kept.\nReason (R): Intermolecular forces in a gas are negligible, so the molecules move freely in all directions.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":0,"answer":"With almost no attractive forces to hold them together, gas molecules fly about freely at high speeds and spread to every part of the vessel. R is the correct explanation of A.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m24","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): Ice at 0 °C cools a drink more effectively than an equal mass of water at 0 °C.\nReason (R): Ice absorbs latent heat of fusion from the drink while melting, in addition to the heat absorbed while warming up.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":0,"answer":"Both ice at 0 °C and water at 0 °C warm up by absorbing heat from the drink, but ice first absorbs a large latent heat of fusion just to melt (with no temperature change). This extra heat extracted from the drink makes ice the better cooler. R explains A.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m25","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): Solids cannot be compressed easily.\nReason (R): The molecules of a solid strongly repel any molecule that comes near them, at all distances.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":2,"answer":"A is true — solids are nearly incompressible. But R is false: solid molecules attract one another (cohesion); incompressibility arises because the molecules are already closely packed with negligible intermolecular space, not because of repulsion at all distances.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m26","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): The temperature of water remains constant at 100 °C while it boils.\nReason (R): The heat supplied during boiling goes into increasing the speed of the water molecules.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":2,"answer":"A is true. R is false: if the heat increased molecular speed, the temperature would rise. During boiling the heat supplied (latent heat of vaporisation) is used to pull molecules apart against intermolecular forces, converting liquid to vapour at constant temperature.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m27","topicId":"ch1-matter","type":"mcq","subtopic":"Assertion-Reason","question":"Assertion (A): Sublimation is the change of a solid directly into vapour without becoming liquid.\nReason (R): Camphor, iodine and naphthalene are common substances that sublime.","options":["Both A and R are true, and R is the correct explanation of A","Both A and R are true, but R is not the correct explanation of A","A is true but R is false","A is false but R is true"],"correctOption":1,"answer":"Both statements are true, but R merely gives examples of subliming substances — it does not explain why or what sublimation is. So R is not the correct explanation of A.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m28","topicId":"ch1-matter","type":"mcq","subtopic":"Statement-Based","question":"Consider the following statements:\nI. All molecules of a given pure substance are identical in shape, size and mass.\nII. The force of cohesion acts between molecules of different substances.\nIII. Intermolecular spaces are largest in gases.\nWhich statements are correct?","options":["I and II only","I and III only","II and III only","I, II and III"],"correctOption":1,"answer":"I is correct — molecules of the same substance are identical. III is correct — gas molecules are farthest apart. II is wrong: cohesion acts between like molecules; attraction between unlike molecules is adhesion.","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-m29","topicId":"ch1-matter","type":"mcq","subtopic":"Statement-Based","question":"Consider the following statements about evaporation:\nI. It can take place at any temperature below the boiling point.\nII. It takes place only from the surface of the liquid.\nIII. It raises the temperature of the liquid left behind.\nWhich statements are correct?","options":["I and II only","II and III only","I and III only","I, II and III"],"correctOption":0,"answer":"I and II are correct: evaporation is a surface phenomenon occurring at all temperatures. III is wrong — evaporation cools the remaining liquid because the most energetic molecules escape.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m30","topicId":"ch1-matter","type":"mcq","subtopic":"Statement-Based","question":"Consider the following statements about change of state:\nI. Pure ice melts at a fixed temperature of 0 °C.\nII. During boiling, the temperature of the liquid rises steadily.\nIII. Condensation releases heat to the surroundings.\nWhich statements are correct?","options":["I and II only","I and III only","II and III only","I, II and III"],"correctOption":1,"answer":"I is correct (melting point of pure ice is 0 °C). III is correct — condensation is the reverse of vaporisation, so the latent heat absorbed during vaporisation is given back. II is wrong: temperature stays constant during boiling.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-t01","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"The force of adhesion acts between the molecules of the same substance.","correctAnswer":"false","answer":"False. The force of attraction between molecules of the SAME substance is cohesion. Adhesion is the attraction between molecules of DIFFERENT substances (e.g., water and glass).","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t02","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"The molecules of a solid are completely at rest.","correctAnswer":"false","answer":"False. Molecules are never at rest. In a solid they continuously vibrate about fixed mean positions; they cannot leave those positions because of strong intermolecular forces.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-t03","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"Evaporation takes place only at the boiling point of a liquid.","correctAnswer":"false","answer":"False. Evaporation occurs at ALL temperatures below the boiling point. It is boiling that occurs only at one fixed temperature — the boiling point.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t04","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"During condensation, a substance changes from the gaseous state to the liquid state and releases heat.","correctAnswer":"true","answer":"True. Condensation is the reverse of vaporisation: vapour molecules lose energy, come closer, and form a liquid, giving out the latent heat that was absorbed during vaporisation.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t05","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"Intermolecular spaces in a liquid are smaller than those in a solid.","correctAnswer":"false","answer":"False. Intermolecular spaces in a liquid are LARGER than in a solid but much smaller than in a gas. The order is: solid < liquid << gas.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t06","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"On heating a substance, the average kinetic energy of its molecules increases.","correctAnswer":"true","answer":"True. Temperature is a measure of the average kinetic energy of molecules; heating raises the temperature and makes the molecules move or vibrate faster.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t07","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"A liquid has a definite shape as well as a definite volume.","correctAnswer":"false","answer":"False. A liquid has a definite VOLUME but no definite shape — it takes the shape of its container because its molecules can slide past one another.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-t08","topicId":"ch1-matter","type":"true_false","subtopic":"True False","question":"A gas has a free surface of its own.","correctAnswer":"false","answer":"False. A gas has NO free surface — it expands to fill the entire vessel. Only a liquid has a definite free surface (its top surface).","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-f01","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"The force of attraction between molecules of the same substance is called the force of _______.","blankAnswer":"cohesion","answer":"Cohesion — e.g., water molecules attracting each other. (Attraction between unlike molecules is adhesion.)","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-f02","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"The change of a liquid into vapour from its surface, at any temperature below the boiling point, is called _______.","blankAnswer":"evaporation","answer":"Evaporation — a surface phenomenon that occurs at all temperatures and causes cooling.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-f03","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"The smallest unit of matter that can exist independently and shows all the properties of that matter is called a _______.","blankAnswer":"molecule","answer":"Molecule — it may consist of one or more atoms (e.g., a common salt molecule has one sodium and one chlorine atom).","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-f04","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"The fixed temperature at which a solid changes into a liquid is called its _______ point.","blankAnswer":"melting","answer":"Melting point — for pure ice it is 0 °C. The temperature stays constant during melting.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-f05","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"The change of a solid directly into vapour, without passing through the liquid state, is called _______.","blankAnswer":"sublimation","answer":"Sublimation — shown by camphor, iodine and naphthalene balls.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-f06","topicId":"ch1-matter","type":"fill_blank","subtopic":"Fill Blank","question":"Solids are almost incompressible because the intermolecular _______ between their molecules are negligible.","blankAnswer":"spaces","answer":"Spaces. Compression only squeezes out empty intermolecular space; in solids the molecules are already closely packed.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-x01","topicId":"ch1-matter","type":"match","subtopic":"Match","question":"Match each change of state with its correct description:","pairs":[{"left":"Melting (fusion)","right":"Solid changes into liquid at a fixed temperature"},{"left":"Evaporation","right":"Liquid changes into vapour from its surface at any temperature"},{"left":"Condensation","right":"Vapour changes into liquid, releasing heat"},{"left":"Sublimation","right":"Solid changes directly into vapour"},{"left":"Freezing","right":"Liquid changes into solid on cooling"}],"answer":"Melting: solid→liquid at the melting point. Evaporation: surface change of liquid→vapour at any temperature. Condensation: vapour→liquid with release of latent heat. Sublimation: solid→vapour directly. Freezing: liquid→solid (reverse of melting).","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-x02","topicId":"ch1-matter","type":"match","subtopic":"Match","question":"Match each state of matter with the behaviour of its molecules:","pairs":[{"left":"Solid","right":"Molecules vibrate about fixed positions"},{"left":"Liquid","right":"Molecules slide past one another but stay together"},{"left":"Gas","right":"Molecules move freely at high speed in all directions"},{"left":"Strongest cohesion","right":"Found between molecules of a solid"},{"left":"Largest intermolecular space","right":"Found between molecules of a gas"}],"answer":"Solid — vibration about fixed positions (definite shape and volume). Liquid — molecules slide over each other (definite volume, no fixed shape). Gas — free, random, high-speed motion (no fixed shape or volume). Cohesion is strongest in solids; intermolecular space is largest in gases.","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-x03","topicId":"ch1-matter","type":"match","subtopic":"Match","question":"Match each everyday observation with the process behind it:","pairs":[{"left":"Wet clothes dry on a clothesline","right":"Evaporation"},{"left":"Dew forms on grass on a cold morning","right":"Condensation"},{"left":"Naphthalene balls shrink in a cupboard","right":"Sublimation"},{"left":"Candle wax turns liquid near the flame","right":"Melting"},{"left":"Water in an ice tray turns solid","right":"Freezing"}],"answer":"Drying clothes — evaporation of water. Dew — water vapour in air condenses on cold grass. Naphthalene — sublimes directly to vapour. Wax near flame — melts (fusion). Ice tray — water freezes (solidification).","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-s01","topicId":"ch1-matter","type":"short_answer","subtopic":"Short Answer","question":"A sealed bottle of cold drink taken out of the refrigerator soon becomes wet on the outside. Explain where this water comes from.","answer":"The water does not come from inside the bottle (it is sealed). Air always contains water vapour. When the vapour molecules touch the cold outer surface of the bottle, they lose kinetic energy, slow down and come closer together, condensing into tiny liquid droplets. This is condensation of atmospheric water vapour on a cold surface.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":4,"qualityLevel":"NEET UG"},
-{"id":"phy-c1-s02","topicId":"ch1-matter","type":"short_answer","subtopic":"Short Answer","question":"Using the kinetic theory, explain why a gas has neither a definite shape nor a definite volume.","answer":"In a gas the intermolecular forces are negligible and the intermolecular spaces are very large. Each molecule therefore moves independently, at high speed, in random directions. With nothing holding the molecules together, they spread out until they occupy the whole vessel — so the gas takes both the shape and the volume of its container.","source":"icse","linksTo":"phy-s1-sec_02","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-s03","topicId":"ch1-matter","type":"short_answer","subtopic":"Short Answer","question":"Evaporation cools the remaining liquid, but boiling does not lower the temperature of the boiling liquid. Explain both observations.","answer":"In evaporation, only the most energetic surface molecules escape as vapour. Their departure lowers the average kinetic energy of the molecules left behind, so the liquid cools. In boiling, heat is continuously supplied by an external source; this heat provides the latent heat of vaporisation for molecules to escape, so the liquid stays at a constant boiling temperature — the energy of escaping molecules is replaced by the heater, not taken from the liquid.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-s04","topicId":"ch1-matter","type":"short_answer","subtopic":"Short Answer","question":"Why are cotton clothes preferred in hot summer months? Explain using the idea of evaporation.","answer":"Cotton is a good absorber of water. It soaks up the sweat from our body and spreads it over a large surface area of the fabric, exposing it to air. The sweat then evaporates faster, and the latent heat needed for this evaporation is taken from the body, cooling it. Synthetic fabrics absorb little sweat, so this cooling is much less.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-s05","topicId":"ch1-matter","type":"short_answer","subtopic":"Short Answer","question":"State the main assumptions of the kinetic theory of matter.","answer":"1. Matter is made of tiny particles (molecules); molecules of a given substance are identical in shape, size and mass. 2. Molecules are in a state of continuous random motion and therefore possess kinetic energy; this motion never stops. 3. The kinetic energy of molecules increases with temperature. 4. Molecules attract each other with intermolecular forces (cohesion between like molecules, adhesion between unlike molecules); these forces weaken as the separation between molecules increases. 5. There are empty spaces between molecules, called intermolecular spaces — smallest in solids and largest in gases.","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":3,"qualityLevel":"ICSE Class 8"},
-{"id":"phy-c1-m31","topicId":"ch1-matter","type":"mcq","subtopic":"Olympiad — Kinetic Theory & Diffusion","question":"A gas jar filled with dense, reddish-brown bromine vapor (which is significantly heavier than air) is placed below an inverted gas jar containing clear air. After some time, the reddish-brown color spreads upward, resulting in a completely uniform mixture across both jars. Which statement provides the most accurate scientific explanation based on the Kinetic Theory of Matter?","options":["The upward movement occurs because intermolecular forces between air and bromine molecules are highly attractive, actively pulling the heavier vapor upward","The gas particles possess high kinetic energy and are in constant, random motion, causing them to mix uniformly against the pull of gravity through continuous molecular collisions","Once the reddish-brown color becomes perfectly uniform throughout both jars, a state of static equilibrium is reached, and all molecular movement stops","If the temperature of both jars is significantly decreased, the rate of intermixing will increase because the denser gas will expand faster"],"correctOption":1,"answer":"According to the Kinetic Theory, gas particles possess high kinetic energy and move randomly. Even though bromine is denser than air, thermal kinetic energy drives bromine and air molecules to collide and intermix (diffuse) until uniformly distributed — overcoming gravity macroscopically. Intermolecular forces in gases are negligible (A). Uniform color means dynamic equilibrium, not stopped motion (C). Lower temperature decreases kinetic energy and slows diffusion (D).","source":"icse","linksTo":"phy-s1-sec_03","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m32","topicId":"ch1-matter","type":"mcq","subtopic":"Olympiad — Matter & Molecules","question":"Which one of the following statements is scientifically accurate regarding matter and its particles?","options":["Liquid wax melts at 55 °C and is converted into its liquid form","Matter is anything that has mass and occupies some space","A liquid can be compressed slightly but a gas cannot be compressed","All molecules of different substances are identical in size and mass"],"correctOption":1,"answer":"Matter is defined as anything that has mass and occupies space — the fundamental ICSE definition. Option A is wrong: solid wax melts at ~55 °C to become liquid (not 'liquid wax melts'). Option C reverses the truth: gases compress easily due to large intermolecular spaces; liquids compress only slightly. Option D is false: molecules of different substances differ in size and mass. Note: 'A molecule may consist of one or more atoms' is also true but defines a molecule, not matter itself.","source":"icse","linksTo":"phy-s1-sec_01","qualityStars":5,"qualityLevel":"Olympiad"},
-{"id":"phy-c1-m33","topicId":"ch1-matter","type":"mcq","subtopic":"Olympiad — Kinetic Theory & Change of State","question":"During the sublimation of a pure solid substance at its constant transition temperature, which statement is scientifically accurate regarding the kinetic energy (KE) and potential energy (PE) of its molecules?","options":["Both the kinetic energy and the potential energy of the molecules increase simultaneously","The kinetic energy of the molecules increases, while their potential energy remains constant","The kinetic energy of the molecules remains constant, while their potential energy increases","The kinetic energy decreases, while the intermolecular forces of attraction become stronger"],"correctOption":2,"answer":"During sublimation at constant temperature, average kinetic energy (which depends on temperature) remains unchanged. The latent heat absorbed is used to overcome intermolecular forces, increasing the separation between molecules — hence potential energy increases sharply. KE does not increase (B) because temperature is constant. KE does not decrease (D) — that would imply cooling. Both increasing (A) would require temperature rise.","source":"icse","linksTo":"phy-s1-sec_04","qualityStars":5,"qualityLevel":"Olympiad"}
+ {
+  "id": "phy-c1-m01",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A fixed mass of gas can be compressed into a much smaller volume by applying pressure, but the same cannot be done with a solid. The best explanation is:",
+  "options": [
+   "Gas molecules are smaller than solid molecules",
+   "Gases have large intermolecular spaces which reduce on compression; solids have negligible spaces",
+   "Gas molecules are lighter, so they get pushed closer easily",
+   "Solids repel the piston with a frictional force"
+  ],
+  "correctOption": 1,
+  "answer": "Compression works by reducing the empty space between molecules. In gases the intermolecular spaces are very large, so molecules can be pushed closer. In solids the molecules are already closely packed, leaving almost no space to reduce. Molecular size or mass is not the deciding factor.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m02",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A camphor tablet kept in a cupboard becomes smaller over days and finally disappears without leaving any liquid behind. The change of state involved is:",
+  "options": [
+   "Evaporation",
+   "Melting followed by evaporation",
+   "Sublimation",
+   "Condensation"
+  ],
+  "correctOption": 2,
+  "answer": "Camphor changes directly from solid to vapour without passing through the liquid state — this is sublimation. Evaporation applies to liquids, and no liquid was ever formed here.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m03",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "While ice is melting, a thermometer placed in the ice–water mixture keeps reading 0 °C even though heat is continuously supplied. This is because the heat supplied is used to:",
+  "options": [
+   "Increase the speed of the water molecules",
+   "Overcome the intermolecular forces holding the molecules in fixed positions",
+   "Warm the thermometer bulb",
+   "Expand the volume of ice"
+  ],
+  "correctOption": 1,
+  "answer": "During a change of state, the heat supplied (latent heat) does not raise the temperature. It is used to weaken/overcome intermolecular forces so that molecules can leave their fixed positions in the solid and move past one another as a liquid. Temperature, which measures average kinetic energy, stays constant.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m04",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Wet clothes dry fastest on a:",
+  "options": [
+   "Cold, humid, still day",
+   "Hot, humid, still day",
+   "Hot, dry, windy day",
+   "Cold, dry, still day"
+  ],
+  "correctOption": 2,
+  "answer": "Evaporation increases with higher temperature (molecules gain kinetic energy), lower humidity (air can hold more vapour) and wind (moving air carries vapour molecules away from the surface). A hot, dry, windy day combines all three favourable factors.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m05",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Ice, water and steam are three states of the same substance. Which statement about their molecules is correct?",
+  "options": [
+   "The molecules in the three states are identical; only their arrangement, spacing and energy differ",
+   "Steam molecules are lighter than ice molecules",
+   "Water molecules change their chemical nature in each state",
+   "Ice molecules are larger than steam molecules"
+  ],
+  "correctOption": 0,
+  "answer": "All three are made of identical H₂O molecules. A change of state is a physical change: only the intermolecular spacing, the strength of intermolecular forces felt, and the energy of the molecules change — never the molecules themselves.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m06",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A liquid takes the shape of its container but still has a definite volume. This is because in a liquid the intermolecular forces are:",
+  "options": [
+   "Strong enough to hold molecules together, but weak enough to let them slide past one another",
+   "Zero, so molecules move completely freely",
+   "Stronger than in solids, fixing the volume",
+   "Strong only at the surface of the liquid"
+  ],
+  "correctOption": 0,
+  "answer": "Liquid molecules remain bound to each other (hence definite volume) but the forces are weaker than in solids, so molecules can slide over one another — letting the liquid flow and take the container's shape.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m07",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A perfume bottle is opened in one corner of a closed room and the smell soon reaches the opposite corner. The kinetic theory explains this by saying that:",
+  "options": [
+   "Perfume vapour is lighter than air and floats across",
+   "Perfume molecules are in continuous random motion and mix into the spaces between air molecules",
+   "Air pushes the perfume in one fixed direction",
+   "The perfume molecules expand to fill the room"
+  ],
+  "correctOption": 1,
+  "answer": "Gas molecules move randomly at high speed. Perfume vapour molecules wander through the large intermolecular spaces of air and spread (diffuse) throughout the room. Individual molecules do not expand, and the motion is random, not one-directional.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m08",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Water stored in an earthen pot (matka) stays cooler than water in a steel vessel because:",
+  "options": [
+   "Clay is naturally cold",
+   "Water seeps through the pores and evaporates, absorbing latent heat from the remaining water",
+   "The earthen pot reflects sunlight better",
+   "Steel generates heat"
+  ],
+  "correctOption": 1,
+  "answer": "An earthen pot has tiny pores through which water continuously seeps out and evaporates from the outer surface. The latent heat needed for this evaporation is drawn from the water inside, lowering its temperature. A steel vessel has no pores, so no such evaporative cooling occurs.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m09",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Steam at 100 °C causes a much more severe burn than the same mass of boiling water at 100 °C. This is because steam:",
+  "options": [
+   "Is at a higher temperature than boiling water",
+   "Has extra stored energy (latent heat of vaporisation) which it releases on condensing on the skin",
+   "Moves faster and hits the skin harder",
+   "Contains more molecules than water"
+  ],
+  "correctOption": 1,
+  "answer": "Both are at 100 °C, so the average kinetic energy of molecules is the same. But steam molecules additionally carry the latent heat absorbed during vaporisation. When steam condenses on skin, it first releases this large latent heat and then cools like hot water — delivering far more total heat.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m10",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "When a solid melts into a liquid, which pair of changes occurs at the molecular level?",
+  "options": [
+   "Intermolecular spaces decrease; forces become stronger",
+   "Intermolecular spaces increase; forces become weaker",
+   "Intermolecular spaces increase; forces become stronger",
+   "Molecules break into atoms; forces vanish"
+  ],
+  "correctOption": 1,
+  "answer": "On melting, molecules gain energy, vibrate more violently and break away from fixed positions. The spacing between them increases slightly and the effective intermolecular force weakens — enough for molecules to slide past one another. The molecules themselves remain intact (physical change).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m11",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Which of the following changes will NOT increase the rate of evaporation of water kept in a dish?",
+  "options": [
+   "Spreading the same water into a wider tray",
+   "Blowing air over the dish",
+   "Pouring more water into the dish to make it deeper",
+   "Placing the dish in sunlight"
+  ],
+  "correctOption": 2,
+  "answer": "Evaporation is a surface phenomenon — it depends on the exposed surface area, temperature, wind and humidity, not on the depth or total amount of liquid. Making the water deeper without changing the surface area does not increase the evaporation rate.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m12",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Tiny droplets of water appear on the outer surface of a glass containing ice-cold water. The droplets are formed by:",
+  "options": [
+   "Water seeping out through the glass",
+   "Condensation of water vapour from the air on the cold surface",
+   "Evaporation of water from inside the glass",
+   "Melting of the glass surface"
+  ],
+  "correctOption": 1,
+  "answer": "Water vapour present in air loses energy on touching the cold outer surface of the glass; its molecules slow down, come closer, and the vapour condenses into liquid droplets. Glass is non-porous, so nothing seeps through it.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m13",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Solids have a definite shape because their molecules:",
+  "options": [
+   "Do not move at all",
+   "Only vibrate about fixed mean positions due to strong intermolecular forces",
+   "Are too heavy to move",
+   "Are arranged in straight lines"
+  ],
+  "correctOption": 1,
+  "answer": "Solid molecules are never completely at rest — they constantly vibrate, but strong intermolecular forces keep each molecule oscillating about a fixed position. Since positions are fixed, the solid keeps a definite shape. Option (a) is a common misconception: molecular motion never stops.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m14",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Arrange the three states of matter in increasing order of intermolecular force of attraction:",
+  "options": [
+   "Solid < Liquid < Gas",
+   "Gas < Liquid < Solid",
+   "Liquid < Gas < Solid",
+   "Gas < Solid < Liquid"
+  ],
+  "correctOption": 1,
+  "answer": "Intermolecular forces are almost negligible in gases, moderate in liquids and strongest in solids. (Note: intermolecular spaces follow exactly the reverse order — largest in gases, smallest in solids.)",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m15",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A few drops of hand sanitizer rubbed on your palm make it feel cold. The cooling happens because the sanitizer:",
+  "options": [
+   "Is stored at a low temperature",
+   "Evaporates rapidly, taking the latent heat it needs from your skin",
+   "Reacts chemically with the skin to absorb heat",
+   "Blocks heat coming from the surroundings"
+  ],
+  "correctOption": 1,
+  "answer": "Sanitizer (alcohol) is a volatile liquid that evaporates quickly. The energy needed for its molecules to escape as vapour is taken from the skin, lowering the skin's temperature. The same principle explains why sweating cools the body.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m16",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "Which of the following is true for boiling but NOT for evaporation?",
+  "options": [
+   "It changes a liquid into vapour",
+   "It takes place at one fixed temperature and throughout the bulk of the liquid",
+   "It can occur at any temperature",
+   "It occurs only at the surface"
+  ],
+  "correctOption": 1,
+  "answer": "Both processes convert liquid to vapour, but boiling occurs at a fixed temperature (the boiling point) and bubbles of vapour form throughout the liquid. Evaporation occurs at all temperatures and only from the surface.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m17",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "According to the kinetic theory, raising the temperature of a substance always increases:",
+  "options": [
+   "The size of its molecules",
+   "The number of its molecules",
+   "The average kinetic energy of its molecules",
+   "The intermolecular force between its molecules"
+  ],
+  "correctOption": 2,
+  "answer": "Temperature is a measure of the average kinetic energy of molecules. Heating makes molecules move/vibrate faster. The molecules do not grow, multiply, or attract each other more strongly — in fact effective attraction decreases as they move apart.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m18",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Single Correct",
+  "question": "A gas exerts pressure on the walls of its container because its molecules:",
+  "options": [
+   "Are attracted by the walls",
+   "Continuously collide with the walls and rebound",
+   "Settle down on the walls due to gravity",
+   "Expand on touching the walls"
+  ],
+  "correctOption": 1,
+  "answer": "Gas molecules move randomly at high speeds and keep striking the container walls. Each collision pushes on the wall; billions of collisions per second produce a steady outward pressure on every wall, in all directions.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m19",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Application",
+  "question": "Two small water drops on a glass plate merge into a single bigger drop the moment they touch. The force responsible is:",
+  "options": [
+   "Force of adhesion between water and glass",
+   "Force of cohesion between water molecules",
+   "Gravitational pull between the drops",
+   "Atmospheric pressure pushing them together"
+  ],
+  "correctOption": 1,
+  "answer": "Cohesion is the attraction between molecules of the same substance. When the drops touch, water molecules of one drop attract those of the other strongly enough to pull them into a single drop. Adhesion (water–glass attraction) is what makes the drop stick to and wet the plate.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m20",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Application",
+  "question": "Glue can stick two sheets of paper together. The property of glue mainly responsible is:",
+  "options": [
+   "Strong force of adhesion between glue and paper",
+   "Strong force of cohesion within the glue",
+   "Low density of glue",
+   "High evaporation rate of glue"
+  ],
+  "correctOption": 0,
+  "answer": "Adhesion is the force of attraction between molecules of different substances. Glue molecules attract paper molecules strongly on both sheets, binding them together. (Good cohesion within the dried glue also helps, but sticking to paper is adhesion.)",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m21",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Application",
+  "question": "In deserts, people often sprinkle water on the ground in front of their homes on hot evenings. This cools the surroundings because:",
+  "options": [
+   "Water is colder than the ground",
+   "The sprinkled water evaporates, absorbing a large amount of heat from the ground and air",
+   "Water stops the wind",
+   "Wet ground reflects heat back to the sky"
+  ],
+  "correctOption": 1,
+  "answer": "The sprinkled water evaporates quickly from the hot ground. Evaporation needs latent heat, which is drawn from the ground and surrounding air, so their temperature falls. This is evaporative cooling in action.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m22",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): Evaporation of a liquid causes cooling of the remaining liquid.\nReason (R): The most energetic molecules escape from the surface, lowering the average kinetic energy of the molecules left behind.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 0,
+  "answer": "Only molecules with higher-than-average kinetic energy can break free from the liquid surface. Their departure lowers the average kinetic energy — and hence the temperature — of the liquid that remains. R correctly explains A.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m23",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): A gas completely fills any closed vessel in which it is kept.\nReason (R): Intermolecular forces in a gas are negligible, so the molecules move freely in all directions.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 0,
+  "answer": "With almost no attractive forces to hold them together, gas molecules fly about freely at high speeds and spread to every part of the vessel. R is the correct explanation of A.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m24",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): Ice at 0 °C cools a drink more effectively than an equal mass of water at 0 °C.\nReason (R): Ice absorbs latent heat of fusion from the drink while melting, in addition to the heat absorbed while warming up.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 0,
+  "answer": "Both ice at 0 °C and water at 0 °C warm up by absorbing heat from the drink, but ice first absorbs a large latent heat of fusion just to melt (with no temperature change). This extra heat extracted from the drink makes ice the better cooler. R explains A.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m25",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): Solids cannot be compressed easily.\nReason (R): The molecules of a solid strongly repel any molecule that comes near them, at all distances.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 2,
+  "answer": "A is true — solids are nearly incompressible. But R is false: solid molecules attract one another (cohesion); incompressibility arises because the molecules are already closely packed with negligible intermolecular space, not because of repulsion at all distances.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m26",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): The temperature of water remains constant at 100 °C while it boils.\nReason (R): The heat supplied during boiling goes into increasing the speed of the water molecules.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 2,
+  "answer": "A is true. R is false: if the heat increased molecular speed, the temperature would rise. During boiling the heat supplied (latent heat of vaporisation) is used to pull molecules apart against intermolecular forces, converting liquid to vapour at constant temperature.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m27",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Assertion-Reason",
+  "question": "Assertion (A): Sublimation is the change of a solid directly into vapour without becoming liquid.\nReason (R): Camphor, iodine and naphthalene are common substances that sublime.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A",
+   "Both A and R are true, but R is not the correct explanation of A",
+   "A is true but R is false",
+   "A is false but R is true"
+  ],
+  "correctOption": 1,
+  "answer": "Both statements are true, but R merely gives examples of subliming substances — it does not explain why or what sublimation is. So R is not the correct explanation of A.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m28",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Statement-Based",
+  "question": "Consider the following statements:\nI. All molecules of a given pure substance are identical in shape, size and mass.\nII. The force of cohesion acts between molecules of different substances.\nIII. Intermolecular spaces are largest in gases.\nWhich statements are correct?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "correctOption": 1,
+  "answer": "I is correct — molecules of the same substance are identical. III is correct — gas molecules are farthest apart. II is wrong: cohesion acts between like molecules; attraction between unlike molecules is adhesion.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-m29",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Statement-Based",
+  "question": "Consider the following statements about evaporation:\nI. It can take place at any temperature below the boiling point.\nII. It takes place only from the surface of the liquid.\nIII. It raises the temperature of the liquid left behind.\nWhich statements are correct?",
+  "options": [
+   "I and II only",
+   "II and III only",
+   "I and III only",
+   "I, II and III"
+  ],
+  "correctOption": 0,
+  "answer": "I and II are correct: evaporation is a surface phenomenon occurring at all temperatures. III is wrong — evaporation cools the remaining liquid because the most energetic molecules escape.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m30",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Statement-Based",
+  "question": "Consider the following statements about change of state:\nI. Pure ice melts at a fixed temperature of 0 °C.\nII. During boiling, the temperature of the liquid rises steadily.\nIII. Condensation releases heat to the surroundings.\nWhich statements are correct?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "correctOption": 1,
+  "answer": "I is correct (melting point of pure ice is 0 °C). III is correct — condensation is the reverse of vaporisation, so the latent heat absorbed during vaporisation is given back. II is wrong: temperature stays constant during boiling.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-t01",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "The force of adhesion acts between the molecules of the same substance.",
+  "correctAnswer": "false",
+  "answer": "False. The force of attraction between molecules of the SAME substance is cohesion. Adhesion is the attraction between molecules of DIFFERENT substances (e.g., water and glass).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t02",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "The molecules of a solid are completely at rest.",
+  "correctAnswer": "false",
+  "answer": "False. Molecules are never at rest. In a solid they continuously vibrate about fixed mean positions; they cannot leave those positions because of strong intermolecular forces.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-t03",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "Evaporation takes place only at the boiling point of a liquid.",
+  "correctAnswer": "false",
+  "answer": "False. Evaporation occurs at ALL temperatures below the boiling point. It is boiling that occurs only at one fixed temperature — the boiling point.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t04",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "During condensation, a substance changes from the gaseous state to the liquid state and releases heat.",
+  "correctAnswer": "true",
+  "answer": "True. Condensation is the reverse of vaporisation: vapour molecules lose energy, come closer, and form a liquid, giving out the latent heat that was absorbed during vaporisation.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t05",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "Intermolecular spaces in a liquid are smaller than those in a solid.",
+  "correctAnswer": "false",
+  "answer": "False. Intermolecular spaces in a liquid are LARGER than in a solid but much smaller than in a gas. The order is: solid < liquid << gas.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t06",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "On heating a substance, the average kinetic energy of its molecules increases.",
+  "correctAnswer": "true",
+  "answer": "True. Temperature is a measure of the average kinetic energy of molecules; heating raises the temperature and makes the molecules move or vibrate faster.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t07",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "A liquid has a definite shape as well as a definite volume.",
+  "correctAnswer": "false",
+  "answer": "False. A liquid has a definite VOLUME but no definite shape — it takes the shape of its container because its molecules can slide past one another.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-t08",
+  "topicId": "ch1-matter",
+  "type": "true_false",
+  "subtopic": "True False",
+  "question": "A gas has a free surface of its own.",
+  "correctAnswer": "false",
+  "answer": "False. A gas has NO free surface — it expands to fill the entire vessel. Only a liquid has a definite free surface (its top surface).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-f01",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "The force of attraction between molecules of the same substance is called the force of _______.",
+  "blankAnswer": "cohesion",
+  "answer": "Cohesion — e.g., water molecules attracting each other. (Attraction between unlike molecules is adhesion.)",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-f02",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "The change of a liquid into vapour from its surface, at any temperature below the boiling point, is called _______.",
+  "blankAnswer": "evaporation",
+  "answer": "Evaporation — a surface phenomenon that occurs at all temperatures and causes cooling.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-f03",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "The smallest unit of matter that can exist independently and shows all the properties of that matter is called a _______.",
+  "blankAnswer": "molecule",
+  "answer": "Molecule — it may consist of one or more atoms (e.g., a common salt molecule has one sodium and one chlorine atom).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-f04",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "The fixed temperature at which a solid changes into a liquid is called its _______ point.",
+  "blankAnswer": "melting",
+  "answer": "Melting point — for pure ice it is 0 °C. The temperature stays constant during melting.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-f05",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "The change of a solid directly into vapour, without passing through the liquid state, is called _______.",
+  "blankAnswer": "sublimation",
+  "answer": "Sublimation — shown by camphor, iodine and naphthalene balls.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-f06",
+  "topicId": "ch1-matter",
+  "type": "fill_blank",
+  "subtopic": "Fill Blank",
+  "question": "Solids are almost incompressible because the intermolecular _______ between their molecules are negligible.",
+  "blankAnswer": "spaces",
+  "answer": "Spaces. Compression only squeezes out empty intermolecular space; in solids the molecules are already closely packed.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-x01",
+  "topicId": "ch1-matter",
+  "type": "match",
+  "subtopic": "Match",
+  "question": "Match each change of state with its correct description:",
+  "pairs": [
+   {
+    "left": "Melting (fusion)",
+    "right": "Solid changes into liquid at a fixed temperature"
+   },
+   {
+    "left": "Evaporation",
+    "right": "Liquid changes into vapour from its surface at any temperature"
+   },
+   {
+    "left": "Condensation",
+    "right": "Vapour changes into liquid, releasing heat"
+   },
+   {
+    "left": "Sublimation",
+    "right": "Solid changes directly into vapour"
+   },
+   {
+    "left": "Freezing",
+    "right": "Liquid changes into solid on cooling"
+   }
+  ],
+  "answer": "Melting: solid→liquid at the melting point. Evaporation: surface change of liquid→vapour at any temperature. Condensation: vapour→liquid with release of latent heat. Sublimation: solid→vapour directly. Freezing: liquid→solid (reverse of melting).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-x02",
+  "topicId": "ch1-matter",
+  "type": "match",
+  "subtopic": "Match",
+  "question": "Match each state of matter with the behaviour of its molecules:",
+  "pairs": [
+   {
+    "left": "Solid",
+    "right": "Molecules vibrate about fixed positions"
+   },
+   {
+    "left": "Liquid",
+    "right": "Molecules slide past one another but stay together"
+   },
+   {
+    "left": "Gas",
+    "right": "Molecules move freely at high speed in all directions"
+   },
+   {
+    "left": "Strongest cohesion",
+    "right": "Found between molecules of a solid"
+   },
+   {
+    "left": "Largest intermolecular space",
+    "right": "Found between molecules of a gas"
+   }
+  ],
+  "answer": "Solid — vibration about fixed positions (definite shape and volume). Liquid — molecules slide over each other (definite volume, no fixed shape). Gas — free, random, high-speed motion (no fixed shape or volume). Cohesion is strongest in solids; intermolecular space is largest in gases.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-x03",
+  "topicId": "ch1-matter",
+  "type": "match",
+  "subtopic": "Match",
+  "question": "Match each everyday observation with the process behind it:",
+  "pairs": [
+   {
+    "left": "Wet clothes dry on a clothesline",
+    "right": "Evaporation"
+   },
+   {
+    "left": "Dew forms on grass on a cold morning",
+    "right": "Condensation"
+   },
+   {
+    "left": "Naphthalene balls shrink in a cupboard",
+    "right": "Sublimation"
+   },
+   {
+    "left": "Candle wax turns liquid near the flame",
+    "right": "Melting"
+   },
+   {
+    "left": "Water in an ice tray turns solid",
+    "right": "Freezing"
+   }
+  ],
+  "answer": "Drying clothes — evaporation of water. Dew — water vapour in air condenses on cold grass. Naphthalene — sublimes directly to vapour. Wax near flame — melts (fusion). Ice tray — water freezes (solidification).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-s01",
+  "topicId": "ch1-matter",
+  "type": "short_answer",
+  "subtopic": "Short Answer",
+  "question": "A sealed bottle of cold drink taken out of the refrigerator soon becomes wet on the outside. Explain where this water comes from.",
+  "answer": "The water does not come from inside the bottle (it is sealed). Air always contains water vapour. When the vapour molecules touch the cold outer surface of the bottle, they lose kinetic energy, slow down and come closer together, condensing into tiny liquid droplets. This is condensation of atmospheric water vapour on a cold surface.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 4,
+  "qualityLevel": "NEET UG"
+ },
+ {
+  "id": "phy-c1-s02",
+  "topicId": "ch1-matter",
+  "type": "short_answer",
+  "subtopic": "Short Answer",
+  "question": "Using the kinetic theory, explain why a gas has neither a definite shape nor a definite volume.",
+  "answer": "In a gas the intermolecular forces are negligible and the intermolecular spaces are very large. Each molecule therefore moves independently, at high speed, in random directions. With nothing holding the molecules together, they spread out until they occupy the whole vessel — so the gas takes both the shape and the volume of its container.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_02",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-s03",
+  "topicId": "ch1-matter",
+  "type": "short_answer",
+  "subtopic": "Short Answer",
+  "question": "Evaporation cools the remaining liquid, but boiling does not lower the temperature of the boiling liquid. Explain both observations.",
+  "answer": "In evaporation, only the most energetic surface molecules escape as vapour. Their departure lowers the average kinetic energy of the molecules left behind, so the liquid cools. In boiling, heat is continuously supplied by an external source; this heat provides the latent heat of vaporisation for molecules to escape, so the liquid stays at a constant boiling temperature — the energy of escaping molecules is replaced by the heater, not taken from the liquid.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-s04",
+  "topicId": "ch1-matter",
+  "type": "short_answer",
+  "subtopic": "Short Answer",
+  "question": "Why are cotton clothes preferred in hot summer months? Explain using the idea of evaporation.",
+  "answer": "Cotton is a good absorber of water. It soaks up the sweat from our body and spreads it over a large surface area of the fabric, exposing it to air. The sweat then evaporates faster, and the latent heat needed for this evaporation is taken from the body, cooling it. Synthetic fabrics absorb little sweat, so this cooling is much less.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_05",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-s05",
+  "topicId": "ch1-matter",
+  "type": "short_answer",
+  "subtopic": "Short Answer",
+  "question": "State the main assumptions of the kinetic theory of matter.",
+  "answer": "1. Matter is made of tiny particles (molecules); molecules of a given substance are identical in shape, size and mass. 2. Molecules are in a state of continuous random motion and therefore possess kinetic energy; this motion never stops. 3. The kinetic energy of molecules increases with temperature. 4. Molecules attract each other with intermolecular forces (cohesion between like molecules, adhesion between unlike molecules); these forces weaken as the separation between molecules increases. 5. There are empty spaces between molecules, called intermolecular spaces — smallest in solids and largest in gases.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 3,
+  "qualityLevel": "ICSE Class 8"
+ },
+ {
+  "id": "phy-c1-m31",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Olympiad — Kinetic Theory & Diffusion",
+  "question": "A gas jar filled with dense, reddish-brown bromine vapor (which is significantly heavier than air) is placed below an inverted gas jar containing clear air. After some time, the reddish-brown color spreads upward, resulting in a completely uniform mixture across both jars. Which statement provides the most accurate scientific explanation based on the Kinetic Theory of Matter?",
+  "options": [
+   "The upward movement occurs because intermolecular forces between air and bromine molecules are highly attractive, actively pulling the heavier vapor upward",
+   "The gas particles possess high kinetic energy and are in constant, random motion, causing them to mix uniformly against the pull of gravity through continuous molecular collisions",
+   "Once the reddish-brown color becomes perfectly uniform throughout both jars, a state of static equilibrium is reached, and all molecular movement stops",
+   "If the temperature of both jars is significantly decreased, the rate of intermixing will increase because the denser gas will expand faster"
+  ],
+  "correctOption": 1,
+  "answer": "According to the Kinetic Theory, gas particles possess high kinetic energy and move randomly. Even though bromine is denser than air, thermal kinetic energy drives bromine and air molecules to collide and intermix (diffuse) until uniformly distributed — overcoming gravity macroscopically. Intermolecular forces in gases are negligible (A). Uniform color means dynamic equilibrium, not stopped motion (C). Lower temperature decreases kinetic energy and slows diffusion (D).",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_03",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m32",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Olympiad — Matter & Molecules",
+  "question": "Which one of the following statements is scientifically accurate regarding matter and its particles?",
+  "options": [
+   "Liquid wax melts at 55 °C and is converted into its liquid form",
+   "Matter is anything that has mass and occupies some space",
+   "A liquid can be compressed slightly but a gas cannot be compressed",
+   "All molecules of different substances are identical in size and mass"
+  ],
+  "correctOption": 1,
+  "answer": "Matter is defined as anything that has mass and occupies space — the fundamental ICSE definition. Option A is wrong: solid wax melts at ~55 °C to become liquid (not 'liquid wax melts'). Option C reverses the truth: gases compress easily due to large intermolecular spaces; liquids compress only slightly. Option D is false: molecules of different substances differ in size and mass. Note: 'A molecule may consist of one or more atoms' is also true but defines a molecule, not matter itself.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_01",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ },
+ {
+  "id": "phy-c1-m33",
+  "topicId": "ch1-matter",
+  "type": "mcq",
+  "subtopic": "Olympiad — Kinetic Theory & Change of State",
+  "question": "During the sublimation of a pure solid substance at its constant transition temperature, which statement is scientifically accurate regarding the kinetic energy (KE) and potential energy (PE) of its molecules?",
+  "options": [
+   "Both the kinetic energy and the potential energy of the molecules increase simultaneously",
+   "The kinetic energy of the molecules increases, while their potential energy remains constant",
+   "The kinetic energy of the molecules remains constant, while their potential energy increases",
+   "The kinetic energy decreases, while the intermolecular forces of attraction become stronger"
+  ],
+  "correctOption": 2,
+  "answer": "During sublimation at constant temperature, average kinetic energy (which depends on temperature) remains unchanged. The latent heat absorbed is used to overcome intermolecular forces, increasing the separation between molecules — hence potential energy increases sharply. KE does not increase (B) because temperature is constant. KE does not decrease (D) — that would imply cooling. Both increasing (A) would require temperature rise.",
+  "source": "icse",
+  "linksTo": "phy-s1-sec_04",
+  "qualityStars": 5,
+  "qualityLevel": "Olympiad"
+ }
 ]
