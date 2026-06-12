@@ -1,0 +1,2301 @@
+{
+  "topicId": "geo-ch1",
+  "title": "Interpreting Topographical Maps",
+  "highYieldFacts": [
+    "Topographical maps show relief and cultural features at large scale (e.g. 1:50,000).",
+    "Survey of India (SOI) is India's national mapping agency.",
+    "RF 1:50,000 means 1 cm on the map represents 50,000 cm (500 m) on the ground.",
+    "Easting is read before northing in a grid reference.",
+    "Four-figure grid references identify a 1 km square.",
+    "Six-figure grid references locate a point within 100 m.",
+    "Contour lines join points of equal height above mean sea level.",
+    "Vertical Interval (VI) is the height difference between adjacent contours.",
+    "Close contour lines indicate a steep slope.",
+    "Widely spaced contours indicate a gentle slope.",
+    "Concentric closed contours indicate a hill or mound.",
+    "V-shaped contours pointing upstream indicate a valley.",
+    "Contours bend upstream along valleys and downstream along spurs.",
+    "A saddle or col appears as an hourglass-shaped contour between peaks.",
+    "Index contours are thicker and labelled with elevation.",
+    "Perennial rivers are shown with continuous blue lines.",
+    "Seasonal streams are shown with dashed blue lines.",
+    "Black symbols represent man-made (cultural) features.",
+    "Brown lines represent relief (contours).",
+    "Green shading commonly represents forest or vegetation.",
+    "Nucleated settlements appear as dense clusters of building symbols.",
+    "Linear settlements develop along roads, rivers, or coasts.",
+    "Dispersed settlements show isolated buildings in farmland.",
+    "Metalled roads are shown in red or black depending on importance.",
+    "Magnetic declination is the angle between true north and magnetic north.",
+    "Grid north is the direction of grid lines on the map.",
+    "Representative Fraction has no units—the ratio is dimensionless.",
+    "Larger-scale maps (smaller RF denominator) show more detail.",
+    "Plateaus show widely spaced, nearly straight contours over large areas.",
+    "Ridges show elongated contours bulging toward lower ground."
+  ],
+  "notes": [
+    {
+      "id": "geo-rev-ch1-01",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "1. What Are Topographical Maps?",
+      "content": "**Executive summary:** Topographical maps show both natural relief and human features of an area using conventional signs, contours, and a grid system.\n\n**Must know**\n• Prepared by Survey of India (SOI) at scales like 1:50,000 and 1:25,000\n• Show hills, valleys, rivers, roads, settlements, and vegetation\n• Essential for planning, defence, trekking, and land-use studies\n• Brown = relief (contours); blue = water; black = cultural features; green = vegetation\n\nTopographical maps are large-scale maps that represent the **shape of the land (relief)** together with **cultural features** such as villages, roads, and railways.\n\nUnlike small-scale atlas maps, toposheets allow you to measure distances, read heights, and identify landforms accurately. Survey of India publishes them with a standard legend so that users anywhere in the country can interpret them uniformly.\n\n**Key skills:** reading scale, finding grid references, tracing contour patterns, and linking symbols to real-world features.",
+      "explanation": "Think of a toposheet as a '3D landscape flattened onto paper'—contours give height, colours give feature type, and the grid lets you locate any point precisely.\n\n**🔗 Links:** geo-rev-ch1-02 — next topic",
+      "teacherTip": "Keep a real SOI toposheet in class; students remember contour shapes better when they trace them with fingers.",
+      "examTip": "ICSE often asks you to identify landforms from contour patterns—practice V-shaped valleys and concentric circles for hills.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq001",
+        "geo-ch1-mcq009",
+        "geo-ch1-mcq017",
+        "geo-ch1-mcq025",
+        "geo-ch1-mcq033",
+        "geo-ch1-mcq041",
+        "geo-ch1-mcq049",
+        "geo-ch1-mcq057",
+        "geo-ch1-mcq065",
+        "geo-ch1-tf03",
+        "geo-ch1-fb01",
+        "geo-ch1-match04",
+        "geo-ch1-sa02"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq001",
+        "geo-ch1-mcq009",
+        "geo-ch1-mcq017",
+        "geo-ch1-mcq025",
+        "geo-ch1-mcq033",
+        "geo-ch1-mcq041",
+        "geo-ch1-mcq049",
+        "geo-ch1-mcq057",
+        "geo-ch1-mcq065",
+        "geo-ch1-tf03",
+        "geo-ch1-fb01",
+        "geo-ch1-match04",
+        "geo-ch1-sa02"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-02",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "2. Map Scale and Measuring Distance",
+      "content": "**Executive summary:** Scale expresses the ratio between map distance and ground distance; RF scale allows direct conversion using the map's stated unit.\n\n**Must know**\n• Representative Fraction (RF): 1:50,000 means 1 cm on map = 50,000 cm (500 m) on ground\n• Statement scale: '2 cm to 1 km' is easy for quick mental conversion\n• Measure curved routes along roads or rivers with thread/string, then scale off\n• Larger denominator = smaller scale map (less detail per cm)\n\n**RF scale** is written as 1:n where both sides use the same unit. For 1:50,000, multiply map cm by 50,000 to get ground cm (÷100,000 for km).\n\n**Worked example:** 3.2 cm on a 1:25,000 map → 3.2 × 25,000 = 80,000 cm = 800 m.\n\nAlways check whether the question gives km, m, or cm—unit errors are the commonest mistake in map-scale sums.",
+      "explanation": "Scale is the bridge between the map and the real world; every contour height and grid distance calculation depends on it.\n\n**🔗 Links:** geo-rev-ch1-01 — previous topic; geo-rev-ch1-03 — next topic",
+      "teacherTip": "Have students convert 1:50,000 and 1:25,000 for the same line— they see why larger-scale maps show more detail.",
+      "examTip": "Show all working: map distance × denominator → convert cm to m/km in one clear step.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq002",
+        "geo-ch1-mcq010",
+        "geo-ch1-mcq018",
+        "geo-ch1-mcq026",
+        "geo-ch1-mcq034",
+        "geo-ch1-mcq042",
+        "geo-ch1-mcq050",
+        "geo-ch1-mcq058",
+        "geo-ch1-mcq066",
+        "geo-ch1-tf04",
+        "geo-ch1-fb02",
+        "geo-ch1-match05",
+        "geo-ch1-sa03"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq002",
+        "geo-ch1-mcq010",
+        "geo-ch1-mcq018",
+        "geo-ch1-mcq026",
+        "geo-ch1-mcq034",
+        "geo-ch1-mcq042",
+        "geo-ch1-mcq050",
+        "geo-ch1-mcq058",
+        "geo-ch1-mcq066",
+        "geo-ch1-tf04",
+        "geo-ch1-fb02",
+        "geo-ch1-match05",
+        "geo-ch1-sa03"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-03",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "3. Grid References and Eastings/Northings",
+      "content": "**Executive summary:** The grid on SOI maps uses eastings (vertical lines, read first) and northings (horizontal lines) to give four-figure and six-figure references.\n\n**Must know**\n• Four-figure grid reference locates a 1 km square (e.g. 4523)\n• Read easting first (45), then northing (23)—'along the corridor, up the stairs'\n• Six-figure reference pinpoints 100 m within the square (e.g. 458237)\n• Grid north may differ slightly from true/magnetic north—check map margin\n\nTo find a **four-figure reference** for a feature:\n1. Identify the grid square it lies in.\n2. Read the **easting** of the left grid line (first two digits).\n3. Read the **northing** of the bottom grid line (last two digits).\n\nFor **six-figure** references, estimate tenths within the square: divide the square mentally into 10 parts along easting and northing.",
+      "explanation": "Grid references are like addresses on the map—eastings increase eastward, northings increase northward.\n\n**🔗 Links:** geo-rev-ch1-02 — previous topic; geo-rev-ch1-04 — next topic",
+      "teacherTip": "Mnemonic: 'Easting before Northing' — same order as (x, y) in mathematics.",
+      "examTip": "Four-figure = square; six-figure = precise point. State which type the question demands.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq003",
+        "geo-ch1-mcq011",
+        "geo-ch1-mcq019",
+        "geo-ch1-mcq027",
+        "geo-ch1-mcq035",
+        "geo-ch1-mcq043",
+        "geo-ch1-mcq051",
+        "geo-ch1-mcq059",
+        "geo-ch1-mcq067",
+        "geo-ch1-tf05",
+        "geo-ch1-fb03",
+        "geo-ch1-match06",
+        "geo-ch1-sa04"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq003",
+        "geo-ch1-mcq011",
+        "geo-ch1-mcq019",
+        "geo-ch1-mcq027",
+        "geo-ch1-mcq035",
+        "geo-ch1-mcq043",
+        "geo-ch1-mcq051",
+        "geo-ch1-mcq059",
+        "geo-ch1-mcq067",
+        "geo-ch1-tf05",
+        "geo-ch1-fb03",
+        "geo-ch1-match06",
+        "geo-ch1-sa04"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-04",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "4. Contour Lines and Vertical Interval",
+      "content": "**Executive summary:** Contours are imaginary lines joining points of equal height; their spacing reveals slope steepness and landform type.\n\n**Must know**\n• Vertical Interval (VI): height difference between successive contours (given in map margin)\n• Index contours are thicker and labelled with height\n• Close contours = steep slope; wide spacing = gentle slope\n• Contours never cross each other (except overhanging cliff—rare at this level)\n\nEach brown contour line is a slice through the landscape at a fixed height. If VI = 20 m, adjacent contours differ by 20 m in elevation.\n\n**Reading slope:** Measure horizontal distance between contours using scale—fewer metres between contours means steeper gradient.\n\n**Hilltop:** Outermost closed loop is lowest; inner loops rise to the summit where contours may form small circles.",
+      "explanation": "Contours turn 3D relief into 2D patterns—learn the 'shapes' (circles, V's, U's) and you can 'see' the terrain.\n\n**🔗 Links:** geo-rev-ch1-03 — previous topic; geo-rev-ch1-05 — next topic",
+      "teacherTip": "Stack cardboard cut-outs at 20 m intervals to build a physical contour model.",
+      "examTip": "Always note the VI from the map key before calculating relative height between two points.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq004",
+        "geo-ch1-mcq012",
+        "geo-ch1-mcq020",
+        "geo-ch1-mcq028",
+        "geo-ch1-mcq036",
+        "geo-ch1-mcq044",
+        "geo-ch1-mcq052",
+        "geo-ch1-mcq060",
+        "geo-ch1-mcq068",
+        "geo-ch1-tf06",
+        "geo-ch1-fb04",
+        "geo-ch1-match07",
+        "geo-ch1-sa05"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq004",
+        "geo-ch1-mcq012",
+        "geo-ch1-mcq020",
+        "geo-ch1-mcq028",
+        "geo-ch1-mcq036",
+        "geo-ch1-mcq044",
+        "geo-ch1-mcq052",
+        "geo-ch1-mcq060",
+        "geo-ch1-mcq068",
+        "geo-ch1-tf06",
+        "geo-ch1-fb04",
+        "geo-ch1-match07",
+        "geo-ch1-sa05"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-05",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "5. Landforms from Contour Patterns",
+      "content": "**Executive summary:** Hills, valleys, ridges, spurs, cols, and plateaus each produce distinctive contour arrangements.\n\n**Must know**\n• Concentric closed contours → hill or mound\n• V-shaped contours pointing uphill → valley (river in the V)\n• U-shaped wide spacing → broad valley or plateau edge\n• Saddle/col: hourglass shape between two peaks\n• Uniform spacing on a line → ridge or escarpment\n\n| Pattern | Landform |\n|---------|----------|\n| Closed concentric loops | Hill / Dome |\n| V contours upstream | Valley |\n| V pointing downhill | Spur |\n| Elongated parallel contours | Ridge |\n| Very wide flat contours | Plateau / Plain |\n\nRivers cut valleys so contours bend **upstream** into the valley. Spurs are ridges between valleys; their V points **downhill**.",
+      "explanation": "Contour vocabulary is the heart of topo interpretation—link each pattern to water flow direction.\n\n**🔗 Links:** geo-rev-ch1-04 — previous topic; geo-rev-ch1-06 — next topic",
+      "teacherTip": "Draw a river line and ask students to sketch expected contour bends before revealing the map.",
+      "examTip": "When identifying valleys, confirm with blue water symbols or drainage arrows if shown.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq005",
+        "geo-ch1-mcq013",
+        "geo-ch1-mcq021",
+        "geo-ch1-mcq029",
+        "geo-ch1-mcq037",
+        "geo-ch1-mcq045",
+        "geo-ch1-mcq053",
+        "geo-ch1-mcq061",
+        "geo-ch1-mcq069",
+        "geo-ch1-tf07",
+        "geo-ch1-fb05",
+        "geo-ch1-match08"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq005",
+        "geo-ch1-mcq013",
+        "geo-ch1-mcq021",
+        "geo-ch1-mcq029",
+        "geo-ch1-mcq037",
+        "geo-ch1-mcq045",
+        "geo-ch1-mcq053",
+        "geo-ch1-mcq061",
+        "geo-ch1-mcq069",
+        "geo-ch1-tf07",
+        "geo-ch1-fb05",
+        "geo-ch1-match08"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-06",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "6. Settlements and Land Use on Maps",
+      "content": "**Executive summary:** Settlement patterns (nucleated, dispersed, linear) appear through building symbols and their relation to relief and transport.\n\n**Must know**\n• Nucleated: cluster of building symbols at crossroads or near water\n• Dispersed: isolated huts scattered in agricultural areas\n• Linear: buildings strung along a road, canal, or valley floor\n• Dense black blocks may indicate urban areas or large villages\n\nSettlements choose sites for **water, defence, transport, and fertile land**. On toposheets you infer:\n\n- **Valley-floor villages** near perennial streams (perennial = solid blue line).\n- **Linear settlements** along highways or railways (black/red lines).\n- **Hill-top forts** or temples on concentric contours with track access.\n\nLand use: yellow wash often shows cultivated land; green shading = forest or orchard (check legend).",
+      "explanation": "Human geography on toposheets is about reading symbols in their physical context—not memorising symbols in isolation.\n\n**🔗 Links:** geo-rev-ch1-05 — previous topic; geo-rev-ch1-07 — next topic",
+      "teacherTip": "Compare two settlement types on the same sheet and list three map clues for each.",
+      "examTip": "Justify settlement type with at least two map evidences: contour, water, transport, or symbol density.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq006",
+        "geo-ch1-mcq014",
+        "geo-ch1-mcq022",
+        "geo-ch1-mcq030",
+        "geo-ch1-mcq038",
+        "geo-ch1-mcq046",
+        "geo-ch1-mcq054",
+        "geo-ch1-mcq062",
+        "geo-ch1-mcq070",
+        "geo-ch1-tf08",
+        "geo-ch1-match01",
+        "geo-ch1-match09"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq006",
+        "geo-ch1-mcq014",
+        "geo-ch1-mcq022",
+        "geo-ch1-mcq030",
+        "geo-ch1-mcq038",
+        "geo-ch1-mcq046",
+        "geo-ch1-mcq054",
+        "geo-ch1-mcq062",
+        "geo-ch1-mcq070",
+        "geo-ch1-tf08",
+        "geo-ch1-match01",
+        "geo-ch1-match09"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch1-07",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "7. Water Features and Drainage",
+      "content": "**Executive summary:** Rivers, streams, tanks, and wells use blue symbols; drainage pattern reflects underlying geology and slope.\n\n**Must know**\n• Perennial rivers: solid blue lines; seasonal: dashed blue\n• Tributaries join main rivers; contour V's point upstream\n• Tanks/reservoirs shown with embankment symbol and water fill\n• Dendritic, trellis, radial patterns indicate terrain structure\n\n**Perennial** water flows year-round (important for settlement). **Seasonal** streams appear only in monsoon—dashed lines warn of dry beds.\n\nWatershed divides separate drainage basins—often along ridges where contours form elongated highs. River gradient can be inferred from how quickly contours cross the blue line.",
+      "explanation": "Water and contours together tell the drainage story; always trace a river from source to mouth when analysing a sheet.\n\n**🔗 Links:** geo-rev-ch1-06 — previous topic; geo-rev-ch1-08 — next topic",
+      "teacherTip": "Colour perennial vs seasonal streams on a tracing—students grasp seasonality quickly.",
+      "examTip": "Mention perennial vs seasonal when explaining water supply for a mapped settlement.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq007",
+        "geo-ch1-mcq015",
+        "geo-ch1-mcq023",
+        "geo-ch1-mcq031",
+        "geo-ch1-mcq039",
+        "geo-ch1-mcq047",
+        "geo-ch1-mcq055",
+        "geo-ch1-mcq063",
+        "geo-ch1-tf01",
+        "geo-ch1-tf09",
+        "geo-ch1-match02",
+        "geo-ch1-match10"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq007",
+        "geo-ch1-mcq015",
+        "geo-ch1-mcq023",
+        "geo-ch1-mcq031",
+        "geo-ch1-mcq039",
+        "geo-ch1-mcq047",
+        "geo-ch1-mcq055",
+        "geo-ch1-mcq063",
+        "geo-ch1-tf01",
+        "geo-ch1-tf09",
+        "geo-ch1-match02",
+        "geo-ch1-match10"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    },
+    {
+      "id": "geo-rev-ch1-08",
+      "topicId": "geo-ch1",
+      "type": "note",
+      "subtopic": "8. Conventional Signs and Map Marginal Information",
+      "content": "**Executive summary:** SOI conventional signs standardise symbols for cultural and physical features; marginal information gives map metadata.\n\n**Must know**\n• Black: cultural (roads, buildings, names)\n• Brown: relief contours\n• Blue: hydrography\n• Green: vegetation\n• Red: major roads, grid numbers, sheet edges\n• Margin shows scale, VI, magnetic declination, edition date\n\nThe **legend (conventional signs)** is your dictionary. Common exam symbols: cart track, metalled road, railway, post office, temple, bridge, embankment, sand area, marsh.\n\n**Marginal information** includes:\n- Sheet number and name\n- RF scale and contour interval\n- Magnetic north and grid north\n- Co-ordinates of corners\n\nAlways read the margin before interpreting the body of the map.",
+      "explanation": "Conventional signs + margin data = full map literacy; exams often test symbol identification from the SOI key.\n\n**🔗 Links:** geo-rev-ch1-07 — previous topic",
+      "teacherTip": "Run a 'symbol speed quiz' using the SOI legend page.",
+      "examTip": "If unsure of a symbol, describe its shape and context—partial credit often follows logical reasoning.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch1-mcq008",
+        "geo-ch1-mcq016",
+        "geo-ch1-mcq024",
+        "geo-ch1-mcq032",
+        "geo-ch1-mcq040",
+        "geo-ch1-mcq048",
+        "geo-ch1-mcq056",
+        "geo-ch1-mcq064",
+        "geo-ch1-tf02",
+        "geo-ch1-tf10",
+        "geo-ch1-match03",
+        "geo-ch1-sa01"
+      ],
+      "linked_q_ids": [
+        "geo-ch1-mcq008",
+        "geo-ch1-mcq016",
+        "geo-ch1-mcq024",
+        "geo-ch1-mcq032",
+        "geo-ch1-mcq040",
+        "geo-ch1-mcq048",
+        "geo-ch1-mcq056",
+        "geo-ch1-mcq064",
+        "geo-ch1-tf02",
+        "geo-ch1-tf10",
+        "geo-ch1-match03",
+        "geo-ch1-sa01"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    }
+  ],
+  "questions": [
+    {
+      "id": "geo-ch1-mcq001",
+      "q_id": "geo-ch1-mcq001",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which organisation publishes standard topographical maps of India?",
+      "options": [
+        "Geological Survey of India",
+        "Survey of India",
+        "ISRO",
+        "Meteorological Department"
+      ],
+      "correctOption": 1,
+      "answer": "Survey of India (SOI) prepares and publishes official topographical maps used in schools and field studies.",
+      "examTip": "SOI toposheets are the ICSE standard.",
+      "teacherTip": "Contrast SOI with GSI—rocks vs maps.",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq002",
+      "q_id": "geo-ch1-mcq002",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "On an SOI map, brown colour generally represents:",
+      "options": [
+        "Water bodies",
+        "Relief/contours",
+        "Vegetation",
+        "Built-up areas"
+      ],
+      "correctOption": 1,
+      "answer": "Brown depicts relief through contour lines and occasional rocky outcrop symbols.",
+      "examTip": "Colour code: brown=relief, blue=water, green=vegetation, black=cultural.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq003",
+      "q_id": "geo-ch1-mcq003",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "RF scale 1:25,000 means 1 cm on the map equals:",
+      "options": [
+        "25 m on ground",
+        "250 m on ground",
+        "2.5 km on ground",
+        "25 km on ground"
+      ],
+      "correctOption": 1,
+      "answer": "1 cm × 25,000 = 25,000 cm = 250 m on the ground.",
+      "examTip": "Divide cm by 100,000 to get km quickly.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq004",
+      "q_id": "geo-ch1-mcq004",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which grid reference is more precise?",
+      "options": [
+        "4521 (four-figure)",
+        "452163 (six-figure)",
+        "Both equally precise",
+        "Depends on scale only"
+      ],
+      "correctOption": 1,
+      "answer": "Six-figure references narrow location to about 100 m within the 1 km square.",
+      "examTip": "More digits = finer precision.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq005",
+      "q_id": "geo-ch1-mcq005",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "In a four-figure grid reference, which is stated first?",
+      "options": [
+        "Northing",
+        "Easting",
+        "Latitude",
+        "Magnetic bearing"
+      ],
+      "correctOption": 1,
+      "answer": "Read easting (horizontal) first, then northing—'along the corridor, up the stairs'.",
+      "examTip": "Easting before northing always.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq006",
+      "q_id": "geo-ch1-mcq006",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Contour lines never cross one another on a standard hillside.\n2. The vertical interval is constant for a given map.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 3,
+      "answer": "Both statements are correct—contours meet only in impossible overhangs (not expected at Class 8), and VI is fixed for each sheet.",
+      "examTip": "UPSC-style: both facts are standard topo rules.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq007",
+      "q_id": "geo-ch1-mcq007",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Closely spaced contour lines indicate:",
+      "options": [
+        "Gentle slope",
+        "Steep slope",
+        "Flat plateau",
+        "Waterlogged land"
+      ],
+      "correctOption": 1,
+      "answer": "Height changes rapidly over short horizontal distance → steep slope.",
+      "examTip": "",
+      "teacherTip": "Walk students through spacing vs slope.",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq008",
+      "q_id": "geo-ch1-mcq008",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Widely spaced contour lines most likely indicate:",
+      "options": [
+        "Cliff",
+        "Gentle slope or plain",
+        "Deep gorge",
+        "Steep escarpment"
+      ],
+      "correctOption": 1,
+      "answer": "Little height change over distance → gentle terrain.",
+      "examTip": "Pair spacing with landform MCQs.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq009",
+      "q_id": "geo-ch1-mcq009",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Concentric closed contour lines typically represent:",
+      "options": [
+        "River valley",
+        "Hill or mound",
+        "Coastal cliff",
+        "Marshland"
+      ],
+      "correctOption": 1,
+      "answer": "Closed loops rising inward (or descending outward) mark isolated high ground.",
+      "examTip": "Classic hill signature.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq010",
+      "q_id": "geo-ch1-mcq010",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "V-shaped contours pointing uphill indicate:",
+      "options": [
+        "Spur",
+        "Valley",
+        "Plateau edge",
+        "Sand dune"
+      ],
+      "correctOption": 1,
+      "answer": "Valleys cut into slopes; contours bend upstream forming a V toward higher ground.",
+      "examTip": "River lies in the V of the valley.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq011",
+      "q_id": "geo-ch1-mcq011",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A spur is identified when contour V-shapes point:",
+      "options": [
+        "Uphill",
+        "Downhill",
+        "East",
+        "Toward the river mouth"
+      ],
+      "correctOption": 1,
+      "answer": "Spurs are ridge extensions between valleys; Vs point downhill on spurs.",
+      "examTip": "Valley Vs uphill; spur Vs downhill.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq012",
+      "q_id": "geo-ch1-mcq012",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Vertical Interval (VI) is:",
+      "options": [
+        "Horizontal distance between contours",
+        "Height difference between successive contours",
+        "Map scale fraction",
+        "Magnetic variation"
+      ],
+      "correctOption": 1,
+      "answer": "VI measures elevation change between adjacent contour lines (e.g. 20 m).",
+      "examTip": "Read VI from map margin.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq013",
+      "q_id": "geo-ch1-mcq013",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Index contours are:",
+      "options": [
+        "Always dashed",
+        "Thicker labelled contours at intervals",
+        "Blue water lines",
+        "Red grid lines"
+      ],
+      "correctOption": 1,
+      "answer": "Index contours help read elevation quickly—they are bold and numbered.",
+      "examTip": "Use index contours to count height.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq014",
+      "q_id": "geo-ch1-mcq014",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Perennial rivers have solid blue lines on SOI maps.\n2. Seasonal streams use dashed blue lines.\n3. Contours cross rivers at right angles always.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 are correct; contours bend along valleys rather than crossing rivers at right angles.",
+      "examTip": "Three-statement combo—check each independently.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq015",
+      "q_id": "geo-ch1-mcq015",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Nucleated settlements appear on maps as:",
+      "options": [
+        "Isolated single huts only",
+        "Dense cluster of building symbols",
+        "Symbols only along railways",
+        "Random dots in deserts"
+      ],
+      "correctOption": 1,
+      "answer": "Nucleated pattern = many buildings grouped at one site.",
+      "examTip": "Link pattern name to map appearance.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq016",
+      "q_id": "geo-ch1-mcq016",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Linear settlements commonly develop along:",
+      "options": [
+        "Mountain peaks",
+        "Roads or rivers",
+        "Glaciers",
+        "Contour lines"
+      ],
+      "correctOption": 1,
+      "answer": "Transport and water access produce elongated settlement strings.",
+      "examTip": "Name the line feature in answers.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq017",
+      "q_id": "geo-ch1-mcq017",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Dispersed rural settlements are characterised by:",
+      "options": [
+        "High-rise blocks",
+        "Scattered isolated buildings",
+        "Only port facilities",
+        "Underground dwellings"
+      ],
+      "correctOption": 1,
+      "answer": "Farmsteads spread across fields typify dispersed pattern.",
+      "examTip": "Common in fertile plains with farming.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq018",
+      "q_id": "geo-ch1-mcq018",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which feature is shown in blue on topo maps?",
+      "options": [
+        "Contours",
+        "Rivers",
+        "Roads",
+        "Railways"
+      ],
+      "correctOption": 1,
+      "answer": "Hydrographic features use blue.",
+      "examTip": "Colour mnemonic saves time.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq019",
+      "q_id": "geo-ch1-mcq019",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Black symbols on SOI maps generally denote:",
+      "options": [
+        "Forests",
+        "Cultural/man-made features",
+        "Contour lines",
+        "Administrative boundaries only"
+      ],
+      "correctOption": 1,
+      "answer": "Buildings, tracks, and many labels appear in black.",
+      "examTip": "Black = human/cultural.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq020",
+      "q_id": "geo-ch1-mcq020",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Green shading on toposheets usually indicates:",
+      "options": [
+        "Desert",
+        "Vegetation/forest",
+        "Snow",
+        "Urban built-up"
+      ],
+      "correctOption": 1,
+      "answer": "Green represents wooded or vegetated areas per SOI convention.",
+      "examTip": "Check legend for exact meaning.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq021",
+      "q_id": "geo-ch1-mcq021",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "To measure distance along a curved road, the best method is:",
+      "options": [
+        "Direct ruler only",
+        "Thread along curve then scale",
+        "Protractor",
+        "Compass bearing"
+      ],
+      "correctOption": 1,
+      "answer": "Lay string along the curve, mark length, straighten against scale.",
+      "examTip": "Curved route = thread method.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq022",
+      "q_id": "geo-ch1-mcq022",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "1:50,000 is _____ scale than 1:25,000.",
+      "options": [
+        "Larger (more detailed)",
+        "Smaller (less detailed)",
+        "Same",
+        "Cannot compare"
+      ],
+      "correctOption": 1,
+      "answer": "Higher denominator → smaller scale → less ground detail per cm.",
+      "examTip": "1:25,000 is larger scale.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq023",
+      "q_id": "geo-ch1-mcq023",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Magnetic declination on a map margin shows:",
+      "options": [
+        "Difference between true and magnetic north",
+        "Contour interval",
+        "Grid square size",
+        "Population density"
+      ],
+      "correctOption": 0,
+      "answer": "Declination corrects compass bearings to map (true/grid) north.",
+      "examTip": "Important for field compass work.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq024",
+      "q_id": "geo-ch1-mcq024",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A saddle (col) between two hills shows contours shaped like:",
+      "options": [
+        "Parallel straight lines",
+        "Hourglass",
+        "Random dots",
+        "Single circle only"
+      ],
+      "correctOption": 1,
+      "answer": "Saddles narrow between two summits—hourglass contour pattern.",
+      "examTip": "High-altitude pass geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq025",
+      "q_id": "geo-ch1-mcq025",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Plateau areas typically show:",
+      "options": [
+        "Very close contours everywhere",
+        "Wide-spaced, nearly flat contours",
+        "No contours",
+        "Only blue lines"
+      ],
+      "correctOption": 1,
+      "answer": "Elevated flat surfaces have contours far apart over large areas.",
+      "examTip": "Contrast plateau with hill peak.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq026",
+      "q_id": "geo-ch1-mcq026",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Ridges appear on maps as contours that:",
+      "options": [
+        "Form closed circles only",
+        "Bulge toward lower ground",
+        "Cross rivers at 90°",
+        "Are always dashed"
+      ],
+      "correctOption": 1,
+      "answer": "Ridge lines are elongated highs—contours bend around them.",
+      "examTip": "Ridge = drainage divide often.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq027",
+      "q_id": "geo-ch1-mcq027",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The direction of increasing easting values is:",
+      "options": [
+        "West",
+        "East",
+        "North",
+        "South"
+      ],
+      "correctOption": 1,
+      "answer": "Eastings increase eastward—toward the right on standard grid maps.",
+      "examTip": "Foundation for grid refs.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq028",
+      "q_id": "geo-ch1-mcq028",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Six-figure grid reference 438276: digits 82 indicate:",
+      "options": [
+        "Easting within the square",
+        "Northing within the square",
+        "Map sheet number",
+        "Contour height"
+      ],
+      "correctOption": 0,
+      "answer": "In 438276, 43/27 are the square; 8 is easting tenth, 2 is northing tenth within square (read order carefully per question).",
+      "examTip": "Practice splitting six-figure refs.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq029",
+      "q_id": "geo-ch1-mcq029",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Grid north aligns with vertical grid lines.\n2. True north points toward the geographic North Pole.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 3,
+      "answer": "Both statements are correct—they differ slightly; maps show convergence/declination data.",
+      "examTip": "North types are separate concepts.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq030",
+      "q_id": "geo-ch1-mcq030",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Seasonal streams are important because they:",
+      "options": [
+        "Flow year-round always",
+        "May dry up in summer affecting water supply",
+        "Are shown in red",
+        "Have no contour relation"
+      ],
+      "correctOption": 1,
+      "answer": "Dashed blue lines warn that water may be unavailable in dry season.",
+      "examTip": "Settlement water planning.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq031",
+      "q_id": "geo-ch1-mcq031",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Embankments near tanks are shown to indicate:",
+      "options": [
+        "Railway cuttings",
+        "Raised bunds holding water",
+        "Contour interval",
+        "Magnetic variation"
+      ],
+      "correctOption": 1,
+      "answer": "Tank bunds impound water; common in peninsular plateau mapping.",
+      "examTip": "Link symbol to water harvesting.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq032",
+      "q_id": "geo-ch1-mcq032",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A cart track differs from a metalled road on maps by:",
+      "options": [
+        "Symbol width/line style in legend",
+        "Always blue colour",
+        "Always absent",
+        "Being a contour"
+      ],
+      "correctOption": 0,
+      "answer": "Road hierarchy uses different line styles—consult conventional signs.",
+      "examTip": "Symbol identification from legend.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq033",
+      "q_id": "geo-ch1-mcq033",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "When contours form a 'U' shape wide open downstream, the feature is often:",
+      "options": [
+        "Narrow gorge",
+        "Broad valley",
+        "Isolated hill",
+        "Mine shaft"
+      ],
+      "correctOption": 1,
+      "answer": "Wide U contours suggest a broad valley floor.",
+      "examTip": "Compare narrow V vs broad U.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq034",
+      "q_id": "geo-ch1-mcq034",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Spot heights are shown by:",
+      "options": [
+        "X with elevation figure",
+        "Blue triangle only",
+        "Red square only",
+        "Dashed green line"
+      ],
+      "correctOption": 0,
+      "answer": "Spot heights give precise summit or point elevations.",
+      "examTip": "Use spot height when contours unclear.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq035",
+      "q_id": "geo-ch1-mcq035",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Settlement near confluence of rivers suggests access to:",
+      "options": [
+        "Water and fertile silt",
+        "Only minerals",
+        "Permanent snow",
+        "No transport"
+      ],
+      "correctOption": 0,
+      "answer": "River junctions offer water, transport, and fertile alluvium.",
+      "examTip": "Site factor reasoning.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq036",
+      "q_id": "geo-ch1-mcq036",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Tracing a river upstream on a map, contours should:",
+      "options": [
+        "Point downstream",
+        "Bend upstream toward the source",
+        "Disappear",
+        "Turn black"
+      ],
+      "correctOption": 1,
+      "answer": "Valley contours V toward higher ground upstream.",
+      "examTip": "Direction of V is critical.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq037",
+      "q_id": "geo-ch1-mcq037",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which instrument helps find bearings in the field?",
+      "options": [
+        "Barometer",
+        "Compass",
+        "Thermometer",
+        "Hygrometer"
+      ],
+      "correctOption": 1,
+      "answer": "Compass measures direction; adjust for declination on map.",
+      "examTip": "Fieldwork equipment.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq038",
+      "q_id": "geo-ch1-mcq038",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "1 cm on 1:50,000 map equals ground distance:",
+      "options": [
+        "50 m",
+        "500 m",
+        "5 km",
+        "50 km"
+      ],
+      "correctOption": 1,
+      "answer": "50,000 cm = 500 m.",
+      "examTip": "Standard SOI scale calculation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq039",
+      "q_id": "geo-ch1-mcq039",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Representative Fraction is unitless.\n2. Statement scale may use different units.\n3. Graphic scale cannot be used on topo maps.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 are correct; graphic (linear) scales ARE used on SOI sheets.",
+      "examTip": "All three scale types can appear.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq040",
+      "q_id": "geo-ch1-mcq040",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Dendritic drainage pattern resembles:",
+      "options": [
+        "Tree branches",
+        "Parallel trellis",
+        "Radiating spokes",
+        "Rectangular grid"
+      ],
+      "correctOption": 0,
+      "answer": "Random branching on uniform rock → dendritic (tree-like).",
+      "examTip": "Drainage pattern names.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq041",
+      "q_id": "geo-ch1-mcq041",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Trellis drainage indicates:",
+      "options": [
+        "Alternate hard and soft rock bands",
+        "Volcano centre",
+        "Desert wind",
+        "Glacier melt only"
+      ],
+      "correctOption": 0,
+      "answer": "Tributaries join main river at right angles on folded strata.",
+      "examTip": "Geology controls pattern.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq042",
+      "q_id": "geo-ch1-mcq042",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Radial drainage flows:",
+      "options": [
+        "Parallel to coast only",
+        "Outward from a central high point",
+        "Underground only",
+        "Only northward"
+      ],
+      "correctOption": 1,
+      "answer": "Volcanic cones or domes produce radial streams.",
+      "examTip": "Pattern-centre identification.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq043",
+      "q_id": "geo-ch1-mcq043",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Marsh or swamp may be shown by:",
+      "options": [
+        "Reed/marsh symbols in legend",
+        "Red contour lines",
+        "Railway symbols",
+        "Index contour numbers"
+      ],
+      "correctOption": 0,
+      "answer": "Poorly drained areas have specific wetland symbols.",
+      "examTip": "Read legend for wetlands.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq044",
+      "q_id": "geo-ch1-mcq044",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Bridges are important map features because they show:",
+      "options": [
+        "River crossing points",
+        "Only political boundaries",
+        "Contour interval",
+        "Magnetic north"
+      ],
+      "correctOption": 0,
+      "answer": "Bridges link settlements and roads across drainage.",
+      "examTip": "Infrastructure interpretation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq045",
+      "q_id": "geo-ch1-mcq045",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A temple symbol near clustered buildings suggests:",
+      "options": [
+        "Cultural/religious centre of settlement",
+        "Mining area",
+        "Permanent snow",
+        "International border"
+      ],
+      "correctOption": 0,
+      "answer": "Religious sites often anchor nucleated villages.",
+      "examTip": "Cultural geography on maps.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq046",
+      "q_id": "geo-ch1-mcq046",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Contour lines on a cliff may:",
+      "options": [
+        "Overlap vertically in representation",
+        "Appear touching/overlapping in steep cliffs",
+        "Be absent for all cliffs",
+        "Be green"
+      ],
+      "correctOption": 1,
+      "answer": "Very steep cliffs show contours nearly on top of each other.",
+      "examTip": "Extreme relief exception.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq047",
+      "q_id": "geo-ch1-mcq047",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Yellow wash on SOI maps often indicates:",
+      "options": [
+        "Cultivated land",
+        "Ocean",
+        "Glacier",
+        "Built-up only"
+      ],
+      "correctOption": 0,
+      "answer": "Agricultural land commonly appears with yellow tint (verify legend).",
+      "examTip": "Land-use interpretation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq048",
+      "q_id": "geo-ch1-mcq048",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Railway lines on toposheets are typically shown in:",
+      "options": [
+        "Black with cross ticks or red per edition",
+        "Blue dashed",
+        "Brown contour",
+        "Green dotted"
+      ],
+      "correctOption": 0,
+      "answer": "Railways use distinctive line styles with ticks—check sheet legend.",
+      "examTip": "Transport symbol ID.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq049",
+      "q_id": "geo-ch1-mcq049",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Height of a point between two contours can be estimated by:",
+      "options": [
+        "Interpolation assuming even slope",
+        "Guessing randomly",
+        "Using magnetic declination",
+        "Counting settlements"
+      ],
+      "correctOption": 0,
+      "answer": "If point lies midway between 100 m and 120 m contours, estimate ~110 m.",
+      "examTip": "Interpolation skills.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq050",
+      "q_id": "geo-ch1-mcq050",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Watershed is best described as:",
+      "options": [
+        "River mouth",
+        "Dividing line between drainage basins",
+        "Village centre",
+        "Railway junction"
+      ],
+      "correctOption": 1,
+      "answer": "Ridges often form watersheds separating river systems.",
+      "examTip": "Drainage basin concept.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq051",
+      "q_id": "geo-ch1-mcq051",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Fort or defensive site on hills is suggested by:",
+      "options": [
+        "Building symbols on concentric contours with steep approaches",
+        "Marsh symbols only",
+        "Open sea",
+        "Flat wide contours only"
+      ],
+      "correctOption": 0,
+      "answer": "Height + steep slopes favoured historic defence.",
+      "examTip": "Historical geography inference.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq052",
+      "q_id": "geo-ch1-mcq052",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Open scrub may be shown with:",
+      "options": [
+        "Green dots or specific scrub symbol",
+        "Blue lines",
+        "Red grid",
+        "Contour labels"
+      ],
+      "correctOption": 0,
+      "answer": "Vegetation types have varied symbols—consult key.",
+      "examTip": "Don't assume one green style.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq053",
+      "q_id": "geo-ch1-mcq053",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Map edition date in the margin indicates:",
+      "options": [
+        "When the map was surveyed/printed",
+        "Population census year only",
+        "Student exam date",
+        "River flood level"
+      ],
+      "correctOption": 0,
+      "answer": "Currency of features depends on survey/revision date.",
+      "examTip": "Outdated maps may lack new roads.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq054",
+      "q_id": "geo-ch1-mcq054",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Easting values increase eastward.\n2. Northing values increase northward.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 3,
+      "answer": "Both standard grid conventions are correct.",
+      "examTip": "Foundation for all grid questions.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq055",
+      "q_id": "geo-ch1-mcq055",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "To find area of a regular-shaped field on a map, you need:",
+      "options": [
+        "Scale to convert map area to ground area",
+        "Only compass bearing",
+        "Only spot height",
+        "Magnetic variation only"
+      ],
+      "correctOption": 0,
+      "answer": "Area scales with the square of the linear scale factor.",
+      "examTip": "Map area = (map measure × scale)².",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq056",
+      "q_id": "geo-ch1-mcq056",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Gorge feature shows contours:",
+      "options": [
+        "Very close together in narrow cut",
+        "Widely spaced on flat plain",
+        "Absent",
+        "In blue only"
+      ],
+      "correctOption": 0,
+      "answer": "Deep narrow valleys have tightly packed contours.",
+      "examTip": "Gorge vs broad valley.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq057",
+      "q_id": "geo-ch1-mcq057",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Intervisibility between two points depends on:",
+      "options": [
+        "Whether relief blocks the line of sight",
+        "Only map colour",
+        "Grid reference only",
+        "Seasonal streams only"
+      ],
+      "correctOption": 0,
+      "answer": "A hill between points blocks view—use contour heights.",
+      "examTip": "Cross-section profile questions.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq058",
+      "q_id": "geo-ch1-mcq058",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Bench mark (BM) on survey maps indicates:",
+      "options": [
+        "Known elevation survey reference point",
+        "Bus stop",
+        "Border post",
+        "Mine entrance only"
+      ],
+      "correctOption": 0,
+      "answer": "BM provides accurate height control for mapping.",
+      "examTip": "Survey terminology.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq059",
+      "q_id": "geo-ch1-mcq059",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Levee along a river may appear as:",
+      "options": [
+        "Embankment-like feature near river bank",
+        "Contour circle",
+        "Magnetic line",
+        "Grid number"
+      ],
+      "correctOption": 0,
+      "answer": "Natural levees from silt deposition along floodplains.",
+      "examTip": "River landform symbols.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq060",
+      "q_id": "geo-ch1-mcq060",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Sand dunes in desert areas may show:",
+      "options": [
+        "Special sand dune symbols or stipple",
+        "Blue contours",
+        "Railway ticks",
+        "Green forest"
+      ],
+      "correctOption": 0,
+      "answer": "Arid region symbols differ—use legend.",
+      "examTip": "Regional map variation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq061",
+      "q_id": "geo-ch1-mcq061",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Canals appear as:",
+      "options": [
+        "Man-made linear water features (often blue)",
+        "Brown contours only",
+        "Index contours",
+        "Red eastings"
+      ],
+      "correctOption": 0,
+      "answer": "Irrigation canals are cultural hydrographic features.",
+      "examTip": "Distinguish canal from natural stream.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq062",
+      "q_id": "geo-ch1-mcq062",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Quarry or mine symbols indicate:",
+      "options": [
+        "Extraction of minerals",
+        "Religious site",
+        "Perennial snow",
+        "Marsh only"
+      ],
+      "correctOption": 0,
+      "answer": "Economic activity shown in cultural symbols.",
+      "examTip": "Resource geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-mcq063",
+      "q_id": "geo-ch1-mcq063",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Contour numbering increases toward:",
+      "options": [
+        "Higher ground inland (generally uphill)",
+        "Always south",
+        "Sea level only",
+        "Random direction"
+      ],
+      "correctOption": 0,
+      "answer": "Numbers rise toward summits—verify with adjacent heights.",
+      "examTip": "Check arrow of increasing height.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-mcq064",
+      "q_id": "geo-ch1-mcq064",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A break in slope (knickpoint) may show as:",
+      "options": [
+        "Sudden change in contour spacing",
+        "Change in map colour to green only",
+        "Disappearance of grid",
+        "New magnetic north"
+      ],
+      "correctOption": 0,
+      "answer": "Tighter spacing after wide spacing marks steeper section.",
+      "examTip": "Slope change identification.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-mcq065",
+      "q_id": "geo-ch1-mcq065",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Spot heights supplement contours on steep peaks.\n2. Bench marks provide survey control.\n3. Grid references use latitude and longitude.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 correct; grid refs use eastings/northings not lat/long on SOI topo sheets.",
+      "examTip": "Distinguish grid from geographic coordinates.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-mcq066",
+      "q_id": "geo-ch1-mcq066",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The main purpose of topographical maps in planning is to:",
+      "options": [
+        "Show accurate relief and land use for development decisions",
+        "Replace census data",
+        "Show only political boundaries",
+        "Display weather forecasts"
+      ],
+      "correctOption": 0,
+      "answer": "Planners use relief, drainage, and settlements for roads, dams, and services.",
+      "examTip": "Applied geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-mcq067",
+      "q_id": "geo-ch1-mcq067",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Identifying a water divide helps to:",
+      "options": [
+        "Separate drainage basins",
+        "Find railway fares",
+        "Measure temperature",
+        "Calculate population density"
+      ],
+      "correctOption": 0,
+      "answer": "Divides determine which river system receives runoff.",
+      "examTip": "Watershed management.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-mcq068",
+      "q_id": "geo-ch1-mcq068",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Steep slope farming risk is inferred when:",
+      "options": [
+        "Contours are very close on hillside fields",
+        "Map is green only",
+        "No settlements appear",
+        "Scale is small"
+      ],
+      "correctOption": 0,
+      "answer": "Close contours on slopes → erosion and landslide risk.",
+      "examTip": "Human-environment link.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-mcq069",
+      "q_id": "geo-ch1-mcq069",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Conventional signs are important because they:",
+      "options": [
+        "Standardise map reading nationally",
+        "Change randomly each sheet",
+        "Eliminate need for scale",
+        "Hide relief"
+      ],
+      "correctOption": 0,
+      "answer": "Uniform legend enables anyone trained to read any SOI sheet.",
+      "examTip": "National mapping standard.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-mcq070",
+      "q_id": "geo-ch1-mcq070",
+      "topicId": "geo-ch1",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "When drawing a cross-section between two points:",
+      "options": [
+        "Plot heights from contour crossings in order",
+        "Ignore VI",
+        "Use only blue features",
+        "Skip scale"
+      ],
+      "correctOption": 0,
+      "answer": "Mark where section line crosses contours; plot height vs distance.",
+      "examTip": "Cross-section is common ICSE skill.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-tf01",
+      "q_id": "geo-ch1-tf01",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Topographical maps show only political boundaries.",
+      "correctAnswer": "false",
+      "answer": "False. They emphasise relief (contours), drainage, vegetation, transport, and settlements—not just boundaries.",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-tf02",
+      "q_id": "geo-ch1-tf02",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "On SOI maps, easting is read before northing in a grid reference.",
+      "correctAnswer": "true",
+      "answer": "True. Standard order: easting first (horizontal), northing second (vertical).",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-tf03",
+      "q_id": "geo-ch1-tf03",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Closely spaced contours always indicate a gentle slope.",
+      "correctAnswer": "false",
+      "answer": "False. Close spacing means rapid height change → steep slope.",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-tf04",
+      "q_id": "geo-ch1-tf04",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Perennial rivers are shown with dashed blue lines.",
+      "correctAnswer": "false",
+      "answer": "False. Perennial rivers use continuous blue lines; dashed lines usually mean seasonal streams.",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-tf05",
+      "q_id": "geo-ch1-tf05",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Representative Fraction 1:50,000 means 1 unit on the map equals 50,000 of the same unit on the ground.",
+      "correctAnswer": "true",
+      "answer": "True. RF is a ratio without units—1 cm : 50,000 cm.",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-tf06",
+      "q_id": "geo-ch1-tf06",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "V-shaped contours pointing uphill indicate a spur.",
+      "correctAnswer": "false",
+      "answer": "False. Vs pointing uphill indicate valleys; spurs show Vs pointing downhill.",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-tf07",
+      "q_id": "geo-ch1-tf07",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Six-figure grid references are more precise than four-figure references.",
+      "correctAnswer": "true",
+      "answer": "True. Six figures locate a point within about 100 m inside the grid square.",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-tf08",
+      "q_id": "geo-ch1-tf08",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Green colour on SOI toposheets commonly represents vegetation.",
+      "correctAnswer": "true",
+      "answer": "True. Green shading/symbols mark forest or vegetated areas per the legend.",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-tf09",
+      "q_id": "geo-ch1-tf09",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Contours can cross each other on a normal hillside.",
+      "correctAnswer": "false",
+      "answer": "False. Contours of different heights do not cross except in rare overhanging cliff representations.",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-tf10",
+      "q_id": "geo-ch1-tf10",
+      "topicId": "geo-ch1",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Linear settlements often develop along transport routes such as roads or railways.",
+      "correctAnswer": "true",
+      "answer": "True. Elongated building patterns follow linear infrastructure or valley floors.",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-fb01",
+      "q_id": "geo-ch1-fb01",
+      "topicId": "geo-ch1",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Contour lines join points of equal ______.",
+      "blankAnswer": "height",
+      "answer": "Height (elevation above mean sea level). Adjacent contours differ by the Vertical Interval.",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-fb02",
+      "q_id": "geo-ch1-fb02",
+      "topicId": "geo-ch1",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "The height difference between successive contour lines is called the Vertical ______.",
+      "blankAnswer": "Interval",
+      "answer": "Vertical Interval (VI)—stated in the map margin (e.g. 20 m).",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-fb03",
+      "q_id": "geo-ch1-fb03",
+      "topicId": "geo-ch1",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "In grid references, ______ is read before northing.",
+      "blankAnswer": "easting",
+      "answer": "Easting (the horizontal coordinate) is always stated first.",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-fb04",
+      "q_id": "geo-ch1-fb04",
+      "topicId": "geo-ch1",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "A RF of 1:50,000 means 1 cm on the map represents ______ cm on the ground.",
+      "blankAnswer": "50000",
+      "answer": "50,000 cm, which equals 500 m or 0.5 km.",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-fb05",
+      "q_id": "geo-ch1-fb05",
+      "topicId": "geo-ch1",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Man-made features on SOI maps are generally shown in ______ colour.",
+      "blankAnswer": "black",
+      "answer": "Black is used for most cultural features such as buildings, tracks, and labels.",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-match01",
+      "q_id": "geo-ch1-match01",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match contour patterns with landforms:",
+      "pairs": [
+        {
+          "left": "Concentric closed loops",
+          "right": "Hill"
+        },
+        {
+          "left": "V pointing uphill",
+          "right": "Valley"
+        },
+        {
+          "left": "Wide flat contours",
+          "right": "Plateau"
+        },
+        {
+          "left": "Hourglass shape",
+          "right": "Saddle/Col"
+        }
+      ],
+      "answer": "Concentric→Hill; V uphill→Valley; wide flat→Plateau; hourglass→Saddle.",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-match02",
+      "q_id": "geo-ch1-match02",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match colours with features:",
+      "pairs": [
+        {
+          "left": "Brown",
+          "right": "Relief/contours"
+        },
+        {
+          "left": "Blue",
+          "right": "Water"
+        },
+        {
+          "left": "Green",
+          "right": "Vegetation"
+        },
+        {
+          "left": "Black",
+          "right": "Cultural features"
+        }
+      ],
+      "answer": "Brown→relief; Blue→water; Green→vegetation; Black→cultural.",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-match03",
+      "q_id": "geo-ch1-match03",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match settlement types with descriptions:",
+      "pairs": [
+        {
+          "left": "Nucleated",
+          "right": "Clustered buildings"
+        },
+        {
+          "left": "Dispersed",
+          "right": "Scattered farmsteads"
+        },
+        {
+          "left": "Linear",
+          "right": "Along a road/river"
+        },
+        {
+          "left": "Urban dense",
+          "right": "Compact built-up block"
+        }
+      ],
+      "answer": "Nucleated→cluster; Dispersed→scattered; Linear→along line; Urban→dense block.",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-match04",
+      "q_id": "geo-ch1-match04",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match scale with ground distance (1 cm):",
+      "pairs": [
+        {
+          "left": "1:25,000",
+          "right": "250 m"
+        },
+        {
+          "left": "1:50,000",
+          "right": "500 m"
+        },
+        {
+          "left": "1:100,000",
+          "right": "1 km"
+        },
+        {
+          "left": "1:10,000",
+          "right": "100 m"
+        }
+      ],
+      "answer": "Multiply cm by denominator; convert to m/km.",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-match05",
+      "q_id": "geo-ch1-match05",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match drainage patterns:",
+      "pairs": [
+        {
+          "left": "Dendritic",
+          "right": "Tree-like branching"
+        },
+        {
+          "left": "Trellis",
+          "right": "Right-angle tributaries"
+        },
+        {
+          "left": "Radial",
+          "right": "Outward from centre"
+        },
+        {
+          "left": "Parallel",
+          "right": "Subparallel streams"
+        }
+      ],
+      "answer": "Dendritic→tree; Trellis→right angles; Radial→centre; Parallel→subparallel.",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-match06",
+      "q_id": "geo-ch1-match06",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match grid reference types:",
+      "pairs": [
+        {
+          "left": "4523",
+          "right": "Four-figure (1 km square)"
+        },
+        {
+          "left": "452387",
+          "right": "Six-figure (precise point)"
+        },
+        {
+          "left": "Easting 45",
+          "right": "First two digits in 4523"
+        },
+        {
+          "left": "Northing 23",
+          "right": "Last two digits in 4523"
+        }
+      ],
+      "answer": "4523→square; 452387→point; 45→easting; 23→northing.",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-match07",
+      "q_id": "geo-ch1-match07",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match water line types:",
+      "pairs": [
+        {
+          "left": "Solid blue line",
+          "right": "Perennial river"
+        },
+        {
+          "left": "Dashed blue line",
+          "right": "Seasonal stream"
+        },
+        {
+          "left": "Tank with bund",
+          "right": "Stored water"
+        },
+        {
+          "left": "Well symbol",
+          "right": "Groundwater source"
+        }
+      ],
+      "answer": "Solid→perennial; dashed→seasonal; tank→stored; well→groundwater.",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    },
+    {
+      "id": "geo-ch1-match08",
+      "q_id": "geo-ch1-match08",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match slope with contour spacing:",
+      "pairs": [
+        {
+          "left": "Steep slope",
+          "right": "Close contours"
+        },
+        {
+          "left": "Gentle slope",
+          "right": "Wide spacing"
+        },
+        {
+          "left": "Cliff",
+          "right": "Nearly touching contours"
+        },
+        {
+          "left": "Flat plain",
+          "right": "Very wide spacing"
+        }
+      ],
+      "answer": "Steep→close; gentle→wide; cliff→touching; flat→very wide.",
+      "linksTo": "geo-rev-ch1-05",
+      "linked_note_id": "geo-rev-ch1-05"
+    },
+    {
+      "id": "geo-ch1-match09",
+      "q_id": "geo-ch1-match09",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match map tools/methods:",
+      "pairs": [
+        {
+          "left": "Thread",
+          "right": "Curved distance"
+        },
+        {
+          "left": "Compass",
+          "right": "Bearing"
+        },
+        {
+          "left": "RF scale",
+          "right": "Distance conversion"
+        },
+        {
+          "left": "Cross-section",
+          "right": "Relief profile"
+        }
+      ],
+      "answer": "Thread→curve; compass→bearing; RF→distance; section→profile.",
+      "linksTo": "geo-rev-ch1-06",
+      "linked_note_id": "geo-rev-ch1-06"
+    },
+    {
+      "id": "geo-ch1-match10",
+      "q_id": "geo-ch1-match10",
+      "topicId": "geo-ch1",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match marginal info:",
+      "pairs": [
+        {
+          "left": "VI",
+          "right": "Contour height gap"
+        },
+        {
+          "left": "Declination",
+          "right": "Magnetic-true north angle"
+        },
+        {
+          "left": "Sheet number",
+          "right": "Map identifier"
+        },
+        {
+          "left": "Edition year",
+          "right": "Survey currency"
+        }
+      ],
+      "answer": "VI→height gap; declination→north angle; sheet→ID; edition→currency.",
+      "linksTo": "geo-rev-ch1-07",
+      "linked_note_id": "geo-rev-ch1-07"
+    },
+    {
+      "id": "geo-ch1-sa01",
+      "q_id": "geo-ch1-sa01",
+      "topicId": "geo-ch1",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Explain how contour lines show a valley on a topographical map.",
+      "answer": "Valleys appear as V-shaped contour bends pointing upstream (toward higher ground). A stream often occupies the valley floor shown in blue. The V points uphill because the land rises on both sides of the watercourse.",
+      "linksTo": "geo-rev-ch1-08",
+      "linked_note_id": "geo-rev-ch1-08"
+    },
+    {
+      "id": "geo-ch1-sa02",
+      "q_id": "geo-ch1-sa02",
+      "topicId": "geo-ch1",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Distinguish between four-figure and six-figure grid references.",
+      "answer": "Four-figure references (e.g. 4523) identify a 1 km grid square. Six-figure references (e.g. 452387) subdivide the square into tenths, locating a point within about 100 m. Both read easting before northing.",
+      "linksTo": "geo-rev-ch1-01",
+      "linked_note_id": "geo-rev-ch1-01"
+    },
+    {
+      "id": "geo-ch1-sa03",
+      "q_id": "geo-ch1-sa03",
+      "topicId": "geo-ch1",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Give three map evidences for a nucleated settlement.",
+      "answer": "Dense cluster of building symbols at one site; proximity to water (solid blue line) or road junction; possible temple/post office symbols indicating a service centre.",
+      "linksTo": "geo-rev-ch1-02",
+      "linked_note_id": "geo-rev-ch1-02"
+    },
+    {
+      "id": "geo-ch1-sa04",
+      "q_id": "geo-ch1-sa04",
+      "topicId": "geo-ch1",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "How do you calculate ground distance using RF 1:50,000?",
+      "answer": "Measure map distance in cm, multiply by 50,000 to get ground cm, then convert: divide by 100 for metres or by 100,000 for kilometres. Example: 4 cm × 50,000 = 200,000 cm = 2 km.",
+      "linksTo": "geo-rev-ch1-03",
+      "linked_note_id": "geo-rev-ch1-03"
+    },
+    {
+      "id": "geo-ch1-sa05",
+      "q_id": "geo-ch1-sa05",
+      "topicId": "geo-ch1",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Why are conventional signs important on topographical maps?",
+      "answer": "They standardise symbols nationwide so users can interpret any SOI sheet consistently. Without them, relief, water, vegetation, and cultural features could not be read accurately for navigation and planning.",
+      "linksTo": "geo-rev-ch1-04",
+      "linked_note_id": "geo-rev-ch1-04"
+    }
+  ]
+}

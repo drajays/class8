@@ -1,0 +1,2301 @@
+{
+  "topicId": "geo-ch3",
+  "title": "Migration",
+  "highYieldFacts": [
+    "Migration is movement across a boundary to settle temporarily or permanently.",
+    "Internal migration stays within one country; international crosses borders.",
+    "Emigration = leaving a country; Immigration = entering a country.",
+    "Push factors drive people away from origin.",
+    "Pull factors attract people to destination.",
+    "Rural-urban migration is the main stream in developing countries.",
+    "Remittances are money sent home by migrants.",
+    "Brain drain = emigration of highly skilled workers.",
+    "Refugees migrate due to war, persecution, or disaster—forced migration.",
+    "Seasonal migration follows harvest or tourism seasons.",
+    "Net migration = immigrants − emigrants.",
+    "Chain migration occurs when earlier migrants sponsor relatives.",
+    "Gulf countries attract many South Asian labour migrants.",
+    "India is a major remittance-receiving country.",
+    "Urbanisation is accelerated by rural-urban migration.",
+    "Young adults migrate more than elderly.",
+    "Counter-urbanisation = movement from city to countryside (developed nations).",
+    "Illegal migration lacks official documents or visas.",
+    "Diaspora = community living outside homeland.",
+    "Brain circulation = skilled return migration with new expertise.",
+    "Migration affects age and sex structure of both regions.",
+    "Slums often grow when urban migration outpaces housing.",
+    "Government visas regulate international migration.",
+    "IDPs are displaced within their own country.",
+    "Economic migration seeks better jobs and wages.",
+    "Social migration joins family or community abroad.",
+    "Environmental migration follows drought, flood, or sea-level rise.",
+    "Mumbai and Delhi grew partly through in-migration.",
+    "Kerala has high emigration and remittance inflows.",
+    "Balanced regional development can reduce excessive migration pressure."
+  ],
+  "notes": [
+    {
+      "id": "geo-rev-ch3-01",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "1. What Is Migration?",
+      "content": "**Executive summary:** Migration is the movement of people from one place to another to settle temporarily or permanently.\n\n**Must know**\n• Differs from daily commuting or short visits\n• Can be internal (within country) or international (across borders)\n• May be voluntary or forced\n• Temporary migrants include seasonal workers and refugees in camps\n• Permanent migrants change long-term residence\n\n**Migration** means crossing a defined boundary to live elsewhere. It is a major component of **population change** along with births and deaths.\n\n**Internal migration** moves people within the same country (e.g. village to city).\n**International migration** crosses national borders (e.g. India to UAE for work).\n\nMigration reshapes population distribution, culture, economy, and cities.",
+      "explanation": "Migration = change of usual residence across a boundary, not a day trip.\n\n**🔗 Links:** geo-rev-ch3-02 — next topic",
+      "teacherTip": "Ask students if they know families who migrated—link concept to lived experience.",
+      "examTip": "Define migration and distinguish from circulation/commuting.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq001",
+        "geo-ch3-mcq009",
+        "geo-ch3-mcq017",
+        "geo-ch3-mcq025",
+        "geo-ch3-mcq033",
+        "geo-ch3-mcq041",
+        "geo-ch3-mcq049",
+        "geo-ch3-mcq057",
+        "geo-ch3-mcq065",
+        "geo-ch3-tf03",
+        "geo-ch3-fb01",
+        "geo-ch3-match04",
+        "geo-ch3-sa02"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq001",
+        "geo-ch3-mcq009",
+        "geo-ch3-mcq017",
+        "geo-ch3-mcq025",
+        "geo-ch3-mcq033",
+        "geo-ch3-mcq041",
+        "geo-ch3-mcq049",
+        "geo-ch3-mcq057",
+        "geo-ch3-mcq065",
+        "geo-ch3-tf03",
+        "geo-ch3-fb01",
+        "geo-ch3-match04",
+        "geo-ch3-sa02"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-02",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "2. Types of Migration",
+      "content": "**Executive summary:** Migration is classified by distance, direction, duration, and cause.\n\n**Must know**\n• Rural to urban (most common in developing countries)\n• Urban to rural (counter-urbanisation in some developed areas)\n• International labour migration and student migration\n• Forced migration: refugees fleeing war or persecution\n• Seasonal migration for harvest or tourism work\n\n| Type | Example |\n|------|---------|\n| Internal | Bihar to Delhi for work |\n| International | Nurse from Kerala to UK |\n| Voluntary | Job or education |\n| Forced | Refugees from conflict |\n| Seasonal | Farm labour during harvest |\n\n**Emigration** = leaving a country; **Immigration** = entering a country.",
+      "explanation": "Classify migration by where, why, and how long.\n\n**🔗 Links:** geo-rev-ch3-01 — previous topic; geo-rev-ch3-03 — next topic",
+      "teacherTip": "Sort newspaper headlines into migration types.",
+      "examTip": "Give one example for each type in long answers.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq002",
+        "geo-ch3-mcq010",
+        "geo-ch3-mcq018",
+        "geo-ch3-mcq026",
+        "geo-ch3-mcq034",
+        "geo-ch3-mcq042",
+        "geo-ch3-mcq050",
+        "geo-ch3-mcq058",
+        "geo-ch3-mcq066",
+        "geo-ch3-tf04",
+        "geo-ch3-fb02",
+        "geo-ch3-match05",
+        "geo-ch3-sa03"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq002",
+        "geo-ch3-mcq010",
+        "geo-ch3-mcq018",
+        "geo-ch3-mcq026",
+        "geo-ch3-mcq034",
+        "geo-ch3-mcq042",
+        "geo-ch3-mcq050",
+        "geo-ch3-mcq058",
+        "geo-ch3-mcq066",
+        "geo-ch3-tf04",
+        "geo-ch3-fb02",
+        "geo-ch3-match05",
+        "geo-ch3-sa03"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-03",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "3. Push and Pull Factors",
+      "content": "**Executive summary:** People leave places due to push factors and are attracted by pull factors.\n\n**Must know**\n• Push: unemployment, poverty, war, famine, natural disaster\n• Pull: jobs, higher wages, education, safety, better services\n• Push and pull work together in migration decisions\n• Family links and chain migration reinforce movement\n• Government policy can push or pull (restrictions or incentives)\n\n**Push factors** drive people **away** from origin (lack of jobs, drought, conflict).\n\n**Pull factors** attract people **toward** destination (factories, universities, peace).\n\nExample: A farmer migrates from drought-hit village (**push**) to city for construction work (**pull**).",
+      "explanation": "Every migration story has reasons to leave and reasons to arrive.\n\n**🔗 Links:** geo-rev-ch3-02 — previous topic; geo-rev-ch3-04 — next topic",
+      "teacherTip": "Two-column chart: push on left, pull on right with local examples.",
+      "examTip": "Never list only pulls—ICSE expects both sides.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq003",
+        "geo-ch3-mcq011",
+        "geo-ch3-mcq019",
+        "geo-ch3-mcq027",
+        "geo-ch3-mcq035",
+        "geo-ch3-mcq043",
+        "geo-ch3-mcq051",
+        "geo-ch3-mcq059",
+        "geo-ch3-mcq067",
+        "geo-ch3-tf05",
+        "geo-ch3-fb03",
+        "geo-ch3-match06",
+        "geo-ch3-sa04"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq003",
+        "geo-ch3-mcq011",
+        "geo-ch3-mcq019",
+        "geo-ch3-mcq027",
+        "geo-ch3-mcq035",
+        "geo-ch3-mcq043",
+        "geo-ch3-mcq051",
+        "geo-ch3-mcq059",
+        "geo-ch3-mcq067",
+        "geo-ch3-tf05",
+        "geo-ch3-fb03",
+        "geo-ch3-match06",
+        "geo-ch3-sa04"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-04",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "4. Rural-Urban Migration",
+      "content": "**Executive summary:** Movement from villages to towns and cities is the dominant migration stream in India and much of the developing world.\n\n**Must know**\n• Causes: lack of rural jobs, low farm income, drought, better city services\n• Young adults migrate most frequently\n• Results in urbanisation and growth of slums if housing lags\n• Remittances sent home support rural families\n• Cities gain labour but face congestion and pressure on water\n\n**Rural-urban migration** fuels **urbanisation**. Migrants seek **manufacturing**, **services**, and **education**.\n\n**Positive:** labour supply, remittances, cultural exchange.\n**Negative:** overcrowding, inadequate housing, strain on transport and sanitation.\n\nPlanning **affordable housing** and **rural development** can balance flows.",
+      "explanation": "Rural-urban shift is the main migration story in Class 8 Indian geography.\n\n**🔗 Links:** geo-rev-ch3-03 — previous topic; geo-rev-ch3-05 — next topic",
+      "teacherTip": "Discuss remittance economy in Kerala or UP-Bihar-Delhi corridor.",
+      "examTip": "List causes (push/pull) and effects on both village and city.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq004",
+        "geo-ch3-mcq012",
+        "geo-ch3-mcq020",
+        "geo-ch3-mcq028",
+        "geo-ch3-mcq036",
+        "geo-ch3-mcq044",
+        "geo-ch3-mcq052",
+        "geo-ch3-mcq060",
+        "geo-ch3-mcq068",
+        "geo-ch3-tf06",
+        "geo-ch3-fb04",
+        "geo-ch3-match07",
+        "geo-ch3-sa05"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq004",
+        "geo-ch3-mcq012",
+        "geo-ch3-mcq020",
+        "geo-ch3-mcq028",
+        "geo-ch3-mcq036",
+        "geo-ch3-mcq044",
+        "geo-ch3-mcq052",
+        "geo-ch3-mcq060",
+        "geo-ch3-mcq068",
+        "geo-ch3-tf06",
+        "geo-ch3-fb04",
+        "geo-ch3-match07",
+        "geo-ch3-sa05"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-05",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "5. International Migration",
+      "content": "**Executive summary:** People cross borders for work, study, family reunion, or asylum.\n\n**Must know**\n• Gulf countries attract construction and service workers from South Asia\n• Developed countries attract skilled professionals and students\n• Remittances are major income for countries like India and Philippines\n• Border controls, visas, and passports regulate movement\n• Diaspora communities maintain cultural ties abroad\n\n**International migrants** face **passport/visa** rules. **Labour migration** to the **Gulf** and **West** is significant for India.\n\n**Remittances** = money sent home by migrants—supports families and national foreign exchange.\n\n**Brain drain** (next topic) is a special form of skilled international emigration.",
+      "explanation": "International migration links countries economically and culturally.\n\n**🔗 Links:** geo-rev-ch3-04 — previous topic; geo-rev-ch3-06 — next topic",
+      "teacherTip": "Map major migration corridors on a world map.",
+      "examTip": "Mention remittances when writing on international migration from India.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq005",
+        "geo-ch3-mcq013",
+        "geo-ch3-mcq021",
+        "geo-ch3-mcq029",
+        "geo-ch3-mcq037",
+        "geo-ch3-mcq045",
+        "geo-ch3-mcq053",
+        "geo-ch3-mcq061",
+        "geo-ch3-mcq069",
+        "geo-ch3-tf07",
+        "geo-ch3-fb05",
+        "geo-ch3-match08"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq005",
+        "geo-ch3-mcq013",
+        "geo-ch3-mcq021",
+        "geo-ch3-mcq029",
+        "geo-ch3-mcq037",
+        "geo-ch3-mcq045",
+        "geo-ch3-mcq053",
+        "geo-ch3-mcq061",
+        "geo-ch3-mcq069",
+        "geo-ch3-tf07",
+        "geo-ch3-fb05",
+        "geo-ch3-match08"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-06",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "6. Brain Drain",
+      "content": "**Executive summary:** Brain drain is the emigration of highly educated and skilled workers from their home country.\n\n**Must know**\n• Doctors, engineers, IT professionals, and scientists often move abroad\n• Causes: better pay, research facilities, quality of life, political stability\n• Origin country loses skilled human capital\n• Destination country gains expertise cheaply\n• Brain gain possible when migrants return with skills (brain circulation)\n\n**Brain drain** hurts developing nations that invest in education but lose graduates to richer countries.\n\n**India** sees IT professionals and nurses migrate to the USA, UK, Canada, and Gulf.\n\n**Solutions:** better jobs at home, research funding, return incentives, and diaspora engagement.",
+      "explanation": "Brain drain = loss of 'best minds'; not all migration is brain drain—only skilled outflow.\n\n**🔗 Links:** geo-rev-ch3-05 — previous topic; geo-rev-ch3-07 — next topic",
+      "teacherTip": "Debate: brain drain vs opportunity for individuals.",
+      "examTip": "Define brain drain and give Indian examples (IT, medicine).",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq006",
+        "geo-ch3-mcq014",
+        "geo-ch3-mcq022",
+        "geo-ch3-mcq030",
+        "geo-ch3-mcq038",
+        "geo-ch3-mcq046",
+        "geo-ch3-mcq054",
+        "geo-ch3-mcq062",
+        "geo-ch3-mcq070",
+        "geo-ch3-tf08",
+        "geo-ch3-match01",
+        "geo-ch3-match09"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq006",
+        "geo-ch3-mcq014",
+        "geo-ch3-mcq022",
+        "geo-ch3-mcq030",
+        "geo-ch3-mcq038",
+        "geo-ch3-mcq046",
+        "geo-ch3-mcq054",
+        "geo-ch3-mcq062",
+        "geo-ch3-mcq070",
+        "geo-ch3-tf08",
+        "geo-ch3-match01",
+        "geo-ch3-match09"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch3-07",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "7. Impacts of Migration on Origin",
+      "content": "**Executive summary:** Sending areas experience population loss, remittances, and social change.\n\n**Must know**\n• Population decreases, especially working-age adults and males\n• Remittances reduce poverty and fund education\n• Left-behind elderly and children face care challenges\n• Skilled emigration slows development (brain drain)\n• Some villages become 'empty' of youth\n\n**Origin areas** lose workers but may gain **money** and **ideas**.\n\n**Positive:** remittances, new skills when migrants return, reduced local unemployment pressure.\n**Negative:** labour shortage in farms, separated families, loss of educated youth.",
+      "explanation": "Effects on origin are mixed—economic gain vs social and demographic loss.\n\n**🔗 Links:** geo-rev-ch3-06 — previous topic; geo-rev-ch3-08 — next topic",
+      "teacherTip": "Case study: remittance houses in Kerala or Punjab villages.",
+      "examTip": "Balance positive and negative impacts on source region.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq007",
+        "geo-ch3-mcq015",
+        "geo-ch3-mcq023",
+        "geo-ch3-mcq031",
+        "geo-ch3-mcq039",
+        "geo-ch3-mcq047",
+        "geo-ch3-mcq055",
+        "geo-ch3-mcq063",
+        "geo-ch3-tf01",
+        "geo-ch3-tf09",
+        "geo-ch3-match02",
+        "geo-ch3-match10"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq007",
+        "geo-ch3-mcq015",
+        "geo-ch3-mcq023",
+        "geo-ch3-mcq031",
+        "geo-ch3-mcq039",
+        "geo-ch3-mcq047",
+        "geo-ch3-mcq055",
+        "geo-ch3-mcq063",
+        "geo-ch3-tf01",
+        "geo-ch3-tf09",
+        "geo-ch3-match02",
+        "geo-ch3-match10"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    },
+    {
+      "id": "geo-rev-ch3-08",
+      "topicId": "geo-ch3",
+      "type": "note",
+      "subtopic": "8. Impacts of Migration on Destination",
+      "content": "**Executive summary:** Receiving areas gain labour and diversity but may face integration and infrastructure challenges.\n\n**Must know**\n• Labour supply for industry, construction, and services\n• Cultural diversity and new cuisines, festivals, ideas\n• Pressure on housing, schools, and hospitals if rapid\n• Sometimes social tension or competition for jobs\n• Migrants fill jobs locals may not want (3D jobs: dirty, dangerous, difficult)\n\n**Destination regions** grow faster with migrant labour. **Cities** like Mumbai, London, and Dubai depend on migrants.\n\n**Challenges:** slums, discrimination, language barriers, illegal migration issues.\n\n**Policy:** registration, work permits, and inclusive urban planning help manage impacts.",
+      "explanation": "Destinations need migrants for growth but must plan for housing and services.\n\n**🔗 Links:** geo-rev-ch3-07 — previous topic",
+      "teacherTip": "Discuss how migrants contribute to city economies.",
+      "examTip": "Separate economic benefits from social challenges in answers.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch3-mcq008",
+        "geo-ch3-mcq016",
+        "geo-ch3-mcq024",
+        "geo-ch3-mcq032",
+        "geo-ch3-mcq040",
+        "geo-ch3-mcq048",
+        "geo-ch3-mcq056",
+        "geo-ch3-mcq064",
+        "geo-ch3-tf02",
+        "geo-ch3-tf10",
+        "geo-ch3-match03",
+        "geo-ch3-sa01"
+      ],
+      "linked_q_ids": [
+        "geo-ch3-mcq008",
+        "geo-ch3-mcq016",
+        "geo-ch3-mcq024",
+        "geo-ch3-mcq032",
+        "geo-ch3-mcq040",
+        "geo-ch3-mcq048",
+        "geo-ch3-mcq056",
+        "geo-ch3-mcq064",
+        "geo-ch3-tf02",
+        "geo-ch3-tf10",
+        "geo-ch3-match03",
+        "geo-ch3-sa01"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    }
+  ],
+  "questions": [
+    {
+      "id": "geo-ch3-mcq001",
+      "q_id": "geo-ch3-mcq001",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration is best defined as:",
+      "options": [
+        "Daily travel to school",
+        "Movement across a boundary to settle",
+        "Only international travel",
+        "Tourism for one week"
+      ],
+      "correctOption": 1,
+      "answer": "Migration involves changing place of residence across a defined boundary.",
+      "examTip": "Distinguish from commuting.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq002",
+      "q_id": "geo-ch3-mcq002",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Internal migration occurs:",
+      "options": [
+        "Between two countries",
+        "Within the same country",
+        "Only from city to village",
+        "Only for refugees"
+      ],
+      "correctOption": 1,
+      "answer": "Internal migration does not cross international borders.",
+      "examTip": "Internal vs international.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq003",
+      "q_id": "geo-ch3-mcq003",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Emigration means:",
+      "options": [
+        "Entering a country",
+        "Leaving a country to live elsewhere",
+        "Daily commuting",
+        "Birth in a country"
+      ],
+      "correctOption": 1,
+      "answer": "Emigrant = one who exits their country.",
+      "examTip": "Emigrate vs immigrate.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq004",
+      "q_id": "geo-ch3-mcq004",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A pull factor for migration is:",
+      "options": [
+        "Unemployment in home area",
+        "Better wages in destination",
+        "War in home region",
+        "Famine"
+      ],
+      "correctOption": 1,
+      "answer": "Pull factors attract migrants toward a new place.",
+      "examTip": "Pull = attraction.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq005",
+      "q_id": "geo-ch3-mcq005",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A push factor for migration is:",
+      "options": [
+        "Higher salary abroad",
+        "Good universities elsewhere",
+        "Drought destroying crops",
+        "Job offer in city"
+      ],
+      "correctOption": 2,
+      "answer": "Drought pushes people away from rural homes.",
+      "examTip": "Push = repulsion.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq006",
+      "q_id": "geo-ch3-mcq006",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. All migration is permanent.\n2. Seasonal migration is temporary.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 1,
+      "answer": "Statement 1 false; seasonal workers return after harvest—temporary migration.",
+      "examTip": "Duration types combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq007",
+      "q_id": "geo-ch3-mcq007",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Rural-urban migration mainly leads to:",
+      "options": [
+        "Urbanisation",
+        "Desertification",
+        "Glaciation",
+        "Deforestation only"
+      ],
+      "correctOption": 0,
+      "answer": "People moving to towns increases urban population share.",
+      "examTip": "Link migration to urbanisation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq008",
+      "q_id": "geo-ch3-mcq008",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Remittances are:",
+      "options": [
+        "Taxes paid to government",
+        "Money sent home by migrants",
+        "Import duties",
+        "Map measurements"
+      ],
+      "correctOption": 1,
+      "answer": "Remittances support families and national economy.",
+      "examTip": "Major for India.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq009",
+      "q_id": "geo-ch3-mcq009",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Brain drain refers to:",
+      "options": [
+        "Loss of skilled workers through emigration",
+        "Drainage of rivers",
+        "Urban sewage problem",
+        "Migration of unskilled only"
+      ],
+      "correctOption": 0,
+      "answer": "Educated professionals leaving = brain drain.",
+      "examTip": "Define with examples.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq010",
+      "q_id": "geo-ch3-mcq010",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Refugees migrate primarily due to:",
+      "options": [
+        "Higher exam marks",
+        "War, persecution, or disaster",
+        "Tourism",
+        "Shopping"
+      ],
+      "correctOption": 1,
+      "answer": "Forced migration from fear or violence.",
+      "examTip": "Forced vs voluntary.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq011",
+      "q_id": "geo-ch3-mcq011",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Immigration means:",
+      "options": [
+        "Leaving country",
+        "Entering a country to live",
+        "Moving within state only",
+        "Seasonal farming"
+      ],
+      "correctOption": 1,
+      "answer": "Immigrant arrives in destination country.",
+      "examTip": "Opposite of emigration.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq012",
+      "q_id": "geo-ch3-mcq012",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Chain migration happens when:",
+      "options": [
+        "Migrants follow relatives or community members",
+        "People move in winter only",
+        "Only governments migrate",
+        "Maps are chained"
+      ],
+      "correctOption": 0,
+      "answer": "Existing migrants help others relocate.",
+      "examTip": "Social network effect.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq013",
+      "q_id": "geo-ch3-mcq013",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which is international migration?",
+      "options": [
+        "Village to Delhi",
+        "Kerala nurse to UK hospital",
+        "Home to school",
+        "Floor to floor in building"
+      ],
+      "correctOption": 1,
+      "answer": "Crosses national border.",
+      "examTip": "Apply definition.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq014",
+      "q_id": "geo-ch3-mcq014",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Gulf countries attract many migrants for:",
+      "options": [
+        "Polar research only",
+        "Construction and service jobs",
+        "Farming in ice",
+        "No employment"
+      ],
+      "correctOption": 1,
+      "answer": "Oil economies need labour from South Asia.",
+      "examTip": "India-Gulf corridor.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq015",
+      "q_id": "geo-ch3-mcq015",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Counter-urbanisation is:",
+      "options": [
+        "City to rural movement",
+        "Rural to city only",
+        "International only",
+        "No migration"
+      ],
+      "correctOption": 0,
+      "answer": "Some move from crowded cities to quieter countryside.",
+      "examTip": "Developed country trend.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq016",
+      "q_id": "geo-ch3-mcq016",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Push factors include poverty.\n2. Pull factors include better jobs.\n3. Pull factors include earthquakes at home.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 correct; earthquakes are push factors.",
+      "examTip": "Three-statement combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq017",
+      "q_id": "geo-ch3-mcq017",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Net migration is calculated as:",
+      "options": [
+        "Births minus deaths",
+        "Immigrants minus emigrants",
+        "Emigrants minus immigrants",
+        "Population divided by area"
+      ],
+      "correctOption": 1,
+      "answer": "Positive net migration increases population.",
+      "examTip": "Formula.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq018",
+      "q_id": "geo-ch3-mcq018",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Seasonal migration is common among:",
+      "options": [
+        "Agricultural labourers",
+        "Permanent embassy staff only",
+        "Mountain rocks",
+        "Contour lines"
+      ],
+      "correctOption": 0,
+      "answer": "Harvest seasons create temporary labour demand.",
+      "examTip": "Rural example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq019",
+      "q_id": "geo-ch3-mcq019",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Brain circulation means:",
+      "options": [
+        "Skilled returnees bring new knowledge home",
+        "Water flow in brain",
+        "Only permanent drain",
+        "No return ever"
+      ],
+      "correctOption": 0,
+      "answer": "Return migration can benefit origin country.",
+      "examTip": "Positive flip of brain drain.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq020",
+      "q_id": "geo-ch3-mcq020",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "IDP (Internally Displaced Person) is:",
+      "options": [
+        "Displaced within own country",
+        "Always international migrant",
+        "Tourist",
+        "Emigrant to Mars"
+      ],
+      "correctOption": 0,
+      "answer": "Internal displacement without crossing border.",
+      "examTip": "Forced migration type.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq021",
+      "q_id": "geo-ch3-mcq021",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Major effect of rural-urban migration on cities:",
+      "options": [
+        "Labour supply and possible overcrowding",
+        "No change",
+        "Only decrease in population",
+        "Elimination of slums"
+      ],
+      "correctOption": 0,
+      "answer": "Cities gain workers but may face housing pressure.",
+      "examTip": "Destination impact.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq022",
+      "q_id": "geo-ch3-mcq022",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Origin area may benefit from migration through:",
+      "options": [
+        "Remittances and reduced unemployment pressure",
+        "Loss of all money",
+        "No communication",
+        "Automatic brain gain always"
+      ],
+      "correctOption": 0,
+      "answer": "Money sent home is a key benefit.",
+      "examTip": "Origin positive.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq023",
+      "q_id": "geo-ch3-mcq023",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Voluntary migration is driven by:",
+      "options": [
+        "Free choice for better opportunities",
+        "Only government force",
+        "Only natural disasters",
+        "Mandatory military only"
+      ],
+      "correctOption": 0,
+      "answer": "Migrants choose to move for jobs, education, etc.",
+      "examTip": "Voluntary vs forced.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq024",
+      "q_id": "geo-ch3-mcq024",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which Indian state is known for high emigration and remittances?",
+      "options": [
+        "Kerala",
+        "Ladakh only",
+        "No state",
+        "Only desert states"
+      ],
+      "correctOption": 0,
+      "answer": "Kerala has large Gulf diaspora and remittance inflow.",
+      "examTip": "Indian case study.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq025",
+      "q_id": "geo-ch3-mcq025",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Illegal migration lacks:",
+      "options": [
+        "Proper visas or documents",
+        "Any movement",
+        "People",
+        "Destinations"
+      ],
+      "correctOption": 0,
+      "answer": "Unauthorized border crossing or overstaying visas.",
+      "examTip": "Policy issue.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq026",
+      "q_id": "geo-ch3-mcq026",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Diaspora refers to:",
+      "options": [
+        "People living outside their homeland",
+        "Only rivers",
+        "Mountain peaks",
+        "Contour lines"
+      ],
+      "correctOption": 0,
+      "answer": "Scattered community abroad maintaining ties.",
+      "examTip": "Cultural geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq027",
+      "q_id": "geo-ch3-mcq027",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Environmental migration may follow:",
+      "options": [
+        "Drought, floods, or rising sea level",
+        "Only exam dates",
+        "Map colours",
+        "Contour VI"
+      ],
+      "correctOption": 0,
+      "answer": "Climate hazards displace populations.",
+      "examTip": "Emerging category.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq028",
+      "q_id": "geo-ch3-mcq028",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Migration changes population of both origin and destination.\n2. Migration has no demographic effect.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "answer": "Statement 1 true; migration alters numbers and age structure in both places.",
+      "examTip": "Demographic impact combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq029",
+      "q_id": "geo-ch3-mcq029",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Young adults migrate more because:",
+      "options": [
+        "They seek jobs and education",
+        "They cannot walk",
+        "Laws forbid old people",
+        "Only children migrate"
+      ],
+      "correctOption": 0,
+      "answer": "Working-age mobility is highest.",
+      "examTip": "Age selectivity.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq030",
+      "q_id": "geo-ch3-mcq030",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Destination country gains from skilled immigrants through:",
+      "options": [
+        "Expertise and tax contributions",
+        "Automatic unemployment",
+        "Loss of all industry",
+        "No benefit ever"
+      ],
+      "correctOption": 0,
+      "answer": "Skilled migrants fill labour gaps.",
+      "examTip": "Brain gain for destination.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq031",
+      "q_id": "geo-ch3-mcq031",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Left-behind children in origin villages may face:",
+      "options": [
+        "Care and education challenges",
+        "No effect ever",
+        "Automatic wealth",
+        "Only urban schooling at home"
+      ],
+      "correctOption": 0,
+      "answer": "Family separation has social costs.",
+      "examTip": "Social impact on origin.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq032",
+      "q_id": "geo-ch3-mcq032",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Mumbai's growth was significantly aided by:",
+      "options": [
+        "In-migration from other states",
+        "Only emigration abroad",
+        "No migration",
+        "Polar settlement"
+      ],
+      "correctOption": 0,
+      "answer": "Megacity attracts rural and interstate migrants.",
+      "examTip": "Indian urban example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq033",
+      "q_id": "geo-ch3-mcq033",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Economic migration is mainly for:",
+      "options": [
+        "Better wages and employment",
+        "Religious festivals only",
+        "Contour reading",
+        "Map scale"
+      ],
+      "correctOption": 0,
+      "answer": "Livelihood is primary driver.",
+      "examTip": "Migration motive.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq034",
+      "q_id": "geo-ch3-mcq034",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Social migration includes:",
+      "options": [
+        "Joining family abroad",
+        "Only war flight",
+        "Only seasonal harvest",
+        "Only brain drain"
+      ],
+      "correctOption": 0,
+      "answer": "Family reunion is a social pull factor.",
+      "examTip": "Type of migration.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq035",
+      "q_id": "geo-ch3-mcq035",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Government can reduce excessive rural-urban drift by:",
+      "options": [
+        "Rural job schemes and better village services",
+        "Closing all cities",
+        "Banning all travel",
+        "Removing schools"
+      ],
+      "correctOption": 0,
+      "answer": "Balanced development reduces push pressure.",
+      "examTip": "Policy solution.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq036",
+      "q_id": "geo-ch3-mcq036",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "3D jobs migrants often fill means:",
+      "options": [
+        "Dirty, dangerous, difficult work",
+        "Desk jobs only",
+        "Director level posts",
+        "No jobs"
+      ],
+      "correctOption": 0,
+      "answer": "Migrants take hard jobs locals may avoid.",
+      "examTip": "Labour market term.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq037",
+      "q_id": "geo-ch3-mcq037",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Passport and visa rules mainly affect:",
+      "options": [
+        "International migration",
+        "Sleeping at home",
+        "Local playground",
+        "Contour spacing"
+      ],
+      "correctOption": 0,
+      "answer": "Legal control of cross-border movement.",
+      "examTip": "Regulation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq038",
+      "q_id": "geo-ch3-mcq038",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Emigrants leave their country.\n2. Immigrants enter a new country.\n3. Emigrant and immigrant mean the same.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 correct; they are opposite directions.",
+      "examTip": "Terminology combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq039",
+      "q_id": "geo-ch3-mcq039",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Forced migration includes:",
+      "options": [
+        "Refugees fleeing conflict",
+        "Optional holiday",
+        "Daily commute",
+        "Shopping trip"
+      ],
+      "correctOption": 0,
+      "answer": "No real choice—safety threatened.",
+      "examTip": "Forced category.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq040",
+      "q_id": "geo-ch3-mcq040",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Remittances help origin country by:",
+      "options": [
+        "Improving foreign exchange and family income",
+        "Reducing all development",
+        "Stopping education",
+        "Eliminating farms"
+      ],
+      "correctOption": 0,
+      "answer": "Major economic inflow for India.",
+      "examTip": "National impact.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq041",
+      "q_id": "geo-ch3-mcq041",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Urban slum growth is often linked to:",
+      "options": [
+        "Rapid migration without affordable housing",
+        "Underpopulation",
+        "No in-migration",
+        "Only emigration"
+      ],
+      "correctOption": 0,
+      "answer": "Housing supply lags behind migrant influx.",
+      "examTip": "Urban challenge.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq042",
+      "q_id": "geo-ch3-mcq042",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Student migration is an example of:",
+      "options": [
+        "Voluntary migration for education",
+        "Forced refugee flow",
+        "Seasonal harvest work",
+        "Illegal only"
+      ],
+      "correctOption": 0,
+      "answer": "Students choose universities abroad.",
+      "examTip": "Migration type.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq043",
+      "q_id": "geo-ch3-mcq043",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Skilled migration to USA from India often involves:",
+      "options": [
+        "IT professionals and doctors",
+        "Only unskilled only always",
+        "No Indians",
+        "Contour surveyors only"
+      ],
+      "correctOption": 0,
+      "answer": "Brain drain sectors include IT and health.",
+      "examTip": "Brain drain examples.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq044",
+      "q_id": "geo-ch3-mcq044",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration affects sex ratio in origin when:",
+      "options": [
+        "Mostly men migrate for work",
+        "Only women migrate always",
+        "No one migrates",
+        "Maps change sex ratio"
+      ],
+      "correctOption": 0,
+      "answer": "Male-dominated labour migration skews ratios.",
+      "examTip": "Demographic effect.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq045",
+      "q_id": "geo-ch3-mcq045",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Inter-state migration in India is:",
+      "options": [
+        "Internal migration",
+        "International",
+        "Not migration",
+        "Only tourism"
+      ],
+      "correctOption": 0,
+      "answer": "Within same country across state borders.",
+      "examTip": "India internal example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq046",
+      "q_id": "geo-ch3-mcq046",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Pull factor in cities includes:",
+      "options": [
+        "Hospitals, schools, and entertainment",
+        "Crop failure",
+        "Village drought",
+        "Lack of jobs at home"
+      ],
+      "correctOption": 0,
+      "answer": "Urban services attract migrants.",
+      "examTip": "Urban pull list.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq047",
+      "q_id": "geo-ch3-mcq047",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Return migration can bring:",
+      "options": [
+        "Skills, savings, and entrepreneurship",
+        "Nothing useful",
+        "Only maps",
+        "Contour lines"
+      ],
+      "correctOption": 0,
+      "answer": "Returnees may invest in hometown businesses.",
+      "examTip": "Brain circulation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq048",
+      "q_id": "geo-ch3-mcq048",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "War in a country creates:",
+      "options": [
+        "Refugees and forced emigration",
+        "No movement",
+        "Only immigration to that country",
+        "Seasonal farming only"
+      ],
+      "correctOption": 0,
+      "answer": "Conflict is a major push factor.",
+      "examTip": "Current affairs link.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq049",
+      "q_id": "geo-ch3-mcq049",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Brain drain always benefits the origin country.\n2. Brain drain can slow development in origin country.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 1,
+      "answer": "Statement 1 false; losing skilled workers hurts origin unless they return.",
+      "examTip": "Brain drain evaluation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq050",
+      "q_id": "geo-ch3-mcq050",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Temporary international workers may:",
+      "options": [
+        "Return home after contract ends",
+        "Never move",
+        "Only migrate permanently always",
+        "Only live in oceans"
+      ],
+      "correctOption": 0,
+      "answer": "Gulf contracts are often time-limited.",
+      "examTip": "Temporary migration.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq051",
+      "q_id": "geo-ch3-mcq051",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration stream from Bihar to Delhi is:",
+      "options": [
+        "Rural-urban internal migration",
+        "International migration",
+        "Not migration",
+        "Counter-urbanisation"
+      ],
+      "correctOption": 0,
+      "answer": "Classic internal labour movement.",
+      "examTip": "Indian corridor.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq052",
+      "q_id": "geo-ch3-mcq052",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Destination culture becomes diverse through:",
+      "options": [
+        "Immigrant traditions and food",
+        "Closing all borders",
+        "Stopping languages",
+        "Removing festivals"
+      ],
+      "correctOption": 0,
+      "answer": "Cultural exchange enriches cities.",
+      "examTip": "Social benefit.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq053",
+      "q_id": "geo-ch3-mcq053",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Excessive emigration of doctors from a poor country is:",
+      "options": [
+        "Brain drain",
+        "Brain gain for origin",
+        "Not migration",
+        "Urbanisation only"
+      ],
+      "correctOption": 0,
+      "answer": "Health sector loses trained staff.",
+      "examTip": "Sector example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq054",
+      "q_id": "geo-ch3-mcq054",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration policy may include:",
+      "options": [
+        "Work permits and quotas",
+        "Contour intervals",
+        "Map colours",
+        "VI only"
+      ],
+      "correctOption": 0,
+      "answer": "Governments regulate who enters legally.",
+      "examTip": "Policy tools.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq055",
+      "q_id": "geo-ch3-mcq055",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Famine acts as a:",
+      "options": [
+        "Push factor",
+        "Pull factor",
+        "Map scale",
+        "Grid reference"
+      ],
+      "correctOption": 0,
+      "answer": "Food shortage forces people to leave.",
+      "examTip": "Push example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq056",
+      "q_id": "geo-ch3-mcq056",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Better education abroad acts as:",
+      "options": [
+        "Pull factor",
+        "Push factor",
+        "Death rate",
+        "Birth rate"
+      ],
+      "correctOption": 0,
+      "answer": "Quality universities attract students.",
+      "examTip": "Pull example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq057",
+      "q_id": "geo-ch3-mcq057",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Labour shortage in origin after migration shows:",
+      "options": [
+        "Negative demographic/economic effect",
+        "No effect",
+        "Automatic doubling of workers",
+        "Only urban effect"
+      ],
+      "correctOption": 0,
+      "answer": "Too many workers leave farms or clinics.",
+      "examTip": "Origin negative.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq058",
+      "q_id": "geo-ch3-mcq058",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Remittances support rural families.\n2. All migration is forced.\n3. Migration can worsen urban overcrowding.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 3 correct; much migration is voluntary.",
+      "examTip": "Mixed impacts combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq059",
+      "q_id": "geo-ch3-mcq059",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Dubai's economy relies heavily on:",
+      "options": [
+        "Immigrant labour force",
+        "No workers",
+        "Only local population always",
+        "Contour farming"
+      ],
+      "correctOption": 0,
+      "answer": "Majority population may be foreign-born workers.",
+      "examTip": "Gulf case study.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq060",
+      "q_id": "geo-ch3-mcq060",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration is one component of population change along with:",
+      "options": [
+        "Births and deaths",
+        "Only map reading",
+        "Only rainfall",
+        "Only soil types"
+      ],
+      "correctOption": 0,
+      "answer": "Total change = natural increase + net migration.",
+      "examTip": "Demographic equation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq061",
+      "q_id": "geo-ch3-mcq061",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Step migration often moves through:",
+      "options": [
+        "Intermediate towns before big city",
+        "Directly to moon",
+        "Only one village",
+        "No stages"
+      ],
+      "correctOption": 0,
+      "answer": "Migrants may stop at smaller urban centres first.",
+      "examTip": "Migration pattern.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq062",
+      "q_id": "geo-ch3-mcq062",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Political persecution pushes people to seek:",
+      "options": [
+        "Asylum in safer countries",
+        "Contour maps",
+        "Higher VI",
+        "Only rural life"
+      ],
+      "correctOption": 0,
+      "answer": "Human rights refugees flee persecution.",
+      "examTip": "Forced migration.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-mcq063",
+      "q_id": "geo-ch3-mcq063",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migrants sending money home is called:",
+      "options": [
+        "Remittance flow",
+        "Brain drain",
+        "Urbanisation",
+        "Census"
+      ],
+      "correctOption": 0,
+      "answer": "Financial lifeline for many families.",
+      "examTip": "Economic term.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-mcq064",
+      "q_id": "geo-ch3-mcq064",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Urban employers often depend on migrant labour for:",
+      "options": [
+        "Construction, transport, and domestic work",
+        "No roles",
+        "Only government jobs",
+        "Polar research"
+      ],
+      "correctOption": 0,
+      "answer": "Informal sector relies on migrants.",
+      "examTip": "Economic role.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-mcq065",
+      "q_id": "geo-ch3-mcq065",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Reducing brain drain requires:",
+      "options": [
+        "Better careers and research at home",
+        "Banning all education",
+        "Closing universities",
+        "Forcing emigration"
+      ],
+      "correctOption": 0,
+      "answer": "Retain talent with opportunity.",
+      "examTip": "Policy response.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-mcq066",
+      "q_id": "geo-ch3-mcq066",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration statistics help planners to:",
+      "options": [
+        "Forecast housing, schools, and transport needs",
+        "Draw brown contours",
+        "Measure VI",
+        "Find magnetic north"
+      ],
+      "correctOption": 0,
+      "answer": "Urban planning uses migration data.",
+      "examTip": "Applied planning.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-mcq067",
+      "q_id": "geo-ch3-mcq067",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Guest workers in Gulf states are mostly:",
+      "options": [
+        "International temporary labour migrants",
+        "Permanent citizens only",
+        "Not migrants",
+        "Contour surveyors"
+      ],
+      "correctOption": 0,
+      "answer": "Contracts for fixed-term employment abroad.",
+      "examTip": "Gulf migration model.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-mcq068",
+      "q_id": "geo-ch3-mcq068",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Migration from village to nearby small town first is:",
+      "options": [
+        "Step migration",
+        "Brain drain",
+        "Counter-urbanisation",
+        "Emigration abroad only"
+      ],
+      "correctOption": 0,
+      "answer": "Gradual move through intermediate settlements.",
+      "examTip": "Migration pattern.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-mcq069",
+      "q_id": "geo-ch3-mcq069",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Pull factors include better job opportunities.\n2. Push factors include natural disasters at home.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 3,
+      "answer": "Both statements are correct—classic push-pull framework.",
+      "examTip": "UPSC-style combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-mcq070",
+      "q_id": "geo-ch3-mcq070",
+      "topicId": "geo-ch3",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Origin village sex ratio may skew when:",
+      "options": [
+        "Most working-age men migrate",
+        "Only elderly migrate",
+        "No one migrates",
+        "Maps are redrawn"
+      ],
+      "correctOption": 0,
+      "answer": "Male labour migration leaves more women and elderly at home.",
+      "examTip": "Demographic consequence.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-tf01",
+      "q_id": "geo-ch3-tf01",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Immigration means entering a country to live.",
+      "correctAnswer": "true",
+      "answer": "True. Immigrants arrive in the destination country.",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-tf02",
+      "q_id": "geo-ch3-tf02",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Push factors attract people to a new destination.",
+      "correctAnswer": "false",
+      "answer": "False. Push factors drive people away from origin; pull factors attract.",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-tf03",
+      "q_id": "geo-ch3-tf03",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Brain drain is the emigration of highly skilled workers.",
+      "correctAnswer": "true",
+      "answer": "True. Doctors, engineers, and scientists leaving constitute brain drain.",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-tf04",
+      "q_id": "geo-ch3-tf04",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "All migration is permanent.",
+      "correctAnswer": "false",
+      "answer": "False. Seasonal and temporary contract migration are common.",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-tf05",
+      "q_id": "geo-ch3-tf05",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Remittances are money sent home by migrants.",
+      "correctAnswer": "true",
+      "answer": "True. They support families and boost foreign exchange.",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-tf06",
+      "q_id": "geo-ch3-tf06",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Rural-urban migration increases urbanisation.",
+      "correctAnswer": "true",
+      "answer": "True. People moving to cities raises the urban population share.",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-tf07",
+      "q_id": "geo-ch3-tf07",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Refugees are voluntary economic migrants.",
+      "correctAnswer": "false",
+      "answer": "False. Refugees flee war or persecution—forced migration.",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-tf08",
+      "q_id": "geo-ch3-tf08",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Internal migration stays within the same country.",
+      "correctAnswer": "true",
+      "answer": "True. No international border is crossed.",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-tf09",
+      "q_id": "geo-ch3-tf09",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Net migration equals immigrants minus emigrants.",
+      "correctAnswer": "true",
+      "answer": "True. Positive net migration adds to population.",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-tf10",
+      "q_id": "geo-ch3-tf10",
+      "topicId": "geo-ch3",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Migration has no effect on origin or destination areas.",
+      "correctAnswer": "false",
+      "answer": "False. Both regions experience economic and social changes.",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-fb01",
+      "q_id": "geo-ch3-fb01",
+      "topicId": "geo-ch3",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "People who leave their country are called ______.",
+      "blankAnswer": "emigrants",
+      "answer": "Emigrants emigrate from origin country.",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-fb02",
+      "q_id": "geo-ch3-fb02",
+      "topicId": "geo-ch3",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "People who enter a country to settle are called ______.",
+      "blankAnswer": "immigrants",
+      "answer": "Immigrants immigrate into destination.",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-fb03",
+      "q_id": "geo-ch3-fb03",
+      "topicId": "geo-ch3",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Factors that drive people away from home are ______ factors.",
+      "blankAnswer": "push",
+      "answer": "Push factors include poverty, war, and drought.",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-fb04",
+      "q_id": "geo-ch3-fb04",
+      "topicId": "geo-ch3",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Money sent home by migrants is called ______.",
+      "blankAnswer": "remittances",
+      "answer": "Remittances support families and national economy.",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-fb05",
+      "q_id": "geo-ch3-fb05",
+      "topicId": "geo-ch3",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Emigration of skilled professionals is called brain ______.",
+      "blankAnswer": "drain",
+      "answer": "Brain drain.",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-match01",
+      "q_id": "geo-ch3-match01",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match migration terms:",
+      "pairs": [
+        {
+          "left": "Emigration",
+          "right": "Leaving country"
+        },
+        {
+          "left": "Immigration",
+          "right": "Entering country"
+        },
+        {
+          "left": "Remittance",
+          "right": "Money sent home"
+        },
+        {
+          "left": "Diaspora",
+          "right": "Community abroad"
+        }
+      ],
+      "answer": "Basic migration vocabulary.",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-match02",
+      "q_id": "geo-ch3-match02",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match factor types:",
+      "pairs": [
+        {
+          "left": "Unemployment",
+          "right": "Push"
+        },
+        {
+          "left": "Better wages",
+          "right": "Pull"
+        },
+        {
+          "left": "War",
+          "right": "Push"
+        },
+        {
+          "left": "Universities",
+          "right": "Pull"
+        }
+      ],
+      "answer": "Push repels; pull attracts.",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-match03",
+      "q_id": "geo-ch3-match03",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match migration types:",
+      "pairs": [
+        {
+          "left": "Village to Mumbai",
+          "right": "Rural-urban"
+        },
+        {
+          "left": "India to UAE",
+          "right": "International"
+        },
+        {
+          "left": "Harvest labour",
+          "right": "Seasonal"
+        },
+        {
+          "left": "Refugee flight",
+          "right": "Forced"
+        }
+      ],
+      "answer": "Classify by route and cause.",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-match04",
+      "q_id": "geo-ch3-match04",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match impacts on origin:",
+      "pairs": [
+        {
+          "left": "Remittances",
+          "right": "Positive"
+        },
+        {
+          "left": "Labour shortage",
+          "right": "Negative"
+        },
+        {
+          "left": "Separated families",
+          "right": "Social cost"
+        },
+        {
+          "left": "Brain drain",
+          "right": "Skill loss"
+        }
+      ],
+      "answer": "Mixed origin effects.",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-match05",
+      "q_id": "geo-ch3-match05",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match impacts on destination:",
+      "pairs": [
+        {
+          "left": "Labour supply",
+          "right": "Economic gain"
+        },
+        {
+          "left": "Cultural diversity",
+          "right": "Social gain"
+        },
+        {
+          "left": "Slum growth",
+          "right": "Challenge"
+        },
+        {
+          "left": "Job competition",
+          "right": "Tension"
+        }
+      ],
+      "answer": "Destination gains and problems.",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-match06",
+      "q_id": "geo-ch3-match06",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match examples:",
+      "pairs": [
+        {
+          "left": "Kerala",
+          "right": "High remittances"
+        },
+        {
+          "left": "Gulf",
+          "right": "Labour destination"
+        },
+        {
+          "left": "Bihar-Delhi",
+          "right": "Internal stream"
+        },
+        {
+          "left": "UK hospitals",
+          "right": "Nurse migration"
+        }
+      ],
+      "answer": "Indian migration corridors.",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-match07",
+      "q_id": "geo-ch3-match07",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match duration:",
+      "pairs": [
+        {
+          "left": "Permanent",
+          "right": "Long-term settlement"
+        },
+        {
+          "left": "Seasonal",
+          "right": "Temporary harvest"
+        },
+        {
+          "left": "Contract",
+          "right": "Fixed-term abroad"
+        },
+        {
+          "left": "Daily commute",
+          "right": "Not migration"
+        }
+      ],
+      "answer": "Duration classification.",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    },
+    {
+      "id": "geo-ch3-match08",
+      "q_id": "geo-ch3-match08",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match brain drain sectors:",
+      "pairs": [
+        {
+          "left": "IT",
+          "right": "Software engineers"
+        },
+        {
+          "left": "Health",
+          "right": "Doctors/nurses"
+        },
+        {
+          "left": "Research",
+          "right": "Scientists"
+        },
+        {
+          "left": "Returnees",
+          "right": "Brain circulation"
+        }
+      ],
+      "answer": "Skilled migration fields.",
+      "linksTo": "geo-rev-ch3-05",
+      "linked_note_id": "geo-rev-ch3-05"
+    },
+    {
+      "id": "geo-ch3-match09",
+      "q_id": "geo-ch3-match09",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match regulation:",
+      "pairs": [
+        {
+          "left": "Passport",
+          "right": "Identity for travel"
+        },
+        {
+          "left": "Visa",
+          "right": "Entry permission"
+        },
+        {
+          "left": "Work permit",
+          "right": "Legal employment"
+        },
+        {
+          "left": "Illegal entry",
+          "right": "No documents"
+        }
+      ],
+      "answer": "Legal migration tools.",
+      "linksTo": "geo-rev-ch3-06",
+      "linked_note_id": "geo-rev-ch3-06"
+    },
+    {
+      "id": "geo-ch3-match10",
+      "q_id": "geo-ch3-match10",
+      "topicId": "geo-ch3",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match concepts:",
+      "pairs": [
+        {
+          "left": "IDP",
+          "right": "Displaced internally"
+        },
+        {
+          "left": "Refugee",
+          "right": "Cross-border forced"
+        },
+        {
+          "left": "Counter-urbanisation",
+          "right": "City to rural"
+        },
+        {
+          "left": "Chain migration",
+          "right": "Follow relatives"
+        }
+      ],
+      "answer": "Advanced migration terms.",
+      "linksTo": "geo-rev-ch3-07",
+      "linked_note_id": "geo-rev-ch3-07"
+    },
+    {
+      "id": "geo-ch3-sa01",
+      "q_id": "geo-ch3-sa01",
+      "topicId": "geo-ch3",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Distinguish between emigration and immigration.",
+      "answer": "Emigration means leaving one's country to live elsewhere (emigrant exits). Immigration means entering another country to settle (immigrant arrives). They describe the same move from opposite viewpoints.",
+      "linksTo": "geo-rev-ch3-08",
+      "linked_note_id": "geo-rev-ch3-08"
+    },
+    {
+      "id": "geo-ch3-sa02",
+      "q_id": "geo-ch3-sa02",
+      "topicId": "geo-ch3",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Explain push and pull factors with one example each.",
+      "answer": "Push factors drive people away from origin, e.g. drought destroying crops. Pull factors attract to destination, e.g. better paid jobs in a city. Migration usually results from both.",
+      "linksTo": "geo-rev-ch3-01",
+      "linked_note_id": "geo-rev-ch3-01"
+    },
+    {
+      "id": "geo-ch3-sa03",
+      "q_id": "geo-ch3-sa03",
+      "topicId": "geo-ch3",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "What is brain drain and how does it affect India?",
+      "answer": "Brain drain is emigration of highly educated/skilled workers. India loses doctors, engineers, and IT professionals to countries offering higher pay and research facilities, reducing skilled workforce at home though remittances and returnees partly offset losses.",
+      "linksTo": "geo-rev-ch3-02",
+      "linked_note_id": "geo-rev-ch3-02"
+    },
+    {
+      "id": "geo-ch3-sa04",
+      "q_id": "geo-ch3-sa04",
+      "topicId": "geo-ch3",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Give three effects of rural-urban migration on cities.",
+      "answer": "Cities gain labour for construction and services; face overcrowding, slums, and traffic congestion; and experience pressure on water, schools, and hospitals if planning lags behind migrant influx.",
+      "linksTo": "geo-rev-ch3-03",
+      "linked_note_id": "geo-rev-ch3-03"
+    },
+    {
+      "id": "geo-ch3-sa05",
+      "q_id": "geo-ch3-sa05",
+      "topicId": "geo-ch3",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "How do remittances benefit the origin region?",
+      "answer": "Remittances raise family income, fund education and housing, reduce poverty, and add to national foreign exchange. They can improve living standards in villages even when workers are abroad.",
+      "linksTo": "geo-rev-ch3-04",
+      "linked_note_id": "geo-rev-ch3-04"
+    }
+  ]
+}

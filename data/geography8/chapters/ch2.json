@@ -1,0 +1,2301 @@
+{
+  "topicId": "geo-ch2",
+  "title": "Population",
+  "highYieldFacts": [
+    "Population is the total number of people in an area at a given time.",
+    "Population density = Total population ÷ Area (persons per sq km).",
+    "Crude Birth Rate (CBR) = live births per 1,000 people per year.",
+    "Crude Death Rate (CDR) = deaths per 1,000 people per year.",
+    "Natural increase ≈ Birth rate − Death rate (per 1,000).",
+    "Total population change = natural increase + net migration.",
+    "Asia is the most populous continent.",
+    "A population pyramid shows age and sex structure.",
+    "Expansive pyramid: wide base, young population, high birth rate.",
+    "Contractive pyramid: narrow base, ageing population, low birth rate.",
+    "Overpopulation strains resources—not merely high numbers.",
+    "Underpopulation means fewer people than resources can support efficiently.",
+    "Sparse population occurs in deserts, mountains, and polar regions.",
+    "Fertile river valleys attract dense settlement.",
+    "Industrial and urban areas raise local density.",
+    "Life expectancy has risen due to better health care.",
+    "Infant mortality reflects quality of medical care.",
+    "Family planning helps stabilise population growth.",
+    "Education for women tends to lower birth rates.",
+    "Net migration = immigrants − emigrants.",
+    "Arithmetic density is the standard measure at school level.",
+    "Bangladesh is among the world's most densely populated countries.",
+    "Australia is large but sparsely populated overall.",
+    "India's population concentrates in the northern plains.",
+    "High density can exist without overpopulation if resources are adequate.",
+    "Overpopulation may cause pollution and deforestation.",
+    "Census counts population periodically in India.",
+    "Demography is the statistical study of population.",
+    "Ageing populations need more elderly care.",
+    "Youthful populations need more schools and future jobs."
+  ],
+  "notes": [
+    {
+      "id": "geo-rev-ch2-01",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "1. World Population Growth",
+      "content": "**Executive summary:** Human numbers have grown rapidly since industrialisation; most people live in Asia and Africa today.\n\n**Must know**\n• World population exceeded 8 billion in the 2020s\n• Asia has the largest share of global population\n• Growth rate is slowing in many countries but absolute numbers still rise\n• Medical advances and better food supply reduced death rates\n• Distribution is uneven—dense belts vs sparsely settled regions\n\n**Population** is the total number of people living in a country or region at a given time.\n\nFor centuries growth was slow. After the **Industrial Revolution**, improved **health care**, **sanitation**, and **agriculture** lowered death rates while birth rates stayed high—causing rapid increase.\n\nToday patterns differ: Japan and parts of Europe grow slowly; many African nations still grow quickly. **India** and **China** are among the world's most populous countries.",
+      "explanation": "Population growth varies by region and time period—always state where and when.\n\n**🔗 Links:** geo-rev-ch2-02 — next topic",
+      "teacherTip": "Use a world population clock to show real-time growth.",
+      "examTip": "ICSE often asks which continent is most populous and why growth rates differ.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq001",
+        "geo-ch2-mcq009",
+        "geo-ch2-mcq017",
+        "geo-ch2-mcq025",
+        "geo-ch2-mcq033",
+        "geo-ch2-mcq041",
+        "geo-ch2-mcq049",
+        "geo-ch2-mcq057",
+        "geo-ch2-mcq065",
+        "geo-ch2-tf03",
+        "geo-ch2-fb01",
+        "geo-ch2-match04",
+        "geo-ch2-sa02"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq001",
+        "geo-ch2-mcq009",
+        "geo-ch2-mcq017",
+        "geo-ch2-mcq025",
+        "geo-ch2-mcq033",
+        "geo-ch2-mcq041",
+        "geo-ch2-mcq049",
+        "geo-ch2-mcq057",
+        "geo-ch2-mcq065",
+        "geo-ch2-tf03",
+        "geo-ch2-fb01",
+        "geo-ch2-match04",
+        "geo-ch2-sa02"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-02",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "2. Population Density",
+      "content": "**Executive summary:** Population density compares how many people live per unit area, usually per square kilometre.\n\n**Must know**\n• Formula: Density = Total Population ÷ Area (sq km)\n• High density: Bangladesh, Netherlands, Gangetic plain of India\n• Low density: Sahara, Amazon interior, Siberia, interior Australia\n• High density does not always mean overpopulation\n• Arithmetic density is the standard school-level measure\n\n**Population density** = Population ÷ Area.\n\n**Example:** 50 million people in 100,000 sq km → 50,000,000 ÷ 100,000 = **500 persons/sq km**.\n\nFactors raising density: fertile soil, water, flat land, jobs, good transport.\nFactors lowering density: deserts, mountains, extreme cold or heat, lack of water.",
+      "explanation": "Density is a ratio—show both population and area in calculations.\n\n**🔗 Links:** geo-rev-ch2-01 — previous topic; geo-rev-ch2-03 — next topic",
+      "teacherTip": "Compare density of Kerala, Rajasthan, and Bihar using atlas data.",
+      "examTip": "Show working: Population ÷ Area = persons per sq km.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq002",
+        "geo-ch2-mcq010",
+        "geo-ch2-mcq018",
+        "geo-ch2-mcq026",
+        "geo-ch2-mcq034",
+        "geo-ch2-mcq042",
+        "geo-ch2-mcq050",
+        "geo-ch2-mcq058",
+        "geo-ch2-mcq066",
+        "geo-ch2-tf04",
+        "geo-ch2-fb02",
+        "geo-ch2-match05",
+        "geo-ch2-sa03"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq002",
+        "geo-ch2-mcq010",
+        "geo-ch2-mcq018",
+        "geo-ch2-mcq026",
+        "geo-ch2-mcq034",
+        "geo-ch2-mcq042",
+        "geo-ch2-mcq050",
+        "geo-ch2-mcq058",
+        "geo-ch2-mcq066",
+        "geo-ch2-tf04",
+        "geo-ch2-fb02",
+        "geo-ch2-match05",
+        "geo-ch2-sa03"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-03",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "3. Birth Rate and Death Rate",
+      "content": "**Executive summary:** Birth rate and death rate measure live births and deaths per 1,000 people per year.\n\n**Must know**\n• Crude Birth Rate (CBR): live births per 1,000 population per year\n• Crude Death Rate (CDR): deaths per 1,000 population per year\n• Rates are per 1,000, not percentages at this level\n• Developing countries often have higher CBR than developed countries\n• Better health care lowers CDR and raises life expectancy\n\n**Crude Birth Rate** counts live births yearly per 1,000 people.\n**Crude Death Rate** counts deaths yearly per 1,000 people.\n\nRelated measures: **infant mortality rate** (deaths under age one per 1,000 live births) and **life expectancy** (average years a person is expected to live).",
+      "explanation": "Per-1,000 rates let countries of different sizes be compared fairly.\n\n**🔗 Links:** geo-rev-ch2-02 — previous topic; geo-rev-ch2-04 — next topic",
+      "teacherTip": "Classroom analogy: 1,000 students, 25 births, 8 deaths → net +17.",
+      "examTip": "Define CBR and CDR with the per-1,000 formula.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq003",
+        "geo-ch2-mcq011",
+        "geo-ch2-mcq019",
+        "geo-ch2-mcq027",
+        "geo-ch2-mcq035",
+        "geo-ch2-mcq043",
+        "geo-ch2-mcq051",
+        "geo-ch2-mcq059",
+        "geo-ch2-mcq067",
+        "geo-ch2-tf05",
+        "geo-ch2-fb03",
+        "geo-ch2-match06",
+        "geo-ch2-sa04"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq003",
+        "geo-ch2-mcq011",
+        "geo-ch2-mcq019",
+        "geo-ch2-mcq027",
+        "geo-ch2-mcq035",
+        "geo-ch2-mcq043",
+        "geo-ch2-mcq051",
+        "geo-ch2-mcq059",
+        "geo-ch2-mcq067",
+        "geo-ch2-tf05",
+        "geo-ch2-fb03",
+        "geo-ch2-match06",
+        "geo-ch2-sa04"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-04",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "4. Natural Increase and Growth Rate",
+      "content": "**Executive summary:** Natural increase equals birth rate minus death rate and drives population change before migration.\n\n**Must know**\n• Natural Increase ≈ Birth Rate − Death Rate (per 1,000)\n• Positive natural increase means population grows without migration\n• Negative natural increase means deaths exceed births\n• Total change = natural increase + net migration\n• Net migration = immigrants minus emigrants\n\n**Natural increase** = CBR − CDR.\n\nExample: CBR 22, CDR 7 → natural increase = **15 per 1,000** (about 1.5% per year).\n\n**Total population change** = Natural increase + Net migration.",
+      "explanation": "Separate natural increase (births/deaths) from total growth (includes migration).\n\n**🔗 Links:** geo-rev-ch2-03 — previous topic; geo-rev-ch2-05 — next topic",
+      "teacherTip": "Board equation: Population change = (B−D) + (I−E).",
+      "examTip": "State units: per 1,000 per year unless percentage is asked.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq004",
+        "geo-ch2-mcq012",
+        "geo-ch2-mcq020",
+        "geo-ch2-mcq028",
+        "geo-ch2-mcq036",
+        "geo-ch2-mcq044",
+        "geo-ch2-mcq052",
+        "geo-ch2-mcq060",
+        "geo-ch2-mcq068",
+        "geo-ch2-tf06",
+        "geo-ch2-fb04",
+        "geo-ch2-match07",
+        "geo-ch2-sa05"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq004",
+        "geo-ch2-mcq012",
+        "geo-ch2-mcq020",
+        "geo-ch2-mcq028",
+        "geo-ch2-mcq036",
+        "geo-ch2-mcq044",
+        "geo-ch2-mcq052",
+        "geo-ch2-mcq060",
+        "geo-ch2-mcq068",
+        "geo-ch2-tf06",
+        "geo-ch2-fb04",
+        "geo-ch2-match07",
+        "geo-ch2-sa05"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-05",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "5. Population Pyramids",
+      "content": "**Executive summary:** Age-sex pyramids show how a population is distributed across age groups and gender.\n\n**Must know**\n• Males usually on left, females on right, by age cohorts\n• Broad base → high birth rate, young population (expansive)\n• Narrow base → low birth rate, ageing population (contractive)\n• Bulge in middle may reflect past baby boom or migration\n• Used to plan schools, jobs, health care, and pensions\n\n| Pyramid shape | Meaning |\n|---------------|---------|\n| Wide base, narrow top | Young, fast-growing population |\n| Even columns | Stable growth |\n| Narrow base, wide top | Ageing, slow or declining growth |\n\n**Expansive** pyramids need more schools; **contractive** pyramids need elderly care.",
+      "explanation": "Read pyramids from base (children) to top (elderly).\n\n**🔗 Links:** geo-rev-ch2-04 — previous topic; geo-rev-ch2-06 — next topic",
+      "teacherTip": "Sketch three pyramid types with country examples.",
+      "examTip": "Describe shape and link to birth rate and future workforce.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq005",
+        "geo-ch2-mcq013",
+        "geo-ch2-mcq021",
+        "geo-ch2-mcq029",
+        "geo-ch2-mcq037",
+        "geo-ch2-mcq045",
+        "geo-ch2-mcq053",
+        "geo-ch2-mcq061",
+        "geo-ch2-mcq069",
+        "geo-ch2-tf07",
+        "geo-ch2-fb05",
+        "geo-ch2-match08"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq005",
+        "geo-ch2-mcq013",
+        "geo-ch2-mcq021",
+        "geo-ch2-mcq029",
+        "geo-ch2-mcq037",
+        "geo-ch2-mcq045",
+        "geo-ch2-mcq053",
+        "geo-ch2-mcq061",
+        "geo-ch2-mcq069",
+        "geo-ch2-tf07",
+        "geo-ch2-fb05",
+        "geo-ch2-match08"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-06",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "6. Overpopulation and Its Effects",
+      "content": "**Executive summary:** Overpopulation occurs when people exceed the carrying capacity of an area, straining resources.\n\n**Must know**\n• Depends on resources, not numbers alone\n• Pressure on food, water, housing, jobs, and sanitation\n• Environmental stress: pollution, deforestation, waste\n• Urban slums and congestion in megacities\n• Solutions include education, family planning, and sustainable development\n\n**Overpopulation** = too many people relative to **available resources**.\n\n**Effects:** unemployment, overcrowded schools/hospitals, pollution, loss of green cover, water stress.\n\n**Solutions:** family planning, girls' education, better farming, planned cities, conservation.",
+      "explanation": "Overpopulation is relative to resources—a wealthy dense city may cope better than a poor crowded region.\n\n**🔗 Links:** geo-rev-ch2-05 — previous topic; geo-rev-ch2-07 — next topic",
+      "teacherTip": "Contrast high density with adequate vs inadequate resources.",
+      "examTip": "List economic, social, and environmental effects separately.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq006",
+        "geo-ch2-mcq014",
+        "geo-ch2-mcq022",
+        "geo-ch2-mcq030",
+        "geo-ch2-mcq038",
+        "geo-ch2-mcq046",
+        "geo-ch2-mcq054",
+        "geo-ch2-mcq062",
+        "geo-ch2-mcq070",
+        "geo-ch2-tf08",
+        "geo-ch2-match01",
+        "geo-ch2-match09"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq006",
+        "geo-ch2-mcq014",
+        "geo-ch2-mcq022",
+        "geo-ch2-mcq030",
+        "geo-ch2-mcq038",
+        "geo-ch2-mcq046",
+        "geo-ch2-mcq054",
+        "geo-ch2-mcq062",
+        "geo-ch2-mcq070",
+        "geo-ch2-tf08",
+        "geo-ch2-match01",
+        "geo-ch2-match09"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch2-07",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "7. Underpopulation and Sparse Population",
+      "content": "**Executive summary:** Underpopulation means too few people to use resources efficiently; sparse areas have very low density.\n\n**Must know**\n• Underpopulation: labour shortage, underused farmland or minerals\n• Sparse population: few people over vast area (deserts, tundra)\n• Causes: harsh climate, poor soil, remoteness, lack of water\n• Australia and Canada are large but relatively underpopulated\n• Governments may encourage settlement in resource-rich sparse areas\n\n**Sparse population** = low density due to difficult physical conditions.\n\n**Underpopulation** = population smaller than the area's **resource potential**.\n\nExamples: **Sahara**, **Amazon interior**, **Ladakh**, **Siberia**.",
+      "explanation": "Sparse = geography limits people; underpopulated = could support more productively.\n\n**🔗 Links:** geo-rev-ch2-06 — previous topic; geo-rev-ch2-08 — next topic",
+      "teacherTip": "Map world's sparse vs dense population belts.",
+      "examTip": "Give physical reasons for sparse settlement.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq007",
+        "geo-ch2-mcq015",
+        "geo-ch2-mcq023",
+        "geo-ch2-mcq031",
+        "geo-ch2-mcq039",
+        "geo-ch2-mcq047",
+        "geo-ch2-mcq055",
+        "geo-ch2-mcq063",
+        "geo-ch2-tf01",
+        "geo-ch2-tf09",
+        "geo-ch2-match02",
+        "geo-ch2-match10"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq007",
+        "geo-ch2-mcq015",
+        "geo-ch2-mcq023",
+        "geo-ch2-mcq031",
+        "geo-ch2-mcq039",
+        "geo-ch2-mcq047",
+        "geo-ch2-mcq055",
+        "geo-ch2-mcq063",
+        "geo-ch2-tf01",
+        "geo-ch2-tf09",
+        "geo-ch2-match02",
+        "geo-ch2-match10"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    },
+    {
+      "id": "geo-rev-ch2-08",
+      "topicId": "geo-ch2",
+      "type": "note",
+      "subtopic": "8. Population Distribution and Factors",
+      "content": "**Executive summary:** People are unevenly spread; physical and human factors explain clustering and empty lands.\n\n**Must know**\n• Dense on fertile plains, river valleys, and coasts\n• Sparse in mountains, deserts, and polar regions\n• Industry and trade pull people to urban centres\n• Transport, history, and government policy also matter\n• India's density is highest in the northern plains\n\n**Physical factors:** climate, relief, soil, water, vegetation.\n\n**Human factors:** farming, industry, trade, policy, migration.\n\n**India:** dense along Ganga-Brahmaputra and coastal plains; lower in arid Rajasthan and high Himalayas.",
+      "explanation": "Distribution shows where people live; density shows how many per sq km.\n\n**🔗 Links:** geo-rev-ch2-07 — previous topic",
+      "teacherTip": "Overlay rainfall and population maps of India.",
+      "examTip": "Name at least two physical and two economic factors.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch2-mcq008",
+        "geo-ch2-mcq016",
+        "geo-ch2-mcq024",
+        "geo-ch2-mcq032",
+        "geo-ch2-mcq040",
+        "geo-ch2-mcq048",
+        "geo-ch2-mcq056",
+        "geo-ch2-mcq064",
+        "geo-ch2-tf02",
+        "geo-ch2-tf10",
+        "geo-ch2-match03",
+        "geo-ch2-sa01"
+      ],
+      "linked_q_ids": [
+        "geo-ch2-mcq008",
+        "geo-ch2-mcq016",
+        "geo-ch2-mcq024",
+        "geo-ch2-mcq032",
+        "geo-ch2-mcq040",
+        "geo-ch2-mcq048",
+        "geo-ch2-mcq056",
+        "geo-ch2-mcq064",
+        "geo-ch2-tf02",
+        "geo-ch2-tf10",
+        "geo-ch2-match03",
+        "geo-ch2-sa01"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    }
+  ],
+  "questions": [
+    {
+      "id": "geo-ch2-mcq001",
+      "q_id": "geo-ch2-mcq001",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population density is calculated as:",
+      "options": [
+        "Area ÷ Population",
+        "Population ÷ Area",
+        "Birth rate − Death rate",
+        "Immigrants − Emigrants"
+      ],
+      "correctOption": 1,
+      "answer": "Density = total population divided by land area, expressed as persons per sq km.",
+      "examTip": "Show formula before calculating.",
+      "teacherTip": "Use state examples.",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq002",
+      "q_id": "geo-ch2-mcq002",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Crude Birth Rate measures:",
+      "options": [
+        "Deaths per 1,000 per year",
+        "Live births per 1,000 per year",
+        "People per sq km",
+        "Average age of population"
+      ],
+      "correctOption": 1,
+      "answer": "CBR counts live births per 1,000 population each year.",
+      "examTip": "Per 1,000—not percentage.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq003",
+      "q_id": "geo-ch2-mcq003",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Natural increase equals:",
+      "options": [
+        "Immigration minus emigration",
+        "Birth rate minus death rate",
+        "Death rate minus birth rate",
+        "Population divided by area"
+      ],
+      "correctOption": 1,
+      "answer": "Natural increase = CBR − CDR before migration is counted.",
+      "examTip": "Distinguish from total growth.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq004",
+      "q_id": "geo-ch2-mcq004",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which continent has the largest population?",
+      "options": [
+        "Europe",
+        "Africa",
+        "Asia",
+        "South America"
+      ],
+      "correctOption": 2,
+      "answer": "Asia contains more than half of the world's people (China, India, etc.).",
+      "examTip": "Continent-level distribution.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq005",
+      "q_id": "geo-ch2-mcq005",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A wide-based population pyramid indicates:",
+      "options": [
+        "Ageing population",
+        "High birth rate and young population",
+        "Equal birth and death rates",
+        "Mass emigration only"
+      ],
+      "correctOption": 1,
+      "answer": "Broad base means many children—expansive pyramid.",
+      "examTip": "Link shape to birth rate.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq006",
+      "q_id": "geo-ch2-mcq006",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Overpopulation depends only on high population density.\n2. Overpopulation means people exceed available resources.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 1,
+      "answer": "Statement 1 is false; statement 2 is correct—overpopulation is resource-relative.",
+      "examTip": "UPSC-style combo on concepts.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq007",
+      "q_id": "geo-ch2-mcq007",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Sparse population is commonly found in:",
+      "options": [
+        "River deltas",
+        "Deserts and polar regions",
+        "Industrial cities",
+        "Coastal plains"
+      ],
+      "correctOption": 1,
+      "answer": "Harsh climate and lack of water limit settlement in deserts and tundra.",
+      "examTip": "Physical geography link.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq008",
+      "q_id": "geo-ch2-mcq008",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Crude Death Rate is expressed per:",
+      "options": [
+        "100 people",
+        "1,000 people",
+        "10,000 people",
+        "1 lakh people"
+      ],
+      "correctOption": 1,
+      "answer": "Vital rates use per 1,000 population per year.",
+      "examTip": "Standard demographic unit.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq009",
+      "q_id": "geo-ch2-mcq009",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Net migration equals:",
+      "options": [
+        "Births minus deaths",
+        "Immigrants minus emigrants",
+        "Emigrants minus immigrants",
+        "Population divided by area"
+      ],
+      "correctOption": 1,
+      "answer": "Positive net migration means more people arriving than leaving.",
+      "examTip": "Migration component of growth.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq010",
+      "q_id": "geo-ch2-mcq010",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "An ageing population typically shows a pyramid with:",
+      "options": [
+        "Very wide base",
+        "Narrow base and wider top",
+        "No female side",
+        "Only children under 5"
+      ],
+      "correctOption": 1,
+      "answer": "Few young people and many elderly—contractive pyramid.",
+      "examTip": "Japan/Germany examples.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq011",
+      "q_id": "geo-ch2-mcq011",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which factor most attracts dense rural settlement?",
+      "options": [
+        "Permanent ice",
+        "Fertile soil and water supply",
+        "Steep barren mountains",
+        "Deep desert"
+      ],
+      "correctOption": 1,
+      "answer": "Agriculture needs fertile land and reliable water.",
+      "examTip": "Distribution factors.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq012",
+      "q_id": "geo-ch2-mcq012",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Demography is the study of:",
+      "options": [
+        "Rocks and minerals",
+        "Population statistics and trends",
+        "Weather patterns",
+        "Ocean currents"
+      ],
+      "correctOption": 1,
+      "answer": "Demographers analyse size, structure, and change of population.",
+      "examTip": "Define demography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq013",
+      "q_id": "geo-ch2-mcq013",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Life expectancy measures:",
+      "options": [
+        "Births per year",
+        "Average years a person is expected to live",
+        "People per sq km",
+        "Number of immigrants"
+      ],
+      "correctOption": 1,
+      "answer": "Higher life expectancy reflects better health care and living conditions.",
+      "examTip": "Health indicator.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq014",
+      "q_id": "geo-ch2-mcq014",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "India conducts a national population Census every:",
+      "options": [
+        "5 years",
+        "10 years",
+        "25 years",
+        "50 years"
+      ],
+      "correctOption": 1,
+      "answer": "Census of India is held every ten years.",
+      "examTip": "Know Census interval.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq015",
+      "q_id": "geo-ch2-mcq015",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Underpopulation may lead to:",
+      "options": [
+        "Labour shortage",
+        "Extreme traffic congestion",
+        "Overcrowded classrooms only",
+        "Loss of all farmland"
+      ],
+      "correctOption": 0,
+      "answer": "Too few workers can slow economic use of resources.",
+      "examTip": "Contrast with overpopulation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq016",
+      "q_id": "geo-ch2-mcq016",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. CBR is live births per 1,000 per year.\n2. CDR is deaths per 1,000 per year.\n3. Density is births minus deaths.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 are correct; density is population ÷ area.",
+      "examTip": "Three-statement combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq017",
+      "q_id": "geo-ch2-mcq017",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Bangladesh is known for:",
+      "options": [
+        "Very low population density",
+        "Very high population density",
+        "Zero population growth",
+        "No agricultural population"
+      ],
+      "correctOption": 1,
+      "answer": "Small area with large population → very high density.",
+      "examTip": "World examples.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq018",
+      "q_id": "geo-ch2-mcq018",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Family planning aims to:",
+      "options": [
+        "Increase birth rate always",
+        "Help couples plan number and spacing of children",
+        "Stop all migration",
+        "Reduce land area"
+      ],
+      "correctOption": 1,
+      "answer": "Voluntary planning stabilises growth and improves health.",
+      "examTip": "Social policy.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq019",
+      "q_id": "geo-ch2-mcq019",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Infant mortality rate indicates:",
+      "options": [
+        "Deaths of infants under one year per 1,000 live births",
+        "Total deaths per 1,000",
+        "Migration of infants",
+        "School dropout rate"
+      ],
+      "correctOption": 0,
+      "answer": "Lower infant mortality shows better maternal and child health care.",
+      "examTip": "Health development indicator.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq020",
+      "q_id": "geo-ch2-mcq020",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A population with CBR 30 and CDR 8 has natural increase of:",
+      "options": [
+        "38 per 1,000",
+        "22 per 1,000",
+        "8 per 1,000",
+        "30 per 1,000"
+      ],
+      "correctOption": 1,
+      "answer": "30 − 8 = 22 per 1,000 per year.",
+      "examTip": "Simple subtraction.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq021",
+      "q_id": "geo-ch2-mcq021",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which region of India is generally most densely populated?",
+      "options": [
+        "Thar Desert",
+        "Gangetic plain",
+        "Ladakh",
+        "Western Ghats forest only"
+      ],
+      "correctOption": 1,
+      "answer": "Fertile alluvial soil and water support dense farming settlements.",
+      "examTip": "India map knowledge.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq022",
+      "q_id": "geo-ch2-mcq022",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Expansive population pyramid is typical of:",
+      "options": [
+        "Japan",
+        "Many African countries",
+        "Countries with only elderly",
+        "Uninhabited areas"
+      ],
+      "correctOption": 1,
+      "answer": "High birth rates produce a broad young base.",
+      "examTip": "Pyramid-country link.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq023",
+      "q_id": "geo-ch2-mcq023",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Total population change includes:",
+      "options": [
+        "Only births",
+        "Only deaths",
+        "Natural increase and net migration",
+        "Only density"
+      ],
+      "correctOption": 2,
+      "answer": "Growth = (B−D) + net migration.",
+      "examTip": "Full growth equation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq024",
+      "q_id": "geo-ch2-mcq024",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Arithmetic population density uses:",
+      "options": [
+        "Only arable land area",
+        "Total land area of region",
+        "Urban area only",
+        "Coastal length"
+      ],
+      "correctOption": 1,
+      "answer": "Standard density = total population ÷ total area.",
+      "examTip": "Definition.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq025",
+      "q_id": "geo-ch2-mcq025",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Education of girls often leads to:",
+      "options": [
+        "Higher birth rates",
+        "Lower birth rates",
+        "No change in population",
+        "Higher death rates"
+      ],
+      "correctOption": 1,
+      "answer": "Education delays marriage and improves family planning.",
+      "examTip": "Social factor.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq026",
+      "q_id": "geo-ch2-mcq026",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Siberia has sparse population mainly due to:",
+      "options": [
+        "Too many jobs",
+        "Extreme cold and difficult living conditions",
+        "Excess rainfall",
+        "Tropical climate"
+      ],
+      "correctOption": 1,
+      "answer": "Harsh climate limits comfortable settlement.",
+      "examTip": "Physical barrier.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq027",
+      "q_id": "geo-ch2-mcq027",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Overcrowded slums are often linked to:",
+      "options": [
+        "Rapid urban growth without adequate housing",
+        "Underpopulation",
+        "Sparse rural settlement only",
+        "Polar climate"
+      ],
+      "correctOption": 0,
+      "answer": "Rural-urban migration can outpace infrastructure.",
+      "examTip": "Urban population pressure.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq028",
+      "q_id": "geo-ch2-mcq028",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Australia has a large land area.\n2. Australia is densely populated throughout.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "answer": "Statement 1 is true; statement 2 is false—much of Australia is arid and sparsely settled.",
+      "examTip": "Area vs density combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq029",
+      "q_id": "geo-ch2-mcq029",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Contractive pyramid suggests need for:",
+      "options": [
+        "More primary schools only",
+        "Elderly care and pension planning",
+        "Only maternity wards",
+        "Desert reclamation"
+      ],
+      "correctOption": 1,
+      "answer": "Few young people and many old—ageing society.",
+      "examTip": "Planning from pyramids.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq030",
+      "q_id": "geo-ch2-mcq030",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which is NOT a push factor for migration?",
+      "options": [
+        "Unemployment",
+        "War",
+        "Better job prospects elsewhere",
+        "Natural disaster"
+      ],
+      "correctOption": 2,
+      "answer": "Better jobs elsewhere is a pull factor, not a push.",
+      "examTip": "Push vs pull preview.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq031",
+      "q_id": "geo-ch2-mcq031",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "World population growth was fastest after:",
+      "options": [
+        "Stone Age only",
+        "Industrial Revolution and medical advances",
+        "Complete halt of agriculture",
+        "Ice Age"
+      ],
+      "correctOption": 1,
+      "answer": "Falling death rates with initially high birth rates spurred growth.",
+      "examTip": "Historical trend.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq032",
+      "q_id": "geo-ch2-mcq032",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "High population density in Netherlands is partly due to:",
+      "options": [
+        "Sahara-like climate",
+        "Long habitable history, trade, and fertile reclaimed land",
+        "No agriculture",
+        "Permanent snow"
+      ],
+      "correctOption": 1,
+      "answer": "Fertile lowlands and economic development support dense settlement.",
+      "examTip": "Human + physical factors.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq033",
+      "q_id": "geo-ch2-mcq033",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Negative natural increase means:",
+      "options": [
+        "More births than deaths",
+        "More deaths than births",
+        "No migration",
+        "Zero population"
+      ],
+      "correctOption": 1,
+      "answer": "Deaths exceed births—population shrinks without immigration.",
+      "examTip": "Sign of rate difference.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq034",
+      "q_id": "geo-ch2-mcq034",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population distribution refers to:",
+      "options": [
+        "How people are spread across an area",
+        "Only birth rate",
+        "Only death rate",
+        "Height of mountains"
+      ],
+      "correctOption": 0,
+      "answer": "Distribution describes spatial pattern of where people live.",
+      "examTip": "Define distribution.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq035",
+      "q_id": "geo-ch2-mcq035",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Carrying capacity relates to:",
+      "options": [
+        "Maximum population an environment can sustain",
+        "Map scale",
+        "Contour interval",
+        "Railway gauge"
+      ],
+      "correctOption": 0,
+      "answer": "Overpopulation exceeds carrying capacity of resources.",
+      "examTip": "Environmental limit concept.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq036",
+      "q_id": "geo-ch2-mcq036",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Census data helps government to:",
+      "options": [
+        "Plan schools, hospitals, and services",
+        "Measure mountain height",
+        "Predict earthquakes only",
+        "Draw contour lines"
+      ],
+      "correctOption": 0,
+      "answer": "Accurate counts guide resource allocation.",
+      "examTip": "Applied demography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq037",
+      "q_id": "geo-ch2-mcq037",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Youth bulge in a pyramid means:",
+      "options": [
+        "Many people in young age groups",
+        "Only elderly population",
+        "No children",
+        "Equal deaths and births only"
+      ],
+      "correctOption": 0,
+      "answer": "Large young cohort needs jobs and education.",
+      "examTip": "Social challenge.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq038",
+      "q_id": "geo-ch2-mcq038",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which pair has the correct formula?",
+      "options": [
+        "Density = Area ÷ Population",
+        "Natural increase = CBR − CDR",
+        "CBR = Deaths ÷ Population",
+        "Net migration = Births − Deaths"
+      ],
+      "correctOption": 1,
+      "answer": "Only natural increase formula is correctly stated.",
+      "examTip": "Formula identification.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq039",
+      "q_id": "geo-ch2-mcq039",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Fertile plains attract dense settlement.\n2. Deserts usually have sparse population.\n3. Mountains always have highest density.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 correct; mountains generally have lower density except some valleys.",
+      "examTip": "Physical factors combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq040",
+      "q_id": "geo-ch2-mcq040",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "India's population growth rate in recent decades has:",
+      "options": [
+        "Increased sharply to highest ever",
+        "Slowed compared to mid-20th century",
+        "Become exactly zero",
+        "Stopped completely"
+      ],
+      "correctOption": 1,
+      "answer": "Family planning and development slowed growth though numbers still rise.",
+      "examTip": "India demographic trend.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq041",
+      "q_id": "geo-ch2-mcq041",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Primary reason for high density in river valleys:",
+      "options": [
+        "Lack of water",
+        "Fertile alluvial soil and water for farming",
+        "No transport",
+        "Permanent ice"
+      ],
+      "correctOption": 1,
+      "answer": "Agriculture supported early civilisations along rivers.",
+      "examTip": "Historical geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq042",
+      "q_id": "geo-ch2-mcq042",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Overpopulation can cause:",
+      "options": [
+        "Deforestation and pollution",
+        "Unlimited free resources",
+        "Automatic rise in jobs",
+        "No pressure on water"
+      ],
+      "correctOption": 0,
+      "answer": "Resource stress harms environment and living standards.",
+      "examTip": "Effects list.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq043",
+      "q_id": "geo-ch2-mcq043",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A country with CBR 12 and CDR 10 has:",
+      "options": [
+        "Natural increase of 2 per 1,000",
+        "Natural increase of 22 per 1,000",
+        "Natural decrease of 2 per 1,000",
+        "Density of 12"
+      ],
+      "correctOption": 0,
+      "answer": "12 − 10 = +2 per 1,000.",
+      "examTip": "Rate arithmetic.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq044",
+      "q_id": "geo-ch2-mcq044",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population pyramid horizontal bars show:",
+      "options": [
+        "Height of buildings",
+        "Number of males and females in each age group",
+        "Rainfall amounts",
+        "Road length"
+      ],
+      "correctOption": 1,
+      "answer": "Each bar represents an age cohort by sex.",
+      "examTip": "How to read pyramids.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq045",
+      "q_id": "geo-ch2-mcq045",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Sparse population in Amazon interior is due to:",
+      "options": [
+        "Dense industry",
+        "Dense forest, difficult access, and disease history",
+        "Polar climate",
+        "No rainfall"
+      ],
+      "correctOption": 1,
+      "answer": "Tropical rainforest limits large-scale settlement.",
+      "examTip": "Latin America example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq046",
+      "q_id": "geo-ch2-mcq046",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Demographic transition generally involves:",
+      "options": [
+        "Shift from high birth/death rates to lower rates",
+        "Permanent high death rate only",
+        "No change ever",
+        "Only migration-based change"
+      ],
+      "correctOption": 0,
+      "answer": "Development lowers both rates over time.",
+      "examTip": "Advanced concept intro.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq047",
+      "q_id": "geo-ch2-mcq047",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which is a social effect of overpopulation?",
+      "options": [
+        "Overcrowded schools and hospitals",
+        "More contour lines",
+        "Higher map scale",
+        "Magnetic declination"
+      ],
+      "correctOption": 0,
+      "answer": "Services strain when population exceeds provision.",
+      "examTip": "Social vs environmental.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq048",
+      "q_id": "geo-ch2-mcq048",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Underpopulated countries may encourage:",
+      "options": [
+        "Emigration only",
+        "Immigration or incentives to settle",
+        "Closing all hospitals",
+        "Stopping agriculture"
+      ],
+      "correctOption": 1,
+      "answer": "More workers needed to develop resources.",
+      "examTip": "Policy response.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq049",
+      "q_id": "geo-ch2-mcq049",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population of a city compared to its area gives:",
+      "options": [
+        "Birth rate",
+        "Urban population density",
+        "Death rate only",
+        "Magnetic north"
+      ],
+      "correctOption": 1,
+      "answer": "Same density formula applied to urban area.",
+      "examTip": "Urban application.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq050",
+      "q_id": "geo-ch2-mcq050",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. CBR and CDR are measured per 1,000 people per year.\n2. Population density is measured per 1,000 people.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "answer": "Statement 1 true; density is per sq km, not per 1,000.",
+      "examTip": "Units combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq051",
+      "q_id": "geo-ch2-mcq051",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Age-sex pyramid with equal narrow columns suggests:",
+      "options": [
+        "Rapid growth",
+        "Relatively stable population",
+        "Only immigration",
+        "No females"
+      ],
+      "correctOption": 1,
+      "answer": "Similar cohort sizes indicate stability.",
+      "examTip": "Pyramid interpretation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq052",
+      "q_id": "geo-ch2-mcq052",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Gangetic plain density is high mainly because of:",
+      "options": [
+        "Desert climate",
+        "Alluvial soil and river water",
+        "No farming",
+        "Lack of transport"
+      ],
+      "correctOption": 1,
+      "answer": "Agricultural heartland of India.",
+      "examTip": "Regional geography.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq053",
+      "q_id": "geo-ch2-mcq053",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Excess population pressure on farmland may cause:",
+      "options": [
+        "Soil erosion and smaller farm plots",
+        "Automatic soil enrichment",
+        "No change in farming",
+        "Unlimited water"
+      ],
+      "correctOption": 0,
+      "answer": "Subdivision and overuse degrade land.",
+      "examTip": "Rural overpopulation.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq054",
+      "q_id": "geo-ch2-mcq054",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which vital rate reflects medical advancement most directly?",
+      "options": [
+        "Declining infant mortality",
+        "Map scale",
+        "Grid reference",
+        "Contour VI"
+      ],
+      "correctOption": 0,
+      "answer": "Better hospitals and vaccines reduce infant deaths.",
+      "examTip": "Development link.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq055",
+      "q_id": "geo-ch2-mcq055",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population census provides data on:",
+      "options": [
+        "Age, sex, occupation, and literacy",
+        "Only mountain heights",
+        "Only river length",
+        "Magnetic variation"
+      ],
+      "correctOption": 0,
+      "answer": "Census is comprehensive demographic survey.",
+      "examTip": "Census content.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq056",
+      "q_id": "geo-ch2-mcq056",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "High death rate in a developing country may be due to:",
+      "options": [
+        "Excellent health care everywhere",
+        "Disease, poor sanitation, and malnutrition",
+        "Too many hospitals",
+        "Low birth rate only"
+      ],
+      "correctOption": 1,
+      "answer": "Poor health infrastructure raises CDR.",
+      "examTip": "Cause-effect.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq057",
+      "q_id": "geo-ch2-mcq057",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population pyramid is also called:",
+      "options": [
+        "Age-sex pyramid",
+        "Contour map",
+        "Toposheet",
+        "Barometer chart"
+      ],
+      "correctOption": 0,
+      "answer": "Shows age and sex structure graphically.",
+      "examTip": "Terminology.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq058",
+      "q_id": "geo-ch2-mcq058",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Overpopulation in cities may worsen:",
+      "options": [
+        "Traffic congestion and air pollution",
+        "Available open space per person",
+        "Both congestion/pollution and reduce open space",
+        "Neither"
+      ],
+      "correctOption": 2,
+      "answer": "Urban crowding affects transport, air quality, and living space.",
+      "examTip": "Urban effects.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq059",
+      "q_id": "geo-ch2-mcq059",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Net migration affects total population.\n2. Natural increase ignores migration.\n3. Density equals CBR minus CDR.\nWhich of the above is/are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "answer": "Statements 1 and 2 correct; density is population ÷ area.",
+      "examTip": "Concept check combo.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq060",
+      "q_id": "geo-ch2-mcq060",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A region with 2 million people and 4,000 sq km has density:",
+      "options": [
+        "2 persons/sq km",
+        "500 persons/sq km",
+        "8,000 persons/sq km",
+        "0.002 persons/sq km"
+      ],
+      "correctOption": 1,
+      "answer": "2,000,000 ÷ 4,000 = 500 persons/sq km.",
+      "examTip": "Calculation question.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq061",
+      "q_id": "geo-ch2-mcq061",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Pull factor for rural to urban migration includes:",
+      "options": [
+        "Job opportunities in city",
+        "Floods destroying farm",
+        "Lack of schools in village only as push",
+        "Drought as only factor"
+      ],
+      "correctOption": 0,
+      "answer": "Better employment draws people to towns.",
+      "examTip": "Migration link to population.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq062",
+      "q_id": "geo-ch2-mcq062",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Stationary population pyramid has:",
+      "options": [
+        "Broadening base every year",
+        "Roughly equal cohorts through ages",
+        "Only one age group",
+        "No males"
+      ],
+      "correctOption": 1,
+      "answer": "Low growth produces near-rectangular shape.",
+      "examTip": "Pyramid types.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-mcq063",
+      "q_id": "geo-ch2-mcq063",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "World's population is unevenly distributed mainly because of:",
+      "options": [
+        "Uniform climate everywhere",
+        "Varied physical and economic conditions",
+        "Same soil globally",
+        "Identical relief"
+      ],
+      "correctOption": 1,
+      "answer": "People cluster where life and livelihood are easier.",
+      "examTip": "Distribution summary.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-mcq064",
+      "q_id": "geo-ch2-mcq064",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Family welfare programmes in India promote:",
+      "options": [
+        "Forced migration",
+        "Reproductive health and planned families",
+        "Stopping all births illegally",
+        "Closing cities"
+      ],
+      "correctOption": 1,
+      "answer": "Voluntary planning improves mother and child health.",
+      "examTip": "Indian policy.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-mcq065",
+      "q_id": "geo-ch2-mcq065",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Low population density in Rajasthan desert is due to:",
+      "options": [
+        "Excess rainfall",
+        "Aridity and limited water",
+        "Dense forest only",
+        "Polar winds"
+      ],
+      "correctOption": 1,
+      "answer": "Thar Desert conditions limit agriculture and settlement.",
+      "examTip": "Indian example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-mcq066",
+      "q_id": "geo-ch2-mcq066",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Population explosion refers to:",
+      "options": [
+        "Rapid increase in population over short period",
+        "Sudden decrease in population",
+        "Stable numbers for centuries",
+        "Only urban growth"
+      ],
+      "correctOption": 0,
+      "answer": "Post-1950 rapid growth in many developing nations.",
+      "examTip": "Historical term.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-mcq067",
+      "q_id": "geo-ch2-mcq067",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which indicator suggests a youthful nation?",
+      "options": [
+        "Median age is low",
+        "Median age above 50 only",
+        "No children under 15",
+        "CBR near zero only"
+      ],
+      "correctOption": 0,
+      "answer": "Many young people lower median age.",
+      "examTip": "Age structure.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-mcq068",
+      "q_id": "geo-ch2-mcq068",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Overpopulation differs from high density because it considers:",
+      "options": [
+        "Resource availability and quality of life",
+        "Only map colour",
+        "Only longitude",
+        "Contour spacing"
+      ],
+      "correctOption": 0,
+      "answer": "Resource pressure defines overpopulation.",
+      "examTip": "Key distinction.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-mcq069",
+      "q_id": "geo-ch2-mcq069",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Canada's overall low density is explained by:",
+      "options": [
+        "Small land area",
+        "Large area with much inhospitable northern land",
+        "No minerals",
+        "No cities"
+      ],
+      "correctOption": 1,
+      "answer": "Most people live near US border; north is sparse.",
+      "examTip": "North America example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-mcq070",
+      "q_id": "geo-ch2-mcq070",
+      "topicId": "geo-ch2",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements:\n1. Population pyramids help plan future school needs.\n2. Population pyramids show contour heights.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "answer": "Statement 1 true; pyramids show age-sex structure, not relief.",
+      "examTip": "Purpose of pyramids.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-tf01",
+      "q_id": "geo-ch2-tf01",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Population density is calculated as Population ÷ Area.",
+      "correctAnswer": "true",
+      "answer": "True. Density expresses how many people live per unit area, usually per sq km.",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-tf02",
+      "q_id": "geo-ch2-tf02",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Crude Birth Rate measures deaths per 1,000 people per year.",
+      "correctAnswer": "false",
+      "answer": "False. CBR measures live births per 1,000 per year; CDR measures deaths.",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-tf03",
+      "q_id": "geo-ch2-tf03",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "A wide-based population pyramid indicates a young, fast-growing population.",
+      "correctAnswer": "true",
+      "answer": "True. Many children at the base mean high birth rates—expansive pyramid.",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-tf04",
+      "q_id": "geo-ch2-tf04",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Overpopulation depends only on the number of people, not on resources.",
+      "correctAnswer": "false",
+      "answer": "False. Overpopulation is defined relative to available resources and services.",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-tf05",
+      "q_id": "geo-ch2-tf05",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Natural increase equals Birth rate minus Death rate.",
+      "correctAnswer": "true",
+      "answer": "True. It shows growth from births and deaths before migration.",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-tf06",
+      "q_id": "geo-ch2-tf06",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Deserts typically have sparse population.",
+      "correctAnswer": "true",
+      "answer": "True. Lack of water and extreme climate limit settlement.",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-tf07",
+      "q_id": "geo-ch2-tf07",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Asia is the most populous continent.",
+      "correctAnswer": "true",
+      "answer": "True. China, India, and other Asian nations hold the majority of world population.",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-tf08",
+      "q_id": "geo-ch2-tf08",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Underpopulation can mean too few workers to use resources efficiently.",
+      "correctAnswer": "true",
+      "answer": "True. Labour shortage may leave farmland or minerals underused.",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-tf09",
+      "q_id": "geo-ch2-tf09",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Net migration equals Immigrants minus Emigrants.",
+      "correctAnswer": "true",
+      "answer": "True. Positive net migration adds to population; negative subtracts.",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-tf10",
+      "q_id": "geo-ch2-tf10",
+      "topicId": "geo-ch2",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "A contractive pyramid has a very broad base and narrow top.",
+      "correctAnswer": "false",
+      "answer": "False. Contractive pyramids have a narrow base (few children) and wider top (many elderly).",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-fb01",
+      "q_id": "geo-ch2-fb01",
+      "topicId": "geo-ch2",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Population density = Total population ÷ ______.",
+      "blankAnswer": "Area",
+      "answer": "Area (in sq km). Result is persons per sq km.",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-fb02",
+      "q_id": "geo-ch2-fb02",
+      "topicId": "geo-ch2",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Crude Birth Rate is the number of live births per ______ people per year.",
+      "blankAnswer": "1000",
+      "answer": "1,000 (per thousand population).",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-fb03",
+      "q_id": "geo-ch2-fb03",
+      "topicId": "geo-ch2",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Natural increase ≈ Birth rate − ______ rate.",
+      "blankAnswer": "Death",
+      "answer": "Death rate (CBR − CDR per 1,000).",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-fb04",
+      "q_id": "geo-ch2-fb04",
+      "topicId": "geo-ch2",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "A graph showing age and sex structure is called a population ______.",
+      "blankAnswer": "pyramid",
+      "answer": "Population pyramid (age-sex pyramid).",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-fb05",
+      "q_id": "geo-ch2-fb05",
+      "topicId": "geo-ch2",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "The statistical study of population is called ______.",
+      "blankAnswer": "Demography",
+      "answer": "Demography.",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-match01",
+      "q_id": "geo-ch2-match01",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match terms with definitions:",
+      "pairs": [
+        {
+          "left": "CBR",
+          "right": "Live births per 1,000/year"
+        },
+        {
+          "left": "CDR",
+          "right": "Deaths per 1,000/year"
+        },
+        {
+          "left": "Density",
+          "right": "People per sq km"
+        },
+        {
+          "left": "Natural increase",
+          "right": "CBR − CDR"
+        }
+      ],
+      "answer": "CBR→births; CDR→deaths; Density→per area; Natural increase→difference.",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-match02",
+      "q_id": "geo-ch2-match02",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match pyramid types:",
+      "pairs": [
+        {
+          "left": "Expansive",
+          "right": "Wide base"
+        },
+        {
+          "left": "Contractive",
+          "right": "Narrow base"
+        },
+        {
+          "left": "Stationary",
+          "right": "Even cohorts"
+        },
+        {
+          "left": "Youth bulge",
+          "right": "Many young adults"
+        }
+      ],
+      "answer": "Expansive→wide base; Contractive→narrow base; Stationary→even; Youth bulge→young adults.",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-match03",
+      "q_id": "geo-ch2-match03",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match regions with density pattern:",
+      "pairs": [
+        {
+          "left": "Gangetic plain",
+          "right": "High density"
+        },
+        {
+          "left": "Sahara",
+          "right": "Sparse"
+        },
+        {
+          "left": "Bangladesh",
+          "right": "Very high density"
+        },
+        {
+          "left": "Siberia",
+          "right": "Very sparse"
+        }
+      ],
+      "answer": "Ganga→high; Sahara→sparse; Bangladesh→very high; Siberia→sparse.",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-match04",
+      "q_id": "geo-ch2-match04",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match concepts:",
+      "pairs": [
+        {
+          "left": "Overpopulation",
+          "right": "Exceeds resources"
+        },
+        {
+          "left": "Underpopulation",
+          "right": "Too few for resources"
+        },
+        {
+          "left": "Census",
+          "right": "Official population count"
+        },
+        {
+          "left": "Demography",
+          "right": "Population science"
+        }
+      ],
+      "answer": "Over→resource strain; Under→labour shortage; Census→count; Demography→study.",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-match05",
+      "q_id": "geo-ch2-match05",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match indicators:",
+      "pairs": [
+        {
+          "left": "Life expectancy",
+          "right": "Average lifespan"
+        },
+        {
+          "left": "Infant mortality",
+          "right": "Deaths under age 1"
+        },
+        {
+          "left": "Net migration",
+          "right": "In − Out"
+        },
+        {
+          "left": "Growth rate",
+          "right": "% change per year"
+        }
+      ],
+      "answer": "Life expectancy→lifespan; Infant mortality→under-1 deaths; Net migration→in minus out.",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-match06",
+      "q_id": "geo-ch2-match06",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match factors with dense settlement:",
+      "pairs": [
+        {
+          "left": "Fertile soil",
+          "right": "Agriculture"
+        },
+        {
+          "left": "River water",
+          "right": "Drinking/irrigation"
+        },
+        {
+          "left": "Flat land",
+          "right": "Easy building"
+        },
+        {
+          "left": "Port/trade",
+          "right": "Jobs"
+        }
+      ],
+      "answer": "Soil→farming; Water→supply; Flat→construction; Port→employment.",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-match07",
+      "q_id": "geo-ch2-match07",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match sparse areas with cause:",
+      "pairs": [
+        {
+          "left": "Thar Desert",
+          "right": "Aridity"
+        },
+        {
+          "left": "Himalayas",
+          "right": "Steep relief/cold"
+        },
+        {
+          "left": "Amazon interior",
+          "right": "Dense forest"
+        },
+        {
+          "left": "Antarctica",
+          "right": "Extreme cold"
+        }
+      ],
+      "answer": "Thar→dry; Himalayas→relief; Amazon→forest; Antarctica→cold.",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    },
+    {
+      "id": "geo-ch2-match08",
+      "q_id": "geo-ch2-match08",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match formulas:",
+      "pairs": [
+        {
+          "left": "Density",
+          "right": "P ÷ A"
+        },
+        {
+          "left": "Natural increase",
+          "right": "B − D"
+        },
+        {
+          "left": "Net migration",
+          "right": "I − E"
+        },
+        {
+          "left": "Total change",
+          "right": "(B−D)+(I−E)"
+        }
+      ],
+      "answer": "Standard demographic equations.",
+      "linksTo": "geo-rev-ch2-05",
+      "linked_note_id": "geo-rev-ch2-05"
+    },
+    {
+      "id": "geo-ch2-match09",
+      "q_id": "geo-ch2-match09",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match effects of overpopulation:",
+      "pairs": [
+        {
+          "left": "Economic",
+          "right": "Unemployment"
+        },
+        {
+          "left": "Social",
+          "right": "Crowded schools"
+        },
+        {
+          "left": "Environmental",
+          "right": "Pollution"
+        },
+        {
+          "left": "Urban",
+          "right": "Slums"
+        }
+      ],
+      "answer": "Multi-dimensional effects.",
+      "linksTo": "geo-rev-ch2-06",
+      "linked_note_id": "geo-rev-ch2-06"
+    },
+    {
+      "id": "geo-ch2-match10",
+      "q_id": "geo-ch2-match10",
+      "topicId": "geo-ch2",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match continents:",
+      "pairs": [
+        {
+          "left": "Asia",
+          "right": "Most populous"
+        },
+        {
+          "left": "Antarctica",
+          "right": "No permanent residents"
+        },
+        {
+          "left": "Europe",
+          "right": "Ageing in many countries"
+        },
+        {
+          "left": "Africa",
+          "right": "Fast youth growth"
+        }
+      ],
+      "answer": "Continental population patterns.",
+      "linksTo": "geo-rev-ch2-07",
+      "linked_note_id": "geo-rev-ch2-07"
+    },
+    {
+      "id": "geo-ch2-sa01",
+      "q_id": "geo-ch2-sa01",
+      "topicId": "geo-ch2",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Define population density and give the formula.",
+      "answer": "Population density is the number of people per unit area. Formula: Density = Total Population ÷ Area (sq km). Result is expressed as persons per sq km.",
+      "linksTo": "geo-rev-ch2-08",
+      "linked_note_id": "geo-rev-ch2-08"
+    },
+    {
+      "id": "geo-ch2-sa02",
+      "q_id": "geo-ch2-sa02",
+      "topicId": "geo-ch2",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Distinguish between overpopulation and high population density.",
+      "answer": "High density means many people per sq km. Overpopulation means people exceed available resources and services, lowering quality of life. A densely populated area with strong economy may not be overpopulated.",
+      "linksTo": "geo-rev-ch2-01",
+      "linked_note_id": "geo-rev-ch2-01"
+    },
+    {
+      "id": "geo-ch2-sa03",
+      "q_id": "geo-ch2-sa03",
+      "topicId": "geo-ch2",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Explain what an expansive population pyramid indicates.",
+      "answer": "An expansive pyramid has a broad base showing many children and young people, indicating high birth rate and rapid population growth. It implies future need for schools, jobs, and health services.",
+      "linksTo": "geo-rev-ch2-02",
+      "linked_note_id": "geo-rev-ch2-02"
+    },
+    {
+      "id": "geo-ch2-sa04",
+      "q_id": "geo-ch2-sa04",
+      "topicId": "geo-ch2",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Give three factors that lead to sparse population.",
+      "answer": "Extreme climate (desert cold or heat), difficult relief (high mountains), and lack of water or fertile soil limit settlement. Remoteness and poor transport also discourage dense population.",
+      "linksTo": "geo-rev-ch2-03",
+      "linked_note_id": "geo-rev-ch2-03"
+    },
+    {
+      "id": "geo-ch2-sa05",
+      "q_id": "geo-ch2-sa05",
+      "topicId": "geo-ch2",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "How is natural increase calculated and what does it show?",
+      "answer": "Natural increase = Crude Birth Rate − Crude Death Rate (per 1,000 per year). It shows population change from births and deaths alone, excluding migration. Positive value means population grows naturally.",
+      "linksTo": "geo-rev-ch2-04",
+      "linked_note_id": "geo-rev-ch2-04"
+    }
+  ]
+}

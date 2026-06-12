@@ -1,0 +1,2301 @@
+{
+  "topicId": "geo-ch5",
+  "title": "Disasters & Disaster Management",
+  "highYieldFacts": [
+    "Disasters cause loss of life, injury, infrastructure damage, livelihood loss, psychological trauma and disease outbreaks.",
+    "Natural disasters arise from natural forces; man-made disasters from human error or intent.",
+    "Hybrid disasters combine human action with natural forces—e.g., deforestation causing landslides.",
+    "About 65% of India's land area is vulnerable to earthquakes.",
+    "About 12% of India is flood-prone; 8% cyclone-prone; 70% drought-prone.",
+    "Earthquakes are studied through seismology and recorded by seismographs.",
+    "Earthquake intensity is measured on the Richter Scale.",
+    "The epicentre is where surface effects are strongest.",
+    "Himalayan belt = Seismic Zone V (very high risk).",
+    "Kachchh and Ganga-Brahmaputra basin = Seismic Zone IV.",
+    "Earthquakes result from tectonic plate collisions along faults.",
+    "Riverine floods mainly occur during south-west monsoon overflow.",
+    "Major flood-prone rivers: Brahmaputra, Ganga, Yamuna, Mahanadi.",
+    "Flash floods can follow dam breaches, cloudbursts or sudden snow melt.",
+    "Cyclones are low-pressure systems over warm oceans with winds up to 300 km/h.",
+    "India's coastline is about 7,516.6 km—vulnerable to Bay of Bengal and Arabian Sea cyclones.",
+    "Cyclone-vulnerable states: West Bengal, Odisha, Andhra Pradesh, Tamil Nadu.",
+    "Drought = prolonged rainfall deficit; about 30% of India is drought-prone.",
+    "Drought-prone states include Rajasthan, Gujarat, MP, Maharashtra, Karnataka, Odisha.",
+    "Bhopal gas tragedy (1984): methyl isocyanate leak from Union Carbide factory.",
+    "Chernobyl nuclear accident occurred in 1986 in Ukraine (former USSR).",
+    "Disaster Management Act passed in 2005; established NDMA.",
+    "NDMA is the apex body for disaster policy and coordination in India.",
+    "Earthquake safety indoors: Drop, Cover, Hold.",
+    "Flood prevention includes embankments, flood shelters and early warning systems.",
+    "Retrofitting strengthens old buildings against seismic shocks.",
+    "NDRF teams assist in rescue and relief operations nationwide.",
+    "School disaster management protects students and maintains education continuity.",
+    "Developing countries suffer more from disasters due to weaker preparedness systems.",
+    "Kerala floods (2018) and Assam floods (2020) affected over 5 million people each."
+  ],
+  "notes": [
+    {
+      "id": "geo-rev-ch5-01",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "1. What Are Disasters?",
+      "content": "**Executive summary:** Disasters are sudden or slowly developing events causing massive damage to life, property, infrastructure and the environment.\n\n**Must know**\n• Unexpected events causing physical damage or drastic environmental change\n• Can be sudden (earthquake, cyclone) or slow-onset (drought)\n• Long-term impact on society, environment and economy\n• Broadly natural or man-made; hybrid disasters combine both\n• Loss of life, injury, infrastructure damage, livelihood loss, disease outbreaks\n\nDisasters are unexpected events that cause significant physical damage or destruction to life and property, or result in a drastic change in the environment. While earthquakes, volcanic eruptions, wildfires and hurricanes happen suddenly, droughts may develop slowly and intensify over time. Disasters have long-term impacts on society, the environment and the economy of affected regions. They may have geological, geographical or human causes. Natural disasters include floods, cyclones, earthquakes and droughts; man-made disasters include industrial accidents, transport crashes, terrorism and nuclear incidents. Hybrid disasters arise when human actions amplify natural hazards—for example, deforestation leading to landslides during heavy rain.",
+      "explanation": "Think of disasters as shocks that exceed a community's coping capacity. ICSE expects you to distinguish cause, immediate effect and long-term consequence. India's vulnerability is high because of diverse physiography, dense population and uneven development of disaster-preparedness systems.\n\n**🔗 Links:** geo-rev-ch5-02 — next topic",
+      "teacherTip": "Use recent newspaper clippings (Kerala floods, Uttarakhand cloudbursts) to show how the same hazard produces different impacts in different regions.",
+      "examTip": "Always define disaster first, then classify (natural/man-made/hybrid) before describing a specific type.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq001",
+        "geo-ch5-mcq009",
+        "geo-ch5-mcq017",
+        "geo-ch5-mcq025",
+        "geo-ch5-mcq033",
+        "geo-ch5-mcq041",
+        "geo-ch5-mcq049",
+        "geo-ch5-mcq057",
+        "geo-ch5-mcq065",
+        "geo-ch5-tf03",
+        "geo-ch5-fb01",
+        "geo-ch5-match04",
+        "geo-ch5-sa02"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq001",
+        "geo-ch5-mcq009",
+        "geo-ch5-mcq017",
+        "geo-ch5-mcq025",
+        "geo-ch5-mcq033",
+        "geo-ch5-mcq041",
+        "geo-ch5-mcq049",
+        "geo-ch5-mcq057",
+        "geo-ch5-mcq065",
+        "geo-ch5-tf03",
+        "geo-ch5-fb01",
+        "geo-ch5-match04",
+        "geo-ch5-sa02"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-02",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "2. Natural vs Man-made Disasters",
+      "content": "**Executive summary:** Natural disasters arise from natural forces; man-made disasters result from human action, error or negligence.\n\n**Must know**\n• Natural: caused by natural factors; often large-scale devastation\n• Man-made: caused by human error, carelessness or intent\n• Natural examples: earthquakes, floods, cyclones, droughts, tsunamis\n• Man-made examples: fires, chemical leaks, nuclear accidents, terrorism\n• Developing countries suffer more due to weaker disaster-management systems\n\nNatural disasters are events caused by natural forces with major effects on population, infrastructure and biodiversity. Man-made disasters result from human acts—intentionally or unintentionally. Unintentional examples include gas leaks from factories and electrical fires; intentional examples include nuclear warfare. Natural disasters often occur suddenly with little warning, while some man-made crises may give signals. India is highly disaster-prone: about 65% of land area is vulnerable to earthquakes, 12% to floods, 8% to cyclones and 70% to drought. Underdeveloped countries face greater suffering because preparedness and relief systems are weaker.",
+      "explanation": "The comparison table in your textbook contrasts cause, scale, duration and warning signals. UPSC-style questions often test whether a disaster is truly 'natural' when human land-use worsened the outcome.\n\n**🔗 Links:** geo-rev-ch5-01 — previous topic; geo-rev-ch5-03 — next topic",
+      "teacherTip": "Draw a two-column table and ask students to classify Bhopal gas tragedy, 2004 tsunami and Kerala 2018 floods.",
+      "examTip": "Mention India's vulnerability percentages—they are high-yield ICSE facts.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq002",
+        "geo-ch5-mcq010",
+        "geo-ch5-mcq018",
+        "geo-ch5-mcq026",
+        "geo-ch5-mcq034",
+        "geo-ch5-mcq042",
+        "geo-ch5-mcq050",
+        "geo-ch5-mcq058",
+        "geo-ch5-mcq066",
+        "geo-ch5-tf04",
+        "geo-ch5-fb02",
+        "geo-ch5-match05",
+        "geo-ch5-sa03"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq002",
+        "geo-ch5-mcq010",
+        "geo-ch5-mcq018",
+        "geo-ch5-mcq026",
+        "geo-ch5-mcq034",
+        "geo-ch5-mcq042",
+        "geo-ch5-mcq050",
+        "geo-ch5-mcq058",
+        "geo-ch5-mcq066",
+        "geo-ch5-tf04",
+        "geo-ch5-fb02",
+        "geo-ch5-match05",
+        "geo-ch5-sa03"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-03",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "3. Earthquakes — Causes, Zones and Measurement",
+      "content": "**Executive summary:** Earthquakes are sudden crustal movements measured on the Richter scale; India has five seismic zones with the Himalayas in Zone V.\n\n**Must know**\n• Sudden violent movement of Earth's crust due to plate collision\n• Studied through seismology; recorded by seismographs\n• Intensity measured on Richter Scale; epicentre faces maximum damage\n• Himalayan belt = Seismic Zone V (very high risk)\n• Kachchh and Ganga-Brahmaputra basin = Zone IV\n\nAn earthquake is a sudden, violent movement of a portion of the Earth's crust caused by disturbance beneath the surface. The study of earthquakes is seismology; seismographs record shocks. The Richter Scale measures magnitude. The epicentre is the point on the surface where effects are strongest. Earth's crust consists of interlocking tectonic plates floating on the mantle; collisions produce vibrations. Poorly constructed buildings collapse first. The entire Himalayan belt lies on the boundary of the Eurasian and Indian plates (Seismic Zone V). Kachchh (Gujarat) and the Ganga-Brahmaputra basin are in Zone IV. Major recent earthquakes include Bhuj (2001), Sikkim (2011), Nepal (2015) and Assam (2021).",
+      "explanation": "Focus: cause (plate tectonics) → measurement (Richter) → Indian zonation map → safety. Do not confuse epicentre (surface) with focus/hypocentre (underground origin).\n\n**🔗 Links:** geo-rev-ch5-02 — previous topic; geo-rev-ch5-04 — next topic",
+      "teacherTip": "Overlay India's seismic zone map with Himalayan geology to show why Zone V aligns with plate boundary.",
+      "examTip": "Name Seismic Zones IV and V with examples; link Himalayas to Indo-Eurasian plate collision.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq003",
+        "geo-ch5-mcq011",
+        "geo-ch5-mcq019",
+        "geo-ch5-mcq027",
+        "geo-ch5-mcq035",
+        "geo-ch5-mcq043",
+        "geo-ch5-mcq051",
+        "geo-ch5-mcq059",
+        "geo-ch5-mcq067",
+        "geo-ch5-tf05",
+        "geo-ch5-fb03",
+        "geo-ch5-match06",
+        "geo-ch5-sa04"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq003",
+        "geo-ch5-mcq011",
+        "geo-ch5-mcq019",
+        "geo-ch5-mcq027",
+        "geo-ch5-mcq035",
+        "geo-ch5-mcq043",
+        "geo-ch5-mcq051",
+        "geo-ch5-mcq059",
+        "geo-ch5-mcq067",
+        "geo-ch5-tf05",
+        "geo-ch5-fb03",
+        "geo-ch5-match06",
+        "geo-ch5-sa04"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-04",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "4. Floods — Causes, Effects and Prevention",
+      "content": "**Executive summary:** Floods occur when excess water submerges land; in India, monsoon riverine floods dominate the Indo-Gangetic and Brahmaputra plains.\n\n**Must know**\n• Sudden influx of water submerges land and threatens life and property\n• Riverine floods from monsoon overflow of Brahmaputra, Ganga, Yamuna, Mahanadi\n• Also caused by dam breach, cyclonic storm surges, flash floods\n• Removes fertile topsoil; spreads water-borne diseases\n• Prevention: embankments, flood shelters, early warning, evacuation plans\n\nA flood occurs when a sudden influx of water submerges land. Riverine floods during the south-west monsoon affect low-lying river basins most severely. The Brahmaputra, Ganga, Yamuna, Mahanadi and Punjab rivers cause major floods. Flash floods result from dam breaches, cloudbursts or sudden snow melt. Floods wash away fertile topsoil, damage crops and property, and force migration. Kerala (2018) and Assam (2020) saw catastrophic flooding affecting millions. Prevention includes maintaining dykes and embankments, establishing flood shelters, stockpiling dry food and medicines, and heeding IMD warnings. Residents should switch off electrical mains, store valuables at height and avoid wading without a stick.",
+      "explanation": "Distinguish riverine (gradual monsoon swell) from flash floods (sudden). Link flood plains' fertility with flood risk—why population clusters in vulnerable zones.\n\n**🔗 Links:** geo-rev-ch5-03 — previous topic; geo-rev-ch5-05 — next topic",
+      "teacherTip": "Discuss why Mumbai floods despite drainage investments—urbanisation + high rainfall + low-lying areas.",
+      "examTip": "List causes AND preventive measures; examiners reward balanced answers.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq004",
+        "geo-ch5-mcq012",
+        "geo-ch5-mcq020",
+        "geo-ch5-mcq028",
+        "geo-ch5-mcq036",
+        "geo-ch5-mcq044",
+        "geo-ch5-mcq052",
+        "geo-ch5-mcq060",
+        "geo-ch5-mcq068",
+        "geo-ch5-tf06",
+        "geo-ch5-fb04",
+        "geo-ch5-match07",
+        "geo-ch5-sa05"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq004",
+        "geo-ch5-mcq012",
+        "geo-ch5-mcq020",
+        "geo-ch5-mcq028",
+        "geo-ch5-mcq036",
+        "geo-ch5-mcq044",
+        "geo-ch5-mcq052",
+        "geo-ch5-mcq060",
+        "geo-ch5-mcq068",
+        "geo-ch5-tf06",
+        "geo-ch5-fb04",
+        "geo-ch5-match07",
+        "geo-ch5-sa05"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-05",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "5. Cyclones and Droughts",
+      "content": "**Executive summary:** Cyclones are intense low-pressure systems over warm seas; droughts are prolonged rainfall deficits affecting agriculture and livelihoods.\n\n**Must know**\n• Cyclones: low-pressure systems with winds up to 300 km/h over warm oceans\n• India's 7,516.6 km coastline vulnerable in Bay of Bengal and Arabian Sea\n• Worst-affected states: West Bengal, Odisha, Andhra Pradesh, Tamil Nadu\n• Drought: prolonged insufficient rainfall; 30% of India is drought-prone\n• Rajasthan, Gujarat, MP, Maharashtra, Karnataka, Odisha face water scarcity\n\nCyclones form over warm ocean waters as swirling low-pressure systems with heavy rain, huge waves and violent winds (up to 300 km/h). Storm surges during high tide cause enormous coastal damage. India's long coastline faces severe cyclones from both the Bay of Bengal and Arabian Sea. Droughts result from prolonged rainfall shortage, leading to falling water tables, crop failure, fodder scarcity and migration. Deforestation, groundwater misuse and unscientific farming worsen droughts. About 30% of India's land is drought-prone. Floods and droughts often occur in the same year in different regions, bringing epidemics and human suffering.",
+      "explanation": "Cyclones = excess water + wind; droughts = water deficit. Both are climate-related but opposite in mechanism. IMD naming and NDMA cyclone guidelines are bonus facts.\n\n**🔗 Links:** geo-rev-ch5-04 — previous topic; geo-rev-ch5-06 — next topic",
+      "teacherTip": "Track IMD cyclone names for the season to make the topic current.",
+      "examTip": "Memorise vulnerable coastal states and drought-prone states as separate lists.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq005",
+        "geo-ch5-mcq013",
+        "geo-ch5-mcq021",
+        "geo-ch5-mcq029",
+        "geo-ch5-mcq037",
+        "geo-ch5-mcq045",
+        "geo-ch5-mcq053",
+        "geo-ch5-mcq061",
+        "geo-ch5-mcq069",
+        "geo-ch5-tf07",
+        "geo-ch5-fb05",
+        "geo-ch5-match08"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq005",
+        "geo-ch5-mcq013",
+        "geo-ch5-mcq021",
+        "geo-ch5-mcq029",
+        "geo-ch5-mcq037",
+        "geo-ch5-mcq045",
+        "geo-ch5-mcq053",
+        "geo-ch5-mcq061",
+        "geo-ch5-mcq069",
+        "geo-ch5-tf07",
+        "geo-ch5-fb05",
+        "geo-ch5-match08"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-06",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "6. Man-made Disasters — Fires, Chemical and Nuclear",
+      "content": "**Executive summary:** Fires, chemical leaks and nuclear accidents cause localized but intense devastation, often preventable through regulation and safety drills.\n\n**Must know**\n• Fires: poor wiring, gas leaks, carelessly discarded matches; Uphaar tragedy (1997)\n• Chemical disasters: toxic gas release—Bhopal methyl isocyanate leak (1984)\n• Nuclear disasters: weapons (Hiroshima, Nagasaki) or reactor accidents (Chernobyl 1986)\n• Radiation causes long-term cancers and genetic damage\n• Prevention: building codes, industrial safety audits, emergency drills\n\nMan-made disasters include fires, chemical leaks, biological hazards, transport and industrial accidents. Fires often result from faulty electrical wiring, gas leaks or carelessness—the Uphaar cinema fire (Delhi, 1997) showed how crowded spaces with few exits multiply casualties. The Bhopal gas tragedy (1984) from methyl isocyanate leakage killed about 2,500 people with effects spanning generations. Nuclear disasters may be intentional (Hiroshima, Nagasaki—'Little Boy' and 'Fat Man') or accidental (Chernobyl, 1986). Radioactivity causes nausea, cancer and long-term genetic harm. During nuclear emergencies, people should stay indoors with doors and windows closed until official evacuation.",
+      "explanation": "Case studies (Bhopal, Chernobyl, Uphaar) are exam favourites. Emphasise prevention vs response for man-made disasters—many are avoidable.\n\n**🔗 Links:** geo-rev-ch5-05 — previous topic; geo-rev-ch5-07 — next topic",
+      "teacherTip": "Invite a fire-safety demo from local fire brigade; students remember 'stop, drop, roll' and gas-leak protocols.",
+      "examTip": "Name the gas in Bhopal tragedy and the year; link to industrial safety regulations.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq006",
+        "geo-ch5-mcq014",
+        "geo-ch5-mcq022",
+        "geo-ch5-mcq030",
+        "geo-ch5-mcq038",
+        "geo-ch5-mcq046",
+        "geo-ch5-mcq054",
+        "geo-ch5-mcq062",
+        "geo-ch5-mcq070",
+        "geo-ch5-tf08",
+        "geo-ch5-match01",
+        "geo-ch5-match09"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq006",
+        "geo-ch5-mcq014",
+        "geo-ch5-mcq022",
+        "geo-ch5-mcq030",
+        "geo-ch5-mcq038",
+        "geo-ch5-mcq046",
+        "geo-ch5-mcq054",
+        "geo-ch5-mcq062",
+        "geo-ch5-mcq070",
+        "geo-ch5-tf08",
+        "geo-ch5-match01",
+        "geo-ch5-match09"
+      ],
+      "image": null,
+      "linkedMcqCount": 9
+    },
+    {
+      "id": "geo-rev-ch5-07",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "7. Disaster Management — Framework and Importance",
+      "content": "**Executive summary:** Disaster management covers preparedness, response and recovery before, during and after disasters to minimise suffering and damage.\n\n**Must know**\n• Overall preparedness to handle and manage affected regions and people\n• Phases: mitigation, preparedness, response, recovery\n• Government, NGOs, Red Cross, UN agencies, Army and police coordinate relief\n• School disaster management: protect students, ensure education continuity, safety culture\n• Community-level stockpiles of food, medicine and shelter material essential\n\nDisaster management is the overall preparedness to handle disasters and efficiently manage affected regions and people. It involves plans before, during and after disasters to reduce suffering and damage. In developing countries like India, the poor suffer most, making prior planning critical. The government sets up dedicated departments, allocates relief funds, installs early-warning systems and runs awareness programmes. NGOs, the Red Cross, UN agencies, police and Army assist in rescue and rehabilitation. Schools should conduct earthquake and fire drills, teach first aid, and maintain evacuation plans. Region-specific communities must keep emergency kits ready.",
+      "explanation": "Disaster management is a cycle, not a one-time event. ICSE may ask you to list pre-disaster vs post-disaster measures separately.\n\n**🔗 Links:** geo-rev-ch5-06 — previous topic; geo-rev-ch5-08 — next topic",
+      "teacherTip": "Conduct a mock earthquake drill using Drop-Cover-Hold; debrief what went wrong.",
+      "examTip": "Use headings: Before / During / After disaster for structured long answers.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq007",
+        "geo-ch5-mcq015",
+        "geo-ch5-mcq023",
+        "geo-ch5-mcq031",
+        "geo-ch5-mcq039",
+        "geo-ch5-mcq047",
+        "geo-ch5-mcq055",
+        "geo-ch5-mcq063",
+        "geo-ch5-tf01",
+        "geo-ch5-tf09",
+        "geo-ch5-match02",
+        "geo-ch5-match10"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq007",
+        "geo-ch5-mcq015",
+        "geo-ch5-mcq023",
+        "geo-ch5-mcq031",
+        "geo-ch5-mcq039",
+        "geo-ch5-mcq047",
+        "geo-ch5-mcq055",
+        "geo-ch5-mcq063",
+        "geo-ch5-tf01",
+        "geo-ch5-tf09",
+        "geo-ch5-match02",
+        "geo-ch5-match10"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    },
+    {
+      "id": "geo-rev-ch5-08",
+      "topicId": "geo-ch5",
+      "type": "note",
+      "subtopic": "8. NDMA, Safety Measures and Preparedness",
+      "content": "**Executive summary:** The Disaster Management Act 2005 created NDMA; safety measures include Drop-Cover-Hold, flood kits, cyclone shelters and retrofitting.\n\n**Must know**\n• Disaster Management Act 2005 → NDMA and State DMAs\n• NDMA: highest policy body for disaster plans and coordinated response\n• Earthquake indoors: Drop, Cover, Hold under sturdy furniture\n• Flood safety: heed warnings, switch off mains, store essentials, avoid snake bites\n• NDRF teams deployed for rescue (e.g., Himachal floods 2023)\n\nThe Government of India enacted the Disaster Management Act in 2005, creating the National Disaster Management Authority (NDMA) and State Disaster Management Authorities. NDMA coordinates mitigation and response and formulates national policies and guidelines. During earthquakes, indoors: drop, cover and hold; outdoors: move to open ground away from buildings and power lines. Old buildings should be retrofitted. Flood-prone residents should maintain food, water and medicines, block toilets with sandbags, and follow IMD alerts. NDRF (National Disaster Response Force) teams assist in rescue operations. Fire safety requires checking wiring, gas pipelines and having fire extinguishers. Preparedness saves more lives than post-disaster relief alone.",
+      "explanation": "NDMA vs NDRF: NDMA sets policy; NDRF executes rescue on ground. Both acronyms appear frequently in exams.\n\n**🔗 Links:** geo-rev-ch5-07 — previous topic",
+      "teacherTip": "Show NDMA website hazard maps for your state to localise the chapter.",
+      "examTip": "Write 'Drop, Cover, Hold' in exactly that order for earthquake safety marks.",
+      "source": "revision",
+      "linkedQuestionIds": [
+        "geo-ch5-mcq008",
+        "geo-ch5-mcq016",
+        "geo-ch5-mcq024",
+        "geo-ch5-mcq032",
+        "geo-ch5-mcq040",
+        "geo-ch5-mcq048",
+        "geo-ch5-mcq056",
+        "geo-ch5-mcq064",
+        "geo-ch5-tf02",
+        "geo-ch5-tf10",
+        "geo-ch5-match03",
+        "geo-ch5-sa01"
+      ],
+      "linked_q_ids": [
+        "geo-ch5-mcq008",
+        "geo-ch5-mcq016",
+        "geo-ch5-mcq024",
+        "geo-ch5-mcq032",
+        "geo-ch5-mcq040",
+        "geo-ch5-mcq048",
+        "geo-ch5-mcq056",
+        "geo-ch5-mcq064",
+        "geo-ch5-tf02",
+        "geo-ch5-tf10",
+        "geo-ch5-match03",
+        "geo-ch5-sa01"
+      ],
+      "image": null,
+      "linkedMcqCount": 8
+    }
+  ],
+  "questions": [
+    {
+      "id": "geo-ch5-mcq001",
+      "q_id": "geo-ch5-mcq001",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "What is the primary definition of a disaster?",
+      "options": [
+        "A planned event",
+        "An unexpected event causing significant damage to life, property or environment",
+        "A seasonal weather change",
+        "A government emergency drill"
+      ],
+      "correctOption": 1,
+      "answer": "A disaster is an unexpected event causing significant physical damage or destruction to life and property, or drastic environmental change.",
+      "examTip": "ICSE often begins with definition-based MCQs.",
+      "teacherTip": "Use textbook wording for full marks.",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq002",
+      "q_id": "geo-ch5-mcq002",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which of the following is a slow-onset disaster?",
+      "options": [
+        "Earthquake",
+        "Cyclone",
+        "Drought",
+        "Flash flood"
+      ],
+      "correctOption": 2,
+      "answer": "Droughts develop slowly over a prolonged period of insufficient rainfall, unlike sudden earthquakes or cyclones.",
+      "examTip": "Slow vs sudden onset is a favourite distinction.",
+      "teacherTip": "Contrast drought timeline with flash floods.",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq003",
+      "q_id": "geo-ch5-mcq003",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Approximately what percentage of India's land area is vulnerable to earthquakes?",
+      "options": [
+        "25%",
+        "45%",
+        "65%",
+        "85%"
+      ],
+      "correctOption": 2,
+      "answer": "About 65% of India's land area is vulnerable to earthquakes, making it one of the most seismically active countries.",
+      "examTip": "Memorise the 65-12-8-70 vulnerability quartet.",
+      "teacherTip": "Link to diverse plate boundaries and Himalayan belt.",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq004",
+      "q_id": "geo-ch5-mcq004",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The study of earthquakes is called:",
+      "options": [
+        "Volcanology",
+        "Seismology",
+        "Meteorology",
+        "Geomorphology"
+      ],
+      "correctOption": 1,
+      "answer": "Seismology is the scientific study of earthquakes; seismologists use seismographs to record shocks.",
+      "examTip": "Don't confuse with volcanology (volcanoes).",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq005",
+      "q_id": "geo-ch5-mcq005",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Earthquake magnitude is measured on the:",
+      "options": [
+        "Beaufort Scale",
+        "Richter Scale",
+        "Mercalli Scale only",
+        "Kelvin Scale"
+      ],
+      "correctOption": 1,
+      "answer": "The Richter Scale measures earthquake magnitude. Mercalli measures intensity at surface.",
+      "examTip": "Richter = magnitude; Mercalli = felt intensity.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq006",
+      "q_id": "geo-ch5-mcq006",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The point on Earth's surface where earthquake effects are strongest is the:",
+      "options": [
+        "Focus",
+        "Epicentre",
+        "Mantle",
+        "Fault line"
+      ],
+      "correctOption": 1,
+      "answer": "The epicentre is the point on the surface directly above the focus where maximum damage occurs.",
+      "examTip": "Focus/hypocentre is underground; epicentre is on surface.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq007",
+      "q_id": "geo-ch5-mcq007",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which seismic zone includes the entire Himalayan belt?",
+      "options": [
+        "Zone II",
+        "Zone III",
+        "Zone IV",
+        "Zone V"
+      ],
+      "correctOption": 3,
+      "answer": "The Himalayan belt lies in Seismic Zone V—the very high risk zone—due to Indo-Eurasian plate collision.",
+      "examTip": "Zone V = highest risk; Himalayas = classic example.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq008",
+      "q_id": "geo-ch5-mcq008",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Kachchh in Gujarat falls in which seismic zone?",
+      "options": [
+        "Zone II",
+        "Zone III",
+        "Zone IV",
+        "Zone V"
+      ],
+      "correctOption": 2,
+      "answer": "Kachchh and the Ganga-Brahmaputra basin are in Seismic Zone IV (high risk).",
+      "examTip": "Bhuj 2001 earthquake centred in Kachchh.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq009",
+      "q_id": "geo-ch5-mcq009",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Riverine floods in India are mainly caused by:",
+      "options": [
+        "Desertification",
+        "South-west monsoon rainfall overflowing rivers",
+        "Earthquakes only",
+        "Industrial pollution"
+      ],
+      "correctOption": 1,
+      "answer": "South-west monsoon brings heavy rainfall causing rivers like Ganga and Brahmaputra to overflow their banks.",
+      "examTip": "Monsoon + flood plains = riverine floods.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq010",
+      "q_id": "geo-ch5-mcq010",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which river system causes major floods in Assam?",
+      "options": [
+        "Narmada",
+        "Brahmaputra",
+        "Godavari",
+        "Krishna"
+      ],
+      "correctOption": 1,
+      "answer": "The Brahmaputra River causes severe flooding in Assam, especially during monsoon and when water levels rise rapidly.",
+      "examTip": "Brahmaputra = Assam floods; link to 2020 disaster.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq011",
+      "q_id": "geo-ch5-mcq011",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Flash floods are:",
+      "options": [
+        "Always caused by dam construction",
+        "Sudden floods from cloudbursts, dam breaches or rapid snow melt",
+        "Only coastal phenomena",
+        "Predictable months in advance"
+      ],
+      "correctOption": 1,
+      "answer": "Flash floods occur suddenly from intense rain, dam failure, or rapid snow melt, leaving little evacuation time.",
+      "examTip": "Flash = sudden; riverine = gradual monsoon swell.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq012",
+      "q_id": "geo-ch5-mcq012",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Cyclones are characterised by:",
+      "options": [
+        "High pressure and calm winds",
+        "Low pressure, heavy rain and powerful winds up to 300 km/h",
+        "Only desert conditions",
+        "Underground crustal movement"
+      ],
+      "correctOption": 1,
+      "answer": "Cyclones are intense low-pressure systems over warm oceans with violent winds, heavy rain and storm surges.",
+      "examTip": "Low pressure = air rushes inward and upward.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq013",
+      "q_id": "geo-ch5-mcq013",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "India's coastline length is approximately:",
+      "options": [
+        "5,000 km",
+        "7,516.6 km",
+        "10,000 km",
+        "3,200 km"
+      ],
+      "correctOption": 1,
+      "answer": "India has a coastline of about 7,516.6 km, exposed to cyclones from the Bay of Bengal and Arabian Sea.",
+      "examTip": "Standard ICSE figure—memorise precisely.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq014",
+      "q_id": "geo-ch5-mcq014",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which state is NOT among the most cyclone-vulnerable?",
+      "options": [
+        "Odisha",
+        "West Bengal",
+        "Rajasthan",
+        "Tamil Nadu"
+      ],
+      "correctOption": 2,
+      "answer": "Rajasthan is landlocked and not cyclone-prone; Odisha, West Bengal, Andhra Pradesh and Tamil Nadu face cyclones.",
+      "examTip": "Coastal vs inland states—map-based reasoning.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq015",
+      "q_id": "geo-ch5-mcq015",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "About what percentage of India is drought-prone?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "correctOption": 2,
+      "answer": "Approximately 30% of India's land area is drought-prone, especially in semi-arid regions.",
+      "examTip": "Pair with Rajasthan, Gujarat, MP list.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq016",
+      "q_id": "geo-ch5-mcq016",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The Bhopal gas tragedy (1984) involved leakage of:",
+      "options": [
+        "Chlorine gas",
+        "Methyl isocyanate",
+        "Carbon monoxide",
+        "Sulphur dioxide"
+      ],
+      "correctOption": 1,
+      "answer": "Methyl isocyanate leaked from the Union Carbide factory in Bhopal, killing about 2,500 people.",
+      "examTip": "Bhopal = MIC; most cited man-made disaster in India.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq017",
+      "q_id": "geo-ch5-mcq017",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Chernobyl nuclear disaster occurred in:",
+      "options": [
+        "1984",
+        "1986",
+        "1991",
+        "2001"
+      ],
+      "correctOption": 1,
+      "answer": "The Chernobyl nuclear plant accident occurred in 1986 in Ukraine (former USSR), spreading radiation widely.",
+      "examTip": "Chernobyl 1986; Bhopal 1984—don't swap years.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq018",
+      "q_id": "geo-ch5-mcq018",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The Disaster Management Act in India was enacted in:",
+      "options": [
+        "2001",
+        "2004",
+        "2005",
+        "2010"
+      ],
+      "correctOption": 2,
+      "answer": "The Disaster Management Act was passed in 2005, leading to creation of NDMA and State DMAs.",
+      "examTip": "2005 = NDMA birth year.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq019",
+      "q_id": "geo-ch5-mcq019",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "NDMA stands for:",
+      "options": [
+        "National Development and Management Authority",
+        "National Disaster Management Authority",
+        "National Defence Management Agency",
+        "National Data Management Authority"
+      ],
+      "correctOption": 1,
+      "answer": "NDMA is the National Disaster Management Authority—the apex body for disaster policy in India.",
+      "examTip": "NDMA sets policy; NDRF executes rescue.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq020",
+      "q_id": "geo-ch5-mcq020",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "During an earthquake indoors, the recommended technique is:",
+      "options": [
+        "Run outside immediately",
+        "Drop, Cover and Hold",
+        "Stand in a doorway only",
+        "Use the elevator"
+      ],
+      "correctOption": 1,
+      "answer": "Drop to the ground, take cover under sturdy furniture, and hold on until shaking stops.",
+      "examTip": "Exact phrase 'Drop, Cover, Hold' is textbook language.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq021",
+      "q_id": "geo-ch5-mcq021",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following statements about floods:\n1. Floods remove fertile topsoil.\n2. Embankments help prevent floods.\nWhich is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "answer": "Both are correct: floods erode fertile topsoil, and well-maintained embankments along rivers reduce flood risk.",
+      "examTip": "Statement-type MCQs mirror UPSC pattern.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq022",
+      "q_id": "geo-ch5-mcq022",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider the following:\n1. Cyclones form over warm ocean waters.\n2. Droughts result from prolonged rainfall deficit.\nWhich is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "answer": "Both statements are correct—cyclones need warm ocean heat; droughts arise from extended dry periods.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq023",
+      "q_id": "geo-ch5-mcq023",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Man-made disasters differ from natural disasters mainly because they:",
+      "options": [
+        "Never cause loss of life",
+        "Result from human action, error or intent",
+        "Always give long advance warning",
+        "Only occur in cities"
+      ],
+      "correctOption": 1,
+      "answer": "Man-made disasters arise from human acts—accidental (gas leak) or intentional (terrorism, nuclear weapons).",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq024",
+      "q_id": "geo-ch5-mcq024",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The Uphaar cinema tragedy (1997) is an example of:",
+      "options": [
+        "Flood disaster",
+        "Fire disaster",
+        "Cyclone disaster",
+        "Drought disaster"
+      ],
+      "correctOption": 1,
+      "answer": "The Uphaar cinema fire in Delhi (1997) showed how crowded venues with few exits increase fire casualties.",
+      "examTip": "Case-study MCQs test real-world awareness.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq025",
+      "q_id": "geo-ch5-mcq025",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Hybrid disasters involve:",
+      "options": [
+        "Only natural causes",
+        "Only human causes",
+        "Both human actions and natural forces",
+        "Neither natural nor human causes"
+      ],
+      "correctOption": 2,
+      "answer": "Hybrid disasters combine human factors (e.g., deforestation) with natural triggers (heavy rain causing landslides).",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq026",
+      "q_id": "geo-ch5-mcq026",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which organisation assists in disaster relief alongside the government?",
+      "options": [
+        "IMF only",
+        "Red Cross Society",
+        "WTO",
+        "FIFA"
+      ],
+      "correctOption": 1,
+      "answer": "The Red Cross Society, NGOs, UN agencies, Army and police assist government relief efforts.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq027",
+      "q_id": "geo-ch5-mcq027",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Retrofitting of buildings refers to:",
+      "options": [
+        "Demolishing old buildings",
+        "Strengthening structures to withstand earthquakes",
+        "Painting buildings",
+        "Building new dams"
+      ],
+      "correctOption": 1,
+      "answer": "Retrofitting strengthens existing buildings to better resist seismic shocks—a key mitigation measure.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq028",
+      "q_id": "geo-ch5-mcq028",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "During floods, electrical mains should be:",
+      "options": [
+        "Left on for lighting",
+        "Switched off to prevent short-circuits",
+        "Connected to generators only",
+        "Ignored"
+      ],
+      "correctOption": 1,
+      "answer": "Switching off electrical mains prevents electrocution and short-circuits during floodwaters.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq029",
+      "q_id": "geo-ch5-mcq029",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Storm surges during cyclones cause maximum damage during:",
+      "options": [
+        "Low tide",
+        "High tide (storm tides)",
+        "Full moon only",
+        "Winter season"
+      ],
+      "correctOption": 1,
+      "answer": "Storm tides—storm surges coinciding with high tide—cause the greatest coastal devastation.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq030",
+      "q_id": "geo-ch5-mcq030",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which gas was nicknamed in Hiroshima and Nagasaki bombings?",
+      "options": [
+        "Little Boy and Fat Man were bomb names, not gases",
+        "Methyl isocyanate",
+        "Chlorine",
+        "Methane"
+      ],
+      "correctOption": 0,
+      "answer": "'Little Boy' and 'Fat Man' were the nicknames of the atomic bombs dropped on Hiroshima and Nagasaki in 1945.",
+      "examTip": "Trick question—bombs not gases.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq031",
+      "q_id": "geo-ch5-mcq031",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "NDRF is primarily responsible for:",
+      "options": [
+        "Setting disaster policy",
+        "Search, rescue and disaster response operations",
+        "Weather forecasting",
+        "Building schools"
+      ],
+      "correctOption": 1,
+      "answer": "NDRF (National Disaster Response Force) conducts specialised rescue and response on the ground.",
+      "examTip": "NDMA = policy; NDRF = operations.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq032",
+      "q_id": "geo-ch5-mcq032",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Deforestation can worsen disasters by:",
+      "options": [
+        "Reducing landslide risk",
+        "Increasing soil erosion and landslide susceptibility",
+        "Preventing floods",
+        "Stopping earthquakes"
+      ],
+      "correctOption": 1,
+      "answer": "Removing forest cover increases erosion; heavy rain then triggers landslides—a hybrid disaster pathway.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq033",
+      "q_id": "geo-ch5-mcq033",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Kerala experienced catastrophic floods in:",
+      "options": [
+        "2015",
+        "2018",
+        "2020",
+        "2022"
+      ],
+      "correctOption": 1,
+      "answer": "Kerala faced its worst floods in a century in August 2018 due to intense monsoon rains and dam releases.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq034",
+      "q_id": "geo-ch5-mcq034",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which is a natural disaster?",
+      "options": [
+        "Bhopal gas leak",
+        "Train accident",
+        "Earthquake",
+        "Industrial fire"
+      ],
+      "correctOption": 2,
+      "answer": "Earthquakes are natural disasters caused by tectonic forces without direct human causation.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq035",
+      "q_id": "geo-ch5-mcq035",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The focus of an earthquake is located:",
+      "options": [
+        "On the Earth's surface",
+        "Beneath the surface at the origin of seismic waves",
+        "In the atmosphere",
+        "At the epicentre only"
+      ],
+      "correctOption": 1,
+      "answer": "The focus (hypocentre) is the underground point where the earthquake originates; epicentre is above it on the surface.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq036",
+      "q_id": "geo-ch5-mcq036",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Flood shelters are important because they:",
+      "options": [
+        "Store agricultural produce",
+        "Provide safe evacuation points for people and livestock",
+        "Generate electricity",
+        "Measure rainfall"
+      ],
+      "correctOption": 1,
+      "answer": "Flood shelters in vulnerable areas enable quick evacuation and relief for people and animals.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq037",
+      "q_id": "geo-ch5-mcq037",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Developing countries suffer more from disasters mainly due to:",
+      "options": [
+        "Lower population",
+        "Weaker disaster management and preparedness systems",
+        "Better infrastructure",
+        "Fewer natural hazards"
+      ],
+      "correctOption": 1,
+      "answer": "Limited resources, poor infrastructure and inadequate preparedness amplify disaster impacts in developing nations.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq038",
+      "q_id": "geo-ch5-mcq038",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "School disaster management aims to:",
+      "options": [
+        "Cancel all classes permanently",
+        "Protect students, ensure education continuity and build safety culture",
+        "Eliminate all natural hazards",
+        "Replace NDMA"
+      ],
+      "correctOption": 1,
+      "answer": "School DM systems protect students and staff, minimise disruption and develop a culture of safety through drills.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq039",
+      "q_id": "geo-ch5-mcq039",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which rivers cause floods in the Punjab region?",
+      "options": [
+        "Indus tributaries during monsoon",
+        "Amazon tributaries",
+        "Nile distributaries",
+        "Danube branches"
+      ],
+      "correctOption": 0,
+      "answer": "Indus tributaries and monsoon rains cause flooding in Punjab's river plains.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq040",
+      "q_id": "geo-ch5-mcq040",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Gas leakage at home should be handled by:",
+      "options": [
+        "Lighting a match to check",
+        "Opening windows, switching off stoves and leaving the area",
+        "Sealing all windows tightly",
+        "Using electrical switches freely"
+      ],
+      "correctOption": 1,
+      "answer": "Ventilate, avoid sparks/flames, switch off gas sources and evacuate—never use electrical switches that may spark.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq041",
+      "q_id": "geo-ch5-mcq041",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The Ganga-Brahmaputra basin is in seismic zone:",
+      "options": [
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctOption": 2,
+      "answer": "The Ganga-Brahmaputra basin is in Seismic Zone IV along with Kachchh.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq042",
+      "q_id": "geo-ch5-mcq042",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Drought can be worsened by:",
+      "options": [
+        "Afforestation",
+        "Deforestation and groundwater overuse",
+        "Heavy monsoon",
+        "Cyclones"
+      ],
+      "correctOption": 1,
+      "answer": "Deforestation, unscientific farming and groundwater depletion intensify drought impacts.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq043",
+      "q_id": "geo-ch5-mcq043",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Assam floods 2020 affected which national park?",
+      "options": [
+        "Kaziranga National Park",
+        "Jim Corbett",
+        "Ranthambore",
+        "Gir"
+      ],
+      "correctOption": 0,
+      "answer": "2020 Assam floods submerged large parts of Kaziranga, killing many wild animals.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq044",
+      "q_id": "geo-ch5-mcq044",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider:\n1. NDMA was created under the Disaster Management Act 2005.\n2. NDMA only handles man-made disasters.\nWhich is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "answer": "Statement 1 is correct. Statement 2 is wrong—NDMA handles both natural and man-made disasters.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq045",
+      "q_id": "geo-ch5-mcq045",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "During an earthquake outdoors, one should:",
+      "options": [
+        "Stand under a tree",
+        "Move to an open area away from buildings and power lines",
+        "Climb a building",
+        "Stand on a bridge"
+      ],
+      "correctOption": 1,
+      "answer": "Open ground away from structures, trees and power lines minimises risk from falling debris.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq046",
+      "q_id": "geo-ch5-mcq046",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "First-aid knowledge is important in disasters because:",
+      "options": [
+        "It replaces hospitals permanently",
+        "Immediate care before professional help arrives saves lives",
+        "It prevents earthquakes",
+        "It is only for doctors"
+      ],
+      "correctOption": 1,
+      "answer": "First aid bridges the gap between injury and medical care, reducing preventable deaths.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq047",
+      "q_id": "geo-ch5-mcq047",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Community preparedness includes stockpiling:",
+      "options": [
+        "Luxury goods only",
+        "Food, medicines and shelter materials",
+        "Fireworks",
+        "Non-essential electronics"
+      ],
+      "correctOption": 1,
+      "answer": "Emergency kits with food, water, medicine and shelter supplies are essential for disaster-prone communities.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq048",
+      "q_id": "geo-ch5-mcq048",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which is NOT an effect of disasters?",
+      "options": [
+        "Loss of livelihood",
+        "Infrastructure damage",
+        "Guaranteed economic growth",
+        "Disease outbreaks"
+      ],
+      "correctOption": 2,
+      "answer": "Disasters destroy livelihoods and infrastructure and can cause epidemics—they do not guarantee growth.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq049",
+      "q_id": "geo-ch5-mcq049",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The south-west monsoon contributes to floods in:",
+      "options": [
+        "Sahara Desert",
+        "Indo-Gangetic and Brahmaputra flood plains",
+        "Arctic tundra",
+        "Andes Mountains"
+      ],
+      "correctOption": 1,
+      "answer": "Heavy SW monsoon rains swell Himalayan-fed rivers, flooding densely populated northern plains.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq050",
+      "q_id": "geo-ch5-mcq050",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Nuclear radiation exposure can cause:",
+      "options": [
+        "Improved eyesight",
+        "Cancer and genetic damage",
+        "Instant immunity",
+        "No health effects"
+      ],
+      "correctOption": 1,
+      "answer": "Ionising radiation damages cells, causing cancers and long-term genetic effects across generations.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq051",
+      "q_id": "geo-ch5-mcq051",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Mumbai floods (2017) disrupted:",
+      "options": [
+        "Air traffic only",
+        "Suburban trains and normal city life",
+        "International borders",
+        "Space programmes"
+      ],
+      "correctOption": 1,
+      "answer": "Heavy rains halted Mumbai's suburban train network—the city's lifeline—causing widespread disruption.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq052",
+      "q_id": "geo-ch5-mcq052",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "State Disaster Management Authorities are created under:",
+      "options": [
+        "Indian Penal Code",
+        "Disaster Management Act 2005",
+        "Forest Act",
+        "Motor Vehicles Act"
+      ],
+      "correctOption": 1,
+      "answer": "The 2005 Act established both NDMA at the centre and SDMAs in states.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq053",
+      "q_id": "geo-ch5-mcq053",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Blocking toilets with sandbags during floods prevents:",
+      "options": [
+        "Rain entry",
+        "Sewage backflow",
+        "Wind damage",
+        "Earthquake shocks"
+      ],
+      "correctOption": 1,
+      "answer": "Sandbags block sewage from backing up into homes when floodwater overwhelms drainage.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq054",
+      "q_id": "geo-ch5-mcq054",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Plate tectonics explains earthquakes because:",
+      "options": [
+        "Plates are stationary",
+        "Colliding floating plates release vibrations through the crust",
+        "Only volcanic areas have plates",
+        "Mantle is solid rock with no movement"
+      ],
+      "correctOption": 1,
+      "answer": "Plates float on semi-liquid mantle; collisions along boundaries generate seismic waves.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq055",
+      "q_id": "geo-ch5-mcq055",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Which disaster is associated with storm tides?",
+      "options": [
+        "Drought",
+        "Cyclone",
+        "Earthquake",
+        "Landslide in desert"
+      ],
+      "correctOption": 1,
+      "answer": "Cyclonic storm surges combined with high tide create destructive storm tides along coasts.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq056",
+      "q_id": "geo-ch5-mcq056",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Public awareness programmes on disasters are run to:",
+      "options": [
+        "Increase fear",
+        "Prepare communities with knowledge and preventive measures",
+        "Eliminate monsoons",
+        "Stop tectonic activity"
+      ],
+      "correctOption": 1,
+      "answer": "Awareness and drills reduce panic and improve survival rates when disasters strike.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq057",
+      "q_id": "geo-ch5-mcq057",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Snake bites are common during floods because:",
+      "options": [
+        "Snakes migrate to dry ground where people also gather",
+        "Snakes cannot swim",
+        "Floods eliminate snakes",
+        "Snakes only live in oceans"
+      ],
+      "correctOption": 0,
+      "answer": "Floodwaters displace snakes to higher ground, increasing human-snake encounters.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq058",
+      "q_id": "geo-ch5-mcq058",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The poorest populations suffer most in disasters because:",
+      "options": [
+        "They live in safer areas",
+        "They often lack resources, safe housing and early warnings",
+        "They cause disasters",
+        "They receive excess government aid"
+      ],
+      "correctOption": 1,
+      "answer": "Poverty, informal housing in hazard zones and limited access to relief amplify vulnerability.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq059",
+      "q_id": "geo-ch5-mcq059",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "IMD warnings help in:",
+      "options": [
+        "Cyclone and flood preparedness",
+        "Preventing plate movement",
+        "Stopping chemical leaks",
+        "Retrofitting buildings automatically"
+      ],
+      "correctOption": 0,
+      "answer": "India Meteorological Department issues weather and cyclone warnings enabling timely evacuation.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq060",
+      "q_id": "geo-ch5-mcq060",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A long stick helps during floods to:",
+      "options": [
+        "Catch fish only",
+        "Test depth and stability while wading through water",
+        "Signal aircraft only",
+        "Measure earthquakes"
+      ],
+      "correctOption": 1,
+      "answer": "A stick probes unknown depths and hidden obstacles in murky floodwater.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq061",
+      "q_id": "geo-ch5-mcq061",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Consider:\n1. Earthquakes can trigger tsunamis.\n2. Earthquakes can trigger landslides.\nWhich is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "answer": "Undersea earthquakes displace water causing tsunamis; ground shaking triggers slopes to fail as landslides.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq062",
+      "q_id": "geo-ch5-mcq062",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Industrial accidents are classified as:",
+      "options": [
+        "Natural disasters",
+        "Man-made disasters",
+        "Meteorological events",
+        "Astronomical events"
+      ],
+      "correctOption": 1,
+      "answer": "Industrial and chemical accidents result from human activity and are man-made disasters.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-mcq063",
+      "q_id": "geo-ch5-mcq063",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Aftershocks following an earthquake mean:",
+      "options": [
+        "The earthquake is completely over with no further risk",
+        "Smaller tremors may follow the main shock; caution is still needed",
+        "A cyclone is approaching",
+        "Floods are impossible"
+      ],
+      "correctOption": 1,
+      "answer": "Aftershocks are smaller quakes after the main event; damaged buildings may collapse further.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-mcq064",
+      "q_id": "geo-ch5-mcq064",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Disaster management includes activities:",
+      "options": [
+        "Only after a disaster",
+        "Before, during and after a disaster",
+        "Only during festivals",
+        "Only in schools"
+      ],
+      "correctOption": 1,
+      "answer": "DM spans mitigation, preparedness, response and recovery across all phases.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-mcq065",
+      "q_id": "geo-ch5-mcq065",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Himachal Pradesh floods (2023) saw deployment of:",
+      "options": [
+        "NDRF and ITBP rescue teams",
+        "Only local police",
+        "Foreign armies only",
+        "No government response"
+      ],
+      "correctOption": 0,
+      "answer": "Over 20 NDRF teams, ITBP and helicopters were deployed for Himachal flood rescue in 2023.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-mcq066",
+      "q_id": "geo-ch5-mcq066",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Water contamination after disasters can lead to:",
+      "options": [
+        "Improved health",
+        "Epidemics like cholera and typhoid",
+        "Permanent immunity",
+        "No health impact"
+      ],
+      "correctOption": 1,
+      "answer": "Contaminated water spreads water-borne diseases—common post-flood secondary disaster.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-mcq067",
+      "q_id": "geo-ch5-mcq067",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The primary purpose of NDMA is to:",
+      "options": [
+        "Conduct elections",
+        "Coordinate disaster mitigation and formulate national DM policies",
+        "Manage railways",
+        "Regulate schools only"
+      ],
+      "correctOption": 1,
+      "answer": "NDMA coordinates national efforts and sets policies for timely, effective disaster response.",
+      "examTip": "",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-mcq068",
+      "q_id": "geo-ch5-mcq068",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "Landslides are often triggered by:",
+      "options": [
+        "Earthquakes and heavy rainfall on unstable slopes",
+        "Low humidity only",
+        "Ocean tides alone",
+        "Solar eclipses"
+      ],
+      "correctOption": 0,
+      "answer": "Ground shaking and saturated soil on steep slopes commonly trigger landslides, especially where deforestation has reduced root binding.",
+      "examTip": "Link landslides to hybrid disaster pathway.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-mcq069",
+      "q_id": "geo-ch5-mcq069",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "A tsunami is best described as:",
+      "options": [
+        "A slow river flood",
+        "A series of giant sea waves caused by underwater earthquakes or volcanic eruptions",
+        "A desert dust storm",
+        "A chemical cloud"
+      ],
+      "correctOption": 1,
+      "answer": "Tsunamis are seismic sea waves generated when ocean-floor displacement suddenly moves vast volumes of water.",
+      "examTip": "2004 Indian Ocean tsunami is the classic case study.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-mcq070",
+      "q_id": "geo-ch5-mcq070",
+      "topicId": "geo-ch5",
+      "type": "mcq",
+      "subtopic": "Objective Questions",
+      "question": "The Mercalli Scale measures:",
+      "options": [
+        "Earthquake magnitude at the focus",
+        "Felt intensity and damage at the surface",
+        "Wind speed in cyclones",
+        "River discharge in floods"
+      ],
+      "correctOption": 1,
+      "answer": "Mercalli measures observed effects and damage; Richter measures energy released at the source.",
+      "examTip": "Richter = magnitude; Mercalli = intensity—do not swap.",
+      "teacherTip": "",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-tf01",
+      "q_id": "geo-ch5-tf01",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "All disasters occur suddenly without any warning.",
+      "correctAnswer": "False",
+      "answer": "Droughts develop slowly; some man-made disasters may give warning signals.",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-tf02",
+      "q_id": "geo-ch5-tf02",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "About 65% of India's land area is vulnerable to earthquakes.",
+      "correctAnswer": "True",
+      "answer": "This is a standard textbook statistic highlighting India's seismic vulnerability.",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-tf03",
+      "q_id": "geo-ch5-tf03",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "The epicentre is located beneath the Earth's surface at the origin of the earthquake.",
+      "correctAnswer": "False",
+      "answer": "The focus is underground; the epicentre is on the surface above the focus.",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-tf04",
+      "q_id": "geo-ch5-tf04",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Cyclones are high-pressure systems with calm weather.",
+      "correctAnswer": "False",
+      "answer": "Cyclones are low-pressure systems with violent winds and heavy rain.",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-tf05",
+      "q_id": "geo-ch5-tf05",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Bhopal gas tragedy was caused by methyl isocyanate leakage.",
+      "correctAnswer": "True",
+      "answer": "The 1984 Union Carbide leak released toxic methyl isocyanate gas.",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-tf06",
+      "q_id": "geo-ch5-tf06",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "NDMA was established before the Disaster Management Act 2005.",
+      "correctAnswer": "False",
+      "answer": "NDMA was created by the Act passed in 2005.",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-tf07",
+      "q_id": "geo-ch5-tf07",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Drop, Cover and Hold is the recommended indoor earthquake safety technique.",
+      "correctAnswer": "True",
+      "answer": "This three-step method protects against falling debris during shaking.",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-tf08",
+      "q_id": "geo-ch5-tf08",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Floods can never have any positive effects on soil.",
+      "correctAnswer": "False",
+      "answer": "Floods deposit alluvium that can renew soil fertility over time, though short-term damage is severe.",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-tf09",
+      "q_id": "geo-ch5-tf09",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Rajasthan is highly vulnerable to tropical cyclones.",
+      "correctAnswer": "False",
+      "answer": "Rajasthan is landlocked; cyclones affect coastal states like Odisha and Tamil Nadu.",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-tf10",
+      "q_id": "geo-ch5-tf10",
+      "topicId": "geo-ch5",
+      "type": "true_false",
+      "subtopic": "Objective Questions",
+      "question": "Developing countries often suffer more from disasters due to weaker preparedness systems.",
+      "correctAnswer": "True",
+      "answer": "Limited infrastructure and disaster management capacity increase suffering.",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-fb01",
+      "q_id": "geo-ch5-fb01",
+      "topicId": "geo-ch5",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "The study of earthquakes is called _____.",
+      "blankAnswer": "Seismology",
+      "answer": "Seismology—seismographs record seismic waves.",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-fb02",
+      "q_id": "geo-ch5-fb02",
+      "topicId": "geo-ch5",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "Earthquake magnitude is measured on the _____ Scale.",
+      "blankAnswer": "Richter",
+      "answer": "Richter Scale measures magnitude; Mercalli measures felt intensity.",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-fb03",
+      "q_id": "geo-ch5-fb03",
+      "topicId": "geo-ch5",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "The Disaster Management Act in India was passed in _____.",
+      "blankAnswer": "2005",
+      "answer": "2005 Act created NDMA and State DMAs.",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-fb04",
+      "q_id": "geo-ch5-fb04",
+      "topicId": "geo-ch5",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "The toxic gas leaked in the Bhopal tragedy was _____.",
+      "blankAnswer": "methyl isocyanate",
+      "answer": "MIC leak from Union Carbide factory, 1984.",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-fb05",
+      "q_id": "geo-ch5-fb05",
+      "topicId": "geo-ch5",
+      "type": "fill_blank",
+      "subtopic": "Objective Questions",
+      "question": "During an earthquake indoors, follow Drop, _____ and Hold.",
+      "blankAnswer": "Cover",
+      "answer": "Drop, Cover, Hold—standard safety protocol.",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-match01",
+      "q_id": "geo-ch5-match01",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match disaster type with example:",
+      "pairs": [
+        {
+          "left": "Earthquake",
+          "right": "Bhuj 2001"
+        },
+        {
+          "left": "Chemical disaster",
+          "right": "Bhopal 1984"
+        },
+        {
+          "left": "Flood",
+          "right": "Kerala 2018"
+        },
+        {
+          "left": "Nuclear accident",
+          "right": "Chernobyl 1986"
+        }
+      ],
+      "answer": "Earthquake-Bhuj; Chemical-Bhopal; Flood-Kerala; Nuclear-Chernobyl",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-match02",
+      "q_id": "geo-ch5-match02",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match term with definition:",
+      "pairs": [
+        {
+          "left": "Epicentre",
+          "right": "Surface point of strongest shaking"
+        },
+        {
+          "left": "Seismograph",
+          "right": "Records earthquake waves"
+        },
+        {
+          "left": "Storm surge",
+          "right": "Rise in sea level during cyclone"
+        },
+        {
+          "left": "Retrofitting",
+          "right": "Strengthening old buildings"
+        }
+      ],
+      "answer": "Epicentre-surface; Seismograph-records; Storm surge-sea rise; Retrofitting-strengthening",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-match03",
+      "q_id": "geo-ch5-match03",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match seismic zone with region:",
+      "pairs": [
+        {
+          "left": "Zone V",
+          "right": "Himalayan belt"
+        },
+        {
+          "left": "Zone IV",
+          "right": "Kachchh"
+        },
+        {
+          "left": "Coastal cyclone risk",
+          "right": "Odisha"
+        },
+        {
+          "left": "Drought-prone",
+          "right": "Rajasthan"
+        }
+      ],
+      "answer": "Zone V-Himalayas; Zone IV-Kachchh; Cyclone-Odisha; Drought-Rajasthan",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-match04",
+      "q_id": "geo-ch5-match04",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match safety measure with disaster:",
+      "pairs": [
+        {
+          "left": "Embankments",
+          "right": "Floods"
+        },
+        {
+          "left": "Cyclone shelters",
+          "right": "Cyclones"
+        },
+        {
+          "left": "Gas leak protocol",
+          "right": "Fire/man-made"
+        },
+        {
+          "left": "Drop-Cover-Hold",
+          "right": "Earthquake"
+        }
+      ],
+      "answer": "Embankments-floods; Shelters-cyclones; Gas-fire; DCH-earthquake",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-match05",
+      "q_id": "geo-ch5-match05",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match organisation with role:",
+      "pairs": [
+        {
+          "left": "NDMA",
+          "right": "National policy body"
+        },
+        {
+          "left": "NDRF",
+          "right": "Rescue operations"
+        },
+        {
+          "left": "IMD",
+          "right": "Weather warnings"
+        },
+        {
+          "left": "Red Cross",
+          "right": "Relief assistance"
+        }
+      ],
+      "answer": "NDMA-policy; NDRF-rescue; IMD-weather; Red Cross-relief",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-match06",
+      "q_id": "geo-ch5-match06",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match river with flood region:",
+      "pairs": [
+        {
+          "left": "Brahmaputra",
+          "right": "Assam"
+        },
+        {
+          "left": "Ganga",
+          "right": "UP and Bihar plains"
+        },
+        {
+          "left": "Mahanadi",
+          "right": "Odisha"
+        },
+        {
+          "left": "Yamuna",
+          "right": "Delhi-NCR lowlands"
+        }
+      ],
+      "answer": "Brahmaputra-Assam; Ganga-UP/Bihar; Mahanadi-Odisha; Yamuna-Delhi",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-match07",
+      "q_id": "geo-ch5-match07",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match disaster category:",
+      "pairs": [
+        {
+          "left": "Tsunami",
+          "right": "Natural"
+        },
+        {
+          "left": "Train accident",
+          "right": "Man-made"
+        },
+        {
+          "left": "Drought",
+          "right": "Natural"
+        },
+        {
+          "left": "Terrorism",
+          "right": "Man-made"
+        }
+      ],
+      "answer": "Tsunami/ Drought-natural; Train/Terrorism-man-made",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    },
+    {
+      "id": "geo-ch5-match08",
+      "q_id": "geo-ch5-match08",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match vulnerability statistic:",
+      "pairs": [
+        {
+          "left": "65%",
+          "right": "Earthquake-prone area"
+        },
+        {
+          "left": "12%",
+          "right": "Flood-prone area"
+        },
+        {
+          "left": "8%",
+          "right": "Cyclone-prone area"
+        },
+        {
+          "left": "70%",
+          "right": "Drought-prone area"
+        }
+      ],
+      "answer": "65-eq; 12-flood; 8-cyclone; 70-drought",
+      "linksTo": "geo-rev-ch5-05",
+      "linked_note_id": "geo-rev-ch5-05"
+    },
+    {
+      "id": "geo-ch5-match09",
+      "q_id": "geo-ch5-match09",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match man-made disaster with cause:",
+      "pairs": [
+        {
+          "left": "Uphaar tragedy",
+          "right": "Fire in cinema"
+        },
+        {
+          "left": "Bhopal",
+          "right": "Gas leak"
+        },
+        {
+          "left": "Hiroshima",
+          "right": "Nuclear weapon"
+        },
+        {
+          "left": "Chernobyl",
+          "right": "Reactor accident"
+        }
+      ],
+      "answer": "Uphaar-fire; Bhopal-gas; Hiroshima-weapon; Chernobyl-reactor",
+      "linksTo": "geo-rev-ch5-06",
+      "linked_note_id": "geo-rev-ch5-06"
+    },
+    {
+      "id": "geo-ch5-match10",
+      "q_id": "geo-ch5-match10",
+      "topicId": "geo-ch5",
+      "type": "match",
+      "subtopic": "Objective Questions",
+      "question": "Match preparedness item with purpose:",
+      "pairs": [
+        {
+          "left": "First-aid kit",
+          "right": "Immediate injury care"
+        },
+        {
+          "left": "Sandbags",
+          "right": "Block sewage backflow"
+        },
+        {
+          "left": "Early warning",
+          "right": "Timely evacuation"
+        },
+        {
+          "left": "Flood shelter",
+          "right": "Safe refuge"
+        }
+      ],
+      "answer": "First-aid-injury; Sandbags-sewage; Warning-evacuation; Shelter-refuge",
+      "linksTo": "geo-rev-ch5-07",
+      "linked_note_id": "geo-rev-ch5-07"
+    },
+    {
+      "id": "geo-ch5-sa01",
+      "q_id": "geo-ch5-sa01",
+      "topicId": "geo-ch5",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Differentiate between natural and man-made disasters with two examples each.",
+      "answer": "Natural disasters arise from natural forces (e.g., earthquakes, floods) without direct human causation. Man-made disasters result from human error or intent (e.g., Bhopal gas leak, industrial fires). Natural disasters often cause large-scale devastation; man-made ones may be more localized but equally severe.",
+      "linksTo": "geo-rev-ch5-08",
+      "linked_note_id": "geo-rev-ch5-08"
+    },
+    {
+      "id": "geo-ch5-sa02",
+      "q_id": "geo-ch5-sa02",
+      "topicId": "geo-ch5",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Explain why India is highly vulnerable to disasters.",
+      "answer": "India's diverse physiography exposes it to multiple hazards: Himalayan plate boundary (earthquakes, landslides), long coastline (cyclones), monsoon rivers (floods) and semi-arid interiors (droughts). About 65% land is earthquake-prone, 12% flood-prone, 8% cyclone-prone and 70% drought-prone. Dense population and developing infrastructure increase human and economic losses.",
+      "linksTo": "geo-rev-ch5-01",
+      "linked_note_id": "geo-rev-ch5-01"
+    },
+    {
+      "id": "geo-ch5-sa03",
+      "q_id": "geo-ch5-sa03",
+      "topicId": "geo-ch5",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "Describe safety measures during an earthquake.",
+      "answer": "Indoors: Drop, Cover and Hold under sturdy furniture until shaking stops. Outdoors: move to open ground away from buildings, trees and power lines. Avoid bridges and flyovers. After shaking: check for injuries, administer first aid, inspect building damage, avoid snapped wires and gas leaks, and stay calm for aftershocks. Retrofitting old buildings reduces risk.",
+      "linksTo": "geo-rev-ch5-02",
+      "linked_note_id": "geo-rev-ch5-02"
+    },
+    {
+      "id": "geo-ch5-sa04",
+      "q_id": "geo-ch5-sa04",
+      "topicId": "geo-ch5",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "What is disaster management? Why is it important?",
+      "answer": "Disaster management is comprehensive preparedness and efficient handling of affected people and regions before, during and after disasters. It includes mitigation, early warning, rescue, relief and rehabilitation. It is vital because disasters strike without warning; proper planning limits deaths, disease outbreaks and economic damage, especially protecting the poor who suffer most.",
+      "linksTo": "geo-rev-ch5-03",
+      "linked_note_id": "geo-rev-ch5-03"
+    },
+    {
+      "id": "geo-ch5-sa05",
+      "q_id": "geo-ch5-sa05",
+      "topicId": "geo-ch5",
+      "type": "short_answer",
+      "subtopic": "Short/Long Answer",
+      "question": "List measures to prevent and manage floods.",
+      "answer": "Prevention: maintain embankments and dykes, manage dams responsibly, preserve watershed forests. Preparedness: flood shelters, rescue boats, IMD monitoring, community evacuation plans. During floods: switch off electrical mains, store food and medicines, use sticks to wade, block toilets with sandbags, heed warnings. After: prevent epidemics with clean water and medical camps.",
+      "linksTo": "geo-rev-ch5-04",
+      "linked_note_id": "geo-rev-ch5-04"
+    }
+  ]
+}

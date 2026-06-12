@@ -1381,6 +1381,9 @@ function chapterMindmap(topicId) {
   if (typeof CHEMISTRY_MINDMAP_DATA !== 'undefined' && CHEMISTRY_MINDMAP_DATA[topicId]) {
     return CHEMISTRY_MINDMAP_DATA[topicId];
   }
+  if (typeof GEOGRAPHY_MINDMAP_DATA !== 'undefined' && GEOGRAPHY_MINDMAP_DATA[topicId]) {
+    return GEOGRAPHY_MINDMAP_DATA[topicId];
+  }
   if (typeof BIOLOGY_MINDMAP_DATA !== 'undefined') {
     return BIOLOGY_MINDMAP_DATA[topicId] || null;
   }
@@ -1394,6 +1397,9 @@ function chapterCheatsheet(topicId) {
   }
   if (typeof CHEMISTRY_CHEATSHEET_DATA !== 'undefined' && CHEMISTRY_CHEATSHEET_DATA[topicId]) {
     return CHEMISTRY_CHEATSHEET_DATA[topicId];
+  }
+  if (typeof GEOGRAPHY_CHEATSHEET_DATA !== 'undefined' && GEOGRAPHY_CHEATSHEET_DATA[topicId]) {
+    return GEOGRAPHY_CHEATSHEET_DATA[topicId];
   }
   if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
     return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
