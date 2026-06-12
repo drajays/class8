@@ -359,6 +359,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
+    typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
     typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
