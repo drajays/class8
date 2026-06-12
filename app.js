@@ -54,7 +54,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 48;
+const DATA_VERSION = 49;
 const DAILY_MCQ_GOAL = 15;
 const SRS_DAYS = [1, 3, 7, 14];
 
