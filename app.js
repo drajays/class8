@@ -4178,8 +4178,16 @@ function handleConnectivityChange() {
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
+  // Only auto-reload when an *existing* SW is replaced (app update). On the very
+  // first install there was no old bundle — reloading here races the first tap
+  // (e.g. Class 8) and looks like a crash.
+  var hadController = !!navigator.serviceWorker.controller;
   var reloaded = false;
   navigator.serviceWorker.addEventListener('controllerchange', function () {
+    if (!hadController) {
+      hadController = true;
+      return;
+    }
     if (reloaded) return;
     reloaded = true;
     location.reload();
