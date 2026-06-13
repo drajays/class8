@@ -1293,3 +1293,60 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 [data-theme="dark"] .phy-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#1e3a8a 22%,#0f172a)}
 .question-card.qa-formatted-card{border-color:color-mix(in srgb,var(--accent) 28%,var(--line))}
 [data-theme="dark"] .question-card.qa-formatted-card{border-color:#334155}
+
+/* Chemistry descriptive & analytical Q&A */
+.src-chip-chem{background:#eef2ff;border-color:#a5b4fc;color:#4338ca}
+[data-theme="dark"] .src-chip-chem{background:#312e81;border-color:#4338ca;color:#c7d2fe}
+.chem-qa-banner{border-color:#a5b4fc;background:linear-gradient(135deg,#eef2ff,#ecfeff)}
+.chem-qa-banner .qa-banner-body strong{color:#4338ca}
+.question-card.chem-qa-rich-card{
+  border-color:#a5b4fc;
+  background:linear-gradient(180deg,color-mix(in srgb,#eef2ff 58%,var(--surface)),var(--surface));
+  box-shadow:0 10px 28px rgba(79,70,229,.08)
+}
+.chem-qa-answer-box{border-left-color:#4f46e5;background:#f8faff}
+.chem-analytical-note{background:#fef2f2;border-left-color:#ef4444}
+.chem-analytical-note strong{color:#b91c1c}
+.qa-diff-olympiad{background:#7c3aed}
+.qa-type-chip{
+  display:inline-block;padding:4px 10px;border-radius:999px;font-size:.68rem;font-weight:800;
+  letter-spacing:.02em;text-transform:uppercase
+}
+.qa-type-whyhow{background:#fee2e2;color:#b91c1c}
+.qa-type-concept{background:#f1f5f9;color:#475569}
+.toggle-answer-chem{background:linear-gradient(90deg,#4f46e5,#06b6d4)}
+.chem-qa-answer-box .qa-hl-term{color:#4338ca;text-decoration-color:#6366f1}
+.chem-qa-answer-box .qa-hl-kw{color:#4338ca;background:#eef2ff;border-bottom-color:#818cf8}
+.chem-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#4f46e5 8%,#f8faff);border-left-color:#4f46e5}
+[data-theme="dark"] .question-card.chem-qa-rich-card{background:linear-gradient(180deg,#1e1b4b,var(--surface));border-color:#4338ca}
+[data-theme="dark"] .chem-qa-banner{background:linear-gradient(135deg,#1e1b4b,#134e4a);border-color:#4338ca}
+[data-theme="dark"] .chem-qa-answer-box{background:#0f172a;border-left-color:#6366f1}
+[data-theme="dark"] .qa-type-whyhow{background:#7f1d1d;color:#fca5a5}
+[data-theme="dark"] .qa-type-concept{background:#334155;color:#cbd5e1}
+[data-theme="dark"] .chem-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#4338ca 20%,#0f172a)}
+
+/* Chemistry upgraded answer explainer */
+.chem-answer-style{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;padding:7px 12px;
+  border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase
+}
+.chem-style-principles{background:linear-gradient(135deg,#ede9fe,#dbeafe);color:#4338ca;border:1px solid #c4b5fd}
+.chem-style-glassbox{background:linear-gradient(135deg,#fce7f3,#ede9fe);color:#7c3aed;border:1px solid #d8b4fe}
+.chem-style-icon{font-size:1rem;line-height:1}
+.chem-answer-rich{
+  font-size:.9rem;line-height:1.75;color:var(--ink)
+}
+.chem-answer-rich p{margin:0 0 10px}
+.chem-answer-rich p:last-child{margin-bottom:0}
+.chem-answer-rich b,.chem-answer-rich strong{color:#4338ca;font-weight:800}
+.chem-answer-rich i,.chem-answer-rich em{color:#7c3aed;font-style:italic}
+.chem-math{
+  display:inline-block;padding:1px 6px;margin:0 1px;border-radius:6px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84em;font-weight:700;
+  color:#9a3412;background:#fff7ed;border:1px solid #fed7aa;white-space:nowrap
+}
+.chem-qa-answer-box .chem-answer-rich b,.chem-qa-answer-box .chem-answer-rich strong{color:#4f46e5}
+[data-theme="dark"] .chem-style-principles{background:#312e81;color:#c7d2fe;border-color:#4338ca}
+[data-theme="dark"] .chem-style-glassbox{background:#4c1d95;color:#e9d5ff;border-color:#7c3aed}
+[data-theme="dark"] .chem-math{background:#431407;border-color:#9a3412;color:#fdba74}
+[data-theme="dark"] .chem-answer-rich b,[data-theme="dark"] .chem-answer-rich strong{color:#a5b4fc}

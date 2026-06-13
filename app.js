@@ -82,6 +82,15 @@ function isBiologyTopic(topicId) {
   return BIOLOGY_TOPIC_IDS.has(topicId);
 }
 
+const CHEMISTRY_TOPIC_IDS = new Set([
+  'chem-ch1', 'chem-ch2', 'chem-ch3', 'chem-ch4', 'chem-ch5',
+  'chem-ch6', 'chem-ch7', 'chem-ch8', 'chem-ch9'
+]);
+
+function isChemistryTopic(topicId) {
+  return CHEMISTRY_TOPIC_IDS.has(topicId);
+}
+
 let _biologyOlympiadIdSet = null;
 
 function getBiologyOlympiadIds() {
@@ -197,6 +206,22 @@ function physicsContentStats(topicId) {
     short_answer: qs.filter(q => q.type === 'short_answer').length,
     diagrams: diags.length,
     diagramFigures: new Set(diags.map(q => q.image)).size
+  };
+}
+
+function chemistryContentStats(topicId) {
+  const qs = topicTextQuestions(topicId);
+  const qa = topicShortAnswerQuestions(topicId).filter(q => q.source === 'chem_neet_olympiad');
+  return {
+    notes: topicNotes(topicId).length,
+    total: qs.length,
+    mcq: qs.filter(q => q.type === 'mcq').length,
+    true_false: qs.filter(q => q.type === 'true_false').length,
+    fill_blank: qs.filter(q => q.type === 'fill_blank').length,
+    match: qs.filter(q => q.type === 'match').length,
+    short_answer: topicShortAnswerQuestions(topicId).length,
+    descriptive: qa.length,
+    analytical: qa.filter(q => q.questionType && /why|how/i.test(q.questionType)).length
   };
 }
 
@@ -373,6 +398,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_PRACTICE !== 'undefined' ? BIOLOGY_PRACTICE : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
+    typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
     typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
@@ -1116,6 +1142,8 @@ function sanitizeHtml(raw) {
         if (child.tagName === 'A' && n === 'href') {
           const href = attr.value.trim();
           if (!/^https?:\/\//i.test(href) && !/^mailto:/i.test(href)) child.removeAttribute('href');
+        } else if (child.tagName === 'SPAN' && n === 'class' && /^chem-[-a-z0-9]+$/i.test(attr.value)) {
+          /* keep chemistry math/highlight classes */
         } else if (n !== 'href') {
           child.removeAttribute(attr.name);
         }
@@ -1595,6 +1623,9 @@ function sourceChipHtml(source) {
   }
   if (source === 'phy_neet_olympiad') {
     return ' <span class="src-chip src-chip-phy" title="Physics NEET/Olympiad elite Q&A bank">Elite Q&A</span>';
+  }
+  if (source === 'chem_neet_olympiad') {
+    return ' <span class="src-chip src-chip-chem" title="Chemistry descriptive & analytical Q&A bank">Chem Q&A</span>';
   }
   if (source === 'icse_300_practice') {
     return ' <span class="src-chip" title="ICSE practice Q&A bank">Practice</span>';
@@ -2548,7 +2579,8 @@ function renderContent(el) {
   const qaQuestions = topicShortAnswerQuestions(selectedTopic);
   const questions = topicPracticeQuestions(selectedTopic);
   const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic)
-    : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic) : null);
+    : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic)
+    : (isChemistryTopic(selectedTopic) ? chemistryContentStats(selectedTopic) : null));
   const diagrams = diagramQuestions(selectedTopic);
   const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
   const mmData = chapterMindmap(selectedTopic);
@@ -2569,7 +2601,15 @@ function renderContent(el) {
       <div class="chapter-top">
         <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
         ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
-        ${qStats ? `<p class="chapter-bank-hint">📚 ${isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation' : 'ICSE Physics'} — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} questions</strong> · <strong>${diagrams.length} diagram MCQs</strong>${qStats.companion ? ` · <strong>${qStats.companion} companion MCQs</strong>` : ''}</p>` : ''}
+        ${qStats ? `<p class="chapter-bank-hint">📚 ${
+          isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation'
+          : isChemistryTopic(selectedTopic) ? 'ICSE Chemistry — Descriptive & Analytical Q&A'
+          : 'ICSE Physics'
+        } — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} practice items</strong>${
+          isChemistryTopic(selectedTopic) && qStats.descriptive
+            ? ` · <strong>${qStats.descriptive} descriptive Q&amp;A</strong>${qStats.analytical ? ` (${qStats.analytical} analytical)` : ''}`
+            : ` · <strong>${diagrams.length} diagram MCQs</strong>${qStats.companion ? ` · <strong>${qStats.companion} companion MCQs</strong>` : ''}`
+        }</p>` : ''}
         <div class="chapter-tabs-row">
           <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
             <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
@@ -3098,9 +3138,11 @@ function isRichShortAnswer(q) {
   return !!(q && q.type === 'short_answer' && (
     q.source === 'bio_neet_olympiad' ||
     q.source === 'phy_neet_olympiad' ||
+    q.source === 'chem_neet_olympiad' ||
     (Array.isArray(q.keywords) && q.keywords.length) ||
     q.topperTip ||
     q.difficulty ||
+    q.questionType ||
     q.higherReasoning
   ));
 }
@@ -3109,6 +3151,7 @@ function richQaCardClass(q) {
   if (!q || q.type !== 'short_answer') return '';
   const base = ' qa-formatted-card';
   if (q.source === 'phy_neet_olympiad') return base + ' qa-rich-card phy-qa-rich-card';
+  if (q.source === 'chem_neet_olympiad') return base + ' qa-rich-card chem-qa-rich-card';
   if (isRichShortAnswer(q)) return base + ' qa-rich-card';
   return base;
 }
@@ -3121,8 +3164,23 @@ function renderPhysicsQaMeta(q) {
   return `<div class="qa-meta-row">${badges.join('')}</div>`;
 }
 
+function renderChemistryQaMeta(q) {
+  const diff = q.difficulty || 'Medium';
+  let diffClass = 'qa-diff-med';
+  if (diff === 'Easy') diffClass = 'qa-diff-easy';
+  else if (diff === 'Hard') diffClass = 'qa-diff-hard';
+  else if (diff === 'Olympiad') diffClass = 'qa-diff-olympiad';
+  const badges = [`<span class="qa-diff-chip ${diffClass}">${escHtml(diff)}</span>`];
+  if (q.questionType) {
+    const cls = /why|how/i.test(q.questionType) ? 'qa-type-whyhow' : 'qa-type-concept';
+    badges.push(`<span class="qa-type-chip ${cls}">${escHtml(q.questionType)}</span>`);
+  }
+  return `<div class="qa-meta-row">${badges.join('')}</div>`;
+}
+
 function renderQaMetaRow(q) {
   if (q.source === 'phy_neet_olympiad') return renderPhysicsQaMeta(q);
+  if (q.source === 'chem_neet_olympiad') return renderChemistryQaMeta(q);
   if (Array.isArray(q.keywords) && q.keywords.length) return renderKeywordRow(q.keywords);
   return '';
 }
@@ -3133,9 +3191,42 @@ function renderKeywordRow(keywords) {
   return `<div class="qa-keywords"><span class="qa-kw-title">Keywords</span><div class="qa-kw-row">${chips}</div></div>`;
 }
 
+function renderChemMathInHtml(html) {
+  return String(html).replace(/\$([^$]+)\$/g, (_, expr) => {
+    let s = expr
+      .replace(/\\text\{([^}]*)\}/g, '$1')
+      .replace(/\\mathrm\{([^}]*)\}/g, '$1')
+      .replace(/\\Delta/g, 'Δ')
+      .replace(/\\cdot/g, '·')
+      .replace(/\\times/g, '×')
+      .replace(/\\propto/g, '∝')
+      .replace(/\\sqrt\{([^}]*)\}/g, '√($1)')
+      .replace(/\\rightleftharpoons/g, '⇌')
+      .replace(/\\to/g, '→')
+      .replace(/\\downarrow/g, '↓')
+      .replace(/\\_/g, '_')
+      .replace(/[{}\\]/g, '');
+    return '<span class="chem-math">' + escHtml(cleanMathMarkup(s)) + '</span>';
+  });
+}
+
+function renderChemUpgradeAnswer(q) {
+  let body = sanitizeHtml(q.answer || '');
+  body = renderChemMathInHtml(body);
+  const styleBadge = q.answerStyle === 'first_principles'
+    ? '<div class="chem-answer-style chem-style-principles"><span class="chem-style-icon" aria-hidden="true">🧬</span> First Principles Breakdown</div>'
+    : q.answerStyle === 'glassbox'
+    ? '<div class="chem-answer-style chem-style-glassbox"><span class="chem-style-icon" aria-hidden="true">🔍</span> Glassbox Logic</div>'
+    : '';
+  return `${styleBadge}<div class="chem-answer-rich rich-html">${body}</div>`;
+}
+
 function renderShortAnswerAnswerContent(q) {
   const fmtOpts = { keywords: q.keywords, question: q.question, source: q.source };
-  const answerHtml = formatShortAnswerContent(q.answer || '', fmtOpts);
+  const isChemHtml = q.source === 'chem_neet_olympiad' && q.answerFormat === 'html';
+  const answerHtml = isChemHtml
+    ? renderChemUpgradeAnswer(q)
+    : formatShortAnswerContent(q.answer || '', fmtOpts);
   if (!isRichShortAnswer(q)) {
     return `
       <div class="qa-answer-box qa-answer-box-standard">
@@ -3143,16 +3234,21 @@ function renderShortAnswerAnswerContent(q) {
         <div class="rich-html qa-answer-text qa-answer-formatted">${answerHtml}</div>
       </div>`;
   }
-  const label = q.source === 'phy_neet_olympiad' ? 'Model answer' : 'Advanced answer';
+  const label = q.source === 'phy_neet_olympiad' ? 'Model answer'
+    : q.source === 'chem_neet_olympiad' ? 'Model answer / solution explainer'
+    : 'Advanced answer';
   const topperHtml = q.topperTip
     ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html qa-answer-formatted qa-topper-body">${formatShortAnswerContent(q.topperTip, fmtOpts)}</div></div>`
     : '';
+  const answerBoxClass = q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box'
+    : q.source === 'chem_neet_olympiad' ? ' chem-qa-answer-box' : '';
   return `
-    <div class="qa-answer-box${q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box' : ''}">
+    <div class="qa-answer-box${answerBoxClass}">
       <div class="qa-answer-label">${label}</div>
       <div class="rich-html qa-answer-text qa-answer-formatted">${answerHtml}</div>
     </div>
     ${q.higherReasoning && q.source === 'phy_neet_olympiad' ? '<div class="qa-topper-note phy-hr-note"><strong>🧠 Higher-order reasoning</strong><div class="rich-html inline-rich qa-answer-formatted">Focus on <span class="qa-hl-kw">mechanisms</span>, <span class="qa-hl-kw">derivations</span>, and <span class="qa-hl-kw">precise scientific vocabulary</span> in your written answer.</div></div>' : ''}
+    ${q.higherReasoning && q.source === 'chem_neet_olympiad' && /why|how/i.test(q.questionType || '') ? '<div class="qa-topper-note chem-analytical-note"><strong>🔬 Analytical tip</strong><div class="rich-html inline-rich qa-answer-formatted">State the <span class="qa-hl-kw">principle</span>, explain the <span class="qa-hl-kw">mechanism</span> step-by-step, and link to <span class="qa-hl-kw">molecular-level reasoning</span>.</div></div>' : ''}
     ${topperHtml}
   `;
 }
@@ -3161,7 +3257,18 @@ function shortAnswerBannerHtml(list) {
   const items = list || [];
   const phyCount = items.filter(q => q.source === 'phy_neet_olympiad').length;
   const bioCount = items.filter(q => q.source === 'bio_neet_olympiad').length;
+  const chemCount = items.filter(q => q.source === 'chem_neet_olympiad').length;
   const parts = [];
+  if (chemCount) {
+    const analytical = items.filter(q => q.source === 'chem_neet_olympiad' && /why|how/i.test(q.questionType || '')).length;
+    parts.push(`<div class="qa-chapter-banner chem-qa-banner">
+      <div class="qa-banner-icon" aria-hidden="true">🧪</div>
+      <div class="qa-banner-body">
+        <strong>Chemistry Descriptive &amp; Analytical Q&amp;A</strong>
+        <p>${chemCount} model answers in this chapter${analytical ? ` (${analytical} why/how analytical)` : ''} — check difficulty badges, then reveal the full solution.</p>
+      </div>
+    </div>`);
+  }
   if (phyCount) {
     const hrCount = items.filter(q => q.source === 'phy_neet_olympiad' && q.higherReasoning).length;
     parts.push(`<div class="qa-chapter-banner phy-qa-banner">
@@ -3305,9 +3412,19 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
 
   // Toggle answer
   const toggleLabel = isRichShortAnswer(q)
-    ? (answered !== undefined ? '👁️ Hide model answer' : (q.source === 'phy_neet_olympiad' ? '👁️ Show model answer' : '👁️ Show model answer & topper tip'))
+    ? (answered !== undefined ? '👁️ Hide solution' : (
+      q.source === 'chem_neet_olympiad' && q.answerFormat === 'html'
+        ? '👁️ View solution & hint'
+        : q.source === 'phy_neet_olympiad' || q.source === 'chem_neet_olympiad'
+        ? '👁️ Show model answer'
+        : '👁️ Show model answer & topper tip'))
     : (answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation');
-  html += `<div class="toggle-answer${isRichShortAnswer(q) ? (q.source === 'phy_neet_olympiad' ? ' toggle-answer-rich toggle-answer-phy' : ' toggle-answer-rich') : ''}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;
+  const toggleRichClass = isRichShortAnswer(q)
+    ? (q.source === 'phy_neet_olympiad' ? ' toggle-answer-rich toggle-answer-phy'
+      : q.source === 'chem_neet_olympiad' ? ' toggle-answer-rich toggle-answer-chem'
+      : ' toggle-answer-rich')
+    : '';
+  html += `<div class="toggle-answer${toggleRichClass}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;
   html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}${isRichShortAnswer(q) ? ' answer-reveal-rich' : ''}" id="ans-${q.id}">
     ${q.type === 'short_answer' ? renderShortAnswerAnswerContent(q) : `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>`}
     ${!isRichShortAnswer(q) && q.teacherTip ? `<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>` : ''}
