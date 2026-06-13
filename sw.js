@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v54';
+const CACHE = 'studyhub-v59';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [
@@ -13,6 +13,7 @@ const ASSETS = [
   './data-core.js',
   './chapters3to8.js',
   './physics-qbank.js',
+  './physics-practice.js',
   './physics-neet.js',
   './physics-mindmaps.js',
   './physics-cheatsheets.js',

@@ -65,7 +65,8 @@ const SRS_DAYS = [1, 3, 7, 14];
 
 const PHYSICS_TOPIC_IDS = new Set([
   'ch1-matter', 'ch2-measurement', 'ch3-force', 'ch4-energy',
-  'ch5-light', 'ch6-heat', 'ch7-sound', 'ch8-electricity'
+  'ch5-light', 'ch6-heat', 'ch7-sound', 'ch8-electricity',
+  'ch9-modern', 'ch10-olympiad'
 ]);
 
 function isPhysicsTopic(topicId) {
@@ -377,6 +378,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
+    typeof PHYSICS_PRACTICE !== 'undefined' ? PHYSICS_PRACTICE : null,
     typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
   ];
   const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
@@ -1393,6 +1395,9 @@ function sourceChipHtml(source) {
   }
   if (source === 'bio_neet_olympiad') {
     return ' <span class="src-chip src-chip-bio" title="NEET/Olympiad-style keyword-rich Q&A">NEET/Oly</span>';
+  }
+  if (source === 'phy_neet_olympiad') {
+    return ' <span class="src-chip src-chip-phy" title="Physics NEET/Olympiad elite Q&A bank">Elite Q&A</span>';
   }
   if (source === 'icse_300_practice') {
     return ' <span class="src-chip" title="ICSE practice Q&A bank">Practice</span>';
@@ -2868,9 +2873,31 @@ function renderShortAnswerQuestions(questions) {
 function isRichShortAnswer(q) {
   return !!(q && q.type === 'short_answer' && (
     q.source === 'bio_neet_olympiad' ||
+    q.source === 'phy_neet_olympiad' ||
     (Array.isArray(q.keywords) && q.keywords.length) ||
-    q.topperTip
+    q.topperTip ||
+    q.difficulty ||
+    q.higherReasoning
   ));
+}
+
+function richQaCardClass(q) {
+  if (!isRichShortAnswer(q)) return '';
+  return q.source === 'phy_neet_olympiad' ? ' qa-rich-card phy-qa-rich-card' : ' qa-rich-card';
+}
+
+function renderPhysicsQaMeta(q) {
+  const diff = q.difficulty || 'Medium';
+  const diffClass = diff === 'Easy' ? 'qa-diff-easy' : diff === 'Hard' ? 'qa-diff-hard' : 'qa-diff-med';
+  const badges = [`<span class="qa-diff-chip ${diffClass}">${escHtml(diff)}</span>`];
+  if (q.higherReasoning) badges.push('<span class="qa-diff-chip qa-diff-hr" title="Higher-order reasoning">HR</span>');
+  return `<div class="qa-meta-row">${badges.join('')}</div>`;
+}
+
+function renderQaMetaRow(q) {
+  if (q.source === 'phy_neet_olympiad') return renderPhysicsQaMeta(q);
+  if (Array.isArray(q.keywords) && q.keywords.length) return renderKeywordRow(q.keywords);
+  return '';
 }
 
 function renderKeywordRow(keywords) {
@@ -2883,25 +2910,42 @@ function renderShortAnswerAnswerContent(q) {
   if (!isRichShortAnswer(q)) {
     return `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.answer || '')}</div>`;
   }
+  const label = q.source === 'phy_neet_olympiad' ? 'Model answer' : 'Advanced answer';
   return `
-    <div class="qa-answer-box">
-      <div class="qa-answer-label">Advanced answer</div>
+    <div class="qa-answer-box${q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box' : ''}">
+      <div class="qa-answer-label">${label}</div>
       <div class="rich-html qa-answer-text">${fmtText(q.answer || '')}</div>
     </div>
+    ${q.higherReasoning && q.source === 'phy_neet_olympiad' ? '<div class="qa-topper-note phy-hr-note"><strong>🧠 Higher-order reasoning</strong><div class="rich-html inline-rich">Focus on mechanisms, derivations, and precise scientific vocabulary in your written answer.</div></div>' : ''}
     ${q.topperTip ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html inline-rich">${fmtText(q.topperTip)}</div></div>` : ''}
   `;
 }
 
 function shortAnswerBannerHtml(list) {
-  const bioCount = (list || []).filter(q => q.source === 'bio_neet_olympiad').length;
-  if (!bioCount) return '';
-  return `<div class="qa-chapter-banner bio-qa-banner">
-    <div class="qa-banner-icon" aria-hidden="true">🧬</div>
-    <div class="qa-banner-body">
-      <strong>NEET / Olympiad Q&amp;A bank</strong>
-      <p>${bioCount} keyword-rich model answers in this chapter — use the chips for quick revision, then reveal the advanced answer and topper tip.</p>
-    </div>
-  </div>`;
+  const items = list || [];
+  const phyCount = items.filter(q => q.source === 'phy_neet_olympiad').length;
+  const bioCount = items.filter(q => q.source === 'bio_neet_olympiad').length;
+  const parts = [];
+  if (phyCount) {
+    const hrCount = items.filter(q => q.source === 'phy_neet_olympiad' && q.higherReasoning).length;
+    parts.push(`<div class="qa-chapter-banner phy-qa-banner">
+      <div class="qa-banner-icon" aria-hidden="true">⚛️</div>
+      <div class="qa-banner-body">
+        <strong>Physics NEET / Olympiad Elite Q&amp;A</strong>
+        <p>${phyCount} model answers in this chapter${hrCount ? ` (${hrCount} higher-order reasoning)` : ''} — check difficulty badges, then reveal the full solution.</p>
+      </div>
+    </div>`);
+  }
+  if (bioCount) {
+    parts.push(`<div class="qa-chapter-banner bio-qa-banner">
+      <div class="qa-banner-icon" aria-hidden="true">🧬</div>
+      <div class="qa-banner-body">
+        <strong>Biology NEET / Olympiad Q&amp;A bank</strong>
+        <p>${bioCount} keyword-rich model answers in this chapter — use the chips for quick revision, then reveal the advanced answer and topper tip.</p>
+      </div>
+    </div>`);
+  }
+  return parts.join('');
 }
 
 function renderQuestionList(body, filtered, pagerLabel) {
@@ -2973,7 +3017,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   // Cap the stagger so long lists never wait seconds to appear; a targeted
   // single-card re-render skips the fade entirely (updates in place).
   const delay = Math.min(idx, 10) * 0.025;
-  let html = `<div class="question-card${isRichShortAnswer(q) ? ' qa-rich-card' : ''}${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
+  let html = `<div class="question-card${richQaCardClass(q)}${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
@@ -2984,7 +3028,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
   html += `<div class="q-text rich-html">Q${idx + 1}. ${renderContentHtml(q.question)}</div>`;
-  if (isRichShortAnswer(q)) html += renderKeywordRow(q.keywords);
+  if (isRichShortAnswer(q)) html += renderQaMetaRow(q);
 
   if (q.type === 'true_false') {
     html += renderTfOptions(q, answered, v => `onclick="answerTF('${q.id}','${v}')"`);
@@ -3025,9 +3069,9 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
 
   // Toggle answer
   const toggleLabel = isRichShortAnswer(q)
-    ? (answered !== undefined ? '👁️ Hide model answer' : '👁️ Show model answer & topper tip')
+    ? (answered !== undefined ? '👁️ Hide model answer' : (q.source === 'phy_neet_olympiad' ? '👁️ Show model answer' : '👁️ Show model answer & topper tip'))
     : (answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation');
-  html += `<div class="toggle-answer${isRichShortAnswer(q) ? ' toggle-answer-rich' : ''}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;
+  html += `<div class="toggle-answer${isRichShortAnswer(q) ? (q.source === 'phy_neet_olympiad' ? ' toggle-answer-rich toggle-answer-phy' : ' toggle-answer-rich') : ''}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;
   html += `<div class="answer-reveal ${answered !== undefined ? 'show' : ''}${isRichShortAnswer(q) ? ' answer-reveal-rich' : ''}" id="ans-${q.id}">
     ${q.type === 'short_answer' ? renderShortAnswerAnswerContent(q) : `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>`}
     ${!isRichShortAnswer(q) && q.teacherTip ? `<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>` : ''}

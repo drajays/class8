@@ -1188,3 +1188,31 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 [data-theme="dark"] .qa-answer-box{background:#0f172a;border-left-color:#3b82f6}
 [data-theme="dark"] .qa-topper-note{background:#042f2e;color:#99f6e4}
 [data-theme="dark"] .qa-chapter-banner{background:linear-gradient(135deg,#0f172a,#042f2e);border-color:#134e4a}
+
+/* Physics NEET/Olympiad elite Q&A */
+.src-chip-phy{background:#eff6ff;border-color:#93c5fd;color:#1d4ed8}
+[data-theme="dark"] .src-chip-phy{background:#172554;border-color:#1e40af;color:#93c5fd}
+.phy-qa-banner{border-color:#93c5fd;background:linear-gradient(135deg,#eff6ff,#eef2ff)}
+.phy-qa-banner .qa-banner-body strong{color:#1a5276}
+.question-card.phy-qa-rich-card{
+  border-color:#93c5fd;
+  background:linear-gradient(180deg,color-mix(in srgb,#eff6ff 60%,var(--surface)),var(--surface));
+  box-shadow:0 10px 28px rgba(26,82,118,.08)
+}
+.qa-meta-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.qa-diff-chip{
+  display:inline-block;padding:4px 10px;border-radius:999px;font-size:.72rem;font-weight:800;
+  letter-spacing:.03em;text-transform:uppercase;color:#fff
+}
+.qa-diff-easy{background:#27ae60}
+.qa-diff-med{background:#f39c12}
+.qa-diff-hard{background:#c0392b}
+.qa-diff-hr{background:#8e44ad}
+.phy-qa-answer-box{border-left-color:#2980b9;background:#f8fbff}
+.phy-hr-note{background:#f9f5ff;border-left-color:#8e44ad}
+.phy-hr-note strong{color:#6b21a8}
+.toggle-answer-phy{background:linear-gradient(90deg,#1a5276,#2980b9)}
+[data-theme="dark"] .question-card.phy-qa-rich-card{background:linear-gradient(180deg,#0f172a,var(--surface));border-color:#1e3a5f}
+[data-theme="dark"] .phy-qa-banner{background:linear-gradient(135deg,#0f172a,#172554);border-color:#1e40af}
+[data-theme="dark"] .phy-qa-answer-box{background:#0f172a;border-left-color:#3b82f6}
+[data-theme="dark"] .phy-hr-note{background:#2e1065;border-left-color:#a855f7;color:#e9d5ff}
