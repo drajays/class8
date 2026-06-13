@@ -526,7 +526,7 @@ function setupPersistenceGuards() {
 // PROGRESS & LEARNING JOURNEY — persisted locally
 //   studyProgress[qId] = { attempts, correct, lastResult, lastAt,
 //     guessed, streak, srsNextAt, srsLevel }
-//   studyBookmarks = Set of qIds
+//   studyBookmarks = Set of content IDs marked for revision (notes + questions)
 //   studyActivity = { 'YYYY-MM-DD': { mcqs } }
 // ============================================================
 let studyProgress = {};
@@ -723,8 +723,24 @@ function getDueForReview(topicId) {
   });
 }
 
-function getBookmarkedQuestions() {
+function getRevisionMarkedItems() {
   return [...studyBookmarks].map(id => appData.content.find(c => c.id === id)).filter(Boolean);
+}
+
+function getRevisionMarkedItemsSorted() {
+  return getRevisionMarkedItems().sort((a, b) => {
+    const ta = appData.topics.find(t => t.id === a.topicId);
+    const tb = appData.topics.find(t => t.id === b.topicId);
+    const cmp = (ta?.name || '').localeCompare(tb?.name || '');
+    if (cmp) return cmp;
+    if (a.type === 'note' && b.type !== 'note') return -1;
+    if (a.type !== 'note' && b.type === 'note') return 1;
+    return (a.subtopic || a.question || '').localeCompare(b.subtopic || b.question || '');
+  });
+}
+
+function getBookmarkedQuestions() {
+  return getRevisionMarkedItems().filter(c => c.type !== 'note');
 }
 
 function toggleBookmark(qId) {
@@ -735,6 +751,24 @@ function toggleBookmark(qId) {
 
 function isBookmarked(qId) {
   return studyBookmarks.has(qId);
+}
+
+function isMarkedForRevision(id) {
+  return studyBookmarks.has(id);
+}
+
+function revisionMarkBtnClass(id) {
+  return isMarkedForRevision(id) ? 'btn-primary' : 'btn-outline';
+}
+
+function revisionMarkLabel(id) {
+  return isMarkedForRevision(id) ? '📌 Marked for revision' : '📌 Mark for revision';
+}
+
+function toggleRevisionMark(id) {
+  const wasMarked = studyBookmarks.has(id);
+  toggleBookmark(id);
+  showToast('success', wasMarked ? 'Removed from revision list.' : '📌 Marked for revision.');
 }
 
 // Record an answer attempt. isCorrect may be true/false, or null for
@@ -931,7 +965,7 @@ function quizMarkGuessed() {
 function quizToggleBookmark() {
   const q = currentQuizQuestion();
   if (!q) return;
-  toggleBookmark(q.id);
+  toggleRevisionMark(q.id);
   renderMain();
 }
 
@@ -1249,6 +1283,169 @@ function renderNoteHtml(str) {
 
 function fmtText(str) {
   return renderContentHtml(str);
+}
+
+// ============================================================
+// SHORT / LONG ANSWER — rich reading layout (tables, highlights)
+// ============================================================
+function _escRe(str) {
+  return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function _qaHasCompareCue(text) {
+  return /\b(vs\.?|versus|contrast|differentiate|compare|comparison|distinguish)\b/i.test(text || '');
+}
+
+function parseQaLabeledParts(text) {
+  const re = /\(([a-z]|[ivx]+|\d+)\)\s*/gi;
+  const matches = [...String(text).matchAll(re)];
+  if (matches.length < 2) return null;
+  const parts = [];
+  for (let i = 0; i < matches.length; i++) {
+    const label = matches[i][1].toLowerCase();
+    const start = matches[i].index + matches[i][0].length;
+    const end = i + 1 < matches.length ? matches[i + 1].index : text.length;
+    let chunk = text.slice(start, end).trim().replace(/^[,;\s]+|[,;\s.]+$/g, '');
+    let value = chunk;
+    let detail = '';
+    const dash = chunk.match(/^(.+?)\s*[—–-]\s*(.+)$/);
+    if (dash) {
+      value = dash[1].trim();
+      detail = dash[2].trim().replace(/^[,;\s]+|[,;\s.]+$/g, '');
+    }
+    parts.push({ label: `(${label})`, value, detail });
+  }
+  return parts.length >= 2 ? parts : null;
+}
+
+function parseQaTwoSideComparison(answer, question) {
+  if (!_qaHasCompareCue(question)) return null;
+  const sentences = String(answer).match(/[^.!?]+[.!?]+/g);
+  if (!sentences || sentences.length < 2) return null;
+  const left = sentences[0].trim();
+  const right = sentences.slice(1).join(' ').trim();
+  const subject = s => {
+    const m = s.match(/^(?:A|An|The)\s+([\w][\w\s/-]{0,40}?)(?:\s+(?:processes|splits|is|are|has|have|provides|yields|carries|measures|defines|occurs|violently|because|uses)\b|[,.])/i);
+    if (m) return m[1].trim();
+    const w = s.match(/^(\w+)/);
+    return w ? w[1] : 'Item A';
+  };
+  return {
+    left: { heading: subject(left), text: left },
+    right: { heading: subject(right), text: right }
+  };
+}
+
+function parseQaArrowRows(text) {
+  const rows = [];
+  const re = /([A-Za-z][A-Za-z\s/+-]{0,40}?)\s*(?:→|->|\u2192)\s*([A-Za-z][A-Za-z\s/+-]{0,40}?)(?=[,;.]|\s*$)/g;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    rows.push({ from: m[1].trim(), to: m[2].trim() });
+  }
+  return rows.length >= 2 ? rows : null;
+}
+
+function highlightQaInline(text, keywords) {
+  if (!text) return '';
+  const pieces = String(text).split(/(\*\*[^*]+\*\*)/g);
+  let s = pieces.map(part => {
+    const m = part.match(/^\*\*([^*]+)\*\*$/);
+    if (m) return '<strong class="qa-hl-strong">' + escHtml(m[1]) + '</strong>';
+    return escHtml(part);
+  }).join('');
+
+  const uniqKw = [...new Set((keywords || []).map(k => String(k).trim()).filter(k => k.length > 1))]
+    .sort((a, b) => b.length - a.length);
+  for (const kw of uniqKw) {
+    const re = new RegExp(`(${_escRe(kw)})`, 'gi');
+    s = s.replace(re, '<span class="qa-hl-kw">$1</span>');
+  }
+
+  s = s.replace(/\b(\d+(?:\.\d+)?(?:\s*[×x]\s*10\^?[-+]?\d+)?)\s*(m\/s²|m\/s|km\/h|cm³|g\/cm³|kg\/m³|N|J|W|Pa|V|A|Ω|Hz|°C|K|mol|g|kg|cm|mm|km|s|min|h|m)\b/gi,
+    '<span class="qa-hl-num">$1</span> <span class="qa-hl-unit">$2</span>');
+  s = s.replace(/\b([A-Za-z][A-Za-z0-9]*)\s*=\s*([^,.;<\s][^,.;<]{0,80})/g,
+    '<span class="qa-hl-formula"><span class="qa-hl-var">$1</span> = $2</span>');
+  s = s.replace(/\b(is|are|means|refers to|defined as|called)\b/gi, '<span class="qa-hl-verb">$1</span>');
+  s = s.replace(/\b(solid|liquid|gas|plasma|fusion|fission|xylem|phloem|osmosis|diffusion|velocity|acceleration|force|energy|power|density|pressure|temperature|wavelength|frequency|current|voltage|resistance)\b/gi,
+    m => `<span class="qa-hl-term">${m}</span>`);
+  return s;
+}
+
+function renderQaPartsTable(parts, keywords) {
+  const hasDetail = parts.some(p => p.detail);
+  let html = '<div class="qa-table-wrap"><table class="qa-table qa-table-parts"><thead><tr>';
+  html += '<th>Part</th><th>Answer</th>';
+  if (hasDetail) html += '<th>Explanation</th>';
+  html += '</tr></thead><tbody>';
+  for (const p of parts) {
+    html += '<tr>';
+    html += `<td><span class="qa-part-badge">${escHtml(p.label)}</span></td>`;
+    html += `<td>${highlightQaInline(p.value, keywords)}</td>`;
+    if (hasDetail) html += `<td class="qa-cell-detail">${p.detail ? highlightQaInline(p.detail, keywords) : '—'}</td>`;
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function renderQaCompareTable(cmp, keywords) {
+  return `<div class="qa-table-wrap"><table class="qa-table qa-table-compare">
+    <thead><tr><th>${highlightQaInline(cmp.left.heading, keywords)}</th><th>${highlightQaInline(cmp.right.heading, keywords)}</th></tr></thead>
+    <tbody><tr>
+      <td>${highlightQaInline(cmp.left.text, keywords)}</td>
+      <td>${highlightQaInline(cmp.right.text, keywords)}</td>
+    </tr></tbody></table></div>`;
+}
+
+function renderQaArrowTable(rows, keywords) {
+  let html = '<div class="qa-table-wrap"><table class="qa-table qa-table-process"><thead><tr><th>From</th><th></th><th>To</th></tr></thead><tbody>';
+  for (const r of rows) {
+    html += `<tr><td>${highlightQaInline(r.from, keywords)}</td><td class="qa-arrow-cell">→</td><td>${highlightQaInline(r.to, keywords)}</td></tr>`;
+  }
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function renderQaRichParagraph(text, keywords) {
+  const raw = cleanMathMarkup(text);
+  const sentences = raw.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [raw];
+  if (sentences.length === 1) {
+    const def = raw.match(/^(.{2,80}?)\s+(is|are|means|refers to|defined as)\s+(.+)$/i);
+    if (def) {
+      return `<p class="qa-lead-def"><span class="qa-hl-term">${highlightQaInline(def[1], keywords)}</span> ${highlightQaInline(def[2] + ' ' + def[3], keywords)}</p>`;
+    }
+    return `<p class="qa-body-text">${highlightQaInline(raw, keywords)}</p>`;
+  }
+  return sentences.map((s, i) => {
+    const t = s.trim();
+    if (!t) return '';
+    const cls = i === 0 ? 'qa-lead-def' : 'qa-body-text';
+    return `<p class="${cls}">${highlightQaInline(t, keywords)}</p>`;
+  }).join('');
+}
+
+function formatShortAnswerContent(raw, opts) {
+  opts = opts || {};
+  if (!raw) return '';
+  if (hasHtmlMarkup(raw)) {
+    const html = sanitizeHtml(raw);
+    return `<div class="qa-formatted-html">${html}</div>`;
+  }
+
+  const text = cleanMathMarkup(raw).trim();
+  const keywords = opts.keywords || [];
+
+  const parts = parseQaLabeledParts(text);
+  if (parts) return renderQaPartsTable(parts, keywords);
+
+  const cmp = parseQaTwoSideComparison(text, opts.question || '');
+  if (cmp) return renderQaCompareTable(cmp, keywords);
+
+  const arrows = parseQaArrowRows(text);
+  if (arrows) return renderQaArrowTable(arrows, keywords);
+
+  return renderQaRichParagraph(text, keywords);
 }
 
 function tfBtnClass(q, val, answered) {
@@ -1868,15 +2065,16 @@ function renderMain() {
 function renderRevisionHub(el) {
   const mistakes = getMistakeQuestions();
   const due = getDueForReview();
-  const bookmarks = getBookmarkedQuestions();
+  const marked = getRevisionMarkedItemsSorted();
+  const markedQuestions = getBookmarkedQuestions();
   const tabs = [
     { key: 'mistakes', label: 'Mistakes', icon: '📕', count: mistakes.length },
     { key: 'due', label: 'Due Today', icon: '🔁', count: due.length },
-    { key: 'bookmarks', label: 'Saved', icon: '🔖', count: bookmarks.length }
+    { key: 'bookmarks', label: 'Marked', icon: '📌', count: marked.length }
   ];
   let list = mistakes;
   if (revisionTab === 'due') list = due;
-  if (revisionTab === 'bookmarks') list = bookmarks;
+  if (revisionTab === 'bookmarks') list = marked;
   const tabHtml = tabs.map(t =>
     `<div class="content-tab ${revisionTab === t.key ? 'active' : ''}" onclick="revisionTab='${t.key}';renderMain()">${t.icon} ${t.label} (${t.count})</div>`
   ).join('');
@@ -1885,30 +2083,41 @@ function renderRevisionHub(el) {
     const empty = {
       mistakes: ['No mistakes logged yet', 'Answer questions in Practice Quiz — wrong answers and lucky guesses land here automatically.'],
       due: ['Nothing due today', 'Complete the Mistake Book and questions will return on a spaced schedule.'],
-      bookmarks: ['No saved questions', 'Tap 🔖 while practicing to save tricky questions for last-minute revision.']
+      bookmarks: ['Nothing marked for revision', 'Tap 📌 Mark for revision on any note or question to collect them here for last-minute review.']
     }[revisionTab];
     bodyHtml = `<div class="empty-state"><div class="empty-icon">${tabs.find(t => t.key === revisionTab).icon}</div><h3>${empty[0]}</h3><p>${empty[1]}</p></div>`;
   } else {
-    bodyHtml = `<div class="revision-actions">
-      <button class="btn btn-primary" onclick="startQuizSession('${revisionTab === 'bookmarks' ? 'bookmarks' : revisionTab}', null, ${Math.min(20, list.length)})">▶ Practice ${Math.min(20, list.length)} now</button>
-      <button class="btn btn-outline" onclick="openQuizBuilder({source:'${revisionTab === 'bookmarks' ? 'bookmarks' : revisionTab}'})">⚙️ Custom quiz</button>
-    </div>
-    <div class="revision-list">${list.map(q => renderRevisionItem(q)).join('')}</div>`;
+    const quizActions = revisionTab === 'bookmarks'
+      ? (markedQuestions.length
+        ? `<div class="revision-actions">
+            <button class="btn btn-primary" onclick="startQuizSession('bookmarks', null, ${Math.min(20, markedQuestions.length)})">▶ Practice ${Math.min(20, markedQuestions.length)} marked question${Math.min(20, markedQuestions.length) === 1 ? '' : 's'}</button>
+            <button class="btn btn-outline" onclick="openQuizBuilder({source:'bookmarks'})">⚙️ Custom quiz</button>
+          </div>`
+        : '')
+      : `<div class="revision-actions">
+          <button class="btn btn-primary" onclick="startQuizSession('${revisionTab}', null, ${Math.min(20, list.length)})">▶ Practice ${Math.min(20, list.length)} now</button>
+          <button class="btn btn-outline" onclick="openQuizBuilder({source:'${revisionTab}'})">⚙️ Custom quiz</button>
+        </div>`;
+    bodyHtml = `${quizActions}<div class="revision-list">${list.map(item => renderRevisionItem(item)).join('')}</div>`;
   }
   el.innerHTML = `
     <div class="fade-in">
       <div class="section-header"><h1>📕 Revision Hub</h1></div>
-      <p class="lead">Revisit mistakes, scheduled reviews, and saved questions — with instant explanations and links back to notes.</p>
+      <p class="lead">Revisit mistakes, scheduled reviews, and items you marked for revision — with instant explanations and links back to notes.</p>
       <div class="content-tabs">${tabHtml}</div>
       ${bodyHtml}
     </div>`;
 }
 
-function renderRevisionItem(q) {
+function renderRevisionItem(item) {
+  if (item.type === 'note') return renderRevisionNoteItem(item);
+  const q = item;
   const topic = appData.topics.find(t => t.id === q.topicId);
   const p = studyProgress[q.id] || {};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
-  const badge = p.guessed && p.lastResult === 'correct' ? '<span class="rev-badge guessed">Guessed</span>'
+  const badge = revisionTab === 'bookmarks'
+    ? '<span class="rev-badge marked">Marked</span>'
+    : p.guessed && p.lastResult === 'correct' ? '<span class="rev-badge guessed">Guessed</span>'
     : p.lastResult === 'wrong' ? '<span class="rev-badge wrong">Wrong</span>'
     : '<span class="rev-badge due">Review</span>';
   return `<div class="revision-item">
@@ -1917,7 +2126,20 @@ function renderRevisionItem(q) {
     <div class="rev-actions">
       ${linkedNote ? `<button class="xref-btn xref-back" onclick="selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ ${escHtml(linkedNote.subtopic)}</button>` : ''}
       <button class="btn btn-sm btn-outline" onclick="retrySingleQuestion('${q.id}')">Retry</button>
-      ${revisionTab === 'bookmarks' ? `<button class="btn btn-sm btn-danger" onclick="toggleBookmark('${q.id}');renderMain()">Remove</button>` : ''}
+      ${revisionTab === 'bookmarks' ? `<button class="btn btn-sm btn-danger" onclick="toggleRevisionMark('${q.id}');renderMain()">Remove</button>` : ''}
+    </div>
+  </div>`;
+}
+
+function renderRevisionNoteItem(n) {
+  const topic = appData.topics.find(t => t.id === n.topicId);
+  const preview = stripHtmlForSearch(n.content || n.explanation || '');
+  return `<div class="revision-item revision-item-note">
+    <div class="rev-meta">${topic ? topic.icon + ' ' + escHtml(topic.name) : ''} <span class="rev-badge note">Note</span></div>
+    <div class="rev-q"><strong>${escHtml(n.subtopic || 'Note')}</strong>${preview ? `<br>${escHtml(preview.slice(0, 160))}${preview.length > 160 ? '…' : ''}` : ''}</div>
+    <div class="rev-actions">
+      <button class="btn btn-sm btn-primary" onclick="selectedTopic='${n.topicId}';jumpToNote('${n.id}')">Open note</button>
+      <button class="btn btn-sm btn-danger" onclick="toggleRevisionMark('${n.id}');renderMain()">Remove</button>
     </div>
   </div>`;
 }
@@ -1994,7 +2216,7 @@ function renderQuizView(el) {
         <div class="quiz-progress-text">Question ${idx + 1} of ${total}</div>
         <div class="quiz-tools">
           <button class="btn btn-sm ${quizSession.guessed[q.id] ? 'btn-primary' : 'btn-outline'}" ${answered ? 'disabled' : ''} onclick="quizMarkGuessed()" title="Mark if you're guessing">🎲 Guessed</button>
-          <button class="btn btn-sm ${isBookmarked(q.id) ? 'btn-primary' : 'btn-outline'}" onclick="quizToggleBookmark()">${isBookmarked(q.id) ? '🔖 Saved' : '🔖 Save'}</button>
+          <button class="btn btn-sm ${revisionMarkBtnClass(q.id)}" onclick="quizToggleBookmark()">${revisionMarkLabel(q.id)}</button>
         </div>
       </div>
       <div class="progress-bar quiz-bar"><div class="progress-fill" style="width:${((idx + (answered ? 1 : 0)) / total) * 100}%"></div></div>
@@ -2034,7 +2256,7 @@ function renderHome(el) {
   }).join('');
   const mistakes = getMistakeQuestions();
   const due = getDueForReview();
-  const bookmarks = getBookmarkedQuestions();
+  const marked = getRevisionMarkedItems();
   const daily = getDailyMcqCount();
   const streak = getStreak();
   const goalPct = Math.min(100, Math.round((daily / DAILY_MCQ_GOAL) * 100));
@@ -2057,8 +2279,8 @@ function renderHome(el) {
         <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
       </div>
       <div class="journey-card" onclick="navigateTo('revision','bookmarks')">
-        <div class="jc-icon">🔖</div>
-        <div class="jc-body"><div class="jc-title">Saved</div><div class="jc-sub">${bookmarks.length} bookmarked</div></div>
+        <div class="jc-icon">📌</div>
+        <div class="jc-body"><div class="jc-title">Marked</div><div class="jc-sub">${marked.length} for revision</div></div>
       </div>
     </div>
     <div class="goal-strip">
@@ -2799,8 +3021,9 @@ function buildNoteCardHtml(n, displayNum) {
   const linkBar = (practiceBtn || xrefBtns)
     ? `<div class="xref-bar">${practiceBtn}${xrefBtns ? `<span class="xref-label">More practice:</span>${xrefBtns}` : ''}</div>`
     : '';
+  const marked = isMarkedForRevision(n.id);
   return `
-    <div class="note-block fade-in" id="note-${n.id}">
+    <div class="note-block fade-in${marked ? ' revision-marked' : ''}" id="note-${n.id}">
       <div class="note-head">
         <div class="note-number">${displayNum}</div>
         <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
@@ -2812,7 +3035,8 @@ function buildNoteCardHtml(n, displayNum) {
         ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.examTip)}</span></div>`:''}
         ${buildAdvanceReadingHtml(n)}
         ${linkBar}
-        <div style="margin-top:10px;display:flex;gap:6px">
+        <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
+          <button class="btn btn-sm ${revisionMarkBtnClass(n.id)}" onclick="toggleRevisionMark('${n.id}');updateNoteCard('${n.id}')">${revisionMarkLabel(n.id)}</button>
           <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
           <button class="btn btn-sm btn-danger" onclick="deleteContent('${n.id}')">🗑️</button>
         </div>
@@ -2882,8 +3106,11 @@ function isRichShortAnswer(q) {
 }
 
 function richQaCardClass(q) {
-  if (!isRichShortAnswer(q)) return '';
-  return q.source === 'phy_neet_olympiad' ? ' qa-rich-card phy-qa-rich-card' : ' qa-rich-card';
+  if (!q || q.type !== 'short_answer') return '';
+  const base = ' qa-formatted-card';
+  if (q.source === 'phy_neet_olympiad') return base + ' qa-rich-card phy-qa-rich-card';
+  if (isRichShortAnswer(q)) return base + ' qa-rich-card';
+  return base;
 }
 
 function renderPhysicsQaMeta(q) {
@@ -2907,17 +3134,26 @@ function renderKeywordRow(keywords) {
 }
 
 function renderShortAnswerAnswerContent(q) {
+  const fmtOpts = { keywords: q.keywords, question: q.question, source: q.source };
+  const answerHtml = formatShortAnswerContent(q.answer || '', fmtOpts);
   if (!isRichShortAnswer(q)) {
-    return `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.answer || '')}</div>`;
+    return `
+      <div class="qa-answer-box qa-answer-box-standard">
+        <div class="qa-answer-label">Answer</div>
+        <div class="rich-html qa-answer-text qa-answer-formatted">${answerHtml}</div>
+      </div>`;
   }
   const label = q.source === 'phy_neet_olympiad' ? 'Model answer' : 'Advanced answer';
+  const topperHtml = q.topperTip
+    ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html qa-answer-formatted qa-topper-body">${formatShortAnswerContent(q.topperTip, fmtOpts)}</div></div>`
+    : '';
   return `
     <div class="qa-answer-box${q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box' : ''}">
       <div class="qa-answer-label">${label}</div>
-      <div class="rich-html qa-answer-text">${fmtText(q.answer || '')}</div>
+      <div class="rich-html qa-answer-text qa-answer-formatted">${answerHtml}</div>
     </div>
-    ${q.higherReasoning && q.source === 'phy_neet_olympiad' ? '<div class="qa-topper-note phy-hr-note"><strong>🧠 Higher-order reasoning</strong><div class="rich-html inline-rich">Focus on mechanisms, derivations, and precise scientific vocabulary in your written answer.</div></div>' : ''}
-    ${q.topperTip ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html inline-rich">${fmtText(q.topperTip)}</div></div>` : ''}
+    ${q.higherReasoning && q.source === 'phy_neet_olympiad' ? '<div class="qa-topper-note phy-hr-note"><strong>🧠 Higher-order reasoning</strong><div class="rich-html inline-rich qa-answer-formatted">Focus on <span class="qa-hl-kw">mechanisms</span>, <span class="qa-hl-kw">derivations</span>, and <span class="qa-hl-kw">precise scientific vocabulary</span> in your written answer.</div></div>' : ''}
+    ${topperHtml}
   `;
 }
 
@@ -3017,7 +3253,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   // Cap the stagger so long lists never wait seconds to appear; a targeted
   // single-card re-render skips the fade entirely (updates in place).
   const delay = Math.min(idx, 10) * 0.025;
-  let html = `<div class="question-card${richQaCardClass(q)}${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
+  let html = `<div class="question-card${richQaCardClass(q)}${isMarkedForRevision(q.id) ? ' revision-marked' : ''}${targeted ? '' : ' fade-in'}${q.type === 'true_false' && answered !== undefined ? (answered === q.correctAnswer ? ' tf-card-ok' : ' tf-card-bad') : ''}" id="qcard-${q.id}" data-idx="${idx}" style="${targeted ? '' : `animation-delay:${delay}s`}">`;
   const typeLabels = {true_false:'TRUE / FALSE',fill_blank:'FILL IN THE BLANK',mcq:'MULTIPLE CHOICE',match:'MATCH THE FOLLOWING',short_answer:'SHORT / LONG ANSWER'};
   const linkedNote = q.linksTo ? appData.content.find(c => c.id === q.linksTo && c.type === 'note') : null;
   const diagramBadge = isDiagramMcq(q) ? ' <span class="src-chip" title="Diagram-based NEET MCQ">🖼️ Diagram</span>' : '';
@@ -3079,10 +3315,9 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>` : ''}
   </div>`;
 
-  const bm = isBookmarked(q.id);
   html += userRateRowHtml(q);
   html += `<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
-    <button class="btn btn-sm ${bm ? 'btn-primary' : 'btn-outline'}" onclick="toggleBookmark('${q.id}');updateQuestionCard('${q.id}')">${bm ? '🔖 Saved' : '🔖 Save'}</button>
+    <button class="btn btn-sm ${revisionMarkBtnClass(q.id)}" onclick="toggleRevisionMark('${q.id}');updateQuestionCard('${q.id}')">${revisionMarkLabel(q.id)}</button>
     <button class="btn btn-sm btn-outline" onclick="retrySingleQuestion('${q.id}')">▶ Practice</button>
     <button class="btn btn-sm btn-outline" onclick="editContent('${q.id}')">✏️ Edit</button>
     <button class="btn btn-sm btn-danger" onclick="deleteContent('${q.id}')">🗑️</button>
@@ -3099,6 +3334,16 @@ function updateQuestionCard(id) {
   if (!card || !q) return;
   const idx = parseInt(card.getAttribute('data-idx'), 10) || 0;
   card.outerHTML = renderSingleQuestion(q, idx, true);
+}
+
+function updateNoteCard(noteId) {
+  const card = document.getElementById('note-' + noteId);
+  const note = appData.content.find(c => c.id === noteId);
+  if (!card || !note || note.type !== 'note') return;
+  const notes = sortedTopicNotes(selectedTopic);
+  const idx = notes.findIndex(n => n.id === noteId);
+  if (idx < 0) return;
+  card.outerHTML = buildNoteCardHtml(note, idx + 1);
 }
 
 function answerTF(id, val) {

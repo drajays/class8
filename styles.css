@@ -986,6 +986,13 @@ html.studyhub-booting body{visibility:hidden}
 .rev-badge.wrong{background:var(--danger-soft);color:var(--danger)}
 .rev-badge.guessed{background:rgba(201,138,14,.15);color:var(--warning)}
 .rev-badge.due{background:var(--accent-soft);color:var(--accent-ink)}
+.rev-badge.marked{background:color-mix(in srgb,var(--accent) 18%,var(--surface));color:var(--accent-ink)}
+.rev-badge.note{background:var(--surface-2);color:var(--ink-2)}
+.revision-item-note{border-color:color-mix(in srgb,var(--accent) 20%,var(--line))}
+.note-block.revision-marked,.question-card.revision-marked{
+  border-color:color-mix(in srgb,var(--accent) 45%,var(--line));
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 20%,transparent);
+}
 .rev-q{font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:10px;line-height:1.45}
 .rev-actions{display:flex;gap:8px;flex-wrap:wrap}
 .quiz-pool-hint{font-size:.82rem;font-weight:600;color:var(--ink-3);margin-top:4px}
@@ -1216,3 +1223,73 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 [data-theme="dark"] .phy-qa-banner{background:linear-gradient(135deg,#0f172a,#172554);border-color:#1e40af}
 [data-theme="dark"] .phy-qa-answer-box{background:#0f172a;border-left-color:#3b82f6}
 [data-theme="dark"] .phy-hr-note{background:#2e1065;border-left-color:#a855f7;color:#e9d5ff}
+
+/* Short/long answer — enhanced reading layout */
+.qa-answer-formatted{font-size:.92rem;line-height:1.72;color:var(--ink)}
+.qa-answer-formatted p{margin:0 0 10px}
+.qa-answer-formatted p:last-child{margin-bottom:0}
+.qa-lead-def{
+  font-size:.96rem;font-weight:500;padding:10px 12px;border-radius:10px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+  border-left:3px solid var(--accent)
+}
+.qa-body-text{padding-left:2px}
+.qa-hl-strong{font-weight:800;color:var(--ink)}
+.qa-hl-term{
+  font-weight:800;color:#0f766e;text-decoration:underline;text-decoration-color:color-mix(in srgb,#14b8a6 55%,transparent);
+  text-underline-offset:2px
+}
+.qa-hl-kw{
+  font-weight:700;color:#1d4ed8;background:linear-gradient(180deg,#eff6ff,#dbeafe);
+  padding:1px 6px;border-radius:5px;border-bottom:2px solid #93c5fd
+}
+.qa-hl-verb{font-weight:700;font-style:italic;color:#7c3aed;text-transform:lowercase}
+.qa-hl-num{font-weight:800;color:#b45309;font-variant-numeric:tabular-nums}
+.qa-hl-unit{font-weight:700;color:#0369a1;font-size:.88em}
+.qa-hl-formula{
+  font-weight:700;color:#9a3412;background:#fff7ed;padding:1px 6px;border-radius:6px;
+  border:1px solid #fed7aa
+}
+.qa-hl-var{font-weight:800;color:#c2410c}
+.qa-table-wrap{
+  margin:4px 0 8px;overflow-x:auto;border-radius:12px;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));
+  box-shadow:var(--shadow-sm)
+}
+.qa-table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--surface)}
+.qa-table thead th{
+  text-align:left;padding:10px 12px;font-size:.68rem;font-weight:800;
+  text-transform:uppercase;letter-spacing:.04em;color:#fff;
+  background:linear-gradient(135deg,#1d4ed8,#0f766e);border-bottom:2px solid #0e7490
+}
+.qa-table tbody td{
+  padding:10px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.55
+}
+.qa-table tbody tr:last-child td{border-bottom:none}
+.qa-table tbody tr:nth-child(even){background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+.qa-table-compare tbody td{width:50%}
+.qa-table-compare thead th{width:50%;background:linear-gradient(135deg,#7c3aed,#1d4ed8)}
+.qa-table-process thead th:nth-child(2){width:42px;text-align:center}
+.qa-arrow-cell{text-align:center;font-size:1.1rem;font-weight:900;color:var(--accent);background:var(--surface-2)!important}
+.qa-part-badge{
+  display:inline-block;min-width:2rem;text-align:center;padding:3px 8px;border-radius:8px;
+  font-weight:800;font-size:.78rem;color:#fff;background:linear-gradient(135deg,#2563eb,#0891b2)
+}
+.qa-cell-detail{color:var(--ink-2);font-size:.84rem}
+.qa-answer-box-standard{border-left-color:var(--success);background:color-mix(in srgb,var(--success) 6%,var(--surface))}
+.qa-topper-body{font-size:.88rem;line-height:1.65;margin-top:4px}
+.qa-formatted-html table{width:100%;border-collapse:collapse;margin:8px 0}
+.qa-formatted-html th,.qa-formatted-html td{padding:8px 10px;border:1px solid var(--line)}
+.phy-qa-answer-box .qa-hl-term{color:#1a5276;text-decoration-color:#2980b9}
+.phy-qa-answer-box .qa-hl-kw{color:#1a5276;background:#eff6ff;border-bottom-color:#2980b9}
+.phy-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#2980b9 10%,#f8fbff);border-left-color:#2980b9}
+[data-theme="dark"] .qa-lead-def{background:color-mix(in srgb,var(--accent) 14%,var(--surface))}
+[data-theme="dark"] .qa-hl-kw{background:#172554;color:#93c5fd;border-bottom-color:#1e40af}
+[data-theme="dark"] .qa-hl-term{color:#5eead4;text-decoration-color:#14b8a6}
+[data-theme="dark"] .qa-hl-formula{background:#431407;border-color:#9a3412;color:#fdba74}
+[data-theme="dark"] .qa-table tbody tr:nth-child(even){background:color-mix(in srgb,#1e3a8a 18%,var(--surface))}
+[data-theme="dark"] .qa-table thead th{background:linear-gradient(135deg,#1e3a8a,#0f766e)}
+[data-theme="dark"] .qa-part-badge{background:linear-gradient(135deg,#1e40af,#0e7490)}
+[data-theme="dark"] .phy-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#1e3a8a 22%,#0f172a)}
+.question-card.qa-formatted-card{border-color:color-mix(in srgb,var(--accent) 28%,var(--line))}
+[data-theme="dark"] .question-card.qa-formatted-card{border-color:#334155}

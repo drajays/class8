@@ -99,8 +99,8 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=59">
-<link rel="stylesheet" href="exam-panel.css?v=59">
+<link rel="stylesheet" href="styles.css?v=61">
+<link rel="stylesheet" href="exam-panel.css?v=61">
 </head>
 <body>
 
@@ -358,7 +358,7 @@
         <option value="diagrams">Diagram MCQs — figure-based NEET questions</option>
         <option value="mistakes">Mistake Book — wrong &amp; guessed answers</option>
         <option value="due">Due Today — spaced revision queue</option>
-        <option value="bookmarks">Saved — bookmarked questions</option>
+        <option value="bookmarks">Marked — notes &amp; questions for revision</option>
       </select>
     </div>
     <div class="form-group">
@@ -413,7 +413,7 @@
       <button class="btn btn-outline" id="sync-btn-pull" onclick="pullFromGithub()">⬇️ Pull from GitHub</button>
       <button class="btn btn-outline" onclick="saveSyncSettings()">💾 Save settings</button>
     </div>
-    <p class="sync-help sync-help-foot">Syncs your edits, progress, bookmarks, and question star ratings — not the full textbook bank (keeps GitHub under 1 MB). Push after rating or editing; pull on other devices.</p>
+    <p class="sync-help sync-help-foot">Syncs your edits, progress, revision marks, and question star ratings — not the full textbook bank (keeps GitHub under 1 MB). Push after rating or editing; pull on other devices.</p>
   </div>
 </div>
 
@@ -422,7 +422,7 @@
   <div class="modal" style="max-width:520px">
     <button class="close-btn" onclick="closeModal('modal-update')">✕</button>
     <h2>🔄 Update StudyHub</h2>
-    <p class="sync-intro">Get the newest notes, questions and fixes. Your practice progress, bookmarks and star ratings stay saved on this device.</p>
+    <p class="sync-intro">Get the newest notes, questions and fixes. Your practice progress, revision marks and star ratings stay saved on this device.</p>
     <div class="sync-meta-grid update-meta-grid">
       <div><span class="sync-meta-label">Your version</span><strong id="update-current">—</strong></div>
       <div><span class="sync-meta-label">Latest online</span><strong id="update-remote">Checking…</strong></div>
@@ -462,38 +462,38 @@
 <div class="toast" id="toast"></div>
 
 <!-- DATA (load order matters) -->
-<script src="data-core.js?v=59"></script>
-<script src="chapters3to8.js?v=59"></script>
-<script src="physics-qbank.js?v=59"></script>
-<script src="physics-practice.js?v=59"></script>
-<script src="physics-neet.js?v=59"></script>
-<script src="physics-mindmaps.js?v=59"></script>
-<script src="physics-cheatsheets.js?v=59"></script>
-<script src="biology.js?v=59"></script>
-<script src="biology-neet.js?v=59"></script>
-<script src="biology-olympiad.js?v=59"></script>
-<script src="biology-revision-notes.js?v=59"></script>
-<script src="biology-practice.js?v=59"></script>
-<script src="biology-mindmaps.js?v=59"></script>
-<script src="biology-cheatsheets.js?v=59"></script>
-<script src="chemistry.js?v=59"></script>
-<script src="chemistry-neet.js?v=59"></script>
-<script src="chemistry-mindmaps.js?v=59"></script>
-<script src="chemistry-cheatsheets.js?v=59"></script>
-<script src="geography.js?v=59"></script>
-<script src="geography-mindmaps.js?v=59"></script>
-<script src="geography-cheatsheets.js?v=59"></script>
-<script src="history.js?v=59"></script>
-<script src="history-mindmaps.js?v=59"></script>
-<script src="history-cheatsheets.js?v=59"></script>
-<script src="civics.js?v=59"></script>
-<script src="civics-mindmaps.js?v=59"></script>
-<script src="civics-cheatsheets.js?v=59"></script>
-<script src="history-civics-practice.js?v=59"></script>
+<script src="data-core.js?v=61"></script>
+<script src="chapters3to8.js?v=61"></script>
+<script src="physics-qbank.js?v=61"></script>
+<script src="physics-practice.js?v=61"></script>
+<script src="physics-neet.js?v=61"></script>
+<script src="physics-mindmaps.js?v=61"></script>
+<script src="physics-cheatsheets.js?v=61"></script>
+<script src="biology.js?v=61"></script>
+<script src="biology-neet.js?v=61"></script>
+<script src="biology-olympiad.js?v=61"></script>
+<script src="biology-revision-notes.js?v=61"></script>
+<script src="biology-practice.js?v=61"></script>
+<script src="biology-mindmaps.js?v=61"></script>
+<script src="biology-cheatsheets.js?v=61"></script>
+<script src="chemistry.js?v=61"></script>
+<script src="chemistry-neet.js?v=61"></script>
+<script src="chemistry-mindmaps.js?v=61"></script>
+<script src="chemistry-cheatsheets.js?v=61"></script>
+<script src="geography.js?v=61"></script>
+<script src="geography-mindmaps.js?v=61"></script>
+<script src="geography-cheatsheets.js?v=61"></script>
+<script src="history.js?v=61"></script>
+<script src="history-mindmaps.js?v=61"></script>
+<script src="history-cheatsheets.js?v=61"></script>
+<script src="civics.js?v=61"></script>
+<script src="civics-mindmaps.js?v=61"></script>
+<script src="civics-cheatsheets.js?v=61"></script>
+<script src="history-civics-practice.js?v=61"></script>
 <!-- APP LOGIC -->
-<script src="app.js?v=59"></script>
-<script src="exam-panel.js?v=59"></script>
-<script src="github-sync.js?v=59"></script>
+<script src="app.js?v=61"></script>
+<script src="exam-panel.js?v=61"></script>
+<script src="github-sync.js?v=61"></script>
 <script>
 (function bootStudyHub() {
   function startApp() {
