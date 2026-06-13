@@ -5,7 +5,8 @@
 <script>
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
-  var BUILD = '59';
+  /* Must match version.json "build" — mismatch causes purge/reload loops after deploy. */
+  var BUILD = '61';
   window.__STUDYHUB_BUILD = BUILD;
   window.__STUDYHUB_ADMIN_PW = '1234';
   window.__STUDYHUB_BLOCK_BOOT = false;
@@ -40,6 +41,14 @@
     chain.then(reload).catch(reload);
   }
 
+  function shouldPurgeOnceForBuild(buildId) {
+    try {
+      if (sessionStorage.getItem(PURGE_FLAG) === buildId) return false;
+      sessionStorage.setItem(PURGE_FLAG, buildId);
+    } catch (e) { /* sessionStorage blocked — allow one purge attempt */ }
+    return true;
+  }
+
   function checkRemoteBuild() {
     if (!('fetch' in window) || location.protocol === 'file:') {
       return Promise.resolve(true);
@@ -51,14 +60,13 @@
         var remote = String(data.build);
         var remoteN = parseInt(remote, 10);
         var localN = parseInt(BUILD, 10);
-        if (!isNaN(remoteN) && !isNaN(localN) && remoteN > localN) {
+        if (!isNaN(remoteN) && remoteN > localN) {
+          window.__STUDYHUB_BUILD = remote;
           try { localStorage.setItem(KEY, remote); } catch (e) {}
-          try {
-            if (sessionStorage.getItem(PURGE_FLAG) === remote) return true;
-            sessionStorage.setItem(PURGE_FLAG, remote);
-          } catch (e) {}
-          blockBootAndPurge();
-          return false;
+          if (shouldPurgeOnceForBuild(remote)) {
+            blockBootAndPurge();
+            return false;
+          }
         }
         return true;
       })
@@ -67,12 +75,12 @@
 
   var prev = '';
   try { prev = localStorage.getItem(KEY) || ''; } catch (e) {}
+  var prevN = parseInt(prev, 10);
+  var buildN = parseInt(BUILD, 10);
+
   if (prev !== BUILD) {
     try { localStorage.setItem(KEY, BUILD); } catch (e) {}
-    var purged = false;
-    try { purged = sessionStorage.getItem(PURGE_FLAG) === BUILD; } catch (e) {}
-    if (!purged) {
-      try { sessionStorage.setItem(PURGE_FLAG, BUILD); } catch (e) {}
+    if (!isNaN(buildN) && (isNaN(prevN) || buildN > prevN) && shouldPurgeOnceForBuild(BUILD)) {
       blockBootAndPurge();
       window.__STUDYHUB_BOOT_PROMISE = Promise.resolve(false);
       return;

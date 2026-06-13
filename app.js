@@ -4197,6 +4197,7 @@ let _appUpdatePending = false;
 let _appUpdateRemote = null;
 let _appUpdateChecking = false;
 let _appUpdateNotified = false;
+let _userRequestedSwUpdate = false;
 
 function getAppBuild() {
   return window.__STUDYHUB_BUILD || '?';
@@ -4321,6 +4322,7 @@ async function runAppUpdate() {
     if ('serviceWorker' in navigator) {
       const reg = await navigator.serviceWorker.getRegistration();
       if (reg && reg.waiting) {
+        _userRequestedSwUpdate = true;
         reg.waiting.postMessage({ type: 'SKIP_WAITING' });
         return;
       }
@@ -4585,16 +4587,9 @@ function handleConnectivityChange() {
 function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
-  // Only auto-reload when an *existing* SW is replaced (app update). On the very
-  // first install there was no old bundle — reloading here races the first tap
-  // (e.g. Class 8) and looks like a crash.
-  var hadController = !!navigator.serviceWorker.controller;
   var reloaded = false;
   navigator.serviceWorker.addEventListener('controllerchange', function () {
-    if (!hadController) {
-      hadController = true;
-      return;
-    }
+    if (!_userRequestedSwUpdate) return;
     if (reloaded) return;
     reloaded = true;
     location.reload();
@@ -4651,11 +4646,6 @@ function initApp() {
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState !== 'visible') return;
     checkForAppUpdate(true);
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistration().then(function (reg) {
-        if (reg) reg.update();
-      });
-    }
   });
   if (typeof setupGithubSync === 'function') setupGithubSync();
   window.addEventListener('online', handleConnectivityChange);
