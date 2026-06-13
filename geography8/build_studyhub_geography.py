@@ -16,7 +16,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-SRC_MD = Path.home() / "Downloads/geography8/geography.pdf_by_PaddleOCR-VL-1.6.md"
+SRC_MD = ROOT / "geography8/data/geography.pdf_by_PaddleOCR-VL-1.6.md"
+if not SRC_MD.exists():
+    SRC_MD = Path.home() / "Downloads/geography8/geography.pdf_by_PaddleOCR-VL-1.6.md"
 DATA_DIR = ROOT / "data/geography8/chapters"
 ASSETS_DIR = ROOT / "assets/geography8/images"
 EXISTING_IMAGES = ROOT / "images"

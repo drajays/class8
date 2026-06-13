@@ -91,6 +91,19 @@ function isChemistryTopic(topicId) {
   return CHEMISTRY_TOPIC_IDS.has(topicId);
 }
 
+const GEOGRAPHY_TOPIC_IDS = new Set([
+  'geo-ch1', 'geo-ch2', 'geo-ch3', 'geo-ch4', 'geo-ch5',
+  'geo-ch6', 'geo-ch7', 'geo-ch8'
+]);
+
+function isGeographyTopic(topicId) {
+  return GEOGRAPHY_TOPIC_IDS.has(topicId);
+}
+
+function isGeoChemQaSource(source) {
+  return source === 'chem_neet_olympiad' || source === 'geo_neet_olympiad';
+}
+
 let _biologyOlympiadIdSet = null;
 
 function getBiologyOlympiadIds() {
@@ -164,9 +177,14 @@ function topicTextQuestions(topicId) {
 
 /** Short/long answer Q&A bank — shown in the dedicated Q&A tab (all subjects). */
 function topicShortAnswerQuestions(topicId) {
-  return appData.content.filter(c =>
+  const all = appData.content.filter(c =>
     (!topicId || c.topicId === topicId) && c.type === 'short_answer'
   );
+  if (topicId && isGeographyTopic(topicId)) {
+    const geoQa = all.filter(q => q.source === 'geo_neet_olympiad');
+    if (geoQa.length) return geoQa;
+  }
+  return all;
 }
 
 /** Interactive practice items — excludes Q&A and match (self-study types). */
@@ -222,6 +240,23 @@ function chemistryContentStats(topicId) {
     short_answer: topicShortAnswerQuestions(topicId).length,
     descriptive: qa.length,
     analytical: qa.filter(q => q.questionType && /why|how/i.test(q.questionType)).length
+  };
+}
+
+function geographyContentStats(topicId) {
+  const qs = topicTextQuestions(topicId);
+  const qa = topicShortAnswerQuestions(topicId).filter(q => q.source === 'geo_neet_olympiad');
+  return {
+    notes: topicNotes(topicId).length,
+    total: qs.length,
+    mcq: qs.filter(q => q.type === 'mcq').length,
+    true_false: qs.filter(q => q.type === 'true_false').length,
+    fill_blank: qs.filter(q => q.type === 'fill_blank').length,
+    match: qs.filter(q => q.type === 'match').length,
+    short_answer: topicShortAnswerQuestions(topicId).length,
+    descriptive: qa.length,
+    analytical: qa.filter(q => q.questionType && /why|how/i.test(q.questionType)).length,
+    diagrams: diagramQuestions(topicId).length
   };
 }
 
@@ -403,6 +438,8 @@ function _mergeModuleArraysIntoDefault() {
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
     typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
+    typeof GEOGRAPHY_DIAGRAM_DATA !== 'undefined' ? GEOGRAPHY_DIAGRAM_DATA : null,
+    typeof GEOGRAPHY_PRACTICE !== 'undefined' ? GEOGRAPHY_PRACTICE : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
     typeof PHYSICS_PRACTICE !== 'undefined' ? PHYSICS_PRACTICE : null,
     typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
@@ -1627,6 +1664,9 @@ function sourceChipHtml(source) {
   if (source === 'chem_neet_olympiad') {
     return ' <span class="src-chip src-chip-chem" title="Chemistry descriptive & analytical Q&A bank">Chem Q&A</span>';
   }
+  if (source === 'geo_neet_olympiad') {
+    return ' <span class="src-chip src-chip-geo" title="Geography descriptive & analytical Q&A bank">Geo Q&A</span>';
+  }
   if (source === 'icse_300_practice') {
     return ' <span class="src-chip" title="ICSE practice Q&A bank">Practice</span>';
   }
@@ -2580,7 +2620,8 @@ function renderContent(el) {
   const questions = topicPracticeQuestions(selectedTopic);
   const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic)
     : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic)
-    : (isChemistryTopic(selectedTopic) ? chemistryContentStats(selectedTopic) : null));
+    : (isChemistryTopic(selectedTopic) ? chemistryContentStats(selectedTopic)
+    : (isGeographyTopic(selectedTopic) ? geographyContentStats(selectedTopic) : null)));
   const diagrams = diagramQuestions(selectedTopic);
   const diagramFigCount = new Set(diagrams.map(q => q.image)).size;
   const mmData = chapterMindmap(selectedTopic);
@@ -2604,10 +2645,11 @@ function renderContent(el) {
         ${qStats ? `<p class="chapter-bank-hint">📚 ${
           isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation'
           : isChemistryTopic(selectedTopic) ? 'ICSE Chemistry — Descriptive & Analytical Q&A'
+          : isGeographyTopic(selectedTopic) ? 'ICSE Geography — Descriptive & Analytical Q&A'
           : 'ICSE Physics'
         } — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} practice items</strong>${
-          isChemistryTopic(selectedTopic) && qStats.descriptive
-            ? ` · <strong>${qStats.descriptive} descriptive Q&amp;A</strong>${qStats.analytical ? ` (${qStats.analytical} analytical)` : ''}`
+          (isChemistryTopic(selectedTopic) || isGeographyTopic(selectedTopic)) && qStats.descriptive
+            ? ` · <strong>${qStats.descriptive} descriptive Q&amp;A</strong>${qStats.analytical ? ` (${qStats.analytical} analytical)` : ''}${isGeographyTopic(selectedTopic) && qStats.diagrams ? ` · <strong>${qStats.diagrams} diagram questions</strong>` : ''}`
             : ` · <strong>${diagrams.length} diagram MCQs</strong>${qStats.companion ? ` · <strong>${qStats.companion} companion MCQs</strong>` : ''}`
         }</p>` : ''}
         <div class="chapter-tabs-row">
@@ -3138,7 +3180,7 @@ function isRichShortAnswer(q) {
   return !!(q && q.type === 'short_answer' && (
     q.source === 'bio_neet_olympiad' ||
     q.source === 'phy_neet_olympiad' ||
-    q.source === 'chem_neet_olympiad' ||
+    isGeoChemQaSource(q.source) ||
     (Array.isArray(q.keywords) && q.keywords.length) ||
     q.topperTip ||
     q.difficulty ||
@@ -3152,6 +3194,7 @@ function richQaCardClass(q) {
   const base = ' qa-formatted-card';
   if (q.source === 'phy_neet_olympiad') return base + ' qa-rich-card phy-qa-rich-card';
   if (q.source === 'chem_neet_olympiad') return base + ' qa-rich-card chem-qa-rich-card';
+  if (q.source === 'geo_neet_olympiad') return base + ' qa-rich-card geo-qa-rich-card';
   if (isRichShortAnswer(q)) return base + ' qa-rich-card';
   return base;
 }
@@ -3180,7 +3223,7 @@ function renderChemistryQaMeta(q) {
 
 function renderQaMetaRow(q) {
   if (q.source === 'phy_neet_olympiad') return renderPhysicsQaMeta(q);
-  if (q.source === 'chem_neet_olympiad') return renderChemistryQaMeta(q);
+  if (isGeoChemQaSource(q.source)) return renderChemistryQaMeta(q);
   if (Array.isArray(q.keywords) && q.keywords.length) return renderKeywordRow(q.keywords);
   return '';
 }
@@ -3223,7 +3266,7 @@ function renderChemUpgradeAnswer(q) {
 
 function renderShortAnswerAnswerContent(q) {
   const fmtOpts = { keywords: q.keywords, question: q.question, source: q.source };
-  const isChemHtml = q.source === 'chem_neet_olympiad' && q.answerFormat === 'html';
+  const isChemHtml = isGeoChemQaSource(q.source) && q.answerFormat === 'html';
   const answerHtml = isChemHtml
     ? renderChemUpgradeAnswer(q)
     : formatShortAnswerContent(q.answer || '', fmtOpts);
@@ -3235,20 +3278,21 @@ function renderShortAnswerAnswerContent(q) {
       </div>`;
   }
   const label = q.source === 'phy_neet_olympiad' ? 'Model answer'
-    : q.source === 'chem_neet_olympiad' ? 'Model answer / solution explainer'
+    : isGeoChemQaSource(q.source) ? 'Model answer / solution explainer'
     : 'Advanced answer';
   const topperHtml = q.topperTip
     ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html qa-answer-formatted qa-topper-body">${formatShortAnswerContent(q.topperTip, fmtOpts)}</div></div>`
     : '';
   const answerBoxClass = q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box'
-    : q.source === 'chem_neet_olympiad' ? ' chem-qa-answer-box' : '';
+    : q.source === 'chem_neet_olympiad' ? ' chem-qa-answer-box'
+    : q.source === 'geo_neet_olympiad' ? ' geo-qa-answer-box' : '';
   return `
     <div class="qa-answer-box${answerBoxClass}">
       <div class="qa-answer-label">${label}</div>
       <div class="rich-html qa-answer-text qa-answer-formatted">${answerHtml}</div>
     </div>
     ${q.higherReasoning && q.source === 'phy_neet_olympiad' ? '<div class="qa-topper-note phy-hr-note"><strong>🧠 Higher-order reasoning</strong><div class="rich-html inline-rich qa-answer-formatted">Focus on <span class="qa-hl-kw">mechanisms</span>, <span class="qa-hl-kw">derivations</span>, and <span class="qa-hl-kw">precise scientific vocabulary</span> in your written answer.</div></div>' : ''}
-    ${q.higherReasoning && q.source === 'chem_neet_olympiad' && /why|how/i.test(q.questionType || '') ? '<div class="qa-topper-note chem-analytical-note"><strong>🔬 Analytical tip</strong><div class="rich-html inline-rich qa-answer-formatted">State the <span class="qa-hl-kw">principle</span>, explain the <span class="qa-hl-kw">mechanism</span> step-by-step, and link to <span class="qa-hl-kw">molecular-level reasoning</span>.</div></div>' : ''}
+    ${q.higherReasoning && isGeoChemQaSource(q.source) && /why|how/i.test(q.questionType || '') ? `<div class="qa-topper-note ${q.source === 'geo_neet_olympiad' ? 'geo-analytical-note' : 'chem-analytical-note'}"><strong>${q.source === 'geo_neet_olympiad' ? '🌍 Analytical tip' : '🔬 Analytical tip'}</strong><div class="rich-html inline-rich qa-answer-formatted">${q.source === 'geo_neet_olympiad' ? 'State the <span class="qa-hl-kw">geographical principle</span>, explain with <span class="qa-hl-kw">map or spatial evidence</span>, and link to <span class="qa-hl-kw">real-world examples</span>.' : 'State the <span class="qa-hl-kw">principle</span>, explain the <span class="qa-hl-kw">mechanism</span> step-by-step, and link to <span class="qa-hl-kw">molecular-level reasoning</span>.'}</div></div>` : ''}
     ${topperHtml}
   `;
 }
@@ -3258,7 +3302,18 @@ function shortAnswerBannerHtml(list) {
   const phyCount = items.filter(q => q.source === 'phy_neet_olympiad').length;
   const bioCount = items.filter(q => q.source === 'bio_neet_olympiad').length;
   const chemCount = items.filter(q => q.source === 'chem_neet_olympiad').length;
+  const geoCount = items.filter(q => q.source === 'geo_neet_olympiad').length;
   const parts = [];
+  if (geoCount) {
+    const analytical = items.filter(q => q.source === 'geo_neet_olympiad' && /why|how/i.test(q.questionType || '')).length;
+    parts.push(`<div class="qa-chapter-banner geo-qa-banner">
+      <div class="qa-banner-icon" aria-hidden="true">🌏</div>
+      <div class="qa-banner-body">
+        <strong>Geography Descriptive &amp; Analytical Q&amp;A</strong>
+        <p>${geoCount} model answers in this chapter${analytical ? ` (${analytical} why/how analytical)` : ''} — check difficulty badges, then reveal the full solution.</p>
+      </div>
+    </div>`);
+  }
   if (chemCount) {
     const analytical = items.filter(q => q.source === 'chem_neet_olympiad' && /why|how/i.test(q.questionType || '')).length;
     parts.push(`<div class="qa-chapter-banner chem-qa-banner">
@@ -3415,13 +3470,16 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     ? (answered !== undefined ? '👁️ Hide solution' : (
       q.source === 'chem_neet_olympiad' && q.answerFormat === 'html'
         ? '👁️ View solution & hint'
-        : q.source === 'phy_neet_olympiad' || q.source === 'chem_neet_olympiad'
+        : isGeoChemQaSource(q.source) && q.answerFormat === 'html'
+        ? '👁️ View solution & hint'
+        : q.source === 'phy_neet_olympiad' || isGeoChemQaSource(q.source)
         ? '👁️ Show model answer'
         : '👁️ Show model answer & topper tip'))
     : (answered !== undefined ? '👁️ Answer & Explanation' : '👁️ Show Answer & Explanation');
   const toggleRichClass = isRichShortAnswer(q)
     ? (q.source === 'phy_neet_olympiad' ? ' toggle-answer-rich toggle-answer-phy'
       : q.source === 'chem_neet_olympiad' ? ' toggle-answer-rich toggle-answer-chem'
+      : q.source === 'geo_neet_olympiad' ? ' toggle-answer-rich toggle-answer-geo'
       : ' toggle-answer-rich')
     : '';
   html += `<div class="toggle-answer${toggleRichClass}" onclick="toggleAnswer('ans-${q.id}')">${toggleLabel}</div>`;

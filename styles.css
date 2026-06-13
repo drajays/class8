@@ -1350,3 +1350,28 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 [data-theme="dark"] .chem-style-glassbox{background:#4c1d95;color:#e9d5ff;border-color:#7c3aed}
 [data-theme="dark"] .chem-math{background:#431407;border-color:#9a3412;color:#fdba74}
 [data-theme="dark"] .chem-answer-rich b,[data-theme="dark"] .chem-answer-rich strong{color:#a5b4fc}
+
+/* Geography descriptive & analytical Q&A */
+.src-chip-geo{background:#ecfdf5;border-color:#6ee7b7;color:#047857}
+[data-theme="dark"] .src-chip-geo{background:#064e3b;border-color:#059669;color:#a7f3d0}
+.geo-qa-banner{border-color:#6ee7b7;background:linear-gradient(135deg,#ecfdf5,#f0fdf4)}
+.geo-qa-banner .qa-banner-body strong{color:#047857}
+.question-card.geo-qa-rich-card{
+  border-color:#6ee7b7;
+  background:linear-gradient(180deg,color-mix(in srgb,#ecfdf5 58%,var(--surface)),var(--surface));
+  box-shadow:0 10px 28px rgba(5,150,105,.08)
+}
+.geo-qa-answer-box{border-left-color:#059669;background:#f0fdf4}
+.geo-analytical-note{background:#ecfdf5;border-left-color:#059669}
+.geo-analytical-note strong{color:#047857}
+.toggle-answer-geo{background:linear-gradient(90deg,#059669,#0d9488)}
+.geo-qa-answer-box .qa-hl-term{color:#047857;text-decoration-color:#10b981}
+.geo-qa-answer-box .qa-hl-kw{color:#047857;background:#ecfdf5;border-bottom-color:#34d399}
+.geo-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#059669 8%,#f0fdf4);border-left-color:#059669}
+.geo-qa-answer-box .chem-answer-rich b,.geo-qa-answer-box .chem-answer-rich strong{color:#047857}
+[data-theme="dark"] .question-card.geo-qa-rich-card{background:linear-gradient(180deg,#064e3b,var(--surface));border-color:#059669}
+[data-theme="dark"] .geo-qa-banner{background:linear-gradient(135deg,#064e3b,#134e4a);border-color:#059669}
+[data-theme="dark"] .geo-qa-answer-box{background:#0f172a;border-left-color:#10b981}
+[data-theme="dark"] .geo-analytical-note{background:#064e3b;border-left-color:#34d399}
+[data-theme="dark"] .geo-qa-answer-box .qa-lead-def{background:color-mix(in srgb,#059669 20%,#0f172a)}
+[data-theme="dark"] .geo-qa-answer-box .chem-answer-rich b,[data-theme="dark"] .geo-qa-answer-box .chem-answer-rich strong{color:#6ee7b7}

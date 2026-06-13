@@ -11,6 +11,8 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 execSync('python3 geography8/build_studyhub_geography.py', { cwd: ROOT, stdio: 'inherit' });
+execSync('python3 geography8/build_geography_diagrams.py', { cwd: ROOT, stdio: 'inherit' });
+execSync('python3 geography8/build_geography_practice_qa.py', { cwd: ROOT, stdio: 'inherit' });
 
 const geo = path.join(ROOT, 'geography.js');
 if (!fs.existsSync(geo)) throw new Error('geography.js not generated');
