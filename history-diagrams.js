@@ -1,6 +1,6 @@
 // ICSE Class 8 History & Civics — diagram MCQs & descriptive Q&A from textbook figures
 // Source: history8/data/history and civics.pdf_by_PaddleOCR-VL-1.6.md
-// 514 items (257 figures × 2)
+// 516 items (258 figures × 2)
 // Regenerate: python3 history8/build_history_diagrams.py
 const HISTORY_DIAGRAM_DATA = [
 {
@@ -9,19 +9,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (A Period of Transition). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…",
-  "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
-  "**Executive summary:** Primary sources are the evidences that historians use to know about events, people and their everyday life in the pas…"
+  "The Last Supper, a late 15th-century painting by Leonardo da Vinci, is one of the most famous Renaissance period paintings in the world.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "Humanism: In the Medieval Period, everything revolved around religion.",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period."
  ],
  "correctOption": 0,
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "answer": "The Last Supper, a late 15th-century painting by Leonardo da Vinci, is one of the most famous Renaissance period paintings in the world.",
  "image": "assets/history8/images/ch1/img_in_image_box_97_309_705_788.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig001-sa",
@@ -29,12 +29,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "question": "Identify the artwork shown (A Period of Transition). Who created it and why is it important in this chapter?",
+ "answer": "The Last Supper, a late 15th-century painting by Leonardo da Vinci, is one of the most famous Renaissance period paintings in the world.",
  "image": "assets/history8/images/ch1/img_in_image_box_97_309_705_788.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig002-mcq",
@@ -42,19 +42,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Period of Transition. Which statement correctly describes what it illustrates?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "2. Describe the characteristics of the Renaissance Movement.",
-  "Colony: A territory that an imperial power ruled directly through colonial officials",
-  "• Most books in the history section of a library are secondary sources"
+  "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to…",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "Each period has unique features—social, political and economic—that make it different from other periods.",
+  "Driven by the desire for wealth, adventure and knowledge, this transition was manifested in change in thinking and ideology, and the Protestant Reformatio…"
  ],
  "correctOption": 0,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "answer": "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to the Modern Age.",
  "image": "assets/history8/images/ch1/img_in_image_box_158_198_358_475.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig002-sa",
@@ -62,12 +62,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what History Alive! represents and why it matters in this chapter.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Study the figure on A Period of Transition. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to the Modern Age.",
  "image": "assets/history8/images/ch1/img_in_image_box_158_198_358_475.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig003-mcq",
@@ -75,19 +75,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Period of Transition. Which statement correctly describes what it illustrates?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…",
-  "a. The outbreak of the First and Second World Wars resulted in imperialism."
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "The medieval period in Europe (also known as the Middle Ages) lasted from the 5th to the 15th century.",
+  "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to…",
+  "Vast overseas market: During that period, Britain was a big colonial power."
  ],
- "correctOption": 0,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "correctOption": 2,
+ "answer": "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to the Modern Age.",
  "image": "assets/history8/images/ch1/img_in_image_box_509_196_709_484.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig003-sa",
@@ -95,12 +95,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what History Alive! represents and why it matters in this chapter.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Study the figure on A Period of Transition. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to the Modern Age.",
  "image": "assets/history8/images/ch1/img_in_image_box_509_196_709_484.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig004-mcq",
@@ -108,19 +108,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Period of Transition. Which statement correctly describes what it illustrates?",
  "options": [
-  "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic devel…",
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
-  "The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past"
+  "The Last Supper, a late 15th-century painting by Leonardo da Vinci, is one of the most famous Renaissance period paintings in the world.",
+  "The medieval period in Europe (also known as the Middle Ages) lasted from the 5th to the 15th century.",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
+  "Each period has unique features—social, political and economic—that make it different from other periods."
  ],
- "correctOption": 1,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "correctOption": 3,
+ "answer": "Each period has unique features—social, political and economic—that make it different from other periods.",
  "image": "assets/history8/images/ch1/img_in_image_box_858_207_1057_501.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig004-sa",
@@ -128,12 +128,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what History Alive! represents and why it matters in this chapter.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Study the figure on A Period of Transition. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Each period has unique features—social, political and economic—that make it different from other periods.",
  "image": "assets/history8/images/ch1/img_in_image_box_858_207_1057_501.jpg",
- "caption": "History Alive!",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig005-mcq",
@@ -141,19 +141,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Causes. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Causes. Which statement correctly describes this person and their role?",
  "options": [
-  "a. The outbreak of the First and Second World Wars resulted in imperialism.",
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…",
-  "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This …",
-  "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Gree…"
+  "### IMPERIALISM: MEANING, CAUSES AND IMPACT",
+  "The following were the major causes responsible for the Renaissance: Rise of a new nobility: An increase in trade led to the emergence of a new class of n…",
+  "In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
+  "The following were the major causes responsible for the Renaissance: Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constanti…"
  ],
- "correctOption": 3,
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "correctOption": 1,
+ "answer": "The following were the major causes responsible for the Renaissance: Rise of a new nobility: An increase in trade led to the emergence of a new class of nobles (who were actually merchants and not nobles by birth), who patronised learning.",
  "image": "assets/history8/images/ch1/img_in_image_box_883_489_1087_754.jpg",
  "caption": "Causes",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig005-sa",
@@ -161,12 +161,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "question": "Identify Causes shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The following were the major causes responsible for the Renaissance: Rise of a new nobility: An increase in trade led to the emergence of a new class of nobles (who were actually merchants and not nobles by birth), who patronised learning.",
  "image": "assets/history8/images/ch1/img_in_image_box_883_489_1087_754.jpg",
  "caption": "Causes",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig006-mcq",
@@ -174,19 +174,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Impact. Which statement correctly describes this person and their role?",
  "options": [
-  "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Gree…",
-  "The act of changing a religious, political or social institution or system can be called a reformation.",
-  "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
-  "a. The outbreak of the First and Second World Wars resulted in imperialism."
+  "### IMPERIALISM: MEANING, CAUSES AND IMPACT",
+  "Realism: Along with humanism and the spirit of inquiry, realism became visible, particularly in paintings.",
+  "### Impact of Imperialism on South Asian Countries",
+  "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials…"
  ],
- "correctOption": 0,
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "correctOption": 1,
+ "answer": "Realism: Along with humanism and the spirit of inquiry, realism became visible, particularly in paintings.",
  "image": "assets/history8/images/ch1/img_in_image_box_642_1106_897_1432.jpg",
- "caption": "Impact",
+ "caption": "Leonardo da Vinci",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig006-sa",
@@ -194,12 +194,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "question": "Identify Impact shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Realism: Along with humanism and the spirit of inquiry, realism became visible, particularly in paintings.",
  "image": "assets/history8/images/ch1/img_in_image_box_642_1106_897_1432.jpg",
- "caption": "Impact",
+ "caption": "Leonardo da Vinci",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig007-mcq",
@@ -207,19 +207,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Michelangelo. Which statement correctly describes this person and their role?",
  "options": [
-  "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source.",
-  "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
-  "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Gree…",
-  "3. Why is the Reformation of the 16th century regarded as one the greatest events in world history?"
+  "The city of Florence produced great artists and painters, such as Leonardo da Vinci, Michelangelo and Raphael.",
+  "### Impact of Imperialism on South Asian Countries",
+  "Michelangelo's statue of Pieta in Rome remains a famous example of Renaissance sculpture.",
+  "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials…"
  ],
- "correctOption": 2,
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "correctOption": 0,
+ "answer": "The city of Florence produced great artists and painters, such as Leonardo da Vinci, Michelangelo and Raphael.",
  "image": "assets/history8/images/ch1/img_in_image_box_910_1112_1153_1435.jpg",
- "caption": "Impact",
+ "caption": "Michelangelo",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig007-sa",
@@ -227,12 +227,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Greek scholars fled and took shelter in Italy. As a result, universities of Florence, Venice and Milan in Italy became important centres of education.",
+ "question": "Identify Michelangelo shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The city of Florence produced great artists and painters, such as Leonardo da Vinci, Michelangelo and Raphael.",
  "image": "assets/history8/images/ch1/img_in_image_box_910_1112_1153_1435.jpg",
- "caption": "Impact",
+ "caption": "Michelangelo",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig008-mcq",
@@ -240,19 +240,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Inca and Aztec Empires. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Inca and Aztec Empires. Which statement correctly describes what it illustrates?",
  "options": [
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…",
-  "• Most books in the history section of a library are secondary sources",
-  "The Reformation of the 16th century is one of the greatest events in the history of the world.",
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…"
+  "The Aztec Empire existed in the 15th and early 16th centuries.",
+  "Tenochtitlan, the capital city of the Aztec Empire, was one of the greatest cities of the world at that time.",
+  "After the Spanish capture of Tenochtitlan in 1521, the Aztec empire came to an end.",
+  "During the time of the Renaissance movement in Europe, two major empires—the Inca Empire and the Aztec Empire flourished in the Americas."
  ],
  "correctOption": 3,
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "answer": "During the time of the Renaissance movement in Europe, two major empires—the Inca Empire and the Aztec Empire flourished in the Americas.",
  "image": "assets/history8/images/ch1/img_in_image_box_73_1168_1109_1523.jpg",
  "caption": "Inca and Aztec Empires",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig008-sa",
@@ -260,12 +260,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Inca and Aztec Empires represents and why it matters in this chapter.",
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "question": "Study the figure on Inca and Aztec Empires. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "During the time of the Renaissance movement in Europe, two major empires—the Inca Empire and the Aztec Empire flourished in the Americas.",
  "image": "assets/history8/images/ch1/img_in_image_box_73_1168_1109_1523.jpg",
  "caption": "Inca and Aztec Empires",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig009-mcq",
@@ -273,19 +273,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Martin Luther. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Martin Luther. Which statement correctly describes this person and their role?",
  "options": [
-  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Bri…",
-  "The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past",
-  "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for cont…",
-  "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable."
+  "The Catholic Church was a little slow to respond to Luther and the other reformers.",
+  "The Protestant Reformation was the 16th-century religious, political, intellectual and cultural upheaval in Europe that began in Germany under Martin Luth…",
+  "With help from the ruler of Saxony, Luther translated the Bible into German and continued to distribute pamphlets with his thoughts in German for the comm…",
+  "Reformers, along with Luther, Calvin from France and King Henry VIII of England, challenged the authority of the pope and questioned the authority of the…"
  ],
- "correctOption": 3,
- "answer": "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
+ "correctOption": 1,
+ "answer": "The Protestant Reformation was the 16th-century religious, political, intellectual and cultural upheaval in Europe that began in Germany under Martin Luther and soon spread to other parts of Europe.",
  "image": "assets/history8/images/ch1/img_in_image_box_901_1222_1164_1512.jpg",
  "caption": "Martin Luther",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig009-sa",
@@ -293,12 +293,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
+ "question": "Identify Martin Luther shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Protestant Reformation was the 16th-century religious, political, intellectual and cultural upheaval in Europe that began in Germany under Martin Luther and soon spread to other parts of Europe.",
  "image": "assets/history8/images/ch1/img_in_image_box_901_1222_1164_1512.jpg",
  "caption": "Martin Luther",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig010-mcq",
@@ -306,19 +306,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on INDUSTRIAL REVOLUTION. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Arnold Toynbee. Which statement correctly describes this person and their role?",
  "options": [
-  "The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in …",
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source",
-  "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable."
+  "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+  "During this revolution, the Americans rejected colonial rule and chose the path of democracy.",
+  "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian.",
+  "It was the first major battle of the American Revolution."
  ],
- "correctOption": 1,
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "correctOption": 2,
+ "answer": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian.",
  "image": "assets/history8/images/ch1/img_in_image_box_331_724_593_1077.jpg",
- "caption": "INDUSTRIAL REVOLUTION",
+ "caption": "Arnold Toynbee",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig010-sa",
@@ -326,12 +326,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what INDUSTRIAL REVOLUTION represents and why it matters in this chapter.",
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "question": "Identify Arnold Toynbee shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian.",
  "image": "assets/history8/images/ch1/img_in_image_box_331_724_593_1077.jpg",
- "caption": "INDUSTRIAL REVOLUTION",
+ "caption": "Arnold Toynbee",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig011-mcq",
@@ -339,19 +339,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IMPERIALISM: MEANING, CAUSES AND IMPACT. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows John Kay. Which statement correctly describes this person and their role?",
  "options": [
-  "Colony: A territory that an imperial power ruled directly through colonial officials",
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Bri…",
-  "Most books in the history section of a library are secondary sources"
+  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synon…",
+  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775.",
+  "This movement also spread to Switzerland under Ulrich Zwingli, to France under John Calvin and England under their monarch, King Henry VIII.",
+  "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa."
  ],
- "correctOption": 1,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "correctOption": 3,
+ "answer": "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
  "image": "assets/history8/images/ch1/img_in_image_box_115_53_369_401.jpg",
- "caption": "IMPERIALISM: MEANING, CAUSES AND IMPACT",
+ "caption": "John Kay",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig011-sa",
@@ -359,12 +359,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Identify John Kay shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
  "image": "assets/history8/images/ch1/img_in_image_box_115_53_369_401.jpg",
- "caption": "IMPERIALISM: MEANING, CAUSES AND IMPACT",
+ "caption": "John Kay",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig012-mcq",
@@ -372,19 +372,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IMPERIALISM: MEANING, CAUSES AND IMPACT. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Edmund Cartwright. Which statement correctly describes this person and their role?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source.",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…",
-  "Most books in the history section of a library are secondary sources"
+  "The positive and negative impacts of imperialism are summarised in the following table.",
+  "The following were the major causes responsible for the Renaissance:",
+  "Imperialism means one country's domination of the political, economic and social spheres of another country.",
+  "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa."
  ],
- "correctOption": 0,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "correctOption": 3,
+ "answer": "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
  "image": "assets/history8/images/ch1/img_in_image_box_384_59_628_404.jpg",
- "caption": "IMPERIALISM: MEANING, CAUSES AND IMPACT",
+ "caption": "Edmund Cartwright",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig012-sa",
@@ -392,12 +392,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Identify Edmund Cartwright shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "### IMPERIALISM: MEANING, CAUSES AND IMPACT In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
  "image": "assets/history8/images/ch1/img_in_image_box_384_59_628_404.jpg",
- "caption": "IMPERIALISM: MEANING, CAUSES AND IMPACT",
+ "caption": "Edmund Cartwright",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig013-mcq",
@@ -405,19 +405,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Reasons for Rise of Imperialism. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Karl Marx. Which statement correctly describes this person and their role?",
  "options": [
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…",
-  "1. Differentiate between primary and secondary sources.",
-  "3. Why is the Reformation of the 16th century regarded as one the greatest events in world history?",
-  "Colony: A territory that an imperial power ruled directly through colonial officials"
+  "Church was divided between the Catholics and Protestants, and rise of national churches led to the rise of nation states with all powers in the hands of t…",
+  "The following reasons led to the beginning of the Industrial Revolution in Britain first:",
+  "##### Reasons for Rise of Imperialism",
+  "Rise of a new nobility: An increase in trade led to the emergence of a new class of nobles (who were actually merchants and not nobles by birth), who patr…"
  ],
- "correctOption": 3,
- "answer": "Colony: A territory that an imperial power ruled directly through colonial officials",
+ "correctOption": 2,
+ "answer": "##### Reasons for Rise of Imperialism",
  "image": "assets/history8/images/ch1/img_in_image_box_661_48_900_400.jpg",
- "caption": "Reasons for Rise of Imperialism",
+ "caption": "Karl Marx",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig013-sa",
@@ -425,12 +425,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Colony: A territory that an imperial power ruled directly through colonial officials",
+ "question": "Identify Karl Marx shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Reasons for Rise of Imperialism",
  "image": "assets/history8/images/ch1/img_in_image_box_661_48_900_400.jpg",
- "caption": "Reasons for Rise of Imperialism",
+ "caption": "Karl Marx",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig014-mcq",
@@ -438,19 +438,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Reasons for Rise of Imperialism. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Friedrich Engels. Which statement correctly describes this person and their role?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Gree…",
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…",
-  "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This …"
+  "Rise of a new nobility: An increase in trade led to the emergence of a new class of nobles (who were actually merchants and not nobles by birth), who patr…",
+  "Imperialism means one country's domination of the political, economic and social spheres of another country.",
+  "The positive and negative impacts of imperialism are summarised in the following table.",
+  "##### Reasons for Rise of Imperialism ### Impact of Imperialism on South Asian Countries"
  ],
- "correctOption": 0,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "correctOption": 3,
+ "answer": "##### Reasons for Rise of Imperialism ### Impact of Imperialism on South Asian Countries",
  "image": "assets/history8/images/ch1/img_in_image_box_922_45_1148_400.jpg",
- "caption": "Reasons for Rise of Imperialism",
+ "caption": "Friedrich Engels",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig014-sa",
@@ -458,12 +458,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Reasons for Rise of Imperialism represents and why it matters in this chapter.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Identify Friedrich Engels shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Reasons for Rise of Imperialism ### Impact of Imperialism on South Asian Countries",
  "image": "assets/history8/images/ch1/img_in_image_box_922_45_1148_400.jpg",
- "caption": "Reasons for Rise of Imperialism",
+ "caption": "Friedrich Engels",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig015-mcq",
@@ -471,19 +471,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Reasons for Rise of Imperialism. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Reasons for Rise of Imperialism. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for cont…",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past",
-  "1. 'The Industrial Revolution gave rise to imperialism, which led to the exploitation of the colonies'. Do you support the statement? Give r…",
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…"
+  "Imperialism means one country's domination of the political, economic and social spheres of another country.",
+  "### Impact of Imperialism on South Asian Countries",
+  "In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa.",
+  "### IMPERIALISM: MEANING, CAUSES AND IMPACT"
  ],
- "correctOption": 0,
- "answer": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for control of the trade in India. The British defeated the French in 1760 and subsequently, expanded their territory in India through wars, diplomacy and commercial activities.",
+ "correctOption": 1,
+ "answer": "### Impact of Imperialism on South Asian Countries",
  "image": "assets/history8/images/ch1/img_in_image_box_771_667_1147_775.jpg",
  "caption": "Reasons for Rise of Imperialism",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig015-sa",
@@ -491,12 +491,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for control of the trade in India. The British defeated the French in 1760 and subsequently, expanded their territory in India through wars, diplomacy and commercial activities.",
+ "question": "Identify the historical event or scene shown in the figure (Reasons for Rise of Imperialism). Explain its causes and significance.",
+ "answer": "### Impact of Imperialism on South Asian Countries",
  "image": "assets/history8/images/ch1/img_in_image_box_771_667_1147_775.jpg",
  "caption": "Reasons for Rise of Imperialism",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig016-mcq",
@@ -504,19 +504,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of Imperialism on South Asian Countries. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Impact of Imperialism on South Asian Countries. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This …",
-  "The following reasons led to the beginning of the Industrial Revolution in Britain first:",
-  "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for cont…",
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…"
+  "### Impact of Imperialism on South Asian Countries The positive and negative impacts of imperialism are summarised in the following table.",
+  "The imperialist countries also needed cheap labour from their colonies.",
+  "##### Reasons for Rise of Imperialism",
+  "Imperialism means one country's domination of the political, economic and social spheres of another country."
  ],
- "correctOption": 2,
- "answer": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for control of the trade in India. The British defeated the French in 1760 and subsequently, expanded their territory in India through wars, diplomacy and commercial activities.",
+ "correctOption": 0,
+ "answer": "### Impact of Imperialism on South Asian Countries The positive and negative impacts of imperialism are summarised in the following table.",
  "image": "assets/history8/images/ch1/img_in_image_box_738_1294_1144_1389.jpg",
  "caption": "Impact of Imperialism on South Asian Countries",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig016-sa",
@@ -524,12 +524,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The European powers began to explore trading opportunities in Asia in the 1500s. The British and the French emerged as major rivals for control of the trade in India. The British defeated the French in 1760 and subsequently, expanded their territory in India through wars, diplomacy and commercial activities.",
+ "question": "Identify the historical event or scene shown in the figure (Impact of Imperialism on South Asian Countries). Explain its causes and significance.",
+ "answer": "### Impact of Imperialism on South Asian Countries The positive and negative impacts of imperialism are summarised in the following table.",
  "image": "assets/history8/images/ch1/img_in_image_box_738_1294_1144_1389.jpg",
  "caption": "Impact of Imperialism on South Asian Countries",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig017-mcq",
@@ -537,19 +537,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of Imperialism on South Asian Countries. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Impact of Imperialism on South Asian Countries. Which statement correctly describes what it illustrates?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…",
-  "The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in …",
-  "Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source."
+  "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials…",
+  "The imperialist countries also needed cheap labour from their colonies.",
+  "##### Reasons for Rise of Imperialism",
+  "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials…"
  ],
  "correctOption": 0,
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "answer": "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials for production Spread of western education Industrialised states secured their own economic prosperity by economically exploiting the colonised nations for their benefits Introduction of technology in the form of weapons, medi…",
  "image": "assets/history8/images/ch1/img_in_image_box_58_1005_1093_1368.jpg",
  "caption": "Impact of Imperialism on South Asian Countries",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig017-sa",
@@ -557,12 +557,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Impact of Imperialism on South Asian Countries represents and why it matters in this chapter.",
- "answer": "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism has become synonymous with western control over the countries of Asia and Africa. Imperial nations gained",
+ "question": "Study the figure on Impact of Imperialism on South Asian Countries. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Positive impact Negative impact More religious opportunities, particularly for the Christian missionaries Colonies provided cheap source of raw materials for production Spread of western education Industrialised states secured their own economic prosperity by economically exploiting the colonised nations for their benefits Introduction of technology in the form of weapons, medi…",
  "image": "assets/history8/images/ch1/img_in_image_box_58_1005_1093_1368.jpg",
  "caption": "Impact of Imperialism on South Asian Countries",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig018-mcq",
@@ -570,19 +570,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given pictures. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Period of Transition. Which statement correctly describes what it illustrates?",
  "options": [
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…",
-  "The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in …",
-  "Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are prim…",
-  "The following were the major causes responsible for the Renaissance:"
+  "Due to the fall of Constantinople, trade was hampered.",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "Vast overseas market: During that period, Britain was a big colonial power."
  ],
  "correctOption": 0,
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "answer": "Due to the fall of Constantinople, trade was hampered.",
  "image": "assets/history8/images/ch1/img_in_image_box_950_724_1102_922.jpg",
- "caption": "IV. Study the given pictures. Answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig018-sa",
@@ -590,12 +590,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what IV. Study the given pictures. Answer the questions that follow. represents and why it matters in this chapter.",
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "question": "Study the figure on A Period of Transition. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Due to the fall of Constantinople, trade was hampered.",
  "image": "assets/history8/images/ch1/img_in_image_box_950_724_1102_922.jpg",
- "caption": "IV. Study the given pictures. Answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig019-mcq",
@@ -603,19 +603,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given pictures. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Period of Transition. Which statement correctly describes what it illustrates?",
  "options": [
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…",
-  "2. Describe the characteristics of the Renaissance Movement.",
-  "Most books in the history section of a library are secondary sources. Your history textbook is also a secondary source."
+  "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to…",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
+  "Due to the fall of Constantinople, trade was hampered.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…"
  ],
- "correctOption": 0,
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "correctOption": 2,
+ "answer": "Due to the fall of Constantinople, trade was hampered.",
  "image": "assets/history8/images/ch1/img_in_image_box_69_913_224_1075.jpg",
- "caption": "IV. Study the given pictures. Answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig019-sa",
@@ -623,12 +623,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what IV. Study the given pictures. Answer the questions that follow. represents and why it matters in this chapter.",
- "answer": "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled the sea and land routes to the East. Thus, a class of 'explorers' came to the forefront, and new lands were discovered. These European explorers were searching for fame, glory and wealth. They travelled to unknown lands and seas, facing hardships. Their discovery took them to the land east of Europe—to India and China and the New World, i.e., America.",
+ "question": "Study the figure on A Period of Transition. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Due to the fall of Constantinople, trade was hampered.",
  "image": "assets/history8/images/ch1/img_in_image_box_69_913_224_1075.jpg",
- "caption": "IV. Study the given pictures. Answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig020-mcq",
@@ -636,19 +636,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on V. Read the paragraph and answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (A Period of Transition). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "The following were the major causes responsible for the Renaissance:",
-  "Your history textbook is also a secondary source",
-  "The act of changing a religious, political or social institution or system can be called a reformation.",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…"
+  "The medieval period in Europe (also known as the Middle Ages) lasted from the 5th to the 15th century.",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "From the early 14th to the late 16th century, the Renaissance and the Age of Discovery traditionally mark the transition of Europe from the Middle Ages to…"
  ],
- "correctOption": 3,
- "answer": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+ "correctOption": 1,
+ "answer": "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
  "image": "assets/history8/images/ch1/img_in_image_box_676_296_902_616.jpg",
- "caption": "V. Read the paragraph and answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig020-sa",
@@ -656,12 +656,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+ "question": "Identify the artwork shown (A Period of Transition). Who created it and why is it important in this chapter?",
+ "answer": "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
  "image": "assets/history8/images/ch1/img_in_image_box_676_296_902_616.jpg",
- "caption": "V. Read the paragraph and answer the questions that follow.",
+ "caption": "A Period of Transition",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig021-mcq",
@@ -669,19 +669,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on V. Read the paragraph and answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (Anatomical/physiological sketches made by Leonardo da Vinci). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary…",
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "• Secondary sources are any account, record or evidence derived from interpreting and analysing an original or primary source"
+  "Crusades: Crusades, the Holy Wars to save Christianity from the onslaught of Turks, brought Europe in close contact with the Arabs, who had made great adv…",
+  "Find out information about the anatomical part that you have sketched.",
+  "The British also made inroads into Burma in the 1820s.",
+  "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period."
  ],
- "correctOption": 1,
- "answer": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+ "correctOption": 3,
+ "answer": "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
  "image": "assets/history8/images/ch1/img_in_image_box_942_306_1154_633.jpg",
- "caption": "V. Read the paragraph and answer the questions that follow.",
+ "caption": "Anatomical/physiological sketches made by Leonardo da Vinci",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig021-sa",
@@ -689,12 +689,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past. The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past. Oral histories, objects, artefacts, photographs and documents such as newspapers, census records, diaries, journals and inventories are primary sources.",
+ "question": "Identify the artwork shown (Anatomical/physiological sketches made by Leonardo da Vinci). Who created it and why is it important in this chapter?",
+ "answer": "Leonardo da Vinci is known for his paintings, sketches, sculptures and scientific studies that he undertook during the Renaissance period.",
  "image": "assets/history8/images/ch1/img_in_image_box_942_306_1154_633.jpg",
- "caption": "V. Read the paragraph and answer the questions that follow.",
+ "caption": "Anatomical/physiological sketches made by Leonardo da Vinci",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig022-mcq",
@@ -702,19 +702,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The Age of Revolutions. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Colony: A territory that an imperial power ruled directly through colonial officials",
-  "The study of primary sources is crucial to the study of history as they provide first-hand and original account of the past",
-  "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic devel…",
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…"
+  "It saw revolutions in the intellectual, social and political domains.",
+  "### The Age of Revolutions",
+  "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world.",
+  "The Renaissance was a cultural movement that began in Florence (Italy) in the late Middle Ages, and then spread to the rest of Europe. This movement influ…"
  ],
- "correctOption": 2,
- "answer": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic development of Britain from 1760 to 1840. The Industrial Revolution was characterised by the use of steam-powered engines, machines and the spread of factories. The goods were mass-produced and mechanised transport was used.",
+ "correctOption": 1,
+ "answer": "### The Age of Revolutions",
  "image": "assets/history8/images/ch1/img_in_image_box_101_328_800_788.jpg",
- "caption": "History Alive!",
+ "caption": "The Age of Revolutions",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig022-sa",
@@ -722,12 +722,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The term ‘Industrial Revolution’ was first popularised by Arnold Toynbee, a British economic historian. Toynbee explained the economic development of Britain from 1760 to 1840. The Industrial Revolution was characterised by the use of steam-powered engines, machines and the spread of factories. The goods were mass-produced and mechanised transport was used.",
+ "question": "Identify the historical event or scene shown in the figure (The Age of Revolutions). Explain its causes and significance.",
+ "answer": "### The Age of Revolutions",
  "image": "assets/history8/images/ch1/img_in_image_box_101_328_800_788.jpg",
- "caption": "History Alive!",
+ "caption": "The Age of Revolutions",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig023-mcq",
@@ -735,19 +735,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "Reformation comes from the word 'reform', which means making changes in something to make it correct and acceptable.",
-  "1. 'The Industrial Revolution gave rise to imperialism, which led to the exploitation of the colonies'. Do you support the statement? Give r…",
-  "The Renaissance movement fostered a spirit of adventure among the people of Europe. With the fall of Constantinople, the Turks controlled th…"
+  "Vast overseas market: During that period, Britain was a big colonial power.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+  "During this revolution, the Americans rejected colonial rule and chose the path of democracy."
  ],
- "correctOption": 0,
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "correctOption": 2,
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_108_1051_1143_1471.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig023-sa",
@@ -755,12 +755,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_108_1051_1143_1471.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig024-mcq",
@@ -768,19 +768,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Imperialism means one country's domination of the political, economic and social spheres of another country. In recent times, imperialism ha…",
-  "The Reformation of the 16th century is one of the greatest events in the history of the world.",
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "Primary sources are the evidences that historians use to know about events, people and their everyday life in the past"
+  "During this revolution, the Americans rejected colonial rule and chose the path of democracy.",
+  "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+  "During the time of the Renaissance movement in Europe, two major empires—the Inca Empire and the Aztec Empire flourished in the Americas.",
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…"
  ],
- "correctOption": 2,
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "correctOption": 1,
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_175_205_576_447.jpg",
- "caption": "During Reading",
+ "caption": "□ Storming of the Bastille",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig024-sa",
@@ -788,12 +788,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_175_205_576_447.jpg",
- "caption": "During Reading",
+ "caption": "□ Storming of the Bastille",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch1-fig025-mcq",
@@ -801,19 +801,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Fall of Constantinople: In 1453 CE, the Ottoman Turks attacked and occupied Constantinople, which was a famous centre of learning. Many Gree…",
-  "a. The outbreak of the First and Second World Wars resulted in imperialism.",
-  "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to p…",
-  "The Enclosure Movement: In the early 18th century, Britain was an agricultural society. Around 80 per cent of farmers had small holdings in …"
+  "Availability of coal and iron: Coal and iron, essential resources for the Industrial Revolution to take off, were available in plenty in Britain during th…",
+  "During the time of the Renaissance movement in Europe, two major empires—the Inca Empire and the Aztec Empire flourished in the Americas.",
+  "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+  "During this revolution, the Americans rejected colonial rule and chose the path of democracy."
  ],
  "correctOption": 2,
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_703_206_1105_475.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch1-fig025-sa",
@@ -821,12 +821,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The Industrial Revolution began in England in the 18th century and later spread to other parts of the world. By harnessing fossil fuels to power engines, factories and machines, the Industrial Revolution transformed the agriculture-based economy into a manufacturing-based economy. It thus gave birth to the modern world.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
  "image": "assets/history8/images/ch1/img_in_image_box_703_206_1105_475.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig001-mcq",
@@ -834,19 +834,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Struggle by the Colonies. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Struggle by the Colonies. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "1. What is 'No taxation without representation'?",
-  "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of Nort…",
-  "outline the main developments in the post-Revolution period, with special reference to Napoleon Bonaparte"
+  "- Locate the northernmost colony of America. ##### Struggle by the Colonies After the discovery of the American continent in the 16th century, 13 British…",
+  "Colonists: settlers who migrated to America and set up permanent colonies there",
+  "The British government felt that profits made in the colonies rightfully belonged to Great Britain.",
+  "The British expected the colonies to contribute towards the defence of their territories."
  ],
- "correctOption": 2,
- "answer": "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
+ "correctOption": 0,
+ "answer": "- Locate the northernmost colony of America. ##### Struggle by the Colonies After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
  "image": "assets/history8/images/ch2/img_in_image_box_75_323_667_1195.jpg",
  "caption": "Struggle by the Colonies",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig001-sa",
@@ -854,12 +854,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
+ "question": "Identify the historical event or scene shown in the figure (Struggle by the Colonies). Explain its causes and significance.",
+ "answer": "- Locate the northernmost colony of America. ##### Struggle by the Colonies After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1733.",
  "image": "assets/history8/images/ch2/img_in_image_box_75_323_667_1195.jpg",
  "caption": "Struggle by the Colonies",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig002-mcq",
@@ -867,19 +867,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Boston Tea Party. Which statement correctly describes this person and their role?",
  "options": [
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…",
-  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place …",
-  "The French soldiers who fought in the American Revolution were inspired by its success. They in turn motivated their own people to fight aga…"
+  "The laws were aimed at punishing the people of Massachusetts for their actions during the Boston Tea Party (discussed on the next page).",
+  "Then On 16 December 1773, a group of American revolutionaries boarded the ships of the English East India Company at the Boston Harbour.",
+  "This event came to be known as the Boston Massacre.",
+  "On 5 March 1770, a large mob gathered around a group of British soldiers in Boston."
  ],
- "correctOption": 1,
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "correctOption": 0,
+ "answer": "The laws were aimed at punishing the people of Massachusetts for their actions during the Boston Tea Party (discussed on the next page).",
  "image": "assets/history8/images/ch2/img_in_image_box_106_437_534_646.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Boston Tea Party",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig002-sa",
@@ -887,12 +887,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "question": "Identify Boston Tea Party shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The laws were aimed at punishing the people of Massachusetts for their actions during the Boston Tea Party (discussed on the next page).",
  "image": "assets/history8/images/ch2/img_in_image_box_106_437_534_646.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Boston Tea Party",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig003-mcq",
@@ -900,19 +900,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A Tea Party protest in Washington D.C. in 2009. Which statement correctly describes what it illustrates?",
  "options": [
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…",
-  "2. Who formed the French society before the revolution?",
-  "**Executive summary:** Study the pictures given below",
-  "• assess how the United States of America was formed"
+  "A Tea Party protest in Washington D.C. # Connecting Past with Present Now The Tea Party Movement is an American political movement that emerged in the 21s…",
+  "This event came to be known as the Boston Tea Party.",
+  "They dumped 342 chests of tea into the Boston Harbour to protest against the tax on tea and the monopoly of the English East India Company.",
+  "The laws were aimed at punishing the people of Massachusetts for their actions during the Boston Tea Party (discussed on the next page)."
  ],
  "correctOption": 0,
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "answer": "A Tea Party protest in Washington D.C. # Connecting Past with Present Now The Tea Party Movement is an American political movement that emerged in the 21st century to support reduction in the United States national",
  "image": "assets/history8/images/ch2/img_in_image_box_878_145_1154_360.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "A Tea Party protest in Washington D.C. in 2009",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig003-sa",
@@ -920,12 +920,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "question": "Study the figure on A Tea Party protest in Washington D.C. in 2009. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "A Tea Party protest in Washington D.C. # Connecting Past with Present Now The Tea Party Movement is an American political movement that emerged in the 21st century to support reduction in the United States national",
  "image": "assets/history8/images/ch2/img_in_image_box_878_145_1154_360.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "A Tea Party protest in Washington D.C. in 2009",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig004-mcq",
@@ -933,19 +933,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Beginning of Military Hostilities. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to An engraving showing the British army entering Concord. Which statement correctly describes the event or scene shown?",
  "options": [
-  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place …",
-  "**Executive summary:** This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunke…",
-  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of…",
-  "##### Causes of the French Revolution"
+  "The Battles of Lexington and Concord took place in April 1775 when the British",
+  "The first two Estates in French society enjoyed the following privileges: The sole right to command army regiments and hold leading positions in governmen…",
+  "It took place in Philadelphia in May, 1775, right after the Battles of Lexington and Concord.",
+  "##### Beginning of Military Hostilities When the British troops clashed with the Americans at Massachusetts, the colonists united to form their own army."
  ],
- "correctOption": 0,
- "answer": "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
+ "correctOption": 3,
+ "answer": "##### Beginning of Military Hostilities When the British troops clashed with the Americans at Massachusetts, the colonists united to form their own army.",
  "image": "assets/history8/images/ch2/img_in_image_box_630_744_1162_1114.jpg",
- "caption": "Beginning of Military Hostilities",
+ "caption": "An engraving showing the British army entering Concord",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig004-sa",
@@ -953,12 +953,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This battle is also called the Battle of Breed's Hill. It was the first major battle of the American Revolution.",
+ "question": "Identify the historical event or scene shown in the figure (An engraving showing the British army entering Concord). Explain its causes and significance.",
+ "answer": "##### Beginning of Military Hostilities When the British troops clashed with the Americans at Massachusetts, the colonists united to form their own army.",
  "image": "assets/history8/images/ch2/img_in_image_box_630_744_1162_1114.jpg",
- "caption": "Beginning of Military Hostilities",
+ "caption": "An engraving showing the British army entering Concord",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig005-mcq",
@@ -966,19 +966,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Role of the Philosophers. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Role of the Philosophers. Which statement correctly describes what it illustrates?",
  "options": [
-  "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The Ame…",
-  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place …",
-  "with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and poli…",
-  "2. Who formed the French society before the revolution?"
+  "The anti-slavery movements played a significant role in the outbreak of the American Civil War.",
+  "Important French philosophers and intellectuals of the 18th century, such as Montesquieu, Voltaire and Rousseau, played a major role in the revolutionary…",
+  "An engraving showing the British army entering Concord",
+  "These philosophers, through their writings, discussed the injustice prevalent in the French society and politics."
  ],
- "correctOption": 2,
- "answer": "with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class with their ideas of liberty, equality and fraternity, which went on to become the slogan of the French Revolution.",
+ "correctOption": 1,
+ "answer": "Important French philosophers and intellectuals of the 18th century, such as Montesquieu, Voltaire and Rousseau, played a major role in the revolutionary movement as they provided the people with the ideas of a philosophers, through discussed the injustice French society and political the middle class with the equality and fraternity, become the slogan of the Montesquieu",
  "image": "assets/history8/images/ch2/img_in_image_box_403_116_631_440.jpg",
  "caption": "Role of the Philosophers",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig005-sa",
@@ -986,12 +986,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "with the ideas of a revolution. These philosophers, through their writings, discussed the injustice prevalent in the French society and politics. They inspired the middle class with their ideas of liberty, equality and fraternity, which went on to become the slogan of the French Revolution.",
+ "question": "Study the figure on Role of the Philosophers. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Important French philosophers and intellectuals of the 18th century, such as Montesquieu, Voltaire and Rousseau, played a major role in the revolutionary movement as they provided the people with the ideas of a philosophers, through discussed the injustice French society and political the middle class with the equality and fraternity, become the slogan of the Montesquieu",
  "image": "assets/history8/images/ch2/img_in_image_box_403_116_631_440.jpg",
  "caption": "Role of the Philosophers",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig006-mcq",
@@ -999,19 +999,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Causes of the French Revolution. Which statement correctly describes what it illustrates?",
  "options": [
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "This battle is also called the Battle of Breed's Hill",
-  "This battle is also called the **Must know** • This painting by an American artist, John Trumbull, depicts the death of General Joseph Warre…"
+  "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleonic Wars, these…",
+  "It symbolised the vigorous rejection of monarchical rule by the French.",
+  "The first two Estates in French society enjoyed the following privileges:",
+  "This is a caricature depicting the state of French society prior to the French Revolution. ##### Events of the French Revolution"
  ],
- "correctOption": 1,
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "correctOption": 3,
+ "answer": "This is a caricature depicting the state of French society prior to the French Revolution. ##### Events of the French Revolution",
  "image": "assets/history8/images/ch2/img_in_image_box_944_1212_1187_1526.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Causes of the French Revolution",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig006-sa",
@@ -1019,12 +1019,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "question": "Study the figure on Causes of the French Revolution. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "This is a caricature depicting the state of French society prior to the French Revolution. ##### Events of the French Revolution",
  "image": "assets/history8/images/ch2/img_in_image_box_944_1212_1187_1526.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Causes of the French Revolution",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig007-mcq",
@@ -1032,19 +1032,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tennis Court Oath. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Tennis Court Oath. Which statement correctly describes this person and their role?",
  "options": [
-  "discuss the causes behind the French Revolution",
-  "outline the main developments in the post-Revolution period, with special reference to Napoleon Bonaparte",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of Nort…"
+  "This was known as the famous Tennis Court Oath. Members of the Third Estate gathered in the Tennis Court building at Versailles and signed an oath to form…",
+  "He rose through the ranks of the French army.",
+  "The settlers in these colonies were independent and resourceful.",
+  "It saw groups of southern and northern states fighting with each other over the issue of slavery."
  ],
- "correctOption": 2,
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "correctOption": 0,
+ "answer": "This was known as the famous Tennis Court Oath. Members of the Third Estate gathered in the Tennis Court building at Versailles and signed an oath to form a new constitution and national government representing all the people of the country.",
  "image": "assets/history8/images/ch2/img_in_image_box_62_475_562_889.jpg",
- "caption": "Tennis Court Oath",
+ "caption": "The Tennis Court Oath",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig007-sa",
@@ -1052,12 +1052,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "question": "Identify The Tennis Court Oath shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This was known as the famous Tennis Court Oath. Members of the Third Estate gathered in the Tennis Court building at Versailles and signed an oath to form a new constitution and national government representing all the people of the country.",
  "image": "assets/history8/images/ch2/img_in_image_box_62_475_562_889.jpg",
- "caption": "Tennis Court Oath",
+ "caption": "The Tennis Court Oath",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig008-mcq",
@@ -1065,19 +1065,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Influence of the French Revolution. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The Influence of the French Revolution. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocrati…",
-  "• assess how the United States of America was formed",
-  "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of Nort…"
+  "The American Revolution was one of the earliest revolutions to take place in the modern world.",
+  "### The Influence of the French Revolution The success of the French Revolution inspired people in other European countries.",
+  "Important French philosophers and intellectuals of the 18th century, such as Montesquieu, Voltaire and Rousseau, played a major role in the revolutionary…",
+  "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very…"
  ],
  "correctOption": 1,
- "answer": "The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political and social systems based on the principles of liberty, equality and fraternity. Democracy became the new form of government. Mass movements all",
+ "answer": "### The Influence of the French Revolution The success of the French Revolution inspired people in other European countries.",
  "image": "assets/history8/images/ch2/img_in_image_box_312_159_596_280.jpg",
  "caption": "The Influence of the French Revolution",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig008-sa",
@@ -1085,12 +1085,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The success of the French Revolution inspired people in other European countries. They rose in revolt to overthrow the tyrannical, autocratic rulers, and established new political and social systems based on the principles of liberty, equality and fraternity. Democracy became the new form of government. Mass movements all",
+ "question": "Identify the historical event or scene shown in the figure (The Influence of the French Revolution). Explain its causes and significance.",
+ "answer": "### The Influence of the French Revolution The success of the French Revolution inspired people in other European countries.",
  "image": "assets/history8/images/ch2/img_in_image_box_312_159_596_280.jpg",
  "caption": "The Influence of the French Revolution",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig009-mcq",
@@ -1098,19 +1098,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on NAPOLEON BONAPARTE. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to ✓ Napoleon Bonaparte. Which statement correctly describes the event or scene shown?",
  "options": [
-  "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleoni…",
-  "It was the first major battle of the American Revolution",
-  "##### Causes of the French Revolution",
-  "assess how the United States of America was formed"
+  "Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napoleon I, the Emperor of France.",
+  "In 1806, Prussia, and in 1807, Russia were defeated by Napoleon.",
+  "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1813, major European powers, namely, Britain, Austria and Prussia formed a…",
+  "Less than a year later, Napoleon escaped from Elba and gathered a small army."
  ],
- "correctOption": 0,
- "answer": "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleonic Wars, these campaigns targeted every major European power.",
+ "correctOption": 2,
+ "answer": "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1813, major European powers, namely, Britain, Austria and Prussia formed a coalition and defeated Napoleon's forces at Leipzig.",
  "image": "assets/history8/images/ch2/img_in_image_box_623_539_1067_1411.jpg",
- "caption": "NAPOLEON BONAPARTE",
+ "caption": "✓ Napoleon Bonaparte",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig009-sa",
@@ -1118,12 +1118,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleonic Wars, these campaigns targeted every major European power.",
+ "question": "Identify the historical event or scene shown in the figure (✓ Napoleon Bonaparte). Explain its causes and significance.",
+ "answer": "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1813, major European powers, namely, Britain, Austria and Prussia formed a coalition and defeated Napoleon's forces at Leipzig.",
  "image": "assets/history8/images/ch2/img_in_image_box_623_539_1067_1411.jpg",
- "caption": "NAPOLEON BONAPARTE",
+ "caption": "✓ Napoleon Bonaparte",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig010-mcq",
@@ -1131,19 +1131,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on After Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows After Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "comprising professionals and traders",
-  "• discuss the causes behind the French Revolution",
-  "b. The British allowed significant autonomy to the American Colonies to govern themselves.",
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…"
+  "They imposed a series of heavy taxes, followed by laws that were aimed at putting economic restrictions on the way businesses were conducted in the coloni…",
+  "But he was defeated at the Battle of Waterloo in 1815. A new government called the consulate was proclaimed.",
+  "In 1813, major European powers, namely, Britain, Austria and Prussia formed a coalition and defeated Napoleon's forces at Leipzig.",
+  "Colonists: settlers who migrated to America and set up permanent colonies there"
  ],
- "correctOption": 3,
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "correctOption": 1,
+ "answer": "But he was defeated at the Battle of Waterloo in 1815. A new government called the consulate was proclaimed.",
  "image": "assets/history8/images/ch2/img_in_image_box_55_99_1107_441.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig010-sa",
@@ -1151,12 +1151,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "question": "Identify After Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "But he was defeated at the Battle of Waterloo in 1815. A new government called the consulate was proclaimed.",
  "image": "assets/history8/images/ch2/img_in_image_box_55_99_1107_441.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig011-mcq",
@@ -1164,19 +1164,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on VI. Read the paragraph and answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Age of Revolutions. Which statement correctly describes what it illustrates?",
  "options": [
-  "When the king decided to tax the landowners, the nobles refused to support this measure. The entire burden of taxation, therefore, fell on t…",
-  "In the first decade of the 19th century, the French army, under Napoleon’s command, engaged in a series of conflicts. Known as the Napoleoni…",
-  "assess how the United States of America was formed",
-  "**Executive summary:** This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunke…"
+  "In 1793, Louis XVI and Marie Antoinette were guillotined in Paris.",
+  "□ Storming of the Bastille Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western w…",
+  "The American Revolution was one of the earliest revolutions to take place in the modern world.",
+  "When the king decided to tax the landowners, the nobles refused to support this measure."
  ],
- "correctOption": 0,
- "answer": "When the king decided to tax the landowners, the nobles refused to support this measure. The entire burden of taxation, therefore, fell on the Third Estate, and they were taxed on everything, including necessities such as salt. They were also denied most privileges. The worst affected were the poor peasants. The bourgeoisie or the middle class had acquired wealth, but were deprived of their political rights. It was the discontented bourgeoisie who took up the leadership to initiate the French Revolution.",
+ "correctOption": 3,
+ "answer": "When the king decided to tax the landowners, the nobles refused to support this measure.",
  "image": "assets/history8/images/ch2/img_in_image_box_594_270_1129_630.jpg",
- "caption": "VI. Read the paragraph and answer the questions that follow.",
+ "caption": "The Age of Revolutions",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig011-sa",
@@ -1184,12 +1184,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "When the king decided to tax the landowners, the nobles refused to support this measure. The entire burden of taxation, therefore, fell on the Third Estate, and they were taxed on everything, including necessities such as salt. They were also denied most privileges. The worst affected were the poor peasants. The bourgeoisie or the middle class had acquired wealth, but were deprived of their political rights. It was the discontented bourgeoisie who took up the leadership to initiate the French Revolution.",
+ "question": "Study the figure on The Age of Revolutions. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "When the king decided to tax the landowners, the nobles refused to support this measure.",
  "image": "assets/history8/images/ch2/img_in_image_box_594_270_1129_630.jpg",
- "caption": "VI. Read the paragraph and answer the questions that follow.",
+ "caption": "The Age of Revolutions",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig012-mcq",
@@ -1197,19 +1197,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Similarity and Dissimilarity Chart. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (Similarity and Dissimilarity Chart). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "b. The British allowed significant autonomy to the American Colonies to govern themselves.",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "It was the first major battle of the American Revolution",
-  "3. Name two important French philosophers who played a major role in the revolutionary movement."
+  "Copy the given chart in your notebook, write the main aspects of the American Revolution on the left and the main features of the French Revolution on the…",
+  "Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napoleon I, the Emperor of France.",
+  "Soon after, the colonists intensified their demand of the right to govern",
+  "##### Similarity and Dissimilarity Chart Copy the given chart in your notebook, write the main aspects of the American Revolution on the left and the main…"
  ],
- "correctOption": 1,
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "correctOption": 3,
+ "answer": "##### Similarity and Dissimilarity Chart Copy the given chart in your notebook, write the main aspects of the American Revolution on the left and the main features of the French Revolution on the right.",
  "image": "assets/history8/images/ch2/img_in_chart_box_489_199_902_456.jpg",
  "caption": "Similarity and Dissimilarity Chart",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig012-sa",
@@ -1217,12 +1217,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "question": "Identify the artwork shown (Similarity and Dissimilarity Chart). Who created it and why is it important in this chapter?",
+ "answer": "##### Similarity and Dissimilarity Chart Copy the given chart in your notebook, write the main aspects of the American Revolution on the left and the main features of the French Revolution on the right.",
  "image": "assets/history8/images/ch2/img_in_chart_box_489_199_902_456.jpg",
  "caption": "Similarity and Dissimilarity Chart",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig013-mcq",
@@ -1230,19 +1230,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The American Civil War. Which statement correctly describes this person and their role?",
  "options": [
-  "The French soldiers who fought in the American Revolution were inspired by its success. They in turn motivated their own people to fight aga…",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism.",
-  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of…"
+  "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of North America by 1…",
+  "The American Civil War, also called the War Between the States, between 1861 and 1865. ### The American Civil War",
+  "The American Revolution was one of the earliest revolutions to take place in the modern world.",
+  "It was the first major battle of the American Revolution."
  ],
- "correctOption": 3,
- "answer": "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of Independence",
+ "correctOption": 1,
+ "answer": "The American Civil War, also called the War Between the States, between 1861 and 1865. ### The American Civil War",
  "image": "assets/history8/images/ch2/img_in_image_box_93_321_862_681.jpg",
- "caption": "History Alive!",
+ "caption": "The American Civil War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig013-sa",
@@ -1250,12 +1250,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of Independence",
+ "question": "Identify The American Civil War shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The American Civil War, also called the War Between the States, between 1861 and 1865. ### The American Civil War",
  "image": "assets/history8/images/ch2/img_in_image_box_93_321_862_681.jpg",
- "caption": "History Alive!",
+ "caption": "The American Civil War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig014-mcq",
@@ -1263,19 +1263,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The Ame…",
-  "This battle is also called the **Must know** • This painting by an American artist, John Trumbull, depicts the death of General Joseph Warre…",
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…",
-  "It was the first major battle of the American Revolution"
+  "Liberty, Equality, Fraternity: popular ideas during the French Revolution; emphasised freedom, equal status and brotherhood among the French",
+  "#### Tick (√) the pictures associated with the American Civil War.",
+  "During this revolution, the Americans rejected colonial rule and chose the path of democracy.",
+  "The laws were aimed at punishing the people of Massachusetts for their actions during the Boston Tea Party (discussed on the next page)."
  ],
- "correctOption": 2,
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "correctOption": 1,
+ "answer": "#### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_115_1101_1078_1353.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig014-sa",
@@ -1283,12 +1283,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "#### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_115_1101_1078_1353.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig015-mcq",
@@ -1296,19 +1296,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the American Civil War.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Tick (√) the pictures associated with the American Civil War.. Which statement correctly describes the event or scene shown?",
  "options": [
-  "• discuss the causes behind the French Revolution",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…",
-  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of…",
-  "1. Which of the following statements is true for the American Revolution? Give at least one reason for your answer."
+  "This battle is also called the **Must know** • This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battl…",
+  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775.",
+  "### Influence of the American Revolution",
+  "#### Tick (√) the pictures associated with the American Civil War."
  ],
- "correctOption": 1,
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "correctOption": 3,
+ "answer": "#### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_144_191_368_494.jpg",
  "caption": "Tick (√) the pictures associated with the American Civil War.",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig015-sa",
@@ -1316,12 +1316,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "question": "Identify the historical event or scene shown in the figure (Tick (√) the pictures associated with the American Civil War.). Explain its causes and significance.",
+ "answer": "#### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_144_191_368_494.jpg",
  "caption": "Tick (√) the pictures associated with the American Civil War.",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig016-mcq",
@@ -1329,19 +1329,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the American Civil War.. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Abraham Lincoln. Which statement correctly describes this person and their role?",
  "options": [
-  "Napoleon Bonaparte was born in 1769 on the Mediterranean island of Corsica. In 1785, Napoleon was commissioned as lieutenant in the French a…",
-  "over the world were inspired by the French Revolution, and people imbibed the spirit of nationalism.",
-  "1. Which of the following statements is true for the American Revolution? Give at least one reason for your answer.",
-  "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event fro…"
+  "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. #### Tick (√) the pictures associated with the American Civi…",
+  "##### Struggle by the Colonies After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlan…",
+  "Then On 16 December 1773, a group of American revolutionaries boarded the ships of the English East India Company at the Boston Harbour.",
+  "Now The Tea Party Movement is an American political movement that emerged in the 21st century to support reduction in the United States national"
  ],
- "correctOption": 3,
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "correctOption": 0,
+ "answer": "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. #### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_418_191_637_495.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "Abraham Lincoln",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig016-sa",
@@ -1349,12 +1349,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Study the pictures given below. Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution. In what ways were both the events shown here similar?",
+ "question": "Identify Abraham Lincoln shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. #### Tick (√) the pictures associated with the American Civil War.",
  "image": "assets/history8/images/ch2/img_in_image_box_418_191_637_495.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "Abraham Lincoln",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig017-mcq",
@@ -1362,19 +1362,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the American Civil War.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to ☐ Jefferson Davis. Which statement correctly describes the event or scene shown?",
  "options": [
-  "outline the main developments in the post-Revolution period, with special reference to Napoleon Bonaparte",
-  "After the discovery of the American continent in the 16th century, 13 British colonies had been established along the Atlantic Coast of Nort…",
-  "Through his military exploits and ruthless efficiency, Napoleon rose from obscurity to become Napoleon I, the Emperor of France.",
-  "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The Ame…"
+  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775.",
+  "#### Tick (√) the pictures associated with the American Civil War. The American Civil War (1861-65) was fought to uphold the principles of liberty and equ…",
+  "The committee consisted of Thomas Jefferson,",
+  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775. This…"
  ],
- "correctOption": 3,
- "answer": "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The American Revolution was one of the earliest revolutions to take place in the modern world. During this revolution, the Americans rejected colonial rule and chose the path of democracy. On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+ "correctOption": 1,
+ "answer": "#### Tick (√) the pictures associated with the American Civil War. The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
  "image": "assets/history8/images/ch2/img_in_image_box_678_165_909_484.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "☐ Jefferson Davis",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig017-sa",
@@ -1382,12 +1382,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Two revolutions that occurred in the late 18th century introduced the ideas of equality, freedom and democracy to the Western world. The American Revolution was one of the earliest revolutions to take place in the modern world. During this revolution, the Americans rejected colonial rule and chose the path of democracy. On the other hand, the French Revolution was the result of social, religious and economic injustices, and led to the end of the monarchy.",
+ "question": "Identify the historical event or scene shown in the figure (☐ Jefferson Davis). Explain its causes and significance.",
+ "answer": "#### Tick (√) the pictures associated with the American Civil War. The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
  "image": "assets/history8/images/ch2/img_in_image_box_678_165_909_484.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "☐ Jefferson Davis",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch2-fig018-mcq",
@@ -1395,19 +1395,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the American Civil War.. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Mountbatten. Which statement correctly describes this person and their role?",
  "options": [
-  "1. What is 'No taxation without representation'?",
-  "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected t…",
-  "comprising professionals and traders",
-  "b. The British allowed significant autonomy to the American Colonies to govern themselves."
+  "The anti-slavery movements played a significant role in the outbreak of the American Civil War. The American Civil War (1861-65) was fought to uphold the…",
+  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse why some colonies in America fought the American War of Independence.",
+  "Write for the picture showing an event from the American Revolution and for the picture showing an event from the French Revolution.",
+  "This painting by an American artist, John Trumbull, depicts the death of General Joseph Warren at the Battle of Bunker Hill that took place in 1775."
  ],
- "correctOption": 1,
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "correctOption": 0,
+ "answer": "The anti-slavery movements played a significant role in the outbreak of the American Civil War. The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
  "image": "assets/history8/images/ch2/img_in_image_box_950_155_1155_457.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "Lord Mountbatten",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch2-fig018-sa",
@@ -1415,12 +1415,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The American War of Independence was the world's first organised political upheaval in which 13 British colonies in North America rejected the governance of the Parliament of Great Britain and the British monarchy to become the United States of America.",
+ "question": "Identify Lord Mountbatten shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The anti-slavery movements played a significant role in the outbreak of the American Civil War. The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
  "image": "assets/history8/images/ch2/img_in_image_box_950_155_1155_457.jpg",
- "caption": "Tick (√) the pictures associated with the American Civil War.",
+ "caption": "Lord Mountbatten",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig001-mcq",
@@ -1428,19 +1428,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Growing Anti-slavery Movement. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to A picture of slaves waiting to be sold in Virginia, USA. Which statement correctly describes the event or scene shown?",
  "options": [
-  "At the end of this lesson, learners will be able to:",
-  "This war was the result of conflict between the northern and southern states of America",
-  "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of whi…",
-  "• outline how the American Civil War began"
+  "As a result, the states did not agree on a number of issues, including slavery.' In this context, answer the following questions:",
+  "Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
+  "It saw groups of southern and northern states fighting with each other over the issue of slavery.",
+  "##### Growing Anti-slavery Movement This act was hugely unpopular with the anti-slavery forces in the north."
  ],
- "correctOption": 2,
- "answer": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
+ "correctOption": 3,
+ "answer": "##### Growing Anti-slavery Movement This act was hugely unpopular with the anti-slavery forces in the north.",
  "image": "assets/history8/images/ch3/img_in_image_box_57_860_575_1205.jpg",
- "caption": "Growing Anti-slavery Movement",
+ "caption": "A picture of slaves waiting to be sold in Virginia, USA",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig001-sa",
@@ -1448,12 +1448,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
+ "question": "Identify the historical event or scene shown in the figure (A picture of slaves waiting to be sold in Virginia, USA). Explain its causes and significance.",
+ "answer": "##### Growing Anti-slavery Movement This act was hugely unpopular with the anti-slavery forces in the north.",
  "image": "assets/history8/images/ch3/img_in_image_box_57_860_575_1205.jpg",
- "caption": "Growing Anti-slavery Movement",
+ "caption": "A picture of slaves waiting to be sold in Virginia, USA",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig002-mcq",
@@ -1461,19 +1461,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Growing Anti-slavery Movement. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Harriet Beecher. Which statement correctly describes this person and their role?",
  "options": [
-  "In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour",
-  "The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fightin…",
-  "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—a…",
-  "It saw groups of southern and northern states fighting with each other over the issue of slav **Must know** • The American Civil War, also c…"
+  "It had a huge impact on the way northerners viewed slavery.",
+  "Faced with the prospect of having to abolish slavery, the southern states threatened that they would secede or breakaway from the union.",
+  "As a result, the states did not agree on a number of issues, including slavery.",
+  "This happened especially after the publication of Harriet Beecher Stowe's book, Uncle Tom's Cabin, in 1852."
  ],
- "correctOption": 2,
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "correctOption": 3,
+ "answer": "This happened especially after the publication of Harriet Beecher Stowe's book, Uncle Tom's Cabin, in 1852.",
  "image": "assets/history8/images/ch3/img_in_image_box_896_52_1116_332.jpg",
- "caption": "Growing Anti-slavery Movement",
+ "caption": "Harriet Beecher",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig002-sa",
@@ -1481,12 +1481,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "question": "Identify Harriet Beecher shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This happened especially after the publication of Harriet Beecher Stowe's book, Uncle Tom's Cabin, in 1852.",
  "image": "assets/history8/images/ch3/img_in_image_box_896_52_1116_332.jpg",
- "caption": "Growing Anti-slavery Movement",
+ "caption": "Harriet Beecher",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig003-mcq",
@@ -1494,19 +1494,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE CIVIL WAR. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE CIVIL WAR. Which statement correctly describes the event or scene shown?",
  "options": [
-  "What does Lincoln say about slavery in this excerpt?",
-  "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—a…",
-  "In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour",
-  "a. The Civil War was fought to uphold the principles of liberty and equality."
+  "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
+  "Proclamation of Emancipation The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
+  "It saw groups of southern and northern states fighting with each other over the issue of slav **Must know** • The American Civil War, also called the War…",
+  "The American Civil War (1861-65) was fought to uphold the principles of liberty and equality. This war was the result of conflict between the northern and…"
  ],
- "correctOption": 1,
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "correctOption": 0,
+ "answer": "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
  "image": "assets/history8/images/ch3/img_in_image_box_126_406_531_823.jpg",
  "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig003-sa",
@@ -1514,12 +1514,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "question": "Identify the historical event or scene shown in the figure (THE CIVIL WAR). Explain its causes and significance.",
+ "answer": "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
  "image": "assets/history8/images/ch3/img_in_image_box_126_406_531_823.jpg",
  "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig004-mcq",
@@ -1527,19 +1527,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE CIVIL WAR. Which statement correctly describes the event or scene shown?",
  "options": [
-  "b. The American War of Independence",
-  "• With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of w…",
-  "• assess the role of Abraham Lincoln as the President of the United States of America during the period",
-  "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—a…"
+  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse the background and causes of the American Civil War.",
+  "Abraham Lincoln presenting the first draft of the Emancipation Proclamation to his cabinet",
+  "The Civil War lasted from 1861 to 1865.",
+  "**Must know** • The anti-slavery movements played a significant role in the outbreak of the American Civil War."
  ],
- "correctOption": 3,
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "correctOption": 1,
+ "answer": "Abraham Lincoln presenting the first draft of the Emancipation Proclamation to his cabinet",
  "image": "assets/history8/images/ch3/img_in_image_box_45_832_1096_1493.jpg",
- "caption": "Did You Know?",
+ "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig004-sa",
@@ -1547,12 +1547,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "question": "Identify the historical event or scene shown in the figure (THE CIVIL WAR). Explain its causes and significance.",
+ "answer": "Abraham Lincoln presenting the first draft of the Emancipation Proclamation to his cabinet",
  "image": "assets/history8/images/ch3/img_in_image_box_45_832_1096_1493.jpg",
- "caption": "Did You Know?",
+ "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig005-mcq",
@@ -1560,19 +1560,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE CIVIL WAR. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—a…",
-  "plantation estates. The northern states, however, developed as manufacturing and shipping centres.",
-  "This war was the result of conflict between the northern and southern states of America",
-  "b. The American War of Independence"
+  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse the background and causes of the American Civil War.",
+  "Proclamation of Emancipation The American Civil War (1861-65) was fought to uphold the principles of liberty and equality.",
+  "The anti-slavery movements played a significant role in the outbreak of the American Civil War.",
+  "Did any state on the western coast of America practise slavery."
  ],
- "correctOption": 0,
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "correctOption": 3,
+ "answer": "Did any state on the western coast of America practise slavery.",
  "image": "assets/history8/images/ch3/img_in_image_box_50_51_1072_976.jpg",
- "caption": "Did You Know?",
+ "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig005-sa",
@@ -1580,12 +1580,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Did You Know? represents and why it matters in this chapter.",
- "answer": "Lincoln abolished slavery in the south with his Proclamation of Emancipation, which declared that all southern states were free of slavery—an act that won him the title of 'Great Emancipator'. He wanted to institute a liberal system to reconstruct the south. However, his vision of reconstruction was not to become a reality. Following Lincoln's assassination in 1865, military rule was instituted in the south. The reconstruction of the southern states officially ended in 1876.",
+ "question": "Identify the historical event or scene shown in the figure (THE CIVIL WAR). Explain its causes and significance.",
+ "answer": "Did any state on the western coast of America practise slavery.",
  "image": "assets/history8/images/ch3/img_in_image_box_50_51_1072_976.jpg",
- "caption": "Did You Know?",
+ "caption": "THE CIVIL WAR",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig006-mcq",
@@ -1593,19 +1593,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on After Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows After Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "1. 'The anti-slavery movements played a significant role in the outbreak of the American Civil War.' Do you agree with the statement? Give r…",
-  "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposi…",
-  "• ##### Learning Outcomes • At the end of this lesson, learners will be able to: • analyse the background and causes of the American Civil W…",
-  "• outline how the American Civil War began"
+  "Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire.",
+  "With the election of Abraham Lincoln, South Carolina became the first state to break off from the Union.",
+  "Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
+  "These movements demanded the abolition of slavery."
  ],
- "correctOption": 1,
- "answer": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. It is rather for us to be here dedicated to the great task remaining before us—that ... this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.",
+ "correctOption": 2,
+ "answer": "Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
  "image": "assets/history8/images/ch3/img_in_image_box_67_489_1148_912.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig006-sa",
@@ -1613,12 +1613,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. It is rather for us to be here dedicated to the great task remaining before us—that ... this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.",
+ "question": "Identify After Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Abølitionists: people in the northern regions of the United States of America who fought against slavery and demanded its abolition",
  "image": "assets/history8/images/ch3/img_in_image_box_67_489_1148_912.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig007-mcq",
@@ -1626,19 +1626,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on III. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The American Civil War. Which statement correctly describes the event or scene shown?",
  "options": [
-  "It saw groups of southern and northern states fighting with each other over the issue of slavery",
-  "a. The Civil War was fought to uphold the principles of liberty and equality.",
-  "Differences in economic activities between the northern and southern states also led to differences in culture and the world view between th…",
-  "Read the excerpt from the Gettysburg Address by Abraham Lincoln, delivered on 19 November 1863 in Pennsylvania. Answer the questions that fo…"
+  "It helped further the cause of abolition and contributed towards the outbreak of the Civil War.",
+  "In his opinion, slavery was an absolute violation of the principles of American democracy, which stated that ‘all men are created equal’.",
+  "With reference to the American Civil War, answer the following questions: 'Differences in economic activities between the northern and southern states led…",
+  "The Civil War lasted from 1861 to 1865."
  ],
  "correctOption": 2,
- "answer": "Differences in economic activities between the northern and southern states also led to differences in culture and the world view between the two regions. As a result, the states did not agree on a number of issues, including slavery.",
+ "answer": "With reference to the American Civil War, answer the following questions: 'Differences in economic activities between the northern and southern states led to differences in culture and the world view between the two regions.",
  "image": "assets/history8/images/ch3/img_in_image_box_843_1177_1106_1477.jpg",
- "caption": "III. Study the given picture. Answer the questions that follow.",
+ "caption": "The American Civil War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig007-sa",
@@ -1646,12 +1646,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Differences in economic activities between the northern and southern states also led to differences in culture and the world view between the two regions. As a result, the states did not agree on a number of issues, including slavery.",
+ "question": "Identify the historical event or scene shown in the figure (The American Civil War). Explain its causes and significance.",
+ "answer": "With reference to the American Civil War, answer the following questions: 'Differences in economic activities between the northern and southern states led to differences in culture and the world view between the two regions.",
  "image": "assets/history8/images/ch3/img_in_image_box_843_1177_1106_1477.jpg",
- "caption": "III. Study the given picture. Answer the questions that follow.",
+ "caption": "The American Civil War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig008-mcq",
@@ -1659,19 +1659,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Decline of the Mughal Empire. Which statement correctly describes the event or scene shown?",
  "options": [
-  "• With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of w…",
-  "It saw groups of southern and northern states fighting with each other over the issue of slavery",
-  "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse the background and causes of the American Civil War",
-  "What does Lincoln say about slavery in this excerpt?"
+  "Eventually, the once powerful and mighty empire was reduced to just the area around the city of Delhi.",
+  "From then onwards, the power of the Mughal emperors progressively diminished.",
+  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC)…",
+  "(on the left) Bahadur Shah Zafar, the last Mughal emperor, was proclaimed as the leader of the Revolt of 1857."
  ],
- "correctOption": 2,
- "answer": "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse the background and causes of the American Civil War",
+ "correctOption": 3,
+ "answer": "(on the left) Bahadur Shah Zafar, the last Mughal emperor, was proclaimed as the leader of the Revolt of 1857.",
  "image": "assets/history8/images/ch3/img_in_image_box_85_319_897_710.jpg",
- "caption": "History Alive!",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig008-sa",
@@ -1679,12 +1679,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "##### Learning Outcomes At the end of this lesson, learners will be able to: analyse the background and causes of the American Civil War",
+ "question": "Identify the historical event or scene shown in the figure (Decline of the Mughal Empire). Explain its causes and significance.",
+ "answer": "(on the left) Bahadur Shah Zafar, the last Mughal emperor, was proclaimed as the leader of the Revolt of 1857.",
  "image": "assets/history8/images/ch3/img_in_image_box_85_319_897_710.jpg",
- "caption": "History Alive!",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig009-mcq",
@@ -1692,19 +1692,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "2. Which of the following is a cause of the American Civil War? You can choose more than one option. Give at least one reason for your answe…",
-  "**Executive summary:** Proclamation of Emancipation **Must know** • Proclamation of Emancipation • The American Civil War (1861-65) was foug…",
-  "It saw groups of southern and northern states fighting with each other over the issue of slavery",
-  "There was suddenly a great demand for a large amount of cheap labour"
+  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC)…",
+  "During this time, over 6,00,000 soldiers, fighting for both sides, were killed.",
+  "During this period of unrest, Abraham Lincoln was elected as the 16th President of the USA.",
+  "Following Lincoln's assassination in 1865, military rule was instituted in the south."
  ],
  "correctOption": 0,
- "answer": "2. Which of the following is a cause of the American Civil War? You can choose more than one option. Give at least one reason for your answer.",
+ "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India.",
  "image": "assets/history8/images/ch3/img_in_image_box_88_1006_1149_1520.jpg",
- "caption": "Visual Mapping",
+ "caption": "Study the map given on this page and answer the following questions:",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig009-sa",
@@ -1712,12 +1712,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "2. Which of the following is a cause of the American Civil War? You can choose more than one option. Give at least one reason for your answer.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India.",
  "image": "assets/history8/images/ch3/img_in_image_box_88_1006_1149_1520.jpg",
- "caption": "Visual Mapping",
+ "caption": "Study the map given on this page and answer the following questions:",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig010-mcq",
@@ -1725,19 +1725,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Robert Edward Lee, an American general, was famous for commanding the Confederate Army of Northern Virginia in the American Civil War.",
-  "Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial gr…",
-  "outline how the American Civil War began",
-  "More and more plantations in the south of America turned towards the cultivation of cotton"
+  "However, it was the Revolt of 1857 that finally sealed the fate of the Mughal Empire, and the glorious dynasty came to an end.",
+  "While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted duri…",
+  "During this time, over 6,00,000 soldiers, fighting for both sides, were killed.",
+  "During this period of unrest, Abraham Lincoln was elected as the 16th President of the USA."
  ],
- "correctOption": 1,
- "answer": "Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the south was mainly agricultural and dependent on the great",
+ "correctOption": 0,
+ "answer": "However, it was the Revolt of 1857 that finally sealed the fate of the Mughal Empire, and the glorious dynasty came to an end.",
  "image": "assets/history8/images/ch3/img_in_image_box_598_399_1173_1117.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig010-sa",
@@ -1745,12 +1745,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Towards the end of the 18th century, many changes took place in the United States of America. These changes were the result of industrial growth and development. The economy in the south was mainly agricultural and dependent on the great",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, it was the Revolt of 1857 that finally sealed the fate of the Mughal Empire, and the glorious dynasty came to an end.",
  "image": "assets/history8/images/ch3/img_in_image_box_598_399_1173_1117.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch3-fig011-mcq",
@@ -1758,19 +1758,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Policies of Aurangzeb. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Aurangzeb. Which statement correctly describes this person and their role?",
  "options": [
-  "In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour",
-  "The American Civil War, also called the War Between the States, between 1861 and 1865. It saw groups of southern and northern states fightin…",
-  "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of whi…",
-  "assess the role of Abraham Lincoln as the President of the United States of America during the period"
+  "### Policies of Aurangzeb While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats…",
+  "The Medieval Period in Indian history gradually drew to a close following the death of Aurangzeb, which also marked the decline of the Mughal Empire.",
+  "Aurangzeb spent the last 25 years of his reign trying to subdue and subjugate the Marathas in the Deccan.",
+  "The successors of Aurangzeb came to be known as the Later Mughals."
  ],
- "correctOption": 2,
- "answer": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
+ "correctOption": 0,
+ "answer": "### Policies of Aurangzeb While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted during Aurangzeb's reign.",
  "image": "assets/history8/images/ch3/img_in_image_box_50_1131_309_1480.jpg",
- "caption": "Policies of Aurangzeb",
+ "caption": "Aurangzeb",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch3-fig011-sa",
@@ -1778,12 +1778,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch3",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "With the advent of the Industrial Revolution in 18th-century England, there was suddenly a great demand for raw cotton—the production of which became very profitable. More and more plantations in the south of America turned towards the cultivation of cotton. There was suddenly a great demand for a large amount of cheap labour. In those days, the slaves, brought from Africa to America, were considered a viable option for cheap labour.",
+ "question": "Identify Aurangzeb shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "### Policies of Aurangzeb While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted during Aurangzeb's reign.",
  "image": "assets/history8/images/ch3/img_in_image_box_50_1131_309_1480.jpg",
- "caption": "Policies of Aurangzeb",
+ "caption": "Aurangzeb",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig001-mcq",
@@ -1791,19 +1791,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Wars of Succession. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Koh-i-Noor on the crown of Queen Alexandra. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Most historians consider the mid-18th century as the beginning of the Modern Period in India",
-  "Important Later Mughals 1. Bahadur Shah I (1707-12) 2. Jahandar Shah (1712-13) 3. Farrukhsiyar (1713-19) 4. Muhammad Shah (1719-48) 5. Ahmad…",
-  "3. Discuss two achievements of Balaji Vishwanath.",
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…"
+  "This resulted in wars of • Analysising Primary sources CENTURY SKILLS Media literacy: observed This is a picture of the Mughal emperor Aurangzeb in his co…",
+  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British.",
+  "### ANGLO-FRENCH RIVALRY: THE CARNATIC WARS",
+  "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession."
  ],
  "correctOption": 3,
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "answer": "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession.",
  "image": "assets/history8/images/ch4/img_in_image_box_213_54_606_308.jpg",
- "caption": "Wars of Succession",
+ "caption": "Koh-i-Noor on the crown of Queen Alexandra",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig001-sa",
@@ -1811,12 +1811,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "question": "Identify the historical event or scene shown in the figure (Koh-i-Noor on the crown of Queen Alexandra). Explain its causes and significance.",
+ "answer": "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession.",
  "image": "assets/history8/images/ch4/img_in_image_box_213_54_606_308.jpg",
- "caption": "Wars of Succession",
+ "caption": "Koh-i-Noor on the crown of Queen Alexandra",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig002-mcq",
@@ -1824,19 +1824,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Wars of Succession. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Wars of Succession. Which statement correctly describes the event or scene shown?",
  "options": [
-  "There were other causes as well, which contributed to its decline",
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…",
-  "• Which river is nearest to Bijapur? • Which physical feature lies to the west of the Maratha Kingdom? • Did the Mughals gain control of the…",
-  "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the r…"
+  "The competition led to a series of wars, known as the Carnatic Wars in history.",
+  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfully capturing…",
+  "### ANGLO-FRENCH RIVALRY: THE CARNATIC WARS",
+  "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession."
  ],
- "correctOption": 1,
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "correctOption": 3,
+ "answer": "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession.",
  "image": "assets/history8/images/ch4/img_in_image_box_87_0_1592_1026.jpg",
  "caption": "Wars of Succession",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig002-sa",
@@ -1844,12 +1844,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "question": "Identify the historical event or scene shown in the figure (Wars of Succession). Explain its causes and significance.",
+ "answer": "Bahadur Shah Zafar (1837-58) • ##### Wars of Succession • The Mughals did not have clear rules for succession.",
  "image": "assets/history8/images/ch4/img_in_image_box_87_0_1592_1026.jpg",
  "caption": "Wars of Succession",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig003-mcq",
@@ -1857,19 +1857,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Mysore. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Hyder Ali. Which statement correctly describes this person and their role?",
  "options": [
-  "**Executive summary:** Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150…",
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…",
-  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death.…",
-  "(2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?"
+  "In 1761, Hyder Ali became the ruler of Mysore. During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan.",
+  "Hyder Ali was succeeded by his son, Tipu Sultan, who continued to be a serious challenge to the British.",
+  "The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to.",
+  "Tipu Sultan fought in the Anglo-Mysore wars."
  ],
- "correctOption": 1,
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "correctOption": 0,
+ "answer": "In 1761, Hyder Ali became the ruler of Mysore. During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan.",
  "image": "assets/history8/images/ch4/img_in_image_box_357_884_663_1393.jpg",
- "caption": "Mysore",
+ "caption": "Hyder Ali",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig003-sa",
@@ -1877,12 +1877,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "question": "Identify Hyder Ali shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In 1761, Hyder Ali became the ruler of Mysore. During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan.",
  "image": "assets/history8/images/ch4/img_in_image_box_357_884_663_1393.jpg",
- "caption": "Mysore",
+ "caption": "Hyder Ali",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig004-mcq",
@@ -1890,19 +1890,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Awadh (Oudh). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Awadh (Oudh). Which statement correctly describes the event or scene shown?",
  "options": [
-  "• Which river is nearest to Bijapur? • Which physical feature lies to the west of the Maratha Kingdom? • Did the Mughals gain control of the…",
-  "The Medieval Period in Indian history gradually drew to a close following the death of Aurangzeb, which also marked the decline of the Mugha…",
-  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death",
-  "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the r…"
+  "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
+  "The independent state of Awadh was founded by Burhan-ul-Mulk Saadat Khan, a Mughal governor.",
+  "The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to.",
+  "Lucknow, the capital of Awadh, could boast of a distinct culture that developed during this period."
  ],
- "correctOption": 3,
- "answer": "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.",
+ "correctOption": 0,
+ "answer": "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
  "image": "assets/history8/images/ch4/img_in_image_box_677_1045_1186_1395.jpg",
  "caption": "Awadh (Oudh)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig004-sa",
@@ -1910,12 +1910,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.",
+ "question": "Identify the historical event or scene shown in the figure (Awadh (Oudh)). Explain its causes and significance.",
+ "answer": "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
  "image": "assets/history8/images/ch4/img_in_image_box_677_1045_1186_1395.jpg",
  "caption": "Awadh (Oudh)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig005-mcq",
@@ -1923,19 +1923,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Awadh (Oudh). Which statement correctly describes the event or scene shown?",
  "options": [
-  "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page…",
-  "Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire",
-  "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the r…",
-  "Important Later Mughals 1. Bahadur Shah I (1707-12) 2. Jahandar Shah (1712-13) 3. Farrukhsiyar (1713-19) 4. Muhammad Shah (1719-48) 5. Ahmad…"
+  "The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to.",
+  "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
+  "Lucknow, the capital of Awadh, could boast of a distinct culture that developed during this period.",
+  "The independent state of Awadh was founded by Burhan-ul-Mulk Saadat Khan, a Mughal governor."
  ],
- "correctOption": 2,
- "answer": "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.",
+ "correctOption": 1,
+ "answer": "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
  "image": "assets/history8/images/ch4/img_in_image_box_629_137_1104_459.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Awadh (Oudh)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig005-sa",
@@ -1943,12 +1943,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the ruler of Amber (now Jaipur) in 1699. He was a wise and just ruler who introduced several reforms, such as discouraging the practice of sati.",
+ "question": "Identify the historical event or scene shown in the figure (Awadh (Oudh)). Explain its causes and significance.",
+ "answer": "Safdar Jang's tomb in Delhi bears testimony to the power and prestige enjoyed by the Nawabs of Awadh in the 18th century.",
  "image": "assets/history8/images/ch4/img_in_image_box_629_137_1104_459.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Awadh (Oudh)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig006-mcq",
@@ -1956,19 +1956,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Sikh Kingdom. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Sikh Kingdom. Which statement correctly describes this person and their role?",
  "options": [
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…",
-  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death",
-  "(2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?",
-  "What was the purpose for building this place?"
+  "As a result of internal strife and conflicts, the Rajput kingdoms, which had been the pillars of the Mughal Empire, became prey to the British expansionis…",
+  "Hyder Ali began as a mere soldier in the Mysore army, but through sheer determination and merit, he rose to",
+  "### THE FRENCH EAST INDIA COMPANY",
+  "According to this treaty, the Sutlej River formed the boundary between the British and the Sikh territories."
  ],
  "correctOption": 0,
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "answer": "As a result of internal strife and conflicts, the Rajput kingdoms, which had been the pillars of the Mughal Empire, became prey to the British expansionist policies.",
  "image": "assets/history8/images/ch4/img_in_image_box_40_1174_1110_1570.jpg",
  "caption": "The Sikh Kingdom",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig006-sa",
@@ -1976,12 +1976,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more powerful and wanted control over the administration of the empire. They became ambitious and began to manipulate the Mughal rulers. Soon, the distant governors, taking advantage of the weakness of the central authority, declared themselves independent.",
+ "question": "Identify The Sikh Kingdom shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "As a result of internal strife and conflicts, the Rajput kingdoms, which had been the pillars of the Mughal Empire, became prey to the British expansionist policies.",
  "image": "assets/history8/images/ch4/img_in_image_box_40_1174_1110_1570.jpg",
  "caption": "The Sikh Kingdom",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig007-mcq",
@@ -1989,19 +1989,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on III. Study the given pictures. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Decline of the Mughal Empire. Which statement correctly describes what it illustrates?",
  "options": [
-  "What does it tell you about the outlook of the ruler who built it?",
-  "3. Discuss two achievements of Balaji Vishwanath.",
-  "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the…",
-  "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the r…"
+  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Au…",
+  "Aurangzeb's intolerant attitude and rigid reli **Must know** • Aurangzeb failed to realise that religious tolerance was essential for the proper governanc…",
+  "This resulted in wars of • Analysising Primary sources CENTURY SKILLS Media literacy: observed This is a picture of the Mughal emperor Aurangzeb in his co…",
+  "His policies led to serious revolts in the empire."
  ],
- "correctOption": 2,
- "answer": "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.",
+ "correctOption": 0,
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_61_1045_224_1292.jpg",
- "caption": "III. Study the given pictures. Answer the questions that follow.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig007-sa",
@@ -2009,12 +2009,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the causes of the decline of the Mughal Empire? Give reasons for your answer.",
+ "question": "Study the figure on Decline of the Mughal Empire. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_61_1045_224_1292.jpg",
- "caption": "III. Study the given pictures. Answer the questions that follow.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig008-mcq",
@@ -2022,19 +2022,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on III. Study the given pictures. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Decline of the Mughal Empire. Which statement correctly describes what it illustrates?",
  "options": [
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…",
-  "1. This is a picture of the ruler of the kingdom of Mysore who died defending his capital against the British.",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page…"
+  "While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted duri…",
+  "This resulted in wars of • Analysising Primary sources CENTURY SKILLS Media literacy: observed This is a picture of the Mughal emperor Aurangzeb in his co…",
+  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Au…",
+  "Iranis, Turanis, Afghans and Hindustanis: four groups of nobles in the Mughal court who fought for political control"
  ],
- "correctOption": 3,
- "answer": "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page and answer the following questions: • Name the two places that are nearest to Agra",
+ "correctOption": 2,
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_893_852_1092_1114.jpg",
- "caption": "III. Study the given pictures. Answer the questions that follow.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig008-sa",
@@ -2042,12 +2042,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page and answer the following questions: • Name the two places that are nearest to Agra",
+ "question": "Study the figure on Decline of the Mughal Empire. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_893_852_1092_1114.jpg",
- "caption": "III. Study the given pictures. Answer the questions that follow.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig009-mcq",
@@ -2055,19 +2055,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Paralympic Games and India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Murlikant Petkar. Which statement correctly describes this person and their role?",
  "options": [
-  "Which river is nearest to Bijapur?",
-  "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give rea…",
-  "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have particip…",
-  "What was the purpose for building this place?"
+  "These campaigns were also a financial drain on the treasury.",
+  "Trade was profitable, and the Queen received a major share of these profits.",
+  "During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan.",
+  "Petkar was a boxer earlier. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals."
  ],
- "correctOption": 2,
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "correctOption": 3,
+ "answer": "Petkar was a boxer earlier. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
  "image": "assets/history8/images/ch4/img_in_image_box_748_398_1141_756.jpg",
- "caption": "Paralympic Games and India",
+ "caption": "Murlikant Petkar",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig009-sa",
@@ -2075,12 +2075,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "question": "Identify Murlikant Petkar shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Petkar was a boxer earlier. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
  "image": "assets/history8/images/ch4/img_in_image_box_748_398_1141_756.jpg",
- "caption": "Paralympic Games and India",
+ "caption": "Murlikant Petkar",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig010-mcq",
@@ -2088,19 +2088,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Paralympic Games and India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Paralympic Games and India. Which statement correctly describes the event or scene shown?",
  "options": [
-  "These events occurred towards the end of the 17th century and the early 18th century",
-  "Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. …",
-  "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give rea…",
-  "Most historians consider the mid-18th century as the beginning of the Modern Period in India"
+  "Aurangzeb failed to realise that religious tolerance was essential for the proper governance of such an extensive and diverse empire.",
+  "In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I.",
+  "They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+  "The First Carnatic War took place between 1746 and 1748."
  ],
- "correctOption": 1,
- "answer": "Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. Mr. Petkar was a boxer earlier. He lost his arm due to a bullet injury, and switched over to swimming.",
+ "correctOption": 2,
+ "answer": "They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
  "image": "assets/history8/images/ch4/img_in_image_box_104_980_461_1413.jpg",
  "caption": "Paralympic Games and India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig010-sa",
@@ -2108,12 +2108,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. Mr. Petkar was a boxer earlier. He lost his arm due to a bullet injury, and switched over to swimming.",
+ "question": "Identify the historical event or scene shown in the figure (Paralympic Games and India). Explain its causes and significance.",
+ "answer": "They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
  "image": "assets/history8/images/ch4/img_in_image_box_104_980_461_1413.jpg",
  "caption": "Paralympic Games and India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig011-mcq",
@@ -2121,19 +2121,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Paralympic Games and India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Paralympic Games and India. Which statement correctly describes what it illustrates?",
  "options": [
-  "Aurangzeb spent the last 25 years of his reign trying to subdue and subjugate the Marathas in the Deccan. These campaigns were also a financ…",
-  "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page…",
-  "The English gradually gained political control over India and established their supremacy over different parts of the country",
-  "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have particip…"
+  "### Tokyo 2020 Paralympic Games",
+  "#### Paralympic Games and India",
+  "In this war, France and England fought against each other.",
+  "Tipu introduced many reforms and strengthened the army."
  ],
- "correctOption": 3,
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "correctOption": 0,
+ "answer": "### Tokyo 2020 Paralympic Games",
  "image": "assets/history8/images/ch4/img_in_image_box_685_972_1034_1397.jpg",
  "caption": "Paralympic Games and India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig011-sa",
@@ -2141,12 +2141,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Paralympic Games and India represents and why it matters in this chapter.",
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "question": "Study the figure on Paralympic Games and India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### Tokyo 2020 Paralympic Games",
  "image": "assets/history8/images/ch4/img_in_image_box_685_972_1034_1397.jpg",
  "caption": "Paralympic Games and India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig012-mcq",
@@ -2154,19 +2154,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tokyo 2020 Paralympic Games. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Tokyo 2020 Paralympic Games. Which statement correctly describes what it illustrates?",
  "options": [
-  "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have particip…",
-  "Study the map given on this page and answer the following questions: Name the two places that are nearest to Agra",
-  "Important Later Mughals 1. Bahadur Shah I (1707-12) 2. Jahandar Shah (1712-13) 3. Farrukhsiyar (1713-19) 4. Muhammad Shah (1719-48) 5. Ahmad…",
-  "These events occurred towards the end of the 17th century and the early 18th century"
+  "Bombay became an important trading base for the East India Company by the middle of the 18th century.",
+  "Saadat Khan was an efficient administrator who introduced reforms in revenue collection and strengthened the army.",
+  "- In all the years that the Indian athletes have participated in the Paralympics, they won maximum number of medals at Tokyo 2020 Paralympics.",
+  "- The Tokyo 2020 Paralympics were held in the year 2021 because of the COVID-19 pandemic."
  ],
- "correctOption": 0,
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "correctOption": 2,
+ "answer": "- In all the years that the Indian athletes have participated in the Paralympics, they won maximum number of medals at Tokyo 2020 Paralympics.",
  "image": "assets/history8/images/ch4/img_in_image_box_836_381_1144_687.jpg",
  "caption": "Tokyo 2020 Paralympic Games",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig012-sa",
@@ -2174,12 +2174,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Tokyo 2020 Paralympic Games represents and why it matters in this chapter.",
- "answer": "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have participated in eleven Paralympic Games, since its introduction in 1960. They have won 31 medals at the Paralympic Games, including nine gold, twelve silver and ten bronze medals.",
+ "question": "Study the figure on Tokyo 2020 Paralympic Games. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "- In all the years that the Indian athletes have participated in the Paralympics, they won maximum number of medals at Tokyo 2020 Paralympics.",
  "image": "assets/history8/images/ch4/img_in_image_box_836_381_1144_687.jpg",
  "caption": "Tokyo 2020 Paralympic Games",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig013-mcq",
@@ -2187,19 +2187,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on III. State whether the following statements are true or false. Correct the false statements.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Decline of the Mughal Empire. Which statement correctly describes the event or scene shown?",
  "options": [
-  "What does it tell you about the outlook of the ruler who built it?",
-  "Study the map given on this page and answer the following questions:",
-  "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page…",
-  "Which river is nearest to Bijapur? Which physical feature lies to the west of the Maratha Kingdom? Did the Mughals gain control of the entir…"
+  "In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions.",
+  "Aurangzeb's intolerant attitude and rigid reli **Must know** • Aurangzeb failed to realise that religious tolerance was essential for the proper governanc…",
+  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Au…",
+  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC)…"
  ],
  "correctOption": 2,
- "answer": "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page and answer the following questions: • Name the two places that are nearest to Agra",
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_816_1106_1134_1521.jpg",
- "caption": "III. State whether the following statements are true or false. Correct the false statements.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig013-sa",
@@ -2207,12 +2207,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page and answer the following questions: • Name the two places that are nearest to Agra",
+ "question": "Identify the historical event or scene shown in the figure (Decline of the Mughal Empire). Explain its causes and significance.",
+ "answer": "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire. There were other causes as well, which contributed to its decline.",
  "image": "assets/history8/images/ch4/img_in_image_box_816_1106_1134_1521.jpg",
- "caption": "III. State whether the following statements are true or false. Correct the false statements.",
+ "caption": "Decline of the Mughal Empire",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig014-mcq",
@@ -2220,19 +2220,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Advent of the English East India Company. Which statement correctly describes the event or scene shown?",
  "options": [
-  "initiative and self-direction: research",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "The Medieval Period in Indian history gradually drew to a close following the death of Aurangzeb, which also marked the decline of the Mugha…",
-  "Search for paintings and sketches that show the rulers you have read about in this chapter. You can use the Internet as most of these pictur…"
+  "The English gradually gained political control over India and established their supremacy over different parts of the country.",
+  "## Advent of the English East India Company",
+  "In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions.",
+  "Then Fort St George was the first English fortress in India."
  ],
  "correctOption": 1,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "answer": "## Advent of the English East India Company",
  "image": "assets/history8/images/ch4/img_in_image_box_61_313_802_844.jpg",
- "caption": "History Alive!",
+ "caption": "Advent of the English East India Company",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig014-sa",
@@ -2240,12 +2240,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify the historical event or scene shown in the figure (Advent of the English East India Company). Explain its causes and significance.",
+ "answer": "## Advent of the English East India Company",
  "image": "assets/history8/images/ch4/img_in_image_box_61_313_802_844.jpg",
- "caption": "History Alive!",
+ "caption": "Advent of the English East India Company",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig015-mcq",
@@ -2253,19 +2253,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "(2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?",
-  "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have particip…",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "Important Later Mughals 1. Bahadur Shah I (1707-12) 2. Jahandar Shah (1712-13) 3. Farrukhsiyar (1713-19) 4. Muhammad Shah (1719-48) 5. Ahmad…"
+  "While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted duri…",
+  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
+  "Lucknow, the capital of Awadh, could boast of a distinct culture that developed during this period.",
+  "During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan."
  ],
- "correctOption": 2,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 1,
+ "answer": "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
  "image": "assets/history8/images/ch4/img_in_image_box_54_1189_1081_1555.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig015-sa",
@@ -2273,12 +2273,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
  "image": "assets/history8/images/ch4/img_in_image_box_54_1189_1081_1555.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig016-mcq",
@@ -2286,19 +2286,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the…",
-  "Can you identify the place shown in the given picture? It was built by the Rajput ruler Maharaja Jai Singh in Jaipur. Jai Singh became the r…",
-  "Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…"
+  "The Seven Years' War took place between 1756 and 1763.",
+  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. From traders, they became ‘rulers’.",
+  "Lucknow, the capital of Awadh, could boast of a distinct culture that developed during this period.",
+  "- In all the years that the Indian athletes have participated in the Paralympics, they won maximum number of medals at Tokyo 2020 Paralympics."
  ],
- "correctOption": 3,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 1,
+ "answer": "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. From traders, they became ‘rulers’.",
  "image": "assets/history8/images/ch4/img_in_image_box_121_183_409_420.jpg",
- "caption": "During Reading",
+ "caption": "Hundred Years' War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig016-sa",
@@ -2306,12 +2306,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. From traders, they became ‘rulers’.",
  "image": "assets/history8/images/ch4/img_in_image_box_121_183_409_420.jpg",
- "caption": "During Reading",
+ "caption": "Hundred Years' War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig017-mcq",
@@ -2319,19 +2319,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Paralympics is one of the world's top sporting competition platforms that represents people with disabilities. Indian athletes have particip…",
-  "What was the purpose for building this place?",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "The Medieval Period in Indian history gradually drew to a close following the death of Aurangzeb, which also marked the decline of the Mugha…"
+  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. Trade was profitable, and the Queen received a major share of th…",
+  "These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars o…",
+  "During the 17th and 18th centuries, Mysore was one of the most important kingdoms in the Deccan.",
+  "While Akbar had won over the Rajputs, who constituted a pillar of support and strength for his empire, the Rajputs, Sikhs, Jats and Satnamis revolted duri…"
  ],
- "correctOption": 2,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 0,
+ "answer": "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. Trade was profitable, and the Queen received a major share of these profits.",
  "image": "assets/history8/images/ch4/img_in_image_box_491_172_781_414.jpg",
- "caption": "During Reading",
+ "caption": "War of Austrian Succession",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig017-sa",
@@ -2339,12 +2339,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British. Trade was profitable, and the Queen received a major share of these profits.",
  "image": "assets/history8/images/ch4/img_in_image_box_491_172_781_414.jpg",
- "caption": "During Reading",
+ "caption": "War of Austrian Succession",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig018-mcq",
@@ -2352,19 +2352,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "Murlikant Petkar, a veteran of the Indo-Pak War of 1965, won a gold medal in men's 50m freestyle 3 swimming at Heidelberg, Germany in 1972. …",
-  "Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire",
-  "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give rea…"
+  "Aurangzeb spent the last 25 years of his reign trying to subdue and subjugate the Marathas in the Deccan. These campaigns were also a financial drain on t…",
+  "- In all the years that the Indian athletes have participated in the Paralympics, they won maximum number of medals at Tokyo 2020 Paralympics.",
+  "At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called Fort William.",
+  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death. Therefore, Au…"
  ],
- "correctOption": 0,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 2,
+ "answer": "At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called Fort William.",
  "image": "assets/history8/images/ch4/img_in_image_box_870_173_1148_413.jpg",
- "caption": "During Reading",
+ "caption": "Seven Years' War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig018-sa",
@@ -2372,12 +2372,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called Fort William.",
  "image": "assets/history8/images/ch4/img_in_image_box_870_173_1148_413.jpg",
- "caption": "During Reading",
+ "caption": "Seven Years' War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig019-mcq",
@@ -2385,19 +2385,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE ENGLISH EAST INDIA COMPANY. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Fort William, Calcutta. Which statement correctly describes the event or scene shown?",
  "options": [
-  "a result, the northern part of his empire became a centre of . The nobles declared themselves independent. There was a total breakdown of ad…",
-  "Aurangzeb's successors were pleasere-loving, weak and incompetent, and could not manage the huge empire. As a result, the nobles became more…",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "b. What was the name of his father?"
+  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfully capturing…",
+  "The English gradually gained political control over India and established their supremacy over different parts of the country.",
+  "Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
+  "In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I."
  ],
- "correctOption": 2,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 0,
+ "answer": "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfully capturing the latter's strongholds in India.",
  "image": "assets/history8/images/ch4/img_in_image_box_47_55_563_384.jpg",
- "caption": "THE ENGLISH EAST INDIA COMPANY",
+ "caption": "Fort William, Calcutta",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig019-sa",
@@ -2405,12 +2405,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify the historical event or scene shown in the figure (Fort William, Calcutta). Explain its causes and significance.",
+ "answer": "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfully capturing the latter's strongholds in India.",
  "image": "assets/history8/images/ch4/img_in_image_box_47_55_563_384.jpg",
- "caption": "THE ENGLISH EAST INDIA COMPANY",
+ "caption": "Fort William, Calcutta",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig020-mcq",
@@ -2418,19 +2418,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to An oil painting showing Fort St George. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Therefore, Aurangzeb cannot be solely held responsible for the deterioration of such a huge empire",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "(2.) Why can Aurangzeb not be solely held responsible for the decline of the Mughal Empire?",
-  "These events occurred towards the end of the 17th century and the early 18th century"
+  "It gave birth to a new settlement called George Town, which included nearby villages and formed the city of Madras.",
+  "A view of the present-day Fort St George ##### Connecting Past with Present Now Fort St George serves as one of the administrative headquarters for the Le…",
+  "Alivardi Khan was succeeded by his grandson, Siraj-ud-Daulah.",
+  "At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called Fort William."
  ],
  "correctOption": 1,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "answer": "A view of the present-day Fort St George ##### Connecting Past with Present Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
  "image": "assets/history8/images/ch4/img_in_image_box_35_1233_306_1477.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "An oil painting showing Fort St George",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig020-sa",
@@ -2438,12 +2438,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify the historical event or scene shown in the figure (An oil painting showing Fort St George). Explain its causes and significance.",
+ "answer": "A view of the present-day Fort St George ##### Connecting Past with Present Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
  "image": "assets/history8/images/ch4/img_in_image_box_35_1233_306_1477.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "An oil painting showing Fort St George",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig021-mcq",
@@ -2451,19 +2451,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (A view of the present-day Fort St George). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…",
-  "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give rea…",
-  "Search for paintings and sketches that show the rulers you have read about in this chapter. You can use the Internet as most of these pictur…",
-  "Although many historians blame Aurangzeb for sowing the seeds of decline, the Mughal Empire continued for another 150 years after his death.…"
+  "At the end of the 17th century, the British had established a fortified factory in Calcutta (now Kolkata), called Fort William.",
+  "Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
+  "It gave birth to a new settlement called George Town, which included nearby villages and formed the city of Madras.",
+  "Decline of the Mughal Empire 39"
  ],
- "correctOption": 0,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 1,
+ "answer": "Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
  "image": "assets/history8/images/ch4/img_in_image_box_836_1113_1123_1313.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "A view of the present-day Fort St George",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig021-sa",
@@ -2471,12 +2471,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify the artwork shown (A view of the present-day Fort St George). Who created it and why is it important in this chapter?",
+ "answer": "Now Fort St George serves as one of the administrative headquarters for the Legislative Assembly of Tamil Nadu.",
  "image": "assets/history8/images/ch4/img_in_image_box_836_1113_1123_1313.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "A view of the present-day Fort St George",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig022-mcq",
@@ -2484,19 +2484,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Joseph Dupleix, the French Governor in India. Which statement correctly describes the event or scene shown?",
  "options": [
-  "2. Internal strife and conflicts led to the annexation of the Rajput kingdoms under the British rule. Do you support the statement? Give rea…",
-  "Most historians consider the mid-18th century as the beginning of the Modern Period in India",
-  "What was the purpose for building this place?",
-  "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India C…"
+  "The British and the French were not only commercial rivals in India, but they were also political rivals in Europe.",
+  "Joseph Dupleix, the French Governor, wanted to establish French supremacy over India. Following hostilities between the British and the French, Dupleix ca…",
+  "However, his army was defeated by the French.",
+  "This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French."
  ],
- "correctOption": 3,
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "correctOption": 1,
+ "answer": "Joseph Dupleix, the French Governor, wanted to establish French supremacy over India. Following hostilities between the British and the French, Dupleix captured Madras—a British stronghold.",
  "image": "assets/history8/images/ch4/img_in_image_box_423_64_652_317.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Joseph Dupleix, the French Governor in India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig022-sa",
@@ -2504,12 +2504,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The decline of the Mughals in the early 18th century was followed by the growing power of foreign companies such as the English East India Company (EEIC), the French East India Company, and the Dutch and the Portuguese trading companies in India",
+ "question": "Identify the historical event or scene shown in the figure (Joseph Dupleix, the French Governor in India). Explain its causes and significance.",
+ "answer": "Joseph Dupleix, the French Governor, wanted to establish French supremacy over India. Following hostilities between the British and the French, Dupleix captured Madras—a British stronghold.",
  "image": "assets/history8/images/ch4/img_in_image_box_423_64_652_317.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Joseph Dupleix, the French Governor in India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch4-fig023-mcq",
@@ -2517,19 +2517,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Second Carnatic War (1749-1754). Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Robert Clive. Which statement correctly describes this person and their role?",
  "options": [
-  "1. Do you think that Aurangzeb's failure to realise the fact that religious tolerance is essential to govern a diverse empire was one of the…",
-  "**Executive summary:** Study the map given on this page and answer the following questions: **Must know** • Study the map given on this page…",
-  "a result, the northern part of his empire became a centre of . The nobles declared themselves independent. There was a total breakdown of ad…",
-  "Which river is nearest to Bijapur? Which physical feature lies to the west of the Maratha Kingdom? Did the Mughals gain control of the entir…"
+  "The Carnatic coast is the region in south India that lies between the Eastern Ghats and the Coromandel Coast.",
+  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
+  "##### First Carnatic War (1746-48)",
+  "This led to the Second Carnatic War, which lasted from 1749 to 1754. ##### Second Carnatic War (1749-1754)"
  ],
  "correctOption": 3,
- "answer": "Which river is nearest to Bijapur? Which physical feature lies to the west of the Maratha Kingdom? Did the Mughals gain control of the entire peninsular region of India? In Class 8, we will be studying the Modern Period in Indian history",
+ "answer": "This led to the Second Carnatic War, which lasted from 1749 to 1754. ##### Second Carnatic War (1749-1754)",
  "image": "assets/history8/images/ch4/img_in_image_box_936_264_1175_606.jpg",
- "caption": "Second Carnatic War (1749-1754)",
+ "caption": "Robert Clive",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch4-fig023-sa",
@@ -2537,12 +2537,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch4",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Which river is nearest to Bijapur? Which physical feature lies to the west of the Maratha Kingdom? Did the Mughals gain control of the entire peninsular region of India? In Class 8, we will be studying the Modern Period in Indian history",
+ "question": "Identify Robert Clive shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This led to the Second Carnatic War, which lasted from 1749 to 1754. ##### Second Carnatic War (1749-1754)",
  "image": "assets/history8/images/ch4/img_in_image_box_936_264_1175_606.jpg",
- "caption": "Second Carnatic War (1749-1754)",
+ "caption": "Robert Clive",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig001-mcq",
@@ -2550,19 +2550,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Results. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Results. Which statement correctly describes this person and their role?",
  "options": [
-  "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe betwee…",
-  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfu…",
-  "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizab…",
-  "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Secon…"
+  "The British learnt a number of lessons from the wars they fought in India:",
+  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
+  "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War…",
+  "**Must know** • Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic."
  ],
- "correctOption": 3,
+ "correctOption": 2,
  "answer": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
  "image": "assets/history8/images/ch5/img_in_image_box_774_1109_1164_1217.jpg",
- "caption": "Results",
+ "caption": "- visual literacy: analysing pictures",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig001-sa",
@@ -2570,12 +2570,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
+ "question": "Identify Results shown in the figure. Write a short note on who they were and their contribution in this chapter.",
  "answer": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
  "image": "assets/history8/images/ch5/img_in_image_box_774_1109_1164_1217.jpg",
- "caption": "Results",
+ "caption": "- visual literacy: analysing pictures",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig002-mcq",
@@ -2583,19 +2583,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Results. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Results. Which statement correctly describes this person and their role?",
  "options": [
-  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfu…",
-  "• The French were the biggest rival of the British in India, and there were frequent clashes between these two powers",
-  "**Executive summary:** Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic",
-  "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Secon…"
+  "A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle.",
+  "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War…",
+  "However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs.",
+  "This prosperous and fertile land attracted traders from many European countries."
  ],
- "correctOption": 3,
+ "correctOption": 1,
  "answer": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
  "image": "assets/history8/images/ch5/img_in_image_box_595_1219_1161_1525.jpg",
  "caption": "Results",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig002-sa",
@@ -2603,12 +2603,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
+ "question": "Identify Results shown in the figure. Write a short note on who they were and their contribution in this chapter.",
  "answer": "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War was broken.",
  "image": "assets/history8/images/ch5/img_in_image_box_595_1219_1161_1525.jpg",
  "caption": "Results",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig003-mcq",
@@ -2616,19 +2616,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on REASONS FOR THE BRITISH SUCCESS IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to REASONS FOR THE BRITISH SUCCESS IN INDIA. Which statement correctly describes the event or scene shown?",
  "options": [
-  "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian re…",
-  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic",
-  "War of Austrian Succession The British gradually gained political control over India through a number of battles against the rulers of Benga…",
-  "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe betwee…"
+  "##### Importance of the Battle",
+  "Financial stability: The conquest of Bengal and access to the land revenue from this region added to the British wealth.",
+  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold.",
+  "The British succeeded in winning the wars against their rivals for the following reasons:"
  ],
- "correctOption": 0,
- "answer": "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI",
+ "correctOption": 1,
+ "answer": "Financial stability: The conquest of Bengal and access to the land revenue from this region added to the British wealth.",
  "image": "assets/history8/images/ch5/img_in_image_box_76_120_1124_461.jpg",
  "caption": "REASONS FOR THE BRITISH SUCCESS IN INDIA",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig003-sa",
@@ -2636,12 +2636,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian realm after the death of King Charles VI",
+ "question": "Identify the historical event or scene shown in the figure (REASONS FOR THE BRITISH SUCCESS IN INDIA). Explain its causes and significance.",
+ "answer": "Financial stability: The conquest of Bengal and access to the land revenue from this region added to the British wealth.",
  "image": "assets/history8/images/ch5/img_in_image_box_76_120_1124_461.jpg",
  "caption": "REASONS FOR THE BRITISH SUCCESS IN INDIA",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig004-mcq",
@@ -2649,19 +2649,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Advent of the English East India Company. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The French East India Company was formed in 1664. It established its headquarters in Pondicherry (now Puducherry). While the British were se…",
-  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic",
-  "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizab…",
-  "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe betwee…"
+  "In 1600, it acquired the exclusive right to trade in the East from Queen Elizabeth I.",
+  "The Company was given zamindari rights over 24 parganas.",
+  "The French Company, on the other hand, was subjected to constant interference from the French government, so they could not take major political decisions…",
+  "In 1615, Thomas Roe visited the court of the Mughal Emperor Jahangir, who granted the Company many concessions."
  ],
- "correctOption": 3,
- "answer": "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.",
+ "correctOption": 2,
+ "answer": "The French Company, on the other hand, was subjected to constant interference from the French government, so they could not take major political decisions without the government's consent.",
  "image": "assets/history8/images/ch5/img_in_image_box_842_1071_1073_1332.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Advent of the English East India Company",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig004-sa",
@@ -2669,12 +2669,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe between England and France.",
+ "question": "Identify the historical event or scene shown in the figure (Advent of the English East India Company). Explain its causes and significance.",
+ "answer": "The French Company, on the other hand, was subjected to constant interference from the French government, so they could not take major political decisions without the government's consent.",
  "image": "assets/history8/images/ch5/img_in_image_box_842_1071_1073_1332.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Advent of the English East India Company",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig005-mcq",
@@ -2682,19 +2682,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Symbol Wars. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Symbol Wars. Which statement correctly describes this person and their role?",
  "options": [
-  "War of Austrian Succession: a war involving most European powers; it was fought between 1740 and 1748 to decide the ruler of the Austrian re…",
-  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfu…",
-  "War of Austrian Succession The British gradually gained political control over India through a number of battles against the rulers of Benga…",
-  "1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?"
+  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfully capturing…",
+  "He had a mechanical tiger built for himself that was shown conquering a British soldier. He used it as a symbol to show the might of his kingdom.",
+  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British.",
+  "This is a picture of the French Governor who was a major figure during the first two Carnatic Wars."
  ],
- "correctOption": 2,
- "answer": "War of Austrian Succession The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to",
+ "correctOption": 1,
+ "answer": "He had a mechanical tiger built for himself that was shown conquering a British soldier. He used it as a symbol to show the might of his kingdom.",
  "image": "assets/history8/images/ch5/img_in_image_box_624_1047_1141_1344.jpg",
  "caption": "Symbol Wars",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig005-sa",
@@ -2702,12 +2702,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "War of Austrian Succession The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on to",
+ "question": "Identify Symbol Wars shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "He had a mechanical tiger built for himself that was shown conquering a British soldier. He used it as a symbol to show the might of his kingdom.",
  "image": "assets/history8/images/ch5/img_in_image_box_624_1047_1141_1344.jpg",
  "caption": "Symbol Wars",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig006-mcq",
@@ -2715,19 +2715,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The British Conquest of Bengal. Which statement correctly describes the event or scene shown?",
  "options": [
-  "These wars enabled the English East India Company (EEIC) to strengthen its control over southern India by defeating the French and successfu…",
-  "1. The Carnatic Wars were a result of the hostilities between Britain and France.",
-  "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, whi…",
-  "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe betwee…"
+  "It is believed that the era of British domination over India began after the British defeated the Nawab of Bengal in the Battle of Plassey.",
+  "In the 18th century, Bengal was considered the richest of all the Indian provinces.",
+  "War of Austrian Succession The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Myso…",
+  "This meant that the British could import and export goods to and from Bengal without paying any taxes to the government."
  ],
- "correctOption": 2,
- "answer": "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.",
+ "correctOption": 0,
+ "answer": "It is believed that the era of British domination over India began after the British defeated the Nawab of Bengal in the Battle of Plassey.",
  "image": "assets/history8/images/ch5/img_in_image_box_123_313_713_686.jpg",
- "caption": "History Alive!",
+ "caption": "The British Conquest of Bengal",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig006-sa",
@@ -2735,12 +2735,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.",
+ "question": "Identify the historical event or scene shown in the figure (The British Conquest of Bengal). Explain its causes and significance.",
+ "answer": "It is believed that the era of British domination over India began after the British defeated the Nawab of Bengal in the Battle of Plassey.",
  "image": "assets/history8/images/ch5/img_in_image_box_123_313_713_686.jpg",
- "caption": "History Alive!",
+ "caption": "The British Conquest of Bengal",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig007-mcq",
@@ -2748,19 +2748,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "The Third Carnatic War lasted from 1756 to 1763. It took place as a result of the Seven Years' War, which broke out in 1756 in Europe betwee…",
-  "b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?",
-  "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
-  "**Must know** • Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic"
+  "At the end of this lesson, learners will be able to:",
+  "Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah.",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "This is a picture of the French Governor who was a major figure during the first two Carnatic Wars."
  ],
- "correctOption": 2,
- "answer": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+ "correctOption": 0,
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch5/img_in_image_box_57_935_1104_1515.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig007-sa",
@@ -2768,12 +2768,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch5/img_in_image_box_57_935_1104_1515.jpg",
  "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig008-mcq",
@@ -2781,19 +2781,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Before Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British",
-  "**Executive summary:** Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic",
-  "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
-  "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizab…"
+  "Three Carnatic Wars were fought between 1746 and 1763 between the French and the British.",
+  "Tick (√) the personalities who participated in the Battle of Plassey.",
+  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
+  "He had a mechanical tiger built for himself that was shown conquering a British soldier."
  ],
- "correctOption": 2,
- "answer": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+ "correctOption": 1,
+ "answer": "Tick (√) the personalities who participated in the Battle of Plassey.",
  "image": "assets/history8/images/ch5/img_in_image_box_137_195_369_493.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Siraj-ud-Daulah",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig008-sa",
@@ -2801,12 +2801,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+ "question": "Identify Before Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Tick (√) the personalities who participated in the Battle of Plassey.",
  "image": "assets/history8/images/ch5/img_in_image_box_137_195_369_493.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Siraj-ud-Daulah",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig009-mcq",
@@ -2814,19 +2814,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Before Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "1. When did the EEIC acquire the exclusive right to trade in the East from Queen Elizabeth I?",
-  "1. More than one of the following statements are true. Read the statements and choose the correct option.",
-  "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as…",
-  "ii. Three presidencies were established in Madras, Bombay and Calcutta."
+  "☑ Dupleix was recalled to France.",
+  "The British established a post there.",
+  "The following are the causes for the outbreak of the Battle of Plassey:",
+  "In the 18th century, Bengal was considered the richest of all the Indian provinces."
  ],
- "correctOption": 2,
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "correctOption": 3,
+ "answer": "In the 18th century, Bengal was considered the richest of all the Indian provinces.",
  "image": "assets/history8/images/ch5/img_in_image_box_400_193_632_499.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Dupleix",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig009-sa",
@@ -2834,12 +2834,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "question": "Identify Before Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In the 18th century, Bengal was considered the richest of all the Indian provinces.",
  "image": "assets/history8/images/ch5/img_in_image_box_400_193_632_499.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Dupleix",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig010-mcq",
@@ -2847,19 +2847,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Robert Clive. Which statement correctly describes this person and their role?",
  "options": [
-  "ii. Three presidencies were established in Madras, Bombay and Calcutta.",
-  "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as…",
-  "##### First Carnatic War (1746-48)",
-  "Sepoys: Indian soldiers recruited into the British army"
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "The British refused to obey the order.",
+  "The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the…",
+  "The Carnatic coast is the region in south India that lies between the Eastern Ghats and the Coromandel Coast."
  ],
- "correctOption": 1,
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "correctOption": 0,
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_669_192_897_498.jpg",
- "caption": "Before Reading",
+ "caption": "Robert Clive",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig010-sa",
@@ -2867,12 +2867,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "question": "Identify Robert Clive shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_669_192_897_498.jpg",
- "caption": "Before Reading",
+ "caption": "Robert Clive",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig011-mcq",
@@ -2880,19 +2880,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Before Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic.",
-  "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as…",
-  "ii. Three presidencies were established in Madras, Bombay and Calcutta.",
-  "The EEIC was a private concern, set up by British merchants. In 1600, it acquired the exclusive right to trade in the East from Queen Elizab…"
+  "The EEIC acquired the undisputed right to trade in Bengal, Bihar and Orissa.",
+  "The EEIC was free from government interference.",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "The Battle of Plassey marked the beginning of the end of the rule of Nawabs in Bengal."
  ],
- "correctOption": 1,
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "correctOption": 2,
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_935_195_1138_513.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Mir Qasim",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig011-sa",
@@ -2900,12 +2900,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "question": "Identify Before Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_935_195_1138_513.jpg",
- "caption": "Before Reading",
+ "caption": "☐ Mir Qasim",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig012-mcq",
@@ -2913,19 +2913,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Alivardi Khan. Which statement correctly describes this person and their role?",
  "options": [
-  "1. The Carnatic Wars were a result of the hostilities between Britain and France.",
-  "The British gradually gained political control over India through a number of battles against the rulers of Bengal, Awadh, Mysore and so on …",
-  "b. How did the Carnatic Wars help the EEIC gain control over most of the Indian subcontinent?",
-  "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as…"
+  "The Seven Years' War led to an outbreak of hostilities between Britain and France in the Carnatic, and the peace established after the Second Carnatic War…",
+  "Tick (√) the personalities who participated in the Battle of Plassey.",
+  "From traders, they became ‘rulers’.",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal."
  ],
  "correctOption": 3,
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_893_733_1145_1185.jpg",
- "caption": "Before Reading",
+ "caption": "Alivardi Khan",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig012-sa",
@@ -2933,12 +2933,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "As the Dutch and Portuguese trading companies gradually lost their trading posts in India by the 18th century, Britain and France emerged as the two significant European powers in India. This was followed by contests for monopoly in trade rights and colonial possessions between the British and the French. The competition led to a series of wars, known as the Carnatic Wars in history. These wars also witnessed the participation of numerous independent Indian rulers who sought the support of Britain or France to aid their personal wars of succession.",
+ "question": "Identify Alivardi Khan shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
  "image": "assets/history8/images/ch5/img_in_image_box_893_733_1145_1185.jpg",
- "caption": "Before Reading",
+ "caption": "Alivardi Khan",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch5-fig013-mcq",
@@ -2946,19 +2946,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Battle. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, whi…",
-  "1. More than one of the following statements are true. Read the statements and choose the correct option.",
-  "**Must know** • Tick (√) the European Wars which were connected to the Anglo-French Wars in the Carnatic",
-  "• War of Austrian Succession • The British gradually gained political control over India through a number of battles against the rulers of B…"
+  "The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the…",
+  "The Third Carnatic War coincided with the Battle of Plassey (1757) in Bengal.",
+  "It is believed that the era of British domination over India began after the British defeated the Nawab of Bengal in the Battle of Plassey.",
+  "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). A large part of the Nawab's army was under the command of Mir Jafar, which di…"
  ],
- "correctOption": 0,
- "answer": "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.",
+ "correctOption": 3,
+ "answer": "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle.",
  "image": "assets/history8/images/ch5/img_in_image_box_620_784_1060_1169.jpg",
- "caption": "Did You Know?",
+ "caption": "Jagat Seth's house in Murshidabad",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch5-fig013-sa",
@@ -2966,12 +2966,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch5",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1639, Madras (now Chennai) was given to the British by a local ruler. The British established a post there. They fortified this post, which was named Fort St George. A few years later, King Charles II of England received the island of Bombay (now Mumbai), as a wedding gift, after marrying the Portuguese princess Catherine of Braganza. He gave the island of Bombay to the East India Company in 1688. Bombay became an important trading base for the East India Company by the middle of the 18th century.",
+ "question": "Identify The Battle shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle.",
  "image": "assets/history8/images/ch5/img_in_image_box_620_784_1060_1169.jpg",
- "caption": "Did You Know?",
+ "caption": "Jagat Seth's house in Murshidabad",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig001-mcq",
@@ -2979,19 +2979,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE BATTLE OF BUXAR (1764). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE BATTLE OF BUXAR (1764). Which statement correctly describes the event or scene shown?",
  "options": [
-  "• Alivardi Khan was succeeded by his grandson, Siraj-ud-Daulah",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, …",
-  "Trading companies from Holland, France and England sent representatives to establish their respective trading settlements in Bengal"
+  "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces advanced under the leadership of Robert Clive, while Siraj…",
+  "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following are some of the other results of this battle:",
+  "The Nawab's conflict with the British led to the Battle of Plassey, which was a landmark event in the history of Bengal.",
+  "Tick (√) the personalities who participated in the Battle of Plassey. Cross (×) those who did not"
  ],
  "correctOption": 1,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "answer": "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following are some of the other results of this battle:",
  "image": "assets/history8/images/ch6/img_in_image_box_258_53_543_437.jpg",
  "caption": "THE BATTLE OF BUXAR (1764)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig001-sa",
@@ -2999,12 +2999,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (THE BATTLE OF BUXAR (1764)). Explain its causes and significance.",
+ "answer": "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The following are some of the other results of this battle:",
  "image": "assets/history8/images/ch6/img_in_image_box_258_53_543_437.jpg",
  "caption": "THE BATTLE OF BUXAR (1764)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig002-mcq",
@@ -3012,19 +3012,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE BATTLE OF BUXAR (1764). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to A painting depicting the Mughal emperor Shah Alam. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Trading companies from Holland, France and England sent representatives to establish their respective trading settlements in Bengal",
-  "This meant that the British could import and export goods to and from Bengal without paying any taxes to the government",
-  "**Must know** • outline the causes and results of the Battle of Plassey and Buxar",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "The Nawab's conflict with the British led to the Battle of Plassey, which was a landmark event in the history of Bengal.",
+  "After the victories at Plassey and Buxar, the British became the real rulers of Bengal.",
+  "Tick (√) the personalities who participated in the Battle of Plassey. Cross (×) those who did not",
+  "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The Treaty of Allahabad (1765) was signed between Shah Alam II and…"
  ],
  "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "answer": "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The Treaty of Allahabad (1765) was signed between Shah Alam II and Robert Clive.",
  "image": "assets/history8/images/ch6/img_in_image_box_31_1039_527_1462.jpg",
- "caption": "THE BATTLE OF BUXAR (1764)",
+ "caption": "A painting depicting the Mughal emperor Shah Alam",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig002-sa",
@@ -3032,12 +3032,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (A painting depicting the Mughal emperor Shah Alam). Explain its causes and significance.",
+ "answer": "The Battle of Buxar marked the beginning of the British colonial oppression in Bengal. The Treaty of Allahabad (1765) was signed between Shah Alam II and Robert Clive.",
  "image": "assets/history8/images/ch6/img_in_image_box_31_1039_527_1462.jpg",
- "caption": "THE BATTLE OF BUXAR (1764)",
+ "caption": "A painting depicting the Mughal emperor Shah Alam",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig003-mcq",
@@ -3045,19 +3045,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE BATTLE OF BUXAR (1764). Which statement correctly describes the event or scene shown?",
  "options": [
-  "Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the official historian of …",
-  "The system of administration and the economy of Bengal collapsed.",
-  "In the 18th century, Bengal was considered the richest of all the Indian provinces. This prosperous and fertile land attracted traders from …",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. A new in 1765. It was known as the in Bengal.",
+  "Tick (√) the personalities who participated in the Battle of Plassey. Cross (×) those who did not",
+  "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. After the battle, the British became the absolute masters of Benga…",
+  "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces advanced under the leadership of Robert Clive, while Siraj…"
  ],
- "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. After the battle, the British became the absolute masters of Bengal.",
  "image": "assets/history8/images/ch6/img_in_image_box_788_27_1121_136.jpg",
- "caption": "Textbook figure",
+ "caption": "THE BATTLE OF BUXAR (1764)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig003-sa",
@@ -3065,12 +3065,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (THE BATTLE OF BUXAR (1764)). Explain its causes and significance.",
+ "answer": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. After the battle, the British became the absolute masters of Bengal.",
  "image": "assets/history8/images/ch6/img_in_image_box_788_27_1121_136.jpg",
- "caption": "Textbook figure",
+ "caption": "THE BATTLE OF BUXAR (1764)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig004-mcq",
@@ -3078,19 +3078,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on End of the Dual Government (1772). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to End of the Dual Government (1772). Which statement correctly describes the event or scene shown?",
  "options": [
-  "In the 18th century, Bengal was considered the richest of all the Indian provinces. This prosperous and fertile land attracted traders from …",
-  "evaluate the drawbacks of the Dual Government in Bengal",
-  "**Executive summary:** Tick (√) the personalities who participated in the Battle of Plassey",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "Farman: the order or decree by the government granted to the EEIC, which gave them the right to carry on duty-free trade in Bengal",
+  "This meant that the British could import and export goods to and from Bengal without paying any taxes to the government.",
+  "Dual Government: a form of government introduced by Robert Clive in Bengal (1765), as a result of which there were two parallel governments in Bengal—the…",
+  "Hastings is credited with laying the foundations of the British colonial rule in Bengal and introducing an organised system of government in Bengal."
  ],
- "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "Dual Government: a form of government introduced by Robert Clive in Bengal (1765), as a result of which there were two parallel governments in Bengal—the Nawab's and EEIC's",
  "image": "assets/history8/images/ch6/img_in_image_box_90_883_1185_1273.jpg",
  "caption": "End of the Dual Government (1772)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig004-sa",
@@ -3098,12 +3098,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (End of the Dual Government (1772)). Explain its causes and significance.",
+ "answer": "Dual Government: a form of government introduced by Robert Clive in Bengal (1765), as a result of which there were two parallel governments in Bengal—the Nawab's and EEIC's",
  "image": "assets/history8/images/ch6/img_in_image_box_90_883_1185_1273.jpg",
  "caption": "End of the Dual Government (1772)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig005-mcq",
@@ -3111,19 +3111,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The British Conquest of Bengal. Which statement correctly describes the event or scene shown?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "The French had established their settlement in Chandernagore. Anticipating war with the French, the British began to fortify their settlemen…",
-  "Jagat Seth's house in Murshidabad",
-  "• evaluate the drawbacks of the Dual Government in Bengal"
+  "☐ The Company now directly took over the control of Bengal's administration.",
+  "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. It was known as the Dual Government in Bengal.",
+  "It was known as the in Bengal.",
+  "The system of administration and the economy of Bengal collapsed."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 1,
+ "answer": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. It was known as the Dual Government in Bengal.",
  "image": "assets/history8/images/ch6/img_in_image_box_956_473_1151_738.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The British Conquest of Bengal",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig005-sa",
@@ -3131,12 +3131,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (The British Conquest of Bengal). Explain its causes and significance.",
+ "answer": "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. It was known as the Dual Government in Bengal.",
  "image": "assets/history8/images/ch6/img_in_image_box_956_473_1151_738.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The British Conquest of Bengal",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig006-mcq",
@@ -3144,19 +3144,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on A British Building in Your Town/City. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Bagless Day. Which statement correctly describes this person and their role?",
  "options": [
-  "After the victories at Plassey and Buxar, the British became the real rulers of Bengal. A new in 1765. It was known as the in Bengal.",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "According to the system of Dual Government, the Nawab of Bengal also had to disband most of his army,",
-  "☐ The Company now directly took over the control of Bengal's administration."
+  "### Fourth Anglo-Mysore War (1798–99)",
+  "According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British.",
+  "The British colonial presence was felt all across India. With the help of your school administration, arrange a tour of one such building/structure.",
+  "Cross (×) those who did not • In the 18th century, Bengal was considered the richest of all the Indian provinces."
  ],
- "correctOption": 1,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "The British colonial presence was felt all across India. With the help of your school administration, arrange a tour of one such building/structure.",
  "image": "assets/history8/images/ch6/img_in_image_box_178_739_916_1249.jpg",
- "caption": "A British Building in Your Town/City",
+ "caption": "Bagless Day",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig006-sa",
@@ -3164,12 +3164,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify Bagless Day shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The British colonial presence was felt all across India. With the help of your school administration, arrange a tour of one such building/structure.",
  "image": "assets/history8/images/ch6/img_in_image_box_178_739_916_1249.jpg",
- "caption": "A British Building in Your Town/City",
+ "caption": "Bagless Day",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig007-mcq",
@@ -3177,19 +3177,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Expansion of British Power in India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Expansion of British Power in India. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Jagat Seth's house in Murshidabad",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "outline the causes and results of the Battle of Plassey and Buxar.",
-  "The Nawab, on the other hand, had to look after the administration, and law and order."
+  "The growth of the Sikh power under Maharaja Ranjit Singh had made the EEIC anxious.",
+  "According to this system, the English enjoyed all the privileges of being a ruler, but had no responsibility. They had complete military power and the rig…",
+  "As soon as Siraj-ud-Daulah came to power, he ordered the British to pay taxes.",
+  "## Expansion of British Power in India"
  ],
- "correctOption": 1,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 3,
+ "answer": "## Expansion of British Power in India",
  "image": "assets/history8/images/ch6/img_in_image_box_170_304_819_772.jpg",
  "caption": "Expansion of British Power in India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig007-sa",
@@ -3197,12 +3197,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (Expansion of British Power in India). Explain its causes and significance.",
+ "answer": "## Expansion of British Power in India",
  "image": "assets/history8/images/ch6/img_in_image_box_170_304_819_772.jpg",
  "caption": "Expansion of British Power in India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig008-mcq",
@@ -3210,19 +3210,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "Trading companies from Holland, France and England sent representatives to establish their respective trading settlements in Bengal",
-  "Tick (√) the personalities who participated in the Battle of Plassey. Cross (×) those who did not",
-  "Cross (×) those who did not **Must know** • Tick (√) the personalities who participated in the Battle of Plassey"
+  "Jagat Seth was a rich Marwari businessman from Murshidabad during the rule of Nawab Siraj-ud-Daulah. Described by the official historian of the EEIC, Robe…",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "■ discuss the annexation of Awad by the British.",
+  "The British Governor-General during this time was Lord Dalhousie."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "■ discuss the annexation of Awad by the British.",
  "image": "assets/history8/images/ch6/img_in_image_box_142_1105_1154_1545.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig008-sa",
@@ -3230,12 +3230,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "■ discuss the annexation of Awad by the British.",
  "image": "assets/history8/images/ch6/img_in_image_box_142_1105_1154_1545.jpg",
- "caption": "Visual Mapping",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig009-mcq",
@@ -3243,19 +3243,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Punjab (P) Maratha Territory (Ma). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to ☐ Ranjit Singh. Which statement correctly describes the event or scene shown?",
  "options": [
-  "In 1717, the Mughal emperor Farrukhsiyar issued a royal order or farman that granted the English East India Company (EEIC) the right to cond…",
-  "The system of administration and the economy of Bengal collapsed.",
-  "evaluate the drawbacks of the Dual Government in Bengal.",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "However, the Maratha forces were completely defeated by the British.",
+  "#### Punjab (P) Maratha Territory (Ma)",
+  "The British knew that control over Punjab was essential for the establishment of the British Empire in the subcontinent.",
+  "With the annexation of Punjab, the British conquest of India was complete."
  ],
- "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 1,
+ "answer": "#### Punjab (P) Maratha Territory (Ma)",
  "image": "assets/history8/images/ch6/img_in_image_box_68_248_312_588.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "☐ Ranjit Singh",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig009-sa",
@@ -3263,12 +3263,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (☐ Ranjit Singh). Explain its causes and significance.",
+ "answer": "#### Punjab (P) Maratha Territory (Ma)",
  "image": "assets/history8/images/ch6/img_in_image_box_68_248_312_588.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "☐ Ranjit Singh",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig010-mcq",
@@ -3276,19 +3276,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Punjab (P) Maratha Territory (Ma). Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Tipu Sultan. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "Cross (×) those who did not • In the 18th century, Bengal was considered the richest of all the Indian provinces",
-  "A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab himself left the bat…",
-  "This prosperous and fertile land attracted traders from many European countries"
+  "The British felt that this period was suitable to annex Punjab.",
+  "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
+  "However, the Maratha forces were completely defeated by the British.",
+  "After the First Anglo-Sikh War, the British had full control over Punjab."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 1,
+ "answer": "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
  "image": "assets/history8/images/ch6/img_in_image_box_444_265_685_597.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "Tipu Sultan",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig010-sa",
@@ -3296,12 +3296,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify Tipu Sultan shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
  "image": "assets/history8/images/ch6/img_in_image_box_444_265_685_597.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "Tipu Sultan",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig011-mcq",
@@ -3309,19 +3309,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Punjab (P) Maratha Territory (Ma). Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Narayan Rao. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "The French had established their settlement in Chandernagore. Anticipating war with the French, the British began to fortify their settlemen…",
-  "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces advanced under the leadership of Robert Cliv…",
-  "outline the causes and results of the Battle of Plassey and Buxar."
+  "The British felt that this period was suitable to annex Punjab.",
+  "However, the Maratha forces were completely defeated by the British.",
+  "Warren Hastings introduced various reforms and extended British territory far beyond Bengal.",
+  "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 3,
+ "answer": "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
  "image": "assets/history8/images/ch6/img_in_image_box_810_281_1063_607.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "Narayan Rao",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig011-sa",
@@ -3329,12 +3329,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify Narayan Rao shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
  "image": "assets/history8/images/ch6/img_in_image_box_810_281_1063_607.jpg",
- "caption": "Punjab (P) Maratha Territory (Ma)",
+ "caption": "Narayan Rao",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig012-mcq",
@@ -3342,19 +3342,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Fourth Anglo-Mysore War (1798–99). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Fourth Anglo-Mysore War (1798–99). Which statement correctly describes the event or scene shown?",
  "options": [
-  "Mir Qasim was determined to recover the throne of Bengal. He formed an alliance with Shuja-ud-Daulah, the Nawab of Awadh, and Shah Alam II, …",
-  "The French had established their settlement in Chandernagore. Anticipating war with the French, the British began to fortify their settlemen…",
-  "☐ The Company now directly took over the control of Bengal's administration.",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. In order to avenge his defeat in the Third Anglo-Mysore War, Tipu S…",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "This led to a direct conflict between the Nawab and the British.",
+  "The other half was given to the earlier Raja of Mysore from whom Hyder Ali had seized power."
  ],
- "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 0,
+ "answer": "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British.",
  "image": "assets/history8/images/ch6/img_in_image_box_111_770_1159_1500.jpg",
- "caption": "Fourth Anglo-Mysore War (1798–99)",
+ "caption": "Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig012-sa",
@@ -3362,12 +3362,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (Fourth Anglo-Mysore War (1798–99)). Explain its causes and significance.",
+ "answer": "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British.",
  "image": "assets/history8/images/ch6/img_in_image_box_111_770_1159_1500.jpg",
- "caption": "Fourth Anglo-Mysore War (1798–99)",
+ "caption": "Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig013-mcq",
@@ -3375,19 +3375,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Fourth Anglo-Mysore War (1798–99). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Fourth Anglo-Mysore War (1798–99). Which statement correctly describes the event or scene shown?",
  "options": [
-  "In the 18th century, Bengal was considered the richest of all the Indian provinces. This prosperous and fertile land attracted traders from …",
-  "A large part of the Nawab's army was under the command of Mir Jafar, which did not participate in the battle. The Nawab himself left the bat…",
-  "The system of administration and the economy of Bengal collapsed.",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…"
+  "##### Second Anglo-Sikh War (1848–49)",
+  "##### Third Anglo-Maratha War (1817-18)",
+  "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. ### Fourth Anglo-Mysore War (1798–99)",
+  "The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general."
  ],
- "correctOption": 3,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. ### Fourth Anglo-Mysore War (1798–99)",
  "image": "assets/history8/images/ch6/img_in_image_box_32_62_549_732.jpg",
  "caption": "Fourth Anglo-Mysore War (1798–99)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig013-sa",
@@ -3395,12 +3395,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (Fourth Anglo-Mysore War (1798–99)). Explain its causes and significance.",
+ "answer": "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798. ### Fourth Anglo-Mysore War (1798–99)",
  "image": "assets/history8/images/ch6/img_in_image_box_32_62_549_732.jpg",
  "caption": "Fourth Anglo-Mysore War (1798–99)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig014-mcq",
@@ -3408,19 +3408,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Fourth Anglo-Mysore War (1798–99). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Fourth Anglo-Mysore War (1798–99). Which statement correctly describes the event or scene shown?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "• During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal",
-  "Trading companies from Holland, France and England sent representatives to establish their respective trading settlements in Bengal",
-  "The Battle of Plassey was fought in June 1757 at Plassey (near Murshidabad). The British forces advanced under the leadership of Robert Cliv…"
+  "As the Nizam of Hyderabad and the Marathas became rivals of Hyder Ali, the British took advantage of these rivalries to annex Mysore.",
+  "Four wars were fought to subjugate Mysore.",
+  "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and…",
+  "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 2,
+ "answer": "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:",
  "image": "assets/history8/images/ch6/img_in_image_box_573_85_1104_738.jpg",
  "caption": "Fourth Anglo-Mysore War (1798–99)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig014-sa",
@@ -3428,12 +3428,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (Fourth Anglo-Mysore War (1798–99)). Explain its causes and significance.",
+ "answer": "Geo-Skills: Locating Places cross-curricular connect: Geography 21st CENTURY SKILLS information literacy: map skills Compare the two maps given above and answer the following:",
  "image": "assets/history8/images/ch6/img_in_image_box_573_85_1104_738.jpg",
  "caption": "Fourth Anglo-Mysore War (1798–99)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig015-mcq",
@@ -3441,19 +3441,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Results. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Results. Which statement correctly describes this person and their role?",
  "options": [
-  "The French had established their settlement in Chandernagore. Anticipating war with the French, the British began to fortify their settlemen…",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "• In 1717, the Mughal emperor Farrukhsiyar issued a royal order or farman that granted the English East India Company (EEIC) the right to co…",
-  "Its officials also amassed great wealth"
+  "Satara, a small state, was carved out of the Maratha Empire, and a descendant of Shivaji was placed on the throne.",
+  "### Fourth Anglo-Mysore War (1798–99)",
+  "During the time of the Nawab of Bengal, Alivardi Khan, the British had established and fortified their factories in Bengal.",
+  "A nineteenth century painting of the canal with a bridge over it, flanked by massive lion sculptures, built during the British times in Roorkee, Uttarakha…"
  ],
- "correctOption": 1,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 0,
+ "answer": "Satara, a small state, was carved out of the Maratha Empire, and a descendant of Shivaji was placed on the throne.",
  "image": "assets/history8/images/ch6/img_in_image_box_37_70_613_437.jpg",
- "caption": "Results",
+ "caption": "Indian camp scene during the Third Anglo-Maratha War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig015-sa",
@@ -3461,12 +3461,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify Results shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Satara, a small state, was carved out of the Maratha Empire, and a descendant of Shivaji was placed on the throne.",
  "image": "assets/history8/images/ch6/img_in_image_box_37_70_613_437.jpg",
- "caption": "Results",
+ "caption": "Indian camp scene during the Third Anglo-Maratha War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig016-mcq",
@@ -3474,19 +3474,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on ANGLO-SIKH RELATIONS. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Raja Lal Singh led the Sikh forces during the First Anglo-Sikh War. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The French had established their settlement in Chandernagore. Anticipating war with the French, the British began to fortify their settlemen…",
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "**Must know** • outline the causes and results of the Battle of Plassey and Buxar",
-  "As soon as Siraj-ud-Daulah came to power, he ordered the British to pay taxes"
+  "The Sikh army assumed charge of the administration.",
+  "The Third Anglo-Mysore War broke out in 1790 and continued for two years.",
+  "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.",
+  "After the First Anglo-Sikh War, the British had full control over Punjab. ##### The First Anglo-Sikh War (1845–46)"
  ],
- "correctOption": 1,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 3,
+ "answer": "After the First Anglo-Sikh War, the British had full control over Punjab. ##### The First Anglo-Sikh War (1845–46)",
  "image": "assets/history8/images/ch6/img_in_image_box_665_87_1092_517.jpg",
- "caption": "ANGLO-SIKH RELATIONS",
+ "caption": "Raja Lal Singh led the Sikh forces during the First Anglo-Sikh War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig016-sa",
@@ -3494,12 +3494,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify the historical event or scene shown in the figure (Raja Lal Singh led the Sikh forces during the First Anglo-Sikh War). Explain its causes and significance.",
+ "answer": "After the First Anglo-Sikh War, the British had full control over Punjab. ##### The First Anglo-Sikh War (1845–46)",
  "image": "assets/history8/images/ch6/img_in_image_box_665_87_1092_517.jpg",
- "caption": "ANGLO-SIKH RELATIONS",
+ "caption": "Raja Lal Singh led the Sikh forces during the First Anglo-Sikh War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch6-fig017-mcq",
@@ -3507,19 +3507,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Lord Wellesley. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Wellesley. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However…",
-  "evaluate the drawbacks of the Dual Government in Bengal",
-  "As soon as Siraj-ud-Daulah came to power, he ordered the British to pay taxes",
-  "According to the system of Dual Government, the Nawab of Bengal also had to disband most of his army,"
+  "The British Governor-General during this time was Lord Dalhousie.",
+  "When the Sikhs crossed the Sutlej, the British Governor-General, Lord Hardinge, attacked the Sikh army.",
+  "As a result, the Fourth Anglo-Mysore War broke out between Tipu and Wellesley in 1798.",
+  "Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India."
  ],
- "correctOption": 0,
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "correctOption": 3,
+ "answer": "Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India.",
  "image": "assets/history8/images/ch6/img_in_image_box_504_24_1190_1015.jpg",
  "caption": "Lord Wellesley",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch6-fig017-sa",
@@ -3527,12 +3527,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch6",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "In 1756, Nawab Siraj-ud-Daulah marched towards Calcutta with a large army and captured Fort William, which was a British stronghold. However, Robert Clive soon recaptured Calcutta. Consequently, the Treaty of Alinagar was signed between the British and Siraj-ud-Daulah. According to the terms of the treaty, the Nawab restored trading rights and the city of Calcutta to the British. Rights to fortify Calcutta were also given to the British. However, the British were not satisfied and they wanted to place a puppet ruler on the throne of Bengal to suit their expansionist designs. The British under Clive, with the support of the former subedar of Bengal, Mir Jafar, presented a set of unreasonable demands to the Nawab, which made the battle inevitable.",
+ "question": "Identify Lord Wellesley shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India.",
  "image": "assets/history8/images/ch6/img_in_image_box_504_24_1190_1015.jpg",
  "caption": "Lord Wellesley",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig001-mcq",
@@ -3540,19 +3540,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Lord Wellesley. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Wellesley. Which statement correctly describes this person and their role?",
  "options": [
-  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated t…",
-  "The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevented the merchants of Mysore from trading w…",
-  "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.",
-  "**Must know** • Study the pictures given below"
+  "They now had an efficient system through which they could export raw materials such as cotton, jute and indigo and import finished goods from Europe.",
+  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India.",
+  "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration.",
+  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), introduced the R…"
  ],
- "correctOption": 0,
- "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that",
+ "correctOption": 1,
+ "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India.",
  "image": "assets/history8/images/ch7/img_in_image_box_957_1168_1190_1462.jpg",
- "caption": "Lord Wellesley",
+ "caption": "The clauses of the Subsidiary Alliance system were as follows:",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig001-sa",
@@ -3560,12 +3560,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that",
+ "question": "Identify Lord Wellesley shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India.",
  "image": "assets/history8/images/ch7/img_in_image_box_957_1168_1190_1462.jpg",
- "caption": "Lord Wellesley",
+ "caption": "The clauses of the Subsidiary Alliance system were as follows:",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig002-mcq",
@@ -3573,19 +3573,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Annexation of Awadh on Grounds of Maladministration. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Wajid Ali Shah. Which statement correctly describes this person and their role?",
  "options": [
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…",
-  "The disunity among the Marathas was immensely favourable for the British to gain control over the Maratha territory. In 1802, the Maratha fa…",
-  "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join th…",
-  "Write the abbreviations in brackets in the correct box"
+  "Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions.",
+  "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.",
+  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly contro…",
+  "However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler. Yet, the administrative failure of Awadh was largely due to t…"
  ],
- "correctOption": 2,
- "answer": "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.",
+ "correctOption": 3,
+ "answer": "However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system.",
  "image": "assets/history8/images/ch7/img_in_image_box_871_50_1112_454.jpg",
- "caption": "Annexation of Awadh on Grounds of Maladministration",
+ "caption": "Wajid Ali Shah",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig002-sa",
@@ -3593,12 +3593,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Annexation of Awadh on Grounds of Maladministration represents and why it matters in this chapter.",
- "answer": "Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration. Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions. However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler.",
+ "question": "Identify Wajid Ali Shah shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, Dalhousie perceived the Nawab of Awadh, Wajid Ali Shah, to be an incompetent ruler. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system.",
  "image": "assets/history8/images/ch7/img_in_image_box_871_50_1112_454.jpg",
- "caption": "Annexation of Awadh on Grounds of Maladministration",
+ "caption": "Wajid Ali Shah",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig003-mcq",
@@ -3606,19 +3606,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Annexation of Awadh on Grounds of Maladministration. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Annexation of Awadh on Grounds of Maladministration. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…",
-  "Write the abbreviations in brackets in the correct box",
-  "The ruler could not enter into an alliance with any power without the consent of the British.",
-  "Lord Wellesley believed he could impose the policy of Subsidiary Alliance on all the other Maratha chiefs as well, since it had been signed …"
+  "Maladministration: inefficient or mismanaged administration",
+  "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.",
+  "### Annexation of Awadh on Grounds of Maladministration Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministr…",
+  "Awadh, one of the states to join the Subsidiary Alliance system, closely followed its terms and conditions."
  ],
- "correctOption": 0,
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "correctOption": 2,
+ "answer": "### Annexation of Awadh on Grounds of Maladministration Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration.",
  "image": "assets/history8/images/ch7/img_in_image_box_86_705_1122_1112.jpg",
  "caption": "Annexation of Awadh on Grounds of Maladministration",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig003-sa",
@@ -3626,12 +3626,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "question": "Identify the historical event or scene shown in the figure (Annexation of Awadh on Grounds of Maladministration). Explain its causes and significance.",
+ "answer": "### Annexation of Awadh on Grounds of Maladministration Lord Dalhousie undertook indiscriminate annexation of regional kingdoms on grounds of maladministration.",
  "image": "assets/history8/images/ch7/img_in_image_box_86_705_1122_1112.jpg",
  "caption": "Annexation of Awadh on Grounds of Maladministration",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig004-mcq",
@@ -3639,19 +3639,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Expansion of British Power in India. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…",
-  "Study the pictures given below. Match the rulers with the regions they ruled. Write the abbreviations in brackets in the correct box.",
-  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated t…",
-  "Write the abbreviations in brackets in the correct box"
+  "The rise of Mysore was a threat to the EEIC's policy of territorial expansion.",
+  "The British joined this fight for supremacy, but with the aim of becoming the dominant power in India.",
+  "With reference to the four Anglo-Mysore Wars, answer the following questions:",
+  "The Marathas, the State of Mysore and the **Must know** • The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the establishment…"
  ],
  "correctOption": 2,
- "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that",
+ "answer": "With reference to the four Anglo-Mysore Wars, answer the following questions:",
  "image": "assets/history8/images/ch7/img_in_image_box_907_614_1141_952.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Expansion of British Power in India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig004-sa",
@@ -3659,12 +3659,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated that if any Indian ruler felt insecure or threatened, he could appeal to the British for help and enter into an alliance with them. The British, in turn, promised to protect the ruler from external attacks and internal bolts. However, the Indian ruler had to ept certain terms and conditions that",
+ "question": "Identify the historical event or scene shown in the figure (Expansion of British Power in India). Explain its causes and significance.",
+ "answer": "With reference to the four Anglo-Mysore Wars, answer the following questions:",
  "image": "assets/history8/images/ch7/img_in_image_box_907_614_1141_952.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Expansion of British Power in India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig005-mcq",
@@ -3672,19 +3672,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Talk About It. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Talk About It. Which statement correctly describes this person and their role?",
  "options": [
-  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or ind…",
-  "**Executive summary:** Between Madhav Rao II and the British in support of Raghunath Rao **Must know** • Between Madhav Rao II and the Briti…",
-  "**Executive summary:** Study the pictures given below",
-  "The British occupied the French port of Mahe, which was under Hyder Ali's jurisdiction, and prevented the merchants of Mysore from trading w…"
+  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India.",
+  "## Impact of the British Rule on India",
+  "##### History Through Art",
+  "### ECONOMIC IMPACT OF THE BRITISH RULE"
  ],
- "correctOption": 0,
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "correctOption": 2,
+ "answer": "##### History Through Art",
  "image": "assets/history8/images/ch7/img_in_image_box_25_811_1056_1451.jpg",
  "caption": "Talk About It",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig005-sa",
@@ -3692,12 +3692,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "question": "Identify Talk About It shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### History Through Art",
  "image": "assets/history8/images/ch7/img_in_image_box_25_811_1056_1451.jpg",
  "caption": "Talk About It",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig006-mcq",
@@ -3705,19 +3705,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Impact of the British Rule on India. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Write the abbreviations in brackets in the correct box",
-  "**Executive summary:** Study the pictures given below",
-  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated t…",
-  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or ind…"
+  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), introduced the R…",
+  "This in turn infused a sense of unity and resulted in the growth of nationalism—a development which in due course brought an end to the British rule in In…",
+  "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others.",
+  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants."
  ],
- "correctOption": 3,
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "correctOption": 0,
+ "answer": "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), introduced the Ryotwari Settlement.",
  "image": "assets/history8/images/ch7/img_in_image_box_118_319_823_764.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig006-sa",
@@ -3725,12 +3725,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "question": "Identify the historical event or scene shown in the figure (Impact of the British Rule on India). Explain its causes and significance.",
+ "answer": "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), introduced the Ryotwari Settlement.",
  "image": "assets/history8/images/ch7/img_in_image_box_118_319_823_764.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig007-mcq",
@@ -3738,19 +3738,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what it illustrates?",
  "options": [
-  "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried on by Hyder Ali's so…",
-  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or ind…",
-  "In order to avenge his defeat in the Third Anglo-Mysore War, Tipu Sultan built up a large army against the British. Lord Wellesley, the Gove…",
-  "The Marathas, the State of Mysore and the **Must know** • The three Carnatic Wars, the Battle of Plassey and the Battle of Buxar led to the …"
+  "Four wars were fought to subjugate Mysore.",
+  "This in turn infused a sense of unity and resulted in the growth of nationalism—a development which in due course brought an end to the British rule in In…",
+  "Tick (√) the institutes, shown below, which were connected to the spread of Western education in India during the colonial period.",
+  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants."
  ],
- "correctOption": 1,
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "correctOption": 2,
+ "answer": "Tick (√) the institutes, shown below, which were connected to the spread of Western education in India during the colonial period.",
  "image": "assets/history8/images/ch7/img_in_image_box_138_1031_1162_1608.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig007-sa",
@@ -3758,12 +3758,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "question": "Study the figure on Impact of the British Rule on India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Tick (√) the institutes, shown below, which were connected to the spread of Western education in India during the colonial period.",
  "image": "assets/history8/images/ch7/img_in_image_box_138_1031_1162_1608.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig008-mcq",
@@ -3771,19 +3771,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what it illustrates?",
  "options": [
-  "Which regions along the eastern coast of India were part of the British territory in 1856?",
-  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or ind…",
-  "Clash between the British soldiers and the Mysore army during the Second Anglo-Mysore War",
-  "Lord Wellesley initiated the system called the Subsidiary Alliance to expand the British dominion in India. The Subsidiary Alliance stated t…"
+  "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan.",
+  "### ECONOMIC IMPACT OF THE BRITISH RULE",
+  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
+  "This in turn infused a sense of unity and resulted in the growth of nationalism—a development which in due course brought an end to the British rule in In…"
  ],
  "correctOption": 1,
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE",
  "image": "assets/history8/images/ch7/img_in_image_box_32_232_335_541.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig008-sa",
@@ -3791,12 +3791,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or indirectly controlled by them through expansionist policies, such as the Subsidiary Alliance. Lord Wellesley and Lord Dalhousie were the Governor-Generals who adopted various strategies to increase British territories in India. Let us read to find out about these policies.",
+ "question": "Study the figure on Impact of the British Rule on India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE",
  "image": "assets/history8/images/ch7/img_in_image_box_32_232_335_541.jpg",
  "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig009-mcq",
@@ -3804,19 +3804,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to University of Calcutta. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The ruler of Mysore, Hyder Ali, was an efficient administrator, diplomat and an intelligent general. He introduced many reforms, which stren…",
-  "**Must know** • Study the pictures given below",
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…",
-  "The ruler could not enter into an alliance with any power without the consent of the British."
+  "The first telegraph line was opened from Calcutta to Agra.",
+  "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian…",
+  "Ended with the Treaty of Salbai in 1782",
+  "This in turn infused a sense of unity and resulted in the growth of nationalism—a development which in due course brought an end to the British rule in In…"
  ],
- "correctOption": 2,
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "correctOption": 1,
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
  "image": "assets/history8/images/ch7/img_in_image_box_379_230_705_524.jpg",
- "caption": "Impact of the British Rule on India",
+ "caption": "University of Calcutta",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig009-sa",
@@ -3824,12 +3824,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "question": "Identify the historical event or scene shown in the figure (University of Calcutta). Explain its causes and significance.",
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
  "image": "assets/history8/images/ch7/img_in_image_box_379_230_705_524.jpg",
- "caption": "Impact of the British Rule on India",
+ "caption": "University of Calcutta",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig010-mcq",
@@ -3837,19 +3837,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to □ IIT, Kharagpur. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Between Madhav Rao II and the British in support of Raghunath Rao",
-  "The Marathas, the State of Mysore and the Nizams of Hyderabad were three powers that fought amongst themselves for supremacy in the Deccan",
-  "With the annexation of Punjab, the British conquest of India was complete. Most parts of India were either directly under the British or ind…",
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…"
+  "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian…",
+  "This in turn infused a sense of unity and resulted in the growth of nationalism—a development which in due course brought an end to the British rule in In…",
+  "It had been transformed into a formidable colonial power controlling most of India.",
+  "The British, in turn, promised to protect the ruler from external attacks and internal bolts."
  ],
- "correctOption": 3,
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "correctOption": 0,
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
  "image": "assets/history8/images/ch7/img_in_image_box_744_235_1094_529.jpg",
- "caption": "Impact of the British Rule on India",
+ "caption": "□ IIT, Kharagpur",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig010-sa",
@@ -3857,12 +3857,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "question": "Identify the historical event or scene shown in the figure (□ IIT, Kharagpur). Explain its causes and significance.",
+ "answer": "### ECONOMIC IMPACT OF THE BRITISH RULE The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
  "image": "assets/history8/images/ch7/img_in_image_box_744_235_1094_529.jpg",
- "caption": "Impact of the British Rule on India",
+ "caption": "□ IIT, Kharagpur",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig011-mcq",
@@ -3870,19 +3870,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to One of the earliest trains in India, travelling from Bombay to Thane in 1855. Which statement correctly describes the event or scene shown?",
  "options": [
-  "After the death of Peshwa Madhav Rao II in 1796, Baji Rao II became the new Peshwa. He was a weak and an inefficient ruler. To make matters …",
-  "Write the abbreviations in brackets in the correct box",
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…",
-  "The states that signed the Subsidiary Alliance were Hyderabad, Awadh, Tanjore, Mysore, Bhonsle, Peshwa, Sindhia, and many others."
+  "### Connecting Past with Present Then In 1853, the first railway line from Bombay to Thane was inaugurated.",
+  "The ruler could not employ any non-British Europeans in his service or dismiss those who were there.",
+  "Diesel locomotives have replaced steam engines on trains in India.",
+  "The Ryotwari Settlement was introduced in Bombay and Madras Presidencies."
  ],
- "correctOption": 2,
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "correctOption": 0,
+ "answer": "### Connecting Past with Present Then In 1853, the first railway line from Bombay to Thane was inaugurated.",
  "image": "assets/history8/images/ch7/img_in_image_box_54_293_488_595.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "One of the earliest trains in India, travelling from Bombay to Thane in 1855",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig011-sa",
@@ -3890,12 +3890,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "question": "Identify the historical event or scene shown in the figure (One of the earliest trains in India, travelling from Bombay to Thane in 1855). Explain its causes and significance.",
+ "answer": "### Connecting Past with Present Then In 1853, the first railway line from Bombay to Thane was inaugurated.",
  "image": "assets/history8/images/ch7/img_in_image_box_54_293_488_595.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "One of the earliest trains in India, travelling from Bombay to Thane in 1855",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch7-fig012-mcq",
@@ -3903,19 +3903,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what it illustrates?",
  "options": [
-  "**Executive summary:** Between Madhav Rao II and the British in support of Raghunath Rao **Must know** • Between Madhav Rao II and the Briti…",
-  "Match the rulers with the regions they ruled",
-  "The British joined this fight for supremacy, but with the aim of becoming the dominant power in India",
-  "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to…"
+  "The British realised that to consolidate their position in India, the development of proper communication facilities was necessary.",
+  "Although Hyder Ali was defeated at Porto Novo (now Parangipettai in Tamil Nadu), the war did not end, as it was carried on by Hyder Ali's son, Tipu Sultan…",
+  "Diesel locomotives have replaced steam engines on trains in India. ### Connecting Past with Present",
+  "As a result of this policy, the rulers of these states were extremely dissatisfied with the British."
  ],
- "correctOption": 3,
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "correctOption": 2,
+ "answer": "Diesel locomotives have replaced steam engines on trains in India. ### Connecting Past with Present",
  "image": "assets/history8/images/ch7/img_in_image_box_780_144_1106_376.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch7-fig012-sa",
@@ -3923,12 +3923,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch7",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Lord Dalhousie, therefore, annexed Awadh on grounds of inept governance in 1856. Yet, the administrative failure of Awadh was largely due to the operation of the Subsidiary Alliance system. During 1856-57, a large part of India came under British control. The British had effectively eliminated their Indian and European rivals and established themselves as the paramount power in India. The success of the British can be",
+ "question": "Study the figure on Connecting Past with Present. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Diesel locomotives have replaced steam engines on trains in India. ### Connecting Past with Present",
  "image": "assets/history8/images/ch7/img_in_image_box_780_144_1106_376.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig001-mcq",
@@ -3936,19 +3936,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Thomas Macaulay. Which statement correctly describes this person and their role?",
  "options": [
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power…",
-  "Some of these land revenue policies were as follows: • ■ Lord Cornwallis introduced the Permanent Settlement as a system of revenue collecti…",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…",
-  "Moreover, it was the aim of the British government to establish India as an agricultural supplier of cheap raw materials to industries in En…"
+  "For higher education, the medium of instruction was to be English.",
+  "Macaulay insisted that Western education should be introduced and imparted across British territories in India through the medium of English.",
+  "The Opium Wars took place between China and the western countries over the issue of the Opium trade.",
+  "The news of the events at Delhi spread rapidly, provoking uprisings among sepoys in many districts, including the North-Western"
  ],
- "correctOption": 2,
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "correctOption": 1,
+ "answer": "Macaulay insisted that Western education should be introduced and imparted across British territories in India through the medium of English.",
  "image": "assets/history8/images/ch8/img_in_image_box_961_721_1158_992.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Thomas Macaulay",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig001-sa",
@@ -3956,12 +3956,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "question": "Identify Thomas Macaulay shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Macaulay insisted that Western education should be introduced and imparted across British territories in India through the medium of English.",
  "image": "assets/history8/images/ch8/img_in_image_box_961_721_1158_992.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "Thomas Macaulay",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig002-mcq",
@@ -3969,19 +3969,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Wood's Despatch on Education. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Charles Wood. Which statement correctly describes this person and their role?",
  "options": [
-  "Indian agriculture received special attention from the EEIC",
-  "In order to retain control over their colony, the British established a system of administration for the maintenance of law and order, as we…",
-  "The Company was assured a fixed revenue or income without the trouble of collecting it from the peasants.",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…"
+  "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness amo…",
+  "**Must know** • Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented…",
+  "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British i…",
+  "Three universities for higher education were established in Calcutta, Bombay and Madras in 1857. For higher education, the medium of instruction was to be…"
  ],
  "correctOption": 3,
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "answer": "Three universities for higher education were established in Calcutta, Bombay and Madras in 1857. For higher education, the medium of instruction was to be English.",
  "image": "assets/history8/images/ch8/img_in_image_box_275_1110_529_1472.jpg",
- "caption": "Wood's Despatch on Education",
+ "caption": "Charles Wood",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig002-sa",
@@ -3989,12 +3989,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "question": "Identify Charles Wood shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Three universities for higher education were established in Calcutta, Bombay and Madras in 1857. For higher education, the medium of instruction was to be English.",
  "image": "assets/history8/images/ch8/img_in_image_box_275_1110_529_1472.jpg",
- "caption": "Wood's Despatch on Education",
+ "caption": "Charles Wood",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig003-mcq",
@@ -4002,19 +4002,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Bankim Chandra Chattopadhyay. Which statement correctly describes this person and their role?",
  "options": [
-  "• The Ryotwari Settlement was introduced in Bombay and Madras Presidencies",
-  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), in…",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…",
-  "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by…"
+  "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness amo…",
+  "Macaulay insisted that Western education should be introduced and imparted across British territories in India through the medium of English.",
+  "Read the above excerpt from Macaulay's Minute on Indian Education and answer the following questions:",
+  "For higher education, the medium of instruction was to be English."
  ],
- "correctOption": 2,
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "correctOption": 0,
+ "answer": "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness among Indians about being subjected to a foreign rule Caused replacement of the indigenous methods of education Resulted in the growth of the ideas on democracy, liberty and fraternity among educated Indians Led to the creation o…",
  "image": "assets/history8/images/ch8/img_in_image_box_838_155_1039_359.jpg",
- "caption": "Did You Know?",
+ "caption": "Bankim Chandra Chattopadhyay",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig003-sa",
@@ -4022,12 +4022,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "question": "Identify Bankim Chandra Chattopadhyay shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness among Indians about being subjected to a foreign rule Caused replacement of the indigenous methods of education Resulted in the growth of the ideas on democracy, liberty and fraternity among educated Indians Led to the creation o…",
  "image": "assets/history8/images/ch8/img_in_image_box_838_155_1039_359.jpg",
- "caption": "Did You Know?",
+ "caption": "Bankim Chandra Chattopadhyay",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig004-mcq",
@@ -4035,19 +4035,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on After Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows After Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "**Executive summary:** (a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor …",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…",
-  "##### Transport and Communication",
-  "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by…"
+  "Moreover, the Indian rebels also lacked financial resources.",
+  "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness amo…",
+  "Many princes and zamindars remained loyal to the British.",
+  "Hindu and Muslim sepoys therefore objected to using them."
  ],
  "correctOption": 1,
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "answer": "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness among Indians about being subjected to a foreign rule Caused replacement of the indigenous methods of education Resulted in the growth of the ideas on democracy, liberty and fraternity among educated Indians Led to the creation o…",
  "image": "assets/history8/images/ch8/img_in_image_box_133_58_1188_472.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig004-sa",
@@ -4055,12 +4055,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "question": "Identify After Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness among Indians about being subjected to a foreign rule Caused replacement of the indigenous methods of education Resulted in the growth of the ideas on democracy, liberty and fraternity among educated Indians Led to the creation o…",
  "image": "assets/history8/images/ch8/img_in_image_box_133_58_1188_472.jpg",
  "caption": "After Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig005-mcq",
@@ -4068,19 +4068,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what it illustrates?",
  "options": [
-  "**Executive summary:** Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "Creation of a new social class of landlords who were loyal to the British",
-  "In order to **Must know** • Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "Indian agriculture received special attention from the EEIC. This was primarily because the main source of the state income was land revenue…"
+  "With reference to the land revenue settlements introduced by the British in India, answer the following questions:",
+  "Imperialist: extension of rule or authority over a foreign nation",
+  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants.",
+  "The British government, in the early years of the 18th century, imposed heavy duties on Indian text **Must know** • Indian industries also suffered a grea…"
  ],
- "correctOption": 3,
- "answer": "Indian agriculture received special attention from the EEIC. This was primarily because the main source of the state income was land revenue. Moreover, it was the aim of the British government to establish India as an agricultural supplier of cheap raw materials to industries in England. The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants. Some of these land revenue policies were as follows:",
+ "correctOption": 0,
+ "answer": "With reference to the land revenue settlements introduced by the British in India, answer the following questions:",
  "image": "assets/history8/images/ch8/img_in_image_box_674_1193_1095_1531.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig005-sa",
@@ -4088,12 +4088,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Indian agriculture received special attention from the EEIC. This was primarily because the main source of the state income was land revenue. Moreover, it was the aim of the British government to establish India as an agricultural supplier of cheap raw materials to industries in England. The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants. Some of these land revenue policies were as follows:",
+ "question": "Study the figure on Impact of the British Rule on India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "With reference to the land revenue settlements introduced by the British in India, answer the following questions:",
  "image": "assets/history8/images/ch8/img_in_image_box_674_1193_1095_1531.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig006-mcq",
@@ -4101,19 +4101,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 21st Century Skills. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (21st Century Skills). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "The British government drained the Indian economy and exploited it to the maximum. The exploitation took the following forms:",
-  "Then In 1853, the first railway line from Bombay to Thane was inaugurated. In the same year, the post and telegraph department was set up. T…",
-  "Governor-Governor-Governor-Governor-Governor-G"
+  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the…",
+  "In order to **Must know** • Towards the end of the 18th century, the EEIC was no longer a mere trading company.",
+  "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches…",
+  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power controlling m…"
  ],
- "correctOption": 0,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 2,
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_29_664_184_977.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig006-sa",
@@ -4121,12 +4121,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what 21st Century Skills represents and why it matters in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the artwork shown (21st Century Skills). Who created it and why is it important in this chapter?",
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_29_664_184_977.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig007-mcq",
@@ -4134,19 +4134,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 21st Century Skills. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (21st Century Skills). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "**Executive summary:** Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "Indian agriculture received special attention from the EEIC. This was primarily because the main source of the state income was land revenue…"
+  "The British government, in the early years of the 18th century, imposed heavy duties on Indian text **Must know** • Indian industries also suffered a grea…",
+  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the…",
+  "The **Must know** • The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rup…",
+  "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches…"
  ],
- "correctOption": 2,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 3,
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_191_665_573_986.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig007-sa",
@@ -4154,12 +4154,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what 21st Century Skills represents and why it matters in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the artwork shown (21st Century Skills). Who created it and why is it important in this chapter?",
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_191_665_573_986.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig008-mcq",
@@ -4167,19 +4167,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 21st Century Skills. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (21st Century Skills). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "• Indian agriculture received special attention from the EEIC",
-  "The land revenue settlements, regardless of the region of implementation, had certain common features. These were as follows:",
-  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), in…",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…"
+  "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches…",
+  "Towards the end of the 18th century, the EEIC was no longer a mere trading company.",
+  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power controlling m…",
+  "The British government, in the early years of the 18th century, imposed heavy duties on Indian text **Must know** • Indian industries also suffered a grea…"
  ],
- "correctOption": 3,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 0,
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_590_675_850_994.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig008-sa",
@@ -4187,12 +4187,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what 21st Century Skills represents and why it matters in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the artwork shown (21st Century Skills). Who created it and why is it important in this chapter?",
+ "answer": "In the colonial period, the Dutch, French and British collected information about the flora and fauna of India, asking artists to make intricate sketches depicting them.",
  "image": "assets/history8/images/ch8/img_in_image_box_590_675_850_994.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig009-mcq",
@@ -4200,19 +4200,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 21st Century Skills. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on 21st Century Skills. Which statement correctly describes what it illustrates?",
  "options": [
-  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants",
-  "**Must know** • (a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madr…",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…",
-  "Governor-Governor-Governor-Governor-Governor-G"
+  "In order to **Must know** • Towards the end of the 18th century, the EEIC was no longer a mere trading company.",
+  "#### Geo-Skills: Locating Places",
+  "The British government, in the early years of the 18th century, imposed heavy duties on Indian text **Must know** • Indian industries also suffered a grea…",
+  "(from left to right: green-winged macaw; flying squirrel; comb drake; black stork, c."
  ],
- "correctOption": 2,
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "correctOption": 3,
+ "answer": "(from left to right: green-winged macaw; flying squirrel; comb drake; black stork, c.",
  "image": "assets/history8/images/ch8/img_in_image_box_864_684_1105_1003.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig009-sa",
@@ -4220,12 +4220,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what 21st Century Skills represents and why it matters in this chapter.",
- "answer": "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees annually on the education of Indians. The Charter Act of 1813 sparked off a debate on education across England as people argued about what policy should he implemented to educate the people of India. One group argued that the traditional learning should be imparted in classical and regional Indian languages. These were the Orientalists. On the other hand, the Anglicists, led by Thomas Macaulay, insisted that the medium of instruction should be English and the education imparted should be Western.",
+ "question": "Study the figure on 21st Century Skills. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "(from left to right: green-winged macaw; flying squirrel; comb drake; black stork, c.",
  "image": "assets/history8/images/ch8/img_in_image_box_864_684_1105_1003.jpg",
  "caption": "21st Century Skills",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig010-mcq",
@@ -4233,19 +4233,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Impact of the British Rule on India. Which statement correctly describes what it illustrates?",
  "options": [
-  "The British government drained the Indian economy and exploited it to the maximum. The exploitation took the following forms:",
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power…",
-  "##### Transport and Communication",
-  "■ Lord Cornwallis introduced the Permanent Settlement as a system of revenue collection in 1793 in Bengal, Bihar and Orissa."
+  "Study the picture and answer the following questions.",
+  "Imperialist: extension of rule or authority over a foreign nation",
+  "Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the explo…",
+  "Negative Effects of Western Education Positive Effects of Western Education Led to complete Westernisation of the educational system Created awareness amo…"
  ],
  "correctOption": 0,
- "answer": "The British government drained the Indian economy and exploited it to the maximum. The exploitation took the following forms:",
+ "answer": "Study the picture and answer the following questions.",
  "image": "assets/history8/images/ch8/img_in_image_box_961_1060_1146_1315.jpg",
- "caption": "Textbook figure",
+ "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig010-sa",
@@ -4253,12 +4253,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "The British government drained the Indian economy and exploited it to the maximum. The exploitation took the following forms:",
+ "question": "Study the figure on Impact of the British Rule on India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Study the picture and answer the following questions.",
  "image": "assets/history8/images/ch8/img_in_image_box_961_1060_1146_1315.jpg",
- "caption": "Textbook figure",
+ "caption": "Impact of the British Rule on India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig011-mcq",
@@ -4266,19 +4266,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to The Great Uprising of 1857. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "critical thinking: comparative analysis, reasoning information literacy: general awareness",
-  "Some of these land revenue policies were as follows: • ■ Lord Cornwallis introduced the Permanent Settlement as a system of revenue collecti…",
-  "The Company tried various experiments to maximise the land revenue, regardless of its oppressive impact on Indian peasants"
+  "To that class we may leave it to refine the vernacular dialects of the country, to enrich those dialects with terms of science borrowed from Western nomen…",
+  "Though the British were able to suppress the revolt, it succeeded in sowing the seeds of Indian nationalism.",
+  "This culminated in the Uprising of 1857, referred to by the British historians as the Sepoy Mutiny.",
+  "The British government, in the early years of the 18th century, imposed heavy duties on Indian text **Must know** • Indian industries also suffered a grea…"
  ],
- "correctOption": 0,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 1,
+ "answer": "Though the British were able to suppress the revolt, it succeeded in sowing the seeds of Indian nationalism.",
  "image": "assets/history8/images/ch8/img_in_image_box_28_230_787_720.jpg",
- "caption": "History Alive!",
+ "caption": "The Great Uprising of 1857",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig011-sa",
@@ -4286,12 +4286,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the historical event or scene shown in the figure (The Great Uprising of 1857). Explain its causes and significance.",
+ "answer": "Though the British were able to suppress the revolt, it succeeded in sowing the seeds of Indian nationalism.",
  "image": "assets/history8/images/ch8/img_in_image_box_28_230_787_720.jpg",
- "caption": "History Alive!",
+ "caption": "The Great Uprising of 1857",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig012-mcq",
@@ -4299,19 +4299,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "In order to retain control over their colony, the British established a system of administration for the maintenance of law and order, as we…",
-  "The early 10th century, the British Government passed the Charter Act of 1812, industry the Company was required to spend the last rupees an…",
-  "In order to retain control over their colony, the British established a system of administration for the maintenance of law and order, as we…",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…"
+  "Along with Tantia Tope, Lakshmibai then mounted a successful assault on the city-fortress of Gwalior.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
+  "After taking Gwalior, Lakshmibai marched east to confront a British counterattack."
  ],
- "correctOption": 3,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 2,
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_157_184_412_485.jpg",
- "caption": "Visual Mapping",
+ "caption": "☐ Rani Lakshmibai",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig012-sa",
@@ -4319,12 +4319,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_157_184_412_485.jpg",
- "caption": "Visual Mapping",
+ "caption": "☐ Rani Lakshmibai",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig013-mcq",
@@ -4332,19 +4332,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Bahadur Shah Zafar. Which statement correctly describes this person and their role?",
  "options": [
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power…",
-  "Creation of a new social class of landlords who were loyal to the British",
-  "Then In 1853, the first railway line from Bombay to Thane was inaugurated. In the same year, the post and telegraph department was set up. T…",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…"
+  "The First Opium War was fought between China and Britain during the Opium trade.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
+  "#### Arrange a Bird Corner in your Balcony/Garden"
  ],
- "correctOption": 3,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 2,
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_511_179_778_500.jpg",
- "caption": "Visual Mapping",
+ "caption": "Bahadur Shah Zafar",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig013-sa",
@@ -4352,12 +4352,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Bahadur Shah Zafar shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_511_179_778_500.jpg",
- "caption": "Visual Mapping",
+ "caption": "Bahadur Shah Zafar",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig014-mcq",
@@ -4365,19 +4365,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Cornwallis. Which statement correctly describes this person and their role?",
  "options": [
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "The British realised that to consolidate their position in India, the development of proper communication facilities was necessary. They bui…",
-  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), in…"
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "The first Viceroy of India was Lord Canning.",
+  "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British i…",
+  "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians."
  ],
- "correctOption": 1,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 3,
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_880_189_1127_525.jpg",
- "caption": "Visual Mapping",
+ "caption": "Lord Cornwallis",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig014-sa",
@@ -4385,12 +4385,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Lord Cornwallis shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The British methods were unfair, oppressive and exploitative, and there was enormous resentment against the British rulers among the Indians.",
  "image": "assets/history8/images/ch8/img_in_image_box_880_189_1127_525.jpg",
- "caption": "Visual Mapping",
+ "caption": "Lord Cornwallis",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig015-mcq",
@@ -4398,19 +4398,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE REVOLT. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE REVOLT. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "• The Mahalwari Settlement was introduced in the northern part of the country, mainly in Uttar Pradesh and Punjab, where it had devastating …",
-  "The British realised that to consolidate their position in India, the development of proper communication facilities was necessary. They bui…",
-  "The British bought raw materials at cheap prices and sold their manufactured goods at high prices, flooding the Indian markets with their pr…"
+  "The rebel forces proclaimed Bahadur Shah Zafar as the leader of the revolt and celebrated the revival of the Mughal Empire.",
+  "In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
+  "The Revolt of 1857 began in Meerut and spread to Delhi, Lucknow, Kanpur, Jhansi, Gwalior and Arrah.",
+  "Bibighar in Kanpur—a site of the Revolt of 1857"
  ],
  "correctOption": 0,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "answer": "The rebel forces proclaimed Bahadur Shah Zafar as the leader of the revolt and celebrated the revival of the Mughal Empire.",
  "image": "assets/history8/images/ch8/img_in_image_box_81_32_831_938.jpg",
  "caption": "THE REVOLT",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig015-sa",
@@ -4418,12 +4418,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the historical event or scene shown in the figure (THE REVOLT). Explain its causes and significance.",
+ "answer": "The rebel forces proclaimed Bahadur Shah Zafar as the leader of the revolt and celebrated the revival of the Mughal Empire.",
  "image": "assets/history8/images/ch8/img_in_image_box_81_32_831_938.jpg",
  "caption": "THE REVOLT",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig016-mcq",
@@ -4431,19 +4431,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Geo-Skills: Locating Places. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Bibighar in Kanpur—a site of the Revolt of 1857. Which statement correctly describes the event or scene shown?",
  "options": [
-  "■ Lord Cornwallis introduced the Permanent Settlement as a system of revenue collection in 1793 in Bengal, Bihar and Orissa.",
-  "• The Mahalwari Settlement was introduced in the northern part of the country, mainly in Uttar Pradesh and Punjab, where it had devastating …",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "Then In 1853, the first railway line from Bombay to Thane was inaugurated. In the same year, the post and telegraph department was set up. T…"
+  "In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
+  "The Revolt of 1857 had far-reaching effects in the history of India.",
+  "#### Geo-Skills: Locating Places The leader of the Kanpur Revolt was Nana Sahib, the adopted son of Baji Rao II.",
+  "Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the explo…"
  ],
  "correctOption": 2,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "answer": "#### Geo-Skills: Locating Places The leader of the Kanpur Revolt was Nana Sahib, the adopted son of Baji Rao II.",
  "image": "assets/history8/images/ch8/img_in_image_box_77_1149_641_1487.jpg",
- "caption": "Geo-Skills: Locating Places",
+ "caption": "Bibighar in Kanpur—a site of the Revolt of 1857",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig016-sa",
@@ -4451,12 +4451,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify the historical event or scene shown in the figure (Bibighar in Kanpur—a site of the Revolt of 1857). Explain its causes and significance.",
+ "answer": "#### Geo-Skills: Locating Places The leader of the Kanpur Revolt was Nana Sahib, the adopted son of Baji Rao II.",
  "image": "assets/history8/images/ch8/img_in_image_box_77_1149_641_1487.jpg",
- "caption": "Geo-Skills: Locating Places",
+ "caption": "Bibighar in Kanpur—a site of the Revolt of 1857",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig017-mcq",
@@ -4464,19 +4464,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Kunwar Singh. Which statement correctly describes this person and their role?",
  "options": [
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "The British bought raw materials at cheap prices and sold their manufactured goods at high prices, flooding the Indian markets with their pr…",
-  "critical thinking: comparative analysis, reasoning information literacy: general awareness",
-  "The peasants were forced to pay high taxes, leading to increase in the poverty level and discontent. Therefore, a number of peasant revolts …"
+  "In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
+  "The Revolt of 1857 began in Meerut and spread to Delhi, Lucknow, Kanpur, Jhansi, Gwalior and Arrah.",
+  "In Kanpur, sepoys rebelled and besieged the British entrenchment.",
+  "Bibighar in Kanpur—a site of the Revolt of 1857"
  ],
  "correctOption": 0,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "answer": "In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
  "image": "assets/history8/images/ch8/img_in_image_box_975_1217_1169_1535.jpg",
- "caption": "Did You Know?",
+ "caption": "Kunwar Singh",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig017-sa",
@@ -4484,12 +4484,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Kunwar Singh shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
  "image": "assets/history8/images/ch8/img_in_image_box_975_1217_1169_1535.jpg",
- "caption": "Did You Know?",
+ "caption": "Kunwar Singh",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig018-mcq",
@@ -4497,19 +4497,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Kanpur. Which statement correctly describes this person and their role?",
  "options": [
-  "Moreover, it was the aim of the British government to establish India as an agricultural supplier of cheap raw materials to industries in En…",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), in…",
-  "• Indian agriculture received special attention from the EEIC"
+  "Bibighar in Kanpur—a site of the Revolt of 1857",
+  "After taking Gwalior, Lakshmibai marched east to confront a British counterattack.",
+  "The leader of the Kanpur Revolt was Nana Sahib, the adopted son of Baji Rao II.",
+  "Jhansi was a princely state in south-western Pradesh. In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at th…"
  ],
- "correctOption": 1,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 3,
+ "answer": "Jhansi was a princely state in south-western Pradesh. In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
  "image": "assets/history8/images/ch8/img_in_image_box_243_61_509_453.jpg",
- "caption": "Did You Know?",
+ "caption": "Rani Lakshmibai of Jhansi",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig018-sa",
@@ -4517,12 +4517,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Kanpur shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Jhansi was a princely state in south-western Pradesh. In Arrah (Bihar), Kunwar Singh, a royal Kshatriya, played a leading part in the Revolt of 1857 at the age of 80 years.",
  "image": "assets/history8/images/ch8/img_in_image_box_243_61_509_453.jpg",
- "caption": "Did You Know?",
+ "caption": "Rani Lakshmibai of Jhansi",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig019-mcq",
@@ -4530,19 +4530,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on EFFECTS OF THE REVOLT. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Canning. Which statement correctly describes this person and their role?",
  "options": [
-  "• The Ryotwari Settlement was introduced in Bombay and Madras Presidencies",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "Creation of a new social class of landlords who were loyal to the British",
-  "Towards the end of the 18th century, the EEIC was no longer a mere trading company. It had been transformed into a formidable colonial power…"
+  "**Must know** • (a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27)…",
+  "Southern parts of India remained unaffected by the revolt.",
+  "Lord William Beetwick finally put an end to the debate on education by passing a conclusion that defined the education policy implemented by the British i…",
+  "The first Viceroy of India was Lord Canning. Even though the revolt failed to achieve its main objective of driving out the British from India, it was suc…"
  ],
- "correctOption": 1,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 3,
+ "answer": "The first Viceroy of India was Lord Canning. Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the exploitative nature of the British rule in India.",
  "image": "assets/history8/images/ch8/img_in_image_box_341_1033_635_1403.jpg",
- "caption": "EFFECTS OF THE REVOLT",
+ "caption": "Lord Canning",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig019-sa",
@@ -4550,12 +4550,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Lord Canning shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The first Viceroy of India was Lord Canning. Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the exploitative nature of the British rule in India.",
  "image": "assets/history8/images/ch8/img_in_image_box_341_1033_635_1403.jpg",
- "caption": "EFFECTS OF THE REVOLT",
+ "caption": "Lord Canning",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig020-mcq",
@@ -4563,19 +4563,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on EFFECTS OF THE REVOLT. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Queen Victoria. Which statement correctly describes this person and their role?",
  "options": [
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "In the early 19th century, the British government passed the Charter Act of 1813, whereby the Company was required to spend one lakh rupees …",
-  "The British government drained the Indian economy and exploited it to the maximum. The exploitation took the following forms:",
-  "**Executive summary:** (a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor …"
+  "Tick (√) the personalities who participated in the Revolt of 1857.",
+  "Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the explo…",
+  "Southern parts of India remained unaffected by the revolt.",
+  "The Mahalwari Settlement was introduced in the northern part of the country, mainly in Uttar Pradesh and Punjab, where it had devastating effects."
  ],
- "correctOption": 0,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 1,
+ "answer": "Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the exploitative nature of the British rule in India.",
  "image": "assets/history8/images/ch8/img_in_image_box_946_903_1189_1361.jpg",
- "caption": "EFFECTS OF THE REVOLT",
+ "caption": "Queen Victoria",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig020-sa",
@@ -4583,12 +4583,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify Queen Victoria shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Even though the revolt failed to achieve its main objective of driving out the British from India, it was successful in creating awareness about the exploitative nature of the British rule in India.",
  "image": "assets/history8/images/ch8/img_in_image_box_946_903_1189_1361.jpg",
- "caption": "EFFECTS OF THE REVOLT",
+ "caption": "Queen Victoria",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig021-mcq",
@@ -4596,19 +4596,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Opium Wars. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The First Opium War. Which statement correctly describes this person and their role?",
  "options": [
-  "(a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor of Madras (1820–27), in…",
-  "critical thinking: comparative analysis, reasoning information literacy: general awareness",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…",
-  "The peasants were forced to pay high taxes, leading to increase in the poverty level and discontent. Therefore, a number of peasant revolts …"
+  "The Second Opium War was fought by Britain and France against China in the second Opium war was defeated in both of these wars.",
+  "The Battle of Plassey marked the first step taken by the British to gain political control over India.",
+  "Bankim Chandra Chattopadhyay, a Bengali novelist and the writer of India's national song Vande Mataram, was one of the first graduates from Calcutta Unive…",
+  "The Revolt of 1857, for the first time, created the feeling of nationalism among Indians."
  ],
- "correctOption": 2,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "correctOption": 0,
+ "answer": "The Second Opium War was fought by Britain and France against China in the second Opium war was defeated in both of these wars.",
  "image": "assets/history8/images/ch8/img_in_image_box_28_315_493_671.jpg",
- "caption": "The Opium Wars",
+ "caption": "The First Opium War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig021-sa",
@@ -4616,12 +4616,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify The First Opium War shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Second Opium War was fought by Britain and France against China in the second Opium war was defeated in both of these wars.",
  "image": "assets/history8/images/ch8/img_in_image_box_28_315_493_671.jpg",
- "caption": "The Opium Wars",
+ "caption": "The First Opium War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch8-fig022-mcq",
@@ -4629,19 +4629,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Opium Wars. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Second Opium War. Which statement correctly describes this person and their role?",
  "options": [
-  "This was primarily because the main source of the state income was land revenue",
-  "**Executive summary:** Towards the end of the 18th century, the EEIC was no longer a mere trading company",
-  "**Executive summary:** (a) Lord Cornwallis introduced a new land settlement called the Permanent Settlement; (b) Thomas Munro, the Governor …",
-  "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th cent…"
+  "One of the earliest trains in India, travelling from Bombay to Thane in 1855",
+  "These were as follows: Creation of a new social class of landlords who were loyal to the British The Company was assured a fixed revenue or income without…",
+  "The First Opium War was fought between China and Britain during the Opium trade.",
+  "was fought by Britain and France against China in the second Opium war was defeated in both of these wars."
  ],
  "correctOption": 3,
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "answer": "was fought by Britain and France against China in the second Opium war was defeated in both of these wars.",
  "image": "assets/history8/images/ch8/img_in_image_box_571_328_987_641.jpg",
- "caption": "The Opium Wars",
+ "caption": "The Second Opium War",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch8-fig022-sa",
@@ -4649,12 +4649,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch8",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Indian industries also suffered a great setback under the British colonial rule. The British government, in the early years of the 18th century, imposed heavy duties on Indian textile imports to Britain. On the other hand, British machine-made goods entered India duty-free or at a nominal cost. The introduction of such a policy of one-way free trade made Indian goods very costly. It resulted in a significant decrease in sale for the Indian artisans and loss of their livelihoods.",
+ "question": "Identify The Second Opium War shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "was fought by Britain and France against China in the second Opium war was defeated in both of these wars.",
  "image": "assets/history8/images/ch8/img_in_image_box_571_328_987_641.jpg",
- "caption": "The Opium Wars",
+ "caption": "The Second Opium War",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig001-mcq",
@@ -4662,19 +4662,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on VI. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Great Uprising of 1857. Which statement correctly describes what it illustrates?",
  "options": [
-  "Tick (√) the personalities who participated in the Revolt of 1857",
-  "Harsh treatment of the sepoys by the British officers created discontent.",
-  "The sepoys at the Meerut cantonment were angered at the humiliating treatment of their fellow comrades. They rose in revolt, attacked the ja…",
-  "The revolt lacked coordination, and the rebels had no common plan of action."
+  "This culminated in the Uprising of 1857, referred to by the British historians as the Sepoy Mutiny.",
+  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857.",
+  "These causes created much displeasure towards the British rul **Must know** • Various causes—political, economic, socio-religious, military and immediate—…",
+  "The figure relates to The Great Uprising of 1857 in this chapter."
  ],
- "correctOption": 2,
- "answer": "The sepoys at the Meerut cantonment were angered at the humiliating treatment of their fellow comrades. They rose in revolt, attacked the jail and freed the sepoys. Many of the sepoys marched to Delhi, where they were joined by the sepoys of the local army. The revolt spread throughout Delhi. The rebel forces proclaimed Bahadur Shah Zafar as the leader of the revolt and celebrated the revival of the Mughal Empire.",
+ "correctOption": 3,
+ "answer": "The figure relates to The Great Uprising of 1857 in this chapter.",
  "image": "assets/history8/images/ch9/img_in_image_box_781_620_998_899.jpg",
- "caption": "VI. Study the given picture. Answer the questions that follow.",
+ "caption": "The Great Uprising of 1857",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig001-sa",
@@ -4682,12 +4682,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The sepoys at the Meerut cantonment were angered at the humiliating treatment of their fellow comrades. They rose in revolt, attacked the jail and freed the sepoys. Many of the sepoys marched to Delhi, where they were joined by the sepoys of the local army. The revolt spread throughout Delhi. The rebel forces proclaimed Bahadur Shah Zafar as the leader of the revolt and celebrated the revival of the Mughal Empire.",
+ "question": "Study the figure on The Great Uprising of 1857. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The figure relates to The Great Uprising of 1857 in this chapter.",
  "image": "assets/history8/images/ch9/img_in_image_box_781_620_998_899.jpg",
- "caption": "VI. Study the given picture. Answer the questions that follow.",
+ "caption": "The Great Uprising of 1857",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig002-mcq",
@@ -4695,19 +4695,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Reform Movements in India under the British Rule. Which statement correctly describes the event or scene shown?",
  "options": [
-  "• The Battle of Plassey marked the first step taken by the British to gain political control over India",
-  "The sepoys at the Meerut cantonment were angered at the humiliating treatment of their fellow comrades. They rose in revolt, attacked the ja…",
-  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent",
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …"
+  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasu…",
+  "## Reform Movements in India under the British Rule",
+  "With the establishment of British rule, the demand for using English as the language of administration and education also increased.",
+  "These causes created much displeasure towards the British rule in India."
  ],
- "correctOption": 3,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "correctOption": 1,
+ "answer": "## Reform Movements in India under the British Rule",
  "image": "assets/history8/images/ch9/img_in_image_box_183_286_803_765.jpg",
- "caption": "History Alive!",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig002-sa",
@@ -4715,12 +4715,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify the historical event or scene shown in the figure (Reform Movements in India under the British Rule). Explain its causes and significance.",
+ "answer": "## Reform Movements in India under the British Rule",
  "image": "assets/history8/images/ch9/img_in_image_box_183_286_803_765.jpg",
- "caption": "History Alive!",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig003-mcq",
@@ -4728,19 +4728,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Dayanand Saraswati. Which statement correctly describes this person and their role?",
  "options": [
-  "Province, central India and Bihar. In many cases, it was the behaviour of the British military and civilian authorities that accelerated dis…",
-  "The revolt lacked coordination, and the rebels had no common plan of action.",
-  "Many Indians were alarmed by the increasing activities of Christian missionaries in India.",
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …"
+  "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "At the end of this lesson, learners will be able to:",
+  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and cu…"
  ],
- "correctOption": 3,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "correctOption": 2,
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch9/img_in_image_box_35_243_223_512.jpg",
- "caption": "Visual Mapping",
+ "caption": "Dayanand Saraswati",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig003-sa",
@@ -4748,12 +4748,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify Dayanand Saraswati shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch9/img_in_image_box_35_243_223_512.jpg",
- "caption": "Visual Mapping",
+ "caption": "Dayanand Saraswati",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig004-mcq",
@@ -4761,19 +4761,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "The sepoys at the Meerut cantonment were angered at the humiliating treatment of their fellow comrades. They rose in revolt, attacked the ja…",
-  "Jhansi was a princely state in south-western Pradesh. It Uttar annexed by was British in 1853. the British news of the When reached the revo…",
-  "When the British severely punished and imprisoned sepoys for refusal to use the cartridges, the sepoys were enraged.",
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …"
+  "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and cu…",
+  "Un an outline map of India, mark the different centres of the Revolt of 1857."
  ],
- "correctOption": 3,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "correctOption": 0,
+ "answer": "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
  "image": "assets/history8/images/ch9/img_in_image_box_278_239_491_494.jpg",
- "caption": "Visual Mapping",
+ "caption": "□ Annie Besant",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig004-sa",
@@ -4781,12 +4781,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
  "image": "assets/history8/images/ch9/img_in_image_box_278_239_491_494.jpg",
- "caption": "Visual Mapping",
+ "caption": "□ Annie Besant",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig005-mcq",
@@ -4794,19 +4794,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Vivekananda. Which statement correctly describes this person and their role?",
  "options": [
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …",
-  "The revolt lacked coordination, and the rebels had no common plan of action.",
-  "highlight the names of the leaders of the revolt.",
-  "The Indian sepoys were paid much less than the British soldiers."
+  "Swami Vivekananda were as follows:",
+  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and cu…",
+  "This led to a conflict between the traditional sections of Indian society and the pro-Western Indians.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent."
  ],
- "correctOption": 0,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "correctOption": 2,
+ "answer": "This led to a conflict between the traditional sections of Indian society and the pro-Western Indians.",
  "image": "assets/history8/images/ch9/img_in_image_box_543_261_746_514.jpg",
- "caption": "Visual Mapping",
+ "caption": "Vivekananda",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig005-sa",
@@ -4814,12 +4814,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify Vivekananda shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This led to a conflict between the traditional sections of Indian society and the pro-Western Indians.",
  "image": "assets/history8/images/ch9/img_in_image_box_543_261_746_514.jpg",
- "caption": "Visual Mapping",
+ "caption": "Vivekananda",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig006-mcq",
@@ -4827,19 +4827,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and…",
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …",
-  "• evaluate the nature of the uprising",
-  "• assess the consequences of the Revolt of 1857"
+  "He also stressed on the need for spiritual and social upliftment of the oppressed classes.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and cu…",
+  "This critique led many Indians to take a closer look at their own society and to initiate a series of reform movements."
  ],
- "correctOption": 1,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "correctOption": 3,
+ "answer": "This critique led many Indians to take a closer look at their own society and to initiate a series of reform movements.",
  "image": "assets/history8/images/ch9/img_in_image_box_803_282_1013_520.jpg",
- "caption": "Visual Mapping",
+ "caption": "B.R. Ambedkar",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig006-sa",
@@ -4847,12 +4847,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This critique led many Indians to take a closer look at their own society and to initiate a series of reform movements.",
  "image": "assets/history8/images/ch9/img_in_image_box_803_282_1013_520.jpg",
- "caption": "Visual Mapping",
+ "caption": "B.R. Ambedkar",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig007-mcq",
@@ -4860,19 +4860,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …",
-  "trace the spread of the revolt in India",
-  "The Battle of Plassey marked the first step taken by the British to gain political control over India",
-  "highlight the names of the leaders of the revolt."
+  "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
+  "He also introduced the study of Western philosophy in the Sanskrit College of Calcutta.",
+  "During the next 100 years, the British used their financial and military strength to gain control over most of the Indian subcontinent.",
+  "The Khalsa College was set up in Amritsar."
  ],
  "correctOption": 0,
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "answer": "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
  "image": "assets/history8/images/ch9/img_in_image_box_20_1044_475_1416.jpg",
- "caption": "Visual Mapping",
+ "caption": "Elphinstone College, Bombay",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig007-sa",
@@ -4880,12 +4880,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created much displeasure towards the British rule in India.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In 1856, Elphinstone College was established in Bombay (now Mumbai). In 1817, Hindu College was founded in Calcutta (now Kolkata).",
  "image": "assets/history8/images/ch9/img_in_image_box_20_1044_475_1416.jpg",
- "caption": "Visual Mapping",
+ "caption": "Elphinstone College, Bombay",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig008-mcq",
@@ -4893,19 +4893,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Brahmo Samaj. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Brahmo Samaj. Which statement correctly describes this person and their role?",
  "options": [
-  "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and…",
-  "Annexation of Awadh, despite its adherence to the Subsidiary Alliance, increased the insecurity of Indian rulers.",
-  "The following were major causes for the failure of the revolt:",
-  "The revolt lacked coordination, and the rebels had no common plan of action."
+  "The Singh Sabha, a 19th-century Sikh movement, was set up in Amritsar and",
+  "The reforms advocated by the Brahmo Samaj under the leadership of Raja Ram Mohan Roy were as follows:",
+  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and cu…",
+  "He fought for the education and upliftment of women and widow remarriage."
  ],
- "correctOption": 0,
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "correctOption": 1,
+ "answer": "The reforms advocated by the Brahmo Samaj under the leadership of Raja Ram Mohan Roy were as follows:",
  "image": "assets/history8/images/ch9/img_in_image_box_88_1138_602_1472.jpg",
- "caption": "Brahmo Samaj",
+ "caption": "A painting from the 18th-century showing sati or widow-burning",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig008-sa",
@@ -4913,12 +4913,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "question": "Identify Brahmo Samaj shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The reforms advocated by the Brahmo Samaj under the leadership of Raja Ram Mohan Roy were as follows:",
  "image": "assets/history8/images/ch9/img_in_image_box_88_1138_602_1472.jpg",
- "caption": "Brahmo Samaj",
+ "caption": "A painting from the 18th-century showing sati or widow-burning",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig009-mcq",
@@ -4926,19 +4926,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Swami Vivekananda and Ramakrishna Mission. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Ramakrishna Paramahamsa. Which statement correctly describes this person and their role?",
  "options": [
-  "When the British severely punished and imprisoned sepoys for refusal to use the cartridges, the sepoys were enraged.",
-  "Many Indians, in those days, believed that they would lose their caste and religion if they crossed the sea. In 1856, the Company passed an …",
-  "The British reinforcements soon arrived from Punjab, and Delhi was recaptured. Hundreds of Indians were killed, and many were hanged without…",
-  "The situation worsened with the introduction of Enfield rifles in the army. The greased cartridges for these rifles had to be bitten off bef…"
+  "Ramakrishna's teachings were simple and attracted many followers.",
+  "At the end of this lesson, learners will be able to:",
+  "Sections in Indian society objected to the prominence given to Western education at the cost of traditional learning.",
+  "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. ### Swami Vivekananda and Ramakrishna Mission"
  ],
- "correctOption": 1,
- "answer": "Many Indians, in those days, believed that they would lose their caste and religion if they crossed the sea. In 1856, the Company passed an act, known as the General Service Enlistment Act. According to this Act, every new recruit had to serve overseas, if ordered. It hurt the religious sentiments of the sepoys.",
+ "correctOption": 3,
+ "answer": "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. ### Swami Vivekananda and Ramakrishna Mission",
  "image": "assets/history8/images/ch9/img_in_image_box_9_861_158_1099.jpg",
- "caption": "Swami Vivekananda and Ramakrishna Mission",
+ "caption": "Ramakrishna Paramahamsa",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig009-sa",
@@ -4946,12 +4946,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Many Indians, in those days, believed that they would lose their caste and religion if they crossed the sea. In 1856, the Company passed an act, known as the General Service Enlistment Act. According to this Act, every new recruit had to serve overseas, if ordered. It hurt the religious sentiments of the sepoys.",
+ "question": "Identify Ramakrishna Paramahamsa shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. ### Swami Vivekananda and Ramakrishna Mission",
  "image": "assets/history8/images/ch9/img_in_image_box_9_861_158_1099.jpg",
- "caption": "Swami Vivekananda and Ramakrishna Mission",
+ "caption": "Ramakrishna Paramahamsa",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig010-mcq",
@@ -4959,19 +4959,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Prarthana Samaj. Which statement correctly describes this person and their role?",
  "options": [
-  "Various causes—political, economic, socio-religious, military and immediate—were responsible for the uprising of 1857. These causes created …",
-  "Many Indians, in those days, believed that they would lose their caste and religion if they crossed the sea. In 1856, the Company passed an …",
-  "The situation worsened with the introduction of Enfield rifles in the army. The greased cartridges for these rifles had to be bitten off bef…",
-  "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and…"
+  "Locate the city that is associated with the birth of the Prarthana Samaj. Mahadev Ranade was himself a social reformer, and he encouraged Ramabai to educa…",
+  "The reforms advocated by the Brahmo Samaj under the leadership of Raja Ram Mohan Roy were as follows:",
+  "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828.",
+  "He set up the Satyashodhak Samaj in 1873 to work for the oppressed classes."
  ],
- "correctOption": 3,
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "correctOption": 0,
+ "answer": "Locate the city that is associated with the birth of the Prarthana Samaj. Mahadev Ranade was himself a social reformer, and he encouraged Ramabai to educate herself after their marriage.",
  "image": "assets/history8/images/ch9/img_in_image_box_80_60_887_1089.jpg",
- "caption": "Did You Know?",
+ "caption": "Prarthana Samaj",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig010-sa",
@@ -4979,12 +4979,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Did You Know? represents and why it matters in this chapter.",
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "question": "Identify Prarthana Samaj shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Locate the city that is associated with the birth of the Prarthana Samaj. Mahadev Ranade was himself a social reformer, and he encouraged Ramabai to educate herself after their marriage.",
  "image": "assets/history8/images/ch9/img_in_image_box_80_60_887_1089.jpg",
- "caption": "Did You Know?",
+ "caption": "Prarthana Samaj",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch9-fig011-mcq",
@@ -4992,19 +4992,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on SYED AHMAD KHAN AND THE ALIGARH MOVEMENT. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Syed Ahmad Khan. Which statement correctly describes this person and their role?",
  "options": [
-  "The Indian sepoys were paid much less than the British soldiers.",
-  "assess the consequences of the Revolt of 1857.",
-  "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and…",
-  "The situation worsened with the introduction of Enfield rifles in the army. The greased cartridges for these rifles had to be bitten off bef…"
+  "Sree Narayana Guru was another important spiritual and social reformer from south India.",
+  "In order to achieve this, he founded the Muhammadan Anglo-Oriental College at Aligarh",
+  "### Swami Vivekananda and Ramakrishna Mission",
+  "### SYED AHMAD KHAN AND THE ALIGARH MOVEMENT The Singh Sabha, a 19th-century Sikh movement, was set up in Amritsar and"
  ],
- "correctOption": 2,
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "correctOption": 3,
+ "answer": "### SYED AHMAD KHAN AND THE ALIGARH MOVEMENT The Singh Sabha, a 19th-century Sikh movement, was set up in Amritsar and",
  "image": "assets/history8/images/ch9/img_in_image_box_761_640_1009_905.jpg",
- "caption": "SYED AHMAD KHAN AND THE ALIGARH MOVEMENT",
+ "caption": "Syed Ahmad Khan",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch9-fig011-sa",
@@ -5012,12 +5012,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch9",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what SYED AHMAD KHAN AND THE ALIGARH MOVEMENT represents and why it matters in this chapter.",
- "answer": "Social reforms such as the abolition of sati and widow remarriage were seen as the British's interference with traditional Indian values and customs.",
+ "question": "Identify Syed Ahmad Khan shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "### SYED AHMAD KHAN AND THE ALIGARH MOVEMENT The Singh Sabha, a 19th-century Sikh movement, was set up in Amritsar and",
  "image": "assets/history8/images/ch9/img_in_image_box_761_640_1009_905.jpg",
- "caption": "SYED AHMAD KHAN AND THE ALIGARH MOVEMENT",
+ "caption": "Syed Ahmad Khan",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig001-mcq",
@@ -5025,19 +5025,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on REFORM MOVEMENTS: IMPACT. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on REFORM MOVEMENTS: IMPACT. Which statement correctly describes what it illustrates?",
  "options": [
-  "Tick (√) the pictures of the people who were associated with the 19th-century social reform movements in India.",
-  "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many in…",
-  "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya Samaj are noteworthy among them. Let us r…",
-  "▶ A painting from the 18th-century showing sati or widow-burning"
+  "Sree Narayana Guru was another important spiritual and social reformer from south India. He denounced the rigid caste system prevailing in Indian society.…",
+  "In this context, answer the following questions:",
+  "Even though the revolt failed in its objective of expelling the British from India, it created in Indian minds the idea of unity and sacrifice for the nat…",
+  "What positive changes have come about in the lives of Indian women since the reform movements of the 19th and 20th centuries?"
  ],
- "correctOption": 2,
- "answer": "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya Samaj are noteworthy among them. Let us read more about these movements and the reformers who initiated them.",
+ "correctOption": 3,
+ "answer": "What positive changes have come about in the lives of Indian women since the reform movements of the 19th and 20th centuries?",
  "image": "assets/history8/images/ch10/img_in_image_box_344_885_637_989.jpg",
  "caption": "REFORM MOVEMENTS: IMPACT",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig001-sa",
@@ -5045,12 +5045,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya Samaj are noteworthy among them. Let us read more about these movements and the reformers who initiated them.",
+ "question": "Study the figure on REFORM MOVEMENTS: IMPACT. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "What positive changes have come about in the lives of Indian women since the reform movements of the 19th and 20th centuries?",
  "image": "assets/history8/images/ch10/img_in_image_box_344_885_637_989.jpg",
  "caption": "REFORM MOVEMENTS: IMPACT",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig002-mcq",
@@ -5058,19 +5058,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on REFORM MOVEMENTS: IMPACT. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the artwork shown (REFORM MOVEMENTS: IMPACT). Which statement correctly identifies it and its historical importance?",
  "options": [
-  "Kandukuri Veeresalingam was a prominent social reformer from South India. He fought for the education and upliftment of women and widow rema…",
-  "• Many British administrators and thinkers were very critical of the traditional practices and attitudes towards women prevalent in Indian s…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "and quickly spread to different parts of the country. It was brought on by the following factors:"
+  "This made them realise that they shared common problems and that their goals were also the same.",
+  "The period of reform movements also witnessed considerable development in literature.",
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "The reform movements in western India were led by Mahadev Govind Ranade and R.G. Bhandarkar. In the 1860s, they were instrumental in establishing the Prar…"
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 1,
+ "answer": "The period of reform movements also witnessed considerable development in literature.",
  "image": "assets/history8/images/ch10/img_in_image_box_92_1135_1154_1624.jpg",
  "caption": "REFORM MOVEMENTS: IMPACT",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig002-sa",
@@ -5078,12 +5078,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify the artwork shown (REFORM MOVEMENTS: IMPACT). Who created it and why is it important in this chapter?",
+ "answer": "The period of reform movements also witnessed considerable development in literature.",
  "image": "assets/history8/images/ch10/img_in_image_box_92_1135_1154_1624.jpg",
  "caption": "REFORM MOVEMENTS: IMPACT",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig003-mcq",
@@ -5091,19 +5091,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Reform Movements in India under the British Rule. Which statement correctly describes what it illustrates?",
  "options": [
-  "Western India also witnessed a number of social reform movements. The Prarthana Samaj and the Arya Samaj are noteworthy among them. Let us r…",
-  "Many individuals and organisations began to study both classical and vernacular languages",
-  "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many in…",
-  "We aim to turn this MAO College into a University similar to that of Oxford or Cambridge. Like the churches of Oxford and Cambridge, there w…"
+  "These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+  "The period of reform movements also witnessed considerable development in literature. Various reform movements began in the 19th century.",
+  "With the establishment of British rule, the demand for using English as the language of administration and education also increased.",
+  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule."
  ],
- "correctOption": 2,
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "correctOption": 1,
+ "answer": "The period of reform movements also witnessed considerable development in literature. Various reform movements began in the 19th century.",
  "image": "assets/history8/images/ch10/img_in_image_box_921_682_1099_1041.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig003-sa",
@@ -5111,12 +5111,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "question": "Study the figure on Reform Movements in India under the British Rule. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The period of reform movements also witnessed considerable development in literature. Various reform movements began in the 19th century.",
  "image": "assets/history8/images/ch10/img_in_image_box_921_682_1099_1041.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig004-mcq",
@@ -5124,19 +5124,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on 11 The Rise of Indian Nationalism. Which statement correctly describes what it illustrates?",
  "options": [
-  "Realisation of unjust and unacceptable",
-  "With the establishment of British rule, the demand for using English as the language of administration and education also increased",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "These institutes were primarily responsible for producing a large section of the English-educated elite Indians"
+  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
+  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians.",
+  "#### the pictures that are related to the causes for the growth of nationalism in India.",
+  "## 11 The Rise of Indian Nationalism"
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 3,
+ "answer": "## 11 The Rise of Indian Nationalism",
  "image": "assets/history8/images/ch10/img_in_image_box_130_288_753_638.jpg",
- "caption": "History Alive!",
+ "caption": "11 The Rise of Indian Nationalism",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig004-sa",
@@ -5144,12 +5144,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Study the figure on 11 The Rise of Indian Nationalism. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "## 11 The Rise of Indian Nationalism",
  "image": "assets/history8/images/ch10/img_in_image_box_130_288_753_638.jpg",
- "caption": "History Alive!",
+ "caption": "11 The Rise of Indian Nationalism",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig005-mcq",
@@ -5157,19 +5157,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on During Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "In 1817, Hindu College was founded in Calcutta (now Kolkata)",
-  "Many individuals and organisations began to study both classical and vernacular languages",
-  "Another dedicated reformer was Jyotirao Govindrao Phule. He worked to improve the condition of women and the members of the untouchable cast…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…"
+  "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness.",
+  "At the end of this lesson, learners will be able to:",
+  "The first session of the Congress, held in Bombay, was presided over by W.C.",
+  "American War of Independence: a revolution fought during 1775-83 by 13 of Great Britain's North American colonies to win independence and form the United…"
  ],
- "correctOption": 3,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 1,
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch10/img_in_image_box_74_923_859_1433.jpg",
- "caption": "During Reading",
+ "caption": "Formation of the Indian National Congress in 1885 to organise public opinion",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig005-sa",
@@ -5177,12 +5177,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what During Reading represents and why it matters in this chapter.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "At the end of this lesson, learners will be able to:",
  "image": "assets/history8/images/ch10/img_in_image_box_74_923_859_1433.jpg",
- "caption": "During Reading",
+ "caption": "Formation of the Indian National Congress in 1885 to organise public opinion",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig006-mcq",
@@ -5190,19 +5190,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on the pictures that are related to the causes for the growth of nationalism in India.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on An illustration depicting the. Which statement correctly describes what it illustrates?",
  "options": [
-  "Name the rivers close to the centre of the Aligarh Movement.",
-  "and quickly spread to different parts of the country. It was brought on by the following factors:",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "In 1856, Elphinstone College was established in Bombay (now Mumbai)"
+  "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s…",
+  "## 11 The Rise of Indian Nationalism",
+  "Let us read about the factors that led to the rise of nationalism.",
+  "### FACTORS THAT LED TO THE RISE OF NATIONALISM"
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 0,
+ "answer": "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_100_183_442_474.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "An illustration depicting the",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig006-sa",
@@ -5210,12 +5210,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what the pictures that are related to the causes for the growth of nationalism in India. represents and why it matters in this chapter.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Study the figure on An illustration depicting the. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_100_183_442_474.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "An illustration depicting the",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig007-mcq",
@@ -5223,19 +5223,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on the pictures that are related to the causes for the growth of nationalism in India.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Reform Movements in India under the British Rule. Which statement correctly describes the event or scene shown?",
  "options": [
-  "(a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religious reformers in ninetee…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "Name the rivers close to the centre of the Aligarh Movement.",
-  "Another dedicated reformer was Jyotirao Govindrao Phule. He worked to improve the condition of women and the members of the untouchable cast…"
+  "These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+  "With the establishment of British rule, the demand for using English as the language of administration and education also increased.",
+  "Let us read about the factors that led to the rise of nationalism.",
+  "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s…"
  ],
- "correctOption": 1,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 3,
+ "answer": "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_547_189_736_478.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig007-sa",
@@ -5243,12 +5243,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify the historical event or scene shown in the figure (Reform Movements in India under the British Rule). Explain its causes and significance.",
+ "answer": "#### the pictures that are related to the causes for the growth of nationalism in India. The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_547_189_736_478.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig008-mcq",
@@ -5256,19 +5256,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on the pictures that are related to the causes for the growth of nationalism in India.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Reform Movements in India under the British Rule. Which statement correctly describes the event or scene shown?",
  "options": [
-  "▶ A painting from the 18th-century showing sati or widow-burning",
-  "have different paths to reach the one true God. He also said that service to mankind was service to God. One of his most famous disciples wa…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "We aim to turn this MAO College into a University similar to that of Oxford or Cambridge. Like the churches of Oxford and Cambridge, there w…"
+  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
+  "## 11 The Rise of Indian Nationalism",
+  "With the establishment of British rule, the demand for using English as the language of administration and education also increased.",
+  "These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule."
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 0,
+ "answer": "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_861_201_1045_469.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig008-sa",
@@ -5276,12 +5276,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify the historical event or scene shown in the figure (Reform Movements in India under the British Rule). Explain its causes and significance.",
+ "answer": "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
  "image": "assets/history8/images/ch10/img_in_image_box_861_201_1045_469.jpg",
- "caption": "the pictures that are related to the causes for the growth of nationalism in India.",
+ "caption": "Reform Movements in India under the British Rule",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig009-mcq",
@@ -5289,19 +5289,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Role of the Press and Literature. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Rabindranath Tagore. Which statement correctly describes this person and their role?",
  "options": [
-  "**Executive summary:** (a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religio…",
-  "**Must know** • (a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religious refo…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many in…"
+  "Nationalist literature, such as Bankim Chandra Chattopadhyay's Anandamath and Rabindranath Tagore's Ghare Baire, led to a cultural awakening of the people.",
+  "The Vernacular Press Act: It was enacted in 1878.",
+  "According to this Act, restrictions were placed on the Indian press and printing anything anti-British was forbidden.",
+  "The period of reform movements also witnessed considerable development in literature."
  ],
- "correctOption": 3,
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "correctOption": 0,
+ "answer": "Nationalist literature, such as Bankim Chandra Chattopadhyay's Anandamath and Rabindranath Tagore's Ghare Baire, led to a cultural awakening of the people.",
  "image": "assets/history8/images/ch10/img_in_image_box_809_376_1079_723.jpg",
- "caption": "Role of the Press and Literature",
+ "caption": "Rabindranath Tagore",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig009-sa",
@@ -5309,12 +5309,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "question": "Identify Rabindranath Tagore shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Nationalist literature, such as Bankim Chandra Chattopadhyay's Anandamath and Rabindranath Tagore's Ghare Baire, led to a cultural awakening of the people.",
  "image": "assets/history8/images/ch10/img_in_image_box_809_376_1079_723.jpg",
- "caption": "Role of the Press and Literature",
+ "caption": "Rabindranath Tagore",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig010-mcq",
@@ -5322,19 +5322,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Improvement in Transportation and Communication. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on Improvement in Transportation and Communication. Which statement correctly describes this UN body or agency?",
  "options": [
-  "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exp…",
-  "Name the rivers close to the centre of the Aligarh Movement.",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "and quickly spread to different parts of the country. It was brought on by the following factors:"
+  "The Victoria Terminus, known today as the Chhatrapati Shivaji Terminus, is a UNESCO World Heritage Site and one of the earliest railway stations of India.",
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "The reforms advocated by the Brahmo Samaj under the leadership of Raja Ram Mohan Roy were as follows: • Abolition of sati and child marriage • Rejection o…",
+  "Racial discrimination by the British was greatly resented by Indians."
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 0,
+ "answer": "The Victoria Terminus, known today as the Chhatrapati Shivaji Terminus, is a UNESCO World Heritage Site and one of the earliest railway stations of India.",
  "image": "assets/history8/images/ch10/img_in_image_box_46_638_569_1116.jpg",
  "caption": "Improvement in Transportation and Communication",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig010-sa",
@@ -5342,12 +5342,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Improvement in Transportation and Communication represents and why it matters in this chapter.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify the UN organ or agency shown (Improvement in Transportation and Communication) and explain its role in world affairs.",
+ "answer": "The Victoria Terminus, known today as the Chhatrapati Shivaji Terminus, is a UNESCO World Heritage Site and one of the earliest railway stations of India.",
  "image": "assets/history8/images/ch10/img_in_image_box_46_638_569_1116.jpg",
  "caption": "Improvement in Transportation and Communication",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig011-mcq",
@@ -5355,19 +5355,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Repressive Policies of Lord Lytton. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Lytton. Which statement correctly describes this person and their role?",
  "options": [
-  "(a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religious reformers in ninetee…",
-  "• Elphinstone College, Bombay • Besides education, Western models of social etiquette, dress and eating habits also began to be followed by …",
-  "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many in…",
-  "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exp…"
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "##### Repressive Policies of Lord Lytton Arms Act: Introduced by Lord Lytton in 1878, this act stated that in order to carry arms, an Indian required a li…",
+  "All these policies antagonised the Indians greatly and they decided to take concerted action against the British.",
+  "These racial policies antagonised many Indians, particularly the educated intelligentsia."
  ],
- "correctOption": 2,
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "correctOption": 1,
+ "answer": "##### Repressive Policies of Lord Lytton Arms Act: Introduced by Lord Lytton in 1878, this act stated that in order to carry arms, an Indian required a license; however, an European did not require a license for the same.",
  "image": "assets/history8/images/ch10/img_in_image_box_874_716_1122_1004.jpg",
- "caption": "Repressive Policies of Lord Lytton",
+ "caption": "Lord Lytton",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig011-sa",
@@ -5375,12 +5375,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "With the establishment of British rule, the demand for using English as the language of administration and education also increased. Many individuals and organisations began to study both classical and vernacular languages. In 1817, Hindu College was founded in Calcutta (now Kolkata). In 1856, Elphinstone College was established in Bombay (now Mumbai). These institutes were primarily responsible for producing a large section of the English-educated elite Indians.",
+ "question": "Identify Lord Lytton shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Repressive Policies of Lord Lytton Arms Act: Introduced by Lord Lytton in 1878, this act stated that in order to carry arms, an Indian required a license; however, an European did not require a license for the same.",
  "image": "assets/history8/images/ch10/img_in_image_box_874_716_1122_1004.jpg",
- "caption": "Repressive Policies of Lord Lytton",
+ "caption": "Lord Lytton",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig012-mcq",
@@ -5388,19 +5388,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Immediate Cause: The Ilbert Bill Controversy. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Ripon. Which statement correctly describes this person and their role?",
  "options": [
-  "These institutes were primarily responsible for producing a large section of the English-educated elite Indians",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "Bengal was one of the first regions to witness a series of reform movements. Let us read about some of the important reformers of this regio…",
-  "This critique led many Indians to take a closer look at their own society and to initiate a series of reform movements"
+  "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. ### Immediate Cause: The Ilbert Bill Controversy",
+  "Therefore, the bill had to be modified in favour of the European subjects.",
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "Ilbert, a Law Member of the Government of India."
  ],
- "correctOption": 1,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 0,
+ "answer": "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. ### Immediate Cause: The Ilbert Bill Controversy",
  "image": "assets/history8/images/ch10/img_in_image_box_242_966_479_1301.jpg",
- "caption": "Immediate Cause: The Ilbert Bill Controversy",
+ "caption": "Lord Ripon",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig012-sa",
@@ -5408,12 +5408,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify Lord Ripon shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. ### Immediate Cause: The Ilbert Bill Controversy",
  "image": "assets/history8/images/ch10/img_in_image_box_242_966_479_1301.jpg",
- "caption": "Immediate Cause: The Ilbert Bill Controversy",
+ "caption": "Lord Ripon",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig013-mcq",
@@ -5421,19 +5421,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Immediate Cause: The Ilbert Bill Controversy. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Surendranath Banerjee. Which statement correctly describes this person and their role?",
  "options": [
-  "(a) Raja Ram Mohan Roy, (b) Ishwar Chandra Vidyasagar and (c) Swami Vivekananda were some of the iconic socio-religious reformers in ninetee…",
-  "Swami Vivekananda was a disciple of Ramakrishna Paramahamsa. Ramakrishna's teachings were simple and attracted many followers. He preached t…",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "Raja Ram Mohan Roy was a well-read scholar. He believed that all religions preached similar fundamental truths. He condemned priests who exp…"
+  "This controversy convinced many Indians that they would have to fight for their rights.",
+  "In 1883, Surendranath Banerjee convened the Indian National Conference in Calcutta. It was a meeting of Indians from different parts of the country to dis…",
+  "Ilbert, a Law Member of the Government of India.",
+  "Therefore, the bill had to be modified in favour of the European subjects."
  ],
- "correctOption": 2,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 1,
+ "answer": "In 1883, Surendranath Banerjee convened the Indian National Conference in Calcutta. It was a meeting of Indians from different parts of the country to discuss their concerns about the British government.",
  "image": "assets/history8/images/ch10/img_in_image_box_776_930_1038_1247.jpg",
- "caption": "Immediate Cause: The Ilbert Bill Controversy",
+ "caption": "Surendranath Banerjee",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig013-sa",
@@ -5441,12 +5441,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify Surendranath Banerjee shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In 1883, Surendranath Banerjee convened the Indian National Conference in Calcutta. It was a meeting of Indians from different parts of the country to discuss their concerns about the British government.",
  "image": "assets/history8/images/ch10/img_in_image_box_776_930_1038_1247.jpg",
- "caption": "Immediate Cause: The Ilbert Bill Controversy",
+ "caption": "Surendranath Banerjee",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig014-mcq",
@@ -5454,19 +5454,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Immediate Cause: The Ilbert Bill Controversy. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Immediate Cause: The Ilbert Bill Controversy. Which statement correctly describes what it illustrates?",
  "options": [
-  "Locate the city that is associated with the birth of the Prarthana Samaj.",
-  "In 1856, Elphinstone College was established in Bombay (now Mumbai)",
-  "Many individuals and organisations began to study both classical and vernacular languages",
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…"
+  "Ilbert, a Law Member of the Government of India.",
+  "The bill proposed that senior Indian magistrates could preside over cases involving Europeans accused of crimes in India.",
+  "The Anglo-Indian officials and non-officials opposed the bill violently.",
+  "Hume's poem, An Old Man's Hope. This is an excerpt from A.O. This controversy convinced many Indians that they would have to fight for their rights."
  ],
  "correctOption": 3,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "answer": "Hume's poem, An Old Man's Hope. This is an excerpt from A.O. This controversy convinced many Indians that they would have to fight for their rights.",
  "image": "assets/history8/images/ch10/img_in_image_box_844_116_1063_369.jpg",
  "caption": "Immediate Cause: The Ilbert Bill Controversy",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig014-sa",
@@ -5474,12 +5474,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Study the figure on Immediate Cause: The Ilbert Bill Controversy. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Hume's poem, An Old Man's Hope. This is an excerpt from A.O. This controversy convinced many Indians that they would have to fight for their rights.",
  "image": "assets/history8/images/ch10/img_in_image_box_844_116_1063_369.jpg",
  "caption": "Immediate Cause: The Ilbert Bill Controversy",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch10-fig015-mcq",
@@ -5487,19 +5487,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Objectives of the Indian National Congress. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Objectives of the Indian National Congress. Which statement correctly describes the event or scene shown?",
  "options": [
-  "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious at…",
-  "Kandukuri Veeresalingam was a prominent social reformer from South India. He fought for the education and upliftment of women and widow rema…",
-  "• Elphinstone College, Bombay • Besides education, Western models of social etiquette, dress and eating habits also began to be followed by …",
-  "• With the establishment of British rule, the demand for using English as the language of administration and education also increased"
+  "Prominent national leaders who attended the session were Dadabhai Naoroji, Pherozeshah Mehta, Badruddin Tyabji and many others.",
+  "As nationalist feelings spread and resentment of the government's policies increased, many nationalists looked to the Congress to play an active role in e…",
+  "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness.",
+  "The Indian National Congress therefore provided Indians with a common platform to express their dissatisfaction with the British government."
  ],
- "correctOption": 0,
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "correctOption": 3,
+ "answer": "The Indian National Congress therefore provided Indians with a common platform to express their dissatisfaction with the British government.",
  "image": "assets/history8/images/ch10/img_in_image_box_33_1122_1190_1562.jpg",
  "caption": "Objectives of the Indian National Congress",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch10-fig015-sa",
@@ -5507,12 +5507,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch10",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "During the 19th century, many Indian reformers emerged and advocated deliberate changes in the traditional social, cultural and religious attitudes and customs to eliminate narrow-minded practices in Indian society. These Indian reformers were the leading participants in the social and cultural revival or renaissance, which took place in the 19th century. The renaissance began in Bengal",
+ "question": "Identify the historical event or scene shown in the figure (Objectives of the Indian National Congress). Explain its causes and significance.",
+ "answer": "The Indian National Congress therefore provided Indians with a common platform to express their dissatisfaction with the British government.",
  "image": "assets/history8/images/ch10/img_in_image_box_33_1122_1190_1562.jpg",
  "caption": "Objectives of the Indian National Congress",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig001-mcq",
@@ -5520,19 +5520,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Rise of Indian Nationalism. Which statement correctly describes what it illustrates?",
  "options": [
-  "The idea of belonging to one nation now gained ground",
-  "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta…",
-  "The British considered the Indians to be an inferior and uncivilised race.",
-  "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. Ilbert, a Law Member of the Government of India."
+  "Apart from the Congress, other communities in India also came together to form political organisations and promote nationalism.",
+  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the 19th century…",
+  "An illustration depicting the The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule.",
+  "The spread of Western education helped foster the spirit of nationalism."
  ],
  "correctOption": 1,
- "answer": "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta dynasty and the Mughal Empire. These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+ "answer": "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians. These feelings ultimately led to the birth of the Indian national movement.",
  "image": "assets/history8/images/ch11/img_in_image_box_905_495_1119_746.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The Rise of Indian Nationalism",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig001-sa",
@@ -5540,12 +5540,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta dynasty and the Mughal Empire. These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+ "question": "Study the figure on The Rise of Indian Nationalism. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians. These feelings ultimately led to the birth of the Indian national movement.",
  "image": "assets/history8/images/ch11/img_in_image_box_905_495_1119_746.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The Rise of Indian Nationalism",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig002-mcq",
@@ -5553,19 +5553,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 12 The Indian National Movement: 1885–1916. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on 12 The Indian National Movement: 1885–1916. Which statement correctly describes what it illustrates?",
  "options": [
-  "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed …",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "Martyrs of the revolt became household names and inspired many Indians, young and old, to join the nationalist movement",
-  "An illustration depicting the The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it fro…"
+  "## 12 The Indian National Movement: 1885–1916 Find out the names of the Presidents of the Indian National Congress from 1885 to 1900 CE.",
+  "Formation of the Indian National Congress in 1885 to organise public opinion",
+  "Martyrs of the revolt became household names and inspired many Indians, young and old, to join the nationalist movement.",
+  "When the Indian National Congress was founded in 1885, it was dominated by leaders who have been described as moderates."
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 0,
+ "answer": "## 12 The Indian National Movement: 1885–1916 Find out the names of the Presidents of the Indian National Congress from 1885 to 1900 CE.",
  "image": "assets/history8/images/ch11/img_in_image_box_137_236_1151_1521.jpg",
  "caption": "12 The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig002-sa",
@@ -5573,12 +5573,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the trend or sequence shown in the diagram.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Study the figure on 12 The Indian National Movement: 1885–1916. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "## 12 The Indian National Movement: 1885–1916 Find out the names of the Presidents of the Indian National Congress from 1885 to 1900 CE.",
  "image": "assets/history8/images/ch11/img_in_image_box_137_236_1151_1521.jpg",
  "caption": "12 The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig003-mcq",
@@ -5586,19 +5586,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Gopal Krishna Gokhale. Which statement correctly describes this person and their role?",
  "options": [
-  "Formation of the Indian National Congress in 1885 to organise public opinion",
-  "Martyrs of the revolt became household names and inspired many Indians, young and old, to join the nationalist movement",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the…"
+  "##### initiative and self-direction: research",
+  "Even though the revolt failed in its objective of expelling the British from India, it created in Indian minds the idea of unity and sacrifice for the nat…",
+  "The press played a very important role in arousing nationalist feelings.",
+  "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians."
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 3,
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_106_181_305_435.jpg",
- "caption": "Before Reading",
+ "caption": "Gopal Krishna Gokhale",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig003-sa",
@@ -5606,12 +5606,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify Gopal Krishna Gokhale shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_106_181_305_435.jpg",
- "caption": "Before Reading",
+ "caption": "Gopal Krishna Gokhale",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig004-mcq",
@@ -5619,19 +5619,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Ripon. Which statement correctly describes this person and their role?",
  "options": [
-  "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed …",
-  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The British had originally imposed Western education in order to create a class of clerks for their administration."
+  "The British government willingly accepted the requests of the deputation, and Lord Minto",
+  "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "The British Viceroy of India, Lord Curzon, was responsible for partitioning Bengal."
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 1,
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_477_190_672_433.jpg",
- "caption": "Before Reading",
+ "caption": "Lord Ripon",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig004-sa",
@@ -5639,12 +5639,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify Lord Ripon shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_477_190_672_433.jpg",
- "caption": "Before Reading",
+ "caption": "Lord Ripon",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig005-mcq",
@@ -5652,19 +5652,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Before Reading. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Pherozeshah Mehta. Which statement correctly describes this person and their role?",
  "options": [
-  "An illustration depicting the The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it fro…",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The British considered the Indians to be an inferior and uncivilised race.",
-  "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed …"
+  "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
+  "The British had originally imposed Western education in order to create a class of clerks for their administration.",
+  "It became the language of communication among educated people across the country.",
+  "While the British succeeded in their objectives, Western education brought to Indian minds the modern ideas of freedom, liberty and fraternity."
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 0,
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_841_194_1036_438.jpg",
- "caption": "Before Reading",
+ "caption": "Pherozeshah Mehta",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig005-sa",
@@ -5672,12 +5672,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify Pherozeshah Mehta shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
  "image": "assets/history8/images/ch11/img_in_image_box_841_194_1036_438.jpg",
- "caption": "Before Reading",
+ "caption": "Pherozeshah Mehta",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig006-mcq",
@@ -5685,19 +5685,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Leaders of the Moderates. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Leaders of the Moderates. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians",
-  "In 1913, Rabindranath Tagore became the first non-European to win the Nobel Prize for Literature.",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "A bill, known as the Ilbert Bill, was introduced in 1883 by C.P. Ilbert, a Law Member of the Government of India."
+  "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness. They discussed British policies and the evils…",
+  "A photograph showing the delegates of the first Indian National Congress at Bombay in 1885 When the Indian National Congress was founded in 1885, it was d…",
+  "The moderates presented their requirements through resolutions and petitions.",
+  "The moderates did not believe in the use of violence."
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 1,
+ "answer": "A photograph showing the delegates of the first Indian National Congress at Bombay in 1885 When the Indian National Congress was founded in 1885, it was dominated by leaders who have been described as moderates.",
  "image": "assets/history8/images/ch11/img_in_image_box_578_527_1099_863.jpg",
  "caption": "Leaders of the Moderates",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig006-sa",
@@ -5705,12 +5705,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify the historical event or scene shown in the figure (Leaders of the Moderates). Explain its causes and significance.",
+ "answer": "A photograph showing the delegates of the first Indian National Congress at Bombay in 1885 When the Indian National Congress was founded in 1885, it was dominated by leaders who have been described as moderates.",
  "image": "assets/history8/images/ch11/img_in_image_box_578_527_1099_863.jpg",
  "caption": "Leaders of the Moderates",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig007-mcq",
@@ -5718,19 +5718,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lord Curzon. Which statement correctly describes this person and their role?",
  "options": [
-  "The term ‘nationalism’ basically signifies a great love for one’s motherland and the desire to liberate it from foreign rule. The end of the…",
-  "In 1913, Rabindranath Tagore became the first non-European to win the Nobel Prize for Literature.",
-  "Though Indians spoke different languages in their own regions, they often used English to express their views and exchange ideas with those …",
-  "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness. They discussed British policies…"
+  "Lord Dalhousie and other British administrators took an active interest in establishing an effective system of transport and communication.",
+  "The British Viceroy of India, Lord Curzon, was responsible for partitioning Bengal. The official reason given by Curzon was that Bengal was a very large p…",
+  "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed its rich herit…",
+  "It was named after the Viceroy, Lord Minto and the Secretary of State, John Morley."
  ],
- "correctOption": 3,
- "answer": "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness. They discussed British policies and the evils of the British Raj.",
+ "correctOption": 1,
+ "answer": "The British Viceroy of India, Lord Curzon, was responsible for partitioning Bengal. The official reason given by Curzon was that Bengal was a very large province to be administered effectively.",
  "image": "assets/history8/images/ch11/img_in_image_box_32_1056_213_1369.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Lord Curzon",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig007-sa",
@@ -5738,12 +5738,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Leaders of the nationalist movement used the vernacular press to spread modern ideas and national awareness. They discussed British policies and the evils of the British Raj.",
+ "question": "Identify Lord Curzon shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The British Viceroy of India, Lord Curzon, was responsible for partitioning Bengal. The official reason given by Curzon was that Bengal was a very large province to be administered effectively.",
  "image": "assets/history8/images/ch11/img_in_image_box_32_1056_213_1369.jpg",
- "caption": "Connecting Past with Present",
+ "caption": "Lord Curzon",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig008-mcq",
@@ -5751,19 +5751,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on initiative and self-direction: research. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Curzon Hall. Which statement correctly describes this person and their role?",
  "options": [
-  "Martyrs of the revolt became household names and inspired many Indians, young and old, to join the nationalist movement",
-  "In 1913, Rabindranath Tagore became the first non-European to win the Nobel Prize for Literature.",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians"
+  "The official reason given by Curzon was that Bengal was a very large province to be administered effectively.",
+  "Indians once again discovered the richness of Vedic philosophy, the wisdom of rulers such as Chandragupta Maurya, and the glory of the Gupta dynasty and t…",
+  "These rediscoveries helped Indians develop a sense of pride and self-confidence to demand freedom from the British rule.",
+  "##### initiative and self-direction: research Now Although the partition of Bengal was stalled temporarily, Dhaka became the capital of East Pakistan afte…"
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 3,
+ "answer": "##### initiative and self-direction: research Now Although the partition of Bengal was stalled temporarily, Dhaka became the capital of East Pakistan after the Partition of India in 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_876_1007_1151_1228.jpg",
- "caption": "initiative and self-direction: research",
+ "caption": "Curzon Hall",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig008-sa",
@@ -5771,12 +5771,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what initiative and self-direction: research represents and why it matters in this chapter.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify Curzon Hall shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### initiative and self-direction: research Now Although the partition of Bengal was stalled temporarily, Dhaka became the capital of East Pakistan after the Partition of India in 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_876_1007_1151_1228.jpg",
- "caption": "initiative and self-direction: research",
+ "caption": "Curzon Hall",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig009-mcq",
@@ -5784,19 +5784,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on • information literacy: comparative analysis. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to • information literacy: comparative analysis. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Even though the revolt failed in its objective of expelling the British from India, it created in Indian minds the idea of unity and sacrifi…",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "Together with Indians, European scholars such as Alexander Cunningham, William Jones and James Prinsep researched India's past and revealed …",
-  "• The idea of belonging to one nation now gained ground"
+  "The spread of Western education helped foster the spirit of nationalism.",
+  "It was fought mostly on the Liaodong Peninsula (a peninsula in Liaoning Province of Northeast China), Mukden (now known as Shenyang, located in northeast…",
+  "##### • information literacy: comparative analysis Hemchandra Kanungo, were imprisoned in the Andaman and Nicobar Islands.",
+  "### THE SWADESHI AND BOYCOTT MOVEMENTS"
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 2,
+ "answer": "##### • information literacy: comparative analysis Hemchandra Kanungo, were imprisoned in the Andaman and Nicobar Islands.",
  "image": "assets/history8/images/ch11/img_in_image_box_822_1030_1116_1504.jpg",
  "caption": "• information literacy: comparative analysis",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig009-sa",
@@ -5804,12 +5804,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify the historical event or scene shown in the figure (• information literacy: comparative analysis). Explain its causes and significance.",
+ "answer": "##### • information literacy: comparative analysis Hemchandra Kanungo, were imprisoned in the Andaman and Nicobar Islands.",
  "image": "assets/history8/images/ch11/img_in_image_box_822_1030_1116_1504.jpg",
  "caption": "• information literacy: comparative analysis",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig010-mcq",
@@ -5817,19 +5817,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on FORMATION OF THE ALL INDIA MUSLIM LEAGUE. Which statement correctly describes what it illustrates?",
  "options": [
-  "Even though the revolt failed in its objective of expelling the British from India, it created in Indian minds the idea of unity and sacrifi…",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "Let us read about the factors that led to the rise of nationalism.",
-  "Lord Ripon, who succeeded Lord Lytton as the Viceroy, tried to address some of the grievances of the Indians."
+  "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947.",
+  "Formation of the Indian National Congress in 1885 to organise public opinion",
+  "In 1906, a Muslim deputation met Viceroy Lord Minto.",
+  "Nationalist literature, such as Bankim Chandra Chattopadhyay's Anandamath and Rabindranath Tagore's Ghare Baire, led to a cultural awakening of the people."
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 0,
+ "answer": "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_307_1131_585_1232.jpg",
- "caption": "Did You Know?",
+ "caption": "FORMATION OF THE ALL INDIA MUSLIM LEAGUE",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig010-sa",
@@ -5837,12 +5837,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Study the figure on FORMATION OF THE ALL INDIA MUSLIM LEAGUE. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_307_1131_585_1232.jpg",
- "caption": "Did You Know?",
+ "caption": "FORMATION OF THE ALL INDIA MUSLIM LEAGUE",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig011-mcq",
@@ -5850,19 +5850,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Did You Know?. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Mohammed Ali. Which statement correctly describes this person and their role?",
  "options": [
-  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The British considered the Indians to be an inferior and uncivilised race.",
-  "These feelings ultimately led to the birth of the Indian national movement"
+  "In 1906, a Muslim deputation met Viceroy Lord Minto.",
+  "The formation of the All India Muslim League was welcomed by the British. He became the first Governor-General of Pakistan on 14 August 1947.",
+  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians.",
+  "Formation of the Indian National Congress in 1885 to organise public opinion"
  ],
  "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "answer": "The formation of the All India Muslim League was welcomed by the British. He became the first Governor-General of Pakistan on 14 August 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_370_1219_562_1459.jpg",
- "caption": "Did You Know?",
+ "caption": "Mohammed Ali",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig011-sa",
@@ -5870,12 +5870,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Identify Mohammed Ali shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The formation of the All India Muslim League was welcomed by the British. He became the first Governor-General of Pakistan on 14 August 1947.",
  "image": "assets/history8/images/ch11/img_in_image_box_370_1219_562_1459.jpg",
- "caption": "Did You Know?",
+ "caption": "Mohammed Ali",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch11-fig012-mcq",
@@ -5883,19 +5883,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Aims of the All India Muslim League. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Leaders of the Muslim League. Which statement correctly describes what it illustrates?",
  "options": [
-  "The end of the 19th century and the beginning of the 20th century witnessed the rise of nationalist feelings among many Indians",
-  "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian …",
-  "The press played a very important role in arousing nationalist feelings.",
-  "The British considered the Indians to be an inferior and uncivilised race."
+  "##### Leaders of the Moderates",
+  "These leaders were teachers, lawyers, journalists and industrialists.",
+  "In 1906, a Muslim deputation met Viceroy Lord Minto.",
+  "The aims of the All India Muslim League were to: ### Aims of the All India Muslim League The formation of the All India Muslim League was welcomed by the…"
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "correctOption": 3,
+ "answer": "The aims of the All India Muslim League were to: ### Aims of the All India Muslim League The formation of the All India Muslim League was welcomed by the British.",
  "image": "assets/history8/images/ch11/img_in_image_box_588_617_1095_914.jpg",
- "caption": "Aims of the All India Muslim League",
+ "caption": "Leaders of the Muslim League",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch11-fig012-sa",
@@ -5903,12 +5903,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch11",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "**Executive summary:** Formation of the Indian National Congress in 1885 to organise public opinion **Must know** • Formation of the Indian National Congress in 1885 to organise public opinion Formation of the Indian National Congress in 1885 to organise public opinion",
+ "question": "Study the figure on Leaders of the Muslim League. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The aims of the All India Muslim League were to: ### Aims of the All India Muslim League The formation of the All India Muslim League was welcomed by the British.",
  "image": "assets/history8/images/ch11/img_in_image_box_588_617_1095_914.jpg",
- "caption": "Aims of the All India Muslim League",
+ "caption": "Leaders of the Muslim League",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig001-mcq",
@@ -5916,19 +5916,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IV. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Indian National Movement: 1885–1916. Which statement correctly describes what it illustrates?",
  "options": [
-  "They believed in the benevolent nature of British rule",
-  "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers.",
-  "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A g…",
-  "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians"
+  "The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity.",
+  "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
+  "'Another important event in the history of the Indian national movement was the foundation of the Home Rule League'.",
+  "According to this pact, Gandhi agreed to suspend the Civil Disobedience Movement and attend the Second Round Table Conference."
  ],
  "correctOption": 2,
- "answer": "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A group of Congress members who were impatient with the moderate methods of protest emerged as new leaders of the Congress. Often referred to as the radical nationalists, they played a more dominant role in the Congress activities from 1905 onwards. The radical nationalists felt that the moderate approach had proved ineffective and that more aggressive methods were necessary.",
+ "answer": "'Another important event in the history of the Indian national movement was the foundation of the Home Rule League'.",
  "image": "assets/history8/images/ch12/img_in_image_box_783_730_1147_1025.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig001-sa",
@@ -5936,12 +5936,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A group of Congress members who were impatient with the moderate methods of protest emerged as new leaders of the Congress. Often referred to as the radical nationalists, they played a more dominant role in the Congress activities from 1905 onwards. The radical nationalists felt that the moderate approach had proved ineffective and that more aggressive methods were necessary.",
+ "question": "Study the figure on The Indian National Movement: 1885–1916. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "'Another important event in the history of the Indian national movement was the foundation of the Home Rule League'.",
  "image": "assets/history8/images/ch12/img_in_image_box_783_730_1147_1025.jpg",
- "caption": "IV. Study the given picture. Answer the questions that follow.",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig002-mcq",
@@ -5949,19 +5949,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Life of Pandita Ramabai. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Life of Pandita Ramabai. Which statement correctly describes what it illustrates?",
  "options": [
-  "The British government willingly accepted the requests of the deputation, and Lord Minto",
-  "The radicals felt that the economic interest of the British government to monopolise the Indian markets had harmed Indian industries and art…",
-  "They were willing to make sacrifices, even when it involved the use of violence, if necessary.",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…"
+  "Make a PowerPoint presentation on how her life digressed from the norms of the time in the following areas:",
+  "People attacked railway lines and mangled the tracks, disrupting the network lines.",
+  "Research about the life that Pandita Ramabai lived. Pandita Ramabai was one of the 10 registered lady delegates who took part in the Congress session of 1…",
+  "Strikes, hartals, boycott of government offices, schools and colleges brought life to a standstill."
  ],
- "correctOption": 3,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
+ "correctOption": 2,
+ "answer": "Research about the life that Pandita Ramabai lived. Pandita Ramabai was one of the 10 registered lady delegates who took part in the Congress session of 1889.",
  "image": "assets/history8/images/ch12/img_in_image_box_817_226_1100_544.jpg",
  "caption": "Life of Pandita Ramabai",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig002-sa",
@@ -5969,12 +5969,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
+ "question": "Study the figure on Life of Pandita Ramabai. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Research about the life that Pandita Ramabai lived. Pandita Ramabai was one of the 10 registered lady delegates who took part in the Congress session of 1889.",
  "image": "assets/history8/images/ch12/img_in_image_box_817_226_1100_544.jpg",
  "caption": "Life of Pandita Ramabai",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig003-mcq",
@@ -5982,19 +5982,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on History Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Indian National Movement: 1885–1916. Which statement correctly describes what it illustrates?",
  "options": [
-  "They believed that the British rule had done more harm to India than good.",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Tick (√) the pictures of the members of the Indian National Congress.",
-  "• Gopal Krishna Gokhale • The establishment of the Indian National Congress marked the beginning of an organised political movement by India…"
+  "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers.",
+  "Gandhi returned empty-handed and relaunched the Civil Disobedience Movement.",
+  "The Quit India Movement was crucial in uniting the people of India.",
+  "## Mahatma Gandhi and the Indian National Movement: 1917 – 1947 Features Brahmo Samaj Prarthana Samaj Reform movement in Founded by Established in the yea…"
  ],
- "correctOption": 1,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_179_307_749_702.jpg",
- "caption": "History Alive!",
+ "correctOption": 3,
+ "answer": "## Mahatma Gandhi and the Indian National Movement: 1917 – 1947 Features Brahmo Samaj Prarthana Samaj Reform movement in Founded by Established in the year Campaigned for",
+ "image": "assets/history8/images/ch12/img_in_image_box_437_1027_704_1360.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig003-sa",
@@ -6002,12 +6002,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what History Alive! represents and why it matters in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_179_307_749_702.jpg",
- "caption": "History Alive!",
+ "question": "Study the figure on The Indian National Movement: 1885–1916. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "## Mahatma Gandhi and the Indian National Movement: 1917 – 1947 Features Brahmo Samaj Prarthana Samaj Reform movement in Founded by Established in the year Campaigned for",
+ "image": "assets/history8/images/ch12/img_in_image_box_437_1027_704_1360.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig004-mcq",
@@ -6015,19 +6015,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Dandi March (Salt Satyagraha). Which statement correctly describes the event or scene shown?",
  "options": [
-  "They were willing to make sacrifices, even when it involved the use of violence, if necessary.",
-  "• Gopal Krishna Gokhale • The establishment of the Indian National Congress marked the beginning of an organised political movement by India…",
-  "Tick (√) the pictures of the members of the Indian National Congress.",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…"
+  "Lord Irwin, on his part, agreed to release all prisoners and permit people to manufacture salt.",
+  "### Features of the Quit India Movement",
+  "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi.",
+  "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers."
  ],
- "correctOption": 3,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_230_986_1186_1484.jpg",
- "caption": "Visual Mapping",
+ "correctOption": 2,
+ "answer": "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi.",
+ "image": "assets/history8/images/ch12/img_in_image_box_179_307_749_702.jpg",
+ "caption": "Dandi March (Salt Satyagraha)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig004-sa",
@@ -6035,12 +6035,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_230_986_1186_1484.jpg",
- "caption": "Visual Mapping",
+ "question": "Identify the historical event or scene shown in the figure (Dandi March (Salt Satyagraha)). Explain its causes and significance.",
+ "answer": "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi.",
+ "image": "assets/history8/images/ch12/img_in_image_box_179_307_749_702.jpg",
+ "caption": "Dandi March (Salt Satyagraha)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig005-mcq",
@@ -6048,19 +6048,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the Indian National Movement during 1917–1947.. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "They believed that the British rule had done more harm to India than good.",
-  "The popular Tick (√) the pictures of the members of the Indian National Congress",
-  "The radicals felt that the economic interest of the British government to monopolise the Indian markets had harmed Indian industries and art…"
+  "This is a photograph of a protest by Indians during the Non-cooperation Movement.",
+  "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+  "Even without the leaders, protest marches, demonstrations and strikes were",
+  "Unemployed men standing in a queue outside a soup kitchen during the Great Depression in Chicago"
  ],
- "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_65_175_301_392.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "correctOption": 1,
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_230_986_1186_1484.jpg",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig005-sa",
@@ -6068,12 +6068,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_65_175_301_392.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_230_986_1186_1484.jpg",
+ "caption": "During Reading",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig006-mcq",
@@ -6081,19 +6081,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the Indian National Movement during 1917–1947.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the map in the figure. Which statement correctly describes what it shows?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "The radicals had no faith in the British sense of justice and fair play. They felt that the British had no honest intentions of working for …",
-  "The radical method of approach included aggressive and organised political agitation, which involved the masses.",
-  "Apart from the Congress, other communities in India also came together to form political organisations and promote nationalism. In 1906, a M…"
+  "The Congress resolved to launch the Quit India Movement in August 1942.",
+  "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+  "### INDIAN NATIONAL ARMY AND SUBHAS CHANDRA BOSE",
+  "Due to the differences in their beliefs and methods, a split occurred between the moderates and the radicals at Surat session of the Indian National Congr…"
  ],
- "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_349_160_553_376.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "correctOption": 1,
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_65_175_301_392.jpg",
+ "caption": "Mahatma Gandhi and",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig006-sa",
@@ -6101,12 +6101,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Tick (√) the pictures associated with the Indian National Movement during 1917–1947. represents and why it matters in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_349_160_553_376.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "question": "Study the map. Describe the region or information shown and explain its importance in this chapter.",
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_65_175_301_392.jpg",
+ "caption": "Mahatma Gandhi and",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig007-mcq",
@@ -6114,19 +6114,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the Indian National Movement during 1917–1947.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Indian National Movement: 1885–1916. Which statement correctly describes what it illustrates?",
  "options": [
-  "They believed that the British rule had done more harm to India than good.",
-  "■ Due to the spread of a national consciousness among a wider section of society, people began to believe that they belonged to one nation.",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Due to their efforts, more Indians became aware of the concepts of freedom, secularism and democracy."
+  "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+  "The Civil Disobedience Movement became an all-India mass movement.",
+  "The Congress resolved to launch the Quit India Movement in August 1942.",
+  "His Dandi March marked the beginning of the Civil Disobedience Movement."
  ],
- "correctOption": 2,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_611_145_866_367.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "correctOption": 0,
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_349_160_553_376.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig007-sa",
@@ -6134,12 +6134,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Tick (√) the pictures associated with the Indian National Movement during 1917–1947. represents and why it matters in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_611_145_866_367.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "question": "Study the figure on The Indian National Movement: 1885–1916. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "image": "assets/history8/images/ch12/img_in_image_box_349_160_553_376.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig008-mcq",
@@ -6147,19 +6147,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Tick (√) the pictures associated with the Indian National Movement during 1917–1947.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on The Indian National Movement: 1885–1916. Which statement correctly describes what it illustrates?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Due to their efforts, more Indians became aware of the concepts of freedom, secularism and democracy.",
-  "They felt that the Indians were still not ready to govern themselves",
-  "The popular Tick (√) the pictures of the members of the Indian National Congress"
+  "Unemployed men standing in a queue outside a soup kitchen during the Great Depression in Chicago",
+  "Tick (√) the pictures of the members of the Indian National Congress.",
+  "But even before the movement could begin, all the leaders, including Gandhi, were arrested and the Congress was banned.",
+  "The Swadeshi Movement urged people to use only those goods that were produced by Indian manufacturers."
  ],
- "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_899_138_1167_353.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "correctOption": 1,
+ "answer": "Tick (√) the pictures of the members of the Indian National Congress.",
+ "image": "assets/history8/images/ch12/img_in_image_box_611_145_866_367.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig008-sa",
@@ -6167,12 +6167,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Tick (√) the pictures associated with the Indian National Movement during 1917–1947. represents and why it matters in this chapter.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_899_138_1167_353.jpg",
- "caption": "Tick (√) the pictures associated with the Indian National Movement during 1917–1947.",
+ "question": "Study the figure on The Indian National Movement: 1885–1916. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Tick (√) the pictures of the members of the Indian National Congress.",
+ "image": "assets/history8/images/ch12/img_in_image_box_611_145_866_367.jpg",
+ "caption": "The Indian National Movement: 1885–1916",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig009-mcq",
@@ -6180,19 +6180,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Satyagraha. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Members of the Cabinet. Which statement correctly describes what it illustrates?",
  "options": [
-  "They believed that the British rule had done more harm to India than good.",
-  "Following the partition of Bengal, the radical nationalists launched the Swadeshi and Boycott movements against the British.",
-  "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947. He became th…",
-  "They were willing to make sacrifices, even when it involved the use of violence, if necessary."
+  "### Features of the Quit India Movement",
+  "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
+  "Despite the criticisms levelled at the moderates, they achieved the following: • ■ Due to the spread of a national consciousness among a wider section of…",
+  "Tick (√) the pictures of the members of the Indian National Congress."
  ],
- "correctOption": 2,
- "answer": "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947. He became the first Governor-General of Pakistan on 14 August 1947. He is officially known in Pakistan as Quaid-e-Azam.",
- "image": "assets/history8/images/ch12/img_in_image_box_81_593_345_954.jpg",
- "caption": "Satyagraha",
+ "correctOption": 3,
+ "answer": "Tick (√) the pictures of the members of the Indian National Congress.",
+ "image": "assets/history8/images/ch12/img_in_image_box_899_138_1167_353.jpg",
+ "caption": "Members of the Cabinet",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig009-sa",
@@ -6200,12 +6200,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Mohammed Ali Jinnah joined the All India Muslim League in 1913. He served as a leader of the All India Muslim League till 1947. He became the first Governor-General of Pakistan on 14 August 1947. He is officially known in Pakistan as Quaid-e-Azam.",
- "image": "assets/history8/images/ch12/img_in_image_box_81_593_345_954.jpg",
- "caption": "Satyagraha",
+ "question": "Study the figure on Members of the Cabinet. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Tick (√) the pictures of the members of the Indian National Congress.",
+ "image": "assets/history8/images/ch12/img_in_image_box_899_138_1167_353.jpg",
+ "caption": "Members of the Cabinet",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig010-mcq",
@@ -6213,19 +6213,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Satyagraha. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Sardar Vallabhbhai Patel. Which statement correctly describes this person and their role?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "The formation of the All India Muslim League was welcomed by the British. The government felt that separate political organisations for the …",
-  "Gopal Krishna Gokhale The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians t…",
-  "Due to the differences in their beliefs and methods, a split occurred between the moderates and the radicals at Surat session of the Indian …"
+  "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+  "At this point, on 6 April 1919, Gandhi called for a day of national fasting, meetings and suspension of work as an act of satyagraha to protest against th…",
+  "■ Gandhi's first experiment with satyagraha in India was at Champaran (1917) in Bihar.",
+  "With these early experiments in satyagraha, Gandhi won over popular leaders of the national movement."
  ],
  "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_348_595_615_956.jpg",
- "caption": "Satyagraha",
+ "answer": "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+ "image": "assets/history8/images/ch12/img_in_image_box_81_593_345_954.jpg",
+ "caption": "Sardar Vallabhbhai Patel",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig010-sa",
@@ -6233,12 +6233,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_348_595_615_956.jpg",
- "caption": "Satyagraha",
+ "question": "Identify Sardar Vallabhbhai Patel shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+ "image": "assets/history8/images/ch12/img_in_image_box_81_593_345_954.jpg",
+ "caption": "Sardar Vallabhbhai Patel",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig011-mcq",
@@ -6246,19 +6246,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Jallianwala Bagh Massacre. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Rajendra Prasad. Which statement correctly describes this person and their role?",
  "options": [
-  "They were willing to make sacrifices, even when it involved the use of violence, if necessary.",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Following the partition of Bengal, the radical nationalists launched the Swadeshi and Boycott movements against the British.",
-  "The moderates have been criticised by many as they did not achieve many of their objectives. They have also been criticised as a ‘microscopi…"
+  "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+  "With these early experiments in satyagraha, Gandhi won over popular leaders of the national movement.",
+  "■ Gandhi's first experiment with satyagraha in India was at Champaran (1917) in Bihar.",
+  "At this point, on 6 April 1919, Gandhi called for a day of national fasting, meetings and suspension of work as an act of satyagraha to protest against th…"
  ],
- "correctOption": 1,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_22_1177_505_1546.jpg",
- "caption": "Jallianwala Bagh Massacre",
+ "correctOption": 0,
+ "answer": "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+ "image": "assets/history8/images/ch12/img_in_image_box_348_595_615_956.jpg",
+ "caption": "Rajendra Prasad",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig011-sa",
@@ -6266,12 +6266,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_22_1177_505_1546.jpg",
- "caption": "Jallianwala Bagh Massacre",
+ "question": "Identify Rajendra Prasad shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "In Bihar, Dr Rajendra Prasad, and in Gujarat, Sardar Vallabhbhai Patel, became enthusiastic and staunch supporters of Gandhi's methods of protest.",
+ "image": "assets/history8/images/ch12/img_in_image_box_348_595_615_956.jpg",
+ "caption": "Rajendra Prasad",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig012-mcq",
@@ -6279,19 +6279,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Jallianwala Bagh Massacre. Which statement correctly describes this person and their role?",
  "options": [
-  "• ##### Leaders of the Moderates • Many of the moderate leaders came from educated middle class background, well-versed in Western thoughts …",
-  "The radical nationalists broadened the social base of the movement by involving the masses in their activities.",
-  "The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians",
-  "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appealed to Indians to refrain from sending t…"
+  "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920. ### Jallianwala Bagh Massacre",
+  "At the Conference, there was no discussion of granting the rights of self-governance to Indians.",
+  "This massacre of innocent people was condemned by all Indians.",
+  "He surrounded the Bagh with his troops, blocking its only exit, and opened fire on the gathering."
  ],
- "correctOption": 3,
- "answer": "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appealed to Indians to refrain from sending their children to British schools and colleges.",
- "image": "assets/history8/images/ch12/img_in_image_box_826_1146_1138_1233.jpg",
- "caption": "Analysing Primary Sources",
+ "correctOption": 0,
+ "answer": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920. ### Jallianwala Bagh Massacre",
+ "image": "assets/history8/images/ch12/img_in_image_box_22_1177_505_1546.jpg",
+ "caption": "Jallianwala Bagh Massacre",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig012-sa",
@@ -6299,12 +6299,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appealed to Indians to refrain from sending their children to British schools and colleges.",
- "image": "assets/history8/images/ch12/img_in_image_box_826_1146_1138_1233.jpg",
- "caption": "Analysing Primary Sources",
+ "question": "Identify Jallianwala Bagh Massacre shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920. ### Jallianwala Bagh Massacre",
+ "image": "assets/history8/images/ch12/img_in_image_box_22_1177_505_1546.jpg",
+ "caption": "Jallianwala Bagh Massacre",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig013-mcq",
@@ -6312,19 +6312,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Dandi March. Which statement correctly describes the event or scene shown?",
  "options": [
-  "They believed in the benevolent nature of British rule",
-  "These leaders were teachers, lawyers, journalists and industrialists",
-  "• Gopal Krishna Gokhale • The establishment of the Indian National Congress marked the beginning of an organised political movement by India…",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…"
+  "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi.",
+  "He marched from the Sabarmati Ashram to Dandi—a village on the coast of Gujarat—to break these laws.",
+  "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. Gandhi picking up a handful of salt at the end of Dandi March",
+  "On reaching Dandi, Gandhi picked up a handful of salt from the beach to break the salt laws."
  ],
- "correctOption": 3,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_763_1246_1136_1519.jpg",
- "caption": "Analysing Primary Sources",
+ "correctOption": 2,
+ "answer": "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. Gandhi picking up a handful of salt at the end of Dandi March",
+ "image": "assets/history8/images/ch12/img_in_image_box_826_1146_1138_1233.jpg",
+ "caption": "Dandi March",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig013-sa",
@@ -6332,12 +6332,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_763_1246_1136_1519.jpg",
- "caption": "Analysing Primary Sources",
+ "question": "Identify the historical event or scene shown in the figure (Dandi March). Explain its causes and significance.",
+ "answer": "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. Gandhi picking up a handful of salt at the end of Dandi March",
+ "image": "assets/history8/images/ch12/img_in_image_box_826_1146_1138_1233.jpg",
+ "caption": "Dandi March",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig014-mcq",
@@ -6345,19 +6345,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Non-cooperation Movement. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Gopal Krishna Gokhale The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians t…",
-  "Due to the differences in their beliefs and methods, a split occurred between the moderates and the radicals at Surat session of the Indian …",
-  "The moderates have been criticised by many as they did not achieve many of their objectives. They have also been criticised as a ‘microscopi…",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…"
+  "With these early experiments in satyagraha, Gandhi won over popular leaders of the national movement.",
+  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with…",
+  "Features Brahmo Samaj Prarthana Samaj Reform movement in Founded by Established in the year Campaigned for",
+  "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. This is a photograph of a protest by Indians during the Non-coopera…"
  ],
  "correctOption": 3,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_100_250_502_818.jpg",
- "caption": "Analysing Primary Sources",
+ "answer": "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. This is a photograph of a protest by Indians during the Non-cooperation Movement.",
+ "image": "assets/history8/images/ch12/img_in_image_box_763_1246_1136_1519.jpg",
+ "caption": "Non-cooperation Movement",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig014-sa",
@@ -6365,12 +6365,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_100_250_502_818.jpg",
- "caption": "Analysing Primary Sources",
+ "question": "Identify the historical event or scene shown in the figure (Non-cooperation Movement). Explain its causes and significance.",
+ "answer": "Gandhi undertook the historic and famous Dandi March to protest against the salt laws. This is a photograph of a protest by Indians during the Non-cooperation Movement.",
+ "image": "assets/history8/images/ch12/img_in_image_box_763_1246_1136_1519.jpg",
+ "caption": "Non-cooperation Movement",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig015-mcq",
@@ -6378,19 +6378,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Cripps Mission. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Dandi March (Salt Satyagraha). Which statement correctly describes the event or scene shown?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "• Gopal Krishna Gokhale • The establishment of the Indian National Congress marked the beginning of an organised political movement by India…",
-  "They were willing to make sacrifices, even when it involved the use of violence, if necessary.",
-  "They demanded complete independence or Swaraj and not self-government within the British Empire."
+  "Gandhi wrote, ‘Indian culture...",
+  "When differences arose between him and Gandhi, Bose resigned from the presidentship of the Congress.",
+  "Important leaders, including Jawaharlal Nehru and Gandhi, were arrested, thousands of Indians were imprisoned and",
+  "On reaching Dandi, Gandhi picked up a handful of salt from the beach to break the salt laws. Realising that a dialogue with the Indian leaders had become…"
  ],
- "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_341_676_611_990.jpg",
- "caption": "Cripps Mission",
+ "correctOption": 3,
+ "answer": "On reaching Dandi, Gandhi picked up a handful of salt from the beach to break the salt laws. Realising that a dialogue with the Indian leaders had become necessary, the Viceroy Lord Irwin signed a pact with Gandhi, known as the Gandhi-Irwin Pact.",
+ "image": "assets/history8/images/ch12/img_in_image_box_100_250_502_818.jpg",
+ "caption": "Gandhi picking up a handful of salt at the end of Dandi March",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig015-sa",
@@ -6398,12 +6398,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_341_676_611_990.jpg",
- "caption": "Cripps Mission",
+ "question": "Identify the historical event or scene shown in the figure (Dandi March (Salt Satyagraha)). Explain its causes and significance.",
+ "answer": "On reaching Dandi, Gandhi picked up a handful of salt from the beach to break the salt laws. Realising that a dialogue with the Indian leaders had become necessary, the Viceroy Lord Irwin signed a pact with Gandhi, known as the Gandhi-Irwin Pact.",
+ "image": "assets/history8/images/ch12/img_in_image_box_100_250_502_818.jpg",
+ "caption": "Gandhi picking up a handful of salt at the end of Dandi March",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig016-mcq",
@@ -6411,19 +6411,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Great Depression. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Sir Stafford Cripps. Which statement correctly describes this person and their role?",
  "options": [
-  "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A g…",
-  "They demanded complete independence or Swaraj and not self-government within the British Empire.",
-  "They believed that the British rule had done more harm to India than good.",
-  "Due to their efforts, more Indians became aware of the concepts of freedom, secularism and democracy."
+  "This trio was popularly known as Lal-Bal-Pal.",
+  "Gandhi rejected the proposals of the Cripps Mission by calling it a 'post-dated cheque'.",
+  "The popular Tick (√) the pictures of the members of the Indian National Congress.",
+  "The Cripps Mission, led by Sir Stafford Cripps, was sent in 1942 to resolve the deadlock. But even before the movement could begin, all the leaders, inclu…"
  ],
- "correctOption": 0,
- "answer": "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A group of Congress members who were impatient with the moderate methods of protest emerged as new leaders of the Congress. Often referred to as the radical nationalists, they played a more dominant role in the Congress activities from 1905 onwards. The radical nationalists felt that the moderate approach had proved ineffective and that more aggressive methods were necessary.",
- "image": "assets/history8/images/ch12/img_in_image_box_683_1046_1134_1524.jpg",
- "caption": "The Great Depression",
+ "correctOption": 3,
+ "answer": "The Cripps Mission, led by Sir Stafford Cripps, was sent in 1942 to resolve the deadlock. But even before the movement could begin, all the leaders, including Gandhi, were arrested and the Congress was banned.",
+ "image": "assets/history8/images/ch12/img_in_image_box_341_676_611_990.jpg",
+ "caption": "Sir Stafford Cripps",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig016-sa",
@@ -6431,12 +6431,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The failure of the moderates to coax the British government into making real policy changes created dissatisfaction within the Congress. A group of Congress members who were impatient with the moderate methods of protest emerged as new leaders of the Congress. Often referred to as the radical nationalists, they played a more dominant role in the Congress activities from 1905 onwards. The radical nationalists felt that the moderate approach had proved ineffective and that more aggressive methods were necessary.",
- "image": "assets/history8/images/ch12/img_in_image_box_683_1046_1134_1524.jpg",
- "caption": "The Great Depression",
+ "question": "Identify Sir Stafford Cripps shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The Cripps Mission, led by Sir Stafford Cripps, was sent in 1942 to resolve the deadlock. But even before the movement could begin, all the leaders, including Gandhi, were arrested and the Congress was banned.",
+ "image": "assets/history8/images/ch12/img_in_image_box_341_676_611_990.jpg",
+ "caption": "Sir Stafford Cripps",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig017-mcq",
@@ -6444,19 +6444,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Great Depression. Which statement correctly describes this person and their role?",
  "options": [
-  "Gopal Krishna Gokhale The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians t…",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Tick (√) the pictures of the members of the Indian National Congress.",
-  "They felt that the Indians were still not ready to govern themselves"
+  "### became so great that the radicals were expelled from the Congress.' In this context, answer the following questions:",
+  "The Depression caused large-scale unemployment, loss of production and poverty across the globe.",
+  "Unemployed men standing in a queue outside a soup kitchen during the Great Depression in Chicago The Great Depression, a worldwide economic slump, started…",
+  "It was the longest and worst economic depression in the history of the industrialised world."
  ],
- "correctOption": 1,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_68_1200_271_1449.jpg",
- "caption": "Connecting Past with Present",
+ "correctOption": 2,
+ "answer": "Unemployed men standing in a queue outside a soup kitchen during the Great Depression in Chicago The Great Depression, a worldwide economic slump, started in 1929 and lasted until about 1939.",
+ "image": "assets/history8/images/ch12/img_in_image_box_683_1046_1134_1524.jpg",
+ "caption": "The Great Depression",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig017-sa",
@@ -6464,12 +6464,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_68_1200_271_1449.jpg",
- "caption": "Connecting Past with Present",
+ "question": "Identify The Great Depression shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Unemployed men standing in a queue outside a soup kitchen during the Great Depression in Chicago The Great Depression, a worldwide economic slump, started in 1929 and lasted until about 1939.",
+ "image": "assets/history8/images/ch12/img_in_image_box_683_1046_1134_1524.jpg",
+ "caption": "The Great Depression",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig018-mcq",
@@ -6477,19 +6477,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Connecting Past with Present. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The radicals felt that the economic interest of the British government to monopolise the Indian markets had harmed Indian industries and art…",
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "The Boycott Movement asked people to abstain from purchasing British or foreign goods. It also appealed to Indians to refrain from sending t…",
-  "These leaders were teachers, lawyers, journalists and industrialists"
+  "The meeting was peaceful and the people were unarmed.",
+  "The British government willingly accepted the requests of the deputation, and Lord Minto",
+  "#### Connecting Past with Present At present, it is a famous patriotic song, sung all over",
+  "The Cripps Mission, led by Sir Stafford Cripps, was sent in 1942 to resolve the deadlock."
  ],
- "correctOption": 0,
- "answer": "The radicals felt that the economic interest of the British government to monopolise the Indian markets had harmed Indian industries and artisans. Thus, they promoted the use of goods made in India to revive the declining Indian economy.",
- "image": "assets/history8/images/ch12/img_in_image_box_850_1078_1129_1325.jpg",
+ "correctOption": 2,
+ "answer": "#### Connecting Past with Present At present, it is a famous patriotic song, sung all over",
+ "image": "assets/history8/images/ch12/img_in_image_box_68_1200_271_1449.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig018-sa",
@@ -6497,12 +6497,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Connecting Past with Present represents and why it matters in this chapter.",
- "answer": "The radicals felt that the economic interest of the British government to monopolise the Indian markets had harmed Indian industries and artisans. Thus, they promoted the use of goods made in India to revive the declining Indian economy.",
- "image": "assets/history8/images/ch12/img_in_image_box_850_1078_1129_1325.jpg",
+ "question": "Identify the historical event or scene shown in the figure (Connecting Past with Present). Explain its causes and significance.",
+ "answer": "#### Connecting Past with Present At present, it is a famous patriotic song, sung all over",
+ "image": "assets/history8/images/ch12/img_in_image_box_68_1200_271_1449.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch12-fig019-mcq",
@@ -6510,19 +6510,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to A regiment of the Indian Army. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissat…",
-  "Apart from the Congress, other communities in India also came together to form political organisations and promote nationalism. In 1906, a M…",
-  "■ Due to the spread of a national consciousness among a wider section of society, people began to believe that they belonged to one nation.",
-  "They felt that the Indians were still not ready to govern themselves"
+  "After becoming the leader of the Azad Hind Fauj, or the Indian National Army (INA), in 1943, Netaji took an oath to free India.",
+  "At present, it is a famous patriotic song, sung all over",
+  "### INDIAN NATIONAL ARMY AND SUBHAS CHANDRA BOSE",
+  "The INA along with the Japanese army crossed many territories including Burma to finally reach India."
  ],
  "correctOption": 0,
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_96_42_700_418.jpg",
- "caption": "Connecting Past with Present",
+ "answer": "After becoming the leader of the Azad Hind Fauj, or the Indian National Army (INA), in 1943, Netaji took an oath to free India.",
+ "image": "assets/history8/images/ch12/img_in_image_box_850_1078_1129_1325.jpg",
+ "caption": "A regiment of the Indian Army",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch12-fig019-sa",
@@ -6530,12 +6530,45 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch12",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The establishment of the Indian National Congress marked the beginning of an organised political movement by Indians to express their dissatisfaction with the nature of British rule in India. The Indian National Congress, with delegates from different parts of the country, became the mouthpiece for the politically aware Indians.",
- "image": "assets/history8/images/ch12/img_in_image_box_96_42_700_418.jpg",
- "caption": "Connecting Past with Present",
+ "question": "Identify the historical event or scene shown in the figure (A regiment of the Indian Army). Explain its causes and significance.",
+ "answer": "After becoming the leader of the Azad Hind Fauj, or the Indian National Army (INA), in 1943, Netaji took an oath to free India.",
+ "image": "assets/history8/images/ch12/img_in_image_box_850_1078_1129_1325.jpg",
+ "caption": "A regiment of the Indian Army",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
+},
+{
+ "id": "histch12-fig020-mcq",
+ "q_id": "histch12-fig020-mcq",
+ "topicId": "hist-ch12",
+ "type": "mcq",
+ "subtopic": "Diagram-based Questions",
+ "question": "Study the figure related to Netaji and members of the Azad Hind Fauj. Which statement correctly describes the event or scene shown?",
+ "options": [
+  "Netaji's inspiring, patriotic speeches motivated the soldiers of the Azad Hind Fauj to lay down their lives fighting to free the country.",
+  "A group of Congress members who were impati **Must know** • The failure of the moderates to coax the British government into making real policy changes cr…",
+  "In July 1943, he took the salute of the INA and was greeted as Netaji or the 'leader'.",
+  "A group of Congress members who were impatient with the moderate methods of protest emerged as new leaders of the Congress."
+ ],
+ "correctOption": 0,
+ "answer": "Netaji's inspiring, patriotic speeches motivated the soldiers of the Azad Hind Fauj to lay down their lives fighting to free the country.",
+ "image": "assets/history8/images/ch12/img_in_image_box_96_42_700_418.jpg",
+ "caption": "Netaji and members of the Azad Hind Fauj",
+ "source": "hist_diagram",
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
+},
+{
+ "id": "histch12-fig020-sa",
+ "q_id": "histch12-fig020-sa",
+ "topicId": "hist-ch12",
+ "type": "short_answer",
+ "subtopic": "Diagram-based Questions",
+ "question": "Identify the historical event or scene shown in the figure (Netaji and members of the Azad Hind Fauj). Explain its causes and significance.",
+ "answer": "Netaji's inspiring, patriotic speeches motivated the soldiers of the Azad Hind Fauj to lay down their lives fighting to free the country.",
+ "image": "assets/history8/images/ch12/img_in_image_box_96_42_700_418.jpg",
+ "caption": "Netaji and members of the Azad Hind Fauj",
+ "source": "hist_diagram",
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig001-mcq",
@@ -6543,19 +6576,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Cabinet Mission Plan (1946). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Cabinet Mission Plan (1946). Which statement correctly describes the event or scene shown?",
  "options": [
-  "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses o…",
-  "Sarojini Naidu during Members of the Cabinet Mission to India meeting The Second Round Table Conference M ohandas Karamchand Gandhi, popular…",
-  "outline the early campaigns at Kheda, Champaran and Ahmedabad",
-  "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress…"
+  "However, 6 months must not lapse between two sessions.",
+  "The clauses of the Act were as follows: • To carry out arrests without a warrant • To conduct the trials of certain political cases without a jury • Impri…",
+  "The Cabinet Mission was constituted at the initiative of Clement Attlee to plan the transfer of power from the British government to the Indian leadership.",
+  "Thus, after several meetings with leaders of the Congress and the Muslim League, it was finally decided by the Mountbatten Plan that India would be divide…"
  ],
- "correctOption": 1,
- "answer": "Sarojini Naidu during Members of the Cabinet Mission to India meeting The Second Round Table Conference M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 2,
+ "answer": "The Cabinet Mission was constituted at the initiative of Clement Attlee to plan the transfer of power from the British government to the Indian leadership.",
  "image": "assets/history8/images/ch13/img_in_image_box_551_1052_1125_1542.jpg",
  "caption": "Cabinet Mission Plan (1946)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig001-sa",
@@ -6563,12 +6596,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Sarojini Naidu during Members of the Cabinet Mission to India meeting The Second Round Table Conference M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Identify the historical event or scene shown in the figure (Cabinet Mission Plan (1946)). Explain its causes and significance.",
+ "answer": "The Cabinet Mission was constituted at the initiative of Clement Attlee to plan the transfer of power from the British government to the Indian leadership.",
  "image": "assets/history8/images/ch13/img_in_image_box_551_1052_1125_1542.jpg",
  "caption": "Cabinet Mission Plan (1946)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig002-mcq",
@@ -6576,19 +6609,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Debate SKILLS And Discussion. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Debate SKILLS And Discussion. Which statement correctly describes the event or scene shown?",
  "options": [
-  "• During Gandhi's stay in South Africa, he evolved the concept of satyagraha (devotion to the truth), based on the principles of truth and n…",
-  "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in th…",
-  "##### Learning Outcomes At the end of this lesson, learners will be able to: assess the Gandhian Era (1917-1947) of the Indian National Move…",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …"
+  "In the second stage, voting on the bill takes place after the debate.",
+  "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress. At the Confe…",
+  "A bill is a draft of a proposed law presented to the Parliament for discussion.",
+  "### Debate SKILLS And Discussion"
  ],
- "correctOption": 1,
- "answer": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity. When the British declared war against the Axis powers on India's behalf, Bose organised a mass protest in Calcutta. He was imprisoned and then kept under house arrest, from where he escaped to Berlin and later to Japan.",
+ "correctOption": 3,
+ "answer": "### Debate SKILLS And Discussion",
  "image": "assets/history8/images/ch13/img_in_image_box_65_1109_1157_1500.jpg",
  "caption": "Debate SKILLS And Discussion",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig002-sa",
@@ -6596,12 +6629,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity. When the British declared war against the Axis powers on India's behalf, Bose organised a mass protest in Calcutta. He was imprisoned and then kept under house arrest, from where he escaped to Berlin and later to Japan.",
+ "question": "Identify the historical event or scene shown in the figure (Debate SKILLS And Discussion). Explain its causes and significance.",
+ "answer": "### Debate SKILLS And Discussion",
  "image": "assets/history8/images/ch13/img_in_image_box_65_1109_1157_1500.jpg",
  "caption": "Debate SKILLS And Discussion",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig003-mcq",
@@ -6609,19 +6642,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on V. Study the given picture. Answer the questions that follow.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Mahatma Gandhi and the Indian National Movement: 1917–1947. Which statement correctly describes what it illustrates?",
  "options": [
-  "discuss the causes, withdrawal and impact of the Non-cooperation Movement",
-  "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this m…",
-  "**Executive summary:** In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi",
-  "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi"
+  "The causes for the launch of this movement are explained below.",
+  "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member to represent In…",
+  "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the Indians. The fai…",
+  "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi. His Dandi March marked the beginnin…"
  ],
- "correctOption": 1,
- "answer": "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this movement are discussed as follows.",
+ "correctOption": 3,
+ "answer": "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi. His Dandi March marked the beginning of the Civil Disobedience Movement.",
  "image": "assets/history8/images/ch13/img_in_image_box_903_549_1117_836.jpg",
- "caption": "V. Study the given picture. Answer the questions that follow.",
+ "caption": "Mahatma Gandhi and the Indian National Movement: 1917–1947",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig003-sa",
@@ -6629,12 +6662,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Identify the person or event shown and explain its historical significance.",
- "answer": "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this movement are discussed as follows.",
+ "question": "Study the figure on Mahatma Gandhi and the Indian National Movement: 1917–1947. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi. His Dandi March marked the beginning of the Civil Disobedience Movement.",
  "image": "assets/history8/images/ch13/img_in_image_box_903_549_1117_836.jpg",
- "caption": "V. Study the given picture. Answer the questions that follow.",
+ "caption": "Mahatma Gandhi and the Indian National Movement: 1917–1947",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig004-mcq",
@@ -6642,19 +6675,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 14 Organs of the Indian Government. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to 14 Organs of the Indian Government. Which statement correctly describes the event or scene shown?",
  "options": [
-  "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses o…",
-  "##### Government of India Act, 1935",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …",
-  "• outline the early campaigns at Kheda, Champaran and Ahmedabad"
+  "There are three organs of the government of India. ## 14 Organs of the Indian Government",
+  "The government, unable to control the situation, used severely repressive methods.",
+  "Legislature is a part of the government, which makes and amends laws.",
+  "The Non-cooperation Movement was one of the earliest attempts by Gandhi to bring together all Indians and force the British to grant self-government to In…"
  ],
- "correctOption": 2,
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "correctOption": 0,
+ "answer": "There are three organs of the government of India. ## 14 Organs of the Indian Government",
  "image": "assets/history8/images/ch13/img_in_image_box_121_174_329_428.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig004-sa",
@@ -6662,12 +6695,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "question": "Identify the historical event or scene shown in the figure (14 Organs of the Indian Government). Explain its causes and significance.",
+ "answer": "There are three organs of the government of India. ## 14 Organs of the Indian Government",
  "image": "assets/history8/images/ch13/img_in_image_box_121_174_329_428.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig005-mcq",
@@ -6675,19 +6708,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 14 Organs of the Indian Government. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to 14 Organs of the Indian Government. Which statement correctly describes the event or scene shown?",
  "options": [
-  "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member t…",
-  "• outline the early campaigns at Kheda, Champaran and Ahmedabad",
-  "discuss the causes, withdrawal and impact of the Non-cooperation Movement",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …"
+  "##### Government of India Act, 1935",
+  "The government, unable to control the situation, used severely repressive methods.",
+  "The Cabinet Mission was constituted at the initiative of Clement Attlee to plan the transfer of power from the British government to the Indian leadership.",
+  "There are three organs of the government of India. ## 14 Organs of the Indian Government"
  ],
  "correctOption": 3,
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "answer": "There are three organs of the government of India. ## 14 Organs of the Indian Government",
  "image": "assets/history8/images/ch13/img_in_image_box_474_171_686_426.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig005-sa",
@@ -6695,12 +6728,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "question": "Identify the historical event or scene shown in the figure (14 Organs of the Indian Government). Explain its causes and significance.",
+ "answer": "There are three organs of the government of India. ## 14 Organs of the Indian Government",
  "image": "assets/history8/images/ch13/img_in_image_box_474_171_686_426.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig006-mcq",
@@ -6708,19 +6741,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on 14 Organs of the Indian Government. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on 14 Organs of the Indian Government. Which statement correctly describes what it illustrates?",
  "options": [
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …",
-  "outline the early campaigns at Kheda, Champaran and Ahmedabad",
-  "**Executive summary:** In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi",
-  "• outline the early campaigns at Kheda, Champaran and Ahmedabad"
+  "Gandhi lost all faith in the British government's claim to fair play and justice.",
+  "There are two sets of government in India—one at the Centre and the other at the state level.",
+  "India is a parliamentary democracy, where the supreme power resides with the people of the country. In India, power is distributed between the central and…",
+  "He urged people not to believe or cooperate with such a government."
  ],
- "correctOption": 0,
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "correctOption": 2,
+ "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. In India, power is distributed between the central and the state governments.",
  "image": "assets/history8/images/ch13/img_in_image_box_826_169_1037_419.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig006-sa",
@@ -6728,12 +6761,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "question": "Study the figure on 14 Organs of the Indian Government. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. In India, power is distributed between the central and the state governments.",
  "image": "assets/history8/images/ch13/img_in_image_box_826_169_1037_419.jpg",
  "caption": "14 Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig007-mcq",
@@ -6741,19 +6774,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE UNION PARLIAMENT. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure of THE UNION PARLIAMENT. Which statement correctly describes this organ or institution?",
  "options": [
-  "• During Gandhi's stay in South Africa, he evolved the concept of satyagraha (devotion to the truth), based on the principles of truth and n…",
-  "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age …",
-  "People reacted spontaneously. Even without the leaders, protest marches, demonstrations and strikes were",
-  "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress…"
+  "Union List: It includes subjects, such as banking and defence, on which only the Centre can legislate.",
+  "A bill is introduced in either House of the Parliament, if it is an ordinary bill.",
+  "The President is elected indirectly by an electoral college consisting of the Members of Parliament (MPs), and the Members of Legislative Assemblies (MLAs…",
+  "Union List State List Concurrent List Defence Public health, hospitals, dispensaries Education Banking Agriculture Factories and trade unions Railways Pri…"
  ],
  "correctOption": 3,
- "answer": "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress. At the Conference, there was no discussion of granting the rights of self-governance to Indians. Gandhi returned empty-handed and relaunched the Civil Disobedience Movement.",
+ "answer": "Union List State List Concurrent List Defence Public health, hospitals, dispensaries Education Banking Agriculture Factories and trade unions Railways Prisons Electricity Post and telegraph Water supply Prevention of cruelty to animals Airways and shipping Markets and fairs Forests Foreign affairs Land tenures and relations between landlords and tenants Population control",
  "image": "assets/history8/images/ch13/img_in_image_box_627_1324_1188_1501.jpg",
  "caption": "THE UNION PARLIAMENT",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig007-sa",
@@ -6761,12 +6794,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "The Second Round Table Conference was held between September and December 1931. Gandhi was chosen as the sole representative of the Congress. At the Conference, there was no discussion of granting the rights of self-governance to Indians. Gandhi returned empty-handed and relaunched the Civil Disobedience Movement.",
+ "question": "Name the organ of government shown (THE UNION PARLIAMENT) and explain its main functions in India's democracy.",
+ "answer": "Union List State List Concurrent List Defence Public health, hospitals, dispensaries Education Banking Agriculture Factories and trade unions Railways Prisons Electricity Post and telegraph Water supply Prevention of cruelty to animals Airways and shipping Markets and fairs Forests Foreign affairs Land tenures and relations between landlords and tenants Population control",
  "image": "assets/history8/images/ch13/img_in_image_box_627_1324_1188_1501.jpg",
  "caption": "THE UNION PARLIAMENT",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig008-mcq",
@@ -6774,19 +6807,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Manner of Election. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on People standing in a queue to vote. Which statement correctly describes what it illustrates?",
  "options": [
-  "His Dandi March marked the beginning of the Civil Disobedience Movement",
-  "In South Africa, Gandhi was shocked and enraged at the racial discrimination and oppression meted out by the British colonists to the non-Wh…",
-  "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses o…",
-  "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member t…"
+  "Union List: It includes subjects, such as banking and defence, on which only the Centre can legislate.",
+  "In India, every citizen who is above the age of 18 years has been given the right to vote without being discriminated on the basis of caste, religion and…",
+  "She/He can be re-elected for another term.",
+  "##### Government of India Act, 1935"
  ],
- "correctOption": 3,
- "answer": "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member to represent India. The recommendations of the Simon Commission were also not acceptable to the national leaders.",
+ "correctOption": 1,
+ "answer": "In India, every citizen who is above the age of 18 years has been given the right to vote without being discriminated on the basis of caste, religion and sex, under Universal Adult Suffrage.",
  "image": "assets/history8/images/ch13/img_in_image_box_670_383_1166_712.jpg",
- "caption": "Manner of Election",
+ "caption": "People standing in a queue to vote",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig008-sa",
@@ -6794,12 +6827,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member to represent India. The recommendations of the Simon Commission were also not acceptable to the national leaders.",
+ "question": "Study the figure on People standing in a queue to vote. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "In India, every citizen who is above the age of 18 years has been given the right to vote without being discriminated on the basis of caste, religion and sex, under Universal Adult Suffrage.",
  "image": "assets/history8/images/ch13/img_in_image_box_670_383_1166_712.jpg",
- "caption": "Manner of Election",
+ "caption": "People standing in a queue to vote",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig009-mcq",
@@ -6807,19 +6840,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what it illustrates?",
  "options": [
-  "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…",
-  "• discuss the causes, withdrawal and impact of the Non-cooperation Movement",
-  "What do you observe in the picture?"
+  "He urged people not to believe or cooperate with such a government.",
+  "With effect from 15 August 1947, the British Government would cease to have any responsibility for the Government of India.",
+  "Must be qualified to become a member of the Lok Sabha",
+  "### Connecting Past with Present"
  ],
- "correctOption": 1,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 3,
+ "answer": "### Connecting Past with Present",
  "image": "assets/history8/images/ch13/img_in_image_box_25_131_266_490.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig009-sa",
@@ -6827,12 +6860,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Study the figure on Connecting Past with Present. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### Connecting Past with Present",
  "image": "assets/history8/images/ch13/img_in_image_box_25_131_266_490.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig010-mcq",
@@ -6840,19 +6873,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Connecting Past with Present. Which statement correctly describes what it illustrates?",
  "options": [
-  "Sarojini Naidu during Members of the Cabinet Mission to India meeting The Second Round Table Conference M ohandas Karamchand Gandhi, popular…",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…",
-  "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in th…",
-  "analyse the events leading to Indian independence and partition"
+  "In South Africa, Gandhi was shocked and enraged at the racial discrimination and oppression meted out by the British colonists to the non-White people.",
+  "### Connecting Past with Present",
+  "Must be qualified to become a member of the Lok Sabha",
+  "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this movement are di…"
  ],
  "correctOption": 1,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "answer": "### Connecting Past with Present",
  "image": "assets/history8/images/ch13/img_in_image_box_878_217_1070_411.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig010-sa",
@@ -6860,12 +6893,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Study the figure on Connecting Past with Present. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### Connecting Past with Present",
  "image": "assets/history8/images/ch13/img_in_image_box_878_217_1070_411.jpg",
  "caption": "Connecting Past with Present",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig011-mcq",
@@ -6873,19 +6906,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure of Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain. Which statement correctly describes this organ or institution?",
  "options": [
-  "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this m…",
-  "The Rowlatt Act was passed in March 1919. It was also known as the Black Act as it curtailed the freedom of the Indian people. The clauses o…",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…",
-  "evaluate the causes of the Civil Disobedience Movement"
+  "She/He exercises executive powers either directly or through officers.",
+  "Judiciary—interprets the laws and checks the working of the legislature and executive",
+  "Radhakrishnan Dr Zakir Husain ### THE EXECUTIVE STRUCTURE IN INDIA",
+  "At the Centre, the Executive comprises the President, the Vice President, the Prime Minister and the Council of Ministers."
  ],
  "correctOption": 2,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "answer": "Radhakrishnan Dr Zakir Husain ### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_253_1032_396_1209.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig011-sa",
@@ -6893,12 +6926,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Name the organ of government shown (Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain) and explain its main functions in India's democracy.",
+ "answer": "Radhakrishnan Dr Zakir Husain ### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_253_1032_396_1209.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig012-mcq",
@@ -6906,19 +6939,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure of THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes this organ or institution?",
  "options": [
-  "##### Government of India Act, 1935",
-  "**Executive summary:** In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…",
-  "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age …"
+  "### THE EXECUTIVE STRUCTURE IN INDIA",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "Judiciary—interprets the laws and checks the working of the legislature and executive",
+  "She/He exercises executive powers either directly or through officers."
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 0,
+ "answer": "### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_405_1036_549_1217.jpg",
  "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig012-sa",
@@ -6926,12 +6959,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Name the organ of government shown (THE EXECUTIVE STRUCTURE IN INDIA) and explain its main functions in India's democracy.",
+ "answer": "### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_405_1036_549_1217.jpg",
  "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig013-mcq",
@@ -6939,19 +6972,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure of V.V. Giri. Which statement correctly describes this organ or institution?",
  "options": [
-  "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age …",
-  "People reacted spontaneously. Even without the leaders, protest marches, demonstrations and strikes were",
-  "evaluate the causes of the Civil Disobedience Movement",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…"
+  "She/He exercises executive powers either directly or through officers.",
+  "### THE EXECUTIVE STRUCTURE IN INDIA",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "Judiciary—interprets the laws and checks the working of the legislature and executive"
  ],
- "correctOption": 3,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 1,
+ "answer": "### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_558_1038_703_1223.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "V.V. Giri",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig013-sa",
@@ -6959,12 +6992,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Name the organ of government shown (V.V. Giri) and explain its main functions in India's democracy.",
+ "answer": "### THE EXECUTIVE STRUCTURE IN INDIA",
  "image": "assets/history8/images/ch13/img_in_image_box_558_1038_703_1223.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "V.V. Giri",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig014-mcq",
@@ -6972,19 +7005,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Dr Fakhruddin Ali Ahmed. Which statement correctly describes this person and their role?",
  "options": [
-  "evaluate the causes of the Civil Disobedience Movement",
-  "In 1927, a commission headed by Sir John Simon was sent by the British government to review its functioning in India. It came to be known as…",
-  "At the end of this lesson, learners will be able to:",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…"
+  "She/He exercises executive powers either directly or through officers.",
+  "Former Presidents of India",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "At the Centre, the Executive comprises the President, the Vice President, the Prime Minister and the Council of Ministers."
  ],
- "correctOption": 3,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 1,
+ "answer": "Former Presidents of India",
  "image": "assets/history8/images/ch13/img_in_image_box_711_1038_856_1224.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Fakhruddin Ali Ahmed",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig014-sa",
@@ -6992,12 +7025,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Identify Dr Fakhruddin Ali Ahmed shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Former Presidents of India",
  "image": "assets/history8/images/ch13/img_in_image_box_711_1038_856_1224.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Fakhruddin Ali Ahmed",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig015-mcq",
@@ -7005,19 +7038,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE EXECUTIVE STRUCTURE IN INDIA. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Dr Shankar Dayal. Which statement correctly describes this person and their role?",
  "options": [
-  "At the end of this lesson, learners will be able to:",
-  "In 1927, a commission headed by Sir John Simon was sent by the British government to review its functioning in India. It came to be known as…",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…"
+  "At the Centre, the Executive comprises the President, the Vice President, the Prime Minister and the Council of Ministers.",
+  "Judiciary—interprets the laws and checks the working of the legislature and executive",
+  "She/He exercises executive powers either directly or through officers.",
+  "The figure relates to Dr Shankar Dayal in this chapter."
  ],
  "correctOption": 3,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "answer": "The figure relates to Dr Shankar Dayal in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_304_1300_448_1478.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Shankar Dayal",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig015-sa",
@@ -7025,12 +7058,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Identify Dr Shankar Dayal shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The figure relates to Dr Shankar Dayal in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_304_1300_448_1478.jpg",
- "caption": "THE EXECUTIVE STRUCTURE IN INDIA",
+ "caption": "Dr Shankar Dayal",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig016-mcq",
@@ -7038,19 +7071,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Dr A.P.J. Abdul Kalam. Which statement correctly describes what it illustrates?",
  "options": [
-  "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age …",
-  "outline the early campaigns at Kheda, Champaran and Ahmedabad",
-  "After his early education in India, he went to England to study law",
-  "His Dandi March marked the beginning of the Civil Disobedienc **Must know** • In 1930, Mahatma Gandhi, along with some of his followers, mar…"
+  "There are two sets of government in India—one at the Centre and the other at the state level.",
+  "A session means a period during which the House meets to conduct business.",
+  "In South Africa, Gandhi was shocked and enraged at the racial discrimination and oppression meted out by the British colonists to the non-White people.",
+  "The meeting was peaceful and the people were unarmed."
  ],
  "correctOption": 0,
- "answer": "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age and aggressively fought for Swaraj. He became the Congress President twice—1938 and 1939. When differences arose between him and Gandhi, Bose resigned from the presidentship of the Congress.",
+ "answer": "There are two sets of government in India—one at the Centre and the other at the state level.",
  "image": "assets/history8/images/ch13/img_in_image_box_648_1305_793_1481.jpg",
- "caption": "Textbook figure",
+ "caption": "Dr A.P.J. Abdul Kalam",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig016-sa",
@@ -7058,12 +7091,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what the figure shown represents and why it matters in this chapter.",
- "answer": "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age and aggressively fought for Swaraj. He became the Congress President twice—1938 and 1939. When differences arose between him and Gandhi, Bose resigned from the presidentship of the Congress.",
+ "question": "Study the figure on Dr A.P.J. Abdul Kalam. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "There are two sets of government in India—one at the Centre and the other at the state level.",
  "image": "assets/history8/images/ch13/img_in_image_box_648_1305_793_1481.jpg",
- "caption": "Textbook figure",
+ "caption": "Dr A.P.J. Abdul Kalam",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig017-mcq",
@@ -7071,19 +7104,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Pratibha Devisingh Patil. Which statement correctly describes this person and their role?",
  "options": [
-  "• discuss the causes, withdrawal and impact of the Non-cooperation Movement",
-  "His Dandi March marked the beginning of the Civil Disobedience Movement",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …",
-  "His Dandi March marked the beginning of the Civil Disobedienc **Must know** • In 1930, Mahatma Gandhi, along with some of his followers, mar…"
+  "Two members of the Anglo-Indian community may be nominated by the President to the Lok Sabha, if she/he feels that this community is not adequately repres…",
+  "There are two sets of government in India—one at the Centre and the other at the state level.",
+  "Thereafter, in 1893, he went to South Africa to practise as a barrister.",
+  "Union List State List Concurrent List Defence Public health, hospitals, dispensaries Education Banking Agriculture Factories and trade unions Railways Pri…"
  ],
- "correctOption": 2,
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "correctOption": 1,
+ "answer": "There are two sets of government in India—one at the Centre and the other at the state level.",
  "image": "assets/history8/images/ch13/img_in_image_box_819_1306_964_1486.jpg",
- "caption": "Textbook figure",
+ "caption": "Pratibha Devisingh Patil",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig017-sa",
@@ -7091,12 +7124,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up his knighthood in protest. Martial law was declared in Punjab. Gandhi lost all faith in the British government's claim to fair play and justice. He urged people not to believe or cooperate with such a government.",
+ "question": "Identify Pratibha Devisingh Patil shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "There are two sets of government in India—one at the Centre and the other at the state level.",
  "image": "assets/history8/images/ch13/img_in_image_box_819_1306_964_1486.jpg",
- "caption": "Textbook figure",
+ "caption": "Pratibha Devisingh Patil",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig018-mcq",
@@ -7104,19 +7137,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Qualifications for the Post of President. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Rashtrapati Bhavan, New Delhi. Which statement correctly describes what it illustrates?",
  "options": [
-  "What do you observe in the picture?",
-  "After his early education in India, he went to England to study law",
-  "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The…",
-  "The Non-cooperation Movement was one of the earliest attempts by Gandhi to bring together all Indians and force the British to grant self-go…"
+  "When the President signs the bill, the bill becomes an Act.",
+  "The Indian Parliament consists of the Lok Sabha, the Rajya Sabha and the President.",
+  "The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented.",
+  "#### Qualifications for the Post of President The President or Rashtrapati is the head of the State."
  ],
- "correctOption": 2,
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "correctOption": 3,
+ "answer": "#### Qualifications for the Post of President The President or Rashtrapati is the head of the State.",
  "image": "assets/history8/images/ch13/img_in_image_box_68_1054_585_1483.jpg",
- "caption": "Qualifications for the Post of President",
+ "caption": "Rashtrapati Bhavan, New Delhi",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig018-sa",
@@ -7124,12 +7157,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "**Executive summary:** Sarojini Naidu during **Must know** • Sarojini Naidu during • Members of the Cabinet • Mission to India meeting • The Second Round Table Conference • M ohandas Karamchand Gandhi, popularly known as Mahatma Gandhi or Gandhiji, was born on 2 October 1869 at Porbandar in Gujarat",
+ "question": "Study the figure on Rashtrapati Bhavan, New Delhi. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "#### Qualifications for the Post of President The President or Rashtrapati is the head of the State.",
  "image": "assets/history8/images/ch13/img_in_image_box_68_1054_585_1483.jpg",
- "caption": "Qualifications for the Post of President",
+ "caption": "Rashtrapati Bhavan, New Delhi",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig019-mcq",
@@ -7137,19 +7170,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Prime Minister. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Jawaharlal Nehru. Which statement correctly describes this person and their role?",
  "options": [
-  "• ##### Learning Outcomes • At the end of this lesson, learners will be able to: • assess the Gandhian Era (1917-1947) of the Indian Nationa…",
-  "In South Africa, Gandhi was shocked and enraged at the racial discrimination and oppression meted out by the British colonists to the non-Wh…",
-  "After the Jallianwala Bagh Massacre, Gandhi launched the Non-cooperation Movement in 1920.",
-  "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in th…"
+  "The meeting was peaceful and the people were unarmed.",
+  "##### Former Prime Ministers of India",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "The Lok Sabha is also known as the House of the People or the Lower House."
  ],
- "correctOption": 3,
- "answer": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity. When the British declared war against the Axis powers on India's behalf, Bose organised a mass protest in Calcutta. He was imprisoned and then kept under house arrest, from where he escaped to Berlin and later to Japan.",
+ "correctOption": 1,
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_62_979_214_1178.jpg",
- "caption": "Prime Minister",
+ "caption": "Jawaharlal Nehru",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig019-sa",
@@ -7157,12 +7190,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Subhas Chandra Bose formed the Forward Bloc in 1939. The main objectives of the Forward Bloc were to get freedom from the British Rule in the immediate future and to promote national unity. When the British declared war against the Axis powers on India's behalf, Bose organised a mass protest in Calcutta. He was imprisoned and then kept under house arrest, from where he escaped to Berlin and later to Japan.",
+ "question": "Identify Jawaharlal Nehru shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_62_979_214_1178.jpg",
- "caption": "Prime Minister",
+ "caption": "Jawaharlal Nehru",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig020-mcq",
@@ -7170,19 +7203,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Gulzari Lal. Which statement correctly describes this person and their role?",
  "options": [
-  "evaluate the causes of the Civil Disobedience Movement",
-  "From the outset, the Simon Commission was boycotted by the Indians, mainly because it was an all-White commission. It had no Indian member t…",
-  "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the In…",
-  "People reacted spontaneously. Even without the leaders, protest marches, demonstrations and strikes were"
+  "The tricolour was unfurled at the Red Fort on 15 August 1947 and Jawaharlal Nehru became the first Prime Minister of independent India.",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "The Parliament is a representative body, which can make or change the country's laws.",
+  "##### Former Prime Ministers of India"
  ],
- "correctOption": 2,
- "answer": "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the Indians. The failure of the Round Table Conferences had further strengthened this idea. As a result, the British passed the Government of India Act in 1935.",
+ "correctOption": 3,
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_221_976_373_1174.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Gulzari Lal",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig020-sa",
@@ -7190,12 +7223,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The Civil Disobedience Movement made it clear to the British that certain tangible constitutional reforms would have to be granted to the Indians. The failure of the Round Table Conferences had further strengthened this idea. As a result, the British passed the Government of India Act in 1935.",
+ "question": "Identify Gulzari Lal shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_221_976_373_1174.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Gulzari Lal",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig021-mcq",
@@ -7203,19 +7236,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Lal Bahadur. Which statement correctly describes this person and their role?",
  "options": [
-  "##### Government of India Act, 1935",
-  "Do you think the picture tells you about the method of protest followed by the nationalists?",
-  "To carry out arrests without a warrant",
-  "This massacre of innocent people was condemned by all Indians. There were severe protests all over the country. Rabindranath Tagore gave up …"
+  "##### Former Prime Ministers of India",
+  "## 14 Organs of the Indian Government",
+  "The tricolour was unfurled at the Red Fort on 15 August 1947 and Jawaharlal Nehru became the first Prime Minister of independent India.",
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers."
  ],
  "correctOption": 0,
- "answer": "##### Government of India Act, 1935",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_377_971_532_1169.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Lal Bahadur",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig021-sa",
@@ -7223,12 +7256,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
- "answer": "##### Government of India Act, 1935",
+ "question": "Identify Lal Bahadur shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_377_971_532_1169.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Lal Bahadur",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig022-mcq",
@@ -7236,19 +7269,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Indira Gandhi. Which statement correctly describes this person and their role?",
  "options": [
-  "Do you think the picture tells you about the method of protest followed by the nationalists?",
-  "##### Government of India Act, 1935",
-  "In 1927, a commission headed by Sir John Simon was sent by the British government to review its functioning in India. It came to be known as…",
-  "The Civil Disobedience Movement launched by Gandhi and the Congress in 1930 also followed the method of satyagraha. The events led to this m…"
+  "Subhas Chandra Bose, also known as Netaji, was a very important leader of the Indian national movement. He entered politics at an early age and aggressive…",
+  "##### Former Prime Ministers of India",
+  "During Gandhi's stay in South Africa, he evolved the concept of satyagraha (devotion to the truth), based on the principles of truth and non-violence—a co…",
+  "Gandhi lost all faith in the British government's claim to fair play and justice."
  ],
  "correctOption": 1,
- "answer": "##### Government of India Act, 1935",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_536_967_694_1166.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Indira Gandhi",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig022-sa",
@@ -7256,12 +7289,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
- "answer": "##### Government of India Act, 1935",
+ "question": "Identify Indira Gandhi shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/history8/images/ch13/img_in_image_box_536_967_694_1166.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Indira Gandhi",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig023-mcq",
@@ -7269,19 +7302,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Morarji Desai. Which statement correctly describes this person and their role?",
  "options": [
-  "After his early education in India, he went to England to study law",
-  "Do you think the picture tells you about the method of protest followed by the nationalists?",
-  "His Dandi March marked the beginning of the Civil Disobedience Movement",
-  "##### Government of India Act, 1935"
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "The figure relates to Morarji Desai in this chapter.",
+  "The meeting was peaceful and the people were unarm **Must know** • On 13 April 1919, a public meeting was called at Jallianwala Bagh in Amritsar to protes…",
+  "The tricolour was unfurled at the Red Fort on 15 August 1947 and Jawaharlal Nehru became the first Prime Minister of independent India."
  ],
- "correctOption": 3,
- "answer": "##### Government of India Act, 1935",
+ "correctOption": 1,
+ "answer": "The figure relates to Morarji Desai in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_699_963_860_1163.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Morarji Desai",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig023-sa",
@@ -7289,12 +7322,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
- "answer": "##### Government of India Act, 1935",
+ "question": "Identify Morarji Desai shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "The figure relates to Morarji Desai in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_699_963_860_1163.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Morarji Desai",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "histch13-fig024-mcq",
@@ -7302,19 +7335,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what it illustrates?",
  "options": [
-  "• outline the early campaigns at Kheda, Champaran and Ahmedabad",
-  "After his early education in India, he went to England to study law",
-  "##### Government of India Act, 1935",
-  "In 1930, Mahatma Gandhi, along with some of his followers, marched from Sabarmati Ashram to the coastal town of Dandi"
+  "At the state level, the Executive comprises the Governor, the Chief Minister and the Council of Ministers.",
+  "If the President is illness or , or any other reason",
+  "The figure relates to Former Prime Ministers of India in this chapter.",
+  "The tricolour was unfurled at the Red Fort on 15 August 1947 and Jawaharlal Nehru became the first Prime Minister of independent India."
  ],
  "correctOption": 2,
- "answer": "##### Government of India Act, 1935",
+ "answer": "The figure relates to Former Prime Ministers of India in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_860_955_1030_1156.jpg",
  "caption": "Former Prime Ministers of India",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "histch13-fig024-sa",
@@ -7322,12 +7355,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "hist-ch13",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
- "answer": "##### Government of India Act, 1935",
+ "question": "Study the figure on Former Prime Ministers of India. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The figure relates to Former Prime Ministers of India in this chapter.",
  "image": "assets/history8/images/ch13/img_in_image_box_860_955_1030_1156.jpg",
  "caption": "Former Prime Ministers of India",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig001-mcq",
@@ -7335,19 +7368,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on V.P. Singh. Which statement correctly describes what it illustrates?",
  "options": [
+  "On 14 August 1941, the British Prime Minister, Winston Churchill and President Roosevelt met on board a battleship and signed the Atlantic Charter.",
+  "The Prime Minister coordinates the working of various departments, and is the vital link between the President and the Cabinet.",
   "##### Former Prime Ministers of India",
-  "• Legislature—makes laws • Judiciary—interprets the laws and checks the working of the legislature and executive • Executive—executes the la…",
-  "Must not be less than 25 years of age",
-  "• The President has the power to dissolve the Lok Sabha before its term ends"
+  "The President makes all major appointments on the advice of the Prime Minister and the Cabinet."
  ],
- "correctOption": 0,
+ "correctOption": 2,
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_5_1241_218_1444.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "V.P. Singh",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig001-sa",
@@ -7355,12 +7388,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
+ "question": "Study the figure on V.P. Singh. Describe what it shows and explain why it is important in this chapter.",
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_5_1241_218_1444.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "V.P. Singh",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig002-mcq",
@@ -7368,19 +7401,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Chandra Shekhar. Which statement correctly describes this person and their role?",
  "options": [
-  "The Indian Constitution has declared India to be a Union of States",
-  "There are three organs of the government of India",
-  "##### Former Prime Ministers of India",
-  "Should not hold an office of profit under the government—Centre, state or local level"
+  "In case of a conflict between a minister and the Prime Minister, the minister steps down.",
+  "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can…",
+  "The Prime Minister is appointed by the President.",
+  "##### Former Prime Ministers of India"
  ],
- "correctOption": 2,
+ "correctOption": 3,
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_228_1239_377_1442.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Chandra Shekhar",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig002-sa",
@@ -7388,12 +7421,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
+ "question": "Identify Chandra Shekhar shown in the figure. Write a short note on who they were and their contribution in this chapter.",
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_228_1239_377_1442.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "Chandra Shekhar",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig003-mcq",
@@ -7401,19 +7434,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Former Prime Ministers of India. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on P.V. Narasimha. Which statement correctly describes what it illustrates?",
  "options": [
   "##### Former Prime Ministers of India",
-  "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next…",
-  "Should not hold an office of profit under the government—Centre, state or local level",
-  "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition tha…"
+  "The President makes all major appointments on the advice of the Prime Minister and the Cabinet.",
+  "On 14 August 1941, the British Prime Minister, Winston Churchill and President Roosevelt met on board a battleship and signed the Atlantic Charter.",
+  "The Ministers of State and the Deputy Ministers do not attend Cabinet meetings."
  ],
  "correctOption": 0,
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_386_1234_542_1438.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "P.V. Narasimha",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig003-sa",
@@ -7421,12 +7454,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what Former Prime Ministers of India represents and why it matters in this chapter.",
+ "question": "Study the figure on P.V. Narasimha. Describe what it shows and explain why it is important in this chapter.",
  "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_386_1234_542_1438.jpg",
- "caption": "Former Prime Ministers of India",
+ "caption": "P.V. Narasimha",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig004-mcq",
@@ -7434,19 +7467,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on I.K. Gujral. Which statement correctly describes what it illustrates?",
  "options": [
-  "Study the given pictures. Can you name these Prime Ministers of India?",
-  "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "The powers of the President can be grouped under the following heads:"
+  "In case of a conflict between a minister and the Prime Minister, the minister steps down.",
+  "The functions and responsibilities of the Prime Minister and her/his Cabinet are as follows:",
+  "The Prime Minister is appointed by the President.",
+  "##### Former Prime Ministers of India"
  ],
- "correctOption": 0,
- "answer": "Study the given pictures. Can you name these Prime Ministers of India?",
+ "correctOption": 3,
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_548_1230_708_1436.jpg",
- "caption": "Textbook figure",
+ "caption": "I.K. Gujral",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig004-sa",
@@ -7454,12 +7487,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what the figure shown represents and why it matters in this chapter.",
- "answer": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
+ "question": "Study the figure on I.K. Gujral. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "##### Former Prime Ministers of India",
  "image": "assets/civics8/images/ch1/img_in_image_box_548_1230_708_1436.jpg",
- "caption": "Textbook figure",
+ "caption": "I.K. Gujral",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig005-mcq",
@@ -7467,19 +7500,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on A.B. Vajpayee. Which statement correctly describes what it illustrates?",
  "options": [
-  "Can you name these Prime Ministers of India? • India is a parliamentary democracy, where the supreme power resides with the people of the co…",
-  "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
-  "In India, power is distributed between the central and the state governments",
-  "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides …"
+  "There are three organs of the government of India.",
+  "It values health as both a fundamental human right and a sound social investment.",
+  "The Indian Constitution has declared India to be a Union of States.",
+  "The figure relates to A.B. Vajpayee in this chapter."
  ],
  "correctOption": 3,
- "answer": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working.",
+ "answer": "The figure relates to A.B. Vajpayee in this chapter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_711_1226_871_1433.jpg",
- "caption": "Textbook figure",
+ "caption": "A.B. Vajpayee",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig005-sa",
@@ -7487,12 +7520,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what the figure shown represents and why it matters in this chapter.",
- "answer": "The President has the power to dissolve the Lok Sabha before its term ends",
+ "question": "Study the figure on A.B. Vajpayee. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The figure relates to A.B. Vajpayee in this chapter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_711_1226_871_1433.jpg",
- "caption": "Textbook figure",
+ "caption": "A.B. Vajpayee",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig006-mcq",
@@ -7500,19 +7533,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on this figure. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on H.D. Deve. Which statement correctly describes what it illustrates?",
  "options": [
-  "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the coun…",
-  "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/h…",
-  "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides …",
-  "The Indian Constitution has declared India to be a Union of States"
+  "However, 6 months must not lapse between two sessions.",
+  "With respect to the jurisdiction and powers of the Supreme Court, answer the following questions:",
+  "The goal of this agency is health for all.",
+  "### Appointment of Prime Minister and Council of Ministers"
  ],
- "correctOption": 1,
- "answer": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
+ "correctOption": 3,
+ "answer": "### Appointment of Prime Minister and Council of Ministers",
  "image": "assets/civics8/images/ch1/img_in_image_box_872_1224_1050_1430.jpg",
- "caption": "Textbook figure",
+ "caption": "H.D. Deve",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig006-sa",
@@ -7520,12 +7553,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what the figure shown represents and why it matters in this chapter.",
- "answer": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
+ "question": "Study the figure on H.D. Deve. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "### Appointment of Prime Minister and Council of Ministers",
  "image": "assets/civics8/images/ch1/img_in_image_box_872_1224_1050_1430.jpg",
- "caption": "Textbook figure",
+ "caption": "H.D. Deve",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig007-mcq",
@@ -7533,19 +7566,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Functions of the Prime Minister and the Cabinet. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Functions of the Prime Minister and the Cabinet. Which statement correctly describes what it illustrates?",
  "options": [
-  "Must be a citizen of India Must not be less than 25 years of age Must be of sound mind Must not be bankrupt or convicted in any criminal cas…",
-  "The Indian Constitution has declared India to be a Union of States",
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of offi…"
+  "Organise a 'Mock Parliament' in your class to better understand the functions of the Parliament.",
+  "##### Former Prime Ministers of India",
+  "The functions and responsibilities of the Prime Minister and her/his Cabinet are as follows: ### Functions of the Prime Minister and the Cabinet",
+  "There are three categories of ministers—Cabinet Ministers, Ministers of State and Deputy Ministers."
  ],
  "correctOption": 2,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "answer": "The functions and responsibilities of the Prime Minister and her/his Cabinet are as follows: ### Functions of the Prime Minister and the Cabinet",
  "image": "assets/civics8/images/ch1/img_in_image_box_222_1284_581_1395.jpg",
  "caption": "Functions of the Prime Minister and the Cabinet",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig007-sa",
@@ -7553,12 +7586,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Study the figure on Functions of the Prime Minister and the Cabinet. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "The functions and responsibilities of the Prime Minister and her/his Cabinet are as follows: ### Functions of the Prime Minister and the Cabinet",
  "image": "assets/civics8/images/ch1/img_in_image_box_222_1284_581_1395.jpg",
  "caption": "Functions of the Prime Minister and the Cabinet",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig008-mcq",
@@ -7566,19 +7599,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on High Court. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Bombay High Court. Which statement correctly describes this person and their role?",
  "options": [
-  "**Executive summary:** Study the given pictures",
-  "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition tha…",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "##### Former Prime Ministers of India"
+  "Court of Record: The Supreme Court is a Court of Record.",
+  "The Court comprises 15 judges who are elected for a 9-year term.",
+  "This provision shows that human judgement is fallible, and the court may rectify something that was misjudged.",
+  "The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secre…"
  ],
  "correctOption": 2,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "answer": "This provision shows that human judgement is fallible, and the court may rectify something that was misjudged.",
  "image": "assets/civics8/images/ch1/img_in_image_box_107_961_618_1268.jpg",
- "caption": "High Court",
+ "caption": "Bombay High Court",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig008-sa",
@@ -7586,12 +7619,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify Bombay High Court shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "This provision shows that human judgement is fallible, and the court may rectify something that was misjudged.",
  "image": "assets/civics8/images/ch1/img_in_image_box_107_961_618_1268.jpg",
- "caption": "High Court",
+ "caption": "Bombay High Court",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig009-mcq",
@@ -7599,19 +7632,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on II. Reflective Learning HOTS. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Organs of the Indian Government. Which statement correctly describes what it illustrates?",
  "options": [
-  "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to be agreed by the Lok Sabha.",
-  "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of offi…",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "In India, power is distributed between the central and the state governments"
+  "A flow chart showing the functions of the organs of the United Nations",
+  "With respect to the jurisdiction and powers of the Supreme Court, answer the following questions:",
+  "The flow chart (given above) mentions the functions of the various organs of the UN.",
+  "Find out how ‘government’ works in insect groups such as ants."
  ],
- "correctOption": 2,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "correctOption": 1,
+ "answer": "With respect to the jurisdiction and powers of the Supreme Court, answer the following questions:",
  "image": "assets/civics8/images/ch1/img_in_image_box_692_208_1105_453.jpg",
- "caption": "II. Reflective Learning HOTS",
+ "caption": "Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig009-sa",
@@ -7619,12 +7652,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Study the figure on Organs of the Indian Government. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "With respect to the jurisdiction and powers of the Supreme Court, answer the following questions:",
  "image": "assets/civics8/images/ch1/img_in_image_box_692_208_1105_453.jpg",
- "caption": "II. Reflective Learning HOTS",
+ "caption": "Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig010-mcq",
@@ -7632,19 +7665,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Mock Parliament and Court Session. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Student Assessment. Which statement correctly describes this person and their role?",
  "options": [
-  "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
-  "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-  "Should not hold an office of profit under the government—Centre, state or local level",
-  "Can you name these Prime Ministers of India? • India is a parliamentary democracy, where the supreme power resides with the people of the co…"
+  "A bill goes through three stages of reading.",
+  "##### Mock Parliament and Court Session",
+  "In the second stage, voting on the bill takes place after the debate.",
+  "Hence, these territories were placed under the administration of seven member states."
  ],
  "correctOption": 1,
- "answer": "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
+ "answer": "##### Mock Parliament and Court Session",
  "image": "assets/civics8/images/ch1/img_in_image_box_215_1105_983_1412.jpg",
- "caption": "Mock Parliament and Court Session",
+ "caption": "Student Assessment",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig010-sa",
@@ -7652,12 +7685,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the organ of government shown and its function in India.",
- "answer": "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
+ "question": "Identify Student Assessment shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### Mock Parliament and Court Session",
  "image": "assets/civics8/images/ch1/img_in_image_box_215_1105_983_1412.jpg",
- "caption": "Mock Parliament and Court Session",
+ "caption": "Student Assessment",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig011-mcq",
@@ -7665,19 +7698,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Political Life Alive!. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on 15 The United Nations. Which statement correctly describes this UN body or agency?",
  "options": [
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next…",
-  "The President has the power to dissolve the Lok Sabha before its term ends",
-  "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadc…"
+  "Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encou…",
+  "Funds for the successful functioning of the UN are contributed by the member nations.",
+  "The General Assembly comprises all 193 members of the United Nations (UN).",
+  "League of Nations failed to prevent the outbreak of World War II"
  ],
- "correctOption": 0,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "correctOption": 2,
+ "answer": "The General Assembly comprises all 193 members of the United Nations (UN).",
  "image": "assets/civics8/images/ch1/img_in_image_box_117_290_829_590.jpg",
- "caption": "Political Life Alive!",
+ "caption": "15 The United Nations",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig011-sa",
@@ -7685,12 +7718,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Identify the UN organ or agency shown (15 The United Nations) and explain its role in world affairs.",
+ "answer": "The General Assembly comprises all 193 members of the United Nations (UN).",
  "image": "assets/civics8/images/ch1/img_in_image_box_117_290_829_590.jpg",
- "caption": "Political Life Alive!",
+ "caption": "15 The United Nations",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig012-mcq",
@@ -7698,19 +7731,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "There are three organs of the government of India",
-  "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next…",
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "Can you name these Prime Ministers of India? **Must know** • Study the given pictures"
+  "A flow chart showing the functions of the organs of the United Nations",
+  "Some proposals of the Atlantic Charter became the basis for the establishment of the UN Tick (√) the pictures, which show the functions performed by the U…",
+  "On 25 April 1945, the United Nations Conference on International",
+  "The League of Nations was founded for this very purpose."
  ],
- "correctOption": 2,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "correctOption": 1,
+ "answer": "Some proposals of the Atlantic Charter became the basis for the establishment of the UN Tick (√) the pictures, which show the functions performed by the United Nations.",
  "image": "assets/civics8/images/ch1/img_in_image_box_110_888_1180_1353.jpg",
- "caption": "Visual Mapping",
+ "caption": "To look after the developmental needs of lesser developed nations",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig012-sa",
@@ -7718,12 +7751,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "Some proposals of the Atlantic Charter became the basis for the establishment of the UN Tick (√) the pictures, which show the functions performed by the United Nations.",
  "image": "assets/civics8/images/ch1/img_in_image_box_110_888_1180_1353.jpg",
- "caption": "Visual Mapping",
+ "caption": "To look after the developmental needs of lesser developed nations",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig013-mcq",
@@ -7731,19 +7764,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Should not hold an office of profit under the government—Centre, state or local level",
-  "The state legislatures make laws at the state level",
-  "• The President has the power to dissolve the Lok Sabha before its term ends",
-  "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of offi…"
+  "It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency.",
+  "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II…",
+  "A bill goes through three stages of reading.",
+  "##### Sessions of the House A session means a period during which the House meets to conduct business."
  ],
  "correctOption": 1,
- "answer": "The state legislatures make laws at the state level",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_83_187_348_430.jpg",
- "caption": "Visual Mapping",
+ "caption": "□ Peacekeeping",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig013-sa",
@@ -7751,12 +7784,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "The state legislatures make laws at the state level",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_83_187_348_430.jpg",
- "caption": "Visual Mapping",
+ "caption": "□ Peacekeeping",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig014-mcq",
@@ -7764,19 +7797,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "Legislature—makes laws Judiciary—interprets the laws and checks the working of the legislature and executive Executive—executes the laws ###…",
-  "• Legislature—makes laws • Judiciary—interprets the laws and checks the working of the legislature and executive • Executive—executes the la…",
-  "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition tha…",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…"
+  "It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency.",
+  "A bill goes through three stages of reading.",
+  "##### Sessions of the House A session means a period during which the House meets to conduct business.",
+  "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II…"
  ],
  "correctOption": 3,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_435_194_699_437.jpg",
- "caption": "Visual Mapping",
+ "caption": "Medical care",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig014-sa",
@@ -7784,12 +7817,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_435_194_699_437.jpg",
- "caption": "Visual Mapping",
+ "caption": "Medical care",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig015-mcq",
@@ -7797,19 +7830,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Visual Mapping. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows During Reading. Which statement correctly describes this person and their role?",
  "options": [
-  "• Legislature—makes laws • Judiciary—interprets the laws and checks the working of the legislature and executive • Executive—executes the la…",
-  "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
-  "There are three organs of the government of India.",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…"
+  "##### Sessions of the House A session means a period during which the House meets to conduct business.",
+  "The term of the House can be extended during the Proclamation of Emergency.",
+  "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II…",
+  "It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency."
  ],
- "correctOption": 3,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "correctOption": 2,
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_784_223_1038_445.jpg",
- "caption": "Visual Mapping",
+ "caption": "☐ Constructing roads",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig015-sa",
@@ -7817,12 +7850,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify During Reading shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the start of World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_784_223_1038_445.jpg",
- "caption": "Visual Mapping",
+ "caption": "☐ Constructing roads",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig016-mcq",
@@ -7830,19 +7863,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on THE ATLANTIC CHARTER. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to THE ATLANTIC CHARTER. Which statement correctly describes the event or scene shown?",
  "options": [
-  "There are three organs of the government of India.",
-  "The Indian Parliament, known as the Sansad, is the law-making body at the central level",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "In India, power is distributed between the central and the state governments"
+  "Organization began in San Francisco, and was attended by delegates of 50 nations involved in drafting the Charter of the UN.",
+  "The preamble of the UN charter outlines the objectives of the UN.",
+  "While other organs of the UN can only make ‘recommendations’ to member states, the Security Council has the power to make binding decisions that member st…",
+  "Franklin Roosevelt and Winston Churchill aboard the ship for the signing of the Atlantic Charter On 14 August 1941, the British Prime Minister, Winston Ch…"
  ],
- "correctOption": 2,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "correctOption": 3,
+ "answer": "Franklin Roosevelt and Winston Churchill aboard the ship for the signing of the Atlantic Charter On 14 August 1941, the British Prime Minister, Winston Churchill and President Roosevelt met on board a battleship and signed the Atlantic Charter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_599_1048_1097_1404.jpg",
  "caption": "THE ATLANTIC CHARTER",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig016-sa",
@@ -7850,12 +7883,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify the historical event or scene shown in the figure (THE ATLANTIC CHARTER). Explain its causes and significance.",
+ "answer": "Franklin Roosevelt and Winston Churchill aboard the ship for the signing of the Atlantic Charter On 14 August 1941, the British Prime Minister, Winston Churchill and President Roosevelt met on board a battleship and signed the Atlantic Charter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_599_1048_1097_1404.jpg",
  "caption": "THE ATLANTIC CHARTER",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig017-mcq",
@@ -7863,19 +7896,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Security Council. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Security Council. Which statement correctly describes this person and their role?",
  "options": [
-  "**Executive summary:** Study the given pictures",
-  "While the President is the $ \\underline{\\text{nominal or",
-  "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the…",
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…"
+  "While other organs of the UN can only make ‘recommendations’ to member states, the Security Council has the power to make binding decisions that member st…",
+  "Maintenance of international peace and security",
+  "The Cabinet Ministers form the inner core of the council.",
+  "But important resolutions, such as those concerning peace and security issues, require a two-thirds majority."
  ],
- "correctOption": 3,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "correctOption": 0,
+ "answer": "While other organs of the UN can only make ‘recommendations’ to member states, the Security Council has the power to make binding decisions that member states are required to carry out according to the terms of the Charter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_639_1161_1132_1495.jpg",
  "caption": "The Security Council",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig017-sa",
@@ -7883,12 +7916,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Identify The Security Council shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "While other organs of the UN can only make ‘recommendations’ to member states, the Security Council has the power to make binding decisions that member states are required to carry out according to the terms of the Charter.",
  "image": "assets/civics8/images/ch1/img_in_image_box_639_1161_1132_1495.jpg",
  "caption": "The Security Council",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig018-mcq",
@@ -7896,19 +7929,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The International Court of Justice. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on The International Court of Justice. Which statement correctly describes this UN body or agency?",
  "options": [
-  "Should not hold an office of profit under the government—Centre, state or local level",
-  "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the coun…",
-  "Must not be less than 25 years of age",
-  "##### Former Prime Ministers of India"
+  "##### Mock Parliament and Court Session",
+  "The Chief Justice and other judges can be removed by the President's order after impeachment.",
+  "Maintenance of international peace and security",
+  "##### The International Court of Justice This organ of the UN assists the General Assembly in promoting international and social cooperation and developme…"
  ],
- "correctOption": 1,
- "answer": "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the country",
+ "correctOption": 3,
+ "answer": "##### The International Court of Justice This organ of the UN assists the General Assembly in promoting international and social cooperation and development.",
  "image": "assets/civics8/images/ch1/img_in_image_box_50_1013_546_1467.jpg",
  "caption": "The International Court of Justice",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig018-sa",
@@ -7916,12 +7949,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the country",
+ "question": "Identify the UN organ or agency shown (The International Court of Justice) and explain its role in world affairs.",
+ "answer": "##### The International Court of Justice This organ of the UN assists the General Assembly in promoting international and social cooperation and development.",
  "image": "assets/civics8/images/ch1/img_in_image_box_50_1013_546_1467.jpg",
  "caption": "The International Court of Justice",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig019-mcq",
@@ -7929,19 +7962,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The Trusteeship Council. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows The Trusteeship Council. Which statement correctly describes this person and their role?",
  "options": [
-  "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadc…",
-  "• The President has the power to dissolve the Lok Sabha before its term ends",
-  "Should not hold an office of profit under the government—Centre, state or local level",
-  "Legislature—makes laws Judiciary—interprets the laws and checks the working of the legislature and executive Executive—executes the laws ###…"
+  "##### The Trusteeship Council This organ of the UN was created to supervise the administration of Trust Territories, which were not completely independent.",
+  "It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies.",
+  "### Appointment of Prime Minister and Council of Ministers",
+  "There are 15 member countries that make up the Security Council."
  ],
- "correctOption": 2,
- "answer": "Should not hold an office of profit under the government—Centre, state or local level",
+ "correctOption": 0,
+ "answer": "##### The Trusteeship Council This organ of the UN was created to supervise the administration of Trust Territories, which were not completely independent.",
  "image": "assets/civics8/images/ch1/img_in_image_box_581_1123_1105_1458.jpg",
  "caption": "The Trusteeship Council",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig019-sa",
@@ -7949,12 +7982,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Should not hold an office of profit under the government—Centre, state or local level",
+ "question": "Identify The Trusteeship Council shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "##### The Trusteeship Council This organ of the UN was created to supervise the administration of Trust Territories, which were not completely independent.",
  "image": "assets/civics8/images/ch1/img_in_image_box_581_1123_1105_1458.jpg",
  "caption": "The Trusteeship Council",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig020-mcq",
@@ -7962,19 +7995,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on The United Nations Educational, Scientific and Cultural Organization (UNESCO). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on UNESCO office for Water Education in the Netherlands. Which statement correctly describes this UN body or agency?",
  "options": [
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "Legislature—makes laws Judiciary—interprets the laws and checks the working of the legislature and executive Executive—executes the laws ###…",
-  "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the coun…",
-  "There are three organs of the government of India."
+  "The UNESCO came into existence in November 1946.",
+  "It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals.",
+  "The League of Nations was the first international organisation responsible for ensuring peace and cooperation between nations of the world.",
+  "## The United Nations Educational, Scientific and Cultural Organization (UNESCO) The UNESCO’s mission is to contribute to peace and security in the world…"
  ],
- "correctOption": 2,
- "answer": "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the country",
+ "correctOption": 3,
+ "answer": "## The United Nations Educational, Scientific and Cultural Organization (UNESCO) The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations through education, science and culture.",
  "image": "assets/civics8/images/ch1/img_in_image_box_556_1131_1068_1467.jpg",
- "caption": "The United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+ "caption": "UNESCO office for Water Education in the Netherlands",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig020-sa",
@@ -7982,12 +8015,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the country",
+ "question": "Identify the UN organ or agency shown (UNESCO office for Water Education in the Netherlands) and explain its role in world affairs.",
+ "answer": "## The United Nations Educational, Scientific and Cultural Organization (UNESCO) The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations through education, science and culture.",
  "image": "assets/civics8/images/ch1/img_in_image_box_556_1131_1068_1467.jpg",
- "caption": "The United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+ "caption": "UNESCO office for Water Education in the Netherlands",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig021-mcq",
@@ -7995,19 +8028,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on World Health Organization (WHO). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on World Health Organization (WHO). Which statement correctly describes this UN body or agency?",
  "options": [
-  "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of offi…",
-  "Must be a citizen of India Must not be less than 25 years of age Must be of sound mind Must not be bankrupt or convicted in any criminal cas…",
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "The powers of the President can be grouped under the following heads:"
+  "The beginning of the 20th century witnessed World War I, the horror and tragedy of which devastated the world.",
+  "The world needs organisations like the UN more than ever today, especially when the threat of terrorism and communal hatred and discord looms over us.",
+  "Sweatshops, factories, construction sites and houses are common places where children are Then Child labour is one of the social evils that Indian society…",
+  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations."
  ],
  "correctOption": 2,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "answer": "Sweatshops, factories, construction sites and houses are common places where children are Then Child labour is one of the social evils that Indian society has been plagued with.",
  "image": "assets/civics8/images/ch1/img_in_image_box_640_346_1153_744.jpg",
  "caption": "World Health Organization (WHO)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig021-sa",
@@ -8015,12 +8048,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Identify the UN organ or agency shown (World Health Organization (WHO)) and explain its role in world affairs.",
+ "answer": "Sweatshops, factories, construction sites and houses are common places where children are Then Child labour is one of the social evils that Indian society has been plagued with.",
  "image": "assets/civics8/images/ch1/img_in_image_box_640_346_1153_744.jpg",
  "caption": "World Health Organization (WHO)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig022-mcq",
@@ -8028,19 +8061,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on World Health Organization (WHO). Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on World Health Organization (WHO). Which statement correctly describes this UN body or agency?",
  "options": [
-  "Can you name these Prime Ministers of India? • India is a parliamentary democracy, where the supreme power resides with the people of the co…",
-  "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parl…",
-  "In India, power is distributed between the central and the state governments",
-  "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain"
+  "The beginning of the 20th century witnessed World War I, the horror and tragedy of which devastated the world.",
+  "It is the closest thing to a 'world parliament'.",
+  "### World Health Organization (WHO) This day is observed every year as the World Health Day.",
+  "### International Labour Organization (ILO)"
  ],
- "correctOption": 1,
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "correctOption": 2,
+ "answer": "### World Health Organization (WHO) This day is observed every year as the World Health Day.",
  "image": "assets/civics8/images/ch1/img_in_image_box_3_1071_318_1311.jpg",
  "caption": "World Health Organization (WHO)",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig022-sa",
@@ -8048,12 +8081,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
+ "question": "Identify the UN organ or agency shown (World Health Organization (WHO)) and explain its role in world affairs.",
+ "answer": "### World Health Organization (WHO) This day is observed every year as the World Health Day.",
  "image": "assets/civics8/images/ch1/img_in_image_box_3_1071_318_1311.jpg",
  "caption": "World Health Organization (WHO)",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig023-mcq",
@@ -8061,19 +8094,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on initiative and self-direction: research. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on initiative and self-direction: research. Which statement correctly describes this UN body or agency?",
  "options": [
-  "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition tha…",
-  "• The President has the power to dissolve the Lok Sabha before its term ends"
+  "By 1994, all Trust Territories attained independence or self-government.",
+  "##### initiative and self-direction: research NGOs in India work to ensure a happy life for underprivileged children in India.",
+  "It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency.",
+  "Find out the countries, which have benefitted from this initiative by the UN."
  ],
  "correctOption": 1,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "answer": "##### initiative and self-direction: research NGOs in India work to ensure a happy life for underprivileged children in India.",
  "image": "assets/civics8/images/ch1/img_in_image_box_978_933_1143_1268.jpg",
  "caption": "initiative and self-direction: research",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig023-sa",
@@ -8081,12 +8114,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify the UN organ or agency shown (initiative and self-direction: research) and explain its role in world affairs.",
+ "answer": "##### initiative and self-direction: research NGOs in India work to ensure a happy life for underprivileged children in India.",
  "image": "assets/civics8/images/ch1/img_in_image_box_978_933_1143_1268.jpg",
  "caption": "initiative and self-direction: research",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig024-mcq",
@@ -8094,19 +8127,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Analysing Primary Sources. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure on initiative and self-direction: research. Which statement correctly describes this UN body or agency?",
  "options": [
-  "The powers of the President can be grouped under the following heads:",
-  "Must not be less than 25 years of age",
-  "In India, power is distributed between the central and the state governments",
-  "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs."
+  "Then the bill is sent to the other House, where the same procedure is followed.",
+  "By 1994, all Trust Territories attained independence or self-government.",
+  "Find out the countries, which have benefitted from this initiative by the UN.",
+  "The goal of this agency is health for all. It is a UNICEF initiative, which provides teaching material to help children return to education during a confl…"
  ],
- "correctOption": 0,
- "answer": "The powers of the President can be grouped under the following heads:",
+ "correctOption": 3,
+ "answer": "The goal of this agency is health for all. It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency.",
  "image": "assets/civics8/images/ch1/img_in_image_box_725_163_1108_466.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "initiative and self-direction: research",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig024-sa",
@@ -8114,12 +8147,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The powers of the President can be grouped under the following heads:",
+ "question": "Identify the UN organ or agency shown (initiative and self-direction: research) and explain its role in world affairs.",
+ "answer": "The goal of this agency is health for all. It is a UNICEF initiative, which provides teaching material to help children return to education during a conflict or an emergency.",
  "image": "assets/civics8/images/ch1/img_in_image_box_725_163_1108_466.jpg",
- "caption": "Analysing Primary Sources",
+ "caption": "initiative and self-direction: research",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig025-mcq",
@@ -8127,19 +8160,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on II. Reflective Learning HOTS. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the figure related to Organs of the Indian Government. Which statement correctly describes the event or scene shown?",
  "options": [
-  "Study the given pictures. Can you name these Prime Ministers of India?",
-  "Can you name these Prime Ministers of India? India is a parliamentary democracy, where the supreme power resides with the people of the coun…",
-  "Must not be less than 25 years of age",
-  "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next…"
+  "Should not hold an office of profit under the government—Centre, state or local level",
+  "If no party gets an absolute majority, then two or more parties may join together and form the government.",
+  "The General Assembly is the main deliberative assembly. In this context, answer the following questions:",
+  "A flow chart showing the functions of the organs of the United Nations"
  ],
- "correctOption": 3,
- "answer": "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next page)",
+ "correctOption": 2,
+ "answer": "The General Assembly is the main deliberative assembly. In this context, answer the following questions:",
  "image": "assets/civics8/images/ch1/img_in_image_box_772_28_1152_302.jpg",
- "caption": "II. Reflective Learning HOTS",
+ "caption": "Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig025-sa",
@@ -8147,12 +8180,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The legislature makes laws on subjects given in three lists—Union List, State List and Concurrent List (Refer to the table given on the next page)",
+ "question": "Identify the historical event or scene shown in the figure (Organs of the Indian Government). Explain its causes and significance.",
+ "answer": "The General Assembly is the main deliberative assembly. In this context, answer the following questions:",
  "image": "assets/civics8/images/ch1/img_in_image_box_772_28_1152_302.jpg",
- "caption": "II. Reflective Learning HOTS",
+ "caption": "Organs of the Indian Government",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch1-fig026-mcq",
@@ -8160,19 +8193,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Do It Yourself. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Do It Yourself. Which statement correctly describes this person and their role?",
  "options": [
-  "In India, power is distributed between the central and the state governments",
-  "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared Ind…",
-  "The Indian Constitution has declared India to be a Union of States",
-  "There are three organs of the government of India"
+  "Judicial Review: This can be defined as the power of the Supreme Court to examine the laws passed by the legislature, and the orders issued by the executi…",
+  "These peacekeepers are often sent to regions where an armed conflict has recently ended to discourage combatants from resuming war.",
+  "The functions of some of the key UN agencies are discussed hereunder.",
+  "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the World War II in 1939."
  ],
- "correctOption": 1,
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "correctOption": 3,
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_43_762_318_1043.jpg",
  "caption": "Do It Yourself",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch1-fig026-sa",
@@ -8180,12 +8213,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch1",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe the battle or event depicted and its outcome.",
- "answer": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
+ "question": "Identify Do It Yourself shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "However, in the 1930s its success waned as the Axis Powers (Germany, Italy and Japan) gained influence, which eventually led to the World War II in 1939.",
  "image": "assets/civics8/images/ch1/img_in_image_box_43_762_318_1043.jpg",
  "caption": "Do It Yourself",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig001-mcq",
@@ -8193,19 +8226,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Project. Which statement correctly describes what the figure illustrates?",
+ "question": "The figure shows Project. Which statement correctly describes this person and their role?",
  "options": [
-  "The beginning of the 20th century witnessed World War I, the horror and tragedy of which devastated the world",
-  "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
-  "Millions lost their lives while an equal number of people were maimed or injured",
-  "The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations through education, science…"
+  "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common pl…",
+  "# Project-based Learning Countering the Problem of Misinformation and Disinformation After the completion of the project, learners will be able to:",
+  "It has been given the responsibility of maintaining peace and security among countries.",
+  "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Charter became the…"
  ],
- "correctOption": 0,
- "answer": "The beginning of the 20th century witnessed World War I, the horror and tragedy of which devastated the world",
+ "correctOption": 1,
+ "answer": "# Project-based Learning Countering the Problem of Misinformation and Disinformation After the completion of the project, learners will be able to:",
  "image": "assets/civics8/images/ch2/img_in_image_box_590_1099_1178_1412.jpg",
  "caption": "Project",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig001-sa",
@@ -8213,12 +8246,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Explain the UN organ or agency shown and its role.",
- "answer": "The beginning of the 20th century witnessed World War I, the horror and tragedy of which devastated the world",
+ "question": "Identify Project shown in the figure. Write a short note on who they were and their contribution in this chapter.",
+ "answer": "# Project-based Learning Countering the Problem of Misinformation and Disinformation After the completion of the project, learners will be able to:",
  "image": "assets/civics8/images/ch2/img_in_image_box_590_1099_1178_1412.jpg",
  "caption": "Project",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig002-mcq",
@@ -8226,19 +8259,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on II. State whether the following statements are true or false. Correct the false statements.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the map in the figure. Which statement correctly describes what it shows?",
  "options": [
-  "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses…",
-  "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
-  "Came into existence on 24 October 1945",
-  "The headquarters of WHO at Geneva"
+  "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a ki…",
+  "Student's Name Teacher's Name and Signature Suggestions for improvement KNOWLEDGE CHAPTER 1: A PERIOD OF TRANSITION LEARNING OUTCOME ME P NH LEARNING OUTC…",
+  "League of Nations failed to prevent the outbreak of World War II",
+  "Student's Name Teacher's Name and Signature Suggestions for improvement KNOWLEDGE CHAPTER 1: A PERIOD OF TRANSITION LEARNING OUTCOME ME P NH LEARNING OUTC…"
  ],
- "correctOption": 0,
- "answer": "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common places where children are",
+ "correctOption": 1,
+ "answer": "Student's Name Teacher's Name and Signature Suggestions for improvement KNOWLEDGE CHAPTER 1: A PERIOD OF TRANSITION LEARNING OUTCOME ME P NH LEARNING OUTCOME ME P NH develop a basic understanding of the period of transition after the medieval period in Europe that shaped the rise of a modern world Self trace the voyages of discoveries undertaken during the period Self Peer Peer…",
  "image": "assets/civics8/images/ch2/img_in_image_box_917_717_1113_992.jpg",
- "caption": "II. State whether the following statements are true or false. Correct the false statements.",
+ "caption": "The United Nations",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig002-sa",
@@ -8246,12 +8279,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common places where children are",
+ "question": "Study the map. Describe the region or information shown and explain its importance in this chapter.",
+ "answer": "Student's Name Teacher's Name and Signature Suggestions for improvement KNOWLEDGE CHAPTER 1: A PERIOD OF TRANSITION LEARNING OUTCOME ME P NH LEARNING OUTCOME ME P NH develop a basic understanding of the period of transition after the medieval period in Europe that shaped the rise of a modern world Self trace the voyages of discoveries undertaken during the period Self Peer Peer…",
  "image": "assets/civics8/images/ch2/img_in_image_box_917_717_1113_992.jpg",
- "caption": "II. State whether the following statements are true or false. Correct the false statements.",
+ "caption": "The United Nations",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig003-mcq",
@@ -8259,19 +8292,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on IMPORTANT STEPS TO CHOOSING A MASK. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on IMPORTANT STEPS TO CHOOSING A MASK. Which statement correctly describes what it illustrates?",
  "options": [
-  "The words ‘international’ and ‘emergency’ were later dropped and it came to be known as the United Nations Children's Fund.",
-  "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Chart…",
-  "• At the end of this lesson, learners will be able to: The General Assembly comprises all 193 members of the United Nations (UN)",
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…"
+  "# IMPORTANT STEPS TO CHOOSING A MASK Wear a disposable mask under a cloth mask Knot and tuck ear loops of a 3-ply mask",
+  "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a ki…",
+  "But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.",
+  "##### Make sure your mask fits"
  ],
- "correctOption": 1,
- "answer": "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Charter became the basis for the establishment of the UN To look after the developmental needs of lesser developed nations Promote social progress and international cooperation Tick (√) the pictures, which show the functions performed by the United Nations",
+ "correctOption": 0,
+ "answer": "# IMPORTANT STEPS TO CHOOSING A MASK Wear a disposable mask under a cloth mask Knot and tuck ear loops of a 3-ply mask",
  "image": "assets/civics8/images/ch2/img_in_image_box_93_169_660_450.jpg",
  "caption": "IMPORTANT STEPS TO CHOOSING A MASK",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig003-sa",
@@ -8279,12 +8312,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what IMPORTANT STEPS TO CHOOSING A MASK represents and why it matters in this chapter.",
- "answer": "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Charter became the basis for the establishment of the UN To look after the developmental needs of lesser developed nations Promote social progress and international cooperation Tick (√) the pictures, which show the functions performed by the United Nations",
+ "question": "Study the figure on IMPORTANT STEPS TO CHOOSING A MASK. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "# IMPORTANT STEPS TO CHOOSING A MASK Wear a disposable mask under a cloth mask Knot and tuck ear loops of a 3-ply mask",
  "image": "assets/civics8/images/ch2/img_in_image_box_93_169_660_450.jpg",
  "caption": "IMPORTANT STEPS TO CHOOSING A MASK",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig004-mcq",
@@ -8292,19 +8325,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on For extra protection. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on For extra protection. Which statement correctly describes what it illustrates?",
  "options": [
-  "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses…",
-  "• At the end of this lesson, learners will be able to: The General Assembly comprises all 193 members of the United Nations (UN)",
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…",
-  "The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace."
+  "It has been given the responsibility of maintaining peace and security among countries.",
+  "##### For extra protection",
+  "These are as follows: Maintenance of international peace and security Promotion of human rights for people all over the world Protection of future generat…",
+  "These are as follows: • Maintenance of international peace and security • Promotion of human rights for people all over the world • Protection of future g…"
  ],
- "correctOption": 2,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 1,
+ "answer": "##### For extra protection",
  "image": "assets/civics8/images/ch2/img_in_image_box_96_658_373_966.jpg",
  "caption": "For extra protection",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig004-sa",
@@ -8312,12 +8345,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what For extra protection represents and why it matters in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the figure on For extra protection. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "##### For extra protection",
  "image": "assets/civics8/images/ch2/img_in_image_box_96_658_373_966.jpg",
  "caption": "For extra protection",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig005-mcq",
@@ -8325,19 +8358,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on For extra protection. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on Use a mask fitter or brace over a disposable or cloth mask. Which statement correctly describes what it illustrates?",
  "options": [
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…",
-  "Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the aftermath of World …",
-  "The preamble of the UN charter outlines the objectives of the UN. These are as follows:",
-  "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'."
+  "UNICEF works for the betterment of children all over the world.",
+  "Promotion of human rights for people all over the world",
+  "The UN strives to protect and preserve human rights all over the world.",
+  "Wear a disposable mask under a cloth mask ##### For extra protection Knot and tuck ear loops of a 3-ply mask"
  ],
- "correctOption": 0,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 3,
+ "answer": "Wear a disposable mask under a cloth mask ##### For extra protection Knot and tuck ear loops of a 3-ply mask",
  "image": "assets/civics8/images/ch2/img_in_image_box_452_637_734_977.jpg",
- "caption": "For extra protection",
+ "caption": "Use a mask fitter or brace over a disposable or cloth mask",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig005-sa",
@@ -8345,12 +8378,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what For extra protection represents and why it matters in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the figure on Use a mask fitter or brace over a disposable or cloth mask. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "Wear a disposable mask under a cloth mask ##### For extra protection Knot and tuck ear loops of a 3-ply mask",
  "image": "assets/civics8/images/ch2/img_in_image_box_452_637_734_977.jpg",
- "caption": "For extra protection",
+ "caption": "Use a mask fitter or brace over a disposable or cloth mask",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig006-mcq",
@@ -8358,19 +8391,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on For extra protection. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the textbook figure on For extra protection. Which statement correctly describes what it illustrates?",
  "options": [
-  "The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.",
-  "It has its headquarters in Paris, France.",
-  "**Must know** • The General Assembly comprises all 193 members of the United Nations (UN)",
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…"
+  "These are as follows: • Maintenance of international peace and security • Promotion of human rights for people all over the world • Protection of future g…",
+  "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common pl…",
+  "##### For extra protection",
+  "These are as follows: Maintenance of international peace and security Promotion of human rights for people all over the world Protection of future generat…"
  ],
- "correctOption": 3,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 2,
+ "answer": "##### For extra protection",
  "image": "assets/civics8/images/ch2/img_in_image_box_773_661_1092_977.jpg",
  "caption": "For extra protection",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig006-sa",
@@ -8378,12 +8411,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Briefly describe what For extra protection represents and why it matters in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the figure on For extra protection. Describe what it shows and explain why it is important in this chapter.",
+ "answer": "##### For extra protection",
  "image": "assets/civics8/images/ch2/img_in_image_box_773_661_1092_977.jpg",
  "caption": "For extra protection",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig007-mcq",
@@ -8391,19 +8424,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Respirators must form a seal to the face to work properly.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the map in the figure. Which statement correctly describes what it shows?",
  "options": [
-  "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses…",
-  "Some proposals of the Atlantic Charter became the basis for the establishment of the UN",
-  "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Chart…",
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…"
+  "### Respirators must form a seal to the face to work properly.",
+  "These are as follows: **Must know** • The preamble of the UN charter outlines the objectives of the UN.",
+  "**Must know** • The General Assembly comprises all 193 members of the United Nations (UN).",
+  "LEARNING OUTCOMES ME P LEARNING OUTCOMES ME P Critical thinking and problem-solving provide ideas to assess a primary source of history Self Leadership an…"
  ],
- "correctOption": 3,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 0,
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_743_1003_1107_1347.jpg",
  "caption": "Respirators must form a seal to the face to work properly.",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig007-sa",
@@ -8411,12 +8444,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the map. Describe the region or information shown and explain its importance in this chapter.",
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_743_1003_1107_1347.jpg",
  "caption": "Respirators must form a seal to the face to work properly.",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig008-mcq",
@@ -8424,19 +8457,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on Respirators must form a seal to the face to work properly.. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the map in the figure. Which statement correctly describes what it shows?",
  "options": [
-  "Came into existence on 24 October 1945",
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…",
-  "Came into existence on 24 October 1945 League of Nations failed to prevent the outbreak of World War II Some proposals of the Atlantic Chart…",
-  "WHO was established on 7 April 1948. This day is observed every year as the World Health Day."
+  "### Respirators must form a seal to the face to work properly.",
+  "These are as follows: **Must know** • The preamble of the UN charter outlines the objectives of the UN.",
+  "**Must know** • The General Assembly comprises all 193 members of the United Nations (UN).",
+  "LEARNING OUTCOMES ME P LEARNING OUTCOMES ME P Critical thinking and problem-solving provide ideas to assess a primary source of history Self Leadership an…"
  ],
- "correctOption": 1,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 0,
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_88_1368_328_1506.jpg",
  "caption": "Respirators must form a seal to the face to work properly.",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig008-sa",
@@ -8444,12 +8477,12 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the map. Describe the region or information shown and explain its importance in this chapter.",
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_88_1368_328_1506.jpg",
  "caption": "Respirators must form a seal to the face to work properly.",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 },
 {
  "id": "civch2-fig009-mcq",
@@ -8457,19 +8490,19 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "mcq",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure on cdc.gov/coronavirus. Which statement correctly describes what the figure illustrates?",
+ "question": "Study the map in the figure. Which statement correctly describes what it shows?",
  "options": [
-  "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of…",
-  "It is the closest thing to a 'world parliament'",
-  "Originally called the United Nations International Children's Emergency Fund, the UNICEF was established in 1946.",
-  "Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the aftermath of World …"
+  "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
+  "# IMPORTANT STEPS TO CHOOSING A MASK",
+  "### Respirators must form a seal to the face to work properly.",
+  "Use a mask fitter or brace over a disposable or cloth mask"
  ],
- "correctOption": 0,
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "correctOption": 2,
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_127_137_1162_1408.jpg",
- "caption": "cdc.gov/coronavirus",
+ "caption": "Map not to scale",
  "source": "hist_diagram",
- "examTip": "Link the visual to the caption and surrounding paragraph in your textbook."
+ "examTip": "Name the person or event in the figure first, then add dates, role, and impact."
 },
 {
  "id": "civch2-fig009-sa",
@@ -8477,11 +8510,11 @@ const HISTORY_DIAGRAM_DATA = [
  "topicId": "civ-ch2",
  "type": "short_answer",
  "subtopic": "Diagram-based Questions",
- "question": "Study the textbook figure. Describe what the map shows and its importance in this chapter.",
- "answer": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
+ "question": "Study the map. Describe the region or information shown and explain its importance in this chapter.",
+ "answer": "### Respirators must form a seal to the face to work properly.",
  "image": "assets/civics8/images/ch2/img_in_image_box_127_137_1162_1408.jpg",
- "caption": "cdc.gov/coronavirus",
+ "caption": "Map not to scale",
  "source": "hist_diagram",
- "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences."
+ "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates."
 }
 ];

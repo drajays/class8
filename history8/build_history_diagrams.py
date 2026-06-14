@@ -62,7 +62,36 @@ SKIP_HEADINGS = {
     "sample term paper", "holistic progress", "model test paper", "preface",
     "table of contents", "contents", "exercises", "portrait gallery", "india @75",
     "debate and discussion", "go local", "project-based learning",
+    "history alive!", "history alive", "political life alive!", "political life alive",
+    "visual mapping", "did you know?", "analysing primary sources",
+    "mock parliament and court session",
 }
+
+JUNK_HEADING_RE = re.compile(
+    r"^(?:i{1,3}|iv|v|vi{0,3}|x)\.\s|study the given|answer the questions|"
+    r"state whether|fill in the blank|match the|column i|column ii|"
+    r"holistic progress|worksheet|model test",
+    re.I,
+)
+
+EXERCISE_NOISE_RE = re.compile(
+    r"^(?:\d+[\.)]|▶|•|\*)\s|study the given|answer the questions|"
+    r"all three statements|give reasons|correct the false|fill in the|"
+    r"match the following|column i|column ii|what do you observe|"
+    r"do you think|have you seen|executive summary",
+    re.I,
+)
+
+LEARNING_OUTCOME_RE = re.compile(
+    r"^(?:assess|outline|discuss|evaluate|trace|explain|identify|describe|list|state|"
+    r"recognise|recognize|demonstrate|analyse|analyze)\s",
+    re.I,
+)
+
+PERSON_NAME_RE = re.compile(
+    r"^(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,4}|Mahatma Gandhi|Sardar Vallabhbhai Patel|"
+    r"Dr\.?\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)$"
+)
 
 ARTIFACT_KEYWORDS = re.compile(
     r"\b(qr\s*code|barcode|bed\s*sheet|bedsheet|logo|oxford|frank\s*bros|nelson|"
@@ -74,7 +103,12 @@ ARTIFACT_KEYWORDS = re.compile(
 def strip_md(s: str) -> str:
     s = re.sub(r"<[^>]+>", " ", s)
     s = re.sub(r"\$+.*?\$+", " ", s)
+    s = re.sub(r"[►▶]\s*", "", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def clean_sentence(s: str) -> str:
+    return strip_md(s)
 
 
 def image_filename(url_or_name: str) -> str | None:
@@ -146,30 +180,408 @@ def load_chapter_facts() -> dict[str, list[str]]:
             data = json.loads(path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
-        items = [strip_md(f) for f in data.get("highYieldFacts") or [] if f and len(strip_md(f)) > 20]
+        items: list[str] = []
+        for f in data.get("highYieldFacts") or []:
+            t = strip_md(f)
+            if is_usable_fact(t):
+                items.append(t)
         for n in data.get("notes") or []:
             body = strip_md(n.get("content") or "")
-            for line in re.split(r"[.\n]", body):
-                line = strip_md(line)
-                if len(line) > 35:
-                    items.append(line)
-        facts[ch["topicId"]] = items[:40]
+            for sent in split_sentences(body):
+                if is_usable_fact(sent):
+                    items.append(sent)
+        facts[ch["topicId"]] = items[:60]
     return facts
 
 
+def is_usable_fact(text: str) -> bool:
+    if len(text) < 35 or len(text) > 420:
+        return False
+    if EXERCISE_NOISE_RE.search(text):
+        return False
+    if text.lower().startswith("study the given pictures"):
+        return False
+    if "all three statements are supported" in text.lower():
+        return False
+    return True
+
+
+def is_exercise_noise(text: str) -> bool:
+    t = clean_sentence(text)
+    if len(t) < 8:
+        return True
+    if EXERCISE_NOISE_RE.search(t):
+        return True
+    if LEARNING_OUTCOME_RE.search(t):
+        return True
+    if t.endswith("?") and len(t) < 120:
+        return True
+    if re.match(r"^[a-d]\.\s", t, re.I):
+        return True
+    if t[0].islower() and not t.startswith("e.g."):
+        return True
+    return False
+
+
+def split_sentences(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.!?])\s+", clean_sentence(text))
+    return [p.strip() for p in parts if p.strip() and not is_exercise_noise(p)]
+
+
+def is_junk_heading(title: str) -> bool:
+    low = title.lower().strip()
+    if low in SKIP_HEADINGS:
+        return True
+    if JUNK_HEADING_RE.search(title):
+        return True
+    if low.startswith("chapter ") and len(low) < 80:
+        return True
+    if title.isupper() and len(title) > 45:
+        return True
+    return False
+
+
+def looks_like_person_name(text: str) -> bool:
+    t = strip_md(text)
+    if not t or len(t) > 70 or re.search(r"\d", t):
+        return False
+    low = t.lower()
+    if any(k in low for k in (" during ", " march", " movement", " photograph", " painting", " study ", " answer ")):
+        return False
+    return bool(PERSON_NAME_RE.match(t))
+
+
+def keyword_tokens(*parts: str) -> set[str]:
+    text = " ".join(p for p in parts if p).lower()
+    return {w for w in re.findall(r"[a-z]{4,}", text) if w not in {
+        "with", "from", "that", "this", "were", "have", "been", "their", "which",
+        "about", "under", "after", "before", "into", "also", "other", "people",
+        "indian", "british", "india", "chapter", "figure", "shown", "textbook",
+    }}
+
+
+def score_sentence(sentence: str, keywords: set[str]) -> int:
+    if is_exercise_noise(sentence):
+        return -1
+    words = set(re.findall(r"[a-z]{4,}", sentence.lower()))
+    return len(words & keywords)
+
+
+def trim_answer(text: str, max_len: int = 380) -> str:
+    text = strip_md(text)
+    if len(text) <= max_len:
+        return text
+    cut = text[:max_len]
+    if ". " in cut:
+        return cut.rsplit(". ", 1)[0] + "."
+    return cut.rstrip(" ,;") + "…"
+
+
+def truncate_option(text: str, max_len: int = 155) -> str:
+    text = strip_md(text)
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 1].rstrip(" ,;") + "…"
+
+
 def nearest_heading(lines: list[str], idx: int) -> str:
-    for j in range(idx, max(-1, idx - 40), -1):
+    for j in range(idx, max(-1, idx - 45), -1):
         m = HEADING.match(lines[j].strip())
         if not m:
             continue
         title = strip_md(m.group(2))
-        low = title.lower()
-        if low in SKIP_HEADINGS or len(title) < 4:
-            continue
-        if title.startswith("Chapter ") or (title.isupper() and len(title) > 40):
+        if is_junk_heading(title) or len(title) < 4:
             continue
         return title
     return ""
+
+
+def extract_caption_block(lines: list[str], idx: int) -> tuple[str, list[str]]:
+    """Return (caption, paragraph sentences immediately after the figure)."""
+    caption_parts: list[str] = []
+    paragraphs: list[str] = []
+    for j in range(idx + 1, min(len(lines), idx + 10)):
+        raw = lines[j]
+        if "<img" in raw:
+            break
+        if raw.strip().startswith("#"):
+            break
+        t = strip_md(raw)
+        if not t:
+            if caption_parts or paragraphs:
+                break
+            continue
+        if is_exercise_noise(t):
+            break
+        if not paragraphs and len(t) < 90 and not t.endswith((".", "!", "?")):
+            caption_parts.append(t)
+            continue
+        if len(t) >= 25:
+            paragraphs.extend(split_sentences(t))
+        if len(paragraphs) >= 4:
+            break
+    caption = " ".join(caption_parts).strip()
+    return caption, paragraphs
+
+
+def extract_local_sentences(lines: list[str], idx: int, radius: int = 14) -> list[str]:
+    lo = max(0, idx - radius)
+    hi = min(len(lines), idx + radius + 1)
+    out: list[str] = []
+    for j in range(lo, hi):
+        if j == idx or "<img" in lines[j]:
+            continue
+        t = strip_md(lines[j])
+        if len(t) < 25 or is_exercise_noise(t):
+            continue
+        out.extend(split_sentences(t))
+    # de-dupe preserving order
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for s in out:
+        key = s.lower()
+        if key not in seen:
+            seen.add(key)
+            deduped.append(s)
+    return deduped
+
+
+def figure_label(fig: dict[str, Any]) -> str:
+    caption = fig.get("caption") or ""
+    heading = fig.get("heading") or ""
+    after = " ".join(fig.get("afterParagraph") or [])
+    combined = (caption + " " + after).lower()
+    if "dandi march" in combined or ("dandi" in combined and "march" in combined):
+        return "Dandi March (Salt Satyagraha)"
+    if "jallianwala" in combined or "jallianwala bagh" in combined:
+        return "Jallianwala Bagh Massacre"
+    if "salt march" in combined:
+        return "Salt March / Dandi March"
+    if looks_like_person_name(caption):
+        return caption
+    if looks_like_person_name(heading):
+        return heading
+    if caption and not is_junk_heading(caption) and len(caption) < 80:
+        return caption
+    if heading and not is_junk_heading(heading) and len(heading) < 80:
+        return heading
+    return fig.get("chapterTitle") or "this figure"
+
+
+def classify_figure(fig: dict[str, Any], w: int, h: int) -> str:
+    caption = (fig.get("caption") or "").lower()
+    heading = (fig.get("heading") or "").lower()
+    ctx = (fig.get("context") or "").lower()
+    label = figure_label(fig).lower()
+
+    if looks_like_person_name(fig.get("caption") or "") or looks_like_person_name(fig.get("heading") or ""):
+        return "portrait"
+    if any(k in caption + heading + ctx for k in ("march", "massacre", "battle", "uprising", "revolt", "war")):
+        return "event"
+    if "map" in caption + heading + ctx:
+        return "map"
+    if any(k in caption + heading + label for k in (
+        "parliament", "lok sabha", "rajya sabha", "high court", "supreme court",
+        "legislature", "judiciary", "executive", "president of india",
+    )):
+        return "institution"
+    if any(k in caption + heading + ctx for k in (
+        "united nations", "security council", "general assembly", "unesco", "unicef",
+        "world health organization", "international court of justice", "un charter",
+    )):
+        return "un_agency"
+    if any(k in caption + heading + ctx for k in ("painting", "mural", "photograph", "sketch", "artwork")):
+        return "artwork"
+    area = w * h
+    if w > 0 and h > 0 and max(w, h) / max(min(w, h), 1) < 1.4 and area < 120000:
+        if looks_like_person_name(fig.get("caption") or ""):
+            return "portrait"
+    return "general"
+
+
+def build_figure_answer(
+    fig: dict[str, Any],
+    local_sentences: list[str],
+    chapter_facts: list[str],
+) -> str:
+    label = figure_label(fig)
+    keywords = keyword_tokens(label, fig.get("caption", ""), fig.get("heading", ""))
+    after = fig.get("afterParagraph") or []
+    cap = (fig.get("caption") or "").strip()
+    raw_pool = after + local_sentences
+    pool: list[str] = []
+    for sent in raw_pool:
+        s = sent.strip()
+        if cap and s == cap:
+            continue
+        if cap and s.lower().startswith(cap.lower()) and len(s) > len(cap) + 10:
+            s = s[len(cap):].strip(" ,:-")
+        if len(s) >= 25:
+            pool.append(s)
+
+    scored: list[tuple[int, str]] = []
+    for i, sent in enumerate(pool):
+        score = score_sentence(sent, keywords)
+        if i < len(after):
+            score += 3
+        if looks_like_person_name(label):
+            name_low = label.lower()
+            sent_low = sent.lower()
+            if name_low in sent_low:
+                score += 5
+            if any(v in sent_low for v in (" was ", " led ", " sparked ", " born ", " fought ", " became ", " wrote ", " established ", " played ")):
+                score += 3
+            if sent_low.startswith("historians usually") or sent_low.startswith("the term "):
+                score -= 3
+        if score > 0:
+            scored.append((score, sent))
+    scored.sort(key=lambda x: (-x[0], -len(x[1])))
+
+    parts: list[str] = []
+    for _, sent in scored:
+        if sent in parts:
+            continue
+        parts.append(sent)
+        if len(" ".join(parts)) >= 100:
+            break
+
+    if parts:
+        answer = trim_answer(" ".join(parts))
+        cap = fig.get("caption") or ""
+        if cap and answer.lower().startswith(cap.lower()):
+            answer = answer[len(cap):].strip(" .")
+        return answer
+
+    for fact in chapter_facts:
+        if score_sentence(fact, keywords) >= 2:
+            return trim_answer(fact)
+
+    if after:
+        return trim_answer(after[0])
+    if local_sentences:
+        return trim_answer(local_sentences[0])
+    return f"The figure relates to {label} in this chapter."
+
+
+def pick_distractors(
+    correct: str,
+    local_pool: list[str],
+    chapter_facts: list[str],
+    keywords: set[str],
+    rng: random.Random,
+    n: int = 3,
+) -> list[str]:
+    correct_low = correct.lower()
+    candidates: list[tuple[int, str]] = []
+    for sent in local_pool + chapter_facts:
+        if len(sent) < 30 or sent.lower() == correct_low:
+            continue
+        if is_exercise_noise(sent):
+            continue
+        overlap = score_sentence(sent, keywords)
+        score = 1 if overlap == 0 else max(0, 3 - overlap)
+        candidates.append((score, sent))
+    candidates.sort(key=lambda x: (-x[0], rng.random()))
+    out: list[str] = []
+    for _, sent in candidates:
+        short = truncate_option(sent)
+        if short not in out and short.lower() not in correct_low:
+            out.append(short)
+        if len(out) >= n:
+            break
+    while len(out) < n:
+        out.append("This statement describes a different person or event from another section of the chapter.")
+    return out[:n]
+
+
+def mcq_question_text(fig: dict[str, Any], label: str, fig_type: str) -> str:
+    if fig_type == "portrait":
+        return f"The figure shows {label}. Which statement correctly describes this person and their role?"
+    if fig_type == "event":
+        return f"Study the figure related to {label}. Which statement correctly describes the event or scene shown?"
+    if fig_type == "map":
+        return "Study the map in the figure. Which statement correctly describes what it shows?"
+    if fig_type == "institution":
+        return f"Study the figure of {label}. Which statement correctly describes this organ or institution?"
+    if fig_type == "un_agency":
+        return f"Study the figure on {label}. Which statement correctly describes this UN body or agency?"
+    if fig_type == "artwork":
+        return f"Study the artwork shown ({label}). Which statement correctly identifies it and its historical importance?"
+    return f"Study the textbook figure on {label}. Which statement correctly describes what it illustrates?"
+
+
+def short_question_text(fig: dict[str, Any], label: str, fig_type: str) -> str:
+    if fig_type == "portrait":
+        return f"Identify {label} shown in the figure. Write a short note on who they were and their contribution in this chapter."
+    if fig_type == "event":
+        return f"Identify the historical event or scene shown in the figure ({label}). Explain its causes and significance."
+    if fig_type == "map":
+        return "Study the map. Describe the region or information shown and explain its importance in this chapter."
+    if fig_type == "institution":
+        return f"Name the organ of government shown ({label}) and explain its main functions in India's democracy."
+    if fig_type == "un_agency":
+        return f"Identify the UN organ or agency shown ({label}) and explain its role in world affairs."
+    if fig_type == "artwork":
+        return f"Identify the artwork shown ({label}). Who created it and why is it important in this chapter?"
+    return f"Study the figure on {label}. Describe what it shows and explain why it is important in this chapter."
+
+
+def make_mcq(
+    qid: str,
+    fig: dict[str, Any],
+    image_path: str,
+    answer: str,
+    local_pool: list[str],
+    chapter_facts: list[str],
+    rng: random.Random,
+) -> dict[str, Any]:
+    label = figure_label(fig)
+    fig_type = fig.get("figureType") or "general"
+    keywords = keyword_tokens(label, fig.get("caption", ""), fig.get("heading", ""))
+    opts = pick_distractors(answer, local_pool, chapter_facts, keywords, rng)
+    short_correct = truncate_option(answer)
+    opts.append(short_correct)
+    rng.shuffle(opts)
+    display_caption = fig.get("caption") or label
+    return {
+        "id": qid,
+        "q_id": qid,
+        "topicId": fig["topicId"],
+        "type": "mcq",
+        "subtopic": "Diagram-based Questions",
+        "question": mcq_question_text(fig, label, fig_type),
+        "options": opts,
+        "correctOption": opts.index(short_correct),
+        "answer": answer,
+        "image": image_path,
+        "caption": display_caption,
+        "source": "hist_diagram",
+        "examTip": "Name the person or event in the figure first, then add dates, role, and impact.",
+    }
+
+
+def make_short(
+    qid: str,
+    fig: dict[str, Any],
+    image_path: str,
+    answer: str,
+) -> dict[str, Any]:
+    label = figure_label(fig)
+    fig_type = fig.get("figureType") or "general"
+    display_caption = fig.get("caption") or label
+    return {
+        "id": qid,
+        "q_id": qid,
+        "topicId": fig["topicId"],
+        "type": "short_answer",
+        "subtopic": "Diagram-based Questions",
+        "question": short_question_text(fig, label, fig_type),
+        "answer": answer,
+        "image": image_path,
+        "caption": display_caption,
+        "source": "hist_diagram",
+        "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates.",
+    }
 
 
 def context_window(lines: list[str], idx: int, radius: int = 12) -> str:
@@ -180,123 +592,10 @@ def context_window(lines: list[str], idx: int, radius: int = 12) -> str:
         if "<img" in line:
             continue
         t = strip_md(line)
-        if len(t) < 15 or t.startswith("http"):
+        if len(t) < 15 or t.startswith("http") or is_exercise_noise(t):
             continue
         chunks.append(t)
     return " ".join(chunks)
-
-
-def caption_after(lines: list[str], idx: int) -> str:
-    for j in range(idx + 1, min(len(lines), idx + 5)):
-        t = strip_md(lines[j])
-        if not t or "<img" in lines[j] or lines[j].strip().startswith("#"):
-            break
-        if len(t) < 200:
-            return t
-    return ""
-
-
-def pick_fact(facts: list[str], context: str, rng: random.Random) -> str:
-    ctx_lower = context.lower()
-    scored = []
-    for f in facts:
-        words = [w for w in re.findall(r"[a-z]{5,}", f.lower()) if w in ctx_lower]
-        scored.append((len(words), f))
-    scored.sort(key=lambda x: (-x[0], len(x[1])))
-    if scored and scored[0][0] > 0:
-        return scored[0][1]
-    return rng.choice(facts) if facts else context[:200]
-
-
-def distractors(facts: list[str], correct: str, rng: random.Random, n: int = 3) -> list[str]:
-    pool = [f for f in facts if f != correct and len(f) > 25]
-    rng.shuffle(pool)
-    out: list[str] = []
-    for f in pool:
-        if f not in out:
-            out.append(f[:140] + ("…" if len(f) > 140 else ""))
-        if len(out) >= n:
-            break
-    while len(out) < n:
-        out.append("The figure is unrelated to this chapter topic.")
-    return out[:n]
-
-
-def make_mcq(
-    qid: str,
-    topic_id: str,
-    heading: str,
-    caption: str,
-    image_path: str,
-    facts: list[str],
-    context: str,
-    rng: random.Random,
-) -> dict[str, Any]:
-    correct = pick_fact(facts, context, rng)
-    topic = heading or caption or "this figure"
-    question = (
-        f"Study the textbook figure on {topic}. "
-        f"Which statement correctly describes what the figure illustrates?"
-    )
-    opts = distractors(facts, correct, rng)
-    short_correct = correct[:140] + ("…" if len(correct) > 140 else "")
-    opts.append(short_correct)
-    rng.shuffle(opts)
-    return {
-        "id": qid,
-        "q_id": qid,
-        "topicId": topic_id,
-        "type": "mcq",
-        "subtopic": "Diagram-based Questions",
-        "question": question,
-        "options": opts,
-        "correctOption": opts.index(short_correct),
-        "answer": correct,
-        "image": image_path,
-        "caption": caption or heading or "Textbook figure",
-        "source": "hist_diagram",
-        "examTip": "Link the visual to the caption and surrounding paragraph in your textbook.",
-    }
-
-
-def make_short(
-    qid: str,
-    topic_id: str,
-    heading: str,
-    caption: str,
-    image_path: str,
-    context: str,
-) -> dict[str, Any]:
-    topic = caption or heading or "the figure shown"
-    ctx = context.lower()
-    if any(k in ctx for k in ("portrait", "painting", "photograph", "leader", "emperor")):
-        prompt = "Identify the person or event shown and explain its historical significance."
-    elif "map" in ctx:
-        prompt = "Describe what the map shows and its importance in this chapter."
-    elif any(k in ctx for k in ("united nations", "security council", "general assembly", "who", "unicef")):
-        prompt = "Explain the UN organ or agency shown and its role."
-    elif any(k in ctx for k in ("parliament", "judiciary", "executive", "government")):
-        prompt = "Describe the organ of government shown and its function in India."
-    elif any(k in ctx for k in ("battle", "war", "uprising", "revolt")):
-        prompt = "Describe the battle or event depicted and its outcome."
-    elif "chart" in ctx or "timeline" in ctx:
-        prompt = "Explain the trend or sequence shown in the diagram."
-    else:
-        prompt = f"Briefly describe what {topic} represents and why it matters in this chapter."
-
-    return {
-        "id": qid,
-        "q_id": qid,
-        "topicId": topic_id,
-        "type": "short_answer",
-        "subtopic": "Diagram-based Questions",
-        "question": f"Study the textbook figure. {prompt}",
-        "answer": context[:500] if len(context) > 80 else f"The figure illustrates {topic} as explained in the textbook.",
-        "image": image_path,
-        "caption": caption or heading or "Textbook figure",
-        "source": "hist_diagram",
-        "examTip": "Begin with what you see, then link to causes, key persons, dates, and consequences.",
-    }
 
 
 def extract_figures(lines: list[str], ch: dict) -> list[dict[str, Any]]:
@@ -324,16 +623,17 @@ def extract_figures(lines: list[str], ch: dict) -> list[dict[str, Any]]:
         area = w * h
         abs_idx = ch["md_start"] - 1 + i
         heading = nearest_heading(lines, abs_idx)
-        caption = caption_after(text_lines, i)
+        caption, after_paragraph = extract_caption_block(text_lines, i)
+        local_sentences = extract_local_sentences(text_lines, i)
         ctx = context_window(text_lines, i)
-        if heading:
-            ctx = f"{heading}. {ctx}"
         if caption:
             ctx = f"{caption}. {ctx}"
+        if after_paragraph:
+            ctx = f"{' '.join(after_paragraph)}. {ctx}"
         if not is_valid_figure(w, h, pct, area, fname, ctx):
             continue
         seen.add(fname)
-        figures.append({
+        fig_data = {
             "filename": fname,
             "url": url if url.startswith("http") else None,
             "chapter": ch["out"],
@@ -342,12 +642,40 @@ def extract_figures(lines: list[str], ch: dict) -> list[dict[str, Any]]:
             "chapterTitle": ch["title"],
             "heading": heading,
             "caption": caption,
+            "afterParagraph": after_paragraph,
+            "localSentences": local_sentences,
             "context": ctx[:1200],
-        })
+            "figureType": "",
+        }
+        fig_data["figureType"] = classify_figure(fig_data, w, h)
+        figures.append(fig_data)
     return figures
 
 
-def build_questions(figures: list[dict], facts_by_topic: dict[str, list[str]]) -> list[dict]:
+def build_chapter_sentence_pools(figures: list[dict]) -> dict[str, list[str]]:
+    pools: dict[str, list[str]] = {}
+    for fig in figures:
+        tid = fig["topicId"]
+        pools.setdefault(tid, [])
+        pools[tid].extend(fig.get("afterParagraph") or [])
+        pools[tid].extend(fig.get("localSentences") or [])
+    for tid, sents in pools.items():
+        seen: set[str] = set()
+        deduped: list[str] = []
+        for s in sents:
+            key = s.lower()
+            if key not in seen and not is_exercise_noise(s):
+                seen.add(key)
+                deduped.append(s)
+        pools[tid] = deduped
+    return pools
+
+
+def build_questions(
+    figures: list[dict],
+    facts_by_topic: dict[str, list[str]],
+    sentence_pools: dict[str, list[str]],
+) -> list[dict]:
     rng = random.Random(12)
     questions: list[dict] = []
     counters: dict[str, int] = {}
@@ -359,27 +687,19 @@ def build_questions(figures: list[dict], facts_by_topic: dict[str, list[str]]) -
         image_path = ensure_image(ch_meta, fig["filename"], fig.get("url"))
         prefix = topic_id.replace("-", "")
         base = f"{prefix}-fig{idx:03d}"
-        facts = facts_by_topic.get(topic_id, [])
+        chapter_facts = facts_by_topic.get(topic_id, [])
+        local_pool = sentence_pools.get(topic_id, [])
+        answer = build_figure_answer(fig, fig.get("localSentences") or [], chapter_facts)
         mcq_q = make_mcq(
             f"{base}-mcq",
-            topic_id,
-            fig["heading"],
-            fig["caption"],
+            fig,
             image_path,
-            facts,
-            fig["context"],
+            answer,
+            local_pool,
+            chapter_facts,
             rng,
         )
-        sa_q = make_short(
-            f"{base}-sa",
-            topic_id,
-            fig["heading"],
-            fig["caption"],
-            image_path,
-            fig["context"],
-        )
-        if facts:
-            sa_q["answer"] = pick_fact(facts, fig["context"], rng)
+        sa_q = make_short(f"{base}-sa", fig, image_path, answer)
         questions.extend([mcq_q, sa_q])
     return questions
 
@@ -409,7 +729,7 @@ def main() -> None:
         all_figures.extend(figs)
         print(f"  {ch['topicId']}: {len(figs)} figures")
 
-    questions = build_questions(all_figures, facts_by_topic)
+    questions = build_questions(all_figures, facts_by_topic, build_chapter_sentence_pools(all_figures))
     catalog = [
         {
             "id": f"{f['topicId']}-fig{i:03d}",
@@ -422,7 +742,8 @@ def main() -> None:
                 f["filename"],
             ),
             "heading": f["heading"],
-            "caption": f["caption"],
+            "caption": f["caption"] or figure_label(f),
+            "figureType": f.get("figureType", "general"),
         }
         for i, f in enumerate(
             sorted(all_figures, key=lambda x: (x["topicId"], x["filename"])),
