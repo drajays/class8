@@ -2,6 +2,7 @@
 // Source: history8/data/history and civics.pdf_by_PaddleOCR-VL-1.6.md
 // 472 items (236 figures × 2)
 // Regenerate: python3 history8/build_history_diagrams.py
+// Hand-tuned overrides: history8/data/diagram_overrides.json
 const HISTORY_DIAGRAM_DATA = [
 {
  "id": "histch1-fig001-mcq",

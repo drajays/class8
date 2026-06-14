@@ -799,8 +799,8 @@ def write_js(questions: list[dict], catalog: list[dict]) -> None:
         "// ICSE Class 8 History & Civics — diagram MCQs & descriptive Q&A from textbook figures\n"
         "// Source: history8/data/history and civics.pdf_by_PaddleOCR-VL-1.6.md\n"
         f"// {len(questions)} items ({len(catalog)} figures × 2)\n"
-        "// Regenerate: python3 history8/build_history_diagrams.py
-// Hand-tuned overrides: history8/data/diagram_overrides.json\n"
+        "// Regenerate: python3 history8/build_history_diagrams.py\n"
+        "// Hand-tuned overrides: history8/data/diagram_overrides.json\n"
         "const HISTORY_DIAGRAM_DATA = [\n"
     )
     body = ",\n".join(json.dumps(q, ensure_ascii=False, indent=1) for q in questions)
