@@ -32,6 +32,7 @@ CIV_ASSETS = ROOT / "assets/civics8/images"
 LOCAL_IMAGES = ROOT / "images"
 OUT_JS = ROOT / "history-diagrams.js"
 CATALOG_JSON = ROOT / "data/history8/image_catalog.json"
+OVERRIDES_JSON = ROOT / "history8/data/diagram_overrides.json"
 
 # book chapter → output chapter, subject, topicId, title, md line bounds (from split_history_civics_ocr.py)
 CHAPTER_DEFS: list[dict[str, Any]] = [
@@ -584,6 +585,83 @@ def make_short(
     }
 
 
+def load_overrides() -> dict[str, dict[str, Any]]:
+    if not OVERRIDES_JSON.exists():
+        return {}
+    try:
+        raw = json.loads(OVERRIDES_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {k.lower(): v for k, v in raw.items()}
+
+
+def override_key(fig: dict[str, Any]) -> str:
+    return f"{fig['topicId']}/{fig['filename']}".lower()
+
+
+def apply_figure_override(fig: dict[str, Any], ov: dict[str, Any]) -> None:
+    if ov.get("caption"):
+        fig["caption"] = ov["caption"]
+    if ov.get("figureType"):
+        fig["figureType"] = ov["figureType"]
+    if ov.get("topicId"):
+        fig["topicId"] = ov["topicId"]
+
+
+def make_mcq_from_override(
+    qid: str,
+    fig: dict[str, Any],
+    image_path: str,
+    ov: dict[str, Any],
+) -> dict[str, Any]:
+    answer = ov["answer"]
+    opts = list(ov.get("options") or [])
+    short_correct = truncate_option(answer)
+    if opts:
+        if short_correct not in opts:
+            opts = opts[:3] + [short_correct]
+        correct_option = ov.get("correctOption", opts.index(short_correct) if short_correct in opts else 0)
+    else:
+        opts = [short_correct]
+        correct_option = 0
+    return {
+        "id": qid,
+        "q_id": qid,
+        "topicId": fig["topicId"],
+        "type": "mcq",
+        "subtopic": "Diagram-based Questions",
+        "question": ov.get("mcqQuestion") or mcq_question_text(fig, figure_label(fig), fig.get("figureType") or "general"),
+        "options": opts,
+        "correctOption": correct_option,
+        "answer": answer,
+        "image": image_path,
+        "caption": fig.get("caption") or figure_label(fig),
+        "source": "hist_diagram",
+        "examTip": "Name the person or event in the figure first, then add dates, role, and impact.",
+    }
+
+
+def make_short_from_override(
+    qid: str,
+    fig: dict[str, Any],
+    image_path: str,
+    ov: dict[str, Any],
+) -> dict[str, Any]:
+    return {
+        "id": qid,
+        "q_id": qid,
+        "topicId": fig["topicId"],
+        "type": "short_answer",
+        "subtopic": "Diagram-based Questions",
+        "question": ov.get("saQuestion") or short_question_text(fig, figure_label(fig), fig.get("figureType") or "general"),
+        "answer": ov["answer"],
+        "image": image_path,
+        "caption": fig.get("caption") or figure_label(fig),
+        "source": "hist_diagram",
+        "examTip": "Begin with identification (who/what), then add 2–3 factual points with dates.",
+    }
+
+
 def context_window(lines: list[str], idx: int, radius: int = 12) -> str:
     lo = max(0, idx - radius)
     hi = min(len(lines), idx + radius + 1)
@@ -675,33 +753,45 @@ def build_questions(
     figures: list[dict],
     facts_by_topic: dict[str, list[str]],
     sentence_pools: dict[str, list[str]],
-) -> list[dict]:
+    overrides: dict[str, dict[str, Any]],
+) -> tuple[list[dict], list[dict]]:
     rng = random.Random(12)
     questions: list[dict] = []
+    kept_figures: list[dict] = []
     counters: dict[str, int] = {}
     for fig in figures:
+        ov = overrides.get(override_key(fig))
+        if ov and ov.get("skip"):
+            continue
+        if ov:
+            apply_figure_override(fig, ov)
         topic_id = fig["topicId"]
         counters[topic_id] = counters.get(topic_id, 0) + 1
         idx = counters[topic_id]
+        kept_figures.append(fig)
         ch_meta = next(c for c in CHAPTER_DEFS if c["topicId"] == topic_id)
         image_path = ensure_image(ch_meta, fig["filename"], fig.get("url"))
         prefix = topic_id.replace("-", "")
         base = f"{prefix}-fig{idx:03d}"
-        chapter_facts = facts_by_topic.get(topic_id, [])
-        local_pool = sentence_pools.get(topic_id, [])
-        answer = build_figure_answer(fig, fig.get("localSentences") or [], chapter_facts)
-        mcq_q = make_mcq(
-            f"{base}-mcq",
-            fig,
-            image_path,
-            answer,
-            local_pool,
-            chapter_facts,
-            rng,
-        )
-        sa_q = make_short(f"{base}-sa", fig, image_path, answer)
+        if ov and ov.get("answer"):
+            mcq_q = make_mcq_from_override(f"{base}-mcq", fig, image_path, ov)
+            sa_q = make_short_from_override(f"{base}-sa", fig, image_path, ov)
+        else:
+            chapter_facts = facts_by_topic.get(topic_id, [])
+            local_pool = sentence_pools.get(topic_id, [])
+            answer = build_figure_answer(fig, fig.get("localSentences") or [], chapter_facts)
+            mcq_q = make_mcq(
+                f"{base}-mcq",
+                fig,
+                image_path,
+                answer,
+                local_pool,
+                chapter_facts,
+                rng,
+            )
+            sa_q = make_short(f"{base}-sa", fig, image_path, answer)
         questions.extend([mcq_q, sa_q])
-    return questions
+    return questions, kept_figures
 
 
 def write_js(questions: list[dict], catalog: list[dict]) -> None:
@@ -709,7 +799,8 @@ def write_js(questions: list[dict], catalog: list[dict]) -> None:
         "// ICSE Class 8 History & Civics — diagram MCQs & descriptive Q&A from textbook figures\n"
         "// Source: history8/data/history and civics.pdf_by_PaddleOCR-VL-1.6.md\n"
         f"// {len(questions)} items ({len(catalog)} figures × 2)\n"
-        "// Regenerate: python3 history8/build_history_diagrams.py\n"
+        "// Regenerate: python3 history8/build_history_diagrams.py
+// Hand-tuned overrides: history8/data/diagram_overrides.json\n"
         "const HISTORY_DIAGRAM_DATA = [\n"
     )
     body = ",\n".join(json.dumps(q, ensure_ascii=False, indent=1) for q in questions)
@@ -723,13 +814,19 @@ def main() -> None:
         raise FileNotFoundError(f"Missing {SRC_MD}")
     lines = SRC_MD.read_text(encoding="utf-8").splitlines()
     facts_by_topic = load_chapter_facts()
+    overrides = load_overrides()
     all_figures: list[dict] = []
     for ch in CHAPTER_DEFS:
         figs = extract_figures(lines, ch)
         all_figures.extend(figs)
         print(f"  {ch['topicId']}: {len(figs)} figures")
 
-    questions = build_questions(all_figures, facts_by_topic, build_chapter_sentence_pools(all_figures))
+    questions, kept_figures = build_questions(
+        all_figures,
+        facts_by_topic,
+        build_chapter_sentence_pools(all_figures),
+        overrides,
+    )
     catalog = [
         {
             "id": f"{f['topicId']}-fig{i:03d}",
@@ -746,7 +843,7 @@ def main() -> None:
             "figureType": f.get("figureType", "general"),
         }
         for i, f in enumerate(
-            sorted(all_figures, key=lambda x: (x["topicId"], x["filename"])),
+            sorted(kept_figures, key=lambda x: (x["topicId"], x["filename"])),
             1,
         )
     ]

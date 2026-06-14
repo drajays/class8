@@ -8,43 +8,10 @@
     "image": "assets/civics8/images/ch1/img_in_image_box_107_961_618_1268.jpg",
     "heading": "High Court",
     "caption": "Bombay High Court",
-    "figureType": "portrait"
+    "figureType": "institution"
   },
   {
     "id": "civ-ch1-fig002",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_110_888_1180_1353.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_110_888_1180_1353.jpg",
-    "heading": "During Reading",
-    "caption": "To look after the developmental needs of lesser developed nations",
-    "figureType": "portrait"
-  },
-  {
-    "id": "civ-ch1-fig003",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_117_290_829_590.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_117_290_829_590.jpg",
-    "heading": "15 The United Nations",
-    "caption": "15 The United Nations",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig004",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_215_1105_983_1412.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_215_1105_983_1412.jpg",
-    "heading": "Do It Yourself",
-    "caption": "Student Assessment",
-    "figureType": "portrait"
-  },
-  {
-    "id": "civ-ch1-fig005",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
@@ -55,7 +22,7 @@
     "figureType": "general"
   },
   {
-    "id": "civ-ch1-fig006",
+    "id": "civ-ch1-fig003",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
@@ -66,139 +33,40 @@
     "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig007",
+    "id": "civ-ch1-fig004",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
     "filename": "img_in_image_box_386_1234_542_1438.jpg",
     "image": "assets/civics8/images/ch1/img_in_image_box_386_1234_542_1438.jpg",
     "heading": "Former Prime Ministers of India",
-    "caption": "P.V. Narasimha",
-    "figureType": "general"
-  },
-  {
-    "id": "civ-ch1-fig008",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_3_1071_318_1311.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_3_1071_318_1311.jpg",
-    "heading": "World Health Organization (WHO)",
-    "caption": "World Health Organization (WHO)",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig009",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_435_194_699_437.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_435_194_699_437.jpg",
-    "heading": "During Reading",
-    "caption": "Medical care",
+    "caption": "P. V. Narasimha Rao",
     "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig010",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_43_762_318_1043.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_43_762_318_1043.jpg",
-    "heading": "Do It Yourself",
-    "caption": "Do It Yourself",
-    "figureType": "portrait"
-  },
-  {
-    "id": "civ-ch1-fig011",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_50_1013_546_1467.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_50_1013_546_1467.jpg",
-    "heading": "The International Court of Justice",
-    "caption": "The International Court of Justice",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig012",
+    "id": "civ-ch1-fig005",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
     "filename": "img_in_image_box_548_1230_708_1436.jpg",
     "image": "assets/civics8/images/ch1/img_in_image_box_548_1230_708_1436.jpg",
     "heading": "Former Prime Ministers of India",
-    "caption": "I.K. Gujral",
-    "figureType": "general"
-  },
-  {
-    "id": "civ-ch1-fig013",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_556_1131_1068_1467.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_556_1131_1068_1467.jpg",
-    "heading": "The United Nations Educational, Scientific and Cultural Organization (UNESCO)",
-    "caption": "UNESCO office for Water Education in the Netherlands",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig014",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_581_1123_1105_1458.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_581_1123_1105_1458.jpg",
-    "heading": "The Trusteeship Council",
-    "caption": "The Trusteeship Council",
+    "caption": "I. K. Gujral",
     "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig015",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_599_1048_1097_1404.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_599_1048_1097_1404.jpg",
-    "heading": "THE ATLANTIC CHARTER",
-    "caption": "THE ATLANTIC CHARTER",
-    "figureType": "event"
-  },
-  {
-    "id": "civ-ch1-fig016",
+    "id": "civ-ch1-fig006",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
     "filename": "img_in_image_box_5_1241_218_1444.jpg",
     "image": "assets/civics8/images/ch1/img_in_image_box_5_1241_218_1444.jpg",
     "heading": "Former Prime Ministers of India",
-    "caption": "V.P. Singh",
-    "figureType": "general"
-  },
-  {
-    "id": "civ-ch1-fig017",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_639_1161_1132_1495.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_639_1161_1132_1495.jpg",
-    "heading": "The Security Council",
-    "caption": "The Security Council",
+    "caption": "V. P. Singh",
     "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig018",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_640_346_1153_744.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_640_346_1153_744.jpg",
-    "heading": "World Health Organization (WHO)",
-    "caption": "World Health Organization (WHO)",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig019",
+    "id": "civ-ch1-fig007",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
@@ -206,32 +74,21 @@
     "image": "assets/civics8/images/ch1/img_in_image_box_692_208_1105_453.jpg",
     "heading": "",
     "caption": "Organs of the Indian Government",
-    "figureType": "general"
+    "figureType": "institution"
   },
   {
-    "id": "civ-ch1-fig020",
+    "id": "civ-ch1-fig008",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
     "filename": "img_in_image_box_711_1226_871_1433.jpg",
     "image": "assets/civics8/images/ch1/img_in_image_box_711_1226_871_1433.jpg",
     "heading": "",
-    "caption": "A.B. Vajpayee",
-    "figureType": "general"
+    "caption": "Atal Bihari Vajpayee",
+    "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig021",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_725_163_1108_466.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_725_163_1108_466.jpg",
-    "heading": "initiative and self-direction: research",
-    "caption": "initiative and self-direction: research",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch1-fig022",
+    "id": "civ-ch1-fig009",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
@@ -239,54 +96,21 @@
     "image": "assets/civics8/images/ch1/img_in_image_box_772_28_1152_302.jpg",
     "heading": "",
     "caption": "Organs of the Indian Government",
-    "figureType": "event"
+    "figureType": "institution"
   },
   {
-    "id": "civ-ch1-fig023",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_784_223_1038_445.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_784_223_1038_445.jpg",
-    "heading": "During Reading",
-    "caption": "☐ Constructing roads",
-    "figureType": "portrait"
-  },
-  {
-    "id": "civ-ch1-fig024",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_83_187_348_430.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_83_187_348_430.jpg",
-    "heading": "During Reading",
-    "caption": "□ Peacekeeping",
-    "figureType": "portrait"
-  },
-  {
-    "id": "civ-ch1-fig025",
+    "id": "civ-ch1-fig010",
     "chapter": 1,
     "subject": "civics",
     "topicId": "civ-ch1",
     "filename": "img_in_image_box_872_1224_1050_1430.jpg",
     "image": "assets/civics8/images/ch1/img_in_image_box_872_1224_1050_1430.jpg",
     "heading": "",
-    "caption": "H.D. Deve",
-    "figureType": "general"
+    "caption": "H. D. Deve Gowda",
+    "figureType": "portrait"
   },
   {
-    "id": "civ-ch1-fig026",
-    "chapter": 1,
-    "subject": "civics",
-    "topicId": "civ-ch1",
-    "filename": "img_in_image_box_978_933_1143_1268.jpg",
-    "image": "assets/civics8/images/ch1/img_in_image_box_978_933_1143_1268.jpg",
-    "heading": "initiative and self-direction: research",
-    "caption": "initiative and self-direction: research",
-    "figureType": "un_agency"
-  },
-  {
-    "id": "civ-ch2-fig027",
+    "id": "civ-ch2-fig011",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -297,7 +121,7 @@
     "figureType": "map"
   },
   {
-    "id": "civ-ch2-fig028",
+    "id": "civ-ch2-fig012",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -308,7 +132,7 @@
     "figureType": "general"
   },
   {
-    "id": "civ-ch2-fig029",
+    "id": "civ-ch2-fig013",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -319,7 +143,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "civ-ch2-fig030",
+    "id": "civ-ch2-fig014",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -330,7 +154,7 @@
     "figureType": "map"
   },
   {
-    "id": "civ-ch2-fig031",
+    "id": "civ-ch2-fig015",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -341,7 +165,7 @@
     "figureType": "general"
   },
   {
-    "id": "civ-ch2-fig032",
+    "id": "civ-ch2-fig016",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -352,7 +176,7 @@
     "figureType": "map"
   },
   {
-    "id": "civ-ch2-fig033",
+    "id": "civ-ch2-fig017",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -363,7 +187,7 @@
     "figureType": "map"
   },
   {
-    "id": "civ-ch2-fig034",
+    "id": "civ-ch2-fig018",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -374,7 +198,7 @@
     "figureType": "general"
   },
   {
-    "id": "civ-ch2-fig035",
+    "id": "civ-ch2-fig019",
     "chapter": 2,
     "subject": "civics",
     "topicId": "civ-ch2",
@@ -385,29 +209,18 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch1-fig036",
+    "id": "hist-ch1-fig020",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_101_328_800_788.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_101_328_800_788.jpg",
     "heading": "The Age of Revolutions",
-    "caption": "The Age of Revolutions",
+    "caption": "Battle of Bunker Hill (American Revolution)",
     "figureType": "event"
   },
   {
-    "id": "hist-ch1-fig037",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_108_1051_1143_1471.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_108_1051_1143_1471.jpg",
-    "heading": "During Reading",
-    "caption": "During Reading",
-    "figureType": "portrait"
-  },
-  {
-    "id": "hist-ch1-fig038",
+    "id": "hist-ch1-fig021",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -418,29 +231,29 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig039",
+    "id": "hist-ch1-fig022",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_158_198_358_475.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_158_198_358_475.jpg",
     "heading": "A Period of Transition",
-    "caption": "A Period of Transition",
-    "figureType": "general"
+    "caption": "John Calvin",
+    "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig040",
+    "id": "hist-ch1-fig023",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_175_205_576_447.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_175_205_576_447.jpg",
     "heading": "During Reading",
-    "caption": "□ Storming of the Bastille",
-    "figureType": "portrait"
+    "caption": "Storming of the Bastille",
+    "figureType": "event"
   },
   {
-    "id": "hist-ch1-fig041",
+    "id": "hist-ch1-fig024",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -451,7 +264,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig042",
+    "id": "hist-ch1-fig025",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -462,29 +275,29 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig043",
+    "id": "hist-ch1-fig026",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_509_196_709_484.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_509_196_709_484.jpg",
     "heading": "A Period of Transition",
-    "caption": "A Period of Transition",
-    "figureType": "general"
+    "caption": "King Henry VIII",
+    "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig044",
+    "id": "hist-ch1-fig027",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_58_1005_1093_1368.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_58_1005_1093_1368.jpg",
     "heading": "Impact of Imperialism on South Asian Countries",
-    "caption": "Impact of Imperialism on South Asian Countries",
+    "caption": "Impact of Imperialism on South Asia",
     "figureType": "general"
   },
   {
-    "id": "hist-ch1-fig045",
+    "id": "hist-ch1-fig028",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -495,7 +308,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig046",
+    "id": "hist-ch1-fig029",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -506,95 +319,51 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig047",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_676_296_902_616.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_676_296_902_616.jpg",
-    "heading": "",
-    "caption": "A Period of Transition",
-    "figureType": "artwork"
-  },
-  {
-    "id": "hist-ch1-fig048",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_69_913_224_1075.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_69_913_224_1075.jpg",
-    "heading": "",
-    "caption": "A Period of Transition",
-    "figureType": "general"
-  },
-  {
-    "id": "hist-ch1-fig049",
+    "id": "hist-ch1-fig030",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_703_206_1105_475.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_703_206_1105_475.jpg",
     "heading": "During Reading",
-    "caption": "During Reading",
-    "figureType": "portrait"
-  },
-  {
-    "id": "hist-ch1-fig050",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_738_1294_1144_1389.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_738_1294_1144_1389.jpg",
-    "heading": "Impact of Imperialism on South Asian Countries",
-    "caption": "Impact of Imperialism on South Asian Countries",
+    "caption": "Pulling down the statue of King George III",
     "figureType": "event"
   },
   {
-    "id": "hist-ch1-fig051",
+    "id": "hist-ch1-fig031",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_73_1168_1109_1523.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_73_1168_1109_1523.jpg",
     "heading": "Inca and Aztec Empires",
-    "caption": "Inca and Aztec Empires",
+    "caption": "Machu Picchu (Inca Empire)",
     "figureType": "general"
   },
   {
-    "id": "hist-ch1-fig052",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_771_667_1147_775.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_771_667_1147_775.jpg",
-    "heading": "Reasons for Rise of Imperialism",
-    "caption": "Reasons for Rise of Imperialism",
-    "figureType": "event"
-  },
-  {
-    "id": "hist-ch1-fig053",
+    "id": "hist-ch1-fig032",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_858_207_1057_501.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_858_207_1057_501.jpg",
     "heading": "A Period of Transition",
-    "caption": "A Period of Transition",
-    "figureType": "general"
+    "caption": "Friedrich Engels",
+    "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig054",
+    "id": "hist-ch1-fig033",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_883_489_1087_754.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_883_489_1087_754.jpg",
     "heading": "Causes",
-    "caption": "Causes",
+    "caption": "Johannes Gutenberg",
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig055",
+    "id": "hist-ch1-fig034",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -605,7 +374,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig056",
+    "id": "hist-ch1-fig035",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -616,7 +385,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig057",
+    "id": "hist-ch1-fig036",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
@@ -627,40 +396,29 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch1-fig058",
+    "id": "hist-ch1-fig037",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_942_306_1154_633.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_942_306_1154_633.jpg",
     "heading": "",
-    "caption": "Anatomical/physiological sketches made by Leonardo da Vinci",
+    "caption": "Leonardo da Vinci — anatomical sketches",
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch1-fig059",
-    "chapter": 1,
-    "subject": "history",
-    "topicId": "hist-ch1",
-    "filename": "img_in_image_box_950_724_1102_922.jpg",
-    "image": "assets/history8/images/ch1/img_in_image_box_950_724_1102_922.jpg",
-    "heading": "",
-    "caption": "A Period of Transition",
-    "figureType": "general"
-  },
-  {
-    "id": "hist-ch1-fig060",
+    "id": "hist-ch1-fig038",
     "chapter": 1,
     "subject": "history",
     "topicId": "hist-ch1",
     "filename": "img_in_image_box_97_309_705_788.jpg",
     "image": "assets/history8/images/ch1/img_in_image_box_97_309_705_788.jpg",
     "heading": "A Period of Transition",
-    "caption": "A Period of Transition",
+    "caption": "The Last Supper (Leonardo da Vinci)",
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch10-fig061",
+    "id": "hist-ch10-fig039",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -671,7 +429,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch10-fig062",
+    "id": "hist-ch10-fig040",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -682,7 +440,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch10-fig063",
+    "id": "hist-ch10-fig041",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -693,7 +451,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch10-fig064",
+    "id": "hist-ch10-fig042",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -704,7 +462,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch10-fig065",
+    "id": "hist-ch10-fig043",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -715,7 +473,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch10-fig066",
+    "id": "hist-ch10-fig044",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -726,7 +484,7 @@
     "figureType": "un_agency"
   },
   {
-    "id": "hist-ch10-fig067",
+    "id": "hist-ch10-fig045",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -737,7 +495,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch10-fig068",
+    "id": "hist-ch10-fig046",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -748,7 +506,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch10-fig069",
+    "id": "hist-ch10-fig047",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -759,7 +517,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch10-fig070",
+    "id": "hist-ch10-fig048",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -770,7 +528,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch10-fig071",
+    "id": "hist-ch10-fig049",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -781,7 +539,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch10-fig072",
+    "id": "hist-ch10-fig050",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -792,7 +550,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch10-fig073",
+    "id": "hist-ch10-fig051",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -803,7 +561,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch10-fig074",
+    "id": "hist-ch10-fig052",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -814,7 +572,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch10-fig075",
+    "id": "hist-ch10-fig053",
     "chapter": 10,
     "subject": "history",
     "topicId": "hist-ch10",
@@ -825,7 +583,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch11-fig076",
+    "id": "hist-ch11-fig054",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -836,7 +594,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig077",
+    "id": "hist-ch11-fig055",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -847,7 +605,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch11-fig078",
+    "id": "hist-ch11-fig056",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -858,7 +616,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch11-fig079",
+    "id": "hist-ch11-fig057",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -869,7 +627,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig080",
+    "id": "hist-ch11-fig058",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -880,7 +638,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig081",
+    "id": "hist-ch11-fig059",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -891,7 +649,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig082",
+    "id": "hist-ch11-fig060",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -902,7 +660,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch11-fig083",
+    "id": "hist-ch11-fig061",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -913,7 +671,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch11-fig084",
+    "id": "hist-ch11-fig062",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -924,7 +682,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch11-fig085",
+    "id": "hist-ch11-fig063",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -935,7 +693,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig086",
+    "id": "hist-ch11-fig064",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -946,7 +704,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch11-fig087",
+    "id": "hist-ch11-fig065",
     "chapter": 11,
     "subject": "history",
     "topicId": "hist-ch11",
@@ -957,7 +715,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig088",
+    "id": "hist-ch12-fig066",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -968,7 +726,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig089",
+    "id": "hist-ch12-fig067",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -979,7 +737,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig090",
+    "id": "hist-ch12-fig068",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -990,7 +748,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig091",
+    "id": "hist-ch12-fig069",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1001,7 +759,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig092",
+    "id": "hist-ch12-fig070",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1012,7 +770,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig093",
+    "id": "hist-ch12-fig071",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1023,7 +781,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig094",
+    "id": "hist-ch12-fig072",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1034,7 +792,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig095",
+    "id": "hist-ch12-fig073",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1045,7 +803,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig096",
+    "id": "hist-ch12-fig074",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1056,7 +814,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig097",
+    "id": "hist-ch12-fig075",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1067,7 +825,7 @@
     "figureType": "map"
   },
   {
-    "id": "hist-ch12-fig098",
+    "id": "hist-ch12-fig076",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1078,7 +836,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig099",
+    "id": "hist-ch12-fig077",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1089,7 +847,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig100",
+    "id": "hist-ch12-fig078",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1100,7 +858,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig101",
+    "id": "hist-ch12-fig079",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1111,7 +869,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig102",
+    "id": "hist-ch12-fig080",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1122,7 +880,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig103",
+    "id": "hist-ch12-fig081",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1133,7 +891,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch12-fig104",
+    "id": "hist-ch12-fig082",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1144,7 +902,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig105",
+    "id": "hist-ch12-fig083",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1155,7 +913,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch12-fig106",
+    "id": "hist-ch12-fig084",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1166,7 +924,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch12-fig107",
+    "id": "hist-ch12-fig085",
     "chapter": 12,
     "subject": "history",
     "topicId": "hist-ch12",
@@ -1177,7 +935,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch13-fig108",
+    "id": "hist-ch13-fig086",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1188,7 +946,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch13-fig109",
+    "id": "hist-ch13-fig087",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1199,7 +957,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig110",
+    "id": "hist-ch13-fig088",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1210,7 +968,7 @@
     "figureType": "institution"
   },
   {
-    "id": "hist-ch13-fig111",
+    "id": "hist-ch13-fig089",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1221,7 +979,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig112",
+    "id": "hist-ch13-fig090",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1232,7 +990,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig113",
+    "id": "hist-ch13-fig091",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1243,7 +1001,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig114",
+    "id": "hist-ch13-fig092",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1254,7 +1012,7 @@
     "figureType": "institution"
   },
   {
-    "id": "hist-ch13-fig115",
+    "id": "hist-ch13-fig093",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1265,7 +1023,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch13-fig116",
+    "id": "hist-ch13-fig094",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1276,7 +1034,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig117",
+    "id": "hist-ch13-fig095",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1287,7 +1045,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch13-fig118",
+    "id": "hist-ch13-fig096",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1298,7 +1056,7 @@
     "figureType": "institution"
   },
   {
-    "id": "hist-ch13-fig119",
+    "id": "hist-ch13-fig097",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1309,7 +1067,7 @@
     "figureType": "institution"
   },
   {
-    "id": "hist-ch13-fig120",
+    "id": "hist-ch13-fig098",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1320,7 +1078,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig121",
+    "id": "hist-ch13-fig099",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1331,7 +1089,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig122",
+    "id": "hist-ch13-fig100",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1342,7 +1100,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch13-fig123",
+    "id": "hist-ch13-fig101",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1353,7 +1111,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig124",
+    "id": "hist-ch13-fig102",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1364,7 +1122,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig125",
+    "id": "hist-ch13-fig103",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1375,7 +1133,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig126",
+    "id": "hist-ch13-fig104",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1386,7 +1144,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig127",
+    "id": "hist-ch13-fig105",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1397,7 +1155,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch13-fig128",
+    "id": "hist-ch13-fig106",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1408,7 +1166,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig129",
+    "id": "hist-ch13-fig107",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1419,7 +1177,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig130",
+    "id": "hist-ch13-fig108",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1430,7 +1188,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch13-fig131",
+    "id": "hist-ch13-fig109",
     "chapter": 13,
     "subject": "history",
     "topicId": "hist-ch13",
@@ -1441,7 +1199,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch2-fig132",
+    "id": "hist-ch2-fig110",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1452,7 +1210,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch2-fig133",
+    "id": "hist-ch2-fig111",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1463,7 +1221,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig134",
+    "id": "hist-ch2-fig112",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1474,7 +1232,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig135",
+    "id": "hist-ch2-fig113",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1485,7 +1243,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig136",
+    "id": "hist-ch2-fig114",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1496,7 +1254,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig137",
+    "id": "hist-ch2-fig115",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1507,7 +1265,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch2-fig138",
+    "id": "hist-ch2-fig116",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1518,7 +1276,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig139",
+    "id": "hist-ch2-fig117",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1529,7 +1287,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig140",
+    "id": "hist-ch2-fig118",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1540,7 +1298,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch2-fig141",
+    "id": "hist-ch2-fig119",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1551,7 +1309,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig142",
+    "id": "hist-ch2-fig120",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1562,7 +1320,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig143",
+    "id": "hist-ch2-fig121",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1573,7 +1331,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig144",
+    "id": "hist-ch2-fig122",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1584,7 +1342,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig145",
+    "id": "hist-ch2-fig123",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1595,7 +1353,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch2-fig146",
+    "id": "hist-ch2-fig124",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1606,7 +1364,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch2-fig147",
+    "id": "hist-ch2-fig125",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1617,7 +1375,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch2-fig148",
+    "id": "hist-ch2-fig126",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1628,7 +1386,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch2-fig149",
+    "id": "hist-ch2-fig127",
     "chapter": 2,
     "subject": "history",
     "topicId": "hist-ch2",
@@ -1639,7 +1397,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch3-fig150",
+    "id": "hist-ch3-fig128",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1650,7 +1408,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig151",
+    "id": "hist-ch3-fig129",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1661,7 +1419,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig152",
+    "id": "hist-ch3-fig130",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1672,7 +1430,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch3-fig153",
+    "id": "hist-ch3-fig131",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1683,7 +1441,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig154",
+    "id": "hist-ch3-fig132",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1694,7 +1452,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig155",
+    "id": "hist-ch3-fig133",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1705,7 +1463,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch3-fig156",
+    "id": "hist-ch3-fig134",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1716,7 +1474,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch3-fig157",
+    "id": "hist-ch3-fig135",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1727,7 +1485,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig158",
+    "id": "hist-ch3-fig136",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1738,7 +1496,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch3-fig159",
+    "id": "hist-ch3-fig137",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1749,7 +1507,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch3-fig160",
+    "id": "hist-ch3-fig138",
     "chapter": 3,
     "subject": "history",
     "topicId": "hist-ch3",
@@ -1760,7 +1518,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig161",
+    "id": "hist-ch4-fig139",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1771,7 +1529,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig162",
+    "id": "hist-ch4-fig140",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1782,7 +1540,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig163",
+    "id": "hist-ch4-fig141",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1793,7 +1551,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig164",
+    "id": "hist-ch4-fig142",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1804,7 +1562,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig165",
+    "id": "hist-ch4-fig143",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1815,7 +1573,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig166",
+    "id": "hist-ch4-fig144",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1826,7 +1584,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig167",
+    "id": "hist-ch4-fig145",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1837,7 +1595,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig168",
+    "id": "hist-ch4-fig146",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1848,7 +1606,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig169",
+    "id": "hist-ch4-fig147",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1859,7 +1617,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig170",
+    "id": "hist-ch4-fig148",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1870,7 +1628,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig171",
+    "id": "hist-ch4-fig149",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1881,7 +1639,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch4-fig172",
+    "id": "hist-ch4-fig150",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1892,7 +1650,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig173",
+    "id": "hist-ch4-fig151",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1903,7 +1661,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig174",
+    "id": "hist-ch4-fig152",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1914,7 +1672,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig175",
+    "id": "hist-ch4-fig153",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1925,7 +1683,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch4-fig176",
+    "id": "hist-ch4-fig154",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1936,7 +1694,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig177",
+    "id": "hist-ch4-fig155",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1947,7 +1705,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig178",
+    "id": "hist-ch4-fig156",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1958,7 +1716,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch4-fig179",
+    "id": "hist-ch4-fig157",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1969,7 +1727,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch4-fig180",
+    "id": "hist-ch4-fig158",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1980,7 +1738,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch4-fig181",
+    "id": "hist-ch4-fig159",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -1991,7 +1749,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch4-fig182",
+    "id": "hist-ch4-fig160",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -2002,7 +1760,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch4-fig183",
+    "id": "hist-ch4-fig161",
     "chapter": 4,
     "subject": "history",
     "topicId": "hist-ch4",
@@ -2013,7 +1771,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig184",
+    "id": "hist-ch5-fig162",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2024,7 +1782,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch5-fig185",
+    "id": "hist-ch5-fig163",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2035,7 +1793,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig186",
+    "id": "hist-ch5-fig164",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2046,7 +1804,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig187",
+    "id": "hist-ch5-fig165",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2057,7 +1815,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig188",
+    "id": "hist-ch5-fig166",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2068,7 +1826,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig189",
+    "id": "hist-ch5-fig167",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2079,7 +1837,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig190",
+    "id": "hist-ch5-fig168",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2090,7 +1848,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig191",
+    "id": "hist-ch5-fig169",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2101,7 +1859,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig192",
+    "id": "hist-ch5-fig170",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2112,7 +1870,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch5-fig193",
+    "id": "hist-ch5-fig171",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2123,7 +1881,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig194",
+    "id": "hist-ch5-fig172",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2134,7 +1892,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch5-fig195",
+    "id": "hist-ch5-fig173",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2145,7 +1903,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch5-fig196",
+    "id": "hist-ch5-fig174",
     "chapter": 5,
     "subject": "history",
     "topicId": "hist-ch5",
@@ -2156,7 +1914,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig197",
+    "id": "hist-ch6-fig175",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2167,7 +1925,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig198",
+    "id": "hist-ch6-fig176",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2178,7 +1936,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig199",
+    "id": "hist-ch6-fig177",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2189,7 +1947,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig200",
+    "id": "hist-ch6-fig178",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2200,7 +1958,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig201",
+    "id": "hist-ch6-fig179",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2211,7 +1969,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig202",
+    "id": "hist-ch6-fig180",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2222,7 +1980,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig203",
+    "id": "hist-ch6-fig181",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2233,7 +1991,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig204",
+    "id": "hist-ch6-fig182",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2244,7 +2002,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig205",
+    "id": "hist-ch6-fig183",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2255,7 +2013,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig206",
+    "id": "hist-ch6-fig184",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2266,7 +2024,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig207",
+    "id": "hist-ch6-fig185",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2277,7 +2035,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig208",
+    "id": "hist-ch6-fig186",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2288,7 +2046,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig209",
+    "id": "hist-ch6-fig187",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2299,7 +2057,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig210",
+    "id": "hist-ch6-fig188",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2310,7 +2068,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig211",
+    "id": "hist-ch6-fig189",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2321,7 +2079,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch6-fig212",
+    "id": "hist-ch6-fig190",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2332,7 +2090,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch6-fig213",
+    "id": "hist-ch6-fig191",
     "chapter": 6,
     "subject": "history",
     "topicId": "hist-ch6",
@@ -2343,7 +2101,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig214",
+    "id": "hist-ch7-fig192",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2354,7 +2112,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig215",
+    "id": "hist-ch7-fig193",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2365,7 +2123,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch7-fig216",
+    "id": "hist-ch7-fig194",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2376,7 +2134,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch7-fig217",
+    "id": "hist-ch7-fig195",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2387,7 +2145,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch7-fig218",
+    "id": "hist-ch7-fig196",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2398,7 +2156,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig219",
+    "id": "hist-ch7-fig197",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2409,7 +2167,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig220",
+    "id": "hist-ch7-fig198",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2420,7 +2178,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig221",
+    "id": "hist-ch7-fig199",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2431,7 +2189,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch7-fig222",
+    "id": "hist-ch7-fig200",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2442,7 +2200,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig223",
+    "id": "hist-ch7-fig201",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2453,7 +2211,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch7-fig224",
+    "id": "hist-ch7-fig202",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2464,7 +2222,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch7-fig225",
+    "id": "hist-ch7-fig203",
     "chapter": 7,
     "subject": "history",
     "topicId": "hist-ch7",
@@ -2475,7 +2233,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig226",
+    "id": "hist-ch8-fig204",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2486,7 +2244,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig227",
+    "id": "hist-ch8-fig205",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2497,7 +2255,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig228",
+    "id": "hist-ch8-fig206",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2508,7 +2266,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch8-fig229",
+    "id": "hist-ch8-fig207",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2519,7 +2277,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig230",
+    "id": "hist-ch8-fig208",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2530,7 +2288,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig231",
+    "id": "hist-ch8-fig209",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2541,7 +2299,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch8-fig232",
+    "id": "hist-ch8-fig210",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2552,7 +2310,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig233",
+    "id": "hist-ch8-fig211",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2563,7 +2321,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch8-fig234",
+    "id": "hist-ch8-fig212",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2574,7 +2332,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig235",
+    "id": "hist-ch8-fig213",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2585,7 +2343,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig236",
+    "id": "hist-ch8-fig214",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2596,7 +2354,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig237",
+    "id": "hist-ch8-fig215",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2607,7 +2365,7 @@
     "figureType": "artwork"
   },
   {
-    "id": "hist-ch8-fig238",
+    "id": "hist-ch8-fig216",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2618,7 +2376,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch8-fig239",
+    "id": "hist-ch8-fig217",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2629,7 +2387,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch8-fig240",
+    "id": "hist-ch8-fig218",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2640,7 +2398,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch8-fig241",
+    "id": "hist-ch8-fig219",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2651,7 +2409,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig242",
+    "id": "hist-ch8-fig220",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2662,7 +2420,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch8-fig243",
+    "id": "hist-ch8-fig221",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2673,7 +2431,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig244",
+    "id": "hist-ch8-fig222",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2684,7 +2442,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig245",
+    "id": "hist-ch8-fig223",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2695,7 +2453,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch8-fig246",
+    "id": "hist-ch8-fig224",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2706,7 +2464,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch8-fig247",
+    "id": "hist-ch8-fig225",
     "chapter": 8,
     "subject": "history",
     "topicId": "hist-ch8",
@@ -2717,7 +2475,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig248",
+    "id": "hist-ch9-fig226",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2728,7 +2486,7 @@
     "figureType": "event"
   },
   {
-    "id": "hist-ch9-fig249",
+    "id": "hist-ch9-fig227",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2739,7 +2497,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig250",
+    "id": "hist-ch9-fig228",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2750,7 +2508,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig251",
+    "id": "hist-ch9-fig229",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2761,7 +2519,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig252",
+    "id": "hist-ch9-fig230",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2772,7 +2530,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig253",
+    "id": "hist-ch9-fig231",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2783,7 +2541,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig254",
+    "id": "hist-ch9-fig232",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2794,7 +2552,7 @@
     "figureType": "general"
   },
   {
-    "id": "hist-ch9-fig255",
+    "id": "hist-ch9-fig233",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2805,7 +2563,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig256",
+    "id": "hist-ch9-fig234",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2816,7 +2574,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig257",
+    "id": "hist-ch9-fig235",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
@@ -2827,7 +2585,7 @@
     "figureType": "portrait"
   },
   {
-    "id": "hist-ch9-fig258",
+    "id": "hist-ch9-fig236",
     "chapter": 9,
     "subject": "history",
     "topicId": "hist-ch9",
