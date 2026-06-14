@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v74';
+const CACHE = 'studyhub-v75';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [
@@ -35,6 +35,7 @@ const ASSETS = [
   './geography-mindmaps.js',
   './geography-cheatsheets.js',
   './history.js',
+  './history-diagrams.js',
   './history-mindmaps.js',
   './history-cheatsheets.js',
   './civics.js',

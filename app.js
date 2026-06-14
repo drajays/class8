@@ -436,6 +436,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
+    typeof HISTORY_DIAGRAM_DATA !== 'undefined' ? HISTORY_DIAGRAM_DATA : null,
     typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof GEOGRAPHY_DIAGRAM_DATA !== 'undefined' ? GEOGRAPHY_DIAGRAM_DATA : null,
