@@ -1354,6 +1354,8 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 /* Geography descriptive & analytical Q&A */
 .src-chip-geo{background:#ecfdf5;border-color:#6ee7b7;color:#047857}
 [data-theme="dark"] .src-chip-geo{background:#064e3b;border-color:#059669;color:#a7f3d0}
+.src-chip-hist{background:#fef3c7;border-color:#fcd34d;color:#92400e}
+[data-theme="dark"] .src-chip-hist{background:#78350f;border-color:#d97706;color:#fde68a}
 .geo-qa-banner{border-color:#6ee7b7;background:linear-gradient(135deg,#ecfdf5,#f0fdf4)}
 .geo-qa-banner .qa-banner-body strong{color:#047857}
 .question-card.geo-qa-rich-card{

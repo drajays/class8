@@ -438,6 +438,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
     typeof HISTORY_DIAGRAM_DATA !== 'undefined' ? HISTORY_DIAGRAM_DATA : null,
     typeof HISTORY_CIVICS_PRACTICE !== 'undefined' ? HISTORY_CIVICS_PRACTICE : null,
+    typeof HISTORY_FIGURE_PRACTICE !== 'undefined' ? HISTORY_FIGURE_PRACTICE : null,
     typeof GEOGRAPHY_DATA !== 'undefined' ? GEOGRAPHY_DATA : null,
     typeof GEOGRAPHY_DIAGRAM_DATA !== 'undefined' ? GEOGRAPHY_DIAGRAM_DATA : null,
     typeof GEOGRAPHY_PRACTICE !== 'undefined' ? GEOGRAPHY_PRACTICE : null,
@@ -1670,6 +1671,9 @@ function sourceChipHtml(source) {
   }
   if (source === 'icse_300_practice') {
     return ' <span class="src-chip" title="ICSE practice Q&A bank">Practice</span>';
+  }
+  if (source === 'hist_figure') {
+    return ' <span class="src-chip src-chip-hist" title="History figure identification Q&A">Figure Q&A</span>';
   }
   return '';
 }
