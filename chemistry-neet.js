@@ -2756,6 +2756,17 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c4-n01b",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.1b The 125-Year Detective Story — How the Atom Was Built",
+  "content": "Discovery of **atomic structure** did not happen all at once. It was a **125-year scientific detective story** — each discovery exposed a **flaw** in the previous model, forcing the next scientist to find the missing piece.\n\n**1. DALTON'S SOLID SPHERE (1808)**\n• **Scientist:** John Dalton\n• **Concept:** Matter is made of tiny, indivisible particles called **atoms** (Greek *atomos* = unbreakable).\n• **Model:** A hard, solid **billiard ball**.\n• **Catalyst for next step:** Dalton claimed atoms could **not** be divided → physicists raced to see if anything could be extracted from inside.\n\n**2. CATHODE RAYS — NEGATIVE CHARGE (1878–1879)**\n• **Scientist:** Sir **William Crookes**\n• **Discovery:** High-voltage electricity through a vacuum tube produced **cathode rays**.\n• **Impact:** Atoms are **not completely solid** — something energetic can be pulled out.\n\n**3. CANAL RAYS — HINT OF POSITIVE CHARGE (1886)**\n• **Scientist:** **Eugen Goldstein**\n• **Discovery:** A **perforated cathode** tube produced **canal rays** travelling **opposite** to cathode rays.\n• **Impact:** If atoms contain **negative** parts, they must also contain **positive** parts to stay neutral.\n\n**4. THE ELECTRON — FIRST SUBATOMIC PARTICLE (1897)**\n• **Scientist:** **J.J. Thomson**\n• **Discovery:** Cathode rays are streams of tiny **negatively charged particles** — **electrons**.\n• **Model (1904):** **Plum Pudding Model** — electrons embedded in a sphere of positive charge (like chips in a cookie).\n• **Catalyst for next step:** A **guess** — no experimental proof of how positive and negative charge are arranged.\n\n**5. NUCLEUS & PROTON — THE CORE REVEALED (1911)**\n• **Scientist:** **Ernest Rutherford**\n• **Discovery:** Alpha particles on thin gold foil — **most passed through**, a **few bounced back**.\n• **Model:** Positive charge is **not spread out** like pudding; it is packed in a tiny, dense **nucleus**. Electrons orbit like planets. Nucleus contains **protons**.\n• **Catalyst for next step:** Orbiting electrons should **lose energy and crash** into the nucleus → atoms should collapse — but they are **stable**. A paradox.\n\n**6. QUANTIZED SHELLS — FIXING THE ORBITS (1913)**\n• **Scientist:** **Niels Bohr**\n• **Discovery:** Applied **quantum theory** to solve Rutherford's stability problem.\n• **Model:** Electrons travel in **fixed circular shells** (K, L, M, N). In its assigned shell, an electron **does not lose energy** → atom stays stable.\n• **Catalyst for next step:** Electron paths explained, but **nuclear mass** still did not add up — protons accounted for only **half** the atom's mass.\n\n**7. THE NEUTRON — FINAL PIECE (1932)**\n• **Scientist:** **James Chadwick**\n• **Discovery:** Bombarded **beryllium** with alpha particles → particle with **proton-like mass** but **zero charge** — the **neutron**.\n• **Final structure:** Nucleus = **protons + neutrons**; electrons in **energy shells** — the classic atomic picture complete.\n\n**SUMMARY TABLE — HOW ONE LED TO ANOTHER:**\n\n| Year | What Was Discovered | By Whom | Scientific Impact | What It Forced Next |\n|---|---|---|---|---|\n| **1808** | The Atom | John Dalton | Established the basic building block of chemistry. | Challenged others to see if it was truly indivisible. |\n| **1897** | The Electron | J.J. Thomson | Proved the atom could be divided; found negative charges. | Forced scientists to find the balancing positive charge. |\n| **1911** | The Nucleus & Proton | Ernest Rutherford | Found the positive core; proved atoms are mostly empty space. | Forced scientists to explain why electrons don't crash into the core. |\n| **1913** | Fixed Orbits / Shells | Niels Bohr | Solved the stability crisis with fixed energy tiers. | Forced scientists to explain why the nucleus weighed more than its protons. |\n| **1932** | The Neutron | James Chadwick | Discovered the neutral mass in the nucleus. | Completed the fundamental structural blueprint of the atom. |",
+  "explanation": "Each step breaks the previous model: indivisible → rays → electron → nucleus → stable shells → neutron completes mass.",
+  "teacherTip": "Teach as a chain story — always ask 'What problem did this discovery create for the next scientist?'",
+  "examTip": "Summary table years (1808, 1897, 1911, 1913, 1932) and 'what it forced next' column are high-yield long-answer material.",
+  "source": "icse"
+ },
+ {
   "id": "cn-c4-n02",
   "topicId": "chem-ch4",
   "type": "note",
@@ -2811,6 +2822,28 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c4-n03c",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.3c Thomson's Charge-to-Mass Ratio (e/m) — How He Measured It",
+  "content": "**J.J. Thomson** did **not** measure the electron's charge (**e**) or mass (**m**) directly. Instead, he used physics and mathematics to find their combined **charge-to-mass ratio (e/m)**. Later, **Robert Millikan** measured the exact charge **e**; substituting into Thomson's ratio gave the electron's mass **m**.\n\n**STEP 1 — Balancing the forces (finding velocity):**\nThomson passed electrons through an **electric field (E)** and a **magnetic field (B)** at the same time.\n• Electric force (upward): **F_E = e × E**\n• Magnetic force (downward): **F_B = e × v × B** (v = velocity)\nHe adjusted E and B until the beam travelled **straight** (forces balanced):\n**F_E = F_B** → **e × E = e × v × B** → cancel **e** → **v = E/B**\n\n**STEP 2 — Bending the beam (finding e/m):**\nThomson switched **off the electric field**, leaving only the magnetic field. The magnetic force curved the beam into a **circular path** of radius **r**.\nCentripetal force: **F_C = m × v² / r**\nSince magnetic force causes the curve: **F_B = F_C**\n**e × v × B = m × v² / r** → cancel one **v** → **e × B = m × v / r**\nRearrange: **e/m = v / (B × r)**\n\n**STEP 3 — Combining the equations:**\nSubstitute **v = E/B** from Step 1:\n**e/m = (E/B) / (B × r) = E / (B² × r)**\nThomson measured **E**, **B**, and **r** on the tube and calculated:\n**e/m ≈ 1.76 × 10¹¹ C/kg** (Coulombs per kilogram)\n\n**STEP 4 — Finding the actual mass (m):**\nThe huge ratio proved the electron is **unbelievably light**. Years later, **Robert Millikan** found **e = 1.602 × 10⁻¹⁹ C**.\n**m = e ÷ (e/m) = (1.602 × 10⁻¹⁹ C) ÷ (1.76 × 10¹¹ C/kg) ≈ 9.1 × 10⁻³¹ kg**\nThis is about **1/1837 the mass of a hydrogen atom** — ~2000 times smaller than the lightest atom.",
+  "explanation": "Thomson finds e/m without knowing e or m alone; Millikan supplies e; together they unlock m.",
+  "teacherTip": "Three-step story: balance E and B → get v; bend with B only → get e/m; Millikan's e → get m.",
+  "examTip": "NEET bridge: final formula e/m = E/(B²r). Value to quote: e/m ≈ 1.76 × 10¹¹ C/kg; electron mass ≈ 9.1 × 10⁻³¹ kg.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n03d",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.3d Millikan's Oil Drop Experiment — Electron Charge (1909)",
+  "content": "In **1909**, American physicist **Robert Millikan** calculated the **exact charge of an electron** using his famous **Oil Drop Experiment**. By measuring how tiny, charged oil droplets hovered or fell between two electrical plates, he supplied the missing value for **Thomson's e/m calculation**.\n\n**THE EXPERIMENTAL SETUP:**\nA closed chamber containing:\n• **Atomizer** — sprays a fine mist of tiny oil drops.\n• **X-ray source** — knocks electrons from air molecules; they attach to oil drops, making them **negatively charged**.\n• **Two metal plates** — positive plate on top, negative on bottom → adjustable **electric field**.\n• **Microscope** — to watch drops fall or float.\n\n**STEP 1 — Measuring mass (electricity OFF):**\nWith plates off, an oil drop falls until it reaches **terminal velocity (v₁)**. Then:\n• Gravity downward: **F_g = m × g**\n• Air resistance upward (Stokes' Law): **F_d = 6π × η × r × v₁** (η = viscosity, r = radius)\nAt terminal speed: **F_g = F_d**. Using the **density of oil** to find **r**, Millikan calculated the drop's **mass (m)**.\n\n**STEP 2 — Balancing the drop (electricity ON):**\nMillikan switched on the plates. The **positive top plate** pulls the **negative oil drop upward** with electric force **F_E**, opposing gravity **F_g**. He adjusted the voltage until the drop **hovered motionless**:\n**F_E = F_g** → **q × E = m × g** → **q = (m × g) / E**\nWith **m** from Step 1 and known **g** and **E**, he found the **total charge (q)** on each drop.\n\n**STEP 3 — Quantization of charge (grand conclusion):**\nMillikan measured **thousands** of drops. The charge **q** was never random — always a **whole-number multiple** of one basic unit:\n• Drop 1: **1 × 1.6 × 10⁻¹⁹ C**\n• Drop 2: **2 × 1.6 × 10⁻¹⁹ C**\n• Drop 3: **5 × 1.6 × 10⁻¹⁹ C**\nEach drop picked up a **whole number of electrons** (1, 2, 3…). The smallest package = charge of **one electron**:\n**e ≈ 1.602 × 10⁻¹⁹ C (Coulombs)**\n\n**LINK TO THOMSON:** Plug Millikan's **e** into Thomson's **e/m ≈ 1.76 × 10¹¹ C/kg** → electron mass **m ≈ 9.1 × 10⁻³¹ kg**.",
+  "explanation": "Fall freely → mass; hover in E-field → charge; whole-number multiples → quantization → electron charge e.",
+  "teacherTip": "Millikan completes Thomson: Thomson gave e/m; Millikan gave e; together they gave m.",
+  "examTip": "Quote e = 1.602 × 10⁻¹⁹ C. Key idea: charge comes in discrete packets (quantization) — whole electrons only.",
+  "source": "icse"
+ },
+ {
   "id": "cn-c4-n04",
   "topicId": "chem-ch4",
   "type": "note",
@@ -2819,6 +2852,28 @@ const CHEMISTRY_NEET_DATA = [
   "explanation": "Goldstein → canal/anode rays → proton (+1, 1 amu). The proton count is each element's identity card.",
   "teacherTip": "'Canal' because the rays streamed through the little canals (holes) drilled in the cathode.",
   "examTip": "Anode rays are also called canal rays BECAUSE they pass through the holes of the perforated cathode — give the reason, not just the name.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n04b",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.4b History of the Proton — Goldstein to Rutherford",
+  "content": "Discovery of the **proton** was a **two-part journey**: **Eugen Goldstein (1886)** found **canal rays** (positive particles); **Ernest Rutherford (1919)** isolated and named the **proton** (official name **1920**, from Greek **protos** = \"first\").\n\n**STEP 1 — GOLDSTEIN & CANAL RAYS (1886):**\nAfter cathode rays (electrons) were known, Goldstein reasoned that **positive particles** must exist to keep atoms neutral. He modified the discharge tube:\n• **Perforated cathode** — cathode disc with tiny holes instead of solid metal.\n• **Observation:** Negative cathode rays shot forward as usual, but **faint glowing rays** travelled in the **opposite direction**, passing through the cathode holes (canals) and lighting the glass behind — **canal rays** or **anode rays**.\n\n**How canal rays form:**\n1. Fast **cathode rays (electrons)** collide with residual **gas atoms** in the tube.\n2. Collisions **knock electrons out** of gas atoms → **positive gas ions**.\n3. Positive ions are attracted to the **negative cathode** and fly **through its holes**.\n\n**STEP 2 — PROPERTIES (Wien, Thomson, others):**\nStudying canal rays in electric and magnetic fields revealed:\n• **Positive charge** — rays bend toward the **negative** plate.\n• **Varying mass** — unlike electrons (always same), mass **depends on the gas** in the tube.\n• **Lightest with hydrogen** — hydrogen gas gave the **smallest positive particles**.\n\n**STEP 3 — RUTHERFORD ISOLATES THE PROTON (1919):**\nGoldstein's rays were **whole gas ions**, not pure subatomic particles. Rutherford fired fast **alpha particles** (helium nuclei) into **pure nitrogen gas**.\n• **Reaction:** Detectors showed a new product — **oxygen**.\n• **Mystery particle:** A tiny, highly energetic particle was also ejected.\n• **Identity:** It matched the **light hydrogen nucleus** seen in canal-ray work.\n\n**Rutherford's deduction:** If nitrogen + alpha → oxygen + **hydrogen nucleus**, then the **hydrogen nucleus is a fundamental building block inside all heavier nuclei**. In **1920** he named this positively charged subatomic particle the **proton**.\n\n**PROTON PROPERTIES (for reference):** Charge **+1** (1.602 × 10⁻¹⁹ C); mass **≈ 1 amu** (1.672 × 10⁻²⁷ kg); symbol **₊₁p¹**. In a neutral atom, **protons = electrons**; atomic number **Z** = number of protons.",
+  "explanation": "Goldstein → positive canal rays; Rutherford → proton as fundamental nucleus particle. Hydrogen nucleus = proton in every atom.",
+  "teacherTip": "Exam trap: canal rays led to the proton story, but Rutherford officially isolated and named the proton.",
+  "examTip": "Goldstein 1886 = canal/anode rays. Rutherford 1919/1920 = proton isolated and named. H gas → lightest positive particles.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n04c",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.4c Thomson's CRT vs Goldstein's Canal Ray Tube",
+  "content": "Compare the two discharge-tube experiments side by side — a favourite **difference / compare-contrast** question linking the discoveries of the **electron** and **proton**.\n\n| Feature | Thomson's Tube (Cathode Ray Tube) | Goldstein's Tube (Canal Ray Tube) |\n|---|---|---|\n| **Primary Discovery** | Discovered the **electron** (e⁻). | Discovered the **proton / positive ions** (p⁺). |\n| **Type of Rays Produced** | **Cathode rays** — streams of electrons. | **Canal rays / anode rays** — streams of positive gaseous ions. |\n| **Key Structural Difference** | Uses a standard, **solid metal plate** as the cathode. | Uses a **perforated cathode** — a plate with tiny holes. |\n| **Direction of Ray Movement** | Travels from the **negative cathode** to the **positive anode**. | Travels from the **anode side**, passing **through the holes** of the cathode. |\n| **Charge of Particles** | **Negatively charged.** | **Positively charged.** |\n| **Dependence on Gas** | Nature of cathode rays **does not change**, no matter what gas is in the tube. | Nature and **mass of canal rays change completely** depending on the gas in the tube. |\n| **Mass of Particles** | Extremely light (**1/1837** the mass of a hydrogen atom). | Heavy — mass is roughly equal to the **atomic mass of the gas** used. |\n| **Visual Evidence** | Glass wall **behind the anode** glows (phosphorescence). | Glass wall **behind the perforated cathode** glows. |\n\n**Memory hook:** Thomson = **solid cathode**, **negative** rays, **electron**, same in every gas. Goldstein = **holes in cathode**, **positive** rays, **gas-dependent** mass.",
+  "explanation": "Same discharge-tube family — opposite rays, opposite charges, opposite cathode design.",
+  "teacherTip": "Exam trap: students swap which glass wall glows — CRT glows behind anode; canal tube glows behind perforated cathode.",
+  "examTip": "Learn the perforated cathode + gas-dependent mass pair — they uniquely identify Goldstein's tube.",
   "source": "icse"
  },
  {
@@ -2855,6 +2910,17 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c4-n07b",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.7a Discovery of the Neutron — Chadwick (1932)",
+  "content": "By the **1920s**, scientists faced a puzzle: the nucleus contains **protons**, yet its **total mass** was always **roughly double** the proton mass alone. Example: a **helium nucleus** has **2 protons** but a mass equal to **4 protons**.\n\n**James Chadwick** (a student of Rutherford) realised a **third particle** must exist in the nucleus — adding **mass** but carrying **zero charge**.\n\n**CHADWICK'S EXPERIMENT (1932):**\n\n**1. The Bombardment:** Chadwick bombarded a thin sheet of **beryllium (Be)** with high-energy **alpha (α) particles**.\n\n**2. Mysterious Radiation:** Beryllium emitted strange, **highly penetrating radiation**. Unlike protons or electrons, it was **unaffected by electric or magnetic fields** → proved **electrically neutral**.\n\n**3. The Paraffin Wax Test:** Chadwick directed this neutral radiation into a block of **paraffin wax** (rich in hydrogen/protons). The radiation **knocked high-speed protons** out of the wax.\n\n**4. The Calculation:** By measuring the **speed and energy** of the ejected protons, Chadwick proved the neutral radiation consisted of particles with **nearly the same mass as a proton**.\n\nHe named these particles **neutrons** (symbol **₀n¹**). This completed the basic atomic model (**protons + electrons + neutrons**) and earned Chadwick the **Nobel Prize in Physics (1935)**.\n\n**Key facts:** Neutron charge = **0**; mass **≈ 1 amu** (1.675 × 10⁻²⁷ kg, slightly heavier than a proton); located in the **nucleus**. Ordinary **hydrogen has no neutron**.",
+  "explanation": "Mass puzzle → neutral beryllium radiation → paraffin knocks out protons → mass ≈ proton → neutron.",
+  "teacherTip": "Exam sequence: α on Be → neutral rays → paraffin wax → ejected protons → Chadwick calculates mass.",
+  "examTip": "Chadwick 1932 = neutron. Neutral radiation + paraffin wax test is the standard 4-mark answer.",
+  "source": "icse"
+ },
+ {
   "id": "cn-c4-n07c",
   "topicId": "chem-ch4",
   "type": "note",
@@ -2863,6 +2929,17 @@ const CHEMISTRY_NEET_DATA = [
   "explanation": "Read row-by-row for one feature across all four models, or column-by-column for one scientist's full picture.",
   "teacherTip": "Exam favourite: 'Compare Thomson and Rutherford' — positive charge spread vs concentrated nucleus; pudding vs empty space.",
   "examTip": "Memorise the Major Limitation row — one line per model is often worth 4 marks in a comparison question.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n07d",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.7c Comparison — Electron, Proton and Neutron",
+  "content": "Complete cheat sheet for all **three fundamental subatomic particles** — ideal for compare/contrast and property-based MCQs.\n\n| Property | Electron (e⁻) | Proton (p⁺) | Neutron (n) |\n|---|---|---|---|\n| **Discoverer** | J.J. Thomson (1897) | Ernest Rutherford (1919) | James Chadwick (1932) |\n| **Location in Atom** | Outside nucleus (orbits/shells) | Inside the nucleus | Inside the nucleus |\n| **Absolute Charge** | −1.6 × 10⁻¹⁹ C | +1.6 × 10⁻¹⁹ C | 0 (neutral) |\n| **Relative Charge** | −1 | +1 | 0 |\n| **Absolute Mass** | 9.109 × 10⁻³¹ kg | 1.673 × 10⁻²⁷ kg | 1.675 × 10⁻²⁷ kg |\n| **Relative Mass** | 1/1837 amu (negligible ≈ 0) | 1 amu | 1 amu |\n| **Mass Comparison** | Lightest; ~1837× lighter than proton | Heavy; ≈ mass of hydrogen atom | Slightly heavier than proton; heaviest of the three |\n\n**Quick memory:** **P-E-N** — Proton positive (+1), Electron negative (−1), Neutron neutral (0). Masses: electron ≈ 0, proton ≈ neutron ≈ 1 amu.",
+  "explanation": "Same magnitude of charge on e⁻ and p⁺ but opposite sign; neutron adds mass without charge.",
+  "teacherTip": "Row test: 'Which particle is unaffected by E/M fields?' → neutron (and neutral Chadwick radiation).",
+  "examTip": "Discoverer + location + relative charge/mass is the classic 4-column comparison question.",
   "source": "icse"
  },
  {
@@ -3919,6 +3996,82 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse",
   "image": "images/chem-ch4_img_018.jpg",
   "caption": "Cathode Ray Tube — J.J. Thomson, 1897 (electric and magnetic deflection)"
+ },
+ {
+  "id": "cn-c4-d24",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the timeline figure, the leftmost model — a plain solid sphere labelled Dalton — represents:",
+  "options": [
+   "the Billiard Ball Model: atoms are indivisible, hard, solid spheres",
+   "the Plum Pudding Model: a positive sphere with embedded electrons",
+   "the Planetary Model: a tiny dense nucleus with orbiting electrons",
+   "the Electron Cloud Model: electrons exist in probability zones"
+  ],
+  "correctOption": 0,
+  "answer": "John Dalton (1808) pictured the atom as a tiny, solid, indivisible sphere — the Billiard Ball or Solid Sphere Model. Subatomic particles were unknown at that time.",
+  "linksTo": "cn-c4-n02",
+  "source": "icse",
+  "image": "images/chem-ch4_img_019.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
+ },
+ {
+  "id": "cn-c4-d25",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The model labelled Rutherford in the figure — with a small positive nucleus and electrons in the surrounding space — is also called the:",
+  "options": [
+   "Plum Pudding Model",
+   "Nuclear / Planetary Model",
+   "Billiard Ball Model",
+   "Quantum Cloud Model"
+  ],
+  "correctOption": 1,
+  "answer": "Rutherford (1911) proposed the Nuclear or Planetary Model after his gold-foil experiment: a tiny, dense, positively charged nucleus at the centre with electrons revolving around it like planets around the sun.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_019.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
+ },
+ {
+  "id": "cn-c4-d26",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The rightmost model in the timeline, labelled Schrödinger, shows electrons as:",
+  "options": [
+   "fixed dots on concentric circular orbits",
+   "embedded plums inside a uniform positive sphere",
+   "a fuzzy cloud / probability zone around the nucleus — no definite path",
+   "absent — the atom is a solid indivisible ball"
+  ],
+  "correctOption": 2,
+  "answer": "Schrödinger's Electron Cloud (Quantum) Model describes electrons as existing in probability zones (orbitals) around the nucleus — a cloud of likely positions rather than fixed orbits. It is the basis of the modern atomic picture.",
+  "linksTo": "cn-c4-n07",
+  "source": "icse",
+  "image": "images/chem-ch4_img_019.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
+ },
+ {
+  "id": "cn-c4-d27",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "Reading the timeline from left to right, the correct chronological order of scientists is:",
+  "options": [
+   "Dalton → Thomson → Rutherford → Bohr → Schrödinger",
+   "Thomson → Dalton → Bohr → Rutherford → Schrödinger",
+   "Dalton → Rutherford → Thomson → Bohr → Schrödinger",
+   "Bohr → Rutherford → Thomson → Dalton → Schrödinger"
+  ],
+  "correctOption": 0,
+  "answer": "The arrow shows atomic theory evolving: Dalton (1808, solid sphere) → Thomson (1897/1904, plum pudding) → Rutherford (1911, nucleus) → Bohr (1913, fixed shells) → Schrödinger (1920s, electron cloud).",
+  "linksTo": "cn-c4-n07c",
+  "source": "icse",
+  "image": "images/chem-ch4_img_019.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
  },
  {
   "id": "cn-c5-n01",
