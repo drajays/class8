@@ -1730,7 +1730,13 @@ function chapterMindmap(topicId) {
 function chapterCheatsheet(topicId) {
   if (!topicId) return null;
   if (typeof PHYSICS_CHEATSHEET_DATA !== 'undefined' && PHYSICS_CHEATSHEET_DATA[topicId]) {
-    return PHYSICS_CHEATSHEET_DATA[topicId];
+    const base = PHYSICS_CHEATSHEET_DATA[topicId];
+    const formulaGroup = typeof PHYSICS_FORMULA_GROUPS !== 'undefined'
+      ? PHYSICS_FORMULA_GROUPS[topicId] : null;
+    if (formulaGroup && !(base.groups || []).some(g => g.id === 'all-formulas')) {
+      return { ...base, groups: [...(base.groups || []), formulaGroup] };
+    }
+    return base;
   }
   if (typeof CHEMISTRY_CHEATSHEET_DATA !== 'undefined' && CHEMISTRY_CHEATSHEET_DATA[topicId]) {
     return CHEMISTRY_CHEATSHEET_DATA[topicId];
