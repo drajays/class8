@@ -2760,10 +2760,21 @@ const CHEMISTRY_NEET_DATA = [
   "topicId": "chem-ch4",
   "type": "note",
   "subtopic": "4.2 Dalton's Atomic Theory and Its Drawbacks",
-  "content": "**John Dalton** (English, **1808**) proposed: (1) matter consists of very small **indivisible** particles called atoms; (2) atoms can neither be created nor destroyed; (3) atoms of an element are **identical** in size, mass, density and chemical properties but differ from atoms of other elements; (4) atoms of an element combine in small numbers to form molecules of that element; (5) atoms of different elements combine in **simple whole-number ratios** to form compound molecules; (6) atoms are the smallest units taking part in chemical reactions, during which only **rearrangement of atoms** occurs. **Drawbacks proved later**: atoms ARE divisible (into electrons, protons, neutrons), and atoms of one element are NOT all identical (**isotopes** have the same atomic number but different mass numbers). What survives: atoms do take part in chemical reactions.",
-  "explanation": "Six postulates; two are now wrong (indivisibility, identical atoms). The reaction-participation idea remains the theory's lasting essence.",
-  "teacherTip": "Teach postulates first, then 'destroy' two of them with the electron and the isotope — students remember the contradiction story.",
-  "examTip": "'How do isotopes contradict Dalton?' → Dalton said all atoms of an element are identical; isotopes of the same element differ in mass number.",
+  "content": "**John Dalton** (English, **1808**) proposed the first scientific, rule-based model of the atom.\n\n**KEY POSTULATES:**\n(1) **Tiny Particles** — All matter is made up of very small particles called **atoms**.\n(2) **Indivisible** — Atoms cannot be **divided, created, or destroyed** during a chemical reaction.\n(3) **Identical Elements** — All atoms of a **specific element** are exactly alike in shape, size, and mass.\n(4) **Different Elements** — Atoms of **different elements** have completely different sizes, masses, and properties.\n(5) **Simple Ratios** — Atoms combine with each other in small, **whole-number ratios** (like 1:1 or 2:1) to form compounds.\n(6) In a chemical reaction, atoms are only **rearranged** — they are the smallest units taking part.\n\n**WHY IT IS IMPORTANT:**\n• **Mass Conservation** — Explains why the total mass stays the same before and after a chemical reaction (Law of Conservation of Mass).\n• **Foundation of Chemistry** — It was the very first scientific, rule-based model of an atom.\n\n**MODERN CORRECTIONS (drawbacks):**\n• **Divisible** — Atoms are NOT indivisible; they contain smaller subatomic particles: **electrons, protons, and neutrons**.\n• **Isotopes** — Atoms of the same element can have slightly different masses (e.g. ¹²C and ¹⁴C — different types of carbon). This disproves Dalton's claim that all atoms of an element are identical.",
+  "explanation": "Five key postulates for Class 8; two are now wrong (indivisibility, identical atoms). Mass conservation and whole-number combining ratios remain valid.",
+  "teacherTip": "Teach postulates first, then 'destroy' two with the electron discovery and isotopes — students remember the contradiction story.",
+  "examTip": "For extra marks: state postulates + importance (mass conservation) + modern corrections (divisible, isotopes).",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n02b",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.2b How Dalton Proposed His Model — Experiments",
+  "content": "**John Dalton** performed real scientific experiments, but unlike modern scientists he could **not look inside an atom**. Instead, he studied **how gases behave** and **how chemicals react by weight**, using his observations to propose his famous atomic theory (1808).\n\n**1. GAS EXPERIMENTS (why he believed atoms existed):**\nDalton began by studying weather and the atmosphere. He compressed different gases in closed containers and mixed them together.\n• **Finding:** Each gas in a mixture behaved **completely independently** of the others — as if made of distinct, individual particles.\n• **Conclusion:** Air is NOT a single uniform liquid-like substance; it is made of tiny, **hard, independent particles (atoms)** constantly moving and bouncing around.\n\n**2. WEIGHT EXPERIMENTS (how he proved chemical ratios):**\nDalton measured the **exact masses** of elements when they reacted to form compounds. His famous experiment involved mixing **oxygen with nitric oxide** gas over water.\n• **Finding:** Elements did not mix randomly. A **fixed amount** of one element always reacted with either **exactly one or exactly two portions** of another element **by weight**.\n• **Conclusion:** This led to the **Law of Multiple Proportions** — because weights always combined in clean **whole-number ratios** (1:1 or 1:2), matter must be made of **solid, unbreakable building blocks**. You cannot have a fraction of a block, which is why chemical ratios are never fractional!\n\n**3. DALTON'S SOLID SPHERE MODEL (Billiard Ball Model):**\nBecause his data showed atoms were solid and unbreakable, Dalton pictured atoms as tiny, **hard, indivisible spheres** — like marbles, bowling balls or billiard balls. During a chemical reaction, atoms simply **rearrange** themselves **without ever breaking apart**.",
+  "explanation": "Two experiment paths → two conclusions: gas independence proves discrete particles; weight ratios prove whole-number combining blocks.",
+  "teacherTip": "Billiard-ball model = Dalton's visual — solid spheres that only shuffle places in a reaction, never split.",
+  "examTip": "'How did Dalton propose his theory?' → gas experiments (independent particles) + weight experiments (Law of Multiple Proportions, whole-number ratios).",
   "source": "icse"
  },
  {
@@ -2775,6 +2786,28 @@ const CHEMISTRY_NEET_DATA = [
   "explanation": "Cathode ray → deflects to positive plate → must be negative → electron. The 1/1837 mass fraction and the symbol ₋₁e⁰ are the quotable numbers.",
   "teacherTip": "Old TV picture tubes were giant cathode-ray tubes — a real-life discharge tube.",
   "examTip": "Electron: J.J. Thomson, 1897, charge −1, mass 1/1837 of H atom. All four facts appear as fill-in-the-blanks.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n03a",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.3a Sir William Crookes — Discovery of Cathode Rays (1878)",
+  "content": "In **1878**, English chemist and physicist **Sir William Crookes** discovered **cathode rays**. He improved older gas tubes with a **superior vacuum pump** to remove almost all air from a sealed glass tube. When he passed a **massive electrical voltage** through this highly evacuated **Crookes Tube**, a mysterious glow appeared. Three famous experiments proved what these rays are:\n\n**EXPERIMENT 1 — The Maltese Cross (straight-line travel):**\nCrookes placed a metal **Maltese Cross** between the cathode (−) and anode (+).\n• **Observation:** The glass at the far end glowed greenish, but a **sharp shadow of the cross** appeared on the glowing glass.\n• **Conclusion:** Rays originate at the **cathode** and travel in **perfectly straight lines** — they cannot bend around objects (like light making a shadow). Hence the name **cathode rays**.\n\n**EXPERIMENT 2 — The Paddle Wheel (rays have mass):**\nA lightweight **paddle wheel** on glass rails was placed inside the tube.\n• **Observation:** When voltage was applied, the wheel **spun and rolled toward the anode**.\n• **Conclusion:** Cathode rays are **not just light waves** — they are **real particles with mass and kinetic energy** that physically push the wheel (like wind turning a windmill).\n\n**EXPERIMENT 3 — Magnetic Deflection (rays carry charge):**\nCrookes held a strong **bar magnet** near the outside of the glowing tube.\n• **Observation:** The glowing beam **bent sharply** away from its straight path.\n• **Conclusion:** A magnetic field alters only **moving electrical charges** — so cathode rays are **charged particles**, not ordinary light.\n\n**LINK TO J.J. THOMSON (1897):** Crookes proved cathode rays are straight-moving, material, charged particles — but did not identify them. **Two decades later**, J.J. Thomson used the same **Crookes Tube** design, measured their **e/m ratio**, showed they are about **1/1837 the mass of a hydrogen atom** (~2000× smaller than atoms), and named them **electrons**.",
+  "explanation": "Maltese cross → straight lines; paddle wheel → mass; magnet → charge. Crookes names the rays; Thomson identifies the electron.",
+  "teacherTip": "Three experiments = three properties: direction (straight), matter (mass), electricity (charge).",
+  "examTip": "Match experiment to conclusion: Cross → straight lines; Wheel → mass; Magnet → charged particles.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n03b",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.3b J.J. Thomson's Cathode Ray Tube (CRT) Experiment — 1897",
+  "content": "In **1897**, British physicist **J.J. Thomson** discovered the **electron** through his famous **Cathode Ray Tube (CRT)** experiment. This proved that **Dalton's indivisible atom** theory was wrong — atoms contain tiny, **negatively charged subatomic particles**.\n\n**THE EXPERIMENTAL SETUP:**\nThomson used a sealed, **partially evacuated glass tube** with two metal electrodes connected to a **high-voltage** source:\n• **Cathode (−)** — negatively charged metal plate; rays originate here.\n• **Anode (+)** — positively charged plate with a **small hole** in the centre; lets the beam pass through.\n• **Fluorescent screen** — **zinc sulfide (ZnS)** coating at the far end that **glows green** when struck by particles.\n\n**THREE CRUCIAL OBSERVATIONS:**\nWhen high voltage was switched on, a **cathode ray** shot from the cathode, passed through the anode hole, and hit the screen. Thomson tested the beam with **electric and magnetic fields**:\n(1) **Travels in straight lines** — without external fields, the rays cast sharp shadows.\n(2) **Deflection toward positive** — in an electric field, the beam bent **toward the positive plate** and away from the negative plate; a magnet also deflected the beam.\n(3) **Independent of material** — the **same rays** were produced regardless of the cathode metal or the gas in the tube.\n\n**THOMSON'S KEY CONCLUSIONS:**\n• **Negatively charged particles** — attraction to the positive plate proved the rays are streams of **negative particles** (first called **corpuscles**, now **electrons**).\n• **Part of all matter** — since changing metal or gas changed nothing, electrons are a **fundamental component of every atom**.\n• **Very small mass** — Thomson measured the **charge-to-mass ratio (e/m)** and found these particles are about **1/1837 the mass of a hydrogen atom** (~2000 times lighter).\n\n**PLUM PUDDING MODEL (1904):** To explain the electron inside a neutral atom, Thomson proposed a **sphere of uniform positive charge** with **electrons embedded** in it — like raisins in a pudding or chocolate chips in a cookie. See note 4.5 for details.",
+  "explanation": "Deflects to + plate → negative charge → electron. Same ray from any metal → electrons in all atoms. Dalton's indivisible atom is disproved.",
+  "teacherTip": "The CRT diagram shows BOTH electric and magnetic deflection — either proves the ray is made of charged particles.",
+  "examTip": "'What did Thomson prove?' → atoms are divisible; contain negative electrons; same in all elements.",
   "source": "icse"
  },
  {
@@ -2819,6 +2852,17 @@ const CHEMISTRY_NEET_DATA = [
   "explanation": "Chadwick completes the particle trio; Bohr rescues stability with fixed-energy shells; the modern atom = nucleus (p + n) + revolving electrons.",
   "teacherTip": "'P-E-N' drill: Proton positive, Electron negative, Neutron neutral — with masses 1, ~0, 1 amu.",
   "examTip": "Hydrogen is the ONLY atom with no neutron — a favourite 'name the particle not present in hydrogen' question.",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-n07c",
+  "topicId": "chem-ch4",
+  "type": "note",
+  "subtopic": "4.7b Comparison of Atomic Models — Master Table",
+  "content": "Use this table to compare **Dalton**, **Thomson**, **Rutherford** and **Bohr** at a glance — ideal for revision and compare/contrast exam questions.\n\n| Feature / Model | Dalton (1808) | Thomson (1904) | Rutherford (1911) | Bohr (1913) |\n|---|---|---|---|---|\n| **Common Name** | Billiard Ball / Solid Sphere Model | Plum Pudding / Watermelon Model | Nuclear / Planetary Model | Shell / Orbit Model |\n| **Main Concept** | The atom is an **indivisible, hard, solid sphere**. Subatomic particles were unknown. | The atom is a **sphere of positive charge** with **negative electrons embedded** in it. | The atom is **mostly empty space** with a tiny, dense, positive **nucleus**. | Electrons revolve around the nucleus only in **specific, fixed circular paths** called **shells**. |\n| **Position of Positive Charge** | Not defined (entire atom believed to be a single indivisible unit). | **Distributed uniformly** throughout the entire volume of the atomic sphere. | **Concentrated entirely** inside the tiny, central nucleus. | **Concentrated inside the nucleus**. |\n| **Position of Electrons** | **Not yet discovered.** | Embedded randomly throughout the positive sphere (like seeds in a watermelon). | Revolving rapidly around the nucleus in arbitrary circular paths. | Revolving in **fixed, discrete energy levels** labelled **K, L, M, N** (or n = 1, 2, 3, 4). |\n| **Energy of Electrons** | N/A | N/A | Classical physics predicted **continuous energy loss** → unstable atom. | Electrons have **fixed energy in a shell** and do **not radiate energy** unless they jump between shells. |\n| **Major Limitation** | Failed to explain **subatomic particles** (protons, electrons) and **isotopes**. | Failed to explain **Rutherford's alpha-particle scattering** results. | Could not explain **stability** (why electrons don't crash into the nucleus). | Could not accurately explain spectra of **larger atoms** with many electrons. |",
+  "explanation": "Read row-by-row for one feature across all four models, or column-by-column for one scientist's full picture.",
+  "teacherTip": "Exam favourite: 'Compare Thomson and Rutherford' — positive charge spread vs concentrated nucleus; pudding vs empty space.",
+  "examTip": "Memorise the Major Limitation row — one line per model is often worth 4 marks in a comparison question.",
   "source": "icse"
  },
  {
@@ -3390,6 +3434,56 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse"
  },
  {
+  "id": "cn-c4-q34",
+  "topicId": "chem-ch4",
+  "type": "short_answer",
+  "subtopic": "Short/Long Answer",
+  "question": "Describe Rutherford's Alpha (α) Particle Scattering Experiment (Gold Foil Experiment). State the key observations, conclusions drawn, main features of Rutherford's atomic model, and its major drawback.",
+  "answer": "**1. The Gold Foil Experiment (1911):** Lord Ernest Rutherford bombarded a very thin gold foil (~1000 atoms thick) with fast-moving, positively charged alpha (α) particles. A circular fluorescent screen was placed around the foil to detect where the particles hit after passing through.\n\n**2. Key Observations:** (a) MOST alpha particles passed straight through the gold foil without any deviation. (b) A FEW were deflected from their straight path by small angles. (c) A VERY SMALL number (about 1 in 12,000) rebounded completely, turning back by 180°.\n\n**3. Conclusions:** (a) Since most particles passed straight through → most of the space inside an atom is EMPTY. (b) Since a few positive alpha particles were deflected → there must be a POSITIVELY CHARGED CENTRE causing strong repulsive force. (c) Since an incredibly small fraction bounced back → this positive centre must be extremely HEAVY, DENSE and concentrated in a very small volume — the NUCLEUS.\n\n**4. Main Features of Rutherford's Model (Nuclear/Planetary Model):** (a) **Nucleus** — a dense, positively charged centre; almost the entire mass of the atom is concentrated here. (b) **Extra-nuclear part** — electrons revolve around the nucleus at very high speeds in fixed circular paths (orbits), like planets around the sun. (c) **Electrical neutrality** — total negative charge of electrons = total positive charge of nucleus. (d) **Size** — the nucleus is extremely small compared to the total size of the atom.\n\n**5. Major Drawback:** According to classical physics, a charged particle moving in a circular orbit undergoes acceleration and must radiate (lose) energy continuously. The revolving electron should therefore spiral inward and collapse into the nucleus, making atoms unstable — but atoms are actually highly stable. Rutherford could not explain this.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-q35",
+  "topicId": "chem-ch4",
+  "type": "short_answer",
+  "subtopic": "Short/Long Answer",
+  "question": "State the key postulates of Dalton's Atomic Theory. Why is it important? Which postulates were later proven incorrect by modern discoveries?",
+  "answer": "**KEY POSTULATES (1808):**\n(1) **Tiny Particles** — All matter is made up of very small particles called atoms.\n(2) **Indivisible** — Atoms cannot be divided, created, or destroyed during a chemical reaction.\n(3) **Identical Elements** — All atoms of a specific element are exactly alike in shape, size, and mass.\n(4) **Different Elements** — Atoms of different elements have completely different sizes, masses, and properties.\n(5) **Simple Ratios** — Atoms combine in small, whole-number ratios (like 1:1 or 2:1) to form compounds.\n\n**WHY IT IS IMPORTANT:**\n• **Mass Conservation** — It explains why the total mass stays the same before and after a chemical reaction.\n• **Foundation of Chemistry** — It was the very first scientific, rule-based model of an atom.\n\n**MODERN CORRECTIONS (postulates later proven incorrect):**\n• **Divisible** — Atoms are NOT indivisible; they contain smaller particles: electrons, protons, and neutrons.\n• **Isotopes** — Atoms of the same element can have slightly different masses (e.g. ¹²C and ¹⁴C — different types of carbon), disproving the claim that all atoms of an element are identical.",
+  "linksTo": "cn-c4-n02",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-q36",
+  "topicId": "chem-ch4",
+  "type": "short_answer",
+  "subtopic": "Short/Long Answer",
+  "question": "How did John Dalton propose his atomic model? Describe his gas experiments and weight experiments, and explain the Solid Sphere (Billiard Ball) Model he visualized.",
+  "answer": "Dalton could not see inside atoms. He used **two types of experiments** to build his atomic theory (1808):\n\n**1. GAS EXPERIMENTS:** Dalton studied weather and compressed different gases in closed containers. He found that each gas in a mixture behaved **independently**, as if made of separate particles. He concluded that air is made of tiny, **hard, independent atoms** constantly moving and bouncing — not a uniform liquid.\n\n**2. WEIGHT EXPERIMENTS:** He measured exact masses when elements reacted (e.g. oxygen with nitric oxide over water). He found that a fixed mass of one element always combined with **exactly one or two portions** of another by weight — never fractional amounts. This led to the **Law of Multiple Proportions** and the idea that matter is made of **unbreakable blocks** combining in **whole-number ratios** (1:1, 1:2).\n\n**SOLID SPHERE MODEL:** Dalton pictured atoms as tiny, **hard, indivisible spheres** (Billiard Ball / Solid Sphere Model) — like marbles or billiard balls. In a chemical reaction, atoms only **rearrange** without breaking apart.",
+  "linksTo": "cn-c4-n02b",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-q37",
+  "topicId": "chem-ch4",
+  "type": "short_answer",
+  "subtopic": "Short/Long Answer",
+  "question": "Describe J.J. Thomson's Cathode Ray Tube (CRT) experiment (1897). State the experimental setup, three crucial observations, Thomson's conclusions, and the Plum Pudding Model he proposed.",
+  "answer": "**Background:** In 1897, J.J. Thomson used the CRT experiment to discover the **electron**, proving Dalton's **indivisible atom** theory wrong.\n\n**EXPERIMENTAL SETUP:** A sealed, partially evacuated glass tube with:\n• **Cathode (−)** and **Anode (+)** (anode has a small central hole), connected to **high voltage**.\n• **Zinc sulfide (ZnS) fluorescent screen** at the far end that glows when struck.\n\n**THREE OBSERVATIONS:**\n(1) **Straight-line travel** — without fields, cathode rays cast sharp shadows.\n(2) **Deflection toward positive** — in an electric field, the beam bends toward the **positive plate**; a magnetic field also deflects it.\n(3) **Same rays from any material** — identical cathode rays regardless of cathode metal or gas used.\n\n**THOMSON'S CONCLUSIONS:**\n• Rays are streams of **negatively charged particles** (corpuscles → **electrons**).\n• Electrons are a **fundamental part of all atoms** (not just one element).\n• Very small mass — **e/m ratio** shows mass ≈ **1/1837 of a hydrogen atom**.\n\n**PLUM PUDDING MODEL (1904):** Atom = sphere of **uniform positive charge** with **electrons embedded** inside (like raisins in a pudding), keeping the atom electrically neutral.",
+  "linksTo": "cn-c4-n03b",
+  "source": "icse"
+ },
+ {
+  "id": "cn-c4-q38",
+  "topicId": "chem-ch4",
+  "type": "short_answer",
+  "subtopic": "Short/Long Answer",
+  "question": "Describe Sir William Crookes' discovery of cathode rays (1878). Explain his three famous experiments — Maltese Cross, Paddle Wheel, and Magnetic Deflection — with observations and conclusions. How does this connect to J.J. Thomson?",
+  "answer": "In **1878**, **Sir William Crookes** passed high voltage through a highly evacuated **Crookes Tube** (improved vacuum pump) and saw a mysterious glow — he named the rays **cathode rays**.\n\n**1. MALTESE CROSS EXPERIMENT:** A metal Maltese Cross was placed between cathode and anode.\n• **Observation:** Green glow at the far end, with a **sharp shadow of the cross**.\n• **Conclusion:** Rays travel from the **cathode in straight lines** and cannot bend around objects.\n\n**2. PADDLE WHEEL EXPERIMENT:** A lightweight paddle wheel on rails was inside the tube.\n• **Observation:** The wheel **spun and rolled toward the anode** when voltage was applied.\n• **Conclusion:** Cathode rays are **material particles with mass and kinetic energy**, not just light waves.\n\n**3. MAGNETIC DEFLECTION:** A bar magnet was brought near the tube.\n• **Observation:** The glowing beam **bent sharply** from its straight path.\n• **Conclusion:** Cathode rays carry an **electrical charge** (magnetic fields affect moving charges).\n\n**CONNECTION TO THOMSON:** Crookes showed cathode rays are straight-moving, massive, charged particles but did not identify them. In **1897**, **J.J. Thomson** used the Crookes Tube, measured their **e/m ratio**, proved they are ~**1/1837 the mass of hydrogen**, and named them **electrons**.",
+  "linksTo": "cn-c4-n03a",
+  "source": "icse"
+ },
+ {
   "id": "cn-c4-d01",
   "topicId": "chem-ch4",
   "type": "mcq",
@@ -3692,6 +3786,139 @@ const CHEMISTRY_NEET_DATA = [
   "source": "icse",
   "image": "images/chem-ch4_img_014.jpg",
   "caption": "Atomic diagram of an atom with 12 protons and 12 neutrons"
+ },
+ {
+  "id": "cn-c4-d17",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the experiment apparatus shown, the circular fluorescent screen and the viewing microscope moved in a circular arc are used to:",
+  "options": [
+   "detect where alpha particles strike after passing through the gold foil",
+   "produce fast-moving alpha particles from the gold foil",
+   "evaporate the gold foil before bombardment",
+   "measure the exact mass of a single gold atom"
+  ],
+  "correctOption": 0,
+  "answer": "The screen fluoresces wherever an alpha particle hits, and the microscope is rotated around the foil to record scattering at different angles — this is how Rutherford mapped the paths of particles after they passed through the foil.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_015.jpg",
+  "caption": "Rutherford's Alpha Particle Scattering Experiment — apparatus and atomic-level view"
+ },
+ {
+  "id": "cn-c4-d18",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the atomic-level view, the alpha particle that rebounds through 180° after hitting the nucleus proves that the atom's positive mass is:",
+  "options": [
+   "spread evenly throughout the atom like in Thomson's model",
+   "carried entirely by the orbiting electrons",
+   "extremely small, very dense and concentrated at the centre — the nucleus",
+   "located on the outer surface of the atom"
+  ],
+  "correctOption": 2,
+  "answer": "Only about 1 in 12,000 alpha particles bounced straight back. Such a violent repulsion demands a tiny, massive, positively charged centre — Rutherford named it the nucleus.",
+  "linksTo": "cn-c4-n06",
+  "source": "icse",
+  "image": "images/chem-ch4_img_015.jpg",
+  "caption": "Rutherford's Alpha Particle Scattering Experiment — apparatus and atomic-level view"
+ },
+ {
+  "id": "cn-c4-d19",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the timeline of atomic models, the diagram labelled Bohr (1913) shows:",
+  "options": [
+   "a solid, uniform sphere with no internal structure",
+   "electrons moving in fixed circular shells (orbitals) around the nucleus",
+   "a positive sphere with electrons embedded like plums in a pudding",
+   "electrons as a wave-like cloud with no definite path"
+  ],
+  "correctOption": 1,
+  "answer": "Bohr (1913) proposed that electrons revolve in fixed circular orbits (shells/energy levels) around the nucleus — each shell has a fixed amount of energy, which explains atomic stability.",
+  "linksTo": "cn-c4-n07",
+  "source": "icse",
+  "image": "images/chem-ch4_img_016.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
+ },
+ {
+  "id": "cn-c4-d20",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "The model labelled Thomson (1897) in the figure is also known as the:",
+  "options": [
+   "Plum Pudding Model — a positive sphere with electrons embedded in it",
+   "Nuclear Model — electrons revolve around a dense central nucleus",
+   "Dalton Model — an indivisible solid sphere",
+   "Quantum Cloud Model — electrons exist as probability waves"
+  ],
+  "correctOption": 0,
+  "answer": "J.J. Thomson pictured the atom as a uniformly positively charged sphere with electrons embedded in it like plums in a pudding — the first atomic model, later disproved by Rutherford's scattering experiment.",
+  "linksTo": "cn-c4-n05",
+  "source": "icse",
+  "image": "images/chem-ch4_img_016.jpg",
+  "caption": "Timeline of atomic models — Dalton, Thomson, Rutherford, Bohr, Schrödinger"
+ },
+ {
+  "id": "cn-c4-d21",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the brown sphere of 'Positively charged matter' with minus (−) particles embedded in it represents:",
+  "options": [
+   "Thomson's Plum Pudding Model — electrons embedded in a uniform positive sphere",
+   "Rutherford's Nuclear Model — electrons revolving around a central nucleus",
+   "Dalton's Model — a solid, indivisible sphere with no internal structure",
+   "Bohr's Model — electrons in fixed circular shells around the nucleus"
+  ],
+  "correctOption": 0,
+  "answer": "J.J. Thomson compared the atom to a plum pudding: the 'pudding' is a sphere of uniformly distributed positive charge, and the 'plums' are the negatively charged electrons embedded in it — the Plum Pudding Model (1897).",
+  "linksTo": "cn-c4-n05",
+  "source": "icse",
+  "image": "images/chem-ch4_img_017.jpg",
+  "caption": "Thomson's Plum Pudding Model — pudding analogy and atomic diagram"
+ },
+ {
+  "id": "cn-c4-d22",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the Cathode Ray Tube shown, when an electric field is applied (left diagram), the beam bends toward the positive deflector plate. This proves cathode rays are made of:",
+  "options": [
+   "negatively charged particles (electrons)",
+   "positively charged particles (protons)",
+   "neutral particles with no charge",
+   "ultraviolet light waves"
+  ],
+  "correctOption": 0,
+  "answer": "Like charges repel and opposite charges attract — bending toward the positive plate means the cathode ray carries negative charge. Thomson named these particles corpuscles; we call them electrons.",
+  "linksTo": "cn-c4-n03b",
+  "source": "icse",
+  "image": "images/chem-ch4_img_018.jpg",
+  "caption": "Cathode Ray Tube — J.J. Thomson, 1897 (electric and magnetic deflection)"
+ },
+ {
+  "id": "cn-c4-d23",
+  "topicId": "chem-ch4",
+  "type": "mcq",
+  "subtopic": "Diagram MCQ",
+  "question": "In the figure, the green glow on the zinc sulfide (ZnS) screen at the end of the tube appears because:",
+  "options": [
+   "cathode rays (electrons) strike the fluorescent coating and make it glow",
+   "the anode emits visible light through the hole",
+   "high voltage heats the glass until it glows",
+   "positive canal rays hit the screen"
+  ],
+  "correctOption": 0,
+  "answer": "The partially evacuated tube lets cathode rays travel from cathode → anode hole → ZnS screen. The fluorescent coating scintillates where the electron beam hits — the visible proof that particles, not just current, are travelling.",
+  "linksTo": "cn-c4-n03b",
+  "source": "icse",
+  "image": "images/chem-ch4_img_018.jpg",
+  "caption": "Cathode Ray Tube — J.J. Thomson, 1897 (electric and magnetic deflection)"
  },
  {
   "id": "cn-c5-n01",

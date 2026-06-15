@@ -226,6 +226,26 @@ body{
 .search-result-text mark{background:var(--accent-soft);color:var(--ink);padding:0 2px;border-radius:3px}
 .search-load-more{margin-top:8px;text-align:center}
 .search-spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:8px}
+.keyword-search-wrap{position:relative;margin:0 0 16px}
+.keyword-search-wrap .search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:.95rem;pointer-events:none}
+.keyword-search-input{
+  width:100%;font-family:var(--font-ui);font-size:.9rem;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);
+  padding:11px 38px 11px 40px;border-radius:12px;outline:none;transition:var(--t);
+}
+.keyword-search-input::placeholder{color:var(--ink-3)}
+.keyword-search-input:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.keyword-search-clear{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border:none;border-radius:8px;
+  background:var(--surface-3);color:var(--ink-3);cursor:pointer;font-size:.85rem;line-height:1;
+}
+.keyword-search-clear:hover{background:var(--line);color:var(--ink)}
+.chapter-keyword-search{margin-bottom:14px}
+.subject-keyword-search{margin:0 0 20px;max-width:520px}
+.empty-state.compact{padding:28px 16px}
+.empty-state.compact .empty-icon{font-size:2rem;margin-bottom:8px}
+.scoped-search-panel{padding:4px 0 12px}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ---------- HEADINGS ---------- */

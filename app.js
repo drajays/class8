@@ -2043,6 +2043,7 @@ function navigateTo(view, id) {
     if (typeof updateExamModeClass === 'function') updateExamModeClass();
   }
   if (view === 'home') clearQuestionSearch();
+  clearLocalSearch();
   currentView = view;
   userAnswers = {};
   if (view === 'home') { selectedClass = null; selectedSubject = null; selectedTopic = null; }
@@ -2490,12 +2491,22 @@ function renderSubjects(el) {
 function renderTopics(el) {
   const sub = appData.subjects.find(s=>s.id===selectedSubject);
   const tops = appData.topics.filter(t=>t.subjectId===selectedSubject);
+  const subjectSearchActive = localSearchQuery && localSearchScope === 'subject' && selectedSubject;
   el.innerHTML = `
     <div class="fade-in">
       <div class="section-header">
         <h1>${sub?.icon} ${sub?.name} - Chapters</h1>
+        ${keywordSearchBoxHtml({
+          inputId: 'subject-keyword-search',
+          placeholder: 'Search notes & questions in this subject…',
+          value: localSearchScope === 'subject' ? localSearchQuery : '',
+          handlerFn: 'subjectKeywordSearch',
+          clearFn: 'clearSubjectSearch',
+          extraClass: 'subject-keyword-search'
+        })}
       </div>
-      <div class="card-grid">
+      <div id="subject-search-results" class="scoped-search-panel"></div>
+      <div id="subject-chapter-grid" class="card-grid" ${subjectSearchActive ? 'style="display:none"' : ''}>
         ${tops.map(t => {
           let notes, mcqs, qs, diagrams, cardMeta;
           if (selectedSubject === 'physics' && isPhysicsTopic(t.id)) {
@@ -2536,9 +2547,20 @@ function renderTopics(el) {
           `;
         }).join('')}
       </div>
-      ${tops.length===0?'<div class="empty-state"><div class="empty-icon">📭</div><h3>No chapters yet</h3><p>Click "Add New" to add chapters and content</p></div>':''}
+      ${!subjectSearchActive && tops.length===0?'<div class="empty-state"><div class="empty-icon">📭</div><h3>No chapters yet</h3><p>Click "Add New" to add chapters and content</p></div>':''}
     </div>
   `;
+  if (subjectSearchActive) {
+    const panel = document.getElementById('subject-search-results');
+    if (panel) {
+      renderScopedSearchPanel(panel, {
+        results: localSearchResults,
+        terms: localSearchTerms,
+        scopeTitle: sub?.name || 'this subject',
+        showChapter: true
+      });
+    }
+  }
 }
 
 // ===== CONTENT =====
@@ -2694,6 +2716,14 @@ function renderContent(el) {
     <div class="fade-in chapter-page">
       <div class="chapter-top">
         <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
+        ${keywordSearchBoxHtml({
+          inputId: 'chapter-keyword-search',
+          placeholder: 'Search notes & questions in this chapter…',
+          value: localSearchScope === 'chapter' ? localSearchQuery : '',
+          handlerFn: 'chapterKeywordSearch',
+          clearFn: 'clearChapterSearch',
+          extraClass: 'chapter-keyword-search'
+        })}
         ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
         ${qStats ? `<p class="chapter-bank-hint">📚 ${
           isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation'
@@ -2725,6 +2755,20 @@ function renderContent(el) {
       </div>
     </div>
   `;
+
+  const chapterSearchActive = localSearchQuery && localSearchScope === 'chapter' && selectedTopic;
+  if (chapterSearchActive) {
+    const body = document.getElementById('content-body');
+    if (body) {
+      renderScopedSearchPanel(body, {
+        results: localSearchResults,
+        terms: localSearchTerms,
+        scopeTitle: topic?.name || 'this chapter',
+        showChapter: false
+      });
+    }
+    return;
+  }
 
   if (contentTab === 'notes') renderNotes();
   else if (contentTab === 'mindmap') renderMindMap(mmData);
@@ -3896,7 +3940,7 @@ function filterManager() {
 }
 
 // ============================================================
-// QUESTION SEARCH (indexed, debounced, paginated)
+// CONTENT SEARCH — notes & questions (global + subject/chapter scoped)
 // ============================================================
 const SEARCH_DEBOUNCE_MS = 220;
 const SEARCH_CHUNK_SIZE = 500;
@@ -3905,55 +3949,239 @@ const SEARCH_MIN_TERM_LEN = 2;
 
 let _searchTimer = null;
 let _searchGen = 0;
-let _questionSearchIndex = null;
+let _contentSearchIndex = null;
 let searchQuery = '';
 let searchResults = null; // null = loading, [] = none
 let searchResultShown = 0;
 let searchActiveTerms = [];
 
+let _localSearchTimer = null;
+let _localSearchGen = 0;
+let localSearchQuery = '';
+let localSearchResults = null;
+let localSearchTerms = [];
+let localSearchScope = null; // 'chapter' | 'subject'
+
 const SEARCH_TYPE_LABELS = {
+  note: 'Note',
   mcq: 'MCQ', true_false: 'True/False', fill_blank: 'Fill blank',
   match: 'Match', short_answer: 'Short answer'
 };
 
 function invalidateQuestionSearchIndex() {
-  _questionSearchIndex = null;
+  _contentSearchIndex = null;
 }
 
-function allSearchableQuestions() {
-  return appData.content.filter(c => {
-    if (c.type === 'note') return false;
-    if (isBiologyTopic(c.topicId)) return isBiologyOlympiadQuiz(c);
-    if (!isPhysicsTopic(c.topicId)) return true;
-    return isPhysicsPipelineItem(c) || isDiagramMcq(c);
-  });
+function isSearchableContentItem(c) {
+  if (c.type === 'note') return true;
+  if (isBiologyTopic(c.topicId)) return isBiologyOlympiadQuiz(c);
+  if (!isPhysicsTopic(c.topicId)) return true;
+  return isPhysicsPipelineItem(c) || isDiagramMcq(c);
 }
 
-function questionSearchText(q) {
-  const parts = [q.question, q.subtopic, q.answer, q.blankAnswer, q.explanation];
-  if (q.content) parts.push(q.content);
-  if (q.options) parts.push(...q.options);
-  if (q.pairs) q.pairs.forEach(p => { parts.push(p.left, p.right); });
+function allSearchableContent() {
+  return appData.content.filter(isSearchableContentItem);
+}
+
+function contentSearchText(c) {
+  const parts = [c.question, c.subtopic, c.answer, c.blankAnswer, c.explanation, c.content, c.teacherTip, c.examTip];
+  if (c.options) parts.push(...c.options);
+  if (c.pairs) c.pairs.forEach(p => { parts.push(p.left, p.right); });
   return parts.filter(Boolean).map(stripHtmlForSearch).join(' ').toLowerCase();
 }
 
-function buildQuestionSearchIndex() {
-  if (_questionSearchIndex) return _questionSearchIndex;
-  _questionSearchIndex = allSearchableQuestions().map(q => ({
-    id: q.id,
-    topicId: q.topicId,
-    type: q.type,
-    text: questionSearchText(q),
-    preview: stripHtmlForSearch(q.question || q.subtopic || '').replace(/\s+/g, ' ').trim()
+function contentSearchPreview(c) {
+  const raw = c.type === 'note'
+    ? (c.subtopic || c.content || '')
+    : (c.question || c.subtopic || '');
+  return stripHtmlForSearch(raw).replace(/\s+/g, ' ').trim();
+}
+
+function buildContentSearchIndex() {
+  if (_contentSearchIndex) return _contentSearchIndex;
+  _contentSearchIndex = allSearchableContent().map(c => ({
+    id: c.id,
+    topicId: c.topicId,
+    type: c.type,
+    isNote: c.type === 'note',
+    text: contentSearchText(c),
+    preview: contentSearchPreview(c)
   }));
-  return _questionSearchIndex;
+  return _contentSearchIndex;
+}
+
+function buildQuestionSearchIndex() {
+  return buildContentSearchIndex();
 }
 
 function scheduleQuestionSearchIndexBuild() {
-  if (_questionSearchIndex || !appData) return;
-  const run = () => { if (appData && !_questionSearchIndex) buildQuestionSearchIndex(); };
+  if (_contentSearchIndex || !appData) return;
+  const run = () => { if (appData && !_contentSearchIndex) buildContentSearchIndex(); };
   if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 2500 });
   else setTimeout(run, 120);
+}
+
+function keywordSearchBoxHtml(opts) {
+  const {
+    inputId, placeholder, value, handlerFn, clearFn, extraClass = ''
+  } = opts;
+  const v = escHtml(value || '');
+  const clearBtn = value
+    ? `<button type="button" class="keyword-search-clear" onclick="${clearFn}()" aria-label="Clear search" title="Clear">✕</button>`
+    : '';
+  return `<div class="keyword-search-wrap ${extraClass}">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+    <input type="search" class="search-input keyword-search-input" id="${inputId}"
+      placeholder="${escHtml(placeholder)}" value="${v}" autocomplete="off"
+      oninput="${handlerFn}(this.value)" enterkeyhint="search"
+      aria-label="${escHtml(placeholder)}">
+    ${clearBtn}
+  </div>`;
+}
+
+function clearLocalSearch() {
+  _localSearchGen += 1;
+  localSearchQuery = '';
+  localSearchResults = null;
+  localSearchTerms = [];
+  localSearchScope = null;
+}
+
+function clearChapterSearch() {
+  chapterKeywordSearch('');
+}
+
+function clearSubjectSearch() {
+  subjectKeywordSearch('');
+}
+
+function chapterKeywordSearch(query) {
+  if (!selectedTopic) return;
+  runScopedSearch(query, { type: 'chapter', topicId: selectedTopic });
+}
+
+function subjectKeywordSearch(query) {
+  if (!selectedSubject) return;
+  runScopedSearch(query, { type: 'subject', subjectId: selectedSubject });
+}
+
+function runScopedSearch(query, scope) {
+  clearTimeout(_localSearchTimer);
+  _localSearchTimer = setTimeout(() => _executeScopedSearch(query, scope), SEARCH_DEBOUNCE_MS);
+}
+
+function _executeScopedSearch(query, scope) {
+  const terms = parseSearchTerms(query);
+  const gen = ++_localSearchGen;
+
+  if (!terms.length) {
+    clearLocalSearch();
+    renderMain();
+    return;
+  }
+
+  clearQuestionSearch();
+  localSearchQuery = query;
+  localSearchTerms = terms;
+  localSearchScope = scope.type;
+  localSearchResults = null;
+  renderMain();
+
+  const topicIds = scope.type === 'chapter'
+    ? new Set([scope.topicId])
+    : new Set(appData.topics.filter(t => t.subjectId === scope.subjectId).map(t => t.id));
+
+  const run = () => {
+    if (gen !== _localSearchGen) return;
+    const index = buildContentSearchIndex();
+    const matches = [];
+    let i = 0;
+
+    function chunk() {
+      if (gen !== _localSearchGen) return;
+      const end = Math.min(i + SEARCH_CHUNK_SIZE, index.length);
+      for (; i < end; i++) {
+        if (!topicIds.has(index[i].topicId)) continue;
+        if (_searchTermsMatch(index[i].text, terms)) matches.push(index[i].id);
+      }
+      if (i < index.length) {
+        requestAnimationFrame(chunk);
+      } else if (gen === _localSearchGen) {
+        localSearchResults = matches;
+        renderMain();
+      }
+    }
+    requestAnimationFrame(chunk);
+  };
+
+  if (_contentSearchIndex) run();
+  else setTimeout(run, 0);
+}
+
+function renderScopedSearchPanel(el, opts) {
+  const { results, terms, scopeTitle, showChapter } = opts;
+  if (!el) return;
+
+  if (results === null) {
+    el.innerHTML = `<p class="search-status"><span class="search-spinner"></span>Searching “${escHtml(localSearchQuery)}”…</p>`;
+    return;
+  }
+
+  if (!results.length) {
+    el.innerHTML = `<div class="empty-state compact">
+      <div class="empty-icon">🔍</div>
+      <h3>No matches in ${escHtml(scopeTitle)}</h3>
+      <p>Try fewer words, check spelling, or use quotes for an exact phrase — e.g. <em>Rutherford nucleus</em> or <em>"gold foil"</em></p>
+    </div>`;
+    return;
+  }
+
+  const indexById = new Map(buildContentSearchIndex().map(e => [e.id, e]));
+  const typeIcons = { note: '📝', mcq: '🔘', true_false: '✅', fill_blank: '✍️', match: '🔗', short_answer: '📋' };
+  const rows = results.map(id => {
+    const entry = indexById.get(id);
+    const item = appData.content.find(c => c.id === id);
+    if (!entry || !item) return '';
+    const topic = appData.topics.find(t => t.id === item.topicId);
+    const typeLabel = entry.isNote ? 'Note' : (SEARCH_TYPE_LABELS[item.type] || item.type);
+    const diagram = !entry.isNote && isDiagramMcq(item) ? '<span class="search-type-chip">🖼️ Diagram</span>' : '';
+    const chapterLine = showChapter && topic
+      ? `<span>·</span><span>${escHtml(topic.name)}</span>` : '';
+    const icon = typeIcons[entry.isNote ? 'note' : item.type] || '';
+    let metaMain = `<span>${icon} ${escHtml(typeLabel)}</span>`;
+    if (chapterLine) metaMain += chapterLine;
+    else if (item.subtopic) metaMain += `<span>·</span><span>${escHtml(item.subtopic)}</span>`;
+    return `<button type="button" class="search-result-item" onclick="openLocalSearchResult('${item.id}')">
+      <div class="search-result-meta">
+        ${metaMain}
+        ${diagram}
+      </div>
+      <div class="search-result-text">${_searchSnippet(entry.preview, terms)}</div>
+    </button>`;
+  }).join('');
+
+  el.innerHTML = `
+    <p class="search-hint">${results.length} match${results.length === 1 ? '' : 'es'} in ${escHtml(scopeTitle)} · notes &amp; questions · tap to open</p>
+    <div class="search-results">${rows}</div>
+  `;
+}
+
+function openLocalSearchResult(id) {
+  clearLocalSearch();
+  const item = appData.content.find(c => c.id === id);
+  if (!item) return;
+  if (item.type === 'note') {
+    const topic = appData.topics.find(t => t.id === item.topicId);
+    if (topic) {
+      selectedClass = topic.classId;
+      selectedSubject = topic.subjectId;
+      selectedTopic = item.topicId;
+      currentView = 'content';
+    }
+    jumpToNote(id);
+  } else {
+    jumpToQuestion(id);
+  }
 }
 
 function parseSearchTerms(raw) {
@@ -3970,8 +4198,9 @@ function parseSearchTerms(raw) {
 }
 
 function syncSearchInputs(value) {
-  document.querySelectorAll('.search-input').forEach(inp => {
-    if (inp.value !== value) inp.value = value;
+  ['header-search', 'sidebar-search'].forEach(id => {
+    const inp = document.getElementById(id);
+    if (inp && inp.value !== value) inp.value = value;
   });
 }
 
@@ -4017,10 +4246,12 @@ function _runQuestionSearch(query) {
     searchResults = [];
     searchResultShown = 0;
     searchActiveTerms = [];
+    syncSearchInputs('');
     render();
     return;
   }
 
+  clearLocalSearch();
   const gen = ++_searchGen;
   searchQuery = query;
   searchActiveTerms = terms;
@@ -4052,7 +4283,7 @@ function _runQuestionSearch(query) {
     requestAnimationFrame(chunk);
   };
 
-  if (_questionSearchIndex) run();
+  if (_contentSearchIndex) run();
   else {
     setTimeout(run, 0);
   }
@@ -4087,7 +4318,21 @@ function _searchSnippet(text, terms) {
 
 function openSearchResult(qId) {
   dismissMobileSidebar();
-  jumpToQuestion(qId);
+  clearQuestionSearch();
+  const item = appData.content.find(c => c.id === qId);
+  if (!item) return;
+  if (item.type === 'note') {
+    const topic = appData.topics.find(t => t.id === item.topicId);
+    if (topic) {
+      selectedClass = topic.classId;
+      selectedSubject = topic.subjectId;
+      selectedTopic = item.topicId;
+    }
+    currentView = 'content';
+    jumpToNote(qId);
+  } else {
+    jumpToQuestion(qId);
+  }
 }
 
 function loadMoreSearchResults() {
@@ -4110,16 +4355,16 @@ function renderSearchView(el) {
       <div class="section-header"><h1>🔍 Search</h1></div>
       <div class="empty-state">
         <div class="empty-icon">🔍</div>
-        <h3>No questions found</h3>
+        <h3>No notes or questions found</h3>
         <p>Try fewer words, check spelling, or use quotes for an exact phrase — e.g. <em>latent heat</em> or <em>"boiling point"</em></p>
       </div>
     </div>`;
     return;
   }
 
-  const indexById = new Map(buildQuestionSearchIndex().map(e => [e.id, e]));
+  const indexById = new Map(buildContentSearchIndex().map(e => [e.id, e]));
   const slice = searchResults.slice(0, searchResultShown);
-  const typeIcons = { mcq: '🔘', true_false: '✅', fill_blank: '✍️', match: '🔗', short_answer: '📋' };
+  const typeIcons = { note: '📝', mcq: '🔘', true_false: '✅', fill_blank: '✍️', match: '🔗', short_answer: '📋' };
 
   const rows = slice.map(id => {
     const entry = indexById.get(id);
@@ -4127,13 +4372,14 @@ function renderSearchView(el) {
     if (!entry || !q) return '';
     const topic = appData.topics.find(t => t.id === q.topicId);
     const subject = topic ? appData.subjects.find(s => s.id === topic.subjectId) : null;
-    const diagram = isDiagramMcq(q) ? '<span class="search-type-chip">🖼️ Diagram</span>' : '';
+    const typeLabel = entry.isNote ? 'Note' : (SEARCH_TYPE_LABELS[q.type] || q.type);
+    const diagram = !entry.isNote && isDiagramMcq(q) ? '<span class="search-type-chip">🖼️ Diagram</span>' : '';
     return `<button type="button" class="search-result-item" onclick="openSearchResult('${q.id}')">
       <div class="search-result-meta">
-        <span>${subject ? subject.icon + ' ' + escHtml(subject.name) : 'Question'}</span>
+        <span>${subject ? subject.icon + ' ' + escHtml(subject.name) : 'Content'}</span>
         <span>·</span>
         <span>${topic ? escHtml(topic.name) : ''}</span>
-        <span class="search-type-chip">${typeIcons[q.type] || ''} ${SEARCH_TYPE_LABELS[q.type] || q.type}</span>
+        <span class="search-type-chip">${typeIcons[entry.isNote ? 'note' : q.type] || ''} ${typeLabel}</span>
         ${diagram}
       </div>
       <div class="search-result-text">${_searchSnippet(entry.preview, searchActiveTerms)}</div>
@@ -4146,7 +4392,7 @@ function renderSearchView(el) {
 
   el.innerHTML = `<div class="fade-in">
     <div class="section-header"><h1>🔍 Search</h1></div>
-    <p class="search-hint">${searchResults.length} question${searchResults.length === 1 ? '' : 's'} · all words must match · tap a result to open in its chapter</p>
+    <p class="search-hint">${searchResults.length} result${searchResults.length === 1 ? '' : 's'} · notes &amp; questions · all words must match · tap to open in its chapter</p>
     <div class="search-results">${rows}</div>
     ${more}
   </div>`;
