@@ -42,11 +42,11 @@ let currentView = 'home'; // home, subjects, topics, content
 let selectedClass = null;
 let selectedSubject = null;
 let selectedTopic = null;
-let contentTab = 'notes'; // notes, mindmap, cheatsheet, oneword, questions, qa, diagrams
+let contentTab = 'notes'; // notes, mindmap, cheatsheet, oneword, questions, qa, numerical, diagrams
 let mindMapIndex = 0;
 let activeWordId = null;
 let wordCardOrder = [];
-let questionFilter = 'all'; // all, true_false, fill_blank, mcq, match, short_answer
+let questionFilter = 'all'; // all, top, true_false, fill_blank, mcq, numerical
 let userAnswers = {};
 let sidebarCollapsed = false;
 let appReady = false;
@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 55;
+const DATA_VERSION = 56;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -185,6 +185,26 @@ function topicShortAnswerQuestions(topicId) {
     if (geoQa.length) return geoQa;
   }
   return all;
+}
+
+/** Numerical / mathematical problems — density, pressure, speed, force calculations, etc. */
+function isNumericalQuestion(q) {
+  if (!q || q.type === 'note') return false;
+  if (q.source === 'phy_numerical' || q.category === 'numerical') return true;
+  const sub = (q.subtopic || '').toLowerCase();
+  if (/numerical|mathematical/.test(sub)) return true;
+  if (q.type === 'short_answer' && (isPhysicsTopic(q.topicId) || isChemistryTopic(q.topicId))) {
+    const stem = (q.question || '').toLowerCase();
+    if (/^\d+\.\s*(calculate|find the|compute|convert|express|determine)/.test(stem)) return true;
+  }
+  return false;
+}
+
+function topicNumericalQuestions(topicId) {
+  const all = appData.content.filter(c =>
+    (!topicId || c.topicId === topicId) && c.type !== 'note' && !isDiagramMcq(c)
+  );
+  return all.filter(isNumericalQuestion);
 }
 
 /** Interactive practice items — excludes Q&A and match (self-study types). */
@@ -444,7 +464,8 @@ function _mergeModuleArraysIntoDefault() {
     typeof GEOGRAPHY_PRACTICE !== 'undefined' ? GEOGRAPHY_PRACTICE : null,
     typeof PHYSICS_QBANK !== 'undefined' ? PHYSICS_QBANK : null,
     typeof PHYSICS_PRACTICE !== 'undefined' ? PHYSICS_PRACTICE : null,
-    typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null
+    typeof PHYSICS_NEET_DATA !== 'undefined' ? PHYSICS_NEET_DATA : null,
+    typeof PHYSICS_NUMERICALS !== 'undefined' ? PHYSICS_NUMERICALS : null
   ];
   const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
   modules.forEach(arr => {
@@ -1591,13 +1612,18 @@ function jumpToQuestion(qId) {
     selectedTopic = q.topicId;
   }
   currentView = 'content';
-  contentTab = isDiagramMcq(q) ? 'diagrams' : (q.type === 'short_answer' ? 'qa' : 'questions');
+  contentTab = isDiagramMcq(q) ? 'diagrams'
+    : (isNumericalQuestion(q) ? 'numerical' : (q.type === 'short_answer' ? 'qa' : 'questions'));
   questionFilter = 'all';
   userAnswers = {};
   if (isDiagramMcq(q)) {
     const diags = sortedDiagramQuestions(q.topicId);
     const dIdx = diags.findIndex(x => x.id === qId);
     if (dIdx >= 0) diagramIndex = dIdx;
+  } else if (isNumericalQuestion(q)) {
+    const numList = sortQuestionsByQuality(topicNumericalQuestions(q.topicId));
+    const qIdx = numList.findIndex(x => x.id === qId);
+    if (qIdx >= 0) questionIndex = qIdx;
   } else if (q.type === 'short_answer') {
     const qaList = sortQuestionsByQuality(topicShortAnswerQuestions(q.topicId));
     const qIdx = qaList.findIndex(x => x.id === qId);
@@ -1768,7 +1794,9 @@ function getFilteredQuestions(questions) {
     ? questions
     : questionFilter === 'top'
       ? questions.filter(q => getQuestionQuality(q).stars >= 4)
-      : questions.filter(q => q.type === questionFilter);
+      : questionFilter === 'numerical'
+        ? questions.filter(isNumericalQuestion)
+        : questions.filter(q => q.type === questionFilter);
   return sortQuestionsByQuality(filteredRaw);
 }
 
@@ -1798,7 +1826,7 @@ function setChapterViewMode(mode) {
 }
 
 function chapterViewModeHtml() {
-  if (contentTab !== 'notes' && contentTab !== 'questions' && contentTab !== 'qa') return '';
+  if (contentTab !== 'notes' && contentTab !== 'questions' && contentTab !== 'qa' && contentTab !== 'numerical') return '';
   return `<div class="chapter-view-toggle" role="group" aria-label="View mode">
     <button type="button" class="view-mode-btn ${chapterViewMode === 'pager' ? 'active' : ''}" onclick="setChapterViewMode('pager')" title="Show one note or question at a time">📄 One at a time</button>
     <button type="button" class="view-mode-btn ${chapterViewMode === 'scroll' ? 'active' : ''}" onclick="setChapterViewMode('scroll')" title="Scroll through all items continuously">📜 Continuous scroll</button>
@@ -1845,6 +1873,9 @@ function activeQuestionList() {
   if (contentTab === 'qa') {
     return sortQuestionsByQuality(topicShortAnswerQuestions(selectedTopic));
   }
+  if (contentTab === 'numerical') {
+    return sortQuestionsByQuality(topicNumericalQuestions(selectedTopic));
+  }
   return getFilteredQuestions(topicPracticeQuestions(selectedTopic));
 }
 
@@ -1879,7 +1910,7 @@ function handleContentPagerKeys(e) {
   if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
   const prev = e.key === 'ArrowLeft';
   if (contentTab === 'notes') { prev ? prevNoteCard() : nextNoteCard(); e.preventDefault(); }
-  else if (contentTab === 'questions' || contentTab === 'qa') { prev ? prevQuestionCard() : nextQuestionCard(); e.preventDefault(); }
+  else if (contentTab === 'questions' || contentTab === 'qa' || contentTab === 'numerical') { prev ? prevQuestionCard() : nextQuestionCard(); e.preventDefault(); }
   else if (contentTab === 'diagrams') { prev ? prevDiagramCard() : nextDiagramCard(); e.preventDefault(); }
 }
 
@@ -2517,18 +2548,22 @@ function buildChapterRevisionHint(csData, mmData, qStats) {
 
 function buildChapterSidebarHtml(opts) {
   const {
-    notes, questions, qaQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter
+    notes, questions, qaQuestions, numericalQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter
   } = opts;
   const mcqCount = qStats ? qStats.mcq : questions.filter(q => q.type === 'mcq').length;
   const qaCount = qaQuestions ? qaQuestions.length : 0;
+  const numCount = numericalQuestions ? numericalQuestions.length : 0;
 
   const statRows = [
     { label: 'Notes', num: notes.length, click: "switchContentTab('notes')" },
     { label: qStats ? 'Questions' : 'Text Qs', num: questions.length, click: "switchContentTab('questions')" },
     { label: 'MCQs', num: mcqCount, click: "switchContentTab('questions');setQuestionFilter('mcq')" },
     { label: '📋 Short/Long Answer', num: qaCount, click: "switchContentTab('qa')", qa: true },
-    { label: 'Diagram MCQs', num: diagrams.length, click: "switchContentTab('diagrams')" }
   ];
+  if (numCount) {
+    statRows.push({ label: '🔢 Numerical', num: numCount, click: "switchContentTab('numerical')", numTab: true });
+  }
+  statRows.push({ label: 'Diagram MCQs', num: diagrams.length, click: "switchContentTab('diagrams')" });
   if (csData) {
     statRows.push({ label: '⚡ Cheat Sheet', num: csData.topTen ? csData.topTen.length : '—', click: "switchContentTab('cheatsheet')", rev: true });
   }
@@ -2537,7 +2572,7 @@ function buildChapterSidebarHtml(opts) {
   }
 
   const statsHtml = statRows.map(s => `
-    <button type="button" class="ch-stat-row${s.rev ? ' ch-stat-rev' : ''}${s.qa ? ' ch-stat-qa' : ''}" onclick="${s.click}">
+    <button type="button" class="ch-stat-row${s.rev ? ' ch-stat-rev' : ''}${s.qa ? ' ch-stat-qa' : ''}${s.numTab ? ' ch-stat-num' : ''}" onclick="${s.click}">
       <span class="ch-stat-num">${s.num}</span>
       <span class="ch-stat-lbl">${s.label}</span>
     </button>`).join('');
@@ -2579,6 +2614,7 @@ function buildChapterSidebarHtml(opts) {
     const types = [
       { key: 'all', label: 'All', icon: '📋' },
       { key: 'top', label: 'Top ★★★★', icon: '⭐' },
+      { key: 'numerical', label: 'Numerical', icon: '🔢' },
       { key: 'true_false', label: 'True/False', icon: '✅' },
       { key: 'fill_blank', label: 'Fill Blanks', icon: '✍️' },
       { key: 'mcq', label: 'MCQ', icon: '🔘' }
@@ -2591,7 +2627,9 @@ function buildChapterSidebarHtml(opts) {
             ? questionsForFilter.length
             : t.key === 'top'
               ? questionsForFilter.filter(q => getQuestionQuality(q).stars >= 4).length
-              : questionsForFilter.filter(q => q.type === t.key).length;
+              : t.key === 'numerical'
+                ? questionsForFilter.filter(isNumericalQuestion).length
+                : questionsForFilter.filter(q => q.type === t.key).length;
           return `<button type="button" class="ch-filter-btn ${questionFilter === t.key ? 'active' : ''}" onclick="setQuestionFilter('${t.key}')">${t.icon} ${t.label} (${n})</button>`;
         }).join('')}</div>
       </div>`;
@@ -2622,6 +2660,7 @@ function renderContent(el) {
   const topic = appData.topics.find(t=>t.id===selectedTopic);
   const notes = topicNotes(selectedTopic);
   const qaQuestions = topicShortAnswerQuestions(selectedTopic);
+  const numericalQuestions = topicNumericalQuestions(selectedTopic);
   const questions = topicPracticeQuestions(selectedTopic);
   const qStats = isPhysicsTopic(selectedTopic) ? physicsContentStats(selectedTopic)
     : (isBiologyTopic(selectedTopic) ? biologyContentStats(selectedTopic)
@@ -2636,11 +2675,14 @@ function renderContent(el) {
   const heat = sectionHeatmap(selectedTopic);
   const revHint = buildChapterRevisionHint(csData, mmData, qStats);
   const sidebarHtml = buildChapterSidebarHtml({
-    notes, questions, qaQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
+    notes, questions, qaQuestions, numericalQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
   });
   const qaTabLabel = qaQuestions.length
     ? `📋 Short/Long Answer (${qaQuestions.length})`
     : '📋 Short/Long Answer';
+  const numTabLabel = numericalQuestions.length
+    ? `🔢 Numerical (${numericalQuestions.length})`
+    : '🔢 Numerical';
 
   el.innerHTML = `
     <div class="fade-in chapter-page">
@@ -2664,6 +2706,7 @@ function renderContent(el) {
             ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
             ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
             <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
+            ${numericalQuestions.length ? `<div class="content-tab content-tab-num ${contentTab==='numerical'?'active':''}" onclick="switchContentTab('numerical')" title="Numerical and mathematical problems with step-by-step solutions">${numTabLabel}</div>` : ''}
             <div class="content-tab content-tab-qa ${contentTab==='qa'?'active':''}${qaQuestions.length ? ' has-content' : ''}" onclick="switchContentTab('qa')" title="Short and long answer questions with model answers">${qaTabLabel}</div>
             <div class="content-tab ${contentTab==='diagrams'?'active':''}" onclick="switchContentTab('diagrams')">🖼️ Diagrams</div>
           </div>
@@ -2683,6 +2726,7 @@ function renderContent(el) {
   else if (contentTab === 'oneword') renderOneWordCards(csData);
   else if (contentTab === 'diagrams') renderDiagramQuestions(diagrams);
   else if (contentTab === 'qa') renderShortAnswerQuestions(qaQuestions);
+  else if (contentTab === 'numerical') renderNumericalQuestions(numericalQuestions);
   else renderQuestions(questions);
 }
 
@@ -2692,7 +2736,7 @@ function switchContentTab(tab) {
   if (tab === 'mindmap') mindMapIndex = 0;
   if (tab === 'oneword') { activeWordId = null; wordCardOrder = []; }
   if (tab === 'notes') noteIndex = 0;
-  if (tab === 'questions' || tab === 'qa') { questionIndex = 0; questionFilter = tab === 'questions' ? questionFilter : 'all'; }
+  if (tab === 'questions' || tab === 'qa' || tab === 'numerical') { questionIndex = 0; questionFilter = tab === 'questions' ? questionFilter : 'all'; }
   if (tab === 'diagrams') diagramIndex = 0;
   renderContent(document.getElementById('main-content'));
 }
@@ -3181,10 +3225,29 @@ function renderShortAnswerQuestions(questions) {
   renderQuestionList(body, list, 'Q&A');
 }
 
+function renderNumericalQuestions(questions) {
+  const body = document.getElementById('content-body');
+  if (!body) return;
+
+  const list = sortQuestionsByQuality(questions || []);
+
+  if (!list.length) {
+    body.innerHTML = `<div class="empty-state">
+      <div class="empty-icon">🔢</div>
+      <h3>No numerical problems in this chapter</h3>
+      <p>Calculation-based questions appear here when available. Try <strong>Practice</strong> for MCQs.</p>
+    </div>`;
+    return;
+  }
+
+  renderQuestionList(body, list, 'Numerical');
+}
+
 function isRichShortAnswer(q) {
   return !!(q && q.type === 'short_answer' && (
     q.source === 'bio_neet_olympiad' ||
     q.source === 'phy_neet_olympiad' ||
+    q.source === 'phy_numerical' ||
     isGeoChemQaSource(q.source) ||
     (Array.isArray(q.keywords) && q.keywords.length) ||
     q.topperTip ||
@@ -3198,6 +3261,7 @@ function richQaCardClass(q) {
   if (!q || q.type !== 'short_answer') return '';
   const base = ' qa-formatted-card';
   if (q.source === 'phy_neet_olympiad') return base + ' qa-rich-card phy-qa-rich-card';
+  if (q.source === 'phy_numerical') return base + ' qa-rich-card phy-qa-rich-card phy-num-card';
   if (q.source === 'chem_neet_olympiad') return base + ' qa-rich-card chem-qa-rich-card';
   if (q.source === 'geo_neet_olympiad') return base + ' qa-rich-card geo-qa-rich-card';
   if (isRichShortAnswer(q)) return base + ' qa-rich-card';
@@ -3227,7 +3291,7 @@ function renderChemistryQaMeta(q) {
 }
 
 function renderQaMetaRow(q) {
-  if (q.source === 'phy_neet_olympiad') return renderPhysicsQaMeta(q);
+  if (q.source === 'phy_neet_olympiad' || q.source === 'phy_numerical') return renderPhysicsQaMeta(q);
   if (isGeoChemQaSource(q.source)) return renderChemistryQaMeta(q);
   if (Array.isArray(q.keywords) && q.keywords.length) return renderKeywordRow(q.keywords);
   return '';
@@ -3283,12 +3347,14 @@ function renderShortAnswerAnswerContent(q) {
       </div>`;
   }
   const label = q.source === 'phy_neet_olympiad' ? 'Model answer'
+    : q.source === 'phy_numerical' ? 'Solution (concept + working)'
     : isGeoChemQaSource(q.source) ? 'Model answer / solution explainer'
     : 'Advanced answer';
   const topperHtml = q.topperTip
     ? `<div class="qa-topper-note"><strong>🏆 Olympiad / Topper note</strong><div class="rich-html qa-answer-formatted qa-topper-body">${formatShortAnswerContent(q.topperTip, fmtOpts)}</div></div>`
     : '';
   const answerBoxClass = q.source === 'phy_neet_olympiad' ? ' phy-qa-answer-box'
+    : q.source === 'phy_numerical' ? ' phy-qa-answer-box phy-num-answer-box'
     : q.source === 'chem_neet_olympiad' ? ' chem-qa-answer-box'
     : q.source === 'geo_neet_olympiad' ? ' geo-qa-answer-box' : '';
   return `
@@ -3351,8 +3417,24 @@ function shortAnswerBannerHtml(list) {
   return parts.join('');
 }
 
+function numericalBannerHtml(list) {
+  const items = list || [];
+  const authored = items.filter(q => q.source === 'phy_numerical').length;
+  const mcqNum = items.filter(q => q.type === 'mcq' && isNumericalQuestion(q)).length;
+  const legacy = items.length - authored - mcqNum;
+  const parts = [`<div class="qa-chapter-banner phy-qa-banner phy-num-banner">
+    <div class="qa-banner-icon" aria-hidden="true">🔢</div>
+    <div class="qa-banner-body">
+      <strong>Numerical &amp; Mathematical Problems</strong>
+      <p>${items.length} calculation problems in this chapter${authored ? ` (${authored} step-by-step solutions)` : ''}${mcqNum ? ` · ${mcqNum} numerical MCQs` : ''}${legacy > 0 ? ` · ${legacy} from textbook bank` : ''} — reveal the full solution with concept, formula, and working.</p>
+    </div>
+  </div>`];
+  return parts.join('');
+}
+
 function renderQuestionList(body, filtered, pagerLabel) {
-  const banner = pagerLabel === 'Q&A' ? shortAnswerBannerHtml(filtered) : '';
+  const banner = pagerLabel === 'Q&A' ? shortAnswerBannerHtml(filtered)
+    : pagerLabel === 'Numerical' ? numericalBannerHtml(filtered) : '';
   if (chapterViewMode === 'scroll') {
     body.innerHTML = `${banner}<div class="questions-scroll-list">${filtered.map((q, i) => renderSingleQuestion(q, i)).join('')}</div>`;
     return;

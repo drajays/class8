@@ -398,6 +398,20 @@ body{
 }
 .ch-stat-qa{border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--surface-2))}
 .ch-stat-qa .ch-stat-num{color:var(--accent-ink)}
+.content-tab-num{
+  font-weight:700;
+  border:1.5px solid color-mix(in srgb,#e67e22 40%,transparent);
+  background:color-mix(in srgb,#e67e22 6%,var(--surface-2));
+}
+.content-tab-num.active{
+  background:color-mix(in srgb,#e67e22 14%,var(--surface));
+  border-color:#e67e22;
+  color:#c0392b;
+  box-shadow:0 0 0 2px color-mix(in srgb,#e67e22 18%,transparent);
+}
+.ch-stat-num{border-left:3px solid #e67e22;background:color-mix(in srgb,#e67e22 5%,var(--surface-2))}
+.ch-stat-num .ch-stat-num{color:#c0392b}
+.phy-num-banner{border-color:color-mix(in srgb,#e67e22 35%,transparent)}
 [data-theme="dark"] .content-tab.active{color:var(--ink)}
 
 /* ---------- NOTES ---------- */
