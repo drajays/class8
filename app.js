@@ -754,6 +754,8 @@ function recordDailyMcq() {
   if (!studyActivity[key]) studyActivity[key] = { mcqs: 0 };
   studyActivity[key].mcqs += 1;
   saveActivity();
+  if (typeof snowyOnMcqRecorded === 'function') snowyOnMcqRecorded(studyActivity[key].mcqs);
+  if (typeof princessOnMcqRecorded === 'function') princessOnMcqRecorded(studyActivity[key].mcqs);
 }
 
 function getDailyMcqCount() {
@@ -830,8 +832,13 @@ function getBookmarkedQuestions() {
 }
 
 function toggleBookmark(qId) {
-  if (studyBookmarks.has(qId)) studyBookmarks.delete(qId);
-  else studyBookmarks.add(qId);
+  if (studyBookmarks.has(qId)) {
+    studyBookmarks.delete(qId);
+  } else {
+    studyBookmarks.add(qId);
+    if (typeof snowyOnBookmarkAdded === 'function') snowyOnBookmarkAdded();
+    if (typeof princessOnBookmarkAdded === 'function') princessOnBookmarkAdded();
+  }
   saveBookmarks();
 }
 
@@ -887,6 +894,12 @@ function recordAttempt(qId, isCorrect, meta) {
       wasWrongBefore: p.attempts > 1 && p.correct < p.attempts,
       questionType:   meta.questionType || null,
     });
+  }
+  if (isCorrect === true && typeof snowyOnMasteryCheck === 'function') {
+    snowyOnMasteryCheck(selectedTopic);
+  }
+  if (isCorrect === true && typeof princessOnCorrectAnswer === 'function') {
+    princessOnCorrectAnswer(qId);
   }
 }
 
@@ -1862,6 +1875,8 @@ function scrollContentTop() {
 
 function prevNoteCard() {
   if (noteIndex > 0) {
+    if (typeof snowyOnPrevNote === 'function') snowyOnPrevNote();
+    if (typeof princessOnPrevNote === 'function') princessOnPrevNote();
     noteIndex--;
     renderContent(document.getElementById('main-content'));
     scrollContentTop();
@@ -1870,6 +1885,8 @@ function prevNoteCard() {
 function nextNoteCard() {
   const notes = sortedTopicNotes(selectedTopic);
   if (noteIndex < notes.length - 1) {
+    if (typeof snowyOnNextNote === 'function') snowyOnNextNote();
+    if (typeof princessOnNextNote === 'function') princessOnNextNote();
     noteIndex++;
     renderContent(document.getElementById('main-content'));
     scrollContentTop();
@@ -2060,6 +2077,8 @@ function navigateTo(view, id) {
     selectedTopic = id; contentTab = 'notes'; questionFilter = 'all'; mindMapIndex = 0; activeWordId = null; wordCardOrder = [];
     noteIndex = 0; questionIndex = 0; diagramIndex = 0;
     try { localStorage.setItem('studyhub_last_topic', id); } catch (e) {}
+    if (typeof snowyOnTopicEnter === 'function') snowyOnTopicEnter(id);
+    if (typeof princessOnTopicEnter === 'function') princessOnTopicEnter(id);
   }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
   render();
@@ -2789,6 +2808,8 @@ function renderContent(el) {
 }
 
 function switchContentTab(tab) {
+  if (typeof snowyOnTabSwitch === 'function') snowyOnTabSwitch(tab, selectedTopic);
+  if (typeof princessOnTabSwitch === 'function') princessOnTabSwitch(tab);
   contentTab = tab;
   userAnswers = {};
   if (tab === 'mindmap') mindMapIndex = 0;
@@ -2947,9 +2968,13 @@ function shuffleWordCards() {
 }
 
 function toggleWordCard(cardId) {
+  const wasHidden = activeWordId !== cardId;
   activeWordId = activeWordId === cardId ? null : cardId;
   const cs = chapterCheatsheet(selectedTopic);
   if (cs) renderOneWordCards(cs);
+  // Snowy: earn token for flipping a card open (not closing)
+  if (wasHidden && typeof snowyOnWordCardFlipped === 'function') snowyOnWordCardFlipped();
+  if (wasHidden && typeof princessOnWordCardFlipped === 'function') princessOnWordCardFlipped();
 }
 
 function revealAllWordCards() {
@@ -3249,6 +3274,13 @@ function renderNotes() {
   const pager = cardPagerHtml(noteIndex, notes.length, 'prevNoteCard', 'nextNoteCard', 'Note');
   body.innerHTML = `${pager}<div class="notes-single">${buildNoteCardHtml(n, noteIndex + 1)}</div>${pager}
     <p class="card-pager-hint">Use ← → arrow keys to move between notes</p>`;
+  // Snowy: start note-reading timer
+  if (typeof snowyOnNoteRendered === 'function') snowyOnNoteRendered(n.id, selectedTopic);
+  // Princess: award coin after 45s of reading
+  if (typeof princessOnNoteRead === 'function') {
+    const _pnId = n.id; let _pnTimer = setTimeout(() => { if (selectedTopic) princessOnNoteRead(); }, 45000);
+    window._princessNoteTimer = _pnTimer;
+  }
 }
 
 function renderQuestions(questions) {

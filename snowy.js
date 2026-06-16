@@ -47,11 +47,22 @@
 
   // ── CONSTANTS ─────────────────────────────────────────────
   const LS_KEY         = 'studyhub_snowy';
-  const TOKEN_FIRST    = 3;   // correct on first try
-  const TOKEN_RETRY    = 1;   // correct after wrong
-  const TOKEN_STREAK   = 2;   // bonus every 3-streak
-  const TOKEN_HARD     = 5;   // numerical / diagram MCQ
-  const TOKEN_QUIZ_ACE = 10;  // perfect quiz bonus
+  // Question earning (per correct answer)
+  const TOKEN_FIRST    = 2;   // correct on first try
+  const TOKEN_RETRY    = 1;   // correct after a wrong attempt
+  const TOKEN_STREAK   = 2;   // bonus added every 3 in-a-row
+  const TOKEN_HARD     = 3;   // numerical / diagram MCQ (replaces FIRST)
+  const TOKEN_QUIZ_ACE = 5;   // perfect quiz bonus (≥3 Qs)
+
+  // Consistency streak rewards (consecutive calendar days)
+  const STREAK_REWARDS = [
+    { days: 2,  tokens: 5,  label: '2-Day Streak!'   },
+    { days: 3,  tokens: 8,  label: '3-Day Streak! 🔥' },
+    { days: 5,  tokens: 12, label: '5-Day Streak! 🔥🔥' },
+    { days: 7,  tokens: 20, label: '1-Week Streak! 🌟' },
+    { days: 14, tokens: 35, label: '2-Week Legend! 🏆' },
+    { days: 30, tokens: 75, label: '1-Month Champion! 👑' },
+  ];
 
   const MOOD_STATES = [
     { key: 'sad',      label: '😢 Sad',      emoji: '😢', min: 0  },
@@ -76,15 +87,20 @@
 
   function defaultState() {
     return {
-      tokens:      20,
-      inventory:   [],
-      demand:      null,        // { itemId, expiresAt, met }
-      happiness:   50,
-      lastFedAt:   null,
-      totalEarned: 0,
-      totalSpent:  0,
-      streak:      0,
+      tokens:       5,          // start with just enough for one cheap treat
+      inventory:    [],
+      demand:       null,       // { itemId, expiresAt, met }
+      happiness:    50,
+      lastFedAt:    null,
+      totalEarned:  0,
+      totalSpent:   0,
+      // Question streak (within a session)
+      qStreak:      0,
       lastSolvedAt: null,
+      // Login / consistency streak
+      loginStreak:  0,
+      lastLoginDate: null,      // 'YYYY-MM-DD'
+      loginStreakRewarded: [],  // streak day counts already rewarded
     };
   }
 
@@ -146,14 +162,17 @@
     const today = todayKey();
     // Demand already set and valid for today
     if (state.demand && state.demand.expiresAt === today) return;
-    // Pick a random item from all categories (weighted: food most often)
-    const pool = [
+
+    // Only items costing ≤ 35 tokens can be demanded
+    // (ensures 20 min study is enough to fulfil a demand)
+    const MAX_DEMAND_COST = 35;
+    const allItems = [
       ...CATALOG.food,
-      ...CATALOG.food,          // food appears twice — more likely
+      ...CATALOG.food,      // food weighted 2×
       ...CATALOG.clothing,
-      ...CATALOG.luxury.slice(0, 3), // only cheaper luxury items as demands
-    ];
-    const pick = pool[Math.floor(Math.random() * pool.length)];
+    ].filter(i => i.cost <= MAX_DEMAND_COST);
+
+    const pick = allItems[Math.floor(Math.random() * allItems.length)];
     state.demand = {
       itemId:    pick.id,
       expiresAt: today,
@@ -166,7 +185,7 @@
   // ── TOKEN ENGINE ──────────────────────────────────────────
   /**
    * Called from app.js recordAttempt hook.
-   * meta: { guessed, inQuiz, questionType, streak }
+   * meta: { wasWrongBefore, questionType }
    */
   function earnTokens(qId, isCorrect, meta) {
     if (isCorrect !== true) return;
@@ -184,14 +203,18 @@
       earned = TOKEN_RETRY;
     }
 
-    // Streak bonus
-    state.streak = (state.lastSolvedAt && (Date.now() - new Date(state.lastSolvedAt).getTime()) < 600000)
-      ? (state.streak || 0) + 1
+    // In-session question streak (resets if >10 min gap between answers)
+    const now = Date.now();
+    const lastMs = state.lastSolvedAt ? new Date(state.lastSolvedAt).getTime() : 0;
+    state.qStreak = (lastMs && (now - lastMs) < 600000)
+      ? (state.qStreak || 0) + 1
       : 1;
     state.lastSolvedAt = new Date().toISOString();
 
-    if (state.streak > 0 && state.streak % 3 === 0) {
+    if (state.qStreak > 0 && state.qStreak % 3 === 0) {
       earned += TOKEN_STREAK;
+      // Show streak milestone toast
+      showToastMsg('🔥 ' + state.qStreak + '-answer streak! +' + TOKEN_STREAK + ' bonus 🪙');
     }
 
     if (earned > 0) {
@@ -435,13 +458,14 @@
             <div class="snowy-shop-header">
               <div class="snowy-shop-title">🏪 Snowy's Shopping Mall</div>
               <div class="snowy-tabs">
-                <div class="snowy-tab ${shopTab==='food'?'active':''}" onclick="snowySetTab('food')">🍖 Food & Treats</div>
+                <div class="snowy-tab ${shopTab==='food'?'active':''}" onclick="snowySetTab('food')">🍖 Food</div>
                 <div class="snowy-tab ${shopTab==='clothing'?'active':''}" onclick="snowySetTab('clothing')">👗 Clothing</div>
                 <div class="snowy-tab ${shopTab==='luxury'?'active':''}" onclick="snowySetTab('luxury')">👑 Luxury</div>
+                <div class="snowy-tab ${shopTab==='rules'?'active':''}" onclick="snowySetTab('rules')">📋 How to Earn</div>
               </div>
             </div>
             <div class="snowy-shop-grid" id="snowy-shop-grid">
-              ${buildItemCards(shopTab)}
+              ${shopTab === 'rules' ? buildRulesPanel() : buildItemCards(shopTab)}
             </div>
           </div>
 
@@ -498,9 +522,118 @@
     }).join('');
   }
 
+  function buildRulesPanel() {
+    const loginStreak = state.loginStreak || 0;
+    const alreadyRewarded = state.loginStreakRewarded || [];
+
+    const rules = [
+      // Reading
+      { icon:'📖', name:'Read a Note', desc:'Stay on a note for 45 seconds', tokens:'+1 🪙', cap:'Per note, once/day' },
+      { icon:'➡️', name:'Read Notes in Order', desc:'Move forward through notes in sequence', tokens:'+1 bonus 🪙', cap:'Bundled with note read' },
+      { icon:'🏅', name:'Finish All Notes', desc:'Read every note in a chapter today', tokens:'+6 🪙', cap:'Once per chapter/day' },
+      // Revision tools
+      { icon:'🧠', name:'Open Mind Map', desc:'Switch to the Mind Map tab', tokens:'+2 🪙', cap:'Once per chapter/day' },
+      { icon:'⚡', name:'Study Cheat Sheet', desc:'Open the Cheat Sheet tab', tokens:'+2 🪙', cap:'Once per chapter/day' },
+      { icon:'🖼️', name:'Practice Diagrams', desc:'Open the Diagrams tab', tokens:'+1 🪙', cap:'Once per chapter/day' },
+      { icon:'🔤', name:'Flip Word Cards', desc:'Reveal a One-Word definition', tokens:'+1 🪙', cap:'Max 3 flips/day' },
+      // Questions
+      { icon:'✅', name:'Correct Answer (1st try)', desc:'Get it right on the first attempt', tokens:'+2 🪙', cap:'Per question' },
+      { icon:'🔄', name:'Correct After Retry', desc:'Get it right after a wrong answer', tokens:'+1 🪙', cap:'Per question' },
+      { icon:'🔥', name:'3-in-a-Row Streak', desc:'Answer 3 questions correctly in a row', tokens:'+2 bonus 🪙', cap:'Every 3 correct' },
+      { icon:'🧮', name:'Numerical Question', desc:'Solve a calculation or numerical problem', tokens:'+3 🪙', cap:'Per question' },
+      { icon:'🌟', name:'Perfect Quiz', desc:'All questions correct (min 3 Qs)', tokens:'+5 🪙', cap:'Per quiz session' },
+      // Habits
+      { icon:'🌅', name:'Daily App Visit', desc:'Open the app today', tokens:'+3 🪙', cap:'Once/day' },
+      { icon:'🗺️', name:'Explore New Chapter', desc:'Open a chapter for the very first time', tokens:'+5 🪙', cap:'One-time per chapter' },
+      { icon:'📌', name:'Bookmark a Question', desc:'Mark a question for revision', tokens:'+1 🪙', cap:'Max 2/day' },
+      { icon:'🎯', name:'Daily MCQ Goal', desc:'Answer 15 MCQs in one day', tokens:'+8 🪙', cap:'Once/day' },
+      // Milestones
+      { icon:'⭐', name:'Chapter 50% Mastery', desc:'Reach 50% accuracy on a chapter's questions', tokens:'+10 🪙', cap:'Lifetime per chapter' },
+      { icon:'🏆', name:'Chapter 100% Mastery', desc:'Master every question in a chapter', tokens:'+25 🪙', cap:'Lifetime per chapter' },
+    ];
+
+    const readingRules = rules.slice(0, 3);
+    const revisionRules = rules.slice(3, 7);
+    const questionRules = rules.slice(7, 12);
+    const habitRules = rules.slice(12, 16);
+    const milestoneRules = rules.slice(16);
+
+    function ruleCard(r) {
+      return `<div class="snowy-rule-row">
+        <div class="snowy-rule-icon">${r.icon}</div>
+        <div class="snowy-rule-body">
+          <div class="snowy-rule-name">${r.name}</div>
+          <div class="snowy-rule-desc">${r.desc}<br><em>${r.cap}</em></div>
+        </div>
+        <div class="snowy-rule-tokens">${r.tokens}</div>
+      </div>`;
+    }
+
+    function section(title, items) {
+      return `<div>
+        <div class="snowy-rules-section-title">${title}</div>
+        <div class="snowy-rules-grid">${items.map(ruleCard).join('')}</div>
+      </div>`;
+    }
+
+    // Current streak display
+    const streakHtml = loginStreak > 0
+      ? `<div class="snowy-current-streak">
+           <div class="snowy-current-streak-icon">🔥</div>
+           <div>
+             <div class="snowy-current-streak-days">${loginStreak} day${loginStreak > 1 ? 's' : ''}</div>
+             <div class="snowy-current-streak-label">Current study streak — keep going!</div>
+           </div>
+         </div>`
+      : `<div class="snowy-current-streak" style="background:linear-gradient(135deg,#5b54d6,#4a44bd)">
+           <div class="snowy-current-streak-icon">🌱</div>
+           <div>
+             <div class="snowy-current-streak-days">Start Today!</div>
+             <div class="snowy-current-streak-label">Open the app every day to build your streak</div>
+           </div>
+         </div>`;
+
+    const ladderHtml = STREAK_REWARDS.map(r => {
+      const achieved = loginStreak >= r.days;
+      const isNext   = !achieved && STREAK_REWARDS.filter(x => !alreadyRewarded.includes(x.days) && loginStreak < x.days)[0]?.days === r.days;
+      return `<div class="snowy-streak-rung ${achieved ? 'achieved' : ''} ${isNext ? 'next' : ''}">
+        <div class="snowy-streak-days">📅 Day ${r.days}</div>
+        <div class="snowy-streak-label">${r.label}</div>
+        <div class="snowy-streak-reward">+${r.tokens} 🪙</div>
+        ${achieved ? '<div class="snowy-streak-check">✅</div>' : ''}
+        ${isNext ? '<div class="snowy-streak-reward" style="font-size:.7rem;color:var(--ink-3)">← Next!</div>' : ''}
+      </div>`;
+    }).join('');
+
+    return `<div class="snowy-rules-panel">
+      ${section('📖 Reading Notes', readingRules)}
+      ${section('🔬 Revision Tools', revisionRules)}
+      ${section('❓ Question Practice', questionRules)}
+      ${section('📅 Daily Habits', habitRules)}
+      ${section('🏆 Mastery Milestones', milestoneRules)}
+      <div>
+        <div class="snowy-rules-section-title">🔥 Consistency Streak Rewards</div>
+        ${streakHtml}
+        <div style="height:10px"></div>
+        <div class="snowy-streak-ladder">${ladderHtml}</div>
+      </div>
+    </div>`;
+  }
+
   function renderShopPanel() {
     const grid = document.getElementById('snowy-shop-grid');
-    if (grid) grid.innerHTML = buildItemCards(shopTab);
+    if (!grid) return;
+    if (shopTab === 'rules') {
+      grid.innerHTML = buildRulesPanel();
+      grid.style.display = 'block';
+      grid.style.padding = '0';
+      grid.style.overflow = 'auto';
+    } else {
+      grid.innerHTML = buildItemCards(shopTab);
+      grid.style.display = '';
+      grid.style.padding = '';
+      grid.style.overflow = '';
+    }
 
     // Update token counter in modal
     const tc = document.getElementById('snowy-modal-token-count');
@@ -535,7 +668,12 @@
     shopTab = tab;
     // Update tab active states
     document.querySelectorAll('.snowy-tab').forEach(el => {
-      el.classList.toggle('active', el.textContent.toLowerCase().includes(tab));
+      const matches =
+        (tab === 'food'     && el.textContent.includes('Food'))     ||
+        (tab === 'clothing' && el.textContent.includes('Clothing'))  ||
+        (tab === 'luxury'   && el.textContent.includes('Luxury'))    ||
+        (tab === 'rules'    && el.textContent.includes('Earn'));
+      el.classList.toggle('active', matches);
     });
     renderShopPanel();
   }
@@ -612,14 +750,312 @@
     setTimeout(() => t.remove(), 2500);
   }
 
+  // ══════════════════════════════════════════════════════════
+  // ACTIVITY EARNING ENGINE
+  // Every learning action in the app earns Aaradhya tokens.
+  // An earn-log (per calendar day + lifetime milestones) prevents
+  // farming the same action repeatedly.
+  // ══════════════════════════════════════════════════════════
+
+  const LS_LOG_KEY = 'studyhub_snowy_log';
+
+  // ── Earn amounts (calibrated for ~20 min study = ~30 tokens) ──
+  // Note timer is 45 seconds — must actually read, not just click.
+  // Daily demands cap at 35 tokens — achievable in one focused session.
+  const NOTE_READ_TIMER_MS = 45000; // 45 seconds on a note to earn
+
+  const ACT = {
+    daily_login:       3,   // per day
+    topic_first_visit: 5,   // one-time per chapter
+    note_read:         1,   // per note, ≥45 seconds (once per note per day)
+    note_progress:     1,   // bonus when moving forward through notes sequentially
+    chapter_all_notes: 6,   // all notes in a chapter read today
+    tab_mindmap:       2,   // once per chapter per day
+    tab_cheatsheet:    2,   // once per chapter per day
+    tab_diagrams:      1,   // once per chapter per day
+    tab_oneword:       1,   // once per chapter per day
+    wordcard_flip:     1,   // max 3 flips per day
+    bookmark_add:      1,   // max 2 per day
+    mcq_daily_goal:    8,   // hits 15 MCQs today
+    mastery_50:        10,  // chapter reaches 50% accuracy — lifetime
+    mastery_100:       25,  // chapter 100% accuracy — lifetime
+  };
+
+  // Toast messages
+  const ACT_TOAST = {
+    daily_login:       '🌅 +3 🪙 Daily bonus! Keep the streak alive!',
+    topic_first_visit: '🗺️ +5 🪙 New chapter! Snowy is excited for you!',
+    note_read:         '📖 +2 🪙 Note read!',
+    note_progress:     null,
+    chapter_all_notes: '🏅 +6 🪙 All notes read! Amazing focus!',
+    tab_mindmap:       '🧠 +2 🪙 Mind Map explored!',
+    tab_cheatsheet:    '⚡ +2 🪙 Cheat Sheet studied!',
+    tab_diagrams:      '🖼️ +1 🪙 Diagrams practised!',
+    tab_oneword:       '🔤 +1 🪙 One-Word cards opened!',
+    wordcard_flip:     null,
+    bookmark_add:      '📌 +1 🪙 Marked for revision!',
+    mcq_daily_goal:    '🎯 +8 🪙 Daily goal reached! Snowy did a happy dance! 🐾',
+    mastery_50:        '⭐ +10 🪙 Chapter 50% mastered! Great work, Aaradhya!',
+    mastery_100:       '🏆 +25 🪙 CHAPTER MASTERED! Snowy is overjoyed! 🥰',
+  };
+
+  // ── Earn log helpers ──────────────────────────────────────
+  function loadEarnLog() {
+    try { return JSON.parse(localStorage.getItem(LS_LOG_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveEarnLog(log) {
+    try { localStorage.setItem(LS_LOG_KEY, JSON.stringify(log)); } catch (e) {}
+  }
+  function todayLogKey() { return new Date().toISOString().slice(0, 10); }
+
+  /**
+   * Core gating + earning function.
+   * type  — activity key from ACT (e.g. 'note_read')
+   * id    — optional context ID (note id, topic id…)
+   * opts  — { silent, force, milestone (uses lifetime log instead of daily) }
+   */
+  function earnActivity(type, id, opts) {
+    opts = opts || {};
+    const amount = ACT[type];
+    if (!amount) return false;
+
+    const log   = loadEarnLog();
+    const today = todayLogKey();
+    const logKey = id ? (type + ':' + id) : type;
+
+    if (opts.milestone) {
+      // Lifetime milestone — stored under 'milestones' not date
+      if (!log.milestones) log.milestones = {};
+      if (log.milestones[logKey]) return false; // already earned forever
+      log.milestones[logKey] = true;
+    } else {
+      // Daily dedup
+      if (!log[today]) log[today] = {};
+      const dayLog = log[today];
+
+      // Per-day cap checks
+      if (type === 'bookmark_add') {
+        dayLog._bookmark_count = (dayLog._bookmark_count || 0);
+        if (dayLog._bookmark_count >= 3) return false;
+        dayLog._bookmark_count += 1;
+      } else if (type === 'wordcard_flip') {
+        dayLog._wordcard_count = (dayLog._wordcard_count || 0);
+        if (dayLog._wordcard_count >= 5) return false;
+        dayLog._wordcard_count += 1;
+      } else {
+        if (dayLog[logKey]) return false; // already earned today
+        dayLog[logKey] = true;
+      }
+    }
+
+    saveEarnLog(log);
+
+    // Credit tokens
+    state.tokens = (state.tokens || 0) + amount;
+    state.totalEarned = (state.totalEarned || 0) + amount;
+    saveState();
+
+    if (!opts.silent) {
+      const msg = ACT_TOAST[type];
+      if (msg) showToastMsg(msg);
+      showFloatingTokens(amount, type === 'mastery_100');
+    }
+    updateHUD();
+    return true;
+  }
+
+  // ── Note-reading timer ────────────────────────────────────
+  let _noteTimerId    = null;
+  let _noteTimerNoteId = null;
+  let _noteTimerTopicId = null;
+  let _noteShownAt    = 0;
+  let _noteDirection  = 0; // +1 = forward, -1 = backward
+
+  /** Call when a note card becomes visible (from renderNotes). */
+  function onNoteShown(noteId, topicId) {
+    clearTimeout(_noteTimerId);
+    _noteTimerNoteId  = noteId;
+    _noteTimerTopicId = topicId;
+    _noteShownAt      = Date.now();
+    // Auto-award after 45 seconds of staying on this note
+    _noteTimerId = setTimeout(() => {
+      _awardNoteRead(noteId, topicId, false);
+    }, NOTE_READ_TIMER_MS);
+  }
+
+  /** Call just BEFORE navigating away from a note. */
+  function onNoteLeave(direction) {
+    clearTimeout(_noteTimerId);
+    if (!_noteTimerNoteId) return;
+    const elapsed = Date.now() - _noteShownAt;
+    const wasForward = direction === 1;
+    if (elapsed >= NOTE_READ_TIMER_MS) {
+      _awardNoteRead(_noteTimerNoteId, _noteTimerTopicId, wasForward);
+    }
+    _noteTimerNoteId = null;
+  }
+
+  function _awardNoteRead(noteId, topicId, wasForward) {
+    const earned = earnActivity('note_read', noteId);
+    if (earned && wasForward) {
+      // Silent +1 for sequential progress (bundle into the same float)
+      state.tokens += ACT.note_progress;
+      state.totalEarned += ACT.note_progress;
+      saveState();
+      showFloatingTokens(ACT.note_read + ACT.note_progress);
+      updateHUD();
+    }
+
+    // Check if all notes in chapter have been read today
+    if (topicId && typeof sortedTopicNotes === 'function') {
+      try {
+        const log   = loadEarnLog();
+        const today = todayLogKey();
+        const all   = sortedTopicNotes(topicId);
+        const allRead = all.length > 0 && all.every(n => {
+          const k = 'note_read:' + n.id;
+          return log[today] && log[today][k];
+        });
+        if (allRead) earnActivity('chapter_all_notes', topicId);
+      } catch (e) {}
+    }
+  }
+
+  // ── Public activity hooks (called from app.js) ────────────
+
+  /** Called at app boot — daily login bonus + streak tracking. */
+  function checkDailyLogin() {
+    const today = todayLogKey();
+    if (state.lastLoginDate === today) return; // already handled today
+
+    // Calculate streak
+    const yesterday = (() => {
+      const d = new Date(); d.setDate(d.getDate() - 1);
+      return d.toISOString().slice(0, 10);
+    })();
+
+    if (state.lastLoginDate === yesterday) {
+      state.loginStreak = (state.loginStreak || 0) + 1;
+    } else if (state.lastLoginDate && state.lastLoginDate < yesterday) {
+      // Streak broken
+      state.loginStreak = 1;
+    } else {
+      state.loginStreak = 1; // first ever login
+    }
+    state.lastLoginDate = today;
+    saveState();
+
+    // Base daily login token
+    earnActivity('daily_login', null, { silent: false });
+
+    // Consistency streak reward
+    const already = state.loginStreakRewarded || [];
+    STREAK_REWARDS.forEach(r => {
+      if (state.loginStreak >= r.days && !already.includes(r.days)) {
+        // One-time reward per streak milestone (resets if streak breaks)
+        state.loginStreakRewarded = [...already, r.days];
+        state.tokens = (state.tokens || 0) + r.tokens;
+        state.totalEarned = (state.totalEarned || 0) + r.tokens;
+        saveState();
+        showFloatingTokens(r.tokens, true);
+        setTimeout(() => {
+          showToastMsg('🔥 ' + r.label + ' +' + r.tokens + ' 🪙 Snowy is SO proud of you!');
+        }, 1200);
+        updateHUD();
+      }
+    });
+
+    // If streak broke, clear rewarded milestones so they can be earned again
+    if (state.loginStreak === 1 && (state.loginStreakRewarded || []).length > 0) {
+      state.loginStreakRewarded = [];
+      saveState();
+    }
+  }
+
+  /** Called when a topic/chapter is opened. */
+  function onTopicEnter(topicId) {
+    if (!topicId) return;
+    earnActivity('topic_first_visit', topicId, { milestone: true });
+  }
+
+  /** Called by renderNotes (pager mode) — registers the current note. */
+  function onNoteRendered(noteId, topicId) {
+    onNoteShown(noteId, topicId);
+  }
+
+  /** Called by nextNoteCard BEFORE incrementing index. */
+  function onNextNote() {
+    onNoteLeave(1);
+  }
+
+  /** Called by prevNoteCard BEFORE decrementing index. */
+  function onPrevNote() {
+    onNoteLeave(-1);
+  }
+
+  /** Called by switchContentTab. */
+  function onTabSwitch(tab, topicId) {
+    // Leaving notes tab — settle timer
+    onNoteLeave(0);
+    const tabMap = {
+      mindmap:    'tab_mindmap',
+      cheatsheet: 'tab_cheatsheet',
+      diagrams:   'tab_diagrams',
+      oneword:    'tab_oneword',
+    };
+    const actType = tabMap[tab];
+    if (actType && topicId) earnActivity(actType, topicId);
+  }
+
+  /** Called by toggleBookmark when ADDING (not removing). */
+  function onBookmarkAdded() {
+    earnActivity('bookmark_add', null);
+  }
+
+  /** Called after every MCQ recorded — check daily goal. */
+  function onMcqRecorded(dailyCount) {
+    if (dailyCount === 15) earnActivity('mcq_daily_goal');
+  }
+
+  /** Called after a correct answer — check mastery milestones. */
+  function onMasteryCheck(topicId) {
+    if (!topicId || typeof chapterMastery !== 'function') return;
+    try {
+      const m = chapterMastery(topicId);
+      if (m.accuracy >= 50  && m.attempted >= 5)
+        earnActivity('mastery_50',  topicId, { milestone: true });
+      if (m.accuracy >= 100 && m.attempted >= 5)
+        earnActivity('mastery_100', topicId, { milestone: true });
+    } catch (e) {}
+  }
+
+  /** Called by word-card flip. */
+  function onWordCardFlipped() {
+    earnActivity('wordcard_flip', null, { silent: true });
+    // show a small quiet float
+    state.tokens += 0; // already credited inside earnActivity
+    showFloatingTokens(ACT.wordcard_flip);
+    updateHUD();
+  }
+
   // ── PUBLIC API (called by inline onclick + app.js) ────────
-  window.snowyEarnTokens     = earnTokens;
+  window.snowyEarnTokens       = earnTokens;
   window.snowyEarnPerfectBonus = earnPerfectBonus;
-  window.snowyOpenShop       = openShop;
-  window.snowyCloseShop      = closeShop;
-  window.snowyBuy            = buyItem;
-  window.snowySetTab         = setTab;
-  window.snowyGetState       = () => state;
+  window.snowyOpenShop         = openShop;
+  window.snowyCloseShop        = closeShop;
+  window.snowyBuy              = buyItem;
+  window.snowySetTab           = setTab;
+  window.snowyGetState         = () => state;
+  // Activity hooks
+  window.snowyOnTopicEnter     = onTopicEnter;
+  window.snowyOnNoteRendered   = onNoteRendered;
+  window.snowyOnNextNote       = onNextNote;
+  window.snowyOnPrevNote       = onPrevNote;
+  window.snowyOnTabSwitch      = onTabSwitch;
+  window.snowyOnBookmarkAdded  = onBookmarkAdded;
+  window.snowyOnMcqRecorded    = onMcqRecorded;
+  window.snowyOnMasteryCheck   = onMasteryCheck;
+  window.snowyOnWordCardFlipped= onWordCardFlipped;
 
   // ── INIT ──────────────────────────────────────────────────
   function init() {
@@ -628,6 +1064,8 @@
     saveState();
     renderHUD();
     updateHUD();
+    // Daily login bonus (fires once per calendar day)
+    checkDailyLogin();
   }
 
   // Wait for DOM
