@@ -548,7 +548,7 @@
       { icon:'📌', name:'Bookmark a Question', desc:'Mark a question for revision', tokens:'+1 🪙', cap:'Max 2/day' },
       { icon:'🎯', name:'Daily MCQ Goal', desc:'Answer 15 MCQs in one day', tokens:'+8 🪙', cap:'Once/day' },
       // Milestones
-      { icon:'⭐', name:'Chapter 50% Mastery', desc:'Reach 50% accuracy on a chapter's questions', tokens:'+10 🪙', cap:'Lifetime per chapter' },
+      { icon:'⭐', name:'Chapter 50% Mastery', desc:'Reach 50% accuracy on a chapter\'s questions', tokens:'+10 🪙', cap:'Lifetime per chapter' },
       { icon:'🏆', name:'Chapter 100% Mastery', desc:'Master every question in a chapter', tokens:'+25 🪙', cap:'Lifetime per chapter' },
     ];
 
