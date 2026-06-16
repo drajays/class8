@@ -70,8 +70,9 @@ self.addEventListener('install', function (event) {
       return Promise.allSettled(ASSETS.map(function (url) {
         return cacheAddSafe(cache, url);
       }));
+    }).then(function () {
+      return self.skipWaiting(); /* Take over immediately — don't wait for tabs to close */
     })
-    /* Do not skipWaiting here — wait for user to tap Update (avoids surprise reload/flicker). */
   );
 });
 

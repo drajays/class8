@@ -323,8 +323,16 @@
   }
 
   function renderHUD() {
-    const root = document.getElementById('snowy-hud');
-    if (!root) return;
+    // Create the HUD container if it doesn't exist yet
+    let root = document.getElementById('snowy-hud');
+    if (!root) {
+      root = document.createElement('div');
+      root.id = 'snowy-hud';
+      root.setAttribute('aria-label', 'Snowy pet widget');
+      // Inline fallback styles guarantee visibility even if snowy.css fails to load
+      root.style.cssText = 'position:fixed;bottom:24px;right:20px;z-index:9000;display:flex;flex-direction:column;align-items:flex-end;gap:8px;pointer-events:none;';
+      document.body.appendChild(root);
+    }
 
     state.happiness = calcHappiness();
     const h = state.happiness;
