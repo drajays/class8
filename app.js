@@ -881,6 +881,13 @@ function recordAttempt(qId, isCorrect, meta) {
   saveProgress();
   if (meta.inQuiz && isCorrect !== null) recordDailyMcq();
   updateMasteryBadge();
+  // ── Snowy token hook ──────────────────────────────────────
+  if (typeof snowyEarnTokens === 'function') {
+    snowyEarnTokens(qId, isCorrect, {
+      wasWrongBefore: p.attempts > 1 && p.correct < p.attempts,
+      questionType:   meta.questionType || null,
+    });
+  }
 }
 
 // Mastery summary for a chapter (topicId): attempted vs total gradable
@@ -2276,6 +2283,7 @@ function renderQuizView(el) {
           <div class="ring-lbl">Correct</div>
         </div>
         <p class="lead">${correct === total ? 'Perfect! Keep this streak going.' : correct >= total * 0.7 ? 'Good work — review mistakes below.' : 'Focus on the explanations, then retry from the Mistake Book.'}</p>
+        ${correct === total && total >= 3 && (() => { if (typeof snowyEarnPerfectBonus === 'function') snowyEarnPerfectBonus(total); return '<div style="text-align:center;margin:.5rem 0;font-size:.9rem;font-weight:700;color:#f0a500">🌟 +10 🪙 Perfect score bonus for Snowy!</div>'; })()}
         <div class="quiz-result-actions">
           <button class="btn btn-primary" onclick="startQuizSession('mistakes', quizSession.topicId, ${Math.min(15, getMistakeQuestions(quizSession.topicId).length)})">📕 Revise mistakes</button>
           <button class="btn btn-outline" onclick="quizSession=null;navigateTo('revision','mistakes')">Open Revision Hub</button>
