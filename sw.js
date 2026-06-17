@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v79';
+const CACHE = 'studyhub-v80';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [

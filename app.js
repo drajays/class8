@@ -2470,6 +2470,7 @@ function renderHome(el) {
 
 // ===== SUBJECTS =====
 function renderSubjects(el) {
+  try {
   const cls = appData.classes.find(c=>c.id===selectedClass);
   const subs = appData.subjects.filter(s=>s.classId===selectedClass);
   el.innerHTML = `
@@ -2512,6 +2513,10 @@ function renderSubjects(el) {
       ${subs.length===0?'<div class="empty-state"><div class="empty-icon">📭</div><h3>No subjects yet</h3><p>Click "Add New" to add subjects</p></div>':''}
     </div>
   `;
+  } catch(err) {
+    console.error('[renderSubjects]', err);
+    el.innerHTML = '<div class="fade-in"><div class="empty-state"><div class="empty-icon">⚠️</div><h3>Couldn\'t load subjects</h3><p>Please try refreshing the page. If the issue persists, tap Update to reload the app.</p></div></div>';
+  }
 }
 
 // ===== TOPICS =====

@@ -424,18 +424,29 @@
   /* ── Launch button ────────────────────────────────────── */
   function injectLaunchButton() {
     if (document.getElementById('princess-launch')) return;
-    const btn = document.createElement('button');
+    const btn = document.createElement('div');
     btn.id = 'princess-launch';
-    btn.className = 'princess-launch-btn';
-    btn.innerHTML = '👸 Princess World <span class="pc-badge" id="pw-hud-coins">💰 ' + (state.coins || 0) + '</span>';
+    btn.className = 'princess-sidebar-btn';
+    btn.setAttribute('role', 'button');
+    btn.setAttribute('tabindex', '0');
+    btn.innerHTML =
+      '<span class="psb-icon">👸</span>' +
+      '<span class="psb-label">Princess World</span>' +
+      '<span class="pc-badge" id="pw-hud-coins">💰 ' + (state.coins || 0) + '</span>';
     btn.onclick = openWorld;
-    // Try to add to header — look for common header patterns
-    const header = document.querySelector('header') ||
-                   document.querySelector('.top-bar') ||
-                   document.querySelector('.header') ||
-                   document.querySelector('nav') ||
-                   document.body;
-    header.appendChild(btn);
+    btn.onkeydown = function(e) { if (e.key === 'Enter' || e.key === ' ') openWorld(); };
+
+    // Insert into sidebar, right after the sidebar-top section
+    const sidebar = document.getElementById('sidebar');
+    const sidebarTop = sidebar && sidebar.querySelector('.sidebar-top');
+    if (sidebarTop && sidebarTop.nextSibling) {
+      sidebar.insertBefore(btn, sidebarTop.nextSibling);
+    } else if (sidebar) {
+      sidebar.appendChild(btn);
+    } else {
+      // Fallback if sidebar not found
+      (document.querySelector('.header-actions') || document.body).appendChild(btn);
+    }
   }
 
   function updateHUDCoins() {
