@@ -39,186 +39,119 @@ const CIVICS_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Organs & Lists",
-      "bullets": [
+      "label": "Organs & Lists",
+      "color": "mm-c1",
+      "concepts": [
        "Makes / executes / interprets",
        "Union, State, Concurrent"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-01",
-        "label": "📄 Big Picture — Three Organs"
-       }
+      "noteIds": [
+       "civ-rev-ch1-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Lok Sabha",
-      "bullets": [
+      "label": "Lok Sabha",
+      "color": "mm-c2",
+      "concepts": [
        "552 max",
        "Direct; 18+",
        "25 yrs; 5-yr term",
        "Speaker"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-02",
-        "label": "📄 Lok Sabha — House of the People"
-       }
+      "noteIds": [
+       "civ-rev-ch1-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Rajya Sabha",
-      "bullets": [
+      "label": "Rajya Sabha",
+      "color": "mm-c3",
+      "concepts": [
        "250 (12 nominated)",
        "Indirect",
        "30 yrs; permanent",
        "VP chairs"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-03",
-        "label": "📄 Rajya Sabha — Council of States"
-       }
+      "noteIds": [
+       "civ-rev-ch1-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Law-making",
-      "bullets": [
+      "label": "Law-making",
+      "color": "mm-c4",
+      "concepts": [
        "Money bill — Lok Sabha only",
        "3 readings",
        "President's assent"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-04",
-        "label": "📄 How a Bill Becomes a Law"
-       }
+      "noteIds": [
+       "civ-rev-ch1-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "President",
-      "bullets": [
+      "label": "President",
+      "color": "mm-c5",
+      "concepts": [
        "35 yrs; MPs+MLAs elect",
        "6 kinds of powers",
        "Ordinances"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-05",
-        "label": "📄 The President"
-       }
+      "noteIds": [
+       "civ-rev-ch1-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Vice President",
-      "bullets": [
+      "label": "Vice President",
+      "color": "mm-c6",
+      "concepts": [
        "Chairs Rajya Sabha",
        "Acts as President"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-06",
-        "label": "📄 Vice President"
-       }
+      "noteIds": [
+       "civ-rev-ch1-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "PM & Cabinet",
-      "bullets": [
+      "label": "PM & Cabinet",
+      "color": "mm-c7",
+      "concepts": [
        "Real executive",
        "3 kinds of ministers",
        "No-confidence motion"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-07",
-        "label": "📄 Prime Minister and Council of Ministers"
-       }
+      "noteIds": [
+       "civ-rev-ch1-07"
       ]
      },
      {
       "id": "br-8",
-      "title": "Supreme Court",
-      "bullets": [
+      "label": "Supreme Court",
+      "color": "mm-c1",
+      "concepts": [
        "Guardian of Constitution",
        "Original / appellate / advisory",
        "Judicial review"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-9"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-08",
-        "label": "📄 The Supreme Court"
-       }
+      "noteIds": [
+       "civ-rev-ch1-08"
       ]
      },
      {
       "id": "br-9",
-      "title": "High Courts",
-      "bullets": [
+      "label": "High Courts",
+      "color": "mm-c2",
+      "concepts": [
        "Retire at 62",
        "Subordinate courts",
        "Writs"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch1-09",
-        "label": "📄 High Courts, Subordinate Courts, Writs"
-       }
+      "noteIds": [
+       "civ-rev-ch1-09"
       ]
      }
     ]
@@ -263,145 +196,94 @@ const CIVICS_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "League of Nations",
-      "bullets": [
+      "label": "League of Nations",
+      "color": "mm-c1",
+      "concepts": [
        "1919",
        "Failed in the 1930s",
        "Axis Powers → WWII"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-01",
-        "label": "📄 From the League of Nations to the UN"
-       }
+      "noteIds": [
+       "civ-rev-ch2-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Birth of UN",
-      "bullets": [
+      "label": "Birth of UN",
+      "color": "mm-c2",
+      "concepts": [
        "Atlantic Charter 14 Aug 1941",
        "San Francisco 1945",
        "24 Oct 1945 — 51 members"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-02",
-        "label": "📄 Atlantic Charter and Birth of the UN"
-       }
+      "noteIds": [
+       "civ-rev-ch2-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Objectives",
-      "bullets": [
+      "label": "Objectives",
+      "color": "mm-c3",
+      "concepts": [
        "Peace",
        "Human rights",
        "Social progress"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-03",
-        "label": "📄 Objectives of the UN"
-       }
+      "noteIds": [
+       "civ-rev-ch2-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "GA & SC",
-      "bullets": [
+      "label": "GA & SC",
+      "color": "mm-c4",
+      "concepts": [
        "GA: 193, one vote",
        "SC: 15, P5 veto"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-04",
-        "label": "📄 General Assembly and Security Council"
-       }
+      "noteIds": [
+       "civ-rev-ch2-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "Other organs",
-      "bullets": [
+      "label": "Other organs",
+      "color": "mm-c5",
+      "concepts": [
        "ICJ — Hague, 15 judges",
        "ECOSOC — 54",
        "Secretariat — SG 5 yrs",
        "Trusteeship — done 1994"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-05",
-        "label": "📄 ICJ, ECOSOC, Secretariat, Trusteeship Council"
-       }
+      "noteIds": [
+       "civ-rev-ch2-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Achievements",
-      "bullets": [
+      "label": "Achievements",
+      "color": "mm-c6",
+      "concepts": [
        "Peacekeeping",
        "Apartheid ended",
        "Health, education"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-06",
-        "label": "📄 UN Today — Functions and Achievements"
-       }
+      "noteIds": [
+       "civ-rev-ch2-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "Agencies",
-      "bullets": [
+      "label": "Agencies",
+      "color": "mm-c7",
+      "concepts": [
        "UNESCO Paris",
        "UNICEF 1946",
        "WHO Geneva 1948",
        "ILO 1919 — first"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-07",
-        "label": "📄 Specialised Agencies"
-       }
+      "noteIds": [
+       "civ-rev-ch2-07"
       ]
      }
     ]

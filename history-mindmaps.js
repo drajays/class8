@@ -39,208 +39,133 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Sources",
-      "bullets": [
+      "label": "Sources",
+      "color": "mm-c1",
+      "concepts": [
        "Primary — first-hand (diaries, artefacts)",
        "Secondary — interpretations (textbook)"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-01",
-        "label": "📄 Big Picture — From Medieval to Modern"
-       }
+      "noteIds": [
+       "hist-rev-ch1-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Renaissance causes",
-      "bullets": [
+      "label": "Renaissance causes",
+      "color": "mm-c2",
+      "concepts": [
        "1453 Fall of Constantinople",
        "Merchant patrons",
        "New routes, Crusades",
        "Gutenberg's press"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-02",
-        "label": "📄 Renaissance — Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch1-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Renaissance features",
-      "bullets": [
+      "label": "Renaissance features",
+      "color": "mm-c3",
+      "concepts": [
        "Humanism (Petrarca)",
        "Rationalism, science, inquiry",
        "Realism — da Vinci, Michelangelo"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-03",
-        "label": "📄 Renaissance — Features and Impact"
-       }
+      "noteIds": [
+       "hist-rev-ch1-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Age of Discovery",
-      "bullets": [
+      "label": "Age of Discovery",
+      "color": "mm-c4",
+      "concepts": [
        "Columbus — America",
        "Vasco da Gama — East",
        "Magellan — round the world",
        "Dias — Cape of Good Hope"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-04",
-        "label": "📄 Age of Discovery and Explorations"
-       }
+      "noteIds": [
+       "hist-rev-ch1-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "Reformation",
-      "bullets": [
+      "label": "Reformation",
+      "color": "mm-c5",
+      "concepts": [
        "1517 Luther's 95 Theses",
        "1521 Diet of Worms",
        "Calvin, Zwingli, Henry VIII",
        "1555 Peace of Augsburg"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-05",
-        "label": "📄 The Reformation and Martin Luther"
-       }
+      "noteIds": [
+       "hist-rev-ch1-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Counter Reformation",
-      "bullets": [
+      "label": "Counter Reformation",
+      "color": "mm-c6",
+      "concepts": [
        "1545 Council of Trent",
        "Jesuits — Loyola",
        "Nation states, liberty"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-06",
-        "label": "📄 Counter Reformation and Impact of the Reformation"
-       }
+      "noteIds": [
+       "hist-rev-ch1-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "Industrial Revolution",
-      "bullets": [
+      "label": "Industrial Revolution",
+      "color": "mm-c7",
+      "concepts": [
        "Why Britain: enclosures, coal, colonies",
        "Kay, Hargreaves, Watt, Cartwright"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-07",
-        "label": "📄 Industrial Revolution — Why Britain First?"
-       }
+      "noteIds": [
+       "hist-rev-ch1-07"
       ]
      },
      {
       "id": "br-8",
-      "title": "Impact of Industry",
-      "bullets": [
+      "label": "Impact of Industry",
+      "color": "mm-c1",
+      "concepts": [
        "Factory system",
        "Urbanisation",
        "Socialism — Marx, Engels"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-9"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-08",
-        "label": "📄 Industrial Revolution — Impact"
-       }
+      "noteIds": [
+       "hist-rev-ch1-08"
       ]
      },
      {
       "id": "br-9",
-      "title": "Imperialism",
-      "bullets": [
+      "label": "Imperialism",
+      "color": "mm-c2",
+      "concepts": [
        "Colony / protectorate / sphere",
        "Raw materials, markets, rivalry"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-10"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-09",
-        "label": "📄 Imperialism — Meaning, Forms, Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch1-09"
       ]
      },
      {
       "id": "br-10",
-      "title": "South Asia",
-      "bullets": [
+      "label": "South Asia",
+      "color": "mm-c3",
+      "concepts": [
        "India 1760",
        "Burma 1820s",
        "Ceylon 1802",
        "Maldives 1887"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch1-10",
-        "label": "📄 Imperialism in South Asia — Impact"
-       }
+      "noteIds": [
+       "hist-rev-ch1-10"
       ]
      }
     ]
@@ -285,169 +210,110 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "American causes",
-      "bullets": [
+      "label": "American causes",
+      "color": "mm-c1",
+      "concepts": [
        "13 colonies, British governors",
        "Heavy taxes",
        "No taxation without representation",
        "Boston Massacre 1770"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-02",
-        "label": "📄 American Revolution — Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch2-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Tea Party & Congress",
-      "bullets": [
+      "label": "Tea Party & Congress",
+      "color": "mm-c2",
+      "concepts": [
        "1773 — 342 chests of tea",
        "1774 Intolerable Acts",
        "1774 First Continental Congress"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-03",
-        "label": "📄 Boston Tea Party, Intolerable Acts, Continental Congress"
-       }
+      "noteIds": [
+       "hist-rev-ch2-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "War & Independence",
-      "bullets": [
+      "label": "War & Independence",
+      "color": "mm-c3",
+      "concepts": [
        "1775 Lexington, Bunker Hill",
        "4 July 1776 Declaration",
        "1783 Treaty of Paris",
        "1791 Bill of Rights"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-04",
-        "label": "📄 War, Declaration of Independence, Treaty of Paris"
-       }
+      "noteIds": [
+       "hist-rev-ch2-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "French society",
-      "bullets": [
+      "label": "French society",
+      "color": "mm-c4",
+      "concepts": [
        "Clergy · Nobles · Third Estate",
        "Privileged pay no tax"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-05",
-        "label": "📄 French Society before the Revolution"
-       }
+      "noteIds": [
+       "hist-rev-ch2-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "French causes",
-      "bullets": [
+      "label": "French causes",
+      "color": "mm-c5",
+      "concepts": [
        "Philosophers",
        "Bankruptcy, extravagance",
        "American example",
        "Food shortage"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-06",
-        "label": "📄 Causes of the French Revolution"
-       }
+      "noteIds": [
+       "hist-rev-ch2-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Events 1789–93",
-      "bullets": [
+      "label": "Events 1789–93",
+      "color": "mm-c6",
+      "concepts": [
        "Tennis Court Oath",
        "Bastille 14 July",
        "Rights of Man",
        "Republic 1792; king executed 1793"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-07",
-        "label": "📄 Events of the French Revolution"
-       }
+      "noteIds": [
+       "hist-rev-ch2-07"
       ]
      },
      {
       "id": "br-7",
-      "title": "Results",
-      "bullets": [
+      "label": "Results",
+      "color": "mm-c7",
+      "concepts": [
        "Republic",
        "Liberty, equality, fraternity",
        "Nationalism"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-08",
-        "label": "📄 Results and Influence of the French Revolution"
-       }
+      "noteIds": [
+       "hist-rev-ch2-08"
       ]
      },
      {
       "id": "br-8",
-      "title": "Napoleon",
-      "bullets": [
+      "label": "Napoleon",
+      "color": "mm-c1",
+      "concepts": [
        "1799 coup",
        "1805 Austerlitz",
        "1815 Waterloo",
        "1821 St. Helena"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch2-09",
-        "label": "📄 Napoleon Bonaparte"
-       }
+      "noteIds": [
+       "hist-rev-ch2-09"
       ]
      }
     ]
@@ -492,142 +358,91 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Background",
-      "bullets": [
+      "label": "Background",
+      "color": "mm-c1",
+      "concepts": [
        "Industrial Revolution → cotton",
        "Slave labour in the South",
        "Cultural divide"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-01",
-        "label": "📄 Big Picture — North vs South"
-       }
+      "noteIds": [
+       "hist-rev-ch3-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Economic conflict",
-      "bullets": [
+      "label": "Economic conflict",
+      "color": "mm-c2",
+      "concepts": [
        "North: factories, shipping",
        "South: plantations"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-02",
-        "label": "📄 Causes — Conflicting Interests"
-       }
+      "noteIds": [
+       "hist-rev-ch3-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Anti-slavery",
-      "bullets": [
+      "label": "Anti-slavery",
+      "color": "mm-c3",
+      "concepts": [
        "1850 Fugitive Slave Act",
        "1852 Uncle Tom's Cabin"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-03",
-        "label": "📄 Causes — Anti-slavery Movement"
-       }
+      "noteIds": [
+       "hist-rev-ch3-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Secession",
-      "bullets": [
+      "label": "Secession",
+      "color": "mm-c4",
+      "concepts": [
        "South Carolina first",
        "11 states",
        "1861 Confederacy — Jefferson Davis"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-04",
-        "label": "📄 Election of Lincoln and Secession"
-       }
+      "noteIds": [
+       "hist-rev-ch3-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "The War",
-      "bullets": [
+      "label": "The War",
+      "color": "mm-c5",
+      "concepts": [
        "April 1861 – April 1865",
        "6,00,000+ dead",
        "Lee surrenders at Appomattox"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-05",
-        "label": "📄 The Civil War (1861–1865)"
-       }
+      "noteIds": [
+       "hist-rev-ch3-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Emancipation",
-      "bullets": [
+      "label": "Emancipation",
+      "color": "mm-c6",
+      "concepts": [
        "Great Emancipator",
        "Assassinated 1865",
        "Reconstruction ends 1876"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-06",
-        "label": "📄 Emancipation and Reconstruction"
-       }
+      "noteIds": [
+       "hist-rev-ch3-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "Lincoln",
-      "bullets": [
+      "label": "Lincoln",
+      "color": "mm-c7",
+      "concepts": [
        "Kentucky 1809",
        "Gettysburg 1863",
        "Of, by, for the people"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch3-07",
-        "label": "📄 Abraham Lincoln and the Gettysburg Address"
-       }
+      "noteIds": [
+       "hist-rev-ch3-07"
       ]
      }
     ]
@@ -672,162 +487,103 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Aurangzeb's policies",
-      "bullets": [
+      "label": "Aurangzeb's policies",
+      "color": "mm-c1",
+      "concepts": [
        "Jizyah re-imposed",
        "Rajput, Sikh, Jat revolts",
        "25 years in the Deccan"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-02",
-        "label": "📄 Causes — Aurangzeb's Policies"
-       }
+      "noteIds": [
+       "hist-rev-ch4-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Weak successors",
-      "bullets": [
+      "label": "Weak successors",
+      "color": "mm-c2",
+      "concepts": [
        "Later Mughals 1707–1858",
        "Succession wars",
        "Iranis, Turanis, Afghans, Hindustanis"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-03",
-        "label": "📄 Causes — Weak Successors, Succession Wars, Court Politics"
-       }
+      "noteIds": [
+       "hist-rev-ch4-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "Systems fail",
-      "bullets": [
+      "label": "Systems fail",
+      "color": "mm-c3",
+      "concepts": [
        "Mansabdari & jagirdari crisis",
        "No navy",
        "Nadir Shah 1739, Abdali 1761"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-04",
-        "label": "📄 Causes — Mansabdari, Jagirdari, Army, Invasions"
-       }
+      "noteIds": [
+       "hist-rev-ch4-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Marathas",
-      "bullets": [
+      "label": "Marathas",
+      "color": "mm-c4",
+      "concepts": [
        "Peshwas",
        "Chauth ¼, Sardeshmukhi 1/10",
        "Confederacy of four houses"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-05",
-        "label": "📄 The Marathas under the Peshwas"
-       }
+      "noteIds": [
+       "hist-rev-ch4-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Panipat 1761",
-      "bullets": [
+      "label": "Panipat 1761",
+      "color": "mm-c5",
+      "concepts": [
        "Abdali routs Marathas",
        "Guerrilla vs open war",
        "Way clear for EEIC"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-06",
-        "label": "📄 Third Battle of Panipat (1761)"
-       }
+      "noteIds": [
+       "hist-rev-ch4-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Hyderabad & Bengal",
-      "bullets": [
+      "label": "Hyderabad & Bengal",
+      "color": "mm-c6",
+      "concepts": [
        "Asaf Jah 1724",
        "Murshid Quli, Alivardi, Siraj"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-07",
-        "label": "📄 Hyderabad and Bengal"
-       }
+      "noteIds": [
+       "hist-rev-ch4-07"
       ]
      },
      {
       "id": "br-7",
-      "title": "Mysore & Awadh",
-      "bullets": [
+      "label": "Mysore & Awadh",
+      "color": "mm-c7",
+      "concepts": [
        "Hyder Ali, Tipu",
        "Saadat Khan, Lucknow culture"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-08",
-        "label": "📄 Mysore and Awadh"
-       }
+      "noteIds": [
+       "hist-rev-ch4-08"
       ]
      },
      {
       "id": "br-8",
-      "title": "Rajputs & Sikhs",
-      "bullets": [
+      "label": "Rajputs & Sikhs",
+      "color": "mm-c1",
+      "concepts": [
        "Rajputs disunited",
        "Ranjit Singh; Amritsar 1809"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch4-09",
-        "label": "📄 Rajputs and the Sikh Kingdom"
-       }
+      "noteIds": [
+       "hist-rev-ch4-09"
       ]
      }
     ]
@@ -872,123 +628,80 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "EEIC arrives",
-      "bullets": [
+      "label": "EEIC arrives",
+      "color": "mm-c1",
+      "concepts": [
        "1600 charter",
        "1615 Thomas Roe",
        "Fort St George, Bombay, Fort William"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-02",
-        "label": "📄 The English East India Company"
-       }
+      "noteIds": [
+       "hist-rev-ch5-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "French rivals",
-      "bullets": [
+      "label": "French rivals",
+      "color": "mm-c2",
+      "concepts": [
        "1664, Pondicherry",
        "Mahe, Chandernagore"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-03",
-        "label": "📄 French East India Company and the Rivalry"
-       }
+      "noteIds": [
+       "hist-rev-ch5-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "First War 1746–48",
-      "bullets": [
+      "label": "First War 1746–48",
+      "color": "mm-c3",
+      "concepts": [
        "Austrian Succession",
        "Dupleix takes Madras",
        "No gains; French prestige ↑"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-04",
-        "label": "📄 First Carnatic War (1746–48)"
-       }
+      "noteIds": [
+       "hist-rev-ch5-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Second War 1749–54",
-      "bullets": [
+      "label": "Second War 1749–54",
+      "color": "mm-c4",
+      "concepts": [
        "Succession disputes",
        "Clive wins",
        "Dupleix recalled"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-05",
-        "label": "📄 Second Carnatic War (1749–54)"
-       }
+      "noteIds": [
+       "hist-rev-ch5-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Third War 1756–63",
-      "bullets": [
+      "label": "Third War 1756–63",
+      "color": "mm-c5",
+      "concepts": [
        "Seven Years' War",
        "Wandiwash 1760",
        "British dominant"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-06",
-        "label": "📄 Third Carnatic War (1756–63)"
-       }
+      "noteIds": [
+       "hist-rev-ch5-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Why British won",
-      "bullets": [
+      "label": "Why British won",
+      "color": "mm-c6",
+      "concepts": [
        "Navy",
        "Bengal money",
        "Private company",
        "Sepoys"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch5-07",
-        "label": "📄 Reasons for British Success"
-       }
+      "noteIds": [
+       "hist-rev-ch5-07"
       ]
      }
     ]
@@ -1033,123 +746,80 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Background",
-      "bullets": [
+      "label": "Background",
+      "color": "mm-c1",
+      "concepts": [
        "Richest province",
        "1717 farman — duty-free",
        "Dastaks misused"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-01",
-        "label": "📄 Big Picture — Why Bengal?"
-       }
+      "noteIds": [
+       "hist-rev-ch6-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Causes of Plassey",
-      "bullets": [
+      "label": "Causes of Plassey",
+      "color": "mm-c2",
+      "concepts": [
        "Fortification of Calcutta",
        "Calcutta captured 1756",
        "Treaty of Alinagar",
        "Mir Jafar plot"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-02",
-        "label": "📄 Battle of Plassey — Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch6-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Plassey 1757",
-      "bullets": [
+      "label": "Plassey 1757",
+      "color": "mm-c3",
+      "concepts": [
        "Treachery of Mir Jafar",
        "Jagat Seth",
        "Trader → ruler"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-03",
-        "label": "📄 Battle of Plassey — Battle, Results, Importance"
-       }
+      "noteIds": [
+       "hist-rev-ch6-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Puppet Nawabs",
-      "bullets": [
+      "label": "Puppet Nawabs",
+      "color": "mm-c4",
+      "concepts": [
        "Mir Jafar — name only",
        "Mir Qasim — Monghyr, reforms"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-04",
-        "label": "📄 Mir Jafar and Mir Qasim"
-       }
+      "noteIds": [
+       "hist-rev-ch6-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "Buxar 1764",
-      "bullets": [
+      "label": "Buxar 1764",
+      "color": "mm-c5",
+      "concepts": [
        "Mir Qasim + Awadh + Mughal",
        "Treaty of Allahabad 1765",
        "Diwani"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-05",
-        "label": "📄 Battle of Buxar (1764)"
-       }
+      "noteIds": [
+       "hist-rev-ch6-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Dual Government",
-      "bullets": [
+      "label": "Dual Government",
+      "color": "mm-c6",
+      "concepts": [
        "Power vs responsibility",
        "Famine 1770",
        "Hastings 1772–73"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch6-06",
-        "label": "📄 Dual Government (1765–72)"
-       }
+      "noteIds": [
+       "hist-rev-ch6-06"
       ]
      }
     ]
@@ -1194,121 +864,78 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Mysore I & II",
-      "bullets": [
+      "label": "Mysore I & II",
+      "color": "mm-c1",
+      "concepts": [
        "1767–69 British defeated",
        "1780–84 Mahe; Porto Novo",
        "Treaty of Mangalore"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-02",
-        "label": "📄 First and Second Anglo-Mysore Wars"
-       }
+      "noteIds": [
+       "hist-rev-ch7-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Mysore III & IV",
-      "bullets": [
+      "label": "Mysore III & IV",
+      "color": "mm-c2",
+      "concepts": [
        "Travancore 1789",
        "Seringapatam 1792",
        "Tipu killed 1799"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-03",
-        "label": "📄 Third and Fourth Anglo-Mysore Wars"
-       }
+      "noteIds": [
+       "hist-rev-ch7-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "Maratha Wars",
-      "bullets": [
+      "label": "Maratha Wars",
+      "color": "mm-c3",
+      "concepts": [
        "Salbai 1782",
        "Baji Rao II — Alliance 1802",
        "Kirkee 1817; Bithur"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-04",
-        "label": "📄 Anglo-Maratha Wars"
-       }
+      "noteIds": [
+       "hist-rev-ch7-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Sikh Wars",
-      "bullets": [
+      "label": "Sikh Wars",
+      "color": "mm-c4",
+      "concepts": [
        "Hardinge; Lahore 1846",
        "Dalhousie; Punjab 1849"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-05",
-        "label": "📄 Anglo-Sikh Wars"
-       }
+      "noteIds": [
+       "hist-rev-ch7-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Subsidiary Alliance",
-      "bullets": [
+      "label": "Subsidiary Alliance",
+      "color": "mm-c5",
+      "concepts": [
        "Wellesley",
        "Troops + Resident",
        "Nizam first"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-06",
-        "label": "📄 Lord Wellesley's Subsidiary Alliance"
-       }
+      "noteIds": [
+       "hist-rev-ch7-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Dalhousie",
-      "bullets": [
+      "label": "Dalhousie",
+      "color": "mm-c6",
+      "concepts": [
        "Lapse — Jhansi, Nagpur, Satara",
        "Awadh 1856"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch7-07",
-        "label": "📄 Lord Dalhousie — Doctrine of Lapse and Annexation of Awadh"
-       }
+      "noteIds": [
+       "hist-rev-ch7-07"
       ]
      }
     ]
@@ -1353,189 +980,122 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Land Revenue Settlements",
-      "bullets": [
+      "label": "Land Revenue Settlements",
+      "color": "mm-c1",
+      "concepts": [
        "Permanent — Cornwallis 1793 — Bengal, Bihar, Orissa — zamindars",
        "Ryotwari — Thomas Munro — Bombay & Madras — ryots pay directly",
        "Mahalwari — UP & Punjab — village (mahal) pays"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-02",
-        "label": "📄 Land Revenue Settlements"
-       }
+      "noteIds": [
+       "hist-rev-ch8-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Features",
-      "bullets": [
+      "label": "Features",
+      "color": "mm-c2",
+      "concepts": [
        "Loyal landlord class",
        "Fixed revenue for the Company",
        "Absentee landlordism & intermediaries",
        "Corrupt moneylenders"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-03",
-        "label": "📄 Common Features of the Settlements"
-       }
+      "noteIds": [
+       "hist-rev-ch8-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "Impact on Peasants",
-      "bullets": [
+      "label": "Impact on Peasants",
+      "color": "mm-c3",
+      "concepts": [
        "Land became saleable",
        "Tax even in famines → eviction",
        "Landless peasants, cycle of debt",
        "Over-cultivation → famines"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-04",
-        "label": "📄 Impact of the Settlements on Peasants"
-       }
+      "noteIds": [
+       "hist-rev-ch8-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Industries",
-      "bullets": [
+      "label": "Industries",
+      "color": "mm-c4",
+      "concepts": [
        "Heavy duties on Indian textiles in Britain",
        "British goods duty-free in India",
        "One-way free trade → artisans ruined"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-05",
-        "label": "📄 Impact on Indian Industries"
-       }
+      "noteIds": [
+       "hist-rev-ch8-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Transport & Communication",
-      "bullets": [
+      "label": "Transport & Communication",
+      "color": "mm-c5",
+      "concepts": [
        "1853: Railway Bombay–Thane",
        "1853: Telegraph Calcutta–Agra",
        "For troops & trade",
        "Unintended: unity → nationalism"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-06",
-        "label": "📄 Transport and Communication"
-       }
+      "noteIds": [
+       "hist-rev-ch8-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Economic Exploitation",
-      "bullets": [
+      "label": "Economic Exploitation",
+      "color": "mm-c6",
+      "concepts": [
        "Cheap raw materials, costly goods",
        "High taxes, low wages",
        "Drain of wealth to England"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-07",
-        "label": "📄 Economic Exploitation — Drain of Wealth"
-       }
+      "noteIds": [
+       "hist-rev-ch8-07"
       ]
      },
      {
       "id": "br-7",
-      "title": "Anglicist–Orientalist Debate",
-      "bullets": [
+      "label": "Anglicist–Orientalist Debate",
+      "color": "mm-c7",
+      "concepts": [
        "Charter Act 1813 — ₹1 lakh",
        "Orientalists: Indian languages",
        "Anglicists (Macaulay): English",
        "Bentinck's resolution ends debate"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-08",
-        "label": "📄 Anglicist–Orientalist Debate"
-       }
+      "noteIds": [
+       "hist-rev-ch8-08"
       ]
      },
      {
       "id": "br-8",
-      "title": "Macaulay & Wood",
-      "bullets": [
+      "label": "Macaulay & Wood",
+      "color": "mm-c1",
+      "concepts": [
        "Macaulay's Minute 1835 — 'interpreters' class",
        "Wood's Despatch 1854 → Dalhousie",
        "Universities 1857: Calcutta, Bombay, Madras"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-9"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-09",
-        "label": "📄 Macaulay's Minute (1835) and Wood's Despatch (1854)"
-       }
+      "noteIds": [
+       "hist-rev-ch8-09"
       ]
      },
      {
       "id": "br-9",
-      "title": "Effects of Western Education",
-      "bullets": [
+      "label": "Effects of Western Education",
+      "color": "mm-c2",
+      "concepts": [
        "− Westernisation, clerks, rejection of Indian culture",
        "+ Awareness, democracy, nationalism, common language"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch8-10",
-        "label": "📄 Effects of Western Education"
-       }
+      "noteIds": [
+       "hist-rev-ch8-10"
       ]
      }
     ]
@@ -1580,146 +1140,95 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Political & economic",
-      "bullets": [
+      "label": "Political & economic",
+      "color": "mm-c1",
+      "concepts": [
        "Doctrine of Lapse",
        "Awadh 1856",
        "Heavy revenue, indigo",
        "Ruined artisans"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-02",
-        "label": "📄 Political and Economic Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch9-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Social, military, immediate",
-      "bullets": [
+      "label": "Social, military, immediate",
+      "color": "mm-c2",
+      "concepts": [
        "Missionaries, reforms",
        "1856 Enlistment Act",
        "Greased cartridges"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-03",
-        "label": "📄 Socio-religious, Military and Immediate Causes"
-       }
+      "noteIds": [
+       "hist-rev-ch9-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "Meerut & Delhi",
-      "bullets": [
+      "label": "Meerut & Delhi",
+      "color": "mm-c3",
+      "concepts": [
        "May 1857",
        "Bahadur Shah Zafar leader",
        "Exiled to Rangoon"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-04",
-        "label": "📄 Meerut and Delhi"
-       }
+      "noteIds": [
+       "hist-rev-ch9-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Spread",
-      "bullets": [
+      "label": "Spread",
+      "color": "mm-c4",
+      "concepts": [
        "Lucknow — Henry Lawrence",
        "Kanpur — Nana Sahib",
        "Arrah — Kunwar Singh"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-05",
-        "label": "📄 Spread — Awadh, Kanpur, Arrah"
-       }
+      "noteIds": [
+       "hist-rev-ch9-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Rani of Jhansi",
-      "bullets": [
+      "label": "Rani of Jhansi",
+      "color": "mm-c5",
+      "concepts": [
        "Jhansi annexed 1853",
        "Gwalior captured",
        "Died fighting 1858"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-06",
-        "label": "📄 Rani Lakshmibai of Jhansi"
-       }
+      "noteIds": [
+       "hist-rev-ch9-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "Failure",
-      "bullets": [
+      "label": "Failure",
+      "color": "mm-c6",
+      "concepts": [
        "No coordination or leader",
        "South unaffected",
        "Princes loyal; peasants indifferent"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-07",
-        "label": "📄 Why the Revolt Failed"
-       }
+      "noteIds": [
+       "hist-rev-ch9-07"
       ]
      },
      {
       "id": "br-7",
-      "title": "Effects",
-      "bullets": [
+      "label": "Effects",
+      "color": "mm-c7",
+      "concepts": [
        "Crown rule",
        "Viceroy Canning",
        "Lapse abolished",
        "Nationalism"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch9-08",
-        "label": "📄 Effects — Queen Victoria's Proclamation (1858)"
-       }
+      "noteIds": [
+       "hist-rev-ch9-08"
       ]
      }
     ]
@@ -1764,141 +1273,90 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Background",
-      "bullets": [
+      "label": "Background",
+      "color": "mm-c1",
+      "concepts": [
        "Hindu College 1817",
        "Elphinstone College 1856",
        "Four factors of renaissance"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-01",
-        "label": "📄 Big Picture — The Indian Renaissance"
-       }
+      "noteIds": [
+       "hist-rev-ch10-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Ram Mohan Roy",
-      "bullets": [
+      "label": "Ram Mohan Roy",
+      "color": "mm-c2",
+      "concepts": [
        "Brahmo Samaj 1828",
        "Sati banned 1829 (Bentinck)"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-02",
-        "label": "📄 Raja Ram Mohan Roy and the Brahmo Samaj"
-       }
+      "noteIds": [
+       "hist-rev-ch10-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "Vidyasagar",
-      "bullets": [
+      "label": "Vidyasagar",
+      "color": "mm-c3",
+      "concepts": [
        "Widow Remarriage Act 1856",
        "Girls' schools 1849"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-03",
-        "label": "📄 Ishwar Chandra Vidyasagar"
-       }
+      "noteIds": [
+       "hist-rev-ch10-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Vivekananda",
-      "bullets": [
+      "label": "Vivekananda",
+      "color": "mm-c4",
+      "concepts": [
        "Ramakrishna Mission",
        "Unity of religions"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-04",
-        "label": "📄 Ramakrishna Paramahamsa and Swami Vivekananda"
-       }
+      "noteIds": [
+       "hist-rev-ch10-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "Western India",
-      "bullets": [
+      "label": "Western India",
+      "color": "mm-c5",
+      "concepts": [
        "Prarthana Samaj — Ranade",
        "Satyashodhak — Phule 1873",
        "Arya Samaj — Dayanand 1875"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-05",
-        "label": "📄 Western India — Prarthana Samaj, Phule, Arya Samaj"
-       }
+      "noteIds": [
+       "hist-rev-ch10-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Besant, South, Aligarh",
-      "bullets": [
+      "label": "Besant, South, Aligarh",
+      "color": "mm-c6",
+      "concepts": [
        "Theosophy; Home Rule 1916",
        "Sree Narayana Guru",
        "MAO College 1877"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-06",
-        "label": "📄 Annie Besant, South India and the Aligarh Movement"
-       }
+      "noteIds": [
+       "hist-rev-ch10-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "Sikhs & Impact",
-      "bullets": [
+      "label": "Sikhs & Impact",
+      "color": "mm-c7",
+      "concepts": [
        "Singh Sabha; Khalsa College",
        "Women emancipated",
        "Literature and art"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch10-07",
-        "label": "📄 Singh Sabha and Impact of the Reform Movements"
-       }
+      "noteIds": [
+       "hist-rev-ch10-07"
       ]
      }
     ]
@@ -1943,123 +1401,80 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Unity factors",
-      "bullets": [
+      "label": "Unity factors",
+      "color": "mm-c1",
+      "concepts": [
        "1857 martyrs",
        "Uniform laws",
        "Western ideas",
        "English link language"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-02",
-        "label": "📄 1857, Political Unification, Western Education, English"
-       }
+      "noteIds": [
+       "hist-rev-ch11-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Press & literature",
-      "bullets": [
+      "label": "Press & literature",
+      "color": "mm-c2",
+      "concepts": [
        "Vernacular press",
        "Anandamath, Ghare Baire",
        "Cunningham, Jones, Prinsep"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-03",
-        "label": "📄 Press, Literature and Rediscovery of India's Past"
-       }
+      "noteIds": [
+       "hist-rev-ch11-03"
       ]
      },
      {
       "id": "br-3",
-      "title": "Transport & racism",
-      "bullets": [
+      "label": "Transport & racism",
+      "color": "mm-c3",
+      "concepts": [
        "Railways narrowed barriers",
        "High posts for British only"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-04",
-        "label": "📄 Transport and Racial Discrimination"
-       }
+      "noteIds": [
+       "hist-rev-ch11-04"
       ]
      },
      {
       "id": "br-4",
-      "title": "Lytton 1876–80",
-      "bullets": [
+      "label": "Lytton 1876–80",
+      "color": "mm-c4",
+      "concepts": [
        "Durbar 1877",
        "Vernacular Press Act 1878",
        "Arms Act 1878"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-05",
-        "label": "📄 Lord Lytton's Repressive Policies"
-       }
+      "noteIds": [
+       "hist-rev-ch11-05"
       ]
      },
      {
       "id": "br-5",
-      "title": "Ilbert Bill 1883",
-      "bullets": [
+      "label": "Ilbert Bill 1883",
+      "color": "mm-c5",
+      "concepts": [
        "Lord Ripon",
        "Indian judges vs Europeans",
        "Diluted"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-06",
-        "label": "📄 Immediate Cause — The Ilbert Bill Controversy"
-       }
+      "noteIds": [
+       "hist-rev-ch11-06"
       ]
      },
      {
       "id": "br-6",
-      "title": "INC 1885",
-      "bullets": [
+      "label": "INC 1885",
+      "color": "mm-c6",
+      "concepts": [
        "A.O. Hume",
        "Bombay; W.C. Bonnerjee",
        "Four objectives"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch11-07",
-        "label": "📄 Formation and Objectives of the Indian National Congress"
-       }
+      "noteIds": [
+       "hist-rev-ch11-07"
       ]
      }
     ]
@@ -2104,122 +1519,79 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Moderates",
-      "bullets": [
+      "label": "Moderates",
+      "color": "mm-c1",
+      "concepts": [
        "Naoroji, Gokhale, Mehta",
        "Prayer, petition, protest",
        "ICS, taxes, high posts"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-02",
-        "label": "📄 The Moderates"
-       }
+      "noteIds": [
+       "hist-rev-ch12-02"
       ]
      },
      {
       "id": "br-2",
-      "title": "Radicals",
-      "bullets": [
+      "label": "Radicals",
+      "color": "mm-c2",
+      "concepts": [
        "Lal-Bal-Pal",
        "Swaraj",
        "Mass agitation"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-04",
-        "label": "📄 The Radical Nationalists (Lal-Bal-Pal)"
-       }
+      "noteIds": [
+       "hist-rev-ch12-04"
       ]
      },
      {
       "id": "br-3",
-      "title": "Partition 1905",
-      "bullets": [
+      "label": "Partition 1905",
+      "color": "mm-c3",
+      "concepts": [
        "Curzon",
        "Divide Hindus & Muslims",
        "Reunited 1911; capital Delhi"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-05",
-        "label": "📄 Partition of Bengal (1905)"
-       }
+      "noteIds": [
+       "hist-rev-ch12-05"
       ]
      },
      {
       "id": "br-4",
-      "title": "Protest",
-      "bullets": [
+      "label": "Protest",
+      "color": "mm-c4",
+      "concepts": [
        "Swadeshi, Boycott",
        "Revolutionaries — Khudiram",
        "Surat Split 1907"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-06",
-        "label": "📄 Swadeshi, Boycott, Revolutionaries and the Surat Split"
-       }
+      "noteIds": [
+       "hist-rev-ch12-06"
       ]
      },
      {
       "id": "br-5",
-      "title": "Divide & rule",
-      "bullets": [
+      "label": "Divide & rule",
+      "color": "mm-c5",
+      "concepts": [
        "Muslim League 1906",
        "Morley-Minto 1909",
        "Separate electorates"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-07",
-        "label": "📄 Muslim League (1906) and Morley-Minto Reforms (1909)"
-       }
+      "noteIds": [
+       "hist-rev-ch12-07"
       ]
      },
      {
       "id": "br-6",
-      "title": "1916 unity",
-      "bullets": [
+      "label": "1916 unity",
+      "color": "mm-c6",
+      "concepts": [
        "Lucknow Pact",
        "Home Rule — Besant, Tilak"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch12-08",
-        "label": "📄 Lucknow Pact and Home Rule League (1916)"
-       }
+      "noteIds": [
+       "hist-rev-ch12-08"
       ]
      }
     ]
@@ -2264,204 +1636,129 @@ const HISTORY_MINDMAP_DATA = {
     "branches": [
      {
       "id": "br-1",
-      "title": "Satyagraha",
-      "bullets": [
+      "label": "Satyagraha",
+      "color": "mm-c1",
+      "concepts": [
        "Truth + non-violence",
        "Born in South Africa",
        "Charkha, khadi"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-2"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-01",
-        "label": "📄 Gandhi and Satyagraha"
-       }
+      "noteIds": [
+       "hist-rev-ch13-01"
       ]
      },
      {
       "id": "br-2",
-      "title": "Early campaigns",
-      "bullets": [
+      "label": "Early campaigns",
+      "color": "mm-c2",
+      "concepts": [
        "Champaran 1917",
        "Kheda 1918",
        "Ahmedabad 1918"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-3"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-02",
-        "label": "📄 Early Satyagrahas and Gandhi's Visions"
-       }
+      "noteIds": [
+       "hist-rev-ch13-02"
       ]
      },
      {
       "id": "br-3",
-      "title": "1919",
-      "bullets": [
+      "label": "1919",
+      "color": "mm-c3",
+      "concepts": [
        "Rowlatt 'Black' Act",
        "Jallianwala Bagh — Dyer"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-4"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-03",
-        "label": "📄 Rowlatt Act and Jallianwala Bagh (1919)"
-       }
+      "noteIds": [
+       "hist-rev-ch13-03"
       ]
      },
      {
       "id": "br-4",
-      "title": "Non-cooperation",
-      "bullets": [
+      "label": "Non-cooperation",
+      "color": "mm-c4",
+      "concepts": [
        "Boycotts, titles returned",
        "Khilafat",
        "Chauri Chaura 1922"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-5"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-04",
-        "label": "📄 Non-cooperation Movement (1920–22)"
-       }
+      "noteIds": [
+       "hist-rev-ch13-04"
       ]
      },
      {
       "id": "br-5",
-      "title": "Towards Poorna Swaraj",
-      "bullets": [
+      "label": "Towards Poorna Swaraj",
+      "color": "mm-c5",
+      "concepts": [
        "Simon 1927",
        "Lahore 1929 — Nehru"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-6"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-05",
-        "label": "📄 Simon Commission and Poorna Swaraj"
-       }
+      "noteIds": [
+       "hist-rev-ch13-05"
       ]
      },
      {
       "id": "br-6",
-      "title": "Civil Disobedience",
-      "bullets": [
+      "label": "Civil Disobedience",
+      "color": "mm-c6",
+      "concepts": [
        "Dandi 1930",
        "Gandhi-Irwin 1931",
        "Round Table"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-7"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-06",
-        "label": "📄 Civil Disobedience Movement and Dandi March (1930–34)"
-       }
+      "noteIds": [
+       "hist-rev-ch13-06"
       ]
      },
      {
       "id": "br-7",
-      "title": "1935–1942",
-      "bullets": [
+      "label": "1935–1942",
+      "color": "mm-c7",
+      "concepts": [
        "1935 Act, 1937 elections",
        "WW II deadlock",
        "Cripps — post-dated cheque"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-8"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-07",
-        "label": "📄 1935 Act, World War II and the Cripps Mission"
-       }
+      "noteIds": [
+       "hist-rev-ch13-07"
       ]
      },
      {
       "id": "br-8",
-      "title": "Quit India",
-      "bullets": [
+      "label": "Quit India",
+      "color": "mm-c1",
+      "concepts": [
        "Do or Die",
        "Ballia, Midnapore"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-9"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-08",
-        "label": "📄 Quit India Movement (1942)"
-       }
+      "noteIds": [
+       "hist-rev-ch13-08"
       ]
      },
      {
       "id": "br-9",
-      "title": "Netaji & INA",
-      "bullets": [
+      "label": "Netaji & INA",
+      "color": "mm-c2",
+      "concepts": [
        "Forward Bloc 1939",
        "Give me blood…",
        "Kohima, Imphal 1944"
       ],
-      "links": [
-       {
-        "label": "leads to →",
-        "targetId": "br-10"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-09",
-        "label": "📄 Subhas Chandra Bose and the INA"
-       }
+      "noteIds": [
+       "hist-rev-ch13-09"
       ]
      },
      {
       "id": "br-10",
-      "title": "Freedom",
-      "bullets": [
+      "label": "Freedom",
+      "color": "mm-c3",
+      "concepts": [
        "Cabinet Mission 1946",
        "Mountbatten Plan",
        "15 Aug 1947; 26 Jan 1950"
       ],
-      "links": [],
-      "noteRefs": [
-       {
-        "noteId": "hist-rev-ch13-10",
-        "label": "📄 Towards Independence and Partition (1945–1950)"
-       }
+      "noteIds": [
+       "hist-rev-ch13-10"
       ]
      }
     ]

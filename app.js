@@ -1846,7 +1846,79 @@ function sourceChipHtml(source) {
   return '';
 }
 
+// Mind maps & cheat sheets from the generated pipelines carry cut-off fragments ("Blood → a fluid…")
+// and note ids that no longer exist. Clean both once per chapter, in one place.
+const _revisionAidCache = new Map();
+const _isFragment = t => /…\s*$/.test(String(t || ''));
+
+/** Keep a note link if the note exists; otherwise point it at the chapter note that best matches `hint`. */
+function _resolveNoteId(topicId, noteId, hint) {
+  if (noteId && appData.content.some(c => c.id === noteId && c.type === 'note')) return noteId;
+  const words = new Set(String(hint || '').toLowerCase().match(/[a-z]{4,}/g) || []);
+  let best = null, bestScore = 0;
+  topicNotes(topicId).forEach(n => {
+    const text = (n.subtopic + ' ' + String(n.content || '').slice(0, 800)).toLowerCase();
+    let sc = 0;
+    words.forEach(w => { if (text.includes(w)) sc++; });
+    if (sc > bestScore) { bestScore = sc; best = n.id; }
+  });
+  return best;
+}
+
 function chapterMindmap(topicId) {
+  const key = 'mm:' + topicId;
+  if (!_revisionAidCache.has(key)) {
+    const raw = _rawChapterMindmap(topicId);
+    _revisionAidCache.set(key, raw && {
+      ...raw,
+      maps: raw.maps.map(m => ({
+        ...m,
+        branches: m.branches.map(b => {
+          // Two data shapes exist: {label, concepts, noteIds, links[{id,rel}]} and the older
+          // {title, bullets, noteRefs[{noteId}], links[{targetId,label}]} (geography).
+          const label = b.label || b.title || '';
+          let concepts = (b.concepts || b.bullets || []).filter(c => !_isFragment(c));
+          const hint = label + ' ' + concepts.join(' ');
+          const refs = b.noteIds || (b.noteRefs || []).map(r => r.noteId) || [];
+          const ids = [...new Set((refs.length ? refs : [b.noteId || b.id]).map(id => _resolveNoteId(topicId, id, hint)).filter(Boolean))];
+          const links = (b.links || []).map(l => typeof l === 'string' ? { id: l } : { id: l.id || l.targetId, rel: l.rel || l.label })
+            .filter(l => l.id && !/^(relates to|leads to)/i.test(String(l.rel || '')));
+          if (concepts.length < 2 && ids.length) {
+            // Borrow short, complete bullet points from the linked note.
+            const note = appData.content.find(c => c.id === ids[0]);
+            const bullets = String(note && note.content || '').split('\n')
+              .filter(l => /^\s*[•\-*]\s+/.test(l))
+              .map(l => l.replace(/^\s*[•\-*]\s+/, '').replace(/\*\*/g, '').trim())
+              .filter(l => l && l.length <= 80);
+            concepts = [...concepts, ...bullets.filter(l => !concepts.includes(l))].slice(0, 4);
+          }
+          return { ...b, label, concepts, links, noteIds: ids, noteId: ids[0] };
+        })
+      }))
+    });
+  }
+  return _revisionAidCache.get(key);
+}
+
+function chapterCheatsheet(topicId) {
+  const key = 'cs:' + topicId;
+  if (!_revisionAidCache.has(key)) {
+    const rawAny = _rawChapterCheatsheet(topicId);
+    const raw = rawAny && _sectionedCheatSheet(rawAny); // geography/history/civics use {topCram, sections}
+    _revisionAidCache.set(key, raw && {
+      ...raw,
+      topTen: (raw.topTen || []).filter(t => !_isFragment(t)),
+      groups: (raw.groups || []).map(g => ({
+        ...g,
+        items: (g.items || []).filter(it => !_isFragment(it.text))
+          .map(it => it.noteId ? { ...it, noteId: _resolveNoteId(topicId, it.noteId, (it.term || '') + ' ' + it.text) } : it)
+      })).filter(g => g.items.length)
+    });
+  }
+  return _revisionAidCache.get(key);
+}
+
+function _rawChapterMindmap(topicId) {
   if (!topicId) return null;
   if (typeof PHYSICS_MINDMAP_DATA !== 'undefined' && PHYSICS_MINDMAP_DATA[topicId]) {
     return PHYSICS_MINDMAP_DATA[topicId];
@@ -1869,7 +1941,7 @@ function chapterMindmap(topicId) {
   return null;
 }
 
-function chapterCheatsheet(topicId) {
+function _rawChapterCheatsheet(topicId) {
   if (!topicId) return null;
   if (typeof PHYSICS_CHEATSHEET_DATA !== 'undefined' && PHYSICS_CHEATSHEET_DATA[topicId]) {
     const base = PHYSICS_CHEATSHEET_DATA[topicId];
@@ -1887,10 +1959,10 @@ function chapterCheatsheet(topicId) {
     return GEOGRAPHY_CHEATSHEET_DATA[topicId];
   }
   if (typeof HISTORY_CHEATSHEET_DATA !== 'undefined' && HISTORY_CHEATSHEET_DATA[topicId]) {
-    return _sectionedCheatSheet(HISTORY_CHEATSHEET_DATA[topicId]);
+    return HISTORY_CHEATSHEET_DATA[topicId];
   }
   if (typeof CIVICS_CHEATSHEET_DATA !== 'undefined' && CIVICS_CHEATSHEET_DATA[topicId]) {
-    return _sectionedCheatSheet(CIVICS_CHEATSHEET_DATA[topicId]);
+    return CIVICS_CHEATSHEET_DATA[topicId];
   }
   if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
     return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
@@ -2597,7 +2669,7 @@ function renderQuizView(el) {
       <p>${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</p>
       ${q.teacherTip ? `<div class="tip-box"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>` : ''}
       ${q.examTip ? `<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>` : ''}
-      ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button>` : ''}
+      ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button>` : ''}
     </div>`;
   }
   el.innerHTML = `
@@ -3081,6 +3153,8 @@ function mindmapNoteLabel(noteId) {
   return t.length > 32 ? t.slice(0, 30) + '…' : t || 'Notes';
 }
 
+let mindMapQuizMode = false;
+
 function renderMindMap(mmData) {
   const body = document.getElementById('content-body');
   if (!mmData || !mmData.maps || !mmData.maps.length) {
@@ -3107,8 +3181,8 @@ function renderMindMap(mmData) {
       </div>`
     : '';
   const branchHtml = map.branches.map((b, bi) => {
-    const concepts = (b.concepts || []).slice(0, 5).map(c =>
-      `<li>${escHtml(c)}</li>`
+    const concepts = (b.concepts || []).slice(0, 6).map(c =>
+      `<li onclick="event.stopPropagation();this.classList.add('shown')">${escHtml(c)}</li>`
     ).join('');
     const linkChips = (b.links || []).map(link => {
       const lid = typeof link === 'string' ? link : link.id;
@@ -3119,33 +3193,32 @@ function renderMindMap(mmData) {
         <span class="mm-rel">${escHtml(rel)}</span><span class="mm-rel-target">${escHtml(linked.label)}</span>
       </button>`;
     }).join('');
-    const noteIds = b.noteIds || (b.noteId ? [b.noteId] : []);
-    const noteChips = noteIds.slice(0, 4).map(nid =>
-      `<button type="button" class="mm-note-chip" onclick="event.stopPropagation();jumpToNoteFromMindmap('${nid}')" title="Supporting section notes">📄 ${escHtml(mindmapNoteLabel(nid))}</button>`
-    ).join('');
-    const moreNotes = noteIds.length > 4 ? `<span class="mm-more-notes">+${noteIds.length - 4} more</span>` : '';
-    return `<article class="mm-branch ${b.color}" id="mm-branch-${b.id}" onclick="highlightMindBranch('${b.id}')" title="Idea hub — see how concepts connect">
-      <div class="mm-branch-num">${bi + 1}</div>
-      <h4 class="mm-branch-title">${escHtml(b.label)}</h4>
-      <ul class="mm-concepts">${concepts}</ul>
-      ${linkChips ? `<div class="mm-links">${linkChips}</div>` : ''}
-      ${noteChips ? `<div class="mm-note-links">${noteChips}${moreNotes}</div>` : ''}
-    </article>`;
+    const noteIds = (b.noteIds || (b.noteId ? [b.noteId] : []))
+      .filter(nid => appData.content.some(c => c.id === nid && c.type === 'note'));
+    const noteChips = noteIds.slice(0, 3).map(nid => {
+      const note = appData.content.find(c => c.id === nid);
+      return `<button type="button" class="mm-note-chip" onclick="event.stopPropagation();jumpToNoteFromMindmap('${nid}')" title="Open the full note">📄 ${escHtml(mindmapNoteLabel(nid))}${note && note.page ? ` · 📖 ${escHtml(note.page)}` : ''}</button>`;
+    }).join('');
+    return `<li class="mm-kid" id="mm-branch-${b.id}">
+      <div class="mm-node ${b.color || 'mm-c' + ((bi % 7) + 1)}" onclick="highlightMindBranch('${b.id}')">
+        <span class="mm-node-num">${bi + 1}</span>${escHtml(b.label)}
+      </div>
+      ${concepts ? `<ul class="mm-leaves">${concepts}</ul>` : ''}
+      ${noteChips || linkChips ? `<div class="mm-foot">${noteChips}${linkChips}</div>` : ''}
+    </li>`;
   }).join('');
   body.innerHTML = `
     <div class="mindmap-wrap fade-in">
-      <p class="lead mm-lead">How ideas connect in <strong>${escHtml(mmData.chapterTitle)}</strong> — not just section titles. Follow the flow, then tap labeled links between idea hubs. Open section notes when you want detail.</p>
+      <div class="mm-toolbar">
+        <p class="lead mm-lead">The whole of <strong>${escHtml(mmData.chapterTitle)}</strong> on one page. Read it centre → branches → points.</p>
+        <label class="tl-toggle"><input type="checkbox" ${mindMapQuizMode ? 'checked' : ''} onchange="mindMapQuizMode=this.checked;renderMindMap(chapterMindmap(selectedTopic))"> 🙈 Self-test: hide points, tap to reveal</label>
+      </div>
       ${mapTabs}
       ${flowHtml}
-      <div class="mindmap-hub">
-        <div class="mm-center-node">
-          <span class="mm-center-icon">🧠</span>
-          <span class="mm-center-text">${escHtml(map.center)}</span>
-        </div>
-        <div class="mm-spoke-line" aria-hidden="true"></div>
+      <div class="mm-map${mindMapQuizMode ? ' mm-quiz' : ''}">
+        <div class="mm-root"><span class="mm-root-icon">🧠</span><span>${escHtml(map.center)}</span></div>
+        <ul class="mm-kids">${branchHtml}</ul>
       </div>
-      <div class="mm-branch-grid">${branchHtml}</div>
-      <p class="mm-hint">💡 Arrows show the story order. Chips show how one idea leads to another. Section notes are supporting evidence — tap 📄 when you need the full text.</p>
     </div>`;
 }
 
@@ -3484,7 +3557,7 @@ function buildNoteCardHtml(n, displayNum) {
     <div class="note-block fade-in${marked ? ' revision-marked' : ''}" id="note-${n.id}">
       <div class="note-head">
         <div class="note-number">${displayNum}</div>
-        <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
+        <h3>${escHtml(n.subtopic)}${n.page ? ` <span class="page-chip" title="Page in your textbook">📖 Book ${escHtml(n.page)}</span>` : ''}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
       </div>
       <div class="note-body">
         ${fiveWHtml(n.fiveW)}
@@ -3844,7 +3917,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   html += `<div class="q-label">${q.subtopic || typeLabels[q.type] || q.type}${
     sourceChipHtml(q.source)
   }${qualityBadgeHtml(q)}${diagramBadge}${
-    linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes</button>` : ''
+    linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button>` : ''
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
   html += `<div class="q-text rich-html">Q${idx + 1}. ${renderContentHtml(q.question)}</div>`;
@@ -3909,7 +3982,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     ${q.type === 'short_answer' ? renderShortAnswerAnswerContent(q) : `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>`}
     ${!isRichShortAnswer(q) && q.teacherTip ? `<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>` : ''}
     ${!isRichShortAnswer(q) && q.examTip ? `<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.examTip)}</span></div>` : ''}
-    ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}</button></div>` : ''}
+    ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button></div>` : ''}
   </div>`;
 
   html += userRateRowHtml(q);
