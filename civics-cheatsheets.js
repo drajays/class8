@@ -5,54 +5,32 @@ const CIVICS_CHEATSHEET_DATA = {
   "topicId": "civ-ch1",
   "title": "Organs of the Indian Government — Cheat Sheet",
   "topCram": [
-   "Study the given pictures. Can you name these Prime Ministers of India?",
-   "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
-   "There are three organs of the government of India.",
-   "Must not be less than 25 years of age",
-   "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
-   "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
-   "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-   "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
-   "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-   "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
-   "Must be at least 35 years of age",
-   "Should not hold an office of profit under the government—Centre, state or local level"
+   "Legislature makes · Executive executes · Judiciary interprets",
+   "Lok Sabha: 552 max, direct, 25 yrs, 5-yr term, Speaker",
+   "Rajya Sabha: 250 (12 nominated), indirect, 30 yrs, permanent, VP chairs",
+   "Money bill — Lok Sabha only; Rajya Sabha 14 days",
+   "President: 35 yrs, elected by MPs + MLAs, 5 years",
+   "Vice President: elected by MPs only; chairs Rajya Sabha",
+   "PM = real head; President = nominal head",
+   "Supreme Court: CJI + 30 (textbook); retire 65; first CJI H.J. Kania",
+   "High Court judges retire at 62",
+   "Writs: habeas corpus, mandamus, prohibition, quo warranto, certiorari"
   ],
   "sections": [
    {
     "title": "🧭 Core story",
     "items": [
      {
-      "text": "Study the given pictures. Can you name these Prime Ministers of India?",
+      "text": "Parliament makes laws on Union and Concurrent subjects.",
       "noteId": "civ-rev-ch1-01"
      },
      {
-      "text": "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
-      "noteId": "civ-rev-ch1-01"
+      "text": "President is the formal head; PM and Cabinet govern.",
+      "noteId": "civ-rev-ch1-07"
      },
      {
-      "text": "There are three organs of the government of India.",
-      "noteId": "civ-rev-ch1-01"
-     },
-     {
-      "text": "Must not be less than 25 years of age",
-      "noteId": "civ-rev-ch1-01"
-     },
-     {
-      "text": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
-      "noteId": "civ-rev-ch1-01"
-     },
-     {
-      "text": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
-      "noteId": "civ-rev-ch1-01"
-     },
-     {
-      "text": "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-      "noteId": "civ-rev-ch1-01"
-     },
-     {
-      "text": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
-      "noteId": "civ-rev-ch1-01"
+      "text": "Supreme Court guards the Constitution through judicial review.",
+      "noteId": "civ-rev-ch1-08"
      }
     ]
    },
@@ -60,35 +38,27 @@ const CIVICS_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-      "noteId": "civ-rev-ch1-02"
+      "text": "Coalition government — several parties share power.",
+      "noteId": "civ-rev-ch1-07"
      },
      {
-      "text": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
-      "noteId": "civ-rev-ch1-02"
+      "text": "Electoral college — body that elects the President/VP.",
+      "noteId": "civ-rev-ch1-05"
      },
      {
-      "text": "Must be at least 35 years of age",
-      "noteId": "civ-rev-ch1-02"
+      "text": "Ex-officio — by virtue of office held.",
+      "noteId": "civ-rev-ch1-06"
      },
      {
-      "text": "Should not hold an office of profit under the government—Centre, state or local level",
-      "noteId": "civ-rev-ch1-02"
+      "text": "Ordinance — temporary law by the President.",
+      "noteId": "civ-rev-ch1-05"
      },
      {
-      "text": "The powers of the President can be grouped under the following heads:",
-      "noteId": "civ-rev-ch1-02"
+      "text": "Precedent — earlier judgement followed in similar cases.",
+      "noteId": "civ-rev-ch1-08"
      },
      {
-      "text": "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
-      "noteId": "civ-rev-ch1-02"
-     },
-     {
-      "text": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
-      "noteId": "civ-rev-ch1-02"
-     },
-     {
-      "text": "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
+      "text": "Secret ballot — voter's choice kept confidential.",
       "noteId": "civ-rev-ch1-02"
      }
     ]
@@ -97,178 +67,76 @@ const CIVICS_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to be agreed by the Lok Sabha.",
-      "noteId": "civ-rev-ch1-03"
+      "text": "Match: Railways-Union List, Agriculture-State List, President-Supreme Commander, Rajya Sabha-permanent, Kania-first CJI.",
+      "noteId": "civ-rev-ch1-01"
      },
      {
-      "text": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working.",
-      "noteId": "civ-rev-ch1-03"
-     },
-     {
-      "text": "While the President is the $ \\underline{\\text{nominal or",
-      "noteId": "civ-rev-ch1-03"
-     },
-     {
-      "text": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the whole constitutional machinery runs.",
-      "noteId": "civ-rev-ch1-03"
-     },
-     {
-      "text": "##### Former Prime Ministers of India",
-      "noteId": "civ-rev-ch1-03"
+      "text": "VP elected by MPs only (not MLAs).",
+      "noteId": "civ-rev-ch1-06"
      }
     ]
    }
   ],
   "wordCards": [
    {
-    "id": "wc-52a2de54",
-    "term": "The Union and State Legislature",
-    "definition": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives ar"
+    "id": "wc-civ-ch1-01",
+    "term": "Sansad",
+    "definition": "Indian Parliament."
    },
    {
-    "id": "wc-8adf800f",
-    "term": "The Vice President",
-    "definition": "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliame"
+    "id": "wc-civ-ch1-02",
+    "term": "Universal Adult Suffrage",
+    "definition": "Every citizen 18+ can vote."
    },
    {
-    "id": "wc-f5ed77ef",
-    "term": "The Vice President,",
-    "definition": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the Ho"
+    "id": "wc-civ-ch1-03",
+    "term": "Speaker",
+    "definition": "Presiding officer of the Lok Sabha."
    },
    {
-    "id": "wc-cfd8cf08",
-    "term": "While the President",
-    "definition": "While the President is the $ \\underline{\\text{nominal or"
+    "id": "wc-civ-ch1-04",
+    "term": "Money bill",
+    "definition": "Bill on taxes/spending — only in the Lok Sabha."
    },
    {
-    "id": "wc-04",
-    "term": "after Independence, the",
-    "definition": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape"
+    "id": "wc-civ-ch1-05",
+    "term": "Impeachment",
+    "definition": "Removal of the President or judges by Parliament."
    },
    {
-    "id": "wc-05",
-    "term": "Now One entire",
-    "definition": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o"
+    "id": "wc-civ-ch1-06",
+    "term": "Ordinance",
+    "definition": "Temporary law by the President."
    },
    {
-    "id": "wc-06",
-    "term": "Have you seen",
-    "definition": "Have you seen this channel? How do you think the media helps us to understand government affairs bet"
+    "id": "wc-civ-ch1-07",
+    "term": "Contingency Fund",
+    "definition": "Fund for unforeseen expenses, at the President's disposal."
    },
    {
-    "id": "wc-07",
-    "term": "A bill is",
-    "definition": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft"
+    "id": "wc-civ-ch1-08",
+    "term": "No-confidence motion",
+    "definition": "Vote that can remove the government."
    },
    {
-    "id": "wc-08",
-    "term": "The Union and",
-    "definition": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and"
+    "id": "wc-civ-ch1-09",
+    "term": "Judicial review",
+    "definition": "Court's power to test laws against the Constitution."
    },
    {
-    "id": "wc-09",
-    "term": "Dr Rajendra Prasad",
-    "definition": "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain"
+    "id": "wc-civ-ch1-10",
+    "term": "Court of Record",
+    "definition": "Court whose judgements are precedents."
    },
    {
-    "id": "wc-10",
-    "term": "Must be at",
-    "definition": "Must be at least 35 years of age"
+    "id": "wc-civ-ch1-11",
+    "term": "Writ",
+    "definition": "Court order to enforce Fundamental Rights."
    },
    {
-    "id": "wc-11",
-    "term": "Should not hold",
-    "definition": "Should not hold an office of profit under the government—Centre, state or local level"
-   },
-   {
-    "id": "wc-12",
-    "term": "The powers of",
-    "definition": "The powers of the President can be grouped under the following heads:"
-   },
-   {
-    "id": "wc-13",
-    "term": "The President appoints",
-    "definition": "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok "
-   },
-   {
-    "id": "wc-14",
-    "term": "When no party",
-    "definition": "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minist"
-   },
-   {
-    "id": "wc-15",
-    "term": "The Vice President",
-    "definition": "The Vice President is elected indirectly by an electoral college consisting only of members from bot"
-   },
-   {
-    "id": "wc-16",
-    "term": "She/He is removed",
-    "definition": "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to"
-   },
-   {
-    "id": "wc-17",
-    "term": "The Vice President,",
-    "definition": "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and p"
-   },
-   {
-    "id": "wc-18",
-    "term": "While the President",
-    "definition": "While the President is the $ \\underline{\\text{nominal or"
-   },
-   {
-    "id": "wc-19",
-    "term": "constitutional head}} \\underli",
-    "definition": "constitutional head}} \\underline{\\text{government}} $. The Prime Minister is the pivot on which the "
-   },
-   {
-    "id": "wc-20",
-    "term": "##### Former Prime",
-    "definition": "##### Former Prime Ministers of India"
-   },
-   {
-    "id": "wc-21",
-    "term": "Study the given",
-    "definition": "Study the given pictures. Can you name these Prime Ministers of India?"
-   },
-   {
-    "id": "wc-22",
-    "term": "India is a",
-    "definition": "India is a parliamentary democracy, where the supreme power resides with the people of the country. "
-   },
-   {
-    "id": "wc-23",
-    "term": "There are three",
-    "definition": "There are three organs of the government of India."
-   },
-   {
-    "id": "wc-24",
-    "term": "Must not be",
-    "definition": "Must not be less than 25 years of age"
-   },
-   {
-    "id": "wc-25",
-    "term": "after Independence, the",
-    "definition": "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspape"
-   },
-   {
-    "id": "wc-26",
-    "term": "Now One entire",
-    "definition": "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs o"
-   },
-   {
-    "id": "wc-27",
-    "term": "Have you seen",
-    "definition": "Have you seen this channel? How do you think the media helps us to understand government affairs bet"
-   },
-   {
-    "id": "wc-28",
-    "term": "A bill is",
-    "definition": "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft"
-   },
-   {
-    "id": "wc-29",
-    "term": "The Union and",
-    "definition": "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and"
+    "id": "wc-civ-ch1-12",
+    "term": "Nyaya Panchayat",
+    "definition": "Proposed elected village court for speedy justice."
    }
   ]
  },
@@ -276,54 +144,32 @@ const CIVICS_CHEATSHEET_DATA = {
   "topicId": "civ-ch2",
   "title": "The United Nations — Cheat Sheet",
   "topCram": [
-   "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
-   "At the end of this lesson, learners will be able to:",
-   "Came into existence on 24 October 1945",
-   "League of Nations failed to prevent the outbreak of World War II",
-   "Some proposals of the Atlantic Charter became the basis for the establishment of the UN",
-   "The preamble of the UN charter outlines the objectives of the UN. These are as follows:",
-   "Maintenance of international peace and security",
-   "Promotion of human rights for people all over the world",
-   "The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.",
-   "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.",
-   "This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.",
-   "The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies."
+   "League of Nations 1919 — failed; WWII 1939",
+   "'United Nations' — name by Roosevelt",
+   "Atlantic Charter 14 Aug 1941 — Churchill & Roosevelt",
+   "UN Day 24 Oct 1945 — 51 members; now 193",
+   "HQ New York; 6 languages",
+   "SC: 15 members; P5 USA, UK, France, Russia, China — veto",
+   "ICJ: 15 judges, 9 years, The Hague",
+   "ECOSOC 54 · Secretary-General 5 years",
+   "ILO 1919 — first specialised agency (Geneva)",
+   "UNESCO Paris 1946 · UNICEF 1946 · WHO Geneva 7 Apr 1948"
   ],
   "sections": [
    {
     "title": "🧭 Core story",
     "items": [
      {
-      "text": "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
+      "text": "League failed → WWII → UN built on the Atlantic Charter.",
       "noteId": "civ-rev-ch2-01"
      },
      {
-      "text": "At the end of this lesson, learners will be able to:",
-      "noteId": "civ-rev-ch2-01"
+      "text": "Six organs, led by GA (debate) and SC (binding action).",
+      "noteId": "civ-rev-ch2-04"
      },
      {
-      "text": "Came into existence on 24 October 1945",
-      "noteId": "civ-rev-ch2-01"
-     },
-     {
-      "text": "League of Nations failed to prevent the outbreak of World War II",
-      "noteId": "civ-rev-ch2-01"
-     },
-     {
-      "text": "Some proposals of the Atlantic Charter became the basis for the establishment of the UN",
-      "noteId": "civ-rev-ch2-01"
-     },
-     {
-      "text": "The preamble of the UN charter outlines the objectives of the UN. These are as follows:",
-      "noteId": "civ-rev-ch2-01"
-     },
-     {
-      "text": "Maintenance of international peace and security",
-      "noteId": "civ-rev-ch2-01"
-     },
-     {
-      "text": "Promotion of human rights for people all over the world",
-      "noteId": "civ-rev-ch2-01"
+      "text": "Agencies tackle education, children, health and work.",
+      "noteId": "civ-rev-ch2-07"
      }
     ]
    },
@@ -331,36 +177,24 @@ const CIVICS_CHEATSHEET_DATA = {
     "title": "📌 Must-know definitions",
     "items": [
      {
-      "text": "The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.",
-      "noteId": "civ-rev-ch2-02"
+      "text": "Veto — P5 negative vote that cancels a resolution.",
+      "noteId": "civ-rev-ch2-04"
      },
      {
-      "text": "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.",
-      "noteId": "civ-rev-ch2-02"
+      "text": "Apartheid — racial segregation in South Africa.",
+      "noteId": "civ-rev-ch2-06"
      },
      {
-      "text": "This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.",
-      "noteId": "civ-rev-ch2-02"
+      "text": "Embargo — ban on trade/relations with a hostile country.",
+      "noteId": "civ-rev-ch2-01"
      },
      {
-      "text": "The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies.",
-      "noteId": "civ-rev-ch2-02"
+      "text": "Resolution — formal proposal adopted by a council.",
+      "noteId": "civ-rev-ch2-04"
      },
      {
-      "text": "The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.",
-      "noteId": "civ-rev-ch2-02"
-     },
-     {
-      "text": "The UN strives to protect and preserve human rights all over the world.",
-      "noteId": "civ-rev-ch2-02"
-     },
-     {
-      "text": "It imposed sanctions against South Africa, which helped in changing the policies of the South African government to end apartheid.",
-      "noteId": "civ-rev-ch2-02"
-     },
-     {
-      "text": "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
-      "noteId": "civ-rev-ch2-02"
+      "text": "Sweatshop — factory with low wages, long hours.",
+      "noteId": "civ-rev-ch2-07"
      }
     ]
    },
@@ -368,190 +202,76 @@ const CIVICS_CHEATSHEET_DATA = {
     "title": "🎯 Exam quick hits",
     "items": [
      {
-      "text": "The UNESCO came into existence in November 1946.",
-      "noteId": "civ-rev-ch2-03"
+      "text": "Match: Axis-Germany/Italy/Japan, Secretariat-day-to-day work, Apartheid-South Africa, UNICEF-1946, WHO-Geneva.",
+      "noteId": "civ-rev-ch2-05"
      },
      {
-      "text": "It has its headquarters in Paris, France.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations through education, science and culture. This objective is based on the belief that the best way of preventing war is through educating people on the benefits of peace.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "Originally called the United Nations International Children's Emergency Fund, the UNICEF was established in 1946.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the aftermath of World War II.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "The words ‘international’ and ‘emergency’ were later dropped and it came to be known as the United Nations Children's Fund.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "WHO was established on 7 April 1948. This day is observed every year as the World Health Day.",
-      "noteId": "civ-rev-ch2-03"
-     },
-     {
-      "text": "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construction sites and houses are common places where children are",
-      "noteId": "civ-rev-ch2-03"
+      "text": "India is NOT a permanent member.",
+      "noteId": "civ-rev-ch2-04"
      }
     ]
    }
   ],
   "wordCards": [
    {
-    "id": "wc-41d88678",
-    "term": "Apartheid",
-    "definition": "a system of racial discrimination in South Africa, wherein only White people had political and social rights and privile"
-   },
-   {
-    "id": "wc-4a7119a9",
-    "term": "Child care centres",
-    "definition": "centres which provide medical assistance to young mothers and their newborn children"
-   },
-   {
-    "id": "wc-34668aea",
-    "term": "Embargo",
-    "definition": "economic and diplomatic sanctions against a hostile or aggressive country meaning a ban on economic trade or cordial rel"
-   },
-   {
-    "id": "wc-3e0d13d1",
+    "id": "wc-civ-ch2-01",
     "term": "League of Nations",
-    "definition": "the first international peacekeeping organisation formed to prevent wars after the devastation and destruction during Wo"
+    "definition": "First international peace body, 1919."
    },
    {
-    "id": "wc-b5a4b64b",
-    "term": "Resolution",
-    "definition": "a formal statement, proposal or agreement by a group or council"
+    "id": "wc-civ-ch2-02",
+    "term": "Atlantic Charter",
+    "definition": "1941 Churchill–Roosevelt declaration — basis of the UN."
    },
    {
-    "id": "wc-9054503b",
-    "term": "Sweatshops",
-    "definition": "a factory or workshop, especially in the clothing industry, where manual workers are employed at very low wages for long"
+    "id": "wc-civ-ch2-03",
+    "term": "UN Day",
+    "definition": "24 October."
    },
    {
-    "id": "wc-98865aa7",
+    "id": "wc-civ-ch2-04",
+    "term": "General Assembly",
+    "definition": "All members; one vote each."
+   },
+   {
+    "id": "wc-civ-ch2-05",
+    "term": "Security Council",
+    "definition": "15 members; binding decisions."
+   },
+   {
+    "id": "wc-civ-ch2-06",
     "term": "Veto",
-    "definition": "power to vote against a resolution by any one of the five permanent members of the Security Council which cancels the re"
+    "definition": "Power of the five permanent members."
    },
    {
-    "id": "wc-6118ef20",
-    "term": "World Health Day",
-    "definition": "celebrated on 7 April to create awareness about good health and improve standards of health all over the world"
+    "id": "wc-civ-ch2-07",
+    "term": "ICJ",
+    "definition": "World court at The Hague."
    },
    {
-    "id": "wc-24a0ef0a",
+    "id": "wc-civ-ch2-08",
+    "term": "ECOSOC",
+    "definition": "Economic and Social Council — 54 members."
+   },
+   {
+    "id": "wc-civ-ch2-09",
+    "term": "Secretary-General",
+    "definition": "Head of the UN Secretariat."
+   },
+   {
+    "id": "wc-civ-ch2-10",
     "term": "UNESCO",
-    "definition": "preservation of cultural heritage :: ILO : social and economic justice to workers :: WTO : ___"
+    "definition": "Education, science, culture — Paris."
    },
    {
-    "id": "wc-80b181b6",
-    "term": "The Secretariat",
-    "definition": "The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is t"
+    "id": "wc-civ-ch2-11",
+    "term": "UNICEF",
+    "definition": "Children's Fund, 1946."
    },
    {
-    "id": "wc-3464999d",
-    "term": "The UNESCO’s mission",
-    "definition": "The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration among nations throug"
-   },
-   {
-    "id": "wc-6be5215d",
-    "term": "Its main function",
-    "definition": "Its main function was to provide food, clothing and healthcare to children who were faced with famine and disease in the"
-   },
-   {
-    "id": "wc-0bfe8d86",
-    "term": "Then Child labour",
-    "definition": "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, factories, construct"
-   },
-   {
-    "id": "wc-13",
-    "term": "The UN strives",
-    "definition": "The UN strives to protect and preserve human rights all over the world."
-   },
-   {
-    "id": "wc-14",
-    "term": "It imposed sanctions",
-    "definition": "It imposed sanctions against South Africa, which helped in changing the policies of the South Africa"
-   },
-   {
-    "id": "wc-15",
-    "term": "You have read",
-    "definition": "You have read earlier that maintaining international peace and security in the world is not the only"
-   },
-   {
-    "id": "wc-16",
-    "term": "The UNESCO came",
-    "definition": "The UNESCO came into existence in November 1946."
-   },
-   {
-    "id": "wc-17",
-    "term": "It has its",
-    "definition": "It has its headquarters in Paris, France."
-   },
-   {
-    "id": "wc-18",
-    "term": "The UNESCO’s mission",
-    "definition": "The UNESCO’s mission is to contribute to peace and security in the world by promoting collaboration "
-   },
-   {
-    "id": "wc-19",
-    "term": "Originally called the",
-    "definition": "Originally called the United Nations International Children's Emergency Fund, the UNICEF was establi"
-   },
-   {
-    "id": "wc-20",
-    "term": "Its main function",
-    "definition": "Its main function was to provide food, clothing and healthcare to children who were faced with famin"
-   },
-   {
-    "id": "wc-21",
-    "term": "The words ‘international’",
-    "definition": "The words ‘international’ and ‘emergency’ were later dropped and it came to be known as the United N"
-   },
-   {
-    "id": "wc-22",
-    "term": "WHO was established",
-    "definition": "WHO was established on 7 April 1948. This day is observed every year as the World Health Day."
-   },
-   {
-    "id": "wc-23",
-    "term": "Then Child labour",
-    "definition": "Then Child labour is one of the social evils that Indian society has been plagued with. Sweatshops, "
-   },
-   {
-    "id": "wc-24",
-    "term": "The headquarters of",
-    "definition": "The headquarters of WHO at Geneva"
-   },
-   {
-    "id": "wc-25",
-    "term": "The General Assembly",
-    "definition": "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing t"
-   },
-   {
-    "id": "wc-26",
-    "term": "At the end",
-    "definition": "At the end of this lesson, learners will be able to:"
-   },
-   {
-    "id": "wc-27",
-    "term": "Came into existence",
-    "definition": "Came into existence on 24 October 1945"
-   },
-   {
-    "id": "wc-28",
-    "term": "League of Nations",
-    "definition": "League of Nations failed to prevent the outbreak of World War II"
-   },
-   {
-    "id": "wc-29",
-    "term": "Some proposals of",
-    "definition": "Some proposals of the Atlantic Charter became the basis for the establishment of the UN"
+    "id": "wc-civ-ch2-12",
+    "term": "WHO",
+    "definition": "Health for all — Geneva, 1948."
    }
   ]
  }

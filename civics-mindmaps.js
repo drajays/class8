@@ -13,203 +13,211 @@ const CIVICS_MINDMAP_DATA = {
     "flow": [
      {
       "id": "step1",
-      "label": "14 Organs of the Indian Government"
+      "label": "Three organs"
      },
      {
       "id": "step2",
-      "label": "Qualifications for Members of the L"
+      "label": "Lok Sabha"
      },
      {
       "id": "step3",
-      "label": "Connecting Past with Present"
+      "label": "Rajya Sabha"
      },
      {
       "id": "step4",
-      "label": "FUNCTIONS OF THE UNION PARLIAMENT"
+      "label": "President"
      },
      {
       "id": "step5",
-      "label": "THE EXECUTIVE STRUCTURE IN INDIA"
+      "label": "Prime Minister"
      },
      {
       "id": "step6",
-      "label": "Qualifications for the Post of Pres"
+      "label": "Judiciary"
      }
     ],
     "branches": [
      {
       "id": "br-1",
-      "title": "14 Organs of the Indian Government",
+      "title": "Organs & Lists",
       "bullets": [
-       "Study the given pictures. Can you name these Prime Ministers of India?",
-       "India is a parliamentary democracy, where the supreme power resides with the people of the country. The Indian Constitution has declared India to be a Union of States. In India, power is distributed between the central and the state governments.",
-       "There are three organs of the government of India.",
-       "Must not be less than 25 years of age"
+       "Makes / executes / interprets",
+       "Union, State, Concurrent"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-2"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-01",
-        "label": "📄 14 Organs of the Indian Govern"
+        "label": "📄 Big Picture — Three Organs"
        }
       ]
      },
      {
       "id": "br-2",
-      "title": "Qualifications for Members of the Lok Sabha",
+      "title": "Lok Sabha",
       "bullets": [
-       "There are three organs of the government of India.",
-       "Must not be less than 25 years of age",
-       "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
-       "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha."
+       "552 max",
+       "Direct; 18+",
+       "25 yrs; 5-yr term",
+       "Speaker"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-3"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-02",
-        "label": "📄 Qualifications for Members of "
+        "label": "📄 Lok Sabha — House of the People"
        }
       ]
      },
      {
       "id": "br-3",
-      "title": "Connecting Past with Present",
+      "title": "Rajya Sabha",
       "bullets": [
-       "after Independence, the news about the proceedings of the Lok Sabha was transmitted through newspapers and radio. The radio typically broadcasted the morning and the evening Lok Sabha news.",
-       "Now One entire channel on television, known as the Lok Sabha TV, focuses completely on the affairs of the Lok Sabha.",
-       "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-       "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act."
+       "250 (12 nominated)",
+       "Indirect",
+       "30 yrs; permanent",
+       "VP chairs"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-4"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-03",
-        "label": "📄 Connecting Past with Present"
+        "label": "📄 Rajya Sabha — Council of States"
        }
       ]
      },
      {
       "id": "br-4",
-      "title": "FUNCTIONS OF THE UNION PARLIAMENT",
+      "title": "Law-making",
       "bullets": [
-       "Have you seen this channel? How do you think the media helps us to understand government affairs better?",
-       "A bill is introduced in either House of the Parliament, if it is an ordinary bill. A bill is a draft of a proposed law presented to the Parliament for discussion. However, a money bill can only be introduced in the Lok Sabha. A bill goes through three stages of reading. In the first stage, the bill is introduced in the House. In the second stage, voting on the bill takes place after the debate. Then the bill is sent to the other House, where the same procedure is followed. In case of a money bill, the Rajya Sabha is given only 14 days to consider the bill. In the third stage, the bill is sent to the President for his assent. The President can either sign the bill or send it back for reconsideration to the House, where the bill was presented. When the President signs the bill, the bill becomes an Act.",
-       "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-       "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain"
+       "Money bill — Lok Sabha only",
+       "3 readings",
+       "President's assent"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-5"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-04",
-        "label": "📄 FUNCTIONS OF THE UNION PARLIAM"
+        "label": "📄 How a Bill Becomes a Law"
        }
       ]
      },
      {
       "id": "br-5",
-      "title": "THE EXECUTIVE STRUCTURE IN INDIA",
+      "title": "President",
       "bullets": [
-       "The Union and State Legislature are entrusted with the task of making laws. Similarly, the Union and State Executives are entrusted with the task of enforcing laws throughout the country. The Executive",
-       "Dr Rajendra Prasad Dr S. Radhakrishnan Dr Zakir Husain",
-       "Must be at least 35 years of age",
-       "Should not hold an office of profit under the government—Centre, state or local level"
+       "35 yrs; MPs+MLAs elect",
+       "6 kinds of powers",
+       "Ordinances"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-6"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-05",
-        "label": "📄 THE EXECUTIVE STRUCTURE IN IND"
+        "label": "📄 The President"
        }
       ]
      },
      {
       "id": "br-6",
-      "title": "Qualifications for the Post of President",
+      "title": "Vice President",
       "bullets": [
-       "Must be at least 35 years of age",
-       "Should not hold an office of profit under the government—Centre, state or local level",
-       "The powers of the President can be grouped under the following heads:",
-       "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections."
+       "Chairs Rajya Sabha",
+       "Acts as President"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-7"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-06",
-        "label": "📄 Qualifications for the Post of"
+        "label": "📄 Vice President"
        }
       ]
      },
      {
       "id": "br-7",
-      "title": "Powers and Functions of the President",
+      "title": "PM & Cabinet",
       "bullets": [
-       "The powers of the President can be grouped under the following heads:",
-       "The President appoints the Prime Minister, who is the leader of the single largest party in the Lok Sabha or the leader of the coalition that wins the elections.",
-       "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
-       "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years."
+       "Real executive",
+       "3 kinds of ministers",
+       "No-confidence motion"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-8"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-07",
-        "label": "📄 Powers and Functions of the Pr"
+        "label": "📄 Prime Minister and Council of Ministers"
        }
       ]
      },
      {
       "id": "br-8",
-      "title": "Discretionary Powers",
+      "title": "Supreme Court",
       "bullets": [
-       "When no party wins an absolute majority in the Lok Sabha, the President can appoint the Prime Minister of her/his choice—a person, who she/he thinks, can command a majority in the House.",
-       "The Vice President is elected indirectly by an electoral college consisting only of members from both Houses of Parliament. The term of office of Vice President is 5 years.",
-       "She/He is removed by a resolution of the Rajya Sabha, passed by a majority of its members. It has to be agreed by the Lok Sabha.",
-       "The Vice President, is the ex-officio Chairperson of the Rajya Sabha. She/He regulates debates and proceedings of the House. She/He decides the admissibility of resolutions and questions in the House in case of grave disorder. She/He heads various committees and coordinates their working."
+       "Guardian of Constitution",
+       "Original / appellate / advisory",
+       "Judicial review"
       ],
       "links": [
        {
-        "label": "relates to →",
-        "targetId": "br-1"
+        "label": "leads to →",
+        "targetId": "br-9"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch1-08",
-        "label": "📄 Discretionary Powers"
+        "label": "📄 The Supreme Court"
+       }
+      ]
+     },
+     {
+      "id": "br-9",
+      "title": "High Courts",
+      "bullets": [
+       "Retire at 62",
+       "Subordinate courts",
+       "Writs"
+      ],
+      "links": [],
+      "noteRefs": [
+       {
+        "noteId": "civ-rev-ch1-09",
+        "label": "📄 High Courts, Subordinate Courts, Writs"
        }
       ]
      }
@@ -229,203 +237,170 @@ const CIVICS_MINDMAP_DATA = {
     "flow": [
      {
       "id": "step1",
-      "label": "Political Life Alive!"
+      "label": "League 1919"
      },
      {
       "id": "step2",
-      "label": "Visual Mapping"
+      "label": "Atlantic Charter 1941"
      },
      {
       "id": "step3",
-      "label": "OBJECTIVES OF THE UNITED NATIONS"
+      "label": "UN 1945"
      },
      {
       "id": "step4",
-      "label": "STRUCTURE OF THE UNITED NATIONS"
+      "label": "Six organs"
      },
      {
       "id": "step5",
-      "label": "The Economic and Social Council (EC"
+      "label": "UN today"
      },
      {
       "id": "step6",
-      "label": "Achievements of the United Nations"
+      "label": "Agencies"
      }
     ],
     "branches": [
      {
       "id": "br-1",
-      "title": "Political Life Alive!",
+      "title": "League of Nations",
       "bullets": [
-       "The General Assembly comprises all 193 members of the United Nations (UN). It is the closest thing to a 'world parliament'.",
-       "At the end of this lesson, learners will be able to:",
-       "Came into existence on 24 October 1945",
-       "League of Nations failed to prevent the outbreak of World War II"
+       "1919",
+       "Failed in the 1930s",
+       "Axis Powers → WWII"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-2"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-01",
-        "label": "📄 Political Life Alive!"
+        "label": "📄 From the League of Nations to the UN"
        }
       ]
      },
      {
       "id": "br-2",
-      "title": "Visual Mapping",
+      "title": "Birth of UN",
       "bullets": [
-       "Came into existence on 24 October 1945",
-       "League of Nations failed to prevent the outbreak of World War II",
-       "Some proposals of the Atlantic Charter became the basis for the establishment of the UN",
-       "The preamble of the UN charter outlines the objectives of the UN. These are as follows:"
+       "Atlantic Charter 14 Aug 1941",
+       "San Francisco 1945",
+       "24 Oct 1945 — 51 members"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-3"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-02",
-        "label": "📄 Visual Mapping"
+        "label": "📄 Atlantic Charter and Birth of the UN"
        }
       ]
      },
      {
       "id": "br-3",
-      "title": "OBJECTIVES OF THE UNITED NATIONS",
+      "title": "Objectives",
       "bullets": [
-       "Some proposals of the Atlantic Charter became the basis for the establishment of the UN",
-       "The preamble of the UN charter outlines the objectives of the UN. These are as follows:",
-       "Maintenance of international peace and security",
-       "Promotion of human rights for people all over the world"
+       "Peace",
+       "Human rights",
+       "Social progress"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-4"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-03",
-        "label": "📄 OBJECTIVES OF THE UNITED NATIO"
+        "label": "📄 Objectives of the UN"
        }
       ]
      },
      {
       "id": "br-4",
-      "title": "STRUCTURE OF THE UNITED NATIONS",
+      "title": "GA & SC",
       "bullets": [
-       "Maintenance of international peace and security",
-       "Promotion of human rights for people all over the world",
-       "The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.",
-       "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority."
+       "GA: 193, one vote",
+       "SC: 15, P5 veto"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-5"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-04",
-        "label": "📄 STRUCTURE OF THE UNITED NATION"
+        "label": "📄 General Assembly and Security Council"
        }
       ]
      },
      {
       "id": "br-5",
-      "title": "The Economic and Social Council (ECOSOC)",
+      "title": "Other organs",
       "bullets": [
-       "The UN has six principal organs—the General Assembly, the Security Council, the International Court of Justice, the Economic and Social Council, the Secretariat and the Trusteeship Council.",
-       "This is the main deliberative assembly of the UN. All UN member states are members of the General Assembly. The Assembly meets once every year. It is a kind of a parliament of nations. Each member state has only one vote. Decisions are made by a majority vote. But important resolutions, such as those concerning peace and security issues, require a two-thirds majority.",
-       "This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.",
-       "The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies."
+       "ICJ — Hague, 15 judges",
+       "ECOSOC — 54",
+       "Secretariat — SG 5 yrs",
+       "Trusteeship — done 1994"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-6"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-05",
-        "label": "📄 The Economic and Social Counci"
+        "label": "📄 ICJ, ECOSOC, Secretariat, Trusteeship Council"
        }
       ]
      },
      {
       "id": "br-6",
-      "title": "Achievements of the United Nations",
+      "title": "Achievements",
       "bullets": [
-       "This organ of the UN assists the General Assembly in promoting international and social cooperation and development. It has 54 members, elected by the General Assembly for a 3-year term.",
-       "The Secretariat is headed by the Secretary-General who is elected for a term of 5 years by the General Assembly. It is the duty of the Secretariat to organise conferences, draft reports and prepare estimates for budget allocation. It provides studies, information and facilities needed by the UN member states for their meetings. It also carries out tasks as directed by the UN General Assembly, Security Council and other UN bodies.",
-       "The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.",
-       "The UN strives to protect and preserve human rights all over the world."
+       "Peacekeeping",
+       "Apartheid ended",
+       "Health, education"
       ],
       "links": [
        {
-        "label": "relates to →",
+        "label": "leads to →",
         "targetId": "br-7"
        }
       ],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-06",
-        "label": "📄 Achievements of the United Nat"
+        "label": "📄 UN Today — Functions and Achievements"
        }
       ]
      },
      {
       "id": "br-7",
-      "title": "AGENCIES OF THE UNITED NATIONS",
+      "title": "Agencies",
       "bullets": [
-       "The UN has not always been successful in its attempt to prevent wars. However, it has taken effective action to restore peace.",
-       "The UN strives to protect and preserve human rights all over the world.",
-       "It imposed sanctions against South Africa, which helped in changing the policies of the South African government to end apartheid.",
-       "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder."
+       "UNESCO Paris",
+       "UNICEF 1946",
+       "WHO Geneva 1948",
+       "ILO 1919 — first"
       ],
-      "links": [
-       {
-        "label": "relates to →",
-        "targetId": "br-8"
-       }
-      ],
+      "links": [],
       "noteRefs": [
        {
         "noteId": "civ-rev-ch2-07",
-        "label": "📄 AGENCIES OF THE UNITED NATIONS"
-       }
-      ]
-     },
-     {
-      "id": "br-8",
-      "title": "The United Nations Educational, Scientific and Cul",
-      "bullets": [
-       "It imposed sanctions against South Africa, which helped in changing the policies of the South African government to end apartheid.",
-       "You have read earlier that maintaining international peace and security in the world is not the only function of the United Nations. Some of its other objectives are to help nations work together to improve the lives of poor people, to conquer hunger, disease and illiteracy and to encourage respect for each other's rights and freedoms. It also focuses on developing friendly relations between nations and coordinating among nations to achieve these goals. Several agencies have been set up to achieve these goals. Apart from the six principal organs discussed earlier, the UN has several agencies and bodies to carry out various functions on its behalf. The functions of some of the key UN agencies are discussed hereunder.",
-       "The UNESCO came into existence in November 1946.",
-       "It has its headquarters in Paris, France."
-      ],
-      "links": [
-       {
-        "label": "relates to →",
-        "targetId": "br-1"
-       }
-      ],
-      "noteRefs": [
-       {
-        "noteId": "civ-rev-ch2-08",
-        "label": "📄 The United Nations Educational"
+        "label": "📄 Specialised Agencies"
        }
       ]
      }

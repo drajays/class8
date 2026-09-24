@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * Hand-authored history chapters override the OCR auto-generated ones.
- * Source: data/history8/authored/ch*.json
- * Patches:  history.js (notes + questions), history-mindmaps.js, history-cheatsheets.js
- * Writes:   history-timeline.js (HISTORY_TIMELINE_DATA, per chapter)
+ * Hand-authored history & civics chapters override the OCR auto-generated ones.
+ * Source:   data/history8/authored/ch*.json, data/civics8/authored/ch*.json
+ * Patches:  history.js / civics.js (notes + questions), *-mindmaps.js, *-cheatsheets.js
+ * Writes:   history-timeline.js (HISTORY_TIMELINE_DATA, per chapter, both subjects)
  * Filters:  history-diagrams.js — for authored chapters keep only the hand-curated figures
  *           (history8/data/diagram_overrides.json); the rest are OCR guesses.
  * Usage:    node scripts/build-history-authored.js
@@ -15,7 +15,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const DIR = path.join(ROOT, 'data/history8/authored');
+const SUBJECTS = [
+  { prefix: 'hist', dir: 'data/history8/authored', js: 'history.js', mm: 'history-mindmaps.js', cs: 'history-cheatsheets.js' },
+  { prefix: 'civ', dir: 'data/civics8/authored', js: 'civics.js', mm: 'civics-mindmaps.js', cs: 'civics-cheatsheets.js' }
+];
 const TYPE_CODE = { mcq: 'mcq', true_false: 'tf', fill_blank: 'fb', match: 'match', short_answer: 'qa' };
 
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
@@ -37,13 +40,13 @@ function loadObject(file) {
   return { header: src.slice(0, start), data: JSON.parse(src.slice(start, src.lastIndexOf('}') + 1)) };
 }
 
-function buildChapter(ch) {
-  const num = ch.topicId.replace('hist-ch', '');
-  const noteId = i => `hist-rev-ch${num}-${pad(i)}`;
+function buildChapter(ch, prefix) {
+  const num = ch.topicId.replace(`${prefix}-ch`, '');
+  const noteId = i => `${prefix}-rev-ch${num}-${pad(i)}`;
   const notes = ch.notes.map((n, i) => ({
     id: noteId(i + 1), topicId: ch.topicId, type: 'note', subtopic: n.subtopic, content: n.content,
     ...(n.fiveW ? { fiveW: n.fiveW } : {}),
-    source: 'hist_authored'
+    source: `${prefix}_authored`
   }));
   const checkNote = (ref, what) => {
     if (!ref || ref > notes.length) throw new Error(`${ch.topicId}: bad note ref in ${what}`);
@@ -61,13 +64,13 @@ function buildChapter(ch) {
     checkNote(q.note, `"${q.question}"`);
     if (q.type === 'mcq' && !(q.correctOption >= 0 && q.correctOption < q.options.length)) throw new Error(`bad correctOption: ${q.question}`);
     counters[code] = (counters[code] || 0) + 1;
-    const id = `hist-ch${num}-${code}${pad(counters[code])}`;
+    const id = `${prefix}-ch${num}-${code}${pad(counters[code])}`;
     const { note, ...rest } = q;
     return {
       id, q_id: id, topicId: ch.topicId,
       subtopic: q.type === 'short_answer' ? "🏆 Toppers' Q&A" : 'Objective Questions',
       ...rest,
-      source: q.type === 'short_answer' ? 'hist_topper' : 'hist_authored',
+      source: q.type === 'short_answer' ? `${prefix}_topper` : `${prefix}_authored`,
       linksTo: noteId(note), linked_note_id: noteId(note)
     };
   });
@@ -93,38 +96,42 @@ function buildChapter(ch) {
   return { items: [...notes, ...questions], mindmap, cheatsheet, timeline };
 }
 
-const chapters = fs.readdirSync(DIR).filter(f => /^ch\d+\.json$/.test(f))
-  .sort((a, b) => parseInt(a.slice(2), 10) - parseInt(b.slice(2), 10))
-  .map(f => JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8')));
-
-const hist = loadArray('history.js');
-const mm = loadObject('history-mindmaps.js');
-const cs = loadObject('history-cheatsheets.js');
 const timelines = {};
+const authoredTopics = new Set();
 
-for (const ch of chapters) {
-  const built = buildChapter(ch);
-  const firstIdx = hist.items.findIndex(l => hist.topic(l) === ch.topicId);
-  hist.items = hist.items.filter(l => hist.topic(l) !== ch.topicId);
-  hist.items.splice(firstIdx < 0 ? hist.items.length : firstIdx, 0, ...built.items.map(x => JSON.stringify(x)));
-  mm.data[ch.topicId] = built.mindmap;
-  cs.data[ch.topicId] = built.cheatsheet;
-  if (built.timeline.length) timelines[ch.topicId] = built.timeline;
-  const qa = built.items.filter(x => x.type === 'short_answer').length;
-  console.log(`${ch.topicId}: ${built.items.length} items (${ch.notes.length} notes, ${qa} toppers' Q&A, ${built.timeline.length} dates)`);
+for (const subj of SUBJECTS) {
+  const dir = path.join(ROOT, subj.dir);
+  if (!fs.existsSync(dir)) continue;
+  const chapters = fs.readdirSync(dir).filter(f => /^ch\d+\.json$/.test(f))
+    .sort((a, b) => parseInt(a.slice(2), 10) - parseInt(b.slice(2), 10))
+    .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+  const arr = loadArray(subj.js);
+  const mm = loadObject(subj.mm);
+  const cs = loadObject(subj.cs);
+  for (const ch of chapters) {
+    const built = buildChapter(ch, subj.prefix);
+    const firstIdx = arr.items.findIndex(l => arr.topic(l) === ch.topicId);
+    arr.items = arr.items.filter(l => arr.topic(l) !== ch.topicId);
+    arr.items.splice(firstIdx < 0 ? arr.items.length : firstIdx, 0, ...built.items.map(x => JSON.stringify(x)));
+    mm.data[ch.topicId] = built.mindmap;
+    cs.data[ch.topicId] = built.cheatsheet;
+    if (built.timeline.length) timelines[ch.topicId] = built.timeline;
+    authoredTopics.add(ch.topicId);
+    const qa = built.items.filter(x => x.type === 'short_answer').length;
+    console.log(`${ch.topicId}: ${built.items.length} items (${ch.notes.length} notes, ${qa} toppers' Q&A, ${built.timeline.length} dates)`);
+  }
+  write(subj.js, arr.header + '\n' + arr.items.join(',\n') + '\n];\n');
+  write(subj.mm, mm.header + JSON.stringify(mm.data, null, 1) + ';\n');
+  write(subj.cs, cs.header + JSON.stringify(cs.data, null, 1) + ';\n');
 }
 
-write('history.js', hist.header + '\n' + hist.items.join(',\n') + '\n];\n');
-write('history-mindmaps.js', mm.header + JSON.stringify(mm.data, null, 1) + ';\n');
-write('history-cheatsheets.js', cs.header + JSON.stringify(cs.data, null, 1) + ';\n');
-write('history-timeline.js', '// Timeline — generated by scripts/build-history-authored.js from data/history8/authored/ch*.json\n' +
+write('history-timeline.js', '// Timeline — generated by scripts/build-history-authored.js from data/{history8,civics8}/authored/ch*.json\n' +
   'const HISTORY_TIMELINE_DATA = ' + JSON.stringify(timelines, null, 1) + ';\n');
 
 // Figure questions: auto-generated ones for authored chapters are OCR guesses
 // ("The figure shows During Reading…"), so keep only curated figures there.
 const curated = new Set(Object.keys(JSON.parse(read('history8/data/diagram_overrides.json')))
-  .map(k => k.replace(/^hist-ch(\d+)\//, 'assets/history8/images/ch$1/')));
-const authoredTopics = new Set(chapters.map(c => c.topicId));
+  .map(k => k.replace(/^(hist|civ)-ch(\d+)\//, (_, p, n) => `assets/${p === 'hist' ? 'history8' : 'civics8'}/images/ch${n}/`)));
 const diag = read('history-diagrams.js');
 const diagStart = diag.indexOf('[', diag.indexOf('const HISTORY_DIAGRAM_DATA'));
 const diagItems = JSON.parse(diag.slice(diagStart, diag.lastIndexOf(']') + 1));
