@@ -1463,3 +1463,40 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .today-go{font-weight:800;white-space:nowrap;padding:8px 14px;border-radius:20px;background:rgba(255,255,255,.2)}
 .today-done .today-go{background:var(--accent-soft);color:var(--accent-ink)}
 @media (max-width:600px){.today-card{padding:14px}.today-icon{font-size:1.6rem}.today-go{display:none}}
+
+/* ---------- Personal home: greeting + stats ---------- */
+.hello{position:relative;margin:0 0 18px}
+.hello h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.3rem);margin:0 0 12px}
+.hello-name{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px;font-size:.9rem}
+.hello-name input{padding:8px 12px;border-radius:var(--radius-sm);border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;min-width:0;flex:1 1 160px;max-width:240px}
+.hello-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.hs{padding:12px 14px;border-radius:var(--radius-sm);background:var(--surface);border:1px solid var(--line)}
+.hs b{display:block;font-size:1.4rem;line-height:1.1}
+.hs span{font-size:.76rem;color:var(--ink-2)}
+.hs .progress-bar{margin-top:6px}
+.hello-edit{position:absolute;top:6px;right:0;border:0;background:none;cursor:pointer;opacity:.5;font-size:1rem}
+.hello-edit:hover{opacity:1}
+@media (max-width:700px){.hello-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- Chapter revision counter ---------- */
+.chapter-title-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.rev-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:20px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);font:inherit;font-weight:800;font-size:.85rem;cursor:pointer;transition:var(--t)}
+.rev-btn:hover{transform:translateY(-1px)}
+.rev-btn.rev-done{background:var(--accent);color:#fff}
+.rev-count{padding:1px 8px;border-radius:12px;background:rgba(0,0,0,.08)}
+.card-rev{font-size:.76rem;font-weight:700;color:var(--accent-ink);margin:-2px 0 8px}
+.card-rev-none{color:var(--ink-3);font-weight:600}
+
+/* ---------- Tools menu (parent/admin actions) ---------- */
+.tools-menu{position:relative}
+.tools-menu summary{list-style:none;cursor:pointer;padding:8px 12px;border-radius:var(--radius-sm);border:1px solid var(--line);background:var(--surface);position:relative;font-size:1rem}
+.tools-menu summary::-webkit-details-marker{display:none}
+.tools-menu summary .update-dot{position:absolute;top:4px;right:4px}
+.tools-pop{position:absolute;right:0;top:calc(100% + 6px);z-index:50;display:flex;flex-direction:column;min-width:210px;padding:6px;border-radius:var(--radius-sm);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.tools-pop button{text-align:left;border:0 !important;background:none !important;padding:9px 10px;border-radius:8px;font:inherit;font-size:.88rem;color:var(--ink);cursor:pointer;position:relative;transform:none !important}
+.tools-pop button:hover{background:var(--accent-soft) !important}
+.tools-pop hr{border:0;border-top:1px solid var(--line);margin:4px 0}
+.tools-pop .sync-dot{position:static;display:inline-block;margin-left:6px}
+
+/* one search box: header on wide screens, sidebar on phones */
+@media (min-width:900px){.sidebar .search-box{display:none}}

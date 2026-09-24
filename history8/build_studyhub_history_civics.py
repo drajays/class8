@@ -253,14 +253,6 @@ def main() -> None:
                        "python3 history8/build_studyhub_history_civics.py"),
         encoding="utf-8",
     )
-    # Legacy combined bundle for backward compatibility
-    combined = hist_items + civ_items
-    (ROOT / "history-civics.js").write_text(
-        build_js_array("HISTORY_CIVICS_DATA", combined, "history.js + civics.js",
-                       "python3 history8/build_studyhub_history_civics.py"),
-        encoding="utf-8",
-    )
-
     build_mindmaps_js(hist_pkgs, "HISTORY_MINDMAP_DATA", "history-mindmaps.js")
     build_mindmaps_js(civ_pkgs, "CIVICS_MINDMAP_DATA", "civics-mindmaps.js")
     build_cheatsheets_js(hist_pkgs, "HISTORY_CHEATSHEET_DATA", "history-cheatsheets.js")

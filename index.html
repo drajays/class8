@@ -107,7 +107,7 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=83">
+<link rel="stylesheet" href="styles.css?v=84">
 <link rel="stylesheet" href="exam-panel.css?v=74">
 <link rel="stylesheet" href="snowy.css">
 <link rel="stylesheet" href="princess.css">
@@ -133,15 +133,20 @@
     <input type="search" class="search-input" id="header-search" placeholder="Search notes &amp; questions…" autocomplete="off" oninput="searchQuestions(this.value)" enterkeyhint="search">
   </div>
   <div class="header-actions">
-    <button onclick="openExamPanel()" id="btn-exam" title="NTA-style mock test">📝 <span class="label">Mock Test</span></button>
-    <button onclick="openUpdateModal()" id="btn-update" title="Update app to latest version">🔄 <span class="label">Update</span><span class="update-dot" id="update-dot" hidden aria-hidden="true"></span></button>
     <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
-    <button onclick="exportData()" id="btn-export" title="Download backup">📥 <span class="label">Export</span></button>
-    <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 <span class="label">Import</span></button>
-    <button onclick="openSyncModal()" id="btn-sync" title="Cloud sync via GitHub">☁️ <span class="label">Sync</span><span class="sync-dot" id="sync-dot" hidden aria-hidden="true"></span></button>
+    <details class="tools-menu" id="tools-menu">
+      <summary title="Settings, backup and update">⚙️<span class="update-dot" id="update-dot" hidden aria-hidden="true"></span></summary>
+      <div class="tools-pop" onclick="if(event.target.closest('button'))document.getElementById('tools-menu').open=false">
+        <button onclick="openUpdateModal()" id="btn-update" title="Update app to latest version">🔄 Update app</button>
+        <button onclick="exportData()" id="btn-export" title="Download backup">📥 Backup (export)</button>
+        <button onclick="document.getElementById('import-file').click()" id="btn-import" title="Restore from backup">📤 Restore (import)</button>
+        <button onclick="openSyncModal()" id="btn-sync" title="Cloud sync via GitHub">☁️ Cloud sync<span class="sync-dot" id="sync-dot" hidden aria-hidden="true"></span></button>
+        <hr>
+        <button onclick="openContentManager()" id="btn-manage">✏️ Manage content</button>
+        <button onclick="openAddContent()" id="btn-add">➕ Add content</button>
+      </div>
+    </details>
     <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
-    <button onclick="openContentManager()" id="btn-manage">✏️ <span class="label">Manage</span></button>
-    <button onclick="openAddContent()" id="btn-add">➕ <span class="label">Add New</span></button>
   </div>
 </header>
 
@@ -482,8 +487,7 @@
 <script src="physics-cheatsheets.js?v=74"></script>
 <script src="physics-formula-sheet.js?v=1"></script>
 <script src="biology.js?v=74"></script>
-<script src="biology-neet.js?v=74"></script>
-<script src="biology-olympiad.js?v=74"></script>
+<script src="biology-olympiad.js?v=84"></script>
 <script src="biology-revision-notes.js?v=74"></script>
 <script src="biology-practice.js?v=74"></script>
 <script src="biology-mindmaps.js?v=74"></script>
@@ -509,7 +513,7 @@
 <script src="history-civics-practice.js?v=74"></script>
 <script src="history-figure-practice.js?v=78"></script>
 <!-- APP LOGIC -->
-<script src="app.js?v=83"></script>
+<script src="app.js?v=84"></script>
 <script src="exam-panel.js?v=74"></script>
 <script src="github-sync.js?v=74"></script>
 <script src="snowy.js"></script>

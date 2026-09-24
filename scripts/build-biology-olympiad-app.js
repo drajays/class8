@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Build biology-olympiad.js for StudyHub app integration.
- * - BIOLOGY_OLYMPIAD_IDS: curated question IDs (50% audit set)
+ * - BIOLOGY_OLYMPIAD_IDS: curated question IDs (audit set minus machine-generated items,
+ *   plus hand-authored biology.js objective questions)
  * - BIOLOGY_OLYMPIAD_COMPANION: descriptive → MCQ companions for Olympiad practice
  *
  * Run: node scripts/build-biology-olympiad-app.js
@@ -15,6 +16,18 @@ const { convertDescriptiveToMcq } = require('./descriptive-to-mcq');
 const ROOT = path.join(__dirname, '..');
 const INPUT = path.join(ROOT, 'data', 'biology-audit-selected-v2.json');
 const OUTPUT = path.join(ROOT, 'biology-olympiad.js');
+const AUTHORED = path.join(ROOT, 'biology.js');
+
+// neet-* items were generated from OCR sentences: wrong answer keys, learning outcomes as
+// options ("List blood groups…"), fragments ("CODE-Nogh…"). Never show them.
+const isGenerated = (id) => /^neet-/.test(id);
+// Companion stems of this shape pair two long OCR paragraphs as options — unreadable.
+const isBadCompanionStem = (stem) => /CORRECTLY distinguishes/i.test(stem || '');
+
+function authoredObjectiveIds() {
+  const arr = new Function(fs.readFileSync(AUTHORED, 'utf8') + ';return BIOLOGY_DATA;')();
+  return arr.filter((q) => ['mcq', 'true_false', 'fill_blank'].includes(q.type)).map((q) => q.id);
+}
 
 function shouldBeDescriptive(q) {
   const text = `${q.question} ${q.subtopic || ''}`;
@@ -68,7 +81,7 @@ function buildCompanionMcq(q, mcqItem) {
 
 function main() {
   const raw = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
-  const ids = raw.map((q) => q.id);
+  const ids = [...new Set([...raw.map((q) => q.id).filter((id) => !isGenerated(id)), ...authoredObjectiveIds()])];
 
   const companions = [];
   for (const q of raw) {
@@ -79,7 +92,7 @@ function main() {
     } else {
       mcq = convertDescriptiveToMcq(q);
     }
-    if (mcq && isValidOptions(mcq.options)) {
+    if (mcq && isValidOptions(mcq.options) && !isBadCompanionStem(mcq.stem)) {
       companions.push(buildCompanionMcq(q, mcq));
     }
   }

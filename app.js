@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 58;
+const DATA_VERSION = 59;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -447,7 +447,6 @@ function _mergeModuleArraysIntoDefault() {
   const modules = [
     typeof CHAPTERS_3_TO_8 !== 'undefined' ? CHAPTERS_3_TO_8 : null,
     typeof BIOLOGY_DATA !== 'undefined' ? BIOLOGY_DATA : null,
-    typeof BIOLOGY_NEET_DATA !== 'undefined' ? BIOLOGY_NEET_DATA : null,
     typeof BIOLOGY_OLYMPIAD_COMPANION !== 'undefined' ? BIOLOGY_OLYMPIAD_COMPANION : null,
     typeof BIOLOGY_REVISION_NOTES !== 'undefined' ? BIOLOGY_REVISION_NOTES : null,
     typeof BIOLOGY_PRACTICE !== 'undefined' ? BIOLOGY_PRACTICE : null,
@@ -468,13 +467,24 @@ function _mergeModuleArraysIntoDefault() {
     typeof PHYSICS_NUMERICALS !== 'undefined' ? PHYSICS_NUMERICALS : null
   ];
   const existingIds = new Set(DEFAULT_DATA.content.map(c => c.id));
+  // Several banks repeat the same question in a chapter; keep the first copy (modules are in priority order).
+  const norm = t => String(t || '').toLowerCase().replace(/<[^>]+>/g, '').replace(/^\s*\d+[.)]\s*/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const dupKey = c => {
+    if (c.type === 'note' || c.image || !c.question) return null;
+    const stem = norm(c.question);
+    if (stem.length < 25) return null; // generic stems ("Define the following") differ by their answers
+    return c.topicId + '|' + stem + '|' + (c.options || []).map(norm).sort().join('/');
+  };
+  const seenQuestions = new Set(DEFAULT_DATA.content.map(dupKey).filter(Boolean));
   modules.forEach(arr => {
     if (!arr) return;
     arr.forEach(item => {
-      if (!existingIds.has(item.id)) {
-        DEFAULT_DATA.content.push(item);
-        existingIds.add(item.id);
-      }
+      if (existingIds.has(item.id)) return;
+      const key = dupKey(item);
+      if (key && seenQuestions.has(key)) return;
+      DEFAULT_DATA.content.push(item);
+      existingIds.add(item.id);
+      if (key) seenQuestions.add(key);
     });
   });
 }
@@ -620,6 +630,7 @@ let studyBookmarks = new Set();
 let studyActivity = {};
 let questionRatings = {}; // qId -> { votes: { deviceId: 1-5 } }
 let revisionTab = 'mistakes'; // mistakes | bookmarks | due
+let studyRevisions = {}; // topicId -> { count, last: 'YYYY-MM-DD' } — one revision per chapter per day
 let quizSession = null;
 
 function loadProgress() {
@@ -637,7 +648,48 @@ function loadProgress() {
     const act = localStorage.getItem('studyhub_activity');
     studyActivity = act ? JSON.parse(act) : {};
   } catch (e) { studyActivity = {}; }
+  try {
+    studyRevisions = JSON.parse(localStorage.getItem('studyhub_revisions') || '{}') || {};
+  } catch (e) { studyRevisions = {}; }
   window._suppressSyncDirty = false;
+}
+
+function saveRevisions() {
+  try { localStorage.setItem('studyhub_revisions', JSON.stringify(studyRevisions)); } catch (e) {}
+  markSyncDirty();
+}
+
+/** Count one revision of a chapter (at most once per chapter per day). Returns the new count, or 0 if already counted today. */
+function logChapterRevision(topicId) {
+  if (!topicId) return 0;
+  const today = new Date().toISOString().slice(0, 10);
+  const r = studyRevisions[topicId] || { count: 0, last: null };
+  if (r.last === today) return 0;
+  studyRevisions[topicId] = { count: r.count + 1, last: today };
+  saveRevisions();
+  return r.count + 1;
+}
+
+function chapterRevisionCount(topicId) { return (studyRevisions[topicId] || {}).count || 0; }
+function totalRevisionCount() { return Object.values(studyRevisions).reduce((a, r) => a + (r.count || 0), 0); }
+
+function markChapterRevised(topicId) {
+  const n = logChapterRevision(topicId);
+  showToast('success', n ? `🔁 Revision #${n} of this chapter — well done!` : '✅ Already counted today — come back tomorrow!');
+  renderContent(document.getElementById('main-content'));
+}
+
+function _lastRevisedLabel(topicId) {
+  const r = studyRevisions[topicId];
+  if (!r || !r.last) return '';
+  const days = Math.round((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(r.last)) / 864e5);
+  return days === 0 ? 'today' : days === 1 ? 'yesterday' : `${days} days ago`;
+}
+
+function getLearnerName() { try { return (localStorage.getItem('studyhub_name') || '').trim(); } catch (e) { return ''; } }
+function saveLearnerName(name) {
+  try { localStorage.setItem('studyhub_name', String(name || '').trim().slice(0, 30)); } catch (e) {}
+  renderMain();
 }
 
 function saveProgress() {
@@ -2479,7 +2531,19 @@ function renderQuizView(el) {
     });
     const correct = results.filter(r => r.isCorrect).length;
     const total = quizSession.ids.length;
-    if (quizSession.source === 'daily') { try { localStorage.setItem('studyhub_daily_done', _todayKey()); } catch (e) {} }
+    if (quizSession.source === 'daily') {
+      try { localStorage.setItem('studyhub_daily_done', _todayKey()); } catch (e) {}
+      // A chapter counts as revised when the session covered it with at least 3 answered questions.
+      const perTopic = {};
+      quizSession.ids.forEach(id => {
+        if (!quizSession.answers[id]) return;
+        const q = appData.content.find(c => c.id === id);
+        if (q) perTopic[q.topicId] = (perTopic[q.topicId] || 0) + 1;
+      });
+      Object.entries(perTopic).forEach(([tid, n]) => { if (n >= 3) logChapterRevision(tid); });
+    } else if (quizSession.topicId && Object.keys(quizSession.answers).length >= 3) {
+      logChapterRevision(quizSession.topicId);
+    }
     el.innerHTML = `
       <div class="fade-in quiz-results">
         <div class="section-header"><h1>✅ Quiz Complete</h1></div>
@@ -2582,7 +2646,6 @@ function renderHome(el) {
       </div>`;
   }).join('');
   const mistakes = getMistakeQuestions();
-  const due = getDueForReview();
   const marked = getRevisionMarkedItems();
   const daily = getDailyMcqCount();
   const streak = getStreak();
@@ -2592,10 +2655,6 @@ function renderHome(el) {
       <div class="journey-card" onclick="navigateTo('revision','mistakes')">
         <div class="jc-icon">📕</div>
         <div class="jc-body"><div class="jc-title">Mistake Book</div><div class="jc-sub">${mistakes.length} to revise</div></div>
-      </div>
-      <div class="journey-card ${due.length ? 'journey-highlight' : ''}" onclick="${due.length ? `startQuizSession('due', null, ${Math.min(20, due.length)})` : `navigateTo('revision','due')`}">
-        <div class="jc-icon">🔁</div>
-        <div class="jc-body"><div class="jc-title">Due Today</div><div class="jc-sub">${due.length ? due.length + ' scheduled' : 'All caught up'}</div></div>
       </div>
       <div class="journey-card" onclick="openExamPanel()">
         <div class="jc-icon">📝</div>
@@ -2610,16 +2669,34 @@ function renderHome(el) {
         <div class="jc-body"><div class="jc-title">Marked</div><div class="jc-sub">${marked.length} for revision</div></div>
       </div>
     </div>
-    <div class="goal-strip">
-      <div class="goal-top"><span>🎯 Today: ${daily}/${DAILY_MCQ_GOAL} MCQs</span><span>${streak ? '🔥 ' + streak + ' day streak' : 'Start your streak'}</span></div>
-      <div class="progress-bar"><div class="progress-fill cov-good" style="width:${Math.max(goalPct, 2)}%"></div></div>
+`;
+  const name = getLearnerName();
+  const hour = new Date().getHours();
+  const hello = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
+  const studyDays = Object.values(studyActivity).filter(a => a && a.mcqs > 0).length;
+  const greetingHtml = `
+    <div class="hello">
+      ${name
+        ? `<h1>${hello}, ${escHtml(name)} 👋</h1>`
+        : `<h1>${hello} 👋</h1>
+           <form class="hello-name" onsubmit="event.preventDefault();saveLearnerName(this.n.value)">
+             <label>What's your name?</label><input name="n" maxlength="30" placeholder="Type your name" required><button class="btn btn-primary btn-sm">Save</button>
+           </form>`}
+      <div class="hello-stats">
+        <div class="hs"><b>${totalRevisionCount()}</b><span>🔁 chapter revisions</span></div>
+        <div class="hs"><b>${streak}</b><span>🔥 day streak</span></div>
+        <div class="hs"><b>${daily}/${DAILY_MCQ_GOAL}</b><span>🎯 today's goal</span>
+          <div class="progress-bar"><div class="progress-fill cov-good" style="width:${Math.max(goalPct, 2)}%"></div></div></div>
+        <div class="hs"><b>${studyDays}</b><span>📅 days studied</span></div>
+      </div>
+      ${name ? `<button class="hello-edit" onclick="localStorage.removeItem('studyhub_name');renderMain()" title="Change name">✏️</button>` : ''}
     </div>`;
   const dashHtml = `
     ${dailyRevisionCardHtml()}
     ${continueHtml}
     ${journeyHtml}
     <div class="dash">
-      <div class="dash-head"><h2>📊 Your Progress</h2>${op.attempted ? `<button class="btn btn-sm btn-outline" onclick="resetAllProgress()">↺ Reset all</button>` : ''}</div>
+      <div class="dash-head"><h2>📊 ${name ? escHtml(name) + "'s" : 'Your'} Progress</h2>${op.attempted ? `<button class="btn btn-sm btn-outline" onclick="resetAllProgress()">↺ Reset all</button>` : ''}</div>
       <div class="dash-grid">
         <div class="dash-ring acc-${opCls}" style="background:conic-gradient(var(--accent) ${op.attempted ? op.accuracy : 0}%, var(--line) 0)">
           <div class="ring-inner"><div class="ring-num">${op.attempted ? op.accuracy + '%' : '—'}</div><div class="ring-lbl">Accuracy</div></div>
@@ -2632,25 +2709,8 @@ function renderHome(el) {
     </div>`;
   el.innerHTML = `
     <div class="fade-in">
-      <div class="section-header">
-        <h1>Welcome to StudyHub</h1>
-      </div>
-      <p class="lead">Your complete companion for ICSE Class 8 — clear notes, teacher's tips and exam-style practice across Physics, Chemistry, Biology, Geography, History and Civics.</p>
+      ${greetingHtml}
       ${dashHtml}
-      <h2 style="margin-bottom:18px">🎓 Select Your Class</h2>
-      <div class="card-grid">
-        ${appData.classes.map(c => `
-          <div class="card" onclick="navigateTo('subjects','${c.id}')">
-            <div class="card-icon">${c.icon}</div>
-            <h3>${c.name}</h3>
-            <p>${appData.subjects.filter(s=>s.classId===c.id).length} subjects available</p>
-            <div class="card-meta">
-              <span>📖 ${appData.topics.filter(t=>appData.subjects.find(s=>s.id===t.subjectId&&s.classId===c.id)).length} chapters</span>
-              <span>📝 ${appData.content.filter(ct=>appData.topics.find(t=>t.id===ct.topicId&&appData.subjects.find(s=>s.id===t.subjectId&&s.classId===c.id))).length} items</span>
-            </div>
-          </div>
-        `).join('')}
-      </div>
     </div>
   `;
 }
@@ -2757,10 +2817,12 @@ function renderTopics(el) {
           }
           const m = chapterMastery(t.id);
           const cls = _accClass(m.accuracy, m.attempted);
+          const revs = chapterRevisionCount(t.id);
           return `
             <div class="card" onclick="navigateTo('content','${t.id}')">
               <div class="card-icon">${t.icon}</div>
               <h3>${t.name}</h3>
+              <div class="card-rev ${revs ? '' : 'card-rev-none'}">${revs ? `🔁 Revised ${revs}× · last ${_lastRevisedLabel(t.id)}` : '🔁 Not revised yet'}</div>
               <div class="card-meta">${cardMeta}</div>
               <div class="card-progress">
                 <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
@@ -2788,16 +2850,6 @@ function renderTopics(el) {
 }
 
 // ===== CONTENT =====
-function buildChapterRevisionHint(csData, mmData, qStats) {
-  if (qStats) {
-    return `Revision: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (' + csData.wordCards.length + ')' : ''}`;
-  }
-  if (csData || mmData) {
-    return `Revision tools: ${csData ? '⚡ Cheat Sheet' : ''}${csData && mmData ? ' · ' : ''}${mmData ? '🧠 Mind Map' : ''}${csData && csData.wordCards && csData.wordCards.length ? ' · 🔤 One Word (' + csData.wordCards.length + ')' : ''}`;
-  }
-  return '';
-}
-
 function buildChapterSidebarHtml(opts) {
   const {
     notes, questions, qaQuestions, numericalQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter
@@ -2925,7 +2977,6 @@ function renderContent(el) {
 
   const cm = chapterMastery(selectedTopic);
   const heat = sectionHeatmap(selectedTopic);
-  const revHint = buildChapterRevisionHint(csData, mmData, qStats);
   const sidebarHtml = buildChapterSidebarHtml({
     notes, questions, qaQuestions, numericalQuestions, qStats, diagrams, csData, cm, heat, questionsForFilter: questions
   });
@@ -2939,7 +2990,12 @@ function renderContent(el) {
   el.innerHTML = `
     <div class="fade-in chapter-page">
       <div class="chapter-top">
-        <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
+        <div class="chapter-title-row">
+          <h1 class="chapter-title">${topic?.icon} ${topic?.name}</h1>
+          <button class="rev-btn${studyRevisions[selectedTopic] && studyRevisions[selectedTopic].last === new Date().toISOString().slice(0, 10) ? ' rev-done' : ''}" onclick="markChapterRevised('${selectedTopic}')" title="Tap after you finish revising this chapter">
+            ✅ I revised this <span class="rev-count">${chapterRevisionCount(selectedTopic)}×</span>
+          </button>
+        </div>
         ${keywordSearchBoxHtml({
           inputId: 'chapter-keyword-search',
           placeholder: 'Search notes & questions in this chapter…',
@@ -2948,17 +3004,6 @@ function renderContent(el) {
           clearFn: 'clearChapterSearch',
           extraClass: 'chapter-keyword-search'
         })}
-        ${revHint ? `<p class="chapter-revision-hint">${revHint}</p>` : ''}
-        ${qStats ? `<p class="chapter-bank-hint">📚 ${
-          isBiologyTopic(selectedTopic) ? 'ICSE Biology — Olympiad / NEET Foundation'
-          : isChemistryTopic(selectedTopic) ? 'ICSE Chemistry — Descriptive & Analytical Q&A'
-          : isGeographyTopic(selectedTopic) ? 'ICSE Geography — Descriptive & Analytical Q&A'
-          : 'ICSE Physics'
-        } — <strong>${qStats.notes} notes</strong> · <strong>${qStats.total} practice items</strong>${
-          (isChemistryTopic(selectedTopic) || isGeographyTopic(selectedTopic)) && qStats.descriptive
-            ? ` · <strong>${qStats.descriptive} descriptive Q&amp;A</strong>${qStats.analytical ? ` (${qStats.analytical} analytical)` : ''}${isGeographyTopic(selectedTopic) && qStats.diagrams ? ` · <strong>${qStats.diagrams} diagram questions</strong>` : ''}`
-            : ` · <strong>${diagrams.length} diagram MCQs</strong>${qStats.companion ? ` · <strong>${qStats.companion} companion MCQs</strong>` : ''}`
-        }</p>` : ''}
         <div class="chapter-tabs-row">
           <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
             <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
@@ -4730,6 +4775,7 @@ function buildSyncPayload() {
     progress: studyProgress,
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
+    revisions: studyRevisions,
     questionRatings: questionRatings
   };
 }
@@ -4760,6 +4806,7 @@ function buildCloudSyncPayload() {
     progress: studyProgress,
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
+    revisions: studyRevisions,
     questionRatings: questionRatings
   };
 }
@@ -4855,6 +4902,7 @@ function applyImportedData(imp, mode, options) {
     if (imp.progress && typeof imp.progress === 'object') { studyProgress = imp.progress; saveProgress(); }
     if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
+    if (imp.revisions && typeof imp.revisions === 'object') { studyRevisions = imp.revisions; saveRevisions(); }
     mergeQuestionRatings(imp.questionRatings);
     if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
     saveData({ skipSync: true });
@@ -4898,6 +4946,13 @@ function applyImportedData(imp, mode, options) {
   if (Array.isArray(imp.bookmarks)) {
     imp.bookmarks.forEach(id => studyBookmarks.add(id));
     saveBookmarks();
+  }
+  if (imp.revisions && typeof imp.revisions === 'object') {
+    Object.entries(imp.revisions).forEach(([id, r]) => {
+      const mine = studyRevisions[id];
+      if (!mine || (r.count || 0) > (mine.count || 0)) studyRevisions[id] = r;
+    });
+    saveRevisions();
   }
   if (imp.activity && typeof imp.activity === 'object') {
     studyActivity = Object.assign({}, imp.activity, studyActivity);
