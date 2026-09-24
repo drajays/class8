@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 56;
+const DATA_VERSION = 57;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -1765,15 +1765,125 @@ function chapterCheatsheet(topicId) {
     return GEOGRAPHY_CHEATSHEET_DATA[topicId];
   }
   if (typeof HISTORY_CHEATSHEET_DATA !== 'undefined' && HISTORY_CHEATSHEET_DATA[topicId]) {
-    return HISTORY_CHEATSHEET_DATA[topicId];
+    return _sectionedCheatSheet(HISTORY_CHEATSHEET_DATA[topicId]);
   }
   if (typeof CIVICS_CHEATSHEET_DATA !== 'undefined' && CIVICS_CHEATSHEET_DATA[topicId]) {
-    return CIVICS_CHEATSHEET_DATA[topicId];
+    return _sectionedCheatSheet(CIVICS_CHEATSHEET_DATA[topicId]);
   }
   if (typeof BIOLOGY_CHEATSHEET_DATA !== 'undefined') {
     return BIOLOGY_CHEATSHEET_DATA[topicId] || null;
   }
   return null;
+}
+
+/** History/civics generator emits {title, topCram, sections}; renderCheatSheet reads {chapterTitle, topTen, groups}. */
+function _sectionedCheatSheet(cs) {
+  if (cs.groups) return cs;
+  return {
+    ...cs,
+    chapterTitle: cs.chapterTitle || String(cs.title || '').replace(/ — Cheat Sheet$/, ''),
+    topTen: cs.topCram || [],
+    groups: (cs.sections || []).filter(s => s.items && s.items.length)
+      .map((s, i) => ({ id: 'sec' + (i + 1), title: s.title, items: s.items }))
+  };
+}
+
+// ============================================================
+// TIMELINE — per-chapter tab + subject-wide master timeline
+// Data: HISTORY_TIMELINE_DATA[topicId] = [{year, sort, event, detail, noteId}]
+// ============================================================
+let timelineQuizMode = false;
+let timelineChapterFilter = '';
+
+const FIVE_W_KEYS = [['who', '👤 Who'], ['when', '📅 When'], ['where', '📍 Where'], ['what', '📌 What'], ['why', '❓ Why'], ['how', '⚙️ How']];
+
+/** 5W1H snapshot grid shown at the top of an event note. */
+function fiveWHtml(fw) {
+  if (!fw) return '';
+  return `<div class="five-w">${FIVE_W_KEYS.filter(([k]) => fw[k])
+    .map(([k, label]) => `<div><b>${label}</b>${escHtml(fw[k])}</div>`).join('')}</div>`;
+}
+
+function historyTimelineFor(topicId) {
+  return (typeof HISTORY_TIMELINE_DATA !== 'undefined' && HISTORY_TIMELINE_DATA[topicId]) || null;
+}
+
+function allTimelineEvents(subjectId) {
+  if (typeof HISTORY_TIMELINE_DATA === 'undefined') return [];
+  return appData.topics.filter(t => t.subjectId === subjectId)
+    .flatMap(t => (HISTORY_TIMELINE_DATA[t.id] || []).map(e => ({ ...e, topicId: t.id })))
+    .sort((a, b) => a.sort - b.sort);
+}
+
+function _centuryLabel(year) {
+  const c = Math.floor((year - 1) / 100) + 1;
+  const sfx = c % 10 === 1 && c !== 11 ? 'st' : c % 10 === 2 && c !== 12 ? 'nd' : c % 10 === 3 && c !== 13 ? 'rd' : 'th';
+  return `${c}${sfx} century`;
+}
+
+function timelineHtml(events, showChapter) {
+  let lastCentury = '';
+  const rows = events.map(e => {
+    const century = _centuryLabel(e.sort);
+    const head = century !== lastCentury ? `<li class="tl-century">${century}</li>` : '';
+    lastCentury = century;
+    const t = showChapter ? appData.topics.find(x => x.id === e.topicId) : null;
+    return `${head}<li class="tl-item" onclick="timelineClick(this,'${e.topicId}','${e.noteId || ''}')">
+      <div class="tl-year">${escHtml(e.year)}</div>
+      <div class="tl-card">
+        <h4>${escHtml(e.event)}</h4>
+        ${e.detail ? `<p>${escHtml(e.detail)}</p>` : ''}
+        ${t ? `<span class="tl-chip">${t.icon || ''} ${escHtml(t.name)}</span>` : ''}
+      </div>
+    </li>`;
+  }).join('');
+  return `<ol class="tl${timelineQuizMode ? ' tl-quiz' : ''}">${rows}</ol>`;
+}
+
+function timelineToolbarHtml(count) {
+  return `<div class="tl-toolbar">
+    <span class="tl-count">${count} events</span>
+    <label class="tl-toggle"><input type="checkbox" ${timelineQuizMode ? 'checked' : ''} onchange="timelineQuizMode=this.checked;render()"> 🙈 Self-test: hide events, tap to reveal</label>
+  </div>`;
+}
+
+function timelineClick(el, topicId, noteId) {
+  if (timelineQuizMode && !el.classList.contains('revealed')) { el.classList.add('revealed'); return; }
+  if (!noteId) return;
+  const topic = appData.topics.find(t => t.id === topicId);
+  if (selectedTopic !== topicId || currentView !== 'content') {
+    if (topic) { selectedClass = topic.classId; selectedSubject = topic.subjectId; }
+    navigateTo('content', topicId);
+  }
+  jumpToNote(noteId);
+}
+
+function renderChapterTimeline(topicId) {
+  const body = document.getElementById('content-body');
+  const events = (historyTimelineFor(topicId) || []).map(e => ({ ...e, topicId }))
+    .sort((a, b) => a.sort - b.sort);
+  body.innerHTML = `<div class="fade-in tl-wrap">
+    <p class="lead">Every date in this chapter, in order. Tap an event to open its notes.</p>
+    ${timelineToolbarHtml(events.length)}
+    ${timelineHtml(events, false)}
+  </div>`;
+}
+
+function renderMasterTimeline(el) {
+  const sub = appData.subjects.find(s => s.id === selectedSubject);
+  const all = allTimelineEvents(selectedSubject);
+  const chapters = appData.topics.filter(t => t.subjectId === selectedSubject && historyTimelineFor(t.id));
+  const events = timelineChapterFilter ? all.filter(e => e.topicId === timelineChapterFilter) : all;
+  el.innerHTML = `<div class="fade-in tl-wrap">
+    <div class="section-header"><h1>🕰️ ${escHtml(sub?.name || '')} — Master Timeline</h1></div>
+    <p class="lead">The whole syllabus as one story, from the earliest date to the latest. Tap any event to jump to its notes.</p>
+    <div class="tl-filter">
+      <button class="tl-fchip ${!timelineChapterFilter ? 'active' : ''}" onclick="timelineChapterFilter='';render()">All chapters</button>
+      ${chapters.map(t => `<button class="tl-fchip ${timelineChapterFilter === t.id ? 'active' : ''}" onclick="timelineChapterFilter='${t.id}';render()">${t.icon || ''} ${escHtml(t.name.replace(/^Ch (\d+):.*/, 'Ch $1'))}</button>`).join('')}
+    </div>
+    ${timelineToolbarHtml(events.length)}
+    ${timelineHtml(events, true)}
+  </div>`;
 }
 
 function isDiagramMcq(q) {
@@ -2080,6 +2190,7 @@ function navigateTo(view, id) {
     if (typeof snowyOnTopicEnter === 'function') snowyOnTopicEnter(id);
     if (typeof princessOnTopicEnter === 'function') princessOnTopicEnter(id);
   }
+  if (view === 'timeline') { selectedSubject = id; selectedTopic = null; }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
   render();
 }
@@ -2105,6 +2216,9 @@ function renderBreadcrumb() {
   if (selectedTopic && currentView !== 'revision' && currentView !== 'quiz' && currentView !== 'offline') {
     const t = appData.topics.find(t=>t.id===selectedTopic);
     html += `<span class="sep">›</span><span class="active">${t?.icon||''} ${t?.name||selectedTopic}</span>`;
+  }
+  if (currentView === 'timeline') {
+    html += `<span class="sep">›</span><span class="active">🕰️ Master Timeline</span>`;
   }
   if (currentView === 'revision') {
     html += `<span class="sep">›</span><span class="active">📕 Revision</span>`;
@@ -2191,6 +2305,7 @@ function renderMain() {
   else if (currentView === 'search') renderSearchView(main);
   else if (currentView === 'exam') renderExamView(main);
   else if (currentView === 'offline') renderOfflineView(main);
+  else if (currentView === 'timeline') renderMasterTimeline(main);
   requestAnimationFrame(function () {
     main.scrollTop = 0;
     const fade = main.querySelector('.fade-in');
@@ -2537,6 +2652,11 @@ function renderTopics(el) {
           extraClass: 'subject-keyword-search'
         })}
       </div>
+      ${allTimelineEvents(selectedSubject).length ? `<div class="tl-banner" onclick="navigateTo('timeline','${selectedSubject}')">
+        <span class="tl-banner-icon">🕰️</span>
+        <div><strong>Master Timeline</strong><span>${allTimelineEvents(selectedSubject).length} dated events across every chapter — revise the whole syllabus in order</span></div>
+        <span class="tl-banner-go">Open →</span>
+      </div>` : ''}
       <div id="subject-search-results" class="scoped-search-panel"></div>
       <div id="subject-chapter-grid" class="card-grid" ${subjectSearchActive ? 'style="display:none"' : ''}>
         ${tops.map(t => {
@@ -2773,6 +2893,7 @@ function renderContent(el) {
             ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
             ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
             ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
+            ${historyTimelineFor(selectedTopic) ? `<div class="content-tab ${contentTab==='timeline'?'active':''}" onclick="switchContentTab('timeline')">🕰️ Timeline</div>` : ''}
             <div class="content-tab ${contentTab==='questions'?'active':''}" onclick="switchContentTab('questions')">❓ Practice</div>
             ${numericalQuestions.length ? `<div class="content-tab content-tab-num ${contentTab==='numerical'?'active':''}" onclick="switchContentTab('numerical')" title="Numerical and mathematical problems with step-by-step solutions">${numTabLabel}</div>` : ''}
             <div class="content-tab content-tab-qa ${contentTab==='qa'?'active':''}${qaQuestions.length ? ' has-content' : ''}" onclick="switchContentTab('qa')" title="Short and long answer questions with model answers">${qaTabLabel}</div>
@@ -2806,6 +2927,7 @@ function renderContent(el) {
   else if (contentTab === 'mindmap') renderMindMap(mmData);
   else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
   else if (contentTab === 'oneword') renderOneWordCards(csData);
+  else if (contentTab === 'timeline') renderChapterTimeline(selectedTopic);
   else if (contentTab === 'diagrams') renderDiagramQuestions(diagrams);
   else if (contentTab === 'qa') renderShortAnswerQuestions(qaQuestions);
   else if (contentTab === 'numerical') renderNumericalQuestions(numericalQuestions);
@@ -3248,6 +3370,7 @@ function buildNoteCardHtml(n, displayNum) {
         <h3>${escHtml(n.subtopic)}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
       </div>
       <div class="note-body">
+        ${fiveWHtml(n.fiveW)}
         <div class="rich-html note-content-lead">${renderNoteHtml(n.content)}</div>
         <div class="rich-html note-content-body">${renderNoteHtml(n.explanation || '')}</div>
         ${n.teacherTip?`<div class="tip-box"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.teacherTip)}</span></div>`:''}

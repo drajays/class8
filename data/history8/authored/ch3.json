@@ -1,0 +1,143 @@
+{
+  "topicId": "hist-ch3",
+  "title": "The American Civil War",
+  "notes": [
+    {
+      "subtopic": "1. Big Picture — North vs South",
+      "fiveW": {"who": "Northern states (Union, Lincoln) vs Southern states (Confederacy, Jefferson Davis)", "when": "1861–1865", "where": "United States of America", "what": "Civil War — the 'War Between the States'", "why": "Slavery; conflicting economic interests and cultures; secession of the South", "how": "Southern states seceded; Lincoln fought to restore the Union; the North won"},
+      "content": "**Executive summary:** The **American Civil War (1861–65)** was fought between the northern and southern states over **slavery**, to uphold **liberty and equality**.\n\n**Background**\n• The **Industrial Revolution** in England created huge demand for **raw cotton** → southern plantations grew cotton → needed **cheap labour** → **African slaves**.\n• **Cultural divide:** industrial **North** — city life, mixed cultures and classes; agricultural **South** — the **exclusive culture of plantation owners**.\n• By the mid-19th century slavery was seen as a **social evil** and **abolished throughout the British Empire**; the North did not need slaves and opposed slavery."
+    },
+    {
+      "subtopic": "2. Causes — Conflicting Interests",
+      "content": "| North | South |\n|---|---|\n| **Manufacturing and shipping** centres | **Agricultural**, dependent on plantation estates |\n| Industrial cities; no need for slaves | Cotton plantations needed **slave labour** |\n| Opposed slavery; anti-slavery movements | Defended slavery; treated slaves cruelly |\n| Mixed, open city culture | Exclusive plantation culture |\n\nDifferent economies → different cultures and world views → disagreement on many issues, **especially slavery**."
+    },
+    {
+      "subtopic": "3. Causes — Anti-slavery Movement",
+      "fiveW": {"who": "Abolitionists of the North; Harriet Beecher Stowe", "when": "19th century — 1850 Act, 1852 book", "where": "Northern USA", "what": "Movement demanding abolition of slavery", "why": "Cruel and unjust treatment of slaves", "how": "Protests; the novel Uncle Tom's Cabin changed public opinion"},
+      "content": "• **Anti-slavery movements** arose in the **19th century**; played a **significant role** in causing the war.\n• **Fugitive Slave Act (1850):** let slave owners travel north to **capture escaped slaves** — hugely **unpopular** in the North.\n• **Uncle Tom's Cabin (1852)** by **Harriet Beecher Stowe** showed the evils of slavery → changed northern opinion → boosted **abolition**.\n• Facing abolition, southern states threatened to **secede** (break away).\n\n**Keyword — Abolitionists:** northerners who fought against slavery and demanded its abolition."
+    },
+    {
+      "subtopic": "4. Election of Lincoln and Secession",
+      "fiveW": {"who": "Abraham Lincoln (16th President); South Carolina + 10 states; Jefferson Davis", "when": "1860 election; 1861 Confederacy", "where": "Southern USA", "what": "Southern states left the Union and formed the Confederate States of America", "why": "Lincoln opposed slavery", "how": "South Carolina seceded first; ten more followed"},
+      "content": "• **Abraham Lincoln** elected **16th President**; opposed slavery as a violation of 'all men are created equal'.\n• **South Carolina** — **first state to break off** from the Union.\n• **Ten more seceded:** Mississippi, Florida, Alabama, Georgia, Louisiana, Texas, Virginia, Arkansas, North Carolina, Tennessee.\n• **1861 — Confederate States of America** formed; President **Jefferson Davis**.\n\n**Memory trick:** 1 + 10 = **11 Confederate states**."
+    },
+    {
+      "subtopic": "5. The Civil War (1861–1865)",
+      "fiveW": {"who": "Union under Lincoln and the Republican Party; Confederate General Robert E. Lee", "when": "April 1861 – April 1865", "where": "Across the USA; ended at Appomattox Court House", "what": "War to bring the southern states back into the Union", "why": "Lincoln would not allow the Union to break up", "how": "Four years of fighting; North gained the upper hand by Sept 1864; Lee surrendered"},
+      "content": "• War broke out in **April 1861**; Lincoln and the **Republican Party** were determined to keep the Union together.\n• **Over 6,00,000 soldiers killed**.\n• By **September 1864** the North had the upper hand.\n• **April 1865 — General Robert E. Lee surrendered at Appomattox Court House** → end of the war.\n• **Robert E. Lee** commanded the **Confederate Army of Northern Virginia**.\n\n**Republican Party:** founded by anti-slavery activists in **1854**."
+    },
+    {
+      "subtopic": "6. Emancipation and Reconstruction",
+      "content": "• **Proclamation of Emancipation:** Lincoln declared all southern states **free of slavery** → title **'Great Emancipator'**.\n• He planned a **liberal reconstruction** of the South, but was **assassinated in 1865** (first US President to be assassinated).\n• **Military rule** was imposed on the South; **reconstruction ended in 1876**.\n\n**Result:** Union preserved; slavery abolished; African-Americans freed from bondage."
+    },
+    {
+      "subtopic": "7. Abraham Lincoln and the Gettysburg Address",
+      "fiveW": {"who": "Abraham Lincoln", "when": "19 November 1863", "where": "Gettysburg, Pennsylvania", "what": "Famous speech defining democracy", "why": "To honour the fallen and rededicate the nation to freedom and equality", "how": "'Government of the people, by the people, for the people'"},
+      "content": "**Lincoln's life**\n• Born **1809, Kentucky**; worked as a **clerk**, then joined the military.\n• **1860** — won **40%** of the popular vote.\n• **Achievements:** held the **Union together**, led the North to **victory**, **emancipated** African-Americans; a great **orator**.\n\n**Gettysburg Address — 19 Nov 1863, Pennsylvania**\n• 'Four score and seven years ago…' — a nation **conceived in Liberty**, dedicated to the idea that **all men are created equal** (implicitly against slavery).\n• Called for a **'new birth of freedom'**.\n• Defined democracy: **'government of the people, by the people, for the people'**."
+    }
+  ],
+  "timeline": [
+    {"year": "1809", "event": "Abraham Lincoln born in Kentucky", "note": 7},
+    {"year": "1850", "event": "Fugitive Slave Act", "detail": "Slave owners could capture escaped slaves in the North.", "note": 3},
+    {"year": "1852", "event": "Uncle Tom's Cabin published", "detail": "Harriet Beecher Stowe.", "note": 3},
+    {"year": "1854", "event": "Republican Party founded", "detail": "By anti-slavery activists.", "note": 5},
+    {"year": "1860", "event": "Lincoln elected 16th President", "detail": "40% of the popular vote; South Carolina secedes.", "note": 4},
+    {"year": "1861", "event": "Confederate States formed; Civil War begins (April)", "detail": "11 states; President Jefferson Davis.", "note": 4},
+    {"year": "1863", "event": "Gettysburg Address (19 November)", "note": 7},
+    {"year": "1864", "event": "North gains the upper hand (September)", "note": 5},
+    {"year": "1865", "event": "Lee surrenders at Appomattox; Lincoln assassinated", "detail": "End of the Civil War (April).", "note": 5},
+    {"year": "1876", "event": "Reconstruction of the South ends", "note": 6}
+  ],
+  "questions": [
+    {"type": "mcq", "question": "Which played a significant role in the outbreak of the American Civil War?", "options": ["The anti-slavery movements", "The American War of Independence", "The French Revolution", "The Treaty of Paris"], "correctOption": 0, "answer": "The **anti-slavery movements**.", "note": 3},
+    {"type": "mcq", "question": "Anti-slavery movements emerged in America in the:", "options": ["17th century", "18th century", "19th century", "20th century"], "correctOption": 2, "answer": "**19th century.**", "note": 3},
+    {"type": "mcq", "question": "The first state to break off from the Union was:", "options": ["South Carolina", "North Carolina", "Georgia", "Texas"], "correctOption": 0, "answer": "**South Carolina.**", "note": 4},
+    {"type": "mcq", "question": "President Lincoln : Great Emancipator :: General Robert E. Lee : ____", "options": ["President of America", "Abolitionist author", "Commander of the Confederate Army of Northern Virginia", "President of the Confederacy"], "correctOption": 2, "answer": "**Commander of the Confederate Army of Northern Virginia.**", "note": 5},
+    {"type": "mcq", "question": "Match: i. Lincoln ii. Stowe iii. Jefferson Davis iv. Gettysburg Address v. Lincoln's assassination with A. Uncle Tom's Cabin B. Pennsylvania C. 1865 D. 16th President E. President of the Confederacy", "options": ["i-D, ii-A, iii-E, iv-B, v-C", "i-E, ii-C, iii-D, iv-B, v-A", "i-C, ii-E, iii-A, iv-B, v-D", "i-D, ii-B, iii-E, iv-A, v-C"], "correctOption": 0, "answer": "**i-D, ii-A, iii-E, iv-B, v-C.**", "note": 7},
+    {"type": "mcq", "question": "The demand for cotton in the South rose because of the:", "options": ["French Revolution", "Industrial Revolution in England", "Reformation", "Gold rush"], "correctOption": 1, "answer": "The **Industrial Revolution in England**.", "note": 1},
+    {"type": "mcq", "question": "The northern states developed mainly as:", "options": ["Plantation estates", "Manufacturing and shipping centres", "Mining towns", "Cattle ranches"], "correctOption": 1, "answer": "**Manufacturing and shipping centres.**", "note": 2},
+    {"type": "mcq", "question": "The Fugitive Slave Act was passed in:", "options": ["1845", "1850", "1852", "1861"], "correctOption": 1, "answer": "**1850.**", "note": 3},
+    {"type": "mcq", "question": "Uncle Tom's Cabin was written by:", "options": ["Abraham Lincoln", "Harriet Beecher Stowe", "Robert E. Lee", "Jefferson Davis"], "correctOption": 1, "answer": "**Harriet Beecher Stowe** (1852).", "note": 3},
+    {"type": "mcq", "question": "The President of the Confederate States of America was:", "options": ["Robert E. Lee", "Jefferson Davis", "Abraham Lincoln", "Ulysses Grant"], "correctOption": 1, "answer": "**Jefferson Davis.**", "note": 4},
+    {"type": "mcq", "question": "Which was NOT a Confederate state?", "options": ["Mississippi", "Florida", "Texas", "Kansas"], "correctOption": 3, "answer": "**Kansas.**", "note": 4},
+    {"type": "mcq", "question": "The Civil War ended with Lee's surrender at:", "options": ["Gettysburg", "Appomattox Court House", "Richmond", "Philadelphia"], "correctOption": 1, "answer": "**Appomattox Court House**, April 1865.", "note": 5},
+    {"type": "mcq", "question": "Approximately how many soldiers were killed in the Civil War?", "options": ["60,000", "1,00,000", "Over 6,00,000", "10,00,000"], "correctOption": 2, "answer": "**Over 6,00,000.**", "note": 5},
+    {"type": "mcq", "question": "The Gettysburg Address was delivered on:", "options": ["4 July 1861", "19 November 1863", "9 April 1865", "1 January 1863"], "correctOption": 1, "answer": "**19 November 1863**, Pennsylvania.", "note": 7},
+    {"type": "mcq", "question": "Reconstruction of the southern states officially ended in:", "options": ["1865", "1870", "1876", "1880"], "correctOption": 2, "answer": "**1876.**", "note": 6},
+    {"type": "true_false", "question": "The Civil War was caused by the end of British colonial rule in the USA.", "correctAnswer": "false", "answer": "False. It was caused by slavery and North–South conflict.", "note": 2},
+    {"type": "true_false", "question": "Slavery was abolished throughout the British Empire by the mid-19th century.", "correctAnswer": "true", "answer": "True.", "note": 1},
+    {"type": "true_false", "question": "Lincoln was a supporter of slavery.", "correctAnswer": "false", "answer": "False. He opposed slavery as a violation of American democracy.", "note": 4},
+    {"type": "true_false", "question": "Eleven states formed the Confederate States of America.", "correctAnswer": "true", "answer": "True — South Carolina plus ten others.", "note": 4},
+    {"type": "true_false", "question": "The Republican Party was founded by anti-slavery activists in 1854.", "correctAnswer": "true", "answer": "True.", "note": 5},
+    {"type": "true_false", "question": "Lincoln personally carried out the reconstruction of the South.", "correctAnswer": "false", "answer": "False. He was assassinated in 1865; military rule followed.", "note": 6},
+    {"type": "fill_blank", "question": "Lincoln was called the Great ______.", "blankAnswer": "Emancipator", "answer": "**Emancipator**", "note": 6},
+    {"type": "fill_blank", "question": "Abraham Lincoln was born in 1809 in ______.", "blankAnswer": "Kentucky", "answer": "**Kentucky**", "note": 7},
+    {"type": "fill_blank", "question": "Lincoln was the ______th President of the USA.", "blankAnswer": "16", "answer": "**16**th", "note": 4},
+    {"type": "fill_blank", "question": "People who demanded the end of slavery were called ______.", "blankAnswer": "abolitionists", "answer": "**abolitionists**", "note": 3},
+    {"type": "fill_blank", "question": "The Gettysburg Address was delivered in the state of ______.", "blankAnswer": "Pennsylvania", "answer": "**Pennsylvania**", "note": 7},
+    {"type": "match", "question": "Match the person with the role.", "pairs": [{"left": "Abraham Lincoln", "right": "16th President"}, {"left": "Jefferson Davis", "right": "President of the Confederacy"}, {"left": "Robert E. Lee", "right": "Confederate general"}, {"left": "Harriet Beecher Stowe", "right": "Uncle Tom's Cabin"}], "answer": "Lincoln-16th President · Davis-Confederacy · Lee-General · Stowe-Uncle Tom's Cabin", "note": 7},
+    {"type": "short_answer", "difficulty": "Medium", "marks": 4, "question": "What were the conflicting economic interests of the northern and southern states?", "answer": "<table><thead><tr><th>North</th><th>South</th></tr></thead><tbody><tr><td>Manufacturing and shipping centres</td><td>Agricultural — plantation estates</td></tr><tr><td>Industrial cities; slaves not needed</td><td>Cotton plantations needed cheap slave labour</td></tr><tr><td>Mixed city culture</td><td>Exclusive culture of plantation owners</td></tr><tr><td>Opposed slavery</td><td>Wanted to keep slavery</td></tr></tbody></table>", "keywords": ["manufacturing", "plantations", "slave labour", "cotton"], "note": 2},
+    {"type": "short_answer", "difficulty": "Hard", "marks": 4, "question": "'The anti-slavery movements played a significant role in the outbreak of the Civil War.' Do you agree? Give reasons.", "answer": "<p><strong>Yes.</strong></p><ul><li>Abolitionists in the North demanded the <strong>end of slavery</strong>, deepening the North–South divide.</li><li>The <strong>Fugitive Slave Act (1850)</strong> angered the North.</li><li><strong>Uncle Tom's Cabin (1852)</strong> turned public opinion against slavery.</li><li>Fearing abolition — especially after anti-slavery <strong>Lincoln's election</strong> — the South <strong>seceded</strong>, which led to war.</li></ul>", "keywords": ["abolitionists", "Fugitive Slave Act", "Uncle Tom's Cabin", "secession"], "topperTip": "Build a chain: movement → Act → book → Lincoln → secession → war.", "note": 3},
+    {"type": "short_answer", "difficulty": "Medium", "marks": 2, "question": "What impact did the Fugitive Slave Act of 1850 have on the northern states?", "answer": "<p>It allowed slave owners to travel to the North and <strong>capture escaped slaves</strong>. It was <strong>hugely unpopular</strong> with the anti-slavery forces in the North and increased sympathy for the <strong>abolitionists</strong>.</p>", "keywords": ["capture escaped slaves", "unpopular", "abolitionists"], "note": 3},
+    {"type": "short_answer", "difficulty": "Medium", "marks": 2, "question": "How is Uncle Tom's Cabin significant to the history of the Civil War?", "answer": "<p>Written by <strong>Harriet Beecher Stowe (1852)</strong>, it exposed the <strong>evils of slavery</strong>, changed how northerners viewed slavery, furthered the cause of <strong>abolition</strong> and contributed to the <strong>outbreak of the Civil War</strong>.</p>", "keywords": ["Stowe", "1852", "evils of slavery", "abolition"], "note": 3},
+    {"type": "short_answer", "difficulty": "Easy", "marks": 3, "question": "Name five states that seceded from the Union. When was the Confederacy formed?", "answer": "<p><strong>South Carolina, Mississippi, Florida, Alabama, Georgia</strong> (also Louisiana, Texas, Virginia, Arkansas, North Carolina, Tennessee). The <strong>Confederate States of America</strong> was formed in <strong>1861</strong> with <strong>Jefferson Davis</strong> as President.</p>", "keywords": ["South Carolina", "1861", "Jefferson Davis"], "note": 4},
+    {"type": "short_answer", "difficulty": "Medium", "marks": 4, "question": "Describe the course and end of the American Civil War.", "answer": "<ul><li>Began in <strong>April 1861</strong> — Lincoln and the Republicans refused to let the Union break up.</li><li><strong>Over 6,00,000 soldiers</strong> killed.</li><li>North gained the upper hand by <strong>September 1864</strong>.</li><li>Ended in <strong>April 1865</strong> with <strong>General Lee's surrender at Appomattox Court House</strong>.</li><li>Lincoln's <strong>Proclamation of Emancipation</strong> freed slaves in the South.</li></ul>", "keywords": ["April 1861", "6,00,000", "Appomattox", "Emancipation"], "note": 5},
+    {"type": "short_answer", "difficulty": "Medium", "marks": 4, "question": "Mention the accomplishments of Abraham Lincoln as President.", "answer": "<ul><li>Held the <strong>Union together</strong>.</li><li>Led the North to <strong>victory</strong> in the Civil War.</li><li><strong>Abolished slavery</strong> in the South (Proclamation of Emancipation) — 'Great Emancipator'.</li><li>A great <strong>orator</strong> — the <strong>Gettysburg Address</strong> defined democracy.</li></ul>", "keywords": ["Union", "victory", "Emancipation", "Gettysburg Address"], "note": 7},
+    {"type": "short_answer", "difficulty": "Hard", "marks": 3, "question": "(Source) From the Gettysburg Address: what does Lincoln say about slavery, and how does he describe democracy?", "answer": "<ul><li><strong>Slavery:</strong> the nation was 'dedicated to the proposition that <strong>all men are created equal</strong>' — so slavery goes against its founding idea; he calls for a <strong>'new birth of freedom'</strong>.</li><li><strong>Democracy:</strong> <strong>'government of the people, by the people, for the people'</strong>.</li><li><strong>Importance:</strong> it explains the moral purpose of the war — freedom and equality.</li></ul>", "keywords": ["all men are created equal", "new birth of freedom", "of the people, by the people, for the people"], "topperTip": "Quote the exact line on democracy — it's the most-asked line of the chapter.", "note": 7},
+    {"type": "short_answer", "difficulty": "Easy", "marks": 3, "question": "(Picture) Name the 16th President. When did he become President? Why was he assassinated?", "answer": "<ul><li>(a) <strong>Abraham Lincoln</strong>.</li><li>(b) Elected in <strong>1860</strong> (took office 1861).</li><li>(c) Assassinated in <strong>1865</strong> by a Confederate sympathiser who opposed his anti-slavery policies and the Union victory.</li></ul>", "keywords": ["Abraham Lincoln", "1860", "1865", "Confederate sympathiser"], "note": 7}
+  ],
+  "mindmap": {
+    "flow": ["Cotton demand", "North vs South", "Abolitionists", "Lincoln elected", "Secession", "War & Emancipation"],
+    "branches": [
+      {"title": "Background", "note": 1, "bullets": ["Industrial Revolution → cotton", "Slave labour in the South", "Cultural divide"]},
+      {"title": "Economic conflict", "note": 2, "bullets": ["North: factories, shipping", "South: plantations"]},
+      {"title": "Anti-slavery", "note": 3, "bullets": ["1850 Fugitive Slave Act", "1852 Uncle Tom's Cabin"]},
+      {"title": "Secession", "note": 4, "bullets": ["South Carolina first", "11 states", "1861 Confederacy — Jefferson Davis"]},
+      {"title": "The War", "note": 5, "bullets": ["April 1861 – April 1865", "6,00,000+ dead", "Lee surrenders at Appomattox"]},
+      {"title": "Emancipation", "note": 6, "bullets": ["Great Emancipator", "Assassinated 1865", "Reconstruction ends 1876"]},
+      {"title": "Lincoln", "note": 7, "bullets": ["Kentucky 1809", "Gettysburg 1863", "Of, by, for the people"]}
+    ]
+  },
+  "cheatsheet": {
+    "topCram": [
+      "Civil War 1861–65 — North (Union) vs South (Confederacy)",
+      "Root cause: slavery; cotton demand from Industrial Revolution",
+      "1850 Fugitive Slave Act · 1852 Uncle Tom's Cabin (Stowe)",
+      "Lincoln — 16th President; South Carolina seceded first",
+      "1861 Confederacy of 11 states — Jefferson Davis",
+      "April 1865 — Lee surrenders at Appomattox",
+      "Emancipation Proclamation → 'Great Emancipator'",
+      "19 Nov 1863 Gettysburg Address — 'of the people, by the people, for the people'",
+      "1865 Lincoln assassinated; reconstruction ended 1876"
+    ],
+    "sections": [
+      {"title": "🧭 Core story", "items": [
+        {"text": "Cotton boom → slave labour in the South; industrial North opposes slavery.", "note": 1},
+        {"text": "Abolitionists + Stowe's book → Lincoln elected → South secedes → war.", "note": 4},
+        {"text": "North wins; slaves emancipated; Union saved.", "note": 6}
+      ]},
+      {"title": "📌 Must-know definitions", "items": [
+        {"text": "Abolitionists — northerners who fought to end slavery.", "note": 3},
+        {"text": "Secede — formally break away from a union.", "note": 4},
+        {"text": "Exclusive culture — closed customs that outsiders cannot easily join.", "note": 2},
+        {"text": "Republican Party — founded 1854 by anti-slavery activists.", "note": 5}
+      ]},
+      {"title": "🎯 Exam quick hits", "items": [
+        {"text": "Match: Lincoln-16th President, Stowe-Uncle Tom's Cabin, Davis-Confederacy, Gettysburg-Pennsylvania, assassination-1865.", "note": 7},
+        {"text": "Kansas was NOT a Confederate state.", "note": 4}
+      ]}
+    ],
+    "wordCards": [
+      {"term": "Union", "definition": "The northern states that stayed loyal to the USA."},
+      {"term": "Confederacy", "definition": "11 southern states that seceded in 1861."},
+      {"term": "Abolitionists", "definition": "Campaigners for the end of slavery."},
+      {"term": "Fugitive Slave Act", "definition": "1850 law allowing capture of escaped slaves in the North."},
+      {"term": "Uncle Tom's Cabin", "definition": "1852 anti-slavery novel by Harriet Beecher Stowe."},
+      {"term": "Jefferson Davis", "definition": "President of the Confederate States."},
+      {"term": "Robert E. Lee", "definition": "Confederate general; surrendered at Appomattox."},
+      {"term": "Emancipation Proclamation", "definition": "Lincoln's order freeing slaves in the South."},
+      {"term": "Gettysburg Address", "definition": "Lincoln's 1863 speech defining democracy."},
+      {"term": "Reconstruction", "definition": "Rebuilding of the South after the war; ended 1876."}
+    ]
+  }
+}

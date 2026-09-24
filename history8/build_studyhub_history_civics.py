@@ -267,6 +267,9 @@ def main() -> None:
     build_cheatsheets_js(civ_pkgs, "CIVICS_CHEATSHEET_DATA", "civics-cheatsheets.js")
 
     validate(packages)
+    # Hand-authored chapters (data/history8/authored/ch*.json) replace the OCR output
+    import subprocess
+    subprocess.run(["node", "scripts/build-history-authored.js"], cwd=ROOT, check=True)
     print(f"\nDone: History {len(hist_items)} items, Civics {len(civ_items)} items")
 
 

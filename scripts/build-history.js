@@ -11,6 +11,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 execSync('python3 history8/build_history_diagrams.py', { cwd: ROOT, stdio: 'inherit' });
+execSync('node scripts/build-history-authored.js', { cwd: ROOT, stdio: 'inherit' }); // drop OCR-guess figures
 
 const js = path.join(ROOT, 'history-diagrams.js');
 if (!fs.existsSync(js)) throw new Error('history-diagrams.js not generated');
