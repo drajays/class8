@@ -1011,7 +1011,8 @@ function _shuffle(arr) {
 
 function pickQuizPool(source, topicId) {
   let pool = [];
-  if (source === 'mistakes') pool = getMistakeQuestions(topicId || null);
+  if (source === 'daily') pool = buildDailyPlan().questions;
+  else if (source === 'mistakes') pool = getMistakeQuestions(topicId || null);
   else if (source === 'due') pool = getDueForReview(topicId || null);
   else if (source === 'bookmarks') pool = getBookmarkedQuestions().filter(isQuizType);
   else if (source === 'linked' && topicId) {
@@ -1025,6 +1026,75 @@ function pickQuizPool(source, topicId) {
     pool = gradableQuestions(topicId).filter(q => isQuizType(q) && !isDiagramMcq(q));
   }
   return pool;
+}
+
+// ===== TODAY'S REVISION — one tap, the app decides what to revise =====
+const DAILY_PLAN_SIZE = 15;
+
+function _todayKey() { return new Date().toISOString().slice(0, 10); }
+
+/** Today's questions in priority order: due reviews → mistakes → new questions from the weakest chapters. */
+function buildDailyPlan(size = DAILY_PLAN_SIZE) {
+  const picked = new Map(); // id -> { q, tag }
+  const add = (list, max, tag) => {
+    for (const q of _shuffle(list)) {
+      if (picked.size >= size || max <= 0) return;
+      if (!picked.has(q.id) && isQuizType(q) && !isDiagramMcq(q)) { picked.set(q.id, { q, tag }); max--; }
+    }
+  };
+  add(getDueForReview(null), 7, 'due');
+  add(getMistakeQuestions(null), 4, 'mistake');
+
+  // New questions: weakest started chapters first, then the last-opened chapter, then anything untouched.
+  let lastId = null; try { lastId = localStorage.getItem('studyhub_last_topic'); } catch (e) {}
+  const started = appData.topics
+    .map(t => ({ t, m: chapterMastery(t.id) }))
+    .filter(x => x.m.attempted && x.m.attempted < x.m.total)
+    .sort((a, b) => a.m.accuracy - b.m.accuracy || a.m.coverage - b.m.coverage)
+    .map(x => x.t.id);
+  const focus = [...new Set([...started.slice(0, 2), lastId].filter(Boolean))];
+  const fresh = topicId => gradableQuestions(topicId).filter(q => !studyProgress[q.id]);
+  const focusTopics = [];
+  for (const tid of focus) {
+    const before = picked.size;
+    add(fresh(tid), Math.ceil((size - picked.size) / 2), 'new');
+    if (picked.size > before) focusTopics.push(tid);
+  }
+  if (picked.size < size) add(fresh(null), size - picked.size, 'new');
+
+  const entries = [...picked.values()];
+  const count = tag => entries.filter(e => e.tag === tag).length;
+  return {
+    questions: entries.map(e => e.q),
+    due: count('due'), mistakes: count('mistake'), fresh: count('new'),
+    focusTopics
+  };
+}
+
+function dailyRevisionDoneToday() {
+  try { return localStorage.getItem('studyhub_daily_done') === _todayKey(); } catch (e) { return false; }
+}
+
+function dailyRevisionCardHtml() {
+  const plan = buildDailyPlan();
+  if (!plan.questions.length) return '';
+  const done = dailyRevisionDoneToday();
+  const parts = [
+    plan.due && `🔁 ${plan.due} due`,
+    plan.mistakes && `📕 ${plan.mistakes} mistakes`,
+    plan.fresh && `✨ ${plan.fresh} new`
+  ].filter(Boolean).join(' · ');
+  const focus = plan.focusTopics.map(id => appData.topics.find(t => t.id === id)).filter(Boolean)
+    .map(t => `${t.icon || ''} ${escHtml(t.name)}`).join(', ');
+  return `<div class="today-card${done ? ' today-done' : ''}" onclick="startQuizSession('daily', null, ${DAILY_PLAN_SIZE})">
+      <div class="today-icon">${done ? '✅' : '🚀'}</div>
+      <div class="today-body">
+        <div class="today-label">${done ? 'Done for today — want a bonus round?' : "Today's Revision · about 10 minutes"}</div>
+        <div class="today-title">${plan.questions.length} questions picked for you</div>
+        <div class="today-sub">${parts}${focus ? ` — focus: ${focus}` : ''}</div>
+      </div>
+      <div class="today-go">${done ? 'Again →' : 'Start →'}</div>
+    </div>`;
 }
 
 function startQuizSession(source, topicId, count) {
@@ -2409,6 +2479,7 @@ function renderQuizView(el) {
     });
     const correct = results.filter(r => r.isCorrect).length;
     const total = quizSession.ids.length;
+    if (quizSession.source === 'daily') { try { localStorage.setItem('studyhub_daily_done', _todayKey()); } catch (e) {} }
     el.innerHTML = `
       <div class="fade-in quiz-results">
         <div class="section-header"><h1>✅ Quiz Complete</h1></div>
@@ -2544,6 +2615,7 @@ function renderHome(el) {
       <div class="progress-bar"><div class="progress-fill cov-good" style="width:${Math.max(goalPct, 2)}%"></div></div>
     </div>`;
   const dashHtml = `
+    ${dailyRevisionCardHtml()}
     ${continueHtml}
     ${journeyHtml}
     <div class="dash">

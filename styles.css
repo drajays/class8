@@ -1450,3 +1450,16 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
   .tl-item::after{left:41px}
   .tl-century{padding-left:62px}
 }
+
+/* ---------- Today's Revision (home hero) ---------- */
+.today-card{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:18px 20px;border-radius:var(--radius);background:linear-gradient(135deg,var(--accent),var(--accent-ink));color:#fff;cursor:pointer;box-shadow:var(--shadow);transition:var(--t)}
+.today-card:hover{transform:translateY(-2px)}
+.today-card.today-done{background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.today-icon{font-size:2rem}
+.today-body{flex:1;min-width:0}
+.today-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.today-title{font-size:1.15rem;font-weight:800;margin:2px 0}
+.today-sub{font-size:.84rem;opacity:.9;line-height:1.4}
+.today-go{font-weight:800;white-space:nowrap;padding:8px 14px;border-radius:20px;background:rgba(255,255,255,.2)}
+.today-done .today-go{background:var(--accent-soft);color:var(--accent-ink)}
+@media (max-width:600px){.today-card{padding:14px}.today-icon{font-size:1.6rem}.today-go{display:none}}
