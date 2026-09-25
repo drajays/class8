@@ -1790,3 +1790,33 @@ body.full-view .main-content{max-height:100vh;height:100vh;padding:28px max(20px
 .para-note.has-note .pn-btn{ border-style:solid; border-color:var(--accent); }
 .para-note textarea{ display:none; width:100%; box-sizing:border-box; margin-top:4px; padding:8px 10px; border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:8px; background:var(--surface-2); color:var(--ink); font:inherit; font-size:.9rem; }
 .para-note.open textarea{ display:block; }
+
+/* Whiteboard side panel */
+:root{ --wb-w:480px; }
+#wb-fab{ position:fixed; right:0; top:42%; z-index:105; width:44px; height:44px; border-radius:12px 0 0 12px; border:1px solid var(--line); border-right:0; background:var(--surface); box-shadow:0 2px 8px rgba(0,0,0,.15); font-size:1.3rem; cursor:pointer; }
+body.wb-open #wb-fab{ display:none; }
+#wb-panel{ display:none; position:fixed; top:0; right:0; bottom:0; width:var(--wb-w); z-index:110; background:var(--surface); border-left:1px solid var(--line); box-shadow:-6px 0 20px rgba(0,0,0,.12); flex-direction:column; gap:8px; padding:10px 12px; box-sizing:border-box; overflow-y:auto; }
+body.wb-open #wb-panel{ display:flex; }
+body.wb-open .app-container{ padding-right:var(--wb-w); }
+body.wb-open #snowy-hud, body.wb-open #princess-launch{ display:none !important; }
+.wb-grip{ position:absolute; left:-6px; top:0; bottom:0; width:14px; cursor:ew-resize; touch-action:none; }
+.wb-grip::after{ content:''; position:absolute; left:5px; top:50%; height:44px; margin-top:-22px; width:4px; border-radius:2px; background:var(--line); }
+.wb-head{ display:flex; align-items:center; gap:4px; font-size:.95rem; }
+.wb-head #wb-topic{ flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--ink-2); font-size:.8rem; }
+.wb-row,.wb-tools{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+#wb-panel button, #wb-panel select, #wb-panel input{ font:inherit; font-size:.85rem; color:var(--ink); }
+#wb-panel button{ min-width:36px; min-height:36px; padding:2px 8px; border:1px solid var(--line); border-radius:8px; background:var(--surface-2); cursor:pointer; }
+#wb-panel button.on{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent) inset; }
+#wb-panel .wb-dot{ min-width:26px; width:26px; min-height:26px; height:26px; padding:0; border-radius:50%; }
+#wb-panel .wb-dot.on{ box-shadow:0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
+.wb-sep{ width:1px; align-self:stretch; background:var(--line); margin:0 2px; }
+#wb-panel select, #wb-panel input#wb-name{ min-height:34px; padding:2px 8px; border:1px solid var(--line); border-radius:8px; background:var(--surface-2); min-width:0; }
+#wb-panel input#wb-name{ flex:1; }
+.wb-stage{ position:relative; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+#wb-cv{ display:block; width:100%; aspect-ratio:10/7; touch-action:none; cursor:crosshair; }
+.wb-text-in{ position:absolute; background:rgba(255,255,255,.9); color:#111; border:1px dashed #888; outline:none; padding:0; margin:0; line-height:1.2; min-width:120px; font-family:system-ui,sans-serif; }
+@media (max-width:760px){
+  body.wb-open .app-container{ padding-right:0; }
+  #wb-panel{ width:100vw; border-left:0; }
+  .wb-grip{ display:none; }
+}

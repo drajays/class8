@@ -4723,10 +4723,11 @@ function clippingsMarkdown(topicId) {
   notes.forEach(n => (byTopic[n.topicId] = byTopic[n.topicId] || []).push(n));
   const label = { y: 'Key', g: 'Got it', r: 'Confusing' };
   const out = [];
+  wbTopics().filter(tid => !topicId || tid === topicId).forEach(tid => { byTopic[tid] = byTopic[tid] || []; });
   Object.entries(byTopic).forEach(([tid, list]) => {
     const t = appData.topics.find(x => x.id === tid) || {};
     const subj = (appData.subjects.find(x => x.id === t.subjectId) || {}).name || '';
-    out.push(`# ${t.name || tid}`, subj ? `_${subj} · Class 8 · exported ${new Date().toISOString().slice(0, 10)}_` : '', '');
+    out.push(`# ${t.name || (tid === '_' ? 'General sketches' : tid)}`, subj ? `_${subj} · Class 8 · exported ${new Date().toISOString().slice(0, 10)}_` : '', '');
     list.forEach(n => {
       const a = _annot(n.id);
       const pg = typeof NOTE_PAGES !== 'undefined' && NOTE_PAGES[n.id];
@@ -4735,6 +4736,7 @@ function clippingsMarkdown(topicId) {
       Object.values(a.pn || {}).forEach(x => out.push(`> ${x.q}…`, '', `**My note:** ${x.t.trim()}`, ''));
       if ((a.my || '').trim()) out.push('**My note:**', '', a.my.trim(), '');
     });
+    out.push(...wbMarkdown(tid));
   });
   return out.join('\n').replace(/\n{3,}/g, '\n\n');
 }
@@ -4753,7 +4755,7 @@ function downloadClippings(topicId) {
 }
 
 function clippingsButtonsHtml() {
-  const ids = [...new Set(getAnnotatedNotes().map(n => n.topicId))];
+  const ids = [...new Set(getAnnotatedNotes().map(n => n.topicId).concat(wbTopics()))];
   return `<div class="revision-actions">
     <button class="btn btn-primary" onclick="downloadClippings()">⬇ My Clippings (.md, all chapters)</button>
     ${ids.map(id => { const t = appData.topics.find(x => x.id === id); return t ? `<button class="btn btn-sm btn-outline" onclick="downloadClippings('${id}')">⬇ ${t.icon || ''} ${escHtml(t.name)}</button>` : ''; }).join('')}
@@ -6768,6 +6770,7 @@ function buildSyncPayload() {
     timetable: studyTimetable,
     focusLog: studyFocusLog,
     annotations: studyAnnotations,
+    boards: studyBoards,
     questionRatings: questionRatings
   };
 }
@@ -6803,6 +6806,7 @@ function buildCloudSyncPayload() {
     timetable: studyTimetable,
     focusLog: studyFocusLog,
     annotations: studyAnnotations,
+    boards: studyBoards,
     questionRatings: questionRatings
   };
 }
@@ -6903,6 +6907,7 @@ function applyImportedData(imp, mode, options) {
     if (Array.isArray(imp.timetable)) { studyTimetable = imp.timetable; saveTimetable(); }
     if (imp.focusLog && typeof imp.focusLog === 'object') { studyFocusLog = imp.focusLog; saveFocusLog(); }
     if (imp.annotations && typeof imp.annotations === 'object') { studyAnnotations = imp.annotations; saveAnnotations(); }
+    if (imp.boards) wbReplace(imp.boards);
     mergeQuestionRatings(imp.questionRatings);
     if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
     saveData({ skipSync: true });
@@ -6974,6 +6979,7 @@ function applyImportedData(imp, mode, options) {
     Object.entries(imp.focusLog).forEach(([d, e]) => { if (!studyFocusLog[d] || (e.mins || 0) > (studyFocusLog[d].mins || 0)) studyFocusLog[d] = e; });
     saveFocusLog();
   }
+  if (imp.boards) wbMerge(imp.boards);
   if (imp.annotations && typeof imp.annotations === 'object') {
     Object.entries(imp.annotations).forEach(([id, a]) => {
       studyAnnotations[id] = _mergeAnnot(_annot(id), a);
