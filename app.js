@@ -629,7 +629,7 @@ let studyProgress = {};
 let studyBookmarks = new Set();
 let studyActivity = {};
 let questionRatings = {}; // qId -> { votes: { deviceId: 1-5 } }
-let revisionTab = 'mistakes'; // mistakes | bookmarks | due
+let revisionTab = 'mistakes'; // mistakes | due | bookmarks | mynotes | cards
 let studyAnnotations = {}; // noteId -> { hl: [{t, c}], my } — see MY HIGHLIGHTS + MY NOTES
 let studyRevisions = {}; // topicId -> { count, last: 'YYYY-MM-DD' } — one revision per chapter per day
 let quizSession = null;
@@ -2530,14 +2530,16 @@ function renderRevisionHub(el) {
     { key: 'mistakes', label: 'Mistakes', icon: '📕', count: mistakes.length },
     { key: 'due', label: 'Due Today', icon: '🔁', count: due.length },
     { key: 'bookmarks', label: 'Marked', icon: '📌', count: marked.length },
-    { key: 'mynotes', label: 'My notes', icon: '📝', count: getAnnotatedNotes().length }
+    { key: 'mynotes', label: 'My notes', icon: '📝', count: getAnnotatedNotes().length },
+    { key: 'cards', label: 'Flashcards', icon: '🃏', count: dueFlashcards().length }
   ];
   let list = mistakes;
   if (revisionTab === 'due') list = due;
   if (revisionTab === 'bookmarks') list = marked;
   if (revisionTab === 'mynotes') list = getAnnotatedNotes();
+  if (revisionTab === 'cards') list = flashDeck ? flashDeck.ids : dueFlashcards();
   const tabHtml = tabs.map(t =>
-    `<div class="content-tab ${revisionTab === t.key ? 'active' : ''}" onclick="revisionTab='${t.key}';renderMain()">${t.icon} ${t.label} (${t.count})</div>`
+    `<div class="content-tab ${revisionTab === t.key ? 'active' : ''}" onclick="revisionTab='${t.key}';flashDeck=null;renderMain()">${t.icon} ${t.label} (${t.count})</div>`
   ).join('');
   let bodyHtml = '';
   if (!list.length) {
@@ -2545,9 +2547,12 @@ function renderRevisionHub(el) {
       mistakes: ['No mistakes logged yet', 'Answer questions in Practice Quiz — wrong answers and lucky guesses land here automatically.'],
       due: ['Nothing due today', 'Complete the Mistake Book and questions will return on a spaced schedule.'],
       bookmarks: ['Nothing marked for revision', 'Tap 📌 Mark for revision on any note or question to collect them here for last-minute review.'],
+      cards: ['No flashcards due', 'Highlight ⭐ key points or ❓ confusing bits, or write 📝 My notes while reading. They turn into flashcards here.'],
       mynotes: ['No highlights or notes yet', 'While reading a note, select any words to highlight them, or open 📝 My notes to write in your own words.']
     }[revisionTab];
     bodyHtml = `<div class="empty-state"><div class="empty-icon">${tabs.find(t => t.key === revisionTab).icon}</div><h3>${empty[0]}</h3><p>${empty[1]}</p></div>`;
+  } else if (revisionTab === 'cards') {
+    bodyHtml = `<div id="fc-host">${flashcardHtml()}</div>`;
   } else if (revisionTab === 'mynotes') {
     bodyHtml = `<div class="revision-list">${list.map(renderMyNotesItem).join('')}</div>`;
   } else {
@@ -2750,6 +2755,10 @@ function renderHome(el) {
       <div class="journey-card" onclick="openQuizBuilder({})">
         <div class="jc-icon">▶</div>
         <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
+      </div>
+      <div class="journey-card" onclick="flashDeck=null;navigateTo('revision','cards')">
+        <div class="jc-icon">🃏</div>
+        <div class="jc-body"><div class="jc-title">Flashcards</div><div class="jc-sub">${dueFlashcards().length} due</div></div>
       </div>
       <div class="journey-card" onclick="navigateTo('revision','bookmarks')">
         <div class="jc-icon">📌</div>
@@ -3711,6 +3720,136 @@ function renderMyNotesItem(n) {
     <div class="rev-actions">
       <button class="btn btn-sm btn-primary" onclick="selectedTopic='${n.topicId}';jumpToNote('${n.id}')">Open note</button>
     </div>
+  </div>`;
+}
+
+// ===== FLASHCARDS (from highlights + My notes) =====
+// ⭐ Key highlight → fill-the-gap card; ❓ Confusing → "do you get it now?" card; 📝 My notes → explain-it card.
+// Schedule lives on the annotation itself (h.srs / a.mySrs = { lvl, next }), so it syncs with it.
+let flashDeck = null; // { ids, i, flipped, knew, again }
+
+function allFlashcards() {
+  const out = [];
+  Object.entries(studyAnnotations).forEach(([noteId, a]) => {
+    const n = appData.content.find(c => c.id === noteId && c.type === 'note');
+    if (!n) return;
+    a.hl.forEach(h => { if (h.c !== 'g') out.push({ id: noteId + '|' + _hlKey(h.t), n, h, srs: h.srs }); });
+    if ((a.my || '').trim()) out.push({ id: noteId + '|my', n, my: a.my, srs: a.mySrs });
+  });
+  return out;
+}
+
+function dueFlashcards() {
+  const now = Date.now();
+  return allFlashcards().filter(c => !c.srs || Date.parse(c.srs.next) <= now);
+}
+
+/** Sentences of a note as plain text (block tags become breaks). */
+function _noteSentences(n) {
+  const html = renderNoteHtml(n.content || '') + '\n' + renderNoteHtml(n.explanation || '');
+  const t = document.createElement('textarea');
+  t.innerHTML = html.replace(/<\/(p|li|h[1-6]|div|section|td|th|tr)>|<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '');
+  return t.value.split(/\n+|(?<=[.!?])\s+/).map(s => s.trim()).filter(Boolean);
+}
+
+/** Front/back text for a highlight: blank it inside its sentence when there is enough sentence left. */
+function _clozeFor(n, text) {
+  const key = _hlKey(text);
+  const sentence = _noteSentences(n).find(s => _hlKey(s).includes(key));
+  if (sentence && key.length < _hlKey(sentence).length * 0.7) {
+    const re = new RegExp([...text.replace(/\s+/g, '')].map(ch => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s*'), 'i');
+    const m = sentence.match(re);
+    if (m) {
+      const before = escHtml(sentence.slice(0, m.index)), after = escHtml(sentence.slice(m.index + m[0].length));
+      return { front: `${before}<span class="fc-blank">_____</span>${after}`, back: `${before}<mark>${escHtml(m[0])}</mark>${after}` };
+    }
+  }
+  const words = text.split(/\s+/);
+  return {
+    // Short highlights would be given away by their first words, so show first letters only.
+    front: `What was your ⭐ key point?<br><span class="fc-hint">Hint: “${escHtml(words.length <= 3
+      ? words.map(w => w[0] + '_'.repeat(w.length - 1)).join(' ')
+      : words.slice(0, 3).join(' ') + ' …')}”</span>`,
+    back: escHtml(text)
+  };
+}
+
+function startFlashcards() {
+  const ids = dueFlashcards().map(c => c.id);
+  for (let i = ids.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; }
+  flashDeck = { ids, i: 0, flipped: false, knew: 0, again: 0 };
+}
+
+// Redraw just the card, not the whole page (which replays the fade-in).
+function _redrawFlashcard() {
+  const host = document.getElementById('fc-host');
+  if (host) host.innerHTML = flashcardHtml(); else renderMain();
+}
+
+function flipFlashcard() { if (flashDeck) { flashDeck.flipped = true; _redrawFlashcard(); } }
+
+/** knew: true = remembered / now understood, false = again / still confusing. */
+function gradeFlashcard(knew) {
+  const card = allFlashcards().find(c => c.id === flashDeck.ids[flashDeck.i]);
+  if (card) {
+    const a = studyAnnotations[card.n.id];
+    const lvl = knew ? (card.srs ? Math.min(card.srs.lvl + 1, SRS_DAYS.length - 1) : 0) : 0;
+    const srs = { lvl, next: _daysFromNow(SRS_DAYS[lvl]) };
+    if (card.my) a.mySrs = srs;
+    else if (card.h.c === 'r' && knew) { card.h.c = 'g'; delete card.h.srs; } // confusion solved → green, no more card
+    else card.h.srs = srs;
+    saveAnnotations();
+    // Missed cards come back once more at the end of this session.
+    if (!knew && flashDeck.ids.indexOf(card.id, flashDeck.i + 1) < 0) flashDeck.ids.push(card.id);
+  }
+  knew ? flashDeck.knew++ : flashDeck.again++;
+  flashDeck.i++;
+  flashDeck.flipped = false;
+  _redrawFlashcard();
+}
+
+function flashcardHtml() {
+  if (!flashDeck) startFlashcards();
+  const d = flashDeck;
+  if (d.i >= d.ids.length) {
+    return `<div class="fc-done"><div class="empty-icon">🎉</div><h3>Deck done!</h3>
+      <p>✅ ${d.knew} remembered · 🔁 ${d.again} to practise again</p>
+      <p class="fc-hint">Cards you knew come back in 1, 3, 7, then 14 days.</p>
+      <button class="btn btn-outline" onclick="flashDeck=null;revisionTab='mynotes';renderMain()">📝 See all my notes</button></div>`;
+  }
+  const card = allFlashcards().find(c => c.id === d.ids[d.i]);
+  if (!card) { d.i++; return flashcardHtml(); }
+  const topic = appData.topics.find(t => t.id === card.n.topicId);
+  let label, front, back = '', buttons;
+  if (card.my) {
+    label = '📝 Explain in your own words';
+    front = `Explain: <strong>${escHtml(card.n.subtopic || 'this note')}</strong>`;
+    back = `<div class="my-notes-read">${escHtml(card.my)}</div>`;
+  } else if (card.h.c === 'r') {
+    label = '❓ You found this confusing';
+    front = `<mark class="fc-red">${escHtml(card.h.t)}</mark><br><span class="fc-hint">Can you explain it now? Re-read the note if not.</span>`;
+  } else {
+    label = '⭐ Your key point';
+    ({ front, back } = _clozeFor(card.n, card.h.t));
+  }
+  if (card.h && card.h.c === 'r') {
+    buttons = `<button class="btn btn-outline" onclick="gradeFlashcard(false)">🤔 Still confusing</button>
+      <button class="btn btn-primary" onclick="gradeFlashcard(true)">💡 Now I get it</button>`;
+  } else if (!d.flipped) {
+    buttons = `<button class="btn btn-primary fc-flip" onclick="flipFlashcard()">👀 Show answer</button>`;
+  } else {
+    buttons = `<button class="btn btn-outline" onclick="gradeFlashcard(false)">🔁 Again</button>
+      <button class="btn btn-primary" onclick="gradeFlashcard(true)">✅ Knew it</button>`;
+  }
+  return `<div class="fc-wrap">
+    <div class="fc-progress">Card ${d.i + 1} of ${d.ids.length}</div>
+    <div class="fc-card${d.flipped ? ' flipped' : ''}">
+      <div class="rev-meta">${topic ? topic.icon + ' ' + escHtml(topic.name) : ''} · ${label}</div>
+      <div class="fc-front">${front}</div>
+      ${d.flipped && back ? `<div class="fc-back">${back}</div>` : ''}
+    </div>
+    <div class="fc-actions">${buttons}</div>
+    <button class="xref-btn xref-back" onclick="selectedTopic='${card.n.topicId}';jumpToNote('${card.n.id}')">↩ Open note: ${escHtml(card.n.subtopic || '')}</button>
   </div>`;
 }
 
