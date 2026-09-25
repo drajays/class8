@@ -1720,3 +1720,27 @@ body.focus-on .pw-coin-float, body.focus-on #pw-toast{display:none !important}
 .ci-flash{animation:ci-flash 1.6s ease-out}
 @keyframes ci-flash{0%,30%{box-shadow:0 0 0 4px var(--accent),0 0 22px var(--accent)}100%{box-shadow:none}}
 @media (max-width:600px){.ci-detail,.ci-card{flex-direction:column;gap:8px}.ci-big{width:56px;height:60px}.ci-formula{min-height:48px;max-width:none;align-self:flex-start;padding:0 14px}.ci-detail{max-height:44vh}}
+/* ---------- BLURT + FULL SCREEN VIEW (v99) ---------- */
+.blurt{max-width:860px}
+.blurt-lead{color:var(--ink-2);margin:6px 0 10px}
+.blurt-last{font-size:.9rem;color:var(--accent-ink);margin-bottom:8px}
+.blurt-text{width:100%;box-sizing:border-box;min-height:260px;padding:14px;border-radius:var(--radius-sm);border:1px solid var(--line);background:var(--surface);color:var(--ink);font:1rem/1.6 var(--font-ui);resize:vertical}
+.blurt-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-top:12px}
+.blurt-score{display:flex;align-items:center;gap:16px;padding:14px 18px;margin-bottom:14px;border-radius:var(--radius);background:var(--accent-soft)}
+.blurt-score b{font-size:2.2rem;color:var(--accent-ink)}
+.blurt-branch{margin-bottom:10px;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--surface)}
+.blurt-bhead{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.blurt-bhead span{color:var(--ink-2);font-size:.85rem;flex:1}
+.blurt-branch ul{list-style:none;margin:0;padding:0}
+.blurt-branch li{padding:3px 0;font-size:.92rem}
+.blurt-branch li.miss{color:var(--danger);font-weight:600}
+.blurt-mine{margin-top:12px}
+.blurt-mine summary{cursor:pointer;font-weight:600;color:var(--ink-2)}
+.blurt-mine p{white-space:pre-wrap;color:var(--ink-2)}
+#full-exit{display:none;position:fixed;top:10px;right:12px;z-index:9400;padding:8px 14px;border-radius:20px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font:700 .85rem var(--font-ui);box-shadow:var(--shadow-sm);cursor:pointer;opacity:.85}
+body.full-view #full-exit{display:block}
+body.full-view .header, body.full-view .breadcrumb, body.full-view .sidebar, body.full-view .sidebar-backdrop,
+body.full-view .chapter-sidebar, body.full-view #snowy-hud, body.full-view #princess-launch, body.full-view .update-notice{display:none !important}
+body.full-view .app-container{min-height:100vh}
+body.full-view .main-content{max-height:100vh;height:100vh;padding:28px max(20px,4vw)}

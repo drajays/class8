@@ -3650,6 +3650,7 @@ function renderContent(el) {
           <div class="content-tabs chapter-tabs-top" role="tablist" aria-label="Chapter study modes">
             <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
             ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
+            ${mmData ? `<div class="content-tab ${contentTab==='blurt'?'active':''}" onclick="switchContentTab('blurt')" title="Write all you remember, then see what you missed">✍️ Blurt</div>` : ''}
             ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
             ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
             ${historyTimelineFor(selectedTopic) ? `<div class="content-tab ${contentTab==='timeline'?'active':''}" onclick="switchContentTab('timeline')">🕰️ Timeline</div>` : ''}
@@ -3684,6 +3685,7 @@ function renderContent(el) {
 
   if (contentTab === 'notes') renderNotes();
   else if (contentTab === 'mindmap') renderMindMap(mmData);
+  else if (contentTab === 'blurt') renderBlurt(mmData);
   else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
   else if (contentTab === 'oneword') renderOneWordCards(csData);
   else if (contentTab === 'timeline') renderChapterTimeline(selectedTopic);
@@ -3725,6 +3727,103 @@ function mindmapNoteLabel(noteId) {
 }
 
 let mindMapQuizMode = false;
+
+// ===== BLURT MODE =====
+// Write everything you remember about a chapter, then check it against the mind map's key points.
+// blurt = { topicId, text, result } lives in memory, so a redraw (e.g. the startup sync) keeps the draft.
+// ponytail: blurt history stays on this device (not in backup/sync); add it there if she uses two devices.
+let blurt = null;
+let studyBlurts = {}; // topicId -> [{ d: 'YYYY-MM-DD', pct }] in studyhub_blurts
+try { studyBlurts = JSON.parse(localStorage.getItem('studyhub_blurts') || '{}') || {}; } catch (e) {}
+
+const _BLURT_STOP = new Set(('the and for are with from that this into than then they them their there what when which while have has had ' +
+  'was were will been being also only more most very such each other about over under between after before because through during ' +
+  'without within these those some many much your you its not but can may our out all any how why who does done make made like ' +
+  'per one two use get put set too via').split(' '));
+
+/** Key words of a text: 3+ letters (or anything with a digit), no filler words, cut to 5 letters so plurals and endings match. */
+function _blurtStems(text) {
+  return new Set(String(text).toLowerCase().normalize('NFKD').split(/[^a-z0-9]+/)
+    .filter(w => (w.length >= 3 || /\d/.test(w)) && !_BLURT_STOP.has(w)).map(w => w.slice(0, 5)));
+}
+
+/** A key point counts as remembered when she wrote half its key words, two if that's a third, or any three. Examples in (brackets) are optional. */
+function blurtCheck(text, points) {
+  const mine = _blurtStems(text);
+  return points.map(p => {
+    const keys = [..._blurtStems(p.replace(/\([^)]*\)/g, ' '))];
+    const hits = keys.filter(k => mine.has(k)).length;
+    return keys.length > 0 && (hits >= 3 || (hits >= 2 && hits * 3 >= keys.length) || hits * 2 >= keys.length);
+  });
+}
+
+const _blurtWords = t => String(t).trim().split(/\s+/).filter(Boolean).length;
+
+function renderBlurt(mm) {
+  const body = document.getElementById('content-body');
+  if (!blurt || blurt.topicId !== selectedTopic) blurt = { topicId: selectedTopic, text: '', result: null };
+  const hist = studyBlurts[selectedTopic] || [];
+  const last = hist[hist.length - 1];
+  if (!blurt.result) {
+    const typing = document.activeElement && document.activeElement.id === 'blurt-text'; // a redraw mustn't steal the cursor
+    body.innerHTML = `<div class="blurt">
+      <h3>🧠 Blurt it out</h3>
+      <p class="blurt-lead">Close the book. Write <b>everything</b> you remember about this chapter: facts, key words, examples, in any order.
+        Spelling and neat sentences don't matter. Then check what you missed.</p>
+      ${last ? `<p class="blurt-last">Last time (${escHtml(last.d)}) you remembered <b>${last.pct}%</b>. Can you beat it?</p>` : ''}
+      <textarea id="blurt-text" class="blurt-text" rows="12" placeholder="Start typing everything you remember…"
+        oninput="blurt.text=this.value;document.getElementById('blurt-wc').textContent=_blurtWords(this.value)">${escHtml(blurt.text)}</textarea>
+      <div class="blurt-actions"><span><b id="blurt-wc">${_blurtWords(blurt.text)}</b> words</span>
+        <button class="btn btn-primary" onclick="checkBlurt()">✔ Check what I remembered</button></div>
+    </div>`;
+    if (typing) { const ta = document.getElementById('blurt-text'); ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+    return;
+  }
+  const r = blurt.result;
+  const got = r.branches.reduce((a, b) => a + b.ok.filter(Boolean).length, 0);
+  const cheer = r.pct >= 80 ? '🌟 Brilliant memory!' : r.pct >= 50 ? '💪 Good going. Read the missed points and try again tomorrow.' : '🌱 A start! Read the red points, then blurt again. It gets easier every time.';
+  body.innerHTML = `<div class="blurt">
+    <div class="blurt-score"><b>${r.pct}%</b><span>You remembered ${got} of ${r.total} key points. ${cheer}</span></div>
+    ${r.branches.map(b => `<div class="blurt-branch">
+      <div class="blurt-bhead"><b>${escHtml(b.label)}</b> <span>${b.ok.filter(Boolean).length}/${b.ok.length}</span>
+        ${b.noteId && b.ok.includes(false) ? `<button class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${b.noteId}')">📖 Read</button>` : ''}</div>
+      <ul>${b.points.map((p, i) => `<li class="${b.ok[i] ? 'ok' : 'miss'}">${b.ok[i] ? '✅' : '❌'} ${escHtml(p)}</li>`).join('')}</ul>
+    </div>`).join('')}
+    <details class="blurt-mine"><summary>What I wrote (${_blurtWords(blurt.text)} words)</summary><p>${escHtml(blurt.text)}</p></details>
+    <div class="blurt-actions">
+      <button class="btn btn-outline" onclick="blurt.result=null;renderBlurt(chapterMindmap(selectedTopic))">✏️ Add more to what I wrote</button>
+      <button class="btn btn-primary" onclick="blurt=null;renderBlurt(chapterMindmap(selectedTopic))">🔁 Start fresh</button>
+    </div>
+  </div>`;
+}
+
+function checkBlurt() {
+  const text = blurt.text;
+  if (_blurtWords(text) < 5) return showToast('error', 'Write a bit more first. Everything you remember counts!');
+  const branches = chapterMindmap(selectedTopic).maps.flatMap(m => m.branches).map(b => {
+    const points = b.concepts.length ? b.concepts : [b.label];
+    return { label: b.label, noteId: b.noteId, points, ok: blurtCheck(text, points) };
+  });
+  const total = branches.reduce((a, b) => a + b.points.length, 0);
+  const pct = Math.round(branches.reduce((a, b) => a + b.ok.filter(Boolean).length, 0) / total * 100);
+  blurt.result = { branches, total, pct };
+  (studyBlurts[selectedTopic] = studyBlurts[selectedTopic] || []).push({ d: _localToday(), pct });
+  try { localStorage.setItem('studyhub_blurts', JSON.stringify(studyBlurts)); } catch (e) {}
+  if (_blurtWords(text) >= 20) logChapterRevision(selectedTopic);
+  renderBlurt(chapterMindmap(selectedTopic));
+  document.getElementById('content-body').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ===== FULL SCREEN VIEW =====
+// body.full-view hides the header, menus, chapter sidebar and games so the page gets the whole screen, plus the
+// browser's own fullscreen where allowed (not on iPhone). The Exit button, Esc, or leaving browser fullscreen ends it.
+function toggleFullView(on = !document.body.classList.contains('full-view')) {
+  document.body.classList.toggle('full-view', on);
+  if (on && document.documentElement.requestFullscreen && !document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {});
+  if (!on && document.fullscreenElement) document.exitFullscreen().catch(() => {});
+}
+document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) document.body.classList.remove('full-view'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && document.body.classList.contains('full-view')) toggleFullView(false); });
 
 function renderMindMap(mmData) {
   const body = document.getElementById('content-body');
