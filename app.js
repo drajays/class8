@@ -4587,6 +4587,7 @@ function _onSelectionChange() {
     return;
   }
   _hlPending = { noteId: body.closest('.note-block').id.slice(5), text: text.replace(/\s+/g, ' ').slice(0, 400) };
+  if (hlMode) { if (_ptrDown) return; highlightSelection(_hlPending.noteId, _hlPending.text, hlMode); return; } // highlighter mode: no toolbar, just mark it
   const rect = sel.getRangeAt(0).getBoundingClientRect();
   const tb = _hlToolbar();
   tb.classList.add('show');
@@ -4597,7 +4598,41 @@ function _onSelectionChange() {
   tb.style.top = Math.max(8, top) + 'px';
 }
 let _selTimer = null;
-document.addEventListener('selectionchange', () => { clearTimeout(_selTimer); _selTimer = setTimeout(_onSelectionChange, 250); });
+// Touch: wait until the finger stops dragging the selection handles. Mouse / Pencil: mark on release (not mid-drag).
+let _ptrDown = false, _ptrUpAt = 0;
+document.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') _ptrDown = true; });
+document.addEventListener('selectionchange', () => {
+  clearTimeout(_selTimer);
+  _selTimer = setTimeout(_onSelectionChange, !hlMode ? 250 : Date.now() - _ptrUpAt < 200 ? 30 : 700);
+});
+document.addEventListener('pointerup', e => {
+  if (e.pointerType === 'touch') return;
+  _ptrDown = false; _ptrUpAt = Date.now();
+  if (hlMode) { clearTimeout(_selTimer); _selTimer = setTimeout(_onSelectionChange, 30); }
+});
+
+// ===== HIGHLIGHTER MODE (like a PDF reader): pick a colour, then every selection is marked straight away =====
+let hlMode = null; // null | 'y' | 'g' | 'r' | 'x' (x = erase)
+function setHlMode(m) {
+  hlMode = m || null;
+  document.body.classList.toggle('hl-mode', !!hlMode);
+  let pill = document.getElementById('hl-pill');
+  if (!pill) {
+    pill = document.createElement('div');
+    pill.id = 'hl-pill';
+    pill.addEventListener('mousedown', e => e.preventDefault());
+    document.body.appendChild(pill);
+  }
+  pill.hidden = !hlMode;
+  pill.innerHTML = '<span class="hl-pill-t">🖍 Highlighter</span>' +
+    Object.entries(HL_COLORS).map(([c, label]) => `<button class="hl-btn hl-${c}${hlMode === c ? ' on' : ''}" onclick="setHlMode('${c}')">${label}</button>`).join('') +
+    `<button class="hl-btn hl-x${hlMode === 'x' ? ' on' : ''}" onclick="setHlMode('x')">🧽 Erase</button><button class="hl-btn hl-done" onclick="setHlMode(null)">✓ Done</button>`;
+  const tb = document.getElementById('hl-toolbar');
+  if (tb) tb.classList.remove('show');
+  const hb = document.getElementById('hl-head-btn');
+  if (hb) hb.classList.toggle('on', !!hlMode);
+}
+
 
 const _now = () => new Date().toISOString();
 function _tomb(a, key) { a.dead = a.dead || {}; a.dead[key] = _now(); }
@@ -4611,7 +4646,7 @@ function highlightSelection(noteId, text, c) {
   _setAnnot(noteId, a);
   const sel = window.getSelection();
   if (sel) sel.removeAllRanges();
-  document.getElementById('hl-toolbar').classList.remove('show');
+  _hlToolbar().classList.remove('show');
   _hlPending = null;
   updateNoteCard(noteId);
   if (c !== 'x' && !window.CSS?.highlights) showToast('success', 'Saved to 📝 My notes (colour highlights need a newer browser).');

@@ -1822,3 +1822,12 @@ body.wb-open #snowy-hud, body.wb-open #princess-launch{ display:none !important;
   #wb-panel{ width:100vw; border-left:0; }
   .wb-grip{ display:none; }
 }
+
+/* Highlighter mode */
+#hl-pill{ position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:9998; display:flex; flex-wrap:wrap; gap:6px; align-items:center; justify-content:center; max-width:calc(100vw - 24px); padding:8px 10px; border-radius:16px; background:var(--surface); border:1px solid var(--line); box-shadow:0 6px 24px rgba(0,0,0,.2); }
+#hl-pill[hidden]{ display:none; }
+.hl-pill-t{ font:600 .8rem var(--font-ui); color:var(--ink-2); }
+.hl-btn.on{ box-shadow:0 0 0 3px var(--accent); }
+.hl-btn.hl-done{ background:var(--ink); color:var(--surface); }
+.header-actions button#hl-head-btn.on{ background:#ffe066; color:#2a2620; border-color:#e0b800; }
+body.hl-mode .note-body{ cursor:text; -webkit-touch-callout:none; }
