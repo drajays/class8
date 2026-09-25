@@ -679,6 +679,11 @@ function markChapterRevised(topicId) {
   renderContent(document.getElementById('main-content'));
 }
 
+/** Printed textbook page of a note ("p. 96"), from page-refs.js. */
+function notePage(n) {
+  return (n && typeof NOTE_PAGES !== 'undefined' && NOTE_PAGES[n.id]) || '';
+}
+
 function _lastRevisedLabel(topicId) {
   const r = studyRevisions[topicId];
   if (!r || !r.last) return '';
@@ -2028,6 +2033,7 @@ function timelineHtml(events, showChapter) {
         <h4>${escHtml(e.event)}</h4>
         ${e.detail ? `<p>${escHtml(e.detail)}</p>` : ''}
         ${t ? `<span class="tl-chip">${t.icon || ''} ${escHtml(t.name)}</span>` : ''}
+        ${notePage({ id: e.noteId }) ? `<span class="tl-chip">📖 ${escHtml(notePage({ id: e.noteId }))}</span>` : ''}
       </div>
     </li>`;
   }).join('');
@@ -2669,7 +2675,7 @@ function renderQuizView(el) {
       <p>${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</p>
       ${q.teacherTip ? `<div class="tip-box"><strong>💡 Teacher's Tip:</strong> ${fmtText(q.teacherTip)}</div>` : ''}
       ${q.examTip ? `<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> ${fmtText(q.examTip)}</div>` : ''}
-      ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button>` : ''}
+      ${linkedNote ? `<button class="xref-btn xref-back" onclick="quizSession=null;selectedTopic='${q.topicId}';jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${notePage(linkedNote) ? ` · 📖 ${escHtml(notePage(linkedNote))}` : ''}</button>` : ''}
     </div>`;
   }
   el.innerHTML = `
@@ -3197,7 +3203,7 @@ function renderMindMap(mmData) {
       .filter(nid => appData.content.some(c => c.id === nid && c.type === 'note'));
     const noteChips = noteIds.slice(0, 3).map(nid => {
       const note = appData.content.find(c => c.id === nid);
-      return `<button type="button" class="mm-note-chip" onclick="event.stopPropagation();jumpToNoteFromMindmap('${nid}')" title="Open the full note">📄 ${escHtml(mindmapNoteLabel(nid))}${note && note.page ? ` · 📖 ${escHtml(note.page)}` : ''}</button>`;
+      return `<button type="button" class="mm-note-chip" onclick="event.stopPropagation();jumpToNoteFromMindmap('${nid}')" title="Open the full note">📄 ${escHtml(mindmapNoteLabel(nid))}${notePage(note) ? ` · 📖 ${escHtml(notePage(note))}` : ''}</button>`;
     }).join('');
     return `<li class="mm-kid" id="mm-branch-${b.id}">
       <div class="mm-node ${b.color || 'mm-c' + ((bi % 7) + 1)}" onclick="highlightMindBranch('${b.id}')">
@@ -3370,7 +3376,8 @@ function renderCheatSheet(csData) {
         ? `<strong>${escHtml(item.term)}</strong> <span class="cs-arrow">→</span> ${escHtml(item.text)}`
         : escHtml(item.text);
       if (item.noteId) {
-        return `<li class="cs-item cs-clickable" onclick="jumpToNoteFromMindmap('${item.noteId}')" title="Open full notes">${line}</li>`;
+        const pg = notePage(appData.content.find(c => c.id === item.noteId));
+        return `<li class="cs-item cs-clickable" onclick="jumpToNoteFromMindmap('${item.noteId}')" title="Open full notes">${line}${pg ? ` <span class="cs-page">📖 ${escHtml(pg)}</span>` : ''}</li>`;
       }
       return `<li class="cs-item">${line}</li>`;
     }).join('');
@@ -3557,7 +3564,7 @@ function buildNoteCardHtml(n, displayNum) {
     <div class="note-block fade-in${marked ? ' revision-marked' : ''}" id="note-${n.id}">
       <div class="note-head">
         <div class="note-number">${displayNum}</div>
-        <h3>${escHtml(n.subtopic)}${n.page ? ` <span class="page-chip" title="Page in your textbook">📖 Book ${escHtml(n.page)}</span>` : ''}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
+        <h3>${escHtml(n.subtopic)}${notePage(n) ? ` <span class="page-chip" title="Page in your textbook">📖 Book ${escHtml(notePage(n))}</span>` : ''}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
       </div>
       <div class="note-body">
         ${fiveWHtml(n.fiveW)}
@@ -3917,7 +3924,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
   html += `<div class="q-label">${q.subtopic || typeLabels[q.type] || q.type}${
     sourceChipHtml(q.source)
   }${qualityBadgeHtml(q)}${diagramBadge}${
-    linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button>` : ''
+    linkedNote ? `<button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')" title="${escHtml(linkedNote.subtopic)}">↩ Back to Notes${notePage(linkedNote) ? ` · 📖 ${escHtml(notePage(linkedNote))}` : ''}</button>` : ''
   }</div>`;
   if (!hideImage) html += mcqImageHtml(q);
   html += `<div class="q-text rich-html">Q${idx + 1}. ${renderContentHtml(q.question)}</div>`;
@@ -3982,7 +3989,7 @@ function renderSingleQuestion(q, idx, targeted, hideImage) {
     ${q.type === 'short_answer' ? renderShortAnswerAnswerContent(q) : `<div class="rich-html answer-body"><strong>✅ Answer:</strong> ${fmtText(q.type === 'true_false' ? tfAnswerDisplay(q) : (q.answer || ''))}</div>`}
     ${!isRichShortAnswer(q) && q.teacherTip ? `<div class="tip-box" style="margin-top:8px"><strong>💡 Teacher's Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.teacherTip)}</span></div>` : ''}
     ${!isRichShortAnswer(q) && q.examTip ? `<div class="tip-box exam" style="margin-top:6px"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(q.examTip)}</span></div>` : ''}
-    ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${linkedNote.page ? ` · 📖 ${escHtml(linkedNote.page)}` : ''}</button></div>` : ''}
+    ${linkedNote ? `<div style="margin-top:8px"><button class="xref-btn xref-back" onclick="jumpToNote('${linkedNote.id}')">↩ Revise: ${escHtml(linkedNote.subtopic)}${notePage(linkedNote) ? ` · 📖 ${escHtml(notePage(linkedNote))}` : ''}</button></div>` : ''}
   </div>`;
 
   html += userRateRowHtml(q);

@@ -1507,3 +1507,4 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 /* one search box: header on wide screens, sidebar on phones */
 @media (min-width:900px){.sidebar .search-box{display:none}}
 .page-chip{display:inline-block;vertical-align:middle;margin-left:8px;padding:2px 9px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);font-family:var(--font-ui);font-size:.72rem;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.cs-page{margin-left:6px;font-size:.7rem;font-weight:700;color:var(--ink-3);white-space:nowrap}

@@ -4,8 +4,7 @@
  * Source:   data/history8/authored/ch*.json, data/civics8/authored/ch*.json
  * Patches:  history.js / civics.js (notes + questions), *-mindmaps.js, *-cheatsheets.js
  * Writes:   history-timeline.js (HISTORY_TIMELINE_DATA, per chapter, both subjects)
- * Pages:    each note gets `page` (printed textbook page, e.g. "p. 96") by matching its headings/key
- *           terms against history8/data/…PaddleOCR….json (scan of the Frank Modern Certificate book).
+ * Page refs: see scripts/build-page-refs.js (all subjects).
  * Filters:  history-diagrams.js — for authored chapters keep only the hand-curated figures
  *           (history8/data/diagram_overrides.json); the rest are OCR guesses.
  * Usage:    node scripts/build-history-authored.js
@@ -42,74 +41,12 @@ function loadObject(file) {
   return { header: src.slice(0, start), data: JSON.parse(src.slice(start, src.lastIndexOf('}') + 1)) };
 }
 
-// ---- Textbook page references ----------------------------------------------------------
-const OCR_JSON = 'history8/data/history and civics.pdf_by_PaddleOCR-VL-1.6.json';
-const normText = t => String(t).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
-const STOP = new Set('the and of in on to a an for with from by as at is are was were its their big picture how why what who when where under after before into over this that these those or part'.split(' '));
-
-function loadBookPages() {
-  const strip = t => String(t).replace(/<[^>]+>/g, ' ').replace(/[#*$\\]/g, ' ');
-  const pages = JSON.parse(read(OCR_JSON)).map((p, i) => {
-    const b = p.prunedResult.parsing_res_list;
-    // printed page number: a "number" block whose value is a plausible offset from the scan index
-    const num = b.filter(x => x.block_label === 'number').map(x => parseInt(x.block_content.trim(), 10))
-      .find(n => Number.isFinite(n) && i - n >= 1 && i - n <= 5);
-    return {
-      i, num,
-      text: normText(strip(b.filter(x => !/image|number|header|footer/.test(x.block_label)).map(x => x.block_content).join(' '))),
-      titles: b.filter(x => /title/.test(x.block_label)).map(x => normText(strip(x.block_content)))
-    };
-  });
-  const known = pages.filter(p => p.num).map(p => [p.i, p.i - p.num]);
-  pages.forEach(p => { const k = [...known].reverse().find(x => x[0] <= p.i) || known[0]; p.printed = p.i - k[1]; });
-  return pages;
-}
-
-/** chapters in book order → { topicId: ["p. 96", …] } one entry per note. */
-function textbookPages(chapters) {
-  const pages = loadBookPages();
-  const starts = [];
-  let from = 0;
-  for (const ch of chapters) {
-    const key = normText(ch.title).replace(/^the /, '').slice(0, 25);
-    const p = pages.find(pg => pg.i >= from && pg.titles.some(t => t.includes(key)));
-    starts.push(p ? p.i : null);
-    if (p) from = p.i + 1;
-  }
-  const fmt = r => r[0] === r[1] || r.length === 1 ? `p. ${r[0]}` : `pp. ${r[0]}–${r[1]}`;
-  const out = {};
-  chapters.forEach((ch, k) => {
-    const lo = starts[k];
-    if (lo == null) return;
-    const hi = (starts.slice(k + 1).find(x => x != null) || pages.length) - 1;
-    const endP = pages.find(p => p.i > lo && p.i <= hi && p.titles.some(t => /keywords|key words|exercises/.test(t)));
-    const end = endP ? endP.i : hi;
-    const cand = pages.filter(p => p.i >= lo && p.i <= end);
-    out[ch.topicId] = ch.notes.map(n => {
-      const bold = [...n.content.matchAll(/\*\*([^*]{3,40})\*\*/g)].map(m => normText(m[1])).filter(t => t.length > 3);
-      const sub = normText(n.subtopic.replace(/^\d+\.\s*/, '')).split(' ').filter(w => w.length > 3 && !STOP.has(w));
-      const terms = [...new Set([...bold, ...sub])];
-      const subSet = new Set(sub);
-      const titleHit = p => p.titles.reduce((a, t) => Math.max(a, t.split(' ').filter(w => subSet.has(w)).length), 0);
-      const scored = cand.map(p => ({ p, s: terms.reduce((a, t) => a + (p.text.includes(t) ? (t.includes(' ') ? 2 : 1) : 0), 0) + 6 * titleHit(p) }))
-        .sort((a, b) => b.s - a.s || a.p.i - b.p.i);
-      const best = scored[0];
-      const next = scored.find(x => Math.abs(x.p.i - best.p.i) === 1);
-      const overview = /big picture|overview|three organs|two revolutions|what is nationalism|three phases/i.test(n.subtopic);
-      if (overview || best.s < 8) return fmt([pages[lo].printed, pages[end].printed]); // weak match → whole chapter
-      return fmt(next && next.s >= best.s * 0.75 ? [best.p.printed, next.p.printed].sort((a, b) => a - b) : [best.p.printed]);
-    });
-  });
-  return out;
-}
-
-function buildChapter(ch, prefix, notePages) {
+function buildChapter(ch, prefix) {
   const num = ch.topicId.replace(`${prefix}-ch`, '');
   const noteId = i => `${prefix}-rev-ch${num}-${pad(i)}`;
   const notes = ch.notes.map((n, i) => ({
     id: noteId(i + 1), topicId: ch.topicId, type: 'note', subtopic: n.subtopic, content: n.content,
     ...(n.fiveW ? { fiveW: n.fiveW } : {}),
-    ...(notePages && notePages[i] ? { page: notePages[i] } : {}),
     source: `${prefix}_authored`
   }));
   const checkNote = (ref, what) => {
@@ -167,7 +104,6 @@ const loadChapters = dir => fs.existsSync(path.join(ROOT, dir))
     .sort((a, b) => parseInt(a.slice(2), 10) - parseInt(b.slice(2), 10))
     .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, dir, f), 'utf8')))
   : [];
-const bookPages = textbookPages(SUBJECTS.flatMap(s => loadChapters(s.dir)));
 
 for (const subj of SUBJECTS) {
   const chapters = loadChapters(subj.dir);
@@ -176,7 +112,7 @@ for (const subj of SUBJECTS) {
   const mm = loadObject(subj.mm);
   const cs = loadObject(subj.cs);
   for (const ch of chapters) {
-    const built = buildChapter(ch, subj.prefix, bookPages[ch.topicId]);
+    const built = buildChapter(ch, subj.prefix);
     const firstIdx = arr.items.findIndex(l => arr.topic(l) === ch.topicId);
     arr.items = arr.items.filter(l => arr.topic(l) !== ch.topicId);
     arr.items.splice(firstIdx < 0 ? arr.items.length : firstIdx, 0, ...built.items.map(x => JSON.stringify(x)));
