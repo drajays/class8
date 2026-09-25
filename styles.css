@@ -1780,3 +1780,13 @@ body.full-view .main-content{max-height:100vh;height:100vh;padding:28px max(20px
 .sg-chip.ok{ border-color:var(--success); background:#e6f7ee; color:#1f5c3a; }
 .sg-chip.bad{ border-color:var(--danger); background:#fdeceb; color:#8a2a1a; }
 .sg-chip b{ margin-left:6px; }
+
+/* Per-paragraph notes + reading zoom */
+#content-body{ zoom:var(--z,1); }
+.zoom-ctl{ margin-left:auto; display:inline-flex; gap:4px; }
+.para-note{ margin:2px 0 10px; }
+.pn-btn{ background:none; border:1px dashed var(--line); border-radius:999px; padding:1px 10px; font-size:.75rem; color:var(--ink-2); cursor:pointer; opacity:.55; }
+.pn-btn:hover,.para-note.has-note .pn-btn{ opacity:1; }
+.para-note.has-note .pn-btn{ border-style:solid; border-color:var(--accent); }
+.para-note textarea{ display:none; width:100%; box-sizing:border-box; margin-top:4px; padding:8px 10px; border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:8px; background:var(--surface-2); color:var(--ink); font:inherit; font-size:.9rem; }
+.para-note.open textarea{ display:block; }

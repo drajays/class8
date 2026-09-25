@@ -2701,11 +2701,23 @@ function setChapterViewMode(mode) {
   renderContent(document.getElementById('main-content'));
 }
 
+let studyZoom = 1;
+try { studyZoom = parseFloat(localStorage.getItem('studyhub_zoom')) || 1; } catch (e) {}
+function setZoom(d) {
+  studyZoom = d ? Math.min(2, Math.max(0.8, Math.round((studyZoom + d) * 10) / 10)) : 1;
+  try { localStorage.setItem('studyhub_zoom', studyZoom); } catch (e) {}
+  document.documentElement.style.setProperty('--z', studyZoom);
+  const l = document.getElementById('zoom-label');
+  if (l) l.textContent = Math.round(studyZoom * 100) + '%';
+}
+document.documentElement.style.setProperty('--z', studyZoom);
+
 function chapterViewModeHtml() {
   if (contentTab !== 'notes' && contentTab !== 'questions' && contentTab !== 'qa' && contentTab !== 'numerical') return '';
   return `<div class="chapter-view-toggle" role="group" aria-label="View mode">
     <button type="button" class="view-mode-btn ${chapterViewMode === 'pager' ? 'active' : ''}" onclick="setChapterViewMode('pager')" title="Show one note or question at a time">📄 One at a time</button>
     <button type="button" class="view-mode-btn ${chapterViewMode === 'scroll' ? 'active' : ''}" onclick="setChapterViewMode('scroll')" title="Scroll through all items continuously">📜 Continuous scroll</button>
+    <span class="zoom-ctl"><button type="button" class="view-mode-btn" onclick="setZoom(-0.1)" title="Smaller text">A−</button><button type="button" class="view-mode-btn" id="zoom-label" onclick="setZoom(0)" title="Reset zoom">${Math.round(studyZoom * 100)}%</button><button type="button" class="view-mode-btn" onclick="setZoom(0.1)" title="Bigger text">A+</button></span>
   </div>`;
 }
 
@@ -3095,7 +3107,7 @@ function renderRevisionHub(el) {
   } else if (revisionTab === 'cards') {
     bodyHtml = `<div id="fc-host">${flashcardHtml()}</div>`;
   } else if (revisionTab === 'mynotes') {
-    bodyHtml = `<div class="revision-list">${list.map(renderMyNotesItem).join('')}</div>`;
+    bodyHtml = `${clippingsButtonsHtml()}<div class="revision-list">${list.map(renderMyNotesItem).join('')}</div>`;
   } else {
     const quizActions = revisionTab === 'bookmarks'
       ? (markedQuestions.length
@@ -4485,7 +4497,8 @@ function clearAdvanceReading() {
 }
 
 // ===== MY HIGHLIGHTS + MY NOTES =====
-// studyAnnotations[noteId] = { hl: [{ t: 'selected text', c: 'y'|'g'|'r' }], my: 'own words' }
+// studyAnnotations[noteId] = { hl: [{ t, c: 'y'|'g'|'r', at }], my, myAt, pn: {key: {q, t, at}}, dead: {key: deletedAt} }
+// `at` stamps + `dead` tombstones let _mergeAnnot make the newest change win across devices (deletes too).
 // Highlights are painted with the CSS Custom Highlight API (no DOM changes), matched by text.
 const HL_COLORS = { y: '⭐ Key', g: '✅ Got it', r: '❓ Confusing' };
 const myNotesOpen = new Set();
@@ -4501,7 +4514,7 @@ function _annot(noteId) { return studyAnnotations[noteId] || { hl: [], my: '' };
 function _hlKey(s) { return String(s || '').replace(/\s+/g, '').toLowerCase(); }
 
 function _setAnnot(noteId, a) {
-  if (!a.hl.length && !(a.my || '').trim()) delete studyAnnotations[noteId];
+  if (!a.hl.length && !(a.my || '').trim() && !Object.keys(a.pn || {}).length && !Object.keys(a.dead || {}).length && !a.myAt) delete studyAnnotations[noteId];
   else studyAnnotations[noteId] = a;
   saveAnnotations();
 }
@@ -4509,7 +4522,7 @@ function _setAnnot(noteId, a) {
 function _hlTextNodes(root) {
   const out = [];
   const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-    acceptNode: n => n.parentElement.closest('.my-notes, button, textarea, .xref-bar') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+    acceptNode: n => n.parentElement.closest('.my-notes, .para-note, button, textarea, .xref-bar') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
   });
   while (w.nextNode()) out.push(w.currentNode);
   return out;
@@ -4517,6 +4530,7 @@ function _hlTextNodes(root) {
 
 /** Repaint every highlight for note cards currently on screen. */
 function applyHighlights() {
+  paraNotesAfterRender();
   if (!window.CSS || !CSS.highlights || typeof Highlight === 'undefined') return;
   const sets = { y: new Highlight(), g: new Highlight(), r: new Highlight() };
   document.querySelectorAll('.note-block[id^="note-"]').forEach(card => {
@@ -4568,7 +4582,7 @@ function _onSelectionChange() {
   const text = sel && !sel.isCollapsed ? sel.toString().trim() : '';
   const el = n => n && (n.nodeType === 1 ? n : n.parentElement);
   const body = text.length >= 2 && el(sel.anchorNode) && el(sel.anchorNode).closest('.note-block .note-body');
-  if (!body || !body.contains(sel.focusNode) || el(sel.anchorNode).closest('.my-notes, textarea')) {
+  if (!body || !body.contains(sel.focusNode) || el(sel.anchorNode).closest('.my-notes, .para-note, textarea')) {
     if (bar) bar.classList.remove('show');
     return;
   }
@@ -4585,12 +4599,15 @@ function _onSelectionChange() {
 let _selTimer = null;
 document.addEventListener('selectionchange', () => { clearTimeout(_selTimer); _selTimer = setTimeout(_onSelectionChange, 250); });
 
+const _now = () => new Date().toISOString();
+function _tomb(a, key) { a.dead = a.dead || {}; a.dead[key] = _now(); }
+
 function highlightSelection(noteId, text, c) {
   const a = _annot(noteId);
   const key = _hlKey(text);
-  // Replace any highlight that overlaps this one.
-  a.hl = a.hl.filter(h => { const k = _hlKey(h.t); return !(k.includes(key) || key.includes(k)); });
-  if (c !== 'x') a.hl.push({ t: text, c });
+  // Replace any highlight that overlaps this one (the old ones are tombstoned so other devices drop them too).
+  a.hl = a.hl.filter(h => { const k = _hlKey(h.t); const hit = k.includes(key) || key.includes(k); if (hit) _tomb(a, k); return !hit; });
+  if (c !== 'x') { a.hl.push({ t: text, c, at: _now() }); if (a.dead) delete a.dead[key]; }
   _setAnnot(noteId, a);
   const sel = window.getSelection();
   if (sel) sel.removeAllRanges();
@@ -4602,14 +4619,84 @@ function highlightSelection(noteId, text, c) {
 
 function removeHighlight(noteId, i) {
   const a = _annot(noteId);
+  _tomb(a, _hlKey(a.hl[i].t));
   a.hl.splice(i, 1);
   _setAnnot(noteId, a);
   if (currentView === 'revision') renderMain(); else updateNoteCard(noteId);
 }
 
+// Per-paragraph notes: a.pn = { first-40-letters-of-paragraph: { q: paragraph start, t: note } }.
+const _paraKey = txt => _hlKey(txt).slice(0, 40);
+const PARA_SEL = '.note-content-lead p, .note-content-body p, .note-content-lead li:not(:has(li)), .note-content-body li:not(:has(li))';
+
+function paraNotesAfterRender() {
+  document.querySelectorAll('.note-block[id^="note-"] .note-body').forEach(body => {
+    body.querySelectorAll('.para-note').forEach(e => e.remove());
+    const id = body.closest('.note-block').id.slice(5);
+    const pn = (studyAnnotations[id] || {}).pn || {};
+    body.querySelectorAll(PARA_SEL).forEach(p => {
+      if (p.closest('li') && p.tagName === 'P') return;
+      const txt = p.textContent.trim();
+      if (txt.length < 25) return;
+      const k = _paraKey(txt), t = (pn[k] || {}).t || '';
+      const w = document.createElement('div');
+      w.className = 'para-note' + (t ? ' has-note open' : '');
+      w.dataset.k = k;
+      w.dataset.q = txt.slice(0, 90);
+      w.innerHTML = `<button type="button" class="pn-btn" title="Write a note about this paragraph" onclick="this.parentNode.classList.toggle('open');this.parentNode.querySelector('textarea').focus()">📝 My note</button>
+        <textarea rows="2" placeholder="My note on this paragraph…" oninput="saveParaNote('${id}', this.parentNode)">${escHtml(t)}</textarea>`;
+      p.tagName === 'LI' ? p.appendChild(w) : p.after(w);
+    });
+  });
+}
+
+function saveParaNote(noteId, w) {
+  const a = _annot(noteId);
+  a.pn = a.pn || {};
+  const t = w.querySelector('textarea').value;
+  if (t.trim()) { a.pn[w.dataset.k] = { q: w.dataset.q, t, at: _now() }; if (a.dead) delete a.dead['p:' + w.dataset.k]; }
+  else if (a.pn[w.dataset.k]) { delete a.pn[w.dataset.k]; _tomb(a, 'p:' + w.dataset.k); }
+  w.classList.toggle('has-note', !!t.trim());
+  _setAnnot(noteId, a);
+}
+
+/** Newest change wins per highlight / paragraph note / own-words note; a later tombstone beats an older copy. */
+function _mergeAnnot(m, t) {
+  const at = x => (x && x.at) || '';
+  const laterSrs = (x, y) => (x && x.srs && (!y || !y.srs || x.srs.next >= y.srs.next)) ? x.srs : (y && y.srs);
+  const mine = { hl: {}, pn: m.pn || {} }, theirs = { hl: {}, pn: t.pn || {} };
+  (m.hl || []).forEach(h => (mine.hl[_hlKey(h.t)] = h));
+  (t.hl || []).forEach(h => (theirs.hl[_hlKey(h.t)] = h));
+  const dm = m.dead || {}, dt = t.dead || {};
+  const dead = {}, res = { hl: {}, pn: {} };
+  const keys = new Set([...Object.keys(mine.hl), ...Object.keys(theirs.hl), ...Object.keys(dm), ...Object.keys(dt)]);
+  new Set([...Object.keys(mine.pn), ...Object.keys(theirs.pn)]).forEach(k => keys.add('p:' + k));
+  keys.forEach(k => {
+    const kind = k.startsWith('p:') ? 'pn' : 'hl', kk = kind === 'pn' ? k.slice(2) : k;
+    const a = mine[kind][kk], b = theirs[kind][kk];
+    let best = a;
+    if (b && (!a || at(b) > at(a))) best = b;
+    const d = [dm[k], dt[k]].filter(Boolean).sort().pop() || '';
+    if (best && at(best) >= d) {
+      res[kind][kk] = Object.assign({}, best);
+      const srs = laterSrs(a, b);
+      if (srs) res[kind][kk].srs = srs;
+    } else if (d) dead[k] = d;
+  });
+  const out = { hl: Object.values(res.hl), pn: res.pn, dead };
+  const useTheirs = (t.myAt || '') > (m.myAt || '') || (!(t.myAt || m.myAt) && !(m.my || '').trim());
+  out.my = useTheirs ? (t.my || '') : (m.my || '');
+  out.myAt = useTheirs ? t.myAt : m.myAt;
+  const mySrs = laterSrs({ srs: m.mySrs }, { srs: t.mySrs });
+  if (mySrs) out.mySrs = mySrs;
+  if (!out.myAt) delete out.myAt;
+  return out;
+}
+
 function saveMyNote(noteId, text) {
   const a = _annot(noteId);
   a.my = text;
+  a.myAt = _now();
   _setAnnot(noteId, a);
 }
 
@@ -4629,8 +4716,53 @@ function myNotesPanelHtml(n) {
   </details>`;
 }
 
+/** Kindle-style "My Clippings" as Markdown. topicId = one chapter, none = every chapter with clippings. */
+function clippingsMarkdown(topicId) {
+  const notes = getAnnotatedNotes().filter(n => !topicId || n.topicId === topicId);
+  const byTopic = {};
+  notes.forEach(n => (byTopic[n.topicId] = byTopic[n.topicId] || []).push(n));
+  const label = { y: 'Key', g: 'Got it', r: 'Confusing' };
+  const out = [];
+  Object.entries(byTopic).forEach(([tid, list]) => {
+    const t = appData.topics.find(x => x.id === tid) || {};
+    const subj = (appData.subjects.find(x => x.id === t.subjectId) || {}).name || '';
+    out.push(`# ${t.name || tid}`, subj ? `_${subj} · Class 8 · exported ${new Date().toISOString().slice(0, 10)}_` : '', '');
+    list.forEach(n => {
+      const a = _annot(n.id);
+      const pg = typeof NOTE_PAGES !== 'undefined' && NOTE_PAGES[n.id];
+      out.push(`## ${n.subtopic || 'Note'}${pg ? ` (${pg})` : ''}`, '');
+      a.hl.forEach(h => out.push(`> ${h.t.replace(/\s*\n\s*/g, ' ')}`, `— ${label[h.c] || 'Highlight'}`, ''));
+      Object.values(a.pn || {}).forEach(x => out.push(`> ${x.q}…`, '', `**My note:** ${x.t.trim()}`, ''));
+      if ((a.my || '').trim()) out.push('**My note:**', '', a.my.trim(), '');
+    });
+  });
+  return out.join('\n').replace(/\n{3,}/g, '\n\n');
+}
+
+function downloadClippings(topicId) {
+  const md = clippingsMarkdown(topicId);
+  if (!md.trim()) return showToast('info', 'No highlights or notes to export yet');
+  const t = appData.topics.find(x => x.id === topicId);
+  const name = t ? t.name.replace(/[^\w]+/g, '-').replace(/^-|-$/g, '') : 'My-Clippings';
+  const url = URL.createObjectURL(new Blob([md], { type: 'text/markdown' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = name + '.md';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showToast('success', '📥 ' + name + '.md downloaded');
+}
+
+function clippingsButtonsHtml() {
+  const ids = [...new Set(getAnnotatedNotes().map(n => n.topicId))];
+  return `<div class="revision-actions">
+    <button class="btn btn-primary" onclick="downloadClippings()">⬇ My Clippings (.md, all chapters)</button>
+    ${ids.map(id => { const t = appData.topics.find(x => x.id === id); return t ? `<button class="btn btn-sm btn-outline" onclick="downloadClippings('${id}')">⬇ ${t.icon || ''} ${escHtml(t.name)}</button>` : ''; }).join('')}
+  </div>`;
+}
+
 function getAnnotatedNotes() {
   return Object.keys(studyAnnotations)
+    .filter(id => { const a = studyAnnotations[id]; return a.hl.length || (a.my || '').trim() || Object.keys(a.pn || {}).length; })
     .map(id => appData.content.find(c => c.id === id && c.type === 'note'))
     .filter(Boolean);
 }
@@ -4642,6 +4774,7 @@ function renderMyNotesItem(n) {
     <div class="rev-meta">${topic ? topic.icon + ' ' + escHtml(topic.name) : ''} <span class="rev-badge note">My notes</span></div>
     <div class="rev-q"><strong>${escHtml(n.subtopic || 'Note')}</strong></div>
     ${_hlChipsHtml(n.id, a)}
+    ${Object.values(a.pn || {}).map(x => `<div class="my-notes-read"><em>${escHtml(x.q)}…</em><br>${escHtml(x.t)}</div>`).join('')}
     ${(a.my || '').trim() ? `<div class="my-notes-read">${escHtml(a.my)}</div>` : ''}
     <div class="rev-actions">
       <button class="btn btn-sm btn-primary" onclick="selectedTopic='${n.topicId}';jumpToNote('${n.id}')">Open note</button>
@@ -6843,12 +6976,7 @@ function applyImportedData(imp, mode, options) {
   }
   if (imp.annotations && typeof imp.annotations === 'object') {
     Object.entries(imp.annotations).forEach(([id, a]) => {
-      const mine = _annot(id);
-      const keys = new Set(mine.hl.map(h => _hlKey(h.t)));
-      studyAnnotations[id] = {
-        hl: mine.hl.concat((a.hl || []).filter(h => !keys.has(_hlKey(h.t)))),
-        my: (mine.my || '').trim() ? mine.my : (a.my || '')
-      };
+      studyAnnotations[id] = _mergeAnnot(_annot(id), a);
     });
     saveAnnotations();
   }
