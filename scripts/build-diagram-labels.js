@@ -9,6 +9,7 @@
  *
  * Hand review lives in scripts/diagram-label-fixes.json:
  *   { "<image path>": { "keep": true, "fix": { "OCR text": "right text" }, "drop": ["text", …] } }
+ *   or { "keep": true, "labels": [{ t, x, y, w, h }, …] } to place labels by hand (box in %) when OCR is too poor.
  * Only images with "keep": true are shipped, so a new figure never goes live unreviewed.
  * `--all` writes every candidate (for reviewing in the app).
  *
@@ -77,6 +78,7 @@ const out = {};
 ocr.forEach(row => {
   const fx = fixes[row.img] || {};
   if (!ALL && !fx.keep) return;
+  if (fx.labels) { out[row.img] = fx.labels; return; } // hand-placed (boxes already in %), for figures OCR reads badly
   let labels = labelsFor(row).map(l => ({ ...l, t: tidy(l.t) }));
   labels = labels
     .filter(l => !(fx.drop || []).includes(l.t))

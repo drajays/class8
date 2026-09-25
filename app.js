@@ -4529,7 +4529,7 @@ function renderLabelGame() {
     const chip = g.placed[s];
     const state = g.checked && chip !== undefined ? (right(s) ? ' ok' : ' bad') : '';
     return `<div class="lg-slot${state}${chip === undefined ? ' empty' : ''}" data-slot="${s}"
-      style="left:${l.x + l.w / 2}%;top:${l.y + l.h / 2}%;min-width:${l.w + 3}%;min-height:${l.h * 1.4}%">${chip === undefined ? '?' : _lgChipHtml(chip)}</div>`;
+      style="left:${l.x + l.w / 2}%;top:${l.y + l.h / 2}%;min-width:${l.w + 3}%;min-height:${Math.min(l.h * 1.4, l.h + 2)}%">${chip === undefined ? '?' : _lgChipHtml(chip)}</div>`;
   }).join('');
   const done = g.checked && nRight === g.labels.length;
   el.innerHTML = `

@@ -1562,6 +1562,7 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .lg-slot{ position:absolute; transform:translate(-50%,-50%); min-height:22px; padding:1px 3px; box-sizing:border-box;
   display:flex; align-items:center; justify-content:center; border-radius:7px; background:var(--surface);
   border:2px dashed var(--accent); color:var(--ink-3); font:700 .75rem var(--font-ui); white-space:nowrap; }
+.lg-slot:not(.empty){ z-index:1; } /* a filled slot grows to fit its word; keep it readable over neighbours */
 .lg-slot.ok{ border:2px solid var(--success); background:#e6f7ee; }
 .lg-slot.bad{ border:2px solid var(--danger); background:#fdeceb; }
 /* Label text scales with the picture so boxes stay on their spot on a phone. */
