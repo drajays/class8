@@ -3162,6 +3162,7 @@ function switchContentTab(tab) {
 
 function switchMindMapPart(idx) {
   mindMapIndex = idx;
+  mindBuild = null;
   renderMindMap(chapterMindmap(selectedTopic));
 }
 
@@ -3187,6 +3188,7 @@ function renderMindMap(mmData) {
   }
   const maps = mmData.maps;
   const map = maps[Math.min(mindMapIndex, maps.length - 1)];
+  const building = mindBuild && mindBuild.topicId === selectedTopic && mindBuild.part === mindMapIndex;
   const mapTabs = maps.length > 1
     ? `<div class="mindmap-part-tabs">${maps.map((m, i) =>
         `<div class="q-tab ${mindMapIndex === i ? 'active' : ''}" onclick="switchMindMapPart(${i})">${escHtml(m.title)}</div>`
@@ -3235,15 +3237,127 @@ function renderMindMap(mmData) {
     <div class="mindmap-wrap fade-in">
       <div class="mm-toolbar">
         <p class="lead mm-lead">The whole of <strong>${escHtml(mmData.chapterTitle)}</strong> on one page. Read it centre → branches → points.</p>
-        <label class="tl-toggle"><input type="checkbox" ${mindMapQuizMode ? 'checked' : ''} onchange="mindMapQuizMode=this.checked;renderMindMap(chapterMindmap(selectedTopic))"> 🙈 Self-test: hide points, tap to reveal</label>
+        ${building ? '' : `<label class="tl-toggle"><input type="checkbox" ${mindMapQuizMode ? 'checked' : ''} onchange="mindMapQuizMode=this.checked;renderMindMap(chapterMindmap(selectedTopic))"> 🙈 Self-test: hide points, tap to reveal</label>
+        ${map.branches.filter(b => (b.concepts || []).length).length >= 2 ? '<button class="btn btn-primary" onclick="startMindBuild()">🧩 Build it yourself</button>' : ''}`}
       </div>
       ${mapTabs}
-      ${flowHtml}
+      ${building ? `<div id="mb-host" onpointerdown="_mbPointerDown(event)">${mindBuildHtml(map)}</div>` : `${flowHtml}
       <div class="mm-map${mindMapQuizMode ? ' mm-quiz' : ''}">
         <div class="mm-root"><span class="mm-root-icon">🧠</span><span>${escHtml(map.center)}</span></div>
         <ul class="mm-kids">${branchHtml}</ul>
+      </div>`}
+    </div>`;
+}
+
+// ===== BUILD THE MIND MAP (drag points onto their branches) =====
+// Branch titles stay; their points are shuffled into a bank. A point is right on any branch that has the same text.
+let mindBuild = null; // { topicId, part, items: [{ t, b }], bank: [i], placed: { i: branch }, sel, checked }
+
+function startMindBuild() {
+  const mm = chapterMindmap(selectedTopic);
+  const map = mm && mm.maps[Math.min(mindMapIndex, mm.maps.length - 1)];
+  if (!map) return;
+  const perBranch = map.branches.length > 7 ? 3 : 4; // keep the bank to ~25 points
+  const items = [];
+  map.branches.forEach((b, bi) => (b.concepts || []).slice(0, perBranch).forEach(t => items.push({ t, b: bi })));
+  mindBuild = { topicId: selectedTopic, part: mindMapIndex, items, bank: _shuffle(items.map((_, i) => i)), placed: {}, sel: null, checked: false };
+  renderMindMap(mm);
+}
+
+function _mbRight(i) {
+  const g = mindBuild;
+  return g.items.some(x => x.t === g.items[i].t && x.b === g.placed[i]);
+}
+
+function _mbPlace(i, branch) {
+  const g = mindBuild;
+  g.bank = g.bank.filter(x => x !== i);
+  delete g.placed[i];
+  if (branch >= 0) g.placed[i] = branch; else g.bank.push(i);
+  g.sel = null;
+  g.checked = false;
+  _mbRedraw();
+}
+
+function _mbChipHtml(i) {
+  const g = mindBuild;
+  const state = g.checked && g.placed[i] !== undefined ? (_mbRight(i) ? ' ok' : ' bad') : '';
+  return `<span class="lg-chip mb-chip${g.sel === i ? ' sel' : ''}${state}" data-item="${i}">${escHtml(g.items[i].t)}</span>`;
+}
+
+function mindBuildHtml(map) {
+  const g = mindBuild;
+  const placedCount = Object.keys(g.placed).length;
+  const nRight = Object.keys(g.placed).filter(i => _mbRight(+i)).length;
+  const done = g.checked && nRight === g.items.length;
+  const branches = map.branches.map((b, bi) => {
+    const need = g.items.filter(x => x.b === bi).length;
+    if (!need) return '';
+    const here = Object.keys(g.placed).filter(i => g.placed[i] === bi).map(Number);
+    return `<li class="mm-kid">
+      <div class="mm-node ${b.color || 'mm-c' + ((bi % 7) + 1)}"><span class="mm-node-num">${bi + 1}</span>${escHtml(b.label)}</div>
+      <div class="mb-drop" data-branch="${bi}">${here.map(_mbChipHtml).join('') || `<span class="mb-hint">Drop ${need} point${need > 1 ? 's' : ''} here</span>`}</div>
+    </li>`;
+  }).join('');
+  return `
+    <div class="mb-bar">
+      <strong>🧩 Build the map:</strong> drag each point to its branch — or tap a point, then tap a branch.
+      <span class="mb-count">${placedCount}/${g.items.length} placed</span>
+    </div>
+    <div class="mm-map">
+      <div class="mm-root"><span class="mm-root-icon">🧠</span><span>${escHtml(map.center)}</span></div>
+      <ul class="mm-kids">${branches}</ul>
+    </div>
+    <div class="mb-bank-wrap">
+      <div class="lg-bank mb-bank" data-branch="-1">${g.bank.map(_mbChipHtml).join('') || (done ? '' : '<span class="lg-hint">All points placed — press Check!</span>')}</div>
+      <div class="lg-foot">
+        ${done ? '<span class="lg-score good">🎉 You built the whole map! Counted as a revision.</span>'
+          : g.checked ? `<span class="lg-score">✅ ${nRight} of ${g.items.length} right</span>` : ''}
+        ${g.checked && !done ? '<button class="btn btn-outline" onclick="_mbTakeBackWrong()">↩ Take back wrong ones</button>' : ''}
+        ${done ? '<button class="btn btn-outline" onclick="startMindBuild()">🔄 Build again</button>'
+          : `<button class="btn btn-primary" onclick="_mbCheck()" ${placedCount ? '' : 'disabled'}>✅ Check</button>`}
+        <button class="btn btn-outline" onclick="mindBuild=null;renderMindMap(chapterMindmap(selectedTopic))">🧠 See the full map</button>
       </div>
     </div>`;
+}
+
+function _mbRedraw() {
+  const host = document.getElementById('mb-host');
+  const mm = chapterMindmap(selectedTopic);
+  if (host && mindBuild) host.innerHTML = mindBuildHtml(mm.maps[mindBuild.part]);
+  else renderMindMap(mm);
+}
+
+function _mbCheck() {
+  const g = mindBuild;
+  g.checked = true;
+  if (g.items.every((_, i) => _mbRight(i))) {
+    logChapterRevision(g.topicId);
+    if (typeof princessOnCorrectAnswer === 'function') princessOnCorrectAnswer('mindbuild:' + g.topicId);
+  }
+  _mbRedraw();
+}
+
+function _mbTakeBackWrong() {
+  const g = mindBuild;
+  Object.keys(g.placed).map(Number).filter(i => !_mbRight(i)).forEach(i => { delete g.placed[i]; g.bank.push(i); });
+  g.checked = false;
+  _mbRedraw();
+}
+
+function _mbPointerDown(e) {
+  const g = mindBuild;
+  if (!g || e.button > 0) return;
+  const chipEl = e.target.closest('.mb-chip');
+  if (!chipEl) {
+    const zone = e.target.closest('[data-branch]');
+    if (g.sel !== null && zone) _mbPlace(g.sel, +zone.dataset.branch);
+    return;
+  }
+  const i = +chipEl.dataset.item;
+  _chipDrag(e, chipEl, '#mb-host [data-branch]',
+    el => el ? _mbPlace(i, +el.dataset.branch) : _mbRedraw(),
+    () => { g.sel = g.sel === i ? null : i; _mbRedraw(); });
 }
 
 function highlightMindBranch(branchId) {
@@ -4354,26 +4468,19 @@ function _lgClick(e) {
   if (e.target === e.currentTarget) return closeLabelGame(); // tap on the dimmed backdrop
 }
 
-// One handler for drag and tap: a press that barely moves is a tap.
-function _lgPointerDown(e) {
-  const g = labelGame;
-  if (!g || e.button > 0) return;
-  const chipEl = e.target.closest('.lg-chip');
-  const slotEl = e.target.closest('[data-slot]');
-  if (!chipEl) {
-    // Tap on a box or the bank with a word selected → place it there.
-    if (g.sel !== null && slotEl) _lgPlace(g.sel, +slotEl.dataset.slot);
-    return;
-  }
+/**
+ * Drag-or-tap for a word chip (label game and mind-map builder). A press that barely moves is a tap.
+ * onDrop(targetEl) gets the element matching dropSelector under the finger, or null.
+ */
+function _chipDrag(e, chipEl, dropSelector, onDrop, onTap) {
   e.preventDefault();
-  const chip = +chipEl.dataset.chip;
   const x0 = e.clientX, y0 = e.clientY;
   let ghost = null;
   const move = ev => {
     if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) < 6) return;
     if (!ghost) {
       ghost = chipEl.cloneNode(true);
-      ghost.className = 'lg-chip lg-ghost';
+      ghost.classList.add('chip-ghost');
       document.body.appendChild(ghost);
       chipEl.classList.add('dragging');
     }
@@ -4384,16 +4491,31 @@ function _lgPointerDown(e) {
     document.removeEventListener('pointermove', move);
     document.removeEventListener('pointerup', up);
     document.removeEventListener('pointercancel', up);
-    if (!ghost) { g.sel = g.sel === chip ? null : chip; return renderLabelGame(); }
+    if (!ghost) return onTap();
     ghost.remove();
+    chipEl.classList.remove('dragging');
     const target = ev.type === 'pointerup' && document.elementFromPoint(ev.clientX, ev.clientY);
-    const dropSlot = target && target.closest('#label-game [data-slot]');
-    if (dropSlot) _lgPlace(chip, +dropSlot.dataset.slot);
-    else renderLabelGame();
+    onDrop(target ? target.closest(dropSelector) : null);
   };
   document.addEventListener('pointermove', move);
   document.addEventListener('pointerup', up);
   document.addEventListener('pointercancel', up);
+}
+
+function _lgPointerDown(e) {
+  const g = labelGame;
+  if (!g || e.button > 0) return;
+  const chipEl = e.target.closest('.lg-chip');
+  if (!chipEl) {
+    // Tap on a box or the bank with a word selected → place it there.
+    const slotEl = e.target.closest('[data-slot]');
+    if (g.sel !== null && slotEl) _lgPlace(g.sel, +slotEl.dataset.slot);
+    return;
+  }
+  const chip = +chipEl.dataset.chip;
+  _chipDrag(e, chipEl, '#label-game [data-slot]',
+    el => el ? _lgPlace(chip, +el.dataset.slot) : renderLabelGame(),
+    () => { g.sel = g.sel === chip ? null : chip; renderLabelGame(); });
 }
 
 function startDiagramQuiz(imagePath) {
