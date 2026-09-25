@@ -2510,6 +2510,7 @@ function renderMain() {
   else if (currentView === 'exam') renderExamView(main);
   else if (currentView === 'offline') renderOfflineView(main);
   else if (currentView === 'timeline') renderMasterTimeline(main);
+  ttsAfterRender(); // other views, other tabs: the note being read is gone, so this stops it
   requestAnimationFrame(function () {
     main.scrollTop = 0;
     const fade = main.querySelector('.fade-in');
@@ -3967,6 +3968,126 @@ function flashcardHtml() {
   </div>`;
 }
 
+// ===== READ ALOUD (browser speech, sentence by sentence) =====
+// Each sentence is its own utterance: Chrome cuts long ones off, and it lets us highlight the sentence being read.
+let ttsNoteId = null;
+let ttsRanges = []; // one per queued sentence; swapped for fresh ranges when the card is redrawn
+
+function ttsSupported() { return 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined'; }
+
+function _ttsVoice() {
+  const voices = speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang));
+  return voices.find(v => /en-IN/i.test(v.lang)) || voices.find(v => /en-GB/i.test(v.lang)) || voices.find(v => v.default) || voices[0] || null;
+}
+
+/** The nearest block-level ancestor: text in different blocks is never one sentence. */
+function _ttsBlock(el) {
+  while (el && /^inline/.test(getComputedStyle(el).display)) el = el.parentElement;
+  return el;
+}
+
+/** Sentences of a note card as DOM ranges, in reading order (visible text only). */
+function _ttsSentences(card) {
+  const skip = '.page-chip, .src-chip, .link-count, .adv-read-empty, .adv-read-meta, .advance-reading-toggle, .tts-btn';
+  const out = [];
+  [card.querySelector('.note-head h3'), card.querySelector('.note-body')].forEach(root => {
+    if (!root) return;
+    let flat = '';
+    const map = [];
+    let lastBlock = null, lastNode = null;
+    _hlTextNodes(root).forEach(node => {
+      const el = node.parentElement;
+      if (el.closest(skip) || !el.getClientRects().length) return; // hidden (collapsed sections) or UI chips
+      const block = _ttsBlock(el);
+      let brk = lastBlock && block !== lastBlock;
+      if (!brk && lastNode) { // a <br> between two text nodes of the same block is a line break too
+        const gap = new Range();
+        gap.setStartAfter(lastNode); gap.setEndBefore(node);
+        brk = !!gap.cloneContents().querySelector('br');
+      }
+      if (brk) { flat += '\n'; map.push(null); }
+      lastBlock = block; lastNode = node;
+      for (let i = 0; i < node.nodeValue.length; i++) { flat += node.nodeValue[i]; map.push([node, i]); }
+    });
+    // Break after . ! ? + space (not inside "1." or "e.g." style stubs) and at every block break.
+    let from = 0;
+    const cut = to => {
+      const raw = flat.slice(from, to);
+      const text = raw.trim();
+      const start = from + raw.indexOf(text[0]);
+      from = to;
+      if (!text || !/[A-Za-z0-9]/.test(text)) return;
+      const end = start + text.length - 1;
+      if (!map[start] || !map[end]) return;
+      const r = new Range();
+      r.setStart(map[start][0], map[start][1]);
+      r.setEnd(map[end][0], map[end][1] + 1);
+      out.push({ text, range: r });
+    };
+    for (let i = 0; i < flat.length; i++) {
+      if (flat[i] === '\n') cut(i);
+      else if (/[.!?]/.test(flat[i]) && /\s/.test(flat[i + 1] || ' ') && flat.slice(from, i).trim().length > 4) cut(i + 1);
+    }
+    cut(flat.length);
+  });
+  return out;
+}
+
+function _ttsMark(range) {
+  if (!window.CSS || !CSS.highlights || typeof Highlight === 'undefined') return;
+  if (range) CSS.highlights.set('tts', new Highlight(range)); else CSS.highlights.delete('tts');
+}
+
+function stopReadAloud() {
+  if (!ttsSupported()) return;
+  const was = ttsNoteId;
+  ttsNoteId = null;
+  speechSynthesis.cancel();
+  _ttsMark(null);
+  if (was) _ttsButton(was);
+}
+
+function _ttsButton(noteId) {
+  const b = document.querySelector(`#note-${CSS.escape(noteId)} .tts-btn`);
+  if (b) b.outerHTML = ttsButtonHtml(noteId);
+}
+
+function ttsButtonHtml(noteId) {
+  if (!ttsSupported()) return '';
+  const on = ttsNoteId === noteId;
+  return `<button class="btn btn-sm ${on ? 'btn-primary' : 'btn-outline'} tts-btn" onclick="event.stopPropagation();toggleReadAloud('${noteId}')" title="${on ? 'Stop reading' : 'Read this note aloud'}">${on ? '⏹ Stop' : '🔊 Read'}</button>`;
+}
+
+/** After any redraw: keep reading if the note is still on screen (re-point the highlight), else stop. */
+function ttsAfterRender() {
+  if (!ttsNoteId) return;
+  const card = document.getElementById('note-' + ttsNoteId);
+  if (!card) return stopReadAloud();
+  ttsRanges = _ttsSentences(card).map(s => s.range);
+  _ttsButton(ttsNoteId);
+}
+
+function toggleReadAloud(noteId) {
+  if (ttsNoteId === noteId) return stopReadAloud();
+  stopReadAloud();
+  const card = document.getElementById('note-' + noteId);
+  const sentences = card ? _ttsSentences(card) : [];
+  if (!sentences.length) return;
+  ttsNoteId = noteId;
+  ttsRanges = sentences.map(s => s.range);
+  _ttsButton(noteId);
+  const voice = _ttsVoice();
+  // Queue everything now, inside the tap: iPad only allows speech started from a user action.
+  sentences.forEach((s, i) => {
+    const u = new SpeechSynthesisUtterance(s.text);
+    if (voice) { u.voice = voice; u.lang = voice.lang; }
+    u.rate = 0.95;
+    u.onstart = () => { if (ttsNoteId === noteId) _ttsMark(ttsRanges[i]); };
+    if (i === sentences.length - 1) u.onend = () => { if (ttsNoteId === noteId) stopReadAloud(); };
+    speechSynthesis.speak(u);
+  });
+}
+
 function buildNoteCardHtml(n, displayNum) {
   const allQuestions = topicTextQuestions(selectedTopic);
   const XREF_TYPES = [['mcq','MCQ'], ['true_false','T/F'], ['fill_blank','Fill'], ['short_answer','Q&A']];
@@ -3992,6 +4113,7 @@ function buildNoteCardHtml(n, displayNum) {
       <div class="note-head">
         <div class="note-number">${displayNum}</div>
         <h3>${escHtml(n.subtopic)}${notePage(n) ? ` <span class="page-chip" title="Page in your textbook">📖 Book ${escHtml(notePage(n))}</span>` : ''}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
+        ${ttsButtonHtml(n.id)}
       </div>
       <div class="note-body">
         ${fiveWHtml(n.fiveW)}
@@ -4021,6 +4143,7 @@ function renderNotes() {
   if (chapterViewMode === 'scroll') {
     body.innerHTML = `<div class="notes-scroll-list">${notes.map((n, i) => buildNoteCardHtml(n, i + 1)).join('')}</div>`;
     applyHighlights();
+    ttsAfterRender();
     return;
   }
   noteIndex = clampCardIndex(noteIndex, notes.length);
@@ -4029,6 +4152,7 @@ function renderNotes() {
   body.innerHTML = `${pager}<div class="notes-single">${buildNoteCardHtml(n, noteIndex + 1)}</div>${pager}
     <p class="card-pager-hint">Use ← → arrow keys to move between notes</p>`;
   applyHighlights();
+  ttsAfterRender();
   // Snowy: start note-reading timer
   if (typeof snowyOnNoteRendered === 'function') snowyOnNoteRendered(n.id, selectedTopic);
   // Princess: award coin after 45s of reading
@@ -4640,6 +4764,7 @@ function updateNoteCard(noteId) {
   if (idx < 0) return;
   card.outerHTML = buildNoteCardHtml(note, idx + 1);
   applyHighlights();
+  ttsAfterRender();
 }
 
 function answerTF(id, val) {

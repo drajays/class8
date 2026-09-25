@@ -1594,3 +1594,9 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .mb-bank-wrap{ position:sticky; bottom:0; z-index:5; margin-top:14px; padding:8px 10px 10px; border-radius:var(--radius) var(--radius) 0 0;
   background:var(--surface); box-shadow:0 -6px 18px rgba(0,0,0,.08); }
 .mb-bank{ max-height:22vh; overflow-y:auto; margin:0 0 8px; justify-content:flex-start; }
+
+/* ---------- READ ALOUD ---------- */
+:root{ --tts:#cfe6ff; }
+[data-theme="dark"]{ --tts:#1f4a70; }
+::highlight(tts){ background-color:var(--tts); color:inherit; }
+.tts-btn{ flex:none; }
