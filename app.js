@@ -633,6 +633,8 @@ let revisionTab = 'mistakes'; // mistakes | due | bookmarks | mynotes | cards
 let studyAnnotations = {}; // noteId -> { hl: [{t, c}], my } — see MY HIGHLIGHTS + MY NOTES
 let studyRevisions = {}; // topicId -> { count, last: 'YYYY-MM-DD' } — one revision per chapter per day
 let studyExams = []; // see EXAM COUNTDOWN
+let studyTimetable = []; // see TIMETABLE
+let studyFocusLog = {}; // see FOCUS MODE
 let quizSession = null;
 
 function loadProgress() {
@@ -657,6 +659,13 @@ function loadProgress() {
     studyExams = JSON.parse(localStorage.getItem('studyhub_exams') || '[]');
     if (!Array.isArray(studyExams)) studyExams = [];
   } catch (e) { studyExams = []; }
+  try {
+    studyTimetable = JSON.parse(localStorage.getItem('studyhub_timetable') || '[]');
+    if (!Array.isArray(studyTimetable)) studyTimetable = [];
+  } catch (e) { studyTimetable = []; }
+  try {
+    studyFocusLog = JSON.parse(localStorage.getItem('studyhub_focus_log') || '{}') || {};
+  } catch (e) { studyFocusLog = {}; }
   try {
     studyAnnotations = JSON.parse(localStorage.getItem('studyhub_annotations') || '{}') || {};
   } catch (e) { studyAnnotations = {}; }
@@ -1264,8 +1273,230 @@ function examCountdownHtml() {
         <button class="exam-del" onclick="deleteExam('${x.id}')" title="Remove exam">✕</button>
       </div>
       ${todayHtml}
+      ${examPlanHtml(x)}
     </div>`;
   }).join('') + `<button class="exam-add-link" onclick="openExamForm()">＋ Add another exam</button>`;
+}
+
+function examPlanHtml(x) {
+  const st = examStatus(x);
+  const day = d => new Date(Date.now() + d * 864e5).toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' });
+  const name = id => { const t = appData.topics.find(y => y.id === id); return t ? `${t.icon || ''} ${escHtml(t.name)}` : ''; };
+  const rows = [[0, st.today]];
+  const left = st.left.slice(st.today.length);
+  for (let d = 1; d < st.days && left.length; d++) rows.push([d, left.splice(0, Math.ceil(left.length / (st.days - d)))]);
+  return `<details class="exam-plan"><summary>📋 Day-by-day plan</summary><ol>
+    ${rows.map(([d, ids]) => `<li><b>${d === 0 ? 'Today' : day(d)}</b> ${ids.length ? ids.map(name).join(', ') : '✅ done'}</li>`).join('')}
+    ${left.length ? `<li><b>Exam day</b> ${left.map(name).join(', ')} — too many for the days left, squeeze these in</li>` : ''}
+    <li class="exam-plan-day"><b>${st.days === 0 ? 'Today' : day(st.days)}</b> 📝 ${escHtml(x.name)}</li></ol></details>`;
+}
+
+// ===== FOCUS MODE =====
+// One run at a time, kept in localStorage so a reload doesn't lose it:
+//   focusRun = { label, slot, mins, phase: 'focus' | 'break', endAt, startedAt, distractions }
+// While focusing, body.focus-on hides the games (Snowy, Princess World); leaving the app counts as a distraction.
+// studyFocusLog = { 'YYYY-MM-DD': { mins, sessions, distractions, slots: [slotId] } } in studyhub_focus_log.
+const FOCUS_BREAK_MINS = 5;
+let focusRun = null, _focusTick = null, _wakeLock = null;
+try { focusRun = JSON.parse(localStorage.getItem('studyhub_focus_run')); } catch (e) {}
+
+function _saveFocusRun() {
+  try { focusRun ? localStorage.setItem('studyhub_focus_run', JSON.stringify(focusRun)) : localStorage.removeItem('studyhub_focus_run'); } catch (e) {}
+}
+function saveFocusLog() {
+  try { localStorage.setItem('studyhub_focus_log', JSON.stringify(studyFocusLog)); } catch (e) {}
+  markSyncDirty();
+}
+function focusToday() { return studyFocusLog[_localToday()] || { mins: 0, sessions: 0, distractions: 0, slots: [] }; }
+function _logFocus(mins, slot) {
+  const d = focusToday();
+  d.mins += mins;
+  d.distractions += focusRun.distractions;
+  if (slot !== undefined) { d.sessions++; if (slot && !d.slots.includes(slot)) d.slots.push(slot); }
+  studyFocusLog[_localToday()] = d;
+  saveFocusLog();
+}
+
+function openFocusForm() {
+  const sel = document.getElementById('focus-what');
+  sel.innerHTML = '<option value="">Anything</option>' + appData.subjects.map(s => `<option>${s.icon || ''} ${escHtml(s.name)}</option>`).join('');
+  openModal('modal-focus');
+}
+
+function startFocus(label, mins, slot) {
+  closeModal('modal-focus');
+  focusRun = { label: label || 'Study time', slot: slot || null, mins, phase: 'focus', startedAt: Date.now(), endAt: Date.now() + mins * 6e4, distractions: 0 };
+  _saveFocusRun();
+  // Must run inside the tap: browsers only allow fullscreen from a user action. (iPhone has no fullscreen; that's fine.)
+  if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => {});
+  _focusResume();
+  showToast('success', `🎯 ${mins} minutes of focus — games are hidden until the timer ends.`);
+}
+
+function _focusResume() {
+  if (!focusRun) return;
+  document.body.classList.toggle('focus-on', focusRun.phase === 'focus');
+  if (navigator.wakeLock && document.visibilityState === 'visible') navigator.wakeLock.request('screen').then(l => { _wakeLock = l; }).catch(() => {});
+  clearInterval(_focusTick);
+  _focusTick = setInterval(_focusUpdate, 1000);
+  _focusUpdate();
+}
+
+function _focusUpdate() {
+  let bar = document.getElementById('focus-bar');
+  if (!focusRun) { if (bar) bar.remove(); return; }
+  const left = focusRun.endAt - Date.now();
+  if (left <= 0) return focusRun.phase === 'focus' ? _focusFinished() : stopFocus();
+  if (!bar) { bar = document.createElement('div'); bar.id = 'focus-bar'; bar.setAttribute('role', 'timer'); document.body.appendChild(bar); }
+  if (bar.dataset.phase !== focusRun.phase) { // rebuild only on phase change, so the buttons stay tappable
+    bar.dataset.phase = focusRun.phase;
+    bar.innerHTML = focusRun.phase === 'focus'
+      ? `<span class="fb-what">🎯 ${escHtml(focusRun.label)}</span><span class="fb-time"></span><span class="fb-away" title="Times you left the app"></span><button onclick="stopFocus()">Stop</button>`
+      : `<span class="fb-what">☕ Break — stretch, drink water, say hi to Snowy</span><span class="fb-time"></span><button onclick="stopFocus()">Back to work</button>`;
+  }
+  bar.querySelector('.fb-time').textContent = `${Math.floor(left / 6e4)}:${String(Math.floor(left / 1000) % 60).padStart(2, '0')}`;
+  const away = bar.querySelector('.fb-away');
+  if (away) away.textContent = `📵 ${focusRun.distractions}`;
+}
+
+function _chime() {
+  try {
+    const c = new AudioContext(), o = c.createOscillator(), g = c.createGain();
+    o.frequency.value = 880;
+    g.gain.setValueAtTime(0.2, c.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 1.2);
+    o.connect(g).connect(c.destination);
+    o.start(); o.stop(c.currentTime + 1.2);
+  } catch (e) {}
+  if (navigator.vibrate) navigator.vibrate(300);
+}
+
+function _focusFinished() {
+  _logFocus(focusRun.mins, focusRun.slot);
+  const away = focusRun.distractions;
+  focusRun = { ...focusRun, phase: 'break', endAt: Date.now() + FOCUS_BREAK_MINS * 6e4 };
+  _saveFocusRun();
+  _chime();
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  _focusResume();
+  showToast('success', `🎉 ${focusRun.mins} minutes done${away ? '' : ' without leaving once'}! ${FOCUS_BREAK_MINS}-minute break.`);
+  if (currentView === 'home') renderMain();
+}
+
+function stopFocus() {
+  if (!focusRun) return;
+  if (focusRun.phase === 'focus') _logFocus(Math.floor((Date.now() - focusRun.startedAt) / 6e4)); // partial: minutes only
+  else if (focusRun.endAt <= Date.now()) _chime(); // break over
+  focusRun = null;
+  _saveFocusRun();
+  clearInterval(_focusTick);
+  document.body.classList.remove('focus-on');
+  if (_wakeLock) { _wakeLock.release().catch(() => {}); _wakeLock = null; }
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  _focusUpdate();
+  if (currentView === 'home') renderMain();
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (!focusRun || focusRun.phase !== 'focus') return;
+  if (document.hidden) { focusRun.distractions++; _saveFocusRun(); return; }
+  _focusResume(); // the screen wake lock is dropped while hidden
+  showToast('info', '👋 Welcome back — the timer kept going. Let\'s finish it!');
+});
+
+// ===== TIMETABLE =====
+// studyTimetable = [{ id, days: [0-6, Sunday = 0], start: 'HH:MM', mins, what, deleted? }] in studyhub_timetable.
+// what = a subject id, 'exam' (today's exam chapters) or 'daily' (Today's Revision).
+const TT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+function saveTimetable() {
+  try { localStorage.setItem('studyhub_timetable', JSON.stringify(studyTimetable)); } catch (e) {}
+  markSyncDirty();
+}
+function _ttLabel(what) {
+  if (what === 'exam') return '📅 Exam chapters';
+  if (what === 'daily') return "🚀 Today's Revision";
+  const s = appData.subjects.find(x => x.id === what);
+  return s ? `${s.icon || ''} ${s.name}` : 'Study';
+}
+function _ttTime(hhmm, plus = 0) {
+  const [h, m] = hhmm.split(':').map(Number), t = h * 60 + m + plus;
+  return new Date(2000, 0, 1, Math.floor(t / 60) % 24, t % 60).toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+}
+const _ttSlots = () => studyTimetable.filter(s => !s.deleted).sort((a, b) => a.start.localeCompare(b.start));
+
+function timetableCardHtml() {
+  const f = focusToday();
+  const focusBtn = `<button class="btn btn-sm btn-outline" onclick="openFocusForm()">🎯 Focus now</button>`;
+  const slots = _ttSlots().filter(s => s.days.includes(new Date().getDay()));
+  if (!_ttSlots().length) {
+    return `<div class="tt-card tt-empty"><span>🗓 Plan your study time with a weekly timetable</span>
+      <span><button class="btn btn-sm btn-primary" onclick="openTimetable()">Make timetable</button> ${focusBtn}</span></div>`;
+  }
+  const now = new Date(), nowMin = now.getHours() * 60 + now.getMinutes();
+  const rows = slots.map(s => {
+    const [h, m] = s.start.split(':').map(Number), st = h * 60 + m;
+    const done = f.slots.includes(s.id), live = !done && nowMin >= st && nowMin < st + s.mins;
+    const past = !done && nowMin >= st + s.mins;
+    return `<div class="tt-row${done ? ' done' : live ? ' now' : past ? ' past' : ''}">
+      <span class="tt-time">${_ttTime(s.start)}–${_ttTime(s.start, s.mins)}</span>
+      <span class="tt-what">${escHtml(_ttLabel(s.what))}</span>
+      ${done ? '<span class="tt-state">✅ Done</span>' : `<button class="btn btn-sm ${live ? 'btn-primary' : 'btn-outline'}" onclick="startSlot('${s.id}')">▶ ${live ? 'Start now' : 'Focus'}</button>`}
+    </div>`;
+  }).join('');
+  return `<div class="tt-card">
+    <div class="tt-head"><b>🗓 Today's timetable</b>
+      <span class="tt-stat">${f.mins ? `⏱ ${f.mins} min focused today` : ''}</span>
+      <span>${focusBtn} <button class="btn btn-sm btn-outline" onclick="openTimetable()">✏️ Edit</button></span></div>
+    ${rows || '<div class="tt-row past">Nothing planned today — enjoy, or tap Focus now.</div>'}
+  </div>`;
+}
+
+function startSlot(id) {
+  const s = studyTimetable.find(x => x.id === id);
+  if (!s) return;
+  startFocus(_ttLabel(s.what).replace(/^\S+ /, ''), s.mins, s.id);
+  if (s.what === 'exam') { const t = examChaptersForToday()[0]; if (t) _openChapter(t); }
+  else if (s.what === 'daily') startQuizSession('daily', null, DAILY_PLAN_SIZE);
+  else {
+    const sub = appData.subjects.find(x => x.id === s.what);
+    if (sub) { selectedClass = sub.classId; navigateTo('topics', sub.id); }
+  }
+}
+
+function openTimetable() {
+  const f = document.getElementById('tt-form');
+  f.what.innerHTML = appData.subjects.map(s => `<option value="${s.id}">${s.icon || ''} ${escHtml(s.name)}</option>`).join('') +
+    `<option value="exam">📅 Exam chapters (from the exam plan)</option><option value="daily">🚀 Today's Revision</option>`;
+  renderTimetableList();
+  openModal('modal-timetable');
+}
+
+function renderTimetableList() {
+  const slots = _ttSlots();
+  document.getElementById('tt-list').innerHTML = [1, 2, 3, 4, 5, 6, 0].map(d => {
+    const ss = slots.filter(s => s.days.includes(d));
+    return `<div class="tt-day"><b>${TT_DAYS[d]}</b><span>${ss.map(s => `<span class="tt-chip">${_ttTime(s.start)} ${escHtml(_ttLabel(s.what))} · ${s.mins}m
+      <button type="button" onclick="deleteSlot('${s.id}')" title="Remove">✕</button></span>`).join('') || '<i>free</i>'}</span></div>`;
+  }).join('');
+}
+
+function addSlotFromForm(f) {
+  const days = [...f.querySelectorAll('input[name=d]:checked')].map(i => +i.value);
+  if (!days.length) return showToast('error', 'Pick at least one day.');
+  studyTimetable.push({ id: 'tt' + Date.now(), days, start: f.start.value, mins: +f.mins.value, what: f.what.value });
+  saveTimetable();
+  renderTimetableList();
+  showToast('success', 'Added to your timetable.');
+  if (currentView === 'home') renderMain();
+}
+
+function deleteSlot(id) {
+  const s = studyTimetable.find(x => x.id === id);
+  if (!s) return;
+  s.deleted = true; // marker, so a sync merge doesn't bring it back
+  saveTimetable();
+  renderTimetableList();
+  if (currentView === 'home') renderMain();
 }
 
 function startQuizSession(source, topicId, count) {
@@ -2899,6 +3130,7 @@ function renderHome(el) {
       ${name ? `<button class="hello-edit" onclick="localStorage.removeItem('studyhub_name');renderMain()" title="Change name">✏️</button>` : ''}
     </div>`;
   const dashHtml = `
+    ${timetableCardHtml()}
     ${examCountdownHtml()}
     ${dailyRevisionCardHtml()}
     ${continueHtml}
@@ -5712,6 +5944,8 @@ function buildSyncPayload() {
     activity: studyActivity,
     revisions: studyRevisions,
     exams: studyExams,
+    timetable: studyTimetable,
+    focusLog: studyFocusLog,
     annotations: studyAnnotations,
     questionRatings: questionRatings
   };
@@ -5745,6 +5979,8 @@ function buildCloudSyncPayload() {
     activity: studyActivity,
     revisions: studyRevisions,
     exams: studyExams,
+    timetable: studyTimetable,
+    focusLog: studyFocusLog,
     annotations: studyAnnotations,
     questionRatings: questionRatings
   };
@@ -5843,6 +6079,8 @@ function applyImportedData(imp, mode, options) {
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
     if (imp.revisions && typeof imp.revisions === 'object') { studyRevisions = imp.revisions; saveRevisions(); }
     if (Array.isArray(imp.exams)) { studyExams = imp.exams; saveExams(); }
+    if (Array.isArray(imp.timetable)) { studyTimetable = imp.timetable; saveTimetable(); }
+    if (imp.focusLog && typeof imp.focusLog === 'object') { studyFocusLog = imp.focusLog; saveFocusLog(); }
     if (imp.annotations && typeof imp.annotations === 'object') { studyAnnotations = imp.annotations; saveAnnotations(); }
     mergeQuestionRatings(imp.questionRatings);
     if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
@@ -5902,6 +6140,18 @@ function applyImportedData(imp, mode, options) {
       else if (x && x.deleted) (studyExams.find(e => e.id === x.id) || {}).deleted = true;
     });
     saveExams();
+  }
+  if (Array.isArray(imp.timetable)) {
+    const have = new Set(studyTimetable.map(x => x.id));
+    imp.timetable.forEach(x => {
+      if (x && x.id && !have.has(x.id)) studyTimetable.push(x);
+      else if (x && x.deleted) (studyTimetable.find(e => e.id === x.id) || {}).deleted = true;
+    });
+    saveTimetable();
+  }
+  if (imp.focusLog && typeof imp.focusLog === 'object') {
+    Object.entries(imp.focusLog).forEach(([d, e]) => { if (!studyFocusLog[d] || (e.mins || 0) > (studyFocusLog[d].mins || 0)) studyFocusLog[d] = e; });
+    saveFocusLog();
   }
   if (imp.annotations && typeof imp.annotations === 'object') {
     Object.entries(imp.annotations).forEach(([id, a]) => {
@@ -6409,6 +6659,7 @@ function initApp() {
     pendingNavigation = null;
     navigateTo(pending.view, pending.id);
   }
+  _focusResume(); // a focus run survives a reload
   setupPersistenceGuards();
   registerServiceWorker();
   setTimeout(function () { checkForAppUpdate(true); }, 2500);

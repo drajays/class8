@@ -1622,3 +1622,41 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 .exam-chapters details{border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin-bottom:6px}
 .exam-chapters summary{cursor:pointer;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
 .exam-ch{display:flex;gap:8px;align-items:center;padding:4px 0;font-size:.88rem;font-weight:500;color:var(--ink)}
+
+/* ---------- FOCUS MODE + TIMETABLE (v96) ---------- */
+body.focus-on #snowy-hud, body.focus-on #snowy-modal-overlay, body.focus-on .snowy-token-float, body.focus-on .snowy-celebration,
+body.focus-on .snowy-confetti-dot, body.focus-on #princess-launch, body.focus-on #princess-overlay, body.focus-on .pw-celebrate,
+body.focus-on .pw-coin-float, body.focus-on #pw-toast{display:none !important}
+#focus-bar{position:fixed;left:50%;top:10px;transform:translateX(-50%);z-index:9500;display:flex;align-items:center;gap:12px;max-width:calc(100% - 20px);
+  padding:8px 10px 8px 16px;border-radius:24px;background:var(--accent-ink);color:#fff;box-shadow:var(--shadow);font:600 .9rem var(--font-ui)}
+#focus-bar.break,#focus-bar[data-phase="break"]{background:var(--success)}
+#focus-bar .fb-what{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+#focus-bar .fb-time{font:800 1.1rem var(--font-ui);font-variant-numeric:tabular-nums}
+#focus-bar button{flex:none;border:0;border-radius:16px;padding:6px 12px;background:rgba(255,255,255,.22);color:#fff;font:700 .82rem var(--font-ui);cursor:pointer}
+.focus-mins .btn{flex:1}
+.tt-card{margin:0 0 12px;padding:12px 16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.tt-empty{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font-weight:600}
+.tt-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px}
+.tt-head .tt-stat{flex:1;font-size:.82rem;color:var(--ink-2)}
+.tt-row{display:flex;align-items:center;gap:12px;padding:7px 8px;border-radius:10px;font-size:.9rem}
+.tt-row.now{background:var(--accent-soft)}
+.tt-row.past,.tt-row.done{color:var(--ink-3)}
+.tt-time{min-width:132px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.tt-what{flex:1;font-weight:600;min-width:0}
+.tt-state{font-size:.82rem}
+.tt-list{margin-bottom:16px}
+.tt-day{display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line)}
+.tt-day > b{min-width:38px}
+.tt-day > span{display:flex;flex-wrap:wrap;gap:6px}
+.tt-day i{color:var(--ink-3);font-size:.85rem}
+.tt-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 4px 3px 10px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);font-size:.82rem}
+.tt-chip button{border:0;background:none;color:var(--ink-3);cursor:pointer}
+.tt-days{display:flex;flex-wrap:wrap;gap:6px}
+.tt-days label{display:flex;gap:4px;align-items:center;padding:5px 10px;border:1px solid var(--line);border-radius:14px;font-size:.85rem;color:var(--ink)}
+.tt-form-row{display:grid;grid-template-columns:1fr 1fr 2fr;gap:10px}
+@media (max-width:520px){.tt-form-row{grid-template-columns:1fr 1fr}.tt-form-row .form-group:last-child{grid-column:1/-1}.tt-time{min-width:0}}
+.exam-plan{margin-top:10px;font-size:.85rem}
+.exam-plan summary{cursor:pointer;font-weight:700;color:var(--accent-ink)}
+.exam-plan ol{margin:8px 0 0;padding-left:20px;line-height:1.7}
+.exam-plan b{display:inline-block;min-width:104px}
+.exam-plan-day{font-weight:700}
