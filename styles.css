@@ -1601,3 +1601,24 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 [data-theme="dark"]{ --tts:#1f4a70; }
 ::highlight(tts){ background-color:var(--tts); color:inherit; }
 .tts-btn{ flex:none; }
+
+/* ---------- EXAM COUNTDOWN (v94) ---------- */
+.exam-card{margin:0 0 12px;padding:14px 16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.exam-card.exam-soon{border-color:var(--danger)}
+.exam-top{display:flex;align-items:center;gap:14px}
+.exam-days{display:flex;flex-direction:column;align-items:center;min-width:56px;padding:6px 8px;border-radius:12px;background:var(--accent-soft);color:var(--accent-ink)}
+.exam-days b{font-size:1.6rem;line-height:1}
+.exam-days span{font-size:.7rem;font-weight:700;text-transform:uppercase}
+.exam-soon .exam-days{background:#fdeceb;color:var(--danger)}
+.exam-body{flex:1;min-width:0}
+.exam-name{font-weight:800;margin-bottom:6px}
+.exam-name span{font-weight:600;color:var(--ink-2)}
+.exam-sub{font-size:.8rem;color:var(--ink-2);margin-top:4px}
+.exam-del{border:0;background:none;color:var(--ink-3);cursor:pointer;font-size:1rem;padding:4px}
+.exam-today{margin-top:10px;display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.85rem}
+.exam-today > span{font-weight:700}
+.exam-chip{padding:5px 10px;border-radius:14px;border:1px solid var(--accent);background:var(--surface);color:var(--accent-ink);font:600 .82rem var(--font-ui);cursor:pointer}
+.exam-add-link{display:block;margin:0 0 14px;padding:0;border:0;background:none;color:var(--accent-ink);font:600 .88rem var(--font-ui);cursor:pointer}
+.exam-chapters details{border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin-bottom:6px}
+.exam-chapters summary{cursor:pointer;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.exam-ch{display:flex;gap:8px;align-items:center;padding:4px 0;font-size:.88rem;font-weight:500;color:var(--ink)}

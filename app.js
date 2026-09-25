@@ -632,6 +632,7 @@ let questionRatings = {}; // qId -> { votes: { deviceId: 1-5 } }
 let revisionTab = 'mistakes'; // mistakes | due | bookmarks | mynotes | cards
 let studyAnnotations = {}; // noteId -> { hl: [{t, c}], my } — see MY HIGHLIGHTS + MY NOTES
 let studyRevisions = {}; // topicId -> { count, last: 'YYYY-MM-DD' } — one revision per chapter per day
+let studyExams = []; // see EXAM COUNTDOWN
 let quizSession = null;
 
 function loadProgress() {
@@ -652,6 +653,10 @@ function loadProgress() {
   try {
     studyRevisions = JSON.parse(localStorage.getItem('studyhub_revisions') || '{}') || {};
   } catch (e) { studyRevisions = {}; }
+  try {
+    studyExams = JSON.parse(localStorage.getItem('studyhub_exams') || '[]');
+    if (!Array.isArray(studyExams)) studyExams = [];
+  } catch (e) { studyExams = []; }
   try {
     studyAnnotations = JSON.parse(localStorage.getItem('studyhub_annotations') || '{}') || {};
   } catch (e) { studyAnnotations = {}; }
@@ -1113,7 +1118,8 @@ function buildDailyPlan(size = DAILY_PLAN_SIZE) {
     .filter(x => x.m.attempted && x.m.attempted < x.m.total)
     .sort((a, b) => a.m.accuracy - b.m.accuracy || a.m.coverage - b.m.coverage)
     .map(x => x.t.id);
-  const focus = [...new Set([...started.slice(0, 2), lastId].filter(Boolean))];
+  // An upcoming exam decides the focus: today's exam chapters come first.
+  const focus = [...new Set([...examChaptersForToday(), ...started.slice(0, 2), lastId].filter(Boolean))];
   const fresh = topicId => gradableQuestions(topicId).filter(q => !studyProgress[q.id]);
   const focusTopics = [];
   for (const tid of focus) {
@@ -1156,6 +1162,110 @@ function dailyRevisionCardHtml() {
       </div>
       <div class="today-go">${done ? 'Again →' : 'Start →'}</div>
     </div>`;
+}
+
+// ===== EXAM COUNTDOWN =====
+// studyExams = [{ id, name, date: 'YYYY-MM-DD' (local), added: 'YYYY-MM-DD', topics: [topicId] }] in studyhub_exams.
+// A chapter is "done" for an exam once it is revised (studyRevisions) on or after the day the exam was added.
+// Each day the not-yet-revised chapters are spread over the days left, so all are covered before exam day.
+function _localToday() { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); }
+function _daysUntil(date) { return Math.round((Date.parse(date) - Date.parse(_localToday())) / 864e5); }
+function saveExams() {
+  try { localStorage.setItem('studyhub_exams', JSON.stringify(studyExams)); } catch (e) {}
+  markSyncDirty();
+}
+function upcomingExams() {
+  return studyExams.filter(x => !x.deleted && _daysUntil(x.date) >= 0).sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function examStatus(x) {
+  const days = _daysUntil(x.date);
+  const topics = x.topics.filter(id => appData.topics.some(t => t.id === id));
+  const done = topics.filter(id => (studyRevisions[id] || {}).last >= x.added);
+  // Oldest-revised first (never-revised before anything), in the order the book has them.
+  const left = topics.filter(id => !done.includes(id))
+    .sort((a, b) => ((studyRevisions[a] || {}).last || '').localeCompare((studyRevisions[b] || {}).last || ''));
+  // Revise until the day before; on exam day itself, anything still left.
+  // Today's quota counts chapters already revised today, so finishing one doesn't pull in the next.
+  const doneToday = done.filter(id => studyRevisions[id].last === _todayKey()).length;
+  const perDay = Math.ceil((left.length + doneToday) / Math.max(days, 1));
+  return { days, topics, done, left, perDay, today: left.slice(0, Math.max(perDay - doneToday, 0)) };
+}
+
+function examChaptersForToday() {
+  return [...new Set(upcomingExams().flatMap(x => examStatus(x).today))];
+}
+
+function openExamForm() {
+  const box = document.getElementById('exam-chapters');
+  box.innerHTML = appData.subjects.map(s => {
+    const ts = appData.topics.filter(t => t.subjectId === s.id);
+    if (!ts.length) return '';
+    return `<details><summary>${s.icon || ''} ${escHtml(s.name)}
+        <button type="button" class="btn btn-sm btn-outline" onclick="event.preventDefault();this.closest('details').querySelectorAll('input').forEach(i=>i.checked=true);this.closest('details').open=true">All</button></summary>
+      ${ts.map(t => `<label class="exam-ch"><input type="checkbox" name="t" value="${t.id}"> ${t.icon || ''} ${escHtml(t.name)}</label>`).join('')}
+    </details>`;
+  }).join('');
+  const f = box.closest('form');
+  f.reset();
+  f.date.min = _localToday();
+  openModal('modal-exam');
+}
+
+function saveExamFromForm(f) {
+  const topics = [...f.querySelectorAll('input[name=t]:checked')].map(i => i.value);
+  if (!topics.length) return showToast('error', 'Pick at least one chapter.');
+  studyExams.push({ id: 'ex' + Date.now(), name: f.ename.value.trim(), date: f.date.value, added: _todayKey(), topics });
+  saveExams();
+  closeModal('modal-exam');
+  showToast('success', `📅 ${f.ename.value.trim()} added — your daily plan now works towards it.`);
+  renderMain();
+}
+
+function deleteExam(id) {
+  const x = studyExams.find(e => e.id === id);
+  if (!x || !confirm(`Remove "${x.name}"?`)) return;
+  x.deleted = true; // kept as a marker so a sync merge doesn't bring it back
+  saveExams();
+  renderMain();
+}
+
+function _openChapter(topicId) {
+  const t = appData.topics.find(x => x.id === topicId);
+  const s = t && appData.subjects.find(x => x.id === t.subjectId);
+  if (!s) return;
+  selectedClass = s.classId; selectedSubject = s.id;
+  navigateTo('content', t.id);
+}
+
+function examCountdownHtml() {
+  const exams = upcomingExams();
+  if (!exams.length) {
+    return `<button class="exam-add-link" onclick="openExamForm()">📅 Got an exam coming? Add it and get a day-by-day plan</button>`;
+  }
+  return exams.map(x => {
+    const st = examStatus(x);
+    const pct = st.topics.length ? Math.round(st.done.length / st.topics.length * 100) : 0;
+    const when = st.days === 0 ? 'Today!' : st.days === 1 ? 'Tomorrow' : `${st.days} days left`;
+    const chip = id => { const t = appData.topics.find(y => y.id === id); return t ? `<button class="exam-chip" onclick="_openChapter('${id}')">${t.icon || ''} ${escHtml(t.name)}</button>` : ''; };
+    const todayHtml = st.today.length
+      ? `<div class="exam-today"><span>Revise today:</span> ${st.today.map(chip).join('')}</div>`
+      : st.left.length
+        ? `<div class="exam-today">✅ Today's chapters done! ${st.left.length} left for the coming days.</div>`
+        : `<div class="exam-today">🎉 Every chapter revised — keep practising mistakes and due questions.</div>`;
+    return `<div class="exam-card${st.days <= 3 ? ' exam-soon' : ''}">
+      <div class="exam-top">
+        <div class="exam-days"><b>${st.days}</b><span>${st.days === 1 ? 'day' : 'days'}</span></div>
+        <div class="exam-body">
+          <div class="exam-name">📅 ${escHtml(x.name)} · <span>${when}</span></div>
+          <div class="progress-bar"><div class="progress-fill cov-good" style="width:${Math.max(pct, 2)}%"></div></div>
+          <div class="exam-sub">${st.done.length}/${st.topics.length} chapters revised${st.left.length && st.days > 0 ? ` · about ${st.perDay} a day to finish in time` : ''}</div>
+        </div>
+        <button class="exam-del" onclick="deleteExam('${x.id}')" title="Remove exam">✕</button>
+      </div>
+      ${todayHtml}
+    </div>`;
+  }).join('') + `<button class="exam-add-link" onclick="openExamForm()">＋ Add another exam</button>`;
 }
 
 function startQuizSession(source, topicId, count) {
@@ -2789,6 +2899,7 @@ function renderHome(el) {
       ${name ? `<button class="hello-edit" onclick="localStorage.removeItem('studyhub_name');renderMain()" title="Change name">✏️</button>` : ''}
     </div>`;
   const dashHtml = `
+    ${examCountdownHtml()}
     ${dailyRevisionCardHtml()}
     ${continueHtml}
     ${journeyHtml}
@@ -5600,6 +5711,7 @@ function buildSyncPayload() {
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
     revisions: studyRevisions,
+    exams: studyExams,
     annotations: studyAnnotations,
     questionRatings: questionRatings
   };
@@ -5632,6 +5744,7 @@ function buildCloudSyncPayload() {
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
     revisions: studyRevisions,
+    exams: studyExams,
     annotations: studyAnnotations,
     questionRatings: questionRatings
   };
@@ -5729,6 +5842,7 @@ function applyImportedData(imp, mode, options) {
     if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
     if (imp.revisions && typeof imp.revisions === 'object') { studyRevisions = imp.revisions; saveRevisions(); }
+    if (Array.isArray(imp.exams)) { studyExams = imp.exams; saveExams(); }
     if (imp.annotations && typeof imp.annotations === 'object') { studyAnnotations = imp.annotations; saveAnnotations(); }
     mergeQuestionRatings(imp.questionRatings);
     if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
@@ -5780,6 +5894,14 @@ function applyImportedData(imp, mode, options) {
       if (!mine || (r.count || 0) > (mine.count || 0)) studyRevisions[id] = r;
     });
     saveRevisions();
+  }
+  if (Array.isArray(imp.exams)) {
+    const have = new Set(studyExams.map(x => x.id));
+    imp.exams.forEach(x => {
+      if (x && x.id && !have.has(x.id)) studyExams.push(x);
+      else if (x && x.deleted) (studyExams.find(e => e.id === x.id) || {}).deleted = true;
+    });
+    saveExams();
   }
   if (imp.annotations && typeof imp.annotations === 'object') {
     Object.entries(imp.annotations).forEach(([id, a]) => {
