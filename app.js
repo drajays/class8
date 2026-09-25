@@ -4207,13 +4207,193 @@ function renderDiagramQuestions(diagrams) {
     <section class="diagram-section diagram-single fade-in">
       <div class="diagram-section-head">
         <h3>${escHtml(cap)}</h3>
-        <button class="btn btn-sm btn-primary" onclick="startDiagramQuiz('${imgEsc}')">▶ Quiz this figure</button>
+        <span>
+          ${diagramLabels(q.image) ? `<button class="btn btn-sm btn-outline" onclick="openLabelGame('${imgEsc}')">🏷️ Label it</button>` : ''}
+          <button class="btn btn-sm btn-primary" onclick="startDiagramQuiz('${imgEsc}')">▶ Quiz this figure</button>
+        </span>
       </div>
       <div class="mcq-image-wrap diagram-hero"><img class="mcq-image" src="${escHtml(q.image)}" alt="${escHtml(cap)}" loading="lazy"></div>
       <div class="questions-single">${card}</div>
     </section>
     ${pager}
     <p class="card-pager-hint">Use ← → arrow keys to move between diagram questions</p>`;
+}
+
+// ===== LABEL THE DIAGRAM (drag and drop) =====
+// Printed labels (DIAGRAM_LABELS, from diagram-labels.js) are covered; the student drags or taps the words back.
+// Duplicate words are interchangeable: a slot is right when the word matches, whichever chip it came from.
+let labelGame = null; // { img, labels, bank: [chip], placed: { slot: chip }, sel: chip|null, checked }
+
+function diagramLabels(img) {
+  return (typeof DIAGRAM_LABELS !== 'undefined' && DIAGRAM_LABELS[img]) || null;
+}
+
+function openLabelGame(img) {
+  const labels = diagramLabels(img);
+  if (!labels) return;
+  labelGame = { img, labels, bank: _shuffle(labels.map((_, i) => i)), placed: {}, sel: null, checked: false };
+  let el = document.getElementById('label-game');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'label-game';
+    el.addEventListener('pointerdown', _lgPointerDown);
+    el.addEventListener('click', _lgClick);
+    document.body.appendChild(el);
+  }
+  el.classList.add('show');
+  renderLabelGame();
+}
+
+function closeLabelGame() {
+  labelGame = null;
+  const el = document.getElementById('label-game');
+  if (el) el.classList.remove('show');
+}
+
+function _lgSlotOf(chip) {
+  const k = Object.keys(labelGame.placed).find(s => labelGame.placed[s] === chip);
+  return k === undefined ? -1 : +k;
+}
+
+/** Put chip into slot (-1 = back to the word bank). A chip already in the slot swaps back to where this one came from. */
+function _lgPlace(chip, slot) {
+  const g = labelGame;
+  const from = _lgSlotOf(chip);
+  if (from >= 0) delete g.placed[from];
+  else g.bank = g.bank.filter(c => c !== chip);
+  if (slot >= 0) {
+    const bumped = g.placed[slot];
+    if (bumped !== undefined) {
+      if (from >= 0) g.placed[from] = bumped; else g.bank.push(bumped);
+    }
+    g.placed[slot] = chip;
+  } else {
+    g.bank.push(chip);
+  }
+  g.sel = null;
+  g.checked = false;
+  renderLabelGame();
+}
+
+function _lgChipHtml(chip) {
+  const g = labelGame;
+  return `<span class="lg-chip${g.sel === chip ? ' sel' : ''}" data-chip="${chip}">${escHtml(g.labels[chip].t)}</span>`;
+}
+
+function renderLabelGame() {
+  const g = labelGame;
+  const el = document.getElementById('label-game');
+  if (!g || !el) return;
+  const right = s => g.labels[g.placed[s]] && g.labels[g.placed[s]].t === g.labels[s].t;
+  const nRight = g.labels.filter((_, s) => right(s)).length;
+  const allPlaced = Object.keys(g.placed).length === g.labels.length;
+  const slots = g.labels.map((l, s) => {
+    const chip = g.placed[s];
+    const state = g.checked && chip !== undefined ? (right(s) ? ' ok' : ' bad') : '';
+    return `<div class="lg-slot${state}${chip === undefined ? ' empty' : ''}" data-slot="${s}"
+      style="left:${l.x + l.w / 2}%;top:${l.y + l.h / 2}%;min-width:${l.w + 3}%;min-height:${l.h * 1.4}%">${chip === undefined ? '?' : _lgChipHtml(chip)}</div>`;
+  }).join('');
+  const done = g.checked && nRight === g.labels.length;
+  el.innerHTML = `
+    <div class="lg-panel" role="dialog" aria-label="Label the diagram">
+      <div class="lg-head">
+        <strong>🏷️ Label the diagram</strong>
+        <button class="btn btn-sm btn-outline" data-act="close">✕ Close</button>
+      </div>
+      <p class="lg-help">Drag each word to its box — or tap a word, then tap a box.</p>
+      <div class="lg-stage-wrap"><div class="lg-stage"><img src="${escHtml(g.img)}" alt="Textbook diagram" draggable="false" onload="_lgKeepSlotsInside()">${slots}</div></div>
+      <div class="lg-bank" data-slot="-1">${g.bank.map(_lgChipHtml).join('') || (done ? '' : '<span class="lg-hint">All words placed — press Check!</span>')}</div>
+      <div class="lg-foot">
+        ${done ? `<span class="lg-score good">🎉 All ${nRight} right!</span>`
+          : g.checked ? `<span class="lg-score">✅ ${nRight} of ${g.labels.length} right</span>` : ''}
+        ${done ? `<button class="btn btn-primary" data-act="again">🔄 Play again</button>`
+          : `${g.checked ? '<button class="btn btn-outline" data-act="retry">↩ Take back wrong ones</button><button class="btn btn-outline" data-act="reveal">👀 Show answers</button>' : ''}
+             <button class="btn btn-primary" data-act="check" ${Object.keys(g.placed).length ? '' : 'disabled'}>${allPlaced ? '✅ Check' : '✅ Check so far'}</button>`}
+      </div>
+    </div>`;
+  _lgKeepSlotsInside();
+}
+
+/** Nudge boxes that hang past the picture's edge back inside it (long words near the edge, small screens). */
+function _lgKeepSlotsInside() {
+  const stage = document.querySelector('#label-game .lg-stage');
+  if (!stage) return;
+  const st = stage.getBoundingClientRect();
+  stage.querySelectorAll('.lg-slot').forEach(el => {
+    el.style.transform = '';
+    const r = el.getBoundingClientRect();
+    const dx = r.left < st.left ? st.left - r.left : r.right > st.right ? st.right - r.right : 0;
+    if (dx) el.style.transform = `translate(calc(-50% + ${Math.round(dx)}px), -50%)`;
+  });
+}
+window.addEventListener('resize', () => { if (labelGame) _lgKeepSlotsInside(); });
+
+function _lgClick(e) {
+  const g = labelGame;
+  if (!g) return;
+  const act = e.target.closest('[data-act]');
+  if (act) {
+    const a = act.dataset.act;
+    if (a === 'close') return closeLabelGame();
+    if (a === 'again') return openLabelGame(g.img);
+    if (a === 'check') {
+      g.checked = true;
+      if (g.labels.every((l, s) => g.labels[g.placed[s]] && g.labels[g.placed[s]].t === l.t) && typeof princessOnCorrectAnswer === 'function') princessOnCorrectAnswer('label:' + g.img);
+    }
+    if (a === 'retry') {
+      Object.keys(g.placed).forEach(s => {
+        if (g.labels[g.placed[s]].t !== g.labels[s].t) { g.bank.push(g.placed[s]); delete g.placed[s]; }
+      });
+      g.checked = false;
+    }
+    if (a === 'reveal') {
+      g.placed = {}; g.labels.forEach((_, s) => { g.placed[s] = s; }); g.bank = []; g.checked = true;
+    }
+    return renderLabelGame();
+  }
+  if (e.target === e.currentTarget) return closeLabelGame(); // tap on the dimmed backdrop
+}
+
+// One handler for drag and tap: a press that barely moves is a tap.
+function _lgPointerDown(e) {
+  const g = labelGame;
+  if (!g || e.button > 0) return;
+  const chipEl = e.target.closest('.lg-chip');
+  const slotEl = e.target.closest('[data-slot]');
+  if (!chipEl) {
+    // Tap on a box or the bank with a word selected → place it there.
+    if (g.sel !== null && slotEl) _lgPlace(g.sel, +slotEl.dataset.slot);
+    return;
+  }
+  e.preventDefault();
+  const chip = +chipEl.dataset.chip;
+  const x0 = e.clientX, y0 = e.clientY;
+  let ghost = null;
+  const move = ev => {
+    if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) < 6) return;
+    if (!ghost) {
+      ghost = chipEl.cloneNode(true);
+      ghost.className = 'lg-chip lg-ghost';
+      document.body.appendChild(ghost);
+      chipEl.classList.add('dragging');
+    }
+    ghost.style.left = ev.clientX + 'px';
+    ghost.style.top = ev.clientY + 'px';
+  };
+  const up = ev => {
+    document.removeEventListener('pointermove', move);
+    document.removeEventListener('pointerup', up);
+    document.removeEventListener('pointercancel', up);
+    if (!ghost) { g.sel = g.sel === chip ? null : chip; return renderLabelGame(); }
+    ghost.remove();
+    const target = ev.type === 'pointerup' && document.elementFromPoint(ev.clientX, ev.clientY);
+    const dropSlot = target && target.closest('#label-game [data-slot]');
+    if (dropSlot) _lgPlace(chip, +dropSlot.dataset.slot);
+    else renderLabelGame();
+  };
+  document.addEventListener('pointermove', move);
+  document.addEventListener('pointerup', up);
+  document.addEventListener('pointercancel', up);
 }
 
 function startDiagramQuiz(imagePath) {

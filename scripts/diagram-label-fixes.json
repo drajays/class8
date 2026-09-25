@@ -1,0 +1,174 @@
+{
+ "images/chem-ch1_img_015.jpg": {
+  "keep": true
+ },
+ "images/chem-ch1_img_017.jpg": {
+  "keep": true,
+  "fix": {
+   "Eltervescence due to gas": "Effervescence due to gas"
+  }
+ },
+ "images/chem-ch2_img_007.jpg": {
+  "keep": true
+ },
+ "images/chem-ch2_img_009.jpg": {
+  "keep": true
+ },
+ "images/chem-ch3_img_008.jpg": {
+  "keep": true,
+  "fix": {
+   "A magnet": "Magnet"
+  }
+ },
+ "images/chem-ch3_img_011.jpg": {
+  "keep": true,
+  "fix": {
+   "MIXTURE OF NaC AND NH,CI": "Mixture of NaCl and NH₄Cl"
+  }
+ },
+ "images/chem-ch3_img_015.jpg": {
+  "keep": true
+ },
+ "images/chem-ch3_img_020.jpg": {
+  "keep": true
+ },
+ "images/chem-ch3_img_022.jpg": {
+  "keep": true,
+  "fix": {
+   "Sandbath": "Sand bath",
+   "Wire gauge": "Wire gauze"
+  }
+ },
+ "images/chem-ch4_img_002.jpg": {
+  "keep": true,
+  "drop": [
+   "PRESSURE 0-01 mm OF MERCURY"
+  ]
+ },
+ "images/chem-ch4_img_006.jpg": {
+  "keep": true,
+  "fix": {
+   "Y small deflection": "Small deflection"
+  }
+ },
+ "images/chem-ch4_img_007.jpg": {
+  "keep": true
+ },
+ "images/chem-ch4_img_014.jpg": {
+  "keep": true,
+  "fix": {
+   "M SHELL (2 electrons)": "M shell (2 electrons)",
+   "L SHELL (8 electrons)": "L shell (8 electrons)",
+   "K SHELL (2 electrons)": "K shell (2 electrons)"
+  }
+ },
+ "images/chem-ch4_img_016.jpg": {
+  "keep": true,
+  "drop": [
+   "The atomic models",
+   "Wave behavior of the electron"
+  ]
+ },
+ "images/chem-ch6_img_001.jpg": {
+  "keep": true
+ },
+ "images/chem-ch6_img_011.jpg": {
+  "keep": true
+ },
+ "images/chem-ch6_img_014.jpg": {
+  "keep": true
+ },
+ "images/chem-ch6_img_015.jpg": {
+  "keep": true
+ },
+ "images/chem-ch6_img_018.jpg": {
+  "keep": true,
+  "fix": {
+   "Dil HCI": "Dilute HCl"
+  }
+ },
+ "images/chem-ch6_img_028.jpg": {
+  "keep": true
+ },
+ "images/chem-ch7_img_004.jpg": {
+  "keep": true,
+  "fix": {
+   "Dilute hydro chloric acid": "Dilute hydrochloric acid"
+  }
+ },
+ "images/chem-ch7_img_008.jpg": {
+  "keep": true
+ },
+ "images/chem-ch7_img_009.jpg": {
+  "keep": true
+ },
+ "images/chem-ch8_img_005.jpg": {
+  "keep": true
+ },
+ "images/chem-ch9_img_041.jpg": {
+  "keep": true,
+  "drop": [
+   "Preparation of wood charcoal"
+  ]
+ },
+ "images/chem-ch9_img_052.jpg": {
+  "keep": true,
+  "fix": {
+   "Dilute hci": "Dilute HCl",
+   "Paper cover \\": "Paper cover",
+   "Co, gas": "CO₂ gas"
+  }
+ },
+ "images/chem-ch9_img_058.jpg": {
+  "keep": true,
+  "fix": {
+   "Concentrated h,so, in a": "Concentrated H₂SO₄"
+  }
+ },
+ "images/physics/chapter_01_matter/fig_020.jpg": {
+  "keep": true,
+  "fix": {
+   "Heating Cooling": "Heating ⇄ Cooling",
+   "Bolingwater": "Boiling water"
+  }
+ },
+ "images/physics/chapter_01_matter/fig_035.jpg": {
+  "keep": true
+ },
+ "images/physics/chapter_01_matter/fig_040.jpg": {
+  "keep": true,
+  "fix": {
+   "China dish Wire mesh": "China dish on wire mesh"
+  }
+ },
+ "images/physics/chapter_03_force_and_pressure/fig_024.jpg": {
+  "keep": true,
+  "drop": [
+   "Y WI"
+  ]
+ },
+ "images/physics/chapter_07_sound/fig_027.jpg": {
+  "keep": true
+ },
+ "images/physics/chapter_08_electricity/fig_019.jpg": {
+  "keep": true,
+  "fix": {
+   "Porcelain S socket": "Porcelain socket"
+  }
+ },
+ "images/physics/chapter_08_electricity/fig_047.jpg": {
+  "keep": true
+ },
+ "images/physics/chapter_02_physical_quantities_and_measurement/fig_029.jpg": {
+  "keep": true,
+  "fix": {
+   "Oron block": "Iron block"
+  }
+ },
+ "images/physics/chapter_02_physical_quantities_and_measurement/fig_032.jpg": {
+  "keep": true,
+  "fix": {
+   "Compressed air cvlinder": "Compressed air cylinder"
+  }
+ }
+}

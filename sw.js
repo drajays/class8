@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v88';
+const CACHE = 'studyhub-v89';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v1';
 const ASSETS = [
@@ -44,6 +44,7 @@ const ASSETS = [
   './history-cheatsheets.js',
   './history-timeline.js',
   './page-refs.js',
+  './diagram-labels.js',
   './civics.js',
   './civics-mindmaps.js',
   './civics-cheatsheets.js',
