@@ -1087,6 +1087,7 @@ function _shuffle(arr) {
 function pickQuizPool(source, topicId) {
   let pool = [];
   if (source === 'daily') pool = buildDailyPlan().questions;
+  else if (source === 'mixed') pool = mixedPracticePool();
   else if (source === 'mistakes') pool = getMistakeQuestions(topicId || null);
   else if (source === 'due') pool = getDueForReview(topicId || null);
   else if (source === 'bookmarks') pool = getBookmarkedQuestions().filter(isQuizType);
@@ -3162,8 +3163,8 @@ function renderQuizView(el) {
     });
     const correct = results.filter(r => r.isCorrect).length;
     const total = quizSession.ids.length;
-    if (quizSession.source === 'daily') {
-      try { localStorage.setItem('studyhub_daily_done', _todayKey()); } catch (e) {}
+    if (quizSession.source === 'daily' || quizSession.source === 'mixed') {
+      if (quizSession.source === 'daily') try { localStorage.setItem('studyhub_daily_done', _todayKey()); } catch (e) {}
       // A chapter counts as revised when the session covered it with at least 3 answered questions.
       const perTopic = {};
       quizSession.ids.forEach(id => {
@@ -3294,6 +3295,10 @@ function renderHome(el) {
       <div class="journey-card" onclick="openQuizBuilder({})">
         <div class="jc-icon">▶</div>
         <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
+      </div>
+      <div class="journey-card" onclick="startMixedPractice()" title="Mixing chapters makes you work out which idea each question needs, which is how exams feel">
+        <div class="jc-icon">🔀</div>
+        <div class="jc-body"><div class="jc-title">Mixed Practice</div><div class="jc-sub">All your chapters, shuffled</div></div>
       </div>
       <div class="journey-card" onclick="flashDeck=null;navigateTo('revision','cards')">
         <div class="jc-icon">🃏</div>
@@ -3651,6 +3656,7 @@ function renderContent(el) {
             <div class="content-tab ${contentTab==='notes'?'active':''}" onclick="switchContentTab('notes')">📝 Notes</div>
             ${mmData ? `<div class="content-tab ${contentTab==='mindmap'?'active':''}" onclick="switchContentTab('mindmap')">🧠 Mind Map</div>` : ''}
             ${mmData ? `<div class="content-tab ${contentTab==='blurt'?'active':''}" onclick="switchContentTab('blurt')" title="Write all you remember, then see what you missed">✍️ Blurt</div>` : ''}
+            ${mmData ? `<div class="content-tab ${contentTab==='teach'?'active':''}" onclick="switchContentTab('teach')" title="Explain a topic to Snowy in your own words">🐶 Teach Snowy</div>` : ''}
             ${csData ? `<div class="content-tab ${contentTab==='cheatsheet'?'active':''}" onclick="switchContentTab('cheatsheet')">⚡ Cheat Sheet</div>` : ''}
             ${csData && csData.wordCards && csData.wordCards.length ? `<div class="content-tab ${contentTab==='oneword'?'active':''}" onclick="switchContentTab('oneword')">🔤 One Word</div>` : ''}
             ${historyTimelineFor(selectedTopic) ? `<div class="content-tab ${contentTab==='timeline'?'active':''}" onclick="switchContentTab('timeline')">🕰️ Timeline</div>` : ''}
@@ -3661,6 +3667,12 @@ function renderContent(el) {
           </div>
           ${chapterViewModeHtml()}
         </div>
+        ${!cm.attempted && !studyRevisions[selectedTopic] && !_pretestSkipped(selectedTopic) && gradableQuestions(selectedTopic).length >= 5 ? `
+        <div class="pretest">
+          <span>🎯 <b>Try first!</b> Answer 5 quick questions <i>before</i> you read. Guessing first, even wrongly, makes the answers stick when you meet them in the notes.</span>
+          <span><button class="btn btn-sm btn-primary" onclick="startQuizSession('chapter','${selectedTopic}',5)">Try 5 questions</button>
+            <button class="btn btn-sm btn-outline" onclick="skipPretest('${selectedTopic}')">Skip</button></span>
+        </div>` : ''}
       </div>
       <div class="chapter-layout">
         <div id="content-body" class="chapter-main"></div>
@@ -3686,6 +3698,7 @@ function renderContent(el) {
   if (contentTab === 'notes') renderNotes();
   else if (contentTab === 'mindmap') renderMindMap(mmData);
   else if (contentTab === 'blurt') renderBlurt(mmData);
+  else if (contentTab === 'teach') renderTeach(mmData);
   else if (contentTab === 'cheatsheet') renderCheatSheet(csData);
   else if (contentTab === 'oneword') renderOneWordCards(csData);
   else if (contentTab === 'timeline') renderChapterTimeline(selectedTopic);
@@ -3699,6 +3712,7 @@ function switchContentTab(tab) {
   if (typeof snowyOnTabSwitch === 'function') snowyOnTabSwitch(tab, selectedTopic);
   if (typeof princessOnTabSwitch === 'function') princessOnTabSwitch(tab);
   contentTab = tab;
+  stopTeachMic();
   userAnswers = {};
   if (tab === 'mindmap') mindMapIndex = 0;
   if (tab === 'oneword') { activeWordId = null; wordCardOrder = []; }
@@ -3775,6 +3789,7 @@ function renderBlurt(mm) {
         oninput="blurt.text=this.value;document.getElementById('blurt-wc').textContent=_blurtWords(this.value)">${escHtml(blurt.text)}</textarea>
       <div class="blurt-actions"><span><b id="blurt-wc">${_blurtWords(blurt.text)}</b> words</span>
         <button class="btn btn-primary" onclick="checkBlurt()">✔ Check what I remembered</button></div>
+      ${_whyLine('Pulling facts out of your memory (retrieval practice) strengthens them far more than reading them again, even when you can only remember a little.')}
     </div>`;
     if (typing) { const ta = document.getElementById('blurt-text'); ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
     return;
@@ -3812,6 +3827,152 @@ function checkBlurt() {
   if (_blurtWords(text) >= 20) logChapterRevision(selectedTopic);
   renderBlurt(chapterMindmap(selectedTopic));
   document.getElementById('content-body').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ===== TEACH SNOWY (the Feynman technique) =====
+// Pick one mind-map topic and explain it to Snowy in simple words, typed or spoken. Snowy "understands" the key
+// points her explanation covers (blurtCheck) and asks about the rest; the missed point stays hidden until she has tried.
+// Simple words, an example and a reason are nudged too, because explaining how and why (elaboration) makes memories stick.
+// teach = { topicId, bi (branch index), text, result }; studyTeach = { topicId: { branchLabel: pct } } in studyhub_teach.
+let teach = null, _teachRec = null;
+let studyTeach = {};
+try { studyTeach = JSON.parse(localStorage.getItem('studyhub_teach') || '{}') || {}; } catch (e) {}
+
+const _teachBranches = mm => mm.maps.flatMap(m => m.branches).map(b => ({ label: b.label, noteId: b.noteId, points: b.concepts.length ? b.concepts : [b.label] }));
+const _whyLine = t => `<p class="why-works">🔬 <b>Why this works:</b> ${t}</p>`;
+
+function renderTeach(mm) {
+  const body = document.getElementById('content-body');
+  const branches = _teachBranches(mm);
+  const done = studyTeach[selectedTopic] || {};
+  if (!teach || teach.topicId !== selectedTopic) {
+    // Start with the first topic she hasn't taught well yet.
+    const bi = Math.max(0, branches.findIndex(b => !(done[b.label] >= 70)));
+    teach = { topicId: selectedTopic, bi, text: '', result: null };
+  }
+  const b = branches[teach.bi];
+  const picker = `<div class="teach-topics">${branches.map((x, i) => `<button class="teach-topic${i === teach.bi ? ' on' : ''}" onclick="pickTeachTopic(${i})">
+      ${done[x.label] >= 70 ? '⭐' : done[x.label] !== undefined ? '🔸' : '○'} ${escHtml(x.label)}</button>`).join('')}</div>`;
+  const snowy = say => `<div class="teach-snowy"><img src="images/snowy.jpg" alt="Snowy"><div class="teach-bubble">${say}</div></div>`;
+  if (!teach.result) {
+    const typing = document.activeElement && document.activeElement.id === 'teach-text';
+    const canTalk = 'webkitSpeechRecognition' in window || 'SpeechRecognition' in window;
+    body.innerHTML = `<div class="teach">
+      <h3>🐶 Teach Snowy</h3>
+      ${picker}
+      ${snowy(`Woof! ${/\?$/.test(b.label) ? `<b>${escHtml(b.label)}</b> I really want to know!` : `I don't know anything about <b>${escHtml(b.label)}</b>.`} Can you explain it to me? Use easy words, I'm only a puppy! 🐾`)}
+      <p class="teach-tips">💡 Say <b>what</b> it is, give an <b>example</b>, and say <b>why</b> it happens (use "because").</p>
+      <textarea id="teach-text" class="blurt-text" rows="8" placeholder="Snowy, ${escHtml(b.label)} is…"
+        oninput="teach.text=this.value">${escHtml(teach.text)}</textarea>
+      <div class="blurt-actions">
+        ${canTalk ? `<button class="btn btn-outline" id="teach-mic" onclick="toggleTeachMic()">${_teachRec ? '⏹ Stop talking' : '🎤 Say it out loud'}</button>` : '<span></span>'}
+        <button class="btn btn-primary" onclick="checkTeach()">🐶 Did Snowy understand?</button>
+      </div>
+      ${_whyLine('Explaining something in your own simple words (the "Feynman technique") shows you exactly which parts you don\'t really understand yet, and filling those gaps is what makes learning stick.')}
+    </div>`;
+    if (typing) { const ta = document.getElementById('teach-text'); ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+    return;
+  }
+  const r = teach.result;
+  const ok = r.ok.filter(Boolean).length;
+  const say = r.pct >= 70 ? `Woof woof! 🎉 I understand <b>${escHtml(b.label)}</b> now! You're a great teacher!`
+    : r.pct >= 40 ? `I understood some of it! 🐾 But I still have questions…`
+    : `Hmm, I'm a confused puppy 🥺 Can you tell me more?`;
+  const badge = (on, yes, no) => `<span class="teach-badge ${on ? 'ok' : 'miss'}">${on ? '✅ ' + yes : '➕ ' + no}</span>`;
+  body.innerHTML = `<div class="teach">
+    <h3>🐶 Teach Snowy</h3>
+    ${picker}
+    ${snowy(say)}
+    <div class="teach-badges">
+      ${badge(r.simple, 'Simple words', 'Try shorter sentences')}
+      ${badge(r.example, 'Gave an example', 'Add an example ("for example…")')}
+      ${badge(r.why, 'Said why', 'Say why ("because…")')}
+    </div>
+    <div class="blurt-branch"><div class="blurt-bhead"><b>Snowy understood ${ok} of ${r.ok.length} key points</b><span></span>
+      ${b.noteId ? `<button class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${b.noteId}')">📖 Read</button>` : ''}</div>
+      <ul>${b.points.map((p, i) => r.ok[i]
+        ? `<li class="ok">✅ ${escHtml(p)}</li>`
+        : `<li class="miss">🐶 “But what about this bit?” <button class="btn btn-sm btn-outline" onclick="this.outerHTML='<b>'+this.dataset.p+'</b>'" data-p="${escHtml(p)}">Think first, then show me</button></li>`).join('')}</ul>
+    </div>
+    <div class="blurt-actions">
+      <button class="btn btn-outline" onclick="teach.result=null;renderTeach(chapterMindmap(selectedTopic))">✏️ Explain more</button>
+      ${teach.bi + 1 < branches.length ? `<button class="btn btn-primary" onclick="pickTeachTopic(${teach.bi + 1})">Next topic →</button>` : ''}
+    </div>
+  </div>`;
+}
+
+function pickTeachTopic(i) {
+  stopTeachMic();
+  teach = { topicId: selectedTopic, bi: i, text: '', result: null };
+  renderTeach(chapterMindmap(selectedTopic));
+}
+
+function checkTeach() {
+  stopTeachMic();
+  const text = teach.text;
+  if (_blurtWords(text) < 8) return showToast('error', 'Snowy needs a bit more than that. Try a few sentences!');
+  const b = _teachBranches(chapterMindmap(selectedTopic))[teach.bi];
+  const ok = blurtCheck(text, b.points);
+  const pct = Math.round(ok.filter(Boolean).length / ok.length * 100);
+  const sentences = text.split(/[.!?]+/).filter(s => s.trim());
+  teach.result = {
+    ok, pct,
+    simple: _blurtWords(text) / Math.max(sentences.length, 1) <= 22,
+    example: /\b(example|e\.g|such as|like|for instance|eg)\b/i.test(text),
+    why: /\b(because|so that|therefore|that's why|due to|since|so)\b/i.test(text)
+  };
+  const best = (studyTeach[selectedTopic] = studyTeach[selectedTopic] || {});
+  if (!(best[b.label] >= pct)) best[b.label] = pct;
+  try { localStorage.setItem('studyhub_teach', JSON.stringify(studyTeach)); } catch (e) {}
+  if (pct >= 70 && typeof snowyEarnTokens === 'function') snowyEarnTokens('teach:' + selectedTopic + ':' + teach.bi, true, { questionType: 'numerical' });
+  renderTeach(chapterMindmap(selectedTopic));
+}
+
+/** Dictation: speech is added to what she has typed. Chrome, Edge and Safari (iPad too) support it. */
+function toggleTeachMic() {
+  if (_teachRec) return stopTeachMic();
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const rec = new SR();
+  rec.lang = 'en-IN'; rec.continuous = true; rec.interimResults = false;
+  rec.onresult = e => {
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      if (!e.results[i].isFinal) continue;
+      const t = e.results[i][0].transcript.trim();
+      teach.text = (teach.text.trim() + ' ' + t.charAt(0).toUpperCase() + t.slice(1) + '.').trim();
+      const ta = document.getElementById('teach-text');
+      if (ta) ta.value = teach.text;
+    }
+  };
+  rec.onerror = e => { if (e.error === 'not-allowed') showToast('error', 'Allow the microphone to talk to Snowy.'); stopTeachMic(); };
+  rec.onend = () => { if (_teachRec === rec) stopTeachMic(); };
+  _teachRec = rec;
+  rec.start();
+  const btn = document.getElementById('teach-mic');
+  if (btn) btn.textContent = '⏹ Stop talking';
+}
+function stopTeachMic() {
+  const rec = _teachRec;
+  _teachRec = null;
+  if (rec) try { rec.stop(); } catch (e) {}
+  const btn = document.getElementById('teach-mic');
+  if (btn) btn.textContent = '🎤 Say it out loud';
+}
+
+/** Interleaving: an equal share of questions from every chapter she has started, shuffled together. */
+function mixedPracticePool(size = 20) {
+  const started = appData.topics.filter(t => chapterMastery(t.id).attempted || studyRevisions[t.id]).map(t => t.id);
+  if (started.length < 2) return [];
+  const per = Math.ceil(size / started.length);
+  return started.flatMap(tid => _shuffle(gradableQuestions(tid).filter(q => isQuizType(q) && !isDiagramMcq(q))).slice(0, per));
+}
+function _pretestSkipped(tid) { try { return (localStorage.getItem('studyhub_pretest_skip') || '').split(',').includes(tid); } catch (e) { return false; } }
+function skipPretest(tid) {
+  try { localStorage.setItem('studyhub_pretest_skip', [...(localStorage.getItem('studyhub_pretest_skip') || '').split(',').filter(Boolean), tid].join(',')); } catch (e) {}
+  renderMain();
+}
+function startMixedPractice() {
+  if (!mixedPracticePool().length) return showToast('info', '🔀 Practise at least two chapters first. Then Mixed Practice shuffles them together.');
+  startQuizSession('mixed', null, 20);
 }
 
 // ===== FULL SCREEN VIEW =====
