@@ -1508,3 +1508,27 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 @media (min-width:900px){.sidebar .search-box{display:none}}
 .page-chip{display:inline-block;vertical-align:middle;margin-left:8px;padding:2px 9px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);font-family:var(--font-ui);font-size:.72rem;font-weight:700;color:var(--ink-2);white-space:nowrap}
 .cs-page{margin-left:6px;font-size:.7rem;font-weight:700;color:var(--ink-3);white-space:nowrap}
+
+/* ---------- MY HIGHLIGHTS + MY NOTES ---------- */
+:root{ --hl-y:#ffe066; --hl-g:#b2f2bb; --hl-r:#ffc9c9; }
+[data-theme="dark"]{ --hl-y:#806a00; --hl-g:#2b6a3a; --hl-r:#7a2e2e; }
+::highlight(hl-y){ background-color:var(--hl-y); color:inherit; }
+::highlight(hl-g){ background-color:var(--hl-g); color:inherit; }
+::highlight(hl-r){ background-color:var(--hl-r); color:inherit; }
+#hl-toolbar{ position:fixed; z-index:9999; display:none; gap:6px; padding:6px; border-radius:14px;
+  background:var(--surface); border:1px solid var(--line); box-shadow:var(--shadow); }
+#hl-toolbar.show{ display:flex; }
+.hl-btn{ border:0; border-radius:10px; padding:8px 10px; font:600 .85rem var(--font-ui); color:#2a2620; cursor:pointer; min-height:36px; }
+.hl-btn.hl-y{ background:#ffe066; } .hl-btn.hl-g{ background:#b2f2bb; } .hl-btn.hl-r{ background:#ffc9c9; }
+.hl-btn.hl-x{ background:var(--surface-3); color:var(--ink); }
+.my-notes{ margin-top:12px; border:1px dashed var(--line); border-radius:var(--radius-sm); padding:8px 12px; background:var(--surface-2); }
+.my-notes summary{ cursor:pointer; font-weight:700; color:var(--ink-2); }
+.my-notes-count{ display:inline-block; min-width:20px; padding:0 6px; border-radius:10px; background:var(--accent); color:#fff; font-size:.75rem; text-align:center; }
+.my-notes-hint{ font-size:.8rem; color:var(--ink-3); margin:6px 0; }
+.my-notes-text{ width:100%; box-sizing:border-box; padding:8px 10px; border:1px solid var(--line); border-radius:10px;
+  background:var(--surface); color:var(--ink); font:1rem/1.5 var(--font-ui); resize:vertical; }
+.hl-list{ display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 8px; }
+.hl-chip{ display:inline-flex; align-items:center; gap:6px; padding:4px 4px 4px 10px; border-radius:10px; font-size:.85rem; background:var(--hl-y); color:var(--ink); }
+.hl-chip.hl-g{ background:var(--hl-g); } .hl-chip.hl-r{ background:var(--hl-r); }
+.hl-chip button{ border:0; background:transparent; color:inherit; cursor:pointer; padding:2px 6px; font-size:.8rem; }
+.my-notes-read{ white-space:pre-wrap; margin:6px 0; padding:8px 10px; border-left:3px solid var(--accent); background:var(--surface-2); border-radius:6px; }

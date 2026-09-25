@@ -630,6 +630,7 @@ let studyBookmarks = new Set();
 let studyActivity = {};
 let questionRatings = {}; // qId -> { votes: { deviceId: 1-5 } }
 let revisionTab = 'mistakes'; // mistakes | bookmarks | due
+let studyAnnotations = {}; // noteId -> { hl: [{t, c}], my } — see MY HIGHLIGHTS + MY NOTES
 let studyRevisions = {}; // topicId -> { count, last: 'YYYY-MM-DD' } — one revision per chapter per day
 let quizSession = null;
 
@@ -651,6 +652,9 @@ function loadProgress() {
   try {
     studyRevisions = JSON.parse(localStorage.getItem('studyhub_revisions') || '{}') || {};
   } catch (e) { studyRevisions = {}; }
+  try {
+    studyAnnotations = JSON.parse(localStorage.getItem('studyhub_annotations') || '{}') || {};
+  } catch (e) { studyAnnotations = {}; }
   window._suppressSyncDirty = false;
 }
 
@@ -2525,11 +2529,13 @@ function renderRevisionHub(el) {
   const tabs = [
     { key: 'mistakes', label: 'Mistakes', icon: '📕', count: mistakes.length },
     { key: 'due', label: 'Due Today', icon: '🔁', count: due.length },
-    { key: 'bookmarks', label: 'Marked', icon: '📌', count: marked.length }
+    { key: 'bookmarks', label: 'Marked', icon: '📌', count: marked.length },
+    { key: 'mynotes', label: 'My notes', icon: '📝', count: getAnnotatedNotes().length }
   ];
   let list = mistakes;
   if (revisionTab === 'due') list = due;
   if (revisionTab === 'bookmarks') list = marked;
+  if (revisionTab === 'mynotes') list = getAnnotatedNotes();
   const tabHtml = tabs.map(t =>
     `<div class="content-tab ${revisionTab === t.key ? 'active' : ''}" onclick="revisionTab='${t.key}';renderMain()">${t.icon} ${t.label} (${t.count})</div>`
   ).join('');
@@ -2538,9 +2544,12 @@ function renderRevisionHub(el) {
     const empty = {
       mistakes: ['No mistakes logged yet', 'Answer questions in Practice Quiz — wrong answers and lucky guesses land here automatically.'],
       due: ['Nothing due today', 'Complete the Mistake Book and questions will return on a spaced schedule.'],
-      bookmarks: ['Nothing marked for revision', 'Tap 📌 Mark for revision on any note or question to collect them here for last-minute review.']
+      bookmarks: ['Nothing marked for revision', 'Tap 📌 Mark for revision on any note or question to collect them here for last-minute review.'],
+      mynotes: ['No highlights or notes yet', 'While reading a note, select any words to highlight them, or open 📝 My notes to write in your own words.']
     }[revisionTab];
     bodyHtml = `<div class="empty-state"><div class="empty-icon">${tabs.find(t => t.key === revisionTab).icon}</div><h3>${empty[0]}</h3><p>${empty[1]}</p></div>`;
+  } else if (revisionTab === 'mynotes') {
+    bodyHtml = `<div class="revision-list">${list.map(renderMyNotesItem).join('')}</div>`;
   } else {
     const quizActions = revisionTab === 'bookmarks'
       ? (markedQuestions.length
@@ -3540,6 +3549,171 @@ function clearAdvanceReading() {
   if (ta) ta.value = '';
 }
 
+// ===== MY HIGHLIGHTS + MY NOTES =====
+// studyAnnotations[noteId] = { hl: [{ t: 'selected text', c: 'y'|'g'|'r' }], my: 'own words' }
+// Highlights are painted with the CSS Custom Highlight API (no DOM changes), matched by text.
+const HL_COLORS = { y: '⭐ Key', g: '✅ Got it', r: '❓ Confusing' };
+const myNotesOpen = new Set();
+let _hlPending = null;
+
+function saveAnnotations() {
+  try { localStorage.setItem('studyhub_annotations', JSON.stringify(studyAnnotations)); } catch (e) {}
+  markSyncDirty();
+}
+
+function _annot(noteId) { return studyAnnotations[noteId] || { hl: [], my: '' }; }
+// Case-insensitive: selection text follows CSS text-transform, the DOM text doesn't.
+function _hlKey(s) { return String(s || '').replace(/\s+/g, '').toLowerCase(); }
+
+function _setAnnot(noteId, a) {
+  if (!a.hl.length && !(a.my || '').trim()) delete studyAnnotations[noteId];
+  else studyAnnotations[noteId] = a;
+  saveAnnotations();
+}
+
+function _hlTextNodes(root) {
+  const out = [];
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: n => n.parentElement.closest('.my-notes, button, textarea, .xref-bar') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+  });
+  while (w.nextNode()) out.push(w.currentNode);
+  return out;
+}
+
+/** Repaint every highlight for note cards currently on screen. */
+function applyHighlights() {
+  if (!window.CSS || !CSS.highlights || typeof Highlight === 'undefined') return;
+  const sets = { y: new Highlight(), g: new Highlight(), r: new Highlight() };
+  document.querySelectorAll('.note-block[id^="note-"]').forEach(card => {
+    const a = studyAnnotations[card.id.slice(5)];
+    const body = card.querySelector('.note-body');
+    if (!a || !a.hl.length || !body) return;
+    // Whitespace-free text with a map back to (node, offset), so matches survive line breaks and tags.
+    let flat = '';
+    const map = [];
+    _hlTextNodes(body).forEach(node => {
+      const s = node.nodeValue;
+      for (let i = 0; i < s.length; i++) if (!/\s/.test(s[i])) { flat += s[i].toLowerCase(); map.push([node, i]); }
+    });
+    a.hl.forEach(h => {
+      const key = _hlKey(h.t);
+      const at = key ? flat.indexOf(key) : -1;
+      if (at < 0 || !sets[h.c]) return;
+      const r = new Range();
+      const end = map[at + key.length - 1];
+      r.setStart(map[at][0], map[at][1]);
+      r.setEnd(end[0], end[1] + 1);
+      sets[h.c].add(r);
+    });
+  });
+  Object.entries(sets).forEach(([c, h]) => CSS.highlights.set('hl-' + c, h));
+}
+
+function _hlToolbar() {
+  let bar = document.getElementById('hl-toolbar');
+  if (bar) return bar;
+  bar = document.createElement('div');
+  bar.id = 'hl-toolbar';
+  bar.innerHTML = Object.entries(HL_COLORS).map(([c, label]) =>
+    `<button class="hl-btn hl-${c}" data-c="${c}">${label}</button>`).join('') +
+    '<button class="hl-btn hl-x" data-c="x">🧽 Erase</button>';
+  // Keep the text selection alive while tapping a button.
+  bar.addEventListener('mousedown', e => e.preventDefault());
+  bar.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (b && _hlPending) highlightSelection(_hlPending.noteId, _hlPending.text, b.dataset.c);
+  });
+  document.body.appendChild(bar);
+  return bar;
+}
+
+function _onSelectionChange() {
+  const sel = window.getSelection();
+  const bar = document.getElementById('hl-toolbar');
+  const text = sel && !sel.isCollapsed ? sel.toString().trim() : '';
+  const el = n => n && (n.nodeType === 1 ? n : n.parentElement);
+  const body = text.length >= 2 && el(sel.anchorNode) && el(sel.anchorNode).closest('.note-block .note-body');
+  if (!body || !body.contains(sel.focusNode) || el(sel.anchorNode).closest('.my-notes, textarea')) {
+    if (bar) bar.classList.remove('show');
+    return;
+  }
+  _hlPending = { noteId: body.closest('.note-block').id.slice(5), text: text.replace(/\s+/g, ' ').slice(0, 400) };
+  const rect = sel.getRangeAt(0).getBoundingClientRect();
+  const tb = _hlToolbar();
+  tb.classList.add('show');
+  // Below the selection: the phone's own copy menu appears above it.
+  const left = Math.max(8, Math.min(rect.left + rect.width / 2 - tb.offsetWidth / 2, window.innerWidth - tb.offsetWidth - 8));
+  const top = rect.bottom + 10 + tb.offsetHeight > window.innerHeight ? rect.top - tb.offsetHeight - 10 : rect.bottom + 10;
+  tb.style.left = left + 'px';
+  tb.style.top = Math.max(8, top) + 'px';
+}
+let _selTimer = null;
+document.addEventListener('selectionchange', () => { clearTimeout(_selTimer); _selTimer = setTimeout(_onSelectionChange, 250); });
+
+function highlightSelection(noteId, text, c) {
+  const a = _annot(noteId);
+  const key = _hlKey(text);
+  // Replace any highlight that overlaps this one.
+  a.hl = a.hl.filter(h => { const k = _hlKey(h.t); return !(k.includes(key) || key.includes(k)); });
+  if (c !== 'x') a.hl.push({ t: text, c });
+  _setAnnot(noteId, a);
+  const sel = window.getSelection();
+  if (sel) sel.removeAllRanges();
+  document.getElementById('hl-toolbar').classList.remove('show');
+  _hlPending = null;
+  updateNoteCard(noteId);
+  if (c !== 'x' && !window.CSS?.highlights) showToast('success', 'Saved to 📝 My notes (colour highlights need a newer browser).');
+}
+
+function removeHighlight(noteId, i) {
+  const a = _annot(noteId);
+  a.hl.splice(i, 1);
+  _setAnnot(noteId, a);
+  if (currentView === 'revision') renderMain(); else updateNoteCard(noteId);
+}
+
+function saveMyNote(noteId, text) {
+  const a = _annot(noteId);
+  a.my = text;
+  _setAnnot(noteId, a);
+}
+
+function _hlChipsHtml(noteId, a) {
+  return a.hl.length ? `<div class="hl-list">${a.hl.map((h, i) =>
+    `<span class="hl-chip hl-${h.c}">${escHtml(h.t.length > 120 ? h.t.slice(0, 120) + '…' : h.t)}<button onclick="removeHighlight('${noteId}',${i})" title="Remove">✕</button></span>`).join('')}</div>` : '';
+}
+
+function myNotesPanelHtml(n) {
+  const a = _annot(n.id);
+  const count = a.hl.length + ((a.my || '').trim() ? 1 : 0);
+  return `<details class="my-notes" ${myNotesOpen.has(n.id) ? 'open' : ''} ontoggle="this.open?myNotesOpen.add('${n.id}'):myNotesOpen.delete('${n.id}')">
+    <summary>📝 My notes${count ? ` <span class="my-notes-count">${count}</span>` : ''}</summary>
+    <p class="my-notes-hint">Select any words above to highlight them. Write it in your own words below — that's how it sticks!</p>
+    ${_hlChipsHtml(n.id, a)}
+    <textarea class="my-notes-text" rows="3" placeholder="In my own words…" oninput="saveMyNote('${n.id}', this.value)">${escHtml(a.my || '')}</textarea>
+  </details>`;
+}
+
+function getAnnotatedNotes() {
+  return Object.keys(studyAnnotations)
+    .map(id => appData.content.find(c => c.id === id && c.type === 'note'))
+    .filter(Boolean);
+}
+
+function renderMyNotesItem(n) {
+  const topic = appData.topics.find(t => t.id === n.topicId);
+  const a = _annot(n.id);
+  return `<div class="revision-item revision-item-note">
+    <div class="rev-meta">${topic ? topic.icon + ' ' + escHtml(topic.name) : ''} <span class="rev-badge note">My notes</span></div>
+    <div class="rev-q"><strong>${escHtml(n.subtopic || 'Note')}</strong></div>
+    ${_hlChipsHtml(n.id, a)}
+    ${(a.my || '').trim() ? `<div class="my-notes-read">${escHtml(a.my)}</div>` : ''}
+    <div class="rev-actions">
+      <button class="btn btn-sm btn-primary" onclick="selectedTopic='${n.topicId}';jumpToNote('${n.id}')">Open note</button>
+    </div>
+  </div>`;
+}
+
 function buildNoteCardHtml(n, displayNum) {
   const allQuestions = topicTextQuestions(selectedTopic);
   const XREF_TYPES = [['mcq','MCQ'], ['true_false','T/F'], ['fill_blank','Fill'], ['short_answer','Q&A']];
@@ -3574,6 +3748,7 @@ function buildNoteCardHtml(n, displayNum) {
         ${n.examTip?`<div class="tip-box exam"><strong>🎯 Exam Tip:</strong> <span class="rich-html inline-rich">${fmtText(n.examTip)}</span></div>`:''}
         ${buildAdvanceReadingHtml(n)}
         ${linkBar}
+        ${myNotesPanelHtml(n)}
         <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
           <button class="btn btn-sm ${revisionMarkBtnClass(n.id)}" onclick="toggleRevisionMark('${n.id}');updateNoteCard('${n.id}')">${revisionMarkLabel(n.id)}</button>
           <button class="btn btn-sm btn-outline" onclick="editContent('${n.id}')">✏️ Edit</button>
@@ -3592,6 +3767,7 @@ function renderNotes() {
   }
   if (chapterViewMode === 'scroll') {
     body.innerHTML = `<div class="notes-scroll-list">${notes.map((n, i) => buildNoteCardHtml(n, i + 1)).join('')}</div>`;
+    applyHighlights();
     return;
   }
   noteIndex = clampCardIndex(noteIndex, notes.length);
@@ -3599,6 +3775,7 @@ function renderNotes() {
   const pager = cardPagerHtml(noteIndex, notes.length, 'prevNoteCard', 'nextNoteCard', 'Note');
   body.innerHTML = `${pager}<div class="notes-single">${buildNoteCardHtml(n, noteIndex + 1)}</div>${pager}
     <p class="card-pager-hint">Use ← → arrow keys to move between notes</p>`;
+  applyHighlights();
   // Snowy: start note-reading timer
   if (typeof snowyOnNoteRendered === 'function') snowyOnNoteRendered(n.id, selectedTopic);
   // Princess: award coin after 45s of reading
@@ -4021,6 +4198,7 @@ function updateNoteCard(noteId) {
   const idx = notes.findIndex(n => n.id === noteId);
   if (idx < 0) return;
   card.outerHTML = buildNoteCardHtml(note, idx + 1);
+  applyHighlights();
 }
 
 function answerTF(id, val) {
@@ -4856,6 +5034,7 @@ function buildSyncPayload() {
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
     revisions: studyRevisions,
+    annotations: studyAnnotations,
     questionRatings: questionRatings
   };
 }
@@ -4887,6 +5066,7 @@ function buildCloudSyncPayload() {
     bookmarks: [...studyBookmarks],
     activity: studyActivity,
     revisions: studyRevisions,
+    annotations: studyAnnotations,
     questionRatings: questionRatings
   };
 }
@@ -4983,6 +5163,7 @@ function applyImportedData(imp, mode, options) {
     if (Array.isArray(imp.bookmarks)) { studyBookmarks = new Set(imp.bookmarks); saveBookmarks(); }
     if (imp.activity && typeof imp.activity === 'object') { studyActivity = imp.activity; saveActivity(); }
     if (imp.revisions && typeof imp.revisions === 'object') { studyRevisions = imp.revisions; saveRevisions(); }
+    if (imp.annotations && typeof imp.annotations === 'object') { studyAnnotations = imp.annotations; saveAnnotations(); }
     mergeQuestionRatings(imp.questionRatings);
     if (Array.isArray(imp.editedContentIds)) appData.editedContentIds = imp.editedContentIds.slice();
     saveData({ skipSync: true });
@@ -5033,6 +5214,17 @@ function applyImportedData(imp, mode, options) {
       if (!mine || (r.count || 0) > (mine.count || 0)) studyRevisions[id] = r;
     });
     saveRevisions();
+  }
+  if (imp.annotations && typeof imp.annotations === 'object') {
+    Object.entries(imp.annotations).forEach(([id, a]) => {
+      const mine = _annot(id);
+      const keys = new Set(mine.hl.map(h => _hlKey(h.t)));
+      studyAnnotations[id] = {
+        hl: mine.hl.concat((a.hl || []).filter(h => !keys.has(_hlKey(h.t)))),
+        my: (mine.my || '').trim() ? mine.my : (a.my || '')
+      };
+    });
+    saveAnnotations();
   }
   if (imp.activity && typeof imp.activity === 'object') {
     studyActivity = Object.assign({}, imp.activity, studyActivity);
