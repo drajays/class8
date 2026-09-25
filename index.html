@@ -6,7 +6,7 @@
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
   /* Must match version.json "build" — mismatch causes purge/reload loops after deploy. */
-  var BUILD = '104';
+  var BUILD = '105';
   window.__STUDYHUB_BUILD = BUILD;
   window.__STUDYHUB_ADMIN_PW = '1234';
   window.__STUDYHUB_BLOCK_BOOT = false;
@@ -107,7 +107,7 @@
 <meta name="description" content="StudyHub — notes and practice questions for ICSE Class 8: Physics, Chemistry, Biology, Geography, History and Civics.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="stylesheet" href="styles.css?v=104">
+<link rel="stylesheet" href="styles.css?v=105">
 <link rel="stylesheet" href="exam-panel.css?v=74">
 <link rel="stylesheet" href="snowy.css">
 <link rel="stylesheet" href="princess.css">
@@ -133,6 +133,7 @@
     <input type="search" class="search-input" id="header-search" placeholder="Search notes &amp; questions…" autocomplete="off" oninput="searchQuestions(this.value)" enterkeyhint="search">
   </div>
   <div class="header-actions">
+    <button class="theme-toggle" onclick="wbToggle()" title="Whiteboard: sketch and make rough notes">✏️</button>
     <button class="theme-toggle" onclick="toggleFullView(true)" title="Full screen: hide menus and show only the page">⛶</button>
     <button class="theme-toggle" onclick="toggleTheme()" id="btn-theme" title="Toggle light / dark">🌙</button>
     <details class="tools-menu" id="tools-menu">
@@ -581,8 +582,8 @@
 <!-- APP LOGIC -->
 <script src="page-refs.js?v=86"></script>
 <script src="diagram-labels.js?v=93"></script>
-<script src="whiteboard.js?v=104"></script>
-<script src="app.js?v=104"></script>
+<script src="whiteboard.js?v=105"></script>
+<script src="app.js?v=105"></script>
 <script src="exam-panel.js?v=74"></script>
 <script src="github-sync.js?v=74"></script>
 <script src="snowy.js"></script>
