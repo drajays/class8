@@ -2409,7 +2409,8 @@ function renderChapterTimeline(topicId) {
   const events = (historyTimelineFor(topicId) || []).map(e => ({ ...e, topicId }))
     .sort((a, b) => a.sort - b.sort);
   body.innerHTML = `<div class="fade-in tl-wrap">
-    <p class="lead">Every date in this chapter, in order. Tap an event to open its notes.</p>
+    <p class="lead">Every date in this chapter, in order. Tap an event to open its notes.
+      ${events.length >= 4 ? `<button class="btn btn-sm btn-primary" onclick="openSortGame('order:${topicId}')">🧩 Put them in order yourself</button>` : ''}</p>
     ${timelineToolbarHtml(events.length)}
     ${timelineHtml(events, false)}
   </div>`;
@@ -3295,6 +3296,10 @@ function renderHome(el) {
       <div class="journey-card" onclick="openQuizBuilder({})">
         <div class="jc-icon">▶</div>
         <div class="jc-body"><div class="jc-title">Start Quiz</div><div class="jc-sub">Custom practice</div></div>
+      </div>
+      <div class="journey-card" onclick="openSortGame()">
+        <div class="jc-icon">🧩</div>
+        <div class="jc-body"><div class="jc-title">Sort Games</div><div class="jc-sub">Dates in order, chemicals in groups</div></div>
       </div>
       <div class="journey-card" onclick="startMixedPractice()" title="Mixing chapters makes you work out which idea each question needs, which is how exams feel">
         <div class="jc-icon">🔀</div>
@@ -5506,6 +5511,150 @@ function _chipDrag(e, chipEl, dropSelector, onDrop, onTap) {
   document.addEventListener('pointermove', move);
   document.addEventListener('pointerup', up);
   document.addEventListener('pointercancel', up);
+}
+
+// ===== SORT GAMES (drag to sort) =====
+// Two kinds, one engine:
+//   "order:<topicId>" puts 6 timeline events in order (one per bin, the year shows after checking);
+//   "chem-compounds" / "chem-elements" sort book chemicals into groups (many per bin), from the Chemical Index data.
+// sortGame = { key, title, help, ordered, bins: [label], items: [{ t, bin, sub }], placed: { item: bin }, sel, checked }
+let sortGame = null;
+const _subscript = f => String(f).replace(/([A-Za-z)\]])(\d+)/g, (m, a, d) => a + [...d].map(c => '₀₁₂₃₄₅₆₇₈₉'[c]).join(''));
+
+function sortGameList() {
+  const games = appData.topics
+    .filter(t => (historyTimelineFor(t.id) || []).length >= 4)
+    .map(t => ({ key: 'order:' + t.id, label: `🕰️ ${t.name}`, group: 'Put events in order' }));
+  if (typeof CHEM_BOOK_COMPOUNDS !== 'undefined') games.push({ key: 'chem-compounds', label: '⚗️ Acid, base, salt or oxide?', group: 'Sort into groups' });
+  if (typeof CHEM_BOOK_ELEMENTS !== 'undefined' && typeof CHEM_ELEMENTS !== 'undefined') games.push({ key: 'chem-elements', label: '🧪 Metal, non-metal or noble gas?', group: 'Sort into groups' });
+  return games;
+}
+
+function _buildSortGame(key) {
+  const pick = (list, n) => _shuffle(list).slice(0, n);
+  if (key.startsWith('order:')) {
+    const tid = key.slice(6), seen = new Set();
+    const events = _shuffle(historyTimelineFor(tid) || []).filter(e => !seen.has(e.sort) && seen.add(e.sort)).slice(0, 6).sort((a, b) => a.sort - b.sort);
+    const t = appData.topics.find(x => x.id === tid);
+    return { title: `🕰️ Put in order: ${t ? t.name : ''}`, help: 'Drag the events into order, earliest first. Or tap an event, then tap a place.', ordered: true,
+      bins: events.map((_, i) => ['1st', '2nd', '3rd', '4th', '5th', '6th'][i]), items: events.map((e, i) => ({ t: e.event, bin: i, sub: e.year })) };
+  }
+  if (key === 'chem-compounds') {
+    const kinds = ['acid', 'base', 'salt', 'oxide'];
+    const items = kinds.flatMap((k, bin) => pick(CHEM_BOOK_COMPOUNDS.filter(c => c[2] === k), k === 'salt' || k === 'oxide' ? 3 : 2)
+      .map(c => ({ t: `${_subscript(c[0])} · ${c[1]}`, bin })));
+    return { title: '⚗️ Acid, base, salt or oxide?', help: 'Drag each compound into its group. Or tap a compound, then tap a group.', bins: ['Acid', 'Base', 'Salt', 'Oxide'], items };
+  }
+  if (key === 'chem-elements') {
+    // Groups come from the periodic table's categories (chemistry-elements.js); metalloids are left out as neither.
+    const bins = { noble: 2, nonmetal: 1, halogen: 1, metalloid: -1 };
+    const els = CHEM_ELEMENTS.filter(e => CHEM_BOOK_ELEMENTS[e.sym]).map(e => ({ ...e, bin: bins[e.cat] ?? 0 }));
+    const items = [[0, 4], [1, 4], [2, 2]].flatMap(([bin, n]) => pick(els.filter(e => e.bin === bin), n).map(e => ({ t: `${e.name} (${e.sym})`, bin })));
+    return { title: '🧪 Metal, non-metal or noble gas?', help: 'Drag each element into its group. Or tap an element, then tap a group.', bins: ['Metal', 'Non-metal', 'Noble gas'], items };
+  }
+  return null;
+}
+
+function openSortGame(key) {
+  const g = key ? _buildSortGame(key) : null;
+  sortGame = g && g.items.length >= 3 ? { key, ...g, bank: _shuffle(g.items.map((_, i) => i)), placed: {}, sel: null, checked: false } : null;
+  let el = document.getElementById('sort-game');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'sort-game';
+    el.addEventListener('pointerdown', _sgPointerDown);
+    el.addEventListener('click', _sgClick);
+    document.body.appendChild(el);
+  }
+  el.classList.add('show');
+  renderSortGame();
+}
+function closeSortGame() { sortGame = null; document.getElementById('sort-game').classList.remove('show'); }
+
+function renderSortGame() {
+  const el = document.getElementById('sort-game');
+  const g = sortGame;
+  if (!g) { // menu
+    const games = sortGameList();
+    const groups = [...new Set(games.map(x => x.group))];
+    el.innerHTML = `<div class="lg-panel sg-panel" role="dialog" aria-label="Sort games">
+      <div class="lg-head"><strong>🧩 Sort games</strong><button class="btn btn-sm btn-outline" data-act="close">✕ Close</button></div>
+      ${groups.map(gr => `<h4 class="sg-group">${gr}</h4><div class="sg-menu">${games.filter(x => x.group === gr)
+        .map(x => `<button class="btn btn-outline" data-act="play" data-key="${x.key}">${escHtml(x.label)}</button>`).join('')}</div>`).join('')}
+      ${_whyLine('Sorting and ordering makes you compare ideas and decide how they fit together. Connecting facts like this helps you remember them much better than learning each one alone.')}
+    </div>`;
+    return;
+  }
+  const chip = i => `<span class="lg-chip sg-chip${g.sel === i ? ' sel' : ''}${g.checked ? (g.items[i].bin === g.placed[i] ? ' ok' : ' bad') : ''}" data-item="${i}">${escHtml(g.items[i].t)}${g.checked && g.ordered ? ` <b>${escHtml(g.items[i].sub)}</b>` : ''}</span>`;
+  const inBin = b => Object.keys(g.placed).filter(i => g.placed[i] === b).map(Number);
+  const nRight = g.items.filter((it, i) => g.placed[i] === it.bin).length;
+  const allPlaced = !g.bank.length, done = g.checked && nRight === g.items.length;
+  el.innerHTML = `<div class="lg-panel sg-panel" role="dialog" aria-label="${escHtml(g.title)}">
+    <div class="lg-head"><strong>${escHtml(g.title)}</strong>
+      <span><button class="btn btn-sm btn-outline" data-act="menu">🧩 Other games</button> <button class="btn btn-sm btn-outline" data-act="close">✕ Close</button></span></div>
+    <p class="lg-help">${g.help}</p>
+    <div class="${g.ordered ? 'sg-order' : 'sg-bins'}">${g.bins.map((label, b) => `<div class="sg-bin" data-bin="${b}">
+      <div class="sg-bin-label">${escHtml(label)}${g.ordered && !b ? ' <small>(earliest)</small>' : ''}</div>
+      <div class="sg-bin-items">${inBin(b).map(chip).join('') || '<span class="sg-empty">drop here</span>'}</div></div>`).join('')}</div>
+    <div class="lg-bank" data-bin="-1">${g.bank.map(chip).join('') || (g.checked ? '' : '<span class="lg-hint">All placed. Press Check!</span>')}</div>
+    <div class="lg-foot">
+      ${done ? `<span class="lg-score good">🎉 All ${nRight} right!</span>` : g.checked ? `<span class="lg-score">✅ ${nRight} of ${g.items.length} right</span>` : ''}
+      ${done ? `<button class="btn btn-primary" data-act="again">🔄 New round</button>`
+        : `${g.checked ? '<button class="btn btn-outline" data-act="retry">↩ Take back wrong ones</button><button class="btn btn-outline" data-act="reveal">👀 Show answers</button>' : ''}
+           <button class="btn btn-primary" data-act="check" ${Object.keys(g.placed).length ? '' : 'disabled'}>${allPlaced ? '✅ Check' : '✅ Check so far'}</button>`}
+    </div>
+  </div>`;
+}
+
+function _sgPlace(i, bin) {
+  const g = sortGame;
+  g.bank = g.bank.filter(x => x !== i);
+  delete g.placed[i];
+  if (bin < 0) g.bank.push(i);
+  else {
+    if (g.ordered) Object.keys(g.placed).forEach(o => { if (g.placed[o] === bin) { delete g.placed[o]; g.bank.push(+o); } }); // one per place
+    g.placed[i] = bin;
+  }
+  g.sel = null; g.checked = false;
+  renderSortGame();
+}
+
+function _sgPointerDown(e) {
+  const g = sortGame;
+  if (!g || e.button > 0) return;
+  const chipEl = e.target.closest('.sg-chip');
+  if (!chipEl) {
+    const binEl = e.target.closest('[data-bin]');
+    if (g.sel !== null && binEl) _sgPlace(g.sel, +binEl.dataset.bin);
+    return;
+  }
+  const i = +chipEl.dataset.item;
+  _chipDrag(e, chipEl, '#sort-game [data-bin]',
+    el => el ? _sgPlace(i, +el.dataset.bin) : renderSortGame(),
+    () => { g.sel = g.sel === i ? null : i; renderSortGame(); });
+}
+
+function _sgClick(e) {
+  const act = e.target.closest('[data-act]');
+  if (!act) { if (e.target === e.currentTarget) closeSortGame(); return; }
+  const a = act.dataset.act, g = sortGame;
+  if (a === 'close') return closeSortGame();
+  if (a === 'menu') return openSortGame();
+  if (a === 'play') return openSortGame(act.dataset.key);
+  if (a === 'again') return openSortGame(g.key);
+  if (a === 'check') {
+    g.checked = true;
+    if (g.items.every((it, i) => g.placed[i] === it.bin)) {
+      if (typeof princessOnCorrectAnswer === 'function') princessOnCorrectAnswer('sort:' + g.key);
+      if (typeof snowyEarnTokens === 'function') snowyEarnTokens('sort:' + g.key, true, {});
+    }
+  }
+  if (a === 'retry') {
+    g.items.forEach((it, i) => { if (g.placed[i] !== undefined && g.placed[i] !== it.bin) { delete g.placed[i]; g.bank.push(i); } });
+    g.checked = false;
+  }
+  if (a === 'reveal') { g.items.forEach((it, i) => { g.placed[i] = it.bin; }); g.bank = []; g.checked = true; }
+  renderSortGame();
 }
 
 function _lgPointerDown(e) {
