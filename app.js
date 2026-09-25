@@ -4318,10 +4318,86 @@ let ttsRanges = []; // one per queued sentence; swapped for fresh ranges when th
 
 function ttsSupported() { return 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined'; }
 
-function _ttsVoice() {
-  const voices = speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang));
-  return voices.find(v => /en-IN/i.test(v.lang)) || voices.find(v => /en-GB/i.test(v.lang)) || voices.find(v => v.default) || voices[0] || null;
+// Voice choice: at most 10 of the device's own (free) voices — Indian & American English, plus Hindi.
+const TTS_SPEEDS = [['Slow', 0.7], ['Easy', 0.85], ['Normal', 0.95], ['Quick', 1.1], ['Fast', 1.3]];
+const _TTS_GROUPS = [['Indian English', /^en[-_]IN/i, 4], ['American English', /^en[-_]US/i, 4], ['Hindi', /^hi[-_]IN/i, 2]];
+const _TTS_MALE = /\b(male|rishi|prabhat|madhur|neel|ravi|hemant|guy|davis|christopher|eric|roger|ryan|alex|daniel|fred|aaron|arthur|tom|mark|david|james|brian)\b/i;
+const _TTS_FEMALE = /\b(female|neerja|swara|veena|lekha|kalpana|heera|aria|jenny|samantha|susan|zira|sonia|libby|karen|ava|allison|emma|michelle|ana|jane|nancy|sara|tessa|fiona|kate|isha)\b/i;
+let ttsPref = {};
+try { ttsPref = JSON.parse(localStorage.getItem('studyhub_tts')) || {}; } catch (e) {}
+let _ttsChoices = [];
+
+function _ttsSave() { try { localStorage.setItem('studyhub_tts', JSON.stringify(ttsPref)); } catch (e) {} }
+function _ttsRate() { return ttsPref.rate || 0.95; }
+function _ttsNatural(v) { return /natural|neural|online|enhanced|premium|siri/i.test(v.name); }
+function _ttsScore(v) { return (_ttsNatural(v) ? 4 : 0) + (/google/i.test(v.name) ? 2 : 0) + (v.localService ? 1 : 0); }
+function _ttsGender(v) { return _TTS_MALE.test(v.name) ? 'Male' : _TTS_FEMALE.test(v.name) ? 'Female' : ''; }
+
+/** Best voices per accent, keeping a woman and a man when the device has both. Most natural-sounding first. */
+function ttsVoiceChoices() {
+  const all = speechSynthesis.getVoices().filter((v, i, a) => a.findIndex(w => w.name === v.name && w.lang === v.lang) === i);
+  const out = [];
+  _TTS_GROUPS.forEach(([accent, re, cap]) => {
+    const vs = all.filter(v => re.test(v.lang)).sort((a, b) => _ttsScore(b) - _ttsScore(a));
+    const pick = [];
+    ['Female', 'Male'].forEach(g => vs.filter(v => _ttsGender(v) === g).slice(0, cap / 2).forEach(v => pick.push(v)));
+    vs.forEach(v => { if (pick.length < cap && !pick.includes(v)) pick.push(v); });
+    pick.forEach(v => out.push({ v, accent }));
+  });
+  return out.slice(0, 10);
 }
+
+function _ttsVoice() {
+  const all = speechSynthesis.getVoices();
+  const chosen = all.find(v => v.voiceURI === ttsPref.voice);
+  if (chosen) return chosen;
+  const first = ttsVoiceChoices()[0];
+  if (first) return first.v;
+  const en = all.filter(v => /^en/i.test(v.lang));
+  return en.find(v => v.default) || en[0] || null;
+}
+
+function _ttsSpeak(text, voice) {
+  const u = new SpeechSynthesisUtterance(text);
+  if (voice) { u.voice = voice; u.lang = voice.lang; }
+  u.rate = _ttsRate();
+  speechSynthesis.speak(u);
+}
+
+function _ttsPreview() {
+  stopReadAloud();
+  speechSynthesis.cancel();
+  const v = _ttsVoice();
+  _ttsSpeak(v && /^hi/i.test(v.lang) ? 'नमस्ते! मेरी आवाज़ ऐसी सुनाई देगी।' : 'Hello! This is how I will read your notes. Photosynthesis is how plants make their food.', v);
+}
+
+function renderTtsSettings() {
+  _ttsChoices = ttsVoiceChoices();
+  const cur = _ttsVoice(), rate = _ttsRate();
+  const rows = _ttsChoices.map(({ v, accent }, i) => {
+    const name = v.name.replace(/^Microsoft /, '').replace(/ Online \(Natural\)| - .*$/g, '');
+    const sub = [accent, _ttsGender(v)].filter(Boolean).join(' · ');
+    return `<button class="tts-voice${cur && v.voiceURI === cur.voiceURI ? ' on' : ''}" onclick="setTtsVoice(${i})"><b>${escHtml(name)}</b>${_ttsNatural(v) ? ' <span class="tts-nat">✨ Natural</span>' : ''}<small>${sub}</small><span class="tts-play">▶</span></button>`;
+  }).join('');
+  document.getElementById('tts-panel').innerHTML = `
+    <div class="tts-label">Speed</div>
+    <div class="tts-speeds">${TTS_SPEEDS.map(([n, r]) => `<button class="btn btn-sm ${r === rate ? 'btn-primary' : 'btn-outline'}" onclick="setTtsRate(${r})">${n}</button>`).join('')}</div>
+    <div class="tts-label">Voice <small>(tap to hear it)</small></div>
+    <div class="tts-voices">${rows || '<p class="tts-hint">No English or Hindi voices found on this device yet — see the tip below.</p>'}</div>
+    <details class="tts-hint"><summary>Want more natural voices? (free)</summary>
+      <p><b>iPad / iPhone:</b> Settings → Accessibility → Spoken Content → Voices → English (India) → download an <i>Enhanced</i> or <i>Premium</i> voice.<br>
+      <b>Android:</b> Settings → Text-to-speech → Google → Install voice data → English (India).<br>
+      <b>Windows:</b> use Microsoft Edge — it has ✨ Natural Indian voices built in (Neerja, Prabhat).<br>
+      <b>Mac:</b> System Settings → Accessibility → Spoken Content → System voice → Manage voices (Rishi, Veena, Lekha).</p></details>`;
+}
+
+function openTtsSettings() { renderTtsSettings(); openModal('modal-tts'); }
+function closeTtsSettings() { speechSynthesis.cancel(); closeModal('modal-tts'); }
+function setTtsVoice(i) { ttsPref.voice = _ttsChoices[i].v.voiceURI; _ttsSave(); renderTtsSettings(); _ttsPreview(); }
+function setTtsRate(r) { ttsPref.rate = r; _ttsSave(); renderTtsSettings(); _ttsPreview(); }
+if (typeof speechSynthesis !== 'undefined') speechSynthesis.addEventListener('voiceschanged', () => {
+  if (document.getElementById('modal-tts')?.classList.contains('show')) renderTtsSettings(); // voices arrive late in Chrome
+});
 
 /** The nearest block-level ancestor: text in different blocks is never one sentence. */
 function _ttsBlock(el) {
@@ -4331,7 +4407,7 @@ function _ttsBlock(el) {
 
 /** Sentences of a note card as DOM ranges, in reading order (visible text only). */
 function _ttsSentences(card) {
-  const skip = '.page-chip, .src-chip, .link-count, .adv-read-empty, .adv-read-meta, .advance-reading-toggle, .tts-btn';
+  const skip = '.page-chip, .src-chip, .link-count, .adv-read-empty, .adv-read-meta, .advance-reading-toggle, .tts-btn, .tts-set';
   const out = [];
   [card.querySelector('.note-head h3'), card.querySelector('.note-body')].forEach(root => {
     if (!root) return;
@@ -4424,7 +4500,7 @@ function toggleReadAloud(noteId) {
   sentences.forEach((s, i) => {
     const u = new SpeechSynthesisUtterance(s.text);
     if (voice) { u.voice = voice; u.lang = voice.lang; }
-    u.rate = 0.95;
+    u.rate = _ttsRate();
     u.onstart = () => { if (ttsNoteId === noteId) _ttsMark(ttsRanges[i]); };
     if (i === sentences.length - 1) u.onend = () => { if (ttsNoteId === noteId) stopReadAloud(); };
     speechSynthesis.speak(u);
@@ -4456,7 +4532,7 @@ function buildNoteCardHtml(n, displayNum) {
       <div class="note-head">
         <div class="note-number">${displayNum}</div>
         <h3>${escHtml(n.subtopic)}${notePage(n) ? ` <span class="page-chip" title="Page in your textbook">📖 Book ${escHtml(notePage(n))}</span>` : ''}${sourceChipHtml(n.source)}${n.linkedMcqCount ? ` <span class="link-count" title="Questions linked to this section">${n.linkedMcqCount} linked Qs</span>` : ''}</h3>
-        ${ttsButtonHtml(n.id)}
+        ${ttsButtonHtml(n.id)}${ttsSupported() ? `<button class="btn btn-sm btn-outline tts-set" onclick="event.stopPropagation();openTtsSettings()" title="Choose voice and speed">🎙️</button>` : ''}
       </div>
       <div class="note-body">
         ${fiveWHtml(n.fiveW)}

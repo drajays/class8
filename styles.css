@@ -1600,7 +1600,16 @@ button.mm-flow-step:hover{border-color:var(--accent);color:var(--accent-ink)}
 :root{ --tts:#cfe6ff; }
 [data-theme="dark"]{ --tts:#1f4a70; }
 ::highlight(tts){ background-color:var(--tts); color:inherit; }
-.tts-btn{ flex:none; }
+.tts-btn,.tts-set{ flex:none; }
+.tts-label{ font-weight:600; margin:12px 0 6px; } .tts-label small{ font-weight:400; color:var(--ink-3); }
+.tts-speeds{ display:flex; gap:6px; flex-wrap:wrap; }
+.tts-voices{ display:grid; gap:6px; }
+.tts-voice{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; text-align:left; padding:10px 12px; min-height:44px; border:1px solid var(--line); border-radius:var(--radius-sm); background:var(--surface); color:var(--ink); font:inherit; cursor:pointer; }
+.tts-voice.on{ border-color:var(--accent); background:var(--accent-soft); }
+.tts-voice small{ color:var(--ink-3); flex:1 1 100%; order:3; }
+.tts-play{ margin-left:auto; color:var(--accent-ink); }
+.tts-nat{ font-size:.75rem; color:var(--success); }
+.tts-hint{ color:var(--ink-2); font-size:.85rem; margin-top:12px; }
 
 /* ---------- EXAM COUNTDOWN (v94) ---------- */
 .exam-card{margin:0 0 12px;padding:14px 16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
