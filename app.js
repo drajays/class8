@@ -2431,6 +2431,199 @@ function renderMasterTimeline(el) {
   </div>`;
 }
 
+// ============================================================
+// CHEMICAL INDEX — periodic table + cheat sheet of every element and compound in the book.
+// Data: chemistry-elements.js (all 118), chemistry-index.js (book entries). Each side links to the other.
+// ============================================================
+const CI_CATS = [
+  ['alkali', 'Alkali metals', 8], ['alkaline', 'Alkaline earth metals', 35], ['transition', 'Transition metals', 210],
+  ['post', 'Other metals', 165], ['metalloid', 'Metalloids', 130], ['nonmetal', 'Non-metals', 50],
+  ['halogen', 'Halogens', 280], ['noble', 'Noble gases', 320], ['lanthanide', 'Lanthanides', 190], ['actinide', 'Actinides', 250]
+];
+const CI_FILTERS = [['all', 'All'], ['elements', 'Elements'], ['oxide', 'Oxides'], ['acid', 'Acids'], ['base', 'Bases'], ['salt', 'Salts'], ['hydrate', 'Hydrates'], ['organic', 'Carbon compounds'], ['other', 'Gases & others']];
+const CI_KIND = { oxide: 'Oxide', acid: 'Acid', base: 'Base', salt: 'Salt', hydrate: 'Hydrate', organic: 'Carbon compound', other: 'Gas / other', molecule: 'Element molecule' };
+let ciTab = 'table', ciSel = 'H', ciFilter = 'all', ciQuery = '', ciMore = false;
+let _ciItems = null;
+
+const ciEl = sym => CHEM_ELEMENTS.find(e => e.sym === sym);
+const ciAtomMass = sym => CHEM_BOOK_MASS[sym] ?? +ciEl(sym).mass;
+const ciNum = n => String(+n.toFixed(1));
+function ciSub(f) { return f.replace(/([A-Za-z)])(\d+)/g, (m, a, d) => a + [...d].map(c => '₀₁₂₃₄₅₆₇₈₉'[c]).join('')); }
+
+/** Atom counts of a formula: brackets and hydrate dots (CuSO4·5H2O) included. */
+function ciCounts(formula) {
+  const total = {};
+  formula.split('·').forEach(part => {
+    const k = parseInt(part) || 1;
+    const st = [{}];
+    for (const m of part.replace(/^\d+/, '').matchAll(/([A-Z][a-z]?)(\d*)|\(|\)(\d*)/g)) {
+      const top = st[st.length - 1];
+      if (m[1]) top[m[1]] = (top[m[1]] || 0) + (+m[2] || 1);
+      else if (m[0] === '(') st.push({});
+      else { const inner = st.pop(), up = st[st.length - 1], n = +m[3] || 1; for (const s in inner) up[s] = (up[s] || 0) + inner[s] * n; }
+    }
+    for (const s in st[0]) total[s] = (total[s] || 0) + st[0][s] * k;
+  });
+  return total;
+}
+
+function ciItems() {
+  if (!_ciItems) {
+    _ciItems = [
+      ...CHEM_BOOK_COMPOUNDS.map(([f, name, kind, desc, note]) => ({ f, name, kind: kind === 'gas' ? 'other' : kind, desc, note })),
+      ...CHEM_BOOK_MOLECULES.map(([f, name, desc, note]) => ({ f, name, kind: 'molecule', desc, note }))
+    ].map((c, i) => {
+      const counts = ciCounts(c.f);
+      return { ...c, i, counts, mass: Object.entries(counts).reduce((a, [s, n]) => a + n * ciAtomMass(s), 0) };
+    });
+  }
+  return _ciItems;
+}
+
+/** Shells for the first 20 elements: 2, 8, 8, 2 (outer shell never above 8). */
+function ciShells(z) {
+  const out = []; let left = z;
+  [2, 8, 8, 2].forEach(cap => { if (left > 0) { const n = Math.min(cap, left); out.push(n); left -= n; } });
+  return out.join(', ');
+}
+
+function ciOpen() { navigateTo('chemindex', 'chemistry'); }
+
+function renderChemIndex(el) {
+  el.innerHTML = `<div class="fade-in ci-wrap">
+    <div class="section-header"><h1>🧪 Chemical Index &amp; Periodic Table</h1></div>
+    <p class="lead">${Object.keys(CHEM_BOOK_ELEMENTS).length} elements and ${ciItems().length} compounds and molecules from your book. Tap an element on the table to see it; every card links back to the table and to the notes.</p>
+    <div class="ci-tabs" id="ci-tabs"></div>
+    <div id="ci-tools"></div>
+    <div id="ci-body"></div>
+  </div>`;
+  ciDraw();
+}
+
+function ciDraw() {
+  const tabs = document.getElementById('ci-tabs');
+  if (!tabs) return;
+  tabs.innerHTML = [['table', '🔬 Periodic table'], ['sheet', '📋 Cheat sheet']]
+    .map(([k, l]) => `<button class="tl-fchip ${ciTab === k ? 'active' : ''}" onclick="ciTab='${k}';ciDraw()">${l}</button>`).join('');
+  document.getElementById('ci-tools').innerHTML = ciTab === 'sheet'
+    ? `<input class="ci-search" type="search" placeholder="Search name, symbol or formula…" value="${escHtml(ciQuery)}" oninput="ciQuery=this.value;ciDrawList()">
+       <div class="tl-filter">${CI_FILTERS.map(([k, l]) => `<button class="tl-fchip ${ciFilter === k ? 'active' : ''}" onclick="ciFilter='${k}';ciDraw()">${l}</button>`).join('')}</div>`
+    : '';
+  document.getElementById('ci-body').innerHTML = ciTab === 'table' ? ciTableHtml() : '<div id="ci-list"></div>';
+  if (ciTab === 'sheet') ciDrawList();
+}
+
+function ciTableHtml() {
+  const tiles = CHEM_ELEMENTS.map(e => `<button class="ci-tile ci-c-${e.cat}${CHEM_BOOK_ELEMENTS[e.sym] ? ' in-book' : ''}${e.sym === ciSel ? ' sel' : ''}" id="ci-t-${e.sym}" style="grid-row:${e.row};grid-column:${e.col}" onclick="ciPick('${e.sym}')" title="${e.name}"><i>${e.z}</i><b>${e.sym}</b><small>${e.name}</small></button>`).join('');
+  return `<div class="ci-scroll"><div class="ci-table">${tiles}
+      <div class="ci-mark" style="grid-row:6;grid-column:3">57–71</div><div class="ci-mark" style="grid-row:7;grid-column:3">89–103</div></div></div>
+    <div class="ci-legend"><span class="ci-key">Bold outline = in your book</span>${CI_CATS.map(([k, l]) => `<span class="ci-c-${k}"><i></i>${l}</span>`).join('')}</div>
+    <div class="ci-detail-wrap" id="ci-detail">${ciDetailHtml(ciSel)}</div>`;
+}
+
+function ciDetailHtml(sym) {
+  const e = ciEl(sym), b = CHEM_BOOK_ELEMENTS[sym];
+  const within = ciItems().filter(c => c.counts[sym]);
+  const facts = ciFactsHtml(e, b);
+  return `<div class="ci-detail ci-c-${e.cat}">
+    <div class="ci-big"><i>${e.z}</i><b>${e.sym}</b></div>
+    <div class="ci-detail-main">
+      <h3>${e.name}${CHEM_LATIN[sym] ? ` <small>(${CHEM_LATIN[sym]})</small>` : ''}</h3>
+      ${facts}
+      <p>${b ? escHtml(b[1]) : 'Not covered in your Class 8 book — shown so you can see where it sits in the table.'}</p>
+      ${within.length ? `<div class="ci-made"><span>In the book’s compounds:</span>${(ciMore ? within : within.slice(0, 8)).map(c => `<button class="ci-chip" onclick="ciOpenCard('ci-cp-${c.i}')">${ciSub(c.f)}</button>`).join('')}${!ciMore && within.length > 8 ? `<button class="ci-chip" onclick="ciMore=true;ciPick(ciSel)">+${within.length - 8} more</button>` : ''}</div>` : ''}
+      ${b ? `<div class="ci-actions"><button class="btn btn-sm btn-primary" onclick="ciOpenCard('ci-el-${sym}')">📋 Cheat sheet entry</button><button class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${b[2]}')">📖 Notes</button></div>` : ''}
+    </div></div>`;
+}
+
+function ciFactsHtml(e, b) {
+  const cat = CI_CATS.find(c => c[0] === e.cat)[1];
+  const mass = ciNum(ciAtomMass(e.sym));
+  const chips = [`Atomic number ${e.z}`, `Atomic mass ${mass}`];
+  if (b && b[0] !== '—') chips.push(`Valency ${b[0]}`);
+  chips.push(e.state, cat);
+  if (e.z <= 20) {
+    const a = e.sym === 'Cl' ? 35 : Math.round(ciAtomMass(e.sym));
+    chips.push(`Shells ${ciShells(e.z)}`, `${e.z}p · ${a - e.z}n · ${e.z}e`);
+  }
+  return `<div class="ci-facts">${chips.map(c => `<span>${c}</span>`).join('')}</div>`;
+}
+
+function ciPick(sym) {
+  if (sym !== ciSel) ciMore = false;
+  ciSel = sym;
+  document.querySelectorAll('.ci-tile.sel').forEach(t => t.classList.remove('sel'));
+  document.getElementById('ci-t-' + sym)?.classList.add('sel');
+  const d = document.getElementById('ci-detail');
+  if (d) d.innerHTML = ciDetailHtml(sym);
+}
+
+function ciFlash(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.remove('ci-flash'); void el.offsetWidth; el.classList.add('ci-flash');
+}
+
+/** Table → cheat sheet: switch tab, clear filters so the card is on the page, then scroll to it. */
+function ciOpenCard(id) {
+  ciTab = 'sheet'; ciFilter = 'all'; ciQuery = '';
+  ciDraw();
+  requestAnimationFrame(() => ciFlash(id));
+}
+
+/** Cheat sheet → table: switch tab, select the element, scroll to its tile. */
+function ciShowOnTable(sym) {
+  ciTab = 'table'; ciSel = sym;
+  ciDraw();
+  requestAnimationFrame(() => ciFlash('ci-t-' + sym));
+}
+
+function ciDrawList() {
+  const box = document.getElementById('ci-list');
+  if (!box) return;
+  const q = ciQuery.trim().toLowerCase();
+  const hit = (...t) => !q || t.join(' ').toLowerCase().includes(q);
+  const showEl = ciFilter === 'all' || ciFilter === 'elements';
+  const els = showEl ? CHEM_ELEMENTS.filter(e => CHEM_BOOK_ELEMENTS[e.sym] && hit(e.name, e.sym, CHEM_LATIN[e.sym] || '', CHEM_BOOK_ELEMENTS[e.sym][1])) : [];
+  const items = ciItems().filter(c => (ciFilter === 'all' || ciFilter === c.kind || (ciFilter === 'elements' && c.kind === 'molecule')) && hit(c.name, c.f, ciSub(c.f), c.desc));
+  let html = '';
+  CI_CATS.forEach(([k, label]) => {
+    const g = els.filter(e => e.cat === k);
+    if (g.length) html += `<h3 class="ci-h ci-c-${k}"><i></i>${label} <small>${g.length}</small></h3><div class="ci-grid">${g.map(ciElementCardHtml).join('')}</div>`;
+  });
+  [['molecule', 'Molecules of elements & allotropes'], ['oxide', 'Oxides'], ['acid', 'Acids'], ['base', 'Bases'], ['salt', 'Salts'], ['hydrate', 'Hydrates'], ['organic', 'Carbon compounds'], ['other', 'Water, gases & others']].forEach(([k, label]) => {
+    const g = items.filter(c => c.kind === k);
+    if (g.length) html += `<h3 class="ci-h"><i></i>${label} <small>${g.length}</small></h3><div class="ci-grid">${g.map(ciCompoundCardHtml).join('')}</div>`;
+  });
+  box.innerHTML = html || '<div class="empty-state"><div class="empty-icon">🔍</div><h3>Nothing matches</h3></div>';
+}
+
+function ciElementCardHtml(e) {
+  const b = CHEM_BOOK_ELEMENTS[e.sym];
+  return `<article class="ci-card ci-c-${e.cat}" id="ci-el-${e.sym}">
+    <div class="ci-big"><i>${e.z}</i><b>${e.sym}</b></div>
+    <div class="ci-card-main">
+      <h4>${e.name}${CHEM_LATIN[e.sym] ? ` <small>(${CHEM_LATIN[e.sym]})</small>` : ''}</h4>
+      ${ciFactsHtml(e, b)}
+      <p>${escHtml(b[1])}</p>
+      <div class="ci-actions"><button class="btn btn-sm btn-outline" onclick="ciShowOnTable('${e.sym}')">📍 On periodic table</button><button class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${b[2]}')">📖 Notes</button></div>
+    </div></article>`;
+}
+
+function ciCompoundCardHtml(c) {
+  const chips = Object.keys(c.counts).map(s => `<button class="ci-chip ci-c-${ciEl(s).cat}" onclick="ciShowOnTable('${s}')" title="Show ${ciEl(s).name} on the periodic table">${s} <small>${ciEl(s).name}</small></button>`).join('');
+  return `<article class="ci-card" id="ci-cp-${c.i}">
+    <div class="ci-formula">${ciSub(c.f)}</div>
+    <div class="ci-card-main">
+      <h4>${escHtml(c.name)}</h4>
+      <div class="ci-facts"><span>${CI_KIND[c.kind]}</span><span>${c.kind === 'molecule' ? 'Molecular' : 'Formula'} mass ${ciNum(c.mass)} u</span></div>
+      <p>${escHtml(c.desc)}</p>
+      <div class="ci-made"><span>Made of:</span>${chips}</div>
+      <div class="ci-actions"><button class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${c.note}')">📖 Notes</button></div>
+    </div></article>`;
+}
+
 function isDiagramMcq(q) {
   return !!(q && q.image);
 }
@@ -2735,7 +2928,7 @@ function navigateTo(view, id) {
     if (typeof snowyOnTopicEnter === 'function') snowyOnTopicEnter(id);
     if (typeof princessOnTopicEnter === 'function') princessOnTopicEnter(id);
   }
-  if (view === 'timeline') { selectedSubject = id; selectedTopic = null; }
+  if (view === 'timeline' || view === 'chemindex') { selectedSubject = id; selectedTopic = null; }
   if (view === 'revision') revisionTab = id || revisionTab || 'mistakes';
   render();
 }
@@ -2761,6 +2954,9 @@ function renderBreadcrumb() {
   if (selectedTopic && currentView !== 'revision' && currentView !== 'quiz' && currentView !== 'offline') {
     const t = appData.topics.find(t=>t.id===selectedTopic);
     html += `<span class="sep">›</span><span class="active">${t?.icon||''} ${t?.name||selectedTopic}</span>`;
+  }
+  if (currentView === 'chemindex') {
+    html += `<span class="sep">›</span><span class="active">🧪 Chemical Index</span>`;
   }
   if (currentView === 'timeline') {
     html += `<span class="sep">›</span><span class="active">🕰️ Master Timeline</span>`;
@@ -2851,6 +3047,7 @@ function renderMain() {
   else if (currentView === 'exam') renderExamView(main);
   else if (currentView === 'offline') renderOfflineView(main);
   else if (currentView === 'timeline') renderMasterTimeline(main);
+  else if (currentView === 'chemindex') renderChemIndex(main);
   ttsAfterRender(); // other views, other tabs: the note being read is gone, so this stops it
   requestAnimationFrame(function () {
     main.scrollTop = 0;
@@ -3224,6 +3421,11 @@ function renderTopics(el) {
           extraClass: 'subject-keyword-search'
         })}
       </div>
+      ${selectedSubject === 'chemistry' && typeof CHEM_ELEMENTS !== 'undefined' ? `<div class="tl-banner" onclick="ciOpen()">
+        <span class="tl-banner-icon">🧪</span>
+        <div><strong>Chemical Index &amp; Periodic Table</strong><span>Every element and compound in your book with a short description — tap between the periodic table and the cheat sheet</span></div>
+        <span class="tl-banner-go">Open →</span>
+      </div>` : ''}
       ${allTimelineEvents(selectedSubject).length ? `<div class="tl-banner" onclick="navigateTo('timeline','${selectedSubject}')">
         <span class="tl-banner-icon">🕰️</span>
         <div><strong>Master Timeline</strong><span>${allTimelineEvents(selectedSubject).length} dated events across every chapter — revise the whole syllabus in order</span></div>
@@ -3869,6 +4071,7 @@ function renderCheatSheet(csData) {
         <div class="cs-actions">
           <button type="button" class="btn btn-sm btn-outline" onclick="copyCheatSheet()">📋 Copy all</button>
           <button type="button" class="btn btn-sm btn-outline" onclick="printCheatSheet()">🖨️ Print</button>
+          ${selectedSubject === 'chemistry' && typeof CHEM_ELEMENTS !== 'undefined' ? `<button type="button" class="btn btn-sm btn-outline" onclick="ciOpen()">🧪 Periodic table</button>` : ''}
           <button type="button" class="btn btn-sm btn-primary" onclick="openQuizBuilder({topicId:'${selectedTopic}',source:'chapter',count:15})">▶ Quick quiz</button>
         </div>
       </div>
