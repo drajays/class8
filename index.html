@@ -6,7 +6,7 @@
 /* Runs before any app scripts — auto-recovers devices stuck on broken cached bundles. */
 (function () {
   /* Must match version.json "build" — mismatch causes purge/reload loops after deploy. */
-  var BUILD = '106';
+  var BUILD = '107';
   window.__STUDYHUB_BUILD = BUILD;
   window.__STUDYHUB_ADMIN_PW = '1234';
   window.__STUDYHUB_BLOCK_BOOT = false;
@@ -80,7 +80,9 @@
 
   if (prev !== BUILD) {
     try { localStorage.setItem(KEY, BUILD); } catch (e) {}
-    if (!isNaN(buildN) && (isNaN(prevN) || buildN > prevN) && shouldPurgeOnceForBuild(BUILD)) {
+    /* prev === '' means first-ever visit (nothing to recover from) — only purge when
+       we're actually replacing an older recorded build, never on a blank slate. */
+    if (prev !== '' && !isNaN(buildN) && !isNaN(prevN) && buildN > prevN && shouldPurgeOnceForBuild(BUILD)) {
       blockBootAndPurge();
       window.__STUDYHUB_BOOT_PROMISE = Promise.resolve(false);
       return;
