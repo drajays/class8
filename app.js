@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 65;
+const DATA_VERSION = 66;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -454,8 +454,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof MATH_DATA !== 'undefined' ? MATH_DATA : null,
-    typeof SUPPLEMENT_DATA !== 'undefined' ? SUPPLEMENT_DATA : null,
-    typeof SUPPLEMENT2_DATA !== 'undefined' ? SUPPLEMENT2_DATA : null,
+    typeof SUPPLEMENT_FINAL_DATA !== 'undefined' ? SUPPLEMENT_FINAL_DATA : null,
     typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
@@ -2695,6 +2694,7 @@ function mcqImageHtml(q) {
 }
 
 function noteSortKey(n) {
+  if (n.source === 'ocr_supplement') return [2, n.order || 0, n.subtopic || ''];   // the ➕ extras come last, in book order
   const textbook = n.source === 'icse' || n.source === 'neet';
   const m = /^(\d+)\./.exec(n.subtopic || '');
   const num = m ? parseInt(m[1], 10) : 999;
