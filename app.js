@@ -3434,6 +3434,7 @@ function renderTopics(el) {
     <div class="fade-in">
       <div class="section-header">
         <h1>${sub?.icon} ${sub?.name} - Chapters</h1>
+        <button class="btn btn-sm btn-primary" onclick="pdfOpen('subject','${selectedSubject}')" title="Whole subject as a colour PDF">📄 Export subject PDF</button>
         ${keywordSearchBoxHtml({
           inputId: 'subject-keyword-search',
           placeholder: 'Search notes & questions in this subject…',
@@ -3488,6 +3489,7 @@ function renderTopics(el) {
               <h3>${t.name}</h3>
               <div class="card-rev ${revs ? '' : 'card-rev-none'}">${revs ? `🔁 Revised ${revs}× · last ${_lastRevisedLabel(t.id)}` : '🔁 Not revised yet'}</div>
               <div class="card-meta">${cardMeta}</div>
+              <button class="btn btn-sm btn-outline" style="margin:6px 0" onclick="event.stopPropagation();pdfOpen('chapter','${t.id}')">📄 Chapter PDF</button>
               <div class="card-progress">
                 <div class="cp-row"><span>Practiced</span><span><strong>${m.attempted}</strong>/${m.total}</span></div>
                 <div class="progress-bar"><div class="progress-fill cov-${cls}" style="width:${Math.max(m.coverage,2)}%"></div></div>
