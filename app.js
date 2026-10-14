@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 63;
+const DATA_VERSION = 64;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -453,6 +453,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof MATH_DATA !== 'undefined' ? MATH_DATA : null,
+    typeof SUPPLEMENT_DATA !== 'undefined' ? SUPPLEMENT_DATA : null,
     typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,

@@ -1,4 +1,4 @@
-const CACHE = 'studyhub-v112';
+const CACHE = 'studyhub-v113';
 /* Survives version bumps so downloaded diagrams are not re-fetched on update. */
 const MEDIA_CACHE = 'studyhub-media-v2';
 const ASSETS = [
@@ -15,6 +15,7 @@ const ASSETS = [
   './whiteboard.js',
   './pdf-export.js',
   './math.js',
+  './supplement.js',
   './vendor/katex/katex.min.js',
   './vendor/katex/katex.min.css',
   './vendor/katex/fonts/KaTeX_AMS-Regular.woff2',
