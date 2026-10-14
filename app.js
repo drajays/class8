@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 64;
+const DATA_VERSION = 65;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -136,17 +136,18 @@ function topicNotes(topicId) {
   );
   if (!topicId) {
     return all.filter(c => {
+      if (c.source === 'ocr_supplement') return true;
       if (isPhysicsTopic(c.topicId)) return isPhysicsPipelineItem(c);
       if (isBiologyTopic(c.topicId)) return isBiologyRevisionNote(c);
       return true;
     });
   }
   if (isPhysicsTopic(topicId)) {
-    const pipeline = all.filter(isPhysicsPipelineItem);
+    const pipeline = all.filter(c => isPhysicsPipelineItem(c) || c.source === 'ocr_supplement');
     return pipeline.length ? pipeline : all;
   }
   if (isBiologyTopic(topicId)) {
-    const pipeline = all.filter(isBiologyRevisionNote);
+    const pipeline = all.filter(c => isBiologyRevisionNote(c) || c.source === 'ocr_supplement');
     return pipeline.length ? pipeline : all;
   }
   return all;
@@ -454,6 +455,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
     typeof MATH_DATA !== 'undefined' ? MATH_DATA : null,
     typeof SUPPLEMENT_DATA !== 'undefined' ? SUPPLEMENT_DATA : null,
+    typeof SUPPLEMENT2_DATA !== 'undefined' ? SUPPLEMENT2_DATA : null,
     typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
