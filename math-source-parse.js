@@ -15,8 +15,21 @@ function tableToMd(html) {
 
 const FOOTER = /^\s*(\d+\s*)?([A-Za-z]{0,6}\s*)?(Understanding\s+)?(ICSE\s+)?Mathematics\s*[-–—]?\s*(VIII|VII|VI|IX|X)?\s*\d*\s*$/i;
 
+/** OCR sometimes degenerates into 51, 52, 53, … for hundreds of numbers; keep the real list, drop the counting run. */
+function trimCountingRuns(s) {
+  return s.replace(/(?:\d{1,4}\s*,\s*){25,}\d{1,4}/g, m => {
+    const n = m.split(/\s*,\s*/);
+    for (let i = 0; i + 8 < n.length; i++) {
+      let ok = true;
+      for (let j = 0; j < 8 && ok; j++) ok = +n[i + j + 1] === +n[i + j] + 1;
+      if (ok) return n.slice(0, i + 1).join(', ');
+    }
+    return m;
+  });
+}
+
 function parseChapter(file, figByKey) {
-  let s = fs.readFileSync(file, 'utf8');
+  let s = trimCountingRuns(fs.readFileSync(file, 'utf8'));
   s = s.replace(/<table[\s\S]*?<\/table>/gi, tableToMd);
   s = s.replace(/<img[^>]*src="([^"]+)"[^>]*>/gi, (m, u) => {
     const f = figByKey[u.split('?')[0]];
@@ -41,13 +54,22 @@ function parseChapter(file, figByKey) {
     if (k.length > 45) seen.add(k);
     if (/^Example\s*\d*\s*[.:]/i.test(text)) { open('example', text.replace(/^Example\s*(\d*)\s*[.:]\s*/i, m => '').slice(0, 70)); cur.num = (text.match(/^Example\s*(\d+)/i) || [])[1]; cur.blocks.push('**Example' + (cur.num ? ' ' + cur.num : '') + '.** ' + text.replace(/^Example\s*\d*\s*[.:]\s*/i, '')); continue; }
     if (/^Exercise\s*[\d.]*\s*$/i.test(text) || /^Exercise\s+\d+(\.\d+)?\b/i.test(text) && text.length < 40) { open('exercise', text.replace(/^\w/, c => c.toUpperCase())); continue; }
-    if (h && h[1].length <= 4 && !/^[\d(]/.test(text) && text.length < 90 && !/^Solution/i.test(text)) {
-      const exLike = /^(MCQ|STATEMENT|OBJECTIVE|MENTAL|MULTIPLE CHOICE|CHAPTER TEST|Chapter Test|REVISION|Check Your Progress|SUMMARY|ASSERTION)/i.test(text);
+    const minor = /^(remarks?|notes?|steps?|result|materials required|caution|hint|observation|thus|property|properties|definition)$/i.test(text.replace(/[:.]$/, ''));
+    const level = h ? h[1].length : (/^[A-Z][A-Z .,'’&-]{3,48}$/.test(text) && !/[$\\]/.test(text) && text.split(' ').length <= 6 ? 3 : 9);
+    if (level <= 6 && !minor && !/^[\d(]/.test(text) && text.length < 90 && text.length >= 4 && !/^Solution/i.test(text) && !/^[a-z]/.test(text)) {
+      const exLike = /^(MCQ|STATEMENT|OBJECTIVE|MENTAL|MULTIPLE CHOICE|CHAPTER TEST|Chapter Test|REVISION|Check Your Progress|ASSERTION)/i.test(text);
       open(exLike ? 'practice' : (/^SUMMARY/i.test(text) ? 'summary' : 'theory'), text);
       continue;
     }
     cur.blocks.push(h ? '**' + text.replace(/\*+/g, '') + '**' : text);
   }
-  return secs.filter(x => x.blocks.join('').replace(/[\s$\\]/g, '').length > 8);
+  const size = x => x.blocks.join('').replace(/[\s$\\]/g, '').length;
+  const merged = [];
+  secs.forEach(x => {
+    const prev = merged[merged.length - 1];
+    if (prev && x.kind === 'theory' && prev.kind === 'theory' && size(x) < 140) { prev.blocks.push('**' + x.title.replace(/\*+/g, '') + '**', ...x.blocks); return; }
+    merged.push(x);
+  });
+  return merged.filter(x => size(x) > 8);
 }
 module.exports = { parseChapter };

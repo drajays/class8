@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 62;
+const DATA_VERSION = 63;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -1755,6 +1755,12 @@ function cleanMathMarkup(str, rich) {
   s = s.replace(/(?:\b[a-zA-Z]\s+){2,}[a-zA-Z]\b/g, m => m.replace(/\s+/g, ''));
   // Preserve line breaks — collapsing all whitespace made notes one unreadable wall of text.
   return s.split('\n').map(line => line.replace(/[ \t]+/g, ' ').trimEnd()).join('\n').trim();
+}
+
+/** Plain text that may carry $maths$ (cheat sheets, mind maps, word cards). Only $-bearing strings take the KaTeX path. */
+function mathText(t) {
+  const s = String(t == null ? '' : t);
+  return s.indexOf('$') >= 0 ? _mathExpand(escHtml(cleanMathMarkup(s, true))) : escHtml(s);
 }
 
 function inlineBoldHtml(str) {
@@ -4067,7 +4073,7 @@ function renderMindMap(mmData) {
     : '';
   const branchHtml = map.branches.map((b, bi) => {
     const concepts = (b.concepts || []).slice(0, 6).map(c =>
-      `<li onclick="event.stopPropagation();this.classList.add('shown')">${escHtml(c)}</li>`
+      `<li onclick="event.stopPropagation();this.classList.add('shown')">${mathText(c)}</li>`
     ).join('');
     const linkChips = (b.links || []).map(link => {
       const lid = typeof link === 'string' ? link : link.id;
@@ -4086,7 +4092,7 @@ function renderMindMap(mmData) {
     }).join('');
     return `<li class="mm-kid" id="mm-branch-${b.id}">
       <div class="mm-node ${b.color || 'mm-c' + ((bi % 7) + 1)}" onclick="highlightMindBranch('${b.id}')">
-        <span class="mm-node-num">${bi + 1}</span>${escHtml(b.label)}
+        <span class="mm-node-num">${bi + 1}</span>${mathText(b.label)}
       </div>
       ${concepts ? `<ul class="mm-leaves">${concepts}</ul>` : ''}
       ${noteChips || linkChips ? `<div class="mm-foot">${noteChips}${linkChips}</div>` : ''}
@@ -4319,17 +4325,17 @@ function renderOneWordCards(csData) {
   const activeHtml = active ? `
     <div class="ow-reveal-box fade-in" id="ow-meaning-panel">
       <div class="ow-reveal-head">
-        <span class="ow-reveal-word">${escHtml(active.word)}</span>
+        <span class="ow-reveal-word">${mathText(active.word)}</span>
         ${active.noteId ? `<button type="button" class="btn btn-sm btn-outline" onclick="jumpToNoteFromMindmap('${active.noteId}')">📄 Full notes</button>` : ''}
       </div>
-      <p class="ow-reveal-meaning">${escHtml(active.meaning)}</p>
+      <p class="ow-reveal-meaning">${mathText(active.meaning)}</p>
     </div>` : `<div class="ow-reveal-box ow-reveal-empty" id="ow-meaning-panel">
       <p>Tap any word below to reveal its definition</p>
     </div>`;
   const gridHtml = ordered.map(c => {
     const isActive = c.id === activeWordId;
     return `<button type="button" class="ow-card ${isActive ? 'active' : ''}" onclick="toggleWordCard('${c.id}')" aria-pressed="${isActive}">
-      <span class="ow-card-word">${escHtml(c.word)}</span>
+      <span class="ow-card-word">${mathText(c.word)}</span>
       ${isActive ? '<span class="ow-card-hint">tap to hide</span>' : '<span class="ow-card-hint">tap for meaning</span>'}
     </button>`;
   }).join('');
@@ -4358,14 +4364,14 @@ function renderCheatSheet(csData) {
   const topHtml = (csData.topTen && csData.topTen.length)
     ? `<div class="cs-top-box" id="cheatsheet-print-top">
         <h3>🔥 Top ${csData.topTen.length} — cram these first</h3>
-        <ol class="cs-top-list">${csData.topTen.map(t => `<li>${escHtml(t)}</li>`).join('')}</ol>
+        <ol class="cs-top-list">${csData.topTen.map(t => `<li>${mathText(t)}</li>`).join('')}</ol>
       </div>`
     : '';
   const groupsHtml = csData.groups.map(g => {
     const items = (g.items || []).map(item => {
       const line = item.term
-        ? `<strong>${escHtml(item.term)}</strong> <span class="cs-arrow">→</span> ${escHtml(item.text)}`
-        : escHtml(item.text);
+        ? `<strong>${escHtml(item.term)}</strong> <span class="cs-arrow">→</span> ${mathText(item.text)}`
+        : mathText(item.text);
       if (item.noteId) {
         const pg = notePage(appData.content.find(c => c.id === item.noteId));
         return `<li class="cs-item cs-clickable" onclick="jumpToNoteFromMindmap('${item.noteId}')" title="Open full notes">${line}${pg ? ` <span class="cs-page">📖 ${escHtml(pg)}</span>` : ''}</li>`;

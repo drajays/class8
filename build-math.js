@@ -30,6 +30,7 @@ const figs = fs.existsSync(path.join(__dirname, 'math-figures.json')) ? JSON.par
 const figByKey = {}; figs.forEach(f => { figByKey[f.key] = f.file; });
 const words = t => new Set((String(t).toLowerCase().match(/[a-z]{4,}|\d+/g) || []));
 const cheat = {}, mind = {};
+const authored = require('./math-authored.js');
 const sentences = md => md.replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/\*\*/g, '').split(/\n+/).flatMap(l => l.split(/(?<=[.;])\s+(?=[A-Z$])/)).map(x => x.replace(/\s+/g, ' ').trim());
 const DEF = /\b(is|are|called|defined|known|said|states|property|formula|rule|means|equal|equals|sum|product|always|only|if)\b/i;
 const goodDef = x => x.length >= 35 && x.length <= 170 && /^[A-Z$(]/.test(x) && !/[:?,]$/.test(x) && !/^\(/.test(x) && !/\bthen$/.test(x) && DEF.test(x) && x.split(' ').length >= 6 &&
@@ -64,6 +65,7 @@ for (let n = 1; n <= 20; n++) {
   const theory = secsOut.filter(x => x.kind === 'theory' || x.kind === 'summary');
 
   // ---- revision aids built from the textbook's own theory and summary
+  const au = authored[n];
   const defs = [], forms = [], summ = [];
   theory.forEach(sec => {
     if (/^(activity|introduction)/i.test(sec.title)) return;
@@ -82,12 +84,21 @@ for (let n = 1; n <= 20; n++) {
   if (S2.length) groups.push({ id: 'summary', title: '⭐ Textbook summary', items: S2.slice(0, 30) });
   if (D2.length) groups.push({ id: 'defs', title: '📘 Definitions & rules', items: pick(D2, 24) });
   if (F2.length) groups.push({ id: 'formulas', title: '🧮 Formulas & identities', items: pick(F2, 24) });
-  if (topTen.length) cheat['math-ch' + n] = { topicId, chapterTitle: src.title, topTen: topTen.map(x => x.text), groups: groups.map(g => ({ ...g, items: g.items.map(i => ({ text: i.text, noteId: i.noteId })) })) };
+  if (!au && topTen.length) cheat['math-ch' + n] = { topicId, chapterTitle: src.title, topTen: topTen.map(x => x.text), groups: groups.map(g => ({ ...g, items: g.items.map(i => ({ text: i.text, noteId: i.noteId })) })) };
+  const secFor = kw => { const k2 = String(kw || '').toLowerCase(); const hit = k2 && secsOut.find(x => !/^introduction$/i.test(x.title) && x.title.toLowerCase().includes(k2)); return (hit || theory.find(x => !/^introduction/i.test(x.title)) || secsOut[0] || {}).id; };
+  if (au) {
+    const g2 = au.groups.map(([title, items], gi) => ({ id: 'g' + gi, title, items: items.map(([text, at]) => ({ text, noteId: secFor(at) })) }));
+    if (S2.length) g2.push({ id: 'summary', title: '⭐ Textbook summary', items: S2.slice(0, 30) });
+    cheat['math-ch' + n] = { topicId, chapterTitle: src.title, topTen: au.top, groups: g2,
+      wordCards: au.words.map(([word, meaning], i) => ({ id: 'w' + String(i + 1).padStart(2, '0'), word, meaning, noteId: secFor(word) })) };
+    const br = au.map.map(([label, concepts, at], i) => ({ id: 'br-' + (i + 1), label, concepts, noteIds: [secFor(at || label)] }));
+    mind['math-ch' + n] = { topicId, chapterTitle: src.title, center: src.title, maps: [{ id: 'map-1', title: src.title, center: src.title, flow: br.map(b => ({ id: b.id, label: b.label })), branches: br }] };
+  }
   const branches = theory.filter(sec => !/^(activity|introduction|summary)/i.test(sec.title) && sec.kind === 'theory').map((sec, i) => {
     const c = sentences(sec.body).filter(x => goodDef(x) && x.length <= 110).slice(0, 3);
     return { id: 'br-' + (i + 1), label: sec.title, concepts: c, noteIds: [sec.id] };
   }).filter(b => b.concepts.length).slice(0, 12);
-  if (branches.length >= 2) mind['math-ch' + n] = { topicId, chapterTitle: src.title, center: src.title, maps: [{ id: 'map-1', title: src.title, center: src.title, flow: branches.map(b => ({ id: b.id, label: b.label })), branches }] };
+  if (!au && branches.length >= 2) mind['math-ch' + n] = { topicId, chapterTitle: src.title, center: src.title, maps: [{ id: 'map-1', title: src.title, center: src.title, flow: branches.map(b => ({ id: b.id, label: b.label })), branches }] };
 
   // ---- chapter overview note (first in the list)
   const ex = secsOut.filter(x => x.kind === 'example').length, exr = secsOut.filter(x => x.kind === 'exercise').map(x => x.title);
