@@ -4,7 +4,7 @@
 // print dialog (Save as PDF). Each fact appears once: notes carry the full text, the left
 // panel only holds what the notes don't already say. Answers sit inline under each question.
 // ============================================================
-const PDF_COLORS = { physics: '#2563eb', biology: '#0d9488', chemistry: '#16a34a', geography: '#ea580c', history: '#b45309', civics: '#7c3aed' };
+const PDF_COLORS = { physics: '#2563eb', biology: '#0d9488', chemistry: '#16a34a', geography: '#ea580c', history: '#b45309', civics: '#7c3aed', math: '#be185d' };
 const PDF_OPTS_KEY = 'studyhub_pdf_opts';
 
 function _pdfNorm(s) { return String(s || '').toLowerCase().replace(/<[^>]+>/g, '').replace(/\*\*/g, '').replace(/[^a-z0-9]+/g, ' ').trim(); }
@@ -238,7 +238,7 @@ function pdfBuild(scope, id, o) {
     <h2>Contents</h2><ol class="toc">${toc}</ol>
     <p class="how">How to read: the <b>left panel</b> gives each chapter at a glance (top points, timeline, words, mind map) — things the notes don't already say. The <b>right column</b> is the full notes. Practice questions come at the chapter end with the answer in line.</p></section>` : '';
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${escHtml(scope === 'subject' ? subject.name : topics[0].name)} — StudyHub</title>
-    <base href="${new URL('.', location.href).href}"><style>${_pdfCss(color)}</style></head><body>
+    <base href="${new URL('.', location.href).href}"><link rel="stylesheet" href="vendor/katex/katex.min.css"><style>${_pdfCss(color)}</style></head><body>
     <div class="bar noprint"><button onclick="window.print()">🖨 Save as PDF / Print</button><span>Choose “Save as PDF”, paper A4, and turn on “Background graphics” if it is not already on.</span></div>
     ${cover}${chapters.join('')}${back}
     <script>window.addEventListener('load',function(){setTimeout(function(){window.print()},600)})<\/script></body></html>`;

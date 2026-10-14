@@ -68,6 +68,10 @@
 [data-theme="dark"][data-subject="geography"]{ --accent:#3bb6c7; }
 [data-theme="dark"][data-subject="history"]{ --accent:#e0a05a; }
 [data-theme="dark"][data-subject="civics"]{ --accent:#5b8def; }
+[data-subject="math"]{ --accent:#be185d; --accent-ink:#9d174d; --accent-soft:rgba(190,24,93,.12); }
+[data-theme="dark"][data-subject="math"]{ --accent:#f472b6; }
+.note-body .katex-display,.q-text .katex-display,.answer-body .katex-display,.qa-answer-text .katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.katex{font-size:1.08em}
 
 /* ---------- BASE ---------- */
 html{scroll-behavior:smooth}
@@ -305,6 +309,7 @@ body{
 .tag.geography{background:rgba(12,133,153,.15);color:#0a6f80}
 .tag.history{background:rgba(180,107,31,.15);color:#8a4f12}
 .tag.civics{background:rgba(37,99,235,.15);color:#1d4fc4}
+.tag.math{background:rgba(190,24,93,.14);color:#9d174d}
 
 /* ---------- CONTENT TABS ---------- */
 .content-tabs{display:flex;gap:5px;margin-bottom:14px;padding:5px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}

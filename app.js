@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 59;
+const DATA_VERSION = 60;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -452,6 +452,7 @@ function _mergeModuleArraysIntoDefault() {
     typeof BIOLOGY_PRACTICE !== 'undefined' ? BIOLOGY_PRACTICE : null,
     typeof CHEMISTRY_DATA !== 'undefined' ? CHEMISTRY_DATA : null,
     typeof CHEMISTRY_NEET_DATA !== 'undefined' ? CHEMISTRY_NEET_DATA : null,
+    typeof MATH_DATA !== 'undefined' ? MATH_DATA : null,
     typeof CHEMISTRY_PRACTICE !== 'undefined' ? CHEMISTRY_PRACTICE : null,
     typeof HISTORY_DATA !== 'undefined' ? HISTORY_DATA : null,
     typeof CIVICS_DATA !== 'undefined' ? CIVICS_DATA : null,
@@ -1708,9 +1709,34 @@ function sanitizeHtml(raw) {
   return tpl.innerHTML;
 }
 
-function cleanMathMarkup(str) {
+// ---- real maths: $…$ / $$…$$ become KaTeX. Rich callers get a private-use token that survives escaping
+// and is swapped for the rendered HTML by _mathExpand() once the final HTML string is built.
+const _MATH_HTML = [], _MATH_IDX = new Map();
+function _mathToken(tex, display) {
+  if (typeof katex === 'undefined') return null;
+  const key = (display ? 'D' : 'I') + tex;
+  let i = _MATH_IDX.get(key);
+  if (i === undefined) {
+    try { _MATH_HTML.push(katex.renderToString(tex.trim(), { displayMode: display, throwOnError: false, strict: 'ignore' })); }
+    catch (e) { return null; }
+    i = _MATH_HTML.length - 1;
+    _MATH_IDX.set(key, i);
+  }
+  return '\uE000' + String.fromCharCode(0xE100 + (i >> 6), 0xE100 + (i & 63)) + '\uE001';
+}
+function _mathExpand(html) {
+  return typeof html === 'string' && html.indexOf('\uE000') >= 0
+    ? html.replace(/\uE000([\uE100-\uF8FF])([\uE100-\uF8FF])\uE001/g, (_, a, b) => _MATH_HTML[((a.charCodeAt(0) - 0xE100) << 6) | (b.charCodeAt(0) - 0xE100)] || '')
+    : html;
+}
+
+function cleanMathMarkup(str, rich) {
   if (!str) return '';
   let s = String(str);
+  if (rich && typeof katex !== 'undefined') {
+    const tk = (m, d) => _mathToken(m, d) || (d ? '$$' + m + '$$' : '$' + m + '$');
+    s = s.replace(/\$\$([\s\S]+?)\$\$/g, (_, m) => tk(m, true)).replace(/\$([^$\n]+?)\$/g, (_, m) => tk(m, false));
+  }
   // Block then inline math
   s = s.replace(/\$\$([^$]+)\$\$/g, (_, m) => cleanMathMarkup(m));
   s = s.replace(/\$([^$]+)\$/g, (_, m) => cleanMathMarkup(m));
@@ -1722,7 +1748,7 @@ function cleanMathMarkup(str) {
   s = s.replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '$1/$2');
   s = s.replace(/\\times/g, '×').replace(/\\,/g, ' ').replace(/\\;/g, ' ');
   s = s.replace(/\^\{([^}]*)\}/g, '^$1').replace(/_\{([^}]*)\}/g, '_$1');
-  s = s.replace(/[{}\\]/g, '');
+  s = s.replace(/[{}\\]/g, '').replace(/\uE0FB/g, '{').replace(/\uE0FC/g, '}');
   s = s.replace(/uwave([a-z][a-z]*)/gi, '**$1**');
   s = s.replace(/underlinehspace\d+cm/gi, '____');
   // OCR spaced letters: "k i l o w a t t" → "kilowatt"
@@ -1775,11 +1801,12 @@ function noteSectionClass(title) {
   return 'note-section-default';
 }
 
-function renderNoteMarkdown(str) {
+function renderNoteMarkdown(str) { return _mathExpand(_renderNoteMarkdown(str)); }
+function _renderNoteMarkdown(str) {
   if (!str) return '';
   const raw = String(str);
   if (hasHtmlMarkup(raw)) return sanitizeHtml(raw);
-  const text = cleanMathMarkup(raw);
+  const text = cleanMathMarkup(raw, true);
   const blocks = text.split(/\n\n+/);
   const out = [];
 
@@ -1845,9 +1872,9 @@ function renderNoteMarkdown(str) {
 
 function fmtTextPlain(str) {
   if (!str) return '';
-  return escHtml(cleanMathMarkup(str))
+  return _mathExpand(escHtml(cleanMathMarkup(str, true))
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n/g, '<br>');
+    .replace(/\n/g, '<br>'));
 }
 
 /** Render note/question fields: supports HTML from frontend editor or **markdown** fallback. */
@@ -2006,7 +2033,8 @@ function renderQaRichParagraph(text, keywords) {
   }).join('');
 }
 
-function formatShortAnswerContent(raw, opts) {
+function formatShortAnswerContent(raw, opts) { return _mathExpand(_formatShortAnswerContent(raw, opts)); }
+function _formatShortAnswerContent(raw, opts) {
   opts = opts || {};
   if (!raw) return '';
   if (hasHtmlMarkup(raw)) {
@@ -2014,7 +2042,7 @@ function formatShortAnswerContent(raw, opts) {
     return `<div class="qa-formatted-html">${html}</div>`;
   }
 
-  const text = cleanMathMarkup(raw).trim();
+  const text = cleanMathMarkup(raw, true).trim();
   const keywords = opts.keywords || [];
 
   const parts = parseQaLabeledParts(text);
