@@ -29,7 +29,7 @@ for n in range(1, 21):
         if not m or pg is None: continue
         x0, y0, x1, y1 = map(int, m.groups())
         if x1 - x0 < 70 or y1 - y0 < 50: continue          # logos, bullets
-        figs.append(dict(chapter=n, page=pg, box=[x0, y0, x1, y1], name=e['fileName']))
+        figs.append(dict(chapter=n, page=pg, box=[x0, y0, x1, y1], name=e['fileName'], key=e['original'].split('?')[0]))
 
 # decorative repeats (same crop shape on many pages, e.g. the tablet icon): drop boxes whose size repeats >3 times
 from collections import Counter
@@ -59,6 +59,6 @@ for f in figs:
     before = plain(md[:pos])[-260:]; after = plain(md[pos:])[:260]
     if len(before) < 80 and pg > 0: before = (plain(OCR[pg - 1]['markdown']['text'])[-200:] + ' ' + before)[-260:]
     if len(after) < 80 and pg + 1 < len(OCR): after = (after + ' ' + plain(OCR[pg + 1]['markdown']['text'])[:200])[:260]
-    kept.append(dict(chapter=f['chapter'], file='images/math/' + fn, page=pg + 1, w=crop.size[0], h=crop.size[1], before=before.strip(), after=after.strip()))
+    kept.append(dict(chapter=f['chapter'], key=f['key'], file='images/math/' + fn, page=pg + 1, w=crop.size[0], h=crop.size[1], before=before.strip(), after=after.strip()))
 json.dump(kept, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'math-figures.json'), 'w'), ensure_ascii=False, indent=0)
 print(len(figs), 'candidates ->', len(kept), 'figures;', {k: v for k, v in sorted(perch.items())})

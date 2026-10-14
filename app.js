@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 61;
+const DATA_VERSION = 62;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -2303,6 +2303,7 @@ function chapterCheatsheet(topicId) {
 
 function _rawChapterMindmap(topicId) {
   if (!topicId) return null;
+  if (typeof MATH_MINDMAP_DATA !== 'undefined' && MATH_MINDMAP_DATA[topicId]) return MATH_MINDMAP_DATA[topicId];
   if (typeof PHYSICS_MINDMAP_DATA !== 'undefined' && PHYSICS_MINDMAP_DATA[topicId]) {
     return PHYSICS_MINDMAP_DATA[topicId];
   }
@@ -2326,6 +2327,7 @@ function _rawChapterMindmap(topicId) {
 
 function _rawChapterCheatsheet(topicId) {
   if (!topicId) return null;
+  if (typeof MATH_CHEATSHEET_DATA !== 'undefined' && MATH_CHEATSHEET_DATA[topicId]) return MATH_CHEATSHEET_DATA[topicId];
   if (typeof PHYSICS_CHEATSHEET_DATA !== 'undefined' && PHYSICS_CHEATSHEET_DATA[topicId]) {
     const base = PHYSICS_CHEATSHEET_DATA[topicId];
     const formulaGroup = typeof PHYSICS_FORMULA_GROUPS !== 'undefined'
