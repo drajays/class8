@@ -72,6 +72,8 @@
 [data-theme="dark"][data-subject="math"]{ --accent:#f472b6; }
 .note-body .katex-display,.q-text .katex-display,.answer-body .katex-display,.qa-answer-text .katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
 .katex{font-size:1.08em}
+.note-fig{margin:10px 0;text-align:center}
+.note-fig img,.q-fig{max-width:min(100%,420px);height:auto;background:#fff;border:1px solid var(--border,#ddd);border-radius:8px;padding:4px;display:block;margin:8px auto}
 
 /* ---------- BASE ---------- */
 html{scroll-behavior:smooth}

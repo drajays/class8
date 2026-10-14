@@ -299,5 +299,6 @@ function _pdfCss(c) {
   .qa-hl-kw{background:#fde68a;border-radius:1mm;padding:0 .5mm}
   figure{margin:0 0 4mm;break-inside:avoid}figure img{max-width:100%;border:1px solid var(--mid);border-radius:2mm}figcaption{font-size:8.5pt;color:#555}
   .idx td{font-size:8.6pt}.idx td:first-child{width:18mm}.muted{color:#888}
+  .note-fig{margin:2mm 0;text-align:center;break-inside:avoid}.note-fig img,.q-fig{max-width:62%;max-height:60mm;border:1px solid var(--mid);border-radius:2mm;padding:1mm;display:block;margin:1.5mm auto}
   img{max-width:100%}`;
 }

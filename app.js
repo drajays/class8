@@ -56,7 +56,7 @@ let questionIndex = 0;
 let diagramIndex = 0;
 let chapterViewMode = 'pager'; // pager | scroll
 
-const DATA_VERSION = 60;
+const DATA_VERSION = 61;
 const ADMIN_SESSION_MS = 30 * 60 * 1000;
 let advanceReadingEditNoteId = null;
 const advanceReadingOpen = new Set();
@@ -1814,6 +1814,9 @@ function _renderNoteMarkdown(str) {
     const b = block.trim();
     if (!b) continue;
 
+    const fig = b.match(/^!\[[^\]]*\]\((images\/[\w\-\/.]+)\)$/);
+    if (fig) { out.push('<figure class="note-fig"><img src="' + fig[1] + '" alt="Figure" loading="lazy"></figure>'); continue; }
+
     const nonEmptyLines = b.split('\n').filter(l => l.trim());
     if (nonEmptyLines.length >= 2 && nonEmptyLines.every(l => l.includes('|'))) {
       const table = renderMarkdownTableBlock(b);
@@ -1874,6 +1877,7 @@ function fmtTextPlain(str) {
   if (!str) return '';
   return _mathExpand(escHtml(cleanMathMarkup(str, true))
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/!\[[^\]]*\]\((images\/[\w\-\/.]+)\)/g, '<img class="q-fig" src="$1" alt="Figure" loading="lazy">')
     .replace(/\n/g, '<br>'));
 }
 

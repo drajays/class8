@@ -1,0 +1,2783 @@
+[
+{
+"chapter": 1,
+"file": "images/math/ch1-1.jpg",
+"page": 5,
+"w": 449,
+"h": 119,
+"before": "#### rational number $ \\frac{p}{a} $ is said to be in the standard (or simplest) form if q > 0 and p and q have no",
+"after": "A rational number $ q $ is said to be in the standard (or simply jensen $ j $) common factor other than 1. OPERATIONS ON RATIONAL NUMBERS AND THEIR PROPERTIES Addition of rational numbers\\nTo add two rational numbers, first express each rational number with a"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-2.jpg",
+"page": 5,
+"w": 234,
+"h": 137,
+"before": "ise of Brahma) is the most famous work. He is the founder of a branch of higher mathematics called &quot;Numerical Analysis&quot;. Bhaskara, the great mathematician, conferred on him the title of Ganakachakrachudamani, the gem of the circle of mathematicians.",
+"after": "##### LCM of 18 and 24 = 72 #### PROPERTIES OF ADDITION OF RATIONAL NUMBERS Property I hus, we find that the sum of two rational numbers is a rational number. In other words: $$ \\left(\\frac{-2}{3}\\rig"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-3.jpg",
+"page": 13,
+"w": 327,
+"h": 373,
+"before": "f division, draw horizontal lines to divide the square ABCD horizontally into 7 equal parts. 5. Draw diagonal lines (from right to left) with ball point pen of other colour in the rectangle ABHG. The rectangle ABHG represents $\\frac{3}{7}$ of the square ABCD.",
+"after": "## Result $$\\frac{3}{7} \\times \\frac{4}{5} \\text{ means to find } \\frac{3}{7} \\text{ of } \\frac{4}{5}$$ Since the rectangle AEFD represents $ \\frac{4}{5} $ of the square ABCD and the rectangle ABHG represents $ \\frac{3}{7} $ of the square ABCD, therefore the"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-4.jpg",
+"page": 18,
+"w": 88,
+"h": 81,
+"before": "c{-60}{80}\\times\\left(\\frac{-42}{63}\\right)=\\frac{-3}{4}\\times\\left(\\frac{-2}{3}\\right)=\\frac{(-3)\\times(-2)}{4\\times3}=\\frac{6}{12}=\\frac{1}{2}\\end{aligned} $$ (Using commutativity and associativity) ##### Exercise 1.3",
+"after": "1. Multiply and express the result in lowest form: (i) $ \\frac{6}{-7} \\times \\frac{14}{30} $ (ii) $ 6 \\frac{2}{3} \\times 1 \\frac{2}{7} $ (iii) $ \\frac{25}{-9} \\times \\frac{-3}{10} $ 2. Verify commutative property of multiplication for the following pairs of r"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-5.jpg",
+"page": 20,
+"w": 83,
+"h": 75,
+"before": "ers, then $$ \\frac{p}{q}\\div\\left(\\frac{r}{s}\\div\\frac{t}{u}\\right)\\neq\\left(\\frac{p}{q}\\div\\frac{r}{s}\\right)\\div\\frac{t}{u} $$ Thus, we conclude that the division of rational numbers is not associative. ##### Exercise 1.4 1. Find the value of the following:",
+"after": "(i) $$ \\frac{-3}{7}\\div4 $$ $$ 4\\frac{5}{8}\\div\\left(\\frac{-4}{9}\\right) $$ (iii) $ \\frac{-8}{9}\\div\\frac{-3}{5} $ 2. State whether the following statements are true or false: (i) $\\frac{-9}{13}\\div\\frac{2}{7}$ is a rational number $$ \\frac{-3}{4}\\div\\left(\\f"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-6.jpg",
+"page": 21,
+"w": 599,
+"h": 64,
+"before": "It represents 0. 3. Select a unit of length, mark points on the line at unit length intervals from each other on both sides of 0. 4. Label the points to the right of 0 successively as 1, 2, 3, …… and the points to the left of 0 successively as -1, -2, -3, …….",
+"after": "To represent rational numbers $\\frac{1}{2}$ and $\\frac{-1}{2}$ on the number line: Divide the line segment between 0 and 1 into two equal parts at the point P, then the point P represents the rational number $ \\frac{1}{2} $. Now divide the line segment betwee"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-7.jpg",
+"page": 21,
+"w": 612,
+"h": 98,
+"before": "0 and 1 into two equal parts at the point P, then the point P represents the rational number $ \\frac{1}{2} $. Now divide the line segment between -1 and 0 into two equal parts at the point P', then the point P' represents the rational number $ \\frac{-1}{2} $.",
+"after": "Representation of $\\frac{3}{2}$ and $\\frac{-3}{2}$ on the number line: $ \\because \\frac{3}{2}=1\\frac{1}{2}=1+\\frac{1}{2}, \\text{ so } \\frac{3}{2} $ lies between 1 and 2. Divide the line segment between 1 and 2 into two equal parts at the point Q. The point Q"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-8.jpg",
+"page": 22,
+"w": 746,
+"h": 110,
+"before": "Similarly, we can mark points representing $ \\frac{5}{2}, \\frac{-5}{2}, \\frac{7}{2}, \\frac{-7}{2} $ and so on.",
+"after": "To represent rational numbers $\\frac{1}{3}$ and $\\frac{-1}{3}$ on the number line: Divide the line segment between 0 and 1 into three equal parts at points P and Q, then the point P represents the rational number $ \\frac{1}{3} $. Note that the point Q will re"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-9.jpg",
+"page": 22,
+"w": 751,
+"h": 127,
+"before": "\\frac{2}{3} $. The rational number $ \\frac{-1}{3} $ is to the left of O. Divide the line segment between -1 and 0 into three equal parts at the points P' and Q', then point P' represents the rational number $ \\frac{-1}{3} $ and Q' represents $ \\frac{-2}{3} $.",
+"after": "Thus, every rational number can be represented by a unique point on the line. For a positive rational number, the numeral in the denominator tells the number of equal parts into which the first unit (i.e. between 0 and 1) has been divided. The numeral in the"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-10.jpg",
+"page": 22,
+"w": 768,
+"h": 132,
+"before": "(i) $ \\frac{4}{9} $ (ii) $ \\frac{-7}{4} $ Solution. (i) To represent $ \\frac{4}{9} $ on the number line divide the line segment between 0 and 1 into nine equal parts at P, Q, R, S, T, …… and the fourth part from O i.e. S represents the number $ \\frac{4}{9} $.",
+"after": "(ii) As $ \\frac{-7}{4} = -1\\frac{3}{4} = -1 + \\left(\\frac{-3}{4}\\right) $, so $ \\frac{-7}{4} $ lies between -1 and -2. Divide the line segment between -2 and -1 into four equal parts at P', Q', R'. The point R' represents the rational number $ \\frac{-7}{4} $."
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-11.jpg",
+"page": 22,
+"w": 773,
+"h": 103,
+"before": "(ii) As $ \\frac{-7}{4} = -1\\frac{3}{4} = -1 + \\left(\\frac{-3}{4}\\right) $, so $ \\frac{-7}{4} $ lies between -1 and -2. Divide the line segment between -2 and -1 into four equal parts at P', Q', R'. The point R' represents the rational number $ \\frac{-7}{4} $.",
+"after": "##### comparison of rational numbers The rules for comparison of two rational numbers are: 1. Every positive rational number is greater than zero and every negative rational number is less than zero. 2. Every positive rational number is greater than every neg"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-12.jpg",
+"page": 25,
+"w": 81,
+"h": 71,
+"before": "the numerator and denominator of each rational number by $ 5 + 1\\ i.e.\\ 6 $ We have, $ \\frac{1}{3}=\\frac{1\\times6}{3\\times6}=\\frac{6}{18} $ and $ \\frac{2}{3}=\\frac{2\\times6}{3\\times6}=\\frac{12}{18} $  $$ \\displaystyle\\ \\ \\bullet $$ $$ 6",
+"after": "1. Represent the following rational numbers on the number line: (i) $ \\frac{11}{4} $ (ii) $ 4\\frac{3}{5} $ (iii) $ \\frac{-9}{7} $ (iv) $ \\frac{-2}{-5} $ 2. Write the rational numbers for each point labelled with a letter: (i) 0 $ \\frac{1}{7} $ $ \\frac{2}{7} $"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-13.jpg",
+"page": 26,
+"w": 377,
+"h": 171,
+"before": "\\begin{aligned}&=1\\frac{5}{6}\\mathrm{~km}+\\left(-2\\frac{3}{8}\\right)\\mathrm{~km}\\\\&=\\left(\\frac{11}{6}+\\frac{(-19)}{8}\\right)\\mathrm{~km}=\\frac{11\\times4+(-19)\\times3}{24}\\mathrm{~km}\\\\&=\\frac{44-57}{24}\\mathrm{~km}=-\\frac{13}{24}\\mathrm{~km}\\end{aligned} $$",
+"after": "LCM of 6 and 8 = 24 ∵ The final distance is negative, therefore, Ananya is at a distance of $ \\frac{13}{24} $ km towards West from the point A. Example 2. Aryan cut a $21\\frac{1}{4}$ m long rope into pieces of $4\\frac{1}{4}$ m length each. How many pieces of"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-14.jpg",
+"page": 27,
+"w": 464,
+"h": 143,
+"before": "Example 4. Sara has to cut out circles of diameter $ 1\\frac{1}{4} $ cm from an aluminium strip of dimensions $ 8\\frac{3}{4} $ cm by $ 1\\frac{1}{4} $ cm. How many full circles can Sara cut? Also, calculate the wastage of the aluminium strip. Solution.",
+"after": "Since the diameter of the circles is $ 1\\frac{1}{4} $ cm which is equal to the width of the aluminium strip. So the circles can be cut along the length of the aluminium strip. The number of circles to be cut = $ \\frac{\\text{length of aluminium strip}}{\\text{d"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-15.jpg",
+"page": 28,
+"w": 83,
+"h": 77,
+"before": "ac{3x}{11} - \\frac{12x}{55} = 24 $ $$ \\Rightarrow\\quad15x-12x=55\\times24 $$ $$ \\Rightarrow\\quad3x=55\\times24\\Rightarrow x=\\frac{55\\times24^{8}}{3_{1}}=440 $$ (Multiplying both sides by 55) Hence, the total score of the innings was 440 runs. ##### Exercise 1.6",
+"after": "1. In a bag, there are 20 kg of fruits. If $7\\frac{1}{6}$ kg of these fruits are oranges, $8\\frac{2}{3}$ kg of these are apples and the rest are grapes. Find the weight of the grapes in the bag. 2. The population of a city is 6,63,432. If $ \\frac{1}{2} $ of t"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-16.jpg",
+"page": 29,
+"w": 81,
+"h": 80,
+"before": "ing to given condition, $ \\frac{3x}{11} - \\frac{12x}{55} = 24 $ $$ \\Rightarrow15x-12x=55\\times24 $$ $$ \\Rightarrow3x=55\\times24\\Rightarrow x=\\frac{55\\times24^{8}}{3_{1}}=440 $$ (Multiplying both sides by 55) Hence, the total score of the innings was 440 runs.",
+"after": "#### Exercise 1.6 1. In a bar there are 20 kg of fruits. If $ \\frac{1}{6} $ kg of these fruits are oranges, $ \\frac{2}{3} $ kg of these are of the grapes in the bag. population are adult males and $ \\frac{1}{3} $ of the in the city. have to boys and all 130 g"
+},
+{
+"chapter": 1,
+"file": "images/math/ch1-17.jpg",
+"page": 36,
+"w": 103,
+"h": 113,
+"before": "$ ★ Every rational number can be represented by a unique point on a number line. ★ There are infinite number of rational numbers between two different rational numbers. ★ If $ \\frac{p}{q} $ and $ \\frac{r}{s} $ are two rational numbers, such that $ \\frac{p}{q}",
+"after": "## 1. Complete the following table: Numbers Commutative for addition subtraction multiplication division Rational numbers Yes — — — Integers — No — — Whole numbers — — Yes — Natural numbers — — — No"
+},
+{
+"chapter": 2,
+"file": "images/math/ch2-1.jpg",
+"page": 43,
+"w": 85,
+"h": 80,
+"before": "{3}\\times\\frac{36}{25}=\\frac{12}{5}\\quad\\Rightarrow x=\\frac{5}{12}\\end{array} $$ $$ \\because\\left(\\frac{p}{q}\\right)^{-m}=\\left(\\frac{q}{p}\\right)^{m} $$ Hence, the required number is $ \\frac{5}{12} $ ##### Exercise 2",
+"after": "1. Evaluate: (i) $ \\left(\\frac{3}{5}\\right)^{-2} $ (ii) (-3)^{-3} (iii) $ \\left(\\frac{2}{7}\\right)^{-4} $ 2. Simplify: (i) $$ [(2)^{-1}+(4)^{-1}+(3)^{-1}]^{-1} $$ (ii) $$ [(4)^{-1}-(5)^{-1}]^{2}\\times\\left(\\frac{5}{8}\\right)^{-1} $$ (iii) $$ [4^{0}+4^{2}-2^{3"
+},
+{
+"chapter": 2,
+"file": "images/math/ch2-2.jpg",
+"page": 46,
+"w": 114,
+"h": 129,
+"before": "n} = a^{m+n}$ (ii) $\\frac{a^{m}}{a^{n}} = a^{m-n}$ (iii) $(a^{m})^{n} = a^{mn}$ (iv) $(ab)^{m}=a^{m}\\cdot b^{m}$ (v) $\\left(\\frac{a}{b}\\right)^{m}=\\frac{a^{m}}{h^{m}}$ (vi) $a^{0}=1$ ##### CHECK YOUR PROGRESS 1. Evaluate: (i) $ \\left(\\frac{5}{4}\\right)^{-3} $",
+"after": "$$ \\left(\\frac{-3}{7}\\right)^{-2} $$  2. Simplify: (i) $ \\left[\\left(\\frac{1}{2}\\right)^{-3}+\\left(\\frac{1}{3}\\right)^{-3}+\\left(\\frac{1}{4}\\right)^{-3}\\right]\\div(3)^{2} $ (ii) $ \\left[3^{3}-\\left(\\frac{1}{2}\\right)^{-3}\\times\\frac{1}{19"
+},
+{
+"chapter": 2,
+"file": "images/math/ch2-3.jpg",
+"page": 48,
+"w": 214,
+"h": 232,
+"before": "te $ \\left(\\frac{x^{p}}{x^{q}}\\right)^{p+q} \\times \\left(\\frac{x^{q}}{x^{r}}\\right)^{q+r} \\times \\left(\\frac{x^{r}}{x^{p}}\\right)^{r-p} $ 14. Evaluate $ \\frac{x^{p}}{x^{p}+x^{q}}+\\frac{1}{x^{p-q}+1} $",
+"after": "# Squares and Square Roots ## INTRODUCTION In earlier classes you learnt that area of a square = side × side i.e. area of a square = (side) $ ^{2} $ (i.e. square of side). If the side of a square is given a units, then area of square = $ (a \\times a) $ sq. un"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-1.jpg",
+"page": 50,
+"w": 89,
+"h": 78,
+"before": "27 | 5762 | 2881442 | 7236189 Since 7 is left unpaired, so to make 2527 a perfect square it should be divided by 7. Hence, the smallest natural number by which 2527 is divided to make it a perfect square is 7. 19 | 2527 | 5762 | 2881442 | 7236189 Exercise 3.1",
+"after": "1. Which of the following natural numbers are perfect squares? Give reasons in support of your answer. (i) 729 (ii) 5488 (iii) 1024 (iv) 243 19 | 5488 (ii) 5488 (iii) 1024 (iv) 243"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-2.jpg",
+"page": 50,
+"w": 138,
+"h": 154,
+"before": "ke it a perfect square is 7. 19 | 2527 | 5762 | 2881442 | 7236189 Exercise 3.1 1. Which of the following natural numbers are perfect squares? Give reasons in support of your answer. (i) 729 (ii) 5488 (iii) 1024 (iv) 243 19 | 5488 (ii) 5488 (iii) 1024 (iv) 243",
+"after": "2. Show that each of the following numbers is a perfect square. Also find the number whose square is the given number. (i) 1296 (ii) 1764 (iii) 3025 (iv) 3969 4. Find the smallest natural number by wh"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-3.jpg",
+"page": 55,
+"w": 172,
+"h": 75,
+"before": "the form $ (2m, m^2 - 1, m^2 + 1) $. For example, another triplet with one number 12 is (5, 12, 13). All Pythagorean triplets may not be in the form $(2m, m^{2}-1, m^{2}+1)$. For example, another triplet with one number 12 is $(5, 12, 13)$. ##### Exercise 3.2",
+"after": "1. Write five numbers which you can decide by looking at their one's digit that they are not square numbers."
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-4.jpg",
+"page": 59,
+"w": 185,
+"h": 78,
+"before": "re number. In order to make 90 a square number, we need to multiply it by $ 2 \\times 5 $ i.e. by 10. 3 6,9,15 2,3,5 ∴ The required square number = $90 \\times 10 = 900$ ##### Exercise 3.3 Hence, the smallest square number which is divisible by 6, 9, 15 is 900.",
+"after": "1. Find the square roots of the following numbers by prime factorisation method: (i) 784 (ii) 441 (iii) 1849 (iv) 4356 (v) 6241 (vi) 8836 (vii) 8281 (viii) 9025 2. Find the square roots of the following numbers by prime factorisation method: (i) $ 9\\frac{67}{"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-5.jpg",
+"page": 60,
+"w": 160,
+"h": 207,
+"before": "3. 3. Bring down the pair of digits under the next bar (i.e. 29 in this case) to the right of the remainder. So the new dividend is 329. 4. Double the quotient (i.e. 2 in this case) to get 4 and enter it with a blank on its right at the place of new divisor.",
+"after": "5. Find the largest possible digit to fill the blank which will also become the new digit in the quotient, such that when the new divisor is multiplied by the new digit in the quotient product is less than or equal to the dividend. In this case $ 47 \\times 7"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-6.jpg",
+"page": 60,
+"w": 167,
+"h": 232,
+"before": "new divisor is multiplied by this new digit in the quotient the product is less than or equal to the dividend. In this case $ 164 \\times 4 = 656 $. So we choose new digit as 4. Place 656 under 656. Subtract and get remainder 0. $$ \\therefore\\sqrt{7056}=84 $$",
+"after": "(iii) Steps 1. Place a bar (or arrow) over every pair of digits from right to left ( $ \\leftarrow $). 2. Take the first pair of digits over every pair of digits from right to left (←). This case, it i"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-7.jpg",
+"page": 61,
+"w": 227,
+"h": 278,
+"before": "ient, such that when the new divisor is multiplied by the new digit in the quotient the product is less than or equal to the dividend. In this case $ 43 \\times 3 = 129 $, so we choose the new digit as 3. Place 129 under 156. Subtract and get the remainder 27.",
+"after": "6. Bring down the pair of digits under the next bar (i.e. 96 in this case) to the right of the remainder. So the new dividend is 2796. 7. Double the quotient (i.e. 23 in this case) to get 46 and enter it with a blank on its right at the place of new divisor."
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-8.jpg",
+"page": 63,
+"w": 838,
+"h": 156,
+"before": "=(\\sqrt{2})^{2}+1^{2}=2+1=3 $$ $ \\Rightarrow $ OQ = $ \\sqrt{3} $. Thus, length of segment OQ = $ \\sqrt{3} $. 3. With O as centre and radius OQ, draw an arc cutting the number line at Q' (as shown in fig. (iii)). 4. Measure OQ', OQ' = 1.7 units (approximately)",
+"after": "(i) (ii) #### Square roots of decimals Long division method is also useful to find the square roots of decimals. To learn and understand the method of finding the square roots of decimals observe the following example: Example 5. Find the square root of the f"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-9.jpg",
+"page": 63,
+"w": 841,
+"h": 201,
+"before": "qrt{2})^{2}+1^{2}=2+1=3 $$ $ \\Rightarrow $ OQ = $ \\sqrt{3} $. Thus, length of segment OQ = $ \\sqrt{3} $. 3. With O as centre and radius OQ, draw an arc cutting the number line at Q' (as shown in fig. (iii)). 4. Measure OQ', OQ' = 1.7 units (approximately) (i)",
+"after": "(ii) #### Square roots of decimals Long division method is also useful to find the square roots of decimals. To learn and understand the method of finding the square roots of decimals observe the following example: Example 5. Find the square root of the follo"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-10.jpg",
+"page": 63,
+"w": 838,
+"h": 228,
+"before": "})^{2}+1^{2}=2+1=3 $$ $ \\Rightarrow $ OQ = $ \\sqrt{3} $. Thus, length of segment OQ = $ \\sqrt{3} $. 3. With O as centre and radius OQ, draw an arc cutting the number line at Q' (as shown in fig. (iii)). 4. Measure OQ', OQ' = 1.7 units (approximately) (i) (ii)",
+"after": "#### Square roots of decimals Long division method is also useful to find the square roots of decimals. To learn and understand the method of finding the square roots of decimals observe the following example: Example 5. Find the square root of the following"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-11.jpg",
+"page": 65,
+"w": 183,
+"h": 80,
+"before": "66... $$ \\sqrt{20.666666}=4.546... $$ $\\therefore \\sqrt{20\\frac{2}{3}}=4.55$ correct to 2 decimal places. 4 4.546 85 $ \\overrightarrow{20.66} $ $ \\overrightarrow{66} $ $ \\overrightarrow{66} $ 904 4 66 4 25 9086 41 66 3616 550 66 545 16 5 50 ##### Exercise 3.4",
+"after": "1. Find the square root of each of the following by division method: (i) 2401 (ii) 4489 (iii) 106929 (iv) 167281 (v) 53824 (vi) 213444 2. Find the square root of the following decimal numbers by division method: (i) 51.84 (ii) 42.25 (iii) 18.4041 (iv) 5.77440"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-12.jpg",
+"page": 66,
+"w": 91,
+"h": 221,
+"before": "erbrace{2\\times2}_{}\\times\\textcircled{2}\\times\\underbrace{5\\times5}_{} $$ Since 2 does not have a pair, we must multiply 200 by 2 to get a perfect square. We can also check that $ 200 \\times 2 = 400 $ which is a perfect square of 20. ∴ Correct answer is (b).",
+"after": "Example 2. Fill in the blank $ \\sqrt{0.0169} $ ... 1.3 (a) > $ \\sqrt{(b)} ##### MENTAL MATHS 1. Fill in the blanks: (i) A number ending in ..... is never a perfect square. (ii) If a number has digits ..... in the unit's place, then its square ends in 1. (iii)"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-13.jpg",
+"page": 66,
+"w": 108,
+"h": 115,
+"before": "Since 2 does not have a pair, we must multiply 200 by 2 to get a perfect square. We can also check that $ 200 \\times 2 = 400 $ which is a perfect square of 20. ∴ Correct answer is (b). Example 2. Fill in the blank $ \\sqrt{0.0169} $ ... 1.3 (a) > $ \\sqrt{(b)}",
+"after": "##### MENTAL MATHS 1. Fill in the blanks: (i) A number ending in ..... is never a perfect square. (ii) If a number has digits ..... in the unit's place, then its square ends in 1. (iii) Sum of first 10 odd natural numbers is ..... (iv) Number of non-square nu"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-14.jpg",
+"page": 68,
+"w": 92,
+"h": 118,
+"before": "Pythagorean triplet. Statement II: For any natural number $n \\geq 2$, $(2n, n^{2}-1, n^{2}+1)$ is a Pythagorean triplet. 18. Statement I: Sum of first $11$ odd natural numbers is $121$. Statement II: Sum of first $n$ odd natural numbers is $n^{2}$. ## SUMMARY",
+"after": "★ Square of a number is the product of number by itself. Squares of natural numbers are called square numbers or perfect squares. ★ All natural numbers are not perfect squares. ★ A perfect square (or square number) can always be expressed as the product of pa"
+},
+{
+"chapter": 3,
+"file": "images/math/ch3-15.jpg",
+"page": 68,
+"w": 102,
+"h": 114,
+"before": "uare root is the inverse operation of finding square. ★ There are two integral square roots of a perfect square number, positive square root of a number is denoted by the symbol $ \\sqrt[n]{} $. e.g. $ 3^{2}=9 \\Rightarrow \\sqrt{9}=3 $ ##### CHECK YOUR PROGRESS",
+"after": "1. Show that 1089 is a perfect square. Also find the number whose square is 1089. 2. Find the smallest number which should be multiplied by 3675 to make it a perfect square. Also find the square root of this perfect square. 3. Express 144 as the sum of 12 odd"
+},
+{
+"chapter": 4,
+"file": "images/math/ch4-1.jpg",
+"page": 78,
+"w": 85,
+"h": 75,
+"before": "\\times3\\times3}\\\\&=2\\times3=6\\\\&\\therefore x=6,2x=2\\times6=12and3x=3\\times6=18\\\\ &\\end{aligned}\\\\ &\\\\ 解得 x=6,2x=2\\times6=12,18.\\\\ \\end{aligned} $$ #### Prime factorisation 2 216 2 108 2 54 3 27 3 9 3 3 Hence, the three numbers are 6, 12, 18 ##### Exercise 4.2",
+"after": "1. Find the cube root of each of the following numbers by prime factorisation: (i) 12167 (ii) 35937 (iii) 42875 (iv) 21952 (v) 373248 (vi) 32768 (vii) 262144 (viii) 157464 2. Find the cube root of each of the following numbers: (i) -250047 (ii) $ \\frac{-64}{1"
+},
+{
+"chapter": 4,
+"file": "images/math/ch4-2.jpg",
+"page": 80,
+"w": 110,
+"h": 110,
+"before": "e ends in 1. 14. Statement I: If $a$ is a positive integer, then $(-a)^{3} > a^{2}$ Statement II: If $a$ is a negative integer, then $(-a)^{3} > a^{2}$ 15. Statement I: $ (ab)^{3}=a^{3}b^{3} $ Statement II: $ \\sqrt[3]{ab} = \\sqrt[3]{a}\\sqrt[3]{b} $ ## SUMMARY",
+"after": "★ Cube of a number is the product of number by itself three times. ★ Cubes of natural numbers are called cube numbers or perfect cubes. ★ A perfect cube can always be expressed as the product of triplets of equal prime factors. ★ Cubes of odd numbers are odd"
+},
+{
+"chapter": 4,
+"file": "images/math/ch4-3.jpg",
+"page": 81,
+"w": 144,
+"h": 110,
+"before": "duct. It is denoted by $\\sqrt[3]{n}$ the cube root is the inverse operation of finding the cube. $$ \\sqrt[3]{(-a^{3})}=-\\sqrt[3]{a^{3}};\\sqrt[3]{ab}=\\sqrt[3]{a}\\times\\sqrt[3]{b};\\sqrt[3]{\\frac{a}{b}}=\\frac{\\sqrt[3]{a}}{\\sqrt[3]{b}} $$ #### CHECK YOUR PROGRESS",
+"after": "1. Show that each of the following numbers is a perfect cube. Also find the number whose cube is the given number: (i) 74088 (ii) 15625 2. Find the cube of the following numbers: (i) -17 (ii) $ -3\\frac{4}{9} $ 3. Find the cube root of each of the following nu"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-1.jpg",
+"page": 85,
+"w": 163,
+"h": 175,
+"before": "is zero. (ii) Let us consider another 3 digit number 752. Changing the order of digits cyclically, we get new numbers 527, 275. On adding ' On adding these numbers, we get $$ \\begin{aligned}752+527+275&=1554\\\\&=111\\times14\\\\&=3\\times37\\times14\\end{aligned} $$",
+"after": "You can see that the sum is divisible by 111, 14 (sum of digits), 37 and 3. Let us check it. Consider any 3-digit number $ abc = 100a + 10b + c $ Now obtain new numbers by changing the order of digits cyclically i.e. $$ i.e.\\quad bca=100b+10c+a $$ $$ and\\quad"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-2.jpg",
+"page": 85,
+"w": 140,
+"h": 156,
+"before": "he sum is divisible by 111, 14 (sum of digits), 37 and 3. Let us check it. Consider any 3-digit number $ abc = 100a + 10b + c $ Now obtain new numbers by changing the order of digits cyclically i.e. $$ i.e.\\quad bca=100b+10c+a $$ $$ and\\quad cab=100c+10a+b $$",
+"after": "On adding numbers, we get $$ \\begin{aligned}abc+bca+cab&=(100a+10b+c)+(100b+10c+a)+(100c+10a+b)\\\\&=111a+111b+111c=111(a+b+c)\\\\&=3\\times37\\times(a+b+c),\\end{aligned} $$ which is always divisible by 111, $(a+b+c)$, 37 and 3 When sum is divided by 111, quotient"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-3.jpg",
+"page": 86,
+"w": 128,
+"h": 73,
+"before": "= 2c Also $ a + b + c = 12 $ From (i) and (ii), we have $$ 2c+3c+c=12\\Rightarrow6c=12\\Rightarrow c=2 $$ $$ \\therefore\\quad b=3c=3\\times2=6and a=2c=2\\times2=4 $$ ∴ The number = 100 × 4 + 10 × 6 + 2 = 400 + 60 + 2 = 462 Hence, the required 3-digit number is 462",
+"after": "##### Exercise 5.1 1. Write the following numbers in generalized form: (i) 89 (ii) 207 (iii) 369 2. Write the quotient, when the sum of a 2-digit number 34 and number obtained by reversing the digits is divided by (i) 11 (ii) sum of digits 3. Write the quotie"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-4.jpg",
+"page": 88,
+"w": 143,
+"h": 112,
+"before": "Now observe ten's column. As 2 + A cannot exceed 11 and the digit below the sum of ten's column is 0 therefore, 2 + A = 10 $ \\Rightarrow $ A = 8 $ \\therefore $ A = 8, B = 1 Now check the sum",
+"after": "Hence, the required digits are A = 8 and B = 1. Example 3. Find A, B and C in the subtraction: ##### Solution. Given $$ \\begin{aligned}&\\begin{aligned}\\\\ &7\\quad3\\quad A\\\\&B\\quad C\\quad9\\\\&3\\quad4\\quad8\\\\ &\\end{aligned}\\\\ &\\quad7\\quad3\\quad A\\\\&\\quad-\\frac{B\\"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-5.jpg",
+"page": 90,
+"w": 83,
+"h": 72,
+"before": "$ 8+3+x=15\\Rightarrow x=4 $$ Now complete both the diagonals $$ 8+5+y=15\\Rightarrow y=2 $$ and $ 4 + 5 + z = 15 \\Rightarrow z = 6 $ Now we can complete all the rows. Hence, the magic square can be completed as: z 8 5 3 y x 6 1 8 7 5 3 2 9 4 ##### Exercise 5.2",
+"after": "Find the values of the letters in each of the following and give reasons for the steps involved (1 to 12): 4A +35 $ \\underline{\\text{B2}} $ 2. 5\\mathrm{A} +79 $ \\underline{\\text{CB3}} $ 4. AA +AA BA8 3. 42A +2A5 A02 5. 18A +BA7 $ \\underline{\\text{CB2}} $ 6. A"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-6.jpg",
+"page": 90,
+"w": 219,
+"h": 227,
+"before": "in the numbers from 1 to 6 (without repetition) so that each side of the magic triangle adds up to 12. (b) In fig. (ii) given below, complete the magic square using number 0, 1, 2, 3, ..... 15 (only once) so that sum along each row, column and diagonal is 30.",
+"after": "(i) 3 14 0 8 6 4 7 1 12 (ii)  #### TESTS OF DIVISIBILITY In earlier classes, you learnt about the tests of divisibility by 2, 3, 5, 9 and 10. In this section we will learn that how these tests works for 2 and 3 digit numbers expre"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-7.jpg",
+"page": 92,
+"w": 164,
+"h": 235,
+"before": "times 3a $ is divisible by 3, so for number $ 10a + b $ to be divisible by 3, sum of its digits i.e. $ (a + b) $ must be divisible by 3. i.e. $ (a + b) $ must be divisible by 3. Hence, a 2-digit number is divisible by 3, if sum of its digits is divisible by 3",
+"after": "(ii) In a 3-digit number $ abc = 100a + 10b + c $ $ = (99 + 1)a + (9 + 1)b + c $ $ = 99a + 9b + (a + b + c) $ $ \\because 99a = 3 \\times 33a, 9b = 3 \\times 3b $, so 99a and 9b are divisible by 3 Hence for number $100a+10b+c$ to be divisible by 3, sum of its di"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-8.jpg",
+"page": 94,
+"w": 138,
+"h": 201,
+"before": "der the number 47532911272 The sum of the digits in alternate blocks of three digits from right to left are $ 272 + 532 = 804 $ and $ 911 + 47 = 958 $ Their difference = 958 - 804 = 154, which is divisible by 7 ∴ The given number 47532911272 is divisible by 7",
+"after": "(ii) Consider the number 6805793192 The sum of the digits in alternate blocks of three digits from right to left are $ 192 + 805 = 907 $ and $ 793 + 6 = 799 $ Their difference = 997 - 799 = 198, which is not divisible by 7 ∴ The given number 6805793192 is not"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-9.jpg",
+"page": 95,
+"w": 188,
+"h": 83,
+"before": "laces = 8 + x + 3 + 6 = 17 + x Their difference = 17 + x - 10 = 7 + x, which should be divisible by 11 This is possible when 7 + x = 11, 22, …… $\\Rightarrow$ x = 4, 15, …… Since $x$ is a digit, therefore $x = 4$ Hence, the value of $x$ is 4 ##### Exercise 5.3",
+"after": "1. Which of the following numbers are divisible by 5 or by 10: (i) 87035 (ii) 75060 (iii) 9685 (iv) 10730 2. Which of the following numbers are divisible by 2, 4 or 8: (i) 67894 (ii) 5673244 (iii) 9685048 (iv) 6533142 (v) 75379 3. Which of the following numbe"
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-10.jpg",
+"page": 98,
+"w": 97,
+"h": 113,
+"before": "even. 18. Statement I: If 456x78 is divisible by 3, then the value of x can be 0, 3, 6, or 9. Statement II: If the sum of digits of a number is divisible by 3, then the number is also divisible by 3. ## SUMMARY",
+"after": "★ In general, a 2-digit number ab can be written as 10a + b ★ In general, a 3-digit number abc can be written as $ 100a + 10b + c $ ★ The sum of a 2-digit number ab and number obtained by reversing the digits is always divisible by 11 and sum of digits (i.e."
+},
+{
+"chapter": 5,
+"file": "images/math/ch5-11.jpg",
+"page": 98,
+"w": 117,
+"h": 99,
+"before": "★ A number is divisible by 9 if the sum of its digits is divisible by 9. ★ A number is divisible by 11 if the difference of the sum of digits at the odd places and the sum of the digits at even places is either 0 or divisible by 11. ##### CHECK YOUR PROGRESS",
+"after": "1. In a 2-digit number, sum of digits is 7. If the difference of 2 digit number and number obtained by reversing the digits is 9, then find the number. 2. In a 3 digit number, the difference of hundred's digit and unit's digit is 5. Find the quotient when dif"
+},
+{
+"chapter": 6,
+"file": "images/math/ch6-1.jpg",
+"page": 104,
+"w": 84,
+"h": 74,
+"before": "$n(A - B) = n(A) - n(A \\cap B)$ $\\Rightarrow 15 = n(A) - 5 \\Rightarrow n(A) = 15 + 5 = 20$ (iii) We know that $n(B - A) = n(B) - n(A \\cap B)$ $\\Rightarrow 10 = n(B) - 5 \\Rightarrow n(B) = 10 + 5 = 15$ ##### Exercise 6",
+"after": "1. If $A = \\{0, 1, 2, 3, \\ldots, 8\\}$, $B = \\{3, 5, 7, 9, 11\\}$ and $C = \\{0, 5, 10, 20\\}$, find (i) $A \\cup B$ (ii) $A \\cup C$ (iii) $B \\cup C$ (iv) $A \\cap B$ (v) $A \\cap C$ (vi) $B \\cap C$ Also find the cardinal number of the sets $B \\cup C$ $A \\cap B$ $A"
+},
+{
+"chapter": 6,
+"file": "images/math/ch6-2.jpg",
+"page": 106,
+"w": 85,
+"h": 115,
+"before": "the number system}\\}$ and B = {x | x is a single digit multiple of 3}, then A - B = {1, 2, 4, 5, 7, 8}. Statement II: A - B = {x | x ∈ A or x ∉ B}. 14. Statement I: Given any set A, A ∪ φ = A and A ∩ φ = φ. Statement II: A and φ are disjoint sets. ## SUMMARY",
+"after": "★ The union of two sets A and B, written as A \\cup B, is the set consisting of all those elements which belong to either A or B or both. Thus, $ A \\cup B = \\{x \\mid x \\in A \\text{ or } x \\in B\\} $ ★ The intersection of two sets A and B, written as $ A \\cap B"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-1.jpg",
+"page": 110,
+"w": 141,
+"h": 196,
+"before": "i) 36 seconds as a percentage of 8 minutes Solution. (i) 6 kg = (6 $ \\times $ 1000) g = 6000 g $$ \\therefore\\text{Required percentage}=\\left(\\frac{150}{6000}\\times100\\%\\right)\\%=\\frac{15}{6}\\%=\\frac{5}{2}\\%=2.5\\% $$ (ii) 4 rupees = (4 × 100) paise = 400 paise",
+"after": "$$ \\therefore\\text{Required percentage}=\\left(\\frac{20}{400}\\times100\\%\\right)\\%=5\\% $$ (iii) 8 minutes = (8 × 60) seconds = 480 seconds $$ \\therefore\\text{Required percentage}=\\left(\\frac{36}{480}\\times100\\right)\\%=\\frac{15}{2}\\%=7.5\\% $$ Example 5. If 9.5%"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-2.jpg",
+"page": 112,
+"w": 259,
+"h": 290,
+"before": "ir children is given in the adjoining figure; 20% helped for more than 1 $ \\frac{1}{2} $ hours per day; 30% helped for $ \\frac{1}{2} $ hours to 1 $ \\frac{1}{2} $ hours; 50% did not help at all. $$ \\left[\\left(1-\\frac{x}{100}\\right)\\text{of original}\\right] $$",
+"after": "Using this, answer the following: (i) How many parents were surveyed? (ii) How many said that they did not help? (iii) How many said that they helped for more than $1\\frac{1}{2}$ hours? Solution. (i) Let total number of parents who were surveyed be $x$. Given"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-3.jpg",
+"page": 114,
+"w": 81,
+"h": 71,
+"before": "mes\\frac{49}{50}x=\\frac{43\\times49}{50\\times50}x $$ According to the given condition, $$ \\frac{43\\times49}{50\\times50}x=2107\\Rightarrow x=\\frac{2107\\times50\\times50}{43\\times49}=2500 $$ Hence, the original population of the village was 2500 ##### Exercise 7.1",
+"after": "1. Express the following percentages as fractions: (i) 356% (ii) $ 2\\frac{1}{2}\\% $ (iii) $ 16\\frac{2}{3}\\% $ 2. Express the following fractions as percentages : (i) $ \\frac{3}{2} $ (ii) $ \\frac{9}{20} $ (iii) $ 1\\frac{1}{4} $ 3. Express the following fractio"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-4.jpg",
+"page": 121,
+"w": 204,
+"h": 84,
+"before": "both sides by3 $$ \\Rightarrow\\quad\\begin{aligned}58x-55x&=75\\times50\\end{aligned} $$ $$ \\Rightarrow\\qquad3x=75\\times50\\Rightarrow x=25\\times50=\\text{₹}1250 $$ Hence, the cost price of the bag = ₹1250 #### Exercise 7.2",
+"after": "the profit or loss percentage, when : 1. Find the value of $f(x)$ in the region $x \\in [0, 400, S.P. = 468$ and $S.P. = 12104$. (i) $C.P. = 400$, $S.P. = 468$ (ii) $C.P. = 13600$, $S.P. = 12104$ Note: For values of $x$ in $S.P. = 12104$, the values for $x$ ar"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-5.jpg",
+"page": 127,
+"w": 175,
+"h": 75,
+"before": "rchase the laptop, $$ \\therefore\\quad\\frac{59x}{50}=29500\\Rightarrow x=\\frac{29500\\times50}{59}=25000 $$ ∴ The reduced price of laptop = ₹25000 So, amount reduced = ₹29500 - ₹25000 = ₹4500 Hence, the amount reduced by the shopkeeper is ₹4500 #### Exercise 7.4",
+"after": "1. Find the buying price of each of the following when 5% GST is added on the purchase of (i) a spice packet of ₹50 (ii) 5 kg of refined oil at ₹150 per kg 2. If 18% GST is included in the prices, find the original price of (i) a small TV bought for ₹12980 3."
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-6.jpg",
+"page": 128,
+"w": 116,
+"h": 124,
+"before": "count}=\\bar{\\mathfrak{x}}\\frac{10}{100}\\times110=\\bar{\\mathfrak{x}}11 $$ Hence, new SP = ₹110 - ₹11 = ₹99 So, we see that the shopkeeper actually sells the item at ₹99 instead of ₹100. ∴ Correct answer is (a). ##### OBJECTIVE TYPE QUESTIONS ##### MENTAL MATHS",
+"after": "1. Fill in the blanks: (i) Percentage is the numerator of a fraction with denominator $ \\cdots $ (ii) 15% of ..... is 135"
+},
+{
+"chapter": 7,
+"file": "images/math/ch7-7.jpg",
+"page": 132,
+"w": 95,
+"h": 121,
+"before": "customer and given to the Government. ★ The prices include the tax known as goods and services tax (GST). ★ In case of discount, first discount is deducted from the marked price and then GST is added. #### CHECK YOUR PROGRESS",
+"after": "1. Convert $ \\frac{7}{24} $ into a percentage correct to two decimal places. 2. Express 750 mL as a percentage of 4 litres. 3. A football team won 9 matches out of the total number of matches they played. If their win percentage was 45, then how many matches"
+},
+{
+"chapter": 8,
+"file": "images/math/ch8-1.jpg",
+"page": 135,
+"w": 90,
+"h": 75,
+"before": "rmula $A=\\left(1+\\frac{R\\times T}{100}\\right)P$, we get $$ 4230=\\left(1+\\frac{7\\times\\frac{5}{2}}{100}\\right)P=\\left(1+\\frac{7}{40}\\right)P=\\frac{47}{40}P\\Rightarrow P=\\frac{4230\\times40}{47}=3600 $$ Hence, the required sum of money = ₹3600 ##### Exercise 8.1",
+"after": "1. Find the simple interest on ₹4000 at 7.5% p.a. for 3 years 3 months. Also find the amount. 2. What sum of money will yield ₹170.10 as simple interest in 2 years 3 months at 6% per annum? 3. Find the rate of interest when ₹800 fetches ₹130 as simple interes"
+},
+{
+"chapter": 8,
+"file": "images/math/ch8-2.jpg",
+"page": 138,
+"w": 86,
+"h": 73,
+"before": "interest in 2 years = ₹(30000 - 25000) = ₹5000 ∴ Interest earned by compound interest in 2 years = ₹(30250 - 25000) = ₹5250 ∴ Simple interest = ₹5000 and compound interest = ₹5250 Difference between simple interest and compound interest = ₹5250 - ₹5000 = ₹250",
+"after": "##### Exercise 8.2 1. Calculate the compound interest on ₹6000 at 10% per annum for two years. 2. Salma borrowed a sum of ₹9375 from a local self-help group to purchase a sewing machine. If the rate of interest is 4% per annum, what is the compound interest t"
+},
+{
+"chapter": 8,
+"file": "images/math/ch8-3.jpg",
+"page": 143,
+"w": 93,
+"h": 82,
+"before": "0}\\times\\frac{11}{10}=\\mp16637.50 $$ $$ \\mathrm{C.I.~=A-P=\\mp16637.50~-\\mp12500=\\mp4137.50} $$ $$ 4500>4137.50 $$ Ashima paid more interest and she paid ₹(4500 - 4137.50) i.e. ₹362.50 more than Radha. #### Exercise 8.3",
+"after": "Calculate the amount and compound interest on 1. Calculate the amount (i) ₹ 15000 for 2 years at 10% per annum compounded annually. (ii) ₹ 156250 for 1 $ \\frac{1}{2} $ years at 8% per annum compounded half yearly. (iii) ₹100000 for 9 months at 4% per annum co"
+},
+{
+"chapter": 8,
+"file": "images/math/ch8-4.jpg",
+"page": 144,
+"w": 192,
+"h": 142,
+"before": "mpound interest on ₹5000 at 20% per annum for $ 1\\frac{1}{2} $ years compounded half yearly is (a) ₹6655 (b) ₹1655 (c) ₹750 (d) ₹1000 5. The compound interest on ₹10000 at 8% per annum for 6 months compounded quarterly is (a) ₹408 (b) ₹10404 (c) ₹404 (d) ₹400",
+"after": "6. The time periods and rate for a sum taken at 8% p.a. for $ 1\\frac{1}{2} $ years compounded half yearly are (a) $ n=3 $, $ R=4\\% $ (b) $ n=6 $, $ R=2\\% $ (c) $ n=3 $, $ R=2\\% $ (d) $ n=6 $, $ R=4\\%"
+},
+{
+"chapter": 8,
+"file": "images/math/ch8-5.jpg",
+"page": 146,
+"w": 91,
+"h": 111,
+"before": "}}{100}\\right)\\ldots\\ldots\\mathrm{a n d}\\mathrm{C.I.}=\\mathrm{A}-\\mathrm{P} $$ ★ When the total time is not a complete number of conversion periods then to calculate the amount we consider simple interest for the last partial period. ##### CHECK YOUR PROGRESS",
+"after": "1. Find the amount and the compound interest on ₹5000 for 2 years at 6% per annum, interest payable yearly. 2. Find the amount and the compound interest on ₹7400 for 1 year at 5% per annum, interest payable half yearly. 3. Find the difference between C.I and"
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-1.jpg",
+"page": 148,
+"w": 142,
+"h": 206,
+"before": "ample: (i) The cost of articles varies directly to the number of articles. More articles, more cost. Less articles, less cost. (ii) The work done varies directly to the number of men at work. More men at work, more work done. Less men at work, less work done.",
+"after": "(iii) The work done varies directly to the working time. More work done in more time. Less work done in less time."
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-2.jpg",
+"page": 151,
+"w": 900,
+"h": 231,
+"before": "=\\frac{3600\\times19}{4}=17100 $$ Hence, 6 men and 11 women will earn ₹17100 in a day. ##### ACTIVITY 3 Take a sheet of square paper. Fold it as shown in the figure below. Count the number of divisions (parts) and find the area of the shaded part in each case.",
+"after": "Tabulate your observations and discuss with your friends in the class. Is it a case of direct proportion or inverse proportion? Why? Number of parts 1 2 4 8 16 Area of shaded portion (i.e. each part) in cm $ ^{2} $ 64 32 ? ? ?"
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-3.jpg",
+"page": 152,
+"w": 134,
+"h": 87,
+"before": "and discuss with your friends in the class. Is it a case of direct proportion or inverse proportion? Why? Number of parts 1 2 4 8 16 Area of shaded portion (i.e. each part) in cm $ ^{2} $ 64 32 ? ? ?  ##### Exercise 9.1",
+"after": "1. Observe the following tables and find if x and y are directly proportional: (i) x 5 8 12 15 18 20 y 15 24 36 60 72 100 (ii) x 3 5 7 9 10 y 9 15 21 27 30 2. If $x$ and $y$ are in direct variation, complete the following tables: x 3 5 ... ... 10 y 45 ... 90"
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-4.jpg",
+"page": 152,
+"w": 162,
+"h": 131,
+"before": "office if she travels at a speed of 10 km/h. If she travels at a faster speed of 20 km/h, she takes 2 hours to reach. Similarly, we can find the time taken by her to reach the office if she travels at a speed of 40 km/h or 80 km/h. Study the following table:",
+"after": "Speed in km/hour (x) 10 20 40 80 Time taken in hour (y) 4 2 1 $ \\frac{1}{2} $  find that as x increases, y decreases and xy is constant. In this case $$ xy=10\\times4=20\\times2=40\\times1=80\\times\\frac{1}{2}=40(constant) $$ i.e. $ xy = k(\\text{constant}) $, whe"
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-5.jpg",
+"page": 154,
+"w": 142,
+"h": 249,
+"before": "increases to ₹20 per kg? Solution. Let Sheetal buy x kg watermelon in the same money. Note that more the price, lesser will be the quantity in same amount. Quantity of watermelons (in kg) 5 x Cost per kg (in ₹) 18 20 Hence, it is a case of inverse variation.",
+"after": "$$ 5\\times18=x\\times20\\Rightarrow x\\times20=5\\times18\\Rightarrow x=\\frac{5\\times18}{20}=4.5 $$ Hence, she can buy 4.5 kg of the watermelon in the same money."
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-6.jpg",
+"page": 155,
+"w": 177,
+"h": 76,
+"before": "r would the food exhaust. Number of soldiers 150 180 Number of days 48 x Hence, it is a case of inverse variation. $$ \\therefore\\quad150\\times48=180\\times x\\implies x=\\frac{150\\times48}{180}=40 $$ The remaining ration will last for 40 days. ##### Exercise 9.2",
+"after": "1. Which of the following are in inverse variation? (i) Number of students in a hostel and consumption of food. (ii) Time taken by a train to cover a fixed distance and the speed of the train. (iii) Area of land and its cost. (iv) The number of people working"
+},
+{
+"chapter": 9,
+"file": "images/math/ch9-7.jpg",
+"page": 166,
+"w": 80,
+"h": 66,
+"before": "w much will 10 men and 5 women earn in a 23. A hostel had rations for 150 students for 60 days. After 12 days, 30 more students join the hostel. How long will the remaining rations last? 24. Simplify the following expression and write in the exponential form:",
+"after": "#### + 2 ^ { - 1 } + \\left( \\frac { 1 } { 1 9 } \\right) ^ { - 1 } ##### $ 3^{-5} \\times 3^{2} \\div 3^{-6} + (2^{2} \\times 3)^{2} + $ ##### SECTION D 25. A student scored 30% marks in an exam and failed by 20 marks, while another student scored 40% marks and g"
+},
+{
+"chapter": 10,
+"file": "images/math/ch10-1.jpg",
+"page": 185,
+"w": 108,
+"h": 137,
+"before": "(a - b)^2 = a^2 - 2ab + b^2 $ \\begin{array}{l}(a+b)(a-b)=a^{2}-v\\\\(x+a)(x+b)=x^{2}+(a+b)x+ab\\end{array} ##### CHECK YOUR PROGRESS (i) $ -5x^2y + 3xy^2 - 7xy + 8 $, $ 12x^2y - 5xy^2 + 3xy - 2 $ (ii) $ 9xy + 3yz - 5zx $, $ 4yz + 9zx - 5y $, $ -5xz + 2x - 5xy $",
+"after": "+ 11c - 2 from 3a + 5b - 9c + 3 - $ 3b + 10 = -2 $ - $ 8y^{2} + 5y - 3 $ from $ 8x^{2} - 5xy + 2y^{2} + 5 $ 3. What must be added to $ 5x^{2} - 3x + 1 $ to get $ 3x^{3} - 7x^{2} $ 4. Find the product"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-1.jpg",
+"page": 218,
+"w": 127,
+"h": 108,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-2.jpg",
+"page": 218,
+"w": 81,
+"h": 137,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-3.jpg",
+"page": 218,
+"w": 161,
+"h": 193,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-4.jpg",
+"page": 218,
+"w": 169,
+"h": 128,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-5.jpg",
+"page": 218,
+"w": 177,
+"h": 133,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-6.jpg",
+"page": 218,
+"w": 191,
+"h": 112,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-7.jpg",
+"page": 218,
+"w": 187,
+"h": 123,
+"before": "ook, top of a table, floor of Flat surfaces are known as a room etc. are all planes. If we put the sharp tip of a pencil on a sheet of paper and move from one point to the other, without lifting the pencil, then the shapes so obtained are called plane curves.",
+"after": "Open curve. The curves which have different beginning and end points are called open curves. In the above figure (i), (vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the ab"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-8.jpg",
+"page": 219,
+"w": 246,
+"h": 429,
+"before": "(vi), (vii) and (viii) are all open curves. Closed curve. The curves which have the same beginning and end points are called closed In the above figure (ii), (iii), (iv) and (v) are all closed curves.",
+"after": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve. ##### (vi) ##### (vii) In the above figure ("
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-9.jpg",
+"page": 219,
+"w": 191,
+"h": 200,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-10.jpg",
+"page": 219,
+"w": 179,
+"h": 101,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-11.jpg",
+"page": 219,
+"w": 127,
+"h": 170,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-12.jpg",
+"page": 219,
+"w": 126,
+"h": 199,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-13.jpg",
+"page": 219,
+"w": 206,
+"h": 94,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-14.jpg",
+"page": 219,
+"w": 135,
+"h": 188,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve.",
+"after": "##### (vi) ##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagona"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-15.jpg",
+"page": 219,
+"w": 157,
+"h": 109,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve. ##### (vi)",
+"after": "##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagonals of a pol"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-16.jpg",
+"page": 219,
+"w": 250,
+"h": 116,
+"before": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies in the curve. ##### (vi)",
+"after": "##### (vii) In the above figure (i), (ii), (iii) and (iv) are all simple closed curves made up entirely of line segments, so these are all polygons. In the above figure (v), (vi), (vii) and (viii) are not polygons (why?) Sides, vertices and diagonals of a pol"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-17.jpg",
+"page": 219,
+"w": 312,
+"h": 293,
+"before": "lled a vertex of the polygon. It has five vertices A, B, C, D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.",
+"after": "216 TCSE Mathematics - VII Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Nu"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-18.jpg",
+"page": 220,
+"w": 163,
+"h": 171,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-19.jpg",
+"page": 220,
+"w": 113,
+"h": 196,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-20.jpg",
+"page": 220,
+"w": 149,
+"h": 93,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-21.jpg",
+"page": 220,
+"w": 123,
+"h": 256,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-22.jpg",
+"page": 220,
+"w": 138,
+"h": 163,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-23.jpg",
+"page": 220,
+"w": 147,
+"h": 142,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-24.jpg",
+"page": 220,
+"w": 170,
+"h": 148,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-25.jpg",
+"page": 220,
+"w": 118,
+"h": 225,
+"before": "D and E. The line segments formed by joining non-adjacent vertices are called diagonals of the polygon. In the above polygon, the line segments AC, AD, BD, BE and CE are all diagonals of the polygon.   216 TCSE Mathematics - VII",
+"after": "Classification of polygons\\nWe can classify the polygons according to the number of sides or vertices they have: Number of sides or vertices Classification Sample figure Number of sides or vertices Classification Sample figure 3 Triangle 8 Octagon 4 Quadrilat"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-26.jpg",
+"page": 221,
+"w": 304,
+"h": 380,
+"before": "1. Take a sheet of paper and draw any quadrilateral ABCD on it and cut off the four angles i.e. $\\angle A, \\angle B, \\angle C$ and $\\angle D$ as shown in adjoining figure (i). 2 Mark any point O on the copy.",
+"after": "3. Paste all the four cut out angles in such a way that the vertices of these angles are at the marked point and they form adjacent angles shown in figure (ii). These angles forms a complete angle at the P: $ \\angle A + \\angle B + \\angle C + \\angle D = 360^\\c"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-27.jpg",
+"page": 221,
+"w": 343,
+"h": 386,
+"before": "ngle B, \\angle C$ and $\\angle D$ as shown in adjoining figure (i). 2 Mark any point O on the copy. 3. Paste all the four cut out angles in such a way that the vertices of these angles are at the marked point and they form adjacent angles shown in figure (ii).",
+"after": "These angles forms a complete angle at the P: $ \\angle A + \\angle B + \\angle C + \\angle D = 360^\\circ $ P: $ \\angle A + \\angle B + \\angle C + \\angle D = 360^\\circ $ : Thus, we have verif $ \\underline{ie} $. The sum of all the interior angles of quadrilaterals"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-28.jpg",
+"page": 221,
+"w": 199,
+"h": 167,
+"before": "$ : Thus, we have verif $ \\underline{ie} $. The sum of all the interior angles of quadrilaterals is 360°. Regular and irregular polygons Regular and A polygon is called regular polygon if all its sides have equal length and all its angles have equal measure.",
+"after": "Equilateral triangle and square are regular polygons. Equilateral triangle A polygon which is not regular is called irregular polygon. Rectangle Thus, in a regular polygon: For exu...r (i) Rectangle is equiangular but all of its sides are not equal, so it is"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-29.jpg",
+"page": 221,
+"w": 221,
+"h": 187,
+"before": "$ : Thus, we have verif $ \\underline{ie} $. The sum of all the interior angles of quadrilaterals is 360°. Regular and irregular polygons Regular and A polygon is called regular polygon if all its sides have equal length and all its angles have equal measure.",
+"after": "Equilateral triangle and square are regular polygons. Equilateral triangle A polygon which is not regular is called irregular polygon. Rectangle Thus, in a regular polygon: For exu...r (i) Rectangle is equiangular but all of its sides are not equal, so it is"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-30.jpg",
+"page": 221,
+"w": 257,
+"h": 206,
+"before": "and A polygon is called regular polygon if all its sides have equal length and all its angles have equal measure. Equilateral triangle and square are regular polygons. Equilateral triangle A polygon which is not regular is called irregular polygon. Rectangle",
+"after": "Thus, in a regular polygon: For exu...r (i) Rectangle is equiangular but all of its sides are not equal, so it is an irregular polygon. (ii) Rhombus has all its sides equal but it is not equiangular, so it is also an irregular por' All sides are equal in leng"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-31.jpg",
+"page": 221,
+"w": 211,
+"h": 218,
+"before": "and A polygon is called regular polygon if all its sides have equal length and all its angles have equal measure. Equilateral triangle and square are regular polygons. Equilateral triangle A polygon which is not regular is called irregular polygon. Rectangle",
+"after": "Thus, in a regular polygon: For exu...r (i) Rectangle is equiangular but all of its sides are not equal, so it is an irregular polygon. (ii) Rhombus has all its sides equal but it is not equiangular, so it is also an irregular por' All sides are equal in leng"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-32.jpg",
+"page": 223,
+"w": 82,
+"h": 78,
+"before": "$ \\text{polygon} = \\frac{360}{x} $ — REMARK $ na\\ polygon\\ has\\ n(>3) $ sides, then the number of diagonals of the polygon = $ \\frac{n(n-3)}{2} $ Example 1. Some figures are given below:",
+"after": "(i) Classify each of them on the basis of simple curve (b) simple closed curves (e) concave polygon. (c) polygon Solution. (a) figures (i), (ii), (iii), and (vii) are simple curves (b) figures (i), (iv) are simple closed curves Goures (i) and (iv) are polygon"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-33.jpg",
+"page": 223,
+"w": 106,
+"h": 73,
+"before": "$ \\text{polygon} = \\frac{360}{x} $ — REMARK $ na\\ polygon\\ has\\ n(>3) $ sides, then the number of diagonals of the polygon = $ \\frac{n(n-3)}{2} $ Example 1. Some figures are given below:",
+"after": "(i) Classify each of them on the basis of simple curve (b) simple closed curves (e) concave polygon. (c) polygon Solution. (a) figures (i), (ii), (iii), and (vii) are simple curves (b) figures (i), (iv) are simple closed curves Goures (i) and (iv) are polygon"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-34.jpg",
+"page": 223,
+"w": 80,
+"h": 76,
+"before": "$ \\text{polygon} = \\frac{360}{x} $ — REMARK $ na\\ polygon\\ has\\ n(>3) $ sides, then the number of diagonals of the polygon = $ \\frac{n(n-3)}{2} $ Example 1. Some figures are given below:",
+"after": "(i) Classify each of them on the basis of simple curve (b) simple closed curves (e) concave polygon. (c) polygon Solution. (a) figures (i), (ii), (iii), and (vii) are simple curves (b) figures (i), (iv) are simple closed curves Goures (i) and (iv) are polygon"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-35.jpg",
+"page": 224,
+"w": 206,
+"h": 262,
+"before": ". Let the polygon have $n$ sides, then sum of its interior angles $=(n-2)\\times180^{\\circ}$ According to given, $(n-2)\\times180=2700$ $ n - 2 = 15 \\Rightarrow n = 17 $. Hence, the polygon has 17 sides",
+"after": "Example 7. Find the measure of angle x in the following figures: (iii) As the given figure is a regular hexagon, each interior angle of a regular hexagon = $ \\frac{(6-2)\\times180^{\\circ}}{6}=\\frac{4\\times180^{\\circ}}{6}=4\\times30^{\\circ}=120^{\\circ} $ Since t"
+},
+{
+"chapter": 13,
+"file": "images/math/ch13-36.jpg",
+"page": 224,
+"w": 244,
+"h": 312,
+"before": ". Let the polygon have $n$ sides, then sum of its interior angles $=(n-2)\\times180^{\\circ}$ According to given, $(n-2)\\times180=2700$ $ n - 2 = 15 \\Rightarrow n = 17 $. Hence, the polygon has 17 sides",
+"after": "Example 7. Find the measure of angle x in the following figures: (iii) As the given figure is a regular hexagon, each interior angle of a regular hexagon = $ \\frac{(6-2)\\times180^{\\circ}}{6}=\\frac{4\\times180^{\\circ}}{6}=4\\times30^{\\circ}=120^{\\circ} $ Since t"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-1.jpg",
+"page": 246,
+"w": 243,
+"h": 259,
+"before": "al when four sides and one diagonal are given Example 1. Draw a quadrilateral ABCD, given that AB = 4.2 cm, $ BC = 3.7 \\, cm, CD = 2.9 \\, cm, AD = 3 \\, cm $ and $ BD = 4.5 \\, cm $ Solution. Draw a rough sketch of quadrilateral ABCD and mark the given lengths.",
+"after": "Steps of construction 2. With A as centre and radius = 3 cm, draw an arc. With B as centre and radius are to meet the previous arc at D. Join AD and BD (dotted). . With B as centre and radius = 3.7 cm, draw an arc. 4. Join BC and CD, then ABCD is the required"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-2.jpg",
+"page": 246,
+"w": 235,
+"h": 220,
+"before": "adrilateral ABCD and mark the given lengths. Steps of construction 2. With A as centre and radius = 3 cm, draw an arc. With B as centre and radius are to meet the previous arc at D. Join AD and BD (dotted). . With B as centre and radius = 3.7 cm, draw an arc.",
+"after": "4. Join BC and CD, then ABCD is the required quadrilateral.  ample 2. Construct a quadrilateral ABCD given that AB = 3 cm, a = 2.4 cm, AD = 3.7 cm, AC = 4 cm and BD = 5.5 cm. Measure CD. ion. Draw on lengths. steps of construction 1. Construct $ \\Delta ABC $"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-3.jpg",
+"page": 247,
+"w": 239,
+"h": 275,
+"before": "With B as centre and radius are to meet the previous arc at D. Join AD and BD (dotted). . With B as centre and radius = 3.7 cm, draw an arc. 4. Join BC and CD, then ABCD is the required quadrilateral.",
+"after": "ample 2. Construct a quadrilateral ABCD given that AB = 3 cm, a = 2.4 cm, AD = 3.7 cm, AC = 4 cm and BD = 5.5 cm. Measure CD. ion. Draw on lengths. steps of construction 1. Construct $ \\Delta ABC $ ABD 2. Construct $\\Delta ABD$ 3. Join CD, then ABCD is the re"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-4.jpg",
+"page": 247,
+"w": 212,
+"h": 219,
+"before": "ample 2. Construct a quadrilateral ABCD given that AB = 3 cm, a = 2.4 cm, AD = 3.7 cm, AC = 4 cm and BD = 5.5 cm. Measure CD. ion. Draw on lengths.",
+"after": "steps of construction 1. Construct $ \\Delta ABC $ ABD 2. Construct $\\Delta ABD$ 3. Join CD, then ABCD is the required quadrilateral. On measuring CD, we find that $CD = 4.5$ cm 5. At D, consult ZCDR 6. Let BP and DR meet at A, then ABCD is the required To con"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-5.jpg",
+"page": 247,
+"w": 284,
+"h": 267,
+"before": "2.4 cm, AD = 3.7 cm, AC = 4 cm and BD = 5.5 cm. Measure CD. ion. Draw on lengths. steps of construction 1. Construct $ \\Delta ABC $ ABD 2. Construct $\\Delta ABD$ 3. Join CD, then ABCD is the required quadrilateral. On measuring CD, we find that $CD = 4.5$ cm",
+"after": "5. At D, consult ZCDR 6. Let BP and DR meet at A, then ABCD is the required To construct a quadrilateral when three sides and two included angles are given Example 4. Construct a quadrilateral ABCD given that BC = 4.5 cm. AB = 3.5 cm, CD = 3 cm, $ \\angle B ="
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-6.jpg",
+"page": 247,
+"w": 318,
+"h": 295,
+"before": "2.4 cm, AD = 3.7 cm, AC = 4 cm and BD = 5.5 cm. Measure CD. ion. Draw on lengths. steps of construction 1. Construct $ \\Delta ABC $ ABD 2. Construct $\\Delta ABD$ 3. Join CD, then ABCD is the required quadrilateral. On measuring CD, we find that $CD = 4.5$ cm",
+"after": "5. At D, consult ZCDR 6. Let BP and DR meet at A, then ABCD is the required To construct a quadrilateral when three sides and two included angles are given Example 4. Construct a quadrilateral ABCD given that BC = 4.5 cm. AB = 3.5 cm, CD = 3 cm, $ \\angle B ="
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-7.jpg",
+"page": 247,
+"w": 249,
+"h": 358,
+"before": "uded angles are given Example 4. Construct a quadrilateral ABCD given that BC = 4.5 cm. AB = 3.5 cm, CD = 3 cm, $ \\angle B = 90^{\\circ} $ and $ \\angle C = 120^{\\circ} $ Solution. Draw a rough sketch of quadrilateral ABCD and mark the given angles and lengths.",
+"after": "While drawing a rough sketch mark “included” angles carefully. Steps of construction 6. Join AD, then ABCD is the required quadrilateral. To construct a quadrilateral when its four sides Example 5. Construct a quadrilateral $ ABCD $ where $ AB = 4 \\, cm $, $"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-8.jpg",
+"page": 248,
+"w": 306,
+"h": 302,
+"before": "= 90^{\\circ} $ and $ \\angle C = 120^{\\circ} $ Solution. Draw a rough sketch of quadrilateral ABCD and mark the given angles and lengths. While drawing a rough sketch mark “included” angles carefully. Steps of construction",
+"after": "6. Join AD, then ABCD is the required quadrilateral. To construct a quadrilateral when its four sides Example 5. Construct a quadrilateral $ ABCD $ where $ AB = 4 \\, cm $, $ BC = 3.5 \\, cm $, $ CD = 4 \\, cm $, $ AD = 3 \\, cm $ and $ \\angle A = 60^\\circ $. Sol"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-9.jpg",
+"page": 249,
+"w": 197,
+"h": 262,
+"before": "th AB = 4.5 cm, 1. Construct $ \\frac{1}{2}AC = \\left(\\frac{1}{2} \\times 4.8\\right) $ cm = 2.4 cm and $ AO^{2} $ = $ \\frac{1}{2} BD = \\left(\\frac{1}{2} \\times 6.4\\right) $ cm = 3.2 cm Monals of a parallelogram bisect each other.) Ince AO to C such that OC = OA",
+"after": ", produce RO to D such that OD = OB is the required parallelogi parallelogram ABCD such that AC = 6.4 cm, BD = 4.8 cm and an angle between steps of construction Steps 01: Draw $ AO = \\frac{1}{2} AC = \\left(\\frac{1}{2} \\times 6.4\\right) $ cm = 3.2 cm and produ"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-10.jpg",
+"page": 249,
+"w": 261,
+"h": 290,
+"before": "OD = OB is the required parallelogi parallelogram ABCD such that AC = 6.4 cm, BD = 4.8 cm and an angle between steps of construction Steps 01: Draw $ AO = \\frac{1}{2} AC = \\left(\\frac{1}{2} \\times 6.4\\right) $ cm = 3.2 cm and produce AO to C such that OC = OA",
+"after": "3. From OP, cut OD = $ \\frac{1}{2} $ BD = $ \\left(\\frac{1}{2} \\times 4.8\\right) $ cm = 2.4 cm Produce DO to B such that OB = OD RC. CD and DA, then ABCD is the required parallelogram. To construct a rectangle: ION OF RECTANGLES, RHON (ii) when one side and on"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-11.jpg",
+"page": 249,
+"w": 198,
+"h": 317,
+"before": "n two diagonals $ \\underset{\\cdot}{r} $ectangle ABCD given that AB = 5. Steps of construction 2. At B, construct $ \\angle ABP = 90^{\\circ} $ dius = 5.3 cm, daw an arc. A as centre and radius = 3.2 cm, draw an arc t and CD. Then ABCD is the required rectangle.",
+"after": "...struct a rectangle ABCD such that AB = 5.4 cm and BD = 6.3 cm. 1. Draw AB = 5.4 cm Draw AB = 90 construct $ \\angle BAI = 20 $ cost-end radius = 6.3 cm, draw an arc to 4. With A as centre and radius"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-12.jpg",
+"page": 250,
+"w": 301,
+"h": 235,
+"before": "us = 6.3 cm, draw an arc. 5. With D as centre and radius = 5.4 cm, draw an arc to meet the 6. Join BC and CD. Then ABCD is the required rectangle. rectangle ABCD given that BC = 5.2 cm and $ \\angle DBC = 30^{\\circ} $. Steps of construction 1. Draw BC = 5.2 cm",
+"after": "2. At C, construct $ \\angle BCP = 90^{\\circ} $ 3. At C, construct $\\angle CBQ=30^{\\circ}$. Let BQ meet CP at D 6. join AB and AD, then ABCD is the required rectangle. Example 6. Draw a rectangle ABCD such that diagonal AC = 6 cm and an angle between $ t_{1} $"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-13.jpg",
+"page": 250,
+"w": 208,
+"h": 262,
+"before": "hen ABCD is the required rectangle. rectangle ABCD given that BC = 5.2 cm and $ \\angle DBC = 30^{\\circ} $. Steps of construction 1. Draw BC = 5.2 cm 2. At C, construct $ \\angle BCP = 90^{\\circ} $ 3. At C, construct $\\angle CBQ=30^{\\circ}$. Let BQ meet CP at D",
+"after": "6. join AB and AD, then ABCD is the required rectangle. Example 6. Draw a rectangle ABCD such that diagonal AC = 6 cm and an angle between $ t_{1} $ $ \\frac{1}{2} AC = \\left( \\frac{1}{2} \\times 6 \\right) cm = 3 cm $ and produce AO to C such that OC = OA = 3 c"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-14.jpg",
+"page": 250,
+"w": 196,
+"h": 254,
+"before": ". join AB and AD, then ABCD is the required rectangle. Example 6. Draw a rectangle ABCD such that diagonal AC = 6 cm and an angle between $ t_{1} $ $ \\frac{1}{2} AC = \\left( \\frac{1}{2} \\times 6 \\right) cm = 3 cm $ and produce AO to C such that OC = OA = 3 cm",
+"after": "OP, cut off OD = $ \\frac{1}{2} $ AC = $ \\left(\\frac{1}{2} \\times 6\\right) $ cm = 3 cm 4. Join AB, BC, CD and DA. Then ABCD is the required rectangle i) when one side and one angle are given. (ii) when one side and one diagonal are given when both diagonals ar"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-15.jpg",
+"page": 250,
+"w": 251,
+"h": 272,
+"before": "de and one diagonal are given when both diagonals are given. L. Draw AB = 4.5 cm Example 7. Construct a rhombus ABCD given that AB = 4.5 cm and $\\angle A = 60^{\\circ}$. 1. From AP, cut off AD = 4.5 cm $ ^{14} $As, Q as centre and radius = 4.5 cm, draw an arc.",
+"after": "6. Join BC and CD. Then ABCD is the required rhombus. enact a rhombus ABCD such that AB = 4.2 cm and diagonal BD = 4. de 8 Construction In the case of construction www.AB=4.2 cm $ d\\ radius = 4.2\\ cm $, draw an arc. centre and radius = 4.6 cm, draw an ar"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-16.jpg",
+"page": 251,
+"w": 226,
+"h": 278,
+"before": "enact a rhombus ABCD such that AB = 4.2 cm and diagonal BD = 4. de 8 Construction In the case of construction www.AB=4.2 cm $ d\\ radius = 4.2\\ cm $, draw an arc. centre and radius = 4.6 cm, draw an arc to",
+"after": "e and radius = 4.2 cm, draw an arc. s. What s. What s. What the previous arc at C. D. Then ABCD is the required Join rhombus. tract a rhombus ABCD whose diagonal AC = 7 cm and diagonal BD = 5 cm Step 9. Construction Steps of construction AC = 7 cm pendicular"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-17.jpg",
+"page": 251,
+"w": 304,
+"h": 279,
+"before": "AC = 7 cm and diagonal BD = 5 cm Step 9. Construction Steps of construction AC = 7 cm pendicular bisector PQ of AC to meet it at O. POQ cut off OB and OD such that $$\\mathrm{d}=\\frac{1}{2}\\mathrm{BD}=\\left(\\frac{1}{2}\\times5\\right)\\mathrm{cm}=2.5\\mathrm{cm}$$",
+"after": "BC, CD and DA. Then ABCD is the required rhombus. To construct a square: (i) when one diagonal is given. Construct a square ABCD whose side BC = 4.5 cm 2 At B, construct $ \\angle CBP = 90^{\\circ} $ 3 From BP, cut off BA = 4.5 cm and radius = 4.5 cm, draw an a"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-18.jpg",
+"page": 251,
+"w": 247,
+"h": 282,
+"before": "t)\\mathrm{cm}=2.5\\mathrm{cm}$$ BC, CD and DA. Then ABCD is the required rhombus. To construct a square: (i) when one diagonal is given. Construct a square ABCD whose side BC = 4.5 cm 2 At B, construct $ \\angle CBP = 90^{\\circ} $ 3 From BP, cut off BA = 4.5 cm",
+"after": "and radius = 4.5 cm, draw an arc. 4. With C as centre and radius = 4.5 cm, draw an arc. 4. With C as centile and entre and radius = 4.5 cm, draw an arc to meet the previous arc at D D and CD. Then ABCD is the required square. square ABCD whose diagonal AC = 6"
+},
+{
+"chapter": 14,
+"file": "images/math/ch14-19.jpg",
+"page": 251,
+"w": 321,
+"h": 240,
+"before": "rc at D D and CD. Then ABCD is the required square. square ABCD whose diagonal AC = 6 cm Steps of construction lar bisector PQ of AC to meet it at O POQ, cut off OB = OD such that OB = OD = $ I C = \\left( \\frac{1}{2} \\times 6 \\right) \\text{cm} = 3 \\text{cm} $",
+"after": "$ ^{3} $ join AB, BC, CD and DA. Then ABCD is the required square. 1. Construct a parallelogram ABCD such that AB = 5 cm, BC = 3.2 cm and $ \\angle B = 120^{\\circ} $ 2. Construct a parallelogram ABCD such that AB = 4.8 cm, BC = 4 cm and diagonal BD = 5.4 cm 3."
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-1.jpg",
+"page": 253,
+"w": 172,
+"h": 164,
+"before": "Construct a parallelogram PQRS in which PQ = 6 cm, ∠Q = 120° and ∠RPQ = 30°. 15. Construct a rectangle ABCD in which diagonal AC = 7 cm and the diagonals BD and AC intersect at O such that ∠BOC = 45° ##### CIRCLE",
+"after": "A circle is the set of all those points, say P, in a plane, each of which is at a constant distance from a fixed point in that plane. the fixed point is called the centre and the constant distance is called the radius. the circle is always positive. The radiu"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-2.jpg",
+"page": 253,
+"w": 173,
+"h": 164,
+"before": "\\frac{C}{d} $, where $ C $ is the circle radius. The adjoining figure shows a circle with C as its centre and r as its radius. Note that the centre of a circle does not lie on the circle. Convenience, a circle may be named by its centre. In this figure, it is",
+"after": "##### All radii of a circle are equal. Let C be the centre of a circle and r its radius. If P is a point on the circle, then the line segment CP is a radius of the circle and its length is r. If Q is another point on the circle then CQ is another radius of th"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-3.jpg",
+"page": 253,
+"w": 170,
+"h": 165,
+"before": "cle with The set of all points P of the plane such that CP = r form a circle with centre C and radius r A point P lies inside a circle if and only if its distance from the centre of the circle is less than the radius of the circle. In the adjoining figure, CP",
+"after": "250 ICSE Mathematics - VIII The set of all points P of the plane such that $ CP &lt; r $ form the interior of the circle. (iii) Exterior of a circle A point P lies outside a circle if and only if its"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-4.jpg",
+"page": 253,
+"w": 164,
+"h": 164,
+"before": "cle with The set of all points P of the plane such that CP = r form a circle with centre C and radius r A point P lies inside a circle if and only if its distance from the centre of the circle is less than the radius of the circle. In the adjoining figure, CP",
+"after": "250 ICSE Mathematics - VIII The set of all points P of the plane such that $ CP &lt; r $ form the interior of the circle. (iii) Exterior of a circle A point P lies outside a circle if and only if its"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-5.jpg",
+"page": 254,
+"w": 184,
+"h": 219,
+"before": "$ AB = AC + CB = 2r = 2 \\times radius $. Thus: Length of a diameter = 2 $ \\times $ radius Secant of a circle A line which meets a circle in two points is called a secant of the circle. In the adjoining figure, line PQ is a secant of the circle with centre C.",
+"after": "A line can meet a circle almost in two points. Tangent to a circle A line which meets a circle in one and only one point is called a tangent to the circle. In the adjoining figure, the line PT is a tangent to the circle with centre C. The point where the line"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-6.jpg",
+"page": 254,
+"w": 190,
+"h": 243,
+"before": "a point on the circumference of the circle. Two tangents can be drawn to a circle from a point outside the circle. In the adjoining figure, P is a point outside the circle with centre C. PT and PT are two tangents drawn to the circle with centre C and PT = PT2",
+"after": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $. $ \\underline{\\text{d}} $joining figure, $ \\underline{\\text{A}} $B denotes the arc AB of the ci"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-7.jpg",
+"page": 254,
+"w": 180,
+"h": 156,
+"before": "point on the circumference of the circle. Two tangents can be drawn to a circle from a point outside the circle. In the adjoining figure, P is a point outside the circle with centre C. PT and PT are two tangents drawn to the circle with centre C and PT = PT2",
+"after": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $. $ \\underline{\\text{d}} $joining figure, $ \\underline{\\text{A}} $B denotes the arc AB of the ci"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-8.jpg",
+"page": 254,
+"w": 177,
+"h": 162,
+"before": "point on the circumference of the circle. Two tangents can be drawn to a circle from a point outside the circle. In the adjoining figure, P is a point outside the circle with centre C. PT and PT are two tangents drawn to the circle with centre C and PT = PT2",
+"after": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $. $ \\underline{\\text{d}} $joining figure, $ \\underline{\\text{A}} $B denotes the arc AB of the ci"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-9.jpg",
+"page": 254,
+"w": 235,
+"h": 212,
+"before": "point on the circumference of the circle. Two tangents can be drawn to a circle from a point outside the circle. In the adjoining figure, P is a point outside the circle with centre C. PT and PT are two tangents drawn to the circle with centre C and PT = PT2",
+"after": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $. $ \\underline{\\text{d}} $joining figure, $ \\underline{\\text{A}} $B denotes the arc AB of the ci"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-10.jpg",
+"page": 254,
+"w": 190,
+"h": 243,
+"before": "a point on the circumference of the circle. Two tangents can be drawn to a circle from a point outside the circle. In the adjoining figure, P is a point outside the circle with centre C. PT and PT are two tangents drawn to the circle with centre C and PT = PT2",
+"after": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $. $ \\underline{\\text{d}} $joining figure, $ \\underline{\\text{A}} $B denotes the arc AB of the ci"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-11.jpg",
+"page": 255,
+"w": 195,
+"h": 192,
+"before": "categories: whole arc of the circle is called the circumference of the The length of the circumference of a circle is the length of its whole arc. Usually, the term circumference of a circle refers to of the whole arc of a circle is called a semicircle of the",
+"after": "In the adjoining figure, arc AB is a semicircle of the circle with centre C. An arc less than one-half of the whole arc of a circle is called a minor arc of the circle, and an arc greater than one-half of the whole arc of a circle is called a major arc of the"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-12.jpg",
+"page": 255,
+"w": 217,
+"h": 165,
+"before": "ngth of the circumference of a circle is the length of its whole arc. Usually, the term circumference of a circle refers to of the whole arc of a circle is called a semicircle of the In the adjoining figure, arc AB is a semicircle of the circle with centre C.",
+"after": "An arc less than one-half of the whole arc of a circle is called a minor arc of the circle, and an arc greater than one-half of the whole arc of a circle is called a major arc of the circle. The angle formed by the two radii of an arc of a circle at the centr"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-13.jpg",
+"page": 255,
+"w": 168,
+"h": 160,
+"before": "lled a major arc of the circle. The angle formed by the two radii of an arc of a circle at the centre of the circle is called the angle subtended by the arc. In the adjoining figure, $\\angle ACB$ is the angle subtended by the arc AB of a circle with centre C.",
+"after": "##### • Central angle The angle subtended by an arc (or chord) of a circle at the centre of the circle is called the central angle. In the adjoining figure, $\\angle ACB$ is the angle subtended by the arc AB (or chord AB) at the centre C of the circle, so $\\an"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-14.jpg",
+"page": 255,
+"w": 178,
+"h": 162,
+"before": "gle subtended by an arc (or chord) of a circle at the centre of the circle is called the central angle. In the adjoining figure, $\\angle ACB$ is the angle subtended by the arc AB (or chord AB) at the centre C of the circle, so $\\angle ACB$ is a central angle.",
+"after": "part of the circular region of the plane enclosed by an arc of a circle and its bounding radii is called a sector of the circle. In the part containing the minor arc is called the minor sector, and the part containing the major arc is called the major sector."
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-15.jpg",
+"page": 255,
+"w": 168,
+"h": 156,
+"before": "he plane region enclosed by the (minor) arc AB and its two bounding radii CA and CB is a (minor) sector of the circle with centre C. $ \\angle ACB $ is called the angle of the sector. Usually, the term sector of a circle is referred to the area of this region.",
+"after": "Segment of a circle A chord of a circle divides its circular region into two parts. Each part is called The part containing the minor arc is called the minor segment, and the part containing the major"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-16.jpg",
+"page": 256,
+"w": 174,
+"h": 164,
+"before": "The part containing the minor arc is called the minor segment, and the part containing the major arc is called the major segment. Usually, the terms 'minor segment' and 'major segment' refer to the areas of the regions enclosed by these. Angle in a semicircle",
+"after": "An angle in a semicircle is a right angle. An angle inscribed in a semicircle is called an angle in the semicircle. In the adjoining figure, AB is a diameter of a circle and C is a point on the semicircle. $ \\angle ACB $ is an angle in the semicircle. Verific"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-17.jpg",
+"page": 256,
+"w": 180,
+"h": 177,
+"before": "The part containing the minor arc is called the minor segment, and the part containing the major arc is called the major segment. Usually, the terms 'minor segment' and 'major segment' refer to the areas of the regions enclosed by these. Angle in a semicircle",
+"after": "An angle in a semicircle is a right angle. An angle inscribed in a semicircle is called an angle in the semicircle. In the adjoining figure, AB is a diameter of a circle and C is a point on the semicircle. $ \\angle ACB $ is an angle in the semicircle. Verific"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-18.jpg",
+"page": 256,
+"w": 183,
+"h": 192,
+"before": "a diameter of a circle and C is a point on the semicircle. $ \\angle ACB $ is an angle in the semicircle. Verification Let us take three circles (i), (ii) and (iii) of different radii and AB, CD and EF be their diameters respectively as shown in figures below.",
+"after": "Let P, Q and R be any points on the three semicircles (i), (ii) and (iii) respectively. Now measure $ \\angle APB $, $ \\angle CQD $ and $ \\angle ERF $ with the help of a protractor. It will be found that each angle is equal to $ 90^\\circ $. ze, 'angle in a sem"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-19.jpg",
+"page": 256,
+"w": 205,
+"h": 189,
+"before": "a diameter of a circle and C is a point on the semicircle. $ \\angle ACB $ is an angle in the semicircle. Verification Let us take three circles (i), (ii) and (iii) of different radii and AB, CD and EF be their diameters respectively as shown in figures below.",
+"after": "Let P, Q and R be any points on the three semicircles (i), (ii) and (iii) respectively. Now measure $ \\angle APB $, $ \\angle CQD $ and $ \\angle ERF $ with the help of a protractor. It will be found that each angle is equal to $ 90^\\circ $. ze, 'angle in a sem"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-20.jpg",
+"page": 256,
+"w": 193,
+"h": 168,
+"before": "a diameter of a circle and C is a point on the semicircle. $ \\angle ACB $ is an angle in the semicircle. Verification Let us take three circles (i), (ii) and (iii) of different radii and AB, CD and EF be their diameters respectively as shown in figures below.",
+"after": "Let P, Q and R be any points on the three semicircles (i), (ii) and (iii) respectively. Now measure $ \\angle APB $, $ \\angle CQD $ and $ \\angle ERF $ with the help of a protractor. It will be found that each angle is equal to $ 90^\\circ $. ze, 'angle in a sem"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-21.jpg",
+"page": 256,
+"w": 132,
+"h": 200,
+"before": "$. ze, 'angle in a semicircle is a right angle'. le 1. Find the length of the tangent drawn to a circle of radius 5 cm from a point dist Solution. Let PT be the tangent drawn from the point P to a circ. CT = radius of circle = 5 cm PT is tangent to the circle",
+"after": "triangle CPT, by Pythagoras theorem, we get PT = $ \\sqrt{144} $ = length of tangent sample 2. In the adjoining figure, A Solution. We know that angle in a semicircle is $ 90^{\\circ} $ (sum of angles in a triangle = 180°) $ \\Rightarrow \\angle CBA + 27^{\\circ}"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-22.jpg",
+"page": 256,
+"w": 180,
+"h": 185,
+"before": "ng figure, A Solution. We know that angle in a semicircle is $ 90^{\\circ} $ (sum of angles in a triangle = 180°) $ \\Rightarrow \\angle CBA + 27^{\\circ} + 90^{\\circ} = 180^{\\circ} $ $ \\Rightarrow \\angle CBA = 180^{\\circ} - 27^{\\circ} - 90^{\\circ} = 63^{\\circ} $",
+"after": "(viii) (v) ## 6. In each of the following figures, O is the centre of the circle. Find the values of x and"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-23.jpg",
+"page": 257,
+"w": 900,
+"h": 564,
+"before": "$ 90^{\\circ} $ (sum of angles in a triangle = 180°) $ \\Rightarrow \\angle CBA + 27^{\\circ} + 90^{\\circ} = 180^{\\circ} $ $ \\Rightarrow \\angle CBA = 180^{\\circ} - 27^{\\circ} - 90^{\\circ} = 63^{\\circ} $",
+"after": "(viii) (v) ## 6. In each of the following figures, O is the centre of the circle. Find the values of x and"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-24.jpg",
+"page": 259,
+"w": 211,
+"h": 188,
+"before": "he circle (c) chord of the circle 5. If AB = 12 cm, BC = 16 cm and AB is perpendicular to BC, then the radius of the circle passing through the points A, B and C is (b) 8 cm (d) 20 cm (c) $ 10 \\, cm $",
+"after": "(b) $ 45^{\\circ} $ (d) $ 90^{\\circ} $ (a) $ 30^{\\circ} $ (b) $ 60^{\\circ} $ (c) ### STATEMENT I–II TYPE QUESTIONS The following questions, two statements are given. Examine the following questions, two statements are given. Examine the following questions, tw"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-25.jpg",
+"page": 259,
+"w": 257,
+"h": 207,
+"before": "Statement II: Diameter = 2 × radius. ## SUMMARY 8. Statement I: In the adjoining figure, AB is the diameter. If the radius of the circle is 5 cm and PB = 6 cm, then AP = 7 cm. Statement II: The arc $ \\overrightarrow{APB} $ = the arc $ \\overrightarrow{AQB} $.",
+"after": "int is called the centre and constant distance is called ra. The centre of a circle lies in the circle. The plane of a circle that consists of the circle and its interior is called the circular circle passing the diameter of a circle is twice its radius. The"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-26.jpg",
+"page": 260,
+"w": 163,
+"h": 184,
+"before": "diameter. Take any point R on the circle and measure $\\angle PRQ$ 4. In the adjoining figure, the tangent to a circle of radius 6 cm from an external point P is of length 8 cm. Calculate the distance of the point P from the nearest point of the circumference.",
+"after": "5. In the adjoining figure, O is the centre of the circle. If $\\angle ABP = 35^{\\circ}$ and $\\angle BAQ = 65^{\\circ}$, find (i) $\\angle PAB$ (ii) $\\angle QBA$"
+},
+{
+"chapter": 15,
+"file": "images/math/ch15-27.jpg",
+"page": 260,
+"w": 205,
+"h": 195,
+"before": "s of length 8 cm. Calculate the distance of the point P from the nearest point of the circumference. 5. In the adjoining figure, O is the centre of the circle. If $\\angle ABP = 35^{\\circ}$ and $\\angle BAQ = 65^{\\circ}$, find (i) $\\angle PAB$ (ii) $\\angle QBA$",
+"after": "### PRODUCTION In this chapter, we will learn about cartesian plane, axes, plotting points and graphs for different kind of situation: We will learn about the number of years etc. Interests of a squar"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-1.jpg",
+"page": 261,
+"w": 438,
+"h": 419,
+"before": "##### COORDINATE SYSTEM Draw two number lines X'OX and Y'OY perpendicular to each other (horizontal and vertical) on a graph paper (grid of squares of side $ 1\\,cm $) to intersect each other at the point O. Then (i) the horizontal line X'OX is called x-axis.",
+"after": "(10) the point O is called the origin. The configuration so formed is called a coordinate system or coordinate plane or cartesian plane."
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-2.jpg",
+"page": 262,
+"w": 268,
+"h": 311,
+"before": "ted by x. (ii) MP is called y-coordinate or ordinate of P and is usually denoted by y. (iii) x and y taken together are called coordinates of P. It is written as $(x, y)$ or $P(x, y)$. In stating the coordinates of a point, the abscissa precedes the ordinate.",
+"after": "Thus, corresponding to a point P in the coordinate plane, we get an ordered pair $(x, y)$ of numbers; conversely, corresponding to every ordered pair $(x, y)$ of numbers, we get a point $P$ in the coordinate plane whose abscissa $x$ and ordinate $y$. For exam"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-3.jpg",
+"page": 262,
+"w": 289,
+"h": 331,
+"before": "adrant. Here both x and y are positive. (ii) X'OY is called second quadrant. Here x is negative and y is positive. (iii) X'OY' is called third quadrant. Here both x and y are negative. (iv) Y'OX is called fourth quadrant. Here x is positive and y is negative.",
+"after": "The signs of the coordinates of a point in four quadrants can be remembered with the help of the following table: Quadrants $ \\rightarrow $ Coordinates $ \\downarrow $ 1st XOY 2nd YOX&#x27; 3rd X&#x27;OY&#x27; 4th Y&#x27;OX x (abscissa) +ve -ve -ve +ve y (ordi"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-4.jpg",
+"page": 263,
+"w": 437,
+"h": 448,
+"before": ". For example, to plot point (2, 3), we adopt the following steps: (i) Draw the coordinate axes on a graph paper and choose the units such that 1 cm represents 1 unit on both the axes. (ii) Start from O (origin) and move 2 units along the x-axis to the right.",
+"after": "(iii) From this place, move 3 units upwards (parallel to y-axis) and mark a dot at that place. This point, say A, of the coordinate plane is the point associated with the given ordered pair (2, 3). Label this point as A (2, 3). Example 1. Write whether the fo"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-5.jpg",
+"page": 264,
+"w": 834,
+"h": 625,
+"before": "3,-5)$ (iv) The point identified by the coordinates (2, -4) (v) The abscissa of the point D (vi) The ordinate of the point H (vii) The coordinates of the point L (viii) The coordinates of the point M.",
+"after": "Solution. (i) $ (-5, 2) $ (ii) $ (5, -5) $ (iii) E (iv) G (v) 6 (vi) -3 (vii) (0, 5) (viii) $ (-3, 0) $ Example 3. Plot the following points on a graph paper. Check whether they lie on a line or not: (i) $ A(1, 3) $, $ B(3, 5) $, $ C(4, 6) $ (ii) $ A(-1,-1) $"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-6.jpg",
+"page": 264,
+"w": 549,
+"h": 545,
+"before": "ian plane). (i) Plot the points A(1, 3), B(3, 5) and C(4, 6) on the graph paper as usual. Draw a line passing through the points A and B. We find that the point C(4, 6) lies on this line. Therefore, the given points A(1, 3), B(3, 5) and C(4, 6) lie on a line.",
+"after": "(ii) Plot the points A(-1, -1), B(0, 1) and C(1, 3) on the graph paper as usual. Draw a line passing through the points A and B. We find that the point C(1, 3) lies on this line. Therefore, the given"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-7.jpg",
+"page": 265,
+"w": 391,
+"h": 479,
+"before": "3) lie on a line. (iii) Plot the points A(-1, 1), B(2, 1) and C(4, 3) on the graph paper as usual. We note that the line passing through A and B does not pass through the point C. Therefore, the given points A(-1, 1), B(2, 1) and C(4, 3) do not lie on a line.",
+"after": "The graph is a broken line. ##### LINEAR GRAPHS A line graph consists of bits of line segments joined consecutively. A graph which is a whole unbroken line (or a part of line) is called a linear graph. In the above example 3, the graphs in parts (i) and (ii)"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-8.jpg",
+"page": 265,
+"w": 497,
+"h": 360,
+"before": "the points A(-1, 1), B(2, 1) and C(4, 3) on the graph paper as usual. We note that the line passing through A and B does not pass through the point C. Therefore, the given points A(-1, 1), B(2, 1) and C(4, 3) do not lie on a line. The graph is a broken line.",
+"after": "##### LINEAR GRAPHS A line graph consists of bits of line segments joined consecutively. A graph which is a whole unbroken line (or a part of line) is called a linear graph. In the above example 3, the graphs in parts (i) and (ii) are linear graphs whereas th"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-9.jpg",
+"page": 265,
+"w": 84,
+"h": 73,
+"before": "raph which is a whole unbroken line (or a part of line) is called a linear graph. In the above example 3, the graphs in parts (i) and (ii) are linear graphs whereas the graph in part (iii) is not a linear graph. Of course, it a line graph. ##### Exercise 16.1",
+"after": "1. State whether the following statements are True or False. Correct that are false: (i) A point whose x-coordinate is zero and y-coordinate is non-zero will lie on the y-axis. (ii) A point whose y-coordinate is zero and x-coordinate is 7 will lie on y-axis."
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-10.jpg",
+"page": 266,
+"w": 514,
+"h": 469,
+"before": ", 0), D(0, 23), E(0, -4), F(-6, 0), G(3.5, 0) 5. Look at the figure given below and write the following: (i) Coordinates of B, C and E. (ii) The point identified by the coordinates (0, -2). (ii) The abscissa of point H. (iv) The coordinates of points A and D.",
+"after": "6. Plot the following points on the same graph paper: (i) (-3, 5) (ii) (4, 2.5) (iii) (-1, -4) (iv) (0, -4) (v) (3, -5) (vi) (-4.5, 0) 7. Plot the following points and check whether they are collinear or not: (i) $ (-1, 0) $, $ (0, 1) $, $ (2, 3) $ (ii) $ (1,"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-11.jpg",
+"page": 267,
+"w": 328,
+"h": 582,
+"before": "), (2, 6), (3, 9), ... on the graph paper. Join these points. We note that the graph of the relation $y = 3x$ is a linear graph. In fact, the graph represents the rule of multiplication by 3 of all positive numbers (including zero) not only the whole numbers.",
+"after": "##### REMARK As we are considering only the positive numbers (including 0), the graph is the ray with initial point O. ### Example 2. (Perimeter and length of a side of a square) Draw a graph representing the relation between the perimeter of a square and the"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-12.jpg",
+"page": 268,
+"w": 366,
+"h": 609,
+"before": "to perimeter of square 14 units, we locate a point F on y-axis and draw a horizontal line through F to meet the graph at Q. From Q, draw a vertical line to meet the x-axis at N which represents 3.5 units. So, the length of the side of the square is 3.5 units.",
+"after": "##### Example 3. (Cost and quantity) Ethanol (which is used for blending in petrol) is selling at the rate of ₹ 70 per litre. Draw a graph depicting the relation between the quantity of ethanol and its cost. From graph, find the quantity of ethanol that can b"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-13.jpg",
+"page": 268,
+"w": 422,
+"h": 477,
+"before": "x-axis and its cost (in ₹) along y-axis. Scale: Take, 1 unit on x-axis = 1 litre, 1 unit on y-axis = 70. Plot the points (1, 70), (2, 140), (3, 210), (4, 280), (5, 350), ... Join these points. We note that the graph of the relation C = 70q is a linear graph.",
+"after": "To find quantity of ethanol that can be bought for ₹ 315. Locate a point Q on y-axis representing 315. Through Q, draw a horizontal line to meet the graph at P. From P, draw a vertical line to meet the x-axis at the point M. The point M represents 4.5. Theref"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-14.jpg",
+"page": 269,
+"w": 500,
+"h": 533,
+"before": "r the origin to indicate that the scale on x-axis starts at a.m. and on y-axis starts at $ 35^{\\circ} $C. Plot the points corresponding to given data and join consecutive points by line segments. The graph is not a linear graph. Of course, it is a line graph.",
+"after": "#### Example 5. (Area and the length of a side of a square) Draw a graph representing the relation between the area of a square and the length of its side. Solution. The relation is $A = a^{2}$, where $a$ units is the length of a side of a square and $A$ squa"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-15.jpg",
+"page": 269,
+"w": 278,
+"h": 669,
+"before": "oints (0.5, 0.25), (1, 1), (1.5, 2.25), (2, 4), (2.5, 6.25), (3,9),… Join these points by a smooth curve. The graph of the relation $A=a^{2}$ is shown in the adjoining figure. We observe that the graph is not a linear graph. In fact, it is not a linear graph.",
+"after": "##### Exercise 16.2 1. Draw a graph to represent the rule of multiplication by 5 of all positive numbers including 0. From the graph, find the product of 5 and 3.5. 2. The following table given the qu"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-16.jpg",
+"page": 270,
+"w": 558,
+"h": 462,
+"before": "in $^{\\circ}$F corresponding to $25^{\\circ}C$? (ii) What is the temperature in $ {}^{\\circ} $C corresponding to $ 95^{\\circ} $F? 5. The given graph shows the temperature recorded on a day at different times. Study the graph and answer the following questions:",
+"after": "(i) What is the temperature at 6 a.m.? (ii) At what time is the temperature $ 10\\,^{\\circ}\\mathrm{C} $? (iii) During which hour was there a constant temperature? (iv) During which hour did the temperature fall? (v) What is the change in temperature between 8"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-17.jpg",
+"page": 272,
+"w": 96,
+"h": 130,
+"before": ") (c) (2.7,0) (d) (-1,3) 10. The points $(-3, 4)$ and $(4, -3)$ lie in (a) same quadrant (b) II and III quadrants respectively (c) II and IV quadrants respectively (d) IV and II quadrants respectively",
+"after": "## SUMMARY ★ Two number lines X'OX and Y'OX drawn horizontal and vertical respectively on a graph paper form coordinate system. The point O is called origin. The horizontal line X'OX is called x-axis and vertical line Y'OX is called y-axis. The lines X'OX and"
+},
+{
+"chapter": 16,
+"file": "images/math/ch16-18.jpg",
+"page": 272,
+"w": 115,
+"h": 119,
+"before": "te plane. ★ You have learnt to plot and read graphs for different kind of situations like perimeter vs length, area vs side of a square, plotting of multiples of different numbers, simple interest vs number of years, quantity vs cost, distance-time graph etc.",
+"after": "##### CHECK YOUR PROGRESS 1. Without plotting the points indicate the quadrant they will lie, if (i) ordinate is 5 and abscissa is -3 (ii) abscissa is -5 and abscissa is -3 (iii) abscissa is -5 and ordinate is 3 (iv) ordinate is 5 and abscissa is 3. 2. Plot t"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-1.jpg",
+"page": 273,
+"w": 90,
+"h": 234,
+"before": "y, reflection and rotational symmetry of plane figures. In this chapter, we will review, revise and strengthen these concepts. We will also learn about point symmetry and reflection of point in a line. ##### LINE SYMMETRY Look at the following plane figures :",
+"after": "We observe that if these figures are folded along a specific line (shown dotted), each figure on the left hand side of the dotted line fits exactly on the top of the figure on the right hand side of the dotted line i.e. each figure is divided into two coincid"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-2.jpg",
+"page": 273,
+"w": 132,
+"h": 236,
+"before": "y, reflection and rotational symmetry of plane figures. In this chapter, we will review, revise and strengthen these concepts. We will also learn about point symmetry and reflection of point in a line. ##### LINE SYMMETRY Look at the following plane figures :",
+"after": "We observe that if these figures are folded along a specific line (shown dotted), each figure on the left hand side of the dotted line fits exactly on the top of the figure on the right hand side of the dotted line i.e. each figure is divided into two coincid"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-3.jpg",
+"page": 273,
+"w": 110,
+"h": 224,
+"before": "y, reflection and rotational symmetry of plane figures. In this chapter, we will review, revise and strengthen these concepts. We will also learn about point symmetry and reflection of point in a line. ##### LINE SYMMETRY Look at the following plane figures :",
+"after": "We observe that if these figures are folded along a specific line (shown dotted), each figure on the left hand side of the dotted line fits exactly on the top of the figure on the right hand side of the dotted line i.e. each figure is divided into two coincid"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-4.jpg",
+"page": 274,
+"w": 234,
+"h": 371,
+"before": "t P on the figure has a point P' directly opposite it on the other side of O. ##### Letter S The letter 'S' has a point symmetry about the point O because every point P on the figure has a point P' directly opposite it on the other side of O. ##### REFLECTION",
+"after": "When we see the image of an object in a plane mirror, we notice that : (i) the distance of the image behind the mirror is the same as the distance of the object in front of it. (ii) the mirror line is perpendicular to the line joining the object and its image"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-5.jpg",
+"page": 274,
+"w": 272,
+"h": 249,
+"before": "e perpendicular bisector of the line segment PP'. This leads to : The reflection (or image) of a point P in a line AB is a point P' such that AB is the perpendicular bisector of the line segment PP', and the line AB is called axis of reflection (or mediator).",
+"after": "In particular, if the point P lies on the line AB then the image of P is itself. The point P is called an invariant point with respect to the line AB. Method to find the reflection of a point P in a line AB Using ruler and compass, from P draw PM perpendicula"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-6.jpg",
+"page": 274,
+"w": 265,
+"h": 235,
+"before": "line AB. Method to find the reflection of a point P in a line AB Using ruler and compass, from P draw PM perpendicular to the line AB and produce PM to a point P' such that MP' = MP. Then P' is the required reflection (or image) of the point P in the line AB.",
+"after": "##### Reflection and symmetry Look at the following pictures of objects and their reflections in a plane mirror: (i) (ii) (iii) We see that if a fold is made on the mirror line, the object will fall exactly on the reflected image. Thus, the object and its ima"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-7.jpg",
+"page": 274,
+"w": 159,
+"h": 164,
+"before": "cular to the line AB and produce PM to a point P' such that MP' = MP. Then P' is the required reflection (or image) of the point P in the line AB. ##### Reflection and symmetry Look at the following pictures of objects and their reflections in a plane mirror:",
+"after": "(i) (ii) (iii) We see that if a fold is made on the mirror line, the object will fall exactly on the reflected image. Thus, the object and its image are symmetrical with reference to the mirror line, so the mirror line is the line of symmetry. Hence, the conc"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-8.jpg",
+"page": 274,
+"w": 287,
+"h": 216,
+"before": "r to the line AB and produce PM to a point P' such that MP' = MP. Then P' is the required reflection (or image) of the point P in the line AB. ##### Reflection and symmetry Look at the following pictures of objects and their reflections in a plane mirror: (i)",
+"after": "(ii) (iii) We see that if a fold is made on the mirror line, the object will fall exactly on the reflected image. Thus, the object and its image are symmetrical with reference to the mirror line, so the mirror line is the line of symmetry. Hence, the concept"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-9.jpg",
+"page": 274,
+"w": 290,
+"h": 222,
+"before": "the line AB and produce PM to a point P' such that MP' = MP. Then P' is the required reflection (or image) of the point P in the line AB. ##### Reflection and symmetry Look at the following pictures of objects and their reflections in a plane mirror: (i) (ii)",
+"after": "(iii) We see that if a fold is made on the mirror line, the object will fall exactly on the reflected image. Thus, the object and its image are symmetrical with reference to the mirror line, so the mirror line is the line of symmetry. Hence, the concept of li"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-10.jpg",
+"page": 275,
+"w": 171,
+"h": 277,
+"before": "uch that $ OA' = OA $ and $ OB' = OB $ 3. Join A'B' We say that the line segment AB has been rotated through $ 90^{\\circ} $ (if it is about the point O. The point O is called the centre of (if it is about the point O. The point O is called the centre of tion.",
+"after": "Notice that $A^{\\prime}B^{\\prime}=AB$ (measure and check it). Thus, a figure can be rotated through any angle (clockwise or anticlockwise direction) about a int, and the point is called centre of rotation. On rotation, the size of the figure remains the same."
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-11.jpg",
+"page": 275,
+"w": 174,
+"h": 176,
+"before": "e) out the point O. There are three occasions when it looks the same as it d in its starting position. These are when it has been rotated through $ 120^{\\circ} $, $ 0^{\\circ} $ and $ 360^{\\circ} $. We say that this figure has a rotational symmetry of order 3.",
+"after": "##### ngle of rotation The smallest angle through which an object (or a figure) rotates about a fixed point so that it looks the same as in its starting position is called angle of rotation. An object (or a figure) is said to take a full turn if it rotates by"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-12.jpg",
+"page": 276,
+"w": 164,
+"h": 171,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-13.jpg",
+"page": 276,
+"w": 241,
+"h": 159,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-14.jpg",
+"page": 276,
+"w": 237,
+"h": 138,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-15.jpg",
+"page": 276,
+"w": 160,
+"h": 215,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-16.jpg",
+"page": 276,
+"w": 225,
+"h": 232,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-17.jpg",
+"page": 276,
+"w": 206,
+"h": 139,
+"before": "of the angles. ##### Parallelogram A parallelogram has (i) no line of symmetry. (ii) one point of symmetry — the point of intersection of the diagonals. (iii) rotational symmetry of order 2 The centre of rotation is the point of intersection of the diagonals.",
+"after": "### celes trapezium oscoles trapezium has (a) one line of symmetry — the line joining the mid-points of the bases of the trapezium. (b) the line of symmetry — the line joining the mid-points of the ba"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-18.jpg",
+"page": 277,
+"w": 188,
+"h": 203,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-19.jpg",
+"page": 277,
+"w": 217,
+"h": 196,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-20.jpg",
+"page": 277,
+"w": 183,
+"h": 204,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-21.jpg",
+"page": 277,
+"w": 187,
+"h": 217,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-22.jpg",
+"page": 277,
+"w": 133,
+"h": 219,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-23.jpg",
+"page": 277,
+"w": 145,
+"h": 162,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-24.jpg",
+"page": 277,
+"w": 182,
+"h": 148,
+"before": "shown dotted in the adjoining figure. (ii) no point of symmetry. (ii) no rotational symmetry. ##### Semicircle A semicircle has (i) one line of symmetry — the perpendicular bisector of the diameter AB. (ii) no point of symmetry. (iii) no rotational symmetry.",
+"after": "##### Regular pentagon A regular pentagon has (i) five lines of symmetry — the perpendiculars drawn from the vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of ord"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-25.jpg",
+"page": 278,
+"w": 186,
+"h": 236,
+"before": "e vertices to the opposite sides. (ii) no point of symmetry. (iii) rotational symmetry of order 5 ##### Regular hexagon A regular hexagon has (i) six lines of symmetry — the lines joining the mid-points of opposite sides, and the diagonals through the centre.",
+"after": "(ii) one point of symmetry — the centre of the regular hexagon. (iii) rotational symmetry of order 6 ##### Circle A circle has (i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-26.jpg",
+"page": 278,
+"w": 204,
+"h": 222,
+"before": "xagon A regular hexagon has (i) six lines of symmetry — the lines joining the mid-points of opposite sides, and the diagonals through the centre. (ii) one point of symmetry — the centre of the regular hexagon. (iii) rotational symmetry of order 6 ##### Circle",
+"after": "A circle has (i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-27.jpg",
+"page": 278,
+"w": 186,
+"h": 202,
+"before": "tre. (ii) one point of symmetry — the centre of the regular hexagon. (iii) rotational symmetry of order 6 ##### Circle A circle has (i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle.",
+"after": "(iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines): The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-28.jpg",
+"page": 278,
+"w": 112,
+"h": 63,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-29.jpg",
+"page": 278,
+"w": 115,
+"h": 66,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-30.jpg",
+"page": 278,
+"w": 115,
+"h": 61,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-31.jpg",
+"page": 278,
+"w": 117,
+"h": 63,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-32.jpg",
+"page": 278,
+"w": 113,
+"h": 118,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-33.jpg",
+"page": 278,
+"w": 114,
+"h": 106,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 17,
+"file": "images/math/ch17-34.jpg",
+"page": 278,
+"w": 118,
+"h": 121,
+"before": "(i) an infinite number of lines of symmetry — all lines along diameters. (ii) one point of symmetry — the centre of the circle. (iii) rotational symmetry of infinite order. ##### Letters The following letters are symmetrical about the dotted line (or lines):",
+"after": "The following letters have a point symmetry about a point marked by a dot and also have rotational symmetry of order 2:"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-1.jpg",
+"page": 282,
+"w": 118,
+"h": 107,
+"before": "ntation of 3-D objects. We will also count the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes",
+"after": "Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-2.jpg",
+"page": 282,
+"w": 139,
+"h": 92,
+"before": "f 3-D objects. We will also count the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle",
+"after": "Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-3.jpg",
+"page": 282,
+"w": 79,
+"h": 84,
+"before": "cts. We will also count the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle",
+"after": "Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For exampl"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-4.jpg",
+"page": 282,
+"w": 95,
+"h": 88,
+"before": "will also count the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square",
+"after": "Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A wi"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-5.jpg",
+"page": 282,
+"w": 94,
+"h": 92,
+"before": "o count the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon",
+"after": "Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A to"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-6.jpg",
+"page": 282,
+"w": 101,
+"h": 98,
+"before": "the edges, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon",
+"after": "Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A sof"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-7.jpg",
+"page": 282,
+"w": 127,
+"h": 130,
+"before": "s, vertices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon",
+"after": "Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A pho"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-8.jpg",
+"page": 282,
+"w": 143,
+"h": 142,
+"before": "ices and faces of 3-D figures with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle",
+"after": "## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-9.jpg",
+"page": 282,
+"w": 133,
+"h": 141,
+"before": "with flat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube",
+"after": "Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe In the figures given above,"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-10.jpg",
+"page": 282,
+"w": 122,
+"h": 148,
+"before": "lat surfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere",
+"after": "Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe In the figures given above, you can"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-11.jpg",
+"page": 282,
+"w": 152,
+"h": 152,
+"before": "urfaces (cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone",
+"after": "Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe In the figures given above, you can see"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-12.jpg",
+"page": 282,
+"w": 109,
+"h": 141,
+"before": "(cubes, cuboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid",
+"after": "Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe In the figures given above, you can see the comb"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-13.jpg",
+"page": 282,
+"w": 149,
+"h": 106,
+"before": "uboids, tetrahedrons, prisms and pyramids) and verify the Euler's relation. Let us recall different 2-D and 3-D shapes. ## 2-Dimensional Shapes Triangle Rectangle Square Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder",
+"after": "Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy A photoframe In the figures given above, you can see the combination o"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-14.jpg",
+"page": 282,
+"w": 106,
+"h": 206,
+"before": "uare Pentagon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example:",
+"after": "A window A tomb A softy A photoframe In the figures given above, you can see the combination of different 2-D and 3-D shapes. A window – In a window, rectangle is surmounted by a triangle. A tomb – In a tomb, cylinder is surmounted by a hemisphere."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-15.jpg",
+"page": 282,
+"w": 110,
+"h": 194,
+"before": "agon Hexagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window",
+"after": "A tomb A softy A photoframe In the figures given above, you can see the combination of different 2-D and 3-D shapes. A window – In a window, rectangle is surmounted by a triangle. A tomb – In a tomb, cylinder is surmounted by a hemisphere."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-16.jpg",
+"page": 282,
+"w": 133,
+"h": 199,
+"before": "xagon Octagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb",
+"after": "A softy A photoframe In the figures given above, you can see the combination of different 2-D and 3-D shapes. A window – In a window, rectangle is surmounted by a triangle. A tomb – In a tomb, cylinder is surmounted by a hemisphere."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-17.jpg",
+"page": 282,
+"w": 209,
+"h": 116,
+"before": "tagon Circle ## 3-Dimensional Shapes Cube Sphere Cone Pyramid Cylinder Rectangular Prism The 2-D and 3-D shapes given above are single. In our vicinity we see several objects which are the combinations of different shapes. For example: A window A tomb A softy",
+"after": "A photoframe In the figures given above, you can see the combination of different 2-D and 3-D shapes. A window – In a window, rectangle is surmounted by a triangle. A tomb – In a tomb, cylinder is surmounted by a hemisphere."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-18.jpg",
+"page": 283,
+"w": 97,
+"h": 186,
+"before": ", cone is surmounted by a hemisphere. photoframe - Photoframe is the combination of two rectangles forming a rectangular path. ### IDENTIFY AND MATCH PICTURES WITH SHAPES 1. Match the objects with their shapes: Sample 1. Num. Picture (object) Shape (i) A tent",
+"after": "(a) A triangular field adjoining a square field. (ii) A tin (b) A hemispherical shell. (iii) A bowl (c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path a"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-19.jpg",
+"page": 283,
+"w": 95,
+"h": 165,
+"before": "e is the combination of two rectangles forming a rectangular path. ### IDENTIFY AND MATCH PICTURES WITH SHAPES 1. Match the objects with their shapes: Sample 1. Num. Picture (object) Shape (i) A tent (a) A triangular field adjoining a square field. (ii) A tin",
+"after": "(b) A hemispherical shell. (iii) A bowl (c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy (f) A cylindrical shell."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-20.jpg",
+"page": 283,
+"w": 114,
+"h": 96,
+"before": "orming a rectangular path. ### IDENTIFY AND MATCH PICTURES WITH SHAPES 1. Match the objects with their shapes: Sample 1. Num. Picture (object) Shape (i) A tent (a) A triangular field adjoining a square field. (ii) A tin (b) A hemispherical shell. (iii) A bowl",
+"after": "(c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy (f) A cylindrical shell. (vii) A circular park (g) A cone surmou"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-21.jpg",
+"page": 283,
+"w": 105,
+"h": 252,
+"before": "jects with their shapes: Sample 1. Num. Picture (object) Shape (i) A tent (a) A triangular field adjoining a square field. (ii) A tin (b) A hemispherical shell. (iii) A bowl (c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field",
+"after": "(d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy (f) A cylindrical shell. (vii) A circular park (g) A cone surmounted on a cylinder. (viii) A cross path (h) A cone taken out of a cylinder. Solution."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-22.jpg",
+"page": 283,
+"w": 89,
+"h": 131,
+"before": "square field. (ii) A tin (b) A hemispherical shell. (iii) A bowl (c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy",
+"after": "(f) A cylindrical shell. (vii) A circular park (g) A cone surmounted on a cylinder. (viii) A cross path (h) A cone taken out of a cylinder. Solution. (i) $ \\rightarrow $ (g) (v) $ \\rightarrow $ (h) (ii) $ \\rightarrow $ (f) (vi) $ \\rightarrow $ (d) (iii) $ \\ri"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-23.jpg",
+"page": 283,
+"w": 97,
+"h": 109,
+"before": "ell. (iii) A bowl (c) Two rectangular cross paths inside a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy (f) A cylindrical shell. (vii) A circular park",
+"after": "(g) A cone surmounted on a cylinder. (viii) A cross path (h) A cone taken out of a cylinder. Solution. (i) $ \\rightarrow $ (g) (v) $ \\rightarrow $ (h) (ii) $ \\rightarrow $ (f) (vi) $ \\rightarrow $ (d) (iii) $ \\rightarrow $ (b) (vii) $ \\rightarrow $ (e) ### DR"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-24.jpg",
+"page": 283,
+"w": 159,
+"h": 104,
+"before": "a rectangular park. (iv) An agricultural field (d) A hemisphere surmounted on a cone. (v) A groove (e) A circular path around a circular ground. (vi) A toy (f) A cylindrical shell. (vii) A circular park (g) A cone surmounted on a cylinder. (viii) A cross path",
+"after": "(h) A cone taken out of a cylinder. Solution. (i) $ \\rightarrow $ (g) (v) $ \\rightarrow $ (h) (ii) $ \\rightarrow $ (f) (vi) $ \\rightarrow $ (d) (iii) $ \\rightarrow $ (b) (vii) $ \\rightarrow $ (e) ### DRAWING 2-D REPRESENTATION OF 3-D OBJECTS Drawing surface i"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-25.jpg",
+"page": 284,
+"w": 881,
+"h": 296,
+"before": "opposite face overlapping the first rectangle. This rectangle is 1 unit to the right and 1 unit above the previous rectangle (see fig. (ii)) 3. Join the corresponding corners of the two rectangles by oblique lines to get the required cuboid (see fig. (iii)).",
+"after": "In the oblique sketch of a cuboid, we note that: (i) the sizes of the front face and its opposite face are same, length 4 units and height 3 units. (ii) the edges, which are equal to breadth 2 units, appear so in the sketch, though the actual measures are not"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-26.jpg",
+"page": 284,
+"w": 212,
+"h": 213,
+"before": "ig. (ii)). 3. For the top face, draw a parallelogram of length 4 units and breadth 3 units whose adjacent sides are formed by joining the top free ends of three vertical line segments. Thus, we get an isomorphic sketch of the required cuboid (see fig. (iii)).",
+"after": "(i) (ii) (iii)  2. Draw an oblique sketch of a triangular prism of height 4 units and base a triangle with sides its, 2.6 units and 2 units. to a squared paper of side 1 unit. Draw the base triangle with sides 3 unit"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-27.jpg",
+"page": 284,
+"w": 217,
+"h": 214,
+"before": "(ii)). 3. For the top face, draw a parallelogram of length 4 units and breadth 3 units whose adjacent sides are formed by joining the top free ends of three vertical line segments. Thus, we get an isomorphic sketch of the required cuboid (see fig. (iii)). (i)",
+"after": "(ii) (iii)  2. Draw an oblique sketch of a triangular prism of height 4 units and base a triangle with sides its, 2.6 units and 2 units. to a squared paper of side 1 unit. Draw the base triangle with sides 3 unit"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-28.jpg",
+"page": 284,
+"w": 217,
+"h": 218,
+"before": ". 3. For the top face, draw a parallelogram of length 4 units and breadth 3 units whose adjacent sides are formed by joining the top free ends of three vertical line segments. Thus, we get an isomorphic sketch of the required cuboid (see fig. (iii)). (i) (ii)",
+"after": "(iii)  2. Draw an oblique sketch of a triangular prism of height 4 units and base a triangle with sides its, 2.6 units and 2 units. to a squared paper of side 1 unit. Draw the base triangle with sides 3 unit"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-29.jpg",
+"page": 285,
+"w": 256,
+"h": 348,
+"before": "nd 2 units. to a squared paper of side 1 unit. Draw the base triangle with sides 3 units, 2.6 units and 2 units. At the vertices, draw vertical lines of height 4 units. Draw the triangle for the upper face. The required prism is shown in the adjoining figure.",
+"after": "sample 3. Draw an isometric sketch of a pentagonal prism of height 4 units and base regular pentagon of side 2 units. Take an isometric paper of side 1 unit. Draw base line of two front faces each of length 2 units. Draw three vertical lines each of height 4"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-30.jpg",
+"page": 285,
+"w": 156,
+"h": 209,
+"before": "es each of length 2 units. Draw three vertical lines each of height 4 units, one on the vertex and the other two on the end points of line segments. Draw the pentagon for the upper face as shown. The required pentagonal prism is shown in the adjoining figure.",
+"after": "#### Exercise 18.1 1. Draw (i) an oblique sketch (ii) an isometric sketch of a cube of side 3 units. 2 Draw (i) an oblique sketch (ii) an isometric sketch of a cuboid of length 5 units, breadth 3 units and height 4 units. 3. Draw an oblique sketch of a square"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-31.jpg",
+"page": 285,
+"w": 168,
+"h": 78,
+"before": "units. Draw three vertical lines each of height 4 units, one on the vertex and the other two on the end points of line segments. Draw the pentagon for the upper face as shown. The required pentagonal prism is shown in the adjoining figure. #### Exercise 18.1",
+"after": "1. Draw (i) an oblique sketch (ii) an isometric sketch of a cube of side 3 units. 2 Draw (i) an oblique sketch (ii) an isometric sketch of a cuboid of length 5 units, breadth 3 units and height 4 units. 3. Draw an oblique sketch of a square pyramid of side 3"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-32.jpg",
+"page": 285,
+"w": 244,
+"h": 236,
+"before": "units. ##### POLYHEDRON A solid made up of polygonal regions is called polyhedron. For example: Cubes, cuboids, prisms and pyramids are polyhedrons. Note that spheres, cylinders and cones are not polyhedrons because these are not made up of polygonal regions.",
+"after": "These are polyhedrons These are not polyhedrons ##### Convex polyhedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-33.jpg",
+"page": 285,
+"w": 185,
+"h": 119,
+"before": "N A solid made up of polygonal regions is called polyhedron. For example: Cubes, cuboids, prisms and pyramids are polyhedrons. Note that spheres, cylinders and cones are not polyhedrons because these are not made up of polygonal regions. These are polyhedrons",
+"after": "These are not polyhedrons ##### Convex polyhedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-34.jpg",
+"page": 285,
+"w": 126,
+"h": 100,
+"before": "N A solid made up of polygonal regions is called polyhedron. For example: Cubes, cuboids, prisms and pyramids are polyhedrons. Note that spheres, cylinders and cones are not polyhedrons because these are not made up of polygonal regions. These are polyhedrons",
+"after": "These are not polyhedrons ##### Convex polyhedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-35.jpg",
+"page": 286,
+"w": 110,
+"h": 109,
+"before": "##### Convex polyhedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which are not convex are called concave polyhedrons.",
+"after": "These are convex polyhedrons These are concave polyhedrons ##### Regular polyhedrons A polyhedron is said to be regular polyhedron if all of its faces are regular polygons and the same number of faces meet at each vertex. For example: Cube This polyhedron is"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-36.jpg",
+"page": 286,
+"w": 102,
+"h": 114,
+"before": "##### Convex polyhedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which are not convex are called concave polyhedrons.",
+"after": "These are convex polyhedrons These are concave polyhedrons ##### Regular polyhedrons A polyhedron is said to be regular polyhedron if all of its faces are regular polygons and the same number of faces meet at each vertex. For example: Cube This polyhedron is"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-37.jpg",
+"page": 286,
+"w": 247,
+"h": 122,
+"before": "hedrons Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron. Polyhedrons which are not convex are called concave polyhedrons. These are convex polyhedrons",
+"after": "These are concave polyhedrons ##### Regular polyhedrons A polyhedron is said to be regular polyhedron if all of its faces are regular polygons and the same number of faces meet at each vertex. For example: Cube This polyhedron is regular. Its all faces are re"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-38.jpg",
+"page": 286,
+"w": 157,
+"h": 162,
+"before": "led concave polyhedrons. These are convex polyhedrons These are concave polyhedrons ##### Regular polyhedrons A polyhedron is said to be regular polyhedron if all of its faces are regular polygons and the same number of faces meet at each vertex. For example:",
+"after": "Cube This polyhedron is regular. Its all faces are regular polygons and all the vertices are formed by the 3 faces. Rectangular prism This polyhedron is not regular. Its all faces are not regular polygons while all the vertices are formed by the 3 faces i.e."
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-39.jpg",
+"page": 286,
+"w": 202,
+"h": 142,
+"before": "hedron is said to be regular polyhedron if all of its faces are regular polygons and the same number of faces meet at each vertex. For example: Cube This polyhedron is regular. Its all faces are regular polygons and all the vertices are formed by the 3 faces.",
+"after": "Rectangular prism This polyhedron is not regular. Its all faces are not regular polygons while all the vertices are formed by the 3 faces i.e. same number of faces. Pvramid This polyhedron with equal edges is not regular. Its all faces are regular polygons bu"
+},
+{
+"chapter": 18,
+"file": "images/math/ch18-40.jpg",
+"page": 286,
+"w": 179,
+"h": 219,
+"before": "is regular. Its all faces are regular polygons and all the vertices are formed by the 3 faces. Rectangular prism This polyhedron is not regular. Its all faces are not regular polygons while all the vertices are formed by the 3 faces i.e. same number of faces.",
+"after": "Pvramid This polyhedron with equal edges is not regular. Its all faces are regular polygons but all the vertices are not formed by the same number of faces. A is formed by 4 faces whereas B is formed by 3 faces. Two most important members of polyhedron family"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-1.jpg",
+"page": 295,
+"w": 156,
+"h": 152,
+"before": "me, measurement of volume using a basic unit, volume and surface area of cube, cuboid and cylinder, volume and capacity. #### AREA AND PERIMETER OF SOME PLANE FIGURES Let us recall the area and perimeter of some plane figures. Plane figure Name Area Perimeter",
+"after": "Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-2.jpg",
+"page": 295,
+"w": 179,
+"h": 127,
+"before": "me and surface area of cube, cuboid and cylinder, volume and capacity. #### AREA AND PERIMETER OF SOME PLANE FIGURES Let us recall the area and perimeter of some plane figures. Plane figure Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $",
+"after": "Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-3.jpg",
+"page": 295,
+"w": 123,
+"h": 154,
+"before": "and cylinder, volume and capacity. #### AREA AND PERIMETER OF SOME PLANE FIGURES Let us recall the area and perimeter of some plane figures. Plane figure Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $",
+"after": "Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-4.jpg",
+"page": 295,
+"w": 204,
+"h": 134,
+"before": "and capacity. #### AREA AND PERIMETER OF SOME PLANE FIGURES Let us recall the area and perimeter of some plane figures. Plane figure Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a",
+"after": "Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $  Example 1. Find the area of the following figures: (i) (ii) (iii) Solution. (i) Given plane figure is a parallelogram. Area of parallelogram = base × height =(14 × 7) sq. cm = 98 sq. cm"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-5.jpg",
+"page": 295,
+"w": 99,
+"h": 111,
+"before": "F SOME PLANE FIGURES Let us recall the area and perimeter of some plane figures. Plane figure Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $",
+"after": "Circle $ \\pi r^{2} $ 2 $ \\pi r $  Example 1. Find the area of the following figures: (i) (ii) (iii) Solution. (i) Given plane figure is a parallelogram. Area of parallelogram = base × height =(14 × 7) sq. cm = 98 sq. cm (ii) Given pla"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-6.jpg",
+"page": 296,
+"w": 281,
+"h": 199,
+"before": "Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $  Example 1. Find the area of the following figures:",
+"after": "(i) (ii) (iii) Solution. (i) Given plane figure is a parallelogram. Area of parallelogram = base × height =(14 × 7) sq. cm = 98 sq. cm (ii) Given plane figure is a semicircle. $$ \\begin{array}{l} \\text{Area of semicircle } =\\displaystyle {\\frac{1}{2}} \\pi r^{"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-7.jpg",
+"page": 296,
+"w": 265,
+"h": 177,
+"before": "Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $  Example 1. Find the area of the following figures: (i)",
+"after": "(ii) (iii) Solution. (i) Given plane figure is a parallelogram. Area of parallelogram = base × height =(14 × 7) sq. cm = 98 sq. cm (ii) Given plane figure is a semicircle. $$ \\begin{array}{l} \\text{Area of semicircle } =\\displaystyle {\\frac{1}{2}} \\pi r^{2} \\"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-8.jpg",
+"page": 296,
+"w": 265,
+"h": 178,
+"before": "Name Area Perimeter Triangle $ \\frac{1}{2} b \\times h $ $ a + b + c $ Rectangle $ a \\times b $ $ 2(a+b) $ Square $ a^{2} $ 4a Parallelogram $ b \\times h $ $ 2(a+b) $ Circle $ \\pi r^{2} $ 2 $ \\pi r $  Example 1. Find the area of the following figures: (i)",
+"after": "(ii) (iii) Solution. (i) Given plane figure is a parallelogram. Area of parallelogram = base × height =(14 × 7) sq. cm = 98 sq. cm (ii) Given plane figure is a semicircle. $$ \\begin{array}{l} \\text{Area of semicircle } =\\displaystyle {\\frac{1}{2}} \\pi r^{2} \\"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-9.jpg",
+"page": 296,
+"w": 177,
+"h": 225,
+"before": "^{2}+AB^{2} $$ $$ ↳AB^{2}=10^{2}-6^{2}=100-36=64 $$ $$ \\Rightarrow\\quad A B\\ =\\sqrt{64}\\ units=8\\ units. $$ $$ \\begin{aligned}Area~of~\\Delta ABC&=\\frac{1}{2}\\times base\\times height\\\\&=\\left(\\frac{1}{2}\\times6\\times8\\right)sq.units=24~sq.units\\end{aligned} $$",
+"after": "Example 3. The adjoining figure represents a sports field which consists of a rectangle and two semicircles. Calculate: (i) the area of the field. (ii) the length of the boundary of field. Solution. The two semicircles put together make a circle of diameter 2"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-10.jpg",
+"page": 296,
+"w": 363,
+"h": 167,
+"before": "t(\\frac{1}{2}\\times6\\times8\\right)sq.units=24~sq.units\\end{aligned} $$ Example 3. The adjoining figure represents a sports field which consists of a rectangle and two semicircles. Calculate: (i) the area of the field. (ii) the length of the boundary of field.",
+"after": "Solution. The two semicircles put together make a circle of diameter 28 m i.e. of radius 14 m. $$ \\begin{aligned}(i)\\text{Area of the field}&=\\text{area of rectangle}+\\text{area of two semicircles}\\\\&=(100\\times28)\\text{m}^{2}+\\pi\\times(14)^{2}\\text{m}^{2}\\\\&"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-11.jpg",
+"page": 297,
+"w": 331,
+"h": 227,
+"before": "(ii) The boundary of the field consists of two line segments each of length 100 m. Example 4. Find the area of the (i) shaded part (ii) unshaded part of the following figures, given that adjacent sides are at right angles:",
+"after": "(a) (b) Solution. (a) Area of rectangle ABCD = $ (22 \\times 16) $ m $ ^{2} $ = 352 m $ ^{2} $ Area of rectangle EFGH = $ (12 \\times 8) $ m $ ^2 $ = 96 m $ ^2 $ (i) Area of shaded part = area of rectangle ABCD - area of rectangle EFGH $ =(352-96)\\,\\text{m}^2 ="
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-12.jpg",
+"page": 297,
+"w": 378,
+"h": 259,
+"before": "(ii) The boundary of the field consists of two line segments each of length 100 m. Example 4. Find the area of the (i) shaded part (ii) unshaded part of the following figures, given that adjacent sides are at right angles: (a)",
+"after": "(b) Solution. (a) Area of rectangle ABCD = $ (22 \\times 16) $ m $ ^{2} $ = 352 m $ ^{2} $ Area of rectangle EFGH = $ (12 \\times 8) $ m $ ^2 $ = 96 m $ ^2 $ (i) Area of shaded part = area of rectangle ABCD - area of rectangle EFGH $ =(352-96)\\,\\text{m}^2 = 256"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-13.jpg",
+"page": 297,
+"w": 173,
+"h": 220,
+"before": "rea of a square garden ABCD is 2025 m². Inside the garden, a path of uniform width runs all around its boundary. If the area of the path is 581 m², find (i) the area of the unshaded portion. (ii) perimeter of the unshaded portion. (iii) the width of the path.",
+"after": "Solution. (i) Area of the unshaded portion = total area - area of path = 2025 m² - 581 m² = 1444 m² (ii) As ABCD is a square and the width of the path is uniform, therefore, the unshaded portion is also a square. $ \\therefore $ Side of this square = $ \\sqrt{1"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-14.jpg",
+"page": 298,
+"w": 85,
+"h": 73,
+"before": "of the square ABCD = $ \\sqrt{2025} $ m = $ \\sqrt{25 \\times 81} $ m = $ (5 \\times 9) $ m = 45 m Let $x$ metres be the width of the path, then $2x + 38 = 45 \\Rightarrow 2x = 7 \\Rightarrow x = 3.5$ $ \\therefore $ The width of the path = 3.5 m #### Exercise 19.1",
+"after": "1. The length and breadth of a rectangular field are in the ratio 9:5. If the area of the field is 14580 square metre, find the cost of surrounding the field with a fence at the rate of ₹325 per metre. 2. A rectangle is 16 m by 9 m. Find a side of the square"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-15.jpg",
+"page": 298,
+"w": 218,
+"h": 216,
+"before": "5. A flooring tile has a shape of parallelogram whose base is 18 cm and the corresponding height is 6 cm. How many such tiles are required to cover a floor of area 540 m²? (If required, you can split the tiles in whatever way you want to fill up the corners).",
+"after": "6. An ant is moving around a few food pieces of different shapes scattered on the floor. For which food piece would the ant have to take a longer round? (a) (b) (c) 7. In the adjoining figure, the area enclosed between the concentric circles is 770 cm². If th"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-16.jpg",
+"page": 298,
+"w": 194,
+"h": 174,
+"before": "or of area 540 m²? (If required, you can split the tiles in whatever way you want to fill up the corners). 6. An ant is moving around a few food pieces of different shapes scattered on the floor. For which food piece would the ant have to take a longer round?",
+"after": "(a) (b) (c) 7. In the adjoining figure, the area enclosed between the concentric circles is 770 cm². If the radius of the outer circle is 21 cm, calculate the radius of the inner circle. 8. A copper wire when bent in the form of a square encloses an area of 1"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-17.jpg",
+"page": 298,
+"w": 257,
+"h": 203,
+"before": "f area 540 m²? (If required, you can split the tiles in whatever way you want to fill up the corners). 6. An ant is moving around a few food pieces of different shapes scattered on the floor. For which food piece would the ant have to take a longer round? (a)",
+"after": "(b) (c) 7. In the adjoining figure, the area enclosed between the concentric circles is 770 cm². If the radius of the outer circle is 21 cm, calculate the radius of the inner circle. 8. A copper wire when bent in the form of a square encloses an area of 121 c"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-18.jpg",
+"page": 298,
+"w": 228,
+"h": 257,
+"before": "ea 540 m²? (If required, you can split the tiles in whatever way you want to fill up the corners). 6. An ant is moving around a few food pieces of different shapes scattered on the floor. For which food piece would the ant have to take a longer round? (a) (b)",
+"after": "(c) 7. In the adjoining figure, the area enclosed between the concentric circles is 770 cm². If the radius of the outer circle is 21 cm, calculate the radius of the inner circle. 8. A copper wire when bent in the form of a square encloses an area of 121 cm²."
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-19.jpg",
+"page": 298,
+"w": 144,
+"h": 154,
+"before": "in the form of a square encloses an area of 121 cm². If the same wire is bent into the form of a circle, find the area of the circle. 9. From the adjoining figure, find (i) the area of $ \\Delta ABC $ (ii) length of BC (iii) the length of altitude from A to BC",
+"after": "10. A rectangular garden 80 m by 40 m is divided into four equal parts by two cross-paths 2.5 m wide. Find the area of the cross-paths. 11. In the adjoining figure ABCD is a rectangle. Find the area o"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-20.jpg",
+"page": 298,
+"w": 174,
+"h": 216,
+"before": "in the form of a square encloses an area of 121 cm². If the same wire is bent into the form of a circle, find the area of the circle. 9. From the adjoining figure, find (i) the area of $ \\Delta ABC $ (ii) length of BC (iii) the length of altitude from A to BC",
+"after": "10. A rectangular garden 80 m by 40 m is divided into four equal parts by two cross-paths 2.5 m wide. Find the area of the cross-paths. 11. In the adjoining figure ABCD is a rectangle. Find the area o"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-21.jpg",
+"page": 299,
+"w": 470,
+"h": 315,
+"before": "10. A rectangular garden 80 m by 40 m is divided into four equal parts by two cross-paths 2.5 m wide. Find the area of the cross-paths.",
+"after": "11. In the adjoining figure ABCD is a rectangle. Find the area of the shaded region. 12. In the adjoining figure, ABCD is a square grassy lawn of area 729 m². A path of uniform width runs all around it. If the area of the path is 295 m², find (i) the width of"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-22.jpg",
+"page": 299,
+"w": 199,
+"h": 107,
+"before": "10. A rectangular garden 80 m by 40 m is divided into four equal parts by two cross-paths 2.5 m wide. Find the area of the cross-paths. 11. In the adjoining figure ABCD is a rectangle. Find the area of the shaded region.",
+"after": "12. In the adjoining figure, ABCD is a square grassy lawn of area 729 m². A path of uniform width runs all around it. If the area of the path is 295 m², find (i) the width of the path (ii) the length of the boundary of the square field enclosing the lawn and"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-23.jpg",
+"page": 299,
+"w": 280,
+"h": 317,
+"before": "12. In the adjoining figure, ABCD is a square grassy lawn of area 729 m². A path of uniform width runs all around it. If the area of the path is 295 m², find (i) the width of the path (ii) the length of the boundary of the square field enclosing the lawn and",
+"after": "Let ABCD be a trapezium in which AB || DC. Draw perpendicular DE and CF on side AB, such that DE = CF = h (say), AE = b and FB = c and EFCD is a rectangle where EF = DC = a $$= \\frac{1}{2} h(b + a + c + a) = \\frac{1}{2} h(AB + DC)$$ $$= \\frac{1}{2} \\text{ sum"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-24.jpg",
+"page": 299,
+"w": 247,
+"h": 376,
+"before": "$ sum of co-interior angles = 180° $\\Rightarrow$ PQ || SP So, PORS: So, PQRS is a trapezium with height = 10 cm. Area enclosed by the given shape = area of trapezium PQRS $$= \\frac{1}{2} \\text{ (sum of parallel sides)} \\times \\text{height}$$ $$= \\frac{1}{2}$$",
+"after": "=\\frac{1}{2}(12+17)\\times10cm^{2}=145cm^{2} example 2. In the adjoining figure AD is parallel to BC. Find the area of the trapezium ABCD. From figure, ##### Mensuration 295 In $\\Delta DEC$, $22$ By Pythagoras theorem, we have $\\therefore CD^{2}"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-25.jpg",
+"page": 300,
+"w": 287,
+"h": 327,
+"before": "arallel to BC. Find the area of the trapezium ABCD. From figure, ##### Mensuration 295 In $\\Delta DEC$, $22$ By Pythagoras theorem, we have $\\therefore CD^{2}=DE^{2}+EC^{2}\\Rightarrow 26^{2}=DE^{2}+10^{2}$ $DE^{2}=26^{2}-10^{2}=676-100=576$ $DE=\\sqrt{576}=24$",
+"after": "Height of trapezium ABCD = 24 cm Area of trapezium ABCD = $ \\frac{1}{2} $ (sum of parallel sides) × height 1 Example 3. Two parallel sides of a trapezium are in the ratio 7:11 and the distance between them is 17 cm. If the area of the trapezium is 306 cm², fi"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-26.jpg",
+"page": 300,
+"w": 292,
+"h": 341,
+"before": "t into two triangles by drawing its one of the diagonal. In the adjoining figure ABCD is a quadrilateral and AC is its diagonal. Draw perpendiculars DE and BF on AC. $$= \\frac{1}{2} d \\times h_{1} + \\frac{1}{2} d \\times h_{2} = \\frac{1}{2} d (h_{1} + h_{2})$$",
+"after": "Example 4. Find the area of quadrilateral PQRS shown in the adjoining figure. Solution In the given figure. Solution. In the given figure, d = 6.5 cm, $ h_{1} = 3.5 $ cm and $ h_{2} = 2.5 $ cm $ \\rho_{S}S = \\frac{1}{2}d(h_{1} + h_{2}) $ Area of quadrilateral"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-27.jpg",
+"page": 300,
+"w": 283,
+"h": 372,
+"before": "d $ h_{2} = 2.5 $ cm $ \\rho_{S}S = \\frac{1}{2}d(h_{1} + h_{2}) $ Area of quadrilateral PQRS = $ \\frac{1}{2}d(h_1 + h_2) $ $ = \\frac{1}{2} \\times 6.5 \\times (3.5 + 2.5) \\, \\text{cm}^2 $ $ = \\frac{1}{2} \\times 6.5 \\times 6 \\, \\text{cm}^2 = 19.5 \\, \\text{cm}^2 $",
+"after": "296 ICSE Mathematics - VIII Area of a rhombus To find the area of a rhombus, we use the above method of splitting it into two triangles. We know that the diagonals of a rhombus are perpendicular bisec"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-28.jpg",
+"page": 301,
+"w": 282,
+"h": 209,
+"before": "know that the diagonals of a rhombus are perpendicular bisectors of each other. In the adjoining figure ABCD is a rhombus. Area of rhombus ABCD = area of $ \\Delta ACD $ + area of $ \\Delta ABC $ $$=\\frac{1}{2}\\times AC\\times OD+\\frac{1}{2}\\times AC\\times OB$$",
+"after": "= $ \\frac{1}{2} $ $ \\times $ AC $ \\times $ BD = $ \\frac{1}{2}d_{1}\\times d_{2} $ where AC = $ d_{1} $ and BD = $ d_{2} $ Area of rhombus = $ \\frac{1}{2} \\times $ product of its diagonal Example 5. The diagonals of a rhombus are 8 cm and 15 cm. Find its area."
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-29.jpg",
+"page": 301,
+"w": 274,
+"h": 590,
+"before": "it into triangles and quadrilaterals. This can be understood with the help of the following example. Example 7. Find the area of polygon ABCDEF if AD = 9 cm, AJ = 7 cm, AI = 6 cm, AH = 4 cm, AG = 2 cm where FG, BH, EI and CJ are perpendiculars to diagonal AD.",
+"after": "Example 8. The floor of a building consists of 3000 tiles which are rhombus shaped and each of its diagonals are 45 cm and 30 cm in length. Find the cost of polishing the floor at the rate of ₹40 per"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-30.jpg",
+"page": 302,
+"w": 189,
+"h": 318,
+"before": "s 10 cm. Find (ii) the area of the rhombus (i) the length of its other diagonal 2. The cross-section ABCD of a swimming pool is a trapezium. Its width AB = 14 m, depth at the shallow end is 1.5 m and at the deep end is 8 m. Find the area of the cross-section.",
+"after": "3. The area of a trapezium is 360 m², the distance between two parallel sides is 20 m and one of the parallel side is 25 m. Find the other parallel side."
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-31.jpg",
+"page": 303,
+"w": 265,
+"h": 274,
+"before": "298 ICSE 4. Find the area of a rhombus whose side is 8 cm and altitude is 5.25 cm. If one 15 cm long, find the length of other diagonal.",
+"after": "6. The area of a rhombus is equal to the area of a triangle whose base and the corresponding are 24.8 cm and 16.5 cm respectively. If one of the diagonals of the rhombus is 27 length of the other diagonal. 7. The perimeter of a trapezium is 52 cm. If its non-"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-32.jpg",
+"page": 303,
+"w": 252,
+"h": 165,
+"before": "52 cm. If its non-parallel sides are 10 cm each and its altitude is 8 cm, find the area of the trapezium. 8. The area of a trapezium is 540 cm². If the ratio of parallel sides is 7:5 and the distance between them is 18 cm, find the lengths of parallel sides.",
+"after": "9. Calculate the area enclosed by the given shapes. All measurements are in centimetres. 10. From the adjoining sketch, calculate (ii) the area of trapezium ABCD (iii) the area of triangle BCD 11. Diagram of the adjacent picture frame has outer dimensions = 2"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-33.jpg",
+"page": 303,
+"w": 244,
+"h": 128,
+"before": "of the trapezium. 8. The area of a trapezium is 540 cm². If the ratio of parallel sides is 7:5 and the distance between them is 18 cm, find the lengths of parallel sides. 9. Calculate the area enclosed by the given shapes. All measurements are in centimetres.",
+"after": "10. From the adjoining sketch, calculate (ii) the area of trapezium ABCD (iii) the area of triangle BCD 11. Diagram of the adjacent picture frame has outer dimensions = 28 cm × 32 cm and inner dimensions 20 cm × 24 cm. Find the area of each section of the fra"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-34.jpg",
+"page": 303,
+"w": 210,
+"h": 269,
+"before": "of the trapezium. 8. The area of a trapezium is 540 cm². If the ratio of parallel sides is 7:5 and the distance between them is 18 cm, find the lengths of parallel sides. 9. Calculate the area enclosed by the given shapes. All measurements are in centimetres.",
+"after": "10. From the adjoining sketch, calculate (ii) the area of trapezium ABCD (iii) the area of triangle BCD 11. Diagram of the adjacent picture frame has outer dimensions = 28 cm × 32 cm and inner dimensions 20 cm × 24 cm. Find the area of each section of the fra"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-35.jpg",
+"page": 303,
+"w": 299,
+"h": 209,
+"before": "(ii) the area of trapezium ABCD (iii) the area of triangle BCD 11. Diagram of the adjacent picture frame has outer dimensions = 28 cm × 32 cm and inner dimensions 20 cm × 24 cm. Find the area of each section of the frame, if the width of each section is same.",
+"after": "12. In the adjoining quadrilateral ABCD, $\\angle BAD = 90^{\\circ}$ and $\\angle BDC = 90^{\\circ}$. All measurements are in centimetres. Find the area of the quadrilateral ABCD."
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-36.jpg",
+"page": 303,
+"w": 168,
+"h": 152,
+"before": ". Find the area of each section of the frame, if the width of each section is same. 12. In the adjoining quadrilateral ABCD, $\\angle BAD = 90^{\\circ}$ and $\\angle BDC = 90^{\\circ}$. All measurements are in centimetres. Find the area of the quadrilateral ABCD.",
+"after": "13. Top surface of a raised platform is in the shape of a regular octagon as shown in adjoining figure. and the area of the octagonal surface. ##### Mensuration 299 In the adjoining figure, ABCD is a"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-37.jpg",
+"page": 304,
+"w": 242,
+"h": 264,
+"before": "n in adjoining figure. and the area of the octagonal surface. ##### Mensuration 299 In the adjoining figure, ABCD is a rectangle of size 18 cm by 10 cm. In $\\triangle BEC$, $\\angle E = 90^{\\circ}$ and $EC = 8$ cm. Find the area enclosed by the pentagon ABECD.",
+"after": "15. Find the area of polygon PQRSTU shown in adjoining figure, if PS = 11cm, PY = 9 cm, PX = 8 cm, PW = 5 cm, PV = 3 cm, QV = 5 cm, UW = 4 cm, RX = 6 cm, TY = 2 cm ##### VOLUME OF SOLIDS Volume of a solid is the measurement of the space occupied by it. To mea"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-38.jpg",
+"page": 304,
+"w": 174,
+"h": 264,
+"before": "le BEC$, $\\angle E = 90^{\\circ}$ and $EC = 8$ cm. Find the area enclosed by the pentagon ABECD. 15. Find the area of polygon PQRSTU shown in adjoining figure, if PS = 11cm, PY = 9 cm, PX = 8 cm, PW = 5 cm, PV = 3 cm, QV = 5 cm, UW = 4 cm, RX = 6 cm, TY = 2 cm",
+"after": "##### VOLUME OF SOLIDS Volume of a solid is the measurement of the space occupied by it. To measure the volume of a solid, we have to compare it with some unit of volume. For convenience, the solid we choose for the unit of volume is a unit cube. If the side"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-39.jpg",
+"page": 304,
+"w": 245,
+"h": 308,
+"before": "le BEC$, $\\angle E = 90^{\\circ}$ and $EC = 8$ cm. Find the area enclosed by the pentagon ABECD. 15. Find the area of polygon PQRSTU shown in adjoining figure, if PS = 11cm, PY = 9 cm, PX = 8 cm, PW = 5 cm, PV = 3 cm, QV = 5 cm, UW = 4 cm, RX = 6 cm, TY = 2 cm",
+"after": "##### VOLUME OF SOLIDS Volume of a solid is the measurement of the space occupied by it. To measure the volume of a solid, we have to compare it with some unit of volume. For convenience, the solid we choose for the unit of volume is a unit cube. If the side"
+},
+{
+"chapter": 19,
+"file": "images/math/ch19-40.jpg",
+"page": 304,
+"w": 107,
+"h": 82,
+"before": "le BEC$, $\\angle E = 90^{\\circ}$ and $EC = 8$ cm. Find the area enclosed by the pentagon ABECD. 15. Find the area of polygon PQRSTU shown in adjoining figure, if PS = 11cm, PY = 9 cm, PX = 8 cm, PW = 5 cm, PV = 3 cm, QV = 5 cm, UW = 4 cm, RX = 6 cm, TY = 2 cm",
+"after": "##### VOLUME OF SOLIDS Volume of a solid is the measurement of the space occupied by it. To measure the volume of a solid, we have to compare it with some unit of volume. For convenience, the solid we choose for the unit of volume is a unit cube. If the side"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-1.jpg",
+"page": 323,
+"w": 611,
+"h": 523,
+"before": "length) of a bar represents the frequency of corresponding observation. Example 1. Read the bar graph (given below) carefully and answer the following questions: (i) What is the information given by the bar graph? (ii) In which month is the rainfall maximum?",
+"after": "The bar graph is representing the rainfall during the last six mon rainfall is maximum in the month of August i.e. 140 mm rainfall is minimum in the month of December i.e. 20 mm possible bar graph for"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-2.jpg",
+"page": 324,
+"w": 412,
+"h": 467,
+"before": "y the maximum number of students? (ii) Which class has the equal number of boys and girls? (iii) Find the difference of number of boys and number of girls in class VIII. (iv) Find the total number of students of class X. Number of students $ \\longrightarrow $",
+"after": "Solution. (i) The double bar graph is representing the classwise enrolment of boys and girls in a Class VI: Number of boys = 15, number of girls = 25 Total number of students in class VI = 15 + 25 = 40 Class VII: Number of boys = 30, number of girls = 20 Tota"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-3.jpg",
+"page": 328,
+"w": 285,
+"h": 287,
+"before": "how to draw histogram with the help of examples #### Solution. Steps: (i) Take 1 cm on y-axis = 2 frequency (ii) Take 1 cm on y-axis = 2 frequency (iii) Construct rectangles corresponding to given data. The required histogram is shown in the adjoining figure.",
+"after": "(i) Since the scale on x-axis starts at 150, a break (kink or zig-zag curve) is shown near the origin along x-axis to indicate that the graph is drawn to scale beginning at 150 and not at the origin itself. (ii) Take 1 cm on y-axis = 2 (no. of students) (iii)"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-4.jpg",
+"page": 328,
+"w": 241,
+"h": 264,
+"before": "beginning at 150 and not at the origin itself. (ii) Take 1 cm on y-axis = 2 (no. of students) (iii) Take 1 cm on y-axis = 2 (no. of students) (iv) Construct rectangles corresponding to the given data. The required histogram is shown in the adjoining diagram.",
+"after": "(i) What information is being given by the histogram? (ii) How many trees have a height of 250 cm and more? (iii) Which group contains minimum number of trees? Jagged line (∇) has been used along the"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-5.jpg",
+"page": 329,
+"w": 463,
+"h": 515,
+"before": "cm on y-axis = 2 (no. of students) (iii) Take 1 cm on y-axis = 2 (no. of students) (iv) Construct rectangles corresponding to the given data. The required histogram is shown in the adjoining diagram.",
+"after": "(i) What information is being given by the histogram? (ii) How many trees have a height of 250 cm and more? (iii) Which group contains minimum number of trees? Jagged line (∇) has been used along the horizontal line to indicate that we are not showing the num"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-6.jpg",
+"page": 330,
+"w": 395,
+"h": 469,
+"before": "are gaps between the bars. 2. There is no gap between adjacent rectangles. 3. Breadth of a rectangle has no significance. 3. The breadth of a rectangle is meaningful and it represents the class size. #### Represent the above data by a double bar graph.",
+"after": "(iv) State whether the expenditure on education is twice the expenditure on clothing. 4. Given a double bar graph. Read the double bar graph carefully and answer the following questions: (i) What is the information given by the double graph? (iii) Which mode"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-7.jpg",
+"page": 330,
+"w": 348,
+"h": 491,
+"before": "e on education is twice the expenditure on clothing. 4. Given a double bar graph. Read the double bar graph carefully and answer the following questions: (i) What is the information given by the double graph? (iii) Which mode of transport boys using the most?",
+"after": "(iv) In which mode of transport number of girls is half the number of boys? 6. Given below are the marks secured by 35 students in a surprise test: 41, 32, 35, 21, 11, 47, 42, 00, 05, 18, 25, 24, 29, 38, 30, 04, 14, 24, 34, 44, 48, 33, 36, 38, 41, 48, 49, 50,"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-8.jpg",
+"page": 331,
+"w": 334,
+"h": 274,
+"before": "hat is the frequency of class 400-425? (ii) What is the class having minimum frequency? (iii) How many workers get more than 425? (iv) How many workers get less than 475? (v) Number of workers whose daily wages are more than or equal to 400 but less than 450.",
+"after": "11. The number of hours for which students of a particular class watched television during holidays is shown in the histogram alongside. Answer the following: (ii) How many students watched T.V. for less than 4 hours? 4 hours: (iii) How many students spent mo"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-9.jpg",
+"page": 331,
+"w": 268,
+"h": 307,
+"before": "e than or equal to 400 but less than 450. 11. The number of hours for which students of a particular class watched television during holidays is shown in the histogram alongside. Answer the following: (ii) How many students watched T.V. for less than 4 hours?",
+"after": "4 hours: (iii) How many students spent more than 5 hours in watching TV? CIRCLE GRAPH OR PIE CHAR You must have come across the circular representation of data (students using different modes of transport) as shown in figure. This is called circle graph. The"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-10.jpg",
+"page": 332,
+"w": 355,
+"h": 325,
+"before": "ctor draw an angle of $120^{\\circ}$ on the horizontal radius. 4. Continue marking the remaining sectors moving in clockwise direction till all the sectors are marked. 5. Shade the sectors with different colours/designs and Thus required Pie chart is obtained.",
+"after": "Example 2. The adjoining pie chart gives the marks scored in an examination by a student in Hindi, English, Mathematics, Social Science and Science. If the total marks obtained by the student were 540, answer the following questions: (i) In which subject did"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-11.jpg",
+"page": 332,
+"w": 323,
+"h": 298,
+"before": "In which subject did the student score 105 marks? (ii) How many more marks were obtained by the student in Mathematics than in Hindi? (iii) Examine whether the sum of the marks obtained in Social Science and Mathematics is more than that in Science and Hindi.",
+"after": "328 ICSE Mathematics – VIII Solution. To find the answers of the questions given above, we have to find the marks of the subjects. by the students in the different subjects. Subject: Central angle Ma"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-12.jpg",
+"page": 334,
+"w": 293,
+"h": 254,
+"before": "ture is spent on cricket? (ii) How much percent more is spent on hockey than that on tennis? (iii) If the total amount spent on Badminton. then find the amount spent on sports in 2023 be 2,400,000 (ii) If the total amount spent on cricket and hockey together.",
+"after": "6. The adjoining pie chart shows the number of students enrolled from class VI to class X of a school. If 1440 students are enrolled from VI to X, then answer the following questions: students are enrolled in class VIII? (i) How many students are enrolled in"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-13.jpg",
+"page": 334,
+"w": 290,
+"h": 251,
+"before": "spent on cricket and hockey together. 6. The adjoining pie chart shows the number of students enrolled from class VI to class X of a school. If 1440 students are enrolled from VI to X, then answer the following questions: students are enrolled in class VIII?",
+"after": "(i) How many students are enrolled in Class VI? (ii) How many students are more in class IX than in class X? (iii) What is the sum of students enrolled in VII and VIII? (iv) Find the ratio of students enrolled in VI to students enrolled in X. In our daily lif"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-14.jpg",
+"page": 338,
+"w": 190,
+"h": 297,
+"before": "heel with 3 green sectors, 1 blue sector and 1 red sector. What is the probability of getting a green sector? What is the probability of getting a non blue sector? Solution. When a spinning wheel as shown in adjoining So, the number of favourable outcomes = 3",
+"after": "blue sector and the outcomes G, G, G, R are favourable to the P(getting a non blue sector) = $ \\frac{4}{5} $ Example 6. A bag has 7 red balls, 5 blue balls and 3 green balls. One ball is drawn at random from the bag. Find the probability of getting (i) a red"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-15.jpg",
+"page": 340,
+"w": 198,
+"h": 187,
+"before": "Example 9. A letter is chosen from the word 'PENCIL', what is the probability that it is a vowel? In word 'PENCIL' there are 6 letters P, E, N, C, I, L. So, total number of outcome number of favourable outcome = 2",
+"after": "(ii) Drawing a ball from the bag containing 5 identical balls of different colours. Find the probability of getting a die in the box. (i) an even number (ii) a multiple of 3 (iii). 3. Two coins are tossed together. Find the probability of getting (i) two tail"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-16.jpg",
+"page": 340,
+"w": 203,
+"h": 177,
+"before": "Example 9. A letter is chosen from the word 'PENCIL', what is the probability that it is a vowel? In word 'PENCIL' there are 6 letters P, E, N, C, I, L. So, total number of outcome number of favourable outcome = 2",
+"after": "(ii) Drawing a ball from the bag containing 5 identical balls of different colours. Find the probability of getting a die in the box. (i) an even number (ii) a multiple of 3 (iii). 3. Two coins are tossed together. Find the probability of getting (i) two tail"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-17.jpg",
+"page": 341,
+"w": 474,
+"h": 399,
+"before": "In the following examples, choose the correct Example. The histogram shown in the given figure represents the marks obtained by students of class VIII. Study it carefully and choose the correct answers from the given four options for questions 1-4.",
+"after": "3. If 70 marks are needed to get an A grade, how many students did not get A? (a) 44 (b) 26 4. If a student is selected at random, what is the probability that he/she scored greater than equal to 90% $$ (c)\\frac{1}{7} $$ $$ (b)\\ \\frac{19}{70} $$ $$ (d)\\frac{1"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-18.jpg",
+"page": 344,
+"w": 107,
+"h": 142,
+"before": "e assume that all outcomes are equally ##### likely. If $E$ is an event, then $0 \\leq F(E) \\leq 1$ An event which always happens is called a sure event. $P(\\text{sure event}) = 1$ An event which never happens is called an impossible event. An event event $0$.",
+"after": "1. Each student from the group of 40 students was asked to roll a die independently. The results are given below: 2,3,3,4,1,5,2,6,1,4,2,3,4,4,6,1,5,5,2,4,5,5,3,1,6,5,4,2,3,6,1,1,4,4,5,3,2,2,6,6 Make a frequency distribution table for the same. 2. Construct a"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-19.jpg",
+"page": 345,
+"w": 328,
+"h": 704,
+"before": "in a Mathematics Paper of maximum marks 100. Marks obtained (Class interval) 0 - 10 10 - 20 20 - 30 30 - 40 40 - 50 50 - 60 60 - 70 70 - 80 80 - 90 90 - 100 Number of students 2 6 10 17 30 14 10 7 4 1",
+"after": "6. Suppose you spin the wheel shown in adjoining figure. (i) List the outcomes of getting a green sector and not getting a green sector on this wheel. (iii) Find the probability of not getting a green sector. 7. A bag has 4 red and 2 yellow balls. A ball is d"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-20.jpg",
+"page": 345,
+"w": 200,
+"h": 164,
+"before": "6. Suppose you spin the wheel shown in adjoining figure. (i) List the outcomes of getting a green sector and not getting a green sector on this wheel.",
+"after": "(iii) Find the probability of not getting a green sector. 7. A bag has 4 red and 2 yellow balls. A ball is drawn from the bag without looking into the bag. What is the probability of getting a red ball? (ii) not a red ball? (i) a red ball: (ii) not a red ball"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-21.jpg",
+"page": 347,
+"w": 211,
+"h": 306,
+"before": "(5xy - 3x² + 2y) = 16 16. Factorize: 15(2x - 3y)² - 4(4x - 6y) - 16 17. Two years ago Sunil was three times as old as his son. Two years later, twice of his equal to the five times that of his son's age. Find their present ages.",
+"after": "18. In the adjoining figure ABCD is a parallelogram in which $\\angle DAP = 40^{\\circ}, \\angle BAP = 25^{\\circ}$ and $\\angle CPD = 105^{\\circ}$, find $(ii) \\angle PDC$ (i) $\\angle ABP$ (iv) $\\neg RD$ 19. Construct a rhombus TRUE whose one side TR = 4 cm and di"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-22.jpg",
+"page": 347,
+"w": 156,
+"h": 169,
+"before": "e five times that of his son's age. Find their present ages. 18. In the adjoining figure ABCD is a parallelogram in which $\\angle DAP = 40^{\\circ}, \\angle BAP = 25^{\\circ}$ and $\\angle CPD = 105^{\\circ}$, find $(ii) \\angle PDC$ (i) $\\angle ABP$ (iv) $\\neg RD$",
+"after": "19. Construct a rhombus TRUE whose one side TR = 4 cm and diagonal TU = 6.5 cm. 20. Construct a parallelogram GOLD in which diagonal GL = 3.8 cm, diagonal OD = 4.6 cm and angle between diagonals is $ 60^{\\circ} $. 21. In the adjoining figure, O is the centre"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-23.jpg",
+"page": 347,
+"w": 405,
+"h": 280,
+"before": "the cost of tiling the floor of the room at the rate of ₹170 per m $ ^{2} $. 25. If $ x + \\frac{1}{x} = 5 $, then find 26. In the adjoining figure, ABCD is a rhombus and DCEF is a square. If $\\angle ABC = 56^{\\circ}$, find: (i) $\\angle DAG$ (ii) $\\angle FEG$",
+"after": "27. The figure given alongside shows a field with the measurement given in metres. Find the area of the field. (i) white (ii) not black (iii) red or black 29. A school decided to award prizes to their"
+},
+{
+"chapter": 20,
+"file": "images/math/ch20-24.jpg",
+"page": 348,
+"w": 440,
+"h": 618,
+"before": "27. The figure given alongside shows a field with the measurement given in metres. Find the area of the field.",
+"after": "(i) white (ii) not black (iii) red or black 29. A school decided to award prizes to their students for three values, honesty, punctuality and obedience. The value of prize for punctuality is $ \\frac{5}{6} $ of the value of prize for honesty and value of prize"
+}
+]
