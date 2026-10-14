@@ -95,7 +95,7 @@ chapters.forEach(ch => {
   };
   const loose = [];
   figs.filter(f => f.chapter === ch.n).forEach(f => {
-    const bs = norm(f.before).slice(-45), as = norm(f.after).slice(0, 45), md = `![Figure](${f.file})`;
+    const clean = t => t.replace(/\d*\s*[A-Za-z]*\s*Mathematics\s*[-–]\s*[IVX]+\s*\d*/gi, ' '), bs = norm(clean(f.before)).slice(-45), as = norm(clean(f.after)).slice(0, 45), md = `![Figure](${f.file})`;
     let hit = find(bs, true), where = 'after';
     if (!hit) { hit = find(as, false); where = 'before'; }
     if (hit) {
