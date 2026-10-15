@@ -3704,6 +3704,7 @@ function renderContent(el) {
           <button class="rev-btn${studyRevisions[selectedTopic] && studyRevisions[selectedTopic].last === new Date().toISOString().slice(0, 10) ? ' rev-done' : ''}" onclick="markChapterRevised('${selectedTopic}')" title="Tap after you finish revising this chapter">
             ✅ I revised this <span class="rev-count">${chapterRevisionCount(selectedTopic)}×</span>
           </button>
+          <button class="btn btn-sm btn-outline" onclick="pdfOpen('chapter','${selectedTopic}')" title="This chapter as a colour PDF">📄 Chapter PDF</button>
         </div>
         ${keywordSearchBoxHtml({
           inputId: 'chapter-keyword-search',

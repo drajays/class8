@@ -19,6 +19,9 @@ function pdfOpen(scope, id) {
   m.innerHTML = `<div style="background:var(--card,#fff);color:var(--text,#111);border-radius:14px;padding:20px;max-width:380px;width:100%;box-shadow:0 10px 40px rgba(0,0,0,.3)">
     <h3 style="margin:0 0 4px">📄 Export PDF</h3>
     <p style="margin:0 0 12px;opacity:.75">${escHtml(name || '')} — ${scope === 'subject' ? 'whole subject' : 'this chapter'}</p>
+    ${scope === 'subject' ? `<details style="margin:0 0 8px"><summary style="cursor:pointer;font-weight:600">📚 Chapters (<span id="pdf-nch"></span>)</summary>
+      <div style="margin:6px 0"><a href="#" onclick="document.querySelectorAll('.pdf-ch').forEach(c=>c.checked=true);pdfCount();return false">all</a> · <a href="#" onclick="document.querySelectorAll('.pdf-ch').forEach(c=>c.checked=false);pdfCount();return false">none</a></div>
+      <div style="max-height:150px;overflow:auto">${appData.topics.filter(t => t.subjectId === id).map(t => `<label style="display:block;margin:3px 0"><input type="checkbox" class="pdf-ch" value="${t.id}" checked onchange="pdfCount()"> ${escHtml(t.name)}</label>`).join('')}</div></details>` : ''}
     <label style="display:block;margin:6px 0"><input type="checkbox" checked disabled> 📝 Notes (always included)</label>
     <label style="display:block;margin:6px 0"><input type="checkbox" id="pdf-o-aside" ${o.aside ? 'checked' : ''}> 🧭 Left panel: cheat sheet, mind map, timeline, word cards</label>
     <label style="display:block;margin:6px 0"><input type="checkbox" id="pdf-o-qs" ${o.qs ? 'checked' : ''}> ❓ Questions with answers in line</label>
@@ -28,12 +31,23 @@ function pdfOpen(scope, id) {
       <button class="btn btn-primary" onclick="pdfGo('${scope}','${id}')">Create PDF</button>
     </div></div>`;
   document.body.appendChild(m);
+  pdfCount();
+}
+
+function pdfCount() {
+  const all = document.querySelectorAll('.pdf-ch'), el = document.getElementById('pdf-nch');
+  if (el) el.textContent = [...all].filter(c => c.checked).length + ' of ' + all.length + ' selected';
 }
 
 function pdfGo(scope, id) {
   const g = k => !!document.getElementById('pdf-o-' + k).checked;
   const o = { aside: g('aside'), qs: g('qs'), mine: g('mine') };
   try { localStorage.setItem(PDF_OPTS_KEY, JSON.stringify(o)); } catch (e) {}
+  const picked = [...document.querySelectorAll('.pdf-ch')];
+  if (picked.length) {
+    o.chapters = picked.filter(c => c.checked).map(c => c.value);
+    if (!o.chapters.length) return showToast('error', 'Pick at least one chapter');
+  }
   document.getElementById('pdf-modal').remove();
   const w = window.open('', '_blank'); // must open inside the tap, before the slow build
   if (!w) return showToast('error', 'Allow pop-ups to create the PDF');
@@ -197,7 +211,7 @@ function pdfBuild(scope, id, o) {
   const subject = scope === 'subject'
     ? appData.subjects.find(s => s.id === id)
     : appData.subjects.find(s => s.id === (appData.topics.find(t => t.id === id) || {}).subjectId);
-  const topics = scope === 'subject' ? appData.topics.filter(t => t.subjectId === id) : [appData.topics.find(t => t.id === id)];
+  const topics = scope === 'subject' ? appData.topics.filter(t => t.subjectId === id && (!o.chapters || o.chapters.includes(t.id))) : [appData.topics.find(t => t.id === id)];
   const color = PDF_COLORS[subject.id] || '#4f46e5';
   const stats = { notes: 0, notesAll: 0, qs: 0, chapters: topics.length };
   const chapters = topics.map((t, ci) => {
